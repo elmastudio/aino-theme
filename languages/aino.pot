@@ -1,0 +1,827 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Aino\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-04 02:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.0; wp-5.2.1"
+
+#: inc/template-tags.php:186
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:175
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/template-tags.php:95
+msgid ", "
+msgstr ""
+
+#: inc/customizer/customizer.php:254
+msgid "1 column"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:10
+msgid "1. Install recommended plugins"
+msgstr ""
+
+#: inc/customizer/customizer.php:432
+msgid "12px"
+msgstr ""
+
+#: inc/customizer/customizer.php:255
+msgid "2 column"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:17
+msgid "2. See the documentation"
+msgstr ""
+
+#: inc/customizer/customizer.php:433
+msgid "24px"
+msgstr ""
+
+#: inc/customizer/customizer.php:256
+msgid "3 column"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:26
+msgid "3. Start to Customize"
+msgstr ""
+
+#: inc/customizer/customizer.php:434
+msgid "36px"
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:113
+msgid "About Aino"
+msgstr ""
+
+#: inc/class-aino-nux-admin.php:95
+#: inc/welcome-screen/sections/recommended-plugins.php:36
+msgid "Activate"
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:183
+msgid "Activate: One Click Demo Import"
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:169
+msgid "Activate: One Click Demo Import Plugin"
+msgstr ""
+
+#: functions.php:270
+msgid "Add widgets here to appear in the 1. column of your footer."
+msgstr ""
+
+#: functions.php:282
+msgid "Add widgets here to appear in the 2. column of your footer."
+msgstr ""
+
+#: functions.php:294
+msgid "Add widgets here to appear in the 3. column of your footer."
+msgstr ""
+
+#: functions.php:306
+msgid "Add widgets here to appear in the 4. column of your footer."
+msgstr ""
+
+#: functions.php:318
+msgid "Add widgets here to appear in the 5. column of your footer."
+msgstr ""
+
+#: functions.php:330
+msgid "Add widgets here to appear in the 6. column of your footer."
+msgstr ""
+
+#. Name of the theme
+msgid "Aino"
+msgstr ""
+
+#. Description of the theme
+msgid "Aino is a Gutenberg-ready WordPress theme."
+msgstr ""
+
+#: functions.php:409
+msgid "All posts by"
+msgstr ""
+
+#: inc/customizer/customizer.php:200
+msgid "Avatar Style"
+msgstr ""
+
+#: functions.php:158
+msgid "Background"
+msgstr ""
+
+#: inc/customizer/customizer.php:334
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/customizer.php:356
+msgid "Background Hover Color"
+msgstr ""
+
+#: functions.php:183
+msgid "black"
+msgstr ""
+
+#: inc/customizer/customizer.php:85
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer/customizer.php:94
+msgid "Blog Cards"
+msgstr ""
+
+#: inc/customizer/customizer.php:156
+msgid "bold"
+msgstr ""
+
+#: functions.php:153
+msgid "Border"
+msgstr ""
+
+#: inc/customizer/customizer.php:426
+msgid "Border Radius"
+msgstr ""
+
+#: inc/customizer/customizer.php:176
+msgid "Button Style"
+msgstr ""
+
+#: inc/customizer/customizer.php:514
+msgid "Choose number of words."
+msgstr ""
+
+#: inc/customizer/customizer.php:207
+msgid "circle"
+msgstr ""
+
+#: functions.php:355
+msgid "Collapse child menu"
+msgstr ""
+
+#: inc/customizer/customizer.php:39
+msgid "Colors"
+msgstr ""
+
+#: template-parts/post/content-single.php:23 template-parts/post/content.php:64
+msgid "Comment 1"
+msgstr ""
+
+#: comments.php:63
+msgid "Comment navigation"
+msgstr ""
+
+#: template-parts/post/content-single.php:23 template-parts/post/content.php:64
+msgid "Comments %"
+msgstr ""
+
+#: template-parts/post/content.php:64
+msgid "Comments 0"
+msgstr ""
+
+#: comments.php:80
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: number of comments, 2: post title
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid "%1$s reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post title
+#: comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:20
+msgid "Contact Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:15
+msgid "Contact Us"
+msgstr ""
+
+#. %s: Name of current post.
+#: template-parts/post/content-single.php:47
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:40
+msgid "Deactivate"
+msgstr ""
+
+#: inc/customizer/customizer.php:494
+msgid "Display author avatar"
+msgstr ""
+
+#: inc/customizer/customizer.php:475
+msgid "Display author instead of categories"
+msgstr ""
+
+#: inc/customizer/customizer.php:310
+msgid "Display comments count"
+msgstr ""
+
+#: inc/customizer/customizer.php:291
+msgid "Display publish date"
+msgstr ""
+
+#: inc/template-tags.php:203
+msgid "Edit"
+msgstr ""
+
+#. Author of the theme
+msgid "Elmastudio"
+msgstr ""
+
+#: functions.php:173
+msgid "Error"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:18
+msgid ""
+"Even if you're a long-time WordPress user, we  still recommend you to have a "
+"look at our detailed theme documentation."
+msgstr ""
+
+#: functions.php:354
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:107
+msgid "Extra Large"
+msgstr ""
+
+#: functions.php:411 functions.php:413
+msgid "Filed under"
+msgstr ""
+
+#: inc/customizer/customizer.php:76
+msgid "Footer"
+msgstr ""
+
+#: functions.php:268
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:280
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:292
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:304
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:316
+msgid "Footer 5"
+msgstr ""
+
+#: functions.php:328
+msgid "Footer 6"
+msgstr ""
+
+#: inc/customizer/customizer.php:602
+msgid "Footer Background"
+msgstr ""
+
+#: template-parts/footer/footer-menu-social.php:17
+msgid "Footer Social Links Menu"
+msgstr ""
+
+#. Name of the template
+msgid "Fullscreen"
+msgstr ""
+
+#. Name of the template
+msgid "Fullwidth"
+msgstr ""
+
+#. Name of the template
+msgid "Fullwidth, No Title"
+msgstr ""
+
+#: inc/customizer/customizer.php:106
+msgid "General"
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:363
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:29
+msgid "Go to the Customizer"
+msgstr ""
+
+#: inc/customizer/customizer.php:67
+msgid "Header"
+msgstr ""
+
+#: functions.php:45
+msgid "Header CTA Buttons"
+msgstr ""
+
+#: template-parts/header/header-content.php:65
+msgid "Header Social Links Menu"
+msgstr ""
+
+#: inc/customizer/customizer.php:150
+msgid "Heading Font Weight"
+msgstr ""
+
+#: inc/customizer/customizer.php:227
+msgid "Hide Search in Header"
+msgstr ""
+
+#: inc/customizer/customizer.php:128
+msgid "Hide Tagline only"
+msgstr ""
+
+#: functions.php:163
+msgid "Highlight"
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:173
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/customizer/customizer.php:451
+msgid "Hover Effect"
+msgstr ""
+
+#: template-parts/footer/site-info.php:20
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.elmastudio.de/en/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://www.elmastudio.de/en/themes/aino/"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:21
+msgid "https://www.elmastudio.de/en/themes/docs/aino/"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:17
+msgid ""
+"If you have any questions regarding Aino or you need help setting up your "
+"theme, please contact us via our support forum. We are here to help you!"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:32
+msgid "Install"
+msgstr ""
+
+#: inc/class-aino-nux-admin.php:110
+msgid "Install now"
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:178
+#: inc/welcome-screen/class-mt-notify-system.php:186
+msgid "Install: One Click Demo Import"
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:164
+msgid "Install: One Click Demo Import Plugin"
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:172
+msgid "Install: one-click-demo-import Plugin"
+msgstr ""
+
+#: template-parts/post/content-none.php:43
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: functions.php:102
+msgid "L"
+msgstr ""
+
+#: searchform.php:21
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: functions.php:101
+msgid "Large"
+msgstr ""
+
+#: inc/customizer/customizer.php:384 inc/customizer/customizer.php:409
+msgid "large"
+msgstr ""
+
+#: template-parts/post/content-single.php:23
+msgid "Leave a reply"
+msgstr ""
+
+#: functions.php:96
+msgid "M"
+msgstr ""
+
+#: inc/customizer/customizer.php:539
+msgid "Main Background"
+msgstr ""
+
+#: 404.php:21
+msgid "Maybe try a search instead?"
+msgstr ""
+
+#: inc/customizer/customizer.php:383 inc/customizer/customizer.php:408
+msgid "medium"
+msgstr ""
+
+#: template-parts/header/header-content.php:38
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer/customizer.php:457
+msgid "move in"
+msgstr ""
+
+#: inc/customizer/customizer.php:458
+msgid "move up"
+msgstr ""
+
+#: comments.php:67
+msgid "Newer Comments"
+msgstr ""
+
+#: index.php:80 index.php:81 archive.php:61 archive.php:62 search.php:55
+#: search.php:56
+msgid "Newer posts"
+msgstr ""
+
+#: template-parts/post/nav-single.php:54
+msgid "Next Post"
+msgstr ""
+
+#. Name of the template
+msgid "No Title"
+msgstr ""
+
+#: inc/customizer/customizer.php:381 inc/customizer/customizer.php:406
+#: inc/customizer/customizer.php:431 inc/customizer/customizer.php:456
+msgid "none"
+msgstr ""
+
+#: functions.php:95
+msgid "Normal"
+msgstr ""
+
+#: template-parts/post/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: functions.php:168
+msgid "Notification"
+msgstr ""
+
+#: inc/customizer/customizer.php:249
+msgid "Number of blog columns"
+msgstr ""
+
+#: comments.php:66
+msgid "Older Comments"
+msgstr ""
+
+#: index.php:78 index.php:79 archive.php:59 archive.php:60 search.php:50
+#: search.php:51
+msgid "Older posts"
+msgstr ""
+
+#: 404.php:16
+msgid "Oops! Page Not Found"
+msgstr ""
+
+#: index.php:82 archive.php:63 search.php:57
+msgid "Page"
+msgstr ""
+
+#: template-parts/page/content-page.php:23
+#: template-parts/post/content-single.php:54
+msgid "Pages:"
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:200
+#: inc/welcome-screen/class-mt-notify-system.php:214
+msgid ""
+"Please activate the One Click Demo Import plugin to create the demo content."
+msgstr ""
+
+#: inc/icon-functions.php:30
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: inc/icon-functions.php:25
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:217
+msgid ""
+"Please install the One Click Demo Import plugin to create the demo content"
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:195
+#: inc/welcome-screen/class-mt-notify-system.php:203
+msgid ""
+"Please install the One Click Demo Import plugin to create the demo content."
+msgstr ""
+
+#: inc/welcome-screen/class-mt-notify-system.php:209
+msgid ""
+"Please install theOne Click Demo Import plugin to create the demo content"
+msgstr ""
+
+#. 1: author name. 2: post author, only visible to screen readers.
+#: inc/template-tags.php:32
+#, php-format
+msgctxt "post author"
+msgid "%s "
+msgstr ""
+
+#. 1: post date. 2: post date, only visible to screen readers.
+#: inc/template-tags.php:38 inc/template-tags.php:79
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/customizer/customizer.php:272
+msgid "Post Details"
+msgstr ""
+
+#: inc/customizer/customizer.php:513
+msgid "Post Excerpt Length"
+msgstr ""
+
+#: template-parts/post/nav-single.php:12
+msgid "Post navigation"
+msgstr ""
+
+#: index.php:27
+msgid "Posts"
+msgstr ""
+
+#: template-parts/post/nav-single.php:25
+msgid "Previous Post"
+msgstr ""
+
+#: functions.php:43
+msgid "Primary"
+msgstr ""
+
+#: functions.php:123 inc/customizer/customizer.php:560
+msgid "Primary One"
+msgstr ""
+
+#: functions.php:128 inc/customizer/customizer.php:581
+msgid "Primary Two"
+msgstr ""
+
+#. %s: WordPress.
+#: template-parts/footer/site-info.php:23
+#, php-format
+msgid "Proudly powered by %s."
+msgstr ""
+
+#: template-parts/post/authorbox.php:23
+msgid "Published by"
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:153
+msgid "Read more"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/post/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:365
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/customizer/customizer.php:155
+msgid "regular"
+msgstr ""
+
+#: template-parts/post/relatedposts.php:35
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer/customizer.php:183
+msgid "round"
+msgstr ""
+
+#: inc/customizer/customizer.php:182 inc/customizer/customizer.php:206
+msgid "rounded"
+msgstr ""
+
+#: functions.php:90
+msgid "S"
+msgstr ""
+
+#: search.php:19
+msgid "Search Results for:"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:12
+msgid "See all recommended plugins"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:21
+msgid "See detailed documentation"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:10
+msgid "See the full documentation"
+msgstr ""
+
+#: inc/class-aino-nux-admin.php:84
+msgid "Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:376
+msgid "Shadow"
+msgstr ""
+
+#: inc/customizer/customizer.php:401
+msgid "Shadow Hover"
+msgstr ""
+
+#: inc/customizer/customizer.php:181
+msgid "sharp"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: functions.php:89
+msgid "Small"
+msgstr ""
+
+#: inc/customizer/customizer.php:382 inc/customizer/customizer.php:407
+msgid "small"
+msgstr ""
+
+#: functions.php:44
+msgid "Social Icons"
+msgstr ""
+
+#: template-parts/post/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/customizer/customizer.php:205
+msgid "square"
+msgstr ""
+
+#: inc/customizer/customizer.php:58
+msgid "Styles"
+msgstr ""
+
+#: searchform.php:23
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: functions.php:178
+msgid "Success"
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:367
+msgid "Support"
+msgstr ""
+
+#: functions.php:133
+msgid "Text One"
+msgstr ""
+
+#: functions.php:143 functions.php:148
+msgid "Text Three"
+msgstr ""
+
+#: functions.php:138
+msgid "Text Two"
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:357
+msgid ""
+"Thank you for installing Aino! Your theme is now installed and ready. Follow "
+"the first steps below to get started building your dream website."
+msgstr ""
+
+#. 1: a tag with theme URL, 2: closing a tag
+#: inc/welcome-screen/class-aino-welcome.php:148
+msgid ""
+"Thank you for installing the Aino theme! To help you get started quickly, we "
+"prepares some helpful information for you."
+msgstr ""
+
+#: inc/customizer/customizer.php:30
+msgid "Theme"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:5
+msgid "Theme Documentation"
+msgstr ""
+
+#. 1: The [datetime] attribute for the <time> tag. 2: Estimated reading time text, in minutes.
+#: inc/template-tags.php:146
+#, php-format
+msgctxt "Time to read"
+msgid "%s min read"
+msgid_plural "%s min read"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/welcome-screen/sections/getting-started.php:11
+msgid ""
+"To take full advantage of everything Aino has to offer, we receommend you to "
+"install a number of WordPress plugins."
+msgstr ""
+
+#: template-parts/navigation/navigation-main.php:11
+msgid "Top Menu"
+msgstr ""
+
+#: inc/customizer/customizer.php:49
+msgid "Typography"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:47
+msgid "Version:"
+msgstr ""
+
+#: template-parts/post/relatedposts.php:35
+msgid "View more"
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"We can&rsquo;t seem to find the page you&rsquo;re looking for. The link you "
+"clicked may be broken or the page may have been removed."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:7
+msgid ""
+"We prepared a detailed theme documentation for you including video tutorials,"
+" so that setting up Aino becomes as easy as it gets."
+msgstr ""
+
+#: inc/welcome-screen/class-aino-welcome.php:355
+msgid "Welcome to Aino "
+msgstr ""
+
+#: functions.php:188
+msgid "white"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:27
+msgid ""
+"With the help of the the WordPress Customizer, you can easily customize your "
+"Aino theme."
+msgstr ""
+
+#: functions.php:108
+msgid "XL"
+msgstr ""
+
+#: inc/template-tags.php:207
+msgid "Your comment is awaiting moderation."
+msgstr ""

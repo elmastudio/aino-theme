@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*
+Theme Name: Aino
+Theme URI: https://wpaino.com
+Author: Elmastudio
+Author URI: https://www.elmastudio.de/en/
+Description: Aino is a Gutenberg-ready WordPress theme.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aino
+Tags: one-column, two-column, three-column, featured-images, theme-options, custom-colors, custom-menu, editor-style, translation-ready, footer-widgets, full-width-template, blog
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Santize
+# Layout
+# Typography
+# Elements
+# Accessibility
+# Alignments
+# Clearings
+# Media
+# Site
+	## Header
+	## Hero
+	## Blog
+	## Post
+	## Page
+	## Pagination
+	## Footer
+# Widgets Default
+# Widgets Theme
+# Blocks Default
+--------------------------------------------------------------*/
+@import "mixins/mixins-master";
+@import "variables-site/variables-site";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "vendors/normalize";
+
+/*--------------------------------------------------------------
+# Santize
+--------------------------------------------------------------*/
+@import "vendors/sanitize";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/grid";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+ # Accessibility
+ --------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+ # Alignments
+ --------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+ # Clearings
+ --------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+ # Media
+ --------------------------------------------------------------*/
+ @import "media/media";
+
+ /*--------------------------------------------------------------
+	# Site
+	--------------------------------------------------------------*/
+ @import "site/site";
+
+ /*--------------------------------------------------------------
+	# Widgets Default
+	--------------------------------------------------------------*/
+ @import "site/widgets-default";
+
+ /*--------------------------------------------------------------
+	# Blocks Default
+	--------------------------------------------------------------*/
+ @import "blocks/blocks-default";

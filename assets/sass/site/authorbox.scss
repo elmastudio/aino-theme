@@ -1,0 +1,74 @@
+.authorbox-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: $spacing-mobile-9 0 0 0;
+	@include breakpoint(m) {
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: $spacing-desktop-9 0 0 0;
+	}
+}
+
+.authorbox-content {
+	text-align: center;
+	@include breakpoint(m) {
+		text-align: left;
+		flex: 3;
+	}
+}
+
+.authorbox-title {
+	padding: 0 0 $spacing-mobile-1;
+	@include breakpoint(m) {
+		padding: 0 0 $spacing-desktop-1;
+	}
+}
+
+.authorbox .author-name {
+	padding: 0 0 $spacing-2;
+}
+
+.authorbox-content span {
+	display: block;
+	color: $color__text_three;
+}
+
+.authorbox-content .author-bio {
+	margin: 0;
+	padding: $spacing-2 0 0 0;
+}
+
+/* Authorbox on Archive */
+.archive.author .author-name span {
+	padding-top: $spacing-1;
+}
+
+.archive.author .author-pic {
+	display: block;
+	width: $spacing-desktop-8;
+	padding-bottom: $spacing-2;
+	@include breakpoint(m) {
+		width: 160px;
+		margin-right: $spacing-desktop-6;
+		padding-bottom: 0;
+	}
+}
+
+.archive.author .author-pic img {
+	@include avatar-xl;
+}
+
+.archive.author .authorbox-content {
+	width: 100%;
+
+	@include breakpoint(m) {
+		width: calc(100% - 208px);
+		max-width: 480px;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+}

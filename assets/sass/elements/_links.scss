@@ -1,0 +1,178 @@
+a {
+	color: inherit;
+
+	&:active,
+	&:hover {
+		outline: 0;
+	}
+}
+
+/* Primary Text Links */
+.entry-content p a,
+.entry-content li a,
+.authorbox-content p a,
+.comment-content li a,
+.comment-content p a,
+.wp-caption-text a,
+cite a {
+	color: $color__text_two;
+	text-decoration: none;
+	box-shadow: inset 0 -0.06em 0 $color__text_two;
+	box-shadow: inset 0 -0.07em 0 $color__text_two;
+
+	&:hover {
+		color: $color__primary_one;
+		box-shadow: inset 0 -0.06em 0 $color__primary_one;
+		box-shadow: inset 0 -0.07em 0 $color__primary_one;
+	}
+}
+
+/* Secondary Text Links */
+.posts-container .hentry .entry-meta a,
+.entry-comments a,
+.posted-on a,
+.comment-reply-title #cancel-comment-reply-link {
+	color: $color__text_three;
+	fill: $color__text_three;
+
+}
+.wp-block-image figcaption a,
+.wp-block-audio figcaption a,
+.wp-block-embed figcaption a {
+	color: $color__text_three;
+	fill: $color__text_three;
+	box-shadow: inset 0 -0.06em 0 $color__text_three;
+	box-shadow: inset 0 -0.07em 0 $color__text_three;
+
+	&:hover {
+		color: $color__primary_one;
+		box-shadow: inset 0 -0.06em 0 $color__primary_one;
+		box-shadow: inset 0 -0.07em 0 $color__primary_one;
+	}
+}
+
+.site-title a,
+h2.entry-title a {
+	color: $color__text_one;
+	fill: $color__text_one;
+}
+
+.comment-list b.fn a,
+.main-navigation a,
+.single-post .entry-meta a:hover,
+.comment-list .comment-metadata a:hover,
+.comment-reply-title #cancel-comment-reply-link:hover,
+.logged-in-as a:hover {
+	color: $color__text_two;
+	fill: $color__text_two;
+}
+
+/* Primary Color Hovers */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.site-title a:hover,
+.single-post .byline a:hover,
+.single-post .navigation .nav-title .nav-subtitle:hover,
+.footer-widget-wrap a:hover {
+	color: $color__primary_one;
+	fill: $color__primary_one;
+}
+
+/* Category and Tag Links */
+.entry-cats a,
+.entry-tags a {
+	margin: 0 $spacing-xxs $spacing-xs;
+	padding: 2px $spacing-xs;
+	display: block;
+	@include font-body4;
+	@include border-radius-l;
+}
+
+.entry-cats a {
+	background: $primary_one_color_rgba_10;
+	color: $color__primary_one;
+
+	&:hover {
+		background: $color__primary_one;
+		color: $color__white;
+	}
+}
+
+.entry-tags a {
+	border: 1px solid $color__text_three;
+	color: $color__text_three;
+
+	&:hover {
+		color: $color__primary_one;
+	}
+}
+
+.btn-squared .entry-cats a,
+.btn-squared .entry-cats a {
+	@include border-radius-0;
+}
+
+/* Edit Link */
+.post-edit-link {
+	text-indent: -1000em;
+	display: block;
+	width: $spacing-desktop-6;
+	height: $spacing-desktop-6;
+	background: $color__primary_one;
+	border-radius: $border-radius-xl;
+	margin: $spacing-xxs auto 0;
+	box-shadow: 0 6px 20px 0 $primary_one_color_rgba_35;
+
+	.blog &,
+	.archive &,
+	.search-results & {
+		top: -24px;
+    	right: 24px;
+		position: absolute;
+	}
+
+	&:hover {
+		background: $color__primary_two;
+		box-shadow: none;
+	}
+}
+
+.post-edit-link {
+
+	position: relative;
+
+	.single-post &,
+	.page & {
+		@include breakpoint(m) {
+			top: 0;
+			right: 0;
+			position: absolute;
+		}
+	}
+}
+
+/* Link Transitions */
+.site-branding a,
+.main-navigation a,
+.site-footer .widget_mc4wp_form_widget a,
+.site-footer a,
+.social-header-nav .icon,
+.social-footer-nav .icon,
+.sd-social-icon .sd-content ul li[class*='share-'] a {
+	@include transition-default;
+}
+
+.entry-content .instagram-pics li a,
+.pagination a,
+.related-img,
+.widget .instagram-pics li a,
+.post-edit-link,
+.entry-link,
+.entry-link img,
+.navigation .nav-thumb {
+	@include transition-posthover;
+}

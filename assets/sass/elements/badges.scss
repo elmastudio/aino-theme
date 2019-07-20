@@ -1,0 +1,36 @@
+.badge-highlight {
+	position: absolute;
+	top: -12px;
+	left: 24px;
+	z-index: 1;
+	@include font-body5;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	background: $color__secondary_one;
+	color: $color__white;
+	padding: $spacing-1 $spacing-2;
+	display: inline-block;
+	border-radius: $border-radius-xl;
+}
+
+/* Post Author Badge */
+.bypostauthor .comment-author {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	.fn {
+		@include font-body4;
+	}
+
+	.author-badge {
+		@include font-body5;
+		font-weight: bold;
+		color: $color__white;
+		background: $color__secondary_one;
+		margin-left: $spacing-xxs;
+		padding: 2px 6px;
+		border-radius: $border-radius-xl;
+	}
+}

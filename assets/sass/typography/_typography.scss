@@ -1,0 +1,237 @@
+/* Body Font Styles */
+body,
+button,
+input,
+select,
+table,
+textarea,
+.search .page-header p,
+.textwidget p,
+.post-navigation .nav-title span,
+.entry-content .has-small-font-size {
+	@include font-body;
+	@include font-body3;
+	color: $color__text_two;
+}
+
+.posts-container .hentry .entry-footer,
+.hentry .entry-summary,
+.hentry .entry-header .entry-meta,
+.single-post .navigation a span.nav-subtitle,
+.widget ul li {
+	@include font-body4;
+}
+
+.hentry .entry-summary {
+
+	.blog-2-column & {
+		@include breakpoint(l) {
+			@include font-body3;
+		}
+	}
+
+	.blog-1-column & {
+		@include breakpoint(m) {
+			@include font-body2;
+		}
+	}
+}
+
+.entry-content p,
+.hentry ol,
+.hentry ul {
+	@include font-body2;
+}
+
+.entry-content .has-large-font-size,
+.entry-content .intro {
+	@include font-body1;
+}
+
+.comment-metadata,
+.comment-notes,
+.logged-in-as {
+	@include font-body5;
+	color: $color__text_three;
+}
+
+/* Heading Font Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p.site-title,
+.post-navigation .nav-title {
+	color: $color__text_one;
+	font-weight: bold;
+}
+
+.h-regular h1,
+.h-regular h2,
+.h-regular h3,
+.h-regular h4,
+.h-regular h5,
+.h-regular h6,
+.h-regular p.site-title,
+.h-regular.single-post .byline,
+.h-regular .entry-meta .author-name,
+.h-regular .entry-meta .entry-cats,
+.post-navigation .nav-title span {
+	font-weight: normal;
+}
+
+h1 {
+	@include font-h1;
+}
+
+h2 {
+	@include font-h2;
+}
+
+h3,
+.related .section-title,
+.comments-area .comments-title {
+	@include font-h3;
+}
+
+h4,
+h1.site-title,
+p.site-title {
+	@include font-h4;
+}
+
+.related-title,
+.comment-reply-title,
+.blog h2.entry-title,
+.blog-archive h2.entry-title,
+h5 {
+	@include font-h5;
+}
+
+.blog,
+.blog-archive {
+
+	&.blog-2-column h2.entry-title {
+		@include breakpoint(l) {
+			@include font-h4;
+		}
+	}
+
+	&.blog-1-column h2.entry-title {
+		@include breakpoint(m) {
+			@include font-h3;
+		}
+	}
+}
+
+h6,
+h2.widget-title {
+	@include font-h6;
+}
+
+/* Padding for Headlines in Content Area */
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin-top: $spacing-desktop-2;
+	margin-bottom: $spacing-desktop-2;
+}
+
+address,
+p {
+	margin: 0 0 $spacing-mobile-4;
+	@include breakpoint(m) {
+		margin: 0 0 $spacing-desktop-4;
+	}
+}
+
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.entry-content blockquote p,
+blockquote p {
+	margin: 0;
+}
+
+blockquote cite,
+.wp-block-pullquote cite {
+	text-align: left;
+	display: block;
+	padding: $spacing-2 0 0;
+	@include font-body4;
+	font-style: normal;
+	font-weight: bold;
+}
+
+code,
+kbd,
+tt,
+var {
+	@include font-code;
+}
+
+pre {
+	max-width: 100%;
+	overflow: auto;
+	padding: $spacing-mobile-4;
+	margin-bottom: $spacing-mobile-4;
+	border: solid 1px $color__border;
+	@include border-radius-l;
+	@include font-code;
+	@include shadow-card-a;
+	@include breakpoint(m) {
+		padding: $spacing-desktop-4;
+		margin-bottom: $spacing-desktop-4;
+	}
+}
+
+abbr,
+acronym {
+	text-decoration: none;
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+ins,
+mark {
+	background-color: rgba(63, 192, 224, .1);
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+.dropcap {
+	font-size: 98px;
+	font-weight: 300;
+	float: left;
+	padding: 0 10px 0 0;
+	line-height: 0.9;
+	color: $color__text_one;
+	@include breakpoint(m) {
+		font-size: 124px;
+		margin-left: -11px;
+		line-height: 0.79;
+	}
+}
+
+.wide-content {
+	@include breakpoint(xl) {
+		width: 1200px;
+		margin: 0 -256px;
+	}
+}

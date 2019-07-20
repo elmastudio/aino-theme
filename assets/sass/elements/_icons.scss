@@ -1,0 +1,102 @@
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+	text-align: center;
+	stroke-width: 0;
+	stroke: currentColor;
+	width: 24px;
+	height: 24px;
+	padding: 2px;
+}
+
+/* Social Icons */
+.menu-social-container .icon {
+	fill: $color__icon_one;
+	width: $spacing-3;
+	height: $spacing-3;
+}
+
+.menu-social-container ul li a:hover .icon {
+	fill: $color__icon_two;
+}
+
+/* Dropdown Icons - Main Menu */
+.main-navigation .icon {
+	display: none;
+	width: 22px;
+	height: 22px;
+	padding: 0;
+	margin-left: 2px;
+	margin-top: 0;
+	transition: transform 150ms ease-in-out;
+	transform-origin: center center;
+	fill: $color__icon_one;
+
+	@include breakpoint(l) {
+		display: inline;
+		position: relative;
+		right: auto;
+		top: auto;
+	}
+}
+
+.main-navigation .dropdown-toggle .icon {
+	display: inline !important;
+	fill: $color__icon_one;
+}
+
+.main-navigation .sub-menu .menu-item-has-children .icon {
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	@include breakpoint(l) {
+		display: inline-block;
+		position: absolute;
+		top: 0px;
+		right: 24px;
+		fill: $color__icon_one;
+		-webkit-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+		vertical-align: middle;
+	}
+}
+.main-navigation li.focus > a .icon,
+.main-navigation li:hover > a .icon,
+.main-navigation .sub-menu .menu-item-has-children.focus > a .icon,
+.main-navigation .sub-menu .menu-item-has-children:hover > a .icon {
+		fill: $color__primary_one;
+	}
+
+.main-navigation .dropdown-toggle.toggled-on .icon {
+	transform: rotate(0deg);
+}
+
+/* Edit Link Icon */
+.edit-link .icon {
+	position: absolute;
+	top: $spacing-s;
+	left: $spacing-s;
+	width: $spacing-3;
+	height: $spacing-3;
+	padding: 0;
+	fill: $color__white;
+}
+
+/* Search Form Icon */
+.search-icon {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: $spacing-desktop-5;
+	height: $spacing-desktop-5;
+	.icon {
+		width: $spacing-3;
+		height: $spacing-3;
+	}
+}

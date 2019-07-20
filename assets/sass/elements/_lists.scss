@@ -1,0 +1,50 @@
+
+ul, ol {
+	margin: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol ol {
+	list-style: lower-alpha;
+}
+
+#colophon ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li > ul, li > ol {
+	margin-bottom: 0;
+	margin-left: $spacing-mobile-3;
+	@include breakpoint(m) {
+		margin-left: $spacing-desktop-3;
+	}
+}
+
+.entry-content ul,
+.entry-content ol {
+	margin: 0 0 $spacing-mobile-5 $spacing-mobile-3;
+	@include breakpoint(m) {
+		margin: 0 0 $spacing-desktop-5 $spacing-desktop-3;
+	}
+}
+
+.entry-content ul li,
+.entry-content ol li {
+	margin-bottom: 0;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+.entry-content ol ul,
+.entry-content ul ol {
+	margin-bottom: 0;
+}

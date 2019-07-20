@@ -1,0 +1,239 @@
+/* Grid General */
+.col,
+.column,
+.row {
+	box-sizing: border-box;
+}
+
+.row:after,
+.row:before {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* Grid max widths */
+.archive .site-content,
+.blog .site-content,
+.container-standard,
+.error404 .site-content,
+.footer-wrap,
+.page .site-content,
+.related,
+.search .site-content,
+.single-post .site-content,
+.single-post .post-thumb,
+.single-post .post-navigation {
+	max-width: $website-width;
+	@include push--auto;
+}
+
+.single-post .site-content {
+	max-width: 100%;
+}
+
+.single-post .col,
+.single-post .entry-header,
+.page-template-default .entry-header,
+.page-template-default .col {
+	max-width: $col7;
+	@include push--auto;
+}
+
+/* 8-col grid length (max 784px)  */
+.page-header .page-title,
+.archive-description {
+	max-width: $content-width;
+}
+
+/* Grid Margins and Paddings */
+.archive .site-main,
+.search-results .site-main,
+.related-container,
+.single-post .post-navigation,
+.footer-widget-wrap {
+	padding-left: $grid-margins-s;
+	padding-right: $grid-margins-s;
+	@include breakpoint(xs) {
+		padding-left: $grid-margins-l;
+		padding-right: $grid-margins-l;
+	}
+	@include breakpoint(s) {
+		padding-left: $grid-margins-m;
+		padding-right: $grid-margins-m;
+	}
+	@include breakpoint(m) {
+		padding-left: $grid-margins-s;
+		padding-right: $grid-margins-s;
+	}
+	@include breakpoint(l) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.side-widgets {
+	padding-left: $grid-margins-s;
+	padding-right: $grid-margins-s;
+	@include breakpoint(xs) {
+		padding-left: $grid-margins-l;
+		padding-right: $grid-margins-l;
+	}
+	@include breakpoint(m) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@include breakpoint(l) {
+		padding-left: $grid-margins-s;
+		padding-right: $grid-margins-s;
+	}
+}
+
+.footer-menu-wrap,
+.site-info,
+.social-footer-nav,
+.blog-archive .page-header,
+.related .section-title {
+	margin-left: $grid-margins-s;
+	margin-right: $grid-margins-s;
+	@include breakpoint(xs) {
+		margin-left: $grid-margins-l;
+		margin-right: $grid-margins-l;
+	}
+	@include breakpoint(m) {
+		margin-left: $grid-margins-l;
+		margin-right: $grid-margins-l;
+	}
+	@include breakpoint(xl) {
+		margin-left: $grid-margins-s;
+		margin-right: $grid-margins-s;
+	}
+}
+
+.page-template-default .entry-header,
+.page-template-default .entry-content,
+.fullwidth-page .entry-header,
+.fullwidth-page .entry-content,
+.single-post .hentry .entry-header,
+.single-post .hentry .entry-content,
+.single-post .hentry .post-thumb,
+.single-post .hentry .entry-footer,
+.search-no-results .entry-content,
+.single-post .comments-area {
+	padding-left: $grid-margins-s;
+	padding-right: $grid-margins-s;
+	@include breakpoint(xs) {
+		padding-left: $grid-margins-l;
+		padding-right: $grid-margins-l;
+	}
+	@include breakpoint(l) {
+		padding-left: $grid-margins-s;
+		padding-right: $grid-margins-s;
+	}
+}
+
+.single-post .hentry .entry-content,
+.single-post .comments-area,
+.single-post .hentry .entry-footer {
+	@include breakpoint(m) {
+		padding-left: $grid-margins-s;
+		padding-right: $grid-margins-s;
+	}
+}
+
+
+/* Primary + Secondary Content Areas */
+.side-widgets {
+	padding-bottom: $spacing-mobile-6;
+	max-width: $content-width;
+	@include push--auto;
+	@include breakpoint(m) {
+		padding-bottom: $spacing-desktop-6;
+	}
+}
+
+
+/* Grid Columns */
+.posts-container,
+.single-post .nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.single-post .nav-links {
+	@include breakpoint(s) {
+		flex-wrap: nowrap;
+	}
+}
+
+.col,
+.posts-container .type-page,
+.posts-container .type-post {
+	position: relative;
+}
+
+/* 1-Column */
+.blog-1-column .posts-container .type-page,
+.blog-1-column .posts-container .type-post,
+.footer-1-column .footer-widget {
+	width: 100%;
+	flex-grow: 0;
+	flex-basis: 100%; // 1-column on mobile
+	clear: both;
+	float: none;
+}
+
+.blog-1-column .posts-container .hentry {
+	width: 100%;
+	float: none;
+}
+
+/* 2-Columns */
+.blog-2-column .posts-container .hentry,
+.posts-container .hentry,
+.s6,
+.single-post .related-post,
+.single-post .navigation .next,
+.post-navigation .nav-next,
+.single-post .navigation .prev,
+.post-navigation .nav-previous {
+	width: 100%; // 1-column on mobile
+	flex-grow: 0;
+	@include breakpoint(s) {
+		flex-basis: calc(50% - 32px);
+		margin-left: $spacing-mobile-2;
+		margin-right: $spacing-mobile-2;
+	}
+	@include breakpoint(m) {
+		flex-basis: calc(50% - 48px);
+		margin-left: $spacing-desktop-3;
+		margin-right: $spacing-desktop-3;
+	}
+}
+
+/* 3-Columns */
+.blog-3-column .posts-container .hentry,
+.header-infobar .col,
+.s4,
+.single-post .related-post {
+	width: 100%;
+	flex-grow: 0;
+	@include breakpoint(s) {
+		flex-basis: calc(50% - 32px);
+		margin-left: $spacing-2;
+		margin-right: $spacing-2;
+	}
+	@include breakpoint(m) {
+		flex-basis: calc(50% - 48px);
+		margin-left: $spacing-3;
+		margin-right: $spacing-3;
+	}
+	@include breakpoint(l) {
+		flex-basis: calc(33.333% - 48px);
+	}
+}

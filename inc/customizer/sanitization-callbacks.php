@@ -1,0 +1,172 @@
+<?php
+/**
+ * Customizer: Sanitization Callbacks
+ *
+ * This file demonstrates how to define sanitization callback functions for various data types.
+ *
+ * @package Aino
+ * @since Aino 0.0.1
+ */
+
+/**
+ * Checkbox sanitization callback example.
+ *
+ * @param bool $checked Whether the checkbox is checked.
+ * @return bool Whether the checkbox is checked.
+ */
+function aino_sanitize_checkbox( $checked ) {
+	// Boolean check.
+	return ( ( isset( $checked ) && true === $checked ) ? true : false );
+}
+
+/**
+ * Sanitize Blog Layout
+ *
+ * @param string $choice defines the number of columns in the blog layout.
+ *
+ * @return string
+ */
+function sanitize_blog_columns( $choice ) {
+	$valid = array(
+		'onecolumn',
+		'twocolumn',
+		'threecolumn',
+	);
+
+	if ( in_array( $choice, $valid, true ) ) {
+		return $choice;
+	}
+
+	return 'threecolumn';
+}
+
+/**
+ * Sanitize Headline Font Weight
+ *
+ * @param string $choice Whether headings font has font-weight regular or bold.
+ *
+ * @return string
+ */
+function sanitize_headline_font_weight( $choice ) {
+	$valid = array(
+		'regular',
+		'bold',
+	);
+
+	if ( in_array( $choice, $valid, true ) ) {
+		return $choice;
+	}
+
+	return 'regular';
+}
+
+/**
+ * Sanitize Shapes
+ *
+ * @param string $choice Whether elements have a sharp, smooth or round border-radius.
+ *
+ * @return string
+ */
+function sanitize_shapes( $choice ) {
+	$valid = array(
+		'squared',
+		'smooth',
+		'round',
+	);
+
+	if ( in_array( $choice, $valid, true ) ) {
+		return $choice;
+	}
+
+	return 'smooth';
+}
+
+/**
+ * Sanitize Numbers.
+ *
+ * @param integer              $number Check if number is a non-decimal number.
+ * @param WP_Customize_Setting $setting Setting instance.
+ *
+ * @return integer
+ */
+function sanitize_number_absint( $number, $setting ) {
+	// Ensure $number is an absolute integer (whole number, zero or greater).
+	$number = absint( $number );
+
+	// If the input is an absolute integer, return it; otherwise, return the default.
+	return ( $number ? $number : $setting->default );
+}
+
+/**
+ * Sanitize Blog Cards Hover Animation
+ *
+ * @param string $choice Defines blog card hover animation.
+ *
+ * @return string
+ */
+function sanitize_blogcards_animation( $choice ) {
+	$valid = array(
+		'cardhover_zoom',
+		'cardhover_moveup',
+		'cardhover_none',
+	);
+
+	if ( in_array( $choice, $valid, true ) ) {
+		return $choice;
+	}
+
+	return 'cardhover_zoom';
+}
+
+/**
+ * Sanitize Border Radius
+ *
+ * @param string $choice Defines border radius.
+ *
+ * @return string
+ */
+function sanitize_borderradius( $choice ) {
+	$valid = array(
+		'radius-none',
+		'radius-s',
+		'radius-m',
+		'radius-l',
+	);
+
+	if ( in_array( $choice, $valid, true ) ) {
+		return $choice;
+	}
+
+	return 'radius-none';
+}
+
+/**
+ * Sanitize Shadows
+ *
+ * @param string $choice Defines the shadow options.
+ *
+ * @return string
+ */
+function sanitize_shadow( $choice ) {
+	$valid = array(
+		'shadow-none',
+		'shadow-a',
+		'shadow-b',
+		'shadow-c',
+		'shadow-d',
+	);
+
+	if ( in_array( $choice, $valid, true ) ) {
+		return $choice;
+	}
+
+	return 'shadow-a';
+}
+
+/**
+ * Bind JS handlers to instantly live-preview changes.
+ */
+function aino_customize_preview_js() {
+	wp_enqueue_script( 'aino_customizer', get_theme_file_uri( '/assets/js/customizer.js' ), array( 'customize-preview' ), '1.0', true );
+}
+add_action( 'customize_preview_init', 'aino_customize_preview_js' );

@@ -1,0 +1,94 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include btn;
+	@include btn-l;
+	border-radius: $border-radius-s;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+	@include btn-primary;
+}
+
+button:focus,
+button:active,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	outline: none;
+	box-shadow: none;
+}
+
+/* Button Styles */
+a.btn-primary,
+.btn-primary a {
+	@include btn;
+	@include btn-primary;
+}
+
+a.btn-outline,
+.btn-outline a {
+	@include btn;
+	@include btn-outline;
+}
+
+.btn-naked,
+.btn-naked a {
+	@include btn-naked;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* Button Sizes */
+.btn-l {
+	@include btn-l;
+}
+
+.btn-m {
+	@include btn-m;
+}
+
+.btn-s {
+	@include btn-s;
+}
+
+.header-cta-wrap {
+
+	a {
+		@include btn-s;
+	}
+}
+
+/* Button Styles (via Customizer Settings) */
+.btn,
+input[type="submit"],
+a.btn-primary,
+.btn-primary a,
+a.btn-outline,
+.btn-outline a {
+	@include border-radius-s;
+}
+
+.btn-squared .btn,
+.btn-squared input[type="submit"],
+.btn-squared a.btn-primary,
+.btn-squared .btn-primary a,
+.btn-squared a.btn-outline,
+.btn-squared .btn-outline a {
+	@include border-radius-0;
+}
+
+.btn-round .btn,
+.btn-round input[type="submit"],
+.btn-round a.btn-primary,
+.btn-round .btn-primary a,
+.btn-round a.btn-outline,
+.btn-round .btn-outline a {
+	border-radius: 6.25em;
+}

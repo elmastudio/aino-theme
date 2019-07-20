@@ -1,0 +1,158 @@
+/* Avatar Hovers */
+.author-avatar .author-avatar-link,
+.author-avatar,
+.author-pic-link {
+	display: block;
+}
+
+.author-avatar {
+	position: relative;
+}
+
+.author-avatar img {
+	@include avatar-m;
+
+	.entry-footer & {
+		@include avatar-s;
+	}
+}
+
+/* Blog Posts Footer */
+.entry-footer .author-avatar {
+	margin-right: 12px;
+}
+
+/* Single Post Author */
+.single-post .author-avatar {
+	margin: 0 auto;
+	padding: 0 0 $spacing-xxs;
+	display: inline-block;
+}
+
+/* Comments */
+.avatar-content-wrap {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.comment-avatar {
+	flex-basis: 40px;
+	@include avatar-s;
+	border-radius: 50%;
+
+	.children & {
+		flex-basis: 24px;
+		@include avatar-xs;
+	}
+
+	img {
+		border-radius: 50%;
+	}
+}
+
+.comment-author .avatar span,
+.comment-author .avatar {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	@include avatar-s;
+	margin: 0 $spacing-s 0 0;
+}
+
+.comment-list .children .avatar {
+	@include avatar-xs;
+}
+
+/* Authorbox */
+.author-pic-link {
+	position: relative;
+	@include avatar-l;
+	line-height: 0;
+	margin: 0 auto $spacing-2;
+
+	@include breakpoint(m) {
+		margin: 0 $spacing-3 0 0;
+	}
+
+	img {
+		display: block;
+		position: relative;
+		@include avatar-l;
+	}
+
+	.archive &,
+	.archive & img {
+		@include avatar-xl;
+	}
+
+	.archive & {
+		@include breakpoint(m) {
+			margin-right: $spacing-desktop-5;
+		}
+	}
+}
+
+/* Avatar Border Radius */
+.author-pic-link,
+.comment-author .avatar,
+.author-pic-link img,
+.author-avatar img {
+	border-radius: 50%;
+}
+
+.authorbox-wrap .author-pic-link:after,
+.comment-avatar:after,
+.author-avatar-link:after,
+.entry-footer .author-avatar:after {
+	border-radius: 50%;
+	bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.authorbox-wrap .author-pic-link:after {
+	@include avatar-l;
+
+	.archive & {
+		@include avatar-xl;
+	}
+}
+
+.comment-avatar:after {
+	@include avatar-s;
+	.children & {
+		@include avatar-xs;
+	}
+}
+
+.author-avatar-link:after {
+	@include avatar-m;
+}
+
+.authorbox-wrap a.author-pic-link,
+a.author-avatar-link {
+
+	@include transition-default;
+
+	&:hover {
+		@include avatar-transition;
+		@include img-bright;
+	}
+
+	&:after {
+		box-shadow: 0 0 0 -1px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0 0 0 -1px rgba(0, 0, 0, 0.4);
+		@include transition-default;
+	}
+
+	&:hover::after {
+		box-shadow: 0 16px 48px -4px rgba(0, 0, 0, 0.15);
+		-webkit-box-shadow: 0 16px 48px -4px rgba(0, 0, 0, 0.15);
+	}
+}

@@ -1,0 +1,208 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 1px solid $color__border;
+	height: $spacing-desktop-7;
+	padding: 0 $spacing-3;
+	outline: none;
+	@include input-placeholder {
+		color: $color__text_three;
+	}
+}
+
+textarea {
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid $color__border;
+	padding: $spacing-2 $spacing-3;
+	outline: none;
+	@include input-placeholder {
+		color: $color__text_one
+	}
+}
+
+/* Form Focus State */
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="url"]:focus, input[type="password"]:focus,
+input[type="search"]:focus, input[type="number"]:focus,
+input[type="tel"]:focus, input[type="range"]:focus,
+input[type="date"]:focus, input[type="month"]:focus,
+input[type="week"]:focus, input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus, textarea:focus,
+input[type="text"]:active, input[type="email"]:active,
+input[type="url"]:active, input[type="password"]:active,
+input[type="search"]:active, input[type="number"]:active,
+input[type="tel"]:active, input[type="range"]:active,
+input[type="date"]:active, input[type="month"]:active,
+input[type="week"]:active, input[type="time"]:active,
+input[type="datetime"]:active,
+input[type="datetime-local"]:active,
+input[type="color"]:active, textarea:active {
+	border-color: transparent;
+	outline: 0;
+	box-shadow: 0 0 0 3px $color__primary_one;
+}
+
+.color-notice,
+label.color-notice span {
+	@include color-notice;
+}
+
+.comment-respond textarea {
+		height: 150px;
+}
+
+form p {
+	margin: 0 0 $spacing-3;
+	@include breakpoint(m) {
+		margin: 0 0 $spacing-3;
+	}
+}
+
+form .comment-form-cookies-consent {
+	margin: 0;
+	padding: $spacing-3 0 0 0;
+	clear: both;
+}
+
+form .comment-form-cookies-consent label {
+	display: inline;
+	padding-left: 12px;
+}
+
+form p.comment-form-comment {
+	margin: 0;
+	line-height: 0;
+}
+
+form label {
+	display: block;
+	padding: 0 0 $spacing-xs;
+	@include font-label;
+}
+
+label .required {
+	@include font-label;
+}
+
+select {
+	background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+	border: 1px solid $color__border;
+	background-repeat:no-repeat;
+	background-position: right 14px top 21px;
+	background-size: 12px 12px;
+	padding: 15px 40px 15px 15px;
+	border-radius: 0;
+	-webkit-appearance: none;
+	width: 100%;
+}
+
+/* Search Form */
+.searchform-wrap,
+.form-wrap {
+	position: relative;
+	display: block;
+	clear: both;
+	max-width: $col5-nopadding;
+}
+
+.entry-content .search-form,
+.widget_search .search-form {
+	position: relative;
+}
+
+.entry-content form label,
+.widget_search form label {
+	padding: 0;
+}
+
+.widget_search input[type="search"],
+.entry-content input[type="search"] {
+	width: calc(100% - 120px);
+	padding: 0 0 0 12px;
+	height: $spacing-desktop-7;
+	line-height: 1;
+	box-sizing: border-box;
+	border: 1px solid $color__border;
+}
+
+.widget_search input[type="search"]:active,
+.entry-content input[type="search"]:active,
+.widget_search input[type="search"]:focus,
+.entry-content input[type="search"]:focus {
+	box-shadow: none;
+	border: 1px solid $color__notification;
+	caret-color: $color__notification;
+}
+
+.entry-content label .search-icon,
+.widget_search label .search-icon {
+	display: none;
+}
+
+.entry-content .search-submit,
+.widget_search .search-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: $spacing-desktop-7;
+	text-align: center;
+	padding: 0;
+	display: inline-block;
+	@include btn-primary;
+}
+
+.entry-content .search-submit span.search-icon,
+.widget_search .search-submit span.search-icon {
+	width: 120px;
+	height: $spacing-desktop-7;
+	padding: 16px 0 0;
+}
+
+.entry-content .search-submit .icon,
+.widget_search .search-submit .icon {
+	fill: $color__white;
+}
+
+/* Form Styles (via Customizer Settings) */
+input,
+textarea,
+select {
+	@include border-radius-s;
+}
+
+.form-squared input,
+.form-squared textarea,
+.form-squared select,
+.form-squared .search-header .search-field {
+	@include border-radius-0;
+}
+
+.form-round input,
+.form-round textarea,
+.form-round select,
+.form-round .search-header .search-field {
+	border-radius: 6.25em;
+}
+
+.form-round textarea {
+	@include border-radius-m;
+}

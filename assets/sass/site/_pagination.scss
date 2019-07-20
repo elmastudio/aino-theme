@@ -1,0 +1,172 @@
+/* Pagination - Blog */
+.blog .site-content,
+.blog-archive .site-content {
+	padding-bottom:  $spacing-desktop-9;
+}
+
+.site-main .navigation,
+.site-main .post-navigation {
+
+	@include font-body3;
+}
+
+.blog .site-main .navigation,
+.blog-archive .site-main .navigation {
+
+	@include breakpoint(s) {
+		margin-left: $spacing-2;
+		margin-right: $spacing-2;
+	}
+
+	@include breakpoint(m) {
+		margin-left: $spacing-3;
+		margin-right: $spacing-3;
+	}
+}
+
+.blog .site-main .navigation .nav-links,
+.blog-archive .site-main .navigation .nav-links {
+	margin-top: $spacing-mobile-6;
+
+	@include breakpoint(m) {
+		margin-top: $spacing-desktop-6;
+	}
+}
+
+.blog .nav-links,
+.archive .nav-links {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination .page-numbers,
+.pagination .current,
+.pagination .dots {
+	display: none;
+	text-align: center;
+	margin: 0 $spacing-xs;
+	padding: $spacing-s 0 0;
+	width: $spacing-desktop-6;
+	height: $spacing-desktop-6;
+
+	@include breakpoint(m) {
+		display: block;
+	}
+}
+
+.pagination .next.page-numbers,
+.pagination .prev.page-numbers {
+	display: block;
+}
+
+.blog .site-main .navigation .prev,
+.blog .site-main .navigation .next,
+.blog-archive .site-main .navigation .prev,
+.blog-archive .site-main .navigation .next {
+	margin: 0;
+	width: $spacing-desktop-6;
+	height: $spacing-desktop-6;
+	background: transparent;
+	position: absolute;
+	top: 0;
+}
+
+.pagination .current,
+.site-main .navigation .prev:hover,
+.site-main .navigation .next:hover,
+.pagination a.page-numbers:hover {
+	color: $color__primary_one;
+	background: $primary_one_color_rgba_10;
+}
+
+
+.pagination a.page-numbers:hover .icon {
+	fill: $color__primary_one;
+}
+
+.pagination .prev.page-numbers,
+.blog-archive .site-main .navigation .prev {
+	left: 0;
+}
+
+.pagination .next.page-numbers,
+.blog-archive .site-main .navigation .next {
+	right: 0;
+}
+
+.site-main .navigation .prev .icon-arrow-left,
+.site-main .navigation .next .icon-arrow-right {
+	position: absolute;
+	left: $spacing-s;
+	top: $spacing-s;
+}
+
+.blog .site-main .navigation .meta-nav,
+.blog-archive .site-main .navigation .meta-nav {
+	display: none;
+}
+
+/* Pagination - Single Post */
+.single-post .nav-links {
+	padding: 0 0 $spacing-mobile-9;
+	@include breakpoint(m) {
+		padding: 0 0 $spacing-desktop-9;
+	}
+}
+
+.post-navigation {
+
+	.nav-previous,
+	.nav-next {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-next {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+
+	.nav-thumb {
+		flex-basis: auto;
+		flex-shrink: 0;
+		width: $spacing-desktop-9;
+		height: $spacing-desktop-9;
+		margin: 0 $spacing-2 0 0;
+	}
+
+	.nav-next .nav-thumb {
+		margin: 0 0 0 $spacing-2;
+	}
+
+	.nav-title {
+		display: block;
+		width: 360px;
+	}
+
+	.nav-next .nav-title {
+		text-align: right;
+	}
+
+	.nav-title span {
+		display: block;
+		color: $color__text_three;
+	}
+}
+
+.page-numbers {
+ @include border-radius-100;
+}
+
+/* Infinite Scroll */
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
+/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}

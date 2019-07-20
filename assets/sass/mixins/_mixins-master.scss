@@ -1,0 +1,414 @@
+/*--------------------------------------------------------------
+	* Responsive Breakpoints
+
+		 @include breakpoint(600)	{ } xs
+		 @include breakpoint(720)	{ } s
+		 @include breakpoint(840)	{ } m
+		 @include breakpoint(1200)	{ } l
+		 @include breakpoint(1296)	{ } xl
+		 @include breakpoint(1600)	{ } xxl
+	* ------------------------------------------------------------ */
+@mixin breakpoint($class) {
+	@if $class == xs {
+		@media (min-width: 37.500em) {
+			@content;
+		}
+	} @else
+	if $class == s {
+		@media (min-width: 45.000em) {
+			@content;
+		}
+	} @else
+	if $class == m {
+		@media (min-width: 52.500em) {
+			@content;
+		}
+	} @else
+	if $class == l {
+		@media (min-width: 75.000em) {
+			@content;
+		}
+	} @else
+	if $class == xl {
+		@media (min-width: 81.000em) {
+			@content;
+		}
+	} @else
+	if $class == xxl {
+		@media (min-width: 100.000em) {
+			@content;
+		}
+	} @else {
+		@warn "Breakpoint mixin supports: xs, s, m, l, xl, xxl";
+	}
+}
+
+// Font Families
+@mixin font-body {
+	font-family: $font__body;
+}
+
+// Font Weights
+@mixin font-light {
+	font-weight: 300;
+}
+@mixin font-regular {
+	font-weight: normal;
+}
+@mixin font-medium {
+	font-weight: 500;
+}
+@mixin font-bold {
+	font-weight: bold;
+}
+
+// Heading Fonts
+@mixin font-display {
+	font-size: 66px;
+	line-height: 1.09;
+}
+@mixin font-h1 {
+	font-size: 40px;
+	line-height: 1.2;
+	@include breakpoint(m) {
+		font-size: 55px;
+		line-height: 1.16;
+	}
+}
+@mixin font-h2 {
+	font-size: 32px;
+	line-height: 1.25;
+	@include breakpoint(m) {
+		font-size: 46px;
+		line-height: 1.22;
+	}
+}
+@mixin font-h3 {
+	font-size: 28px;
+	line-height: 1.14;
+	@include breakpoint(m) {
+		font-size: 32px;
+		line-height: 1.25;
+	}
+}
+@mixin font-h4 {
+	font-size: 24px;
+	line-height: 1.17;
+	@include breakpoint(m) {
+		font-size: 27px;
+		line-height: 1.19;
+	}
+}
+@mixin font-h5 {
+	font-size: 21px;
+	line-height: 24px;
+	@include breakpoint(m) {
+		font-size: 21px;
+		line-height: 24px;
+	}
+}
+@mixin font-h6 {
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+// Body Fonts
+@mixin font-body1 {
+	font-size: 27px;
+  	line-height: 1.48;
+}
+@mixin font-body2 {
+	font-size: 19px;
+  	line-height: 1.68;
+}
+@mixin font-body3 {
+	font-size: 16px;
+  	line-height: 1.5;
+}
+
+@mixin font-body4 {
+	font-size: 14px;
+  	line-height: 1.43;
+}
+
+@mixin font-body5 {
+	font-size: 12px;
+	line-height: 1.33;
+}
+
+@mixin font-label {
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: $color__text_three;
+}
+
+@mixin font-code {
+	font-family: $font__code;
+	font-size: 14px;
+	line-height: 1.43;
+	color: $color__code_two;
+}
+
+// Buttons
+@mixin btn {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	@include transition-default;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
+	@include breakpoint(xs) {
+		width: auto;
+	}
+}
+
+@mixin btn-primary {
+	color: $color__white;
+	fill: $color__white;
+	background-color: $color__primary_one;
+	box-shadow: 0 10px 30px -4px $primary_one_color_rgba_35;
+
+	&:hover {
+		background-color: $color__primary_two;
+		box-shadow: 0 10px 30px -4px transparent;
+	}
+}
+
+@mixin btn-outline {
+	color: $color__primary_one;
+	fill: $color__primary_one;
+	background-color: transparent;
+	border: 1px solid $color__primary_one;
+
+	&:hover {
+		color: $color__primary_one;
+		fill: $color__primary_one;
+		background-color: $color__primary_one;
+	}
+}
+
+@mixin btn-naked {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: $color__text_two;
+	fill: $color__text_two;
+
+	&:hover {
+		color: $color__primary_one;
+		fill: $color__primary_one;
+	}
+}
+
+// Button sizes
+@mixin btn-s {
+	padding-top: $spacing-xs;
+	padding-bottom: $spacing-xs;
+	height: $spacing-desktop-5;
+
+	@include breakpoint(xs) {
+		padding-left: $spacing-desktop-4;
+		padding-right: $spacing-desktop-4;
+	}
+}
+
+@mixin btn-m {
+	padding-top: $spacing-s;
+	padding-bottom: $spacing-s;
+	height: $spacing-desktop-6;
+
+	@include breakpoint(xs) {
+		padding-left: $spacing-desktop-5;
+		padding-right: $spacing-desktop-5;
+	}
+}
+
+@mixin btn-l {
+	padding-top: $spacing-2;
+	padding-bottom: $spacing-2;
+	height: $spacing-desktop-7;
+	width: 100%;
+
+	@include breakpoint(xs) {
+		width: auto;
+		padding-left: $spacing-desktop-6;
+		padding-right: $spacing-desktop-6;
+	}
+}
+
+// Avatar Sizes
+@mixin avatar-xl {
+	width: 160px;
+	height: 160px;
+}
+
+@mixin avatar-l {
+	width: 96px;
+	height: 96px;
+}
+
+@mixin avatar-m {
+	width: 56px;
+	height: 56px;
+}
+
+@mixin avatar-s {
+	width: 40px;
+	height: 40px;
+	min-width: 40px;
+}
+
+@mixin avatar-xs {
+	width: 24px;
+	height: 24px;
+	min-width: 24px;
+}
+
+// Clearfix
+@mixin clearfix {
+	&:after,
+	&:before {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+// Placeholders
+@mixin input-placeholder {
+	&.placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+// @include push--auto
+@mixin push--auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+
+// Mixin grid padding
+@mixin col-padding {
+	padding-left: $spacing-mobile-3;
+	padding-right: $spacing-mobile-3;
+	@include breakpoint(m) {
+		padding-left: $spacing-desktop-3;
+		padding-right: $spacing-desktop-3;
+	}
+}
+
+// Special Colors
+@mixin color-notice {
+	color: $color__notification;
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+	border-radius: $radius;
+}
+@mixin hide-rounded {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+@mixin border-radius-0 {
+		border-radius: 0;
+}
+@mixin border-radius-xs {
+		border-radius: $border-radius-xs;
+}
+@mixin border-radius-s {
+		border-radius: $border-radius-s;
+}
+@mixin border-radius-m {
+		border-radius: $border-radius-m;
+}
+@mixin border-radius-l {
+		border-radius: $border-radius-l;
+}
+@mixin border-radius-100 {
+		border-radius: 50%;
+}
+
+// Transitions
+@mixin transition-default {
+	-webkit-transition: all 0.2s ease;
+	transition        : all 0.2s ease;
+}
+@mixin transition-posthover {
+	-webkit-transition: all 0.2s ease-in-out;
+	transition				: all 0.2s ease-in-out;
+}
+
+@mixin avatar-transition {
+	-webkit-transform: translate(0px, -2px);
+	transform: translate(0px, -2px);
+}
+
+// Shadows
+@mixin shadow-card-a {
+	box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadow-card-b {
+	box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadow-soft {
+	box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15);
+}
+
+// Disable Shadow
+@mixin shadow-none {
+	box-shadow        : none;
+	-webkit-box-shadow: none;
+}
+
+// Animation Effects
+@mixin scale {
+	-webkit-transform: scale(1.01);
+	transform        : scale(1.01);
+}
+
+@mixin img-bright {
+	-webkit-filter: brightness(110%);
+	filter: brightness(110%);
+}
+
+// Retina Images
+@mixin image-2x($image, $width, $height) {
+	@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+		background-image: url($image);
+		background-size: $width $height;
+	}
+}

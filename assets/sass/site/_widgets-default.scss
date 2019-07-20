@@ -1,0 +1,133 @@
+/* Widget Areas */
+.header-menu-widget-area {
+	display: block;
+	padding: $spacing-mobile-2 0 0;
+	@include breakpoint(m) {
+		padding: $spacing-desktop-2 0 0;
+	}
+}
+
+.header-menu-widget-area .textwidget p {
+	margin: 0;
+}
+
+.widget-title {
+	padding: 0 0 $spacing-3;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+.textwidget p:last-child {
+	margin-bottom: 0;
+}
+
+.widget ul li {
+	list-style: none;
+	padding: 0 0 $spacing-2;
+}
+
+.widget ul ul li:last-child {
+	padding: 0;
+}
+
+#colophon .sub-menu {
+	padding: $spacing-2 0 0 0;
+}
+
+/* Archive + Category + Pages + Nav Menu Widget */
+.widget_archive select,
+.widget_categories select {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	background-color: #fafafa;
+	background-image: none;
+	border: 1px solid $color__border;
+	border-color: $color__border;
+	@include border-radius(0);
+	box-shadow: none;
+}
+
+.widget-area-default .widget_categories ul.children,
+.widget-area-default .widget_nav_menu .sub-menu,
+.widget-area-default .widget_pages ul.children {
+	padding: $spacing-mobile-2 0 0 $spacing-mobile-3;
+	@include breakpoint(m) {
+		padding: $spacing-desktop-2 0 0 $spacing-desktop-3;
+	}
+}
+/* Calendar Widget */
+#wp-calendar caption {
+	font-weight: bold;
+}
+
+.widget_calendar th {
+	text-align: center;
+}
+
+.widget_calendar tfoot td {
+	border: 0;
+}
+
+/* Widgets via external pluginss */
+/* WP Instagram Widget */
+.instagram-pics {
+	display: block;
+	float: none;
+}
+
+.entry-content .instagram-pics li:last-child,
+.entry-content .instagram-pics li:nth-last-child(2),
+.entry-content .instagram-pics li:nth-last-child(3) {
+	margin: 0;
+}
+
+.instagram-pics li {
+	float: left;
+	display: block;
+	margin: 0;
+}
+
+.entry-content .instagram-pics li {
+	width: 33.333%;
+	padding: 0 $spacing-3 $spacing-3;
+	@include breakpoint(xs) {
+		padding-bottom: $spacing-desktop-6;
+	}
+}
+
+.footer-widget .instagram-pics li,
+#secondary .instagram-pics li {
+	width: 50%;
+	padding: 0 $spacing-1 $spacing-1;
+	@include breakpoint(xs) {
+		padding-bottom: $spacing-desktop-2;
+	}
+}
+
+.entry-content .instagram-pics li a,
+.widget .instagram-pics li a {
+	display: block;
+	line-height: 0;
+	border-bottom: none;
+}
+
+.null-instagram-feed p.clear {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.null-instagram-feed p.clear a {
+	display: none;
+}
+
+/* Jetpack Widgets */
+.widget_flickr .flickr-images {
+	text-align: left;
+	padding-bottom: $spacing-1;
+}
