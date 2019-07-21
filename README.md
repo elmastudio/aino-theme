@@ -10,5 +10,9 @@ __License:__ GPLv2 or later
 __License URI:__ http://www.gnu.org/licenses/gpl-2.0.html   
 
 ## Changelog
+
+### 0.0.2
+Bugfix theme installation (21-07-2019)
+
 ### 0.0.1
 Initial release (20-07-2019)
