@@ -14,11 +14,14 @@ Theme desc.
 
 == Changelog ==
 
+= 0.0.2 =
+* Bugfix theme installation.
+
 = 0.0.1 =
 * Initial Release
 
 == Resources ==
-WPGULP
 * normalize.css, © 2012-2019 Nicolas Gallagher and Jonathan Neal, MIT
 * Material Design Icons, Apache License 2.0
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal
+* WPGulp, MIT © Ahmad Awais

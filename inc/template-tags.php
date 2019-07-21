@@ -114,25 +114,17 @@ if ( ! function_exists( 'aino_edit_link' ) ) :
 	 * Returns an accessibility-friendly link to edit a post or page.
 	 */
 	function aino_edit_link() {
+
+		$editlink = sprintf(
+			esc_html_x( 'Edit Post', 'aino' ) . '<span class="edit-link">' . aino_get_svg( array( 'icon' => 'baseline-edit-24px' ) ) . '</span><span class="screen-reader-text">' . get_the_title() . '</span>'
+		);
+
 		// Edit post link.
 		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers. */
-					__( 'Edit <span class="screen-reader-text">%s</span>%s', 'aino' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title(),
-				'<span class="edit-link">' . aino_get_svg( array( 'icon' => 'baseline-edit-24px' ) ) . '</span>'
-			),
+			$editlink
 		);
 	}
 endif;
-
 
 if ( ! function_exists( 'aino_estimated_read_time' ) ) :
 	/**

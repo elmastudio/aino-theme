@@ -313,7 +313,7 @@ audio,video{display:inline-block}
 .site-branding{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;min-height:40px}
 .site-branding h1.site-title,.site-branding p.site-title{display:block;margin:0;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-wrap:break-word}
 .site-branding .site-description{display:none;margin:0;padding:6px 12px;font-size:14px;line-height:1.43;color:#b3b9ce;background:#f7f7ff;border-radius:100px}
-.search-header{margin:0 0 32px;padding:0 0 32px}
+.search-header{position:relative;margin:0 0 32px;padding:0 0 32px}
 .header-dividers-hide .search-header{margin:0}
 .header-search-hide .search-header,.search-header .search-submit{display:none}
 .search-header label{cursor:pointer;padding:0}

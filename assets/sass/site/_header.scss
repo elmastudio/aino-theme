@@ -223,6 +223,7 @@
 
 /* Search Form */
 .search-header {
+	position: relative;
 	margin: 0 0 $spacing-desktop-4;
 	padding: 0 0 $spacing-desktop-4;
 	@include breakpoint(l) {
