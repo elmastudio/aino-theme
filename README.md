@@ -12,10 +12,10 @@ __License URI:__ http://www.gnu.org/licenses/gpl-2.0.html
 ## Changelog
 
 ### 0.0.3
-Fix: Blog styling. (23-07-2019)
-Enhance: Update gitignore.
-Fix: Mobile Menu hamburger button and dropdown menus.
-Enhance: Post edit button styling.
+Fix: Blog styling. (23-07-2019)  
+Enhance: Update gitignore.   
+Fix: Mobile Menu hamburger button and dropdown menus.   
+Enhance: Post edit button styling.   
 
 ### 0.0.2
 Fix: theme installation error. (21-07-2019)
