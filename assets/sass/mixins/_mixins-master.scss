@@ -374,18 +374,23 @@
 
 // Shadows
 @mixin shadow-card-a {
-	box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15);
-	-webkit-box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+	-webkit-box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
 }
 
 @mixin shadow-card-b {
-	box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15);
-	-webkit-box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+	-webkit-box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
 }
 
-@mixin shadow-soft {
+@mixin shadow-soft-a {
 	box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15);
 	-webkit-box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadow-soft-b {
+	box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.08);
+	-webkit-box-shadow:0 20px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 // Disable Shadow

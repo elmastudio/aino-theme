@@ -346,8 +346,10 @@ function aino_scripts() {
 	// Theme stylesheet.
 	wp_enqueue_style( 'aino-style', get_stylesheet_uri(), false, wp_get_theme()->get( 'Version' ) );
 
+	wp_enqueue_script( 'aino-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
+
 	if ( has_nav_menu( 'menu-1' ) ) {
-		wp_enqueue_script( 'aino-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array(), wp_get_theme()->get( 'Version' ), true );
+		wp_enqueue_script( 'aino-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
 		$aino_l10n['expand']   = __( 'Expand child menu', 'aino' );
 		$aino_l10n['collapse'] = __( 'Collapse child menu', 'aino' );
 		$aino_l10n['icon']     = aino_get_svg(
@@ -357,6 +359,8 @@ function aino_scripts() {
 			)
 		);
 	}
+
+	wp_localize_script( 'aino-skip-link-focus-fix', 'ainoScreenReaderText', $aino_l10n );
 
 	wp_enqueue_script( 'aino-custom', get_theme_file_uri( '/assets/js/custom.js' ), array(), wp_get_theme()->get( 'Version' ), true );
 

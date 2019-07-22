@@ -2,7 +2,7 @@
 /**
  * Theme functions file.
  *
- * Contains handlers for navigation and widget area.
+ * Contains handlers for navigation.
  */
 
 (function ($) {

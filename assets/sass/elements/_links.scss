@@ -118,20 +118,21 @@ h6 a:hover,
 
 /* Edit Link */
 .post-edit-link {
+	position: relative;
 	text-indent: -1000em;
 	display: block;
-	width: $spacing-desktop-6;
-	height: $spacing-desktop-6;
+	width: $spacing-desktop-5;
+	height: $spacing-desktop-5;
 	background: $color__primary_one;
 	border-radius: $border-radius-xl;
-	margin: $spacing-xxs auto 0;
+	margin: 0 auto;
 	box-shadow: 0 6px 20px 0 $primary_one_color_rgba_35;
 
 	.blog &,
 	.archive &,
 	.search-results & {
 		top: -24px;
-    	right: 24px;
+	 	right: 24px;
 		position: absolute;
 	}
 
@@ -139,11 +140,6 @@ h6 a:hover,
 		background: $color__primary_two;
 		box-shadow: none;
 	}
-}
-
-.post-edit-link {
-
-	position: relative;
 
 	.single-post &,
 	.page & {
