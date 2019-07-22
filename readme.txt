@@ -14,11 +14,17 @@ Theme desc.
 
 == Changelog ==
 
+= 0.0.3 =
+* Fix: Blog styling. (22-07-2019)
+* Enhance: Update gitignore.
+* Fix: Mobile Menu hamburger button and dropdown menus.
+* Enhance: Post edit button styling.
+
 = 0.0.2 =
-* Bugfix theme installation.
+* Fix: theme installation error. (21-07-2019)
 
 = 0.0.1 =
-* Initial Release
+* Initial Release (20-07-2019)
 
 == Resources ==
 * normalize.css, © 2012-2019 Nicolas Gallagher and Jonathan Neal, MIT
