@@ -167,7 +167,7 @@ function aino_customize_register( $wp_customize ) {
 		'heading_fontweight',
 		array(
 			'default'           => aino_defaults( 'heading_fontweight' ),
-			'sanitize_callback' => 'sanitize_headline_font_weight',
+			'sanitize_callback' => 'aino_sanitize_headline_font_weight',
 		)
 	);
 
@@ -193,7 +193,7 @@ function aino_customize_register( $wp_customize ) {
 		'button_style',
 		array(
 			'default'           => aino_defaults( 'button_style' ),
-			'sanitize_callback' => 'sanitize_shapes',
+			'sanitize_callback' => 'aino_sanitize_shapes',
 		)
 	);
 
@@ -217,7 +217,7 @@ function aino_customize_register( $wp_customize ) {
 		'form_style',
 		array(
 			'default'           => aino_defaults( 'form_style' ),
-			'sanitize_callback' => 'sanitize_shapes',
+			'sanitize_callback' => 'aino_sanitize_shapes',
 		)
 	);
 
@@ -241,7 +241,7 @@ function aino_customize_register( $wp_customize ) {
 		'featuredimg_style',
 		array(
 			'default'           => aino_defaults( 'featuredimg_style' ),
-			'sanitize_callback' => 'sanitize_borderradius',
+			'sanitize_callback' => 'aino_sanitize_borderradius',
 		)
 	);
 
@@ -370,7 +370,7 @@ function aino_customize_register( $wp_customize ) {
 		'blog_columns',
 		array(
 			'default'           => aino_defaults( 'blog_columns' ),
-			'sanitize_callback' => 'sanitize_blog_columns',
+			'sanitize_callback' => 'aino_sanitize_blog_columns',
 		)
 	);
 
@@ -397,7 +397,7 @@ function aino_customize_register( $wp_customize ) {
 		'blogcards_borderradius',
 		array(
 			'default'           => aino_defaults( 'blogcards_borderradius' ),
-			'sanitize_callback' => 'sanitize_borderradius',
+			'sanitize_callback' => 'aino_sanitize_borderradius',
 		)
 	);
 
@@ -422,7 +422,7 @@ function aino_customize_register( $wp_customize ) {
 		'blogcards_shadow',
 		array(
 			'default'           => aino_defaults( 'blogcards_shadow' ),
-			'sanitize_callback' => 'sanitize_shadow',
+			'sanitize_callback' => 'aino_sanitize_shadow',
 		)
 	);
 
@@ -446,7 +446,7 @@ function aino_customize_register( $wp_customize ) {
 		'blogcards_shadow_hover',
 		array(
 			'default'           => aino_defaults( 'blogcards_shadow_hover' ),
-			'sanitize_callback' => 'sanitize_shadow',
+			'sanitize_callback' => 'aino_sanitize_shadow',
 		)
 	);
 
@@ -470,7 +470,7 @@ function aino_customize_register( $wp_customize ) {
 		'blogcards_animation',
 		array(
 			'default'           => aino_defaults( 'cardhover_none' ),
-			'sanitize_callback' => 'sanitize_blogcards_animation',
+			'sanitize_callback' => 'aino_sanitize_blogcards_animation',
 		)
 	);
 
@@ -494,7 +494,7 @@ function aino_customize_register( $wp_customize ) {
 		'post_excerpt_lengths',
 		array(
 			'default'           => aino_defaults( 'post_excerpt_lengths' ),
-			'sanitize_callback' => 'sanitize_number_absint',
+			'sanitize_callback' => 'aino_sanitize_number_absint',
 		)
 	);
 
@@ -608,9 +608,9 @@ function aino_customize_register( $wp_customize ) {
 	 */
 	// Colors - General - Main Background Color.
 	$wp_customize->add_setting(
-		'background_color',
+		'main_bg_color',
 		array(
-			'default'           => aino_defaults( 'background_color' ),
+			'default'           => aino_defaults( 'main_bg_color' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -618,7 +618,7 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
-			'background_color',
+			'main_bg_color',
 			array(
 				'label'    => esc_html__( 'Main Background', 'aino' ),
 				'section'  => 'aino_general_colors',
