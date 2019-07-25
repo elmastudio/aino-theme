@@ -160,7 +160,7 @@
 /* Grid Columns */
 .posts-container,
 .single-post .nav-links {
-	display: flex;
+	@include flexbox;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: flex-start;

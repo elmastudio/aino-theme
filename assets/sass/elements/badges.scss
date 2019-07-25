@@ -1,3 +1,4 @@
+/* Sticky Post Badge */
 .badge-highlight {
 	position: absolute;
 	top: -12px;
@@ -6,17 +7,18 @@
 	@include font-body5;
 	font-weight: bold;
 	letter-spacing: 1px;
+	line-height: 1;
 	text-transform: uppercase;
 	background: $color__secondary_one;
 	color: $color__white;
-	padding: $spacing-1 $spacing-2;
+	padding: 6px $spacing-s;
 	display: inline-block;
 	border-radius: $border-radius-xl;
 }
 
 /* Post Author Badge */
 .bypostauthor .comment-author {
-	display: flex;
+	@include flexbox;
 	justify-content: flex-start;
 	align-items: center;
 

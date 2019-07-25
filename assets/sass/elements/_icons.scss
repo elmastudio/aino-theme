@@ -90,9 +90,8 @@
 /* Search Form Icon */
 .search-icon {
 	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flexbox;
+	@include flex-center;
 	width: $spacing-desktop-5;
 	height: $spacing-desktop-5;
 	.icon {

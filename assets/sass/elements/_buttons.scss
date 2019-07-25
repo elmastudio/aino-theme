@@ -3,7 +3,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	@include btn;
-	@include btn-l;
+	@include btn-m;
 	border-radius: $border-radius-s;
 }
 
@@ -60,8 +60,12 @@ a.btn-outline,
 
 .header-cta-wrap {
 
+	.btn-outline a {
+		@include btn-s($outline: true);
+	}
+
 	a {
-		@include btn-s;
+		@include btn-s($outline: false);
 	}
 }
 

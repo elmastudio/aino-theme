@@ -1,5 +1,5 @@
 .authorbox-wrap {
-	display: flex;
+	@include flexbox;
 	flex-direction: column;
 	justify-content: center;
 	padding: $spacing-mobile-9 0 0 0;

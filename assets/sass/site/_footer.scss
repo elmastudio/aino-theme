@@ -16,7 +16,7 @@
 }
 
 .footer-widget-wrap {
-	display: flex;
+	@include flexbox;
 	flex-direction: column;
 	padding-bottom: $spacing-mobile-6;
 	@include breakpoint(s) {
@@ -50,7 +50,7 @@
 
 /* Footer Info */
 .footer-info {
-	display: flex;
+	@include flexbox;
 	flex-direction: column;
 	@include breakpoint(m) {
 		flex-direction: row-reverse;
@@ -71,7 +71,7 @@
 	color: $color__text_three;
 
 	.footerinfo-centered & {
-		display: flex;
+		@include flexbox;
 		justify-content: center;
 	}
 }
@@ -94,7 +94,7 @@
 	}
 
 	.footerinfo-centered & {
-		display: flex;
+		@include flexbox;
 		justify-content: center;
 		padding: 0 0 $spacing-mobile-4;
 		@include breakpoint(m) {
