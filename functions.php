@@ -166,11 +166,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => '#f7f7ff',
 				),
 				array(
-					'name'  => __( 'Highlight', 'aino' ),
-					'slug'  => 'highlight',
-					'color' => '#ff6f61',
-				),
-				array(
 					'name'  => __( 'Notification', 'aino' ),
 					'slug'  => 'notification',
 					'color' => '#61b7ff',
@@ -209,18 +204,18 @@ if ( ! function_exists( 'aino_setup' ) ) :
  *
  * Priority 0 to make it available to lower priority callbacks.
  *
- * @global int $content_width
+ * @global int $content_width Content width.
  */
 function aino_content_width() {
-	// Fullwidth page template.
+	// This variable is intended to be overruled from themes.
+	// phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
 	if ( is_page_template( 'page-templates/fullwidth-page.php' ) || is_page_template( 'page-templates/fullwidth-notitle-page.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 1200 );
 	}
-	// Fullwidth page template.
 	if ( is_page_template( 'page-templates/fullscreen-page.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 2010 );
 	} else {
-		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 784 );
+		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 680 );
 	}
 }
 add_action( 'after_setup_theme', 'aino_content_width', 0 );

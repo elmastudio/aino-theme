@@ -31,7 +31,7 @@
 
 /* Comments */
 .avatar-content-wrap {
-	display: flex;
+	@include flexbox;
 	justify-content: flex-start;
 	align-items: flex-start;
 }

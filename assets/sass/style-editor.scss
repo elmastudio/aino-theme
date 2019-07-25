@@ -671,45 +671,45 @@ pre.wp-block-verse {
 
 /** === Button === */
 
-.wp-block-button .wp-block-button__link {
-	font-weight: normal;
-	height: $spacing-desktop-7;
-	padding: $spacing-2 $spacing-desktop-5;
-	text-align: center;
-	color: $color__white;
+.wp-block-button {
+
+	.wp-block-button__link {
+		@include btn;
+		@include btn-m($outline: false);
+		@include btn-primary;
+		font-weight: normal;
+		color: $color__white;
+		box-shadow: none;
+	}
+
+	&:not(.is-style-squared) .wp-block-button__link {
+		border-radius: $border-radius-s;
+	}
+
+	&.is-style-outline {
+
+		.wp-block-button__link {
+			@include btn-outline;
+			background: transparent;
+			box-shadow: none;
+
+			&:hover {
+				color: $color__primary_one;
+				fill: $color__primary_one;
+				background-color: $primary_one_color_rgba_10;
+			}
+
+			&:not(.has-text-color) {
+
+			}
+
+			&:not(.has-background-color) {
+
+			}
+		}
+	}
 }
 
-.wp-block-button .wp-block-button__link:not(.has-background),
-.wp-block-button .wp-block-button__link:not(.has-background):active,
-.wp-block-button .wp-block-button__link:not(.has-background):focus,
-.wp-block-button .wp-block-button__link:not(.has-background):hover {
-	background-color: $color__primary_one;
-}
-
-.wp-block-button .wp-block-button__link[data-align="wide"],
-.wp-block-button .wp-block-button__link[data-align="full"],
-.wp-block-button.alignwide,
-.wp-block-button.alignfull {
-	display: block;
-}
-
-.wp-block-button.is-style-outline .wp-block-button__link:not(.has-background) {
-	border-color: $color__text_two;
-	background-color: transparent;
-}
-
-.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
-.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):active,
-.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):focus,
-.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):hover {
-	color: $color__text_two;
-	border-width: 1px;
-}
-
-.wp-block-button.is-style-default .wp-block-button__link,
-.wp-block-button.is-style-outline .wp-block-button__link {
-	border-radius: 4px;
-}
 
 /** === Latest Posts + Categories === */
 

@@ -21,7 +21,7 @@ function aino_defaults( $name ) {
 			array(
 
 				// Colors.
-				'background_color'         => '#ffffff',
+				'main_bg_color'            => '#ffffff',
 				'primary_one_color'        => '#616aff',
 				'primary_two_color'        => '#4f45ff',
 				'secondary_one_color'      => '#1cceb2',

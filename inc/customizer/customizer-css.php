@@ -11,6 +11,7 @@
  */
 function aino_customizer_css() {
 
+	$main_bg_color               = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
 	$primary_one_color           = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
 	$primary_one_color_rgba_10   = aino_hex2rgb( $primary_one_color );
 	$primary_one_color_rgba_10   = vsprintf( 'rgba( %1$s, %2$s, %3$s, 0.1)', $primary_one_color_rgba_10 );
@@ -25,7 +26,7 @@ function aino_customizer_css() {
 	$background_color            = get_theme_mod( 'background_color', aino_defaults( 'background_color' ) );
 	$blogcards_bg_color          = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
 	$blogcards_bg_color_hover    = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
-	$footer_bg_color             = get_theme_mod( 'footer_background_color', aino_defaults( 'footer_background_color' ) );
+	$footer_bg_color             = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );
 	$icon_color_one              = get_theme_mod( 'icon_color_one', aino_defaults( 'icon_color_one' ) );
 	$icon_color_two              = get_theme_mod( 'icon_color_two', aino_defaults( 'icon_color_two' ) );
 	$comments_border_color       = get_theme_mod( 'comments_border_color', aino_defaults( 'comments_border_color' ) );
@@ -34,7 +35,7 @@ function aino_customizer_css() {
 	$css =
 	'
 	body {
-		background-color: ' . esc_attr( $background_color ) . ';
+		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
 	.entry-link {
 		background-color: ' . esc_attr( $blogcards_bg_color ) . ';
@@ -80,10 +81,9 @@ function aino_customizer_css() {
 	.widget_mc4wp_form_widget .subscribe-btn,
 	.widget_search .search-submit,
 	.entry-content .search-submit,
-	.wp-block-button__link:not(.has-background),
 	.entry-content .has-primary-link-background-color,
-
-	.post-edit-link {
+	.post-edit-link,
+	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	.entry-content p a:hover,
@@ -152,11 +152,13 @@ function aino_customizer_css() {
 	.widget_mc4wp_form_widget input[type="submit"]:hover,
 	.widget_mc4wp_form_widget .subscribe-btn:hover,
 	.comment-respond input[type="submit"]:hover,
-	.wp-block-button__link:not(.has-background):hover,
 	.widget_search .search-submit:hover,
 	.entry-content .search-submit:hover {
 		background-color: ' . esc_attr( $primary_two_color ) . ';
 		fill: ' . esc_attr( $primary_two_color ) . ';
+	}
+	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background):hover {
+		background-color: ' . esc_attr( $primary_two_color ) . ';
 	}
 	a.btn-outline:hover,
 	.btn-outline a:hover {
@@ -194,8 +196,7 @@ function aino_customizer_css() {
 	input[type="button"],
 	input[type="submit"],
 	.a.btn-primary,
-	.btn-primary a,
-	.wp-block-button .wp-block-button__link {
+	.btn-primary a {
 		box-shadow: 0 10px 30px -4px ' . esc_attr( $primary_one_color_rgba_35 ) . ';
 	}
 	';

@@ -1,3 +1,6 @@
+
+$var: true !default; // Can be overridden elsewhere
+
 /*--------------------------------------------------------------
 	* Responsive Breakpoints
 
@@ -41,6 +44,25 @@
 	} @else {
 		@warn "Breakpoint mixin supports: xs, s, m, l, xl, xxl";
 	}
+}
+
+//margin centering
+@mixin push--auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+
+// Flexbox
+@mixin flexbox {
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin flex-center {
+	align-items: center;
+	justify-content: center;
 }
 
 // Font Families
@@ -154,12 +176,9 @@
 // Buttons
 @mixin btn {
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 19px;
 	font-weight: normal;
 	@include transition-default;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 
 	@include breakpoint(xs) {
@@ -182,13 +201,12 @@
 @mixin btn-outline {
 	color: $color__primary_one;
 	fill: $color__primary_one;
-	background-color: transparent;
 	border: 1px solid $color__primary_one;
 
 	&:hover {
 		color: $color__primary_one;
 		fill: $color__primary_one;
-		background-color: $color__primary_one;
+		background-color: $primary_one_color_rgba_10;
 	}
 }
 
@@ -207,10 +225,31 @@
 }
 
 // Button sizes
-@mixin btn-s {
-	padding-top: $spacing-xs;
-	padding-bottom: $spacing-xs;
-	height: $spacing-desktop-5;
+@mixin btn-s($outline: true) {
+
+	@if $outline == true {
+		padding-top: 10px;
+		padding-bottom: 9px;
+	} @else {
+		padding-top: 11px;
+		padding-bottom: 10px;
+	}
+
+	@include breakpoint(xs) {
+		padding-left: $spacing-3;
+		padding-right: $spacing-3;
+	}
+}
+
+@mixin btn-m($outline: true) {
+
+	@if $outline == true {
+		padding-top: 18px;
+		padding-bottom: 17px;
+	} @else {
+		padding-top: 19px;
+		padding-bottom: 18px;
+	}
 
 	@include breakpoint(xs) {
 		padding-left: $spacing-desktop-4;
@@ -218,27 +257,19 @@
 	}
 }
 
-@mixin btn-m {
-	padding-top: $spacing-s;
-	padding-bottom: $spacing-s;
-	height: $spacing-desktop-6;
+@mixin btn-l($outline: true) {
+
+	@if $outline == true {
+		padding-top: 26px;
+		padding-bottom: 25px;
+	} @else {
+		padding-top: 27px;
+		padding-bottom: 26px;
+	}
 
 	@include breakpoint(xs) {
 		padding-left: $spacing-desktop-5;
 		padding-right: $spacing-desktop-5;
-	}
-}
-
-@mixin btn-l {
-	padding-top: $spacing-2;
-	padding-bottom: $spacing-2;
-	height: $spacing-desktop-7;
-	width: 100%;
-
-	@include breakpoint(xs) {
-		width: auto;
-		padding-left: $spacing-desktop-6;
-		padding-right: $spacing-desktop-6;
 	}
 }
 
@@ -270,19 +301,6 @@
 	min-width: 24px;
 }
 
-// Clearfix
-@mixin clearfix {
-	&:after,
-	&:before {
-		content: " ";
-		display: table;
-	}
-
-	&:after {
-		clear: both;
-	}
-}
-
 // Placeholders
 @mixin input-placeholder {
 	&.placeholder {
@@ -306,13 +324,6 @@
 	}
 }
 
-// @include push--auto
-@mixin push--auto {
-	margin: {
-		left: auto;
-		right: auto;
-	}
-}
 
 // Mixin grid padding
 @mixin col-padding {
@@ -322,11 +333,6 @@
 		padding-left: $spacing-desktop-3;
 		padding-right: $spacing-desktop-3;
 	}
-}
-
-// Special Colors
-@mixin color-notice {
-	color: $color__notification;
 }
 
 // Border Radius

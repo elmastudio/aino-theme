@@ -62,7 +62,7 @@ input[type="color"]:active, textarea:active {
 
 .color-notice,
 label.color-notice span {
-	@include color-notice;
+	color: $color__notification;
 }
 
 .comment-respond textarea {

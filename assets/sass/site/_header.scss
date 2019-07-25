@@ -21,7 +21,7 @@
 	@include breakpoint(l) {
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
+		@include flexbox;
 		-ms-flex-align: center;
 		-webkit-box-align: center;
 		align-items: center;
@@ -30,10 +30,7 @@
 
 	.header-border-hide & {
 		border-bottom: none;
-
-		@include breakpoint(l) {
-			background-color: $color__white;
-		}
+		background-color: $color__white;
 	}
 
 	.admin-bar & {
@@ -191,7 +188,7 @@
 
 /* Site Title, Custom Logo and Tagline */
 .site-branding {
-	display: flex;
+	@include flexbox;
 	align-items: center;
 	margin: 0;
 	min-height: $spacing-desktop-5;
@@ -209,15 +206,16 @@
 
 	.site-description {
 		display: none;
-		margin: 0;
-		padding: 6px $spacing-s;
+		height: $spacing-desktop-4;
+		margin: 0 0 0 $spacing-2;
+		padding: 0 $spacing-s;
 		@include font-body4;
 		color: $color__text_three;
 		background: $color__background;
-		border-radius: 100px;
+		border-radius: $border-radius-xl;
 		@include breakpoint(m) {
-			display: block;
-			margin: 0 0 0 $spacing-2;
+			@include flexbox;
+			@include flex-center;
 		}
 	}
 }
@@ -252,7 +250,8 @@
 
 	.search-field {
 		background: transparent;
-		display: inline-block;
+		@include flexbox;
+		align-items: center;
 		max-width: 100%;
 		height: $spacing-desktop-5;
 		padding: 0 0 0 $spacing-desktop-5;
@@ -304,7 +303,7 @@
 }
 
 .social-links-menu {
-	display: flex;
+	@include flexbox;
 	flex-wrap: wrap;
 	align-items: center;
 }
@@ -340,7 +339,7 @@
 	ul {
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
+		@include flexbox;
 		-ms-flex-align: center;
 		-webkit-box-align: center;
 		align-items: center;
@@ -476,7 +475,7 @@
 		height: 100%;
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
+		@include flexbox;
 		-ms-flex-align: center;
 		-webkit-box-align: center;
 		align-items: center;
@@ -498,7 +497,7 @@
 		padding: 0;
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
+		@include flexbox;
 		flex-direction: column;
 
 		@include breakpoint(l) {
@@ -521,7 +520,7 @@
 	}
 
 	li a {
-		display: flex;
+		@include flexbox;
 		justify-content: space-between;
 		align-items: center;
 		color: $color__text_two;

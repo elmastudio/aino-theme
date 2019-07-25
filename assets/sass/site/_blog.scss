@@ -37,12 +37,12 @@
 
 .posts-container .hentry {
 	position: relative;
-	display: flex;
+	@include flexbox;
 	align-items: stretch;
 }
 
 .posts-container .hentry .entry-link {
-	display: flex;
+	@include flexbox;
 	flex-direction: column;
 	width: 100%;
 	align-content: stretch;
@@ -58,7 +58,7 @@
 
 .posts-container .hentry .entry-footer {
 	margin-top: auto;
-	display: flex;
+	@include flexbox;
 	align-items: flex-start;
 }
 

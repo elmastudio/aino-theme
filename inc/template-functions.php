@@ -200,7 +200,7 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Disable Flexbox Post Card Stretch.
-	if ( get_theme_mod( 'background_color', aino_defaults( 'background_color' ) ) === get_theme_mod( 'blogcards_bgcolor', aino_defaults( 'blogcards_bgcolor' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
+	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) === get_theme_mod( 'blogcards_bgcolor', aino_defaults( 'blogcards_bgcolor' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
 		$classes[] = 'blogcards-flexstart';
 	}
 
@@ -299,7 +299,7 @@ function aino_get_estimated_reading_time() {
  *
  * @param array $classes Classes for the body element.
  */
-function custom_admin_body_class( $classes ) {
+function aino_custom_admin_body_class( $classes ) {
 
 	if ( 'bold' === get_theme_mod( 'heading_fontweight', 'regular' ) ) {
 		$classes .= ' h-bold ';
@@ -307,7 +307,7 @@ function custom_admin_body_class( $classes ) {
 
 	return $classes;
 }
-add_filter( 'admin_body_class', 'custom_admin_body_class' );
+add_filter( 'admin_body_class', 'aino_custom_admin_body_class' );
 
 
 /**

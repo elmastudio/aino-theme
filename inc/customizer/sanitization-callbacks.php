@@ -26,7 +26,7 @@ function aino_sanitize_checkbox( $checked ) {
  *
  * @return string
  */
-function sanitize_blog_columns( $choice ) {
+function aino_sanitize_blog_columns( $choice ) {
 	$valid = array(
 		'onecolumn',
 		'twocolumn',
@@ -47,7 +47,7 @@ function sanitize_blog_columns( $choice ) {
  *
  * @return string
  */
-function sanitize_headline_font_weight( $choice ) {
+function aino_sanitize_headline_font_weight( $choice ) {
 	$valid = array(
 		'regular',
 		'bold',
@@ -67,7 +67,7 @@ function sanitize_headline_font_weight( $choice ) {
  *
  * @return string
  */
-function sanitize_shapes( $choice ) {
+function aino_sanitize_shapes( $choice ) {
 	$valid = array(
 		'squared',
 		'smooth',
@@ -89,7 +89,7 @@ function sanitize_shapes( $choice ) {
  *
  * @return integer
  */
-function sanitize_number_absint( $number, $setting ) {
+function aino_sanitize_number_absint( $number, $setting ) {
 	// Ensure $number is an absolute integer (whole number, zero or greater).
 	$number = absint( $number );
 
@@ -104,7 +104,7 @@ function sanitize_number_absint( $number, $setting ) {
  *
  * @return string
  */
-function sanitize_blogcards_animation( $choice ) {
+function aino_sanitize_blogcards_animation( $choice ) {
 	$valid = array(
 		'cardhover_zoom',
 		'cardhover_moveup',
@@ -125,7 +125,7 @@ function sanitize_blogcards_animation( $choice ) {
  *
  * @return string
  */
-function sanitize_borderradius( $choice ) {
+function aino_sanitize_borderradius( $choice ) {
 	$valid = array(
 		'radius-none',
 		'radius-s',
@@ -147,7 +147,7 @@ function sanitize_borderradius( $choice ) {
  *
  * @return string
  */
-function sanitize_shadow( $choice ) {
+function aino_sanitize_shadow( $choice ) {
 	$valid = array(
 		'shadow-none',
 		'shadow-a',

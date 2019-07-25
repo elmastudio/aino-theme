@@ -85,9 +85,11 @@ h6 a:hover,
 /* Category and Tag Links */
 .entry-cats a,
 .entry-tags a {
+	height: $spacing-3;
 	margin: 0 $spacing-xxs $spacing-xs;
-	padding: 2px $spacing-xs;
-	display: block;
+	padding: 0 $spacing-xs;
+	@include flexbox;
+	@include flex-center;
 	@include font-body4;
 	@include border-radius-l;
 }
@@ -131,7 +133,7 @@ h6 a:hover,
 	.blog &,
 	.archive &,
 	.search-results & {
-		top: -24px;
+		top: -20px;
 	 	right: 24px;
 		position: absolute;
 	}
