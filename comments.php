@@ -24,8 +24,8 @@ if ( post_password_required() ) {
 
 		<h2 class="comments-title">
 		<?php
-		$comments_number = get_comments_number();
-		if ( '1' === $comments_number ) {
+		$aino_comments_number = get_comments_number();
+		if ( '1' === $aino_comments_number ) {
 			/* translators: %s: post title */
 			printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'aino' ), get_the_title() );
 		} else {
@@ -34,11 +34,11 @@ if ( post_password_required() ) {
 				_nx(
 					'%1$s reply on &ldquo;%2$s&rdquo;',
 					'%1$s replies on &ldquo;%2$s&rdquo;',
-					$comments_number,
+					$aino_comments_number,
 					'comments title',
 					'aino'
 				),
-				number_format_i18n( $comments_number ),
+				number_format_i18n( $aino_comments_number ),
 				get_the_title()
 			);
 		}
