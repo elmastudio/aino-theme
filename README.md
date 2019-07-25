@@ -12,11 +12,11 @@ __License URI:__ http://www.gnu.org/licenses/gpl-2.0.html
 ## Changelog
 
 ### 0.0.4
-**Fix:** Add missing theme domain to functions. (25-07-2019)
-**Fix:** Main background color Customizer setting. Fixes #13
-**Enhance:** General styling. Fixes #19
-**Enhance:** Gutenberg button block styling.
-**Enhance:** Custom theme block colors.
+**Fix:** Add missing theme domain to functions. (25-07-2019)  
+**Fix:** Main background color Customizer setting. Fixes #13  
+**Enhance:** General styling. Fixes #19  
+**Enhance:** Gutenberg button block styling.  
+**Enhance:** Custom theme block colors.  
 
 ### 0.0.3
 **Fix:** Blog styling. (23-07-2019)
