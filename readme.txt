@@ -1,5 +1,5 @@
 === Aino ===
-Contributors: ellenbauer, manuelesposito
+Contributors: elmastudio
 Tags: one-column, two-column, three-column, featured-images, theme-options, custom-colors, custom-menu, editor-style, translation-ready, footer-widgets, full-width-template, blog
 Requires at least: 5.0
 Tested up to: WordPress 5.2
@@ -14,8 +14,15 @@ Theme desc.
 
 == Changelog ==
 
+= 0.0.4 =
+* Fix: Add missing theme domain to functions. (25-07-2019)
+* Fix: Main background color Customizer setting. Fixes #13
+* Enhance: General styling. Fixes #19
+* Enhance: Gutenberg button block styling.
+* Enhance: Custom theme block colors.
+
 = 0.0.3 =
-* Fix: Blog styling. (22-07-2019)
+* Fix: Blog styling. (23-07-2019)
 * Enhance: Update gitignore.
 * Fix: Mobile Menu hamburger button and dropdown menus.
 * Enhance: Post edit button styling.
