@@ -13,8 +13,8 @@ __License URI:__ http://www.gnu.org/licenses/gpl-2.0.html
 
 ### 0.0.4
 **Fix:** Add missing theme domain to functions. (25-07-2019)  
-**Fix:** Main background color Customizer setting. Fixes https://github.com/elmastudio/aino-theme/issues/13  
-**Enhance:** General styling. Fixes https://github.com/elmastudio/aino-theme/issues/19    
+**Fix:** Main background color Customizer setting. Fixes #13 
+**Enhance:** General styling. Fixes #19    
 **Enhance:** Gutenberg button block styling.  
 **Enhance:** Custom theme block colors.  
 
