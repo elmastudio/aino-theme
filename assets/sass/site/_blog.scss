@@ -72,7 +72,7 @@
 
 /* Blog Posts - 1 Columns */
 .blog.blog-1-column,
-.archive.blog-1-column {
+.blog-archive.blog-1-column {
 	@include breakpoint(l) {
 
 		& .hentry .entry-link {
@@ -225,7 +225,7 @@
 
 /* Blog Posts - Entry Header */
 .blog .hentry .entry-header,
-.archive .hentry .entry-header {
+.blog-archive .hentry .entry-header {
 	padding: $spacing-mobile-4 $spacing-mobile-4 0;
 
 	@include breakpoint(m) {
@@ -234,7 +234,7 @@
 }
 
 .blog.blog-2-column .hentry .entry-header,
-.archive.blog-2-column .hentry .entry-header {
+.blog-archive.blog-2-column .hentry .entry-header {
 
 	@include breakpoint(l) {
 		padding: $spacing-desktop-7 $spacing-desktop-7 0;
@@ -270,7 +270,7 @@
 	}
 
 	.blog.blog-2-column &,
-	.archive.blog-2-column & {
+	.blog-archive.blog-2-column & {
 		@include breakpoint(l) {
 			margin-left: $spacing-desktop-7;
 			margin-right: $spacing-desktop-7;

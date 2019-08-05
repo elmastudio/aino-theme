@@ -131,6 +131,12 @@ h2.widget-title {
 	@include font-h6;
 }
 
+h1.site-title,
+p.site-title,
+h2.entry-title {
+	@include hyphenation;
+}
+
 /* Padding for Headlines in Content Area */
 .entry-content h1,
 .entry-content h2,
@@ -144,9 +150,9 @@ h2.widget-title {
 
 address,
 p {
-	margin: 0 0 $spacing-mobile-4;
+	margin-bottom: $spacing-mobile-4;
 	@include breakpoint(m) {
-		margin: 0 0 $spacing-desktop-4;
+		margin-bottom: $spacing-desktop-4;
 	}
 }
 

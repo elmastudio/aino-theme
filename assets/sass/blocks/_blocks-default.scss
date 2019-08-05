@@ -5,7 +5,13 @@
 .wp-block-image,
 .wp-block-quote,
 .wp-block-quote.is-style-large,
-.wp-block-pullquote {
+.wp-block-pullquote,
+.wp-block-media-text,
+.entry-content .wp-block-gallery,
+.wp-block-audio,
+.wp-block-video,
+.wp-block-cover {
+	@include push--auto;
 	margin-bottom: $spacing-mobile-4;
 	@include breakpoint(m) {
 		margin-bottom: $spacing-desktop-4;
@@ -13,71 +19,56 @@
 }
 
 /* Alignwide and alignfull */
-@media screen and (min-width: 37.5em) {
-	*[class^="wp-block-"].alignleft,
-	*[class^="wp-block-"].alignright {
-		max-width: 75%;
-	}
-}
 
-.aligncenter,
-.alignfull,
-.alignwide {
-	clear: both;
-}
-
-.alignfull {
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-	width: auto;
-	max-width: 1000%;
-}
-
-.alignfull > *,
-.alignwide > * {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* Text-based blocks with alignfull */
-.entry .entry-content > * {
+.hentry .entry-content > * {
 
 	&.alignwide {
-		margin-left: calc(31.75% - 31.75vw);
-		margin-right: calc(31.75% - 31.75vw);
-		width: auto;
-		max-width: 1000%;
+		max-width: $website-width;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		clear: both;
 
-		iframe,
-		img,
-		video {
-			display: block;
+		@include breakpoint(m) {
+			padding-left: 48px;
+			padding-right: 48px;
+		}
+
+		@include breakpoint(l) {
+			padding-left: 24px;
+			padding-right: 24px;
 		}
 	}
 
 	&.alignfull {
 		position: relative;
+		width: 100vw;
+		margin-left: calc( 50% - 50vw );
+		max-width: none;
+	}
+}
+
+/* Nested Block Alignment: alignwide inside alignfull */
+
+.hentry .entry-content .alignfull {
+
+	.alignwide {
+		max-width: $website-width;
 		clear: both;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 24px;
+		padding-right: 24px;
 
-		@media (min-width: 840px) {
-			margin-left: calc(50% - 50vw);
-			margin-right: calc(50% - 50vw);
-			width: auto;
-			max-width: 1000%;
+		@include breakpoint(xs) {
+			padding-left: 48px;
+			padding-right: 48px;
 		}
 
-		iframe,
-		img,
-		video {
-			display: block;
-		}
-
-		.fullwidth-page &,
-		.fullscreen-page & {
-			margin-left: 0;
-			margin-right: 0;
-			width: 100%;
-			max-width: 100%;
+		@include breakpoint(l) {
+			padding-left: 24px;
+			padding-right: 24px;
 		}
 	}
 }
@@ -129,7 +120,51 @@
 	}
 }
 
+/* Group */
+
+.wp-block-group {
+	padding: $spacing-mobile-9 0;
+	@include breakpoint(l) {
+		padding: $spacing-desktop-9 0;
+	}
+}
+
+/* Columns */
+
+.wp-block-columns {
+
+	margin-bottom: 0;
+
+	.wp-block-column > * {
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	@include breakpoint(m) {
+		flex-wrap: nowrap;
+			flex-basis: calc(50% - 48px);
+			flex-grow: 0;
+
+		.wp-block-column {
+			margin-left: $spacing-3;
+			margin-right: $spacing-3;
+			margin-bottom: 0;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
 /* Button */
+
 .wp-block-button {
 
 	.wp-block-button__link {
@@ -168,15 +203,12 @@
 				fill: $color__primary_one;
 				background-color: $primary_one_color_rgba_10;
 			}
-
-			&:not(.has-text-color) {
-
-			}
 		}
 	}
 }
 
 /* Image */
+
 .wp-block-image {
 
 	&.alignright {
@@ -196,9 +228,16 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+
+	&.alignfull img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
 }
 
 .wp-block-image figcaption,
+.wp-block-video figcaption,
 .wp-block-audio figcaption,
 .wp-block-embed figcaption {
 	display: block;
@@ -215,13 +254,10 @@
 }
 
 /* Gallery */
+
 ul.wp-block-gallery {
 	padding: 0;
 	list-style: none;
-	margin: 0 0 $spacing-1;
-	@include breakpoint(m) {
-		margin: 0 0 $spacing-2;
-	}
 
 	& li {
 		padding: 0;
@@ -310,47 +346,25 @@ ul.wp-block-gallery {
 }
 
 /* Cover */
-.wp-block-cover-image {
-	margin-top: $spacing-mobile-5;
-	margin-bottom: $spacing-mobile-8;
-	@include breakpoint(m) {
-		margin-top: $spacing-desktop-5;
-		margin-bottom: $spacing-desktop-8;
+.wp-block-cover {
+
+	.wp-block-cover__inner-container {
+		p {
+			margin-bottom: 0;
+			color: $color__white;
+		}
+
+		a {
+			color: $color__white;
+			box-shadow: inset 0 -0.06em 0 $color__white;
+			box-shadow: inset 0 -0.07em 0 $color__white;
+		}
 	}
 }
 
-.wp-block-cover-image.alignwide {
-	height: 75vh;
-	min-height: 400px;
-}
-
-.wp-block-cover-image.alignfull {
-	height: 75vh;
-	min-height: 400px;
-	left: 50%;
-	margin-left: -50vw;
-	position: relative;
-	width: 100vw;
-	@media (min-width: 840px) {
-		left: 50%;
-		margin-left: -50vw;
-		position: relative;
-		width: 100vw;
-	}
-}
-
-.entry-content .wp-block-cover-image .wp-block-cover-image-text {
-	@include font-h4;
-	padding: 0 $spacing-mobile-6;
-	max-width: 100%;
-	@include breakpoint(m) {
-		margin: 0 auto;
-		padding: 0;
-		max-width: $content-width;
-	}
-}
 
 /* Video */
+
 .wp-block-video iframe,
 .wp-block-video video {
 	max-width: 100%;
@@ -363,10 +377,6 @@ ul.wp-block-gallery {
 /* Audio */
 .wp-block-audio {
 	display: block;
-	margin: 0 0 $spacing-mobile-5;
-	@include breakpoint(m) {
-		margin: 0 0 $spacing-desktop-5;
-	}
 }
 
 .wp-block-audio audio {
@@ -424,33 +434,16 @@ ul.wp-block-gallery {
 	@include breakpoint(m) {
 		@include flexbox;
 	}
-}
 
-.wp-block-columns {
-	@include breakpoint(m) {
-		&[class*='has-'] > * {
-			margin-right: $spacing-3;
+	.wp-block-column:nth-child(2n) {
+		margin-left: 0;
 
-			&:last-child {
-				margin-right: 0;
-			}
+		@include breakpoint(m) {
+			margin-left: $spacing-3;
 		}
 	}
 }
 
-.fullscreen-page .wp-block-columns,
-.fullwidth-page .wp-block-columns,
-.wp-block-columns.alignwide {
-	@include breakpoint(xl) {
-		&[class*='has-'] > * {
-			margin-right: $spacing-desktop-6;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
-}
 
 .wp-block-columns.alignfull {
 	&[class*='has-'] > * {
@@ -484,7 +477,6 @@ ul.wp-block-gallery {
 /* Preformatted */
 .wp-block-preformatted {
 	background-color: $color__code_two;
-	max-width: 100%;
 	overflow: auto;
 	padding: $spacing-mobile-4;
 	margin-bottom: $spacing-mobile-4;
@@ -533,7 +525,7 @@ ul.wp-block-gallery {
 		box-shadow: inset 0 -0.07em 0 $color__secondary_one;
 	}
 
-	.has-secondary-one-color {
+	.has-secondary-one-background-color {
 		background: $color__secondary_one;
 	}
 

@@ -21,7 +21,6 @@
 .container-standard,
 .error404 .site-content,
 .footer-wrap,
-.page .site-content,
 .related,
 .search .site-content,
 .single-post .site-content,
@@ -31,42 +30,72 @@
 	@include push--auto;
 }
 
-.single-post .site-content {
-	max-width: 100%;
-}
-
 .single-post .col,
 .single-post .entry-header,
 .page-template-default .entry-header,
-.page-template-default .col {
-	max-width: $col7;
+.page-template-default .col,
+.tpl-fullwidth {
 	@include push--auto;
 }
 
-/* 8-col grid length (max 784px)  */
+/* Default Content width (680px on desktop screens) */
+.entry-content > *,
+.single-post .entry-header,
+.single-post .entry-footer,
+.page-template-default .entry-header,
+.single-post .comments-area {
+	@include push--auto;
+
+	@include breakpoint(s) {
+		max-width: $col7-nopadding;
+	}
+}
+
+/* Wide content width (1200px on desktop screens) */
+.tpl-fullwidth .entry-content > *,
+.tpl-fullwidth .entry-header {
+	@include push--auto;
+
+	@include breakpoint(s) {
+		max-width: $col12-nopadding;
+	}
+}
+
+/* Fullscreen content width */
+.tpl-fullscreen .entry-content > *,
+.tpl-fullscreen .entry-header {
+	@include push--auto;
+	max-width: 100%;
+}
+
+/* Alignwide and fullwidth Content widths */
+.entry-content > *.alignwide {
+	max-width: $col12-nopadding;
+}
+
+/* 8-col grid width (max 784px) */
 .page-header .page-title,
 .archive-description {
-	max-width: $content-width;
+	max-width: $col7;
 }
 
 /* Grid Margins and Paddings */
+
+// All elements with 1248px and 24px padding left and right that include inner containers with 24px padding.
 .blog .site-main,
 .archive .site-main,
 .search-results .site-main,
+.footer-widget-wrap,
 .related-container,
-.single-post .post-navigation,
-.footer-widget-wrap {
+.single-post .post-navigation {
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
+
 	@include breakpoint(xs) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
 	@include breakpoint(s) {
-		padding-left: $grid-margins-m;
-		padding-right: $grid-margins-m;
-	}
-	@include breakpoint(m) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 	}
@@ -76,16 +105,21 @@
 	}
 }
 
-.side-widgets {
+// All elements with 1248px and 24px padding left and right and no inner containers that contain 24px padding.
+.site-info,
+.social-footer-nav,
+.blog-archive .page-header,
+.single-post .post-thumb {
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
+
 	@include breakpoint(xs) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
 	@include breakpoint(m) {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: $grid-margins-l;
+		padding-right: $grid-margins-l;
 	}
 	@include breakpoint(l) {
 		padding-left: $grid-margins-s;
@@ -93,13 +127,10 @@
 	}
 }
 
-.footer-menu-wrap,
-.site-info,
-.social-footer-nav,
-.blog-archive .page-header,
 .related .section-title {
 	margin-left: $grid-margins-s;
 	margin-right: $grid-margins-s;
+
 	@include breakpoint(xs) {
 		margin-left: $grid-margins-l;
 		margin-right: $grid-margins-l;
@@ -108,54 +139,61 @@
 		margin-left: $grid-margins-l;
 		margin-right: $grid-margins-l;
 	}
-	@include breakpoint(xl) {
+	@include breakpoint(l) {
 		margin-left: $grid-margins-s;
 		margin-right: $grid-margins-s;
 	}
 }
 
+// All containers with 680px default width.
 .page-template-default .entry-header,
 .page-template-default .entry-content,
-.fullwidth-page .entry-header,
-.fullwidth-page .entry-content,
 .single-post .hentry .entry-header,
 .single-post .hentry .entry-content,
-.single-post .hentry .post-thumb,
+.single-post .comments-area,
 .single-post .hentry .entry-footer,
-.search-no-results .entry-content,
-.single-post .comments-area {
+.search-no-results .entry-content {
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
+
 	@include breakpoint(xs) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
+	@include breakpoint(s) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// All containers with 1200px default width.
+.tpl-fullwidth .entry-header,
+.tpl-fullwidth .hentry .entry-content {
+	padding-left: $grid-margins-s;
+	padding-right: $grid-margins-s;
+
+	@include breakpoint(xs) {
+		padding-left: $grid-margins-l;
+		padding-right: $grid-margins-l;
+	}
+
 	@include breakpoint(l) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 	}
-}
 
-.single-post .hentry .entry-content,
-.single-post .comments-area,
-.single-post .hentry .entry-footer {
-	@include breakpoint(m) {
-		padding-left: $grid-margins-s;
-		padding-right: $grid-margins-s;
+	.alignwide {
+		@include breakpoint(m) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@include breakpoint(l) {
+			padding-left: $grid-margins-s;
+			padding-right: $grid-margins-s;
+		}
 	}
 }
-
-
-/* Primary + Secondary Content Areas */
-.side-widgets {
-	padding-bottom: $spacing-mobile-6;
-	max-width: $content-width;
-	@include push--auto;
-	@include breakpoint(m) {
-		padding-bottom: $spacing-desktop-6;
-	}
-}
-
 
 /* Grid Columns */
 .posts-container,
@@ -164,12 +202,6 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: flex-start;
-}
-
-.single-post .nav-links {
-	@include breakpoint(s) {
-		flex-wrap: nowrap;
-	}
 }
 
 .col,
@@ -205,11 +237,6 @@
 .post-navigation .nav-previous {
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
-	@include breakpoint(s) {
-		flex-basis: calc(50% - 32px);
-		margin-left: $spacing-mobile-2;
-		margin-right: $spacing-mobile-2;
-	}
 	@include breakpoint(m) {
 		flex-basis: calc(50% - 48px);
 		margin-left: $spacing-desktop-3;

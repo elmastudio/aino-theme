@@ -1,7 +1,7 @@
 /* Pagination - Blog */
 .blog .site-content,
 .blog-archive .site-content {
-	padding-bottom:  $spacing-desktop-9;
+	padding-bottom: $spacing-desktop-9;
 }
 
 .site-main .navigation,
@@ -34,7 +34,8 @@
 }
 
 .blog .nav-links,
-.archive .nav-links {
+.archive .nav-links,
+.search-results .nav-links {
 	position: relative;
 	@include flexbox;
 	justify-content: center;
