@@ -2,7 +2,7 @@
 /**
  * Template Name: Fullwidth, No Title
  *
- * Description: A page template for a Full Width Page without page title.
+ * Description: A Full Width page template without title.
  *
  * @package Aino
  * @since Aino 0.0.1

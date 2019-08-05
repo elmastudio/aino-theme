@@ -2,7 +2,7 @@
 /**
  * Template Name: Fullwidth
  *
- * Description: A page template for a Full Width Page.
+ * Description: A Full Width page template.
  *
  * @package Aino
  * @since Aino 0.0.1
