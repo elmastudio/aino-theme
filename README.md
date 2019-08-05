@@ -12,12 +12,12 @@ __License URI:__ http://www.gnu.org/licenses/gpl-2.0.html
 ## Changelog
 
 ### 0.0.5
-**Enhance:** Page and post title hyphenation. (05-08-2019)
-**Enhance:** Updated license information.
-**Enhance:** General styling.
-**Enhance:** Default WordPress block styling. Fixes #27
-**Enhance:** Optimise Page Templates. Fixes #26
-**New:** Theme description.
+**Enhance:** Page and post title hyphenation. (05-08-2019)  
+**Enhance:** Updated license information.  
+**Enhance:** General styling.  
+**Enhance:** Default WordPress block styling. Fixes #27  
+**Enhance:** Optimise Page Templates. Fixes #26  
+**New:** Theme description.  
 
 ### 0.0.4
 **Fix:** Add missing theme domain to functions. (25-07-2019)  
