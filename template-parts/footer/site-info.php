@@ -13,7 +13,7 @@
 	<?php if ( ! empty( $blog_info ) ) : ?>
 				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
 			<?php endif; ?>
-		<a href="<?php echo esc_url( __( 'https://ainoblocks.com/', 'aino' ) ); ?>" class="imprint">
+		<a href="<?php echo esc_url( __( 'https://wpaino.com', 'aino' ) ); ?>" class="imprint">
 			<?php
 			/* translators: %s: theme name */
 			printf( esc_html__( 'Proudly powered by %s.', 'aino' ), 'Aino' );

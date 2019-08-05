@@ -38,8 +38,8 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		/**
 		 * Adds custom image sizes.
 		 */
-		add_image_size( 'aino-l', 1200, 800, true );
-		add_image_size( 'aino-m', 600, 400, true );
+		add_image_size( 'aino-l', 1200, 800, true ); // Image Ratio 3:2.
+		add_image_size( 'aino-m', 681, 454, true ); // Image Ratio 3:2.
 		add_image_size( 'aino-s-squared', 96, 96, true );
 
 		// Register Navigation menus.
@@ -120,7 +120,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Editor color palette.
 		$color_primary_one    = get_theme_mod( 'primary_one_color' );
 		$color_primary_two    = get_theme_mod( 'primary_two_color' );
-		$color__secondary_one = get_theme_mod( 'secondary_two_color' );
+		$color__secondary_one = get_theme_mod( 'secondary_one_color' );
 
 		add_theme_support(
 			'editor-color-palette',
@@ -209,10 +209,10 @@ if ( ! function_exists( 'aino_setup' ) ) :
 function aino_content_width() {
 	// This variable is intended to be overruled from themes.
 	// phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
-	if ( is_page_template( 'page-templates/fullwidth-page.php' ) || is_page_template( 'page-templates/fullwidth-notitle-page.php' ) ) {
+	if ( is_page_template( 'page-templates/tpl-fullwidth.php' ) || is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 1200 );
 	}
-	if ( is_page_template( 'page-templates/fullscreen-page.php' ) ) {
+	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 2010 );
 	} else {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 680 );

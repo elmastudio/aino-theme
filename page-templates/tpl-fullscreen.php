@@ -2,10 +2,10 @@
 /**
  * Template Name: Fullscreen
  *
- * Description: A page template for a Fullscreen Page without page title.
+ * Description: A Fullscreen Page template without page title and padding.
  *
  * @package Aino
- * @since Aino 0.0.1
+ * @since Aino 0.0.5
  */
 
 get_header(); ?>

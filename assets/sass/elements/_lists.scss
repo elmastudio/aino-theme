@@ -31,9 +31,11 @@ li > ul, li > ol {
 
 .entry-content ul,
 .entry-content ol {
-	margin: 0 0 $spacing-mobile-5 $spacing-mobile-3;
+	padding-left: $spacing-mobile-3;
+	margin-bottom: $spacing-mobile-5;
 	@include breakpoint(m) {
-		margin: 0 0 $spacing-desktop-5 $spacing-desktop-3;
+		padding-left: $spacing-desktop-3;
+		margin-bottom: $spacing-desktop-5;
 	}
 }
 

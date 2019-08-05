@@ -49,8 +49,8 @@
 	}
 }
 
-/* Fullscreen Page (for Page Building) */
-.fullscreen-page {
+/* Site Building Page */
+.tpl-fullscreen {
 
 	.type-page .entry-header {
 		display: none;
@@ -67,7 +67,16 @@
 	}
 
 	.site-content .entry-content {
-		padding: 0;
+		padding-top: 0;
+		padding-bottom: 0;
 		float: none;
+	}
+}
+
+/* Fullwidth Page */
+.tpl-fullwidth-notitle {
+
+	.type-page .entry-header {
+		display: none;
 	}
 }

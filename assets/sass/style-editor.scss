@@ -7,10 +7,54 @@ Aino Editor Styles
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
+
+/** === Editor Frame === */
+
+body {
+
+	.wp-block[data-align="full"] {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.wp-block[data-align="wide"] {
+		max-width: 1200px;
+	}
+
+	&.tpl-fullwidth .wp-block {
+		max-width: 1200px;
+	}
+
+	&.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
+		max-width: 1200px !important;
+	}
+
+	.wp-block[data-align="full"] {
+		max-width: none;
+	}
+
+	&.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
+		max-width: none !important;
+		width: auto !important;
+	}
+}
+
+.wp-block {
+	.tpl-fullwidth & {
+	max-width: 1200px;
+}
+}
+
 /** === Content Width === */
 
 .wp-block {
-	max-width: 680px;
+	max-width: $col7-nopadding;
+
+	// Only the top level blocks need specific widths, therefore override for every nested block.
+	.wp-block {
+		width: 100%;
+	}
 }
 
 /** === Left and Right Alignment on Small Screens === */
@@ -31,25 +75,6 @@ Aino Editor Styles
 .alignfull,
 .alignwide {
 	clear: both;
-}
-
-/** === Wide and Full Width === */
-
-.wp-block[data-align="wide"] {
-	max-width: 1200px;
-}
-
-body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
-	max-width: 1200px !important;
-}
-
-.wp-block[data-align="full"] {
-	max-width: none;
-}
-
-body.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
-	max-width: none !important;
-	width: auto !important;
 }
 
 /** === Base Typography === */
@@ -199,6 +224,10 @@ p.intro.has-drop-cap:not(:focus):first-letter {
 		font-size: 142px;
 	}
 }
+
+
+/** === Columns === */
+
 
  /** === Links === */
  a {
@@ -448,6 +477,10 @@ textarea {
 
 /** === Gallery === */
 
+.wp-block-gallery {
+	margin: 0;
+}
+
 .wp-block-gallery .blocks-gallery-image figcaption,
 .wp-block-gallery .blocks-gallery-item figcaption {
 	padding: 40px 12px 8px;
@@ -579,7 +612,7 @@ textarea {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: $content-width;
+	max-width: $col7-nopadding;
 	@include font-h4;
 }
 
@@ -697,14 +730,6 @@ pre.wp-block-verse {
 				color: $color__primary_one;
 				fill: $color__primary_one;
 				background-color: $primary_one_color_rgba_10;
-			}
-
-			&:not(.has-text-color) {
-
-			}
-
-			&:not(.has-background-color) {
-
 			}
 		}
 	}

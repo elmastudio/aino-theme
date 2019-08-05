@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-.single-post .entry-content {
+.single-post .has-post-thumbnail .entry-content {
 	padding-top: $spacing-mobile-6;
 	@include breakpoint(m) {
 		padding-top: $spacing-desktop-6;
@@ -19,7 +19,7 @@
 
 /* Single Post Header & Meta */
 .page-template-default .entry-header,
-.fullwidth-page .entry-header,
+.tpl-fullwidth .entry-header,
 .single-post .entry-header {
 	position: relative;
 	display: block;
@@ -34,11 +34,6 @@
 .single-post {
 	.entry-header .entry-title {
 		margin: 0;
-		word-wrap: break-word;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		-ms-hyphens: auto;
-		hyphens: auto;
 	}
 
 	& .entry-meta {
@@ -76,8 +71,6 @@
 .single-post .post-thumb {
 	@include flexbox;
 	justify-content: center;
-	padding-left: 0;
-	padding-right: 0;
 	@include breakpoint(l) {
 		padding: 0 $spacing-3;
 	}
@@ -131,9 +124,11 @@
 	@include flexbox;
 	justify-content: space-between;
 	border-top: 1px solid $color__border;
-	padding: $spacing-mobile-9 0 $spacing-mobile-6;
+	padding-top: $spacing-mobile-9;
+	padding-bottom: $spacing-mobile-6;
 	@include breakpoint(m) {
-		padding: $spacing-desktop-9 0 $spacing-desktop-6;
+		padding-top: $spacing-desktop-9;
+		padding-bottom: $spacing-desktop-6;
 	}
 }
 
@@ -222,7 +217,6 @@
 }
 
 .comment-content-wrap {
-	max-width: 605px;
 	margin-left: 6px;
 	border: 1px solid $color__border;
 	background-color: $color__background;

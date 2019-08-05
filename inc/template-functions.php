@@ -23,29 +23,17 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'single-page';
 	}
 
-	if ( is_page_template( 'page-templates/fullwidth-page.php' ) ) {
-		$classes[] = 'fullwidth';
-		$classes[] = 'fullwidth-page';
+	if ( is_page_template( 'page-templates/tpl-fullwidth.php' ) ) {
+		$classes[] = 'tpl-fullwidth';
 	}
 
-	if ( is_page_template( 'page-templates/fullwidth-notitle-page.php' ) ) {
-		$classes[] = 'fullwidth';
-		$classes[] = 'fullwidth-notitle-page';
+	if ( is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
+		$classes[] = 'tpl-fullwidth';
+		$classes[] = 'tpl-fullwidth-notitle';
 	}
 
-	if ( is_page_template( 'page-templates/fullscreen-page.php' ) ) {
-		$classes[] = 'fullscreen-page';
-	}
-
-	if ( is_page_template( 'page-templates/fullwidth-notitle-page.php' ) ) {
-		$classes[] = 'no-pagetitle';
-		$classes[] = 'fullwidth-notitle-page';
-	}
-
-	if ( is_page_template( 'page-templates/notitle-page.php' ) ) {
-		$classes[] = 'no-pagetitle';
-		$classes[] = 'notitle-page';
-		$classes[] = 'page-template-default';
+	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) ) {
+		$classes[] = 'tpl-fullscreen';
 	}
 
 	// Classes for Menus.

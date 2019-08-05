@@ -71,14 +71,14 @@ $stickyheader-desktop       : 88px;
 
 // Max Content Widths
 $website-width              : 1248px; // max default width
+$col12-nopadding            : 1200px;
 $ten-columns-width          : 1040px; // max default width
-$content-width              : 784px;
-$content-width-plus-padding : 880px; // max content width on single posts (incl additional 48px padding on each side)
 $bg-content-width           : 832px; // max content width, if has background
 $col5                       : 520px;
 $col5-nopadding             : 472px; // 5 column width without padding
 $col6-nopadding             : 576px; // 6 column width without padding
-$col7                       : 728px; // 7 column width padding
+$col7                       : 728px; // 7 grid columns width padding
+$col7-nopadding             : 680px; // 7 grid columns without padding
 
 // Border Radius
 $border-radius-xs: 4px;

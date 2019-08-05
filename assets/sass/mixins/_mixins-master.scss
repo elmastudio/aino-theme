@@ -5,9 +5,9 @@ $var: true !default; // Can be overridden elsewhere
 	* Responsive Breakpoints
 
 		 @include breakpoint(600)	{ } xs
-		 @include breakpoint(720)	{ } s
+		 @include breakpoint(776)	{ } s
 		 @include breakpoint(840)	{ } m
-		 @include breakpoint(1200)	{ } l
+		 @include breakpoint(1248)	{ } l
 		 @include breakpoint(1296)	{ } xl
 		 @include breakpoint(1600)	{ } xxl
 	* ------------------------------------------------------------ */
@@ -18,17 +18,17 @@ $var: true !default; // Can be overridden elsewhere
 		}
 	} @else
 	if $class == s {
-		@media (min-width: 45.000em) {
+		@media (min-width: 48.500em) {
 			@content;
 		}
 	} @else
 	if $class == m {
-		@media (min-width: 52.500em) {
+		@media (min-width: 48.500em) {
 			@content;
 		}
 	} @else
 	if $class == l {
-		@media (min-width: 75.000em) {
+		@media (min-width: 76.500em) {
 			@content;
 		}
 	} @else
@@ -65,7 +65,14 @@ $var: true !default; // Can be overridden elsewhere
 	justify-content: center;
 }
 
-// Font Families
+// Base Typography
+@mixin hyphenation {
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
 @mixin font-body {
 	font-family: $font__body;
 }
@@ -76,9 +83,6 @@ $var: true !default; // Can be overridden elsewhere
 }
 @mixin font-regular {
 	font-weight: normal;
-}
-@mixin font-medium {
-	font-weight: 500;
 }
 @mixin font-bold {
 	font-weight: bold;
