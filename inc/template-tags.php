@@ -27,24 +27,16 @@ if ( ! function_exists( 'aino_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		$byline = sprintf(
-			/* translators: 1: author name. 2: post author, only visible to screen readers. */
-			esc_html_x( '%s ', 'post author', 'aino' ),
-			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_the_author() . '</a></span>'
-		);
+		$byline = '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
 
-		$posted_on = sprintf(
-			/* translators: 1: post date. 2: post date, only visible to screen readers. */
-			esc_html_x( '%s', 'post date', 'aino' ),
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-		);
+		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
 		if ( get_avatar( get_the_author_meta( 'ID' ) ) ) :
 			echo '<figure class="author-avatar"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_avatar( get_the_author_meta( 'ID' ), 80 ) . '</a></figure>';
 
 		endif;
 
-		echo '<span class="aut9hor-meta-info"><span class="byline"> ' . $byline . '</span><span class="posted-on">' . $posted_on . '</span>';
+		echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '</span><span class="posted-on">' . wp_kses_post( $posted_on ) . '</span>';
 
 	}
 	endif;
@@ -68,13 +60,7 @@ if ( ! function_exists( 'aino_entry_date_blog' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		$posted_on = sprintf(
-			/* translators: 1: post date. 2: post date, only visible to screen readers. */
-			esc_html_x( '%s', 'post date', 'aino' ),
-			'' . $time_string . ''
-		);
-
-		echo '<span class="posted-on">' . $posted_on . '</span>';
+		echo '<span class="posted-on">' . esc_html( $time_string ) . '</span>';
 
 	}
 endif;
@@ -116,7 +102,7 @@ if ( ! function_exists( 'aino_edit_link' ) ) :
 	function aino_edit_link() {
 
 		$editlink = sprintf(
-			esc_html_x( 'Edit Post', 'aino' ) . '<span class="edit-link">' . aino_get_svg( array( 'icon' => 'baseline-edit-24px' ) ) . '</span><span class="screen-reader-text">' . get_the_title() . '</span>'
+			esc_html__( 'Edit Post', 'aino' ) . '<span class="edit-link">' . aino_get_svg( array( 'icon' => 'baseline-edit-24px' ) ) . '</span><span class="screen-reader-text">' . get_the_title() . '</span>'
 		);
 
 		// Edit post link.
@@ -141,8 +127,8 @@ if ( ! function_exists( 'aino_estimated_read_time' ) ) :
 		$read_time_text = sprintf( _nx( '%s min read', '%s min read', $minutes, 'Time to read', 'aino' ), $minutes );
 		printf(
 			'<span class="reading-time"><time datetime="%1$s"></time>%2$s</span>',
-			$datetime_attr,
-			$read_time_text
+			esc_html( $datetime_attr ),
+			esc_html( $read_time_text )
 		);
 	}
 endif;
@@ -181,7 +167,7 @@ function aino_comment( $comment, $args, $depth ) {
 					'<b class="fn">%s</b> %2$s',
 					get_comment_author_link( $comment ),
 					// If current post author is also comment author, make it known visually.
-					( $comment->user_id === $post->post_author ) ? '<span class="author-badge">' . esc_html_x( 'Author', 'aino' ) . '</span>' : ''
+					( $comment->user_id === $post->post_author ) ? '<span class="author-badge">' . esc_html__( 'Author', 'aino' ) . '</span>' : ''
 				);
 				?>
 				</div><!-- .comment-author -->
@@ -196,9 +182,9 @@ function aino_comment( $comment, $args, $depth ) {
 					<?php
 					printf(
 						/* translators: 1: The comment date. 2: the comment time. */
-						esc_html_x( '%1$s at %2$s', 'aino' ),
-						get_comment_date( '', $comment ),
-						get_comment_time()
+						esc_html__( '%1$s at %2$s', 'aino' ),
+						esc_html( get_comment_date( '', $comment ) ),
+						esc_html( get_comment_time() )
 					);
 					?>
 					</time>
