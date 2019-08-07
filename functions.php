@@ -208,7 +208,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
  */
 function aino_content_width() {
 	// This variable is intended to be overruled from themes.
-	// phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
+	// phpcs:disable WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
 	if ( is_page_template( 'page-templates/tpl-fullwidth.php' ) || is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 1200 );
 	}
@@ -217,6 +217,7 @@ function aino_content_width() {
 	} else {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 680 );
 	}
+	// phpcs:enable
 }
 add_action( 'after_setup_theme', 'aino_content_width', 0 );
 
