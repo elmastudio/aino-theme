@@ -1,9 +1,10 @@
 === Aino ===
-Contributors: elmastudio
+Contributors: elmastudio, manuelesposito, marc_j
 Tags: one-column, two-column, three-column, featured-images, theme-options, custom-colors, custom-menu, editor-style, translation-ready, footer-widgets, full-width-template, blog
 Requires at least: 5.0
 Tested up to: WordPress 5.2
 Requires PHP: 5.6
+Stable tag: trunk
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -39,8 +40,13 @@ Aino WordPress Theme bundles the following third-party resources:
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
 * WPGulp, © Ahmad Awais, MIT license, https://github.com/ahmadawais/WPGulp
 * Roboto Font, © Christian Robertson, Apache License, Version 2.0, https://fonts.google.com/specimen/Roboto
+* Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license,
+
 
 == Changelog ==
+
+= 0.0.6 =
+* Enhance: Readme information.
 
 = 0.0.5 =
 * Enhance: Page and post title hyphenation. (05-08-2019)
@@ -48,6 +54,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * Enhance: General styling.
 * Enhance: Default WordPress block styling. Fixes #27
 * Enhance: Optimise Page Templates. Fixes #26
+* Enhance: Optimise image sizes.
 * New: Theme description.
 
 = 0.0.4 =

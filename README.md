@@ -6,8 +6,9 @@ __Tags:__ one-column, two-column, three-column, featured-images, theme-options, 
 __Requires at least:__ 5.0
 __Tested up to:__ WordPress 5.2
 __Requires PHP:__ 5.6
-__License:__ GPLv2 or later
-__License URI:__ http://www.gnu.org/licenses/gpl-2.0.html
+__Stable tag:__ trunk
+__License:__ GPLv3 or later
+__License URI:__ http://www.gnu.org/licenses/gpl-3.0.html
 
 ## Changelog
 
