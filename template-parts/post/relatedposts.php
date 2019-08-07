@@ -9,7 +9,6 @@
 ?>
 
 <?php
-$orig_post = $post;
 global $post;
 
 // Get the category IDs.
@@ -54,5 +53,4 @@ if ( $categories ) {
 	}
 }
 
-$post = $orig_post;
 wp_reset_query(); ?>
