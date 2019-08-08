@@ -18,7 +18,9 @@ $category_link = get_category_link( $categories[0] );
 
 if ( $categories ) {
 	$category_ids = array();
-	foreach ( $categories as $individual_category ) $category_ids[] = $individual_category->term_id;
+	foreach ( $categories as $individual_category ) {
+		$category_ids[] = $individual_category->term_id;
+	}
 
 	$args = array(
 		'category__in'        => $category_ids,
