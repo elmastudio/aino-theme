@@ -55,4 +55,4 @@ if ( $categories ) {
 	}
 }
 
-wp_reset_query(); ?>
+wp_reset_postdata(); ?>
