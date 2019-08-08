@@ -33,7 +33,7 @@ if ( $categories ) {
 	if ( $rp_query->have_posts() ) {
 		echo '<div class="related-wrap">
 				<div class="related cf">
-					<h2 class="section-title"> ' . esc_html__( 'Related Posts', 'aino' ) . '<a class="related-more-link btn-outline btn-s" href=" ' . esc_url( $category_link ) . ' ">' . esc_html__( 'View more', 'aino' ) . '</a>' . '</h2>
+					<h2 class="section-title"> ' . esc_html__( 'Related Posts', 'aino' ) . '<a class="related-more-link btn-outline btn-s" href=" ' . esc_url( $category_link ) . ' ">' . esc_html__( 'View more', 'aino' ) . '</a></h2>
 
 		<div class="related-container">';
 
