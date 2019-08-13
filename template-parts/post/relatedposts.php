@@ -18,7 +18,9 @@ $category_link = get_category_link( $categories[0] );
 
 if ( $categories ) {
 	$category_ids = array();
-	foreach ( $categories as $individual_category ) $category_ids[] = $individual_category->term_id;
+	foreach ( $categories as $individual_category ) {
+		$category_ids[] = $individual_category->term_id;
+	}
 
 	$args = array(
 		'category__in'        => $category_ids,
@@ -31,7 +33,7 @@ if ( $categories ) {
 	if ( $rp_query->have_posts() ) {
 		echo '<div class="related-wrap">
 				<div class="related cf">
-					<h2 class="section-title"> ' . esc_html__( 'Related Posts', 'aino' ) . '<a class="related-more-link btn-outline btn-s" href=" ' . esc_url( $category_link ) . ' ">' . esc_html__( 'View more', 'aino' ) . '</a>' . '</h2>
+					<h2 class="section-title"> ' . esc_html__( 'Related Posts', 'aino' ) . '<a class="related-more-link btn-outline btn-s" href=" ' . esc_url( $category_link ) . ' ">' . esc_html__( 'View more', 'aino' ) . '</a></h2>
 
 		<div class="related-container">';
 
@@ -53,4 +55,4 @@ if ( $categories ) {
 	}
 }
 
-wp_reset_query(); ?>
+wp_reset_postdata(); ?>

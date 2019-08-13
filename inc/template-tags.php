@@ -118,7 +118,9 @@ if ( ! function_exists( 'aino_estimated_read_time' ) ) :
 	 */
 	function aino_estimated_read_time() {
 		$minutes = aino_get_estimated_reading_time();
-		if ( 0 === $minutes ) return null;
+		if ( 0 === $minutes ) {
+			return null;
+		}
 		$datetime_attr = sprintf(
 			'%dm 0s',
 			$minutes
