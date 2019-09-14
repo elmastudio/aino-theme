@@ -194,11 +194,9 @@ $var: true !default; // Can be overridden elsewhere
 	color: $color__white;
 	fill: $color__white;
 	background-color: $color__primary_one;
-	box-shadow: 0 10px 30px -4px $primary_one_color_rgba_35;
 
 	&:hover {
 		background-color: $color__primary_two;
-		box-shadow: 0 10px 30px -4px transparent;
 	}
 }
 
@@ -328,7 +326,6 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-
 // Mixin grid padding
 @mixin col-padding {
 	padding-left: $spacing-mobile-3;
@@ -370,11 +367,12 @@ $var: true !default; // Can be overridden elsewhere
 // Transitions
 @mixin transition-default {
 	-webkit-transition: all 0.2s ease;
-	transition        : all 0.2s ease;
+	transition : all 0.2s ease;
 }
+
 @mixin transition-posthover {
 	-webkit-transition: all 0.2s ease-in-out;
-	transition				: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 @mixin avatar-transition {

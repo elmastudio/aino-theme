@@ -13,18 +13,6 @@ input[type="submit"] {
 	@include btn-primary;
 }
 
-button:focus,
-button:active,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	outline: none;
-	box-shadow: none;
-}
-
 /* Button Styles */
 a.btn-primary,
 .btn-primary a {
@@ -76,7 +64,7 @@ a.btn-primary,
 .btn-primary a,
 a.btn-outline,
 .btn-outline a {
-	@include border-radius-s;
+	border-radius: 16px;
 }
 
 .btn-squared .btn,
@@ -85,7 +73,7 @@ a.btn-outline,
 .btn-squared .btn-primary a,
 .btn-squared a.btn-outline,
 .btn-squared .btn-outline a {
-	@include border-radius-0;
+	border-radius: 0;
 }
 
 .btn-round .btn,

@@ -1,4 +1,3 @@
-/* Block styles */
 
 /* Spacing Below Blocks */
 .wp-block-button,
@@ -185,7 +184,7 @@
 	}
 
 	&:not(.is-style-squared) .wp-block-button__link {
-		border-radius: $border-radius-s;
+		border-radius: 16px;
 	}
 
 	&.is-style-outline {
@@ -212,13 +211,30 @@
 .wp-block-image {
 
 	&.alignright {
-		float: right;
-		margin-left: 1em;
+		display: block;
+		float: none;
+		margin-bottom: $spacing-mobile-5;
+		@include breakpoint(xs) {
+			float: right;
+			margin: $spacing-1 0 $spacing-desktop-4 $spacing-desktop-4;
+		}
 	}
 
 	&.alignleft {
 		float: left;
 		margin-right: 1em;
+		@include breakpoint(xs) {
+			float: left;
+			margin: $spacing-1 $spacing-desktop-4 $spacing-desktop-4 0;
+		}
+	}
+
+	&.aligncenter {
+		clear: both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
 	}
 
 	&.aligncenter,
@@ -251,6 +267,11 @@
 .wp-block-image .alignright>figcaption,
 .wp-block-image.is-resized>figcaption {
 	display: block;
+}
+
+.wp-caption.alignleft .wp-caption-text,
+.wp-caption.alignright .wp-caption-text {
+	margin-bottom: 0;
 }
 
 /* Gallery */
