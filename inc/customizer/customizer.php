@@ -97,6 +97,15 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_section(
+		'aino_singlepost',
+		array(
+			'title'    => esc_html__( 'Single Post', 'aino' ),
+			'priority' => 7,
+			'panel'    => 'aino_themeoptions',
+		)
+	);
+
 	/**
 	 * Add Color Sections
 	 */
@@ -200,13 +209,14 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'button_style',
 		array(
-			'label'    => esc_html__( 'Button Style', 'aino' ),
-			'section'  => 'aino_styles',
-			'priority' => 1,
-			'type'     => 'select',
-			'choices'  => array(
-				'squared' => esc_html__( 'squared', 'aino' ),
-				'smooth'  => esc_html__( 'smooth', 'aino' ),
+			'label'       => esc_html__( 'Button Border Radius', 'aino' ),
+			'description' => esc_html__( 'Choose the degree of curvature.', 'aino' ),
+			'section'     => 'aino_styles',
+			'priority'    => 1,
+			'type'        => 'select',
+			'choices'     => array(
+				'squared' => esc_html__( 'square', 'aino' ),
+				'smooth'  => esc_html__( 'curved', 'aino' ),
 				'round'   => esc_html__( 'round', 'aino' ),
 			),
 		)
@@ -224,39 +234,15 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'form_style',
 		array(
-			'label'    => esc_html__( 'Form Style', 'aino' ),
-			'section'  => 'aino_styles',
-			'priority' => 2,
-			'type'     => 'select',
-			'choices'  => array(
-				'squared' => esc_html__( 'squared', 'aino' ),
-				'smooth'  => esc_html__( 'smooth', 'aino' ),
+			'label'       => esc_html__( 'Form Border Radius', 'aino' ),
+			'description' => esc_html__( 'Choose the degree of curvature.', 'aino' ),
+			'section'     => 'aino_styles',
+			'priority'    => 2,
+			'type'        => 'select',
+			'choices'     => array(
+				'squared' => esc_html__( 'square', 'aino' ),
+				'smooth'  => esc_html__( 'curved', 'aino' ),
 				'round'   => esc_html__( 'round', 'aino' ),
-			),
-		)
-	);
-
-	// Theme Options - Styles - Featured Images Style.
-	$wp_customize->add_setting(
-		'featuredimg_style',
-		array(
-			'default'           => aino_defaults( 'featuredimg_style' ),
-			'sanitize_callback' => 'aino_sanitize_borderradius',
-		)
-	);
-
-	$wp_customize->add_control(
-		'featuredimg_style',
-		array(
-			'label'    => esc_html__( 'Featured Images Border Radius', 'aino' ),
-			'section'  => 'aino_styles',
-			'priority' => 3,
-			'type'     => 'select',
-			'choices'  => array(
-				'radius-none' => esc_html__( 'none', 'aino' ),
-				'radius-s'    => esc_html__( '12px', 'aino' ),
-				'radius-m'    => esc_html__( '24px', 'aino' ),
-				'radius-l'    => esc_html__( '36px', 'aino' ),
 			),
 		)
 	);
@@ -276,7 +262,7 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'header_search',
 		array(
-			'label'    => esc_html__( 'Hide Search', 'aino' ),
+			'label'    => esc_html__( 'Display Search Form', 'aino' ),
 			'section'  => 'aino_header',
 			'type'     => 'checkbox',
 			'priority' => 1,
@@ -295,10 +281,11 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'header_dividers',
 		array(
-			'label'    => esc_html__( 'Hide Divider Borders', 'aino' ),
-			'section'  => 'aino_header',
-			'type'     => 'checkbox',
-			'priority' => 2,
+			'label'       => esc_html__( 'Hide Dividers', 'aino' ),
+			'description' => esc_html__( 'Check to hide vertical divider lines between header elements.', 'aino' ),
+			'section'     => 'aino_header',
+			'type'        => 'checkbox',
+			'priority'    => 2,
 		)
 	);
 
@@ -377,11 +364,12 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'blog_columns',
 		array(
-			'label'    => esc_html__( 'Number of blog columns', 'aino' ),
-			'section'  => 'aino_blog',
-			'priority' => 1,
-			'type'     => 'select',
-			'choices'  => array(
+			'label'       => esc_html__( 'Layout', 'aino' ),
+			'description' => esc_html__( 'Choose the column layout of your blog, archives and search results.', 'aino' ),
+			'section'     => 'aino_blog',
+			'priority'    => 1,
+			'type'        => 'select',
+			'choices'     => array(
 				'onecolumn'   => esc_html__( '1 column', 'aino' ),
 				'twocolumn'   => esc_html__( '2 column', 'aino' ),
 				'threecolumn' => esc_html__( '3 column', 'aino' ),
@@ -392,6 +380,24 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Blog Cards
 	 */
+	// Theme Options - Blog Cards - Description.
+	$wp_customize->add_setting(
+		'blogcards_description',
+		array(
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+
+	$wp_customize->add_control(
+		'blogcards_description',
+		array(
+			'description' => esc_html__( 'Choose how to display posts on your blog, archives and search results.', 'aino' ),
+			'section'     => 'aino_blogcards',
+			'type'        => 'hidden',
+			'priority'    => 1,
+		)
+	);
+
 	// Theme Options - Blog Cards - Border Radius.
 	$wp_customize->add_setting(
 		'blogcards_borderradius',
@@ -404,15 +410,16 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'blogcards_borderradius',
 		array(
-			'label'    => esc_html__( 'Border Radius', 'aino' ),
-			'section'  => 'aino_blogcards',
-			'priority' => 1,
-			'type'     => 'select',
-			'choices'  => array(
-				'radius-none' => esc_html__( 'none', 'aino' ),
-				'radius-s'    => esc_html__( '12px', 'aino' ),
-				'radius-m'    => esc_html__( '24px', 'aino' ),
-				'radius-l'    => esc_html__( '36px', 'aino' ),
+			'label'       => esc_html__( 'Border Radius', 'aino' ),
+			'description' => esc_html__( 'Choose the degree of curvature on blog card edges in pixels.', 'aino' ),
+			'section'     => 'aino_blogcards',
+			'priority'    => 1,
+			'type'        => 'select',
+			'choices'     => array(
+				'radius-none' => esc_html__( '0', 'aino' ),
+				'radius-s'    => esc_html__( '12', 'aino' ),
+				'radius-m'    => esc_html__( '24', 'aino' ),
+				'radius-l'    => esc_html__( '36', 'aino' ),
 			),
 		)
 	);
@@ -429,14 +436,14 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'blogcards_shadow',
 		array(
-			'label'    => esc_html__( 'Shadow', 'aino' ),
+			'label'    => esc_html__( 'Blog Card Shadow', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'priority' => 2,
 			'type'     => 'select',
 			'choices'  => array(
 				'shadow-none' => esc_html__( 'none', 'aino' ),
-				'shadow-a'    => esc_html__( 'a', 'aino' ),
-				'shadow-b'    => esc_html__( 'b', 'aino' ),
+				'shadow-a'    => esc_html__( 'thin', 'aino' ),
+				'shadow-b'    => esc_html__( 'thick', 'aino' ),
 			),
 		)
 	);
@@ -453,14 +460,14 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'blogcards_shadow_hover',
 		array(
-			'label'    => esc_html__( 'Shadow on Hover', 'aino' ),
+			'label'    => esc_html__( 'Blog Card Shadow on Hover', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'priority' => 3,
 			'type'     => 'select',
 			'choices'  => array(
 				'shadow-none' => esc_html__( 'none', 'aino' ),
-				'shadow-a'    => esc_html__( 'a', 'aino' ),
-				'shadow-b'    => esc_html__( 'b', 'aino' ),
+				'shadow-a'    => esc_html__( 'thin', 'aino' ),
+				'shadow-b'    => esc_html__( 'thick', 'aino' ),
 			),
 		)
 	);
@@ -494,7 +501,7 @@ function aino_customize_register( $wp_customize ) {
 		'post_excerpt_lengths',
 		array(
 			'default'           => aino_defaults( 'post_excerpt_lengths' ),
-			'sanitize_callback' => 'aino_sanitize_number_absint',
+			'sanitize_callback' => 'absint',
 		)
 	);
 
@@ -502,7 +509,7 @@ function aino_customize_register( $wp_customize ) {
 		'post_excerpt_lengths',
 		array(
 			'label'       => esc_html__( 'Excerpt Length', 'aino' ),
-			'description' => esc_html__( 'Choose number of words.', 'aino' ),
+			'description' => esc_html__( 'Choose the number of words shown in excerpt. To hide excerpt set to zero.', 'aino' ),
 			'section'     => 'aino_blogcards',
 			'priority'    => 5,
 			'type'        => 'number',
@@ -539,7 +546,7 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'blogcards_authororcats',
 		array(
-			'label'    => esc_html__( 'Display author instead of categories', 'aino' ),
+			'label'    => esc_html__( 'Display author details instead categories', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'type'     => 'checkbox',
 			'priority' => 7,
@@ -600,6 +607,32 @@ function aino_customize_register( $wp_customize ) {
 			'section'  => 'aino_blogcards',
 			'type'     => 'checkbox',
 			'priority' => 10,
+		)
+	);
+
+	// Theme Options - Single Post - Featured Images Style.
+	$wp_customize->add_setting(
+		'featuredimg_style',
+		array(
+			'default'           => aino_defaults( 'featuredimg_style' ),
+			'sanitize_callback' => 'aino_sanitize_borderradius',
+		)
+	);
+
+	$wp_customize->add_control(
+		'featuredimg_style',
+		array(
+			'label'       => esc_html__( 'Featured Image Border Radius', 'aino' ),
+			'description' => esc_html__( 'Choose the degree of curvature on featured image edges in pixels.', 'aino' ),
+			'section'     => 'aino_singlepost',
+			'priority'    => 1,
+			'type'        => 'select',
+			'choices'     => array(
+				'radius-none' => esc_html__( '0', 'aino' ),
+				'radius-s'    => esc_html__( '12', 'aino' ),
+				'radius-m'    => esc_html__( '24', 'aino' ),
+				'radius-l'    => esc_html__( '36', 'aino' ),
+			),
 		)
 	);
 
