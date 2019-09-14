@@ -60,7 +60,7 @@ if ( ! function_exists( 'aino_entry_date_blog' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		echo '<span class="posted-on">' . wp_kses_post( $time_string ) . '</span>';
+		echo '<span class="posted-on">' . $time_string . '</span>';
 
 	}
 endif;
