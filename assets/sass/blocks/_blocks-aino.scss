@@ -1,0 +1,52 @@
+/* Advanced Button */
+
+.wp-block-ainoblocks-advanced-button {
+
+	.wp-block-ainoblocks-advanced-button__link {
+		@include transition-default;
+	}
+}
+
+.wp-block-ainoblocks-advanced-button {
+
+	&.is-style-primary {
+
+		.wp-block-ainoblocks-advanced-button__link {
+
+			&:not(.has-background) {
+				background-color: $color__primary_one;
+			}
+
+			&:not(.has-background):hover {
+				background-color: $color__primary_two;
+			}
+		}
+	}
+
+	&.is-style-outline {
+
+		.wp-block-ainoblocks-advanced-button__link {
+
+			&:not(.has-background) {
+				color: $color__primary_one;
+				border-color: $color__primary_one;
+			}
+
+			&:not(.has-background):hover {
+				background-color: $primary_one_color_rgba_10 !important;
+			}
+		}
+	}
+
+	&.is-style-ghost {
+
+		.wp-block-ainoblocks-advanced-button__link {
+			color: $color__primary_one;
+
+			&:hover {
+				background-color: $primary_one_color_rgba_10 !important;
+			}
+		}
+	}
+
+}

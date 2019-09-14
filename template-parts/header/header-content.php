@@ -42,7 +42,7 @@
 
 	<div id="nav-wrap" class="nav-wrap">
 
-		<?php if ( true !== get_theme_mod( 'header_search' ) ) : ?>
+		<?php if ( false !== get_theme_mod( 'header_search' ) ) : ?>
 		<div class="search-header">
 			<?php get_search_form(); ?>
 		</div><!-- end .search-header -->

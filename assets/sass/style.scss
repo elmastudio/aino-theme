@@ -5,7 +5,7 @@ Theme URI: https://wpaino.com
 Author: elmastudio
 Author URI: https://www.elmastudio.de/en/
 Description: Aino is a Gutenberg-ready WordPress theme.
-Version: 0.0.5
+Version: 0.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aino
@@ -35,9 +35,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Page
 	## Pagination
 	## Footer
-# Widgets Default
-# Widgets Theme
-# Blocks Default
+# Widgets
+# Blocks
 --------------------------------------------------------------*/
 @import "mixins/mixins-master";
 @import "variables-site/variables-site";
@@ -73,11 +72,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules/accessibility";
 
 /*--------------------------------------------------------------
- # Alignments
- --------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
  # Clearings
  --------------------------------------------------------------*/
 @import "modules/clearings";
@@ -93,11 +87,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  @import "site/site";
 
  /*--------------------------------------------------------------
-	# Widgets Default
+	# Widgets
 	--------------------------------------------------------------*/
  @import "site/widgets-default";
 
  /*--------------------------------------------------------------
-	# Blocks Default
+	# Blocks
 	--------------------------------------------------------------*/
  @import "blocks/blocks-default";
+ @import "blocks/blocks-aino";

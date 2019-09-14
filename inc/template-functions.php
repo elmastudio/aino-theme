@@ -84,7 +84,7 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Header.
-	if ( true === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
+	if ( false === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
 		$classes[] = 'header-search-hide';
 	}
 

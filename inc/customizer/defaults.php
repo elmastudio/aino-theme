@@ -52,7 +52,7 @@ function aino_defaults( $name ) {
 
 				// Visibility.
 				'sitedescription'          => true,
-				'header_search'            => false,
+				'header_search'            => true,
 				'header_dividers'          => false,
 				'header_border'            => false,
 				'aino_displaydate'         => true,
