@@ -2,7 +2,7 @@
 Contributors: elmastudio, manuelesposito, marc_j
 Tags: one-column, two-column, three-column, featured-images, theme-options, custom-colors, custom-menu, editor-style, translation-ready, footer-widgets, full-width-template, blog
 Requires at least: 5.0
-Tested up to: WordPress 5.2
+Tested up to: WordPress 5.2.3
 Requires PHP: 5.6
 Stable tag: trunk
 License: GPLv3 or later
@@ -46,6 +46,10 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 0.0.6 =
+* New: Create Aino blocks scss file. (14-09-2019)
+* Enhance: Block styling.
+* Enhance: Customizer setting descriptions.
+* Enhance: Hide header search form by default (Activate via the Customizer.)
 * Enhance: Readme information.
 
 = 0.0.5 =
