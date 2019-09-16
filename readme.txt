@@ -45,6 +45,12 @@ Aino WordPress Theme bundles the following third-party resources:
 
 == Changelog ==
 
+= 0.0.7 =
+* Fix: Border-radius on post images on blog and archive pages.
+* Fix: Double publish date.
+* Fix: Display of header buttons on mobile.
+* Enhance: Buttons styles.
+
 = 0.0.6 =
 * New: Create Aino blocks scss file. (14-09-2019)
 * Enhance: Block styling.

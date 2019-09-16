@@ -179,6 +179,7 @@ $var: true !default; // Can be overridden elsewhere
 
 // Buttons
 @mixin btn {
+	display: block;
 	font-size: 16px;
 	line-height: 19px;
 	font-weight: normal;
@@ -230,16 +231,26 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-s($outline: true) {
 
 	@if $outline == true {
-		padding-top: 10px;
-		padding-bottom: 9px;
+		padding-top: 18px;
+		padding-bottom: 17px;
 	} @else {
-		padding-top: 11px;
-		padding-bottom: 10px;
+		padding-top: 19px;
+		padding-bottom: 18px;
 	}
 
 	@include breakpoint(xs) {
 		padding-left: $spacing-3;
 		padding-right: $spacing-3;
+	}
+
+	@include breakpoint(m) {
+		@if $outline == true {
+			padding-top: 10px;
+			padding-bottom: 9px;
+		} @else {
+			padding-top: 11px;
+			padding-bottom: 10px;
+		}
 	}
 }
 
@@ -262,16 +273,26 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-l($outline: true) {
 
 	@if $outline == true {
-		padding-top: 26px;
-		padding-bottom: 25px;
+		padding-top: 18px;
+		padding-bottom: 17px;
 	} @else {
-		padding-top: 27px;
-		padding-bottom: 26px;
+		padding-top: 19px;
+		padding-bottom: 18px;
 	}
 
 	@include breakpoint(xs) {
 		padding-left: $spacing-desktop-5;
 		padding-right: $spacing-desktop-5;
+	}
+
+	@include breakpoint(m) {
+		@if $outline == true {
+			padding-top: 26px;
+			padding-bottom: 25px;
+		} @else {
+			padding-top: 27px;
+			padding-bottom: 26px;
+		}
 	}
 }
 
