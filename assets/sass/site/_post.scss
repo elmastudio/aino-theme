@@ -83,17 +83,19 @@
 /* Customize Setting - Theme - Style Featured Images Border Radius */
 .post-thumb img {
 
-	border-radius: $border-radius-m;
+	.single-post & {
+		border-radius: $border-radius-m;
+	}
 
-	.featuredimg-radius-none & {
+	.single-post.featuredimg-radius-none & {
 		border-radius: 0;
 	}
 
-	.featuredimg-radius-s & {
+	.single-post.featuredimg-radius-s & {
 		border-radius: $border-radius-s;
 	}
 
-	.featuredimg-radius-l & {
+	.single-post.featuredimg-radius-l & {
 		border-radius: $border-radius-l;
 	}
 }

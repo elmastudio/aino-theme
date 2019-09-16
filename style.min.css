@@ -368,10 +368,13 @@ audio,video{display:inline-block}
 .content-container{display:block}
 .blogcards-radius-s .entry-link,.blogcards-radius-s .sticky-container .post-thumb-img,.blogcards-radius-s .sticky-container .post-thumb-img img,.blogcards-radius-s .related-post a,.blogcards-radius-s .navigation .nav-thumb,.blogcards-radius-s .navigation .nav-thumb img{border-radius:12px}
 .blogcards-radius-s .entry-link .post-thumb img{border-radius:12px 12px 0 0}
+.blogcards-radius-s.blogcards-no-shadow .entry-link .post-thumb img{border-radius:12px}
 .blogcards-radius-m .entry-link,.blogcards-radius-m .sticky-container .post-thumb-img,.blogcards-radius-m .sticky-container .post-thumb-img img,.blogcards-radius-m .related-post a,.blogcards-radius-m .navigation .nav-thumb,.blogcards-radius-m .navigation .nav-thumb img{border-radius:24px}
 .blogcards-radius-m .entry-link .post-thumb img{border-radius:24px 24px 0 0}
+.blogcards-radius-m.blogcards-no-shadow .entry-link .post-thumb img{border-radius:24px}
 .blogcards-radius-l .entry-link,.blogcards-radius-l .sticky-container .post-thumb-img,.blogcards-radius-l .sticky-container .post-thumb-img img,.blogcards-radius-l .related-post a,.blogcards-radius-l .navigation .nav-thumb,.blogcards-radius-l .navigation .nav-thumb img{border-radius:36px}
 .blogcards-radius-l .entry-link .post-thumb img{border-radius:36px 36px 0 0}
+.blogcards-radius-l.blogcards-no-shadow .entry-link .post-thumb img{border-radius:36px}
 .blogcards-shadow-a .entry-link,.blogcards-shadowhover-a .entry-link:hover,.blogcards-shadow-a .related-img,.blogcards-shadowhover-a .related-img:hover,.single-post.blogcards-shadow-a .navigation .nav-thumb,.single-post.blogcards-shadowhover-a .navigation .nav-thumb:hover{box-shadow:0 6px 12px -4px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04);-webkit-box-shadow:0 6px 12px -4px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04)}
 .blogcards-shadow-b .entry-link,.blogcards-shadowhover-b .entry-link:hover,.blogcards-shadow-b .related-img,.blogcards-shadowhover-b .related-img:hover,.single-post.blogcards-shadow-b .navigation .nav-thumb,.single-post.blogcards-shadowhover-b .navigation .nav-thumb:hover{box-shadow:0 24px 48px -12px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04);-webkit-box-shadow:0 24px 48px -12px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04)}
 .entry-link,.entry-link img{background-color:transparent;-webkit-transform:translateZ(0);transform:translateZ(0)}
@@ -413,10 +416,10 @@ audio,video{display:inline-block}
 .single-post .entry-comments{position:relative;display:inline-block}
 .single-post .post-thumb{display:-ms-flexbox;display:-webkit-box;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .single-post .post-thumb img{display:block}
-.post-thumb img{border-radius:24px}
-.featuredimg-radius-none .post-thumb img{border-radius:0}
-.featuredimg-radius-s .post-thumb img{border-radius:12px}
-.featuredimg-radius-l .post-thumb img{border-radius:36px}
+.single-post .post-thumb img{border-radius:24px}
+.single-post.featuredimg-radius-none .post-thumb img{border-radius:0}
+.single-post.featuredimg-radius-s .post-thumb img{border-radius:12px}
+.single-post.featuredimg-radius-l .post-thumb img{border-radius:36px}
 .single-post .entry-footer{padding-top:16px}
 .entry-tags{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .related-wrap{margin:48px 0 0}
@@ -826,8 +829,11 @@ ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:ca
 .blog.blog-1-column .posts-container .hentry .entry-footer,.blog-archive.blog-1-column .posts-container .hentry .entry-footer{margin:0;padding:16px 48px 48px 48px}
 .blog.blog-1-column .posts-container .has-post-thumbnail .entry-footer,.blog-archive.blog-1-column .posts-container .has-post-thumbnail .entry-footer{float:left;width:43.334%}
 .blog-1-column.blogcards-radius-s .entry-link .post-thumb img{border-radius:12px 0 0 12px}
+.blog-1-column.blogcards-radius-s.blogcards-no-shadow .entry-link .post-thumb img{border-radius:12px}
 .blog-1-column.blogcards-radius-m .entry-link .post-thumb img{border-radius:24px 0 0 24px}
+.blog-1-column.blogcards-radius-m.blogcards-no-shadow .entry-link .post-thumb img{border-radius:24px}
 .blog-1-column.blogcards-radius-l .entry-link .post-thumb img{border-radius:36px 0 0 36px}
+.blog-1-column.blogcards-radius-l.blogcards-no-shadow .entry-link .post-thumb img{border-radius:36px}
 .blog.blog-2-column .hentry .entry-header,.blog-archive.blog-2-column .hentry .entry-header{padding:56px 56px 0}
 .blog.blog-2-column .posts-container .hentry .entry-footer,.blog-archive.blog-2-column .posts-container .hentry .entry-footer{margin-left:56px;margin-right:56px}
 .single-post .post-thumb{padding:0 24px}
