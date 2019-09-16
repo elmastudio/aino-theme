@@ -248,14 +248,16 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $spacing-desktop-5;
-		padding: 0 0 0 $spacing-desktop-5;
+		height: $spacing-desktop-7;
+		padding: 0 0 0 $spacing-desktop-7;
 		vertical-align: middle;
 		border: 1px solid $color__border;
 		@include font-body3;
 		@include border-radius-s;
-		@include breakpoint(l) {
-			max-width: 200px;
+
+		@include breakpoint(m) {
+			height: $spacing-desktop-5;
+			padding: 0 0 0 $spacing-desktop-5;
 		}
 	}
 }
@@ -445,7 +447,7 @@
 	margin: 0;
 	overflow-x: visible;
 	overflow-y: scroll;
-	padding: $stickyheader-mobile $grid-margins-l;
+	padding: $stickyheader-mobile $grid-margins-s;
 	position: fixed;
 	right: -100%;
 	top: 0;
