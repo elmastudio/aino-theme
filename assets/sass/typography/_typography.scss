@@ -194,10 +194,10 @@ pre {
 	overflow: auto;
 	padding: $spacing-mobile-4;
 	margin-bottom: $spacing-mobile-4;
-	border: solid 1px $color__border;
-	@include border-radius-l;
+	border: none;
+	@include border-radius-m;
 	@include font-code;
-	@include shadow-card-a;
+
 	@include breakpoint(m) {
 		padding: $spacing-desktop-4;
 		margin-bottom: $spacing-desktop-4;
