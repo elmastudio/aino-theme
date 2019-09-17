@@ -116,8 +116,8 @@ dfn,em,i{font-style:italic}
 blockquote{margin:0;padding:0}
 .entry-content blockquote p,blockquote p{margin:0}
 blockquote cite,.wp-block-pullquote cite{text-align:left;display:block;padding:16px 0 0;font-size:14px;line-height:1.43;font-style:normal;font-weight:bold}
-code,kbd,tt,var{font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;color:#062e32}
-pre{max-width:100%;overflow:auto;padding:24px;margin-bottom:24px;border:solid 1px #dde2e5;border-radius:36px;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;color:#062e32;box-shadow:0 6px 12px -4px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04);-webkit-box-shadow:0 6px 12px -4px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04)}
+code,kbd,tt,var{font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43}
+pre{max-width:100%;overflow:auto;padding:24px;margin-bottom:24px;border:0;border-radius:24px;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;background:#b2cacd;color:#062e32}
 abbr,acronym{text-decoration:none;border-bottom:1px dotted #666;cursor:help}
 ins,mark{background-color:rgba(63,192,224,0.1);text-decoration:none}
 big{font-size:125%}
@@ -375,8 +375,8 @@ audio,video{display:inline-block}
 .blogcards-radius-l .entry-link,.blogcards-radius-l .sticky-container .post-thumb-img,.blogcards-radius-l .sticky-container .post-thumb-img img,.blogcards-radius-l .related-post a,.blogcards-radius-l .navigation .nav-thumb,.blogcards-radius-l .navigation .nav-thumb img{border-radius:36px}
 .blogcards-radius-l .entry-link .post-thumb img{border-radius:36px 36px 0 0}
 .blogcards-radius-l.blogcards-no-shadow .entry-link .post-thumb img{border-radius:36px}
-.blogcards-shadow-a .entry-link,.blogcards-shadowhover-a .entry-link:hover,.blogcards-shadow-a .related-img,.blogcards-shadowhover-a .related-img:hover,.single-post.blogcards-shadow-a .navigation .nav-thumb,.single-post.blogcards-shadowhover-a .navigation .nav-thumb:hover{box-shadow:0 6px 12px -4px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04);-webkit-box-shadow:0 6px 12px -4px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04)}
-.blogcards-shadow-b .entry-link,.blogcards-shadowhover-b .entry-link:hover,.blogcards-shadow-b .related-img,.blogcards-shadowhover-b .related-img:hover,.single-post.blogcards-shadow-b .navigation .nav-thumb,.single-post.blogcards-shadowhover-b .navigation .nav-thumb:hover{box-shadow:0 24px 48px -12px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04);-webkit-box-shadow:0 24px 48px -12px rgba(0,0,0,0.15),0 0 4px 0 rgba(0,0,0,0.04)}
+.blogcards-shadow-a .entry-link,.blogcards-shadowhover-a .entry-link:hover,.blogcards-shadow-a .related-img,.blogcards-shadowhover-a .related-img:hover,.single-post.blogcards-shadow-a .navigation .nav-thumb,.single-post.blogcards-shadowhover-a .navigation .nav-thumb:hover{box-shadow:0 4px 12px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 4px 12px 0 rgba(0,0,0,0.1)}
+.blogcards-shadow-b .entry-link,.blogcards-shadowhover-b .entry-link:hover,.blogcards-shadow-b .related-img,.blogcards-shadowhover-b .related-img:hover,.single-post.blogcards-shadow-b .navigation .nav-thumb,.single-post.blogcards-shadowhover-b .navigation .nav-thumb:hover{box-shadow:0 12px 32px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 12px 32px 0 rgba(0,0,0,0.1)}
 .entry-link,.entry-link img{background-color:transparent;-webkit-transform:translateZ(0);transform:translateZ(0)}
 .cardhover-zoom .entry-link:hover,.cardhover-zoom .entry-link:hover+.post-edit-link,.cardhover-zoom .post-thumb-img:hover+.post-edit-link,.cardhover-zoom .related-img:hover,.cardhover-zoom .navigation .nav-thumb:hover{-webkit-transform:perspective(1200) translateZ(30px);transform:perspective(1200) translateZ(30px)}
 .cardhover-moveup .entry-link:hover,.cardhover-moveup .entry-link:hover+.post-edit-link,.cardhover-moveup .post-thumb-img:hover+.post-edit-link,.cardhover-moveup .related-img:hover,.single-post.cardhover-moveup .navigation .nav-thumb:hover{-webkit-transform:translateY(-12px);transform:translateY(-12px)}
@@ -602,7 +602,7 @@ ul.wp-block-gallery.blocks-gallery-image figcaption,ul.wp-block-gallery.wp-block
 .wp-block-categories,.wp-block-latest-posts__post-date{margin:0 0 32px}
 .wp-block-categories-list,.wp-block-categories-list li,.wp-block-latest-posts,.wp-block-latest-posts li{margin:0;padding:0;text-align:left}
 .entry-content .wp-block-categories-list li a,.entry-content .wp-block-latest-posts li a{border:0}
-.wp-block-preformatted{background-color:#062e32;overflow:auto;padding:24px;margin-bottom:24px;border-radius:36px;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;color:#062e32;color:#b2cacd}
+.wp-block-preformatted{background-color:#062e32;color:#b2cacd;overflow:auto;padding:24px;margin-bottom:24px;border-radius:24px;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43}
 .entry-content .has-primary-one-color{color:#616aff;fill:#616aff}
 .entry-content p.has-primary-one-color a{-webkit-box-shadow:inset 0 -0.06em 0 #616aff;box-shadow:inset 0 -0.06em 0 #616aff;-webkit-box-shadow:inset 0 -0.07em 0 #616aff;box-shadow:inset 0 -0.07em 0 #616aff}
 .entry-content .has-primary-one-background-color{background:#616aff}
@@ -812,7 +812,7 @@ ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:ca
 .main-navigation ul .sub-menu.toggled-on{padding-top:24px}
 .mobilemenu-active{overflow:visible}
 .menu-toggle{display:none}
-.main-navigation ul ul{width:264px;padding:24px 0 24px 24px;background:#fff;left:-999em;position:absolute;top:40px;z-index:99999;border-radius:24px;box-shadow:0 20px 80px -18px rgba(0,0,0,0.15);-webkit-box-shadow:0 20px 80px -18px rgba(0,0,0,0.15)}
+.main-navigation ul ul{width:264px;padding:24px 0 24px 24px;background:#fff;left:-999em;position:absolute;top:40px;z-index:99999;border-radius:24px;box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 24px 64px 0 rgba(0,0,0,0.1)}
 .main-navigation ul ul ul{left:-999em;top:-24px}
 .main-navigation ul ul.sub-menu a{color:#212429;background:#fff;border-top:0;border-top:0;height:auto;text-transform:none;letter-spacing:0;width:auto;margin:0 0 24px;padding:0}
 .main-navigation ul ul.sub-menu a:hover,.main-navigation ul ul.sub-menu a a:hover{color:#616aff}
