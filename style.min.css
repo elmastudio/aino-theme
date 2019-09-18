@@ -191,9 +191,9 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.site-title a:
 .entry-tags a{border:1px solid #b3b9ce;color:#b3b9ce}
 .entry-tags a:hover{color:#616aff}
 .btn-squared .entry-cats a,.btn-squared .entry-cats a{border-radius:0}
-.post-edit-link{position:relative;text-indent:-1000em;display:block;width:40px;height:40px;background:#616aff;border-radius:100px;margin:0 auto;-webkit-box-shadow:0 6px 20px 0 rgba(97,106,255,0.35);box-shadow:0 6px 20px 0 rgba(97,106,255,0.35)}
+.post-edit-link{position:relative;text-indent:-1000em;display:block;width:40px;height:40px;background:#616aff;border-radius:100px;margin:0 auto}
 .blog .post-edit-link,.archive .post-edit-link,.search-results .post-edit-link{top:-20px;right:24px;position:absolute}
-.post-edit-link:hover{background:#4f45ff;-webkit-box-shadow:none;box-shadow:none}
+.post-edit-link:hover{background:#4f45ff}
 .site-branding a,.main-navigation a,.site-footer .widget_mc4wp_form_widget a,.site-footer a,.social-header-nav .icon,.social-footer-nav .icon,.sd-social-icon .sd-content ul li[class*='share-'] a{-webkit-transition:all .2s ease;transition:all .2s ease}
 .entry-content .instagram-pics li a,.pagination a,.related-img,.widget .instagram-pics li a,.post-edit-link,.entry-link,.entry-link img,.navigation .nav-thumb{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 button,input[type="button"],input[type="reset"],input[type="submit"]{display:block;font-size:16px;line-height:19px;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;padding-top:18px;padding-bottom:17px;border-radius:12px}

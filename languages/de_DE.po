@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Aino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-17 13:57+1200\n"
-"PO-Revision-Date: 2019-09-17 09:07+0000\n"
+"PO-Revision-Date: 2019-09-18 00:17+0000\n"
 "Last-Translator: Ellen Bauer <ellen.bauer@elmastudio.de>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -425,11 +425,11 @@ msgstr "untere Linie verbergen"
 
 #: inc/customizer/customizer.php:326
 msgid "Center Align Footer Widgets"
-msgstr "Zentriere Footer-Widgets"
+msgstr "Footer-Widgets zentrieren"
 
 #: inc/customizer/customizer.php:345
 msgid "Center Align Footer Info"
-msgstr "Zentriere Footer-Info"
+msgstr "Footer-Info zentrieren"
 
 #: inc/customizer/customizer.php:367
 msgid "Layout"
