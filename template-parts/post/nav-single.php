@@ -10,7 +10,7 @@
 
 <nav class="navigation post-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'aino' ); ?></h2>
-		<div class="nav-links cf">
+		<div class="nav-links">
 
 <?php $prev_post = get_previous_post(); ?>
 

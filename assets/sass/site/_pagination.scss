@@ -124,9 +124,25 @@
 		align-items: center;
 	}
 
+	.nav-previous {
+		padding-bottom: $spacing-mobile-6;
+
+		@include breakpoint(m) {
+			padding-bottom: 0;
+		}
+	}
+
 	.nav-next {
-		flex-direction: row-reverse;
-		justify-content: flex-end;
+		padding-top: $spacing-mobile-6;
+		border-top: 1px solid $color__border;
+
+		@include breakpoint(m) {
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+			padding-top: 0;
+			border-top: none;
+			border-left: 1px solid $color__border;
+		}
 	}
 
 	.nav-thumb {
@@ -138,16 +154,22 @@
 	}
 
 	.nav-next .nav-thumb {
-		margin: 0 0 0 $spacing-2;
+
+		@include breakpoint(m) {
+			margin: 0 0 0 $spacing-2;
+		}
 	}
 
 	.nav-title {
 		display: block;
-		width: 360px;
 	}
 
 	.nav-next .nav-title {
-		text-align: right;
+
+		@include breakpoint(m) {
+			text-align: right;
+			flex-grow: 3;
+		}
 	}
 
 	.nav-title span {
