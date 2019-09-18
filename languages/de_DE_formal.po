@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Aino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-17 13:57+1200\n"
-"PO-Revision-Date: 2019-09-17 09:04+0000\n"
+"PO-Revision-Date: 2019-09-18 04:35+0000\n"
 "Last-Translator: Ellen Bauer <ellen.bauer@elmastudio.de>\n"
 "Language-Team: Deutsch (Sie)\n"
 "Language: de_DE_formal\n"
@@ -632,7 +632,7 @@ msgstr "Veröffentlicht von"
 
 #: template-parts/post/content-single.php:25
 msgid "Leave a reply"
-msgstr "Antworten"
+msgstr "Kommentar schreiben"
 
 #: template-parts/post/content-single.php:25 template-parts/post/content.php:79
 msgid "Comment 1"
@@ -654,7 +654,7 @@ msgstr "Beitrags-Navigation"
 
 #: template-parts/post/nav-single.php:25
 msgid "Previous Post"
-msgstr "Vorherige Beiträge"
+msgstr "Vorheriger Beitrag"
 
 #: template-parts/post/nav-single.php:41
 msgid "Next Post"
