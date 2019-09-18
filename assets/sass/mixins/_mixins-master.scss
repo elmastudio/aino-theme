@@ -56,7 +56,6 @@ $var: true !default; // Can be overridden elsewhere
 
 // Flexbox
 @mixin flexbox {
-	display: -ms-flexbox;
 	display: flex;
 }
 

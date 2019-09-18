@@ -198,6 +198,7 @@
 /* Grid Columns */
 .posts-container,
 .single-post .nav-links {
+
 	@include flexbox;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -232,17 +233,29 @@
 .s6,
 .single-post .related-post,
 .single-post .navigation .next,
-.post-navigation .nav-next,
-.single-post .navigation .prev,
-.post-navigation .nav-previous {
+.single-post .navigation .prev {
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
+
 	@include breakpoint(m) {
 		flex-basis: calc(50% - 48px);
 		margin-left: $spacing-desktop-3;
 		margin-right: $spacing-desktop-3;
 	}
 }
+
+.post-navigation .nav-next,
+.post-navigation .nav-previous {
+	width: 100%; // 1-column on mobile
+	flex-grow: 0;
+
+	@include breakpoint(m) {
+		flex-basis: calc(50%);
+		padding-left: $spacing-desktop-3;
+		padding-right: $spacing-desktop-3;
+	}
+}
+
 
 /* 3-Columns */
 .blog-3-column .posts-container .hentry,
