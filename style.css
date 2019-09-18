@@ -356,9 +356,9 @@ blockquote { margin: 0; padding: 0; }
 
 blockquote cite, .wp-block-pullquote cite { text-align: left; display: block; padding: 16px 0 0; font-size: 14px; line-height: 1.43; font-style: normal; font-weight: bold; }
 
-code, kbd, tt, var { font-family: "Monaco", "Courier 10 Pitch", Courier, monospace; font-size: 14px; line-height: 1.43; color: #062e32; }
+code, kbd, tt, var { font-family: "Monaco", "Courier 10 Pitch", Courier, monospace; font-size: 14px; line-height: 1.43; }
 
-pre { max-width: 100%; overflow: auto; padding: 24px; margin-bottom: 24px; border: solid 1px #dde2e5; border-radius: 36px; font-family: "Monaco", "Courier 10 Pitch", Courier, monospace; font-size: 14px; line-height: 1.43; color: #062e32; box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04); -webkit-box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04); }
+pre { max-width: 100%; overflow: auto; padding: 24px; margin-bottom: 24px; border: none; border-radius: 24px; font-family: "Monaco", "Courier 10 Pitch", Courier, monospace; font-size: 14px; line-height: 1.43; }
 
 @media (min-width: 48.5em) { pre { padding: 32px; margin-bottom: 32px; } }
 
@@ -539,11 +539,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .site-ti
 .btn-squared .entry-cats a, .btn-squared .entry-cats a { border-radius: 0; }
 
 /* Edit Link */
-.post-edit-link { position: relative; text-indent: -1000em; display: block; width: 40px; height: 40px; background: #616aff; border-radius: 100px; margin: 0 auto; -webkit-box-shadow: 0 6px 20px 0 rgba(97, 106, 255, 0.35); box-shadow: 0 6px 20px 0 rgba(97, 106, 255, 0.35); }
+.post-edit-link { position: relative; text-indent: -1000em; display: block; width: 40px; height: 40px; background: #616aff; border-radius: 100px; margin: 0 auto; }
 
 .blog .post-edit-link, .archive .post-edit-link, .search-results .post-edit-link { top: -20px; right: 24px; position: absolute; }
 
-.post-edit-link:hover { background: #4f45ff; -webkit-box-shadow: none; box-shadow: none; }
+.post-edit-link:hover { background: #4f45ff; }
 
 @media (min-width: 48.5em) { .single-post .post-edit-link, .page .post-edit-link { top: 0; right: 0; position: absolute; } }
 
@@ -1018,7 +1018,7 @@ audio, video { display: inline-block; }
 /* Main Menu - Desktop */
 @media (min-width: 76.5em) { .menu-toggle { display: none; }
   /* Main Menu - Dropdown */
-  .main-navigation ul ul { width: 264px; padding: 24px 0 24px 24px; background: #ffffff; left: -999em; position: absolute; top: 40px; z-index: 99999; border-radius: 24px; box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15); }
+  .main-navigation ul ul { width: 264px; padding: 24px 0 24px 24px; background: #ffffff; left: -999em; position: absolute; top: 40px; z-index: 99999; border-radius: 24px; box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1); }
   .main-navigation ul ul ul { left: -999em; top: -24px; }
   .main-navigation ul ul.sub-menu a { color: #212429; background: #ffffff; border-top: none; border-top: none; height: auto; text-transform: none; letter-spacing: 0; width: auto; margin: 0 0 24px; padding: 0; } }
 
@@ -1111,9 +1111,9 @@ audio, video { display: inline-block; }
 @media (min-width: 76.5em) { .blog-1-column.blogcards-radius-l.blogcards-no-shadow .entry-link .post-thumb img { border-radius: 36px; } }
 
 /* Blog Cards - Shadows */
-.blogcards-shadow-a .entry-link, .blogcards-shadowhover-a .entry-link:hover, .blogcards-shadow-a .related-img, .blogcards-shadowhover-a .related-img:hover, .single-post.blogcards-shadow-a .navigation .nav-thumb, .single-post.blogcards-shadowhover-a .navigation .nav-thumb:hover { box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04); -webkit-box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04); }
+.blogcards-shadow-a .entry-link, .blogcards-shadowhover-a .entry-link:hover, .blogcards-shadow-a .related-img, .blogcards-shadowhover-a .related-img:hover, .single-post.blogcards-shadow-a .navigation .nav-thumb, .single-post.blogcards-shadowhover-a .navigation .nav-thumb:hover { box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1); }
 
-.blogcards-shadow-b .entry-link, .blogcards-shadowhover-b .entry-link:hover, .blogcards-shadow-b .related-img, .blogcards-shadowhover-b .related-img:hover, .single-post.blogcards-shadow-b .navigation .nav-thumb, .single-post.blogcards-shadowhover-b .navigation .nav-thumb:hover { box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04); -webkit-box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04); }
+.blogcards-shadow-b .entry-link, .blogcards-shadowhover-b .entry-link:hover, .blogcards-shadow-b .related-img, .blogcards-shadowhover-b .related-img:hover, .single-post.blogcards-shadow-b .navigation .nav-thumb, .single-post.blogcards-shadowhover-b .navigation .nav-thumb:hover { box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1); }
 
 /* Blog Card - Animations */
 .entry-link, .entry-link img { background-color: transparent; -webkit-transform: translateZ(0); transform: translateZ(0); }
@@ -1790,7 +1790,7 @@ ul.wp-block-gallery.blocks-gallery-image figcaption, ul.wp-block-gallery.wp-bloc
 .entry-content .wp-block-categories-list li a, .entry-content .wp-block-latest-posts li a { border: none; }
 
 /* Preformatted */
-.wp-block-preformatted { background-color: #062e32; overflow: auto; padding: 24px; margin-bottom: 24px; border-radius: 36px; font-family: "Monaco", "Courier 10 Pitch", Courier, monospace; font-size: 14px; line-height: 1.43; color: #062e32; color: #b2cacd; }
+.wp-block-preformatted { background-color: #062e32; overflow: auto; padding: 24px; margin-bottom: 24px; border-radius: 24px; font-family: "Monaco", "Courier 10 Pitch", Courier, monospace; font-size: 14px; line-height: 1.43; color: #b2cacd; }
 
 @media (min-width: 48.5em) { .wp-block-preformatted { padding: 32px; margin-bottom: 32px; } }
 

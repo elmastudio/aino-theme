@@ -223,7 +223,7 @@
 .blogcards-shadowhover-a .related-img:hover,
 .single-post.blogcards-shadow-a .navigation .nav-thumb,
 .single-post.blogcards-shadowhover-a .navigation .nav-thumb:hover {
-	@include shadow-card-a;
+	@include shadow-3;
 }
 
 .blogcards-shadow-b .entry-link,
@@ -232,7 +232,7 @@
 .blogcards-shadowhover-b .related-img:hover,
 .single-post.blogcards-shadow-b .navigation .nav-thumb,
 .single-post.blogcards-shadowhover-b .navigation .nav-thumb:hover {
-	@include shadow-card-b;
+	@include shadow-4;
 }
 
 /* Blog Card - Animations */

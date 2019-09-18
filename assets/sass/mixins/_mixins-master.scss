@@ -173,7 +173,6 @@ $var: true !default; // Can be overridden elsewhere
 	font-family: $font__code;
 	font-size: 14px;
 	line-height: 1.43;
-	color: $color__code_two;
 }
 
 // Buttons
@@ -384,6 +383,42 @@ $var: true !default; // Can be overridden elsewhere
 		border-radius: 50%;
 }
 
+// Shadows
+// Used for forms.
+@mixin shadow-1 {
+	box-shadow        : 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+// Used for navigation bar bottom shadow.
+@mixin shadow-2 {
+	box-shadow        : 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+}
+
+// Used for cards, buttons.
+@mixin shadow-3 {
+	box-shadow        : 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+// Used for cards.
+@mixin shadow-4 {
+	box-shadow        : 0 12px 32px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+// Used for menu dropdown.
+@mixin shadow-5 {
+	box-shadow        : 0 24px 64px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadow-none {
+	box-shadow        : none;
+	-webkit-box-shadow: none;
+}
+
 // Transitions
 @mixin transition-default {
 	-webkit-transition: all 0.2s ease;
@@ -400,34 +435,7 @@ $var: true !default; // Can be overridden elsewhere
 	transform: translate(0px, -2px);
 }
 
-// Shadows
-@mixin shadow-card-a {
-	box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
-	-webkit-box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
-}
-
-@mixin shadow-card-b {
-	box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
-	-webkit-box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.04);
-}
-
-@mixin shadow-soft-a {
-	box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15);
-	-webkit-box-shadow: 0 20px 80px -18px rgba(0, 0, 0, 0.15);
-}
-
-@mixin shadow-soft-b {
-	box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.08);
-	-webkit-box-shadow:0 20px 48px 0 rgba(0, 0, 0, 0.08);
-}
-
-// Disable Shadow
-@mixin shadow-none {
-	box-shadow        : none;
-	-webkit-box-shadow: none;
-}
-
-// Animation Effects
+// Animations
 @mixin scale {
 	-webkit-transform: scale(1.01);
 	transform        : scale(1.01);

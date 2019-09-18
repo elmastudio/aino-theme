@@ -609,7 +609,7 @@
 		top: 40px;
 		z-index: 99999;
 		@include border-radius-m;
-		@include shadow-soft-a;
+		@include shadow-5;
 	}
 
 	.main-navigation ul ul ul {

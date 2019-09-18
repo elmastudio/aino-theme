@@ -501,9 +501,10 @@ ul.wp-block-gallery {
 	overflow: auto;
 	padding: $spacing-mobile-4;
 	margin-bottom: $spacing-mobile-4;
-	@include border-radius-l;
+	@include border-radius-m;
 	@include font-code;
 	color: $color__code_one;
+
 	@include breakpoint(m) {
 		padding: $spacing-desktop-4;
 		margin-bottom: $spacing-desktop-4;

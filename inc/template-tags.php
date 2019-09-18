@@ -36,7 +36,7 @@ if ( ! function_exists( 'aino_posted_on' ) ) :
 
 		endif;
 
-		echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '</span><span class="posted-on">' . wp_kses_post( $posted_on ) . '</span>';
+		echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '</span><span class="posted-on">' . $posted_on . '</span>';
 
 	}
 	endif;

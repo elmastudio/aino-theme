@@ -618,15 +618,13 @@ textarea {
 
 /** === Code + Preformatted === */
 .wp-block-code {
-	background: transparent;
+	background: $color__code_one;
+	color: $color__code_two;
 	@include font-code;
 	@include font-body4;
-	@include font-code;
-	color: $color__text_two;
 	padding: $spacing-mobile-4;
-	@include border-radius-l;
-	@include font-code;
-	@include shadow-card-a;
+	@include border-radius-m;
+
 	@include breakpoint(m) {
 		padding: $spacing-desktop-4;
 		margin-bottom: $spacing-desktop-4;
@@ -639,19 +637,23 @@ textarea {
 
 .wp-block-preformatted {
 	background-color: $color__code_two;
+	color: $color__code_one;
 	max-width: 100%;
 	overflow: auto;
 	padding: $spacing-mobile-4;
 	margin-bottom: $spacing-mobile-4;
-	@include border-radius-l;
+	@include border-radius-m;
 	@include font-code;
-	color: $color__code_one;
+
 	@include breakpoint(m) {
 		padding: $spacing-desktop-4;
 		margin-bottom: $spacing-desktop-4;
 	}
 
 	& pre {
+		margin: 0;
+		padding: 0;
+		background-color: $color__code_two;
 		color: $color__code_one;
 	}
 }
