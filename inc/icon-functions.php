@@ -184,7 +184,7 @@ function aino_social_links_icons() {
 		'line.me'              => 'line',
 		'linkedin.com'         => 'linkedin',
 		'mailchimp.com'        => 'mailchimp',
-		'mailto:'              => 'envelope',
+		'mailto:'              => 'baseline-mail-24px',
 		'mastercard.com'       => 'mastercard',
 		'medium.com'           => 'medium',
 		'meetup.com'           => 'meetup',
