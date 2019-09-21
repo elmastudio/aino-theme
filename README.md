@@ -12,6 +12,17 @@ __License URI:__ http://www.gnu.org/licenses/gpl-3.0.html
 
 ## Changelog
 
+### 0.0.7
+**Fix:** Border-radius on post images on blog and archive pages.  
+**Fix:** Double publish date.  
+**Fix:** Display of header buttons on mobile.  
+**Fix:** Single Post pagination.  
+**Fix:** Mail svg social icon.  
+**Fix:** Allow not using a primary menu.  
+**Enhance:** Buttons styles.  
+**Enhance:** Sticky post badge style.  
+**Enhance:** Featured image hovers.  
+
 ### 0.0.6
 **New:** Create Aino blocks scss file. (14-09-2019)  
 **Enhance:** Block styling.  
