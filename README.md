@@ -13,7 +13,7 @@ __License URI:__ http://www.gnu.org/licenses/gpl-3.0.html
 ## Changelog
 
 ### 0.0.7
-**Fix:** Border-radius on post images on blog and archive pages.  
+**Fix:** Border-radius on post images on blog and archive pages. (21-09-2019)  
 **Fix:** Double publish date.  
 **Fix:** Display of header buttons on mobile.  
 **Fix:** Single Post pagination.  
