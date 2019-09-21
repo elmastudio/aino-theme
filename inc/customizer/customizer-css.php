@@ -192,13 +192,6 @@ function aino_customizer_css() {
 		border-color: ' . esc_attr( $comments_border_color ) . ';
 		background-color: ' . esc_attr( $comments_bg_color ) . ';
 	}
-	button,
-	input[type="button"],
-	input[type="submit"],
-	.a.btn-primary,
-	.btn-primary a {
-		box-shadow: 0 10px 30px -4px ' . esc_attr( $primary_one_color_rgba_35 ) . ';
-	}
 	';
 
 	wp_add_inline_style( 'aino-style', wp_strip_all_tags( $css ) );

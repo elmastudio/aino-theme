@@ -187,6 +187,11 @@ $var: true !default; // Can be overridden elsewhere
 	@include breakpoint(xs) {
 		width: auto;
 	}
+
+	&:hover {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
 }
 
 @mixin btn-primary {
@@ -196,6 +201,7 @@ $var: true !default; // Can be overridden elsewhere
 
 	&:hover {
 		background-color: $color__primary_two;
+		@include shadow-3;
 	}
 }
 
