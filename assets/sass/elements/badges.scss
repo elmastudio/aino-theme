@@ -1,17 +1,15 @@
 /* Sticky Post Badge */
 .badge-highlight {
 	position: absolute;
-	top: -12px;
-	left: 24px;
+	top: 12px;
+	left: 12px;
 	z-index: 1;
-	@include font-body5;
+	font-size: 13px;
 	font-weight: bold;
-	letter-spacing: 1px;
-	line-height: 1;
-	text-transform: uppercase;
+	line-height: 1.23;
 	background: $color__secondary_one;
 	color: $color__white;
-	padding: 6px $spacing-s;
+	padding: 4px $spacing-s;
 	display: inline-block;
 	border-radius: $border-radius-xl;
 }
