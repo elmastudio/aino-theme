@@ -262,10 +262,24 @@
 	transform: translateY(-12px);
 }
 
+
 /* Blog Cards - Featured Images */
 .hentry .post-thumb a {
 	display: inline-block;
 	line-height: 0;
+}
+
+.related-post img,
+.nav-links .nav-thumb img {
+
+	@include transition-posthover;
+}
+
+.entry-link:hover img,
+.related-post a:hover img,
+.nav-links .nav-thumb:hover img {
+
+	@include img-bright;
 }
 
 /* Blog Cards - Entry Header */

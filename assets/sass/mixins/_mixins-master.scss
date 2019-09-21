@@ -448,8 +448,8 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin img-bright {
-	-webkit-filter: brightness(110%);
-	filter: brightness(110%);
+	-webkit-filter: brightness(105%);
+	filter: brightness(105%);
 }
 
 // Retina Images

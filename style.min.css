@@ -240,7 +240,7 @@ a.btn-outline:hover,.btn-outline a:hover{color:#616aff;fill:#616aff;background-c
 .children .comment-avatar:after{width:24px;height:24px;min-width:24px}
 .author-avatar-link:after{width:56px;height:56px}
 .authorbox-wrap a.author-pic-link,a.author-avatar-link{-webkit-transition:all .2s ease;transition:all .2s ease}
-.authorbox-wrap a.author-pic-link:hover,a.author-avatar-link:hover{-webkit-transform:translate(0,-2px);transform:translate(0,-2px);-webkit-filter:brightness(110%);filter:brightness(110%)}
+.authorbox-wrap a.author-pic-link:hover,a.author-avatar-link:hover{-webkit-transform:translate(0,-2px);transform:translate(0,-2px);-webkit-filter:brightness(105%);filter:brightness(105%)}
 .authorbox-wrap a.author-pic-link:after,a.author-avatar-link:after{box-shadow:0 0 0 -1px rgba(0,0,0,0.4);-webkit-box-shadow:0 0 0 -1px rgba(0,0,0,0.4);-webkit-transition:all .2s ease;transition:all .2s ease}
 .authorbox-wrap a.author-pic-link:hover::after,a.author-avatar-link:hover::after{box-shadow:0 16px 48px -4px rgba(0,0,0,0.15);-webkit-box-shadow:0 16px 48px -4px rgba(0,0,0,0.15)}
 .badge-highlight{position:absolute;top:12px;left:12px;z-index:1;font-size:13px;font-weight:bold;line-height:1.23;background:#1cceb2;color:#fff;padding:4px 12px;display:inline-block;border-radius:100px}
@@ -385,6 +385,8 @@ audio,video{display:inline-block}
 .cardhover-zoom .entry-link:hover,.cardhover-zoom .entry-link:hover+.post-edit-link,.cardhover-zoom .post-thumb-img:hover+.post-edit-link,.cardhover-zoom .related-img:hover,.cardhover-zoom .navigation .nav-thumb:hover{-webkit-transform:perspective(1200) translateZ(30px);transform:perspective(1200) translateZ(30px)}
 .cardhover-moveup .entry-link:hover,.cardhover-moveup .entry-link:hover+.post-edit-link,.cardhover-moveup .post-thumb-img:hover+.post-edit-link,.cardhover-moveup .related-img:hover,.single-post.cardhover-moveup .navigation .nav-thumb:hover{-webkit-transform:translateY(-12px);transform:translateY(-12px)}
 .hentry .post-thumb a{display:inline-block;line-height:0}
+.related-post img,.nav-links .nav-thumb img{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.entry-link:hover img,.related-post a:hover img,.nav-links .nav-thumb:hover img{-webkit-filter:brightness(105%);filter:brightness(105%)}
 .blog .hentry .entry-header,.blog-archive .hentry .entry-header{padding:24px 24px 0}
 .hentry .entry-summary{padding:8px 0 0}
 .byline,.updated:not(.published){display:none}

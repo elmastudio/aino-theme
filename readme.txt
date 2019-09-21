@@ -54,6 +54,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * Fix: Allow not using a primary menu.
 * Enhance: Buttons styles.
 * Enhance: Sticky post badge style.
+* Enhance: Featured image hovers.
 
 = 0.0.6 =
 * New: Create Aino blocks scss file. (14-09-2019)
