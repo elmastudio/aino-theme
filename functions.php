@@ -356,8 +356,6 @@ function aino_scripts() {
 		);
 	}
 
-	wp_localize_script( 'aino-skip-link-focus-fix', 'ainoScreenReaderText', $aino_l10n );
-
 	wp_enqueue_script( 'aino-custom', get_theme_file_uri( '/assets/js/custom.js' ), array(), wp_get_theme()->get( 'Version' ), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
