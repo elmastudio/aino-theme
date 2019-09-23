@@ -1,6 +1,6 @@
 === Aino ===
 Contributors: elmastudio, manuelesposito, marc_j
-Tags: one-column, two-column, three-column, featured-images, theme-options, custom-colors, custom-menu, editor-style, translation-ready, footer-widgets, full-width-template, blog
+Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
 Tested up to: WordPress 5.2.3
 Requires PHP: 5.6
