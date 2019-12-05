@@ -177,7 +177,7 @@ $var: true !default; // Can be overridden elsewhere
 
 // Buttons
 @mixin btn {
-	display: block;
+	display: inline-block;
 	font-size: 16px;
 	line-height: 19px;
 	font-weight: normal;

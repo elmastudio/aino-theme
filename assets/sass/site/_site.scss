@@ -1,8 +1,28 @@
 /* General */
 .site-content {
-	padding-top: $spacing-mobile-9;
+	padding-top: $spacing-mobile-8;
+
 	@include breakpoint(m) {
-		padding-top: $spacing-desktop-9;
+		padding-top: $spacing-desktop-8;
+	}
+
+	@include breakpoint(l) {
+		margin-top: 89px;
+	}
+
+}
+
+
+.entry-content {
+
+	.error-404 &,
+	.search-no-results &,
+	.type-page & {
+		padding-bottom: $spacing-mobile-8;
+
+		@include breakpoint(m) {
+			padding-bottom: $spacing-desktop-8;
+		}
 	}
 }
 

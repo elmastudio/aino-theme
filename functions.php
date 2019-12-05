@@ -45,9 +45,10 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Register Navigation menus.
 		register_nav_menus(
 			array(
-				'menu-1'     => esc_html__( 'Primary', 'aino' ),
-				'social'     => esc_html__( 'Social Icons', 'aino' ),
-				'cta-header' => esc_html__( 'Header CTA Buttons', 'aino' ),
+				'menu-1'        => esc_html__( 'Primary Menu', 'aino' ),
+				'cta-header'    => esc_html__( 'Header Buttons (Desktop only)', 'aino' ),
+				'social'        => esc_html__( 'Header Social Menu (Desktop only)', 'aino' ),
+				'social-footer' => esc_html__( 'Footer Social Menu', 'aino' ),
 			)
 		);
 
@@ -342,18 +343,9 @@ function aino_scripts() {
 	// Theme stylesheet.
 	wp_enqueue_style( 'aino-style', get_stylesheet_uri(), false, wp_get_theme()->get( 'Version' ) );
 
-	wp_enqueue_script( 'aino-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
-
 	if ( has_nav_menu( 'menu-1' ) ) {
-		wp_enqueue_script( 'aino-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
-		$aino_l10n['expand']   = __( 'Expand child menu', 'aino' );
-		$aino_l10n['collapse'] = __( 'Collapse child menu', 'aino' );
-		$aino_l10n['icon']     = aino_get_svg(
-			array(
-				'icon'     => 'baseline-expand_more-24px',
-				'fallback' => true,
-			)
-		);
+		wp_enqueue_script( 'aino-priority-menu', get_theme_file_uri( '/assets/js/priority-menu.js' ), array(), '1.1', true );
+		wp_enqueue_script( 'aino-touch-navigation', get_theme_file_uri( '/assets/js/touch-keyboard-navigation.js' ), array(), '1.1', true );
 	}
 
 	wp_enqueue_script( 'aino-custom', get_theme_file_uri( '/assets/js/custom.js' ), array(), wp_get_theme()->get( 'Version' ), true );
@@ -364,6 +356,24 @@ function aino_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
+
+/**
+ * Fix skip link focus in IE11.
+ *
+ * This does not enqueue the script because it is tiny and because it is only for IE11,
+ * thus it does not warrant having an entire dedicated blocking script being loaded.
+ *
+ * @link https://git.io/vWdr2
+ */
+function aino_skip_link_focus_fix() {
+	// The following is minified via `terser --compress --mangle -- assetsjs/skip-link-focus-fix.js`.
+	?>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<?php
+}
+add_action( 'wp_print_footer_scripts', 'aino_skip_link_focus_fix' );
 
 /**
  * Add a custom max excerpt length.

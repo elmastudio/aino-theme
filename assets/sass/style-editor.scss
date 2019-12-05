@@ -49,11 +49,11 @@ body {
 /** === Content Width === */
 
 .wp-block {
-	max-width: $col7-nopadding;
+	max-width: 710px;
 
 	// Only the top level blocks need specific widths, therefore override for every nested block.
 	.wp-block {
-		width: 100%;
+		width: auto;
 	}
 }
 

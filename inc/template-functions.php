@@ -286,7 +286,6 @@ function aino_custom_admin_body_class( $classes ) {
 }
 add_filter( 'admin_body_class', 'aino_custom_admin_body_class' );
 
-
 /**
  * Add Classes to posts and pages.
  *
@@ -327,3 +326,157 @@ function aino_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'aino_pingback_header' );
+
+/**
+ * Add an extra menu to our nav for our priority+ navigation to use
+ *
+ * @param object $nav_menu  Nav menu.
+ * @param object $args      Nav menu args.
+ * @return string More link for hidden menu items.
+ */
+function aino_add_ellipses_to_nav( $nav_menu, $args ) {
+
+	if ( 'menu-1' === $args->theme_location ) :
+
+		$nav_menu .= '<div class="main-menu-more">';
+		$nav_menu .= '<ul class="main-menu">';
+		$nav_menu .= '<li class="menu-item menu-item-has-children">';
+		$nav_menu .= '<button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1" aria-label="More" aria-haspopup="true" aria-expanded="false">';
+		$nav_menu .= '<span class="screen-reader-text">' . esc_html__( 'More', 'aino' ) . '</span>';
+		$nav_menu .= aino_get_svg(
+			array( 'icon' => 'more_horiz-24px' )
+		);
+		$nav_menu .= '</button>';
+		$nav_menu .= '<ul class="sub-menu hidden-links">';
+		$nav_menu .= '<li id="menu-item--1" class="mobile-parent-nav-menu-item menu-item--1">';
+		$nav_menu .= '<button class="menu-item-link-return">';
+		$nav_menu .= aino_get_svg(
+			array( 'icon' => 'arrow_back-24px' )
+		);
+		$nav_menu .= esc_html__( 'Back', 'aino' );
+		$nav_menu .= '</button>';
+		$nav_menu .= '</li>';
+		$nav_menu .= '</ul>';
+		$nav_menu .= '</li>';
+		$nav_menu .= '</ul>';
+		$nav_menu .= '</div>';
+
+	endif;
+
+	return $nav_menu;
+}
+add_filter( 'wp_nav_menu', 'aino_add_ellipses_to_nav', 10, 2 );
+
+/**
+ * WCAG 2.0 Attributes for Dropdown Menus
+ *
+ * Adjustments to menu attributes tot support WCAG 2.0 recommendations
+ * for flyout and dropdown menus.
+ *
+ * @ref https://www.w3.org/WAI/tutorials/menus/flyout/
+ */
+function aino_nav_menu_link_attributes( $atts, $item, $args, $depth ) {
+
+	// Add [aria-haspopup] and [aria-expanded] to menu items that have children
+	$item_has_children = in_array( 'menu-item-has-children', $item->classes );
+	if ( $item_has_children ) {
+		$atts['aria-haspopup'] = 'true';
+		$atts['aria-expanded'] = 'false';
+	}
+
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'aino_nav_menu_link_attributes', 10, 4 );
+
+/**
+ * Add a dropdown icon to top-level menu items.
+ *
+ * @param string $output Nav menu item start element.
+ * @param object $item   Nav menu item.
+ * @param int    $depth  Depth.
+ * @param object $args   Nav menu args.
+ * @return string Nav menu item start element.
+ * Add a dropdown icon to top-level menu items
+ */
+function aino_add_dropdown_icons( $output, $item, $depth, $args ) {
+
+	// Only add class to 'top level' items on the 'primary' menu.
+	if ( ! isset( $args->theme_location ) || 'menu-1' !== $args->theme_location ) {
+		return $output;
+	}
+
+	if ( in_array( 'mobile-parent-nav-menu-item', $item->classes, true ) && isset( $item->original_id ) ) {
+		// Inject the keyboard_arrow_left SVG inside the parent nav menu item, and let the item link to the parent item.
+		// @todo Only do this for nested submenus? If on a first-level submenu, then really the link could be "#" since the desire is to remove the target entirely.
+		$link = sprintf(
+			'<button class="menu-item-link-return" tabindex="-1">%s',
+			aino_get_svg( array( 'icon' => 'arrow_back-24px' ) )
+		);
+
+		// replace opening <a> with <button>
+		$output = preg_replace(
+			'/<a\s.*?>/',
+			$link,
+			$output,
+			1 // Limit.
+		);
+
+		// replace closing </a> with </button>
+		$output = preg_replace(
+			'#</a>#i',
+			'</button>',
+			$output,
+			1 // Limit.
+		);
+
+	} elseif ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
+
+		// Add SVG icon to parent items.
+		$icon = aino_get_svg(
+			array( 'icon' => 'baseline-expand_more-24px' )
+		);
+
+		$output .= sprintf(
+			'<button class="submenu-expand" tabindex="-1">%s</button>',
+			$icon
+		);
+	}
+
+	return $output;
+}
+add_filter( 'walker_nav_menu_start_el', 'aino_add_dropdown_icons', 10, 4 );
+
+/**
+ * Create a nav menu item to be displayed on mobile to navigate from submenu back to the parent.
+ *
+ * This duplicates each parent nav menu item and makes it the first child of itself.
+ *
+ * @param array  $sorted_menu_items Sorted nav menu items.
+ * @param object $args              Nav menu args.
+ * @return array Amended nav menu items.
+ */
+function aino_add_mobile_parent_nav_menu_items( $sorted_menu_items, $args ) {
+	static $pseudo_id = 0;
+	if ( ! isset( $args->theme_location ) || 'menu-1' !== $args->theme_location ) {
+		return $sorted_menu_items;
+	}
+
+	$amended_menu_items = array();
+	foreach ( $sorted_menu_items as $nav_menu_item ) {
+		$amended_menu_items[] = $nav_menu_item;
+		if ( in_array( 'menu-item-has-children', $nav_menu_item->classes, true ) ) {
+			$parent_menu_item                   = clone $nav_menu_item;
+			$parent_menu_item->original_id      = $nav_menu_item->ID;
+			$parent_menu_item->ID               = --$pseudo_id;
+			$parent_menu_item->db_id            = $parent_menu_item->ID;
+			$parent_menu_item->object_id        = $parent_menu_item->ID;
+			$parent_menu_item->classes          = array( 'mobile-parent-nav-menu-item' );
+			$parent_menu_item->menu_item_parent = $nav_menu_item->ID;
+
+			$amended_menu_items[] = $parent_menu_item;
+		}
+	}
+
+	return $amended_menu_items;
+}
+add_filter( 'wp_nav_menu_objects', 'aino_add_mobile_parent_nav_menu_items', 10, 2 );

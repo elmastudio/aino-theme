@@ -36,18 +36,6 @@
 	}
 }
 
-.entry-content {
-
-	.error-404 &,
-	.search-no-results &,
-	.type-page & {
-		padding-bottom: $spacing-mobile-9;
-
-		@include breakpoint(m) {
-			padding-bottom: $spacing-desktop-9;
-		}
-	}
-}
 
 /* Site Building Page */
 .tpl-fullscreen {

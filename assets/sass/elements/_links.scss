@@ -122,19 +122,15 @@ h6 a:hover,
 .post-edit-link {
 	position: relative;
 	text-indent: -1000em;
-	display: block;
+	display: none;
 	width: $spacing-desktop-5;
 	height: $spacing-desktop-5;
 	background: $color__primary_one;
 	border-radius: $border-radius-xl;
 	margin: 0 auto;
 
-	.blog &,
-	.archive &,
-	.search-results & {
-		top: -20px;
-	 	right: -20px;
-		position: absolute;
+	@include breakpoint(l) {
+		display: block;
 	}
 
 	&:hover {

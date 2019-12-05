@@ -9,16 +9,16 @@
 ?>
 
 <?php
-if ( has_nav_menu( 'social' ) ) :
+if ( has_nav_menu( 'social-footer' ) ) :
 	?>
 
-	<?php if ( has_nav_menu( 'social' ) ) : ?>
+	<?php if ( has_nav_menu( 'social-footer' ) ) : ?>
 
 		<nav id="social-footer-nav" class="social-footer-nav social-nav" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'aino' ); ?>">
 		<?php
 			wp_nav_menu(
 				array(
-					'theme_location'  => 'social',
+					'theme_location'  => 'social-footer',
 					'menu_class'      => 'social-links-menu',
 					'container_class' => 'menu-social-container',
 					'depth'           => 1,

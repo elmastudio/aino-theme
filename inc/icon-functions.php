@@ -107,7 +107,7 @@ function aino_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
 	$social_icons = aino_social_links_icons();
 
 	// Change SVG icon inside social links menu if there is supported URL.
-	if ( 'social' === $args->theme_location ) {
+	if ( 'social' || 'social-footer' === $args->theme_location ) {
 		foreach ( $social_icons as $attr => $value ) {
 			if ( false !== strpos( $item_output, $attr ) ) {
 				$item_output = str_replace( $args->link_after, '</span>' . aino_get_svg( array( 'icon' => esc_attr( $value ) ) ), $item_output );

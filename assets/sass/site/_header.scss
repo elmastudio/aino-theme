@@ -1,18 +1,15 @@
 .site-header {
-	-webkit-transform: translateZ(0);
-	background-color: rgba(255,255,255,.96);
-	left: 0;
-	padding: 7px $spacing-3;
-	position: fixed;
-	right: 0;
-	top: 0;
-	transform: translateZ(0);
-	transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	transition: transform 0.35s,-webkit-transform 0.35s;
-	width: 100%;
-	z-index: 500;
-	border-bottom: 1px solid $color__border;
+
+	padding: $spacing-3 $spacing-3 0;
+
+	@include breakpoint(l) {
+		width: 100%;
+		transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+		transition: -webkit-transform 0.35s;
+		transition: transform 0.35s;
+		transition: transform 0.35s,-webkit-transform 0.35s;
+	}
 
 	@include breakpoint(m) {
 		padding: $spacing-3 $spacing-desktop-6;
@@ -41,156 +38,52 @@
 	}
 }
 
-/* Main Menu - Mobile Toggle */
-.menu-toggle span.hamburger-title {
-	display: none !important;
-}
-
-.nav-container .menu-toggle {
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
-	background-color: transparent;
-	cursor: pointer;
-	padding: 0;
-	position: absolute;
-	top: 20px;
-	right: $spacing-3;
-	width: 20px;
-	height: 20px;
-	min-height: 20px;
-	z-index: 8000;
-	box-shadow: none;
-	border-radius: 0;
-
-	@include breakpoint(m) {
-		top: 34px;
-		right: $spacing-desktop-6;
-	}
-
-	&:hover {
-		background-color: transparent;
-	}
-}
-
-/* Main Menu - Mobile Hamburger Icon */
-#hamburger .line {
-	display: block;
-	position: absolute;
-	height: 2px;
-	width: 100%;
-	background: $color__text_one;
-	border-radius: 4px;
-	right: 0;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
-	transition: .25s ease-in-out;
-
-	&:nth-child(1),
-	&:nth-child(4) {
-		width: 70%;
-	}
-
-	&:nth-child(1) {
-		top: 0px;
-	}
-
-	&:nth-child(2),
-	&:nth-child(3) {
-		top: 6px;
-	}
-
-	&:nth-child(4) {
-		top: 12px;
-	}
-
-	.mobilemenu-active & {
-
-		&:nth-child(1) {
-			top: 6px;
-			width: 0%;
-			left: 50%;
-		}
-
-		&:nth-child(4) {
-			top: 7px;
-			width: 0%;
-			left: 50%;
-		}
-
-		&:nth-child(2) {
-			-webkit-transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			-o-transform: rotate(45deg);
-			transform: rotate(45deg);
-		}
-
-		&:nth-child(3) {
-			-webkit-transform: rotate(-45deg);
-			-moz-transform: rotate(-45deg);
-			-o-transform: rotate(-45deg);
-			transform: rotate(-45deg);
-		}
-	}
-}
-
 /* Sticky Header on Scroll Up */
+/* For the moment only on desktop - breakpoint L */
+
 .site-header.header-up {
-	-webkit-transform: translate3d(0,-100%,0);
-	transform: translate3d(0,-100%,0);
 
-	.mobilemenu-active & {
-		-webkit-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-		@include breakpoint(m) {
-			-webkit-transform: translate3d(0,-100%,0);
-			transform: translate3d(0,-100%,0);
+	@include breakpoint(l) {
+
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0);
+
+		.mobilemenu-active & {
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+
+			@include breakpoint(m) {
+				-webkit-transform: translate3d(0,-100%,0);
+				transform: translate3d(0,-100%,0);
+			}
+		}
+
+		.admin-bar & {
+			@media screen and (max-width: 782px) {
+				-webkit-transform: translate3d(0,-110px,0);
+				transform: translate3d(0,-110px,0);
+			}
+			-webkit-transform: translate3d(0,-96px,0);
+			transform: translate3d(0,-96px,0);
+			@include breakpoint(m) {
+				-webkit-transform: translate3d(0,-120px,0);
+				transform: translate3d(0,-120px,0);
+			}
+		}
+
+		&:-ms-fullscreen,
+		&:root {
+			visibility: hidden;
 		}
 	}
-
-	.admin-bar & {
-		@media screen and (max-width: 782px) {
-			-webkit-transform: translate3d(0,-110px,0);
-			transform: translate3d(0,-110px,0);
-		}
-		-webkit-transform: translate3d(0,-96px,0);
-		transform: translate3d(0,-96px,0);
-		@include breakpoint(m) {
-			-webkit-transform: translate3d(0,-120px,0);
-			transform: translate3d(0,-120px,0);
-		}
-	}
-
-	&:-ms-fullscreen,
-	&:root {
-		visibility: hidden;
-	}
-
 }
 
-/* Padding of content in the height of the navigation bar */
-.content-wrap {
-	padding-top: $stickyheader-mobile;
-	@include breakpoint(m) {
-		padding-top: $stickyheader-desktop;
-	}
-}
 
 /* Site Title, Custom Logo and Tagline */
 .site-branding {
 	@include flexbox;
 	align-items: center;
-	margin: 0;
+	margin: 0 $spacing-desktop-4 0 0;
 	min-height: $spacing-desktop-5;
 
 	h1.site-title,
@@ -211,6 +104,15 @@
 		@include breakpoint(m) {
 			@include flexbox;
 			@include flex-center;
+		}
+	}
+
+	.custom-logo-link {
+		display: block;
+		padding: 0 $spacing-s 0 0;
+
+		img {
+			max-width: 40px;
 		}
 	}
 }
@@ -264,6 +166,7 @@
 
 /* Social Header Menu */
 .social-header-nav {
+	display: none;
 	margin: 0;
 	padding: $spacing-mobile-5 0;
 	@include breakpoint(l) {
@@ -430,257 +333,550 @@
 	right: 0;
 }
 
+/* TEMPORARY */
+
 /* Main Menu - Mobile */
 .nav-container {
 	flex-grow: 2;
 }
 
 .nav-container .nav-wrap {
-	-webkit-overflow-scrolling: touch;
-	background-color: $color__white;
-	border-top: 1px solid transparent;
-	border-width: 0;
-	bottom: 0;
-	box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-	display: block;
-	height: 100vh;
-	margin: 0;
-	overflow-x: visible;
-	overflow-y: scroll;
-	padding: $stickyheader-mobile $grid-margins-s;
-	position: fixed;
-	right: -100%;
-	top: 0;
-	transition: right 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	width: 100%;
-	z-index: 100;
 
-	@include breakpoint(m) {
-		padding: $stickyheader-desktop $grid-margins-l;
-	}
-
-	@include breakpoint(l) {
-		background-color: transparent;
-		border-top: 0;
-		height: 0;
-		max-width: 100%;
-		overflow: visible;
-		padding: 0;
-		position: relative;
-		right: auto;
-		width: auto;
-		height: 100%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		@include flexbox;
-		-ms-flex-align: center;
-		-webkit-box-align: center;
-		align-items: center;
-		justify-content: flex-end;
-	}
-
-	.mobilemenu-active & {
-		right: 0;
-	}
 }
 
 .main-navigation {
-	margin: 0;
-	padding: 0;
 
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		@include flexbox;
-		flex-direction: column;
+	display: block;
+	margin-top: 0;
 
-		@include breakpoint(l) {
-			flex-direction: row;
-		}
-	}
-
-	ul li {
-		position: relative;
-		margin: 0;
-		padding: $spacing-1 0;
-
-		@include breakpoint(l) {
-			margin: 0 $spacing-desktop-4 0 0;
-		}
-	}
-
-	li:last-child {
-		margin-right: 0;
-	}
-
-	li a {
-		@include flexbox;
-		justify-content: space-between;
-		align-items: center;
-		color: $color__text_two;
-		margin: 0;
-		padding: 0;
-		text-decoration: none;
-	}
-
-	li a:hover,
-	li:focus > a,
-	li:hover > a,
-	ul ul li:focus > a,
-	ul ul li:hover > a,
-	ul ul a:hover,
-	ul ul.sub-menu a:hover {
-		color: $color__primary_one;
-		fill: $color__primary_one;
-	}
-
-	.dropdown-toggle {
-		background-color: transparent;
+	body.page & {
 		display: block;
-		width: $spacing-3;
-		height: $spacing-3;
+	}
+
+	> div {
+		display: inline;
+	}
+
+	/* Un-style buttons */
+	button {
+		display: inline-block;
+		border: none;
 		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		background: transparent;
+		color: inherit;
+		cursor: pointer;
+		transition:
+			background 250ms ease-in-out,
+			transform 150ms ease;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		&:hover,
+		&:focus {
+			background: transparent;
+		}
+
+		&:focus {
+			outline: 1px solid transparent;
+			outline-offset: -4px;
+		}
+
+		&:active {
+			transform: scale(0.99);
+		}
+	}
+
+	.main-menu {
+
+		display: block;
+		margin: 0;
+		padding: 0;
+		height: 0;
+
+		@include breakpoint(m) {
+			display: inline-block;
+		}
+
+		> li {
+
+			display: inline;
+			position: relative;
+
+			@include breakpoint(l) {
+				padding-right: $spacing-desktop-4;
+			}
+
+			> a {
+
+				margin-right:0;
+
+				+ svg {
+					margin-right: 0;
+				}
+
+				&:hover,
+				&:hover + svg {
+
+				}
+			}
+
+			&.menu-item-has-children {
+
+				display: inline-block;
+				position: inherit;
+
+				@include breakpoint(m) {
+					position: relative;
+				}
+
+				> a {
+					margin-right: 0;
+				}
+
+				& > a,
+				.menu-item-has-children > a {
+
+					&:after {
+						content: "";
+						display: none;
+					}
+				}
+
+				.submenu-expand {
+
+					display: inline-block;
+					margin-right: 0;
+
+					@include breakpoint(l) {
+						display: none;
+					}
+
+					/* Priority+ Menu */
+					&.main-menu-more-toggle {
+
+						position: absolute;
+						top: $spacing-3;
+						right: $spacing-3;
+						height: $spacing-desktop-5;
+						width: $spacing-desktop-5;
+						padding: 0;
+						margin-left: 0;
+						background: red;
+						border-radius: 0;
+
+						svg {
+							display: inline-block;
+							height: $spacing-3;
+							width: $spacing-3;
+							top: 0;
+							vertical-align: text-bottom;
+						}
+
+						a .icon {
+							display: none;
+						}
+					}
+
+					.wp-customizer-unloading &,
+					&.is-empty {
+						display: none;
+					}
+
+					svg {
+						position: relative;
+						top: 0.2rem;
+					}
+				}
+			}
+
+			&:last-child > a,
+			&:last-child.menu-item-has-children .submenu-expand {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.sub-menu {
+
+		background-color: lightblue;
+		color: white;
+		list-style: none;
+		padding-left: 0;
+
 		position: absolute;
-		top: 8px;
-		right: 0;
-		box-shadow: none;
-		border-radius: 0;
-		@include breakpoint(l) {
+		opacity: 0;
+		left: -9999px;
+		z-index: 99999;
+
+		@include breakpoint(m) {
+			width: auto;
+			min-width: -moz-max-content;
+			min-width: -webkit-max-content;
+			min-width: max-content;
+		}
+
+		> li {
+			display: block;
+			float: none;
+			position: relative;
+			margin-bottom: $spacing-2;
+			padding: 0 $spacing-3;
+
+			&.menu-item-has-children {
+
+				.submenu-expand {
+					display: inline-block;
+					position: absolute;
+					width: 24px;
+					right: 24px;
+					top: 0;
+					bottom: 0;
+					color: $color__white;
+					line-height: 1;
+					padding:0;
+
+					svg {
+						top: 0;
+						transform        : rotate(-90deg);
+						-webkit-transform: rotate(-90deg);
+						-ms-transform    : rotate(-90deg);
+					}
+				}
+
+				.submenu-expand {
+					margin-right: 0;
+				}
+
+				@include breakpoint(m) {
+
+					.menu-item-has-children > a {
+
+						&:after {
+							content: "\203a";
+						}
+					}
+				}
+			}
+
+			> a {
+				padding: 16px 0;
+			}
+
+			> a,
+			> .menu-item-link-return {
+
+				color: $color__text_one;
+				display: block;
+				text-shadow: none;
+				white-space: nowrap;
+
+				&:hover,
+				&:focus {
+
+
+					&:after {
+
+					}
+				}
+			}
+
+			> .menu-item-link-return {
+				width: 100%;
+				font-weight: normal;
+				text-align: left;
+				padding: 32px 0 16px;
+			}
+
+			> a:empty {
+				display: none;
+			}
+
+			&.mobile-parent-nav-menu-item {
+
+				display: none;
+				border-bottom: solid 1px #c9ccdb;
+
+				svg {
+					position: relative;
+					top: 0;
+					margin-right: 0;
+				}
+			}
+		}
+
+		.sub-menu li.mobile-parent-nav-menu-item .menu-item-link-return {
+
+			font-size: 32px;
+			line-height: 1.25;
+			font-weight: bold;
+			padding: 88px 0 15px;
+
+			svg {
+				position: absolute;
+				top: 32px;
+				left: 24px;
+			}
+		}
+	}
+
+	/*
+	 * Sub-menu styles
+	 *
+	 * :focus-within needs its own selector so other similar
+	 * selectors don’t get ignored if a browser doesn’t recognize it
+	 */
+	.main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
+
+		display: block;
+		left: 0;
+		margin-top: 0;
+		opacity: 1;
+		width: auto;
+		min-width: 100%;
+
+
+		/* Non-mobile position */
+		@include breakpoint(m) {
+			display: block;
+			margin-top: 0;
+			opacity: 1;
+			position: absolute;
+			left: 0;
+			right: auto;
+			top: auto;
+			bottom: auto;
+			height: auto;
+			min-width: -moz-max-content;
+			min-width: -webkit-max-content;
+			min-width: max-content;
+			transform: none;
+		}
+
+		&.hidden-links {
+			left: 0;
+			width: 100%;
+			display: table;
+			position: absolute;
+
+			@include breakpoint(m) {
+				right: 0;
+				left: auto;
+				display: block;
+				width: max-content;
+			}
+		}
+
+		.submenu-expand {
+			display: none;
+		}
+
+		.sub-menu {
+			display: block;
+			margin-top: inherit;
+			position: relative;
+			width: 100%;
+			left: 0;
+			opacity: 1;
+
+			/* Non-mobile position */
+			@include breakpoint(m) {
+				float: none;
+				max-width: 100%;
+			}
+		}
+
+		/* Nested sub-menu dashes */
+		.sub-menu {
+			counter-reset: submenu;
+		}
+
+		.sub-menu > li > a::before {
+			content: "\2013\00a0" counters(submenu, "\2013\00a0", none);
+			counter-increment: submenu
+		}
+	}
+
+	.main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu,
+	.main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu,
+	.main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu {
+
+		display: block;
+		left: 0;
+		margin-top: 0;
+		opacity: 1;
+		width: auto;
+		min-width: 100%;
+
+
+		/* Non-mobile position */
+		@include breakpoint(m) {
+			display: block;
+			float: none;
+			margin-top: 0;
+			opacity: 1;
+			position: absolute;
+			left: 0;
+			right: auto;
+			top: auto;
+			bottom: auto;
+			height: auto;
+			min-width: -moz-max-content;
+			min-width: -webkit-max-content;
+			min-width: max-content;
+			transform: none;
+		}
+
+		&.hidden-links {
+			left: 0;
+			width: 100%;
+			display: table;
+			position: absolute;
+
+			@include breakpoint(m) {
+				right: 0;
+				left: auto;
+				display: table;
+				width: max-content;
+			}
+		}
+
+		.submenu-expand {
+			display: none;
+		}
+
+		.sub-menu {
+			display: block;
+			margin-top: inherit;
+			position: relative;
+			width: 100%;
+			left: 0;
+			opacity: 1;
+
+			/* Non-mobile position */
+			@include breakpoint(m) {
+				float: none;
+				max-width: 100%;
+			}
+		}
+
+		/* Nested sub-menu dashes */
+		.sub-menu {
+			counter-reset: submenu;
+		}
+
+		.sub-menu > li > a::before {
+			font-weight: normal;
+			content: "\2013\00a0" counters(submenu, "\2013\00a0", none);
+			counter-increment: submenu
+		}
+	}
+
+	/**
+	 * Fade-in animation for top-level submenus
+	 */
+	.main-menu > .menu-item-has-children:not(.off-canvas):hover > .sub-menu {
+		animation: fade_in 0.1s forwards;
+	}
+
+	/**
+	 * Off-canvas touch device styles
+	 */
+	.main-menu .menu-item-has-children.off-canvas .sub-menu {
+
+		.submenu-expand .svg-icon {
+			transform: rotate(270deg);
+		}
+
+		.sub-menu {
+			opacity: 0;
+			position: absolute;
+			z-index: 0;
+			transform: translateX(-100%);
+		}
+
+		li:hover,
+		li:focus,
+		li > a:hover,
+		li > a:focus {
+			background-color: transparent;
+		}
+
+		> li > a,
+		> li > .menu-item-link-return {
+			white-space: inherit;
+		}
+
+		&.expanded-true {
+
+			display: table;
+			margin-top: 0;
+			margin-left: 0;
+			opacity: 1;
+			padding-left: 0;
+
+			/* Mobile position */
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			position: fixed;
+			z-index: 100000; /* Make sure appears above mobile admin bar */
+			width: 100vw;
+			height: 100vh;
+			max-width: 100vw;
+			transform: translateX(+100%);
+			animation: slide_in_right 0.3s forwards;
+
+			> .mobile-parent-nav-menu-item {
+				display: block;
+			}
+
+			/* Prevent menu from being blocked by admin bar */
+			.admin-bar & {
+				top: 46px;
+				height: calc( 100vh - 46px );
+
+				.sub-menu.expanded-true {
+					top: 0;
+				}
+
+				/* WP core breakpoint */
+				@media only screen and ( min-width: 782px ) {
+					top: 32px;
+					height: calc( 100vh - 32px );
+
+					.sub-menu.expanded-true {
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	// Hide duplicate menu-more-link when re-loading a menu in the customizer
+	.main-menu-more {
+		&:nth-child(n+3) {
 			display: none;
 		}
 	}
 
-	.dropdown-toggle .icon {
-		display: inline !important;
-	}
+}
 
-	.sub-menu {
-		display: none;
-		@include breakpoint(l) {
-			display: block;
-			max-height: calc(100vh - 96px);
-		}
-	}
+/* Menu animation */
 
-	ul .sub-menu.toggled-on {
-		display: block;
-		padding-top: $spacing-1;
-		padding-left: $spacing-3;
-
-		@include breakpoint(l) {
-			padding-top: $spacing-3;
-		}
-	}
-
-	ul .sub-menu.toggled-on li:last-child {
-		padding-bottom: 0;
-	}
-
-	ul.sub-menu a {
-		@include font-body4;
+@keyframes slide_in_right {
+	100% {
+		transform: translateX(0%);
 	}
 }
 
-/* Main Content Overlay */
-.mobilemenu-active {
-	height: 100%;
-	overflow: hidden;
-	@include breakpoint(l) {
-		overflow: visible;
+@keyframes fade_in {
+	from {
+		opacity: 0;
 	}
-}
-
-/* Main Menu - Desktop */
-@include breakpoint(l) {
-	.menu-toggle {
-		display: none;
-	}
-
-	/* Main Menu - Dropdown */
-	.main-navigation ul ul {
-		width: 264px;
-		padding: $spacing-3 0 $spacing-3 $spacing-3;
-		background: $color__white;
-		left: -999em;
-		position: absolute;
-		top: 40px;
-		z-index: 99999;
-		@include border-radius-m;
-		@include shadow-5;
-	}
-
-	.main-navigation ul ul ul {
-		left: -999em;
-		top: -$spacing-3;
-	}
-
-	.main-navigation ul ul.sub-menu a {
-		color: $color__text_one;
-		background: $color__white;
-		border-top: none;
-		border-top: none;
-		height: auto;
-		text-transform: none;
-		letter-spacing: 0;
-		width: auto;
-		margin: 0 0 $spacing-3;
-		padding: 0;
-		@include breakpoint(l) {
-			margin: 0;
-		}
-
-		&:hover,
-		a:hover {
-			color: $color__primary_one;
-		}
-
-		&:last-child {
-			margin: 0;
-		}
-	}
-
-	.main-navigation ul ul.sub-menu li.menu-item-has-children ul.sub-menu li a:after {
-		display: none;
-	}
-
-	.main-navigation ul ul.sub-menu li.menu-item-has-children ul.sub-menu li.menu-item-has-children a:after {
-		display: block;
-	}
-
-	.main-navigation ul ul.sub-menu li.menu-item-has-children ul.sub-menu li.menu-item-has-children ul.sub-menu li a:after {
-		display: none;
-	}
-
-	.main-navigation ul ul li {
-		margin-right: 0;
-		padding: 0;
-		margin-bottom: $spacing-2;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	.main-navigation li.focus > a,
-	.main-navigation li:hover > a {
-		color: $color__primary_one;
-	}
-
-	.main-navigation ul ul .focus > a,
-	.main-navigation ul ul :hover > a {
-		color: $color__text_one;
-	}
-
-	.main-navigation ul li.focus > ul,
-	.main-navigation ul li:hover > ul {
-		left: -24px;
-	}
-
-	.main-navigation ul ul li.focus > ul,
-	.main-navigation ul ul li:hover > ul {
-		left: calc(100% - 4px);
+	to {
+		opacity: 1;
 	}
 }

@@ -25,15 +25,14 @@
 
 /* Dropdown Icons - Main Menu */
 .main-navigation .icon {
-	display: none;
-	width: 22px;
-	height: 22px;
+	width: 24px;
+	height: 24px;
 	padding: 0;
-	margin-left: 2px;
+	margin-left: 0;
 	margin-top: 0;
 	transition: transform 150ms ease-in-out;
 	transform-origin: center center;
-	fill: $color__icon_one;
+	fill: $color__text_one;
 
 	@include breakpoint(l) {
 		display: inline;
@@ -45,26 +44,13 @@
 
 .main-navigation .dropdown-toggle .icon {
 	display: inline !important;
-	fill: $color__icon_one;
+	fill: $color__text_one;
 }
 
-.main-navigation .sub-menu .menu-item-has-children .icon {
+.main-navigation .sub-menu .menu-item-has-children a .icon {
 	display: none;
-	margin: 0;
-	padding: 0;
-
-	@include breakpoint(l) {
-		display: inline-block;
-		position: absolute;
-		top: 0px;
-		right: 24px;
-		fill: $color__icon_one;
-		-webkit-transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		transform: rotate(-90deg);
-		vertical-align: middle;
-	}
 }
+
 .main-navigation li.focus > a .icon,
 .main-navigation li:hover > a .icon,
 .main-navigation .sub-menu .menu-item-has-children.focus > a .icon,
