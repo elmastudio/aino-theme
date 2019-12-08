@@ -459,6 +459,7 @@ textarea {
 /** === Image === */
 
 .wp-block-image {
+	max-width: 100%;
 	display: inline-block;
 	/* helps with smaller, unaligned images */
 }

@@ -98,10 +98,10 @@ textarea{resize:vertical}
 .post-navigation .nav-next,.post-navigation .nav-previous{width:100%;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
 .blog-3-column .posts-container .hentry,.header-infobar .col,.s4,.single-post .related-post{width:100%;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
 body,button,input,select,table,textarea,.search .page-header p,.textwidget p,.post-navigation .nav-title span,.entry-content .has-small-font-size{font-family:"Roboto",sans-serif;font-size:16px;line-height:1.5;color:#495057}
-.posts-container .hentry .entry-footer,.hentry .entry-summary,.hentry .entry-header .entry-meta,.single-post .navigation a span.nav-subtitle,.widget ul li{font-size:14px;line-height:1.43}
+.posts-container .hentry .entry-footer,.hentry .entry-summary,.hentry .entry-header .entry-meta,.single-post .navigation a span.nav-subtitle,.widget ul li,.entry-content .has-extrasmall-font-size,.entry-content .has-xs-font-size{font-size:14px;line-height:1.43}
 .entry-content p,.hentry ol,.hentry ul{font-size:19px;line-height:1.68}
 .entry-content .has-large-font-size,.entry-content .intro{font-size:27px;line-height:1.48}
-.comment-metadata,.comment-notes,.logged-in-as{font-size:12px;line-height:1.33;color:#b3b9ce}
+.comment-metadata,.comment-notes,.logged-in-as,.entry-content .has-xxs-font-size{font-size:12px;line-height:1.33}
 h1,h2,h3,h4,h5,h6,p.site-title,.post-navigation .nav-title{color:#212429;font-weight:bold}
 .h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6,.h-regular p.site-title,.h-regular.single-post .byline,.h-regular .entry-meta .author-name,.h-regular .entry-meta .entry-cats,.post-navigation .nav-title span{font-weight:normal}
 h1{font-size:40px;line-height:1.2}
@@ -578,8 +578,9 @@ body.page .main-navigation{display:block}
 .entry-content p.is-larger-text{font-size:27px;line-height:1.48}
 .entry-content p.has-background{padding:24px}
 .entry-content p.has-drop-cap:not(:focus):first-letter {float:left;margin:5px 8px 0 -8px;line-height:.77;text-transform:uppercase;font-style:normal;font-size:100px}
-.wp-block-columns{margin-bottom:0}
+.wp-block-columns{display:block}
 .wp-block-columns .wp-block-column>*:first-child{margin-top:0}
+.wp-block-columns .wp-block-column{margin-left:24px;margin-right:24px;margin-bottom:32px}
 .wp-block-button .wp-block-button__link{display:inline-block;font-size:16px;line-height:19px;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;padding-top:18px;padding-bottom:17px;color:#fff;fill:#fff;background-color:#616aff;border:0;-webkit-box-sizing:border-box;box-sizing:border-box;text-decoration:none;outline:0;height:auto;background:#616aff;-webkit-box-shadow:none;box-shadow:none}
 .wp-block-button .wp-block-button__link:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
 .wp-block-button .wp-block-button__link:hover{background-color:#4f45ff;box-shadow:0 4px 12px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 4px 12px 0 rgba(0,0,0,0.1)}
@@ -627,9 +628,6 @@ ul.wp-block-gallery.blocks-gallery-image figcaption,ul.wp-block-gallery.wp-block
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots){max-width:100px;margin-left:auto;margin-right:auto}
 .wp-block-separator.is-style-dots{background:0;border:0}
 .wp-block-separator.is-style-dots:before{color:#495057;content:"\00b7 \00b7 \00b7";font-family:serif;font-size:27px;line-height:1.48;letter-spacing:1em;padding-left:1em}
-.wp-block-columns{display:block}
-.wp-block-columns .wp-block-column:nth-child(2n){margin-left:0}
-.wp-block-columns.alignfull[class*='has-']>*{margin-right:0}
 .wp-block-categories,.wp-block-latest-posts__post-date{margin:0 0 32px}
 .wp-block-categories-list,.wp-block-categories-list li,.wp-block-latest-posts,.wp-block-latest-posts li{margin:0;padding:0;text-align:left}
 .entry-content .wp-block-categories-list li a,.entry-content .wp-block-latest-posts li a{border:0}
@@ -693,6 +691,12 @@ a.btn-outline,.btn-outline a{width:auto}
 .entry-content .instagram-pics li{padding-bottom:48px}
 .footer-widget .instagram-pics li,#secondary .instagram-pics li{padding-bottom:16px}
 .hentry .entry-content .alignfull .alignwide{padding-left:48px;padding-right:48px}
+.wp-block-columns .wp-block-column{margin-left:48px;margin-right:48px}
+.wp-block-columns{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-preferred-size:calc(50% - 32px);flex-basis:calc(50% - 32px);-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;padding-left:32px;padding-right:32px;margin-bottom:0}
+.wp-block-columns .wp-block-column{-ms-flex-preferred-size:calc(50% - 32px);flex-basis:calc(50% - 32px);margin-left:16px;margin-right:16px;margin-bottom:48px;-webkit-box-flex:1;-ms-flex:1 0 21%;flex:1 0 21%}
+.wp-block-columns .wp-block-column:nth-last-child(3):first-child,.wp-block-columns .wp-block-column:nth-last-child(3):first-child ~ *{-webkit-box-flex:1;-ms-flex:1 0 21%;flex:1 0 21%}
+.wp-block-columns .wp-block-column:nth-last-child(4):first-child,.wp-block-columns .wp-block-column:nth-last-child(4):first-child ~ *{-webkit-box-flex:1;-ms-flex:1 0 33%;flex:1 0 33%}
+.wp-block-columns .wp-block-column:nth-last-child(6):first-child,.wp-block-columns .wp-block-column:nth-last-child(6):first-child ~ *{-webkit-box-flex:1;-ms-flex:1 0 21%;flex:1 0 21%}
 .wp-block-button .wp-block-button__link{width:auto}
 .wp-block-button .wp-block-button__link{padding-left:32px;padding-right:32px}
 .wp-block-image.alignright{float:right;margin:8px 0 32px 32px}
@@ -812,14 +816,12 @@ td{padding:16px}
 .entry-content p.has-background{padding:32px}
 .entry-content p.has-drop-cap:not(:focus):first-letter {font-size:120px;line-height:.77;margin:6px 12px 0 -8px}
 .entry-content p.intro.has-drop-cap:not(:focus):first-letter {font-size:142px}
-.wp-block-columns{-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-preferred-size:calc(50% - 48px);flex-basis:calc(50% - 48px);-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
-.wp-block-columns .wp-block-column{margin-left:24px;margin-right:24px;margin-bottom:0}
-.wp-block-columns .wp-block-column:first-child{margin-left:0}
-.wp-block-columns .wp-block-column:last-child{margin-right:0}
+.wp-block-columns{-ms-flex-preferred-size:calc(50% - 48px);flex-basis:calc(50% - 48px);padding-left:0;padding-right:0}
+.wp-block-columns .wp-block-column{-ms-flex-preferred-size:calc(50% - 48px);flex-basis:calc(50% - 48px);margin-left:24px;margin-right:24px;-webkit-box-flex:1;-ms-flex:1 0 25%;flex:1 0 25%}
+.wp-block-columns .wp-block-column:nth-last-child(4):first-child,.wp-block-columns .wp-block-column:nth-last-child(4):first-child ~ *{-webkit-box-flex:1;-ms-flex:1 0 15%;flex:1 0 15%}
+.hentry .entry-content .wp-block-columns.alignwide{padding-left:24px;padding-right:24px}
 ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:calc(31.75% - 31.75vw)}
 .wp-block-separator{margin:0 0 48px}
-.wp-block-columns{display:-webkit-box;display:-ms-flexbox;display:flex}
-.wp-block-columns .wp-block-column:nth-child(2n){margin-left:24px}
 .wp-block-categories,.wp-block-latest-posts__post-date{margin:0 0 48px}
 .wp-block-preformatted{padding:32px;margin-bottom:32px}
 }@media(min-width:48.5em) and (min-width:48.5em){.blog.blog-1-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title{font-size:32px;line-height:1.25}
@@ -871,6 +873,7 @@ ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:ca
 .single-post .post-thumb{padding:0 24px}
 .hentry .entry-content>*.alignwide{padding-left:24px;padding-right:24px}
 .hentry .entry-content .alignfull .alignwide{padding-left:24px;padding-right:24px}
+.wp-block-columns .wp-block-column:nth-last-child(6):first-child,.wp-block-columns .wp-block-column:nth-last-child(6):first-child ~ *{-webkit-box-flex:1;-ms-flex:1 0 10%;flex:1 0 10%}
 }@media(min-width:76.5em) and (min-width:48.5em){.blog.blog-2-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:27px;line-height:1.19}
 .mobilemenu-active .site-header.header-up{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}
 .admin-bar .site-header.header-up{-webkit-transform:translate3d(0,-120px,0);transform:translate3d(0,-120px,0)}

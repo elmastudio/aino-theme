@@ -45,6 +45,10 @@ Aino WordPress Theme bundles the following third-party resources:
 
 == Changelog ==
 
+= 0.0.8 =
+* Enhance: Default block styles.
+* Enhance: Add new font sizes for blocks.
+
 = 0.0.7 =
 * Fix: Border-radius on post images on blog and archive pages.
 * Fix: Double publish date.

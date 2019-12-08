@@ -18,7 +18,9 @@ textarea,
 .hentry .entry-summary,
 .hentry .entry-header .entry-meta,
 .single-post .navigation a span.nav-subtitle,
-.widget ul li {
+.widget ul li,
+.entry-content .has-extrasmall-font-size,
+.entry-content .has-xs-font-size {
 	@include font-body4;
 }
 
@@ -50,9 +52,9 @@ textarea,
 
 .comment-metadata,
 .comment-notes,
-.logged-in-as {
+.logged-in-as,
+.entry-content .has-xxs-font-size {
 	@include font-body5;
-	color: $color__text_three;
 }
 
 /* Heading Font Styles */

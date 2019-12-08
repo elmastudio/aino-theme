@@ -98,6 +98,18 @@ if ( ! function_exists( 'aino_setup' ) ) :
 			'editor-font-sizes',
 			array(
 				array(
+					'name'      => __( 'Extra Extra Small', 'aino' ),
+					'shortName' => __( 'XXS', 'aino' ),
+					'size'      => 12,
+					'slug'      => 'xxs',
+				),
+				array(
+					'name'      => __( 'Extra Small', 'aino' ),
+					'shortName' => __( 'XS', 'aino' ),
+					'size'      => 14,
+					'slug'      => 'xs',
+				),
+				array(
 					'name'      => __( 'Small', 'aino' ),
 					'shortName' => __( 'S', 'aino' ),
 					'size'      => 16,
