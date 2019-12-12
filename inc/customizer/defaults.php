@@ -27,7 +27,7 @@ function aino_defaults( $name ) {
 				'secondary_one_color'      => '#1cceb2',
 				'footer_bg_color'          => '#f7f7ff',
 				'highlight_color'          => '#1cceb2',
-				'icon_color_one'           => '#b3b9ce',
+				'icon_color_one'           => '#495057',
 				'icon_color_two'           => '#616aff',
 				'comments_border_color'    => '#f7f7ff',
 				'comments_bg_color'        => '#f7f7ff',

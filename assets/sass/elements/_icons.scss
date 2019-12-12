@@ -7,8 +7,8 @@
 	text-align: center;
 	stroke-width: 0;
 	stroke: currentColor;
-	width: 24px;
-	height: 24px;
+	width: $spacing-3;
+	height: $spacing-3;
 	padding: 2px;
 }
 
@@ -17,6 +17,7 @@
 	fill: $color__icon_one;
 	width: $spacing-3;
 	height: $spacing-3;
+	margin: 8px;
 }
 
 .menu-social-container ul li a:hover .icon {
@@ -25,8 +26,8 @@
 
 /* Dropdown Icons - Main Menu */
 .main-navigation .icon {
-	width: 24px;
-	height: 24px;
+	width: $spacing-3;
+	height: $spacing-3;
 	padding: 0;
 	margin-left: 0;
 	margin-top: 0;

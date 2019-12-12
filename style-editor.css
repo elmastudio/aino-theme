@@ -51,7 +51,7 @@ h3 { font-size: 28px; line-height: 1.14; }
 
 @media (min-width: 48.5em) { h3 { font-size: 32px; line-height: 1.25; } }
 
-h4 { font-size: 24px; line-height: 1.17; }
+h4 { font-size: 24px; line-height: 1.33; }
 
 @media (min-width: 48.5em) { h4 { font-size: 27px; line-height: 1.19; } }
 
@@ -221,7 +221,7 @@ textarea { width: 100%; }
 
 @media (min-width: 48.5em) { .wp-block-cover-image { margin-top: 40px; margin-bottom: 72px; } }
 
-.wp-block-cover-image-text, .wp-block-cover-image h2 { max-width: 680px; font-size: 24px; line-height: 1.17; }
+.wp-block-cover-image-text, .wp-block-cover-image h2 { max-width: 680px; font-size: 24px; line-height: 1.33; }
 
 @media (min-width: 48.5em) { .wp-block-cover-image-text, .wp-block-cover-image h2 { font-size: 27px; line-height: 1.19; } }
 

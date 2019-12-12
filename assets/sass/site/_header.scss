@@ -1,6 +1,6 @@
 .site-header {
 
-	padding: $spacing-3 $spacing-3 0;
+	padding: $spacing-3;
 
 	@include breakpoint(l) {
 		width: 100%;
@@ -78,13 +78,12 @@
 	}
 }
 
-
-/* Site Title, Custom Logo and Tagline */
+/* Site Title, Logo and Tagline */
 .site-branding {
 	@include flexbox;
 	align-items: center;
 	margin: 0 $spacing-desktop-4 0 0;
-	min-height: $spacing-desktop-5;
+	min-height: $spacing-mobile-5;
 
 	h1.site-title,
 	p.site-title {
@@ -169,7 +168,9 @@
 	display: none;
 	margin: 0;
 	padding: $spacing-mobile-5 0;
+
 	@include breakpoint(l) {
+		display: block;
 		padding: 0;
 	}
 
@@ -214,7 +215,7 @@
 	padding: 0;
 
 	li {
-		padding-right: $spacing-2;
+		padding-right: $spacing-s;
 	}
 
 	li:last-child {
@@ -224,11 +225,12 @@
 
 .menu-social-container ul li a {
 	display: block;
-	width: $spacing-3;
-	height: $spacing-3;
+	width: $spacing-desktop-5;
+	height: $spacing-desktop-5;
 	line-height: 1;
 	margin: 0;
 	overflow: hidden;
+	background: red;
 }
 
 /* Header CTA Buttons */
@@ -337,7 +339,7 @@
 
 /* Main Menu - Mobile */
 .nav-container {
-	flex-grow: 2;
+
 }
 
 .nav-container .nav-wrap {
@@ -415,11 +417,6 @@
 				+ svg {
 					margin-right: 0;
 				}
-
-				&:hover,
-				&:hover + svg {
-
-				}
 			}
 
 			&.menu-item-has-children {
@@ -459,11 +456,10 @@
 						position: absolute;
 						top: $spacing-3;
 						right: $spacing-3;
-						height: $spacing-desktop-5;
-						width: $spacing-desktop-5;
+						height: $spacing-mobile-6;
+						width: $spacing-mobile-6;
 						padding: 0;
 						margin-left: 0;
-						background: red;
 						border-radius: 0;
 
 						svg {
@@ -499,8 +495,7 @@
 	}
 
 	.sub-menu {
-
-		background-color: lightblue;
+		background-color: white;
 		color: white;
 		list-style: none;
 		padding-left: 0;
@@ -571,15 +566,6 @@
 				display: block;
 				text-shadow: none;
 				white-space: nowrap;
-
-				&:hover,
-				&:focus {
-
-
-					&:after {
-
-					}
-				}
 			}
 
 			> .menu-item-link-return {
@@ -857,11 +843,11 @@
 
 	// Hide duplicate menu-more-link when re-loading a menu in the customizer
 	.main-menu-more {
+
 		&:nth-child(n+3) {
 			display: none;
 		}
 	}
-
 }
 
 /* Menu animation */
