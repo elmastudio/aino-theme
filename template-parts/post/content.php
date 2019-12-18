@@ -84,5 +84,4 @@ $custom_post_excerpt = array(
 				</aside><!-- .entry-meta -->
 			</footer><!-- .entry-footer -->
 	</a><!-- .entry-link -->
-	<?php aino_edit_link(); ?>
 </article><!-- #post-## -->

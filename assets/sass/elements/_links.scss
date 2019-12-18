@@ -63,8 +63,8 @@ h2.entry-title a {
 .comment-list .comment-metadata a:hover,
 .comment-reply-title #cancel-comment-reply-link:hover,
 .logged-in-as a:hover {
-	color: $color__text_two;
-	fill: $color__text_two;
+	color: $color__text_one;
+	fill: $color__text_one;
 }
 
 /* Primary Color Hovers */
@@ -122,19 +122,15 @@ h6 a:hover,
 .post-edit-link {
 	position: relative;
 	text-indent: -1000em;
-	display: block;
+	display: none;
 	width: $spacing-desktop-5;
 	height: $spacing-desktop-5;
 	background: $color__primary_one;
 	border-radius: $border-radius-xl;
 	margin: 0 auto;
 
-	.blog &,
-	.archive &,
-	.search-results & {
-		top: -20px;
-	 	right: -20px;
-		position: absolute;
+	@include breakpoint(l) {
+		display: block;
 	}
 
 	&:hover {

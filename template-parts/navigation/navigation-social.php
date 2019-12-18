@@ -8,7 +8,7 @@
 
 ?>
 
-<nav id="social-header-nav" class="social-header-nav social-nav" role="navigation" aria-label="<?php esc_attr_e( 'Header Social Links Menu', 'aino' ); ?>">
+<nav id="social-header-nav" class="social-header-nav social-nav" aria-label="<?php esc_attr_e( 'Header Social Links Menu', 'aino' ); ?>">
 	<?php
 	wp_nav_menu(
 		array(

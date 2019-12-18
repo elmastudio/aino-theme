@@ -107,7 +107,7 @@ function aino_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
 	$social_icons = aino_social_links_icons();
 
 	// Change SVG icon inside social links menu if there is supported URL.
-	if ( 'social' === $args->theme_location ) {
+	if ( 'social' || 'social-footer' === $args->theme_location ) {
 		foreach ( $social_icons as $attr => $value ) {
 			if ( false !== strpos( $item_output, $attr ) ) {
 				$item_output = str_replace( $args->link_after, '</span>' . aino_get_svg( array( 'icon' => esc_attr( $value ) ) ), $item_output );
@@ -118,27 +118,6 @@ function aino_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
 	return $item_output;
 }
 add_filter( 'walker_nav_menu_start_el', 'aino_nav_menu_social_icons', 10, 4 );
-
-/**
- * Add dropdown icon if menu item has children.
- *
- * @param  string $title The menu item's title.
- * @param  object $item  The current menu item.
- * @param  array  $args  An array of wp_nav_menu() arguments.
- * @param  int    $depth Depth of menu item. Used for padding.
- * @return string $title The menu item's title with dropdown icon.
- */
-function aino_dropdown_icon_to_menu_link( $title, $item, $args, $depth ) {
-	if ( 'menu-1' === $args->theme_location ) {
-		foreach ( $item->classes as $value ) {
-			if ( 'menu-item-has-children' === $value || 'page_item_has_children' === $value ) {
-				$title = $title . aino_get_svg( array( 'icon' => 'baseline-expand_more-24px' ) );
-			}
-		}
-	}
-	return $title;
-}
-add_filter( 'nav_menu_item_title', 'aino_dropdown_icon_to_menu_link', 10, 4 );
 
 /**
  * Returns an array of supported social links (URL and icon name).

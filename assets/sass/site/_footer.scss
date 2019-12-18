@@ -68,7 +68,7 @@
 .site-info {
 	padding: 0;
 	@include font-body4;
-	color: $color__text_three;
+	color: $color__text_two;
 
 	.footerinfo-centered & {
 		@include flexbox;
@@ -79,10 +79,10 @@
 .site-info a {
 	padding: 0;
 	@include font-body4;
-	color: $color__text_three;
+	color: $color__text_two;
 
 	&:hover {
-		color: $color__text_two;
+		color: $color__primary_one;
 	}
 }
 
