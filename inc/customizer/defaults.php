@@ -27,7 +27,7 @@ function aino_defaults( $name ) {
 				'secondary_one_color'      => '#1cceb2',
 				'footer_bg_color'          => '#f7f7ff',
 				'highlight_color'          => '#1cceb2',
-				'icon_color_one'           => '#495057',
+				'icon_color_one'           => '#212429;',
 				'icon_color_two'           => '#616aff',
 				'comments_border_color'    => '#f7f7ff',
 				'comments_bg_color'        => '#f7f7ff',
@@ -53,7 +53,6 @@ function aino_defaults( $name ) {
 				// Visibility.
 				'sitedescription'          => true,
 				'header_search'            => true,
-				'header_dividers'          => false,
 				'header_border'            => false,
 				'aino_displaydate'         => true,
 				'display_comments'         => false,

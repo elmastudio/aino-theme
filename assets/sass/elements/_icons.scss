@@ -24,45 +24,6 @@
 	fill: $color__icon_two;
 }
 
-/* Dropdown Icons - Main Menu */
-.main-navigation .icon {
-	width: $spacing-3;
-	height: $spacing-3;
-	padding: 0;
-	margin-left: 0;
-	margin-top: 0;
-	transition: transform 150ms ease-in-out;
-	transform-origin: center center;
-	fill: $color__text_one;
-
-	@include breakpoint(l) {
-		display: inline;
-		position: relative;
-		right: auto;
-		top: auto;
-	}
-}
-
-.main-navigation .dropdown-toggle .icon {
-	display: inline !important;
-	fill: $color__text_one;
-}
-
-.main-navigation .sub-menu .menu-item-has-children a .icon {
-	display: none;
-}
-
-.main-navigation li.focus > a .icon,
-.main-navigation li:hover > a .icon,
-.main-navigation .sub-menu .menu-item-has-children.focus > a .icon,
-.main-navigation .sub-menu .menu-item-has-children:hover > a .icon {
-		fill: $color__primary_one;
-	}
-
-.main-navigation .dropdown-toggle.toggled-on .icon {
-	transform: rotate(0deg);
-}
-
 /* Edit Link Icon */
 .edit-link .icon {
 	position: absolute;

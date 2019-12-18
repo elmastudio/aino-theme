@@ -83,7 +83,9 @@ function aino_customizer_css() {
 	.entry-content .search-submit,
 	.entry-content .has-primary-link-background-color,
 	.post-edit-link,
-	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
+	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background),
+	.primary-menu a:hover + .icon::before,
+	.primary-menu a:hover + .icon::after {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	.entry-content p a:hover,
@@ -110,12 +112,19 @@ function aino_customizer_css() {
 	.btn-naked a:hover,
 	.entry-content .has-primary-one-color,
 	.entry-tags a:hover,
-	.main-navigation li.focus > a .icon,
-	.main-navigation li:hover > a .icon,
-	.main-navigation .sub-menu .menu-item-has-children.focus > a .icon,
-	.main-navigation .sub-menu .menu-item-has-children:hover > a .icon,
+	.primary-menu a:hover,
+	.primary-menu a:focus,
+	.primary-menu .current_page_ancestor,
+	.primary-menu .icon,
 	.wp-block-pullquote.is-style-default .has-text-color a:hover,
-	.comment-author .author-badge {
+	.comment-author .author-badge,
+	.modal-menu a:focus,
+	.modal-menu a:hover,
+	.modal-menu li.current-menu-item > .ancestor-wrapper > a,
+	.modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
+	button.sub-menu-toggle:hover,
+	button.sub-menu-toggle:focus,
+	.site-info a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}

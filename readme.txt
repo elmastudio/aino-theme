@@ -46,7 +46,7 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 0.0.9 =
-* Enhance: Mobile menu.
+* Enhance: Primary menu.
 
 = 0.0.8 =
 * Enhance: Default block styles.

@@ -13,7 +13,7 @@ __License URI:__ http://www.gnu.org/licenses/gpl-3.0.html
 ## Changelog
 
 ### 0.0.9
-**Enhance:** Mobile menu.
+**Enhance:** Primary menu.
 
 ### 0.0.8 =
 **Enhance:** Default block styles.

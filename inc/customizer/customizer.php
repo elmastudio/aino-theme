@@ -269,26 +269,6 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Theme Options - Header - Hide Divider Borders.
-	$wp_customize->add_setting(
-		'header_dividers',
-		array(
-			'default'           => aino_defaults( 'header_dividers' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'header_dividers',
-		array(
-			'label'       => esc_html__( 'Hide Dividers', 'aino' ),
-			'description' => esc_html__( 'Check to hide vertical divider lines between header elements.', 'aino' ),
-			'section'     => 'aino_header',
-			'type'        => 'checkbox',
-			'priority'    => 2,
-		)
-	);
-
 	// Theme Options - Header - Hide Bottom Border.
 	$wp_customize->add_setting(
 		'header_border',
@@ -304,7 +284,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Hide Bottom Border', 'aino' ),
 			'section'  => 'aino_header',
 			'type'     => 'checkbox',
-			'priority' => 3,
+			'priority' => 2,
 		)
 	);
 
