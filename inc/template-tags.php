@@ -381,6 +381,10 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Header.
+	if ( true === get_theme_mod( 'header_light_fonts', aino_defaults( 'header_light_fonts' ) ) ) {
+		$classes[] = 'header-light';
+	}
+
 	if ( false === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
 		$classes[] = 'header-search-hide';
 	}

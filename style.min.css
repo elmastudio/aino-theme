@@ -288,8 +288,8 @@ audio,video{display:inline-block}
 .gallery-caption{display:block}
 .site-content{padding-top:24px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:40px}
-.site-header{padding:24px}
-.header-border-hide .site-header{border-bottom:0;background-color:#fff}
+.site-header{padding:24px 0}
+.header-border-hide .site-header{border-bottom:0}
 .admin-bar .site-header{top:32px}
 .site-branding{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto 0 0;padding-right:32px;min-height:32px}
 .site-branding h1.site-title,.site-branding p.site-title{display:block;margin:0}
@@ -316,7 +316,7 @@ audio,video{display:inline-block}
 .header-cta-wrap ul li:last-child{padding:0}
 .has-nav-social .header-cta-wrap{padding-top:32px}
 .site-header{position:relative}
-.header-inner{width:100%;z-index:100}
+.header-inner{padding-left:24px;padding-right:24px}
 .header-navigation-wrapper{display:none}
 .header-toggles{display:none}
 .header-inner .toggle{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;overflow:visible}
@@ -341,7 +341,7 @@ ul.primary-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wr
 .primary-menu>li.menu-item-has-children>a{padding-right:24px}
 .primary-menu>li>.icon{right:4px;top:8px}
 .primary-menu a{color:#212429;display:block;text-decoration:none;padding-top:4px;padding-bottom:4px}
-.primary-menu a:hover,.primary-menu a:focus,.primary-menu .current_page_ancestor{color:#4f45ff}
+.primary-menu a:hover,.primary-menu a:focus,.primary-menu .sub-menu a:hover,.primary-menu .sub-menu a:focus,.primary-menu .current_page_ancestor{color:#4f45ff}
 .primary-menu a:hover+.icon::before,.primary-menu a:hover+.icon::after{background-color:#4f45ff}
 .primary-menu ul{background:#fff;box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);border-radius:24px;font-size:14px;line-height:1.43;color:#212429;opacity:0;padding:24px;position:absolute;right:9999rem;top:calc(100% + 10px);-webkit-transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,transform .15s linear,right 0s .15s;transition:opacity .15s linear,transform .15s linear,right 0s .15s,-webkit-transform .15s linear;-webkit-transform:translateY(0.6rem);transform:translateY(0.6rem);width:264px;z-index:1000;margin:0}
 .primary-menu ul::before{height:10px;left:0;right:0}
@@ -693,6 +693,8 @@ a.btn-outline,.btn-outline a{width:auto}
 .header-cta-wrap .btn-outline a{padding-left:24px;padding-right:24px}
 .header-cta-wrap a{padding-left:24px;padding-right:24px}
 .header-cta-wrap ul li{width:auto}
+.header-inner{padding-left:48px;padding-right:48px}
+.nav-toggle{right:48px}
 .entry-content .instagram-pics li{padding-bottom:48px}
 .footer-widget .instagram-pics li,#secondary .instagram-pics li{padding-bottom:16px}
 .hentry .entry-content .alignfull .alignwide{padding-left:48px;padding-right:48px}
@@ -748,9 +750,13 @@ td{padding:16px}
 .gallery,.entry-content .tiled-gallery{margin-bottom:40px}
 .site-content{padding-top:72px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:72px}
-.site-header{padding:24px 48px}
+.site-header{padding:24px 0}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .search-header .search-field{height:40px;padding:0 0 0 40px}
+.tpl-fullscreen.single-page.header-light .site-title a,.tpl-fullscreen.single-page.header-light .site-branding .site-description,.tpl-fullscreen.single-page.header-light .primary-menu a{color:#fff}
+.tpl-fullscreen.single-page.header-light .site-header .menu-social-container .icon,.tpl-fullscreen.single-page.header-light .header-inner .toggle .icon{fill:#fff}
+.tpl-fullscreen.single-page.header-light .primary-menu .icon::before,.tpl-fullscreen.single-page.header-light .primary-menu .icon::after{background-color:#fff}
+.tpl-fullscreen.single-page.header-light .primary-menu .sub-menu a{color:#212429}
 .entry-link{padding-bottom:32px}
 .posts-container .hentry{margin-bottom:48px}
 .blog .hentry .entry-header,.blog-archive .hentry .entry-header{padding:32px 32px 0}

@@ -114,6 +114,8 @@ function aino_customizer_css() {
 	.entry-tags a:hover,
 	.primary-menu a:hover,
 	.primary-menu a:focus,
+	.primary-menu .sub-menu a:hover,
+	.primary-menu .sub-menu a:focus,
 	.primary-menu .current_page_ancestor,
 	.primary-menu .icon,
 	.wp-block-pullquote.is-style-default .has-text-color a:hover,

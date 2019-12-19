@@ -1,14 +1,13 @@
 .site-header {
 
-	padding: $spacing-3;
+	padding: $spacing-3 0;
 
 	@include breakpoint(m) {
-		padding: $spacing-3 $spacing-desktop-6;
+		padding: $spacing-3 0;
 	}
 
 	.header-border-hide & {
 		border-bottom: none;
-		background-color: $color__white;
 	}
 
 	.admin-bar & {
@@ -230,8 +229,13 @@
 }
 
 .header-inner {
-	width: 100%;
-	z-index: 100;
+	padding-left: $spacing-3;
+	padding-right: $spacing-3;
+
+	@include breakpoint(xs) {
+		padding-left: $spacing-mobile-9;
+		padding-right: $spacing-mobile-9;
+	}
 
 	@include breakpoint(l) {
 		@include flexbox;
@@ -299,6 +303,11 @@
 	color: $color__text_one;
 	width: $spacing-mobile-5;
 	height: $spacing-mobile-5;
+
+	@include breakpoint(xs) {
+		right: $spacing-mobile-9;
+	}
+
 }
 
 button.close-nav-toggle {
@@ -386,6 +395,8 @@ ul.primary-menu {
 
 .primary-menu a:hover,
 .primary-menu a:focus,
+.primary-menu .sub-menu a:hover,
+.primary-menu .sub-menu a:focus,
 .primary-menu .current_page_ancestor {
 	color: $color__primary_two;
 }
@@ -800,5 +811,32 @@ button.sub-menu-toggle.active svg {
 
 	.menu-bottom .social-menu {
 		justify-content: flex-start;
+	}
+}
+
+/* Light Header Fonts Customizer Option ---------------------------- */
+
+@include breakpoint(m) {
+	.tpl-fullscreen.single-page.header-light {
+
+		.site-title a,
+		.site-branding .site-description,
+		.primary-menu a {
+			color: $color__white;
+		}
+
+		.site-header .menu-social-container .icon,
+		.header-inner .toggle .icon {
+			fill: $color__white;
+		}
+
+		.primary-menu .icon::before,
+		.primary-menu .icon::after {
+			background-color: $color__white;
+		}
+
+		.primary-menu .sub-menu a {
+			color: $color__text_one;
+		}
 	}
 }
