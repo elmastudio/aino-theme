@@ -59,9 +59,20 @@
 	.custom-logo-link {
 		display: block;
 		padding: 0 $spacing-xs 0 0;
+		max-height: $spacing-mobile-5;
 
 		img {
-			max-width: $spacing-mobile-5;
+			width: auto !important;
+			height: $spacing-mobile-5;
+		}
+
+		@include breakpoint(l) {
+			max-height: 100%;
+
+			img {
+				width: auto !important;
+				height: auto;
+			}
 		}
 	}
 }
@@ -821,22 +832,31 @@ button.sub-menu-toggle.active svg {
 
 		.site-title a,
 		.site-branding .site-description,
-		.primary-menu a {
+		.primary-menu a,
+		.btn-outline a,
+		.btn-naked a {
 			color: $color__white;
 		}
 
 		.site-header .menu-social-container .icon,
-		.header-inner .toggle .icon {
+		.header-inner .toggle .icon,
+		.btn-outline a {
 			fill: $color__white;
 		}
 
 		.primary-menu .icon::before,
-		.primary-menu .icon::after {
+		.primary-menu .icon::after,
+		.btn-primary a {
 			background-color: $color__white;
 		}
 
-		.primary-menu .sub-menu a {
+		.primary-menu .sub-menu a,
+		.btn-primary a {
 			color: $color__text_one;
+		}
+
+		.btn-outline a {
+			border-color: $color__white;
 		}
 	}
 }

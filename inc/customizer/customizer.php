@@ -149,7 +149,7 @@ function aino_customize_register( $wp_customize ) {
 	 * Theme Options - Site Identity
 	 */
 
-	// Theme Options - Site Identity - Hide Tagline.
+	/* Hide Tagline ---------------- */
 	$wp_customize->add_setting(
 		'sitedescription',
 		array(
@@ -164,7 +164,27 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Hide tagline', 'aino' ),
 			'section'  => 'title_tagline',
 			'type'     => 'checkbox',
-			'priority' => 55,
+			'priority' => 10,
+		)
+	);
+
+	/* 2X Header Logo ---------------- */
+	$wp_customize->add_setting(
+		'retina_logo',
+		array(
+			'default'           => aino_defaults( 'retina_logo' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'retina_logo',
+		array(
+			'type'        => 'checkbox',
+			'section'     => 'title_tagline',
+			'priority'    => 11,
+			'label'       => __( 'Retina logo', 'aino' ),
+			'description' => __( 'Scales the logo to half its uploaded size, making it sharp on high-res screens.', 'aino' ),
 		)
 	);
 

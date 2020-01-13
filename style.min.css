@@ -201,8 +201,10 @@ a.btn-primary:hover,.btn-primary a:hover{background-color:#4f45ff;box-shadow:0 4
 a.btn-outline,.btn-outline a{display:inline-block;font-size:16px;line-height:19px;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;color:#616aff;fill:#616aff;border:1px solid #616aff}
 a.btn-outline:hover,.btn-outline a:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
 a.btn-outline:hover,.btn-outline a:hover{color:#616aff;fill:#616aff;background-color:rgba(97,106,255,0.1)}
-.btn-naked,.btn-naked a{display:inline-block;font-size:16px;line-height:24px;font-weight:normal;color:#495057;fill:#495057;padding-left:0 !important;padding-right:0 !important}
+.btn-naked,.btn-naked a{display:inline-block;font-size:16px;line-height:24px;font-weight:normal;color:#495057;fill:#495057;padding-left:0 !important;padding-right:0 !important;-webkit-transition:all .2s ease;transition:all .2s ease}
 .btn-naked:hover,.btn-naked a:hover{color:#616aff;fill:#616aff}
+.btn-naked:hover,.btn-naked a:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
+.header-cta-wrap .btn-naked,.header-cta-wrap .btn-naked a{padding-right:16px !important}
 .btn-l{padding-top:18px;padding-bottom:17px}
 .btn-m{padding-top:18px;padding-bottom:17px}
 .btn-s{padding-top:18px;padding-bottom:17px}
@@ -295,8 +297,8 @@ audio,video{display:inline-block}
 .site-branding h1.site-title,.site-branding p.site-title{display:block;margin:0}
 .site-branding .site-description{display:none;height:32px;margin:0;padding:0 0 0 16px;font-size:12px;line-height:1.33;color:#495057}
 .site-branding .site-description:before{content:"";display:block;width:1px;background-color:#dde2e5;height:24px;margin-right:16px}
-.site-branding .custom-logo-link{display:block;padding:0 8px 0 0}
-.site-branding .custom-logo-link img{max-width:32px}
+.site-branding .custom-logo-link{display:block;padding:0 8px 0 0;max-height:32px}
+.site-branding .custom-logo-link img{width:auto !important;height:32px}
 .search-header{position:relative;margin:0 0 32px;padding:0 0 32px}
 .header-search-hide .search-header,.search-header .search-submit{display:none}
 .search-header label{cursor:pointer;padding:0}
@@ -753,10 +755,11 @@ td{padding:16px}
 .site-header{padding:24px 0}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .search-header .search-field{height:40px;padding:0 0 0 40px}
-.tpl-fullscreen.single-page.header-light .site-title a,.tpl-fullscreen.single-page.header-light .site-branding .site-description,.tpl-fullscreen.single-page.header-light .primary-menu a{color:#fff}
-.tpl-fullscreen.single-page.header-light .site-header .menu-social-container .icon,.tpl-fullscreen.single-page.header-light .header-inner .toggle .icon{fill:#fff}
-.tpl-fullscreen.single-page.header-light .primary-menu .icon::before,.tpl-fullscreen.single-page.header-light .primary-menu .icon::after{background-color:#fff}
-.tpl-fullscreen.single-page.header-light .primary-menu .sub-menu a{color:#212429}
+.tpl-fullscreen.single-page.header-light .site-title a,.tpl-fullscreen.single-page.header-light .site-branding .site-description,.tpl-fullscreen.single-page.header-light .primary-menu a,.tpl-fullscreen.single-page.header-light .btn-outline a,.tpl-fullscreen.single-page.header-light .btn-naked a{color:#fff}
+.tpl-fullscreen.single-page.header-light .site-header .menu-social-container .icon,.tpl-fullscreen.single-page.header-light .header-inner .toggle .icon,.tpl-fullscreen.single-page.header-light .btn-outline a{fill:#fff}
+.tpl-fullscreen.single-page.header-light .primary-menu .icon::before,.tpl-fullscreen.single-page.header-light .primary-menu .icon::after,.tpl-fullscreen.single-page.header-light .btn-primary a{background-color:#fff}
+.tpl-fullscreen.single-page.header-light .primary-menu .sub-menu a,.tpl-fullscreen.single-page.header-light .btn-primary a{color:#212429}
+.tpl-fullscreen.single-page.header-light .btn-outline a{border-color:#fff}
 .entry-link{padding-bottom:32px}
 .posts-container .hentry{margin-bottom:48px}
 .blog .hentry .entry-header,.blog-archive .hentry .entry-header{padding:32px 32px 0}
@@ -836,6 +839,8 @@ ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:ca
 .blog.blog-2-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:24px;line-height:1.33}
 .post-edit-link{display:block}
 .site-content{margin-top:89px}
+.site-branding .custom-logo-link{max-height:100%}
+.site-branding .custom-logo-link img{width:auto !important;height:auto}
 .search-header{margin:0 32px 0 0;padding:0 32px 0 0}
 .social-header-nav{display:block;padding:0}
 .has-nav-main .social-header-nav{margin-top:0;padding-left:32px}
