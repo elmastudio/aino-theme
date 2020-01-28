@@ -6,10 +6,6 @@
 		padding: $spacing-3 0;
 	}
 
-	.header-border-hide & {
-		border-bottom: none;
-	}
-
 	.admin-bar & {
 		top: 32px;
 		@media screen and (max-width: 782px) {
@@ -54,6 +50,10 @@
 			height: $spacing-3;
 			margin-right: $spacing-2;
 		}
+
+		.tagline-hide & {
+			display: none;
+		}
 	}
 
 	.custom-logo-link {
@@ -80,11 +80,12 @@
 /* Header Search Form */
 .search-header {
 	position: relative;
-	margin: 0 0 $spacing-desktop-4;
-	padding: 0 0 $spacing-desktop-4;
+	margin: $spacing-2 0;
+	padding: 0;
+
 	@include breakpoint(l) {
-		margin: 0 $spacing-desktop-4 0 0;
-		padding: 0 $spacing-desktop-4 0 0;
+		margin: 0 0 0 $spacing-desktop-4;
+		padding: 0;
 	}
 
 	.header-search-hide &,
@@ -95,6 +96,7 @@
 	label {
 		cursor: pointer;
 		padding: 0;
+		color: $color__text_two;
 	}
 
 	.search-form {
@@ -106,17 +108,11 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $spacing-desktop-7;
-		padding: 0 0 0 $spacing-desktop-7;
+		height: $spacing-desktop-5;
+		padding: 0 0 0 $spacing-desktop-5;
 		vertical-align: middle;
 		border: 1px solid $color__border;
 		@include font-body3;
-		@include border-radius-s;
-
-		@include breakpoint(m) {
-			height: $spacing-desktop-5;
-			padding: 0 0 0 $spacing-desktop-5;
-		}
 	}
 }
 

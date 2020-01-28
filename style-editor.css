@@ -133,7 +133,7 @@ dd { margin: 0 1.5em 1.5em; }
 
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
 
-.image-border img { border: 4px solid #dde2e5; }
+.image-border img { border: 4px solid #c9ccdb; }
 
 figure { margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */ }
 
@@ -141,13 +141,13 @@ table { border-spacing: 0; border-width: 1px; margin: 0 0 32px; table-layout: fi
 
 @media (min-width: 48.5em) { table { margin: 0 0 40px; } }
 
-.wp-block-table tr { border-bottom: 1px solid #dde2e5; }
+.wp-block-table tr { border-bottom: 1px solid #c9ccdb; }
 
 .wp-block-table tr:last-child { border-bottom: none; }
 
 .wp-block-table table tr td:last-of-type { border-right: none; }
 
-tr td { border-top: 0; border-left: 0; border-bottom: 0; border-right: 1px solid #dde2e5; }
+tr td { border-top: 0; border-left: 0; border-bottom: 0; border-right: 1px solid #c9ccdb; }
 
 tr td:last-of-type { border-right: none; }
 
@@ -214,7 +214,7 @@ textarea { width: 100%; }
 
 .wp-block-table__cell-content { padding: 16px; }
 
-.wp-block-table td.is-selected, .wp-block-table th.is-selected { border: 1px solid #dde2e5; -webkit-box-shadow: inset 0 0 0 1px #61b7ff; box-shadow: inset 0 0 0 1px #61b7ff; }
+.wp-block-table td.is-selected, .wp-block-table th.is-selected { border: 1px solid #c9ccdb; -webkit-box-shadow: inset 0 0 0 1px #61b7ff; box-shadow: inset 0 0 0 1px #61b7ff; }
 
 /** === Cover === */
 .wp-block-cover-image { height: 75vh; min-height: 400px; margin-top: 32px; margin-bottom: 40px; }
@@ -246,11 +246,11 @@ textarea { width: 100%; }
 .wp-block-verse pre, pre.wp-block-verse { color: #495057; white-space: nowrap; font-family: inherit; font-size: inherit; line-height: 1; padding: 0; overflow: auto; }
 
 /** === Separator === */
-.wp-block-separator { margin-bottom: 40px; border-left: 0; border-right: 0; border-bottom: 0; border-top: 1px solid #dde2e5; }
+.wp-block-separator { margin-bottom: 40px; border-left: 0; border-right: 0; border-bottom: 0; border-top: 1px solid #c9ccdb; }
 
 .wp-block-separator.is-style-dots { border: none; }
 
-.wp-block-separator.is-style-dots:before { color: #dde2e5; font-size: 27px; line-height: 1.48; letter-spacing: 1em; padding-left: 1em; }
+.wp-block-separator.is-style-dots:before { color: #c9ccdb; font-size: 27px; line-height: 1.48; letter-spacing: 1em; padding-left: 1em; }
 
 /** === Button === */
 .wp-block-button .wp-block-button__link { display: inline-block; font-size: 16px; line-height: 19px; font-weight: normal; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; width: 100%; padding-top: 19px; padding-bottom: 18px; color: #ffffff; fill: #ffffff; background-color: #616aff; font-weight: normal; color: #ffffff; }

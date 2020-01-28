@@ -99,6 +99,14 @@
 			?>
 		<?php endif; ?>
 
+		<?php if ( false !== get_theme_mod( 'header_search' ) ) : ?>
+
+		<div class="search-header">
+			<?php get_search_form(); ?>
+		</div><!-- end .search-header -->
+
+		<?php endif; ?>
+
 		</div><!-- .header-inner -->
 
 	</header><!-- .masthead -->

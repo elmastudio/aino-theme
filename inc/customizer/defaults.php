@@ -55,7 +55,6 @@ function aino_defaults( $name ) {
 				'sitedescription'          => true,
 				'retina_logo'              => false,
 				'header_search'            => true,
-				'header_border'            => false,
 				'aino_displaydate'         => true,
 				'display_comments'         => false,
 				'aino_displayauthor'       => true,

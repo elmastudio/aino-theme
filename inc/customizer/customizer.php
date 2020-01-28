@@ -309,25 +309,6 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Theme Options - Header - Hide Bottom Border.
-	$wp_customize->add_setting(
-		'header_border',
-		array(
-			'default'           => aino_defaults( 'header_border' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'header_border',
-		array(
-			'label'    => esc_html__( 'Hide Bottom Border', 'aino' ),
-			'section'  => 'aino_header',
-			'type'     => 'checkbox',
-			'priority' => 3,
-		)
-	);
-
 	/**
 	 * Theme Options - Footer
 	 */
