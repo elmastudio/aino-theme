@@ -47,13 +47,14 @@ function aino_defaults( $name ) {
 				'blogcards_borderradius'   => 'radius-m',
 				'blogcards_animation'      => 'blogcards-movein',
 				'post_excerpt_lengths'     => '15',
+				'header_light_fonts'       => false,
 				'footerwidget_alignment'   => true,
 				'footerinfo_alignment'     => true,
 
 				// Visibility.
 				'sitedescription'          => true,
+				'retina_logo'              => false,
 				'header_search'            => true,
-				'header_border'            => false,
 				'aino_displaydate'         => true,
 				'display_comments'         => false,
 				'aino_displayauthor'       => true,

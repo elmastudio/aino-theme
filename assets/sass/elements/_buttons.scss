@@ -31,6 +31,16 @@ a.btn-outline,
 	@include btn-naked;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+	@include transition-default;
+
+	&:hover {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	.header-cta-wrap & {
+	padding-right: $spacing-2 !important;
+	}
 }
 
 /* Button Sizes */

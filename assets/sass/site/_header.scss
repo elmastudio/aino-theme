@@ -1,14 +1,9 @@
 .site-header {
 
-	padding: $spacing-3;
+	padding: $spacing-3 0;
 
 	@include breakpoint(m) {
-		padding: $spacing-3 $spacing-desktop-6;
-	}
-
-	.header-border-hide & {
-		border-bottom: none;
-		background-color: $color__white;
+		padding: $spacing-3 0;
 	}
 
 	.admin-bar & {
@@ -55,14 +50,29 @@
 			height: $spacing-3;
 			margin-right: $spacing-2;
 		}
+
+		.tagline-hide & {
+			display: none;
+		}
 	}
 
 	.custom-logo-link {
 		display: block;
 		padding: 0 $spacing-xs 0 0;
+		max-height: $spacing-mobile-5;
 
 		img {
-			max-width: $spacing-mobile-5;
+			width: auto !important;
+			height: $spacing-mobile-5;
+		}
+
+		@include breakpoint(l) {
+			max-height: 100%;
+
+			img {
+				width: auto !important;
+				height: auto;
+			}
 		}
 	}
 }
@@ -70,11 +80,12 @@
 /* Header Search Form */
 .search-header {
 	position: relative;
-	margin: 0 0 $spacing-desktop-4;
-	padding: 0 0 $spacing-desktop-4;
+	margin: $spacing-2 0;
+	padding: 0;
+
 	@include breakpoint(l) {
-		margin: 0 $spacing-desktop-4 0 0;
-		padding: 0 $spacing-desktop-4 0 0;
+		margin: 0 0 0 $spacing-desktop-4;
+		padding: 0;
 	}
 
 	.header-search-hide &,
@@ -85,6 +96,7 @@
 	label {
 		cursor: pointer;
 		padding: 0;
+		color: $color__text_two;
 	}
 
 	.search-form {
@@ -96,17 +108,11 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $spacing-desktop-7;
-		padding: 0 0 0 $spacing-desktop-7;
+		height: $spacing-desktop-5;
+		padding: 0 0 0 $spacing-desktop-5;
 		vertical-align: middle;
 		border: 1px solid $color__border;
 		@include font-body3;
-		@include border-radius-s;
-
-		@include breakpoint(m) {
-			height: $spacing-desktop-5;
-			padding: 0 0 0 $spacing-desktop-5;
-		}
 	}
 }
 
@@ -230,8 +236,13 @@
 }
 
 .header-inner {
-	width: 100%;
-	z-index: 100;
+	padding-left: $spacing-3;
+	padding-right: $spacing-3;
+
+	@include breakpoint(xs) {
+		padding-left: $spacing-mobile-9;
+		padding-right: $spacing-mobile-9;
+	}
 
 	@include breakpoint(l) {
 		@include flexbox;
@@ -299,6 +310,11 @@
 	color: $color__text_one;
 	width: $spacing-mobile-5;
 	height: $spacing-mobile-5;
+
+	@include breakpoint(xs) {
+		right: $spacing-mobile-9;
+	}
+
 }
 
 button.close-nav-toggle {
@@ -386,6 +402,8 @@ ul.primary-menu {
 
 .primary-menu a:hover,
 .primary-menu a:focus,
+.primary-menu .sub-menu a:hover,
+.primary-menu .sub-menu a:focus,
 .primary-menu .current_page_ancestor {
 	color: $color__primary_two;
 }
@@ -800,5 +818,41 @@ button.sub-menu-toggle.active svg {
 
 	.menu-bottom .social-menu {
 		justify-content: flex-start;
+	}
+}
+
+/* Light Header Fonts Customizer Option ---------------------------- */
+
+@include breakpoint(m) {
+	.tpl-fullscreen.single-page.header-light {
+
+		.site-title a,
+		.site-branding .site-description,
+		.primary-menu a,
+		.btn-outline a,
+		.btn-naked a {
+			color: $color__white;
+		}
+
+		.site-header .menu-social-container .icon,
+		.header-inner .toggle .icon,
+		.btn-outline a {
+			fill: $color__white;
+		}
+
+		.primary-menu .icon::before,
+		.primary-menu .icon::after,
+		.btn-primary a {
+			background-color: $color__white;
+		}
+
+		.primary-menu .sub-menu a,
+		.btn-primary a {
+			color: $color__text_one;
+		}
+
+		.btn-outline a {
+			border-color: $color__white;
+		}
 	}
 }

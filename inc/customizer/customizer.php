@@ -149,7 +149,7 @@ function aino_customize_register( $wp_customize ) {
 	 * Theme Options - Site Identity
 	 */
 
-	// Theme Options - Site Identity - Hide Tagline.
+	/* Hide Tagline ---------------- */
 	$wp_customize->add_setting(
 		'sitedescription',
 		array(
@@ -164,7 +164,27 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Hide tagline', 'aino' ),
 			'section'  => 'title_tagline',
 			'type'     => 'checkbox',
-			'priority' => 55,
+			'priority' => 10,
+		)
+	);
+
+	/* 2X Header Logo ---------------- */
+	$wp_customize->add_setting(
+		'retina_logo',
+		array(
+			'default'           => aino_defaults( 'retina_logo' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'retina_logo',
+		array(
+			'type'        => 'checkbox',
+			'section'     => 'title_tagline',
+			'priority'    => 11,
+			'label'       => __( 'Retina logo', 'aino' ),
+			'description' => __( 'Scales the logo to half its uploaded size, making it sharp on high-res screens.', 'aino' ),
 		)
 	);
 
@@ -250,6 +270,26 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Header
 	 */
+	// Theme Options - Header - Lignt Font Colors.
+	$wp_customize->add_setting(
+		'header_light_fonts',
+		array(
+			'default'           => aino_defaults( 'header_light_fonts' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'header_light_fonts',
+		array(
+			'label'       => esc_html__( 'Light Font Colors on Front Page', 'aino' ),
+			'description' => esc_html__( 'Choose the light header font colors with the Aino Hero block and the Fullscreen Page Template on your Front page.', 'aino' ),
+			'section'     => 'aino_header',
+			'type'        => 'checkbox',
+			'priority'    => 1,
+		)
+	);
+
 	// Theme Options - Header - Hide Search in Header.
 	$wp_customize->add_setting(
 		'header_search',
@@ -263,25 +303,6 @@ function aino_customize_register( $wp_customize ) {
 		'header_search',
 		array(
 			'label'    => esc_html__( 'Display Search Form', 'aino' ),
-			'section'  => 'aino_header',
-			'type'     => 'checkbox',
-			'priority' => 1,
-		)
-	);
-
-	// Theme Options - Header - Hide Bottom Border.
-	$wp_customize->add_setting(
-		'header_border',
-		array(
-			'default'           => aino_defaults( 'header_border' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'header_border',
-		array(
-			'label'    => esc_html__( 'Hide Bottom Border', 'aino' ),
 			'section'  => 'aino_header',
 			'type'     => 'checkbox',
 			'priority' => 2,

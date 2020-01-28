@@ -40,13 +40,8 @@
 	position: absolute;
 	@include flexbox;
 	@include flex-center;
-	width: $spacing-desktop-7;
-	height: $spacing-desktop-7;
-
-	@include breakpoint(m) {
 	width: $spacing-desktop-5;
 	height: $spacing-desktop-5;
-	}
 
 	.icon {
 		width: $spacing-3;

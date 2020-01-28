@@ -42,6 +42,27 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_image_size( 'aino-m', 681, 454, true ); // Image Ratio 3:2.
 		add_image_size( 'aino-s-squared', 96, 96, true );
 
+		// Custom logo.
+		$logo_width  = 120;
+		$logo_height = 90;
+
+		// If the retina setting is active, double the recommended width and height.
+		if ( get_theme_mod( 'retina_logo', false ) ) {
+			$logo_width  = floor( $logo_width * 2 );
+			$logo_height = floor( $logo_height * 2 );
+		}
+
+		// Add support for core custom logo.
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => $logo_height,
+				'width'       => $logo_width,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
+
 		// Register Navigation menus.
 		register_nav_menus(
 			array(
@@ -64,17 +85,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				'comment-list',
 				'gallery',
 				'caption',
-			)
-		);
-
-		// Add support for core custom logo.
-		add_theme_support(
-			'custom-logo',
-			array(
-				'width'       => 100,
-				'height'      => 32,
-				'flex-width'  => true,
-				'flex-height' => true,
 			)
 		);
 
@@ -233,6 +243,63 @@ function aino_content_width() {
 	// phpcs:enable
 }
 add_action( 'after_setup_theme', 'aino_content_width', 0 );
+
+/**
+ * Get the information about the logo.
+ *
+ * @param string $html The HTML output from get_custom_logo (core function).
+ *
+ * @return string $html
+ */
+function aino_get_custom_logo( $html ) {
+
+	$logo_id = get_theme_mod( 'custom_logo' );
+
+	if ( ! $logo_id ) {
+		return $html;
+	}
+
+	$logo = wp_get_attachment_image_src( $logo_id, 'full' );
+
+	if ( $logo ) {
+		// For clarity.
+		$logo_width  = esc_attr( $logo[1] );
+		$logo_height = esc_attr( $logo[2] );
+
+		// If the retina logo setting is active, reduce the width/height by half.
+		if ( get_theme_mod( 'retina_logo', false ) ) {
+			$logo_width  = floor( $logo_width / 2 );
+			$logo_height = floor( $logo_height / 2 );
+
+			$search = array(
+				'/width=\"\d+\"/iU',
+				'/height=\"\d+\"/iU',
+			);
+
+			$replace = array(
+				"width=\"{$logo_width}\"",
+				"height=\"{$logo_height}\"",
+			);
+
+			// Add a style attribute with the height, or append the height to the style attribute if the style attribute already exists.
+			if ( strpos( $html, ' style=' ) === false ) {
+				$search[]  = '/(src=)/';
+				$replace[] = "style=\"height: {$logo_height}px;\" src=";
+			} else {
+				$search[]  = '/(style="[^"]*)/';
+				$replace[] = "$1 height: {$logo_height}px;";
+			}
+
+			$html = preg_replace( $search, $replace, $html );
+
+		}
+	}
+
+	return $html;
+
+}
+
+add_filter( 'get_custom_logo', 'aino_get_custom_logo' );
 
 /**
  * Register custom fonts.

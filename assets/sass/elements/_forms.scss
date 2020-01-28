@@ -20,8 +20,9 @@ input[type="color"] {
 	height: $spacing-desktop-7;
 	padding: 0 $spacing-3;
 	outline: none;
+
 	@include input-placeholder {
-		color: $color__text_three;
+		color: $color__text_two;
 	}
 }
 
@@ -31,6 +32,7 @@ textarea {
 	border: 1px solid $color__border;
 	padding: $spacing-2 $spacing-3;
 	outline: none;
+
 	@include input-placeholder {
 		color: $color__text_one
 	}
