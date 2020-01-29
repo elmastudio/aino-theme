@@ -9,9 +9,10 @@
 }
 
 .footer-wrap {
-	padding: $spacing-mobile-9 0;
+	padding: $spacing-mobile-10 0 $spacing-mobile-9;
+
 	@include breakpoint(m) {
-		padding: $spacing-desktop-9 0;
+		padding: $spacing-desktop-10 0 $spacing-desktop-9;
 	}
 }
 
@@ -19,6 +20,7 @@
 	@include flexbox;
 	flex-direction: column;
 	padding-bottom: $spacing-mobile-6;
+
 	@include breakpoint(s) {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -52,6 +54,7 @@
 .footer-info {
 	@include flexbox;
 	flex-direction: column;
+
 	@include breakpoint(m) {
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -59,6 +62,7 @@
 	}
 	.footerinfo-centered & {
 		justify-content: center;
+
 		@include breakpoint(m) {
 			flex-direction: column;
 		}
@@ -70,20 +74,25 @@
 	@include font-body4;
 	color: $color__text_two;
 
+	.footer-copyright {
+		padding-right: 2px;
+	}
+
 	.footerinfo-centered & {
 		@include flexbox;
 		justify-content: center;
 	}
-}
 
-.site-info a {
-	padding: 0;
-	@include font-body4;
-	color: $color__text_two;
+	a {
+		@include font-body4;
+		color: $color__text_two;
 
-	&:hover {
-		color: $color__primary_one;
+		&:hover {
+			color: $color__primary_one;
+		}
 	}
+
+
 }
 
 /* Footer Social Nav */
