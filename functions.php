@@ -63,11 +63,11 @@ if ( ! function_exists( 'aino_setup' ) ) :
 			)
 		);
 
-		// Register Navigation menus.
+		// Register navigation menus uses wp_nav_menu in five places.
 		register_nav_menus(
 			array(
 				'primary'       => esc_html__( 'Primary Menu', 'aino' ),
-				'cta-header'    => esc_html__( 'Header Buttons (Desktop only)', 'aino' ),
+				'cta-header'    => esc_html__( 'Header CTA Buttons (Desktop only)', 'aino' ),
 				'social'        => esc_html__( 'Header Social Menu (Desktop only)', 'aino' ),
 				'social-footer' => esc_html__( 'Footer Social Menu', 'aino' ),
 			)
