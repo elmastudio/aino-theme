@@ -272,18 +272,18 @@ function aino_customize_register( $wp_customize ) {
 	 */
 	// Theme Options - Header - Lignt Font Colors.
 	$wp_customize->add_setting(
-		'header_light_fonts',
+		'header_light',
 		array(
-			'default'           => aino_defaults( 'header_light_fonts' ),
+			'default'           => aino_defaults( 'header_light' ),
 			'sanitize_callback' => 'aino_sanitize_checkbox',
 		)
 	);
 
 	$wp_customize->add_control(
-		'header_light_fonts',
+		'header_light',
 		array(
-			'label'       => esc_html__( 'Light Font Colors on Front Page', 'aino' ),
-			'description' => esc_html__( 'Choose the light header font colors with the Aino Hero block and the Fullscreen Page Template on your Front page.', 'aino' ),
+			'label'       => esc_html__( 'Light Header Style', 'aino' ),
+			'description' => esc_html__( 'Check for light header style on entire website.', 'aino' ),
 			'section'     => 'aino_header',
 			'type'        => 'checkbox',
 			'priority'    => 1,

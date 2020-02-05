@@ -821,10 +821,9 @@ button.sub-menu-toggle.active svg {
 	}
 }
 
-/* Light Header Fonts Customizer Option ---------------------------- */
-
+/* Light Header Style ---------------------------- */
 @include breakpoint(m) {
-	.tpl-fullscreen.single-page.header-light {
+	.header-light {
 
 		.site-title a,
 		.site-branding .site-description,
