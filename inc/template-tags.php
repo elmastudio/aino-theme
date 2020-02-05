@@ -449,6 +449,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'tpl-fullscreen';
 	}
 
+	if ( is_page_template( 'page-templates/tpl-hero.php' ) ) {
+		$classes[] = 'tpl-hero';
+	}
+
 	// Classes for Menus.
 	if ( has_nav_menu( 'primary' ) ) {
 		$classes[] = 'has-nav-main';
@@ -489,7 +493,7 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'tagline-hide';
 	}
 
-	if ( true === get_theme_mod( 'header_light_fonts', aino_defaults( 'header_light_fonts' ) ) ) {
+	if ( true === get_theme_mod( 'header_light', aino_defaults( 'header_light' ) ) ) {
 		$classes[] = 'header-light';
 	}
 

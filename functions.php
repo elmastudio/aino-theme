@@ -235,7 +235,7 @@ function aino_content_width() {
 	if ( is_page_template( 'page-templates/tpl-fullwidth.php' ) || is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 1200 );
 	}
-	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) ) {
+	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) || is_page_template( 'page-templates/tpl-hero.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 2010 );
 	} else {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 680 );

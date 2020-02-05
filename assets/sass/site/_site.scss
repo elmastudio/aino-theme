@@ -1,16 +1,4 @@
 /* General */
-.site-content {
-	padding-top: $spacing-mobile-4;
-
-	@include breakpoint(m) {
-		padding-top: $spacing-desktop-8;
-	}
-
-	@include breakpoint(l) {
-		margin-top: 89px;
-	}
-
-}
 
 
 .entry-content {
