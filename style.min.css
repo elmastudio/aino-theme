@@ -82,7 +82,7 @@ textarea{resize:vertical}
 .single-post .col,.single-post .entry-header,.page-template-default .entry-header,.page-template-default .col,.tpl-fullwidth{margin-left:auto;margin-right:auto}
 .entry-content>*,.single-post .entry-header,.single-post .entry-footer,.page-template-default .entry-header,.single-post .comments-area{margin-left:auto;margin-right:auto}
 .tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header{margin-left:auto;margin-right:auto}
-.tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
+.tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header,.tpl-hero .entry-content>*,.tpl-hero .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
 .entry-content>*.alignwide{max-width:1200px}
 .page-header .page-title,.archive-description{max-width:728px}
 .blog .site-main,.archive .site-main,.search-results .site-main,.footer-widget-wrap,.related-container,.single-post .post-navigation{padding-left:24px;padding-right:24px}
@@ -288,7 +288,6 @@ audio,video{display:inline-block}
 .gallery-columns-8 .gallery-item{max-width:12.5%}
 .gallery-columns-9 .gallery-item{max-width:11.11%}
 .gallery-caption{display:block}
-.site-content{padding-top:24px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:40px}
 .site-header{padding:24px 0}
 .admin-bar .site-header{top:32px}
@@ -506,10 +505,10 @@ button.sub-menu-toggle.active svg{-webkit-transform:rotate(270deg);transform:rot
 .error-404 .entry-header,.search.search-no-results .entry-header{position:relative;margin:0;padding:0 0 24px}
 .archive .type-page .entry-header,.search-results .type-page .entry-header{padding-top:24px;padding-bottom:0}
 .archive .type-page .entry-footer,.search-results .type-page .entry-footer{display:none}
-.tpl-fullscreen .type-page .entry-header{display:none}
-.tpl-fullscreen .site-content{max-width:none;padding:0}
-.tpl-fullscreen .site-content .type-page{clear:both;overflow:hidden}
-.tpl-fullscreen .site-content .entry-content{padding-top:0;padding-bottom:0;float:none}
+.tpl-fullscreen .type-page .entry-header,.tpl-hero .type-page .entry-header{display:none}
+.tpl-fullscreen .site-content,.tpl-hero .site-content{max-width:none;padding:0}
+.tpl-fullscreen .site-content .type-page,.tpl-hero .site-content .type-page{clear:both;overflow:hidden}
+.tpl-fullscreen .site-content .entry-content,.tpl-hero .site-content .entry-content{padding-top:0;padding-bottom:0;float:none}
 .tpl-fullwidth-notitle .type-page .entry-header{display:none}
 .blog .site-content,.blog-archive .site-content{padding-bottom:96px}
 .site-main .navigation,.site-main .post-navigation{font-size:16px;line-height:1.5}
@@ -749,15 +748,14 @@ th{padding:16px}
 td{padding:16px}
 .wp-caption .wp-caption-text{margin:16px 0 40px}
 .gallery,.entry-content .tiled-gallery{margin-bottom:40px}
-.site-content{padding-top:72px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:72px}
 .site-header{padding:24px 0}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.tpl-fullscreen.single-page.header-light .site-title a,.tpl-fullscreen.single-page.header-light .site-branding .site-description,.tpl-fullscreen.single-page.header-light .primary-menu a,.tpl-fullscreen.single-page.header-light .btn-outline a,.tpl-fullscreen.single-page.header-light .btn-naked a{color:#fff}
-.tpl-fullscreen.single-page.header-light .site-header .menu-social-container .icon,.tpl-fullscreen.single-page.header-light .header-inner .toggle .icon,.tpl-fullscreen.single-page.header-light .btn-outline a{fill:#fff}
-.tpl-fullscreen.single-page.header-light .primary-menu .icon::before,.tpl-fullscreen.single-page.header-light .primary-menu .icon::after,.tpl-fullscreen.single-page.header-light .btn-primary a{background-color:#fff}
-.tpl-fullscreen.single-page.header-light .primary-menu .sub-menu a,.tpl-fullscreen.single-page.header-light .btn-primary a{color:#212429}
-.tpl-fullscreen.single-page.header-light .btn-outline a{border-color:#fff}
+.header-light .site-title a,.header-light .site-branding .site-description,.header-light .primary-menu a,.header-light .btn-outline a,.header-light .btn-naked a{color:#fff}
+.header-light .site-header .menu-social-container .icon,.header-light .header-inner .toggle .icon,.header-light .btn-outline a{fill:#fff}
+.header-light .primary-menu .icon::before,.header-light .primary-menu .icon::after,.header-light .btn-primary a{background-color:#fff}
+.header-light .primary-menu .sub-menu a,.header-light .btn-primary a{color:#212429}
+.header-light .btn-outline a{border-color:#fff}
 .entry-link{padding-bottom:32px}
 .posts-container .hentry{margin-bottom:48px}
 .blog .hentry .entry-header,.blog-archive .hentry .entry-header{padding:32px 32px 0}
@@ -836,7 +834,6 @@ ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:ca
 .blog-2-column .hentry .entry-summary{font-size:16px;line-height:1.5}
 .blog.blog-2-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:24px;line-height:1.33}
 .post-edit-link{display:block}
-.site-content{margin-top:89px}
 .site-branding .custom-logo-link{max-height:100%}
 .site-branding .custom-logo-link img{width:auto !important;height:auto}
 .search-header{margin:0 0 0 32px;padding:0}

@@ -63,7 +63,9 @@
 
 /* Fullscreen content width */
 .tpl-fullscreen .entry-content > *,
-.tpl-fullscreen .entry-header {
+.tpl-fullscreen .entry-header,
+.tpl-hero .entry-content > *,
+.tpl-hero .entry-header {
 	@include push--auto;
 	max-width: 100%;
 }
