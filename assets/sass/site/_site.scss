@@ -1,6 +1,6 @@
 /* General */
 .site-content {
-	padding-top: $spacing-mobile-7;
+	padding-top: $spacing-3;
 
 	@include breakpoint(m) {
 		padding-top: $spacing-desktop-7;

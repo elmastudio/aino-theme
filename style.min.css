@@ -289,7 +289,7 @@ audio,video{display:inline-block}
 .gallery-columns-8 .gallery-item{max-width:12.5%}
 .gallery-columns-9 .gallery-item{max-width:11.11%}
 .gallery-caption{display:block}
-.site-content{padding-top:40px}
+.site-content{padding-top:24px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:40px}
 .site-header{padding:24px 0}
 .admin-bar .site-header{top:32px}
@@ -390,6 +390,7 @@ button.sub-menu-toggle.active svg{-webkit-transform:rotate(270deg);transform:rot
 .menu-wrapper.is-animating.is-toggling .toggling-target{display:block;-webkit-transition-property:opacity;transition-property:opacity;opacity:0}
 .menu-wrapper.is-animating.is-toggling .toggling-target.active{opacity:1}
 .menu-wrapper.is-toggling .modal-menu>li:last-child li{border-top-color:transparent;border-bottom-width:.1rem}
+.tpl-hero-light .nav-toggle .icon-more_horiz-24px,.tpl-fullscreen-light .nav-toggle .icon-more_horiz-24px{color:#fff}
 .entry-link{display:block;padding-bottom:24px}
 .posts-container .hentry{margin-bottom:32px}
 .entry-content,.entry-summary,.page-content{margin:0}
@@ -794,6 +795,7 @@ td{padding:16px}
 .archive.author .authorbox-content{width:calc(100% - 208px);max-width:480px}
 .error-404 .entry-header,.search.search-no-results .entry-header{margin:0 24px 72px;padding:0 0 32px}
 .archive .type-page .entry-header,.search-results .type-page .entry-header{padding-top:32px;padding-bottom:0}
+.blog .site-content,.blog-archive .site-content{padding-bottom:144px}
 .blog .site-main .navigation,.blog-archive .site-main .navigation{margin-left:16px;margin-right:16px}
 .blog .site-main .navigation,.blog-archive .site-main .navigation{margin-left:24px;margin-right:24px}
 .blog .site-main .navigation .nav-links,.blog-archive .site-main .navigation .nav-links{margin-top:48px}

@@ -823,9 +823,15 @@ button.sub-menu-toggle.active svg {
 }
 
 /* Light Header Style ---------------------------- */
-@include breakpoint(m) {
-	.tpl-hero-light,
-	.tpl-fullscreen-light {
+
+.tpl-hero-light,
+.tpl-fullscreen-light {
+
+	.nav-toggle .icon-more_horiz-24px {
+		color: $color__white;
+	}
+
+	@include breakpoint(m) {
 
 		.site-title a,
 		.site-branding .site-description,
