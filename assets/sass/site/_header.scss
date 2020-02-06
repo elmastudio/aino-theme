@@ -24,7 +24,8 @@
 	min-height: $spacing-mobile-5;
 
 	h1.site-title,
-	p.site-title {
+	.site-title,
+	.site-logo {
 		display: block;
 		margin: 0;
 	}
@@ -823,7 +824,8 @@ button.sub-menu-toggle.active svg {
 
 /* Light Header Style ---------------------------- */
 @include breakpoint(m) {
-	.header-light {
+	.tpl-hero-light,
+	.tpl-fullscreen-light {
 
 		.site-title a,
 		.site-branding .site-description,

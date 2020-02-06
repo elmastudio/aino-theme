@@ -270,25 +270,6 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Header
 	 */
-	// Theme Options - Header - Lignt Font Colors.
-	$wp_customize->add_setting(
-		'header_light',
-		array(
-			'default'           => aino_defaults( 'header_light' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'header_light',
-		array(
-			'label'       => esc_html__( 'Light Header Style', 'aino' ),
-			'description' => esc_html__( 'Check for light header style on entire website.', 'aino' ),
-			'section'     => 'aino_header',
-			'type'        => 'checkbox',
-			'priority'    => 1,
-		)
-	);
 
 	// Theme Options - Header - Hide Search in Header.
 	$wp_customize->add_setting(
@@ -305,7 +286,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Display Search Form', 'aino' ),
 			'section'  => 'aino_header',
 			'type'     => 'checkbox',
-			'priority' => 2,
+			'priority' => 1,
 		)
 	);
 

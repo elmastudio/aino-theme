@@ -1,5 +1,11 @@
 /* General */
+.site-content {
+	padding-top: $spacing-mobile-7;
 
+	@include breakpoint(m) {
+		padding-top: $spacing-desktop-7;
+	}
+}
 
 .entry-content {
 

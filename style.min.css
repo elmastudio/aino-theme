@@ -102,15 +102,16 @@ body,button,input,select,table,textarea,.search .page-header p,.textwidget p,.po
 .entry-content p,.hentry ol,.hentry ul{font-size:19px;line-height:1.68}
 .entry-content .has-large-font-size,.entry-content .intro{font-size:27px;line-height:1.48}
 .comment-metadata,.comment-notes,.logged-in-as,.entry-content .has-xxs-font-size{font-size:12px;line-height:1.33}
-h1,h2,h3,h4,h5,h6,p.site-title,.post-navigation .nav-title{color:#212429;font-weight:bold}
-.h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6,.h-regular p.site-title,.h-regular.single-post .byline,.h-regular .entry-meta .author-name,.h-regular .entry-meta .entry-cats,.post-navigation .nav-title span{font-weight:normal}
+h1,h2,h3,h4,h5,h6,.site-title,.post-navigation .nav-title{color:#212429;font-weight:bold}
+.h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6,.h-regular .site-title,.h-regular.single-post .byline,.h-regular .entry-meta .author-name,.h-regular .entry-meta .entry-cats,.post-navigation .nav-title span{font-weight:normal}
 h1{font-size:40px;line-height:1.2}
 h2{font-size:32px;line-height:1.25}
 h3,.related .section-title,.comments-area .comments-title{font-size:28px;line-height:1.14}
-h4,h1.site-title,p.site-title{font-size:24px;line-height:1.33}
+h4,h1.site-title,.site-title{font-size:24px;line-height:1.33}
+h1.site-logo{font-size:1px;line-height:1}
 .related-title,.comment-reply-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5{font-size:21px;line-height:24px}
 h6,h2.widget-title{font-size:16px;line-height:1.25}
-h1.site-title,p.site-title,h2.entry-title{word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
+h1.site-title,.site-title,h2.entry-title{word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
 .entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6{margin-top:16px;margin-bottom:16px}
 address,p{margin-bottom:24px}
 dfn,em,i{font-style:italic}
@@ -288,11 +289,12 @@ audio,video{display:inline-block}
 .gallery-columns-8 .gallery-item{max-width:12.5%}
 .gallery-columns-9 .gallery-item{max-width:11.11%}
 .gallery-caption{display:block}
+.site-content{padding-top:40px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:40px}
 .site-header{padding:24px 0}
 .admin-bar .site-header{top:32px}
 .site-branding{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto 0 0;padding-right:32px;min-height:32px}
-.site-branding h1.site-title,.site-branding p.site-title{display:block;margin:0}
+.site-branding h1.site-title,.site-branding .site-title,.site-branding .site-logo{display:block;margin:0}
 .site-branding .site-description{display:none;height:32px;margin:0;padding:0 0 0 16px;font-size:12px;line-height:1.33;color:#495057}
 .site-branding .site-description:before{content:"";display:block;width:1px;background-color:#c9ccdb;height:24px;margin-right:16px}
 .tagline-hide .site-branding .site-description{display:none}
@@ -724,7 +726,8 @@ a.btn-outline,.btn-outline a{width:auto}
 h1{font-size:55px;line-height:1.16}
 h2{font-size:46px;line-height:1.22}
 h3,.related .section-title,.comments-area .comments-title{font-size:32px;line-height:1.25}
-h4,h1.site-title,p.site-title{font-size:27px;line-height:1.19}
+h4,h1.site-title,.site-title{font-size:27px;line-height:1.19}
+h1.site-logo{font-size:1}
 .related-title,.comment-reply-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5{font-size:21px;line-height:24px}
 .blog.blog-1-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title{font-size:28px;line-height:1.14}
 address,p{margin-bottom:32px}
@@ -748,14 +751,15 @@ th{padding:16px}
 td{padding:16px}
 .wp-caption .wp-caption-text{margin:16px 0 40px}
 .gallery,.entry-content .tiled-gallery{margin-bottom:40px}
+.site-content{padding-top:56px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:72px}
 .site-header{padding:24px 0}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.header-light .site-title a,.header-light .site-branding .site-description,.header-light .primary-menu a,.header-light .btn-outline a,.header-light .btn-naked a{color:#fff}
-.header-light .site-header .menu-social-container .icon,.header-light .header-inner .toggle .icon,.header-light .btn-outline a{fill:#fff}
-.header-light .primary-menu .icon::before,.header-light .primary-menu .icon::after,.header-light .btn-primary a{background-color:#fff}
-.header-light .primary-menu .sub-menu a,.header-light .btn-primary a{color:#212429}
-.header-light .btn-outline a{border-color:#fff}
+.tpl-hero-light .site-title a,.tpl-hero-light .site-branding .site-description,.tpl-hero-light .primary-menu a,.tpl-hero-light .btn-outline a,.tpl-hero-light .btn-naked a,.tpl-fullscreen-light .site-title a,.tpl-fullscreen-light .site-branding .site-description,.tpl-fullscreen-light .primary-menu a,.tpl-fullscreen-light .btn-outline a,.tpl-fullscreen-light .btn-naked a{color:#fff}
+.tpl-hero-light .site-header .menu-social-container .icon,.tpl-hero-light .header-inner .toggle .icon,.tpl-hero-light .btn-outline a,.tpl-fullscreen-light .site-header .menu-social-container .icon,.tpl-fullscreen-light .header-inner .toggle .icon,.tpl-fullscreen-light .btn-outline a{fill:#fff}
+.tpl-hero-light .primary-menu .icon::before,.tpl-hero-light .primary-menu .icon::after,.tpl-hero-light .btn-primary a,.tpl-fullscreen-light .primary-menu .icon::before,.tpl-fullscreen-light .primary-menu .icon::after,.tpl-fullscreen-light .btn-primary a{background-color:#fff}
+.tpl-hero-light .primary-menu .sub-menu a,.tpl-hero-light .btn-primary a,.tpl-fullscreen-light .primary-menu .sub-menu a,.tpl-fullscreen-light .btn-primary a{color:#212429}
+.tpl-hero-light .btn-outline a,.tpl-fullscreen-light .btn-outline a{border-color:#fff}
 .entry-link{padding-bottom:32px}
 .posts-container .hentry{margin-bottom:48px}
 .blog .hentry .entry-header,.blog-archive .hentry .entry-header{padding:32px 32px 0}
