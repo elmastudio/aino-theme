@@ -13,9 +13,9 @@ __License URI:__ http://www.gnu.org/licenses/gpl-3.0.html
 ## Changelog
 
 ### 0.1.1
-**New:** Hero page template.
-**New:** Header light option simplified by adding new Light page templates.
-**Enhance:** Link colors simplified.
+**New:** Hero page template.  
+**New:** Header light option simplified by adding new Light page templates.  
+**Enhance:** Link colors simplified.  
 
 ### 0.1.0
 **Enhance:** Primary menu and mobile menu.
