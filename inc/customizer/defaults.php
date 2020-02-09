@@ -47,7 +47,6 @@ function aino_defaults( $name ) {
 				'blogcards_borderradius'   => 'radius-m',
 				'blogcards_animation'      => 'blogcards-movein',
 				'post_excerpt_lengths'     => '15',
-				'header_light_fonts'       => false,
 				'footerwidget_alignment'   => true,
 				'footerinfo_alignment'     => true,
 

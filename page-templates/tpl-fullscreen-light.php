@@ -1,11 +1,11 @@
 <?php
 /**
- * Template Name: Fullscreen
+ * Template Name: Fullscreen, light header
  *
  * Description: A Fullscreen Page template without page title and padding and with a light header style.
  *
  * @package Aino
- * @since Aino 0.0.5
+ * @since Aino 0.3.0
  */
 
 get_header(); ?>

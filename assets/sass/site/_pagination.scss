@@ -2,6 +2,10 @@
 .blog .site-content,
 .blog-archive .site-content {
 	padding-bottom: $spacing-desktop-9;
+
+	@include breakpoint(m) {
+		padding-bottom: $spacing-desktop-10;
+	}
 }
 
 .site-main .navigation,

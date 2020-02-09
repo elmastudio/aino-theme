@@ -42,7 +42,7 @@ function aino_site_logo( $args = array(), $echo = true ) {
 		'title_class' => 'site-title',
 		'home_wrap'   => '<h1 class="%1$s">%2$s</h1>',
 		'single_wrap' => '<div class="%1$s faux-heading">%2$s</div>',
-		'condition'   => ( is_front_page() || is_home() ) && ! is_page(),
+		'condition'   => ( is_front_page() || is_home() ),
 	);
 
 	$args = wp_parse_args( $args, $defaults );
@@ -449,8 +449,18 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'tpl-fullscreen';
 	}
 
+	if ( is_page_template( 'page-templates/tpl-fullscreen-light.php' ) ) {
+		$classes[] = 'tpl-fullscreen';
+		$classes[] = 'tpl-fullscreen-light';
+	}
+
 	if ( is_page_template( 'page-templates/tpl-hero.php' ) ) {
 		$classes[] = 'tpl-hero';
+	}
+
+	if ( is_page_template( 'page-templates/tpl-hero-light.php' ) ) {
+		$classes[] = 'tpl-hero';
+		$classes[] = 'tpl-hero-light';
 	}
 
 	// Classes for Menus.
@@ -491,10 +501,6 @@ function aino_body_classes( $classes ) {
 	// Customizer Options - Header.
 	if ( true === get_theme_mod( 'sitedescription', aino_defaults( 'sitedescription' ) ) ) {
 		$classes[] = 'tagline-hide';
-	}
-
-	if ( true === get_theme_mod( 'header_light', aino_defaults( 'header_light' ) ) ) {
-		$classes[] = 'header-light';
 	}
 
 	if ( false === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {

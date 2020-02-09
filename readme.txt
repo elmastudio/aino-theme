@@ -1,7 +1,7 @@
 === Aino ===
-Contributors: elmastudio, manuelesposito, marc_j
+Contributors: elmastudio
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
-Requires at least: 5.0
+Requires at least: 5.3.2
 Tested up to: WordPress 5.3.2
 Requires PHP: 7.3
 Stable tag: trunk
@@ -44,6 +44,11 @@ Aino WordPress Theme bundles the following third-party resources:
 
 
 == Changelog ==
+
+= 0.1.1 =
+* New: Hero page template.
+* New: Header light option simplified by adding new Light page templates.
+* Enhance: Link colors simplified.
 
 = 0.1.0 =
 * Enhance: Primary menu and mobile menu.
