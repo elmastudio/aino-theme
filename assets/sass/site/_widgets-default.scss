@@ -75,57 +75,6 @@
 }
 
 /* Widgets via external pluginss */
-/* WP Instagram Widget */
-.instagram-pics {
-	display: block;
-	float: none;
-}
-
-.entry-content .instagram-pics li:last-child,
-.entry-content .instagram-pics li:nth-last-child(2),
-.entry-content .instagram-pics li:nth-last-child(3) {
-	margin: 0;
-}
-
-.instagram-pics li {
-	float: left;
-	display: block;
-	margin: 0;
-}
-
-.entry-content .instagram-pics li {
-	width: 33.333%;
-	padding: 0 $spacing-3 $spacing-3;
-	@include breakpoint(xs) {
-		padding-bottom: $spacing-desktop-6;
-	}
-}
-
-.footer-widget .instagram-pics li,
-#secondary .instagram-pics li {
-	width: 50%;
-	padding: 0 $spacing-1 $spacing-1;
-	@include breakpoint(xs) {
-		padding-bottom: $spacing-desktop-2;
-	}
-}
-
-.entry-content .instagram-pics li a,
-.widget .instagram-pics li a {
-	display: block;
-	line-height: 0;
-	border-bottom: none;
-}
-
-.null-instagram-feed p.clear {
-	margin: 0 auto;
-	text-align: center;
-}
-
-.null-instagram-feed p.clear a {
-	display: none;
-}
-
 /* Jetpack Widgets */
 .widget_flickr .flickr-images {
 	text-align: left;

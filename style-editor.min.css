@@ -13,7 +13,7 @@ body.gutenberg-editor-page .editor-block-list__block[data-align="full"]{max-widt
 .aligncenter,.alignfull,.alignwide{clear:both}
 body{font-family:"Roboto",sans-serif;color:#495057}
 .editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#212429;font-weight:bold}
-.editor-post-title__input a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#212429;-webkit-box-shadow:none !important;box-shadow:none !important}
+.editor-post-title__input a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#212429}
 .h-regular .editor-post-title__input,.h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6{font-weight:normal}
 .editor-post-title__input,h1{font-family:"Roboto",sans-serif;font-size:40px;line-height:1.2}
 h2{font-size:32px;line-height:1.25}
@@ -32,11 +32,10 @@ abbr,acronym{border-bottom:1px dotted #666;cursor:help}
 ins,mark{background:#fff9c0;text-decoration:none}
 big{font-size:125%}
 p.has-drop-cap:not(:focus):first-letter {float:left;font-family:"Roboto",sans-serif;margin:5px 8px 0 -8px;line-height:.77;text-transform:uppercase;font-weight:normal;font-size:100px}
-a{text-decoration:none;-webkit-box-shadow:inset 0 -0.06em 0 #495057;box-shadow:inset 0 -0.06em 0 #495057;-webkit-box-shadow:inset 0 -0.07em 0 #495057;box-shadow:inset 0 -0.07em 0 #495057}
+a{color:currentColor;text-decoration:underline}
 p a,blockquote:not(.has-text-color) .wp-block-pullquote__citation a{color:#495057}
 a h1,h2 a,h3 a,h4 a,h5 a,h6 a{color:#212429}
-a:hover{color:#616aff;-webkit-box-shadow:inset 0 -0.06em 0 #616aff;box-shadow:inset 0 -0.06em 0 #616aff;-webkit-box-shadow:inset 0 -0.07em 0 #616aff;box-shadow:inset 0 -0.07em 0 #616aff}
-.wp-block-image figcaption a,.wp-block-embed figcaption a,.wp-block-audio figcaption a{color:#b3b9ce;-webkit-box-shadow:inset 0 -0.06em 0 #b3b9ce;box-shadow:inset 0 -0.06em 0 #b3b9ce;-webkit-box-shadow:inset 0 -0.07em 0 #b3b9ce;box-shadow:inset 0 -0.07em 0 #b3b9ce}
+a:hover{color:#616aff}
 .wp-block-image figcaption a:hover,.wp-block-embed figcaption a:hover,.wp-block-audio figcaption a:hover{color:#616aff}
 blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover{color:#616aff}
 .editor-post-title textarea{background-color:transparent}
@@ -72,7 +71,6 @@ textarea{width:100%}
 .wp-block-pullquote p:last-child,.wp-block-pullquote blockquote p:last-child,.wp-block-quote p:last-child,.wp-block-quote blockquote p:last-child{margin:0}
 .wp-block-pullquote:not(.is-large):not(.is-style-large),.wp-block-quote:not(.is-large):not(.is-style-large){border:0}
 .wp-block-pullquote.is-large,.wp-block-pullquote.is-style-large p,.wp-block-quote.is-large,.wp-block-quote.is-style-large p{margin:0;font-size:27px;line-height:1.48;font-style:normal}
-.wp-block-pullquote .has-text-color a,.wp-block-quote .has-text-color a{-webkit-box-shadow:none;box-shadow:none;text-decoration:underline}
 .wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote .wp-block-quote__citation,.wp-block-pullquote .wp-block-pullquote__citation,.wp-block-quote cite,.wp-block-quote footer,.wp-block-quote .wp-block-quote__citation,.wp-block-quote .wp-block-pullquote__citation{display:block;margin:0;padding:16px 0 0;font-weight:bold;font-style:normal;text-transform:none;font-size:14px;line-height:1.43}
 .wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote .wp-block-quote__citation,.wp-block-pullquote blockquote:not(.has-text-color) .wp-block-pullquote__citation,.wp-block-quote cite,.wp-block-quote footer,.wp-block-quote .wp-block-quote__citation,.wp-block-quote blockquote:not(.has-text-color) .wp-block-pullquote__citation{color:#495057}
 .wp-block-pullquote{text-align:left;border-radius:24px}

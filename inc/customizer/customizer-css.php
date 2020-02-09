@@ -11,26 +11,18 @@
  */
 function aino_customizer_css() {
 
-	$main_bg_color               = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
-	$primary_one_color           = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
-	$primary_one_color_rgba_10   = aino_hex2rgb( $primary_one_color );
-	$primary_one_color_rgba_10   = vsprintf( 'rgba( %1$s, %2$s, %3$s, 0.1)', $primary_one_color_rgba_10 );
-	$primary_one_color_rgba_20   = aino_hex2rgb( $primary_one_color );
-	$primary_one_color_rgba_20   = vsprintf( 'rgba( %1$s, %2$s, %3$s, 0.2)', $primary_one_color_rgba_20 );
-	$primary_one_color_rgba_35   = aino_hex2rgb( $primary_one_color );
-	$primary_one_color_rgba_35   = vsprintf( 'rgba( %1$s, %2$s, %3$s, 0.35)', $primary_one_color_rgba_35 );
-	$primary_two_color           = get_theme_mod( 'primary_two_color', aino_defaults( 'primary_two_color' ) );
-	$secondary_one_color         = get_theme_mod( 'secondary_one_color', aino_defaults( 'secondary_one_color' ) );
-	$secondary_one_color_rgba_10 = aino_hex2rgb( $secondary_one_color );
-	$secondary_one_color_rgba_10 = vsprintf( 'rgba( %1$s, %2$s, %3$s, 0.1)', $secondary_one_color_rgba_10 );
-	$background_color            = get_theme_mod( 'background_color', aino_defaults( 'background_color' ) );
-	$blogcards_bg_color          = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
-	$blogcards_bg_color_hover    = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
-	$footer_bg_color             = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );
-	$icon_color_one              = get_theme_mod( 'icon_color_one', aino_defaults( 'icon_color_one' ) );
-	$icon_color_two              = get_theme_mod( 'icon_color_two', aino_defaults( 'icon_color_two' ) );
-	$comments_border_color       = get_theme_mod( 'comments_border_color', aino_defaults( 'comments_border_color' ) );
-	$comments_bg_color           = get_theme_mod( 'comments_bg_color', aino_defaults( 'comments_bg_color' ) );
+	$main_bg_color            = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
+	$primary_one_color        = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
+	$primary_two_color        = get_theme_mod( 'primary_two_color', aino_defaults( 'primary_two_color' ) );
+	$secondary_one_color      = get_theme_mod( 'secondary_one_color', aino_defaults( 'secondary_one_color' ) );
+	$background_color         = get_theme_mod( 'background_color', aino_defaults( 'background_color' ) );
+	$blogcards_bg_color       = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
+	$blogcards_bg_color_hover = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
+	$footer_bg_color          = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );
+	$icon_color_one           = get_theme_mod( 'icon_color_one', aino_defaults( 'icon_color_one' ) );
+	$icon_color_two           = get_theme_mod( 'icon_color_two', aino_defaults( 'icon_color_two' ) );
+	$comments_border_color    = get_theme_mod( 'comments_border_color', aino_defaults( 'comments_border_color' ) );
+	$comments_bg_color        = get_theme_mod( 'comments_bg_color', aino_defaults( 'comments_bg_color' ) );
 
 	$css =
 	'
@@ -43,10 +35,6 @@ function aino_customizer_css() {
 	.entry-link:hover {
 		background-color: ' . esc_attr( $blogcards_bg_color_hover ) . ';
 	}
-	.entry-content p a,
-	.entry-content li a,
-	.comment-content p a,
-	.comment-content li a,
 	.btn-outline a,
 	a.btn-outline,
 	.pagination .current,
@@ -154,8 +142,6 @@ function aino_customizer_css() {
 	figcaption a:hover,
 	cite a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
-		box-shadow: inset 0 -0.06em 0 ' . esc_attr( $primary_one_color ) . ';
-		box-shadow: inset 0 -0.07em 0 ' . esc_attr( $primary_one_color ) . ';
 	}
 	.btn-primary a:hover,
 	a.btn-primary:hover,
@@ -174,10 +160,6 @@ function aino_customizer_css() {
 	a.btn-outline:hover,
 	.btn-outline a:hover {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
-		background-color: ' . esc_attr( $primary_one_color_rgba_10 ) . ';
-	}
-	.comment-author .author-badge {
-		background-color: ' . esc_attr( $primary_one_color_rgba_20 ) . ';
 	}
 	.site-footer {
 		background-color: ' . esc_attr( $footer_bg_color ) . ';
@@ -189,9 +171,6 @@ function aino_customizer_css() {
 	.entry-cats a:hover,
 	.bypostauthor .comment-author .author-badge {
 		background-color: ' . esc_attr( $secondary_one_color ) . ';
-	}
-	.entry-cats a {
-		background-color: ' . esc_attr( $secondary_one_color_rgba_10 ) . ';
 	}
 	.menu-social-container .icon {
 		fill: ' . esc_attr( $icon_color_one ) . ';

@@ -20,12 +20,15 @@
 
 .hentry .entry-content > * {
 
-	&.alignwide {
+	&.alignwide,
+	.alignwide {
 		max-width: $website-width;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
 		clear: both;
+		padding-left: 24px;
+		padding-right: 24px;
 
 		@include breakpoint(m) {
 			padding-left: 48px;
@@ -544,6 +547,11 @@ ul.wp-block-gallery {
 	}
 }
 
+/* Group */
+.wp-block-group__inner-container > *:last-child {
+	margin-bottom: 0;
+}
+
 /* Custom Color Palette */
 .entry-content {
 
@@ -553,8 +561,7 @@ ul.wp-block-gallery {
 	}
 
 	p.has-primary-one-color a {
-		box-shadow: inset 0 -0.06em 0 $color__primary_one;
-		box-shadow: inset 0 -0.07em 0 $color__primary_one;
+		text-decoration: underline;
 	}
 
 	.has-primary-one-background-color {
@@ -575,11 +582,6 @@ ul.wp-block-gallery {
 	.has-secondary-one-color {
 		color: $color__secondary_one;
 		fill: $color__secondary_one;
-	}
-
-	p.has-secondary-one-color a {
-		box-shadow: inset 0 -0.06em 0 $color__secondary_one;
-		box-shadow: inset 0 -0.07em 0 $color__secondary_one;
 	}
 
 	.has-secondary-one-background-color {
@@ -612,11 +614,6 @@ ul.wp-block-gallery {
 		fill: $color__text_three;
 	}
 
-	p.has-text-three-color a {
-		box-shadow: inset 0 -0.06em 0 $color__text_three;
-		box-shadow: inset 0 -0.07em 0 $color__text_three;
-	}
-
 	.has-text-three-background-color {
 		background: $color__text_three;
 		border-color: $color__text_three;
@@ -647,11 +644,6 @@ ul.wp-block-gallery {
 		fill: $color__notification;
 	}
 
-	p.has-notification-color a {
-		box-shadow: inset 0 -0.06em 0 $color__notification;
-		box-shadow: inset 0 -0.07em 0 $color__notification;
-	}
-
 	.has-notification-background-color {
 		background: $color__notification;
 		border-color: $color__notification;
@@ -663,11 +655,6 @@ ul.wp-block-gallery {
 		fill: $color__error;
 	}
 
-	p.has-error-color a {
-		box-shadow: inset 0 -0.06em 0 $color__error;
-		box-shadow: inset 0 -0.07em 0 $color__error;
-	}
-
 	.has-error-background-color,
 	.has-error-background-color:hover {
 		background: $color__error;
@@ -677,11 +664,6 @@ ul.wp-block-gallery {
 	.has-success-color {
 		color: $color__success;
 		fill: $color__success;
-	}
-
-	p.has-success-color a {
-		box-shadow: inset 0 -0.06em 0 $color__success;
-		box-shadow: inset 0 -0.07em 0 $color__success;
 	}
 
 	.has-success-background-color {

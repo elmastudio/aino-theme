@@ -15,15 +15,11 @@ a {
 .comment-content p a,
 .wp-caption-text a,
 cite a {
-	color: $color__text_two;
-	text-decoration: none;
-	box-shadow: inset 0 -0.06em 0 $color__text_two;
-	box-shadow: inset 0 -0.07em 0 $color__text_two;
+	color: currentColor;
+	text-decoration: underline;
 
 	&:hover {
 		color: $color__primary_one;
-		box-shadow: inset 0 -0.06em 0 $color__primary_one;
-		box-shadow: inset 0 -0.07em 0 $color__primary_one;
 	}
 }
 
@@ -159,10 +155,8 @@ h6 a:hover,
 	@include transition-default;
 }
 
-.entry-content .instagram-pics li a,
 .pagination a,
 .related-img,
-.widget .instagram-pics li a,
 .post-edit-link,
 .entry-link,
 .entry-link img,

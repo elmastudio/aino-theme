@@ -15,6 +15,15 @@
 	clear: both;
 }
 
+.col5 {
+	max-width: $col5;
+}
+
+.col7 {
+	max-width: $col7;
+}
+
+
 /* Grid max widths */
 .archive .site-content,
 .blog .site-content,
@@ -30,6 +39,7 @@
 	@include push--auto;
 }
 
+.push-center,
 .single-post .col,
 .single-post .entry-header,
 .page-template-default .entry-header,
