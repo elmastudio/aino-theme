@@ -401,19 +401,6 @@ ul.primary-menu {
 	padding-bottom: $spacing-xxs;
 }
 
-.primary-menu a:hover,
-.primary-menu a:focus,
-.primary-menu .sub-menu a:hover,
-.primary-menu .sub-menu a:focus,
-.primary-menu .current_page_ancestor {
-	color: $color__primary_two;
-}
-
-.primary-menu a:hover + .icon::before,
-.primary-menu a:hover + .icon::after {
-	background-color: $color__primary_two;
-}
-
 .primary-menu ul {
 	background: $color__white;
 	@include shadow-5;

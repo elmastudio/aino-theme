@@ -141,27 +141,16 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		);
 
 		// Editor color palette.
-		$color_primary_one    = get_theme_mod( 'primary_one_color' );
-		$color_primary_two    = get_theme_mod( 'primary_two_color' );
-		$color__secondary_one = get_theme_mod( 'secondary_one_color' );
+		$color_primary_one = get_theme_mod( 'primary_one_color' );
+		$color_primary_two = get_theme_mod( 'primary_two_color' );
 
 		add_theme_support(
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Primary One', 'aino' ),
+					'name'  => __( 'Primary', 'aino' ),
 					'slug'  => 'primary-one',
 					'color' => $color_primary_one,
-				),
-				array(
-					'name'  => __( 'Primary Two', 'aino' ),
-					'slug'  => 'primary-two',
-					'color' => $color_primary_two,
-				),
-				array(
-					'name'  => __( 'Secondary One', 'aino' ),
-					'slug'  => 'secondary-one',
-					'color' => $color__secondary_one,
 				),
 				array(
 					'name'  => __( 'Text One', 'aino' ),
@@ -174,9 +163,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => '#495057',
 				),
 				array(
-					'name'  => __( 'Text Three', 'aino' ),
-					'slug'  => 'text-three',
-					'color' => '#b3b9ce',
+					'name'  => __( 'Background', 'aino' ),
+					'slug'  => 'background',
+					'color' => '#f7f7ff',
 				),
 				array(
 					'name'  => __( 'Border', 'aino' ),
@@ -184,32 +173,12 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => '#dde2e5',
 				),
 				array(
-					'name'  => __( 'Background', 'aino' ),
-					'slug'  => 'background',
-					'color' => '#f7f7ff',
-				),
-				array(
-					'name'  => __( 'Notification', 'aino' ),
-					'slug'  => 'notification',
-					'color' => '#61b7ff',
-				),
-				array(
-					'name'  => __( 'Error', 'aino' ),
-					'slug'  => 'error',
-					'color' => '#ea5c6f',
-				),
-				array(
-					'name'  => __( 'Success', 'aino' ),
-					'slug'  => 'success',
-					'color' => '#15c26b',
-				),
-				array(
-					'name'  => __( 'black', 'aino' ),
+					'name'  => __( 'Black', 'aino' ),
 					'slug'  => 'black',
 					'color' => '#000000',
 				),
 				array(
-					'name'  => __( 'white', 'aino' ),
+					'name'  => __( 'White', 'aino' ),
 					'slug'  => 'white',
 					'color' => '#ffffff',
 				),

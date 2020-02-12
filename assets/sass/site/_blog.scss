@@ -448,8 +448,8 @@
 	.page-title span {
 		display: block;
 		@include font-body2;
-		font-weight: normal;
-		color: $color__text_three;
+		@include font-regular;
+		color: $color__text_two;
 	}
 }
 

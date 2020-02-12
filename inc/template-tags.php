@@ -599,6 +599,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'featuredimg-radius-l';
 	}
 
+	if ( true === get_theme_mod( 'comments_border', aino_defaults( 'comments_border' ) ) ) {
+		$classes[] = 'comments-border';
+	}
+
 	// Disable Flexbox Post Card Stretch.
 	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) === get_theme_mod( 'blogcards_bgcolor', aino_defaults( 'blogcards_bgcolor' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
 		$classes[] = 'blogcards-flexstart';

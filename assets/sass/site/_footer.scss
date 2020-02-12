@@ -74,6 +74,14 @@
 		@include flexbox;
 		justify-content: center;
 	}
+
+	.site-name {
+		margin-right: 2px;
+
+		&:after {
+			content: '.';
+		}
+	}
 }
 
 .site-info a {

@@ -16,10 +16,6 @@
 			&:not(.has-background) {
 				background-color: $color__primary_one;
 			}
-
-			&:not(.has-background):hover {
-				background-color: $color__primary_two;
-			}
 		}
 	}
 
@@ -31,10 +27,6 @@
 				color: $color__primary_one;
 				border-color: $color__primary_one;
 			}
-
-			&:not(.has-background):hover {
-				background-color: $primary_one_color_rgba_10 !important;
-			}
 		}
 	}
 
@@ -42,10 +34,6 @@
 
 		.wp-block-ainoblocks-advanced-button__link {
 			color: $color__primary_one;
-
-			&:hover {
-				background-color: $primary_one_color_rgba_10 !important;
-			}
 		}
 	}
 

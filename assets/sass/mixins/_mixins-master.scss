@@ -198,10 +198,6 @@ $var: true !default; // Can be overridden elsewhere
 	color: $color__white;
 	fill: $color__white;
 	background-color: $color__primary_one;
-
-	&:hover {
-		background-color: $color__primary_two;
-	}
 }
 
 @mixin btn-outline {

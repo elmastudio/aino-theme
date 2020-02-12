@@ -221,7 +221,6 @@
 
 .comment-content-wrap {
 	margin-left: 6px;
-	border: 1px solid $color__border;
 	background-color: $color__background;
 	padding: 6px $spacing-s;
 
@@ -236,6 +235,10 @@
 			margin: 0;
 		}
 	}
+}
+
+.comments-border .comment-content-wrap {
+	border: 1px solid $color__border;
 }
 
 .comment-meta {

@@ -214,7 +214,6 @@
 	}
 }
 
-
 /* Button */
 .wp-block-button {
 
@@ -252,14 +251,12 @@
 			&:hover {
 				color: $color__primary_one;
 				fill: $color__primary_one;
-				background-color: $primary_one_color_rgba_10;
 			}
 		}
 	}
 }
 
 /* Image */
-
 .wp-block-image {
 
 	&.alignright {
@@ -568,26 +565,6 @@ ul.wp-block-gallery {
 		border-color: $color__primary_one;
 	}
 
-	.has-primary-two-color {
-		color: $color__primary_two;
-		fill: $color__primary_two;
-	}
-
-	.has-primary-two-background-color {
-		background: $color__primary_two;
-		border-color: $color__primary_two;
-	}
-
-	.has-secondary-one-color {
-		color: $color__secondary_one;
-		fill: $color__secondary_one;
-	}
-
-	.has-secondary-one-background-color {
-		background: $color__secondary_one;
-		border-color: $color__secondary_one;
-	}
-
 	.has-text-one-color {
 		color: $color__text_one;
 		fill: $color__text_one;
@@ -626,38 +603,6 @@ ul.wp-block-gallery {
 	.has-background-background-color {
 		background: $color__background;
 		border-color: $color__background;
-	}
-
-	.has-notification-color {
-		color: $color__notification;
-		fill: $color__notification;
-	}
-
-	.has-notification-background-color {
-		background: $color__notification;
-		border-color: $color__notification;
-	}
-
-	.has-error-color,
-	.has-error-color a {
-		color: $color__error;
-		fill: $color__error;
-	}
-
-	.has-error-background-color,
-	.has-error-background-color:hover {
-		background: $color__error;
-		border-color: $color__error;
-	}
-
-	.has-success-color {
-		color: $color__success;
-		fill: $color__success;
-	}
-
-	.has-success-background-color {
-		background: $color__success;
-		border-color: $color__success;
 	}
 
 	.has-white-color {

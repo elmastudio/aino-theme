@@ -14,23 +14,23 @@
 
 /* Social Icons */
 .menu-social-container .icon {
-	fill: $color__icon_one;
+	fill: $color__text_one;
 	width: $spacing-3;
 	height: $spacing-3;
-	margin: 8px;
+	margin: $spacing-xs;
 }
 
 .menu-social-container ul li a:hover .icon {
-	fill: $color__icon_two;
+	fill: $color__primary_one;
 }
 
 /* Edit Link Icon */
 .edit-link .icon {
 	position: absolute;
-	top: 8px;
-	left: 12px;
-	width: 24px;
-	height: 24px;
+	top: $spacing-xs;
+	left: $spacing-s;
+	width: $spacing-3;
+	height: $spacing-3;
 	padding: 0;
 }
 

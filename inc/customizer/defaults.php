@@ -23,13 +23,8 @@ function aino_defaults( $name ) {
 				// Colors.
 				'main_bg_color'            => '#ffffff',
 				'primary_one_color'        => '#616aff',
-				'primary_two_color'        => '#4f45ff',
-				'secondary_one_color'      => '#1cceb2',
 				'footer_bg_color'          => '#f7f7ff',
 				'highlight_color'          => '#1cceb2',
-				'icon_color_one'           => '#212429;',
-				'icon_color_two'           => '#616aff',
-				'comments_border_color'    => '#f7f7ff',
 				'comments_bg_color'        => '#f7f7ff',
 				'blogcards_bg_color'       => '#ffffff',
 				'blogcards_bg_hover_color' => '#ffffff',
@@ -49,6 +44,7 @@ function aino_defaults( $name ) {
 				'post_excerpt_lengths'     => '15',
 				'footerwidget_alignment'   => true,
 				'footerinfo_alignment'     => true,
+				'comments_border'          => false,
 
 				// Visibility.
 				'sitedescription'          => true,

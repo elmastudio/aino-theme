@@ -7,7 +7,6 @@ Aino Editor Styles
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
-
 /** === Editor Frame === */
 
 body {
@@ -460,7 +459,6 @@ textarea {
 .wp-block-audio figcaption {
 	max-width: 100%;
 	@include font-body4;
-	color: $color__text_three;
 	margin: 6px 0 0;
 	text-align: center;
 }
@@ -714,7 +712,6 @@ pre.wp-block-verse {
 			&:hover {
 				color: $color__primary_one;
 				fill: $color__primary_one;
-				background-color: $primary_one_color_rgba_10;
 			}
 		}
 	}
@@ -769,10 +766,6 @@ pre.wp-block-verse {
 			&:not(.has-background) {
 				background-color: $color__primary_one;
 			}
-
-			&:not(.has-background):hover {
-				background-color: $color__primary_two;
-			}
 		}
 	}
 
@@ -784,10 +777,6 @@ pre.wp-block-verse {
 				color: $color__primary_one;
 				border-color: $color__primary_one;
 			}
-
-			&:not(.has-background):hover {
-				background-color: $primary_one_color_rgba_10 !important;
-			}
 		}
 	}
 
@@ -795,10 +784,6 @@ pre.wp-block-verse {
 
 		.wp-block-ainoblocks-advanced-button__link {
 			color: $color__primary_one;
-
-			&:hover {
-				background-color: $primary_one_color_rgba_10 !important;
-			}
 		}
 	}
 
