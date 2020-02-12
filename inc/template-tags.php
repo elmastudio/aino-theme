@@ -451,7 +451,7 @@ function aino_body_classes( $classes ) {
 
 	if ( is_page_template( 'page-templates/tpl-fullscreen-light.php' ) ) {
 		$classes[] = 'tpl-fullscreen';
-		$classes[] = 'tpl-fullscreen-light';
+		$classes[] = 'header-light';
 	}
 
 	if ( is_page_template( 'page-templates/tpl-hero.php' ) ) {
@@ -460,7 +460,7 @@ function aino_body_classes( $classes ) {
 
 	if ( is_page_template( 'page-templates/tpl-hero-light.php' ) ) {
 		$classes[] = 'tpl-hero';
-		$classes[] = 'tpl-hero-light';
+		$classes[] = 'header-light';
 	}
 
 	// Classes for Menus.

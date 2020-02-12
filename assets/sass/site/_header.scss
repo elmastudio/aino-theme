@@ -810,8 +810,7 @@ button.sub-menu-toggle.active svg {
 }
 
 /* Light Header Style ---------------------------- */
-.tpl-hero-light,
-.tpl-fullscreen-light {
+.header-light {
 
 	.nav-toggle .icon-more_horiz-24px {
 		color: $color__white;
@@ -823,20 +822,30 @@ button.sub-menu-toggle.active svg {
 		.site-branding .site-description,
 		.primary-menu a,
 		.btn-outline a,
-		.btn-naked a {
+		.btn-naked a,
+		.site-header .menu-social-container .icon {
 			color: $color__white;
+			fill: $color__white;
+
+			&:hover {
+				color: rgba(255, 255, 255, 0.6);
+				fill: rgba(255, 255, 255, 0.6);
+			}
 		}
 
-		.site-header .menu-social-container .icon,
-		.header-inner .toggle .icon,
-		.btn-outline a {
+		.header-inner .toggle .icon {
 			fill: $color__white;
+
 		}
 
 		.primary-menu .icon::before,
 		.primary-menu .icon::after,
 		.btn-primary a {
 			background-color: $color__white;
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.6);
+			}
 		}
 
 		.primary-menu .sub-menu a,
@@ -846,6 +855,10 @@ button.sub-menu-toggle.active svg {
 
 		.btn-outline a {
 			border-color: $color__white;
+
+			&:hover {
+				border-color: rgba(255, 255, 255, 0.6);
+			}
 		}
 	}
 }

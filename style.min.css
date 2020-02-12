@@ -185,7 +185,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.site-title a:
 .entry-tags a:hover{background:#f7f7ff;border:1px solid transparent}
 .post-edit-link{display:inline-block;font-size:16px;line-height:19px;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;position:relative;margin-top:24px;background:#616aff;color:#fff;fill:#fff;padding:12px 24px 12px 48px;line-height:1}
 .post-edit-link:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
-.site-branding a,.main-navigation a,.site-footer .widget_mc4wp_form_widget a,.site-footer a,.social-header-nav .icon,.social-footer-nav .icon,.sd-social-icon .sd-content ul li[class*='share-'] a{-webkit-transition:all .2s ease;transition:all .2s ease}
+.site-branding a,.primary-menu a,.site-footer .widget_mc4wp_form_widget a,.site-footer a,.social-header-nav .icon,.social-footer-nav .icon,.sd-social-icon .sd-content ul li[class*='share-'] a{-webkit-transition:all .2s ease;transition:all .2s ease}
 .pagination a,.related-img,.post-edit-link,.entry-link,.entry-link img,.navigation .nav-thumb{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 button,input[type="button"],input[type="reset"],input[type="submit"]{display:inline-block;font-size:16px;line-height:19px;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;padding-top:18px;padding-bottom:17px;padding-top:19px;padding-bottom:18px;border-radius:12px}
 button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
@@ -378,7 +378,7 @@ button.sub-menu-toggle.active svg{-webkit-transform:rotate(270deg);transform:rot
 .menu-wrapper.is-animating.is-toggling .toggling-target{display:block;-webkit-transition-property:opacity;transition-property:opacity;opacity:0}
 .menu-wrapper.is-animating.is-toggling .toggling-target.active{opacity:1}
 .menu-wrapper.is-toggling .modal-menu>li:last-child li{border-top-color:transparent;border-bottom-width:.1rem}
-.tpl-hero-light .nav-toggle .icon-more_horiz-24px,.tpl-fullscreen-light .nav-toggle .icon-more_horiz-24px{color:#fff}
+.header-light .nav-toggle .icon-more_horiz-24px{color:#fff}
 .entry-link{display:block;padding-bottom:24px}
 .posts-container .hentry{margin-bottom:32px}
 .entry-content,.entry-summary,.page-content{margin:0}
@@ -719,11 +719,14 @@ td{padding:16px}
 .error-404 .entry-content,.search-no-results .entry-content,.type-page .entry-content{padding-bottom:72px}
 .site-header{padding:24px 0}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.tpl-hero-light .site-title a,.tpl-hero-light .site-branding .site-description,.tpl-hero-light .primary-menu a,.tpl-hero-light .btn-outline a,.tpl-hero-light .btn-naked a,.tpl-fullscreen-light .site-title a,.tpl-fullscreen-light .site-branding .site-description,.tpl-fullscreen-light .primary-menu a,.tpl-fullscreen-light .btn-outline a,.tpl-fullscreen-light .btn-naked a{color:#fff}
-.tpl-hero-light .site-header .menu-social-container .icon,.tpl-hero-light .header-inner .toggle .icon,.tpl-hero-light .btn-outline a,.tpl-fullscreen-light .site-header .menu-social-container .icon,.tpl-fullscreen-light .header-inner .toggle .icon,.tpl-fullscreen-light .btn-outline a{fill:#fff}
-.tpl-hero-light .primary-menu .icon::before,.tpl-hero-light .primary-menu .icon::after,.tpl-hero-light .btn-primary a,.tpl-fullscreen-light .primary-menu .icon::before,.tpl-fullscreen-light .primary-menu .icon::after,.tpl-fullscreen-light .btn-primary a{background-color:#fff}
-.tpl-hero-light .primary-menu .sub-menu a,.tpl-hero-light .btn-primary a,.tpl-fullscreen-light .primary-menu .sub-menu a,.tpl-fullscreen-light .btn-primary a{color:#212429}
-.tpl-hero-light .btn-outline a,.tpl-fullscreen-light .btn-outline a{border-color:#fff}
+.header-light .site-title a,.header-light .site-branding .site-description,.header-light .primary-menu a,.header-light .btn-outline a,.header-light .btn-naked a,.header-light .site-header .menu-social-container .icon{color:#fff;fill:#fff}
+.header-light .site-title a:hover,.header-light .site-branding .site-description:hover,.header-light .primary-menu a:hover,.header-light .btn-outline a:hover,.header-light .btn-naked a:hover,.header-light .site-header .menu-social-container .icon:hover{color:rgba(255,255,255,0.6);fill:rgba(255,255,255,0.6)}
+.header-light .header-inner .toggle .icon{fill:#fff}
+.header-light .primary-menu .icon::before,.header-light .primary-menu .icon::after,.header-light .btn-primary a{background-color:#fff}
+.header-light .primary-menu .icon::before:hover,.header-light .primary-menu .icon::after:hover,.header-light .btn-primary a:hover{background-color:rgba(255,255,255,0.6)}
+.header-light .primary-menu .sub-menu a,.header-light .btn-primary a{color:#212429}
+.header-light .btn-outline a{border-color:#fff}
+.header-light .btn-outline a:hover{border-color:rgba(255,255,255,0.6)}
 .entry-link{padding-bottom:32px}
 .posts-container .hentry{margin-bottom:48px}
 .blog .hentry .entry-header,.blog-archive .hentry .entry-header{padding:32px 32px 0}
