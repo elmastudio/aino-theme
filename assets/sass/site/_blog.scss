@@ -354,7 +354,6 @@
 .entry-meta .entry-cats,
 .entry-meta .author-name {
 	display: block;
-	font-weight: bold;
 }
 
 .entry-footer .entry-author-pic,
@@ -368,7 +367,7 @@
 	.entry-comments,
 	.posted-on,
 	.reading-time {
-		color: $color__text_three;
+		color: $color__text_two;
 	}
 }
 

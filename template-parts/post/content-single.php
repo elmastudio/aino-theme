@@ -12,7 +12,7 @@
 	<header class="entry-header">
 		<?php if ( has_category() ) : ?>
 			<div class="entry-cats">
-				<?php the_category( ' ' ); ?>
+				<?php the_category( ',' ); ?>
 			</div><!-- end .entry-cats -->
 		<?php endif; ?>
 

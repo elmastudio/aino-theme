@@ -10,11 +10,7 @@
 }
 
 .author-avatar img {
-	@include avatar-m;
-
-	.entry-footer & {
-		@include avatar-s;
-	}
+	@include avatar-s;
 }
 
 /* Blog Posts Footer */
@@ -146,13 +142,6 @@ a.author-avatar-link {
 	}
 
 	&:after {
-		box-shadow: 0 0 0 -1px rgba(0, 0, 0, 0.4);
-		-webkit-box-shadow: 0 0 0 -1px rgba(0, 0, 0, 0.4);
 		@include transition-default;
-	}
-
-	&:hover::after {
-		box-shadow: 0 16px 48px -4px rgba(0, 0, 0, 0.15);
-		-webkit-box-shadow: 0 16px 48px -4px rgba(0, 0, 0, 0.15);
 	}
 }

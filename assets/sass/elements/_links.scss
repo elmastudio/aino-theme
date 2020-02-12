@@ -14,7 +14,10 @@ a {
 .comment-content li a,
 .comment-content p a,
 .wp-caption-text a,
-cite a {
+cite a,
+.wp-block-image figcaption a,
+.wp-block-audio figcaption a,
+.wp-block-embed figcaption a {
 	color: currentColor;
 	text-decoration: underline;
 
@@ -28,23 +31,8 @@ cite a {
 .entry-comments a,
 .posted-on a,
 .comment-reply-title #cancel-comment-reply-link {
-	color: $color__text_three;
-	fill: $color__text_three;
-
-}
-.wp-block-image figcaption a,
-.wp-block-audio figcaption a,
-.wp-block-embed figcaption a {
-	color: $color__text_three;
-	fill: $color__text_three;
-	box-shadow: inset 0 -0.06em 0 $color__text_three;
-	box-shadow: inset 0 -0.07em 0 $color__text_three;
-
-	&:hover {
-		color: $color__primary_one;
-		box-shadow: inset 0 -0.06em 0 $color__primary_one;
-		box-shadow: inset 0 -0.07em 0 $color__primary_one;
-	}
+	color: $color__text_two;
+	fill: $color__text_two;
 }
 
 .site-title a,
@@ -54,11 +42,7 @@ h2.entry-title a {
 }
 
 .comment-list b.fn a,
-.main-navigation a,
-.single-post .entry-meta a:hover,
-.comment-list .comment-metadata a:hover,
-.comment-reply-title #cancel-comment-reply-link:hover,
-.logged-in-as a:hover {
+.main-navigation a {
 	color: $color__text_one;
 	fill: $color__text_one;
 }
@@ -71,76 +55,49 @@ h4 a:hover,
 h5 a:hover,
 h6 a:hover,
 .site-title a:hover,
-.single-post .byline a:hover,
+.single-post .author-meta-info a:hover,
 .single-post .navigation .nav-title .nav-subtitle:hover,
-.footer-widget-wrap a:hover {
+.footer-widget-wrap a:hover,
+.comment-metadata a:hover,
+.single-post .entry-meta a:hover,
+.comment-reply-title #cancel-comment-reply-link:hover,
+.logged-in-as a:hover {
 	color: $color__primary_one;
 	fill: $color__primary_one;
 }
 
-/* Category and Tag Links */
-.entry-cats a,
+/* Tag Links */
 .entry-tags a {
-	height: $spacing-3;
+	border: 1px solid $color__border;
+	color: $color__border;
 	margin: 0 $spacing-xxs $spacing-xs;
-	padding: 0 $spacing-xs;
+	padding: 6px $spacing-s;
 	@include flexbox;
 	@include flex-center;
-	@include font-body4;
+	font-size: 13px;
+	line-height: 1.23;
+	font-weight: bold;
 	@include border-radius-l;
-}
-
-.entry-cats a {
-	background: $primary_one_color_rgba_10;
-	color: $color__primary_one;
 
 	&:hover {
-		background: $color__primary_one;
-		color: $color__white;
+		background: $color__background;
+		border: 1px solid transparent;
 	}
-}
-
-.entry-tags a {
-	border: 1px solid $color__text_three;
-	color: $color__text_three;
-
-	&:hover {
-		color: $color__primary_one;
-	}
-}
-
-.btn-squared .entry-cats a,
-.btn-squared .entry-cats a {
-	@include border-radius-0;
 }
 
 /* Edit Link */
 .post-edit-link {
+	@include btn;
 	position: relative;
-	text-indent: -1000em;
-	display: none;
-	width: $spacing-desktop-5;
-	height: $spacing-desktop-5;
+	margin-top: $spacing-mobile-4;
 	background: $color__primary_one;
-	border-radius: $border-radius-xl;
-	margin: 0 auto;
+	color: $color__white;
+	fill: $color__white;
+	padding: 12px 24px 12px 48px;
+	line-height: 1;
 
 	@include breakpoint(l) {
-		display: block;
-	}
-
-	&:hover {
-		background: $color__primary_two;
-		box-shadow: none;
-	}
-
-	.single-post &,
-	.page & {
-		@include breakpoint(m) {
-			top: 0;
-			right: 0;
-			position: absolute;
-		}
+		margin-top: $spacing-desktop-4;
 	}
 }
 

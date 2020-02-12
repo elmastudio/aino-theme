@@ -73,6 +73,7 @@ label.color-notice span {
 
 form p {
 	margin: 0 0 $spacing-3;
+
 	@include breakpoint(m) {
 		margin: 0 0 $spacing-3;
 	}
@@ -96,7 +97,7 @@ form p.comment-form-comment {
 
 form label {
 	display: block;
-	padding: 0 0 $spacing-xs;
+	padding: 0 0 $spacing-xxs;
 	@include font-label;
 }
 

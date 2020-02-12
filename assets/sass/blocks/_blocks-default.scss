@@ -312,7 +312,6 @@
 	margin: $spacing-2 0 0;
 	text-align: center;
 	@include font-body4;
-	color: $color__text_three;
 }
 .wp-block-image .aligncenter>figcaption,
 .wp-block-image .alignleft>figcaption,
@@ -607,16 +606,6 @@ ul.wp-block-gallery {
 	.has-text-two-background-color {
 		background: $color__text_two;
 		border-color: $color__text_two;
-	}
-
-	.has-text-three-color {
-		color: $color__text_three;
-		fill: $color__text_three;
-	}
-
-	.has-text-three-background-color {
-		background: $color__text_three;
-		border-color: $color__text_three;
 	}
 
 	.has-border-color {

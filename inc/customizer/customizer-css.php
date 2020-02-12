@@ -37,8 +37,7 @@ function aino_customizer_css() {
 	}
 	.btn-outline a,
 	a.btn-outline,
-	.pagination .current,
-	.entry-tags a:hover {
+	.pagination .current {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	input[type="text"]:focus, input[type="email"]:focus,
@@ -91,7 +90,7 @@ function aino_customizer_css() {
 	h5 a:hover,
 	h6 a:hover,
 	.site-title a:hover,
-	.single-post .byline a:hover,
+	.single-post .author-meta-info a:hover,
 	.btn-outline a,
 	a.btn-outline,
 	.btn-outline a:hover,
@@ -99,7 +98,6 @@ function aino_customizer_css() {
 	.btn-naked:hover,
 	.btn-naked a:hover,
 	.entry-content .has-primary-one-color,
-	.entry-tags a:hover,
 	.primary-menu a:hover,
 	.primary-menu a:focus,
 	.primary-menu .sub-menu a:hover,
@@ -138,24 +136,14 @@ function aino_customizer_css() {
 	.authorbox-content p a:hover,
 	.comment-content li a:hover,
 	.comment-content p a:hover,
+	.comment-metadata a:hover,
+	.single-post .entry-meta a:hover,
+	.comment-reply-title #cancel-comment-reply-link:hover,
+	.logged-in-as a:hover,
 	.wp-caption-text a:hover,
 	figcaption a:hover,
 	cite a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
-	}
-	.btn-primary a:hover,
-	a.btn-primary:hover,
-	input[type="submit"]:hover,
-	.widget_mc4wp_form_widget input[type="submit"]:hover,
-	.widget_mc4wp_form_widget .subscribe-btn:hover,
-	.comment-respond input[type="submit"]:hover,
-	.widget_search .search-submit:hover,
-	.entry-content .search-submit:hover {
-		background-color: ' . esc_attr( $primary_two_color ) . ';
-		fill: ' . esc_attr( $primary_two_color ) . ';
-	}
-	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background):hover {
-		background-color: ' . esc_attr( $primary_two_color ) . ';
 	}
 	a.btn-outline:hover,
 	.btn-outline a:hover {
@@ -163,14 +151,6 @@ function aino_customizer_css() {
 	}
 	.site-footer {
 		background-color: ' . esc_attr( $footer_bg_color ) . ';
-	}
-	.entry-cats a {
-		color: ' . esc_attr( $secondary_one_color ) . ';
-	}
-	.badge-highlight,
-	.entry-cats a:hover,
-	.bypostauthor .comment-author .author-badge {
-		background-color: ' . esc_attr( $secondary_one_color ) . ';
 	}
 	.menu-social-container .icon {
 		fill: ' . esc_attr( $icon_color_one ) . ';

@@ -4,6 +4,8 @@ input[type="reset"],
 input[type="submit"] {
 	@include btn;
 	@include btn-m;
+	padding-top: 19px;
+	padding-bottom: 18px;
 	border-radius: $border-radius-s;
 }
 

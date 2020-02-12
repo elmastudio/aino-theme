@@ -41,7 +41,8 @@ textarea,
 
 .entry-content p,
 .hentry ol,
-.hentry ul {
+.hentry ul,
+.entry-cats {
 	@include font-body2;
 }
 
@@ -78,8 +79,6 @@ h6,
 .h-regular h6,
 .h-regular .site-title,
 .h-regular.single-post .byline,
-.h-regular .entry-meta .author-name,
-.h-regular .entry-meta .entry-cats,
 .post-navigation .nav-title span {
 	font-weight: normal;
 }

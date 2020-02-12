@@ -166,7 +166,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 16px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: $color__text_three;
+	color: $color__text_two;
 }
 
 @mixin font-code {
@@ -201,7 +201,6 @@ $var: true !default; // Can be overridden elsewhere
 
 	&:hover {
 		background-color: $color__primary_two;
-		@include shadow-3;
 	}
 }
 
@@ -213,7 +212,6 @@ $var: true !default; // Can be overridden elsewhere
 	&:hover {
 		color: $color__primary_one;
 		fill: $color__primary_one;
-		background-color: $primary_one_color_rgba_10;
 	}
 }
 
