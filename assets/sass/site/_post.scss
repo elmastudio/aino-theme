@@ -262,10 +262,10 @@
 .comment-body {
 
 	p.comment-awaiting-moderation {
-		margin: $spacing-mobile-0 0 0;
+		margin: 0 0 0;
 		display: inline-block;
 		@include breakpoint(m) {
-			margin: $spacing-desktop-0 0 0;
+			margin: 0 0 0;
 		}
 	}
 
@@ -348,8 +348,8 @@
 .form-submit {
 	display: block;
 	clear: both;
-	padding: $spacing-mobile-3 0 0;
+	padding: $spacing-3 0 0;
 	@include breakpoint(m) {
-		padding: $spacing-desktop-3 0 0;
+		padding: $spacing-3 0 0;
 	}
 }

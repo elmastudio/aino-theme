@@ -19,9 +19,10 @@
 }
 
 .authorbox-title {
-	padding: 0 0 $spacing-mobile-1;
+	padding: 0 0 $spacing-1;
+
 	@include breakpoint(m) {
-		padding: 0 0 $spacing-desktop-1;
+		padding: 0 0 $spacing-1;
 	}
 }
 

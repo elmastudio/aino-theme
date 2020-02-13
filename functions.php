@@ -155,12 +155,12 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'  => __( 'Text One', 'aino' ),
 					'slug'  => 'text-one',
-					'color' => '#212429',
+					'color' => '#111111',
 				),
 				array(
 					'name'  => __( 'Text Two', 'aino' ),
 					'slug'  => 'text-two',
-					'color' => '#495057',
+					'color' => '#111111',
 				),
 				array(
 					'name'  => __( 'Background', 'aino' ),

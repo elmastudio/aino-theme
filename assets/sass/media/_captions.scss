@@ -10,10 +10,10 @@
 }
 
 .wp-caption .wp-caption-text {
-	margin: $spacing-mobile-2 0 $spacing-mobile-5;
+	margin: $spacing-2 0 $spacing-mobile-5;
 	@include font-body4;
 	@include breakpoint(m) {
-		margin: $spacing-desktop-2 0 $spacing-desktop-5;
+		margin: $spacing-2 0 $spacing-desktop-5;
 	}
 }
 

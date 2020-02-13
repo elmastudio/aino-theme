@@ -14,8 +14,6 @@ function aino_editor_customizer_generated_values() {
 	// Retrieve colors from the Customizer.
 	$main_bg_color             = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
 	$primary_one_color         = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
-	$primary_one_color_rgba_10 = aino_hex2rgb( $primary_one_color );
-	$primary_one_color_rgba_10 = vsprintf( 'rgba( %1$s, %2$s, %3$s, 0.1)', $primary_one_color_rgba_10 );
 	$blogcards_bg_color        = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
 	$blogcards_bg_color_hover  = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
 	$footer_bg_color           = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );

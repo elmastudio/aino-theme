@@ -347,11 +347,11 @@ $var: true !default; // Can be overridden elsewhere
 
 // Mixin grid padding
 @mixin col-padding {
-	padding-left: $spacing-mobile-3;
-	padding-right: $spacing-mobile-3;
+	padding-left: $spacing-3;
+	padding-right: $spacing-3;
 	@include breakpoint(m) {
-		padding-left: $spacing-desktop-3;
-		padding-right: $spacing-desktop-3;
+		padding-left: $spacing-3;
+		padding-right: $spacing-3;
 	}
 }
 
