@@ -262,7 +262,6 @@
 	transform: translateY(-12px);
 }
 
-
 /* Blog Cards - Featured Images */
 .hentry .post-thumb a {
 	display: inline-block;
@@ -284,7 +283,7 @@
 
 /* Blog Cards - Entry Header */
 .blog .hentry .entry-header,
-.blog-archive .hentry .entry-header {
+ .hentry .entry-header {
 	padding: $spacing-mobile-4 $spacing-mobile-4 0;
 
 	@include breakpoint(m) {
@@ -435,10 +434,12 @@
 }
 
 /* Blog Archives */
-.blog-archive .page-header {
-	padding-bottom: $spacing-mobile-9;
+.blog-archive .page-header,
+.blog .page-header {
+	padding-bottom: $spacing-mobile-6;
+
 	@include breakpoint(m) {
-		padding-bottom: $spacing-desktop-9;
+		padding-bottom: $spacing-desktop-6;
 	}
 
 	.page-title {
@@ -451,6 +452,15 @@
 		@include font-regular;
 		color: $color__text_two;
 	}
+
+	.description p {
+		margin: $spacing-1 0 0 0;
+	}
+}
+
+//Hide blog page title on paged blog pages.
+.blog.paged .page-header {
+	display: none;
 }
 
 .archive .page-header .page-title span:after {

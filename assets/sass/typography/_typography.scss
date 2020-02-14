@@ -42,7 +42,8 @@ textarea,
 .entry-content p,
 .hentry ol,
 .hentry ul,
-.entry-cats {
+.entry-cats,
+.page-header .description p {
 	@include font-body2;
 }
 

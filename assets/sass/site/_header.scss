@@ -593,7 +593,7 @@ ul.primary-menu {
 .modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
 button.sub-menu-toggle:hover,
 button.sub-menu-toggle:focus {
-	color: $color__primary_one;
+	color: $color__primary;
 }
 
 button.sub-menu-toggle {
@@ -827,7 +827,8 @@ button.sub-menu-toggle.active svg {
 			color: $color__white;
 			fill: $color__white;
 
-			&:hover {
+			&:hover,
+			&:focus {
 				color: rgba(255, 255, 255, 0.6);
 				fill: rgba(255, 255, 255, 0.6);
 			}

@@ -59,7 +59,7 @@ input[type="datetime-local"]:active,
 input[type="color"]:active, textarea:active {
 	border-color: transparent;
 	outline: 0;
-	box-shadow: 0 0 0 3px $color__primary_one;
+	box-shadow: 0 0 0 3px $color__primary;
 }
 
 .color-notice,

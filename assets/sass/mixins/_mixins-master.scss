@@ -197,17 +197,17 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-primary {
 	color: $color__white;
 	fill: $color__white;
-	background-color: $color__primary_one;
+	background-color: $color__primary;
 }
 
 @mixin btn-outline {
-	color: $color__primary_one;
-	fill: $color__primary_one;
-	border: 1px solid $color__primary_one;
+	color: $color__primary;
+	fill: $color__primary;
+	border: 1px solid $color__primary;
 
 	&:hover {
-		color: $color__primary_one;
-		fill: $color__primary_one;
+		color: $color__primary;
+		fill: $color__primary;
 	}
 }
 
@@ -220,8 +220,8 @@ $var: true !default; // Can be overridden elsewhere
 	fill: $color__text_two;
 
 	&:hover {
-		color: $color__primary_one;
-		fill: $color__primary_one;
+		color: $color__primary;
+		fill: $color__primary;
 	}
 }
 

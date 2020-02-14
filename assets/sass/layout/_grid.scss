@@ -86,9 +86,11 @@
 }
 
 /* 8-col grid width (max 784px) */
-.page-header .page-title,
-.archive-description {
-	max-width: $col7;
+.page-header {
+	.page-title,
+	.description {
+		max-width: $col7;
+	}
 }
 
 /* Grid Margins and Paddings */
@@ -121,6 +123,7 @@
 .site-info,
 .social-footer-nav,
 .blog-archive .page-header,
+.blog .page-header,
 .single-post .post-thumb {
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;

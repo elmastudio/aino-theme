@@ -243,7 +243,7 @@ p.intro.has-drop-cap:not(:focus):first-letter {
 	}
 
 	&:hover {
-		color: $color__primary_one;
+		color: $color__primary;
 	}
 }
 
@@ -252,12 +252,12 @@ p.intro.has-drop-cap:not(:focus):first-letter {
 .wp-block-audio figcaption a {
 
 	&:hover {
-		color: $color__primary_one;
+		color: $color__primary;
 	}
 }
 
 blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover {
-	color: $color__primary_one;
+	color: $color__primary;
 }
 
  /** === Elements === */
@@ -710,8 +710,8 @@ pre.wp-block-verse {
 			background: transparent;
 
 			&:hover {
-				color: $color__primary_one;
-				fill: $color__primary_one;
+				color: $color__primary;
+				fill: $color__primary;
 			}
 		}
 	}
@@ -764,7 +764,7 @@ pre.wp-block-verse {
 		.wp-block-ainoblocks-advanced-button__link {
 
 			&:not(.has-background) {
-				background-color: $color__primary_one;
+				background-color: $color__primary;
 			}
 		}
 	}
@@ -774,8 +774,8 @@ pre.wp-block-verse {
 		.wp-block-ainoblocks-advanced-button__link {
 
 			&:not(.has-background) {
-				color: $color__primary_one;
-				border-color: $color__primary_one;
+				color: $color__primary;
+				border-color: $color__primary;
 			}
 		}
 	}
@@ -783,7 +783,7 @@ pre.wp-block-verse {
 	&.is-style-ghost {
 
 		.wp-block-ainoblocks-advanced-button__link {
-			color: $color__primary_one;
+			color: $color__primary;
 		}
 	}
 

@@ -508,6 +508,10 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Footer.
+	if ( true === get_theme_mod( 'footer_light', aino_defaults( 'footer_light' ) ) ) {
+		$classes[] = 'footer-light';
+	}
+
 	if ( true === get_theme_mod( 'footerinfo_alignment', aino_defaults( 'footerinfo_alignment' ) ) ) {
 		$classes[] = 'footerinfo-centered';
 	}

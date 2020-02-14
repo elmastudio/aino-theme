@@ -244,6 +244,27 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Footer
 	 */
+
+	// Theme Options - Footer - Footer Light Text.
+	$wp_customize->add_setting(
+		'footer_light',
+		array(
+			'default'           => aino_defaults( 'footer_light' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_light',
+		array(
+			'label'       => esc_html__( 'Light Text Colors', 'aino' ),
+			'description' => esc_html__( 'Choose light text colors with a dark Footer background.', 'aino' ),
+			'section'     => 'aino_footer',
+			'type'        => 'checkbox',
+			'priority'    => 1,
+		)
+	);
+
 	// Theme Options - Footer - Footer Widget Alignment.
 	$wp_customize->add_setting(
 		'footerwidget_alignment',
@@ -259,7 +280,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Center Align Footer Widgets', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'checkbox',
-			'priority' => 1,
+			'priority' => 2,
 		)
 	);
 
@@ -278,7 +299,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Center Align Footer Info', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'checkbox',
-			'priority' => 2,
+			'priority' => 3,
 		)
 	);
 
@@ -307,6 +328,48 @@ function aino_customize_register( $wp_customize ) {
 				'twocolumn'   => esc_html__( '2 column', 'aino' ),
 				'threecolumn' => esc_html__( '3 column', 'aino' ),
 			),
+		)
+	);
+
+	// Theme Options - Blog - Blog title.
+	$wp_customize->add_setting(
+		'blog_title',
+		array(
+			'default'           => aino_defaults( 'blog_title' ),
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'blog_title',
+		array(
+			'label'       => esc_html__( 'Blog Title', 'aino' ),
+			'description' => esc_html__( 'Add a custom blog title to your blog pages.', 'aino' ),
+			'section'     => 'aino_blog',
+			'priority'    => 2,
+			'type'        => 'text',
+		)
+	);
+
+	// Theme Options - Blog - Blog Title Description.
+	$wp_customize->add_setting(
+		'blog_title_description',
+		array(
+			'default'           => aino_defaults( 'blog_title_description' ),
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'blog_title_description',
+		array(
+			'label'       => esc_html__( 'Blog Title Description', 'aino' ),
+			'description' => esc_html__( 'Add a custom blog title description.', 'aino' ),
+			'section'     => 'aino_blog',
+			'priority'    => 2,
+			'type'        => 'text',
 		)
 	);
 

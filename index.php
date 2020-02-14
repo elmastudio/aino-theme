@@ -6,7 +6,6 @@
  *
  * @package Aino
  * @since Aino 0.0.1
- * @version 1.0.2
  */
 
 get_header(); ?>
@@ -23,8 +22,21 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 
 		<?php if ( is_home() && ! is_front_page() ) : ?>
-			<header>
-				<h2 class="page-title screen-reader-text"><?php esc_html_e( 'Posts', 'aino' ); ?></h2>
+
+			<header class="page-header">
+
+			<?php if ( get_theme_mod( 'blog_title' ) ) : ?>
+				<h1 class="page-title"><?php echo wp_kses_post( get_theme_mod( 'blog_title' ) ); ?></h1>
+			<?php else : ?>
+				<h1 class="page-title screen-reader-text"><?php esc_html_e( 'Posts', 'aino' ); ?></h1>
+			<?php endif; ?>
+
+			<?php if ( get_theme_mod( 'blog_title_description' ) ) : ?>
+				<div class="description">
+					<p><?php echo wp_kses_post( get_theme_mod( 'blog_title_description' ) ); ?></p>
+				</div><!-- .description -->
+			<?php endif; ?>
+
 			</header>
 		<?php endif; ?>
 

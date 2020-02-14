@@ -226,11 +226,11 @@
 		text-decoration: none;
 		outline: none;
 		height: auto;
-		background: $color__primary_one;
+		background: $color__primary;
 		box-shadow: none;
 
 		&:not(.has-background) {
-			background-color: $color__primary_one;
+			background-color: $color__primary;
 		}
 	}
 
@@ -249,8 +249,8 @@
 			}
 
 			&:hover {
-				color: $color__primary_one;
-				fill: $color__primary_one;
+				color: $color__primary;
+				fill: $color__primary;
 			}
 		}
 	}
@@ -360,7 +360,7 @@ ul.wp-block-gallery {
 	}
 
 	.has-text-color a:hover {
-		color: $color__primary_one;
+		color: $color__primary;
 	}
 
 	&.is-style-large {
@@ -416,8 +416,6 @@ ul.wp-block-gallery {
 
 /* Cover */
 .wp-block-cover {
-
-	min-height: auto;
 
 	.wp-block-cover__inner-container {
 
@@ -552,8 +550,8 @@ ul.wp-block-gallery {
 .entry-content {
 
 	.has-primary-one-color {
-		color: $color__primary_one;
-		fill: $color__primary_one;
+		color: $color__primary;
+		fill: $color__primary;
 	}
 
 	p.has-primary-one-color a {
@@ -561,8 +559,8 @@ ul.wp-block-gallery {
 	}
 
 	.has-primary-one-background-color {
-		background: $color__primary_one;
-		border-color: $color__primary_one;
+		background: $color__primary;
+		border-color: $color__primary;
 	}
 
 	.has-text-one-color {

@@ -9,9 +9,10 @@
 }
 
 .footer-wrap {
-	padding: $spacing-mobile-9 0;
+	padding: $spacing-mobile-10 0;
+
 	@include breakpoint(m) {
-		padding: $spacing-desktop-9 0;
+		padding: $spacing-desktop-10 0;
 	}
 }
 
@@ -90,7 +91,7 @@
 	color: $color__text_two;
 
 	&:hover {
-		color: $color__primary_one;
+		color: $color__primary;
 	}
 }
 
@@ -111,7 +112,6 @@
 	}
 }
 
-
 .footer-nav ul li {
 	display: block;
 	padding: 0 0 $spacing-3;
@@ -122,5 +122,35 @@
 	@include breakpoint(m) {
 		display: inline-block;
 		padding: 0 $spacing-3 0 0;
+	}
+}
+
+/* Light Footer Style ---------------------------- */
+.footer-light {
+
+	.widget-title,
+	.site-footer,
+	.site-info,
+	.site-info a,
+	.textwidget p,
+	.textwidget p a,
+	.footer-widget-wrap a,
+	.menu-social-container .icon {
+		color: $color__white;
+		fill: $color__white;
+	}
+
+	.footer-widget-wrap a,
+	.site-info a {
+
+		&:hover,
+		&:focus {
+			color: rgba(255, 255, 255, 0.6);
+			fill: rgba(255, 255, 255, 0.6);
+		}
+	}
+
+	.menu-social-container ul li a:hover .icon {
+		fill: rgba(255, 255, 255, 0.6);
 	}
 }
