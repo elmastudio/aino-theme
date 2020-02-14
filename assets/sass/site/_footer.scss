@@ -128,14 +128,14 @@
 /* Light Footer Style ---------------------------- */
 .footer-light {
 
-	.widget-title,
 	.site-footer,
 	.site-info,
 	.site-info a,
+	.site-footer .widget-title,
 	.textwidget p,
 	.textwidget p a,
 	.footer-widget-wrap a,
-	.menu-social-container .icon {
+	.site-footer .menu-social-container .icon {
 		color: $color__white;
 		fill: $color__white;
 	}
@@ -150,7 +150,7 @@
 		}
 	}
 
-	.menu-social-container ul li a:hover .icon {
+	.site-footer .menu-social-container ul li a:hover .icon {
 		fill: rgba(255, 255, 255, 0.6);
 	}
 }

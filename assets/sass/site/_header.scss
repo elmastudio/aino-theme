@@ -402,20 +402,20 @@ ul.primary-menu {
 }
 
 .primary-menu ul {
-	background: $color__white;
 	@include shadow-5;
 	@include border-radius-m;
 	@include font-body4;
+	background: $color__white;
 	color: $color__text_one;
-	opacity: 0;
 	padding: $spacing-3;
 	position: absolute;
+	opacity: 0;
 	right: 9999rem;
 	top: calc(100% + 10px);
 	transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
 	transform: translateY(0.6rem);
 	width: 264px;
-	z-index: 1000;
+	z-index: 10;
 	margin: 0;
 }
 
@@ -836,7 +836,6 @@ button.sub-menu-toggle.active svg {
 
 		.header-inner .toggle .icon {
 			fill: $color__white;
-
 		}
 
 		.primary-menu .icon::before,
@@ -849,9 +848,19 @@ button.sub-menu-toggle.active svg {
 			}
 		}
 
+		.primary-menu a:hover + .icon::before,
+		.primary-menu a:hover + .icon::after {
+			background-color: rgba(255, 255, 255, 0.6);
+		}
+
 		.primary-menu .sub-menu a,
 		.btn-primary a {
 			color: $color__text_one;
+		}
+
+		.primary-menu .sub-menu a:hover + .icon::before,
+		.primary-menu .sub-menu a:hover + .icon::after {
+			background-color: $color__primary;
 		}
 
 		.btn-outline a {

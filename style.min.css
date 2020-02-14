@@ -334,7 +334,7 @@ ul.primary-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wr
 .primary-menu>li.menu-item-has-children>a{padding-right:24px}
 .primary-menu>li>.icon{right:4px;top:8px}
 .primary-menu a{color:#111;display:block;text-decoration:none;padding-top:4px;padding-bottom:4px}
-.primary-menu ul{background:#fff;box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);border-radius:24px;font-size:14px;line-height:1.43;color:#111;opacity:0;padding:24px;position:absolute;right:9999rem;top:calc(100% + 10px);-webkit-transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,transform .15s linear,right 0s .15s;transition:opacity .15s linear,transform .15s linear,right 0s .15s,-webkit-transform .15s linear;-webkit-transform:translateY(0.6rem);transform:translateY(0.6rem);width:264px;z-index:1000;margin:0}
+.primary-menu ul{box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);border-radius:24px;font-size:14px;line-height:1.43;background:#fff;color:#111;padding:24px;position:absolute;opacity:0;right:9999rem;top:calc(100% + 10px);-webkit-transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,transform .15s linear,right 0s .15s;transition:opacity .15s linear,transform .15s linear,right 0s .15s,-webkit-transform .15s linear;-webkit-transform:translateY(0.6rem);transform:translateY(0.6rem);width:264px;z-index:10;margin:0}
 .primary-menu ul::before{height:10px;left:0;right:0}
 .primary-menu ul::before,.primary-menu ul::after{content:"";display:block;position:absolute;bottom:100%}
 .primary-menu li.menu-item-has-children:hover>ul,.primary-menu li.menu-item-has-children:focus>ul,.primary-menu li.menu-item-has-children.focus>ul{right:0;opacity:1;-webkit-transform:translateY(0);transform:translateY(0);-webkit-transition:opacity .15s linear,-webkit-transform .15s linear;transition:opacity .15s linear,-webkit-transform .15s linear;transition:opacity .15s linear,transform .15s linear;transition:opacity .15s linear,transform .15s linear,-webkit-transform .15s linear}
@@ -548,9 +548,9 @@ button.sub-menu-toggle.active svg{-webkit-transform:rotate(270deg);transform:rot
 .footerinfo-centered .social-footer-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 0 24px}
 .footer-nav ul li{display:block;padding:0 0 24px}
 .footer-nav ul li:last-child{padding:0}
-.footer-light .widget-title,.footer-light .site-footer,.footer-light .site-info,.footer-light .site-info a,.footer-light .textwidget p,.footer-light .textwidget p a,.footer-light .footer-widget-wrap a,.footer-light .menu-social-container .icon{color:#fff;fill:#fff}
+.footer-light .site-footer,.footer-light .site-info,.footer-light .site-info a,.footer-light .site-footer .widget-title,.footer-light .textwidget p,.footer-light .textwidget p a,.footer-light .footer-widget-wrap a,.footer-light .site-footer .menu-social-container .icon{color:#fff;fill:#fff}
 .footer-light .footer-widget-wrap a:hover,.footer-light .footer-widget-wrap a:focus,.footer-light .site-info a:hover,.footer-light .site-info a:focus{color:rgba(255,255,255,0.6);fill:rgba(255,255,255,0.6)}
-.footer-light .menu-social-container ul li a:hover .icon{fill:rgba(255,255,255,0.6)}
+.footer-light .site-footer .menu-social-container ul li a:hover .icon{fill:rgba(255,255,255,0.6)}
 .header-menu-widget-area{display:block;padding:16px 0 0}
 .header-menu-widget-area .textwidget p{margin:0}
 .widget-title{padding:0 0 24px}
@@ -728,7 +728,9 @@ td{padding:16px}
 .header-light .header-inner .toggle .icon{fill:#fff}
 .header-light .primary-menu .icon::before,.header-light .primary-menu .icon::after,.header-light .btn-primary a{background-color:#fff}
 .header-light .primary-menu .icon::before:hover,.header-light .primary-menu .icon::after:hover,.header-light .btn-primary a:hover{background-color:rgba(255,255,255,0.6)}
+.header-light .primary-menu a:hover+.icon::before,.header-light .primary-menu a:hover+.icon::after{background-color:rgba(255,255,255,0.6)}
 .header-light .primary-menu .sub-menu a,.header-light .btn-primary a{color:#111}
+.header-light .primary-menu .sub-menu a:hover+.icon::before,.header-light .primary-menu .sub-menu a:hover+.icon::after{background-color:#1765d8}
 .header-light .btn-outline a{border-color:#fff}
 .header-light .btn-outline a:hover{border-color:rgba(255,255,255,0.6)}
 .entry-link{padding-bottom:32px}
