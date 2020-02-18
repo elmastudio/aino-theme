@@ -33,8 +33,8 @@ function aino_defaults( $name ) {
 				'heading_fontweight'       => 'bold',
 
 				// Styling.
-				'button_style'             => 'smooth',
-				'form_style'               => 'smooth',
+				'button_style'             => 'squared',
+				'form_style'               => 'squared',
 				'featuredimg_style'        => 'radius-m',
 				'blog_columns'             => 'threecolumn',
 				'blog_title'               => '',

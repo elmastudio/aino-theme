@@ -403,20 +403,31 @@ ul.primary-menu {
 
 .primary-menu ul {
 	@include shadow-5;
-	@include border-radius-m;
 	@include font-body4;
 	background: $color__white;
 	color: $color__text_one;
 	padding: $spacing-3;
 	position: absolute;
-	opacity: 0;
-	right: 9999rem;
+	opacity: 1;
+	right: 0;
 	top: calc(100% + 10px);
 	transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
 	transform: translateY(0.6rem);
 	width: 264px;
 	z-index: 10;
 	margin: 0;
+
+	.btn-curved & {
+		border-radius: $border-radius-s;
+	}
+
+	.btn-round & {
+		border-radius: $border-radius-m;
+	}
+}
+
+.primary-menu ul ul {
+	opacity: 0;
 }
 
 .primary-menu ul::before {
@@ -461,11 +472,12 @@ ul.primary-menu {
 
 .primary-menu ul li.menu-item-has-children > a {
 	padding-right: 0;
+	background: red;
 }
 
 .primary-menu ul li.menu-item-has-children .icon {
 	position: absolute;
-	right: 1.5rem;
+	right: 0;
 	top: calc(50% - 0.5rem);
 }
 

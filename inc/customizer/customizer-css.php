@@ -70,7 +70,9 @@ function aino_customizer_css() {
 	.primary-menu a:hover + .icon::before,
 	.primary-menu a:hover + .icon::after,
 	.primary-menu .sub-menu a:hover + .icon::before,
-	.primary-menu .sub-menu a:hover + .icon::after {
+	.primary-menu .sub-menu a:hover + .icon::after,
+	.header-light .primary-menu .sub-menu a:hover + .icon::before,
+	.header-light .primary-menu .sub-menu a:hover + .icon::after {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	.entry-content p a:hover,

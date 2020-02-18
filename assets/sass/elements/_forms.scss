@@ -185,24 +185,21 @@ select {
 }
 
 /* Form Styles (via Customizer Settings) */
-input,
-textarea,
-select {
-	@include border-radius-s;
+.form-curved {
+	input,
+	textarea,
+	select,
+	.search-header .search-field {
+		@include border-radius-s;
+	}
 }
 
-.form-squared input,
-.form-squared textarea,
-.form-squared select,
-.form-squared .search-header .search-field {
-	@include border-radius-0;
-}
-
-.form-round input,
-.form-round textarea,
-.form-round select,
-.form-round .search-header .search-field {
-	border-radius: 6.25em;
+.form-round {
+	input,
+	select,
+	.search-header .search-field {
+		border-radius: 6.25em;
+	}
 }
 
 .form-round textarea {

@@ -6,7 +6,6 @@ input[type="submit"] {
 	@include btn-m;
 	padding-top: 19px;
 	padding-bottom: 18px;
-	border-radius: $border-radius-s;
 }
 
 button,
@@ -70,29 +69,35 @@ a.btn-outline,
 }
 
 /* Button Styles (via Customizer Settings) */
-.btn,
-input[type="submit"],
-a.btn-primary,
-.btn-primary a,
-a.btn-outline,
-.btn-outline a {
-	border-radius: 16px;
+.btn-curved {
+
+	.btn,
+	input[type="submit"],
+	a.btn-primary,
+	.btn-primary a,
+	a.btn-outline,
+	.btn-outline a {
+		@include border-radius-s;
+	}
+
+	// smaller border radius for small buttons
+	.header-cta-wrap .btn-primary a,
+	.header-cta-wrap .btn-outline a,
+	.post-edit-link,
+	.btn-s {
+		@include border-radius-xs;
+	}
 }
 
-.btn-squared .btn,
-.btn-squared input[type="submit"],
-.btn-squared a.btn-primary,
-.btn-squared .btn-primary a,
-.btn-squared a.btn-outline,
-.btn-squared .btn-outline a {
-	border-radius: 0;
-}
+.btn-round {
 
-.btn-round .btn,
-.btn-round input[type="submit"],
-.btn-round a.btn-primary,
-.btn-round .btn-primary a,
-.btn-round a.btn-outline,
-.btn-round .btn-outline a {
-	border-radius: 6.25em;
+	.btn,
+	input[type="submit"],
+	a.btn-primary,
+	.btn-primary a,
+	a.btn-outline,
+	.btn-outline a,
+	.post-edit-link {
+		border-radius: 6.25em;
+	}
 }

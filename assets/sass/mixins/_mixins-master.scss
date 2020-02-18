@@ -359,16 +359,11 @@ $var: true !default; // Can be overridden elsewhere
 @mixin border-radius($radius) {
 	border-radius: $radius;
 }
-@mixin hide-rounded {
-	-webkit-appearance: none;
-	border-radius: 0;
-}
-
-@mixin border-radius-0 {
+@mixin border-radius-none {
 		border-radius: 0;
 }
 @mixin border-radius-xs {
-		border-radius: $border-radius-xs;
+	border-radius: $border-radius-xs;
 }
 @mixin border-radius-s {
 		border-radius: $border-radius-s;

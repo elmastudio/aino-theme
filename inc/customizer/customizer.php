@@ -187,7 +187,7 @@ function aino_customize_register( $wp_customize ) {
 			'type'        => 'select',
 			'choices'     => array(
 				'squared' => esc_html__( 'square', 'aino' ),
-				'smooth'  => esc_html__( 'curved', 'aino' ),
+				'curved'  => esc_html__( 'curved', 'aino' ),
 				'round'   => esc_html__( 'round', 'aino' ),
 			),
 		)
@@ -212,7 +212,7 @@ function aino_customize_register( $wp_customize ) {
 			'type'        => 'select',
 			'choices'     => array(
 				'squared' => esc_html__( 'square', 'aino' ),
-				'smooth'  => esc_html__( 'curved', 'aino' ),
+				'curved'  => esc_html__( 'curved', 'aino' ),
 				'round'   => esc_html__( 'round', 'aino' ),
 			),
 		)

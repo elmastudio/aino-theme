@@ -482,16 +482,16 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Styles.
-	if ( 'squared' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
-		$classes[] = 'btn-squared';
+	if ( 'curved' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
+		$classes[] = 'btn-curved';
 	}
 
 	if ( 'round' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
 		$classes[] = 'btn-round';
 	}
 
-	if ( 'squared' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
-		$classes[] = 'form-squared';
+	if ( 'curved' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
+		$classes[] = 'form-curved';
 	}
 
 	if ( 'round' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
