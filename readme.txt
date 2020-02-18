@@ -1,7 +1,7 @@
 === Aino ===
-Contributors: elmastudio
+Author: elmastudio
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
-Requires at least: 5.3.2
+Requires at least: 5.3
 Tested up to: WordPress 5.3.2
 Requires PHP: 7.3
 Stable tag: trunk
@@ -40,10 +40,17 @@ Aino WordPress Theme bundles the following third-party resources:
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
 * WPGulp, © Ahmad Awais, MIT license, https://github.com/ahmadawais/WPGulp
 * Roboto Font, © Christian Robertson, Apache License, Version 2.0, https://fonts.google.com/specimen/Roboto
-* Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license,
-
+* Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 0.2.0 =
+* Enhance: Simplified color options
+* Enhance: Simplified Blog & post styling updates
+* Enhance: Header light optimized
+* Enhance: Simplified SASS variables
+* Enhance: Border radius styles
+* Enhance: Header search form
 
 = 0.1.1 =
 * New: Hero page template.

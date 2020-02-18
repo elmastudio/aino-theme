@@ -145,12 +145,12 @@
 
 		&:hover,
 		&:focus {
-			color: rgba(255, 255, 255, 0.6);
-			fill: rgba(255, 255, 255, 0.6);
+			color: $color__white_hover;
+			fill: $color__white_hover;
 		}
 	}
 
 	.site-footer .menu-social-container ul li a:hover .icon {
-		fill: rgba(255, 255, 255, 0.6);
+		fill: $color__white_hover;
 	}
 }

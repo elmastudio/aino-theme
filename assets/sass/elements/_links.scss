@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6,
 	&.has-white-color {
 
 		a:hover {
-			color: rgba(255, 255, 255, 0.6);
+			color: $color__white_hover;
 			}
 		}
 	}

@@ -84,7 +84,8 @@ a.btn-outline,
 	.header-cta-wrap .btn-primary a,
 	.header-cta-wrap .btn-outline a,
 	.post-edit-link,
-	.btn-s {
+	.btn-s,
+	.search-header .search-field {
 		@include border-radius-xs;
 	}
 }
@@ -97,7 +98,8 @@ a.btn-outline,
 	.btn-primary a,
 	a.btn-outline,
 	.btn-outline a,
-	.post-edit-link {
+	.post-edit-link,
+	.search-header .search-field {
 		border-radius: 6.25em;
 	}
 }

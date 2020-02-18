@@ -52,7 +52,7 @@ function aino_defaults( $name ) {
 				// Visibility.
 				'sitedescription'          => true,
 				'retina_logo'              => false,
-				'header_search'            => true,
+				'header_search'            => false,
 				'aino_displaydate'         => true,
 				'display_comments'         => false,
 				'aino_displayauthor'       => true,

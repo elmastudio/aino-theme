@@ -35,26 +35,6 @@ function aino_customizer_css() {
 	.pagination .current {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
 	}
-	input[type="text"]:focus, input[type="email"]:focus,
-	input[type="url"]:focus, input[type="password"]:focus,
-	input[type="search"]:focus, input[type="number"]:focus,
-	input[type="tel"]:focus, input[type="range"]:focus,
-	input[type="date"]:focus, input[type="month"]:focus,
-	input[type="week"]:focus, input[type="time"]:focus,
-	input[type="datetime"]:focus,
-	input[type="datetime-local"]:focus,
-	input[type="color"]:focus, textarea:focus,
-	input[type="text"]:active, input[type="email"]:active,
-	input[type="url"]:active, input[type="password"]:active,
-	input[type="search"]:active, input[type="number"]:active,
-	input[type="tel"]:active, input[type="range"]:active,
-	input[type="date"]:active, input[type="month"]:active,
-	input[type="week"]:active, input[type="time"]:active,
-	input[type="datetime"]:active,
-	input[type="datetime-local"]:active,
-	input[type="color"]:active, textarea:active {
-		box-shadow: 0 0 0 3px ' . esc_attr( $primary_one_color ) . ';
-	}
 	.entry-content .has-primary-one-background-color,
 	.widget_mc4wp_form_widget input[type="submit"],
 	.btn-primary a,

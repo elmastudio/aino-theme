@@ -22,7 +22,7 @@ input[type="color"] {
 	outline: none;
 
 	@include input-placeholder {
-		color: $color__text_two;
+		color: #8e8e8e;
 	}
 }
 
@@ -34,7 +34,7 @@ textarea {
 	outline: none;
 
 	@include input-placeholder {
-		color: $color__text_one
+		color: #8e8e8e;
 	}
 }
 
@@ -57,9 +57,8 @@ input[type="week"]:active, input[type="time"]:active,
 input[type="datetime"]:active,
 input[type="datetime-local"]:active,
 input[type="color"]:active, textarea:active {
-	border-color: transparent;
 	outline: 0;
-	box-shadow: 0 0 0 3px $color__primary;
+	border: 1px solid #707070;
 }
 
 .color-notice,
@@ -188,16 +187,14 @@ select {
 .form-curved {
 	input,
 	textarea,
-	select,
-	.search-header .search-field {
+	select {
 		@include border-radius-s;
 	}
 }
 
 .form-round {
 	input,
-	select,
-	.search-header .search-field {
+	select {
 		border-radius: 6.25em;
 	}
 }
