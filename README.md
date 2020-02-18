@@ -12,6 +12,14 @@ __License URI:__ http://www.gnu.org/licenses/gpl-3.0.html
 
 ## Changelog
 
+### 0.2.0
+**Enhance:** Simplified color options
+**Enhance:** Simplified Blog & post styling updates
+**Enhance:** Header light optimized
+**Enhance:** Simplified SASS variables
+**Enhance:** Border radius styles
+**Enhance:** Header search form
+
 ### 0.1.1
 **New:** Hero page template.  
 **New:** Header light option simplified by adding new Light page templates.  
