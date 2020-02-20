@@ -451,7 +451,7 @@ function aino_body_classes( $classes ) {
 
 	if ( is_page_template( 'page-templates/tpl-fullscreen-light.php' ) ) {
 		$classes[] = 'tpl-fullscreen';
-		$classes[] = 'tpl-fullscreen-light';
+		$classes[] = 'header-light';
 	}
 
 	if ( is_page_template( 'page-templates/tpl-hero.php' ) ) {
@@ -460,7 +460,7 @@ function aino_body_classes( $classes ) {
 
 	if ( is_page_template( 'page-templates/tpl-hero-light.php' ) ) {
 		$classes[] = 'tpl-hero';
-		$classes[] = 'tpl-hero-light';
+		$classes[] = 'header-light';
 	}
 
 	// Classes for Menus.
@@ -482,16 +482,16 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Styles.
-	if ( 'squared' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
-		$classes[] = 'btn-squared';
+	if ( 'curved' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
+		$classes[] = 'btn-curved';
 	}
 
 	if ( 'round' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
 		$classes[] = 'btn-round';
 	}
 
-	if ( 'squared' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
-		$classes[] = 'form-squared';
+	if ( 'curved' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
+		$classes[] = 'form-curved';
 	}
 
 	if ( 'round' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
@@ -503,11 +503,15 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'tagline-hide';
 	}
 
-	if ( false === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
-		$classes[] = 'header-search-hide';
+	if ( true === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
+		$classes[] = 'has-header-search';
 	}
 
 	// Customizer Options - Footer.
+	if ( true === get_theme_mod( 'footer_light', aino_defaults( 'footer_light' ) ) ) {
+		$classes[] = 'footer-light';
+	}
+
 	if ( true === get_theme_mod( 'footerinfo_alignment', aino_defaults( 'footerinfo_alignment' ) ) ) {
 		$classes[] = 'footerinfo-centered';
 	}
@@ -597,6 +601,10 @@ function aino_body_classes( $classes ) {
 
 	if ( 'radius-l' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-l';
+	}
+
+	if ( true === get_theme_mod( 'comments_border', aino_defaults( 'comments_border' ) ) ) {
+		$classes[] = 'comments-border';
 	}
 
 	// Disable Flexbox Post Card Stretch.

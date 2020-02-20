@@ -1,25 +1,17 @@
 // New Colors
-$color__primary_one: #616aff;
-$primary_one_color_rgba_10: rgba(97, 106, 255, 0.1);
-$primary_one_color_rgba_20: rgba(97, 106, 255, 0.2);
-$primary_one_color_rgba_35: rgba(97, 106, 255, 0.35);
-$color__primary_two: #4f45ff;
-$color__secondary_one: #1cceb2;
-$secondary_one_color_rgba_10: #1cceb21a;
-$color__text_one: #212429;
-$color__text_two: #495057;
-$color__text_three: #b3b9ce;
-$color__icon_one: #212429;
-$color__icon_two: #616aff;
-$color__border: #c9ccdb;
+$color__primary: #1765d8;
+$color__text_one: #111111;
+$color__text_two: #222222;
+$color__border: #cacaca;
 $color__background: #f7f7ff;
-$color__white: #ffffff;
-$color__black: #000000;
-$color__success: #15c26b;
-$color__notification: #61b7ff;
-$color__error: #ff6f61;
+$color__success: #408321;
+$color__notification: #1765D8;
+$color__error: #e52424;
 $color__code_one: #b2cacd;
 $color__code_two: #062e32;
+$color__black: #000000;
+$color__white: #ffffff;
+$color__white_hover: rgba(255, 255, 255, 0.6);
 
 // New Typography
 $font__heading: "Roboto", sans-serif;
@@ -28,37 +20,27 @@ $font__code : "Monaco", "Courier 10 Pitch", Courier, monospace;
 
 // Spacing
 $spacing-none               : 0;
-$spacing-mobile-0           : 0;
-$spacing-mobile-1           : 8px;
-$spacing-mobile-2           : 16px;
-$spacing-mobile-3           : 24px;
+$spacing-1                  : 8px;
+$spacing-2                  : 16px;
+$spacing-3                  : 24px;
 $spacing-mobile-4           : 24px;
+$spacing-desktop-4          : 32px;
 $spacing-mobile-5           : 32px;
+$spacing-desktop-5          : 40px;
 $spacing-mobile-6           : 32px;
+$spacing-desktop-6          : 48px;
 $spacing-mobile-7           : 40px;
+$spacing-desktop-7          : 56px;
 $spacing-mobile-8           : 40px;
+$spacing-desktop-8          : 72px;
 $spacing-mobile-9           : 48px;
+$spacing-desktop-9          : 96px;
 $spacing-mobile-10          : 48px;
+$spacing-desktop-10         : 144px;
 
-$spacing-desktop-0          : 0;
-$spacing-0                  : 0;
 $spacing-xxs                : 4px;
 $spacing-xs                 : 8px;
 $spacing-s                  : 12px;
-
-$spacing-desktop-1          : 8px;
-$spacing-1                  : 8px;
-$spacing-desktop-2          : 16px;
-$spacing-2                  : 16px;
-$spacing-desktop-3          : 24px;
-$spacing-3                  : 24px;
-$spacing-desktop-4          : 32px;
-$spacing-desktop-5          : 40px;
-$spacing-desktop-6          : 48px;
-$spacing-desktop-7          : 56px;
-$spacing-desktop-8          : 72px;
-$spacing-desktop-9          : 96px;
-$spacing-desktop-10         : 144px;
 
 // Grid Margins
 $grid-margins-s             : 24px;
@@ -77,12 +59,13 @@ $bg-content-width           : 832px; // max content width, if has background
 $col5                       : 520px;
 $col5-nopadding             : 472px; // 5 column width without padding
 $col6-nopadding             : 576px; // 6 column width without padding
-$col7                       : 728px; // 7 grid columns width padding
+$col6                       : 624px; // 6 grid columns
+$col7                       : 728px; // 7 grid columns
 $col7-nopadding             : 680px; // 7 grid columns without padding
 
 // Border Radius
-$border-radius-xs: 4px;
-$border-radius-s: 12px;
+$border-radius-xs: 12px;
+$border-radius-s: 16px;
 $border-radius-m: 24px;
 $border-radius-l: 36px;
-$border-radius-xl: 100px;
+$border-radius-circle: 100px;

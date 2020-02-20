@@ -13,15 +13,10 @@ function aino_customizer_css() {
 
 	$main_bg_color            = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
 	$primary_one_color        = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
-	$primary_two_color        = get_theme_mod( 'primary_two_color', aino_defaults( 'primary_two_color' ) );
-	$secondary_one_color      = get_theme_mod( 'secondary_one_color', aino_defaults( 'secondary_one_color' ) );
 	$background_color         = get_theme_mod( 'background_color', aino_defaults( 'background_color' ) );
 	$blogcards_bg_color       = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
 	$blogcards_bg_color_hover = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
 	$footer_bg_color          = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );
-	$icon_color_one           = get_theme_mod( 'icon_color_one', aino_defaults( 'icon_color_one' ) );
-	$icon_color_two           = get_theme_mod( 'icon_color_two', aino_defaults( 'icon_color_two' ) );
-	$comments_border_color    = get_theme_mod( 'comments_border_color', aino_defaults( 'comments_border_color' ) );
 	$comments_bg_color        = get_theme_mod( 'comments_bg_color', aino_defaults( 'comments_bg_color' ) );
 
 	$css =
@@ -37,30 +32,10 @@ function aino_customizer_css() {
 	}
 	.btn-outline a,
 	a.btn-outline,
-	.pagination .current,
-	.entry-tags a:hover {
+	.pagination .current {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
 	}
-	input[type="text"]:focus, input[type="email"]:focus,
-	input[type="url"]:focus, input[type="password"]:focus,
-	input[type="search"]:focus, input[type="number"]:focus,
-	input[type="tel"]:focus, input[type="range"]:focus,
-	input[type="date"]:focus, input[type="month"]:focus,
-	input[type="week"]:focus, input[type="time"]:focus,
-	input[type="datetime"]:focus,
-	input[type="datetime-local"]:focus,
-	input[type="color"]:focus, textarea:focus,
-	input[type="text"]:active, input[type="email"]:active,
-	input[type="url"]:active, input[type="password"]:active,
-	input[type="search"]:active, input[type="number"]:active,
-	input[type="tel"]:active, input[type="range"]:active,
-	input[type="date"]:active, input[type="month"]:active,
-	input[type="week"]:active, input[type="time"]:active,
-	input[type="datetime"]:active,
-	input[type="datetime-local"]:active,
-	input[type="color"]:active, textarea:active {
-		box-shadow: 0 0 0 3px ' . esc_attr( $primary_one_color ) . ';
-	}
+	.entry-content .has-primary-one-background-color,
 	.widget_mc4wp_form_widget input[type="submit"],
 	.btn-primary a,
 	a.btn-primary,
@@ -73,7 +48,11 @@ function aino_customizer_css() {
 	.post-edit-link,
 	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background),
 	.primary-menu a:hover + .icon::before,
-	.primary-menu a:hover + .icon::after {
+	.primary-menu a:hover + .icon::after,
+	.primary-menu .sub-menu a:hover + .icon::before,
+	.primary-menu .sub-menu a:hover + .icon::after,
+	.header-light .primary-menu .sub-menu a:hover + .icon::before,
+	.header-light .primary-menu .sub-menu a:hover + .icon::after {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	.entry-content p a:hover,
@@ -91,7 +70,8 @@ function aino_customizer_css() {
 	h5 a:hover,
 	h6 a:hover,
 	.site-title a:hover,
-	.single-post .byline a:hover,
+	.single-post .entry-cats a:hover,
+	.single-post .entry-meta a:hover,
 	.btn-outline a,
 	a.btn-outline,
 	.btn-outline a:hover,
@@ -99,10 +79,9 @@ function aino_customizer_css() {
 	.btn-naked:hover,
 	.btn-naked a:hover,
 	.entry-content .has-primary-one-color,
-	.entry-tags a:hover,
 	.primary-menu a:hover,
-	.primary-menu a:focus,
 	.primary-menu .sub-menu a:hover,
+	.primary-menu a:focus,
 	.primary-menu .sub-menu a:focus,
 	.primary-menu .current_page_ancestor,
 	.primary-menu .icon,
@@ -114,7 +93,14 @@ function aino_customizer_css() {
 	.modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
 	button.sub-menu-toggle:hover,
 	button.sub-menu-toggle:focus,
-	.site-info a:hover {
+	.site-info a:hover,
+	.pagination .current,
+	.site-main .navigation .prev:hover,
+	.site-main .navigation .next:hover,
+	.pagination a.page-numbers:hover,
+	.pagination a.page-numbers:hover .icon,
+	.wp-block-image figcaption a:hover,
+	.menu-social-container ul li a:hover .icon {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
@@ -138,24 +124,13 @@ function aino_customizer_css() {
 	.authorbox-content p a:hover,
 	.comment-content li a:hover,
 	.comment-content p a:hover,
+	.comment-metadata a:hover,
+	.comment-reply-title #cancel-comment-reply-link:hover,
+	.logged-in-as a:hover,
 	.wp-caption-text a:hover,
 	figcaption a:hover,
 	cite a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
-	}
-	.btn-primary a:hover,
-	a.btn-primary:hover,
-	input[type="submit"]:hover,
-	.widget_mc4wp_form_widget input[type="submit"]:hover,
-	.widget_mc4wp_form_widget .subscribe-btn:hover,
-	.comment-respond input[type="submit"]:hover,
-	.widget_search .search-submit:hover,
-	.entry-content .search-submit:hover {
-		background-color: ' . esc_attr( $primary_two_color ) . ';
-		fill: ' . esc_attr( $primary_two_color ) . ';
-	}
-	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background):hover {
-		background-color: ' . esc_attr( $primary_two_color ) . ';
 	}
 	a.btn-outline:hover,
 	.btn-outline a:hover {
@@ -164,22 +139,7 @@ function aino_customizer_css() {
 	.site-footer {
 		background-color: ' . esc_attr( $footer_bg_color ) . ';
 	}
-	.entry-cats a {
-		color: ' . esc_attr( $secondary_one_color ) . ';
-	}
-	.badge-highlight,
-	.entry-cats a:hover,
-	.bypostauthor .comment-author .author-badge {
-		background-color: ' . esc_attr( $secondary_one_color ) . ';
-	}
-	.menu-social-container .icon {
-		fill: ' . esc_attr( $icon_color_one ) . ';
-	}
-	.menu-social-container ul li a:hover .icon {
-		fill: ' . esc_attr( $icon_color_two ) . ';
-	}
 	.comment-content-wrap {
-		border-color: ' . esc_attr( $comments_border_color ) . ';
 		background-color: ' . esc_attr( $comments_bg_color ) . ';
 	}
 	';

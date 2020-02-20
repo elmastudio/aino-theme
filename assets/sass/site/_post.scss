@@ -24,9 +24,10 @@
 	display: block;
 	text-align: center;
 	padding-top: 0;
-	padding-bottom: $spacing-mobile-6;
+	padding-bottom: $spacing-mobile-8;
+
 	@include breakpoint(m) {
-		padding-bottom: $spacing-desktop-6;
+		padding-bottom: $spacing-desktop-8;
 	}
 }
 
@@ -36,27 +37,25 @@
 	}
 
 	& .entry-meta {
-		padding: $spacing-3 0 0;
+		padding: $spacing-2 0 0;
 		text-align: center;
 	}
 
 	& .entry-cats {
 		@include flexbox;
-		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 		padding: 0 0 $spacing-2;
+
+		a {
+			padding-left: $spacing-xxs;
+		}
 	}
 
 	& .byline {
 		display: block;
 		color: $color__text_two;
-		font-weight: bold;
-	}
-
-	& .reading-time,
-	& .posted-on,
-	& .entry-comments {
-		color: $color__text_three;
 	}
 
 	& .entry-comments {
@@ -115,9 +114,9 @@
 
 /* Related Posts */
 .related-wrap {
-	margin: $spacing-mobile-9 0 0;
+	margin: $spacing-mobile-10 0 0;
 	@include breakpoint(m) {
-		margin: $spacing-desktop-9 0 0;
+		margin: $spacing-desktop-10 0 0;
 	}
 }
 
@@ -125,18 +124,20 @@
 	@include flexbox;
 	justify-content: space-between;
 	border-top: 1px solid $color__border;
-	padding-top: $spacing-mobile-9;
+	padding-top: $spacing-mobile-10;
 	padding-bottom: $spacing-mobile-6;
+
 	@include breakpoint(m) {
-		padding-top: $spacing-desktop-9;
+		padding-top: $spacing-desktop-10;
 		padding-bottom: $spacing-desktop-6;
 	}
-}
 
-.related-wrap .section-title .related-more-link {
-	display: none;
-	@include breakpoint(m) {
-		@include flexbox;
+	.related-more-link {
+		display: none;
+
+		@include breakpoint(m) {
+			@include flexbox;
+		}
 	}
 }
 
@@ -149,6 +150,7 @@
 
 .related-post {
 	margin-bottom: $spacing-mobile-6;
+
 	@include breakpoint(m) {
 		margin-bottom: $spacing-desktop-6;
 		float: left;
@@ -219,14 +221,11 @@
 
 .comment-content-wrap {
 	margin-left: 6px;
-	border: 1px solid $color__border;
 	background-color: $color__background;
 	padding: 6px $spacing-s;
-	@include border-radius-s;
 
 	@include breakpoint(m) {
 		padding: $spacing-2;
-		@include border-radius-m;
 	}
 
 	p {
@@ -236,6 +235,10 @@
 			margin: 0;
 		}
 	}
+}
+
+.comments-border .comment-content-wrap {
+	border: 1px solid $color__border;
 }
 
 .comment-meta {
@@ -259,10 +262,10 @@
 .comment-body {
 
 	p.comment-awaiting-moderation {
-		margin: $spacing-mobile-0 0 0;
+		margin: 0 0 0;
 		display: inline-block;
 		@include breakpoint(m) {
-			margin: $spacing-desktop-0 0 0;
+			margin: 0 0 0;
 		}
 	}
 
@@ -286,7 +289,15 @@
 
 .comment-edit-link,
 .comment-metadata .comment-reply-link {
-	padding-left: 3px;
+	padding-left: $spacing-xxs;
+}
+
+.comment-author {
+
+	padding-bottom: $spacing-xxs;
+	.fn {
+		@include font-body4;
+	}
 }
 
 /* Comments Reply */
@@ -331,14 +342,14 @@
 .comment-form-author,
 .comment-form-email,
 .comment-form-url {
-	margin: $spacing-3 0 0;
+	margin: $spacing-2 0 0;
 }
 
 .form-submit {
 	display: block;
 	clear: both;
-	padding: $spacing-mobile-3 0 0;
+	padding: $spacing-3 0 0;
 	@include breakpoint(m) {
-		padding: $spacing-desktop-3 0 0;
+		padding: $spacing-3 0 0;
 	}
 }

@@ -99,7 +99,7 @@
 			?>
 		<?php endif; ?>
 
-		<?php if ( false !== get_theme_mod( 'header_search' ) ) : ?>
+		<?php if ( true === get_theme_mod( 'header_search' ) ) : ?>
 
 		<div class="search-header">
 			<?php get_search_form(); ?>

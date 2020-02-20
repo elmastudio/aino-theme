@@ -41,7 +41,9 @@ textarea,
 
 .entry-content p,
 .hentry ol,
-.hentry ul {
+.hentry ul,
+.entry-cats,
+.page-header .description p {
 	@include font-body2;
 }
 
@@ -67,7 +69,7 @@ h6,
 .site-title,
 .post-navigation .nav-title {
 	color: $color__text_one;
-	font-weight: bold;
+	@include font-bold;
 }
 
 .h-regular h1,
@@ -78,10 +80,9 @@ h6,
 .h-regular h6,
 .h-regular .site-title,
 .h-regular.single-post .byline,
-.h-regular .entry-meta .author-name,
-.h-regular .entry-meta .entry-cats,
+.h-regular .post-navigation .nav-title,
 .post-navigation .nav-title span {
-	font-weight: normal;
+	@include font-regular;
 }
 
 h1 {
@@ -155,8 +156,8 @@ h2.entry-title {
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-	margin-top: $spacing-desktop-2;
-	margin-bottom: $spacing-desktop-2;
+	margin-top: $spacing-2;
+	margin-bottom: $spacing-2;
 }
 
 address,

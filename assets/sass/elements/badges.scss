@@ -1,5 +1,6 @@
 /* Sticky Post Badge */
 .badge-highlight {
+	display: inline-block;
 	position: absolute;
 	top: 12px;
 	left: 12px;
@@ -7,11 +8,17 @@
 	font-size: 13px;
 	font-weight: bold;
 	line-height: 1.23;
-	background: $color__secondary_one;
+	background: $color__black;
 	color: $color__white;
-	padding: 4px $spacing-s;
-	display: inline-block;
-	border-radius: $border-radius-xl;
+	padding: $spacing-1 $spacing-2;
+
+	.btn-curved & {
+		border-radius: $border-radius-xs;
+	}
+
+	.btn-round & {
+		border-radius: $border-radius-circle;
+	}
 }
 
 /* Post Author Badge */
@@ -20,17 +27,14 @@
 	justify-content: flex-start;
 	align-items: center;
 
-	.fn {
-		@include font-body4;
-	}
-
 	.author-badge {
 		@include font-body5;
-		font-weight: bold;
-		color: $color__white;
-		background: $color__secondary_one;
-		margin-left: $spacing-xxs;
-		padding: 2px 6px;
-		border-radius: $border-radius-xl;
+		@include font-bold;
+		line-height: 1;
+		color: $color__border;
+		margin-left: 4px;
+		padding: 3px 6px;
+		border-radius: $border-radius-circle;
+		border: 1px solid $color__border;
 	}
 }

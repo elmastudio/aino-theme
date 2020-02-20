@@ -11,17 +11,17 @@
 
  thead th {
 	 border-bottom: 2px solid $color__border;
-	 padding-bottom: $spacing-mobile-2;
+	 padding-bottom: $spacing-2;
 	 @include breakpoint(m) {
-		 margin: 0 0 $spacing-desktop-2;
+		 margin: 0 0 $spacing-2;
 	 }
  }
 
  th {
-	 padding: $spacing-mobile-2;
+	 padding: $spacing-2;
 	 text-align: left;
 	 @include breakpoint(m) {
-		 padding: $spacing-desktop-2;
+		 padding: $spacing-2;
 	 }
  }
 
@@ -34,10 +34,10 @@
  }
 
  td {
-	 padding: $spacing-mobile-2;
+	 padding: $spacing-2;
 	 border-right: 1px solid $color__border;
 	 @include breakpoint(m) {
-		 padding: $spacing-desktop-2;
+		 padding: $spacing-2;
 	 }
  }
 

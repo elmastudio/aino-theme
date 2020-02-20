@@ -7,146 +7,113 @@ a {
 	}
 }
 
-/* Primary Text Links */
+/* Primary Links */
 .entry-content p a,
 .entry-content li a,
 .authorbox-content p a,
 .comment-content li a,
 .comment-content p a,
 .wp-caption-text a,
-cite a {
+cite a,
+.wp-block-image figcaption a,
+.wp-block-audio figcaption a,
+.wp-block-embed figcaption a {
 	color: currentColor;
 	text-decoration: underline;
 
 	&:hover {
-		color: $color__primary_one;
+		color: $color__primary;
 	}
 }
 
-/* Secondary Text Links */
+h1, h2, h3, h4, h5, h6,
+.entry-content p,
+.entry-content li {
+
+	&.has-text-color {
+
+	&.has-white-color {
+
+		a:hover {
+			color: $color__white_hover;
+			}
+		}
+	}
+}
+
+/* Links that keep the default text color and only show link color on hover */
+.site-title a,
+h2.entry-title a,
+.comment-list b.fn a,
+.main-navigation a {
+	color: $color__text_one;
+	fill: $color__text_one;
+}
+
 .posts-container .hentry .entry-meta a,
 .entry-comments a,
 .posted-on a,
 .comment-reply-title #cancel-comment-reply-link {
-	color: $color__text_three;
-	fill: $color__text_three;
-
+	color: $color__text_two;
+	fill: $color__text_two;
 }
-.wp-block-image figcaption a,
-.wp-block-audio figcaption a,
-.wp-block-embed figcaption a {
-	color: $color__text_three;
-	fill: $color__text_three;
-	box-shadow: inset 0 -0.06em 0 $color__text_three;
-	box-shadow: inset 0 -0.07em 0 $color__text_three;
 
-	&:hover {
-		color: $color__primary_one;
-		box-shadow: inset 0 -0.06em 0 $color__primary_one;
-		box-shadow: inset 0 -0.07em 0 $color__primary_one;
+/* Link Hovers */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.site-title a,
+.single-post .entry-cats a,
+.single-post .entry-meta a,
+.single-post .navigation .nav-title .nav-subtitle,
+.footer-widget-wrap a,
+.comment-metadata a,
+.comment-reply-title #cancel-comment-reply-link,
+.logged-in-as a {
+
+	:hover {
+		color: $color__primary;
+		fill: $color__primary;
 	}
 }
 
-.site-title a,
-h2.entry-title a {
-	color: $color__text_one;
-	fill: $color__text_one;
-}
-
-.comment-list b.fn a,
-.main-navigation a,
-.single-post .entry-meta a:hover,
-.comment-list .comment-metadata a:hover,
-.comment-reply-title #cancel-comment-reply-link:hover,
-.logged-in-as a:hover {
-	color: $color__text_one;
-	fill: $color__text_one;
-}
-
-/* Primary Color Hovers */
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover,
-.site-title a:hover,
-.single-post .byline a:hover,
-.single-post .navigation .nav-title .nav-subtitle:hover,
-.footer-widget-wrap a:hover {
-	color: $color__primary_one;
-	fill: $color__primary_one;
-}
-
-/* Category and Tag Links */
-.entry-cats a,
+/* Tags */
 .entry-tags a {
-	height: $spacing-3;
+	border: 1px solid $color__border;
+	color: $color__border;
 	margin: 0 $spacing-xxs $spacing-xs;
-	padding: 0 $spacing-xs;
+	padding: 6px $spacing-s;
 	@include flexbox;
 	@include flex-center;
-	@include font-body4;
+	font-size: 13px;
+	line-height: 1.23;
+	font-weight: bold;
 	@include border-radius-l;
-}
-
-.entry-cats a {
-	background: $primary_one_color_rgba_10;
-	color: $color__primary_one;
 
 	&:hover {
-		background: $color__primary_one;
-		color: $color__white;
+		background: $color__background;
+		border: 1px solid transparent;
 	}
 }
 
-.entry-tags a {
-	border: 1px solid $color__text_three;
-	color: $color__text_three;
-
-	&:hover {
-		color: $color__primary_one;
-	}
-}
-
-.btn-squared .entry-cats a,
-.btn-squared .entry-cats a {
-	@include border-radius-0;
-}
-
-/* Edit Link */
+/* Edit Button */
 .post-edit-link {
+	@include btn;
 	position: relative;
-	text-indent: -1000em;
-	display: none;
-	width: $spacing-desktop-5;
-	height: $spacing-desktop-5;
-	background: $color__primary_one;
-	border-radius: $border-radius-xl;
-	margin: 0 auto;
+	margin-top: $spacing-mobile-4;
+	background: $color__primary;
+	color: $color__white;
+	fill: $color__white;
+	padding: $spacing-s $spacing-3 $spacing-s $spacing-desktop-6;
+	line-height: 1;
+	width: auto;
 
 	@include breakpoint(l) {
-		display: block;
-	}
-
-	&:hover {
-		background: $color__primary_two;
-		box-shadow: none;
-	}
-
-	.single-post &,
-	.page & {
-		@include breakpoint(m) {
-			top: 0;
-			right: 0;
-			position: absolute;
-		}
+		margin-top: $spacing-desktop-4;
 	}
 }
 
 /* Link Transitions */
 .site-branding a,
-.main-navigation a,
+.primary-menu a,
 .site-footer .widget_mc4wp_form_widget a,
 .site-footer a,
 .social-header-nav .icon,

@@ -81,7 +81,7 @@
 /* Header Search Form */
 .search-header {
 	position: relative;
-	margin: $spacing-2 0;
+	margin: $spacing-2 0 0 0;
 	padding: 0;
 
 	@include breakpoint(l) {
@@ -89,7 +89,6 @@
 		padding: 0;
 	}
 
-	.header-search-hide &,
 	.search-submit {
 		display: none;
 	}
@@ -209,7 +208,7 @@
 			width: auto;
 		}
 		@include breakpoint(l) {
-			padding: 0 $spacing-desktop-2 0 0;
+			padding: 0 $spacing-2 0 0;
 		}
 	}
 
@@ -401,35 +400,33 @@ ul.primary-menu {
 	padding-bottom: $spacing-xxs;
 }
 
-.primary-menu a:hover,
-.primary-menu a:focus,
-.primary-menu .sub-menu a:hover,
-.primary-menu .sub-menu a:focus,
-.primary-menu .current_page_ancestor {
-	color: $color__primary_two;
-}
-
-.primary-menu a:hover + .icon::before,
-.primary-menu a:hover + .icon::after {
-	background-color: $color__primary_two;
-}
-
 .primary-menu ul {
-	background: $color__white;
 	@include shadow-5;
-	@include border-radius-m;
 	@include font-body4;
+	background: $color__white;
 	color: $color__text_one;
-	opacity: 0;
 	padding: $spacing-3;
 	position: absolute;
+	opacity: 0;
 	right: 9999rem;
 	top: calc(100% + 10px);
 	transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
 	transform: translateY(0.6rem);
 	width: 264px;
-	z-index: 1000;
+	z-index: 10;
 	margin: 0;
+
+	.btn-curved & {
+		border-radius: $border-radius-s;
+	}
+
+	.btn-round & {
+		border-radius: $border-radius-m;
+	}
+}
+
+.primary-menu ul ul {
+	opacity: 0;
 }
 
 .primary-menu ul::before {
@@ -478,7 +475,7 @@ ul.primary-menu {
 
 .primary-menu ul li.menu-item-has-children .icon {
 	position: absolute;
-	right: 1.5rem;
+	right: 0;
 	top: calc(50% - 0.5rem);
 }
 
@@ -606,7 +603,7 @@ ul.primary-menu {
 .modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
 button.sub-menu-toggle:hover,
 button.sub-menu-toggle:focus {
-	color: $color__primary_one;
+	color: $color__primary;
 }
 
 button.sub-menu-toggle {
@@ -823,11 +820,20 @@ button.sub-menu-toggle.active svg {
 }
 
 /* Light Header Style ---------------------------- */
-.tpl-hero-light,
-.tpl-fullscreen-light {
+.header-light {
 
 	.nav-toggle .icon-more_horiz-24px {
 		color: $color__white;
+	}
+
+	.search-header .search-field {
+		border-color: transparent;
+		background-color: $color__white;
+
+		&:focus,
+		&:active {
+			background-color: rgba(255, 255, 255, 0.9);
+		}
 	}
 
 	@include breakpoint(m) {
@@ -836,13 +842,19 @@ button.sub-menu-toggle.active svg {
 		.site-branding .site-description,
 		.primary-menu a,
 		.btn-outline a,
-		.btn-naked a {
+		.btn-naked a,
+		.site-header .menu-social-container .icon {
 			color: $color__white;
+			fill: $color__white;
+
+			&:hover,
+			&:focus {
+				color: $color__white_hover;
+				fill: $color__white_hover;
+			}
 		}
 
-		.site-header .menu-social-container .icon,
-		.header-inner .toggle .icon,
-		.btn-outline a {
+		.header-inner .toggle .icon {
 			fill: $color__white;
 		}
 
@@ -852,13 +864,32 @@ button.sub-menu-toggle.active svg {
 			background-color: $color__white;
 		}
 
+		.primary-menu a:hover + .icon::before,
+		.primary-menu a:hover + .icon::after {
+			background-color: $color__white_hover;
+		}
+
+		.primary-menu .sub-menu .icon::before,
+		.primary-menu .sub-menu .icon::after {
+			background-color: $color__text_one;
+		}
+
 		.primary-menu .sub-menu a,
 		.btn-primary a {
 			color: $color__text_one;
 		}
 
+		.primary-menu .sub-menu a:hover + .icon::before,
+		.primary-menu .sub-menu a:hover + .icon::after {
+			background-color: $color__primary;
+		}
+
 		.btn-outline a {
 			border-color: $color__white;
+
+			&:hover {
+				border-color: $color__white_hover;
+			}
 		}
 	}
 }

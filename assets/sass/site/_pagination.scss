@@ -81,13 +81,12 @@
 .site-main .navigation .prev:hover,
 .site-main .navigation .next:hover,
 .pagination a.page-numbers:hover {
-	color: $color__primary_one;
-	background: $primary_one_color_rgba_10;
+	color: $color__primary;
+	background: $color__background;
 }
 
-
 .pagination a.page-numbers:hover .icon {
-	fill: $color__primary_one;
+	fill: $color__primary;
 }
 
 .pagination .prev.page-numbers,
@@ -178,7 +177,6 @@
 
 	.nav-title span {
 		display: block;
-		color: $color__text_three;
 	}
 }
 

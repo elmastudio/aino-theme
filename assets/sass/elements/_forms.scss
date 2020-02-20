@@ -22,7 +22,7 @@ input[type="color"] {
 	outline: none;
 
 	@include input-placeholder {
-		color: $color__text_two;
+		color: #8e8e8e;
 	}
 }
 
@@ -34,7 +34,7 @@ textarea {
 	outline: none;
 
 	@include input-placeholder {
-		color: $color__text_one
+		color: #8e8e8e;
 	}
 }
 
@@ -57,9 +57,8 @@ input[type="week"]:active, input[type="time"]:active,
 input[type="datetime"]:active,
 input[type="datetime-local"]:active,
 input[type="color"]:active, textarea:active {
-	border-color: transparent;
 	outline: 0;
-	box-shadow: 0 0 0 3px $color__primary_one;
+	border: 1px solid #707070;
 }
 
 .color-notice,
@@ -73,6 +72,7 @@ label.color-notice span {
 
 form p {
 	margin: 0 0 $spacing-3;
+
 	@include breakpoint(m) {
 		margin: 0 0 $spacing-3;
 	}
@@ -96,7 +96,7 @@ form p.comment-form-comment {
 
 form label {
 	display: block;
-	padding: 0 0 $spacing-xs;
+	padding: 0 0 $spacing-xxs;
 	@include font-label;
 }
 
@@ -184,24 +184,19 @@ select {
 }
 
 /* Form Styles (via Customizer Settings) */
-input,
-textarea,
-select {
-	@include border-radius-s;
+.form-curved {
+	input,
+	textarea,
+	select {
+		@include border-radius-s;
+	}
 }
 
-.form-squared input,
-.form-squared textarea,
-.form-squared select,
-.form-squared .search-header .search-field {
-	@include border-radius-0;
-}
-
-.form-round input,
-.form-round textarea,
-.form-round select,
-.form-round .search-header .search-field {
-	border-radius: 6.25em;
+.form-round {
+	input,
+	select {
+		border-radius: 6.25em;
+	}
 }
 
 .form-round textarea {

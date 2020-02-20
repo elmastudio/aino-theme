@@ -166,7 +166,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 16px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: $color__text_three;
+	color: $color__text_two;
 }
 
 @mixin font-code {
@@ -197,23 +197,17 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-primary {
 	color: $color__white;
 	fill: $color__white;
-	background-color: $color__primary_one;
-
-	&:hover {
-		background-color: $color__primary_two;
-		@include shadow-3;
-	}
+	background-color: $color__primary;
 }
 
 @mixin btn-outline {
-	color: $color__primary_one;
-	fill: $color__primary_one;
-	border: 1px solid $color__primary_one;
+	color: $color__primary;
+	fill: $color__primary;
+	border: 1px solid $color__primary;
 
 	&:hover {
-		color: $color__primary_one;
-		fill: $color__primary_one;
-		background-color: $primary_one_color_rgba_10;
+		color: $color__primary;
+		fill: $color__primary;
 	}
 }
 
@@ -226,8 +220,8 @@ $var: true !default; // Can be overridden elsewhere
 	fill: $color__text_two;
 
 	&:hover {
-		color: $color__primary_one;
-		fill: $color__primary_one;
+		color: $color__primary;
+		fill: $color__primary;
 	}
 }
 
@@ -353,11 +347,11 @@ $var: true !default; // Can be overridden elsewhere
 
 // Mixin grid padding
 @mixin col-padding {
-	padding-left: $spacing-mobile-3;
-	padding-right: $spacing-mobile-3;
+	padding-left: $spacing-3;
+	padding-right: $spacing-3;
 	@include breakpoint(m) {
-		padding-left: $spacing-desktop-3;
-		padding-right: $spacing-desktop-3;
+		padding-left: $spacing-3;
+		padding-right: $spacing-3;
 	}
 }
 
@@ -365,16 +359,11 @@ $var: true !default; // Can be overridden elsewhere
 @mixin border-radius($radius) {
 	border-radius: $radius;
 }
-@mixin hide-rounded {
-	-webkit-appearance: none;
-	border-radius: 0;
-}
-
-@mixin border-radius-0 {
+@mixin border-radius-none {
 		border-radius: 0;
 }
 @mixin border-radius-xs {
-		border-radius: $border-radius-xs;
+	border-radius: $border-radius-xs;
 }
 @mixin border-radius-s {
 		border-radius: $border-radius-s;

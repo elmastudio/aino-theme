@@ -70,7 +70,7 @@ function aino_sanitize_headline_font_weight( $choice ) {
 function aino_sanitize_shapes( $choice ) {
 	$valid = array(
 		'squared',
-		'smooth',
+		'curved',
 		'round',
 	);
 
@@ -78,7 +78,7 @@ function aino_sanitize_shapes( $choice ) {
 		return $choice;
 	}
 
-	return 'smooth';
+	return 'squared';
 }
 
 /**
