@@ -17,7 +17,6 @@
 }
 
 /* Alignwide and alignfull */
-
 .hentry .entry-content > * {
 
 	&.alignwide,
@@ -50,7 +49,6 @@
 }
 
 /* Nested Block Alignment: alignwide inside alignfull */
-
 .hentry .entry-content .alignfull {
 
 	.alignwide {
@@ -71,6 +69,17 @@
 			padding-left: 24px;
 			padding-right: 24px;
 		}
+	}
+}
+
+/* Heading */
+.entry-content h2.display {
+
+	@include font-display;
+	margin-bottom: $spacing-mobile-4;
+
+	@include breakpoint(m) {
+		margin-bottom: $spacing-desktop-4;
 	}
 }
 
@@ -323,7 +332,6 @@
 }
 
 /* Gallery */
-
 ul.wp-block-gallery {
 	padding: 0;
 	list-style: none;
@@ -542,9 +550,20 @@ ul.wp-block-gallery {
 }
 
 /* Group */
-.wp-block-group__inner-container > *:last-child {
-	margin-bottom: 0;
+.wp-block-group {
+
+	h1, h2, h3, h4, h5, h6 {
+		.wp-block-group__inner-container & {
+			margin-top: 0;
+		}
+	}
+
+	.wp-block-group__inner-container > *:last-child {
+		margin-bottom: 0;
+	}
+
 }
+
 
 /* Custom Color Palette */
 .entry-content {
