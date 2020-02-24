@@ -12,6 +12,12 @@ __License URI:__ http://www.gnu.org/licenses/gpl-3.0.html
 
 ## Changelog  
 
+### 0.2.1  
+**Enhance:** Button and form styles  
+**Enhance:** Jetpack sharing button styles  
+**Enhance:** CSS grid styles  
+**Bugfix:** 404 page  
+
 ### 0.2.0
 **Enhance:** Simplified color options  
 **Enhance:** Simplified Blog & post styling updates  
