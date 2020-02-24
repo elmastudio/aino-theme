@@ -94,23 +94,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	}
 }
 
-/* Edit Button */
-.post-edit-link {
-	@include btn;
-	position: relative;
-	margin-top: $spacing-mobile-4;
-	background: $color__primary;
-	color: $color__white;
-	fill: $color__white;
-	padding: $spacing-s $spacing-3 $spacing-s $spacing-desktop-6;
-	line-height: 1;
-	width: auto;
-
-	@include breakpoint(l) {
-		margin-top: $spacing-desktop-4;
-	}
-}
-
 /* Link Transitions */
 .site-branding a,
 .primary-menu a,

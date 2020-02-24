@@ -1,19 +1,25 @@
+.page-template-default,
+.tpl-fullwidth,
+.single-post,
+.error404,
+.search-no-results {
+
+	.entry-header {
+		display: block;
+		text-align: center;
+		padding-top: 0;
+		padding-bottom: $spacing-mobile-8;
+
+		@include breakpoint(m) {
+			padding-bottom: $spacing-desktop-8;
+		}
+	}
+}
+
 .entry-header {
 
 	.entry-title {
 		margin: 0;
-	}
-
-	.error-404 &,
-	.search.search-no-results & {
-		position: relative;
-		margin: 0;
-		padding: 0 0 $spacing-mobile-4;
-
-		@include breakpoint(m) {
-			margin: 0 $spacing-3 $spacing-desktop-8;
-			padding: 0 0 $spacing-desktop-4;
-		}
 	}
 
 	.archive .type-page &,

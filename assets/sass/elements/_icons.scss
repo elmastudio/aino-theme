@@ -27,21 +27,22 @@
 /* Edit Link Icon */
 .edit-link .icon {
 	position: absolute;
-	top: $spacing-xs;
-	left: $spacing-s;
+	top: 8px;
+	left: 16px;
 	width: $spacing-3;
 	height: $spacing-3;
-	padding: 0;
 }
 
 /* Search Form Icon */
 .search-icon {
 	position: absolute;
+	top: 8px;
+	left: 16px;
 	@include flexbox;
 	@include flex-center;
-	width: $spacing-desktop-5;
-	height: $spacing-desktop-5;
-	color: #8e8e8e;
+	width: $spacing-3;
+	height: $spacing-3;
+	color: #707070;
 
 	.icon {
 		width: $spacing-3;

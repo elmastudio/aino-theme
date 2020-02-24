@@ -8,7 +8,7 @@
 
 ?>
 
-<nav class="navigation post-navigation" role="navigation">
+<nav class="navigation post-navigation push-center col12 mobile-margins" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'aino' ); ?></h2>
 		<div class="nav-links">
 

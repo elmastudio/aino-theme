@@ -74,9 +74,29 @@
 	border: 0;
 }
 
-/* Widgets via external pluginss */
-/* Jetpack Widgets */
+/* Jetpack Sharing buttons */
 .widget_flickr .flickr-images {
 	text-align: left;
 	padding-bottom: $spacing-1;
+}
+
+.entry-content .sharedaddy {
+
+	padding-top: 16px;
+
+	h3.sd-title {
+		display: block;
+		font-weight: normal;
+		text-align: center;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.sd-content ul {
+		display: flex;
+		justify-content: center;
+		margin: 0 !important;
+	}
 }

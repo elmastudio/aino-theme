@@ -96,7 +96,7 @@ textarea{width:100%}
 .wp-block-separator.is-style-dots:before{color:#cacaca;font-size:27px;line-height:1.48;letter-spacing:1em;padding-left:1em}
 .wp-block-button .wp-block-button__link{display:inline-block;font-size:16px;line-height:19px;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;padding-top:19px;padding-bottom:18px;color:#fff;fill:#fff;background-color:#1765d8;font-weight:normal;color:#fff}
 .wp-block-button .wp-block-button__link:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
-.wp-block-button:not(.is-style-squared) .wp-block-button__link{border-radius:16px}
+.wp-block-button:not(.is-style-squared) .wp-block-button__link{border-radius:12px}
 .wp-block-button.is-style-outline .wp-block-button__link{color:#1765d8;fill:#1765d8;border:1px solid #1765d8;background:transparent}
 .wp-block-button.is-style-outline .wp-block-button__link:hover{color:#1765d8;fill:#1765d8}
 .wp-block-button.is-style-outline .wp-block-button__link:hover{color:#1765d8;fill:#1765d8}

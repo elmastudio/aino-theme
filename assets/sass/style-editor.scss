@@ -595,7 +595,7 @@ textarea {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: $col7-nopadding;
+	max-width: $col7-no-margin;
 	@include font-h4;
 }
 

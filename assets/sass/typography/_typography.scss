@@ -5,10 +5,7 @@ input,
 select,
 table,
 textarea,
-.search .page-header p,
-.textwidget p,
-.post-navigation .nav-title span,
-.entry-content .has-small-font-size {
+.post-navigation .nav-title span {
 	@include font-body;
 	@include font-body3;
 	color: $color__text_two;
@@ -20,7 +17,8 @@ textarea,
 .single-post .navigation a span.nav-subtitle,
 .widget ul li,
 .entry-content .has-extrasmall-font-size,
-.entry-content .has-xs-font-size {
+.entry-content .has-xs-font-size,
+.entry-content .sharedaddy h3.sd-title {
 	@include font-body4;
 }
 

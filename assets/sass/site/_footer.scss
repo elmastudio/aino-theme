@@ -20,7 +20,8 @@
 	@include flexbox;
 	flex-direction: column;
 	padding-bottom: $spacing-mobile-6;
-	@include breakpoint(s) {
+
+	@include breakpoint(m) {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -29,23 +30,20 @@
 }
 
 .footer-widget {
-	min-width: 192px;
-	@include breakpoint(s) {
-		padding: 0 $spacing-2;
-	}
+
 	@include breakpoint(m) {
-		min-width: 208px;
+		min-width: $col2;
 		padding: 0 $spacing-3;
 	}
-}
 
-.footer-widget .widget {
-	padding-bottom: $spacing-mobile-6;
-	@include breakpoint(m) {
-		padding-bottom: $spacing-desktop-6;
-	}
-	.footerwidgets-centered & {
-		text-align: center;
+	.widget {
+		padding-bottom: $spacing-mobile-6;
+		@include breakpoint(m) {
+			padding-bottom: $spacing-desktop-6;
+		}
+		.footerwidgets-centered & {
+			text-align: center;
+		}
 	}
 }
 
@@ -67,7 +65,7 @@
 }
 
 .site-info {
-	padding: 0;
+
 	@include font-body4;
 	color: $color__text_two;
 
@@ -83,21 +81,22 @@
 			content: '.';
 		}
 	}
-}
 
-.site-info a {
-	padding: 0;
-	@include font-body4;
-	color: $color__text_two;
+	a {
+		padding: 0;
+		@include font-body4;
+		color: $color__text_two;
 
-	&:hover {
-		color: $color__primary;
+		&:hover {
+			color: $color__primary;
+		}
 	}
 }
 
 /* Footer Social Nav */
 .social-footer-nav {
-	padding: 0 0 $spacing-mobile-4;
+	padding-bottom: $spacing-mobile-4;
+
 	@include breakpoint(m) {
 		padding: 0;
 	}
@@ -105,9 +104,9 @@
 	.footerinfo-centered & {
 		@include flexbox;
 		justify-content: center;
-		padding: 0 0 $spacing-mobile-4;
+		padding-bottom: $spacing-mobile-4;
 		@include breakpoint(m) {
-			padding: 0 0 $spacing-desktop-4;
+			padding-bottom: $spacing-desktop-4;
 		}
 	}
 }

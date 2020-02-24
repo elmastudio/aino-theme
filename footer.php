@@ -13,11 +13,11 @@
 
 	<footer id="colophon" class="site-footer">
 
-		<div class="footer-wrap">
+		<div class="footer-wrap col12 push-center">
 
 		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 
-		<div class="footer-info">
+		<div class="footer-info grid-margins">
 
 		<?php get_template_part( 'template-parts/footer/footer', 'menu-social' ); ?>
 
