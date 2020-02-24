@@ -13,7 +13,7 @@ if ( is_active_sidebar( 'footer-1' ) ||
 		is_active_sidebar( 'footer-5' ) ||
 		is_active_sidebar( 'footer-6' ) ) : ?>
 
-	<aside class="footer-widget-wrap widget-area widget-area-default cf" role="complementary">
+	<aside class="footer-widget-wrap widget-area widget-area-default mobile-margins" role="complementary">
 
 		<?php
 		if ( is_active_sidebar( 'footer-1' ) ) {

@@ -16,10 +16,10 @@ get_header(); ?>
 			?>
 
 			<header class="page-header">
-				<h1 class="page-title f1"><span><?php esc_html_e( 'Search Results for:', 'aino' ); ?></span><?php echo get_search_query(); ?></h1>
+				<h1 class="page-title"><span><?php esc_html_e( 'Search Results for:', 'aino' ); ?></span><?php echo get_search_query(); ?></h1>
 			</header><!-- .page-header -->
 
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="site-main mobile-margins" role="main">
 
 			<div id="posts-container" class="posts-container cf">
 

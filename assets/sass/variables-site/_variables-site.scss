@@ -51,21 +51,25 @@ $grid-margins-l             : 48px;
 $stickyheader-mobile        : 55px;
 $stickyheader-desktop       : 88px;
 
-// Max Content Widths
-$website-width              : 1248px; // max default width
-$col12-nopadding            : 1200px;
-$ten-columns-width          : 1040px; // max default width
-$bg-content-width           : 832px; // max content width, if has background
-$col5                       : 520px;
-$col5-nopadding             : 472px; // 5 column width without padding
-$col6-nopadding             : 576px; // 6 column width without padding
+// Grid Columns
+$col1                       : 104px; // 1 grid columns
+$col2                       : 208px; // 2 grid columns
+$col3                       : 312px; // 3 grid columns
+$col4                       : 416px; // 4 grid columns
+$col5                       : 520px; // 5 grid columns
 $col6                       : 624px; // 6 grid columns
 $col7                       : 728px; // 7 grid columns
-$col7-nopadding             : 680px; // 7 grid columns without padding
+$col8                       : 832px; // 8 grid columns
+$col9                       : 936px; // 9 grid columns
+$col10                      : 1040px; // 10 grid columns
+$col11                      : 1144px; // 11 grid columns
+$col12                      : 1248px; // 12 grid columns
+$col7-no-margin             : 680px; // 7 grid columns without padding
+$col12-no-margin            : 1200px;
 
 // Border Radius
-$border-radius-xs: 12px;
-$border-radius-s: 16px;
+$border-radius-xs: 8px;
+$border-radius-s: 12px;
 $border-radius-m: 24px;
 $border-radius-l: 36px;
 $border-radius-circle: 100px;

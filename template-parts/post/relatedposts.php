@@ -32,10 +32,10 @@ if ( $categories ) {
 	$rp_query = new wp_query( $args );
 	if ( $rp_query->have_posts() ) {
 		echo '<div class="related-wrap">
-				<div class="related cf">
-					<h2 class="section-title"> ' . esc_html__( 'Related Posts', 'aino' ) . '<a class="related-more-link btn-outline btn-s" href=" ' . esc_url( $category_link ) . ' ">' . esc_html__( 'View more', 'aino' ) . '</a></h2>
+				<div class="related col12 push-center">
+					<h2 class="section-title grid-margins"> ' . esc_html__( 'Related Posts', 'aino' ) . '<a class="related-more-link btn-outline btn-s" href=" ' . esc_url( $category_link ) . ' ">' . esc_html__( 'View more', 'aino' ) . '</a></h2>
 
-		<div class="related-container">';
+		<div class="related-container mobile-margins">';
 
 		while ( $rp_query->have_posts() ) {
 			$rp_query->the_post();

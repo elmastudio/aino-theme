@@ -21,7 +21,7 @@
 
 	&.alignwide,
 	.alignwide {
-		max-width: $website-width;
+		max-width: $col12;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -52,7 +52,7 @@
 .hentry .entry-content .alignfull {
 
 	.alignwide {
-		max-width: $website-width;
+		max-width: $col12;
 		clear: both;
 		overflow: hidden;
 		margin-left: auto;

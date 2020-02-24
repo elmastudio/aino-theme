@@ -1,37 +1,25 @@
-/* Single Post General */
-.single-post .site-main {
-	padding: 0;
-}
-
-.single-post .has-post-thumbnail .entry-content {
-	padding-top: $spacing-mobile-6;
-	@include breakpoint(m) {
-		padding-top: $spacing-desktop-6;
-	}
-}
-
-.single-post .hentry.comments-closed.no-comments {
-	padding-bottom: $spacing-mobile-6;
-	@include breakpoint(m) {
-		padding-bottom: $spacing-desktop-6;
-	}
-}
-
-/* Single Post Header & Meta */
-.page-template-default .entry-header,
-.tpl-fullwidth .entry-header,
-.single-post .entry-header {
-	display: block;
-	text-align: center;
-	padding-top: 0;
-	padding-bottom: $spacing-mobile-8;
-
-	@include breakpoint(m) {
-		padding-bottom: $spacing-desktop-8;
-	}
-}
-
 .single-post {
+
+	.site-main {
+		padding: 0;
+	}
+
+	.has-post-thumbnail .entry-content {
+		padding-top: $spacing-mobile-6;
+
+		@include breakpoint(m) {
+			padding-top: $spacing-desktop-6;
+		}
+	}
+
+	.hentry.comments-closed.no-comments {
+		padding-bottom: $spacing-mobile-6;
+
+		@include breakpoint(m) {
+			padding-bottom: $spacing-desktop-6;
+		}
+	}
+
 	.entry-header .entry-title {
 		margin: 0;
 	}
@@ -63,18 +51,31 @@
 		display: inline-block;
 	}
 
-}
+	.post-thumb {
 
-/* Single Post Featured Image */
-.single-post .post-thumb {
-	@include flexbox;
-	justify-content: center;
-	@include breakpoint(l) {
-		padding: 0 $spacing-3;
+		justify-content: center;
+		@include flexbox;
+		@include breakpoint(l) {
+			padding: 0 $spacing-3;
+		}
+
+		& img {
+			display: block;
+		}
 	}
 
-	& img {
-		display: block;
+	.entry-footer {
+		padding-top: $spacing-2;
+
+		@include breakpoint(m) {
+			padding-top: $spacing-2;
+		}
+
+		.entry-tags {
+			@include flexbox;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 }
 
@@ -96,20 +97,6 @@
 	.single-post.featuredimg-radius-l & {
 		border-radius: $border-radius-l;
 	}
-}
-
-/* Single Post Footer */
-.single-post .entry-footer {
-	padding-top: $spacing-2;
-	@include breakpoint(m) {
-		padding-top: $spacing-2;
-	}
-}
-
-.entry-tags {
-	@include flexbox;
-	flex-wrap: wrap;
-	justify-content: center;
 }
 
 /* Related Posts */
@@ -343,13 +330,4 @@
 .comment-form-email,
 .comment-form-url {
 	margin: $spacing-2 0 0;
-}
-
-.form-submit {
-	display: block;
-	clear: both;
-	padding: $spacing-3 0 0;
-	@include breakpoint(m) {
-		padding: $spacing-3 0 0;
-	}
 }

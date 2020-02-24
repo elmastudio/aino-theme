@@ -36,29 +36,12 @@ textarea {
 	@include input-placeholder {
 		color: #8e8e8e;
 	}
-}
 
-/* Form Focus State */
-input[type="text"]:focus, input[type="email"]:focus,
-input[type="url"]:focus, input[type="password"]:focus,
-input[type="search"]:focus, input[type="number"]:focus,
-input[type="tel"]:focus, input[type="range"]:focus,
-input[type="date"]:focus, input[type="month"]:focus,
-input[type="week"]:focus, input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus, textarea:focus,
-input[type="text"]:active, input[type="email"]:active,
-input[type="url"]:active, input[type="password"]:active,
-input[type="search"]:active, input[type="number"]:active,
-input[type="tel"]:active, input[type="range"]:active,
-input[type="date"]:active, input[type="month"]:active,
-input[type="week"]:active, input[type="time"]:active,
-input[type="datetime"]:active,
-input[type="datetime-local"]:active,
-input[type="color"]:active, textarea:active {
-	outline: 0;
-	border: 1px solid #707070;
+	&:focus,
+	&:active {
+		outline: 0;
+		border: 1px solid #707070;
+	}
 }
 
 .color-notice,
@@ -116,6 +99,17 @@ select {
 	width: 100%;
 }
 
+/* Form Submit */
+input[type="submit"],
+button[type="submit"] {
+	display: block;
+	clear: both;
+	margin-top: $spacing-3;
+	@include breakpoint(m) {
+		margin-top: $spacing-3 0 0;
+	}
+}
+
 /* Search Form */
 .searchform-wrap,
 .form-wrap {
@@ -134,41 +128,9 @@ select {
 	padding: 0;
 }
 
-.widget_search input[type="search"],
-.entry-content input[type="search"] {
-	width: calc(100% - 120px);
-	padding: 0 0 0 12px;
-	height: $spacing-desktop-7;
-	line-height: 1;
-	box-sizing: border-box;
-	border: 1px solid $color__border;
-}
-
-.widget_search input[type="search"]:active,
-.entry-content input[type="search"]:active,
-.widget_search input[type="search"]:focus,
-.entry-content input[type="search"]:focus {
-	box-shadow: none;
-	border: 1px solid $color__notification;
-	caret-color: $color__notification;
-}
-
 .entry-content label .search-icon,
 .widget_search label .search-icon {
 	display: none;
-}
-
-.entry-content .search-submit,
-.widget_search .search-submit {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 120px;
-	height: $spacing-desktop-7;
-	text-align: center;
-	padding: 0;
-	display: inline-block;
-	@include btn-primary;
 }
 
 .entry-content .search-submit span.search-icon,
@@ -178,16 +140,12 @@ select {
 	padding: 16px 0 0;
 }
 
-.entry-content .search-submit .icon,
-.widget_search .search-submit .icon {
-	fill: $color__white;
-}
-
 /* Form Styles (via Customizer Settings) */
 .form-curved {
 	input,
 	textarea,
-	select {
+	select,
+	.comment-content-wrap {
 		@include border-radius-s;
 	}
 }
@@ -197,8 +155,9 @@ select {
 	select {
 		border-radius: 6.25em;
 	}
-}
 
-.form-round textarea {
-	@include border-radius-m;
+	textarea,
+	.comment-content-wrap {
+		@include border-radius-m;
+	}
 }

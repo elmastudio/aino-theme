@@ -109,7 +109,7 @@
 		align-items: center;
 		max-width: 100%;
 		height: $spacing-desktop-5;
-		padding: 0 0 0 $spacing-desktop-5;
+		padding: 0 0 0 46px;
 		vertical-align: middle;
 		border: 1px solid $color__border;
 		@include font-body3;
@@ -859,8 +859,7 @@ button.sub-menu-toggle.active svg {
 		}
 
 		.primary-menu .icon::before,
-		.primary-menu .icon::after,
-		.btn-primary a {
+		.primary-menu .icon::after {
 			background-color: $color__white;
 		}
 
@@ -874,8 +873,7 @@ button.sub-menu-toggle.active svg {
 			background-color: $color__text_one;
 		}
 
-		.primary-menu .sub-menu a,
-		.btn-primary a {
+		.primary-menu .sub-menu a {
 			color: $color__text_one;
 		}
 

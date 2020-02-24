@@ -17,11 +17,6 @@ $var: true !default; // Can be overridden elsewhere
 			@content;
 		}
 	} @else
-	if $class == s {
-		@media (min-width: 48.500em) {
-			@content;
-		}
-	} @else
 	if $class == m {
 		@media (min-width: 48.500em) {
 			@content;

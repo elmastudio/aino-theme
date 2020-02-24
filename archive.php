@@ -14,12 +14,12 @@ get_header(); ?>
 		if ( have_posts() ) :
 			?>
 
-			<header class="page-header">
+			<header class="page-header grid-margins">
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				the_archive_title( '<h1 class="page-title col col7">', '</h1>' );
 
 				if ( ! is_author() ) {
-					the_archive_description( '<div class="description">', '</div>' );
+					the_archive_description( '<div class="description col col7">', '</div>' );
 				}
 				?>
 
@@ -31,7 +31,7 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="site-main mobile-margins" role="main">
 
 				<div class="posts-container" id="posts-container">
 

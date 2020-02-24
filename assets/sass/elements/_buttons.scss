@@ -73,6 +73,7 @@ a.btn-outline,
 
 	.btn,
 	input[type="submit"],
+	button[type="submit"],
 	a.btn-primary,
 	.btn-primary a,
 	a.btn-outline,
@@ -94,6 +95,7 @@ a.btn-outline,
 
 	.btn,
 	input[type="submit"],
+	button[type="submit"],
 	a.btn-primary,
 	.btn-primary a,
 	a.btn-outline,
@@ -101,5 +103,23 @@ a.btn-outline,
 	.post-edit-link,
 	.search-header .search-field {
 		border-radius: 6.25em;
+	}
+}
+
+/* Edit Button */
+.post-edit-link {
+	@include btn;
+	position: relative;
+	margin-top: $spacing-mobile-4;
+	background: $color__primary;
+	color: $color__white;
+	fill: $color__white;
+	padding: 12px 24px 12px 46px;
+	line-height: 1;
+	width: auto;
+	height: 40px;
+
+	@include breakpoint(l) {
+		margin-top: $spacing-desktop-4;
 	}
 }
