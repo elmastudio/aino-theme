@@ -22,6 +22,7 @@ function aino_defaults( $name ) {
 				// Colors.
 				'main_bg_color'            => '#ffffff',
 				'primary_one_color'        => '#1765d8',
+				'btn_text_color'           => '#111111',
 				'footer_bg_color'          => '#f7f7ff',
 				'highlight_color'          => '#1cceb2',
 				'comments_bg_color'        => '#f7f7ff',

@@ -12,6 +12,7 @@ function aino_customizer_css() {
 
 	$main_bg_color            = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
 	$primary_one_color        = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
+	$btn_text_color           = get_theme_mod( 'btn_text_color', aino_defaults( 'btn_text_color' ) );
 	$background_color         = get_theme_mod( 'background_color', aino_defaults( 'background_color' ) );
 	$blogcards_bg_color       = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
 	$blogcards_bg_color_hover = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
@@ -140,6 +141,10 @@ function aino_customizer_css() {
 	a.btn-outline:hover,
 	.btn-outline a:hover {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
+	}
+	button, input[type="button"], input[type="submit"], .btn-primary a, a.btn-primary, .post-edit-link {
+		color: ' . esc_attr( $btn_text_color ) . ';
+		fill: ' . esc_attr( $btn_text_color ) . ';
 	}
 	.site-footer {
 		background-color: ' . esc_attr( $footer_bg_color ) . ';

@@ -803,7 +803,6 @@ function ainoFindParents(target, query) {
 /*	-----------------------------------------------------------------------------------------------
 	Sticky CTA Header Button
 --------------------------------------------------------------------------------------------------- */
-
 if (
 	"IntersectionObserver" in window &&
 	"IntersectionObserverEntry" in window &&

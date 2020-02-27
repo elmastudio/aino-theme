@@ -326,7 +326,7 @@ audio,video{display:inline-block}
 .header-navigation-wrapper{display:none}
 .header-toggles{display:none}
 .header-inner .toggle{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;overflow:visible}
-.header-inner .toggle svg{display:block;position:relative;z-index:1}
+.header-inner .toggle svg{display:block;position:relative;z-index:1;padding:0}
 .header-inner .toggle path{fill:currentColor}
 .toggle-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}
 .toggle-inner .toggle-text{display:none}

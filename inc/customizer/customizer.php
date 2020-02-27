@@ -764,9 +764,52 @@ function aino_customize_register( $wp_customize ) {
 			$wp_customize,
 			'main_bg_color',
 			array(
-				'label'    => esc_html__( 'Main Background', 'aino' ),
+				'label'    => esc_html__( 'Background', 'aino' ),
 				'section'  => 'colors',
 				'priority' => 1,
+			)
+		)
+	);
+
+	// Colors - Primary.
+	$wp_customize->add_setting(
+		'primary_one_color',
+		array(
+			'default'           => aino_defaults( 'primary_one_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'primary_one_color',
+			array(
+				'label'       => esc_html__( 'Primary', 'aino' ),
+				'description' => esc_html__( 'The primary link and button background color.', 'aino' ),
+				'section'     => 'colors',
+				'priority'    => 2,
+			)
+		)
+	);
+
+	// Colors - Primary.
+	$wp_customize->add_setting(
+		'btn_text_color',
+		array(
+			'default'           => aino_defaults( 'btn_text_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'btn_text_color',
+			array(
+				'label'    => esc_html__( 'Button Text', 'aino' ),
+				'section'  => 'colors',
+				'priority' => 3,
 			)
 		)
 	);
@@ -787,51 +830,8 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Footer Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 3,
-				'settings' => 'footer_bg_color',
-			)
-		)
-	);
-
-	// Colors - Primary.
-	$wp_customize->add_setting(
-		'primary_one_color',
-		array(
-			'default'           => aino_defaults( 'primary_one_color' ),
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'primary_one_color',
-			array(
-				'label'       => esc_html__( 'Primary', 'aino' ),
-				'description' => esc_html__( 'The primary link and button color.', 'aino' ),
-				'section'     => 'colors',
-				'priority'    => 2,
-			)
-		)
-	);
-
-	// Colors - Comments Background.
-	$wp_customize->add_setting(
-		'comments_bg_color',
-		array(
-			'default'           => aino_defaults( 'comments_bg_color' ),
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'comments_bg_color',
-			array(
-				'label'    => esc_html__( 'Comments Background', 'aino' ),
-				'section'  => 'colors',
 				'priority' => 4,
+				'settings' => 'footer_bg_color',
 			)
 		)
 	);
@@ -876,6 +876,27 @@ function aino_customize_register( $wp_customize ) {
 				'section'  => 'colors',
 				'priority' => 6,
 				'settings' => 'blogcards_bg_color_hover',
+			)
+		)
+	);
+
+	// Colors - Comments Background.
+	$wp_customize->add_setting(
+		'comments_bg_color',
+		array(
+			'default'           => aino_defaults( 'comments_bg_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'comments_bg_color',
+			array(
+				'label'    => esc_html__( 'Comments Background', 'aino' ),
+				'section'  => 'colors',
+				'priority' => 7,
 			)
 		)
 	);
