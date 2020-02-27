@@ -5,7 +5,6 @@
  * This is the template that displays all pages by default.
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 get_header(); ?>

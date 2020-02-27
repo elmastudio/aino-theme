@@ -693,7 +693,7 @@ pre.wp-block-verse {
 
 	.wp-block-button__link {
 		@include btn;
-		@include btn-m($outline: false);
+		@include btn-m;
 		@include btn-primary;
 		font-weight: normal;
 		color: $color__white;

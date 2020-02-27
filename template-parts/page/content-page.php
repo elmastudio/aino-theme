@@ -3,7 +3,6 @@
  * Template part for displaying page content in page.php
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>

@@ -3,7 +3,6 @@
  * Displays footer social menu if assigned
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>

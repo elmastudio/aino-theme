@@ -1,11 +1,12 @@
 <?php
 /**
- * The header
+ * The header for our theme
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
  * @package Aino
- * @since 0.0.1
  */
 
 ?><!DOCTYPE html>
@@ -21,9 +22,7 @@
 
 <body <?php body_class(); ?>>
 
-	<?php
-	wp_body_open();
-	?>
+<?php wp_body_open(); ?>
 
 <div id="page" class="site">
 

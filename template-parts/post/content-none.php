@@ -3,7 +3,6 @@
  * Template part for displaying a message that posts cannot be found
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>

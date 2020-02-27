@@ -3,7 +3,6 @@
  * Aino: Custom CSS
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 /**
@@ -30,10 +29,16 @@ function aino_customizer_css() {
 	.entry-link:hover {
 		background-color: ' . esc_attr( $blogcards_bg_color_hover ) . ';
 	}
-	.btn-outline a,
-	a.btn-outline,
 	.pagination .current {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
+	}
+	.btn-outline a,
+	a.btn-outline {
+		box-shadow: inset 0px 0px 0px 1px ' . esc_attr( $primary_one_color ) . ';
+	}
+	.buttons-bold .btn-outline a,
+	.buttons-bold a.btn-outline {
+		box-shadow: inset 0px 0px 0px 2px ' . esc_attr( $primary_one_color ) . ';
 	}
 	.entry-content .has-primary-one-background-color,
 	.widget_mc4wp_form_widget input[type="submit"],

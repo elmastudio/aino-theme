@@ -3,7 +3,6 @@
  * Aino Theme Customizer
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 /**
@@ -168,6 +167,7 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Styles
 	 */
+
 	// Theme Options - Styles - Button Style.
 	$wp_customize->add_setting(
 		'button_style',
@@ -193,6 +193,44 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Theme Options - Styles - Buttons bold.
+	$wp_customize->add_setting(
+		'buttons_bold',
+		array(
+			'default'           => aino_defaults( 'buttons_bold' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'buttons_bold',
+		array(
+			'label'    => esc_html__( 'Buttons font weight bold', 'aino' ),
+			'section'  => 'aino_styles',
+			'type'     => 'checkbox',
+			'priority' => 2,
+		)
+	);
+
+	// Theme Options - Styles - Buttons uppercase.
+	$wp_customize->add_setting(
+		'buttons_uppercase',
+		array(
+			'default'           => aino_defaults( 'buttons_uppercase' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'buttons_uppercase',
+		array(
+			'label'    => esc_html__( 'Buttons font uppercase', 'aino' ),
+			'section'  => 'aino_styles',
+			'type'     => 'checkbox',
+			'priority' => 3,
+		)
+	);
+
 	// Theme Options - Styles - Form Style.
 	$wp_customize->add_setting(
 		'form_style',
@@ -208,7 +246,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'       => esc_html__( 'Form Border Radius', 'aino' ),
 			'description' => esc_html__( 'Choose the degree of curvature.', 'aino' ),
 			'section'     => 'aino_styles',
-			'priority'    => 2,
+			'priority'    => 4,
 			'type'        => 'select',
 			'choices'     => array(
 				'squared' => esc_html__( 'square', 'aino' ),
@@ -238,6 +276,44 @@ function aino_customize_register( $wp_customize ) {
 			'section'  => 'aino_header',
 			'type'     => 'checkbox',
 			'priority' => 1,
+		)
+	);
+
+	// Theme Options - Header - Primary menu bold.
+	$wp_customize->add_setting(
+		'header_menu_bold',
+		array(
+			'default'           => aino_defaults( 'header_menu_bold' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'header_menu_bold',
+		array(
+			'label'    => esc_html__( 'Bold font in primary menu', 'aino' ),
+			'section'  => 'aino_header',
+			'type'     => 'checkbox',
+			'priority' => 2,
+		)
+	);
+
+	// Theme Options - Header - Primary menu uppercase.
+	$wp_customize->add_setting(
+		'header_menu_uppercase',
+		array(
+			'default'           => aino_defaults( 'header_menu_uppercase' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'header_menu_uppercase',
+		array(
+			'label'    => esc_html__( 'Uppercase font in primary menu', 'aino' ),
+			'section'  => 'aino_header',
+			'type'     => 'checkbox',
+			'priority' => 3,
 		)
 	);
 
@@ -300,6 +376,26 @@ function aino_customize_register( $wp_customize ) {
 			'section'  => 'aino_footer',
 			'type'     => 'checkbox',
 			'priority' => 3,
+		)
+	);
+
+	// Theme Options - Footer - Site info.
+	$wp_customize->add_setting(
+		'footer_siteinfo',
+		array(
+			'default'           => aino_defaults( 'footer_siteinfo' ),
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_siteinfo',
+		array(
+			'label'    => esc_html__( 'Center Align Footer Info', 'aino' ),
+			'section'  => 'aino_footer',
+			'type'     => 'text',
+			'priority' => 4,
 		)
 	);
 

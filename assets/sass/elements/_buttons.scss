@@ -60,11 +60,11 @@ a.btn-outline,
 .header-cta-wrap {
 
 	.btn-outline a {
-		@include btn-s($outline: true);
+		@include btn-s;
 	}
 
 	a {
-		@include btn-s($outline: false);
+		@include btn-s;
 	}
 }
 
@@ -109,17 +109,58 @@ a.btn-outline,
 /* Edit Button */
 .post-edit-link {
 	@include btn;
+	@include btn-s;
 	position: relative;
 	margin-top: $spacing-mobile-4;
 	background: $color__primary;
 	color: $color__white;
 	fill: $color__white;
-	padding: 12px 24px 12px 46px;
-	line-height: 1;
 	width: auto;
-	height: 40px;
+	padding-left: 46px;
+	padding-right: 24px;
+
+	@include breakpoint(xs) {
+		padding-left: 46px;
+	}
 
 	@include breakpoint(l) {
 		margin-top: $spacing-desktop-4;
+	}
+}
+
+/* Customizable Button Options */
+.buttons-bold {
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.btn-outline a,
+	.btn-primary a,
+	a.btn-outline,
+	a.btn-primary,
+	.post-edit-link {
+		font-weight: bold;
+	}
+
+	.btn-outline a,
+	a.btn-outline {
+		box-shadow: inset 0px 0px 0px 2px $color__primary;
+	}
+}
+
+.buttons-uppercase {
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.btn-outline a,
+	.btn-primary a,
+	a.btn-outline,
+	a.btn-primary,
+	.post-edit-link {
+		text-transform: uppercase;
+		@include font-body4;
+		line-height: 19px;
+		letter-spacing: 2px;
 	}
 }

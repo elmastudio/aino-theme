@@ -3,7 +3,6 @@
  * Displays footer widgets if assigned
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 if ( is_active_sidebar( 'footer-1' ) ||

@@ -5,7 +5,6 @@
  * This file demonstrates how to define sanitization callback functions for various data types.
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 /**

@@ -3,7 +3,6 @@
  * The template for displaying the footer
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>
