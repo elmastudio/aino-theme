@@ -5,10 +5,9 @@ __Author:__ elmastudio
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
 __Requires at least:__ 5.0  
 __Tested up to:__ WordPress 5.3.2  
-__Requires PHP:__ 7.3  
-__Stable tag:__ trunk  
-__License:__ GPLv3 or later  
-__License URI:__ http://www.gnu.org/licenses/gpl-3.0.html  
+__Requires PHP:__ 7.3    
+__License:__ GPLv2 or later  
+__License URI:__ https://www.gnu.org/licenses/gpl-2.0.html  
 
 ## Changelog  
 
