@@ -631,7 +631,6 @@ ul.primary-menu {
 	}
 }
 
-
 .modal-menu a:focus,
 .modal-menu a:hover,
 .modal-menu li.current-menu-item > .ancestor-wrapper > a,
@@ -658,7 +657,6 @@ button.sub-menu-toggle svg {
 button.sub-menu-toggle.active svg {
 	transform: rotate(270deg);
 }
-
 
 .menu-wrapper {
 
@@ -731,7 +729,6 @@ button.sub-menu-toggle.active svg {
 	.menu-wrapper.is-animating .toggling-target {
 		transition-duration: 1ms !important;
 	}
-
 }
 
 @include breakpoint(l) {

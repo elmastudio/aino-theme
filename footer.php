@@ -29,6 +29,8 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<div id="top-of-site-pixel-anchor"></div>
+
 <?php wp_footer(); ?>
 
 </body>

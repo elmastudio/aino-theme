@@ -49,6 +49,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * New: Bold and uppercase primary menu font option in Customize/Theme/Header
 * New: Bold and uppercase button font option in Customize/Theme/Styles
 * New: Custom Footer Copyright text option in Customize/Theme/Footer, Fixes #70
+* New: Sticky Header Call to action button option.
 
 = 0.2.1 =
 * Enhance: Button and form styles
