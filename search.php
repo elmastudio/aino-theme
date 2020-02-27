@@ -3,8 +3,6 @@
  * The template for displaying search results pages
  *
  * @package Aino
- * @since Aino 0.0.1
- * @version 0.0.1
  */
 
 get_header(); ?>

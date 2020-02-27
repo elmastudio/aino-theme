@@ -3,7 +3,6 @@
  * The template for displaying Related Posts
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>

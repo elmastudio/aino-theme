@@ -3,7 +3,6 @@
  * SVG icons related functions and filters
  *
  * @package Aino
- * @since 0.0.1
  */
 
 /**

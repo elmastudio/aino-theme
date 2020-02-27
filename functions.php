@@ -5,7 +5,6 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package Aino
- * @since 0.0.1
  */
 
 if ( ! function_exists( 'aino_setup' ) ) :
@@ -299,6 +298,16 @@ function aino_fonts_url() {
 	}
 
 	return esc_url_raw( $fonts_url );
+}
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+
+	/**
+	 * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
+	 */
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
 }
 
 /**

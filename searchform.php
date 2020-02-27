@@ -3,8 +3,6 @@
  * Displays the search form
  *
  * @package Aino
- * @since Aino 0.0.1
- * @version 0.0.1
  */
 
 ?>

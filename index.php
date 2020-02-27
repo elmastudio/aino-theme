@@ -5,7 +5,6 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 get_header(); ?>

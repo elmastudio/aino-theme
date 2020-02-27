@@ -1,3 +1,4 @@
+
 /*	-----------------------------------------------------------------------------------------------
 	Namespace
 --------------------------------------------------------------------------------------------------- */
@@ -797,4 +798,22 @@ function ainoFindParents(target, query) {
 	traverse(target);
 
 	return parents;
+}
+
+/*	-----------------------------------------------------------------------------------------------
+	Sticky CTA Header Button
+--------------------------------------------------------------------------------------------------- */
+if (
+	"IntersectionObserver" in window &&
+	"IntersectionObserverEntry" in window &&
+	"intersectionRatio" in window.IntersectionObserverEntry.prototype
+) {
+	let observer = new IntersectionObserver(entries => {
+		if (entries[0].boundingClientRect.y < 0) {
+			document.body.classList.add("has-sticky-cta");
+		} else {
+			document.body.classList.remove("has-sticky-cta");
+		}
+	});
+	observer.observe(document.querySelector("#top-of-site-pixel-anchor"));
 }

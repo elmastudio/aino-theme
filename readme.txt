@@ -1,7 +1,7 @@
 === Aino ===
 Author: elmastudio
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
-Requires at least: 5.3
+Requires at least: 5.0
 Tested up to: WordPress 5.3.2
 Requires PHP: 7.3
 Stable tag: trunk
@@ -43,6 +43,14 @@ Aino WordPress Theme bundles the following third-party resources:
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 0.3.0 =
+* Enhance: Backward compatibility for wp_body_open hook, Fixes #65
+* New: Bold and uppercase primary menu font option in Customize/Theme/Header
+* New: Bold and uppercase button font option in Customize/Theme/Styles
+* New: Custom Footer Copyright text option in Customize/Theme/Footer, Fixes #70
+* New: Sticky Header Call to action button option.
+* New: Default button text color in Customize/Colors
 
 = 0.2.1 =
 * Enhance: Button and form styles
@@ -87,14 +95,14 @@ Aino WordPress Theme bundles the following third-party resources:
 * Enhance: Featured image hovers.
 
 = 0.0.6 =
-* New: Create Aino blocks scss file. (14-09-2019)
+* New: Create Aino blocks scss file.
 * Enhance: Block styling.
 * Enhance: Customizer setting descriptions.
 * Enhance: Hide header search form by default (Activate via the Customizer.)
 * Enhance: Readme information.
 
 = 0.0.5 =
-* Enhance: Page and post title hyphenation. (05-08-2019)
+* Enhance: Page and post title hyphenation.
 * Enhance: Updated license information.
 * Enhance: General styling.
 * Enhance: Default WordPress block styling. Fixes #27
@@ -103,14 +111,14 @@ Aino WordPress Theme bundles the following third-party resources:
 * New: Theme description.
 
 = 0.0.4 =
-* Fix: Add missing theme domain to functions. (25-07-2019)
+* Fix: Add missing theme domain to functions.
 * Fix: Main background color Customizer setting. Fixes #13
 * Enhance: General styling. Fixes #19
 * Enhance: Gutenberg button block styling.
 * Enhance: Custom theme block colors.
 
 = 0.0.3 =
-* Fix: Blog styling. (23-07-2019)
+* Fix: Blog styling.
 * Enhance: Update gitignore.
 * Fix: Mobile Menu hamburger button and dropdown menus.
 * Enhance: Post edit button styling.

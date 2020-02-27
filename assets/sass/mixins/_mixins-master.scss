@@ -5,7 +5,6 @@ $var: true !default; // Can be overridden elsewhere
 	* Responsive Breakpoints
 
 		 @include breakpoint(600)	{ } xs
-		 @include breakpoint(776)	{ } s
 		 @include breakpoint(840)	{ } m
 		 @include breakpoint(1248)	{ } l
 		 @include breakpoint(1296)	{ } xl
@@ -198,7 +197,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-outline {
 	color: $color__primary;
 	fill: $color__primary;
-	border: 1px solid $color__primary;
+	box-shadow: inset 0px 0px 0px 1px $color__primary;
 
 	&:hover {
 		color: $color__primary;
@@ -221,41 +220,19 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 // Button sizes
-@mixin btn-s($outline: true) {
-
-	@if $outline == true {
-		padding-top: 18px;
-		padding-bottom: 17px;
-	} @else {
-		padding-top: 19px;
-		padding-bottom: 18px;
-	}
+@mixin btn-s {
+	padding-top: 11px;
+	padding-bottom: 10px;
 
 	@include breakpoint(xs) {
 		padding-left: $spacing-3;
 		padding-right: $spacing-3;
 	}
-
-	@include breakpoint(m) {
-		@if $outline == true {
-			padding-top: 10px;
-			padding-bottom: 9px;
-		} @else {
-			padding-top: 11px;
-			padding-bottom: 10px;
-		}
-	}
 }
 
-@mixin btn-m($outline: true) {
-
-	@if $outline == true {
-		padding-top: 18px;
-		padding-bottom: 17px;
-	} @else {
+@mixin btn-m {
 		padding-top: 19px;
 		padding-bottom: 18px;
-	}
 
 	@include breakpoint(xs) {
 		padding-left: $spacing-desktop-4;
@@ -263,15 +240,9 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-@mixin btn-l($outline: true) {
-
-	@if $outline == true {
-		padding-top: 18px;
-		padding-bottom: 17px;
-	} @else {
+@mixin btn-l {
 		padding-top: 19px;
 		padding-bottom: 18px;
-	}
 
 	@include breakpoint(xs) {
 		padding-left: $spacing-desktop-5;
@@ -279,13 +250,8 @@ $var: true !default; // Can be overridden elsewhere
 	}
 
 	@include breakpoint(m) {
-		@if $outline == true {
-			padding-top: 26px;
-			padding-bottom: 25px;
-		} @else {
-			padding-top: 27px;
-			padding-bottom: 26px;
-		}
+		padding-top: 27px;
+		padding-bottom: 26px;
 	}
 }
 

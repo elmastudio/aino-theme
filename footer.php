@@ -3,7 +3,6 @@
  * The template for displaying the footer
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>
@@ -29,6 +28,8 @@
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<div id="top-of-site-pixel-anchor"></div>
 
 <?php wp_footer(); ?>
 

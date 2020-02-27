@@ -24,6 +24,12 @@ input[type="color"] {
 	@include input-placeholder {
 		color: #8e8e8e;
 	}
+
+	&:focus,
+	&:active {
+		outline: 0;
+		border: 1px solid #707070;
+	}
 }
 
 textarea {

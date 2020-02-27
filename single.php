@@ -3,7 +3,6 @@
  * The template for displaying all single posts
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 get_header(); ?>

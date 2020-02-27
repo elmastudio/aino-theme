@@ -5,7 +5,6 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package Aino
- * @since 0.0.1
  */
 
 /**
@@ -498,13 +497,30 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'form-round';
 	}
 
-	// Customizer Options - Header.
+	if ( true === get_theme_mod( 'buttons_bold', aino_defaults( 'button_bold' ) ) ) {
+		$classes[] = 'buttons-bold';
+	}
+
+	if ( true === get_theme_mod( 'buttons_uppercase', aino_defaults( 'button_uppercase' ) ) ) {
+		$classes[] = 'buttons-uppercase';
+	}
+
+	// Customizer Options - Site Identity.
 	if ( true === get_theme_mod( 'sitedescription', aino_defaults( 'sitedescription' ) ) ) {
 		$classes[] = 'tagline-hide';
 	}
 
+	// Customizer Options - Header.
 	if ( true === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
 		$classes[] = 'has-header-search';
+	}
+
+	if ( true === get_theme_mod( 'header_menu_bold', aino_defaults( 'header_menu_bold' ) ) ) {
+		$classes[] = 'menu-bold';
+	}
+
+	if ( true === get_theme_mod( 'header_menu_uppercase', aino_defaults( 'header_menu_uppercase' ) ) ) {
+		$classes[] = 'menu-uppercase';
 	}
 
 	// Customizer Options - Footer.

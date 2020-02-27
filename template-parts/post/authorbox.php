@@ -3,7 +3,6 @@
  * The template for the displaying Author bio.
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 $avatar_l  = apply_filters( 'aino_author_bio_avatar_size', 96 );

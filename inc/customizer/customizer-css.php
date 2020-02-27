@@ -3,7 +3,6 @@
  * Aino: Custom CSS
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 /**
@@ -13,6 +12,7 @@ function aino_customizer_css() {
 
 	$main_bg_color            = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
 	$primary_one_color        = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
+	$btn_text_color           = get_theme_mod( 'btn_text_color', aino_defaults( 'btn_text_color' ) );
 	$background_color         = get_theme_mod( 'background_color', aino_defaults( 'background_color' ) );
 	$blogcards_bg_color       = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
 	$blogcards_bg_color_hover = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
@@ -30,10 +30,16 @@ function aino_customizer_css() {
 	.entry-link:hover {
 		background-color: ' . esc_attr( $blogcards_bg_color_hover ) . ';
 	}
-	.btn-outline a,
-	a.btn-outline,
 	.pagination .current {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
+	}
+	.btn-outline a,
+	a.btn-outline {
+		box-shadow: inset 0px 0px 0px 1px ' . esc_attr( $primary_one_color ) . ';
+	}
+	.buttons-bold .btn-outline a,
+	.buttons-bold a.btn-outline {
+		box-shadow: inset 0px 0px 0px 2px ' . esc_attr( $primary_one_color ) . ';
 	}
 	.entry-content .has-primary-one-background-color,
 	.widget_mc4wp_form_widget input[type="submit"],
@@ -135,6 +141,10 @@ function aino_customizer_css() {
 	a.btn-outline:hover,
 	.btn-outline a:hover {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
+	}
+	button, input[type="button"], input[type="submit"], .btn-primary a, a.btn-primary, .post-edit-link {
+		color: ' . esc_attr( $btn_text_color ) . ';
+		fill: ' . esc_attr( $btn_text_color ) . ';
 	}
 	.site-footer {
 		background-color: ' . esc_attr( $footer_bg_color ) . ';

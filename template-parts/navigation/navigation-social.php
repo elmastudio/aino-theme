@@ -3,7 +3,6 @@
  * Displays social navigation
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>

@@ -5,7 +5,6 @@
  * @link https://jetpack.com/
  *
  * @package Aino
- * @since 0.0.1
  */
 
 /**

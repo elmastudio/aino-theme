@@ -3,7 +3,6 @@
  * The template for displaying The Single Post Nav
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 ?>

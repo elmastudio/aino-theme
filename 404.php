@@ -3,7 +3,6 @@
  * The template for displaying 404 pages (not found)
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 get_header(); ?>

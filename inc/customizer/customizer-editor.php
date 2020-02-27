@@ -3,7 +3,6 @@
  * Aino: Custom CSS for the editor.
  *
  * @package Aino
- * @since Aino 0.0.1
  */
 
 /**
