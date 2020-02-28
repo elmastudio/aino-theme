@@ -1,12 +1,12 @@
 === Aino ===
-Author: elmastudio
+Contributors: elmastudio
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
 Tested up to: WordPress 5.3.2
 Requires PHP: 7.3
-Stable tag: trunk
-License: GPL-3.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+Stable tag: 0.3.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Aino makes it easy to create modern websites in the new Gutenberg editor.
 
@@ -18,7 +18,7 @@ For more information and helpful resources about Aino go to https://wpaino.com.
 
 == Copyright ==
 
-Aino WordPress Theme, Copyright 2019 Elmastudio Ltd.
+Aino WordPress Theme, Copyright 2020 Elmastudio Ltd.
 Aino is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -38,11 +38,14 @@ Aino WordPress Theme bundles the following third-party resources:
 * normalize.css, © 2012-2019 Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
 * Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
-* WPGulp, © Ahmad Awais, MIT license, https://github.com/ahmadawais/WPGulp
-* Roboto Font, © Christian Robertson, Apache License, Version 2.0, https://fonts.google.com/specimen/Roboto
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 0.3.1 =
+* Enhance: Adds custom background color to editor and block color palette
+* Enhance: Adds custom button text color to editor
+* Enhance: Add media-query for switch to desktop header
 
 = 0.3.0 =
 * Enhance: Backward compatibility for wp_body_open hook, Fixes #65

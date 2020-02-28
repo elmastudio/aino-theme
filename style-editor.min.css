@@ -7,7 +7,6 @@ body.gutenberg-editor-page .editor-block-list__block[data-align="wide"]{max-widt
 body .wp-block[data-align="full"]{max-width:none}
 body.gutenberg-editor-page .editor-block-list__block[data-align="full"]{max-width:none !important;width:auto !important}
 .tpl-fullwidth .wp-block{max-width:1200px}
-.wp-block{max-width:710px}
 .wp-block .wp-block{width:auto}
 *[class^="wp-block-"].alignleft,*[class^="wp-block-"].alignright{max-width:50%}
 .aligncenter,.alignfull,.alignwide{clear:both}

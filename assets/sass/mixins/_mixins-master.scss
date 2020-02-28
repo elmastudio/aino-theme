@@ -4,35 +4,41 @@ $var: true !default; // Can be overridden elsewhere
 /*--------------------------------------------------------------
 	* Responsive Breakpoints
 
-		 @include breakpoint(600)	{ } xs
+		 @include breakpoint(600)	{ } s
 		 @include breakpoint(840)	{ } m
 		 @include breakpoint(1248)	{ } l
 		 @include breakpoint(1296)	{ } xl
 		 @include breakpoint(1600)	{ } xxl
+		 @include breakpoint(1140)	{ } header
 	* ------------------------------------------------------------ */
 @mixin breakpoint($class) {
-	@if $class == xs {
-		@media (min-width: 37.500em) {
+	@if $class == s {
+		@media (min-width: 37.50em) {
 			@content;
 		}
 	} @else
 	if $class == m {
-		@media (min-width: 48.500em) {
+		@media (min-width: 48.50em) {
 			@content;
 		}
 	} @else
 	if $class == l {
-		@media (min-width: 76.500em) {
+		@media (min-width: 76.50em) {
 			@content;
 		}
 	} @else
 	if $class == xl {
-		@media (min-width: 81.000em) {
+		@media (min-width: 81.00em) {
 			@content;
 		}
 	} @else
 	if $class == xxl {
-		@media (min-width: 100.000em) {
+		@media (min-width: 100.00em) {
+			@content;
+		}
+	} @else
+	if $class == header {
+		@media (min-width: 71.25em) {
 			@content;
 		}
 	} @else {
@@ -178,7 +184,7 @@ $var: true !default; // Can be overridden elsewhere
 	@include transition-default;
 	width: 100%;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		width: auto;
 	}
 
@@ -224,7 +230,7 @@ $var: true !default; // Can be overridden elsewhere
 	padding-top: 11px;
 	padding-bottom: 10px;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $spacing-3;
 		padding-right: $spacing-3;
 	}
@@ -234,7 +240,7 @@ $var: true !default; // Can be overridden elsewhere
 		padding-top: 19px;
 		padding-bottom: 18px;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $spacing-desktop-4;
 		padding-right: $spacing-desktop-4;
 	}
@@ -244,7 +250,7 @@ $var: true !default; // Can be overridden elsewhere
 		padding-top: 19px;
 		padding-bottom: 18px;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $spacing-desktop-5;
 		padding-right: $spacing-desktop-5;
 	}
