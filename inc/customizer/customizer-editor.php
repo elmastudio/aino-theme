@@ -11,26 +11,29 @@
 function aino_editor_customizer_generated_values() {
 
 	// Retrieve colors from the Customizer.
-	$main_bg_color             = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
-	$primary_one_color         = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
-	$blogcards_bg_color        = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
-	$blogcards_bg_color_hover  = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
-	$footer_bg_color           = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );
-	$comments_bg_color         = get_theme_mod( 'comments_bg_color', aino_defaults( 'comments_bg_color' ) );
+	$main_bg_color     = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
+	$primary_one_color = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
+	$btn_text_color    = get_theme_mod( 'btn_text_color', aino_defaults( 'btn_text_color' ) );
 
 	// Build styles.
 	$css = '
-	.editor-block-list__layout .editor-block-list__block a:hover,
-	.editor-block-list__layout .editor-block-list__block a:active,
-	.editor-block-list__layout .editor-block-list__block .wp-block-heading a:hover,
-	.editor-block-list__layout .editor-block-list__block .wp-block-image figcaption a:hover {
+	.editor-styles-wrapper {
+		background-color: ' . esc_attr( $main_bg_color ) . ';
+	}
+	.editor-styles-wrapper p a:hover,
+	.editor-styles-wrapper blockquote:not(.has-text-color):hover,
+	.wp-block-pullquote__citation a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
 
-	.editor-block-list__layout .editor-block-list__block a:hover {
-		box-shadow: inset 0 -0.06em 0 ' . esc_attr( $primary_one_color ) . ';
-		box-shadow: inset 0 -0.07em 0 ' . esc_attr( $primary_one_color ) . ';
+	.block-editor__container .editor-styles-wrapper .wp-block-button .wp-block-button__link {
+		background-color: ' . esc_attr( $primary_one_color ) . ';
+		color: ' . esc_attr( $btn_text_color ) . ';
+	}
+
+	.block-editor__container .editor-styles-wrapper .wp-block-button:not(.has-text-color):not(.is-style-outline) [data-rich-text-placeholder]:after {
+		color: ' . esc_attr( $btn_text_color ) . ';
 	}
 
 	';

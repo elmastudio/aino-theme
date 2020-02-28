@@ -141,7 +141,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 
 		// Editor color palette.
 		$color_primary_one = get_theme_mod( 'primary_one_color' );
-		$color_primary_two = get_theme_mod( 'primary_two_color' );
+		$main_bg_color     = get_theme_mod( 'main_bg_color' );
 
 		add_theme_support(
 			'editor-color-palette',
@@ -164,7 +164,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'  => __( 'Background', 'aino' ),
 					'slug'  => 'background',
-					'color' => '#f7f7ff',
+					'color' => $main_bg_color,
 				),
 				array(
 					'name'  => __( 'Border', 'aino' ),

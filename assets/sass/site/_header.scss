@@ -67,7 +67,7 @@
 			height: $spacing-mobile-5;
 		}
 
-		@include breakpoint(l) {
+		@include breakpoint(header) {
 			max-height: 100%;
 
 			img {
@@ -84,7 +84,7 @@
 	margin: $spacing-2 0 0 0;
 	padding: 0;
 
-	@include breakpoint(l) {
+	@include breakpoint(header) {
 		margin: 0 0 0 $spacing-desktop-4;
 		padding: 0;
 	}
@@ -122,7 +122,7 @@
 	margin: 0;
 	padding: $spacing-mobile-5 0;
 
-	@include breakpoint(l) {
+	@include breakpoint(header) {
 		display: block;
 		padding: 0;
 	}
@@ -134,7 +134,7 @@
 	.has-nav-main & {
 		margin-top: $spacing-mobile-5;
 
-		@include breakpoint(l) {
+		@include breakpoint(header) {
 			margin-top: 0;
 			padding-left: $spacing-desktop-4;
 		}
@@ -177,7 +177,7 @@
 	position: relative;
 	padding: 0;
 
-	@include breakpoint(l) {
+	@include breakpoint(header) {
 		display: block;
 	}
 
@@ -189,7 +189,7 @@
 		-webkit-box-align: center;
 		align-items: center;
 		flex-direction: column;
-		@include breakpoint(l) {
+		@include breakpoint(header) {
 			flex-direction: row;
 		}
 	}
@@ -204,17 +204,17 @@
 			padding: 0;
 		}
 
-		@include breakpoint(xs) {
+		@include breakpoint(s) {
 			width: auto;
 		}
-		@include breakpoint(l) {
+		@include breakpoint(header) {
 			padding: 0 $spacing-2 0 0;
 		}
 	}
 
 	.has-nav-main &,
 	.has-nav-social & {
-		@include breakpoint(l) {
+		@include breakpoint(header) {
 			padding: 0 0 0 $spacing-desktop-4;
 		}
 	}
@@ -222,7 +222,7 @@
 	.has-nav-social & {
 		padding-top: $spacing-mobile-5;
 
-		@include breakpoint(l) {
+		@include breakpoint(header) {
 			padding-top: 0;
 		}
 	}
@@ -239,12 +239,12 @@
 	padding-left: $spacing-3;
 	padding-right: $spacing-3;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $spacing-mobile-9;
 		padding-right: $spacing-mobile-9;
 	}
 
-	@include breakpoint(l) {
+	@include breakpoint(header) {
 		@include flexbox;
 		align-items: center;
 		justify-content: flex-end;
@@ -312,7 +312,7 @@
 	width: $spacing-mobile-5;
 	height: $spacing-mobile-5;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		right: $spacing-mobile-9;
 	}
 
@@ -732,7 +732,7 @@ button.sub-menu-toggle.active svg {
 	}
 }
 
-@include breakpoint(l) {
+@include breakpoint(header) {
 
 	.header-navigation-wrapper {
 		align-items: center;

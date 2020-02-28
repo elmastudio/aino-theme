@@ -56,7 +56,7 @@ max-width: $col5;
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
@@ -75,7 +75,7 @@ max-width: $col5;
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
@@ -95,7 +95,7 @@ max-width: $col5;
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
@@ -175,7 +175,7 @@ max-width: $col5;
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
 
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
@@ -267,7 +267,7 @@ max-width: $col5;
 .single-post .related-post {
 	width: 100%;
 	flex-grow: 0;
-	@include breakpoint(xs) {
+	@include breakpoint(s) {
 		flex-basis: calc(50% - 32px);
 		margin-left: $spacing-2;
 		margin-right: $spacing-2;

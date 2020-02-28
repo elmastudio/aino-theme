@@ -48,7 +48,6 @@ body {
 /** === Content Width === */
 
 .wp-block {
-	max-width: 710px;
 
 	// Only the top level blocks need specific widths, therefore override for every nested block.
 	.wp-block {
@@ -58,7 +57,7 @@ body {
 
 /** === Left and Right Alignment on Small Screens === */
 
-@include breakpoint(xs) {
+@include breakpoint(s) {
 	*[class^="wp-block-"].alignleft,
 	*[class^="wp-block-"].alignright {
 		max-width: 75%;
