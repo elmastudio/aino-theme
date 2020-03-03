@@ -11,7 +11,7 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
-= 0.3.1 =
+### 0.3.1
 **New:** Custom editor gradient presets  
 **Enhance:** Adds custom background color to editor and block color palette  
 **Enhance:** Adds custom button text color to editor  
