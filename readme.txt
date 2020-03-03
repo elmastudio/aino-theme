@@ -6,7 +6,7 @@ Tested up to: WordPress 5.3.2
 Requires PHP: 7.3
 Stable tag: 0.3.1
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Aino makes it easy to create modern websites in the new Gutenberg editor.
 
@@ -43,9 +43,11 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 0.3.1 =
+* New: Custom editor gradient presets
 * Enhance: Adds custom background color to editor and block color palette
 * Enhance: Adds custom button text color to editor
 * Enhance: Add media-query for switch to desktop header
+* Enhance: German theme translations
 
 = 0.3.0 =
 * Enhance: Backward compatibility for wp_body_open hook, Fixes #65

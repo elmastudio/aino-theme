@@ -387,7 +387,7 @@ ul.primary-menu {
 	> li {
 		margin: 0 $spacing-desktop-4 0 0;
 
-		:last-child {
+		&:last-child {
 			margin-right: 0;
 		}
 

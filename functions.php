@@ -184,6 +184,102 @@ if ( ! function_exists( 'aino_setup' ) ) :
 			)
 		);
 
+		add_theme_support(
+			'editor-gradient-presets',
+			array(
+				array(
+					'name'     => __( 'Grayish blue to dark grayish blue', 'aino' ),
+					'gradient' => 'linear-gradient(0deg,rgb(91, 108, 114) 0%,rgb(60, 68, 72) 100%)',
+					'slug'     => 'grayish-blue-to-dark-grayish-blue',
+				),
+				array(
+					'name'     => __( 'Soft orange to desaturated dark cyan', 'aino' ),
+					'gradient' => 'linear-gradient(270deg,rgb(67, 92, 103) 0%, rgb(114, 164, 163) 46%,rgb(251, 162, 137) 74%, rgb(252, 202, 164) 100%)',
+					'slug'     => 'soft-orange-to-desaturated-dark-cyan',
+				),
+				array(
+					'name'     => __( 'Light grayish magenta to very dark grayish pink', 'aino' ),
+					'gradient' => 'linear-gradient(0deg,rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%,rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%)',
+					'slug'     => 'light-grayish-magenta-to-very-dark-grayish-pink',
+				),
+				array(
+					'name'     => __( 'Light grayish red to dark red', 'aino' ),
+					'gradient' => 'linear-gradient(0deg,rgb(143, 34, 40) 0%, rgb(250, 110, 115) 50%, rgb(219, 191, 193) 100%)',
+					'slug'     => 'light-grayish-red-to-dark-red',
+				),
+				array(
+					'name'     => __( 'Slightly desaturated cyan to very soft red', 'aino' ),
+					'gradient' => 'linear-gradient(0deg,rgb(129, 195, 198) 0%, rgb(251, 198, 167) 48%, rgb(251, 198, 167) 100%)',
+					'slug'     => 'slightly-desaturated-cyan-to-very-soft-red',
+				),
+				array(
+					'name'     => __( 'Very soft orange to very soft pink', 'aino' ),
+					'gradient' => 'radial-gradient(circle at bottom, rgb(251, 219, 190) 0%, rgb(252, 170, 161) 26%, rgb(250, 152, 162) 54%,rgb(246, 182, 211) 75%, rgb(250, 232, 243) 100%)',
+					'slug'     => 'very-soft-orange-to-very-soft-pink',
+				),
+				array(
+					'name'     => __( 'Grayish violet to soft orange', 'aino' ),
+					'gradient' => 'linear-gradient(180deg, rgb(173, 160, 191) 0%, rgb(225, 205, 236) 29%, rgb(243, 206, 225) 51%, rgb(241, 196, 141) 72%, rgb(240, 193, 97) 100%)',
+					'slug'     => 'grayish-violet-to-soft-orange',
+				),
+				array(
+					'name'     => __( 'Light grayish red to dark grayish blue', 'aino' ),
+					'gradient' => 'linear-gradient(180deg, rgb(252, 202, 210) 0%, rgb(222, 158, 167) 46%, rgb(118, 119, 135) 100%)',
+					'slug'     => 'light-grayish-red-to-dark-grayish-blue',
+				),
+				array(
+					'name'     => __( 'Light grayish red to very soft blue', 'aino' ),
+					'gradient' => 'linear-gradient(135deg, rgb(237, 204, 211) 0%, rgb(177, 181, 225) 100%)',
+					'slug'     => 'light-grayish-red-to-very-soft-blue',
+				),
+				array(
+					'name'     => __( 'Soft blue to lime green', 'aino' ),
+					'gradient' => 'linear-gradient(0deg, rgb(104, 134, 254) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 61%, rgb(213, 233, 207) 75%, rgb(8, 179, 82) 100%)',
+					'slug'     => 'soft-blue-to-lime-green',
+				),
+				array(
+					'name'     => __( 'Soft blue to dark moderate violet', 'aino' ),
+					'gradient' => 'linear-gradient(135deg, rgb(103, 125, 239) 0%, rgb(117, 72, 166) 100%)',
+					'slug'     => 'soft-blue-to-dark-moderate-violet',
+				),
+				array(
+					'name'     => __( 'Soft red to very soft blue', 'aino' ),
+					'gradient' => 'linear-gradient(0deg, rgb(250, 110, 90) 0%, rgb(255, 202, 192) 24%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 62%, rgb(223, 227, 255) 77%, rgb(157, 144, 250) 100%)',
+					'slug'     => 'soft-red-to-very-soft-blue',
+				),
+				array(
+					'name'     => __( 'Dark blue to mostly black blue', 'aino' ),
+					'gradient' => 'radial-gradient(circle at bottom, rgb(19, 20, 143) 0%, rgb(13, 11, 24) 100%)',
+					'slug'     => 'dark-blue-to-mostly-black-blue',
+				),
+				array(
+					'name'     => __( 'Very soft blue to dark grayish blue', 'aino' ),
+					'gradient' => 'radial-gradient(circle at bottom, rgb(153, 203, 233) 0%, rgb(121, 132, 157) 100%)',
+					'slug'     => 'very-soft-blue-to-dark-grayish-blue',
+				),
+				array(
+					'name'     => __( 'Soft pink to mostly pure orange', 'aino' ),
+					'gradient' => 'radial-gradient(circle at bottom, rgb(253, 79, 156) 0%, rgb(254, 132, 0) 100%)',
+					'slug'     => 'soft-pink-to-mostly-pure-orange',
+				),
+				array(
+					'name'     => __( 'Bright cyan to soft magenta', 'aino' ),
+					'gradient' => 'linear-gradient( 0deg, rgb(48, 203, 247) 0%, rgb(254, 128, 254) 100%)',
+					'slug'     => 'bright-cyan-to-soft-magenta',
+				),
+				array(
+					'name'     => __( 'Light red to very light pink', 'aino' ),
+					'gradient' => 'linear-gradient( 90deg, rgb(255, 131, 92) 0%, rgb(255, 148, 193) 100%)',
+					'slug'     => 'light-red-to-very-light-pink',
+				),
+				array(
+					'name'     => __( 'Very soft violet to very soft pink', 'aino' ),
+					'gradient' => 'linear-gradient( 90deg, rgb(198, 163, 245) 0%, rgb(248, 162, 199) 100%)',
+					'slug'     => 'very-soft-violet-to-very-soft-pink',
+				),
+			)
+		);
+
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 	}
@@ -197,6 +293,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
  *
  * @global int $content_width Content width.
  */
+
 function aino_content_width() {
 	// This variable is intended to be overruled from themes.
 	// phpcs:disable WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
@@ -264,7 +361,6 @@ function aino_get_custom_logo( $html ) {
 	}
 
 	return $html;
-
 }
 
 add_filter( 'get_custom_logo', 'aino_get_custom_logo' );
