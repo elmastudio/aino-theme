@@ -11,6 +11,13 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
+= 0.3.1 =
+**New:** Custom editor gradient presets  
+**Enhance:** Adds custom background color to editor and block color palette  
+**Enhance:** Adds custom button text color to editor  
+**Enhance:** Add media-query for switch to desktop header  
+**Enhance:** German theme translations  
+
 ### 0.3.0  
 **Enhance:** Backward compatibility for wp_body_open hook, Fixes #65  
 **New:** Bold and uppercase primary menu font option in Customize/Theme/Header  
