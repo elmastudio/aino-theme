@@ -141,6 +141,25 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Typography
 	 */
+	// Theme Options - Typography - Disable Google Fonts.
+	$wp_customize->add_setting(
+		'disable_googlefonts',
+		array(
+			'default'           => aino_defaults( 'disable_googlefonts' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'disable_googlefonts',
+		array(
+			'label'    => esc_html__( 'Disable Google fonts in theme', 'aino' ),
+			'section'  => 'aino_typography',
+			'type'     => 'checkbox',
+			'priority' => 1,
+		)
+	);
+
 	// Theme Options - Typography - Headline Font Weight.
 	$wp_customize->add_setting(
 		'heading_fontweight',
@@ -155,8 +174,8 @@ function aino_customize_register( $wp_customize ) {
 		array(
 			'label'    => esc_html__( 'Heading Font Weight', 'aino' ),
 			'section'  => 'aino_typography',
-			'priority' => 2,
 			'type'     => 'select',
+			'priority' => 2,
 			'choices'  => array(
 				'regular' => esc_html__( 'regular', 'aino' ),
 				'bold'    => esc_html__( 'bold', 'aino' ),
@@ -793,7 +812,51 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Colors - Primary.
+	// Colors - Text One.
+	$wp_customize->add_setting(
+		'text_one_color',
+		array(
+			'default'           => aino_defaults( 'text_one_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'text_one_color',
+			array(
+				'label'       => esc_html__( 'Text One', 'aino' ),
+				'description' => esc_html__( 'The heading text color.', 'aino' ),
+				'section'     => 'colors',
+				'priority'    => 3,
+			)
+		)
+	);
+
+	// Colors - Text Two.
+	$wp_customize->add_setting(
+		'text_two_color',
+		array(
+			'default'           => aino_defaults( 'text_two_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'text_two_color',
+			array(
+				'label'       => esc_html__( 'Text Two', 'aino' ),
+				'description' => esc_html__( 'The default text color.', 'aino' ),
+				'section'     => 'colors',
+				'priority'    => 4,
+			)
+		)
+	);
+
+	// Colors - Button Text Color.
 	$wp_customize->add_setting(
 		'btn_text_color',
 		array(
@@ -809,7 +872,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Button Text', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 3,
+				'priority' => 5,
 			)
 		)
 	);
@@ -830,7 +893,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Footer Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 4,
+				'priority' => 6,
 				'settings' => 'footer_bg_color',
 			)
 		)
@@ -852,7 +915,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 5,
+				'priority' => 7,
 				'settings' => 'blogcards_bg_color',
 			)
 		)
@@ -874,7 +937,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background on Hover', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 6,
+				'priority' => 8,
 				'settings' => 'blogcards_bg_color_hover',
 			)
 		)
@@ -896,7 +959,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Comments Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 7,
+				'priority' => 9,
 			)
 		)
 	);

@@ -5,9 +5,10 @@ input,
 select,
 table,
 textarea,
-.post-navigation .nav-title span {
+.post-navigation .nav-title span,
+.entry-content .has-s-font-size {
 	@include font-body;
-	@include font-body3;
+	@include font-body-s;
 	color: $color__text_two;
 }
 
@@ -19,20 +20,20 @@ textarea,
 .entry-content .has-extrasmall-font-size,
 .entry-content .has-xs-font-size,
 .entry-content .sharedaddy h3.sd-title {
-	@include font-body4;
+	@include font-body-xs;
 }
 
 .hentry .entry-summary {
 
 	.blog-2-column & {
 		@include breakpoint(l) {
-			@include font-body3;
+			@include font-body-s;
 		}
 	}
 
 	.blog-1-column & {
 		@include breakpoint(m) {
-			@include font-body2;
+			@include font-body-m;
 		}
 	}
 }
@@ -41,20 +42,29 @@ textarea,
 .hentry ol,
 .hentry ul,
 .entry-cats,
-.page-header .description p {
-	@include font-body2;
+.page-header .description p,
+.entry-content .has-m-font-size {
+	@include font-body-m;
 }
 
-.entry-content .has-large-font-size,
+.entry-content .has-l-font-size,
 .entry-content .intro {
-	@include font-body1;
+	@include font-body-l;
+}
+
+.entry-content .has-xl-font-size {
+	@include font-body-xl;
+}
+
+.entry-content .has-xxl-font-size {
+	@include font-body-xxl;
 }
 
 .comment-metadata,
 .comment-notes,
 .logged-in-as,
 .entry-content .has-xxs-font-size {
-	@include font-body5;
+	@include font-body-xxs;
 }
 
 /* Heading Font Styles */
@@ -187,7 +197,7 @@ blockquote cite,
 	text-align: left;
 	display: block;
 	padding: $spacing-2 0 0;
-	@include font-body4;
+	@include font-body-xs;
 	font-style: normal;
 	font-weight: bold;
 }

@@ -83,7 +83,7 @@
 .post-thumb img {
 
 	.single-post & {
-		border-radius: $border-radius-m;
+		border-radius: 0;
 	}
 
 	.single-post.featuredimg-radius-none & {
@@ -92,6 +92,10 @@
 
 	.single-post.featuredimg-radius-s & {
 		border-radius: $border-radius-s;
+	}
+
+	.single-post.featuredimg-radius-m & {
+		border-radius: $border-radius-m;
 	}
 
 	.single-post.featuredimg-radius-l & {
@@ -117,6 +121,7 @@
 	@include breakpoint(m) {
 		padding-top: $spacing-desktop-10;
 		padding-bottom: $spacing-desktop-6;
+		line-height: 1;
 	}
 
 	.related-more-link {
@@ -124,6 +129,7 @@
 
 		@include breakpoint(m) {
 			@include flexbox;
+			letter-spacing: 0;
 		}
 	}
 }
@@ -282,8 +288,9 @@
 .comment-author {
 
 	padding-bottom: $spacing-xxs;
+
 	.fn {
-		@include font-body4;
+		@include font-body-xs;
 	}
 }
 
@@ -305,7 +312,7 @@
 	display: block;
 	padding-top: $spacing-xs;
 	font-weight: normal;
-	@include font-body5;
+	@include font-body-xxs;
 	@include breakpoint(m) {
 		position: absolute;
 		top: 0;

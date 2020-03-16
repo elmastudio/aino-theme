@@ -35,7 +35,7 @@
 		height: $spacing-desktop-4;
 		margin: 0;
 		padding: 0 0 0 $spacing-2;
-		@include font-body5;
+		@include font-body-xxs;
 		color: $color__text_two;
 
 		@include breakpoint(m) {
@@ -112,7 +112,8 @@
 		padding: 0 0 0 46px;
 		vertical-align: middle;
 		border: 1px solid $color__border;
-		@include font-body3;
+		font-size: 14px;
+		line-height: 20px;
 	}
 }
 
@@ -315,7 +316,6 @@
 	@include breakpoint(s) {
 		right: $spacing-mobile-9;
 	}
-
 }
 
 button.close-nav-toggle {
@@ -411,7 +411,7 @@ ul.primary-menu {
 
 	ul {
 		@include shadow-5;
-		@include font-body4;
+		@include font-body-xs;
 		background: $color__white;
 		color: $color__text_one;
 		padding: $spacing-3;
@@ -509,12 +509,12 @@ ul.primary-menu {
 
 		a {
 			text-transform: uppercase;
-			@include font-body4;
+			@include font-body-xs;
 			letter-spacing: 2px;
 		}
 
 		ul a {
-			@include font-body5;
+			@include font-body-xxs;
 		}
 	}
 }
@@ -846,8 +846,10 @@ button.sub-menu-toggle.active svg {
 /* Light Header Style ---------------------------- */
 .header-light {
 
+	.custom-logo path,
 	.nav-toggle .icon-more_horiz-24px {
 		color: $color__white;
+		fill: $color__white;
 	}
 
 	.search-header .search-field {

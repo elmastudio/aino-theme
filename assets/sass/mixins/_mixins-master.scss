@@ -88,77 +88,120 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 // Heading Fonts
-@mixin font-display {
-	font-size: 66px;
-	line-height: 1.09;
+@mixin font-h6 {
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0;
 }
-@mixin font-h1 {
-	font-size: 40px;
-	line-height: 1.2;
-	@include breakpoint(m) {
-		font-size: 55px;
-		line-height: 1.16;
-	}
-}
-@mixin font-h2 {
-	font-size: 32px;
-	line-height: 1.25;
-	@include breakpoint(m) {
-		font-size: 46px;
-		line-height: 1.22;
-	}
-}
-@mixin font-h3 {
-	font-size: 28px;
-	line-height: 1.14;
-	@include breakpoint(m) {
-		font-size: 32px;
-		line-height: 1.25;
-	}
-}
-@mixin font-h4 {
-	font-size: 24px;
-	line-height: 1.33;
-	@include breakpoint(m) {
-		font-size: 27px;
-		line-height: 1.19;
-	}
-}
+
 @mixin font-h5 {
-	font-size: 21px;
-	line-height: 24px;
+	font-size: 19px;
+	line-height: 23px;
+	letter-spacing: 0;
+
 	@include breakpoint(m) {
 		font-size: 21px;
 		line-height: 24px;
 	}
 }
-@mixin font-h6 {
-	font-size: 16px;
-	line-height: 1.25;
+
+@mixin font-h4 {
+	font-size: 23px;
+	line-height: 27px;
+	letter-spacing: -0.58px;
+
+	@include breakpoint(m) {
+		font-size: 28px;
+		line-height: 33px;
+		letter-spacing: -0.7px;
+	}
+}
+
+@mixin font-h3 {
+	font-size: 28px;
+	line-height: 33px;
+	letter-spacing: -0.7px;
+
+	@include breakpoint(m) {
+		font-size: 38px;
+		line-height: 44px;
+		letter-spacing: -0.95px;
+	}
+}
+
+@mixin font-h2 {
+	font-size: 33px;
+	line-height: 39px;
+	letter-spacing: -0.83px;
+
+	@include breakpoint(m) {
+		font-size: 51px;
+		line-height: 59px;
+		letter-spacing: -1.28px;
+	}
+}
+
+@mixin font-h1 {
+	font-size: 40px;
+	line-height: 47px;
+	letter-spacing: -1px;
+
+	@include breakpoint(m) {
+		font-size: 67px;
+		line-height: 78px;
+		letter-spacing: -1.68px;
+	}
 }
 
 // Body Fonts
-@mixin font-body1 {
-	font-size: 27px;
-  	line-height: 1.48;
+@mixin font-body-xxl {
+	font-size: 26px;
+	line-height: 40px;
+
+	@include breakpoint(m) {
+		font-size: 35px;
+		line-height: 56px;
+	}
 }
-@mixin font-body2 {
-	font-size: 19px;
-  	line-height: 1.68;
+
+@mixin font-body-xl {
+	font-size: 24px;
+	line-height: 37px;
+
+	@include breakpoint(m) {
+		font-size: 29px;
+		line-height: 48px;
+	}
 }
-@mixin font-body3 {
+
+@mixin font-body-l {
+	font-size: 22px;
+	line-height: 34px;
+
+	@include breakpoint(m) {
+		font-size: 24px;
+		line-height: 40px;
+	}
+}
+
+@mixin font-body-m {
+	font-size: 20px;
+	line-height: 32px;
+}
+
+@mixin font-body-s {
 	font-size: 16px;
-  	line-height: 1.5;
+	line-height: 24px;
 }
 
-@mixin font-body4 {
+@mixin font-body-xs {
 	font-size: 14px;
-  	line-height: 1.43;
+	line-height: 20px;
 }
 
-@mixin font-body5 {
+@mixin font-body-xxs {
 	font-size: 12px;
-	line-height: 1.33;
+	line-height: 16px;
 }
 
 @mixin font-label {

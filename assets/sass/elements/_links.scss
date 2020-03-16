@@ -69,7 +69,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .comment-reply-title #cancel-comment-reply-link,
 .logged-in-as a {
 
-	:hover {
+	&:hover {
 		color: $color__primary;
 		fill: $color__primary;
 	}

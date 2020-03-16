@@ -107,37 +107,52 @@ if ( ! function_exists( 'aino_setup' ) ) :
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => __( 'Extra Extra Small', 'aino' ),
+					'name'      => __( 'XXS', 'aino' ),
 					'shortName' => __( 'XXS', 'aino' ),
 					'size'      => 12,
 					'slug'      => 'xxs',
 				),
 				array(
-					'name'      => __( 'Extra Small', 'aino' ),
+					'name'      => __( 'XS', 'aino' ),
 					'shortName' => __( 'XS', 'aino' ),
 					'size'      => 14,
 					'slug'      => 'xs',
 				),
 				array(
-					'name'      => __( 'Small', 'aino' ),
+					'name'      => __( 'S', 'aino' ),
 					'shortName' => __( 'S', 'aino' ),
-					'size'      => 16,
-					'slug'      => 'small',
+					'size'      => 17,
+					'slug'      => 's',
 				),
 				array(
-					'name'      => __( 'Normal', 'aino' ),
+					'name'      => __( 'M', 'aino' ),
 					'shortName' => __( 'M', 'aino' ),
-					'size'      => 19,
-					'slug'      => 'normal',
+					'size'      => 20,
+					'slug'      => 'm',
 				),
 				array(
-					'name'      => __( 'Large', 'aino' ),
+					'name'      => __( 'L', 'aino' ),
 					'shortName' => __( 'L', 'aino' ),
-					'size'      => 27,
-					'slug'      => 'large',
+					'size'      => 24,
+					'slug'      => 'l',
+				),
+				array(
+					'name'      => __( 'XL', 'aino' ),
+					'shortName' => __( 'XL', 'aino' ),
+					'size'      => 29,
+					'slug'      => 'xl',
+				),
+				array(
+					'name'      => __( 'XXL', 'aino' ),
+					'shortName' => __( 'XXL', 'aino' ),
+					'size'      => 35,
+					'slug'      => 'xxl',
 				),
 			)
 		);
+
+		// Disabling custom font sizes.
+		add_theme_support( 'disable-custom-font-sizes' );
 
 		// Editor color palette.
 		$color_primary_one = get_theme_mod( 'primary_one_color' );
@@ -293,7 +308,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
  *
  * @global int $content_width Content width.
  */
-
 function aino_content_width() {
 	// This variable is intended to be overruled from themes.
 	// phpcs:disable WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
@@ -503,7 +517,7 @@ function aino_scripts() {
 	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), false, wp_get_theme()->get( 'Version' ), 'all' );
 
 	// Theme stylesheet.
-	wp_enqueue_style( 'aino-style', get_stylesheet_uri(), false, wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.min.css', false, wp_get_theme()->get( 'Version' ) );
 
 	wp_enqueue_script( 'aino-custom', get_theme_file_uri( '/assets/js/index.js' ), array(), wp_get_theme()->get( 'Version' ), true );
 

@@ -133,7 +133,7 @@ h6 {
 }
 
 p {
-	@include font-body2;
+	@include font-body-m;
 
 	&.has-background {
 		padding: $spacing-mobile-4;
@@ -146,7 +146,7 @@ p {
 
 p.wp-block-paragraph.intro,
 .wp-block-paragraph.intro {
-	@include font-body1;
+	@include font-body-l;
 	margin: 0 0 $spacing-mobile-7;
 
 	@include breakpoint(m) {
@@ -440,7 +440,7 @@ textarea {
 
 .editor-default-block-appender .editor-default-block-appender__content {
 	@include font-body;
-	@include font-body2;
+	@include font-body-m;
 }
 
 /** === Image === */
@@ -457,7 +457,7 @@ textarea {
 .wp-block-embed figcaption,
 .wp-block-audio figcaption {
 	max-width: 100%;
-	@include font-body4;
+	@include font-body-xs;
 	margin: 6px 0 0;
 	text-align: center;
 }
@@ -484,7 +484,7 @@ textarea {
 	font-style: normal;
 
 	blockquote p {
-		@include font-body2;
+		@include font-body-m;
 	}
 
 	p:last-child,
@@ -499,7 +499,7 @@ textarea {
 	&.is-large,
 	&.is-style-large p {
 		margin: 0;
-		@include font-body1;
+		@include font-body-l;
 		font-style: normal;
 	}
 
@@ -513,7 +513,7 @@ textarea {
 		font-weight: bold;
 		font-style: normal;
 		text-transform: none;
-		@include font-body4;
+		@include font-body-xs;
 	}
 
 	cite,
@@ -534,7 +534,7 @@ textarea {
 	}
 
 	&.is-style-solid-color blockquote p {
-		@include font-body2;
+		@include font-body-m;
 	}
 
 	.alignleft {
@@ -557,7 +557,7 @@ textarea {
 
 .wp-block-table {
 	@include font-body;
-	@include font-body3;
+	@include font-body-s;
 }
 
 .wp-block-table table {
@@ -603,7 +603,7 @@ textarea {
 	background: $color__code_one;
 	color: $color__code_two;
 	@include font-code;
-	@include font-body4;
+	@include font-body-xs;
 	padding: $spacing-mobile-4;
 	@include border-radius-m;
 
@@ -645,7 +645,7 @@ textarea {
 .wp-block-verse {
 	background-color: transparent;
 	@include font-code;
-	@include font-body4;
+	@include font-body-xs;
 	@include font-regular;
 	margin-bottom: $spacing-mobile-5;
 
@@ -680,7 +680,7 @@ pre.wp-block-verse {
 
 	&.is-style-dots:before {
 		color: $color__border;
-		@include font-body1;
+		@include font-body-l;
 		letter-spacing: 1em;
 		padding-left: 1em;
 	}
