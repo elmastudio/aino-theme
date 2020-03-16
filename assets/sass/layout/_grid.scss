@@ -52,6 +52,76 @@ max-width: $col5;
 	max-width: $col12;
 }
 
+// Push padding left or right (Desktop only)
+@include breakpoint(l) {
+	.push-left-col1 {
+		padding-left: $col1;
+	}
+	.push-left-col2 {
+		padding-left: $col2;
+	}
+	.push-left-col3 {
+		padding-left: $col3;
+	}
+	.push-left-col4 {
+		padding-left: $col4;
+	}
+	.push-left-col5 {
+		padding-left: $col5;
+	}
+	.push-left-col6 {
+		padding-left: $col6;
+	}
+	.push-left-col7 {
+		padding-left: $col7;
+	}
+	.push-left-col8 {
+		padding-left: $col8;
+	}
+	.push-left-col9 {
+		padding-left: $col9;
+	}
+	.push-left-col10 {
+		padding-left: $col10;
+	}
+	.push-left-col11 {
+		padding-left: $col11;
+	}
+	.push-right-col1 {
+		padding-right: $col1;
+	}
+	.push-right-col2 {
+		padding-right: $col2;
+	}
+	.push-right-col3 {
+		padding-right: $col3;
+	}
+	.push-right-col4 {
+		padding-right: $col4;
+	}
+	.push-right-col5 {
+		padding-right: $col5;
+	}
+	.push-right-col6 {
+		padding-right: $col6;
+	}
+	.push-right-col7 {
+		padding-right: $col7;
+	}
+	.push-right-col8 {
+		padding-right: $col8;
+	}
+	.push-right-col9 {
+		padding-right: $col9;
+	}
+	.push-right-col10 {
+		padding-right: $col10;
+	}
+	.push-right-col11 {
+		padding-right: $col11;
+	}
+}
+
 .grid-margins {
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
@@ -106,7 +176,8 @@ max-width: $col5;
 }
 
 /* Centered elements */
-.push-center {
+.push-center,
+.center {
 	@include push--auto;
 }
 

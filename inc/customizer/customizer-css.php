@@ -12,6 +12,8 @@ function aino_customizer_css() {
 
 	$main_bg_color            = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
 	$primary_one_color        = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
+	$text_one_color           = get_theme_mod( 'text_one_color', aino_defaults( 'text_one_color' ) );
+	$text_two_color           = get_theme_mod( 'text_two_color', aino_defaults( 'text_two_color' ) );
 	$btn_text_color           = get_theme_mod( 'btn_text_color', aino_defaults( 'btn_text_color' ) );
 	$background_color         = get_theme_mod( 'background_color', aino_defaults( 'background_color' ) );
 	$blogcards_bg_color       = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );

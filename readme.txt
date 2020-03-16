@@ -4,17 +4,17 @@ Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images
 Requires at least: 5.0
 Tested up to: WordPress 5.3.2
 Requires PHP: 7.3
-Stable tag: 0.3.1
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Aino makes it easy to create modern websites in the new Gutenberg editor.
+Aino is a Gutenberg-first WordPress theme for everyone who wants to have a beautiful website with creative, individual page layouts.
 
 == Description ==
 
-Aino is a Gutenberg-ready WordPress theme to create page layouts in the new editor. The theme is light-weight and comes with helpful options to build flexible, modern websites.
+Aino is a Gutenberg-first WordPress theme, especially created to work with blocks in the WordPress editor. Blocks and the Aino theme make it easier to create beautiful websites with individual layouts. Our goal is to make the creative process of building a WordPress website fun and intuitiv.
 
-For more information and helpful resources about Aino go to https://wpaino.com.
+You can find more information and helpful resources about Aino on https://wpaino.com.
 
 == Copyright ==
 
@@ -41,6 +41,15 @@ Aino WordPress Theme bundles the following third-party resources:
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 1.0.0 =
+* New: Include minified style.min.css
+* New: Disable Google fonts loading option in Customize/Theme/Typography
+* New: Customizable default text colors in Customize/Colors
+* New: Disable custom font in editor font sizes
+* Enhance: screenshot.png
+* Enhance: Grid column CSS
+* Enhance: Update heading and paragraph font sizes
 
 = 0.3.1 =
 * New: Custom editor gradient presets

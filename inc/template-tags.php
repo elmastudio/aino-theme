@@ -9,6 +9,7 @@
 
 /**
  * Table of Contents:
+ * Disable Google fonts
  * Logo & Description
  * Post Meta
  * Comments
@@ -16,6 +17,20 @@
  * Classes
  * Miscellaneous
  */
+
+
+/**
+ * Disable Google fonts.
+ */
+function aino_remove_google_fonts() {
+
+	if ( true === get_theme_mod( 'disable_googlefonts', aino_defaults( 'disable_googlefonts' ) ) ) {
+		wp_dequeue_style( 'aino-fonts' );
+		wp_deregister_style( 'aino-fonts' );
+	}
+}
+
+add_action( 'wp_enqueue_scripts', 'aino_remove_google_fonts', 100 );
 
 /**
  * Logo & Description
@@ -613,6 +628,10 @@ function aino_body_classes( $classes ) {
 
 	if ( 'radius-s' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-s';
+	}
+
+	if ( 'radius-m' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+		$classes[] = 'featuredimg-radius-m';
 	}
 
 	if ( 'radius-l' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {

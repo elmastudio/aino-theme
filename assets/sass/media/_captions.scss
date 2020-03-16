@@ -11,7 +11,8 @@
 
 .wp-caption .wp-caption-text {
 	margin: $spacing-2 0 $spacing-mobile-5;
-	@include font-body4;
+	@include font-body-xs;
+
 	@include breakpoint(m) {
 		margin: $spacing-2 0 $spacing-desktop-5;
 	}

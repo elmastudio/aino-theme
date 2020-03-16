@@ -75,7 +75,7 @@
 /* Heading */
 .entry-content h2.display {
 
-	@include font-display;
+	@include font-h2;
 	margin-bottom: $spacing-mobile-4;
 
 	@include breakpoint(m) {
@@ -85,22 +85,6 @@
 
 /* Paragraph */
 .entry-content p {
-
-	&.is-small-text {
-		@include font-body4;
-	}
-
-	&.is-regular-text {
-		@include font-body3;
-	}
-
-	&.is-large-text {
-		@include font-body2;
-	}
-
-	&.is-larger-text {
-		@include font-body1;
-	}
 
 	&.has-background {
 		padding: $spacing-mobile-4;
@@ -317,7 +301,7 @@
 	display: block;
 	margin: $spacing-2 0 0;
 	text-align: center;
-	@include font-body4;
+	@include font-body-xs;
 }
 .wp-block-image .aligncenter>figcaption,
 .wp-block-image .alignleft>figcaption,
@@ -349,7 +333,7 @@ ul.wp-block-gallery {
 
 	&.blocks-gallery-image figcaption,
 	&.wp-block-gallery .blocks-gallery-item figcaption {
-		@include font-body4;
+		@include font-body-xs;
 	}
 }
 
@@ -377,14 +361,14 @@ ul.wp-block-gallery {
 
 	&.is-style-large p {
 		margin: 0;
-		@include font-body1;
+		@include font-body-l;
 		font-style: normal;
 	}
 
 	&.is-style-large cite,
 	& cite {
 		text-align: left;
-		@include font-body4;
+		@include font-body-xs;
 	}
 }
 
@@ -397,7 +381,7 @@ ul.wp-block-gallery {
 	& p,
 	&.is-style-solid-color blockquote p {
 		margin: 0;
-		@include font-body2;
+		@include font-body-m;
 		font-style: normal;
 	}
 
@@ -441,9 +425,8 @@ ul.wp-block-gallery {
 .wp-block-cover .wp-block-cover-image-text,
 .wp-block-cover .wp-block-cover-text,
 .wp-block-cover h2 {
-    z-index: 1;
-    margin-bottom: 0;
-    padding: 14px;
+	z-index: 1;
+	margin-bottom: 0;
 }
 
 /* Video */
@@ -505,7 +488,7 @@ ul.wp-block-gallery {
 		color: $color__text_two;
 		content: "\00b7 \00b7 \00b7";
 		font-family: serif;
-		@include font-body1;
+		@include font-body-l;
 		letter-spacing: 1em;
 		padding-left: 1em;
 }

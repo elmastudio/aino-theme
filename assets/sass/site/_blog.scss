@@ -283,7 +283,7 @@
 
 /* Blog Cards - Entry Header */
 .blog .hentry .entry-header,
- .hentry .entry-header {
+.parent:not(.single-post) .hentry .entry-header {
 	padding: $spacing-mobile-4 $spacing-mobile-4 0;
 
 	@include breakpoint(m) {
@@ -448,7 +448,7 @@
 
 	.page-title span {
 		display: block;
-		@include font-body2;
+		@include font-body-m;
 		@include font-regular;
 		color: $color__text_two;
 	}
