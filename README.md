@@ -11,6 +11,15 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
+### 1.0.0 
+**New:** Include minified style.min.css  
+**New:** Disable Google fonts loading option in Customize/Theme/Typography  
+**New:** Customizable default text colors in Customize/Colors  
+**New:** Disable custom font in editor font sizes  
+**Enhance:** screenshot.png  
+**Enhance:** Grid column CSS  
+**Enhance:** Update heading and paragraph font sizes  
+
 ### 0.3.0  
 **Enhance:** Backward compatibility for wp_body_open hook, Fixes #65  
 **New:** Bold and uppercase primary menu font option in Customize/Theme/Header  
