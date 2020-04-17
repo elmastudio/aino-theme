@@ -36,7 +36,7 @@ function aino_defaults( $name ) {
 				'button_style'             => 'squared',
 				'form_style'               => 'squared',
 				'featuredimg_style'        => 'radius-none',
-				'blog_columns'             => 'threecolumn',
+				'blog_columns'             => 'twocolumn',
 				'blogcards_shadow'         => 'shadow-a',
 				'blogcards_shadow_hover'   => 'shadow-b',
 				'blogcards_borderradius'   => 'radius-none',

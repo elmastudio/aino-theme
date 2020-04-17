@@ -10,7 +10,7 @@
 module.exports = {
 
 	// Project options.
-	projectURL: 'localhost:8888', // Local project URL of your already running WordPress site. Could be something like wpgulp.local or localhost:3000 depending upon your local WordPress setup.
+	projectURL: 'http://ainodev.local/', // Local project URL of your already running WordPress site. Could be something like wpgulp.local or localhost:3000 depending upon your local WordPress setup.
 	productURL: './', // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 	browserAutoOpen: false,
 	injectChanges: true,
@@ -47,8 +47,9 @@ module.exports = {
 	translationFile: 'aino.pot', // Name of the translation file.
 	translationDestination: './languages', // Where to save the translation files.
 	packageName: 'aino', // Package name.
-	bugReport: 'https://elmastudio.de/en/contact/', // Where can users report bugs.
-	lastTranslator: 'Ellen Bauer <ellen.bauer@elmastudio.de>', // Last translator Email ID.
+	bugReport: 'https://github.com/elmastudio/aino-theme/issues', // Where can users report bugs.
+	lastTranslator: 'Ahmad Awais <your_email@email.com>', // Last translator Email ID.
+	team: 'Ellen Bauer <ellen.bauer@elmastudio.de>', // Team's Email ID.
 
 	// Browsers you care about for autoprefixing. Browserlist https://github.com/ai/browserslist
 	// The following list is set as per WordPress requirements. Though, Feel free to change.

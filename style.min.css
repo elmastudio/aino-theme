@@ -109,7 +109,7 @@ textarea{resize:vertical}
 .blog-3-column .posts-container .hentry,.header-infobar .col,.s4,.single-post .related-post{width:100%;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
 body,button,input,select,table,textarea,.post-navigation .nav-title span,.entry-content .has-s-font-size{font-family:"Roboto",sans-serif;font-size:16px;line-height:24px;color:#222}
 .posts-container .hentry .entry-footer,.hentry .entry-summary,.hentry .entry-header .entry-meta,.single-post .navigation a span.nav-subtitle,.widget ul li,.entry-content .has-extrasmall-font-size,.entry-content .has-xs-font-size,.entry-content .sharedaddy h3.sd-title{font-size:14px;line-height:20px}
-.entry-content p,.hentry ol,.hentry ul,.entry-cats,.page-header .description p,.entry-content .has-m-font-size{font-size:20px;line-height:32px}
+.entry-content p,.hentry ol,.hentry ul,.single-post .entry-cats,.page-header .description p,.entry-content .has-m-font-size{font-size:20px;line-height:32px}
 .entry-content .has-l-font-size,.entry-content .intro{font-size:22px;line-height:34px}
 .entry-content .has-xl-font-size{font-size:24px;line-height:37px}
 .entry-content .has-xxl-font-size{font-size:26px;line-height:40px}
@@ -435,7 +435,7 @@ button.sub-menu-toggle.active svg{-webkit-transform:rotate(270deg);transform:rot
 .hentry .post-thumb a{display:inline-block;line-height:0}
 .related-post img,.nav-links .nav-thumb img{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 .entry-link:hover img,.related-post a:hover img,.nav-links .nav-thumb:hover img{-webkit-filter:brightness(105%);filter:brightness(105%)}
-.blog .hentry .entry-header,.parent:not(.single-post) .hentry .entry-header{padding:24px 24px 0}
+.blog .hentry .entry-header,.archive .hentry .entry-header,.parent:not(.single-post) .hentry .entry-header{padding:24px 24px 0}
 .hentry .entry-summary{padding:8px 0 0}
 .byline,.updated:not(.published){display:none}
 .group-blog .byline{display:block}
@@ -779,7 +779,7 @@ td{padding:16px}
 .header-light .primary-menu .sub-menu a:hover+.icon::before,.header-light .primary-menu .sub-menu a:hover+.icon::after{background-color:#1765d8}
 .entry-link{padding-bottom:32px}
 .posts-container .hentry{margin-bottom:48px}
-.blog .hentry .entry-header,.parent:not(.single-post) .hentry .entry-header{padding:32px 32px 0}
+.blog .hentry .entry-header,.archive .hentry .entry-header,.parent:not(.single-post) .hentry .entry-header{padding:32px 32px 0}
 .group-blog .byline{display:inline-block;padding:0 24px 0 0}
 .posts-container .hentry .entry-footer{margin-left:32px;margin-right:32px}
 .no-postcats .posts-container .hentry .entry-footer{padding-top:37px}
