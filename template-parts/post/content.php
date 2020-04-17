@@ -36,15 +36,13 @@ $custom_post_excerpt = array(
 				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
 				<?php if ( 0 !== get_theme_mod( 'post_excerpt_lengths' ) ) : ?>
-
-				<div class="entry-summary">
-					<?php if ( aino_defaults( 'post_excerpt_lengths' ) === get_theme_mod( 'post_excerpt_lengths' ) ) : ?>
-						<?php echo esc_html( aino_custom_excerpt_length( aino_defaults( 'post_excerpt_lengths' ) ) ); ?>
-					<?php else : ?>
-						<?php echo esc_html( aino_custom_excerpt_length( $custom_post_excerpt['post_excerpt_length'] ) ); ?>
-					<?php endif; ?>
-				</div><!-- .entry-summary -->
-
+					<div class="entry-summary">
+						<?php if ( 15 === get_theme_mod( 'post_excerpt_lengths' ) ) : ?>
+							<?php echo esc_html( aino_custom_excerpt_length( 15 ) ); ?>
+						<?php else : ?>
+							<?php echo esc_html( aino_custom_excerpt_length( $custom_post_excerpt['post_excerpt_length'] ) ); ?>
+						<?php endif; ?>
+					</div><!-- .entry-summary -->
 				<?php endif; ?>
 
 			</header><!-- .entry-header -->

@@ -4,7 +4,7 @@ Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images
 Requires at least: 5.0
 Tested up to: WordPress 5.3.2
 Requires PHP: 7.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,10 @@ Aino WordPress Theme bundles the following third-party resources:
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 1.0.1 =
+* Bugfix: Category styling on blog
+* Bugfix: Missing default excerpt text on first theme activation.
 
 = 1.0.0 =
 * New: Include minified style.min.css

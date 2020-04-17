@@ -283,6 +283,7 @@
 
 /* Blog Cards - Entry Header */
 .blog .hentry .entry-header,
+.archive .hentry .entry-header,
 .parent:not(.single-post) .hentry .entry-header {
 	padding: $spacing-mobile-4 $spacing-mobile-4 0;
 
