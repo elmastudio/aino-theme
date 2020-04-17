@@ -11,6 +11,10 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
+### 1.0.1 
+**Bugfix:** Category styling on blog  
+**Bugfix:** Missing default excerpt text on first theme activation    
+  
 ### 1.0.0 
 **New:** Include minified style.min.css  
 **New:** Disable Google fonts loading option in Customize/Theme/Typography  
