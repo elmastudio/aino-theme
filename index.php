@@ -41,59 +41,33 @@ get_header(); ?>
 
 		<main id="main" class="site-main mobile-margins" role="main">
 
-		<div class="posts-container" id="posts-container">
-
-			<?php if ( ! is_paged() && $sticky ) : ?>
-
-				<div class="sticky-container">
-
+			<div class="posts-container" id="posts-container">
 				<?php
-				if ( $query_sticky->have_posts() ) :
+				if ( have_posts() ) :
+					?>
 
-					while ( $query_sticky->have_posts() ) :
-						$query_sticky->the_post();
-
-						get_template_part( 'template-parts/post/content-sticky' );
-
+					<?php
+					// Start the Standard Loop.
+					while ( have_posts() ) :
+						the_post();
+						get_template_part( 'template-parts/post/content' );
 					endwhile;
+					?>
 
-						/* Restore original Post Data */
-						wp_reset_postdata();
-
-				endif;
-				?>
-
-					</div><!-- .sticky-container -->
 				<?php endif; ?>
-
+			</div><!-- .posts-container -->
 
 			<?php
-			if ( have_posts() ) :
-				?>
-
-				<?php
-				// Start the Standard Loop.
-				while ( have_posts() ) :
-					the_post();
-					get_template_part( 'template-parts/post/content' );
-				endwhile;
-				?>
-
-		<?php endif; ?>
-
-	</div><!-- .posts-container -->
-
-		<?php
-		the_posts_pagination(
-			array(
-				'next_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Older posts', 'aino' ) . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Older posts', 'aino' ) . '</span> ',
-				'prev_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_left-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ',
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'aino' ) . ' </span>',
-			)
-		);
-		?>
+			the_posts_pagination(
+				array(
+					'next_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Older posts', 'aino' ) . '</span> ' .
+					'<span class="screen-reader-text">' . esc_html__( 'Older posts', 'aino' ) . '</span> ',
+					'prev_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_left-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ' .
+					'<span class="screen-reader-text">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ',
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'aino' ) . ' </span>',
+				)
+			);
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
