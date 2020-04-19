@@ -42,6 +42,10 @@ Aino WordPress Theme bundles the following third-party resources:
 
 == Changelog ==
 
+= 1.0.2 =
+* Enhance: A number of CSS classes renamed.
+* Enhance: px unit converted to rem.
+
 = 1.0.1 =
 * Bugfix: Category styling on blog
 * Bugfix: Missing default excerpt text on first theme activation.

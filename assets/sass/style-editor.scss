@@ -3,11 +3,16 @@ Aino Editor Styles
 */
 
 /** === Includes === */
-
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
 /** === Editor Frame === */
+
+.editor-styles-wrapper {
+	text-rendering: optimizeLegibility;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
 
 body {
 
@@ -41,13 +46,14 @@ body {
 
 .wp-block {
 	.tpl-fullwidth & {
-	max-width: 1200px;
-}
+		max-width: 1200px;
+	}
 }
 
 /** === Content Width === */
 
 .wp-block {
+	max-width: 680px;
 
 	// Only the top level blocks need specific widths, therefore override for every nested block.
 	.wp-block {

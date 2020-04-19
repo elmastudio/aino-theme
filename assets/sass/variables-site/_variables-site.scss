@@ -20,38 +20,38 @@ $font__code : "Monaco", "Courier 10 Pitch", Courier, monospace;
 
 // Spacing
 $spacing-none               : 0;
-$spacing-1                  : 8px;
-$spacing-2                  : 16px;
-$spacing-3                  : 24px;
-$spacing-mobile-4           : 24px;
-$spacing-desktop-4          : 32px;
-$spacing-mobile-5           : 32px;
-$spacing-desktop-5          : 40px;
-$spacing-mobile-6           : 32px;
-$spacing-desktop-6          : 48px;
-$spacing-mobile-7           : 40px;
-$spacing-desktop-7          : 56px;
-$spacing-mobile-8           : 40px;
-$spacing-desktop-8          : 72px;
-$spacing-mobile-9           : 48px;
-$spacing-desktop-9          : 96px;
-$spacing-mobile-10          : 48px;
-$spacing-desktop-10         : 144px;
-$spacing-mobile-11          : 56px;
-$spacing-desktop-11         : 192px;
+$spacing-1                  : 0.5rem; // 8px
+$spacing-2                  : 1rem;// 16px
+$spacing-3                  : 1.5rem; // 24px
+$spacing-mobile-4           : 1.5rem; // 24px
+$spacing-desktop-4          : 2rem; // 32px
+$spacing-mobile-5           : 2rem; // 32px
+$spacing-desktop-5          : 2.5rem; // 40px
+$spacing-mobile-6           : 2rem; // 32px
+$spacing-desktop-6          : 3rem; // 48px
+$spacing-mobile-7           : 2.5rem; // 40px
+$spacing-desktop-7          : 3.5rem; // 56px
+$spacing-mobile-8           : 2.5rem; // 40px
+$spacing-desktop-8          : 4.5rem; // 72px
+$spacing-mobile-9           : 3rem; // 48px
+$spacing-desktop-9          : 6rem; // 96px
+$spacing-mobile-10          : 3rem; // 48px
+$spacing-desktop-10         : 9rem; // 144px
+$spacing-mobile-11          : 3.5rem; // 56px
+$spacing-desktop-11         : 12rem; // 192px
 
-$spacing-xxs                : 4px;
-$spacing-xs                 : 8px;
-$spacing-s                  : 12px;
+$spacing-xxs                : 0.25rem; // 4px
+$spacing-xs                 : 0.5rem; // 8px
+$spacing-s                  : 0.75rem; // 12px
 
 // Grid Margins
-$grid-margins-s             : 24px;
-$grid-margins-m             : 32px;
-$grid-margins-l             : 48px;
+$grid-margins-s             : 1.5rem; // 24px
+$grid-margins-m             : 2rem; // 32px
+$grid-margins-l             : 3rem; // 48px
 
 // Spacing Headerbar
-$stickyheader-mobile        : 55px;
-$stickyheader-desktop       : 88px;
+$stickyheader-mobile        : 3.438rem; // 55px
+$stickyheader-desktop       : 5.5rem; // 88px
 
 // Grid Columns
 $col1                       : 104px; // 1 grid columns
@@ -70,8 +70,8 @@ $col7-no-margin             : 680px; // 7 grid columns without padding
 $col12-no-margin            : 1200px;
 
 // Border Radius
-$border-radius-xs: 8px;
-$border-radius-s: 12px;
-$border-radius-m: 24px;
-$border-radius-l: 36px;
-$border-radius-circle: 100px;
+$border-radius-xs: 0.5rem; // 8px
+$border-radius-s: 0.75rem; // 12px
+$border-radius-m: 1.5rem; // 24px
+$border-radius-l: 2.25rem; // 36px
+$border-radius-circle: 6.25rem; // 100px

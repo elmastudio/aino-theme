@@ -21,7 +21,7 @@
 }
 
 .col5 {
-max-width: $col5;
+	max-width: $col5;
 }
 
 .col6 {
@@ -57,66 +57,87 @@ max-width: $col5;
 	.push-left-col1 {
 		padding-left: $col1;
 	}
+
 	.push-left-col2 {
 		padding-left: $col2;
 	}
+
 	.push-left-col3 {
 		padding-left: $col3;
 	}
+
 	.push-left-col4 {
 		padding-left: $col4;
 	}
+
 	.push-left-col5 {
 		padding-left: $col5;
 	}
+
 	.push-left-col6 {
 		padding-left: $col6;
 	}
+
 	.push-left-col7 {
 		padding-left: $col7;
 	}
+
 	.push-left-col8 {
 		padding-left: $col8;
 	}
+
 	.push-left-col9 {
 		padding-left: $col9;
 	}
+
 	.push-left-col10 {
 		padding-left: $col10;
 	}
+
 	.push-left-col11 {
 		padding-left: $col11;
 	}
+
 	.push-right-col1 {
 		padding-right: $col1;
 	}
+
 	.push-right-col2 {
 		padding-right: $col2;
 	}
+
 	.push-right-col3 {
 		padding-right: $col3;
 	}
+
 	.push-right-col4 {
 		padding-right: $col4;
 	}
+
 	.push-right-col5 {
 		padding-right: $col5;
 	}
+
 	.push-right-col6 {
 		padding-right: $col6;
 	}
+
 	.push-right-col7 {
 		padding-right: $col7;
 	}
+
 	.push-right-col8 {
 		padding-right: $col8;
 	}
+
 	.push-right-col9 {
 		padding-right: $col9;
 	}
+
 	.push-right-col10 {
 		padding-right: $col10;
 	}
+
 	.push-right-col11 {
 		padding-right: $col11;
 	}
@@ -130,10 +151,12 @@ max-width: $col5;
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
+
 	@include breakpoint(m) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
+
 	@include breakpoint(l) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
@@ -149,10 +172,12 @@ max-width: $col5;
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
+
 	@include breakpoint(m) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 	}
+
 	@include breakpoint(l) {
 		padding-left: 0;
 		padding-right: 0;
@@ -169,6 +194,7 @@ max-width: $col5;
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
+
 	@include breakpoint(m) {
 		padding-left: 0;
 		padding-right: 0;
@@ -209,34 +235,34 @@ max-width: $col5;
 }
 
 /* Default Content width (680px on desktop screens) */
-.entry-content > *,
+.entry-content>*,
 .single-post .entry-header,
 .page-template-default .entry-header,
 .error404 .entry-header,
 .single-post .entry-footer,
 .single-post .comments-area {
 	@include push--auto;
-		max-width: $col7-no-margin;
+	max-width: $col7-no-margin;
 }
 
 /* Full width page template (1200px on desktop screens) */
-.tpl-fullwidth .entry-content > *,
+.tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header {
 	@include push--auto;
 	max-width: $col12-no-margin;
 }
 
 /* Fullscreen and hero page template */
-.tpl-fullscreen .entry-content > *,
+.tpl-fullscreen .entry-content>*,
 .tpl-fullscreen .entry-header,
-.tpl-hero .entry-content > *,
+.tpl-hero .entry-content>*,
 .tpl-hero .entry-header {
 	@include push--auto;
 	max-width: 100%;
 }
 
 /* Alignwide and fullwidth Content widths */
-.entry-content > *.alignwide {
+.entry-content>*.alignwide {
 	max-width: $col12-no-margin;
 }
 
@@ -313,7 +339,7 @@ max-width: $col5;
 	flex-grow: 0;
 
 	@include breakpoint(m) {
-		flex-basis: calc(50% - 48px);
+		flex-basis: calc(50% - 3rem);
 		margin-left: $spacing-3;
 		margin-right: $spacing-3;
 	}
@@ -338,17 +364,20 @@ max-width: $col5;
 .single-post .related-post {
 	width: 100%;
 	flex-grow: 0;
+
 	@include breakpoint(s) {
-		flex-basis: calc(50% - 32px);
+		flex-basis: calc(50% - 2rem);
 		margin-left: $spacing-2;
 		margin-right: $spacing-2;
 	}
+
 	@include breakpoint(m) {
-		flex-basis: calc(50% - 48px);
+		flex-basis: calc(50% - 3rem);
 		margin-left: $spacing-3;
 		margin-right: $spacing-3;
 	}
+
 	@include breakpoint(l) {
-		flex-basis: calc(33.333% - 48px);
+		flex-basis: calc(33.333% - 3rem);
 	}
 }

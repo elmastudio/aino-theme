@@ -65,6 +65,8 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 // Base Typography
+
+// Base Typography
 @mixin hyphenation {
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
@@ -87,142 +89,152 @@ $var: true !default; // Can be overridden elsewhere
 	font-weight: bold;
 }
 
+// px to rem convertion
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+	font-size: calculateRem($size);
+}
+
 // Heading Fonts
 @mixin font-h6 {
-	font-size: 16px;
-	line-height: 19px;
+	@include fontSize(16px);
+	line-height: 1.187; // 19px
 	letter-spacing: 0;
 }
 
 @mixin font-h5 {
-	font-size: 19px;
-	line-height: 23px;
+	@include fontSize(19px);
+	line-height: 1.21; // 23px
 	letter-spacing: 0;
 
 	@include breakpoint(m) {
-		font-size: 21px;
-		line-height: 24px;
+		@include fontSize(21px);
+		line-height: 1.143; // 24px
 	}
 }
 
 @mixin font-h4 {
-	font-size: 23px;
-	line-height: 27px;
-	letter-spacing: -0.58px;
+	@include fontSize(23px);
+	line-height: 1.174; // 27px
+	letter-spacing: -0.036rem;
 
 	@include breakpoint(m) {
-		font-size: 28px;
-		line-height: 33px;
-		letter-spacing: -0.7px;
+		@include fontSize(28px);
+		line-height: 1.178; // 33px
+		letter-spacing: -0.044rem;
 	}
 }
 
 @mixin font-h3 {
-	font-size: 28px;
-	line-height: 33px;
-	letter-spacing: -0.7px;
+	@include fontSize(28px);
+	line-height: 1.178; // 33px
+	letter-spacing: -0.044rem;
 
 	@include breakpoint(m) {
-		font-size: 38px;
-		line-height: 44px;
-		letter-spacing: -0.95px;
+		@include fontSize(38px);
+		line-height: 1.157; // 33px
+		letter-spacing: -0.059rem;
 	}
 }
 
 @mixin font-h2 {
-	font-size: 33px;
-	line-height: 39px;
-	letter-spacing: -0.83px;
+	@include fontSize(33px);
+	line-height: 1.182; // 39px
+	letter-spacing: -0.052rem;
 
 	@include breakpoint(m) {
-		font-size: 51px;
-		line-height: 59px;
-		letter-spacing: -1.28px;
+		@include fontSize(51px);
+		line-height: 1.157; // 59px
+		letter-spacing: -0.08rem;
 	}
 }
 
 @mixin font-h1 {
-	font-size: 40px;
-	line-height: 47px;
-	letter-spacing: -1px;
+	@include fontSize(40px);
+	line-height: 1.175; // 47px
+	letter-spacing: -0.063rem;
 
 	@include breakpoint(m) {
-		font-size: 67px;
-		line-height: 78px;
-		letter-spacing: -1.68px;
+		@include fontSize(67px);
+		line-height: 1.164; // 78px
+		letter-spacing: -0.105rem;
 	}
 }
 
 // Body Fonts
 @mixin font-body-xxl {
-	font-size: 26px;
-	line-height: 40px;
+	@include fontSize(26px);
+	line-height: 1.538; // 40px
 
 	@include breakpoint(m) {
-		font-size: 35px;
-		line-height: 56px;
+		@include fontSize(35px);
+		line-height: 1.6; // 56px
 	}
 }
 
 @mixin font-body-xl {
-	font-size: 24px;
-	line-height: 37px;
+	@include fontSize(24px);
+	line-height: 1.542; // 37px
 
 	@include breakpoint(m) {
-		font-size: 29px;
-		line-height: 48px;
+		@include fontSize(29px);
+		line-height: 1.655; // 48px
 	}
 }
 
 @mixin font-body-l {
-	font-size: 22px;
-	line-height: 34px;
+	@include fontSize(22px);
+	line-height: 1.5454; // 34px
 
 	@include breakpoint(m) {
-		font-size: 24px;
-		line-height: 40px;
+		@include fontSize(24px);
+		line-height: 1.666; // 40px
 	}
 }
 
 @mixin font-body-m {
-	font-size: 20px;
-	line-height: 32px;
+	@include fontSize(20px);
+	line-height: 1.6; // 32px
 }
 
 @mixin font-body-s {
-	font-size: 16px;
-	line-height: 24px;
+	@include fontSize(16px);
+	line-height: 1.1875; // 19px
 }
 
 @mixin font-body-xs {
-	font-size: 14px;
-	line-height: 20px;
+	@include fontSize(14px);
+	line-height: 1.428; // 20px
 }
 
 @mixin font-body-xxs {
-	font-size: 12px;
-	line-height: 16px;
+	@include fontSize(12px);
+	line-height: 1.333; // 16px
 }
 
 @mixin font-label {
-	font-size: 12px;
-	line-height: 16px;
-	letter-spacing: 1px;
+	@include fontSize(12px);
+	line-height: 1.333; // 16px
+	letter-spacing: 0.063rem;
 	text-transform: uppercase;
 	color: $color__text_two;
 }
 
 @mixin font-code {
 	font-family: $font__code;
-	font-size: 14px;
+	@include fontSize(14px);
 	line-height: 1.43;
 }
 
 // Buttons
 @mixin btn {
 	display: inline-block;
-	font-size: 16px;
-	line-height: 19px;
+	@include fontSize(16px);
+	line-height: 1.1875; // 19px
 	font-weight: normal;
 	@include transition-default;
 	width: 100%;
@@ -246,7 +258,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-outline {
 	color: $color__primary;
 	fill: $color__primary;
-	box-shadow: inset 0px 0px 0px 1px $color__primary;
+	box-shadow: inset 0 0 0 1px $color__primary;
 
 	&:hover {
 		color: $color__primary;
@@ -256,8 +268,8 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin btn-naked {
 	display: inline-block;
-	font-size: 16px;
-	line-height: 24px;
+	@include fontSize(16px);
+	line-height: 1.5; // 24px
 	font-weight: normal;
 	color: $color__text_two;
 	fill: $color__text_two;
