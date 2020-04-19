@@ -26,7 +26,7 @@
 
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header masthead" role="banner">
+	<header class="site-header" role="banner">
 
 		<div class="header-inner section-inner">
 
@@ -108,7 +108,7 @@
 
 		</div><!-- .header-inner -->
 
-	</header><!-- .masthead -->
+	</header><!-- .site-header -->
 
 	<?php
 	// Output the menu modal.
@@ -117,4 +117,4 @@
 
 	<div class="content-wrap">
 
-		<div id="content" class="site-content">
+		<div class="site-content">
