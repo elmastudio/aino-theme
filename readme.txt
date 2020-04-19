@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 = 1.0.2 =
 * Enhance: A number of CSS classes renamed.
 * Enhance: px unit converted to rem.
+* Enhance: Grid unit converted from px to percentage.
 
 = 1.0.1 =
 * Bugfix: Category styling on blog

@@ -339,9 +339,9 @@
 	flex-grow: 0;
 
 	@include breakpoint(m) {
-		flex-basis: calc(50% - 3rem);
-		margin-left: $spacing-3;
-		margin-right: $spacing-3;
+		flex-basis: calc(50% - 3.125%);
+		margin-left: $grid-margins-s;
+		margin-right: $grid-margins-s;
 	}
 }
 
@@ -352,8 +352,8 @@
 
 	@include breakpoint(m) {
 		flex-basis: calc(50%);
-		padding-left: $spacing-3;
-		padding-right: $spacing-3;
+		padding-left: $grid-margins-s;
+		padding-right: $grid-margins-s;
 	}
 }
 
@@ -366,18 +366,18 @@
 	flex-grow: 0;
 
 	@include breakpoint(s) {
-		flex-basis: calc(50% - 2rem);
-		margin-left: $spacing-2;
-		margin-right: $spacing-2;
+		flex-basis: calc(50% - 2.083333333333333%);
+		margin-left: $grid-margins-xs;
+		margin-right: $grid-margins-xs;
 	}
 
 	@include breakpoint(m) {
-		flex-basis: calc(50% - 3rem);
-		margin-left: $spacing-3;
-		margin-right: $spacing-3;
+		flex-basis: calc(50% - 3.125%);
+		margin-left: $grid-margins-s;
+		margin-right: $grid-margins-s;
 	}
 
 	@include breakpoint(l) {
-		flex-basis: calc(33.333% - 3rem);
+		flex-basis: calc(33.333% - 3.125%);
 	}
 }

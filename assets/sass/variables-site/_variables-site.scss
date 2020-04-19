@@ -19,59 +19,62 @@ $font__body: "Roboto", sans-serif;
 $font__code : "Monaco", "Courier 10 Pitch", Courier, monospace;
 
 // Spacing
-$spacing-none               : 0;
-$spacing-1                  : 0.5rem; // 8px
-$spacing-2                  : 1rem;// 16px
-$spacing-3                  : 1.5rem; // 24px
-$spacing-mobile-4           : 1.5rem; // 24px
-$spacing-desktop-4          : 2rem; // 32px
-$spacing-mobile-5           : 2rem; // 32px
-$spacing-desktop-5          : 2.5rem; // 40px
-$spacing-mobile-6           : 2rem; // 32px
-$spacing-desktop-6          : 3rem; // 48px
-$spacing-mobile-7           : 2.5rem; // 40px
-$spacing-desktop-7          : 3.5rem; // 56px
-$spacing-mobile-8           : 2.5rem; // 40px
-$spacing-desktop-8          : 4.5rem; // 72px
-$spacing-mobile-9           : 3rem; // 48px
-$spacing-desktop-9          : 6rem; // 96px
-$spacing-mobile-10          : 3rem; // 48px
-$spacing-desktop-10         : 9rem; // 144px
-$spacing-mobile-11          : 3.5rem; // 56px
-$spacing-desktop-11         : 12rem; // 192px
+$spacing-none        : 0;
+$spacing-1           : 0.5rem; // 8px
+$spacing-2           : 1rem;// 16px
+$spacing-3           : 1.5rem; // 24px
+$spacing-mobile-4    : 1.5rem; // 24px
+$spacing-desktop-4   : 2rem; // 32px
+$spacing-mobile-5    : 2rem; // 32px
+$spacing-desktop-5   : 2.5rem; // 40px
+$spacing-mobile-6    : 2rem; // 32px
+$spacing-desktop-6   : 3rem; // 48px
+$spacing-mobile-7    : 2.5rem; // 40px
+$spacing-desktop-7   : 3.5rem; // 56px
+$spacing-mobile-8    : 2.5rem; // 40px
+$spacing-desktop-8   : 4.5rem; // 72px
+$spacing-mobile-9    : 3rem; // 48px
+$spacing-desktop-9   : 6rem; // 96px
+$spacing-mobile-10   : 3rem; // 48px
+$spacing-desktop-10  : 9rem; // 144px
+$spacing-mobile-11   : 3.5rem; // 56px
+$spacing-desktop-11  : 12rem; // 192px
 
-$spacing-xxs                : 0.25rem; // 4px
-$spacing-xs                 : 0.5rem; // 8px
-$spacing-s                  : 0.75rem; // 12px
-
-// Grid Margins
-$grid-margins-s             : 1.5rem; // 24px
-$grid-margins-m             : 2rem; // 32px
-$grid-margins-l             : 3rem; // 48px
+$spacing-xxs         : 0.25rem; // 4px
+$spacing-xs          : 0.5rem; // 8px
+$spacing-s           : 0.75rem; // 12px
 
 // Spacing Headerbar
-$stickyheader-mobile        : 3.438rem; // 55px
-$stickyheader-desktop       : 5.5rem; // 88px
+$stickyheader-mobile : 3.438rem; // 55px
+$stickyheader-desktop: 5.5rem; // 88px
 
 // Grid Columns
-$col1                       : 104px; // 1 grid columns
-$col2                       : 208px; // 2 grid columns
-$col3                       : 312px; // 3 grid columns
-$col4                       : 416px; // 4 grid columns
-$col5                       : 520px; // 5 grid columns
-$col6                       : 624px; // 6 grid columns
-$col7                       : 728px; // 7 grid columns
-$col8                       : 832px; // 8 grid columns
-$col9                       : 936px; // 9 grid columns
-$col10                      : 1040px; // 10 grid columns
-$col11                      : 1144px; // 11 grid columns
-$col12                      : 1248px; // 12 grid columns
-$col7-no-margin             : 680px; // 7 grid columns without padding
-$col12-no-margin            : 1200px;
+$col1                : 7.8125%; // 1 grid column
+$col2                : 15.625%; // 2 grid column
+$col3                : 23.4375%; // 3 grid column
+$col4                : 31.25%; // 4 grid column
+$col5                : 39.0625%; // 5 grid column
+$col6                : 46.875%; // 6 grid column
+$col7                : 54.6875%; // 7 grid column
+$col8                : 62.5%; // 8 grid column
+$col9                : 70.3125%; // 9 grid column
+$col10               : 78.125%; // 10 grid column
+$col11               : 85.9375%; // 11 grid column
+$col12               : 93.75%; // 12 grid column
+$col7-no-margin      : 51.5625%; // 7 grid columns, no outer padding, default block width
+$col12-no-margin     : 90.625%; // 12 grid column, no outer padding
+
+// Grid Margins
+$grid-margins-xs     : 1.041666666666667%; // 16px
+$grid-margins-xs-x2  : 2.083333333333333%; // 32px
+$grid-margins-s      : 1.5625%; // 24px
+$grid-margins-s-x2   : 3.125%; // 48px
+$grid-margins-m      : 2rem; // 32px
+$grid-margins-l      : 3rem; // 48px
 
 // Border Radius
-$border-radius-xs: 0.5rem; // 8px
-$border-radius-s: 0.75rem; // 12px
-$border-radius-m: 1.5rem; // 24px
-$border-radius-l: 2.25rem; // 36px
+$border-radius-xs    : 0.5rem; // 8px
+$border-radius-s     : 0.75rem; // 12px
+$border-radius-m     : 1.5rem; // 24px
+$border-radius-l     : 2.25rem; // 36px
 $border-radius-circle: 6.25rem; // 100px
