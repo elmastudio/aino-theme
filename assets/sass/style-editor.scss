@@ -2,66 +2,69 @@
 Aino Editor Styles
 */
 
-/** === Includes === */
+/* Includes --------------------------------- */
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
-/** === Editor Frame === */
-
+/* Editor Wrapper --------------------------------- */
 .editor-styles-wrapper {
 	text-rendering: optimizeLegibility;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 }
 
-body {
+/* Structure --------------------------------- */
+.wp-block {
+	max-width: 672px;
+}
 
-	.wp-block[data-align="full"] {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
+.wp-block[data-align="full"] {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
 
-	.wp-block[data-align="wide"] {
-		max-width: 1200px;
-	}
+.wp-block[data-align="wide"] .wp-block[data-align="wide"],
+.wp-block[data-align="full"] .wp-block[data-align="wide"] {
+	max-width: 1392px;
+}
 
-	&.tpl-fullwidth .wp-block {
-		max-width: 1200px;
-	}
+.wp-block .wp-block[data-type="core/group"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]),
+.wp-block .wp-block[data-type="core/cover"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]) {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 672px;
+}
 
-	&.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
-		max-width: 1200px !important;
-	}
+.wp-block .wp-block[data-align="full"] {
+	margin-left: 0;
+	margin-right: 0;
+}
 
-	.wp-block[data-align="full"] {
-		max-width: none;
-	}
+*[data-align="right"] .wp-block-edit,
+*[data-align="left"] .wp-block-edit {
+	max-width: 50%;
+}
 
-	&.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
-		max-width: none !important;
-		width: auto !important;
-	}
+.wp-block[data-align="wide"],
+.wp-block.alignwide {
+	max-width: 1392px;
+}
+
+.wp-block[data-align="full"],
+.wp-block.alignfull {
+	max-width: none;
+}
+
+.tpl-fullwidth .wp-block {
+	max-width: 1392px;
 }
 
 .wp-block {
 	.tpl-fullwidth & {
-		max-width: 1200px;
+		max-width: 1392px;
 	}
 }
-
-/** === Content Width === */
-
-.wp-block {
-	max-width: 680px;
-
-	// Only the top level blocks need specific widths, therefore override for every nested block.
-	.wp-block {
-		width: auto;
-	}
-}
-
-/** === Left and Right Alignment on Small Screens === */
 
 @include breakpoint(s) {
 	*[class^="wp-block-"].alignleft,
@@ -70,18 +73,7 @@ body {
 	}
 }
 
-*[class^="wp-block-"].alignleft,
-*[class^="wp-block-"].alignright {
-	max-width: 50%;
-}
-
-.aligncenter,
-.alignfull,
-.alignwide {
-	clear: both;
-}
-
-/** === Base Typography === */
+/* Typography ------------------------------ */
 body {
 	@include font-body;
 	color: $color__text_two;
@@ -451,11 +443,6 @@ textarea {
 
 /** === Image === */
 
-.wp-block-image {
-	max-width: 100%;
-	display: inline-block;
-	/* helps with smaller, unaligned images */
-}
 
 /** === Captions === */
 

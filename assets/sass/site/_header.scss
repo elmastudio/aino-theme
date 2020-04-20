@@ -476,13 +476,13 @@ ul.primary-menu {
 			&.menu-item-has-children .icon {
 				position: absolute;
 				right: 0;
-				top: calc(50% - 0.5rem);
+				top: calc(50% - 0.25rem);
 			}
 
 			&.menu-item-has-children:hover > ul,
 			&.menu-item-has-children:focus > ul,
 			&.menu-item-has-children.focus > ul {
-				right: calc(100% + 2rem);
+				right: calc(100% + 1.5rem);
 			}
 		}
 	}

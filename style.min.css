@@ -94,7 +94,7 @@ textarea{resize:vertical}
 .has-padding-top{padding-top:3rem}
 .has-padding-bottom{padding-bottom:3rem}
 .header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{margin-left:auto;margin-right:auto}
-.entry-content>*,.single-post .entry-header,.page-template-default .entry-header,.error404 .entry-header,.single-post .entry-footer,.single-post .comments-area{margin-left:auto;margin-right:auto;max-width:42rem}
+.entry-content>*,.single-post .entry-header,.page-template-default .entry-header,.error404 .entry-header,.single-post .entry-footer,.single-post .comments-area,.single-page .comments-area{margin-left:auto;margin-right:auto;max-width:42rem}
 .tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header{margin-left:auto;margin-right:auto;max-width:87rem}
 .tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header,.tpl-hero .entry-content>*,.tpl-hero .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
 .entry-content>*.alignwide{max-width:87rem}
@@ -359,8 +359,8 @@ ul.primary-menu ul a{background:transparent;border:0;color:inherit;display:block
 ul.primary-menu ul li{margin-bottom:.5rem}
 ul.primary-menu ul li:last-child{margin-bottom:0}
 ul.primary-menu ul li.menu-item-has-children>a{padding-right:0}
-ul.primary-menu ul li.menu-item-has-children .icon{position:absolute;right:0;top:calc(50% - 0.5rem)}
-ul.primary-menu ul li.menu-item-has-children:hover>ul,ul.primary-menu ul li.menu-item-has-children:focus>ul,ul.primary-menu ul li.menu-item-has-children.focus>ul{right:calc(100% + 2rem)}
+ul.primary-menu ul li.menu-item-has-children .icon{position:absolute;right:0;top:calc(50% - 0.25rem)}
+ul.primary-menu ul li.menu-item-has-children:hover>ul,ul.primary-menu ul li.menu-item-has-children:focus>ul,ul.primary-menu ul li.menu-item-has-children.focus>ul{right:calc(100% + 1.5rem)}
 .menu-bold ul.primary-menu a{font-weight:bold}
 .menu-uppercase ul.primary-menu>li>.icon{top:6px}
 .menu-uppercase ul.primary-menu a{text-transform:uppercase;font-size:.875rem;line-height:1.428;letter-spacing:2px}

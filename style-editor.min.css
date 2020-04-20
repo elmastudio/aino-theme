@@ -1,17 +1,16 @@
 /*!
 Aino Editor Styles
 */.editor-styles-wrapper{text-rendering:optimizeLegibility;-moz-font-smoothing:antialiased;-webkit-font-smoothing:antialiased}
-body .wp-block[data-align="full"]{width:100%;margin:0;padding:0}
-body .wp-block[data-align="wide"]{max-width:1200px}
-body.tpl-fullwidth .wp-block{max-width:1200px}
-body.gutenberg-editor-page .editor-block-list__block[data-align="wide"]{max-width:1200px !important}
-body .wp-block[data-align="full"]{max-width:none}
-body.gutenberg-editor-page .editor-block-list__block[data-align="full"]{max-width:none !important;width:auto !important}
-.tpl-fullwidth .wp-block{max-width:1200px}
-.wp-block{max-width:680px}
-.wp-block .wp-block{width:auto}
-*[class^="wp-block-"].alignleft,*[class^="wp-block-"].alignright{max-width:50%}
-.aligncenter,.alignfull,.alignwide{clear:both}
+.wp-block{max-width:672px}
+.wp-block[data-align="full"]{width:100%;margin:0;padding:0}
+.wp-block[data-align="wide"] .wp-block[data-align="wide"],.wp-block[data-align="full"] .wp-block[data-align="wide"]{max-width:1392px}
+.wp-block .wp-block[data-type="core/group"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]),.wp-block .wp-block[data-type="core/cover"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]){margin-left:auto;margin-right:auto;max-width:672px}
+.wp-block .wp-block[data-align="full"]{margin-left:0;margin-right:0}
+*[data-align="right"] .wp-block-edit,*[data-align="left"] .wp-block-edit{max-width:50%}
+.wp-block[data-align="wide"],.wp-block.alignwide{max-width:1392px}
+.wp-block[data-align="full"],.wp-block.alignfull{max-width:none}
+.tpl-fullwidth .wp-block{max-width:1392px}
+.tpl-fullwidth .wp-block{max-width:1392px}
 body{font-family:"Roboto",sans-serif;color:#222}
 .editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#111;font-weight:bold}
 .editor-post-title__input a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#111}
@@ -63,7 +62,6 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input
 select{border:1px solid #ccc}
 textarea{width:100%}
 .editor-default-block-appender .editor-default-block-appender__content{font-family:"Roboto",sans-serif;font-size:1.25rem;line-height:1.6}
-.wp-block-image{max-width:100%;display:inline-block}
 .wp-block-image figcaption,.wp-block-embed figcaption,.wp-block-audio figcaption{max-width:100%;font-size:.875rem;line-height:1.428;margin:6px 0 0;text-align:center}
 .wp-block-gallery{margin:0}
 .wp-block-gallery .blocks-gallery-image figcaption,.wp-block-gallery .blocks-gallery-item figcaption{padding:40px 12px 8px;font-size:14px;font-weight:300}
