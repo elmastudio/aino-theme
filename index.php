@@ -43,31 +43,7 @@ get_header(); ?>
 
 		<div class="posts-container" id="posts-container">
 
-			<?php if ( ! is_paged() && $sticky ) : ?>
-
-				<div class="sticky-container">
-
-				<?php
-				if ( $query_sticky->have_posts() ) :
-
-					while ( $query_sticky->have_posts() ) :
-						$query_sticky->the_post();
-
-						get_template_part( 'template-parts/post/content-sticky' );
-
-					endwhile;
-
-						/* Restore original Post Data */
-						wp_reset_postdata();
-
-				endif;
-				?>
-
-					</div><!-- .sticky-container -->
-				<?php endif; ?>
-
-
-			<?php
+		<?php
 			if ( have_posts() ) :
 				?>
 
@@ -78,7 +54,6 @@ get_header(); ?>
 					get_template_part( 'template-parts/post/content' );
 				endwhile;
 				?>
-
 		<?php endif; ?>
 
 	</div><!-- .posts-container -->
