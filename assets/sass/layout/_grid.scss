@@ -152,12 +152,7 @@
 		padding-right: $grid-margins-l;
 	}
 
-	@include breakpoint(m) {
-		padding-left: $grid-margins-l;
-		padding-right: $grid-margins-l;
-	}
-
-	@include breakpoint(l) {
+	@include breakpoint(xxl) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 	}
@@ -168,17 +163,7 @@
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
 
-	@include breakpoint(s) {
-		padding-left: $grid-margins-l;
-		padding-right: $grid-margins-l;
-	}
-
-	@include breakpoint(m) {
-		padding-left: $grid-margins-s;
-		padding-right: $grid-margins-s;
-	}
-
-	@include breakpoint(l) {
+	@include breakpoint(xxl) {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -225,13 +210,17 @@
 }
 
 /* Pages with 12 column max-width */
+.header-inner,
 .archive .site-content,
 .blog .site-content,
 .error404 .site-content,
 .search .site-content,
 .single-post .site-content {
-	max-width: $col12;
 	@include push--auto;
+
+	@include breakpoint(xxl) {
+		max-width: $col12;
+	}
 }
 
 /* Default Content width (680px on desktop screens) */
@@ -242,7 +231,7 @@
 .single-post .entry-footer,
 .single-post .comments-area {
 	@include push--auto;
-	max-width: $col7-no-margin;
+	max-width: $col6-no-margin;
 }
 
 /* Full width page template (1200px on desktop screens) */
@@ -339,7 +328,7 @@
 	flex-grow: 0;
 
 	@include breakpoint(m) {
-		flex-basis: calc(50% - 3.125%);
+		flex-basis: calc(50% - 3rem);
 		margin-left: $grid-margins-s;
 		margin-right: $grid-margins-s;
 	}
@@ -365,19 +354,13 @@
 	width: 100%;
 	flex-grow: 0;
 
-	@include breakpoint(s) {
-		flex-basis: calc(50% - 2.083333333333333%);
-		margin-left: $grid-margins-xs;
-		margin-right: $grid-margins-xs;
-	}
-
 	@include breakpoint(m) {
-		flex-basis: calc(50% - 3.125%);
+		flex-basis: calc(50% - 3rem);
 		margin-left: $grid-margins-s;
 		margin-right: $grid-margins-s;
 	}
 
 	@include breakpoint(l) {
-		flex-basis: calc(33.333% - 3.125%);
+		flex-basis: calc(33.333% - 3rem);
 	}
 }

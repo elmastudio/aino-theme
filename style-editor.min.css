@@ -85,7 +85,7 @@ textarea{width:100%}
 .wp-block-table__cell-content{padding:1rem}
 .wp-block-table td.is-selected,.wp-block-table th.is-selected{border:1px solid #cacaca;-webkit-box-shadow:inset 0 0 0 1px #1765d8;box-shadow:inset 0 0 0 1px #1765d8}
 .wp-block-cover-image{height:75vh;min-height:400px;margin-top:2rem;margin-bottom:2.5rem}
-.wp-block-cover-image-text,.wp-block-cover-image h2{max-width:51.5625%;font-size:1.4375rem;line-height:1.174;letter-spacing:-0.036rem}
+.wp-block-cover-image-text,.wp-block-cover-image h2{max-width:42rem;font-size:1.4375rem;line-height:1.174;letter-spacing:-0.036rem}
 .wp-block-code{background:#b2cacd;color:#062e32;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:.875rem;line-height:1.43;font-size:.875rem;line-height:1.428;padding:1.5rem;border-radius:1.5rem}
 .wp-block-code .block-editor-plain-text{background:transparent}
 .wp-block-preformatted{background-color:#062e32;color:#b2cacd;max-width:100%;overflow:auto;padding:1.5rem;margin-bottom:1.5rem;border-radius:1.5rem;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:.875rem;line-height:1.43}

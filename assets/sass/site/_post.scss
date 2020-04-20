@@ -55,9 +55,6 @@
 
 		justify-content: center;
 		@include flexbox;
-		@include breakpoint(l) {
-			padding: 0 $spacing-3;
-		}
 
 		& img {
 			display: block;
@@ -114,12 +111,9 @@
 .related .section-title {
 	@include flexbox;
 	justify-content: space-between;
-	border-top: 1px solid $color__border;
-	padding-top: $spacing-mobile-10;
 	padding-bottom: $spacing-mobile-6;
 
 	@include breakpoint(m) {
-		padding-top: $spacing-desktop-10;
 		padding-bottom: $spacing-desktop-6;
 		line-height: 1;
 	}

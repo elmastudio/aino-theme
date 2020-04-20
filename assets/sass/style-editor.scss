@@ -585,7 +585,6 @@ textarea {
 }
 
 /** === Cover === */
-
 .wp-block-cover-image {
 	height: 75vh;
 	min-height: 400px;
@@ -600,7 +599,7 @@ textarea {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: $col7-no-margin;
+	max-width: $col6-no-margin;
 	@include font-h4;
 }
 

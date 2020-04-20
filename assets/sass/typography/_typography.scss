@@ -259,7 +259,6 @@ big {
 
 .wide-content {
 	@include breakpoint(xl) {
-		width: $col12-no-margin;
-		margin: 0 -256px;
+		max-width: $col12;
 	}
 }

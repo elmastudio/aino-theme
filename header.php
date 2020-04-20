@@ -12,24 +12,19 @@
 ?><!DOCTYPE html>
 
 <html <?php language_attributes(); ?>>
-
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<?php wp_head(); ?>
 	</head>
-
 <body <?php body_class(); ?>>
 
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
-
 	<header class="site-header" role="banner">
-
-		<div class="header-inner section-inner">
-
+		<div class="header-inner section-inner grid-margins">
 			<div class="site-branding">
 
 				<?php
@@ -43,7 +38,6 @@
 			</div><!-- .site-branding -->
 
 			<div id="nav-container" class="nav-container">
-
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 					<span class="toggle-inner">
 						<?php echo aino_get_svg( array( 'icon' => 'more_horiz-24px' ) ); ?>
@@ -56,7 +50,6 @@
 					<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
 					<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Horizontal', 'aino' ); ?>" role="navigation">
-
 						<ul class="primary-menu reset-list-style">
 
 							<?php
@@ -73,7 +66,6 @@
 							?>
 
 						</ul><!-- .primary-menu -->
-
 					</nav><!-- .primary-menu-wrapper -->
 
 					<?php endif; ?>
@@ -107,7 +99,6 @@
 		<?php endif; ?>
 
 		</div><!-- .header-inner -->
-
 	</header><!-- .site-header -->
 
 	<?php
@@ -116,5 +107,4 @@
 	?>
 
 	<div class="content-wrap">
-
 		<div class="site-content">

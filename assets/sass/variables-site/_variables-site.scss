@@ -60,15 +60,13 @@ $col8                : 62.5%; // 8 grid column
 $col9                : 70.3125%; // 9 grid column
 $col10               : 78.125%; // 10 grid column
 $col11               : 85.9375%; // 11 grid column
-$col12               : 93.75%; // 12 grid column
-$col7-no-margin      : 51.5625%; // 7 grid columns, no outer padding, default block width
-$col12-no-margin     : 90.625%; // 12 grid column, no outer padding
+$col12               : 90rem; // 12 grid column, 1440px
+$col6-no-margin      : 42rem; // 6 grid columns, no outer padding, default block width
+$col12-no-margin     : 87rem; // 12 grid column, no outer padding
 
 // Grid Margins
-$grid-margins-xs     : 1.041666666666667%; // 16px
-$grid-margins-xs-x2  : 2.083333333333333%; // 32px
-$grid-margins-s      : 1.5625%; // 24px
-$grid-margins-s-x2   : 3.125%; // 48px
+$grid-margins-xs     : 1rem; // 16px
+$grid-margins-s      : 1.5rem; // 24px
 $grid-margins-m      : 2rem; // 32px
 $grid-margins-l      : 3rem; // 48px
 

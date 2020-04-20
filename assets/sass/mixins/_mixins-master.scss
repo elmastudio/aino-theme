@@ -8,7 +8,7 @@ $var: true !default; // Can be overridden elsewhere
 		 @include breakpoint(840)	{ } m
 		 @include breakpoint(1248)	{ } l
 		 @include breakpoint(1296)	{ } xl
-		 @include breakpoint(1600)	{ } xxl
+		 @include breakpoint(1536)	{ } xxl
 		 @include breakpoint(1140)	{ } header
 	* ------------------------------------------------------------ */
 @mixin breakpoint($class) {
@@ -33,7 +33,7 @@ $var: true !default; // Can be overridden elsewhere
 		}
 	} @else
 	if $class == xxl {
-		@media (min-width: 100.00em) {
+		@media (min-width: 96em) {
 			@content;
 		}
 	} @else

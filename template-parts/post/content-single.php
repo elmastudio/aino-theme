@@ -32,7 +32,7 @@
 	</header><!-- .entry-header -->
 
 	<?php if ( '' !== get_the_post_thumbnail() ) : ?>
-		<figure class="post-thumb push-center col12 grid-margins">
+		<figure class="post-thumb push-center grid-margins">
 			<?php the_post_thumbnail(); ?>
 		</figure><!-- .post-thumb -->
 	<?php endif; ?>

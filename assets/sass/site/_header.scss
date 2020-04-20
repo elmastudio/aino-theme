@@ -237,14 +237,6 @@
 }
 
 .header-inner {
-	padding-left: $spacing-3;
-	padding-right: $spacing-3;
-
-	@include breakpoint(s) {
-		padding-left: $spacing-mobile-9;
-		padding-right: $spacing-mobile-9;
-	}
-
 	@include breakpoint(header) {
 		@include flexbox;
 		align-items: center;
