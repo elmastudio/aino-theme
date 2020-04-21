@@ -3,8 +3,8 @@ Aino Editor Styles
 */
 
 /* Includes --------------------------------- */
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+@import "1-base/variables";
+@import "1-base/mixins";
 
 /* Editor Wrapper --------------------------------- */
 .editor-styles-wrapper {

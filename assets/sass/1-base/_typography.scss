@@ -183,6 +183,18 @@ i {
 	font-style: italic;
 }
 
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $spacing-3 $spacing-3;
+
+	@include breakpoint(m) {
+		margin: 0 $spacing-3 $spacing-3;
+	}
+}
+
 blockquote {
 	margin: 0;
 	padding: 0;
