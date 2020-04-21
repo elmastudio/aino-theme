@@ -346,7 +346,7 @@ ul.primary-menu li.menu-item-has-children:hover>ul,ul.primary-menu li.menu-item-
 ul.primary-menu>li{margin:0 2rem 0 0}
 ul.primary-menu>li:last-child{margin-right:0}
 ul.primary-menu>li.menu-item-has-children>a{padding-right:1.5rem}
-ul.primary-menu>li>.icon{right:.25rem;top:.5rem}
+ul.primary-menu>li>.icon{right:.25rem;top:.375rem}
 ul.primary-menu a{color:#111;display:block;text-decoration:none;padding-top:.25rem;padding-bottom:.25rem}
 ul.primary-menu ul{box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 24px 64px 0 rgba(0,0,0,0.1);font-size:.875rem;line-height:1.428;background:#fff;color:#111;padding:1.5rem;position:absolute;opacity:0;right:9999rem;top:calc(100% + 10px);-webkit-transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,right 0s .15s,-webkit-transform .15s linear;transition:opacity .15s linear,transform .15s linear,right 0s .15s;transition:opacity .15s linear,transform .15s linear,right 0s .15s,-webkit-transform .15s linear;-webkit-transform:translateY(0.6rem);transform:translateY(0.6rem);width:264px;z-index:10;margin:0}
 .btn-curved ul.primary-menu ul{border-radius:.75rem}
@@ -359,10 +359,10 @@ ul.primary-menu ul a{background:transparent;border:0;color:inherit;display:block
 ul.primary-menu ul li{margin-bottom:.5rem}
 ul.primary-menu ul li:last-child{margin-bottom:0}
 ul.primary-menu ul li.menu-item-has-children>a{padding-right:0}
-ul.primary-menu ul li.menu-item-has-children .icon{position:absolute;right:0;top:calc(50% - 0.25rem)}
+ul.primary-menu ul li.menu-item-has-children .icon{position:absolute;right:0;top:.313rem}
 ul.primary-menu ul li.menu-item-has-children:hover>ul,ul.primary-menu ul li.menu-item-has-children:focus>ul,ul.primary-menu ul li.menu-item-has-children.focus>ul{right:calc(100% + 1.5rem)}
 .menu-bold ul.primary-menu a{font-weight:bold}
-.menu-uppercase ul.primary-menu>li>.icon{top:6px}
+.menu-uppercase ul.primary-menu>li>.icon{top:.375rem}
 .menu-uppercase ul.primary-menu a{text-transform:uppercase;font-size:.875rem;line-height:1.428;letter-spacing:2px}
 .menu-uppercase ul.primary-menu ul a{font-size:.75rem;line-height:1.333}
 .menu-modal{background:#fff;display:none;opacity:0;overflow-y:auto;overflow-x:hidden;position:fixed;bottom:0;left:-99999rem;right:99999rem;top:0;-webkit-transition:opacity .25s ease-in,left 0s .25s,right 0s .25s;transition:opacity .25s ease-in,left 0s .25s,right 0s .25s;z-index:99}
