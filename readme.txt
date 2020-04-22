@@ -51,14 +51,15 @@ Aino WordPress Theme bundles the following third-party resources:
 * Bugfix: Separator block styling.
 
 = 1.0.1 =
-* Bugfix: Category styling on blog
+* Bugfix: Category styling on blog.
 * Bugfix: Missing default excerpt text on first theme activation.
+* Bugfix: Deleted unneeded div container for sticky posts.
 
 = 1.0.0 =
-* New: Include minified style.min.css
-* New: Disable Google fonts loading option in Customize/Theme/Typography
-* New: Customizable default text colors in Customize/Colors
-* New: Disable custom font in editor font sizes
+* New: Include minified style.min.css.
+* New: Disable Google fonts loading option in Customize/Theme/Typography.
+* New: Customizable default text colors in Customize/Colors.
+* New: Disable custom font in editor font sizes.
 * Enhance: screenshot.png
 * Enhance: Grid column CSS
 * Enhance: Update heading and paragraph font sizes

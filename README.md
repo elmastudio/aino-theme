@@ -11,6 +11,10 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
+### 1.0.2 
+**Bugfix:** Deleted unneeded div container for sticky posts.    
+**Enhance:** Update gitignore file.    
+    
 ### 1.0.1 
 **Bugfix:** Category styling on blog  
 **Bugfix:** Missing default excerpt text on first theme activation    
