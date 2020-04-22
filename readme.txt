@@ -48,6 +48,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * Enhance: px unit converted to rem.
 * Enhance: A number of CSS classes renamed.
 * Bugfix: Sticky post update.
+* Bugfix: Separator block styling.
 
 = 1.0.1 =
 * Bugfix: Category styling on blog

@@ -360,7 +360,7 @@ ul.wp-block-gallery.blocks-gallery-image figcaption,ul.wp-block-gallery.wp-block
 .wp-block-table{display:table}
 .wp-block-table.alignfull{width:96vw}
 .wp-block-verse{background-color:transparent;padding:0;color:#111}
-.wp-block-separator{border:0;border-top:1px solid rgba(0,0,0,0.12);margin:0 0 2rem}
+.wp-block-separator{border:0;border-top:1px solid rgba(0,0,0,0.12);margin-bottom:2rem}
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots){max-width:100px;margin-left:auto;margin-right:auto}
 .wp-block-separator.is-style-dots{background:0;border:0}
 .wp-block-separator.is-style-dots:before{color:#222;content:"\00b7 \00b7 \00b7";font-family:serif;font-size:1.375rem;line-height:1.5454;letter-spacing:1em;padding-left:1em}
@@ -769,7 +769,7 @@ td{padding:1rem}
 .hentry .entry-content .wp-block-columns.alignwide{padding-left:1.5rem;padding-right:1.5rem}
 ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:calc(31.75% - 31.75vw)}
 .wp-block-quote.is-style-large p,.wp-block-pullquote.is-style-large p{font-size:1.5rem;line-height:1.666}
-.wp-block-separator{margin:0 0 3rem}
+.wp-block-separator{margin-bottom:3rem}
 .wp-block-separator.is-style-dots:before{font-size:1.5rem;line-height:1.666}
 .wp-block-categories,.wp-block-latest-posts__post-date{margin:0 0 3rem}
 .wp-block-preformatted{padding:2rem;margin-bottom:2rem}
