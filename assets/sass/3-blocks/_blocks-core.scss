@@ -11,6 +11,7 @@
 .wp-block-ainoblocks-advanced-buttons {
 	@include push--auto;
 	margin-bottom: $spacing-mobile-4;
+
 	@include breakpoint(m) {
 		margin-bottom: $spacing-desktop-4;
 	}
@@ -26,17 +27,10 @@
 		margin-left: auto;
 		margin-right: auto;
 		clear: both;
-		padding-left: 24px;
-		padding-right: 24px;
 
 		@include breakpoint(m) {
-			padding-left: 48px;
-			padding-right: 48px;
-		}
-
-		@include breakpoint(l) {
-			padding-left: 24px;
-			padding-right: 24px;
+			padding-left: $grid-margins-l;
+			padding-right: $grid-margins-l;
 		}
 	}
 
@@ -57,17 +51,17 @@
 		overflow: hidden;
 		margin-left: auto;
 		margin-right: auto;
-		padding-left: 24px;
-		padding-right: 24px;
+		padding-left: $grid-margins-s;
+		padding-right: $grid-margins-s;
 
 		@include breakpoint(s) {
-			padding-left: 48px;
-			padding-right: 48px;
+			padding-left: $grid-margins-l;
+			padding-right: $grid-margins-l;
 		}
 
 		@include breakpoint(l) {
-			padding-left: 24px;
-			padding-right: 24px;
+			padding-left: $grid-margins-s;
+			padding-right: $grid-margins-s;
 		}
 	}
 }
@@ -100,6 +94,7 @@
 		text-transform: uppercase;
 		font-style: normal;
 		font-size: 100px;
+
 		@include breakpoint(m) {
 			font-size: 120px;
 			line-height: 0.77;
@@ -468,9 +463,9 @@ ul.wp-block-gallery {
 .wp-block-separator {
 	border: none;
 	border-top: 1px solid rgba(0, 0, 0, 0.12);
-	margin: 0 0 $spacing-mobile-6;
+	margin-bottom: $spacing-mobile-6;
 	@include breakpoint(m) {
-		margin: 0 0 $spacing-desktop-6;
+		margin-bottom: $spacing-desktop-6;
 	}
 }
 

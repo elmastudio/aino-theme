@@ -41,33 +41,34 @@ get_header(); ?>
 
 		<main id="main" class="site-main mobile-margins" role="main">
 
-			<div class="posts-container" id="posts-container">
+		<div class="posts-container" id="posts-container">
+
+		<?php
+			if ( have_posts() ) :
+				?>
+
 				<?php
-				if ( have_posts() ) :
-					?>
+				// Start the Standard Loop.
+				while ( have_posts() ) :
+					the_post();
+					get_template_part( 'template-parts/post/content' );
+				endwhile;
+				?>
+		<?php endif; ?>
 
-					<?php
-					// Start the Standard Loop.
-					while ( have_posts() ) :
-						the_post();
-						get_template_part( 'template-parts/post/content' );
-					endwhile;
-					?>
+	</div><!-- .posts-container -->
 
-				<?php endif; ?>
-			</div><!-- .posts-container -->
-
-			<?php
-			the_posts_pagination(
-				array(
-					'next_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Older posts', 'aino' ) . '</span> ' .
-					'<span class="screen-reader-text">' . esc_html__( 'Older posts', 'aino' ) . '</span> ',
-					'prev_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_left-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ' .
-					'<span class="screen-reader-text">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ',
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'aino' ) . ' </span>',
-				)
-			);
-			?>
+		<?php
+		the_posts_pagination(
+			array(
+				'next_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Older posts', 'aino' ) . '</span> ' .
+				'<span class="screen-reader-text">' . esc_html__( 'Older posts', 'aino' ) . '</span> ',
+				'prev_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_left-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ' .
+				'<span class="screen-reader-text">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ',
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'aino' ) . ' </span>',
+			)
+		);
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

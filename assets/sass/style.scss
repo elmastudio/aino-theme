@@ -16,83 +16,42 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> Table of Contents:
 ----------------------------------------------------------------
-# Normalize
-# Santize
-# Layout
-# Typography
-# Elements
-# Accessibility
-# Alignments
-# Clearings
-# Media
-# Site
-	## Header
-	## Hero
-	## Blog
-	## Post
-	## Page
-	## Pagination
-	## Footer
-# Widgets
-# Blocks
+# 1-base
+	## variables
+	## mixins
+	## normalize
+	## sanitize
+	## accessibility
+	## clearings
+	## grid
+	## typography
+	## media
+# 2-components
+	## forms
+	## icons
+	## links
+	## buttons
+	## avatars
+	## badges
+	## lists
+	## tables
+	## widgets
+# 3-blocks
+	## Blocks Core
+	## Blocks Aino
+# 4-layout
+	## structure
+	## header
+	## blog
+	## post
+	## page
+	## pagination
+	## footer
 --------------------------------------------------------------*/
-@import "mixins/mixins-master";
-@import "variables-site/variables-site";
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "vendors/normalize";
-
-/*--------------------------------------------------------------
-# Santize
---------------------------------------------------------------*/
-@import "vendors/sanitize";
-
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-@import "layout/grid";
-
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-@import "typography/typography";
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
-
-/*--------------------------------------------------------------
- # Accessibility
- --------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
- # Clearings
- --------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
- # Media
- --------------------------------------------------------------*/
- @import "media/media";
-
- /*--------------------------------------------------------------
-	# Site
-	--------------------------------------------------------------*/
- @import "site/site";
-
- /*--------------------------------------------------------------
-	# Widgets
-	--------------------------------------------------------------*/
- @import "site/widgets-default";
-
- /*--------------------------------------------------------------
-	# Blocks
-	--------------------------------------------------------------*/
- @import "blocks/blocks-default";
- @import "blocks/blocks-aino";
+@import "1-base/base-index";
+@import "2-components/components-index";
+@import "3-blocks/blocks-index";
+@import "4-layout/layout-index";

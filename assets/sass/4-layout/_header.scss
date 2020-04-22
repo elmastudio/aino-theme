@@ -237,14 +237,6 @@
 }
 
 .header-inner {
-	padding-left: $spacing-3;
-	padding-right: $spacing-3;
-
-	@include breakpoint(s) {
-		padding-left: $spacing-mobile-9;
-		padding-right: $spacing-mobile-9;
-	}
-
 	@include breakpoint(header) {
 		@include flexbox;
 		align-items: center;
@@ -397,7 +389,7 @@ ul.primary-menu {
 
 		> .icon {
 			right: $spacing-xxs;
-			top: $spacing-xs;
+			top: 0.375rem; // 6px
 		}
 	}
 
@@ -484,13 +476,13 @@ ul.primary-menu {
 			&.menu-item-has-children .icon {
 				position: absolute;
 				right: 0;
-				top: calc(50% - 0.5rem);
+				top: 0.313rem; // 5px
 			}
 
 			&.menu-item-has-children:hover > ul,
 			&.menu-item-has-children:focus > ul,
 			&.menu-item-has-children.focus > ul {
-				right: calc(100% + 2rem);
+				right: calc(100% + 1.5rem);
 			}
 		}
 	}
@@ -504,7 +496,7 @@ ul.primary-menu {
 	.menu-uppercase & {
 
 		> li > .icon {
-			top: 6px;
+			top: 0.375rem; // 6px
 		}
 
 		a {

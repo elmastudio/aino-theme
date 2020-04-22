@@ -43,8 +43,12 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.0.2 =
-* Bugfix: Deleted unneeded div container for sticky posts.
-* Enhance: Update gitignore file.
+* Enhance: SASS folder structure optimised.
+* Enhance: Grid layout optimised.
+* Enhance: px unit converted to rem.
+* Enhance: A number of CSS classes renamed.
+* Bugfix: Sticky post update.
+* Bugfix: Separator block styling.
 
 = 1.0.1 =
 * Bugfix: Category styling on blog.
