@@ -32,6 +32,11 @@
 			padding-left: $grid-margins-l;
 			padding-right: $grid-margins-l;
 		}
+
+		@include breakpoint(xxl) {
+			padding-left: $grid-margins-s;
+			padding-right: $grid-margins-s;
+		}
 	}
 
 	&.alignfull {
@@ -63,17 +68,6 @@
 			padding-left: $grid-margins-s;
 			padding-right: $grid-margins-s;
 		}
-	}
-}
-
-/* Heading */
-.entry-content h2.display {
-
-	@include font-h2;
-	margin-bottom: $spacing-mobile-4;
-
-	@include breakpoint(m) {
-		margin-bottom: $spacing-desktop-4;
 	}
 }
 

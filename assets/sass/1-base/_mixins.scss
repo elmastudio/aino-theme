@@ -99,14 +99,18 @@ $var: true !default; // Can be overridden elsewhere
 	font-size: calculateRem($size);
 }
 
+@mixin letterSpacing($size) {
+	letter-spacing: calculateRem($size);
+}
+
 // Heading Fonts
-@mixin font-h6 {
+@mixin font-h-a {
 	@include fontSize(16px);
 	line-height: 1.187; // 19px
 	letter-spacing: 0;
 }
 
-@mixin font-h5 {
+@mixin font-h-b {
 	@include fontSize(19px);
 	line-height: 1.21; // 23px
 	letter-spacing: 0;
@@ -117,51 +121,123 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-@mixin font-h4 {
+@mixin font-h-c {
 	@include fontSize(23px);
 	line-height: 1.174; // 27px
-	letter-spacing: -0.036rem;
+	@include letterSpacing(-0.58px);
 
 	@include breakpoint(m) {
 		@include fontSize(28px);
 		line-height: 1.178; // 33px
-		letter-spacing: -0.044rem;
+		@include letterSpacing(-0.7px);
 	}
 }
 
-@mixin font-h3 {
+@mixin font-h-d {
 	@include fontSize(28px);
 	line-height: 1.178; // 33px
-	letter-spacing: -0.044rem;
+	@include letterSpacing(-0.7px);
 
 	@include breakpoint(m) {
 		@include fontSize(38px);
 		line-height: 1.157; // 33px
-		letter-spacing: -0.059rem;
+		@include letterSpacing(-0.95px);
 	}
 }
 
-@mixin font-h2 {
+@mixin font-h-e {
 	@include fontSize(33px);
 	line-height: 1.182; // 39px
-	letter-spacing: -0.052rem;
+	@include letterSpacing(-0.83px);
 
 	@include breakpoint(m) {
 		@include fontSize(51px);
 		line-height: 1.157; // 59px
-		letter-spacing: -0.08rem;
+		@include letterSpacing(-1.28px);
 	}
 }
 
-@mixin font-h1 {
+@mixin font-h-f {
 	@include fontSize(40px);
 	line-height: 1.175; // 47px
-	letter-spacing: -0.063rem;
+	@include letterSpacing(-1px);
 
 	@include breakpoint(m) {
 		@include fontSize(67px);
 		line-height: 1.164; // 78px
-		letter-spacing: -0.105rem;
+		@include letterSpacing(-1.68px);
+	}
+}
+
+@mixin font-h-g {
+	@include fontSize(48px);
+	line-height: 1;
+	@include letterSpacing(-1.2px);
+
+	@include breakpoint(m) {
+		@include fontSize(90px);
+		line-height: 1;
+		@include letterSpacing(-2.25px);
+	}
+}
+
+@mixin font-h-h {
+	@include fontSize(58px);
+	line-height: 1;
+	@include letterSpacing(-1.45px);
+
+	@include breakpoint(m) {
+		@include fontSize(120px);
+		line-height: 1;
+		@include letterSpacing(-3px);
+	}
+}
+
+@mixin font-h-i {
+	@include fontSize(69px);
+	line-height: 1;
+	@include letterSpacing(-1.73px);
+
+	@include breakpoint(m) {
+		@include fontSize(160px);
+		line-height: 1;
+		@include letterSpacing(-4px);
+	}
+}
+
+@mixin font-h-j {
+	@include fontSize(83px);
+	line-height: 1;
+	@include letterSpacing(-2.08px);
+
+	@include breakpoint(m) {
+		@include fontSize(213px);
+		line-height: 1;
+		@include letterSpacing(-5.33px);
+	}
+}
+
+@mixin font-h-k {
+	@include fontSize(99px);
+	line-height: 1;
+	@include letterSpacing(-2.48px);
+
+	@include breakpoint(m) {
+		@include fontSize(283px);
+		line-height: 1;
+		@include letterSpacing(-7.08px);
+	}
+}
+
+@mixin font-h-l {
+	@include fontSize(119px);
+	line-height: 1;
+	@include letterSpacing(-2.98px);
+
+	@include breakpoint(m) {
+		@include fontSize(378px);
+		line-height: 1;
+		@include letterSpacing(-9.45px);
 	}
 }
 
