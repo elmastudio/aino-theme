@@ -69,7 +69,7 @@
 /* Heading */
 .entry-content h2.display {
 
-	@include font-h2;
+	@include font-h-e;
 	margin-bottom: $spacing-mobile-4;
 
 	@include breakpoint(m) {
