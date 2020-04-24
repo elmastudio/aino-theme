@@ -930,6 +930,7 @@ ul.wp-block-gallery.alignwide{margin-left:calc(31.75% - 31.75vw);margin-right:ca
 }@media(min-width:96em){.grid-margins{padding-left:1.5rem;padding-right:1.5rem}
 .mobile-margins{padding-left:0;padding-right:0}
 .header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{max-width:90rem}
+.hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 }@media screen and (max-width:782px){.admin-bar .site-header{top:46px}
 }@media(max-width:782px){.admin-bar .menu-modal{top:46px}
 }

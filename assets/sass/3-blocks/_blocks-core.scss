@@ -32,6 +32,11 @@
 			padding-left: $grid-margins-l;
 			padding-right: $grid-margins-l;
 		}
+
+		@include breakpoint(xxl) {
+			padding-left: $grid-margins-s;
+			padding-right: $grid-margins-s;
+		}
 	}
 
 	&.alignfull {
