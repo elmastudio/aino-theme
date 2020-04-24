@@ -71,17 +71,6 @@
 	}
 }
 
-/* Heading */
-.entry-content h2.display {
-
-	@include font-h-e;
-	margin-bottom: $spacing-mobile-4;
-
-	@include breakpoint(m) {
-		margin-bottom: $spacing-desktop-4;
-	}
-}
-
 /* Paragraph */
 .entry-content p {
 

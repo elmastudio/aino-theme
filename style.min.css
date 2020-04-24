@@ -318,7 +318,6 @@ tr td:last-of-type{border-right:0}
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{max-width:90rem;position:relative;margin-left:auto;margin-right:auto;clear:both}
 .hentry .entry-content>*.alignfull{position:relative;width:100vw;margin-left:calc(50% - 50vw);max-width:none}
 .hentry .entry-content .alignfull .alignwide{max-width:90rem;clear:both;overflow:hidden;margin-left:auto;margin-right:auto;padding-left:1.5rem;padding-right:1.5rem}
-.entry-content h2.display{font-size:2.0625rem;line-height:1.182;letter-spacing:-0.051875rem;margin-bottom:1.5rem}
 .entry-content p.has-background{padding:1.5rem}
 .entry-content p.has-drop-cap:not(:focus):first-letter {float:left;margin:5px 8px 0 -8px;line-height:.77;text-transform:uppercase;font-style:normal;font-size:100px}
 .wp-block-columns{display:block}
@@ -770,8 +769,6 @@ td{padding:1rem}
 .widget-area-default .widget_categories ul.children,.widget-area-default .widget_nav_menu .sub-menu,.widget-area-default .widget_pages ul.children{padding:1rem 0 0 1.5rem}
 .wp-block-button,.wp-block-image,.wp-block-quote,.wp-block-quote.is-style-large,.wp-block-pullquote,.wp-block-media-text,.entry-content .wp-block-gallery,.wp-block-audio,.wp-block-video,.wp-block-ainoblocks-advanced-buttons{margin-bottom:2rem}
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{padding-left:3rem;padding-right:3rem}
-.entry-content h2.display{font-size:3.1875rem;line-height:1.157;letter-spacing:-0.08rem}
-.entry-content h2.display{margin-bottom:2rem}
 .entry-content p.has-background{padding:2rem}
 .entry-content p.has-drop-cap:not(:focus):first-letter {font-size:120px;line-height:.77;margin:6px 12px 0 -8px}
 .entry-content p.intro.has-drop-cap:not(:focus):first-letter {font-size:142px}
