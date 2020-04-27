@@ -102,7 +102,7 @@ textarea{resize:vertical}
 .has-padding-top{padding-top:3rem}
 .has-padding-bottom{padding-bottom:3rem}
 .header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{margin-left:auto;margin-right:auto}
-.entry-content>*,.single-post .entry-header,.page-template-default .entry-header,.error404 .entry-header,.single-post .entry-footer,.single-post .comments-area,.single-page .comments-area{margin-left:auto;margin-right:auto;max-width:42rem}
+.entry-content>*,.single .entry-header,.page-template-default .entry-header,.error404 .entry-header,.single .entry-footer,.single .comments-area{margin-left:auto;margin-right:auto;max-width:42rem}
 .tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header{margin-left:auto;margin-right:auto;max-width:87rem}
 .tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header,.tpl-hero .entry-content>*,.tpl-hero .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
 .entry-content>*.alignwide{max-width:87rem}

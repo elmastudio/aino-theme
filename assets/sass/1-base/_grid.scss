@@ -225,12 +225,11 @@
 
 /* Default Content width (680px on desktop screens) */
 .entry-content>*,
-.single-post .entry-header,
+.single .entry-header,
 .page-template-default .entry-header,
 .error404 .entry-header,
-.single-post .entry-footer,
-.single-post .comments-area,
-.single-page .comments-area {
+.single .entry-footer,
+.single .comments-area {
 	@include push--auto;
 	max-width: $col6-no-margin;
 }
