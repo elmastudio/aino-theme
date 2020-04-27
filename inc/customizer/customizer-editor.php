@@ -21,7 +21,7 @@ function aino_editor_customizer_generated_values() {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
 	.editor-styles-wrapper p a:hover,
-	.editor-styles-wrapper blockquote:not(.has-text-color):hover,
+	.editor-styles-wrapper blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover,
 	.wp-block-pullquote__citation a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
