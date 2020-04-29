@@ -11,6 +11,9 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
+### 1.1.1  
+**Bugfix:** Block columns styling optimized.  
+
 ### 1.1.0  
 **New:** Heading block font size platte support. Gutenberg plugin 7.9 required.  
 
