@@ -5,8 +5,8 @@ $var: true !default; // Can be overridden elsewhere
 	* Responsive Breakpoints
 
 		 @include breakpoint(600)	{ } s
-		 @include breakpoint(840)	{ } m
-		 @include breakpoint(1248)	{ } l
+		 @include breakpoint(776)	{ } m
+		 @include breakpoint(1224)	{ } l
 		 @include breakpoint(1296)	{ } xl
 		 @include breakpoint(1536)	{ } xxl
 		 @include breakpoint(1140)	{ } header

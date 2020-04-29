@@ -376,8 +376,8 @@
 	content: "\002C"; // Comma
 }
 
-.entry-footer .entry-comments:before,
-.reading-time:before,
+.entry-footer .entry-comments:not(:last-child):after,
+.single-post .entry-comments:not(:last-child):after,
 .single-post .entry-comments:before {
 	content: '\00B7'; // Middle Dot
 	font-size: 16px;
@@ -385,8 +385,7 @@
 	padding-right: 2px;
 }
 
-.single-post .entry-comments:before,
-.reading-time:before {
+.single-post .entry-comments:before {
 	padding-right: 4px;
 }
 
