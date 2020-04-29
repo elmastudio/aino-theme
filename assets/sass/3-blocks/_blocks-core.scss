@@ -112,6 +112,10 @@
 		padding: $spacing-mobile-6;
 	}
 
+	.wp-block-column > *:last-child {
+		margin-bottom: 0;
+	}	
+
 	@include breakpoint(m) {
 		&.has-background {
 			padding: $spacing-desktop-6;
@@ -132,12 +136,11 @@
 
 		.wp-block-column {
 			flex-basis: calc(50% - 32px);
-			margin-bottom: $spacing-desktop-6;
 			flex: 1 0 21%;
-		}
 
-		.wp-block-column:nth-child(2n) {
-			margin-left: $spacing-mobile-6;
+			&:nth-child(2n) {
+				margin-left: $spacing-mobile-6;
+			}
 		}
 
 		.wp-block-column:nth-last-child(3):first-child,
@@ -166,6 +169,11 @@
 		.wp-block-column {
 			flex-basis: calc(50% - 48px);
 			flex: 1 0 25%;
+			margin-bottom: $spacing-desktop-6;
+
+			&:nth-child(2n) {
+				margin-left: $spacing-desktop-6;
+			}
 		}
 
 		.wp-block-column:nth-last-child(4):first-child,
@@ -182,13 +190,6 @@
 		.wp-block-column:nth-last-child(6):first-child ~ * {
 			flex: 1 0 10%;
 		}
-	}
-}
-
-.hentry .entry-content .wp-block-columns.alignwide {
-	@include breakpoint(m) {
-		padding-left: $grid-margins-l;
-		padding-right: $grid-margins-l;
 	}
 }
 
