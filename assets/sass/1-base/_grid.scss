@@ -163,6 +163,16 @@
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
 
+	@include breakpoint(s) {
+		padding-left: $grid-margins-l;
+		padding-right: $grid-margins-l;
+	}
+
+	@include breakpoint(m) {
+		padding-left: $grid-margins-s;
+		padding-right: $grid-margins-s;
+	}
+
 	@include breakpoint(xxl) {
 		padding-left: 0;
 		padding-right: 0;
@@ -225,7 +235,7 @@
 
 /* Default Content width (680px on desktop screens) */
 .entry-content>*,
-.single-post .entry-header,
+.single-post .entry-header>*,
 .page-template-default .entry-header,
 .error404 .entry-header,
 .single-post .entry-footer,

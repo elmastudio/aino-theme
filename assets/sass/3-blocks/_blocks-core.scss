@@ -105,12 +105,16 @@
 
 /* Columns */
 .wp-block-columns {
-	display: block;
 
-	.wp-block-column > * {
+	margin-bottom: $spacing-mobile-6;
 
-		&:first-child {
-			margin-top: 0;
+	&.has-background {
+		padding: $spacing-mobile-6;
+	}
+
+	@include breakpoint(m) {
+		&.has-background {
+			padding: $spacing-desktop-6;
 		}
 	}
 
@@ -121,12 +125,9 @@
 	@include breakpoint(s) {
 
 		@include flexbox;
-		flex-basis: calc(50% - 32px);
 		flex-grow: 0;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		padding-left: $spacing-desktop-4;
-		padding-right: $spacing-desktop-4;
 		margin-bottom: 0;
 
 		.wp-block-column {
@@ -135,21 +136,24 @@
 			flex: 1 0 21%;
 		}
 
+		.wp-block-column:nth-child(2n) {
+			margin-left: $spacing-mobile-6;
+		}
+
 		.wp-block-column:nth-last-child(3):first-child,
 		.wp-block-column:nth-last-child(3):first-child ~ * {
 			flex: 1 0 21%;
 		}
 
-		.wp-block-column:nth-last-child(4):first-child,
-		.wp-block-column:nth-last-child(4):first-child ~ * {
-			flex: 1 0 33%;
-		}
-
-		/* @TODO: Add a definitaion for 5 colums there (and in the breakpoints below */
-
 		.wp-block-column:nth-last-child(6):first-child,
 		.wp-block-column:nth-last-child(6):first-child ~ * {
 			flex: 1 0 21%;
+		}
+	}
+
+	@media (max-width: 781px) and (min-width: 600px) {
+		.wp-block-column {
+			flex-basis: calc(50% - 48px) !important;
 		}
 	}
 
@@ -168,22 +172,23 @@
 		.wp-block-column:nth-last-child(4):first-child ~ * {
 			flex: 1 0 15%;
 		}
-	}
 
-	@include breakpoint(l) {
+		.wp-block-column:nth-last-child(5):first-child,
+		.wp-block-column:nth-last-child(5):first-child ~ * {
+			flex: 1 0 12%;
+		}
 
 		.wp-block-column:nth-last-child(6):first-child,
 		.wp-block-column:nth-last-child(6):first-child ~ * {
 			flex: 1 0 10%;
 		}
 	}
-
 }
 
 .hentry .entry-content .wp-block-columns.alignwide {
 	@include breakpoint(m) {
-		padding-left: $spacing-3;
-		padding-right: $spacing-3;
+		padding-left: $grid-margins-l;
+		padding-right: $grid-margins-l;
 	}
 }
 
