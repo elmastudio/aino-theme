@@ -717,7 +717,6 @@ a.btn-outline,.btn-outline a{width:auto}
 .wp-block-columns{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;margin-bottom:0}
 .wp-block-columns .wp-block-column{-ms-flex-preferred-size:calc(50% - 32px);flex-basis:calc(50% - 32px);margin-left:1rem;margin-right:1rem;margin-bottom:3rem;-webkit-box-flex:1;-ms-flex:1 0 21%;flex:1 0 21%}
 .wp-block-columns .wp-block-column:nth-last-child(3):first-child,.wp-block-columns .wp-block-column:nth-last-child(3):first-child ~ *{-webkit-box-flex:1;-ms-flex:1 0 21%;flex:1 0 21%}
-.wp-block-columns .wp-block-column:nth-last-child(5):first-child(4){background:blue}
 .wp-block-columns .wp-block-column:nth-last-child(6):first-child,.wp-block-columns .wp-block-column:nth-last-child(6):first-child ~ *{-webkit-box-flex:1;-ms-flex:1 0 21%;flex:1 0 21%}
 .wp-block-button .wp-block-button__link{width:auto}
 .wp-block-button .wp-block-button__link{padding-left:2rem;padding-right:2rem}
