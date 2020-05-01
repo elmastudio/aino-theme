@@ -771,6 +771,10 @@
 			margin: 0 $spacing-mobile-4 $spacing-desktop-6 $spacing-desktop-6;
 		}
 	}
+
+	&.aligncenter {
+		clear: both;
+	}
 }
 
 /* Custom Color Palette */
