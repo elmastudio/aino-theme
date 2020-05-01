@@ -162,7 +162,7 @@ if ( ! function_exists( 'aino_posted_on' ) ) :
 		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
 		if ( get_avatar( get_the_author_meta( 'ID' ) ) ) :
-			echo '<figure class="author-avatar"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_avatar( get_the_author_meta( 'ID' ), 80 ) . '</a></figure>';
+			echo '<figure class="author-avatar" aria-hidden="true"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" tabindex="-1">' . get_avatar( get_the_author_meta( 'ID' ), 80 ) . '</a></figure>';
 
 		endif;
 
