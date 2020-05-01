@@ -135,7 +135,7 @@ h2,h2.has-xxs-font-size,h3.has-xs-font-size,h4.has-s-font-size,h5.has-m-font-siz
 h3,h3.has-xxs-font-size,h4.has-xs-font-size,h5.has-s-font-size,h6.has-m-font-size,.related .section-title,.comments-area .comments-title{font-size:1.75rem;line-height:1.178;letter-spacing:-0.04375rem}
 h4,h4.has-xxs-font-size,h5.has-xs-font-size,h6.has-s-font-size,h1.site-title,.site-title{font-size:1.4375rem;line-height:1.174;letter-spacing:-0.03625rem}
 h1.site-logo{font-size:1px;line-height:1}
-.related-title,.comment-reply-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.1875rem;line-height:1.21;letter-spacing:0}
+.related-title,.comment-reply-title,.nav-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.1875rem;line-height:1.21;letter-spacing:0}
 h6,h6.has-xxs-font-size,h2.widget-title{font-size:1rem;line-height:1.187;letter-spacing:0}
 .entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6{margin-top:1rem;margin-bottom:1rem}
 address,p{margin-bottom:1.5rem}
@@ -776,7 +776,7 @@ h2,h2.has-xxs-font-size,h3.has-xs-font-size,h4.has-s-font-size,h5.has-m-font-siz
 h3,h3.has-xxs-font-size,h4.has-xs-font-size,h5.has-s-font-size,h6.has-m-font-size,.related .section-title,.comments-area .comments-title{font-size:2.375rem;line-height:1.157;letter-spacing:-0.059375rem}
 h4,h4.has-xxs-font-size,h5.has-xs-font-size,h6.has-s-font-size,h1.site-title,.site-title{font-size:1.75rem;line-height:1.178;letter-spacing:-0.04375rem}
 h1.site-logo{font-size:1}
-.related-title,.comment-reply-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.3125rem;line-height:1.143}
+.related-title,.comment-reply-title,.nav-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.3125rem;line-height:1.143}
 .blog.blog-1-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title{font-size:1.75rem;line-height:1.178;letter-spacing:-0.04375rem}
 address,p{margin-bottom:2rem}
 dd{margin:0 1.5rem 1.5rem}
