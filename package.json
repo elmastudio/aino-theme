@@ -1,11 +1,11 @@
 {
-  "name": "your-project",
-  "description": "A WPGulp based project.",
-  "version": "1.1.1",
-  "author": "Author Name (https://twitter.com/MrAhmadAwais/)",
+  "name": "aino-theme",
+  "description": "Aino is a Gutenberg-first WordPress theme for everyone who wants to have a beautiful website with creative, individual page layouts.",
+  "version": "1.1.2",
+  "author": "Elmastudio (https://www.elmastudio.de/en/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ahmadawais/WPGulp"
+    "url": "https://github.com/elmastudio/aino-theme"
   },
   "license": "MIT",
   "devDependencies": {

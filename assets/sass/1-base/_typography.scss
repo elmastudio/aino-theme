@@ -6,7 +6,8 @@ select,
 table,
 textarea,
 .post-navigation .nav-title span,
-.entry-content p.has-s-font-size {
+.entry-content p.has-s-font-size,
+.wp-block-calendar table {
 	@include font-body;
 	@include font-body-s;
 	color: $color__text_two;

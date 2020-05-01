@@ -33,7 +33,8 @@
 
 .blog .nav-links,
 .archive .nav-links,
-.search-results .nav-links {
+.search-results .nav-links,
+.entry-content .page-links {
 	position: relative;
 	@include flexbox;
 	justify-content: center;
@@ -41,11 +42,12 @@
 
 .pagination .page-numbers,
 .pagination .current,
-.pagination .dots {
+.pagination .dots,
+.entry-content .page-links .post-page-numbers {
 	display: none;
 	text-align: center;
 	margin: 0 $spacing-xs;
-	padding: $spacing-s 0 0;
+	padding: 0.906rem 0 0;
 	width: $spacing-desktop-6;
 	height: $spacing-desktop-6;
 
@@ -72,6 +74,8 @@
 }
 
 .pagination .current,
+.entry-content .page-links .current,
+.entry-content .page-links .post-page-numbers:hover,
 .site-main .navigation .prev:hover,
 .site-main .navigation .next:hover,
 .pagination a.page-numbers:hover {
@@ -174,7 +178,8 @@
 	}
 }
 
-.page-numbers {
+.page-numbers,
+.post-page-numbers {
  @include border-radius-100;
 }
 
