@@ -11,6 +11,14 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
+### 1.1.2   
+**Bugfix:** Button block outline.  
+**Bugfix:** Button block right and left alignment on frontend.  
+**Bugfix:** All core block right and left alignments.  
+**Bugfix:** Columns block spacing.  
+**Bugfix:** Styling of block widgets.  
+**Bugfix:** Styling of code, preformatted and verse block.  
+
 ### 1.1.1  
 **Bugfix:** Block columns styling optimized.  
 
