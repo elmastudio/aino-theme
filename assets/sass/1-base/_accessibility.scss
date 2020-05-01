@@ -9,17 +9,20 @@
 	margin: -1px;
 	overflow: hidden;
 	padding: 0;
-	position: absolute;
+	position: absolute !important;
+	width: 1px;
 	word-wrap: normal !important;
+	word-break: normal;
 }
 
 .screen-reader-text:focus {
 	background-color: $color__background;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
+	-webkit-clip-path: none;
+	clip-path: none;
 	display: block;
 	font-size: 14px;
-	font-size: 0.875rem;
 	font-weight: bold;
 	height: auto;
 	left: 5px;
@@ -32,7 +35,23 @@
 	/* Above WP toolbar. */
 }
 
-/* Do not show the outline on the skip link target. */
-.site-content[tabindex="-1"]:focus {
-	outline: 0;
+/* Show the skip link when focused. */
+.skip-link {
+	left: -9999rem;
+	top: 2.5rem;
+	z-index: 999999999;
+	text-decoration: underline;
+}
+
+.skip-link:focus {
+	display: block;
+	left: 6px;
+	top: 7px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	z-index: 100000;
+	right: auto;
 }

@@ -74,9 +74,10 @@ table{border-collapse:collapse;border-spacing:0}
 textarea{resize:vertical}
 ::-moz-selection{background-color:#b3d4fc;text-shadow:none}
 ::selection{background-color:#b3d4fc;text-shadow:none}
-.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;word-wrap:normal !important}
-.screen-reader-text:focus{background-color:#f7f7ff;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,0.6);box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:0;text-decoration:none;top:5px;width:auto;z-index:100000}
-.site-content[tabindex="-1"]:focus{outline:0}
+.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important;word-break:normal}
+.screen-reader-text:focus{background-color:#f7f7ff;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,0.6);box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;-webkit-clip-path:none;clip-path:none;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:0;text-decoration:none;top:5px;width:auto;z-index:100000}
+.skip-link{left:-9999rem;top:2.5rem;z-index:999999999;text-decoration:underline}
+.skip-link:focus{display:block;left:6px;top:7px;font-size:14px;font-weight:600;text-decoration:none;line-height:normal;padding:15px 23px 14px;z-index:100000;right:auto}
 .clear:before,.clear:after,.entry-content:before,.entry-content:after,.comment-content:before,.comment-content:after,.site-header:before,.site-header:after,.site-content:before,.site-content:after,.site-footer:before,.site-footer:after{content:"";display:table;table-layout:fixed}
 .clear:after,.entry-content:after,.comment-content:after,.site-header:after,.site-content:after,.site-footer:after{clear:both}
 .cf:before,.cf:after{content:" ";display:table}

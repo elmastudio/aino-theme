@@ -107,4 +107,4 @@
 	?>
 
 	<div class="content-wrap">
-		<div class="site-content">
+		<div id="site-content" class="site-content">
