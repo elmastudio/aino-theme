@@ -47,7 +47,7 @@ $custom_post_excerpt = array(
 
 			</header><!-- .entry-header -->
 
-			<footer class="entry-footer">
+			<div class="entry-footer">
 				<?php
 				$check = get_theme_mod( 'blogcards_authororcats', aino_defaults( 'blogcards_authororcats' ) );
 				if ( get_avatar( get_the_author_meta( 'user_email' ) ) && ( $check ) ) :
@@ -79,6 +79,6 @@ $custom_post_excerpt = array(
 
 					<?php aino_estimated_read_time(); ?>
 				</aside><!-- .entry-meta -->
-			</footer><!-- .entry-footer -->
+			</div><!-- .entry-footer -->
 	</a><!-- .entry-link -->
 </article><!-- #post-## -->

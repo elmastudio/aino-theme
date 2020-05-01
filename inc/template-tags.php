@@ -292,7 +292,7 @@ function aino_comment( $comment, $args, $depth ) {
 			</div><!-- .comment-content-wrap -->
 		</div><!-- .avatar-content-wrap -->
 
-		<footer class="comment-meta">
+		<div class="comment-meta">
 			<div class="comment-metadata">
 				<a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
 					<time datetime="<?php comment_time( 'c' ); ?>">
@@ -326,7 +326,7 @@ function aino_comment( $comment, $args, $depth ) {
 			<?php if ( '0' === $comment->comment_approved ) : ?>
 				<p class="comment-awaiting-moderation"><?php esc_attr_e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
 			<?php endif; ?>
-		</footer><!-- .comment-meta -->
+		</div><!-- .comment-meta -->
 	</article><!-- .comment-body -->
 	<?php
 }
