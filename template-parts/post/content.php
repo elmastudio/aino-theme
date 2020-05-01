@@ -60,7 +60,7 @@ $custom_post_excerpt = array(
 					</figure>
 				<?php endif; ?>
 
-				<aside class="entry-meta">
+				<div class="entry-meta">
 					<?php if ( ( ! $check ) ) : ?>
 						<span class="entry-cats"><?php aino_the_categories(); ?></span>
 					<?php endif; ?>
@@ -78,7 +78,7 @@ $custom_post_excerpt = array(
 					<?php endif; ?>
 
 					<?php aino_estimated_read_time(); ?>
-				</aside><!-- .entry-meta -->
+				</div><!-- .entry-meta -->
 			</div><!-- .entry-footer -->
 	</a><!-- .entry-link -->
 </article><!-- #post-## -->
