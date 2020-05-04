@@ -1155,6 +1155,8 @@ tr td:last-of-type { border-right: none; }
 
 @media (min-width: 96em) { .wp-block-cover.alignright, .wp-block-gallery.alignright, .wp-block-pullquote.alignright { margin: 0 1.5rem 3rem 3rem; } }
 
+.wp-block-cover.aligncenter, .wp-block-gallery.aligncenter, .wp-block-pullquote.aligncenter { clear: both; }
+
 /* Custom Color Palette */
 .entry-content .has-primary-one-color { color: #1765d8; fill: #1765d8; }
 
