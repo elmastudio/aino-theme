@@ -74,9 +74,10 @@ table{border-collapse:collapse;border-spacing:0}
 textarea{resize:vertical}
 ::-moz-selection{background-color:#b3d4fc;text-shadow:none}
 ::selection{background-color:#b3d4fc;text-shadow:none}
-.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;word-wrap:normal !important}
-.screen-reader-text:focus{background-color:#f7f7ff;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,0.6);box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:0;text-decoration:none;top:5px;width:auto;z-index:100000}
-.site-content[tabindex="-1"]:focus{outline:0}
+.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important;word-break:normal}
+.screen-reader-text:focus{background-color:#f7f7ff;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,0.6);box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;-webkit-clip-path:none;clip-path:none;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:0;text-decoration:none;top:5px;width:auto;z-index:100000}
+.skip-link{left:-9999rem;top:2.5rem;z-index:999999999;text-decoration:underline}
+.skip-link:focus{display:block;left:6px;top:7px;font-size:14px;font-weight:600;text-decoration:none;line-height:normal;padding:15px 23px 14px;z-index:100000;right:auto}
 .clear:before,.clear:after,.entry-content:before,.entry-content:after,.comment-content:before,.comment-content:after,.site-header:before,.site-header:after,.site-content:before,.site-content:after,.site-footer:before,.site-footer:after{content:"";display:table;table-layout:fixed}
 .clear:after,.entry-content:after,.comment-content:after,.site-header:after,.site-content:after,.site-footer:after{clear:both}
 .cf:before,.cf:after{content:" ";display:table}
@@ -135,7 +136,7 @@ h2,h2.has-xxs-font-size,h3.has-xs-font-size,h4.has-s-font-size,h5.has-m-font-siz
 h3,h3.has-xxs-font-size,h4.has-xs-font-size,h5.has-s-font-size,h6.has-m-font-size,.related .section-title,.comments-area .comments-title{font-size:1.75rem;line-height:1.178;letter-spacing:-0.04375rem}
 h4,h4.has-xxs-font-size,h5.has-xs-font-size,h6.has-s-font-size,h1.site-title,.site-title{font-size:1.4375rem;line-height:1.174;letter-spacing:-0.03625rem}
 h1.site-logo{font-size:1px;line-height:1}
-.related-title,.comment-reply-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.1875rem;line-height:1.21;letter-spacing:0}
+.related-title,.comment-reply-title,.nav-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.1875rem;line-height:1.21;letter-spacing:0}
 h6,h6.has-xxs-font-size,h2.widget-title{font-size:1rem;line-height:1.187;letter-spacing:0}
 .entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6{margin-top:1rem;margin-bottom:1rem}
 address,p{margin-bottom:1.5rem}
@@ -218,7 +219,7 @@ h1.has-text-color.has-white-color a:hover,h2.has-text-color.has-white-color a:ho
 .site-title a,h2.entry-title a,.comment-list b.fn a,.main-navigation a{color:#111;fill:#111}
 .posts-container .hentry .entry-meta a,.entry-comments a,.posted-on a,.comment-reply-title #cancel-comment-reply-link{color:#222;fill:#222}
 h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.site-title a:hover,.single-post .entry-cats a:hover,.single-post .entry-meta a:hover,.single-post .navigation .nav-title .nav-subtitle:hover,.footer-widget-wrap a:hover,.comment-metadata a:hover,.comment-reply-title #cancel-comment-reply-link:hover,.logged-in-as a:hover{color:#1765d8;fill:#1765d8}
-.entry-tags a{border:1px solid #cacaca;color:#cacaca;margin:0 .25rem .5rem;padding:6px .75rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:13px;line-height:1.23;font-weight:bold;border-radius:2.25rem}
+.entry-tags a{border:1px solid #cacaca;color:#222;margin:0 .25rem .5rem;padding:6px .75rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:13px;line-height:1.23;font-weight:bold;border-radius:2.25rem}
 .entry-tags a:hover{background:#f7f7ff;border:1px solid transparent}
 .site-branding a,.primary-menu a,.site-footer .widget_mc4wp_form_widget a,.site-footer a,.social-header-nav .icon,.social-footer-nav .icon,.sd-social-icon .sd-content ul li[class*='share-'] a{-webkit-transition:all .2s ease;transition:all .2s ease}
 .pagination a,.related-img,.post-edit-link,.entry-link,.entry-link img,.navigation .nav-thumb{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
@@ -401,6 +402,7 @@ tr td:last-of-type{border-right:0}
 .wp-block-group__inner-container .wp-block-group h1,.wp-block-group__inner-container .wp-block-group h2,.wp-block-group__inner-container .wp-block-group h3,.wp-block-group__inner-container .wp-block-group h4,.wp-block-group__inner-container .wp-block-group h5,.wp-block-group__inner-container .wp-block-group h6{margin-top:0}
 .wp-block-group .wp-block-group__inner-container>*:last-child{margin-bottom:0}
 .wp-block-cover-image.alignleft,.wp-block-cover-image.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-pullquote.alignleft,.wp-block-pullquote.alignright{width:100%}
+.wp-block-cover.aligncenter,.wp-block-gallery.aligncenter,.wp-block-pullquote.aligncenter{clear:both}
 .entry-content .has-primary-one-color{color:#1765d8;fill:#1765d8}
 .entry-content p.has-primary-one-color a{text-decoration:underline}
 .entry-content .has-primary-one-background-color{background:#1765d8;border-color:#1765d8}
@@ -776,7 +778,7 @@ h2,h2.has-xxs-font-size,h3.has-xs-font-size,h4.has-s-font-size,h5.has-m-font-siz
 h3,h3.has-xxs-font-size,h4.has-xs-font-size,h5.has-s-font-size,h6.has-m-font-size,.related .section-title,.comments-area .comments-title{font-size:2.375rem;line-height:1.157;letter-spacing:-0.059375rem}
 h4,h4.has-xxs-font-size,h5.has-xs-font-size,h6.has-s-font-size,h1.site-title,.site-title{font-size:1.75rem;line-height:1.178;letter-spacing:-0.04375rem}
 h1.site-logo{font-size:1}
-.related-title,.comment-reply-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.3125rem;line-height:1.143}
+.related-title,.comment-reply-title,.nav-title,.blog h2.entry-title,.blog-archive h2.entry-title,h5,h5.has-xxs-font-size,h6.has-xs-font-size{font-size:1.3125rem;line-height:1.143}
 .blog.blog-1-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title{font-size:1.75rem;line-height:1.178;letter-spacing:-0.04375rem}
 address,p{margin-bottom:2rem}
 dd{margin:0 1.5rem 1.5rem}

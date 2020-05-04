@@ -78,7 +78,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 /* Tags */
 .entry-tags a {
 	border: 1px solid $color__border;
-	color: $color__border;
+	color: $color__text_two;
 	margin: 0 $spacing-xxs $spacing-xs;
 	padding: 6px $spacing-s;
 	@include flexbox;

@@ -10,7 +10,7 @@
 	</div><!-- .site-content -->
 </div><!-- .content-wrap -->
 
-	<footer class="site-footer" role="contentinfo">
+	<div class="site-footer">
 
 		<div class="footer-wrap col12 push-center">
 
@@ -26,7 +26,7 @@
 
 		</div><!-- .footer-wrap -->
 
-	</footer><!-- .site-footer -->
+	</div><!-- .site-footer -->
 </div><!-- #page -->
 
 <div id="top-of-site-pixel-anchor"></div>
