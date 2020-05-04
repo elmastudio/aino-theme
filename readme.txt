@@ -49,6 +49,8 @@ Aino WordPress Theme bundles the following third-party resources:
 * Bugfix: Columns block spacing.
 * Bugfix: Styling of block widgets.
 * Bugfix: Styling of code, preformatted and verse block.
+* Bugfix: Fixing custom post type margins. #96
+* Bugfix: A11y fixes.
 
 = 1.1.1 =
 * Bugfix: Block columns styling optimized.
