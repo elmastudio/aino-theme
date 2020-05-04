@@ -18,6 +18,8 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 **Bugfix:** Columns block spacing.  
 **Bugfix:** Styling of block widgets.  
 **Bugfix:** Styling of code, preformatted and verse block.  
+**Bugfix:**  Bugfix: Fixing custom post type margins. #96  
+**Bugfix:**  Bugfix: A11y fixes.  
 
 ### 1.1.1  
 **Bugfix:** Block columns styling optimized.  
