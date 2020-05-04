@@ -157,12 +157,17 @@ if ( ! function_exists( 'aino_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		$byline = '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
+		$byline = sprintf(
+			'<span class="author vcard"><span class="screen-reader-text">%1$s </span> <a class="url fn n" href="%2$s">%3$s</a></span>',
+			esc_html_x( 'Author', 'Used before post author name.', 'aino' ),
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			esc_html( get_the_author() )
+		);
 
 		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
 		if ( get_avatar( get_the_author_meta( 'ID' ) ) ) :
-			echo '<figure class="author-avatar"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_avatar( get_the_author_meta( 'ID' ), 80 ) . '</a></figure>';
+			echo '<figure class="author-avatar" aria-hidden="true"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" tabindex="-1">' . get_avatar( get_the_author_meta( 'ID' ), 80 ) . '</a></figure>';
 
 		endif;
 
@@ -287,7 +292,7 @@ function aino_comment( $comment, $args, $depth ) {
 			</div><!-- .comment-content-wrap -->
 		</div><!-- .avatar-content-wrap -->
 
-		<footer class="comment-meta">
+		<div class="comment-meta">
 			<div class="comment-metadata">
 				<a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
 					<time datetime="<?php comment_time( 'c' ); ?>">
@@ -321,7 +326,7 @@ function aino_comment( $comment, $args, $depth ) {
 			<?php if ( '0' === $comment->comment_approved ) : ?>
 				<p class="comment-awaiting-moderation"><?php esc_attr_e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
 			<?php endif; ?>
-		</footer><!-- .comment-meta -->
+		</div><!-- .comment-meta -->
 	</article><!-- .comment-body -->
 	<?php
 }

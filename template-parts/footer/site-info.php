@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="site-info">
+<footer class="site-info" role="contentinfo">
 
 	<?php $blog_info = get_bloginfo( 'name' ); ?>
 
@@ -36,4 +36,4 @@
 		}
 		?>
 
-</div><!-- end .site-info -->
+</footer><!-- end .site-info -->
