@@ -73,7 +73,7 @@
 			padding-right: $grid-margins-l;
 		}
 
-		@include breakpoint(l) {
+		@include breakpoint(xxl) {
 			padding-left: $grid-margins-s;
 			padding-right: $grid-margins-s;
 		}
@@ -476,7 +476,7 @@
 
 	.wp-block-cover__inner-container {
 
-		width: calc(100% - 6rem);
+		width: 100%;
 		padding: $spacing-desktop-6 0;
 
 		p {
