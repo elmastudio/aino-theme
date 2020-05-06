@@ -363,7 +363,7 @@ tr td:last-of-type{border-right:0}
 .wp-block-pullquote.alignleft{margin-left:0}
 .wp-block-pullquote.alignright{margin-right:0}
 .wp-block-pullquote.alignleft blockquote,.wp-block-pullquote.alignright blockquote{padding:0}
-.wp-block-cover .wp-block-cover__inner-container{width:calc(100% - 6rem);padding:3rem 0}
+.wp-block-cover .wp-block-cover__inner-container{width:100%;padding:3rem 0}
 .wp-block-cover .wp-block-cover__inner-container p{margin-bottom:0}
 .wp-block-cover-image .wp-block-cover-image-text,.wp-block-cover-image .wp-block-cover-text,.wp-block-cover-image h2,.wp-block-cover .wp-block-cover-image-text,.wp-block-cover .wp-block-cover-text,.wp-block-cover h2{z-index:1;margin-bottom:0}
 .wp-block-media-text .wp-block-media-text__content{padding:0 1.5rem}
@@ -947,7 +947,6 @@ td{padding:1rem}
 .blog-2-column .hentry .entry-summary{font-size:1rem;line-height:1.1875}
 .blog.blog-2-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:1.4375rem;line-height:1.174;letter-spacing:-0.03625rem}
 .post-edit-link{margin-top:2rem}
-.hentry .entry-content .alignfull .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .blog-2-column .entry-link{padding-bottom:3.5rem}
 .blog.blog-1-column .hentry .entry-link,.blog-archive.blog-1-column .hentry .entry-link{display:block;padding-bottom:0}
 .blog.blog-1-column .post-thumb,.blog-archive.blog-1-column .post-thumb{width:56.666%;float:left}
@@ -969,6 +968,7 @@ td{padding:1rem}
 .mobile-margins{padding-left:0;padding-right:0}
 .header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{max-width:90rem}
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{padding-left:1.5rem;padding-right:1.5rem}
+.hentry .entry-content .alignfull .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .wp-block-cover.alignleft,.wp-block-gallery.alignleft,.wp-block-pullquote.alignleft{margin:0 3rem 3rem 1.5rem}
 .wp-block-cover.alignright,.wp-block-gallery.alignright,.wp-block-pullquote.alignright{margin:0 1.5rem 3rem 3rem}
 }@media(max-width:781px) and (min-width:600px){.wp-block-columns .wp-block-column{-ms-flex-preferred-size:calc(50% - 48px) !important;flex-basis:calc(50% - 48px) !important}
