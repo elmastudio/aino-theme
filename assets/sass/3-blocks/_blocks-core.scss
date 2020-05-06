@@ -73,13 +73,12 @@
 			padding-right: $grid-margins-l;
 		}
 
-		@include breakpoint(xxl) {
+		@include breakpoint(l) {
 			padding-left: $grid-margins-s;
 			padding-right: $grid-margins-s;
 		}
 	}
 }
-
 
 /* Paragraph */
 
@@ -477,7 +476,7 @@
 
 	.wp-block-cover__inner-container {
 
-		width: 100%;
+		width: calc(100% - 6rem);
 		padding: $spacing-desktop-6 0;
 
 		p {
