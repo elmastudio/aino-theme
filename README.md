@@ -11,6 +11,16 @@ __License URI:__ https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog  
 
+### 1.1.3   
+**Enhance:** Update from GPLv2 to GPLv3.  
+**Enhance:** Added original file for js/svgxuse.js.  
+**Bugfix:** template-tags.php incorrect use of attribute.  
+**Bugfix:** Deleted removal of header section in customizer.php.  
+**Bugfix:** Deleted map files.  
+**Bugfix:** searchform.php incorrect use of attribute.  
+**Bugfix:** header.php incorrect use of attribute.  
+**Bugfix:** modal-menu.php incorrect use of attribute.  
+
 ### 1.1.2   
 **Bugfix:** Button block outline.  
 **Bugfix:** Button block right and left alignment on frontend.  
