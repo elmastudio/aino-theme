@@ -567,29 +567,31 @@ function aino_custom_excerpt_length( $limit ) {
 /**
  * Replace "[...]" with custom read more in excerpts.
  *
- * @param array $more value for custom excerpt ending.
+ * @param  mixed $morevalue for custom excerpt ending.
+ * @return void
  */
 function aino_excerpt_more( $more ) {
-	global $post;
+	if ( is_admin() ) return $more;
 	return '&hellip;';
 }
 add_filter( 'excerpt_more', 'aino_excerpt_more' );
 
 /**
- * Customize Author Archive Title.
+ * Creates a custom Archive title.
+ *
+ * @param  mixed $title
+ * @return void
  */
-add_filter(
-	'get_the_archive_title',
-	function ( $title ) {
-		if ( is_author() ) {
-			$title = '<span>' . esc_html__( 'All posts by', 'aino' ) . '</span>'; }
-		if ( is_category() ) {
-			$title = '<span>' . esc_html__( 'Filed under', 'aino' ) . '</span>' . single_cat_title( '', false ); }
-		if ( is_tag() ) {
-			$title = '<span>' . esc_html__( 'Filed under', 'aino' ) . '</span>' . single_tag_title( '', false ); }
-		return $title;
-	}
-);
+function aino_archive_title ( $title ) {
+	if ( is_author() ) {
+		$title = '<span>' . esc_html__( 'All posts by', 'aino' ) . '</span>'; }
+	if ( is_category() ) {
+		$title = '<span>' . esc_html__( 'Filed under', 'aino' ) . '</span>' . single_cat_title( '', false ); }
+	if ( is_tag() ) {
+		$title = '<span>' . esc_html__( 'Filed under', 'aino' ) . '</span>' . single_tag_title( '', false ); }
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'aino_archive_title' );
 
 /**
  * Get list of post categories without links.

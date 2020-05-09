@@ -49,7 +49,7 @@
 
 					<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-					<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Horizontal', 'aino' ); ?>" role="navigation">
+					<nav class="primary-menu-wrapper" aria-label="<?php _e( 'Horizontal', 'aino' ); ?>" role="navigation">
 						<ul class="primary-menu reset-list-style">
 
 							<?php
