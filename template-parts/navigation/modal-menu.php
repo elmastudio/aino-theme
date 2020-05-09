@@ -18,7 +18,7 @@
 
 				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
 					<?php echo aino_get_svg( array( 'icon' => 'arrow_back-24px' ) ); ?>
-					<span class="toggle-text"><?php esc_attr_e( 'back', 'aino' ); ?></span>
+					<span class="toggle-text"><?php _e( 'back', 'aino' ); ?></span>
 				</button><!-- .nav-toggle -->
 
 				<?php

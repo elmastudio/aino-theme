@@ -324,7 +324,7 @@ function aino_comment( $comment, $args, $depth ) {
 			</div><!-- .comment-metadata -->
 
 			<?php if ( '0' === $comment->comment_approved ) : ?>
-				<p class="comment-awaiting-moderation"><?php esc_attr_e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
+				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
 			<?php endif; ?>
 		</div><!-- .comment-meta -->
 	</article><!-- .comment-body -->

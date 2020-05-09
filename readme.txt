@@ -2,11 +2,11 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
-Tested up to: WordPress 5.4
+Tested up to: WordPress 5.4.1
 Requires PHP: 7.3
-Stable tag: 1.1.2
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.1.3
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Aino is a Gutenberg-first WordPress theme for everyone who wants to have a beautiful website with creative, individual page layouts.
 
@@ -36,11 +36,23 @@ GNU General Public License for more details.
 Aino WordPress Theme bundles the following third-party resources:
 
 * normalize.css, © 2012-2019 Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
+* svgxuse.min.js, MIT © IcoMoon.io https://icomoon.io/, https://github.com/Keyamoon/svgxuse
+* TwentyTwenty theme, GPLv2 or later, https://wordpress.org/themes/twentytwenty/
 * Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 1.1.3 =
+* Enhance: Update from GPLv2 to GPLv3.
+* Enhance: Added original file for js/svgxuse.js.
+* Bugfix: template-tags.php incorrect use of attribute.
+* Bugfix: Deleted removal of header section in customizer.php.
+* Bugfix: Deleted map files.
+* Bugfix: searchform.php incorrect use of attribute.
+* Bugfix: header.php incorrect use of attribute.
+* Bugfix: modal-menu.php incorrect use of attribute.
 
 = 1.1.2 =
 * Bugfix: Button block outline.

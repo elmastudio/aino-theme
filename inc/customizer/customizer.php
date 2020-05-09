@@ -15,8 +15,6 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
-	$wp_customize->remove_section( 'header_image' );
-
 	/**
 	 * Add Theme Panels
 	 */
