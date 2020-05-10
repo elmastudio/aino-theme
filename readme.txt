@@ -36,7 +36,6 @@ GNU General Public License for more details.
 Aino WordPress Theme bundles the following third-party resources:
 
 * normalize.css, © 2012-2019 Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
-* svgxuse.min.js, MIT © IcoMoon.io https://icomoon.io/, https://github.com/Keyamoon/svgxuse
 * TwentyTwenty theme, GPLv2 or later, https://wordpress.org/themes/twentytwenty/
 * Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
