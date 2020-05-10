@@ -239,7 +239,8 @@
 .page-template-default .entry-header,
 .error404 .entry-header,
 .single .entry-footer,
-.single .comments-area {
+.single .comments-area,
+.single-page .comments-area {
 	@include push--auto;
 	max-width: $col6-no-margin;
 }
