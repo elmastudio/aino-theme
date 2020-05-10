@@ -41,7 +41,7 @@
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 					<span class="toggle-inner">
 						<?php echo aino_get_svg( array( 'icon' => 'more_horiz-24px' ) ); ?>
-						<span class="toggle-text"><?php esc_attr_e( 'Menu', 'aino' ); ?></span>
+						<span class="toggle-text"><?php esc_html_e( 'Menu', 'aino' ); ?></span>
 					</span>
 				</button><!-- .nav-toggle -->
 
@@ -49,7 +49,7 @@
 
 					<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-					<nav class="primary-menu-wrapper" aria-label="<?php _e( 'Horizontal', 'aino' ); ?>" role="navigation">
+					<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Horizontal', 'aino' ); ?>" role="navigation">
 						<ul class="primary-menu reset-list-style">
 
 							<?php
