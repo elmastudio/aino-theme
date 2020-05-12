@@ -427,10 +427,15 @@
 	&.is-style-large cite,
 	& cite {
 		@include font-body-xs;
+		text-align: left;
 	}
 
 	&.has-text-align-left cite {
 		text-align: left;
+	}
+
+	&.has-text-align-right cite {
+		text-align: right;
 	}
 
 	&.has-text-align-center cite {
@@ -442,7 +447,6 @@
 	border: none;
 	text-align: left;
 	padding: 0;
-	@include border-radius-m;
 
 	& p,
 	&.is-style-solid-color p,
@@ -453,7 +457,13 @@
 	&.is-style-solid-color,
 	&.is-style-solid-color {
 		padding: $spacing-3;
+		background-color: $color__background;
 		clear: both;
+		@include border-radius-m;
+
+		blockquote {
+			max-width: 100%;
+		}
 	}
 
 	&.alignleft {

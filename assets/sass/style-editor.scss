@@ -560,19 +560,55 @@ textarea {
 .wp-block-pullquote {
 	text-align: left;
 	@include border-radius-m;
+	color: $color__text_two;
 
-	&.is-style-solid-color blockquote {
-		max-width: 100%;
-		padding: $spacing-3;
-	}
+	&.is-style-solid-color {
 
-	&.is-style-solid-color blockquote p {
-		@include font-body-m;
+		&:not(.has-background) {
+			background: $color__background;
+		}
+
+		blockquote {
+			max-width: 100%;
+			padding: $spacing-3;
+			@include border-radius-m;
+
+			p {
+				@include font-body-m;
+			}
+		}
 	}
 
 	.alignleft blockquote,
 	.alignright blockquote {
 		padding: 0;
+	}
+}
+
+.wp-block[data-type="core/pullquote"][data-align="right"],
+.wp-block[data-type="core/pullquote"][data-align="left"] {
+	height: auto;
+	max-height: none;
+
+	&>.is-block-content {
+		max-width: $col3;
+	}
+}
+
+@media (min-width: 480px) {
+
+	.wp-block[data-type="core/pullquote"][data-align="right"],
+	.wp-block[data-type="core/pullquote"][data-align="left"] {
+		height: 0;
+	}
+}
+
+@media (min-width: 1360px) {
+
+	.wp-block[data-type="core/pullquote"][data-align="left"],
+	.wp-block[data-type="core/pullquote"][data-align="right"] {
+		margin: 0 auto;
+		max-width: $col12-no-margin;
 	}
 }
 
