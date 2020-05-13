@@ -1,5 +1,5 @@
 # Aino WordPress Theme
-Aino is a Gutenberg-ready WordPress theme to create page layouts in the new editor. The theme is light-weight and comes with helpful options to build flexible, modern websites.  
+Aino is a Gutenberg-first WordPress theme to create page layouts in the new editor. The theme is light-weight and comes with helpful options to build flexible, modern websites.  
 
 __Author:__ elmastudio  
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
@@ -10,6 +10,10 @@ __License:__ GPLv3 or later
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 1.1.4   
+**Enhance:** Deleted unneeded files js/svgxuse.js and js/svgxuse.min.js.  
+**Bugfix:** Default page comments width too wide.  
 
 ### 1.1.3   
 **Enhance:** Update from GPLv2 to GPLv3.  
