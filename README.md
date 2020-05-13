@@ -11,6 +11,10 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 1.1.5   
+**Bugfix:** Douple text domain issue in searchform.php.   
+**Enhance:** Translations updated.  
+
 ### 1.1.4   
 **Enhance:** Deleted unneeded files js/svgxuse.js and js/svgxuse.min.js.  
 **Bugfix:** Default page comments width too wide.  
