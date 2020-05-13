@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aino\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-28 03:46+0000\n"
+"POT-Creation-Date: 2020-05-13 02:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Ellen Bauer <ellen.bauer@elmastudio.de>\n"
 "Language-Team: contact@elmastudio.de\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
@@ -32,139 +32,199 @@ msgstr ""
 msgid "Footer Social Menu"
 msgstr ""
 
-#: functions.php:110
-msgid "Extra Extra Small"
-msgstr ""
-
-#: functions.php:111
+#: functions.php:110 functions.php:111
 msgid "XXS"
 msgstr ""
 
-#: functions.php:116
-msgid "Extra Small"
-msgstr ""
-
-#: functions.php:117
+#: functions.php:116 functions.php:117
 msgid "XS"
 msgstr ""
 
-#: functions.php:122
-msgid "Small"
-msgstr ""
-
-#: functions.php:123
+#: functions.php:122 functions.php:123
 msgid "S"
 msgstr ""
 
-#: functions.php:128
-msgid "Normal"
-msgstr ""
-
-#: functions.php:129
+#: functions.php:128 functions.php:129
 msgid "M"
 msgstr ""
 
-#: functions.php:134
-msgid "Large"
-msgstr ""
-
-#: functions.php:135
+#: functions.php:134 functions.php:135
 msgid "L"
 msgstr ""
 
-#: functions.php:150 inc/customizer/customizer.php:788
+#: functions.php:140 functions.php:141
+msgid "XL"
+msgstr ""
+
+#: functions.php:146 functions.php:147
+msgid "XXL"
+msgstr ""
+
+#: functions.php:165 inc/customizer/customizer.php:805
 msgid "Primary"
 msgstr ""
 
-#: functions.php:155
+#: functions.php:170 inc/customizer/customizer.php:827
 msgid "Text One"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:175 inc/customizer/customizer.php:849
 msgid "Text Two"
 msgstr ""
 
-#: functions.php:165 inc/customizer/customizer.php:767
+#: functions.php:180 inc/customizer/customizer.php:784
 msgid "Background"
 msgstr ""
 
-#: functions.php:170
+#: functions.php:185
 msgid "Border"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:190
 msgid "Black"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:195
 msgid "White"
+msgstr ""
+
+#: functions.php:206
+msgid "Grayish blue to dark grayish blue"
+msgstr ""
+
+#: functions.php:211
+msgid "Soft orange to desaturated dark cyan"
+msgstr ""
+
+#: functions.php:216
+msgid "Light grayish magenta to very dark grayish pink"
+msgstr ""
+
+#: functions.php:221
+msgid "Light grayish red to dark red"
+msgstr ""
+
+#: functions.php:226
+msgid "Slightly desaturated cyan to very soft red"
+msgstr ""
+
+#: functions.php:231
+msgid "Very soft orange to very soft pink"
+msgstr ""
+
+#: functions.php:236
+msgid "Grayish violet to soft orange"
+msgstr ""
+
+#: functions.php:241
+msgid "Light grayish red to dark grayish blue"
+msgstr ""
+
+#: functions.php:246
+msgid "Light grayish red to very soft blue"
+msgstr ""
+
+#: functions.php:251
+msgid "Soft blue to lime green"
+msgstr ""
+
+#: functions.php:256
+msgid "Soft blue to dark moderate violet"
+msgstr ""
+
+#: functions.php:261
+msgid "Soft red to very soft blue"
+msgstr ""
+
+#: functions.php:266
+msgid "Dark blue to mostly black blue"
+msgstr ""
+
+#: functions.php:271
+msgid "Very soft blue to dark grayish blue"
+msgstr ""
+
+#: functions.php:276
+msgid "Soft pink to mostly pure orange"
+msgstr ""
+
+#: functions.php:281
+msgid "Bright cyan to soft magenta"
+msgstr ""
+
+#: functions.php:286
+msgid "Light red to very light pink"
+msgstr ""
+
+#: functions.php:291
+msgid "Very soft violet to very soft pink"
 msgstr ""
 
 #. If there are characters in your language that are not
 #. supported by Roboto, translate this to 'off'. Do not translate
 #. into your own language.
-#: functions.php:283
+#: functions.php:393
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:317
+#: functions.php:427
 msgid "Skip to the content"
 msgstr ""
 
-#: functions.php:328
+#: functions.php:438
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:330
+#: functions.php:440
 msgid "Add widgets here to appear in the 1. column of your footer."
 msgstr ""
 
-#: functions.php:340
+#: functions.php:450
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:342
+#: functions.php:452
 msgid "Add widgets here to appear in the 2. column of your footer."
 msgstr ""
 
-#: functions.php:352
+#: functions.php:462
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:354
+#: functions.php:464
 msgid "Add widgets here to appear in the 3. column of your footer."
 msgstr ""
 
-#: functions.php:364
+#: functions.php:474
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:366
+#: functions.php:476
 msgid "Add widgets here to appear in the 4. column of your footer."
 msgstr ""
 
-#: functions.php:376
+#: functions.php:486
 msgid "Footer 5"
 msgstr ""
 
-#: functions.php:378
+#: functions.php:488
 msgid "Add widgets here to appear in the 5. column of your footer."
 msgstr ""
 
-#: functions.php:388
+#: functions.php:498
 msgid "Footer 6"
 msgstr ""
 
-#: functions.php:390
+#: functions.php:500
 msgid "Add widgets here to appear in the 6. column of your footer."
 msgstr ""
 
-#: functions.php:475
+#: functions.php:587
 msgid "All posts by"
 msgstr ""
 
-#: functions.php:477 functions.php:479
+#: functions.php:589 functions.php:591
 msgid "Filed under"
 msgstr ""
 
@@ -186,17 +246,17 @@ msgstr ""
 msgid "Posts"
 msgstr ""
 
-#: index.php:89 index.php:90 archive.php:58 archive.php:59 search.php:48
+#: index.php:64 index.php:65 archive.php:58 archive.php:59 search.php:48
 #: search.php:49
 msgid "Older posts"
 msgstr ""
 
-#: index.php:91 index.php:92 archive.php:60 archive.php:61 search.php:53
+#: index.php:66 index.php:67 archive.php:60 archive.php:61 search.php:53
 #: search.php:54
 msgid "Newer posts"
 msgstr ""
 
-#: index.php:93 archive.php:62 search.php:55
+#: index.php:68 archive.php:62 search.php:55
 msgid "Page"
 msgstr ""
 
@@ -236,11 +296,11 @@ msgstr ""
 msgid "Search Results for:"
 msgstr ""
 
-#: header.php:50
+#: header.php:44
 msgid "Menu"
 msgstr ""
 
-#: header.php:58
+#: header.php:52
 msgid "Horizontal"
 msgstr ""
 
@@ -260,7 +320,6 @@ msgid "Search for:"
 msgstr ""
 
 #: searchform.php:21
-msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
@@ -272,37 +331,42 @@ msgstr ""
 msgid "Please define an SVG icon filename."
 msgstr ""
 
-#: inc/template-tags.php:190
-msgid ", "
-msgstr ""
-
-#: inc/template-tags.php:220
-msgid "Edit Post"
-msgstr ""
-
-#: inc/template-tags.php:267
+#: inc/template-tags.php:162
+msgctxt "Used before post author name."
 msgid "Author"
 msgstr ""
 
-#: inc/template-tags.php:282
+#: inc/template-tags.php:210
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:240
+msgid "Edit Post"
+msgstr ""
+
+#: inc/template-tags.php:287
+msgid "Author"
+msgstr ""
+
+#: inc/template-tags.php:302
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/template-tags.php:303
+#: inc/template-tags.php:323
 msgid "Edit"
 msgstr ""
 
-#: inc/template-tags.php:307
+#: inc/template-tags.php:327
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/template-tags.php:381
+#: inc/template-tags.php:401
 msgid "Show sub menu"
 msgstr ""
 
 #. 1: The [datetime] attribute for the <time> tag. 2: Estimated reading time text, in minutes.
-#: inc/template-tags.php:802
+#: inc/template-tags.php:826
 #, php-format
 msgctxt "Time to read"
 msgid "%s min read"
@@ -334,283 +398,295 @@ msgstr ""
 msgid "Hero"
 msgstr ""
 
-#: inc/customizer/customizer.php:28
+#: inc/customizer/customizer.php:26
 msgid "Theme"
 msgstr ""
 
-#: inc/customizer/customizer.php:38
+#: inc/customizer/customizer.php:36
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer/customizer.php:47
+#: inc/customizer/customizer.php:45
 msgid "Styles"
 msgstr ""
 
-#: inc/customizer/customizer.php:56
+#: inc/customizer/customizer.php:54
 msgid "Header"
 msgstr ""
 
-#: inc/customizer/customizer.php:65
+#: inc/customizer/customizer.php:63
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer/customizer.php:74
+#: inc/customizer/customizer.php:72
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer/customizer.php:83
+#: inc/customizer/customizer.php:81
 msgid "Blog Cards"
 msgstr ""
 
-#: inc/customizer/customizer.php:92
+#: inc/customizer/customizer.php:90
 msgid "Single Post"
 msgstr ""
 
-#: inc/customizer/customizer.php:114
+#: inc/customizer/customizer.php:112
 msgid "Hide tagline"
 msgstr ""
 
-#: inc/customizer/customizer.php:136
+#: inc/customizer/customizer.php:134
 msgid "Retina logo"
 msgstr ""
 
-#: inc/customizer/customizer.php:137
+#: inc/customizer/customizer.php:135
 msgid ""
 "Scales the logo to half its uploaded size, making it sharp on high-res "
 "screens."
 msgstr ""
 
-#: inc/customizer/customizer.php:156
+#: inc/customizer/customizer.php:154
+msgid "Disable Google fonts in theme"
+msgstr ""
+
+#: inc/customizer/customizer.php:173
 msgid "Heading Font Weight"
 msgstr ""
 
-#: inc/customizer/customizer.php:161
+#: inc/customizer/customizer.php:178
 msgid "regular"
 msgstr ""
 
-#: inc/customizer/customizer.php:162
+#: inc/customizer/customizer.php:179
 msgid "bold"
 msgstr ""
 
-#: inc/customizer/customizer.php:183
+#: inc/customizer/customizer.php:200
 msgid "Button Border Radius"
 msgstr ""
 
-#: inc/customizer/customizer.php:184 inc/customizer/customizer.php:247
+#: inc/customizer/customizer.php:201 inc/customizer/customizer.php:264
 msgid "Choose the degree of curvature."
 msgstr ""
 
-#: inc/customizer/customizer.php:189 inc/customizer/customizer.php:252
+#: inc/customizer/customizer.php:206 inc/customizer/customizer.php:269
 msgid "square"
 msgstr ""
 
-#: inc/customizer/customizer.php:190 inc/customizer/customizer.php:253
+#: inc/customizer/customizer.php:207 inc/customizer/customizer.php:270
 msgid "curved"
 msgstr ""
 
-#: inc/customizer/customizer.php:191 inc/customizer/customizer.php:254
+#: inc/customizer/customizer.php:208 inc/customizer/customizer.php:271
 msgid "round"
 msgstr ""
 
-#: inc/customizer/customizer.php:208
+#: inc/customizer/customizer.php:225
 msgid "Buttons font weight bold"
 msgstr ""
 
-#: inc/customizer/customizer.php:227
+#: inc/customizer/customizer.php:244
 msgid "Buttons font uppercase"
 msgstr ""
 
-#: inc/customizer/customizer.php:246
+#: inc/customizer/customizer.php:263
 msgid "Form Border Radius"
 msgstr ""
 
-#: inc/customizer/customizer.php:275
+#: inc/customizer/customizer.php:292
 msgid "Display Search Form"
 msgstr ""
 
-#: inc/customizer/customizer.php:294
+#: inc/customizer/customizer.php:311
 msgid "Bold font in primary menu"
 msgstr ""
 
-#: inc/customizer/customizer.php:313
+#: inc/customizer/customizer.php:330
 msgid "Uppercase font in primary menu"
 msgstr ""
 
-#: inc/customizer/customizer.php:336
+#: inc/customizer/customizer.php:353
 msgid "Light Text Colors"
 msgstr ""
 
-#: inc/customizer/customizer.php:337
+#: inc/customizer/customizer.php:354
 msgid "Choose light text colors with a dark Footer background."
 msgstr ""
 
-#: inc/customizer/customizer.php:356
+#: inc/customizer/customizer.php:373
 msgid "Center Align Footer Widgets"
 msgstr ""
 
-#: inc/customizer/customizer.php:375 inc/customizer/customizer.php:395
+#: inc/customizer/customizer.php:392 inc/customizer/customizer.php:412
 msgid "Center Align Footer Info"
 msgstr ""
 
-#: inc/customizer/customizer.php:417
+#: inc/customizer/customizer.php:434
 msgid "Layout"
 msgstr ""
 
-#: inc/customizer/customizer.php:418
+#: inc/customizer/customizer.php:435
 msgid "Choose the column layout of your blog, archives and search results."
 msgstr ""
 
-#: inc/customizer/customizer.php:423
+#: inc/customizer/customizer.php:440
 msgid "1 column"
 msgstr ""
 
-#: inc/customizer/customizer.php:424
+#: inc/customizer/customizer.php:441
 msgid "2 column"
 msgstr ""
 
-#: inc/customizer/customizer.php:425
+#: inc/customizer/customizer.php:442
 msgid "3 column"
 msgstr ""
 
-#: inc/customizer/customizer.php:443
+#: inc/customizer/customizer.php:460
 msgid "Blog Title"
 msgstr ""
 
-#: inc/customizer/customizer.php:444
+#: inc/customizer/customizer.php:461
 msgid "Add a custom blog title to your blog pages."
 msgstr ""
 
-#: inc/customizer/customizer.php:464
+#: inc/customizer/customizer.php:481
 msgid "Blog Title Description"
 msgstr ""
 
-#: inc/customizer/customizer.php:465
+#: inc/customizer/customizer.php:482
 msgid "Add a custom blog title description."
 msgstr ""
 
-#: inc/customizer/customizer.php:486
+#: inc/customizer/customizer.php:503
 msgid "Choose how to display posts on your blog, archives and search results."
 msgstr ""
 
-#: inc/customizer/customizer.php:505
+#: inc/customizer/customizer.php:522
 msgid "Border Radius"
 msgstr ""
 
-#: inc/customizer/customizer.php:506
+#: inc/customizer/customizer.php:523
 msgid "Choose the degree of curvature on blog card edges in pixels."
 msgstr ""
 
-#: inc/customizer/customizer.php:511 inc/customizer/customizer.php:723
+#: inc/customizer/customizer.php:528 inc/customizer/customizer.php:740
 msgid "0"
 msgstr ""
 
-#: inc/customizer/customizer.php:512 inc/customizer/customizer.php:724
+#: inc/customizer/customizer.php:529 inc/customizer/customizer.php:741
 msgid "12"
 msgstr ""
 
-#: inc/customizer/customizer.php:513 inc/customizer/customizer.php:725
+#: inc/customizer/customizer.php:530 inc/customizer/customizer.php:742
 msgid "24"
 msgstr ""
 
-#: inc/customizer/customizer.php:514 inc/customizer/customizer.php:726
+#: inc/customizer/customizer.php:531 inc/customizer/customizer.php:743
 msgid "36"
 msgstr ""
 
-#: inc/customizer/customizer.php:531
+#: inc/customizer/customizer.php:548
 msgid "Blog Card Shadow"
 msgstr ""
 
-#: inc/customizer/customizer.php:536 inc/customizer/customizer.php:560
-#: inc/customizer/customizer.php:584
+#: inc/customizer/customizer.php:553 inc/customizer/customizer.php:577
+#: inc/customizer/customizer.php:601
 msgid "none"
 msgstr ""
 
-#: inc/customizer/customizer.php:537 inc/customizer/customizer.php:561
+#: inc/customizer/customizer.php:554 inc/customizer/customizer.php:578
 msgid "thin"
 msgstr ""
 
-#: inc/customizer/customizer.php:538 inc/customizer/customizer.php:562
+#: inc/customizer/customizer.php:555 inc/customizer/customizer.php:579
 msgid "thick"
 msgstr ""
 
-#: inc/customizer/customizer.php:555
+#: inc/customizer/customizer.php:572
 msgid "Blog Card Shadow on Hover"
 msgstr ""
 
-#: inc/customizer/customizer.php:579
+#: inc/customizer/customizer.php:596
 msgid "Animation on Hover"
 msgstr ""
 
-#: inc/customizer/customizer.php:585
+#: inc/customizer/customizer.php:602
 msgid "move in"
 msgstr ""
 
-#: inc/customizer/customizer.php:586
+#: inc/customizer/customizer.php:603
 msgid "move up"
 msgstr ""
 
-#: inc/customizer/customizer.php:603
+#: inc/customizer/customizer.php:620
 msgid "Excerpt Length"
 msgstr ""
 
-#: inc/customizer/customizer.php:604
+#: inc/customizer/customizer.php:621
 msgid ""
 "Choose the number of words shown in excerpt. To hide excerpt set to zero."
 msgstr ""
 
-#: inc/customizer/customizer.php:622
+#: inc/customizer/customizer.php:639
 msgid "Post Details"
 msgstr ""
 
-#: inc/customizer/customizer.php:641
+#: inc/customizer/customizer.php:658
 msgid "Display author details instead categories"
 msgstr ""
 
-#: inc/customizer/customizer.php:660
+#: inc/customizer/customizer.php:677
 msgid "Display author avatar"
 msgstr ""
 
-#: inc/customizer/customizer.php:679
+#: inc/customizer/customizer.php:696
 msgid "Display publish date"
 msgstr ""
 
-#: inc/customizer/customizer.php:698
+#: inc/customizer/customizer.php:715
 msgid "Display comments count"
 msgstr ""
 
-#: inc/customizer/customizer.php:717
+#: inc/customizer/customizer.php:734
 msgid "Featured Image Border Radius"
 msgstr ""
 
-#: inc/customizer/customizer.php:718
+#: inc/customizer/customizer.php:735
 msgid "Choose the degree of curvature on featured image edges in pixels."
 msgstr ""
 
-#: inc/customizer/customizer.php:743
+#: inc/customizer/customizer.php:760
 msgid "Show comments with borders"
 msgstr ""
 
-#: inc/customizer/customizer.php:789
+#: inc/customizer/customizer.php:806
 msgid "The primary link and button background color."
 msgstr ""
 
-#: inc/customizer/customizer.php:810
+#: inc/customizer/customizer.php:828
+msgid "The heading text color."
+msgstr ""
+
+#: inc/customizer/customizer.php:850
+msgid "The default text color."
+msgstr ""
+
+#: inc/customizer/customizer.php:871
 msgid "Button Text"
 msgstr ""
 
-#: inc/customizer/customizer.php:831
+#: inc/customizer/customizer.php:892
 msgid "Footer Background"
 msgstr ""
 
-#: inc/customizer/customizer.php:853
+#: inc/customizer/customizer.php:914
 msgid "Blog Cards Background"
 msgstr ""
 
-#: inc/customizer/customizer.php:875
+#: inc/customizer/customizer.php:936
 msgid "Blog Cards Background on Hover"
 msgstr ""
 
-#: inc/customizer/customizer.php:897
+#: inc/customizer/customizer.php:958
 msgid "Comments Background"
 msgstr ""
 
@@ -642,11 +718,11 @@ msgstr ""
 msgid "Leave a reply"
 msgstr ""
 
-#: template-parts/post/content-single.php:24 template-parts/post/content.php:78
+#: template-parts/post/content-single.php:24 template-parts/post/content.php:76
 msgid "Comment 1"
 msgstr ""
 
-#: template-parts/post/content-single.php:24 template-parts/post/content.php:78
+#: template-parts/post/content-single.php:24 template-parts/post/content.php:76
 msgid "Comments %"
 msgstr ""
 
@@ -699,15 +775,17 @@ msgstr ""
 msgid "View more"
 msgstr ""
 
-#: template-parts/post/relatedposts.php:46
-msgid "Read more"
+#. %s: Post title.
+#: template-parts/post/relatedposts.php:54
+#, php-format
+msgid "Read more<span class=\"screen-reader-text\"> about \"%s\"</span>"
 msgstr ""
 
 #: template-parts/post/content.php:21
 msgid "Featured"
 msgstr ""
 
-#: template-parts/post/content.php:78
+#: template-parts/post/content.php:76
 msgid "Comments 0"
 msgstr ""
 
@@ -728,7 +806,7 @@ msgid "Aino"
 msgstr ""
 
 #. Description of the theme
-msgid "Aino is a Gutenberg-ready WordPress theme."
+msgid "Aino is a Gutenberg-first WordPress theme."
 msgstr ""
 
 #. Author of the theme
