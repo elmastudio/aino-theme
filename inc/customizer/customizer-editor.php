@@ -20,19 +20,39 @@ function aino_editor_customizer_generated_values() {
 	.editor-styles-wrapper {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
-	.editor-styles-wrapper p a:hover,
-	.editor-styles-wrapper blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover,
-	.wp-block-pullquote__citation a:hover {
+
+	.block-editor .editor-styles-wrapper .has-primary-one-background-color {
+		background-color: ' . esc_attr( $primary_one_color ) . ';
+	}
+
+	.block-editor .editor-styles-wrapper .has-primary-one-color {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
 
-	.block-editor__container .editor-styles-wrapper .wp-block-button .wp-block-button__link {
+	.editor-styles-wrapper p a:hover,
+	.editor-styles-wrapper blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover,
+	.wp-block-pullquote__citation a:hover,
+	.editor-styles-wrapper .wp-block-ainoblocks-button.is-style-outline .wp-block-ainoblocks-button__link,
+	.editor-styles-wrapper .wp-block-ainoblocks-button.is-style-ghost .wp-block-ainoblocks-button__link,
+	.editor-styles-wrapper .wp-block-ainoblocks-button.is-style-3doutline .wp-block-ainoblocks-button__link {
+		color: ' . esc_attr( $primary_one_color ) . ';
+		fill: ' . esc_attr( $primary_one_color ) . ';
+	}
+
+	.editor-styles-wrapper .wp-block-button .wp-block-button__link,
+	.editor-styles-wrapper .wp-block-ainoblocks-button .wp-block-ainoblocks-button__link {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 		color: ' . esc_attr( $btn_text_color ) . ';
 	}
 
-	.block-editor__container .editor-styles-wrapper .wp-block-button:not(.has-text-color):not(.is-style-outline) [data-rich-text-placeholder]:after {
+	.editor-styles-wrapper .wp-block-ainoblocks-button.is-style-outline .wp-block-ainoblocks-button__link,
+	.editor-styles-wrapper .wp-block-ainoblocks-button.is-style-3doutline .wp-block-ainoblocks-button__link:before,
+	.editor-styles-wrapper .wp-block-ainoblocks-button.is-style-3doutline .wp-block-ainoblocks-button__link:after {
+		box-shadow: inset 0 0 0 1px ' . esc_attr( $primary_one_color ) . ';
+	}
+
+	.editor-styles-wrapper .wp-block-button:not(.has-text-color):not(.is-style-outline) [data-rich-text-placeholder]:after {
 		color: ' . esc_attr( $btn_text_color ) . ';
 	}
 

@@ -6,6 +6,7 @@
 
 @import "1-base/variables";
 @import "1-base/mixins";
+@import "3-blocks/palettes";
 
 /* Structure */
 
@@ -21,7 +22,7 @@
 
 .wp-block[data-align="wide"] .wp-block[data-align="wide"],
 .wp-block[data-align="full"] .wp-block[data-align="wide"] {
-	max-width: 1392px;
+	max-width: $col12;
 }
 
 .wp-block[data-align="full"] .wp-block[data-align="wide"] {
@@ -48,7 +49,7 @@
 
 .wp-block[data-align="wide"],
 .wp-block.alignwide {
-	max-width: 1392px;
+	max-width: $col12;
 }
 
 .wp-block[data-align="full"],
@@ -57,12 +58,12 @@
 }
 
 .tpl-fullwidth .wp-block {
-	max-width: 1392px;
+	max-width: $col12;
 }
 
 .wp-block {
 	.tpl-fullwidth & {
-		max-width: 1392px;
+		max-width: $col12;
 	}
 }
 
@@ -77,7 +78,7 @@
 .editor-styles-wrapper .wp-block[data-align="left"],
 .editor-styles-wrapper .wp-block[data-align="right"] {
 	margin: 0 auto;
-	max-width: 1392px;
+	max-width: $col12;
 }
 
 
