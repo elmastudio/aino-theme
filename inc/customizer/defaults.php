@@ -32,7 +32,7 @@ function aino_defaults( $name ) {
 				'blogcards_bg_hover_color' => '#ffffff',
 
 				// Styling.
-				'heading_fontweight'       => 'bold',
+				'heading_fontweight'       => 'regular',
 				'button_style'             => 'squared',
 				'form_style'               => 'squared',
 				'featuredimg_style'        => 'radius-none',

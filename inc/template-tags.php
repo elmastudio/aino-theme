@@ -734,21 +734,6 @@ function aino_body_classes( $classes ) {
 add_filter( 'body_class', 'aino_body_classes' );
 
 /**
- * Add Classes to dashboard to support theme options in editor styles.
- *
- * @param array $classes Classes for the body element.
- */
-function aino_custom_admin_body_class( $classes ) {
-
-	if ( 'bold' === get_theme_mod( 'heading_fontweight', 'regular' ) ) {
-		$classes .= ' h-bold ';
-	}
-
-	return $classes;
-}
-add_filter( 'admin_body_class', 'aino_custom_admin_body_class' );
-
-/**
  * Add Classes to posts and pages.
  *
  * @param  mixed $classes This is a description.

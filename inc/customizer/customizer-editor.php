@@ -11,9 +11,12 @@
 function aino_editor_customizer_generated_values() {
 
 	// Retrieve colors from the Customizer.
-	$main_bg_color     = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
-	$primary_one_color = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
-	$btn_text_color    = get_theme_mod( 'btn_text_color', aino_defaults( 'btn_text_color' ) );
+	$main_bg_color      = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
+	$primary_one_color  = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
+	$btn_text_color     = get_theme_mod( 'btn_text_color', aino_defaults( 'btn_text_color' ) );
+
+	// Heading font weight.
+	$heading_fontweight = get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) );
 
 	// Build styles.
 	$css = '
@@ -28,6 +31,15 @@ function aino_editor_customizer_generated_values() {
 	.block-editor .editor-styles-wrapper .has-primary-one-color {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
+	}
+
+	.block-editor .editor-styles-wrapper .editor-post-title .editor-post-title__input,
+	.block-editor .editor-styles-wrapper h2,
+	.block-editor .editor-styles-wrapper h3,
+	.block-editor .editor-styles-wrapper h4,
+	.block-editor .editor-styles-wrapper h5,
+	.block-editor .editor-styles-wrapper h6 {
+		font-weight: ' . esc_attr( $heading_fontweight ) . ';
 	}
 
 	.editor-styles-wrapper p a:hover,

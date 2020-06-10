@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.1.6 =
 * Bugfix: Color and gradients palette in editor with Gutenberg plugin 8.1.
+* Enhance: Set Heading font weight default value to regular.
 
 = 1.1.5 =
 * Bugfix: Douple text domain issue in searchform.php
