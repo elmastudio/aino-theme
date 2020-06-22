@@ -4,53 +4,115 @@
 	box-sizing: border-box;
 }
 
+.no-gutter {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.desktop__overlap-top {
+
+	@include breakpoint(m) {
+		margin-top: -12rem;
+	}
+}
+
+// 12 grid columns
 .col1 {
 	max-width: $col1;
+
+	&__no-gutter {
+		max-width: $col1-no-gutter;
+	}
 }
 
 .col2 {
 	max-width: $col2;
+
+	&__no-gutter {
+		max-width: $col2-no-gutter;
+	}
 }
 
 .col3 {
 	max-width: $col3;
+
+	&__no-gutter {
+		max-width: $col3-no-gutter;
+	}
 }
 
 .col4 {
 	max-width: $col4;
+
+	&__no-gutter {
+		max-width: $col4-no-gutter;
+	}
 }
 
 .col5 {
 	max-width: $col5;
+
+	&__no-gutter {
+		max-width: $col5-no-gutter;
+	}
 }
 
 .col6 {
 	max-width: $col6;
+
+	&__no-gutter {
+		max-width: $col6-no-gutter;
+	}
 }
 
 .col7 {
 	max-width: $col7;
+
+	&__no-gutter {
+		max-width: $col7-no-gutter;
+	}
 }
 
 .col8 {
 	max-width: $col8;
+
+	&__no-gutter {
+		max-width: $col8-no-gutter;
+	}
 }
 
 .col9 {
 	max-width: $col9;
+
+	&__no-gutter {
+		max-width: $col9-no-gutter;
+	}
 }
 
 .col10 {
 	max-width: $col10;
+
+	&__no-gutter {
+		max-width: $col10-no-gutter;
+	}
 }
 
 .col11 {
 	max-width: $col11;
+
+	&__no-gutter {
+		max-width: $col11-no-gutter;
+	}
 }
 
 .col12 {
 	max-width: $col12;
+
+	&__no-gutter {
+		max-width: $col12-no-gutter;
+	}
 }
+
 
 // Push padding left or right (Desktop only)
 @include breakpoint(l) {
@@ -242,14 +304,14 @@
 .single .comments-area,
 .single-page .comments-area {
 	@include push--auto;
-	max-width: $col6-no-margin;
+	max-width: $col6-no-gutter;
 }
 
 /* Full width page template (1200px on desktop screens) */
 .tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header {
 	@include push--auto;
-	max-width: $col12-no-margin;
+	max-width: $col12-no-gutter;
 }
 
 /* Fullscreen and hero page template */
@@ -263,7 +325,7 @@
 
 /* Alignwide and fullwidth Content widths */
 .entry-content>*.alignwide {
-	max-width: $col12-no-margin;
+	max-width: $col12-no-gutter;
 }
 
 // All containers with 1200px default width.

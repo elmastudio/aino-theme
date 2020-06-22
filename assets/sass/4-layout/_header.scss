@@ -838,6 +838,7 @@ button.sub-menu-toggle.active svg {
 /* Light Header Style ---------------------------- */
 .header-light {
 
+	&.page-template-tpl-hero-light .site-title a,
 	.custom-logo path,
 	.nav-toggle .icon-more_horiz-24px {
 		color: $color__white;

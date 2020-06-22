@@ -608,7 +608,7 @@ textarea {
 	.wp-block[data-type="core/pullquote"][data-align="left"],
 	.wp-block[data-type="core/pullquote"][data-align="right"] {
 		margin: 0 auto;
-		max-width: $col12-no-margin;
+		max-width: $col12-no-gutter;
 	}
 }
 
@@ -687,7 +687,7 @@ textarea {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: $col6-no-margin;
+	max-width: $col6-no-gutter;
 	@include font-h-c;
 }
 
