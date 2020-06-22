@@ -1,22 +1,22 @@
 // New Colors
-$color__primary: #1765d8;
-$color__text_one: #111111;
-$color__text_two: #222222;
-$color__border: #cacaca;
-$color__background: #f7f7ff;
-$color__success: #408321;
-$color__notification: #1765D8;
-$color__error: #e52424;
-$color__code_one: #b2cacd;
-$color__code_two: #062e32;
-$color__black: #000000;
-$color__white: #ffffff;
-$color__white_hover: rgba(255, 255, 255, 0.6);
+$color__primary      : #1765d8;
+$color__text_one     : #111111;
+$color__text_two     : #222222;
+$color__border       : #cacaca;
+$color__background   : #f7f7ff;
+$color__success      : #408321;
+$color__notification : #1765D8;
+$color__error        : #e52424;
+$color__code_one     : #b2cacd;
+$color__code_two     : #062e32;
+$color__black        : #000000;
+$color__white        : #ffffff;
+$color__white_hover  : rgba(255, 255, 255, 0.6);
 
 // New Typography
-$font__heading: "Roboto", sans-serif;
-$font__body: "Roboto", sans-serif;
-$font__code : "Monaco", "Courier 10 Pitch", Courier, monospace;
+$font__heading       : "Roboto", sans-serif;
+$font__body          : "Roboto", sans-serif;
+$font__code          : "Monaco", "Courier 10 Pitch", Courier, monospace;
 
 // Spacing
 $spacing-none        : 0;
@@ -51,18 +51,28 @@ $stickyheader-desktop: 5.5rem; // 88px
 // Grid Columns
 $col1                : 7.5rem; // 1 grid column
 $col2                : 15rem; // 2 grid column
-$col3                : 22.5rem; // 3 grid column
-$col4                : 30rem; // 4 grid column
-$col5                : 37.5rem; // 5 grid column
-$col6                : 45rem; // 6 grid column
-$col7                : 52.5rem; // 7 grid column
-$col8                : 60rem; // 8 grid column
-$col9                : 67.5rem; // 9 grid column
-$col10               : 75rem; // 10 grid column
-$col11               : 82.5rem; // 11 grid column
-$col12               : 90rem; // 12 grid column, 1440px
-$col6-no-margin      : 42rem; // 6 grid columns, no outer margins, default block width, 672px
-$col12-no-margin     : 87rem; // 12 grid column, no outer margins
+$col3                : 22.5rem;
+$col4                : 30rem;
+$col5                : 37.5rem;
+$col6                : 45rem;
+$col7                : 52.5rem;
+$col8                : 60rem;
+$col9                : 67.5rem;
+$col10               : 75rem;
+$col11               : 82.5rem;
+$col12               : 90rem;
+$col1-no-gutter      : 4.5rem; // 1 grid columns, no outer margins
+$col2-no-gutter      : 12rem; // 2 grid columns, no outer margins
+$col3-no-gutter      : 19.5rem;
+$col4-no-gutter      : 27rem;
+$col5-no-gutter      : 34.5rem;
+$col6-no-gutter      : 42rem;
+$col7-no-gutter      : 49.5rem;
+$col8-no-gutter      : 57rem;
+$col9-no-gutter      : 64.5rem;
+$col10-no-gutter     : 72rem;
+$col11-no-gutter     : 79.5rem;
+$col12-no-gutter     : 87rem;
 
 // Grid Margins
 $grid-margins-xs     : 1rem; // 16px

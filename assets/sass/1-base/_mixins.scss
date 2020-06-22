@@ -198,7 +198,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-1.73px);
 
-	@include breakpoint(m) {
+	@include breakpoint(l) {
 		@include fontSize(160px);
 		line-height: 1;
 		@include letterSpacing(-4px);
@@ -210,7 +210,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-2.08px);
 
-	@include breakpoint(m) {
+	@include breakpoint(l) {
 		@include fontSize(213px);
 		line-height: 1;
 		@include letterSpacing(-5.33px);
@@ -222,7 +222,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-2.48px);
 
-	@include breakpoint(m) {
+	@include breakpoint(l) {
 		@include fontSize(283px);
 		line-height: 1;
 		@include letterSpacing(-7.08px);
@@ -234,7 +234,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-2.98px);
 
-	@include breakpoint(m) {
+	@include breakpoint(xl) {
 		@include fontSize(378px);
 		line-height: 1;
 		@include letterSpacing(-9.45px);

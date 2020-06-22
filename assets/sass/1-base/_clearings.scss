@@ -21,3 +21,19 @@
 	width: 0;
 	height: 0;
 }
+
+.mobile-hide {
+	display: none;
+
+	@include breakpoint(m) {
+		display: block;
+	}
+}
+
+.no-hyphens {
+	hyphens: none !important;
+}
+
+.no-letterspacing {
+	letter-spacing: 0 !important;
+}
