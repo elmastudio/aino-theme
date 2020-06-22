@@ -2,13 +2,13 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
-Tested up to: WordPress 5.4.1
+Tested up to: WordPress 5.4.2
 Requires PHP: 7.3
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Aino is a Gutenberg-first WordPress theme for everyone who wants to have a beautiful website with creative, individual page layouts.
+Aino is a blocks-first WordPress theme for everyone who wants to build websites with creative, individual page layouts.
 
 == Description ==
 
@@ -42,6 +42,9 @@ Aino WordPress Theme bundles the following third-party resources:
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 1.1.6 =
+* Enhance: CSS styling for Aino blocks.
 
 = 1.1.5 =
 * Bugfix: Douple text domain issue in searchform.php
