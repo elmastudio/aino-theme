@@ -1,15 +1,18 @@
 # Aino WordPress Theme
-Aino is a Gutenberg-first WordPress theme to create page layouts in the new editor. The theme is light-weight and comes with helpful options to build flexible, modern websites.  
+Aino is a blocks-first WordPress theme for everyone who wants to build websites with creative, individual page layouts.   
 
 __Author:__ elmastudio  
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
 __Requires at least:__ 5.0  
-__Tested up to:__ WordPress 5.4.1  
+__Tested up to:__ WordPress 5.4.2  
 __Requires PHP:__ 7.3    
 __License:__ GPLv3 or later  
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 1.1.6   
+**Enhance:** CSS styling for Aino blocks.  
 
 ### 1.1.5   
 **Bugfix:** Douple text domain issue in searchform.php.   
