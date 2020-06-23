@@ -186,9 +186,11 @@ body,button,input,select,table,textarea,.post-navigation .nav-title span,.entry-
 .entry-content p.has-xl-font-size{font-size:1.5rem;line-height:1.542}
 .entry-content p.has-xxl-font-size{font-size:1.625rem;line-height:1.538}
 .comment-metadata,.comment-notes,.logged-in-as,.entry-content p.has-xxs-font-size{font-size:.75rem;line-height:1.333}
-h1,h2,h3,h4,h5,h6,.site-title,.post-navigation .nav-title{color:#111;font-weight:bold;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
+h1,h2,h3,h4,h5,h6,.site-title,.post-navigation .nav-title{color:#111;font-weight:normal;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
 h1.site-title,.site-title,h2.entry-title{word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
-.h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6,.h-regular .site-title,.h-regular.single-post .byline,.h-regular .post-navigation .nav-title,.post-navigation .nav-title span{font-weight:normal}
+.h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6,.h-regular .site-title,.h-regular.single-post .byline,.h-regular .post-navigation .nav-title{font-weight:normal}
+.h-bold :not(.entry-content)>h1,.h-bold :not(.entry-content)>h2,.h-bold :not(.entry-content)>h3,.h-bold :not(.entry-content)>h4,.h-bold :not(.entry-content)>h5,.h-bold :not(.entry-content)>h6,.h-bold .site-title,.h-bold.single-post .byline,.h-bold .post-navigation .nav-title{font-weight:bold}
+.post-navigation .nav-title span{font-weight:normal}
 h1.has-xxl-font-size{font-size:7.4375rem;line-height:1;letter-spacing:-0.18625rem}
 h1.has-xl-font-size,h2.has-xxl-font-size{font-size:6.1875rem;line-height:1;letter-spacing:-0.155rem}
 h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size{font-size:5.1875rem;line-height:1;letter-spacing:-0.13rem}

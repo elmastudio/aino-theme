@@ -13,9 +13,9 @@
 .editor-styles-wrapper .wp-block[data-align="left"],.editor-styles-wrapper .wp-block[data-align="right"]{margin:0 auto;max-width:1392px}
 body{font-family:"Roboto",sans-serif;color:#222}
 .editor-post-title .editor-post-title__input{font-family:"Roboto",sans-serif}
-.editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#111;font-weight:bold}
+.editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#111;font-weight:normal}
 .editor-post-title__input a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#111}
-.h-regular .editor-post-title__input,.h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6{font-weight:normal}
+.h-bold .editor-post-title__input,.h-bold h1,.h-bold h2,.h-bold h3,.h-bold h4,.h-bold h5,.h-bold h6{font-weight:bold}
 h1.has-xxl-font-size{font-size:7.4375rem;line-height:1;letter-spacing:-0.18625rem}
 h1.has-xl-font-size,h2.has-xxl-font-size{font-size:6.1875rem;line-height:1;letter-spacing:-0.155rem}
 h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size{font-size:5.1875rem;line-height:1;letter-spacing:-0.13rem}

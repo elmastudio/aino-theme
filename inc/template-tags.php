@@ -500,6 +500,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'h-regular';
 	}
 
+	if ( 'bold' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
+		$classes[] = 'h-bold';
+	}
+
 	// Customizer Options - Styles.
 	if ( 'curved' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
 		$classes[] = 'btn-curved';
@@ -740,8 +744,12 @@ add_filter( 'body_class', 'aino_body_classes' );
  */
 function aino_custom_admin_body_class( $classes ) {
 
-	if ( 'bold' === get_theme_mod( 'heading_fontweight', 'regular' ) ) {
-		$classes .= ' h-bold ';
+	if ( 'regular' === get_theme_mod( 'heading_fontweight' ) ) {
+		$classes .= ' h-regular';
+	}
+
+	if ( 'bold' === get_theme_mod( 'heading_fontweight' ) ) {
+		$classes .= ' h-bold';
 	}
 
 	return $classes;

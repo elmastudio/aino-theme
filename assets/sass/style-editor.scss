@@ -101,21 +101,21 @@ h4,
 h5,
 h6 {
 	color: $color__text_one;
-	font-weight: bold;
+	font-weight: normal;
 
 	& a {
 		color: $color__text_one;
 	}
 }
 
-.h-regular .editor-post-title__input,
-.h-regular h1,
-.h-regular h2,
-.h-regular h3,
-.h-regular h4,
-.h-regular h5,
-.h-regular h6 {
-	font-weight: normal;
+.h-bold .editor-post-title__input,
+.h-bold h1,
+.h-bold h2,
+.h-bold h3,
+.h-bold h4,
+.h-bold h5,
+.h-bold h6 {
+	font-weight: bold;
 }
 
 h1.has-xxl-font-size {
