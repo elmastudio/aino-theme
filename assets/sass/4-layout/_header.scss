@@ -60,18 +60,23 @@
 	.custom-logo-link {
 		display: block;
 		padding: 0 $spacing-xs 0 0;
-		max-height: $spacing-mobile-5;
 
 		img {
 			width: auto !important;
 			height: $spacing-mobile-5;
+			object-fit: fill;
+			max-height: $spacing-mobile-5;
+
+			@include breakpoint(header) {
+				max-height: none;
+			}
 		}
 
 		@include breakpoint(header) {
 			max-height: 100%;
 
 			img {
-				width: auto !important;
+				width: none !important;
 				height: auto;
 			}
 		}
