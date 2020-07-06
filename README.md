@@ -1,5 +1,9 @@
 # Aino WordPress Theme
-Aino is a blocks-first WordPress theme for everyone who wants to build websites with creative, individual page layouts.   
+
+![Digital Creators](https://user-images.githubusercontent.com/17613630/86550337-3695ad80-bf96-11ea-94e7-589d14545748.png)
+
+Aino is a blocks-first free WordPress theme for everyone who wants to build websites with creative, individual page layouts.  
+#### Download: [Download Aino on WordPress.org](https://wordpress.org/themes/aino/)
 
 __Author:__ elmastudio  
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
