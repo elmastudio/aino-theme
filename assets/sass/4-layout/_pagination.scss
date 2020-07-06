@@ -2,7 +2,7 @@
 .blog-archive .site-content {
 	padding-bottom: $spacing-desktop-9;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-bottom: $spacing-desktop-10;
 	}
 }
@@ -16,7 +16,7 @@
 .blog .site-main .navigation,
 .blog-archive .site-main .navigation {
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-left: $spacing-3;
 		margin-right: $spacing-3;
 	}
@@ -26,7 +26,7 @@
 .blog-archive .site-main .navigation .nav-links {
 	margin-top: $spacing-mobile-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-top: $spacing-desktop-6;
 	}
 }
@@ -51,7 +51,7 @@
 	width: $spacing-desktop-6;
 	height: $spacing-desktop-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		display: block;
 	}
 }
@@ -112,7 +112,7 @@
 /* Pagination - Single Post */
 .single-post .nav-links {
 	padding: 0 0 $spacing-mobile-9;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: 0 0 $spacing-desktop-9;
 	}
 }
@@ -128,7 +128,7 @@
 	.nav-previous {
 		padding-bottom: $spacing-mobile-6;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-bottom: 0;
 		}
 	}
@@ -137,7 +137,7 @@
 		padding-top: $spacing-mobile-6;
 		border-top: 1px solid $color__border;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			flex-direction: row-reverse;
 			justify-content: flex-end;
 			padding-top: 0;
@@ -156,7 +156,7 @@
 
 	.nav-next .nav-thumb {
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			margin: 0 0 0 $spacing-2;
 		}
 	}
@@ -167,7 +167,7 @@
 
 	.nav-next .nav-title {
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			text-align: right;
 			flex-grow: 3;
 		}

@@ -11,7 +11,7 @@
 
 .desktop__overlap-top {
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-top: -12rem;
 	}
 }
@@ -115,7 +115,7 @@
 
 
 // Push padding left or right (Desktop only)
-@include breakpoint(l) {
+@include breakpoint(md) {
 	.push-left-col1 {
 		padding-left: $col1;
 	}
@@ -206,15 +206,15 @@
 }
 
 .grid-margins {
-	padding-left: $grid-margins-s;
-	padding-right: $grid-margins-s;
+	padding-left: $grid-margins-xs;
+	padding-right: $grid-margins-xs;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
 
-	@include breakpoint(xxl) {
+	@include breakpoint(xl) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 	}
@@ -222,20 +222,15 @@
 
 // Grid margins for elements which only require them on mobile.
 .mobile-margins {
-	padding-left: $grid-margins-s;
-	padding-right: $grid-margins-s;
+	padding-left: $grid-margins-xs;
+	padding-right: $grid-margins-xs;
 
-	@include breakpoint(s) {
-		padding-left: $grid-margins-l;
-		padding-right: $grid-margins-l;
-	}
-
-	@include breakpoint(m) {
+	@include breakpoint(lg) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 	}
 
-	@include breakpoint(xxl) {
+	@include breakpoint(xl) {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -244,15 +239,15 @@
 // Mobile Grid margins for elements with 680px default width.
 .small-margins,
 .search-no-results .entry-content {
-	padding-left: $grid-margins-s;
-	padding-right: $grid-margins-s;
+	padding-left: $grid-margins-xs;
+	padding-right: $grid-margins-xs;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
 
-	@include breakpoint(m) {
+	@include breakpoint(lg) {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -268,7 +263,7 @@
 .has-padding-top {
 	padding-top: $spacing-mobile-10;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-top: $spacing-desktop-10;
 	}
 }
@@ -276,7 +271,7 @@
 .has-padding-bottom {
 	padding-bottom: $spacing-mobile-10;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-bottom: $spacing-desktop-10;
 	}
 }
@@ -290,7 +285,7 @@
 .single-post .site-content {
 	@include push--auto;
 
-	@include breakpoint(xxl) {
+	@include breakpoint(xl) {
 		max-width: $col12;
 	}
 }
@@ -334,23 +329,23 @@
 	padding-left: $grid-margins-s;
 	padding-right: $grid-margins-s;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		padding-left: $grid-margins-l;
 		padding-right: $grid-margins-l;
 	}
 
-	@include breakpoint(l) {
+	@include breakpoint(md) {
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 	}
 
 	.alignwide {
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-left: 0;
 			padding-right: 0;
 		}
 
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			padding-left: $grid-margins-s;
 			padding-right: $grid-margins-s;
 		}
@@ -400,7 +395,13 @@
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
+		flex-basis: calc(50% - 2rem);
+		margin-left: $grid-margins-xs;
+		margin-right: $grid-margins-xs;
+	}
+
+	@include breakpoint(lg) {
 		flex-basis: calc(50% - 3rem);
 		margin-left: $grid-margins-s;
 		margin-right: $grid-margins-s;
@@ -412,7 +413,7 @@
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		flex-basis: calc(50%);
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
@@ -427,13 +428,15 @@
 	width: 100%;
 	flex-grow: 0;
 
-	@include breakpoint(m) {
-		flex-basis: calc(50% - 3rem);
-		margin-left: $grid-margins-s;
-		margin-right: $grid-margins-s;
+	@include breakpoint(sm) {
+		flex-basis: calc(50% - 2rem);
+		margin-left: $grid-margins-xs;
+		margin-right: $grid-margins-xs;
 	}
 
-	@include breakpoint(l) {
+	@include breakpoint(lg) {
 		flex-basis: calc(33.333% - 3rem);
+		margin-left: $grid-margins-s;
+		margin-right: $grid-margins-s;
 	}
 }

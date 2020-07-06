@@ -2,11 +2,11 @@
 .entry-link {
 	display: block;
 	padding-bottom: $spacing-mobile-4;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-bottom: $spacing-desktop-4;
 	}
 	.blog-2-column & {
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			padding-bottom: $spacing-desktop-7;
 		}
 	}
@@ -14,7 +14,8 @@
 
 .posts-container .hentry {
 	margin-bottom: $spacing-mobile-6;
-	@include breakpoint(m) {
+
+	@include breakpoint(sm) {
 		margin-bottom: $spacing-desktop-6;
 	}
 }
@@ -73,7 +74,7 @@
 /* Blog Cards - 1 Columns */
 .blog.blog-1-column,
 .blog-archive.blog-1-column {
-	@include breakpoint(l) {
+	@include breakpoint(md) {
 
 		& .hentry .entry-link {
 			display: block;
@@ -128,14 +129,14 @@
 
 	.entry-link .post-thumb img {
 
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			border-radius: $border-radius-xs 0 0 $border-radius-xs;
 		}
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
 
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			border-radius: $border-radius-xs;
 		}
 	}
@@ -162,14 +163,14 @@
 
 	.entry-link .post-thumb img {
 
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			border-radius: $border-radius-m 0 0 $border-radius-m;
 		}
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
 
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			border-radius: $border-radius-m;
 		}
 	}
@@ -196,14 +197,14 @@
 
 	.entry-link .post-thumb img {
 
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			border-radius: $border-radius-l 0 0 $border-radius-l;
 		}
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
 
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			border-radius: $border-radius-l;
 		}
 	}
@@ -280,7 +281,7 @@
 .parent:not(.single-post) .hentry .entry-header {
 	padding: $spacing-mobile-4 $spacing-mobile-4 0;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-desktop-4 $spacing-desktop-4 0;
 	}
 }
@@ -288,7 +289,7 @@
 .blog.blog-2-column .hentry .entry-header,
 .blog-archive.blog-2-column .hentry .entry-header {
 
-	@include breakpoint(l) {
+	@include breakpoint(md) {
 		padding: $spacing-desktop-7 $spacing-desktop-7 0;
 	}
 }
@@ -305,7 +306,7 @@
 
 .group-blog .byline {
 	display: block;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		display: inline-block;
 		padding: 0 $spacing-3 0 0;
 	}
@@ -316,14 +317,14 @@
 	margin-left: $spacing-mobile-4;
 	margin-right: $spacing-mobile-4;
 	padding-top: $spacing-2;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-left: $spacing-desktop-4;
 		margin-right: $spacing-desktop-4;
 	}
 
 	.blog.blog-2-column &,
 	.blog-archive.blog-2-column & {
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			margin-left: $spacing-desktop-7;
 			margin-right: $spacing-desktop-7;
 		}
@@ -332,14 +333,14 @@
 
 .no-postcats .posts-container .hentry .entry-footer {
 	padding-top: 28px;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-top: 37px;
 	}
 }
 
 .no-postcats.no-postdate.no-postcommentscount .posts-container .hentry .entry-footer {
 	padding-top: 0;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-top: 0;
 	}
 }
@@ -431,7 +432,7 @@
 .blog .page-header {
 	padding-bottom: $spacing-mobile-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-bottom: $spacing-desktop-6;
 	}
 

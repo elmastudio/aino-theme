@@ -2,7 +2,7 @@
 .site-content {
 	padding-top: $spacing-3;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-top: $spacing-desktop-7;
 	}
 }
@@ -13,7 +13,7 @@
 	.type-page & {
 		padding-bottom: $spacing-mobile-8;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-bottom: $spacing-desktop-8;
 		}
 	}

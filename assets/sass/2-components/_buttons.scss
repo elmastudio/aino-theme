@@ -119,11 +119,11 @@ a.btn-outline,
 	padding-left: 46px;
 	padding-right: 24px;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		padding-left: 46px;
 	}
 
-	@include breakpoint(l) {
+	@include breakpoint(md) {
 		margin-top: $spacing-desktop-4;
 	}
 }

@@ -4,7 +4,7 @@
 	 margin: 0 0 $spacing-mobile-5;
 	 width: 100%;
 	 background-color: $color__background;
-	 @include breakpoint(m) {
+	 @include breakpoint(sm) {
 		 margin: 0 0 $spacing-desktop-5;
 	 }
  }
@@ -12,7 +12,7 @@
  thead th {
 	 border-bottom: 2px solid $color__border;
 	 padding-bottom: $spacing-2;
-	 @include breakpoint(m) {
+	 @include breakpoint(sm) {
 		 margin: 0 0 $spacing-2;
 	 }
  }
@@ -20,7 +20,7 @@
  th {
 	 padding: $spacing-2;
 	 text-align: left;
-	 @include breakpoint(m) {
+	 @include breakpoint(sm) {
 		 padding: $spacing-2;
 	 }
  }
@@ -36,7 +36,7 @@
  td {
 	 padding: $spacing-2;
 	 border-right: 1px solid $color__border;
-	 @include breakpoint(m) {
+	 @include breakpoint(sm) {
 		 padding: $spacing-2;
 	 }
  }

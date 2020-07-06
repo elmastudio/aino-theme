@@ -7,7 +7,7 @@
 	.has-post-thumbnail .entry-content {
 		padding-top: $spacing-mobile-6;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-top: $spacing-desktop-6;
 		}
 	}
@@ -15,7 +15,7 @@
 	.hentry.comments-closed.no-comments {
 		padding-bottom: $spacing-mobile-6;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-bottom: $spacing-desktop-6;
 		}
 	}
@@ -64,7 +64,7 @@
 	.entry-footer {
 		padding-top: $spacing-2;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-top: $spacing-2;
 		}
 
@@ -103,7 +103,7 @@
 /* Related Posts */
 .related-wrap {
 	margin: $spacing-mobile-10 0 0;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin: $spacing-desktop-10 0 0;
 	}
 }
@@ -113,7 +113,7 @@
 	justify-content: space-between;
 	padding-bottom: $spacing-mobile-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-bottom: $spacing-desktop-6;
 		line-height: 1;
 	}
@@ -121,7 +121,7 @@
 	.related-more-link {
 		display: none;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			@include flexbox;
 			letter-spacing: 0;
 		}
@@ -138,7 +138,7 @@
 .related-post {
 	margin-bottom: $spacing-mobile-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-bottom: $spacing-desktop-6;
 		float: left;
 	}
@@ -165,7 +165,7 @@
 	padding-bottom: $spacing-mobile-10;
 	clear: both;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-top: $spacing-desktop-6;
 		padding-bottom: $spacing-desktop-10;
 	}
@@ -179,7 +179,7 @@
 	span {
 		display: none;
 		@include font-regular;
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			display: block;
 			position: absolute;
 			top: 0;
@@ -211,7 +211,7 @@
 	background-color: $color__background;
 	padding: 6px $spacing-s;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-2;
 	}
 
@@ -230,13 +230,13 @@
 
 .comment-meta {
 	padding: $spacing-xxs 0 0 58px;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-xxs 0 0 62px;
 	}
 
 	.children & {
 		padding: $spacing-xxs 0 0 42px;
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding: $spacing-xxs 0 0 46px;
 		}
 	}
@@ -251,7 +251,7 @@
 	p.comment-awaiting-moderation {
 		margin: 0 0 0;
 		display: inline-block;
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			margin: 0 0 0;
 		}
 	}
@@ -263,7 +263,7 @@
 
 .comments-area .no-comments {
 	margin: $spacing-mobile-5 0 0;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin: $spacing-desktop-5 0 0;
 	}
 }
@@ -293,7 +293,7 @@
 	position: relative;
 	margin: $spacing-mobile-5 0 0;
 	padding: 0;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin: $spacing-desktop-5 0 0;
 	}
 }
@@ -307,7 +307,7 @@
 	padding-top: $spacing-xs;
 	font-weight: normal;
 	@include font-body-xxs;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -322,7 +322,7 @@
 .logged-in-as {
 	margin: 0;
 	padding: $spacing-xxs 0 $spacing-mobile-4;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-xs 0 $spacing-desktop-4;
 	}
 }
@@ -339,7 +339,7 @@
 	flex-direction: column;
 	justify-content: center;
 	padding: $spacing-mobile-9 0 0 0;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		flex-direction: row;
 		justify-content: flex-start;
 		padding: $spacing-desktop-9 0 0 0;
@@ -348,7 +348,7 @@
 
 .authorbox-content {
 	text-align: center;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		text-align: left;
 		flex: 3;
 	}
@@ -357,7 +357,7 @@
 .authorbox-title {
 	padding: 0 0 $spacing-1;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: 0 0 $spacing-1;
 	}
 }
@@ -384,7 +384,7 @@
 	display: block;
 	width: $spacing-desktop-8;
 	padding-bottom: $spacing-2;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		width: 160px;
 		margin-right: $spacing-desktop-6;
 		padding-bottom: 0;
@@ -398,7 +398,7 @@
 .archive.author .authorbox-content {
 	width: 100%;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		width: calc(100% - 208px);
 		max-width: 480px;
 	}

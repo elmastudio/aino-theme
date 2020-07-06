@@ -62,7 +62,7 @@ label.color-notice span {
 form p {
 	margin: 0 0 $spacing-3;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin: 0 0 $spacing-3;
 	}
 }
@@ -111,7 +111,7 @@ button[type="submit"] {
 	display: block;
 	clear: both;
 	margin-top: $spacing-3;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-top: $spacing-3 0 0;
 	}
 }

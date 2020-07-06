@@ -52,7 +52,7 @@ figure {
 	margin: $spacing-2 0 $spacing-mobile-5;
 	@include font-body-xs;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin: $spacing-2 0 $spacing-desktop-5;
 	}
 }
@@ -73,7 +73,7 @@ figure {
 .entry-content .tiled-gallery {
 	margin-bottom: $spacing-mobile-5;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-bottom: $spacing-desktop-5;
 	}
 }

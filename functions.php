@@ -38,7 +38,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		 * Adds custom image sizes.
 		 */
 		add_image_size( 'aino-l', 1200, 800, true ); // Image Ratio 3:2.
-		add_image_size( 'aino-m', 681, 454, true ); // Image Ratio 3:2.
+		add_image_size( 'aino-m', 735, 490, true ); // Image Ratio 3:2.
 		add_image_size( 'aino-s-squared', 96, 96, true );
 
 		// Custom logo.

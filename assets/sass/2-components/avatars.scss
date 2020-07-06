@@ -68,7 +68,7 @@
 	line-height: 0;
 	margin: 0 auto $spacing-2;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin: 0 $spacing-3 0 0;
 	}
 
@@ -84,7 +84,7 @@
 	}
 
 	.archive & {
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			margin-right: $spacing-desktop-5;
 		}
 	}

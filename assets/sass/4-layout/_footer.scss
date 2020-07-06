@@ -11,7 +11,7 @@
 .footer-wrap {
 	padding: $spacing-mobile-10 0;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-desktop-10 0;
 	}
 }
@@ -21,7 +21,7 @@
 	flex-direction: column;
 	padding-bottom: $spacing-mobile-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -31,14 +31,14 @@
 
 .footer-widget {
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		min-width: $col2;
 		padding: 0 $spacing-3;
 	}
 
 	.widget {
 		padding-bottom: $spacing-mobile-6;
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-bottom: $spacing-desktop-6;
 		}
 		.footerwidgets-centered & {
@@ -51,14 +51,14 @@
 .footer-info {
 	@include flexbox;
 	flex-direction: column;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;
 	}
 	.footerinfo-centered & {
 		justify-content: center;
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			flex-direction: column;
 		}
 	}
@@ -97,7 +97,7 @@
 .social-footer-nav {
 	padding-bottom: $spacing-mobile-4;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: 0;
 	}
 
@@ -105,7 +105,7 @@
 		@include flexbox;
 		justify-content: center;
 		padding-bottom: $spacing-mobile-4;
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-bottom: $spacing-desktop-4;
 		}
 	}
@@ -118,7 +118,7 @@
 	&:last-child {
 		padding: 0;
 	}
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		display: inline-block;
 		padding: 0 $spacing-3 0 0;
 	}

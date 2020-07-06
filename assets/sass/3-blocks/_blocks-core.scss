@@ -20,7 +20,7 @@
 			@include push--auto;
 			margin-bottom: $spacing-mobile-4;
 	
-			@include breakpoint(m) {
+			@include breakpoint(sm) {
 				margin-bottom: $spacing-desktop-4;
 			}
 		}
@@ -39,12 +39,12 @@
 		margin-right: auto;
 		clear: both;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding-left: $grid-margins-l;
 			padding-right: $grid-margins-l;
 		}
 
-		@include breakpoint(xxl) {
+		@include breakpoint(xl) {
 			padding-left: $grid-margins-s;
 			padding-right: $grid-margins-s;
 		}
@@ -71,12 +71,12 @@
 		padding-left: $grid-margins-s;
 		padding-right: $grid-margins-s;
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			padding-left: $grid-margins-l;
 			padding-right: $grid-margins-l;
 		}
 
-		@include breakpoint(xxl) {
+		@include breakpoint(xl) {
 			padding-left: $grid-margins-s;
 			padding-right: $grid-margins-s;
 		}
@@ -90,7 +90,7 @@
 	&.has-background {
 		padding: $spacing-mobile-4;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			padding: $spacing-desktop-4;
 		}
 	}
@@ -103,7 +103,7 @@
 		font-style: normal;
 		font-size: 100px;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			font-size: 120px;
 			line-height: 0.77;
 			margin: 6px 12px 0 -8px;
@@ -111,7 +111,7 @@
 	}
 
 	&.intro.has-drop-cap:not(:focus):first-letter {
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			font-size: 142px;
 		}
 	}
@@ -127,7 +127,7 @@
 		margin-bottom: 0;
 	}
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 
 		@include flexbox;
 		flex-grow: 0;
@@ -161,7 +161,7 @@
 		}
 	}
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 
 		flex-basis: calc(50% - 48px);
 		padding-left: 0;
@@ -201,7 +201,7 @@
 		margin-top: 0;
 		margin-bottom: $spacing-mobile-4;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			margin-bottom: $spacing-desktop-4;
 		}
 	}
@@ -213,7 +213,7 @@
 			margin-top: $spacing-xxs;
 			margin-right: $spacing-mobile-4;
 
-			@include breakpoint(m) {
+			@include breakpoint(sm) {
 				margin-right: $spacing-desktop-4;
 			}
 		}
@@ -226,7 +226,7 @@
 			margin-top: $spacing-xxs;
 			margin-left: $spacing-mobile-4;
 
-			@include breakpoint(m) {
+			@include breakpoint(sm) {
 				margin-left: $spacing-desktop-4;
 			}
 		}
@@ -279,12 +279,14 @@
 
 .wp-block-image {
 
+	margin-bottom: 0;
+
 	&.alignright {
 		display: block;
 		float: none;
 		margin-bottom: $spacing-mobile-5;
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: right;
 			margin: $spacing-1 0 $spacing-desktop-4 $spacing-desktop-4;
 		}
@@ -294,7 +296,7 @@
 		float: left;
 		margin-right: 1em;
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: left;
 			margin: $spacing-1 $spacing-desktop-4 $spacing-desktop-4 0;
 		}
@@ -360,7 +362,7 @@
 		}
 
 		&.alignwide {
-			@include breakpoint(m) {
+			@include breakpoint(sm) {
 				margin-left: calc(31.75% - 31.75vw);
 				margin-right: calc(31.75% - 31.75vw);
 			}
@@ -377,7 +379,7 @@
 		margin-bottom: $spacing-mobile-4;
 		text-align: center;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			margin-bottom: $spacing-desktop-4;
 		}
 	}
@@ -447,7 +449,6 @@
 		padding: $spacing-3;
 		background-color: $color__background;
 		clear: both;
-		@include border-radius-m;
 
 		blockquote {
 			max-width: 100%;
@@ -498,7 +499,7 @@
 .wp-block-media-text .wp-block-media-text__content {
 	padding: 0 $grid-margins-s;
 	
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: 0$grid-margins-l;
 	}
 }
@@ -574,7 +575,7 @@
 	border-top: 1px solid rgba(0, 0, 0, 0.12);
 	margin-bottom: $spacing-mobile-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-bottom: $spacing-desktop-6;
 	}
 }
@@ -604,7 +605,7 @@
 	@include push--auto;
 	padding: $spacing-mobile-6 0;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-desktop-6 0;
 	}
 }
@@ -677,10 +678,9 @@
 	overflow: auto;
 	padding: $spacing-mobile-4;
 	margin-bottom: $spacing-mobile-4;
-	@include border-radius-m;
 	@include font-code;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-desktop-4;
 		margin-bottom: $spacing-desktop-4;
 	}
@@ -728,7 +728,7 @@
 	&.alignright {
 		width: 100%;
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			max-width: $col3;
 		}
 	}
@@ -740,32 +740,32 @@
 
 	&.alignleft {
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: left;
 			margin: 0 $spacing-mobile-6 $spacing-mobile-6 0;
 		}
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			margin: 0 $spacing-desktop-6 $spacing-desktop-6;
 		}
 
-		@include breakpoint(xxl) {
+		@include breakpoint(xl) {
 			margin: 0 $spacing-desktop-6 $spacing-desktop-6 $spacing-mobile-4;
 		}
 	}
 
 	&.alignright {
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: right;
 			margin: 0 0 $spacing-mobile-6 $spacing-mobile-6;
 		}
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			margin: 0 $spacing-desktop-6 $spacing-desktop-6;
 		}
 
-		@include breakpoint(xxl) {
+		@include breakpoint(xl) {
 			margin: 0 $spacing-mobile-4 $spacing-desktop-6 $spacing-desktop-6;
 		}
 	}

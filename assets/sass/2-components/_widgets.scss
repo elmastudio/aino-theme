@@ -2,7 +2,7 @@
 .header-menu-widget-area {
 	display: block;
 	padding: $spacing-2 0 0;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-2 0 0;
 	}
 }
@@ -57,7 +57,7 @@
 .widget-area-default .widget_nav_menu .sub-menu,
 .widget-area-default .widget_pages ul.children {
 	padding: $spacing-2 0 0 $spacing-3;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-2 0 0 $spacing-3;
 	}
 }

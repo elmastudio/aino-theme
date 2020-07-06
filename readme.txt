@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.1.7 =
 * Enhance: Bold heading styles.
+* Enhance: CSS for grid and media query breakpoints.
 * Bugfix: Add custom color and gradient palette to editor styles.
 
 = 1.1.6 =

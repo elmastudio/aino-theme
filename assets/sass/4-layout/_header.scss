@@ -2,7 +2,7 @@
 
 	padding: $spacing-3 0;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-3 0;
 	}
 
@@ -38,7 +38,7 @@
 		@include font-body-xxs;
 		color: $color__text_two;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			@include flexbox;
 			@include flex-center;
 		}
@@ -209,7 +209,7 @@
 			padding: 0;
 		}
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			width: auto;
 		}
 		@include breakpoint(header) {
@@ -309,7 +309,7 @@
 	width: $spacing-mobile-5;
 	height: $spacing-mobile-5;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		right: $spacing-mobile-9;
 	}
 }
@@ -877,7 +877,7 @@ button.sub-menu-toggle.active svg {
 		}
 	}
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 
 		.site-title a,
 		.site-branding .site-description,

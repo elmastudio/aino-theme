@@ -27,13 +27,13 @@ textarea,
 .hentry .entry-summary {
 
 	.blog-2-column & {
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			@include font-body-s;
 		}
 	}
 
 	.blog-1-column & {
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			@include font-body-m;
 		}
 	}
@@ -202,7 +202,7 @@ h1.site-logo {
 	font-size: 1px;
 	line-height: 1;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		font-size: 1;
 	}
 }
@@ -227,13 +227,13 @@ h2.widget-title {
 .blog,
 .blog-archive {
 	&.blog-2-column h2.entry-title {
-		@include breakpoint(l) {
+		@include breakpoint(md) {
 			@include font-h-c;
 		}
 	}
 
 	&.blog-1-column h2.entry-title {
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			@include font-h-d;
 		}
 	}
@@ -254,7 +254,7 @@ address,
 p {
 	margin-bottom: $spacing-mobile-4;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin-bottom: $spacing-desktop-4;
 	}
 }
@@ -272,7 +272,7 @@ dt {
 dd {
 	margin: 0 $spacing-3 $spacing-3;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		margin: 0 $spacing-3 $spacing-3;
 	}
 }
@@ -313,7 +313,7 @@ pre {
 	@include border-radius-m;
 	@include font-code;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: $spacing-desktop-4;
 		margin-bottom: $spacing-desktop-4;
 	}
@@ -344,7 +344,7 @@ big {
 	line-height: 0.9;
 	color: $color__text_one;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		font-size: 7.75rem;
 		margin-left: -11px;
 		line-height: 0.79;
@@ -352,7 +352,7 @@ big {
 }
 
 .wide-content {
-	@include breakpoint(xl) {
+	@include breakpoint(lg) {
 		max-width: $col12;
 	}
 }

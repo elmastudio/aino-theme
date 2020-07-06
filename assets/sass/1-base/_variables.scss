@@ -14,9 +14,9 @@ $color__white        : #ffffff;
 $color__white_hover  : rgba(255, 255, 255, 0.6);
 
 // New Typography
-$font__heading       : "Roboto", sans-serif;
-$font__body          : "Roboto", sans-serif;
-$font__code          : "Monaco", "Courier 10 Pitch", Courier, monospace;
+$font__heading       : 'Roboto', sans-serif;
+$font__body          : 'Roboto', sans-serif;
+$font__code          : 'Monaco', 'Courier 10 Pitch', Courier, monospace;
 
 // Spacing
 $spacing-none        : 0;
@@ -75,6 +75,7 @@ $col11-no-gutter     : 79.5rem;
 $col12-no-gutter     : 87rem;
 
 // Grid Margins
+$grid-margins-xxs    : 0.5rem; // 8px
 $grid-margins-xs     : 1rem; // 16px
 $grid-margins-s      : 1.5rem; // 24px
 $grid-margins-m      : 2rem; // 32px

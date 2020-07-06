@@ -4,35 +4,29 @@ $var: true !default; // Can be overridden elsewhere
 /*--------------------------------------------------------------
 	* Responsive Breakpoints
 
-		 @include breakpoint(600)	{ } s
-		 @include breakpoint(776)	{ } m
-		 @include breakpoint(1224)	{ } l
-		 @include breakpoint(1296)	{ } xl
-		 @include breakpoint(1536)	{ } xxl
+		 @include breakpoint(768)	{ } sm
+		 @include breakpoint(1024)	{ } md
+		 @include breakpoint(1280)	{ } lg
+		 @include breakpoint(1536)	{ } xl
 		 @include breakpoint(1140)	{ } header
 	* ------------------------------------------------------------ */
 @mixin breakpoint($class) {
-	@if $class == s {
-		@media (min-width: 37.50em) {
+	@if $class == sm {
+		@media (min-width: 48em) {
 			@content;
 		}
 	} @else
-	if $class == m {
-		@media (min-width: 48.50em) {
+	if $class == md {
+		@media (min-width: 64em) {
 			@content;
 		}
 	} @else
-	if $class == l {
-		@media (min-width: 76.50em) {
+	if $class == lg {
+		@media (min-width: 80em) {
 			@content;
 		}
 	} @else
 	if $class == xl {
-		@media (min-width: 81.00em) {
-			@content;
-		}
-	} @else
-	if $class == xxl {
 		@media (min-width: 96em) {
 			@content;
 		}
@@ -115,7 +109,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1.21; // 23px
 	letter-spacing: 0;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(21px);
 		line-height: 1.143; // 24px
 	}
@@ -126,7 +120,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1.174; // 27px
 	@include letterSpacing(-0.58px);
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(28px);
 		line-height: 1.178; // 33px
 		@include letterSpacing(-0.7px);
@@ -138,7 +132,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1.178; // 33px
 	@include letterSpacing(-0.7px);
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(38px);
 		line-height: 1.157; // 33px
 		@include letterSpacing(-0.95px);
@@ -150,7 +144,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1.182; // 39px
 	@include letterSpacing(-0.83px);
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(51px);
 		line-height: 1.157; // 59px
 		@include letterSpacing(-1.28px);
@@ -162,7 +156,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1.175; // 47px
 	@include letterSpacing(-1px);
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(67px);
 		line-height: 1.164; // 78px
 		@include letterSpacing(-1.68px);
@@ -174,7 +168,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-1.2px);
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(90px);
 		line-height: 1;
 		@include letterSpacing(-2.25px);
@@ -186,7 +180,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-1.45px);
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(120px);
 		line-height: 1;
 		@include letterSpacing(-3px);
@@ -198,7 +192,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-1.73px);
 
-	@include breakpoint(l) {
+	@include breakpoint(md) {
 		@include fontSize(160px);
 		line-height: 1;
 		@include letterSpacing(-4px);
@@ -210,7 +204,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-2.08px);
 
-	@include breakpoint(l) {
+	@include breakpoint(md) {
 		@include fontSize(213px);
 		line-height: 1;
 		@include letterSpacing(-5.33px);
@@ -222,7 +216,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-2.48px);
 
-	@include breakpoint(l) {
+	@include breakpoint(md) {
 		@include fontSize(283px);
 		line-height: 1;
 		@include letterSpacing(-7.08px);
@@ -234,7 +228,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1;
 	@include letterSpacing(-2.98px);
 
-	@include breakpoint(xl) {
+	@include breakpoint(lg) {
 		@include fontSize(378px);
 		line-height: 1;
 		@include letterSpacing(-9.45px);
@@ -246,7 +240,7 @@ $var: true !default; // Can be overridden elsewhere
 	@include fontSize(26px);
 	line-height: 1.538; // 40px
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(35px);
 		line-height: 1.6; // 56px
 	}
@@ -256,7 +250,7 @@ $var: true !default; // Can be overridden elsewhere
 	@include fontSize(24px);
 	line-height: 1.542; // 37px
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(29px);
 		line-height: 1.655; // 48px
 	}
@@ -266,7 +260,7 @@ $var: true !default; // Can be overridden elsewhere
 	@include fontSize(22px);
 	line-height: 1.5454; // 34px
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		@include fontSize(24px);
 		line-height: 1.666; // 40px
 	}
@@ -315,7 +309,7 @@ $var: true !default; // Can be overridden elsewhere
 	@include transition-default;
 	width: 100%;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		width: auto;
 	}
 
@@ -361,7 +355,7 @@ $var: true !default; // Can be overridden elsewhere
 	padding-top: 11px;
 	padding-bottom: 10px;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		padding-left: $spacing-3;
 		padding-right: $spacing-3;
 	}
@@ -371,7 +365,7 @@ $var: true !default; // Can be overridden elsewhere
 		padding-top: 19px;
 		padding-bottom: 18px;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		padding-left: $spacing-desktop-4;
 		padding-right: $spacing-desktop-4;
 	}
@@ -381,12 +375,12 @@ $var: true !default; // Can be overridden elsewhere
 		padding-top: 19px;
 		padding-bottom: 18px;
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 		padding-left: $spacing-desktop-5;
 		padding-right: $spacing-desktop-5;
 	}
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-top: 27px;
 		padding-bottom: 26px;
 	}
@@ -447,7 +441,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin col-padding {
 	padding-left: $spacing-3;
 	padding-right: $spacing-3;
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding-left: $spacing-3;
 		padding-right: $spacing-3;
 	}
