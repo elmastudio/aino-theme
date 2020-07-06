@@ -1,4 +1,4 @@
-# Aino WordPress Theme
+# Aino: A WordPress Theme for Gutenberg blocks
 
 ![Digital Creators](https://user-images.githubusercontent.com/17613630/86550337-3695ad80-bf96-11ea-94e7-589d14545748.png)
 
