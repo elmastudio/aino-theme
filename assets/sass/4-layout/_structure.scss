@@ -1,20 +1,12 @@
 /* Structure */
 .site-content {
-	padding-top: $spacing-3;
-
-	@include breakpoint(sm) {
-		padding-top: $spacing-desktop-7;
-	}
+	@include s-r-10(padding-top);
 }
 
 .entry-content {
 
 	.error404 &,
 	.type-page & {
-		padding-bottom: $spacing-mobile-8;
-
-		@include breakpoint(sm) {
-			padding-bottom: $spacing-desktop-8;
-		}
+		@include s-r-11(padding-bottom);
 	}
 }

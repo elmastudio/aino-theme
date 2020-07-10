@@ -36,11 +36,11 @@ $var: true !default; // Can be overridden elsewhere
 			@content;
 		}
 	} @else {
-		@warn "Breakpoint mixin supports: xs, s, m, l, xl, xxl";
+		@warn "Breakpoint mixin supports: sm, md, lg, xl, header";
 	}
 }
 
-//margin centering
+/* Centering */
 @mixin push--auto {
 	margin: {
 		left: auto;
@@ -48,7 +48,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-// Flexbox
+/* Flexbox */
 @mixin flexbox {
 	display: flex;
 }
@@ -58,9 +58,208 @@ $var: true !default; // Can be overridden elsewhere
 	justify-content: center;
 }
 
-// Base Typography
+/* Responsive Spacing */
+@mixin s-r-0($property) {
+	#{$property}: $s-0;
+}
 
-// Base Typography
+@mixin s-r-1($property) {
+	#{$property}: $s-1;
+}
+
+@mixin s-r-2($property) {
+	#{$property}: $s-2;
+}
+
+@mixin s-r-3($property) {
+	#{$property}: $s-3;
+}
+
+@mixin s-r-4($property) {
+	#{$property}: $s-4;
+}
+
+@mixin s-r-5($property) {
+	#{$property}: $s-4;
+
+	@include breakpoint(lg) {
+		#{$property}: $s-5;
+	}
+}
+
+@mixin s-r-6($property) {
+	#{$property}: $s-4;
+
+	@include breakpoint(md) {
+		#{$property}: $s-5;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-6;
+	}
+}
+
+@mixin s-r-7($property) {
+	#{$property}: $s-4;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-5;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-6;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-7;
+	}
+}
+
+@mixin s-r-8($property) {
+	#{$property}: $s-5;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-6;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-7;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-8;
+	}
+}
+
+@mixin s-r-9($property) {
+	#{$property}: $s-6;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-7;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-8;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-9;
+	}
+}
+
+@mixin s-r-10($property) {
+	#{$property}: $s-7;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-8;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-9;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-10;
+	}
+}
+
+@mixin s-r-11($property) {
+	#{$property}: $s-8;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-9;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-10;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-11;
+	}
+}
+
+@mixin s-r-12($property) {
+	#{$property}: $s-9;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-10;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-11;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-12;
+	}
+}
+
+@mixin s-r-13($property) {
+	#{$property}: $s-10;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-11;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-12;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-13;
+	}
+}
+
+@mixin s-r-14($property) {
+	#{$property}: $s-11;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-12;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-13;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-14;
+	}
+}
+
+@mixin s-r-15($property) {
+	#{$property}: $s-12;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-13;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-14;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-15;
+	}
+}
+
+@mixin s-r-16($property) {
+	#{$property}: $s-13;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-14;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-15;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-16;
+	}
+}
+
+/* Base Typography */
 @mixin hyphenation {
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
@@ -72,7 +271,7 @@ $var: true !default; // Can be overridden elsewhere
 	font-family: $font__body;
 }
 
-// Font Weights
+/* Font Weights */
 @mixin font-light {
 	font-weight: 300;
 }
@@ -83,7 +282,7 @@ $var: true !default; // Can be overridden elsewhere
 	font-weight: bold;
 }
 
-// px to rem convertion
+/* px to rem convertion */
 @function calculateRem($size) {
 	$remSize: $size / 16px;
 	@return #{$remSize}rem;
@@ -97,7 +296,7 @@ $var: true !default; // Can be overridden elsewhere
 	letter-spacing: calculateRem($size);
 }
 
-// Heading Fonts
+/* Headings */
 @mixin font-h-a {
 	@include fontSize(16px);
 	line-height: 1.187; // 19px
@@ -235,7 +434,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-// Body Fonts
+/* Body Fonts */
 @mixin font-body-xxl {
 	@include fontSize(26px);
 	line-height: 1.538; // 40px
@@ -300,7 +499,7 @@ $var: true !default; // Can be overridden elsewhere
 	line-height: 1.43;
 }
 
-// Buttons
+/* Buttons */
 @mixin btn {
 	display: inline-block;
 	@include fontSize(16px);
@@ -350,14 +549,14 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-// Button sizes
+/* Button Sizes */
 @mixin btn-s {
 	padding-top: 11px;
 	padding-bottom: 10px;
 
 	@include breakpoint(sm) {
-		padding-left: $spacing-3;
-		padding-right: $spacing-3;
+		padding-left: $s-6;
+		padding-right: $s-6;
 	}
 }
 
@@ -366,8 +565,8 @@ $var: true !default; // Can be overridden elsewhere
 		padding-bottom: 18px;
 
 	@include breakpoint(sm) {
-		padding-left: $spacing-desktop-4;
-		padding-right: $spacing-desktop-4;
+		padding-left: $s-7;
+		padding-right: $s-7;
 	}
 }
 
@@ -376,8 +575,8 @@ $var: true !default; // Can be overridden elsewhere
 		padding-bottom: 18px;
 
 	@include breakpoint(sm) {
-		padding-left: $spacing-desktop-5;
-		padding-right: $spacing-desktop-5;
+		padding-left: $s-8;
+		padding-right: $s-8;
 	}
 
 	@include breakpoint(sm) {
@@ -386,7 +585,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-// Avatar Sizes
+/* Avatars */
 @mixin avatar-xl {
 	width: 160px;
 	height: 160px;
@@ -414,7 +613,7 @@ $var: true !default; // Can be overridden elsewhere
 	min-width: 24px;
 }
 
-// Placeholders
+/* Placeholders */
 @mixin input-placeholder {
 	&.placeholder {
 		@content;
@@ -437,17 +636,17 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-// Mixin grid padding
+/* Grid padding */
 @mixin col-padding {
-	padding-left: $spacing-3;
-	padding-right: $spacing-3;
+	padding-left: $s-6;
+	padding-right: $s-6;
 	@include breakpoint(sm) {
-		padding-left: $spacing-3;
-		padding-right: $spacing-3;
+		padding-left: $s-6;
+		padding-right: $s-6;
 	}
 }
 
-// Border Radius
+/* Border Radius */
 @mixin border-radius($radius) {
 	border-radius: $radius;
 }
@@ -470,32 +669,31 @@ $var: true !default; // Can be overridden elsewhere
 		border-radius: 50%;
 }
 
-// Shadows
-// Used for forms.
+/* Shadows in Forms */
 @mixin shadow-1 {
 	box-shadow        : 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
-// Used for navigation bar bottom shadow.
+/* Shadow Navigation bar */
 @mixin shadow-2 {
 	box-shadow        : 0 4px 12px 0 rgba(0, 0, 0, 0.06);
 	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
 }
 
-// Used for cards, buttons.
+/* Shadows for Cards, Buttons */
 @mixin shadow-3 {
 	box-shadow        : 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
-// Used for cards.
+/* Shadows for Cards */
 @mixin shadow-4 {
 	box-shadow        : 0 12px 32px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
-// Used for menu dropdown.
+/* Shadow for Menu dropdown */
 @mixin shadow-5 {
 	box-shadow        : 0 24px 64px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1);
@@ -506,7 +704,7 @@ $var: true !default; // Can be overridden elsewhere
 	-webkit-box-shadow: none;
 }
 
-// Transitions
+/* Transitions */
 @mixin transition-default {
 	-webkit-transition: all 0.2s ease;
 	transition : all 0.2s ease;
@@ -522,7 +720,7 @@ $var: true !default; // Can be overridden elsewhere
 	transform: translate(0px, -2px);
 }
 
-// Animations
+/* Animations */
 @mixin scale {
 	-webkit-transform: scale(1.01);
 	transform        : scale(1.01);
@@ -533,7 +731,7 @@ $var: true !default; // Can be overridden elsewhere
 	filter: brightness(105%);
 }
 
-// Retina Images
+/* Retina Images */
 @mixin image-2x($image, $width, $height) {
 	@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
 		background-image: url($image);

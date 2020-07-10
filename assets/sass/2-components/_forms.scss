@@ -17,8 +17,8 @@ input[type="color"] {
 	box-sizing: border-box;
 	background-color: transparent;
 	border: 1px solid $color__border;
-	height: $spacing-desktop-7;
-	padding: 0 $spacing-3;
+	height: $s-10;
+	padding: 0 $s-6;
 	outline: none;
 
 	@include input-placeholder {
@@ -36,7 +36,7 @@ textarea {
 	width: 100%;
 	background-color: transparent;
 	border: 1px solid $color__border;
-	padding: $spacing-2 $spacing-3;
+	padding: $s-4 $s-6;
 	outline: none;
 
 	@include input-placeholder {
@@ -60,16 +60,16 @@ label.color-notice span {
 }
 
 form p {
-	margin: 0 0 $spacing-3;
+	margin: 0 0 $s-6;
 
 	@include breakpoint(sm) {
-		margin: 0 0 $spacing-3;
+		margin: 0 0 $s-6;
 	}
 }
 
 form .comment-form-cookies-consent {
 	margin: 0;
-	padding: $spacing-3 0 0 0;
+	padding: $s-6 0 0 0;
 	clear: both;
 }
 
@@ -85,7 +85,7 @@ form p.comment-form-comment {
 
 form label {
 	display: block;
-	padding: 0 0 $spacing-xxs;
+	padding: 0 0 $s-1;
 	@include font-label;
 }
 
@@ -110,9 +110,9 @@ input[type="submit"],
 button[type="submit"] {
 	display: block;
 	clear: both;
-	margin-top: $spacing-3;
+	margin-top: $s-6;
 	@include breakpoint(sm) {
-		margin-top: $spacing-3 0 0;
+		margin-top: $s-6 0 0;
 	}
 }
 
@@ -137,7 +137,7 @@ button[type="submit"] {
 .entry-content .search-submit span.search-icon,
 .widget_search .search-submit span.search-icon {
 	width: 120px;
-	height: $spacing-desktop-7;
+	height: $s-10;
 	padding: 16px 0 0;
 }
 

@@ -49,12 +49,9 @@ figure {
 }
 
 .wp-caption .wp-caption-text {
-	margin: $spacing-2 0 $spacing-mobile-5;
 	@include font-body-xs;
-
-	@include breakpoint(sm) {
-		margin: $spacing-2 0 $spacing-desktop-5;
-	}
+	@include s-r-7(margin-top);
+	@include s-r-8(margin-bottom);
 }
 
 .wp-caption.alignleft {
@@ -71,11 +68,7 @@ figure {
 --------------------------------------------------------------*/
 .gallery,
 .entry-content .tiled-gallery {
-	margin-bottom: $spacing-mobile-5;
-
-	@include breakpoint(sm) {
-		margin-bottom: $spacing-desktop-5;
-	}
+	@include s-r-8(margin-bottom);
 }
 
 .gallery-item {

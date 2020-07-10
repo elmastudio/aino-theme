@@ -40,7 +40,7 @@ a.btn-outline,
 	}
 
 	.header-cta-wrap & {
-	padding-right: $spacing-2 !important;
+	padding-right: $s-4 !important;
 	}
 }
 
@@ -111,7 +111,7 @@ a.btn-outline,
 	@include btn;
 	@include btn-s;
 	position: relative;
-	margin-top: $spacing-mobile-4;
+	@include s-r-7(margin-top);
 	background: $color__primary;
 	color: $color__white;
 	fill: $color__white;
@@ -121,10 +121,6 @@ a.btn-outline,
 
 	@include breakpoint(sm) {
 		padding-left: 46px;
-	}
-
-	@include breakpoint(md) {
-		margin-top: $spacing-desktop-4;
 	}
 }
 

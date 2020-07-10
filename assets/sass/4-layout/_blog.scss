@@ -1,23 +1,17 @@
 /* Blog Posts */
 .entry-link {
 	display: block;
-	padding-bottom: $spacing-mobile-4;
-	@include breakpoint(sm) {
-		padding-bottom: $spacing-desktop-4;
-	}
+	@include s-r-7(padding-bottom);
+
 	.blog-2-column & {
 		@include breakpoint(md) {
-			padding-bottom: $spacing-desktop-7;
+			padding-bottom: $s-10;
 		}
 	}
 }
 
 .posts-container .hentry {
-	margin-bottom: $spacing-mobile-6;
-
-	@include breakpoint(sm) {
-		margin-bottom: $spacing-desktop-6;
-	}
+	@include s-r-9(margin-bottom);
 }
 
 .entry-content,
@@ -74,6 +68,7 @@
 /* Blog Cards - 1 Columns */
 .blog.blog-1-column,
 .blog-archive.blog-1-column {
+
 	@include breakpoint(md) {
 
 		& .hentry .entry-link {
@@ -87,7 +82,7 @@
 		}
 
 		& .hentry .entry-header {
-			padding: $spacing-desktop-6 $spacing-desktop-6 0;
+			padding: $s-9 $s-9 0;
 		}
 
 		& .has-post-thumbnail .entry-header {
@@ -97,7 +92,7 @@
 
 		& .posts-container .hentry .entry-footer {
 			margin: 0;
-			padding: $spacing-2 $spacing-desktop-6 $spacing-desktop-6 $spacing-desktop-6;
+			padding: $s-4 $s-9 $s-9 $s-9;
 		}
 
 		& .posts-container .has-post-thumbnail .entry-footer {
@@ -279,10 +274,10 @@
 .blog .hentry .entry-header,
 .archive .hentry .entry-header,
 .parent:not(.single-post) .hentry .entry-header {
-	padding: $spacing-mobile-4 $spacing-mobile-4 0;
+	padding: $s-6 $s-6 0;
 
 	@include breakpoint(sm) {
-		padding: $spacing-desktop-4 $spacing-desktop-4 0;
+		padding: $s-7 $s-7 0;
 	}
 }
 
@@ -290,12 +285,12 @@
 .blog-archive.blog-2-column .hentry .entry-header {
 
 	@include breakpoint(md) {
-		padding: $spacing-desktop-7 $spacing-desktop-7 0;
+		padding: $s-10 $s-10 0;
 	}
 }
 
 .hentry .entry-summary {
-	padding: $spacing-1 0 0;
+	padding: $s-2 0 0;
 }
 
 /* Blog Cards - Entry Meta Elements */
@@ -308,25 +303,23 @@
 	display: block;
 	@include breakpoint(sm) {
 		display: inline-block;
-		padding: 0 $spacing-3 0 0;
+		padding: 0 $s-6 0 0;
 	}
 }
 
 /* Blog Cards - Entry Footer */
 .posts-container .hentry .entry-footer {
-	margin-left: $spacing-mobile-4;
-	margin-right: $spacing-mobile-4;
-	padding-top: $spacing-2;
-	@include breakpoint(sm) {
-		margin-left: $spacing-desktop-4;
-		margin-right: $spacing-desktop-4;
-	}
+
+	@include s-r-7(margin-left);
+	@include s-r-7(margin-right);
+	padding-top: $s-4;
 
 	.blog.blog-2-column &,
 	.blog-archive.blog-2-column & {
+
 		@include breakpoint(md) {
-			margin-left: $spacing-desktop-7;
-			margin-right: $spacing-desktop-7;
+			margin-left: $s-10;
+			margin-right: $s-10;
 		}
 	}
 }
@@ -352,8 +345,8 @@
 
 .entry-footer .entry-author-pic,
 .entry-footer .entry-author-pic img {
-	width: $spacing-desktop-7;
-	height: $spacing-desktop-7;
+	width: $s-10;
+	height: $s-10;
 }
 
 .entry-link {
@@ -396,7 +389,7 @@
 
 .divider {
 	display: block;
-	height: $spacing-desktop-5;
+	height: $s-8;
 }
 
 /* Blog Cards - Hide Elements */
@@ -430,11 +423,8 @@
 /* Blog Archives */
 .blog-archive .page-header,
 .blog .page-header {
-	padding-bottom: $spacing-mobile-6;
 
-	@include breakpoint(sm) {
-		padding-bottom: $spacing-desktop-6;
-	}
+	@include s-r-9(padding-bottom);
 
 	.page-title {
 		margin: 0;
@@ -448,7 +438,7 @@
 	}
 
 	.description p {
-		margin: $spacing-1 0 0 0;
+		margin: $s-2 0 0 0;
 	}
 }
 

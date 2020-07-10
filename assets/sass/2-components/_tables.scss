@@ -1,27 +1,27 @@
 
  table {
 	 border-collapse: collapse;
-	 margin: 0 0 $spacing-mobile-5;
 	 width: 100%;
 	 background-color: $color__background;
-	 @include breakpoint(sm) {
-		 margin: 0 0 $spacing-desktop-5;
-	 }
+	 margin-top: 0;
+	 margin-left: 0;
+	 margin-right: 0;
+	 @include s-r-8(margin-bottom);
  }
 
  thead th {
 	 border-bottom: 2px solid $color__border;
-	 padding-bottom: $spacing-2;
+	 padding-bottom: $s-4;
 	 @include breakpoint(sm) {
-		 margin: 0 0 $spacing-2;
+		 margin: 0 0 $s-4;
 	 }
  }
 
  th {
-	 padding: $spacing-2;
+	 padding: $s-4;
 	 text-align: left;
 	 @include breakpoint(sm) {
-		 padding: $spacing-2;
+		 padding: $s-4;
 	 }
  }
 
@@ -34,10 +34,10 @@
  }
 
  td {
-	 padding: $spacing-2;
+	 padding: $s-4;
 	 border-right: 1px solid $color__border;
 	 @include breakpoint(sm) {
-		 padding: $spacing-2;
+		 padding: $s-4;
 	 }
  }
 

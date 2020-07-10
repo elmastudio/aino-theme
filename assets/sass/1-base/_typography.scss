@@ -246,17 +246,13 @@ h2.widget-title {
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-	margin-top: $spacing-2;
-	margin-bottom: $spacing-2;
+	margin-top: $s-4;
+	margin-bottom: $s-4;
 }
 
 address,
 p {
-	margin-bottom: $spacing-mobile-4;
-
-	@include breakpoint(sm) {
-		margin-bottom: $spacing-desktop-4;
-	}
+	@include s-r-7(margin-bottom);
 }
 
 dfn,
@@ -270,10 +266,10 @@ dt {
 }
 
 dd {
-	margin: 0 $spacing-3 $spacing-3;
+	margin: 0 $s-6 $s-6;
 
 	@include breakpoint(sm) {
-		margin: 0 $spacing-3 $spacing-3;
+		margin: 0 $s-6 $s-6;
 	}
 }
 
@@ -291,7 +287,7 @@ blockquote cite,
 .wp-block-pullquote cite {
 	text-align: left;
 	display: block;
-	padding: $spacing-2 0 0;
+	padding: $s-4 0 0;
 	@include font-body-xs;
 	font-style: normal;
 	font-weight: bold;
@@ -307,16 +303,11 @@ var {
 pre {
 	max-width: 100%;
 	overflow: auto;
-	padding: $spacing-mobile-4;
-	margin-bottom: $spacing-mobile-4;
+	@include s-r-7(padding);
+	@include s-r-7(margin-bottom);
 	border: none;
 	@include border-radius-m;
 	@include font-code;
-
-	@include breakpoint(sm) {
-		padding: $spacing-desktop-4;
-		margin-bottom: $spacing-desktop-4;
-	}
 }
 
 abbr,

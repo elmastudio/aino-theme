@@ -23,19 +23,18 @@ ol ol {
 
 li > ul, li > ol {
 	margin-bottom: 0;
-	margin-left: $spacing-3;
+	margin-left: $s-6;
 	@include breakpoint(sm) {
-		margin-left: $spacing-3;
+		margin-left: $s-6;
 	}
 }
 
 .entry-content ul,
 .entry-content ol {
-	padding-left: $spacing-3;
-	margin-bottom: $spacing-mobile-5;
+	padding-left: $s-6;
+	@include s-r-8(margin-bottom);
 	@include breakpoint(sm) {
-		padding-left: $spacing-3;
-		margin-bottom: $spacing-desktop-5;
+		padding-left: $s-6;
 	}
 }
 

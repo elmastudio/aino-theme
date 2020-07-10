@@ -25,8 +25,8 @@
 }
 
 .wp-block[data-align="full"] .wp-block[data-align="wide"] {
-	padding-left: $grid-margins-s;
-	padding-right: $grid-margins-s;
+	padding-left: $s-6;
+	padding-right: $s-6;
 
 	@include breakpoint(xl) {
 		padding-left: 0;
@@ -202,11 +202,7 @@ p {
 	@include font-body-m;
 
 	&.has-background {
-		padding: $spacing-mobile-4;
-
-		@include breakpoint(sm) {
-			padding: $spacing-desktop-4;
-		}
+		@include s-r-7(padding);
 	}
 
 	&.has-xxs-font-size {
@@ -542,7 +538,7 @@ textarea {
 	.wp-block-pullquote__citation {
 		display: block;
 		margin: 0;
-		padding: $spacing-2 0 0;
+		padding: $s-4 0 0;
 		font-weight: bold;
 		font-style: normal;
 		text-transform: none;
@@ -570,7 +566,7 @@ textarea {
 
 		blockquote {
 			max-width: 100%;
-			padding: $spacing-3;
+			padding: $s-6;
 			@include border-radius-m;
 
 			p {
@@ -676,13 +672,8 @@ textarea {
 .wp-block-cover-image {
 	height: 75vh;
 	min-height: 400px;
-	margin-top: $spacing-mobile-5;
-	margin-bottom: $spacing-mobile-8;
-
-	@include breakpoint(sm) {
-		margin-top: $spacing-desktop-5;
-		margin-bottom: $spacing-desktop-8;
-	}
+	@include s-r-8(margin-top);
+	@include s-r-8(margin-bottom);
 }
 
 .wp-block-cover-image-text,
@@ -707,12 +698,11 @@ textarea {
 	color: $color__code_two;
 	@include font-code;
 	@include font-body-xs;
-	padding: $spacing-mobile-4;
 	@include border-radius-m;
+	@include s-r-7(padding);
 
 	@include breakpoint(sm) {
-		padding: $spacing-desktop-4;
-		margin-bottom: $spacing-desktop-4;
+		margin-bottom: $s-7;
 	}
 
 	.block-editor-plain-text {
@@ -725,15 +715,10 @@ textarea {
 	color: $color__code_one;
 	max-width: 100%;
 	overflow: auto;
-	padding: $spacing-mobile-4;
-	margin-bottom: $spacing-mobile-4;
+	@include s-r-7(padding);
+	@include s-r-7(margin-bottom);
 	@include border-radius-m;
 	@include font-code;
-
-	@include breakpoint(sm) {
-		padding: $spacing-desktop-4;
-		margin-bottom: $spacing-desktop-4;
-	}
 
 	& pre {
 		margin: 0;
@@ -749,11 +734,7 @@ textarea {
 	@include font-code;
 	@include font-body-xs;
 	@include font-regular;
-	padding: $spacing-mobile-4;
-
-	@include breakpoint(sm) {
-		padding: $spacing-desktop-4;
-	}
+	@include s-r-7(padding);
 
 	pre {
 		background: transparent;
@@ -774,7 +755,7 @@ pre.wp-block-verse {
 /* Separator */
 
 .wp-block-separator {
-	margin-bottom: $spacing-desktop-5;
+	margin-bottom: $s-8;
 	border-left: 0;
 	border-right: 0;
 	border-bottom: 0;
@@ -828,11 +809,10 @@ pre.wp-block-verse {
 
 .wp-block-categories,
 .wp-block-latest-posts__post-date {
-	margin: 0 0 $spacing-mobile-6;
-
-	@include breakpoint(sm) {
-		margin: 0 0 $spacing-desktop-6;
-	}
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	@include s-r-9 (margin-bottom);
 }
 
 .wp-block-categories ul,
@@ -875,14 +855,14 @@ pre.wp-block-verse {
 
 	caption {
 		color: $color__text_one;
-		margin-bottom: $spacing-2;
+		margin-bottom: $s-4;
 		text-align: center;
 		@include font-bold;
 	}
 
 	table {
 
-		margin-bottom: $spacing-2;
+		margin-bottom: $s-4;
 		background: $color__white;
 
 		th {

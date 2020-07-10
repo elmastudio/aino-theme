@@ -21,7 +21,7 @@
 /* Single Post Author */
 .single-post .author-avatar {
 	margin: 0 auto;
-	padding: 0 0 $spacing-xxs;
+	padding: 0 0 $s-1;
 	display: inline-block;
 }
 
@@ -54,7 +54,7 @@
 	left: 0;
 	top: 0;
 	@include avatar-s;
-	margin: 0 $spacing-s 0 0;
+	margin: 0 $s-3 0 0;
 }
 
 .comment-list .children .avatar {
@@ -66,10 +66,10 @@
 	position: relative;
 	@include avatar-l;
 	line-height: 0;
-	margin: 0 auto $spacing-2;
+	margin: 0 auto $s-4;
 
 	@include breakpoint(sm) {
-		margin: 0 $spacing-3 0 0;
+		margin: 0 $s-6 0 0;
 	}
 
 	img {
@@ -85,7 +85,7 @@
 
 	.archive & {
 		@include breakpoint(sm) {
-			margin-right: $spacing-desktop-5;
+			margin-right: $s-8;
 		}
 	}
 }

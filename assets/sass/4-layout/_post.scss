@@ -5,19 +5,11 @@
 	}
 
 	.has-post-thumbnail .entry-content {
-		padding-top: $spacing-mobile-6;
-
-		@include breakpoint(sm) {
-			padding-top: $spacing-desktop-6;
-		}
+		@include s-r-9 (padding-top);
 	}
 
 	.hentry.comments-closed.no-comments {
-		padding-bottom: $spacing-mobile-6;
-
-		@include breakpoint(sm) {
-			padding-bottom: $spacing-desktop-6;
-		}
+		@include s-r-9 (padding-bottom);
 	}
 
 	.entry-header .entry-title {
@@ -25,7 +17,7 @@
 	}
 
 	& .entry-meta {
-		padding: $spacing-2 0 0;
+		padding: $s-4 0 0;
 		text-align: center;
 	}
 
@@ -34,10 +26,10 @@
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
-		padding: 0 0 $spacing-2;
+		padding: 0 0 $s-4;
 
 		a {
-			padding-left: $spacing-xxs;
+			padding-left: $s-1;
 		}
 	}
 
@@ -62,10 +54,10 @@
 	}
 
 	.entry-footer {
-		padding-top: $spacing-2;
+		padding-top: $s-4;
 
 		@include breakpoint(sm) {
-			padding-top: $spacing-2;
+			padding-top: $s-4;
 		}
 
 		.entry-tags {
@@ -102,19 +94,18 @@
 
 /* Related Posts */
 .related-wrap {
-	margin: $spacing-mobile-10 0 0;
-	@include breakpoint(sm) {
-		margin: $spacing-desktop-10 0 0;
-	}
+	@include s-r-14 (margin-top);
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
 }
 
 .related .section-title {
 	@include flexbox;
 	justify-content: space-between;
-	padding-bottom: $spacing-mobile-6;
+	@include s-r-9 (padding-bottom);
 
 	@include breakpoint(sm) {
-		padding-bottom: $spacing-desktop-6;
 		line-height: 1;
 	}
 
@@ -136,10 +127,9 @@
 }
 
 .related-post {
-	margin-bottom: $spacing-mobile-6;
+	@include s-r-9 (margin-bottom);
 
 	@include breakpoint(sm) {
-		margin-bottom: $spacing-desktop-6;
 		float: left;
 	}
 }
@@ -148,7 +138,7 @@
 	position: relative;
 	overflow: hidden;
 	display: block;
-	margin: 0 0 $spacing-3;
+	margin: 0 0 $s-6;
 
 	&:hover {
 		background: $color__white;
@@ -161,20 +151,15 @@
 
 /* Comments */
 .comments-area {
-	padding-top: $spacing-mobile-6;
-	padding-bottom: $spacing-mobile-10;
+	@include s-r-9 (padding-top);
+	@include s-r-9 (padding-bottom);
 	clear: both;
-
-	@include breakpoint(sm) {
-		padding-top: $spacing-desktop-6;
-		padding-bottom: $spacing-desktop-10;
-	}
 }
 
 .comments-area .comments-title {
 	display: block;
 	position: relative;
-	padding: 0 0 $spacing-3;
+	padding: 0 0 $s-6;
 
 	span {
 		display: none;
@@ -202,21 +187,21 @@
 
 .comment-body {
 	position: relative;
-	margin: $spacing-3 0 0;
+	margin: $s-6 0 0;
 	padding: 0;
 }
 
 .comment-content-wrap {
 	margin-left: 6px;
 	background-color: $color__background;
-	padding: 6px $spacing-s;
+	padding: 6px $s-3;
 
 	@include breakpoint(sm) {
-		padding: $spacing-2;
+		padding: $s-4;
 	}
 
 	p {
-		margin: 0 0 $spacing-1;
+		margin: 0 0 $s-2;
 
 		&:last-child {
 			margin: 0;
@@ -229,15 +214,15 @@
 }
 
 .comment-meta {
-	padding: $spacing-xxs 0 0 58px;
+	padding: $s-1 0 0 58px;
 	@include breakpoint(sm) {
-		padding: $spacing-xxs 0 0 62px;
+		padding: $s-1 0 0 62px;
 	}
 
 	.children & {
-		padding: $spacing-xxs 0 0 42px;
+		padding: $s-1 0 0 42px;
 		@include breakpoint(sm) {
-			padding: $spacing-xxs 0 0 46px;
+			padding: $s-1 0 0 46px;
 		}
 	}
 
@@ -262,10 +247,7 @@
 }
 
 .comments-area .no-comments {
-	margin: $spacing-mobile-5 0 0;
-	@include breakpoint(sm) {
-		margin: $spacing-desktop-5 0 0;
-	}
+	@include s-r-8 (margin-top);
 }
 
 .comment-metadata .edit-link,
@@ -276,12 +258,12 @@
 
 .comment-edit-link,
 .comment-metadata .comment-reply-link {
-	padding-left: $spacing-xxs;
+	padding-left: $s-1;
 }
 
 .comment-author {
 
-	padding-bottom: $spacing-xxs;
+	padding-bottom: $s-1;
 
 	.fn {
 		@include font-body-xs;
@@ -291,11 +273,9 @@
 /* Comments Reply */
 .comment-respond {
 	position: relative;
-	margin: $spacing-mobile-5 0 0;
 	padding: 0;
-	@include breakpoint(sm) {
-		margin: $spacing-desktop-5 0 0;
-	}
+	@include s-r-8 (margin-top);
+	margin-bottom: 0;
 }
 
 .comment-reply-title {
@@ -304,7 +284,7 @@
 
 .comment-reply-title #cancel-comment-reply-link {
 	display: block;
-	padding-top: $spacing-xs;
+	padding-top: $s-2;
 	font-weight: normal;
 	@include font-body-xxs;
 	@include breakpoint(sm) {
@@ -321,16 +301,17 @@
 .comment-notes,
 .logged-in-as {
 	margin: 0;
-	padding: $spacing-xxs 0 $spacing-mobile-4;
+	padding: $s-2 0 $s-6;
+
 	@include breakpoint(sm) {
-		padding: $spacing-xs 0 $spacing-desktop-4;
+		padding: $s-4 0 $s-7;
 	}
 }
 
 .comment-form-author,
 .comment-form-email,
 .comment-form-url {
-	margin: $spacing-2 0 0;
+	margin: $s-4 0 0;
 }
 
 /* Authorbox */
@@ -338,11 +319,14 @@
 	@include flexbox;
 	flex-direction: column;
 	justify-content: center;
-	padding: $spacing-mobile-9 0 0 0;
+	@include s-r-12 (padding-top);
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+
 	@include breakpoint(sm) {
 		flex-direction: row;
 		justify-content: flex-start;
-		padding: $spacing-desktop-9 0 0 0;
 	}
 }
 
@@ -355,15 +339,15 @@
 }
 
 .authorbox-title {
-	padding: 0 0 $spacing-1;
+	padding: 0 0 $s-2;
 
 	@include breakpoint(sm) {
-		padding: 0 0 $spacing-1;
+		padding: 0 0 $s-2;
 	}
 }
 
 .authorbox .author-name {
-	padding: 0 0 $spacing-2;
+	padding: 0 0 $s-4;
 }
 
 .authorbox-content span {
@@ -372,21 +356,22 @@
 
 .authorbox-content .author-bio {
 	margin: 0;
-	padding: $spacing-2 0 0 0;
+	padding: $s-4 0 0 0;
 }
 
 /* Authorbox on Archive */
 .archive.author .author-name span {
-	padding-top: $spacing-1;
+	padding-top: $s-2;
 }
 
 .archive.author .author-pic {
 	display: block;
-	width: $spacing-desktop-8;
-	padding-bottom: $spacing-2;
+	width: $s-11;
+	padding-bottom: $s-4;
+
 	@include breakpoint(sm) {
-		width: 160px;
-		margin-right: $spacing-desktop-6;
+		width: $s-15;
+		margin-right: $s-9;
 		padding-bottom: 0;
 	}
 }

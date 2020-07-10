@@ -8,11 +8,7 @@
 		display: block;
 		text-align: center;
 		padding-top: 0;
-		padding-bottom: $spacing-mobile-8;
-
-		@include breakpoint(sm) {
-			padding-bottom: $spacing-desktop-8;
-		}
+		@include s-r-11 (padding-bottom);
 	}
 }
 
@@ -24,13 +20,8 @@
 
 	.archive .type-page &,
 	.search-results .type-page & {
-		padding-top: $spacing-mobile-4;
+		@include s-r-7(padding-top);
 		padding-bottom: 0;
-
-		@include breakpoint(sm) {
-			padding-top: $spacing-desktop-4;
-			padding-bottom: 0;
-		}
 	}
 }
 

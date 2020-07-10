@@ -18,11 +18,7 @@
 		.wp-block-calendar,
 		.wp-block-archives-dropdown {
 			@include push--auto;
-			margin-bottom: $spacing-mobile-4;
-	
-			@include breakpoint(sm) {
-				margin-bottom: $spacing-desktop-4;
-			}
+			@include s-r-7(margin-bottom);
 		}
 	}
 }
@@ -40,13 +36,13 @@
 		clear: both;
 
 		@include breakpoint(sm) {
-			padding-left: $grid-margins-l;
-			padding-right: $grid-margins-l;
+			padding-left: $s-9;
+			padding-right: $s-9;
 		}
 
 		@include breakpoint(xl) {
-			padding-left: $grid-margins-s;
-			padding-right: $grid-margins-s;
+			padding-left: $s-6;
+			padding-right: $s-6;
 		}
 	}
 
@@ -68,17 +64,17 @@
 		overflow: hidden;
 		margin-left: auto;
 		margin-right: auto;
-		padding-left: $grid-margins-s;
-		padding-right: $grid-margins-s;
+		padding-left: $s-6;
+		padding-right: $s-6;
 
 		@include breakpoint(sm) {
-			padding-left: $grid-margins-l;
-			padding-right: $grid-margins-l;
+			padding-left: $s-9;
+			padding-right: $s-9;
 		}
 
 		@include breakpoint(xl) {
-			padding-left: $grid-margins-s;
-			padding-right: $grid-margins-s;
+			padding-left: $s-6;
+			padding-right: $s-6;
 		}
 	}
 }
@@ -88,11 +84,7 @@
 .entry-content p {
 
 	&.has-background {
-		padding: $spacing-mobile-4;
-
-		@include breakpoint(sm) {
-			padding: $spacing-desktop-4;
-		}
+		@include s-r-7(padding);
 	}
 
 	&.has-drop-cap:not(:focus):first-letter {
@@ -120,8 +112,7 @@
 /* Columns */
 
 .wp-block-columns {
-
-	margin-bottom: $spacing-mobile-6;
+	margin-bottom: $s-7;
 
 	.wp-block-column>*:last-child {
 		margin-bottom: 0;
@@ -140,7 +131,7 @@
 			flex: 1 0 21%;
 
 			&:nth-child(2n) {
-				margin-left: $spacing-mobile-6;
+				margin-left: $s-7;
 			}
 		}
 
@@ -172,7 +163,7 @@
 			flex: 1 0 25%;
 
 			&:nth-child(2n) {
-				margin-left: $spacing-desktop-6;
+				margin-left: $s-9;
 			}
 		}
 
@@ -199,23 +190,15 @@
 
 	.wp-block-button {
 		margin-top: 0;
-		margin-bottom: $spacing-mobile-4;
-
-		@include breakpoint(sm) {
-			margin-bottom: $spacing-desktop-4;
-		}
+		@include s-r-7(margin-bottom);
 	}
 
 	&.alignleft {
 
 		.wp-block-button {
 			float: left;
-			margin-top: $spacing-xxs;
-			margin-right: $spacing-mobile-4;
-
-			@include breakpoint(sm) {
-				margin-right: $spacing-desktop-4;
-			}
+			margin-top: $s-1;
+			@include s-r-7(margin-right);
 		}
 	}
 
@@ -223,12 +206,8 @@
 
 		.wp-block-button {
 			float: right;
-			margin-top: $spacing-xxs;
-			margin-left: $spacing-mobile-4;
-
-			@include breakpoint(sm) {
-				margin-left: $spacing-desktop-4;
-			}
+			margin-top: $s-1;
+			@include s-r-7(margin-left);
 		}
 	}
 }
@@ -284,11 +263,11 @@
 	&.alignright {
 		display: block;
 		float: none;
-		margin-bottom: $spacing-mobile-5;
+		margin-bottom: $s-7;
 
 		@include breakpoint(sm) {
 			float: right;
-			margin: $spacing-1 0 $spacing-desktop-4 $spacing-desktop-4;
+			margin: $s-2 0 $s-7 $s-7;
 		}
 	}
 
@@ -298,7 +277,7 @@
 
 		@include breakpoint(sm) {
 			float: left;
-			margin: $spacing-1 $spacing-desktop-4 $spacing-desktop-4 0;
+			margin: $s-2 $s-7 $s-7 0;
 		}
 	}
 
@@ -331,7 +310,7 @@
 .wp-block-audio figcaption,
 .wp-block-embed figcaption {
 	display: block;
-	margin: $spacing-2 0 0;
+	margin: $s-4 0 0;
 	text-align: center;
 	@include font-body-xs;
 }
@@ -376,12 +355,8 @@
 
 	.blocks-gallery-caption {
 		width: 100%;
-		margin-bottom: $spacing-mobile-4;
+		@include s-r-7(margin-bottom);
 		text-align: center;
-
-		@include breakpoint(sm) {
-			margin-bottom: $spacing-desktop-4;
-		}
 	}
 }
 
@@ -446,7 +421,7 @@
 
 	&.is-style-solid-color,
 	&.is-style-solid-color {
-		padding: $spacing-3;
+		padding: $s-6;
 		background-color: $color__background;
 		clear: both;
 
@@ -476,7 +451,7 @@
 	.wp-block-cover__inner-container {
 
 		width: 100%;
-		padding: $spacing-desktop-6 0;
+		padding: $s-9 0;
 
 		p {
 			margin-bottom: 0;
@@ -497,10 +472,10 @@
 /* Media & Text */
 
 .wp-block-media-text .wp-block-media-text__content {
-	padding: 0 $grid-margins-s;
+	padding: 0 $s-6;
 	
 	@include breakpoint(sm) {
-		padding: 0$grid-margins-l;
+		padding: 0 $s-9;
 	}
 }
 
@@ -573,11 +548,7 @@
 .wp-block-separator {
 	border: none;
 	border-top: 1px solid rgba(0, 0, 0, 0.12);
-	margin-bottom: $spacing-mobile-6;
-
-	@include breakpoint(sm) {
-		margin-bottom: $spacing-desktop-6;
-	}
+	@include s-r-9 (margin-bottom);
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
@@ -603,11 +574,10 @@
 .entry-content .page-links {
 	align-items: baseline;
 	@include push--auto;
-	padding: $spacing-mobile-6 0;
-
-	@include breakpoint(sm) {
-		padding: $spacing-desktop-6 0;
-	}
+	@include s-r-9 (padding-top);
+	@include s-r-9 (padding-bottom);
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /* Block category Widgets */
@@ -634,13 +604,13 @@
 
 	caption {
 		color: $color__text_one;
-		margin-bottom: $spacing-2;
+		margin-bottom: $s-4;
 		text-align: center;
 	}
 
 	table {
 
-		margin-bottom: $spacing-2;
+		margin-bottom: $s-4;
 		background: $color__white;
 
 		th {
@@ -668,7 +638,7 @@
 
 .wp-block-latest-comments__comment-excerpt p {
 	@include font-body-s;
-	margin: $spacing-1 0 $spacing-3;
+	margin: $s-2 0 $s-6;
 }
 
 /* Preformatted */
@@ -676,14 +646,9 @@
 .wp-block-preformatted,
 .wp-block-code {
 	overflow: auto;
-	padding: $spacing-mobile-4;
-	margin-bottom: $spacing-mobile-4;
+	@include s-r-7(padding);
+	@include s-r-7(margin-bottom);
 	@include font-code;
-
-	@include breakpoint(sm) {
-		padding: $spacing-desktop-4;
-		margin-bottom: $spacing-desktop-4;
-	}
 }
 
 .wp-block-code {
@@ -742,15 +707,15 @@
 
 		@include breakpoint(sm) {
 			float: left;
-			margin: 0 $spacing-mobile-6 $spacing-mobile-6 0;
+			margin: 0 $s-7 $s-7 0;
 		}
 
-		@include breakpoint(sm) {
-			margin: 0 $spacing-desktop-6 $spacing-desktop-6;
+		@include breakpoint(md) {
+			margin: 0 $s-9 $s-9;
 		}
 
 		@include breakpoint(xl) {
-			margin: 0 $spacing-desktop-6 $spacing-desktop-6 $spacing-mobile-4;
+			margin: 0 $s-9 $s-9 $s-7;
 		}
 	}
 
@@ -758,15 +723,15 @@
 
 		@include breakpoint(sm) {
 			float: right;
-			margin: 0 0 $spacing-mobile-6 $spacing-mobile-6;
+			margin: 0 0 $s-7 $s-7;
 		}
 
-		@include breakpoint(sm) {
-			margin: 0 $spacing-desktop-6 $spacing-desktop-6;
+		@include breakpoint(md) {
+			margin: 0 $s-9 $s-9;
 		}
 
 		@include breakpoint(xl) {
-			margin: 0 $spacing-mobile-4 $spacing-desktop-6 $spacing-desktop-6;
+			margin: 0 $s-7 $s-9 $s-9;
 		}
 	}
 
