@@ -21,6 +21,12 @@ function aino_editor_customizer_generated_values() {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
 	.editor-styles-wrapper p a:hover,
+	.editor-styles-wrapper h1 a:hover,
+	.editor-styles-wrapper h2 a:hover,
+	.editor-styles-wrapper h3 a:hover,
+	.editor-styles-wrapper h4 a:hover,
+	.editor-styles-wrapper h5 a:hover,
+	.editor-styles-wrapper h6 a:hover,
 	.editor-styles-wrapper blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover,
 	.wp-block-pullquote__citation a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';

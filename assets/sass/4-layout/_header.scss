@@ -35,7 +35,7 @@
 		height: $s-7;
 		margin: 0;
 		padding: 0 0 0 $s-4;
-		@include font-body-xxs;
+		@include font-body-2xs;
 		color: $color__text_two;
 
 		@include breakpoint(sm) {
@@ -511,7 +511,22 @@ ul.primary-menu {
 		}
 
 		ul a {
-			@include font-body-xxs;
+			@include font-body-2xs;
+		}
+	}
+}
+
+@include breakpoint(lg) {
+	.header-big ul.primary-menu li,
+	.header-big .btn-naked a {
+		@include font-body-xl;
+
+		li {
+			@include font-body-m;
+		}
+
+		>.icon {
+			top: 0.9rem;
 		}
 	}
 }

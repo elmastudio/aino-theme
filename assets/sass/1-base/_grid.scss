@@ -210,13 +210,13 @@
 	padding-right: $s-4;
 
 	@include breakpoint(sm) {
-		padding-left: $s-9;
-		padding-right: $s-9;
+		padding-left: $s-7;
+		padding-right: $s-7;
 	}
 
-	@include breakpoint(xl) {
-		padding-left: $s-6;
-		padding-right: $s-6;
+	@include breakpoint(lg) {
+		padding-left: $s-9;
+		padding-right: $s-9;
 	}
 }
 

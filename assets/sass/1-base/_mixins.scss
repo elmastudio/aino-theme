@@ -269,6 +269,7 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin font-body {
 	font-family: $font__body;
+	line-height: 1.2;
 }
 
 /* Font Weights */
@@ -282,227 +283,344 @@ $var: true !default; // Can be overridden elsewhere
 	font-weight: bold;
 }
 
-/* px to rem convertion */
-@function calculateRem($size) {
-	$remSize: $size / 16px;
-	@return #{$remSize}rem;
+/* Heading Font Sizes */
+@mixin font-h-1 {
+	font-size: 1rem !important;
+	letter-spacing: -0.4px;
 }
 
-@mixin fontSize($size) {
-	font-size: calculateRem($size);
-}
-
-@mixin letterSpacing($size) {
-	letter-spacing: calculateRem($size);
-}
-
-/* Headings */
-@mixin font-h-a {
-	@include fontSize(16px);
-	line-height: 1.187; // 19px
-	letter-spacing: 0;
-}
-
-@mixin font-h-b {
-	@include fontSize(19px);
-	line-height: 1.21; // 23px
-	letter-spacing: 0;
+@mixin font-h-2 {
+	font-size: 1.125rem !important;
+	letter-spacing: -0.45px;
 
 	@include breakpoint(sm) {
-		@include fontSize(21px);
-		line-height: 1.143; // 24px
+		font-size: 1.25rem !important;
+		letter-spacing: -0.5px;
 	}
-}
-
-@mixin font-h-c {
-	@include fontSize(23px);
-	line-height: 1.174; // 27px
-	@include letterSpacing(-0.58px);
-
-	@include breakpoint(sm) {
-		@include fontSize(28px);
-		line-height: 1.178; // 33px
-		@include letterSpacing(-0.7px);
-	}
-}
-
-@mixin font-h-d {
-	@include fontSize(28px);
-	line-height: 1.178; // 33px
-	@include letterSpacing(-0.7px);
-
-	@include breakpoint(sm) {
-		@include fontSize(38px);
-		line-height: 1.157; // 33px
-		@include letterSpacing(-0.95px);
-	}
-}
-
-@mixin font-h-e {
-	@include fontSize(33px);
-	line-height: 1.182; // 39px
-	@include letterSpacing(-0.83px);
-
-	@include breakpoint(sm) {
-		@include fontSize(51px);
-		line-height: 1.157; // 59px
-		@include letterSpacing(-1.28px);
-	}
-}
-
-@mixin font-h-f {
-	@include fontSize(40px);
-	line-height: 1.175; // 47px
-	@include letterSpacing(-1px);
-
-	@include breakpoint(sm) {
-		@include fontSize(67px);
-		line-height: 1.164; // 78px
-		@include letterSpacing(-1.68px);
-	}
-}
-
-@mixin font-h-g {
-	@include fontSize(48px);
-	line-height: 1;
-	@include letterSpacing(-1.2px);
-
-	@include breakpoint(sm) {
-		@include fontSize(90px);
-		line-height: 1;
-		@include letterSpacing(-2.25px);
-	}
-}
-
-@mixin font-h-h {
-	@include fontSize(58px);
-	line-height: 1;
-	@include letterSpacing(-1.45px);
-
-	@include breakpoint(sm) {
-		@include fontSize(120px);
-		line-height: 1;
-		@include letterSpacing(-3px);
-	}
-}
-
-@mixin font-h-i {
-	@include fontSize(69px);
-	line-height: 1;
-	@include letterSpacing(-1.73px);
-
-	@include breakpoint(md) {
-		@include fontSize(160px);
-		line-height: 1;
-		@include letterSpacing(-4px);
-	}
-}
-
-@mixin font-h-j {
-	@include fontSize(83px);
-	line-height: 1;
-	@include letterSpacing(-2.08px);
-
-	@include breakpoint(md) {
-		@include fontSize(213px);
-		line-height: 1;
-		@include letterSpacing(-5.33px);
-	}
-}
-
-@mixin font-h-k {
-	@include fontSize(99px);
-	line-height: 1;
-	@include letterSpacing(-2.48px);
-
-	@include breakpoint(md) {
-		@include fontSize(283px);
-		line-height: 1;
-		@include letterSpacing(-7.08px);
-	}
-}
-
-@mixin font-h-l {
-	@include fontSize(119px);
-	line-height: 1;
-	@include letterSpacing(-2.98px);
 
 	@include breakpoint(lg) {
-		@include fontSize(378px);
-		line-height: 1;
-		@include letterSpacing(-9.45px);
+		font-size: 1.375rem !important;
+		letter-spacing: -0.55px;
+	}
+}
+
+@mixin font-h-3 {
+	font-size: 1.375rem !important;
+	letter-spacing: -0.55px;
+
+	@include breakpoint(sm) {
+		font-size: 1.5rem !important;
+		letter-spacing: -0.6px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 1.625rem !important;
+		letter-spacing: -0.65px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 1.75rem !important;
+		letter-spacing: -0.7px;
+	}
+}
+
+@mixin font-h-4 {
+	font-size: 1.5rem !important;
+	letter-spacing: -0.6px;
+
+	@include breakpoint(sm) {
+		font-size: 1.875rem !important;
+		letter-spacing: -0.75px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 2.125rem !important;
+		letter-spacing: -0.85px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 2.375rem !important;
+		letter-spacing: -0.95px;
+	}
+}
+
+@mixin font-h-5 {
+	font-size: 1.75rem !important;
+	letter-spacing: -0.7px;
+
+	@include breakpoint(sm) {
+		font-size: 2.25rem !important;
+		letter-spacing: -0.9px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 2.625rem !important;
+		letter-spacing: -1.05px;
+	}
+
+	@include breakpoint(lg) {
+		font-size:  3.25rem !important;
+		letter-spacing: -1.3px;
+	}
+}
+
+@mixin font-h-6 {
+	font-size: 2.125rem !important;
+	letter-spacing: -0.85px;
+
+	@include breakpoint(sm) {
+		font-size: 2.75rem !important;
+		letter-spacing: -1.1px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 3.375rem !important;
+		letter-spacing: -1.35px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 4.375rem !important;
+		letter-spacing: -1.75px;
+	}
+}
+
+@mixin font-h-7 {
+	font-size: 2.375rem !important;
+	letter-spacing: -0.95px;
+
+	@include breakpoint(sm) {
+		font-size: 3.25rem !important;
+		letter-spacing: -1.3px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 4.375rem !important;
+		letter-spacing: -1.75px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 5.75rem !important;
+		letter-spacing: -2.3px;
+	}
+}
+
+@mixin font-h-8 {
+	font-size: 2.875rem !important;
+	letter-spacing: -1.15px;
+
+	@include breakpoint(sm) {
+		font-size: 4rem !important;
+		letter-spacing: -1.6px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 5.625rem !important;
+		letter-spacing: -2.25px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 7.75rem !important;
+		letter-spacing: -3.1px;
+	}
+}
+
+@mixin font-h-9 {
+	font-size: 3.25rem !important;
+	letter-spacing: -1.3px;
+
+	@include breakpoint(sm) {
+		font-size: 4.875rem !important;
+		letter-spacing: -1.95px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 7.25rem !important;
+		letter-spacing: -2.9px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 10.375rem !important;
+		letter-spacing: -4.15px;
+	}
+}
+
+@mixin font-h-10 {
+	font-size: 3.75rem !important;
+	letter-spacing: -1.5px;
+
+	@include breakpoint(sm) {
+		font-size: 6rem !important;
+		letter-spacing: -2.4px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 9.25rem !important;
+		letter-spacing: -3.7px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 13.875rem !important;
+		letter-spacing: -5.55px;
+	}
+}
+
+@mixin font-h-11 {
+	font-size: 4.375rem !important;
+	letter-spacing: -1.75px;
+
+	@include breakpoint(sm) {
+		font-size: 10.375rem !important;
+		letter-spacing: -2.9px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 11.75rem !important;
+		letter-spacing: -4.7px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 18.625rem !important;
+		letter-spacing: -7.45px;
+	}
+}
+
+@mixin font-h-12 {
+	font-size: 5.125rem !important;
+	letter-spacing: -2.05px;
+
+	@include breakpoint(sm) {
+		font-size: 8.875rem !important;
+		letter-spacing: -3.55px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 15.125rem !important;
+		letter-spacing: -6.05px;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 25rem !important;
+		letter-spacing: -10px;
 	}
 }
 
 /* Body Fonts */
-@mixin font-body-xxl {
-	@include fontSize(26px);
-	line-height: 1.538; // 40px
-
-	@include breakpoint(sm) {
-		@include fontSize(35px);
-		line-height: 1.6; // 56px
-	}
+@mixin font-body-2xs {
+	font-size: 0.75rem;
 }
 
-@mixin font-body-xl {
-	@include fontSize(24px);
-	line-height: 1.542; // 37px
+@mixin font-body-xs {
+	font-size: 0.875rem;
+}
 
-	@include breakpoint(sm) {
-		@include fontSize(29px);
-		line-height: 1.655; // 48px
+@mixin font-body-s {
+	font-size: 1rem;
+}
+
+@mixin font-body-m {
+	font-size: 1.125rem;
+
+	@include breakpoint(lg) {
+		font-size: 1.25rem;
 	}
 }
 
 @mixin font-body-l {
-	@include fontSize(22px);
-	line-height: 1.5454; // 34px
+	font-size: 1.25rem;
 
-	@include breakpoint(sm) {
-		@include fontSize(24px);
-		line-height: 1.666; // 40px
+	@include breakpoint(md) {
+		font-size: 1.375rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 1.5rem;
 	}
 }
 
-@mixin font-body-m {
-	@include fontSize(20px);
-	line-height: 1.6; // 32px
+@mixin font-body-xl {
+	font-size: 1.375rem;
+
+	@include breakpoint(sm) {
+		font-size: 1.5rem;
+	}
+
+	@include breakpoint(md) {
+		font-size: 1.625rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 1.75rem;
+	}
 }
 
-@mixin font-body-s {
-	@include fontSize(16px);
-	line-height: 1.1875; // 19px
+@mixin font-body-2xl {
+	font-size: 1.5rem;
+
+	@include breakpoint(sm) {
+		font-size: 1.75rem;
+	}
+
+	@include breakpoint(md) {
+		font-size: 1.875rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 2.125rem;
+	}
 }
 
-@mixin font-body-xs {
-	@include fontSize(14px);
-	line-height: 1.428; // 20px
+@mixin font-body-3xl {
+	font-size: 1.625rem;
+
+	@include breakpoint(sm) {
+		font-size: 2rem;
+	}
+
+	@include breakpoint(md) {
+		font-size: 2.25rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 2.5rem;
+	}
 }
 
-@mixin font-body-xxs {
-	@include fontSize(12px);
-	line-height: 1.333; // 16px
+@mixin font-body-4xl {
+	font-size: 1.875rem;
+
+	@include breakpoint(sm) {
+		font-size: 2.25rem;
+	}
+
+	@include breakpoint(md) {
+		font-size: 2.625rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 3rem;
+	}
 }
 
+/* Form Labels */
 @mixin font-label {
-	@include fontSize(12px);
+	font-size: 12px;
 	line-height: 1.333; // 16px
 	letter-spacing: 0.063rem;
 	text-transform: uppercase;
 	color: $color__text_two;
 }
 
+/* Code */
 @mixin font-code {
 	font-family: $font__code;
-	@include fontSize(14px);
+	font-size: 14px;
 	line-height: 1.43;
 }
 
 /* Buttons */
 @mixin btn {
 	display: inline-block;
-	@include fontSize(16px);
+	font-size: 16px;
 	line-height: 1.1875; // 19px
 	font-weight: normal;
 	@include transition-default;
@@ -537,7 +655,7 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin btn-naked {
 	display: inline-block;
-	@include fontSize(16px);
+	font-size: 16px;
 	line-height: 1.5; // 24px
 	font-weight: normal;
 	color: $color__text_two;

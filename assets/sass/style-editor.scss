@@ -82,7 +82,6 @@
 
 
 /* Typography */
-
 body {
 	@include font-body;
 	color: $color__text_two;
@@ -105,6 +104,7 @@ h6 {
 
 	& a {
 		color: $color__text_one;
+		text-decoration: none;
 	}
 }
 
@@ -118,86 +118,111 @@ h6 {
 	font-weight: bold;
 }
 
-h1.has-xxl-font-size {
-	@include font-h-l;
+
+h1.has-xxxxl-font-size {
+	@include font-h-12;
+}
+
+h1.has-xxxl-font-size,
+h2.has-xxxxl-font-size {
+	@include font-h-11;
+}
+
+h1.has-xxl-font-size,
+h2.has-xxxl-font-size,
+h3.has-xxxxl-font-size {
+	@include font-h-10;
 }
 
 h1.has-xl-font-size,
-h2.has-xxl-font-size {
-	@include font-h-k;
+h2.has-xxl-font-size,
+h3.has-xxxl-font-size,
+h4.has-xxxxl-font-size {
+	@include font-h-9;
 }
 
 h1.has-l-font-size,
 h2.has-xl-font-size,
-h3.has-xxl-font-size {
-	@include font-h-j;
+h3.has-xxl-font-size,
+h4.has-xxxl-font-size,
+h5.has-xxxxl-font-size {
+	@include font-h-8;
 }
 
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
-h4.has-xxl-font-size {
-	@include font-h-i;
+h4.has-xxl-font-size,
+h5.has-xxxl-font-size,
+h6.has-xxxxl-font-size {
+	@include font-h-7;
 }
 
+.editor-post-title__input,
+h1,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
 h4.has-xl-font-size,
-h5.has-xxl-font-size {
-	@include font-h-h;
+h5.has-xxl-font-size,
+h6.has-xxxl-font-size {
+	@include font-h-6;
 }
 
+h2,
 h1.has-xs-font-size,
 h2.has-s-font-size,
 h3.has-m-font-size,
 h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size {
-	@include font-h-g;
+	@include font-h-5;
 }
 
-.editor-post-title__input,
-h1,
+h3,
 h1.has-xxs-font-size,
 h2.has-xs-font-size,
 h3.has-s-font-size,
 h4.has-m-font-size,
 h5.has-l-font-size,
-h6.has-xl-font-size {
-	@include font-h-f;
-}
-
-h2,
-h2.has-xxs-font-size,
-h3.has-xs-font-size,
-h4.has-s-font-size,
-h5.has-m-font-size,
-h6.has-l-font-size {
-	@include font-h-e;
-}
-
-h3,
-h3.has-xxs-font-size,
-h4.has-xs-font-size,
-h5.has-s-font-size,
-h6.has-m-font-size,
+h6.has-xl-font-size,
 .related .section-title,
 .comments-area .comments-title {
-	@include font-h-d;
+	@include font-h-4;
 }
 
+h2.has-xxs-font-size,
+h3.has-xs-font-size,
 h4,
-h4.has-xxs-font-size,
-h5.has-xs-font-size,
-h6.has-s-font-size,
+h4.has-s-font-size,
+h5.has-m-font-size,
+h6.has-l-font-size,
 h1.site-title,
 .site-title {
-	@include font-h-c;
+	@include font-h-3;
+}
+
+h3.has-xxs-font-size,
+h4.has-xs-font-size,
+h5,
+h5.has-s-font-size,
+h6.has-m-font-size {
+	@include font-h-2;
+}
+
+h4.has-xxs-font-size,
+h5.has-xs-font-size,
+h5.has-xxs-font-size,
+h6,
+h6.has-s-font-size,
+h6.has-xs-font-size,
+h6.has-xxs-font-size,
+h6.has-xxs-font-size,
+h2.widget-title {
+	@include font-h-1;
 }
 
 /* Paragraphs */
-
 p {
 	@include font-body-m;
 
@@ -206,7 +231,7 @@ p {
 	}
 
 	&.has-xxs-font-size {
-		@include font-body-xxs;
+		@include font-body-2xs;
 	}
 
 	&.has-xs-font-size {
@@ -230,7 +255,7 @@ p {
 	}
 
 	&.has-xxl-font-size {
-		@include font-body-xxl;
+		@include font-body-2xl;
 	}
 
 	&.has-drop-cap:not(:focus):first-letter {
@@ -679,7 +704,7 @@ textarea {
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
 	max-width: $col6-no-gutter;
-	@include font-h-c;
+	@include font-h-3;
 }
 
 .wp-block-cover-image,

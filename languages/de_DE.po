@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aino\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-13 02:34+0000\n"
-"PO-Revision-Date: 2020-05-13 03:13+0000\n"
+"POT-Creation-Date: 2020-07-13 00:02+0000\n"
+"PO-Revision-Date: 2020-07-13 00:04+0000\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.3.3; wp-5.4.1"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
 
 #: functions.php:68
 msgid "Primary Menu"
@@ -161,68 +161,68 @@ msgstr "Helles, zartes Violet zu zartem Pink"
 #. If there are characters in your language that are not
 #. supported by Roboto, translate this to 'off'. Do not translate
 #. into your own language.
-#: functions.php:393
+#: functions.php:397
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:427
+#: functions.php:431
 msgid "Skip to the content"
 msgstr "Springe zum Inhalt"
 
-#: functions.php:438
+#: functions.php:442
 msgid "Footer 1"
 msgstr "Footer 1"
 
-#: functions.php:440
+#: functions.php:444
 msgid "Add widgets here to appear in the 1. column of your footer."
 msgstr "Widgets erscheinen in der 1. Footerspalte."
 
-#: functions.php:450
+#: functions.php:454
 msgid "Footer 2"
 msgstr "Footer 2"
 
-#: functions.php:452
+#: functions.php:456
 msgid "Add widgets here to appear in the 2. column of your footer."
 msgstr "Widgets erscheinen in der 2. Footerspalte."
 
-#: functions.php:462
+#: functions.php:466
 msgid "Footer 3"
 msgstr "Footer 3"
 
-#: functions.php:464
+#: functions.php:468
 msgid "Add widgets here to appear in the 3. column of your footer."
 msgstr "Widgets erscheinen in der 3. Footerspalte."
 
-#: functions.php:474
+#: functions.php:478
 msgid "Footer 4"
 msgstr "Footer 4"
 
-#: functions.php:476
+#: functions.php:480
 msgid "Add widgets here to appear in the 4. column of your footer."
 msgstr "Widgets erscheinen in der 4. Footerspalte."
 
-#: functions.php:486
+#: functions.php:490
 msgid "Footer 5"
 msgstr "Footer 5"
 
-#: functions.php:488
+#: functions.php:492
 msgid "Add widgets here to appear in the 5. column of your footer."
 msgstr "Widgets erscheinen in der 5. Footerspalte."
 
-#: functions.php:498
+#: functions.php:502
 msgid "Footer 6"
 msgstr "Footer 6"
 
-#: functions.php:500
+#: functions.php:504
 msgid "Add widgets here to appear in the 6. column of your footer."
 msgstr "Widgets erscheinen in der 6. Footerspalte."
 
-#: functions.php:587
+#: functions.php:591
 msgid "All posts by"
 msgstr "Alle Beiträge von"
 
-#: functions.php:589 functions.php:591
+#: functions.php:593 functions.php:595
 msgid "Filed under"
 msgstr "Archiviert unter"
 
@@ -336,6 +336,7 @@ msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Autor"
 
+#. used between list items, there is a space after the comma
 #: inc/template-tags.php:210
 msgid ", "
 msgstr ", "
@@ -348,6 +349,7 @@ msgstr "Beitrag bearbeiten"
 msgid "Author"
 msgstr "Autor"
 
+#. 1: The comment date. 2: the comment time.
 #: inc/template-tags.php:302
 #, php-format
 msgid "%1$s at %2$s"
@@ -366,7 +368,7 @@ msgid "Show sub menu"
 msgstr "Zeige Untermenü"
 
 #. 1: The [datetime] attribute for the <time> tag. 2: Estimated reading time text, in minutes.
-#: inc/template-tags.php:826
+#: inc/template-tags.php:834
 #, php-format
 msgctxt "Time to read"
 msgid "%s min read"
@@ -666,8 +668,8 @@ msgid "Show comments with borders"
 msgstr "Zeige Kommentare mit Umrandung"
 
 #: inc/customizer/customizer.php:806
-msgid "The primary link and button background color."
-msgstr "Die Haupt-Linkfarbe und Button-Hintergrundfarbe."
+msgid "The primary text link hover and button background color."
+msgstr "Die Farbe für Textlink-Hovers und Button-Hintergründe."
 
 #: inc/customizer/customizer.php:828
 msgid "The heading text color."

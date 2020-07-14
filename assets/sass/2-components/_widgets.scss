@@ -13,6 +13,10 @@
 
 .widget-title {
 	padding: 0 0 $s-6;
+
+	.footer-big & {
+		padding-bottom: $s-10;
+	}
 }
 
 /* Make sure select elements fit in widgets. */
@@ -27,6 +31,10 @@
 .widget ul li {
 	list-style: none;
 	padding: 0 0 $s-4;
+
+	.footer-big & {
+		padding-bottom: $s-8;
+	}
 }
 
 .widget ul ul li:last-child {

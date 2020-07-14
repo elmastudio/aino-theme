@@ -17,10 +17,11 @@ textarea,
 .hentry .entry-summary,
 .hentry .entry-header .entry-meta,
 .single-post .navigation a span.nav-subtitle,
-.widget ul li,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
-.entry-content .sharedaddy h3.sd-title {
+.entry-content .sharedaddy h3.sd-title,
+.widget ul li,
+.site-info {
 	@include font-body-xs;
 }
 
@@ -53,19 +54,29 @@ textarea,
 	@include font-body-l;
 }
 
-.entry-content p.has-xl-font-size {
+.entry-content p.has-xl-font-size,
+.footer-big .widget ul li,
+.footer-big .site-info {
 	@include font-body-xl;
 }
 
 .entry-content p.has-xxl-font-size {
-	@include font-body-xxl;
+	@include font-body-2xl;
+}
+
+.entry-content p.has-xxxl-font-size {
+	@include font-body-3xl;
+}
+
+.entry-content p.has-xxxxl-font-size {
+	@include font-body-4xl;
 }
 
 .comment-metadata,
 .comment-notes,
 .logged-in-as,
 .entry-content p.has-xxs-font-size {
-	@include font-body-xxs;
+	@include font-body-2xs;
 }
 
 /* Headings */
@@ -77,8 +88,9 @@ h5,
 h6,
 .site-title,
 .post-navigation .nav-title {
-	color: $color__text_one;
 	@include font-regular;
+	color: $color__text_one;
+	line-height: 1.1;
 	@include hyphenation;
 }
 
@@ -89,6 +101,7 @@ h2.entry-title {
 }
 
 .h-regular {
+
 	h1,
 	h2,
 	h3,
@@ -104,12 +117,12 @@ h2.entry-title {
 
 .h-bold {
 
-	:not(.entry-content) > h1,
-	:not(.entry-content) > h2,
-	:not(.entry-content) > h3,
-	:not(.entry-content) > h4,
-	:not(.entry-content) > h5,
-	:not(.entry-content) > h6,
+	:not(.entry-content)>h1,
+	:not(.entry-content)>h2,
+	:not(.entry-content)>h3,
+	:not(.entry-content)>h4,
+	:not(.entry-content)>h5,
+	:not(.entry-content)>h6,
 	.site-title,
 	&.single-post .byline,
 	.post-navigation .nav-title {
@@ -121,81 +134,87 @@ h2.entry-title {
 	@include font-regular;
 }
 
-h1.has-xxl-font-size {
-	@include font-h-l;
+h1.has-xxxxl-font-size {
+	@include font-h-12;
+}
+
+h1.has-xxxl-font-size,
+h2.has-xxxxl-font-size {
+	@include font-h-11;
+}
+
+h1.has-xxl-font-size,
+h2.has-xxxl-font-size,
+h3.has-xxxxl-font-size {
+	@include font-h-10;
 }
 
 h1.has-xl-font-size,
-h2.has-xxl-font-size {
-	@include font-h-k;
+h2.has-xxl-font-size,
+h3.has-xxxl-font-size,
+h4.has-xxxxl-font-size {
+	@include font-h-9;
 }
 
 h1.has-l-font-size,
 h2.has-xl-font-size,
-h3.has-xxl-font-size {
-	@include font-h-j;
+h3.has-xxl-font-size,
+h4.has-xxxl-font-size,
+h5.has-xxxxl-font-size {
+	@include font-h-8;
 }
 
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
-h4.has-xxl-font-size {
-	@include font-h-i;
+h4.has-xxl-font-size,
+h5.has-xxxl-font-size,
+h6.has-xxxxl-font-size {
+	@include font-h-7;
 }
 
+h1,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
 h4.has-xl-font-size,
-h5.has-xxl-font-size {
-	@include font-h-h;
+h5.has-xxl-font-size,
+h6.has-xxxl-font-size {
+	@include font-h-6;
 }
 
+h2,
 h1.has-xs-font-size,
 h2.has-s-font-size,
 h3.has-m-font-size,
 h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size {
-	@include font-h-g;
+	@include font-h-5;
 }
 
-h1,
+h3,
 h1.has-xxs-font-size,
 h2.has-xs-font-size,
 h3.has-s-font-size,
 h4.has-m-font-size,
 h5.has-l-font-size,
-h6.has-xl-font-size {
-	@include font-h-f;
+h6.has-xl-font-size,
+.related .section-title,
+.comments-area .comments-title,
+.footer-big h2.widget-title {
+	@include font-h-4;
 }
 
-h2,
 h2.has-xxs-font-size,
 h3.has-xs-font-size,
+h4,
 h4.has-s-font-size,
 h5.has-m-font-size,
-h6.has-l-font-size {
-	@include font-h-e;
-}
-
-h3,
-h3.has-xxs-font-size,
-h4.has-xs-font-size,
-h5.has-s-font-size,
-h6.has-m-font-size,
-.related .section-title,
-.comments-area .comments-title {
-	@include font-h-d;
-}
-
-h4,
-h4.has-xxs-font-size,
-h5.has-xs-font-size,
-h6.has-s-font-size,
+h6.has-l-font-size,
 h1.site-title,
 .site-title {
-	@include font-h-c;
+	@include font-h-3;
 }
 
 h1.site-logo {
@@ -212,29 +231,37 @@ h1.site-logo {
 .nav-title,
 .blog h2.entry-title,
 .blog-archive h2.entry-title,
+h3.has-xxs-font-size,
+h4.has-xs-font-size,
 h5,
-h5.has-xxs-font-size,
-h6.has-xs-font-size {
-	@include font-h-b;
+h5.has-s-font-size,
+h6.has-m-font-size {
+	@include font-h-2;
 }
 
+h4.has-xxs-font-size,
+h5.has-xs-font-size,
+h5.has-xxs-font-size,
 h6,
+h6.has-s-font-size,
+h6.has-xs-font-size,
+h6.has-xxs-font-size,
 h6.has-xxs-font-size,
 h2.widget-title {
-	@include font-h-a;
+	@include font-h-1;
 }
 
 .blog,
 .blog-archive {
 	&.blog-2-column h2.entry-title {
 		@include breakpoint(md) {
-			@include font-h-c;
+			@include font-h-3;
 		}
 	}
 
 	&.blog-1-column h2.entry-title {
 		@include breakpoint(sm) {
-			@include font-h-d;
+			@include font-h-4;
 		}
 	}
 }

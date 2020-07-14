@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Aino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-13 00:02+0000\n"
-"PO-Revision-Date: 2020-07-13 00:05+0000\n"
+"PO-Revision-Date: 2020-07-13 00:02+0000\n"
 "Last-Translator: \n"
-"Language-Team: German (Formal)\n"
-"Language: de_DE_formal\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +20,11 @@ msgstr "Hauptmenü"
 
 #: functions.php:69
 msgid "Header Buttons (Desktop only)"
-msgstr "Header Buttons (nicht sichtbar auf mobilen Geräten)"
+msgstr "Header-Buttons (nur in Desktopansicht)"
 
 #: functions.php:70
 msgid "Header Social Menu (Desktop only)"
-msgstr "Header Social-Menü (nicht sichtbar auf mobilen Geräten)"
+msgstr "Header Social-Menü (nur in Desktopansicht)"
 
 #: functions.php:71
 msgid "Footer Social Menu"
@@ -88,7 +88,7 @@ msgstr "Weiß"
 
 #: functions.php:206
 msgid "Grayish blue to dark grayish blue"
-msgstr "Gräuliches Blau zu dunklem gräulichen Blau"
+msgstr "Gräuliches Blau zu Dunkel-Graublau"
 
 #: functions.php:211
 msgid "Soft orange to desaturated dark cyan"
@@ -136,7 +136,7 @@ msgstr "Zartes Rot zu zartem Blau"
 
 #: functions.php:266
 msgid "Dark blue to mostly black blue"
-msgstr "Dunkelblau zu Schwarz-Blau"
+msgstr "Dunkelblau zu Schwarz/Blau"
 
 #: functions.php:271
 msgid "Very soft blue to dark grayish blue"
@@ -168,7 +168,7 @@ msgstr ""
 
 #: functions.php:431
 msgid "Skip to the content"
-msgstr "Weiter zum Inhalt"
+msgstr "Springe zum Inhalt"
 
 #: functions.php:442
 msgid "Footer 1"
@@ -240,7 +240,7 @@ msgstr ""
 
 #: 404.php:20
 msgid "Maybe try a search instead?"
-msgstr "Versuchen sie es mit einem neuen Suchbegriff."
+msgstr "Versuche es doch mit einem neuen Suchbegriff."
 
 #: index.php:30
 msgid "Posts"
@@ -325,11 +325,11 @@ msgstr "Suche"
 
 #: inc/icon-functions.php:23
 msgid "Please define default parameters in the form of an array."
-msgstr "Bitte definieren sie Standardparameter in Form eines Array."
+msgstr "Bitte definiere Standardparameter in Form eines array."
 
 #: inc/icon-functions.php:28
 msgid "Please define an SVG icon filename."
-msgstr "Bitte definieren sie SVG Icon im Dateiname."
+msgstr "Bitte definiere SVG Icon im Dateiname."
 
 #: inc/template-tags.php:162
 msgctxt "Used before post author name."
@@ -365,7 +365,7 @@ msgstr "Kommentare warten auf Moderation."
 
 #: inc/template-tags.php:401
 msgid "Show sub menu"
-msgstr "Untermenü zeigen"
+msgstr "Zeige Untermenü"
 
 #. 1: The [datetime] attribute for the <time> tag. 2: Estimated reading time text, in minutes.
 #: inc/template-tags.php:834
@@ -382,7 +382,7 @@ msgstr "Volle Breite"
 
 #. Name of the template
 msgid "Full Width, no page title"
-msgstr "Volle Breite, ohne Seitentitel"
+msgstr "Volle Breite, kein Seitentitel"
 
 #. Name of the template
 msgid "Hero, light header"
@@ -390,11 +390,11 @@ msgstr "Hero, heller Header"
 
 #. Name of the template
 msgid "Fullscreen"
-msgstr "Vollbild"
+msgstr "Volle Bildschirmbreite"
 
 #. Name of the template
 msgid "Fullscreen, light header"
-msgstr "Vollbild, heller Header"
+msgstr "Volle Bildschirmbreite, heller Header"
 
 #. Name of the template
 msgid "Hero"
@@ -438,7 +438,7 @@ msgstr "Untertitel verbergen"
 
 #: inc/customizer/customizer.php:134
 msgid "Retina logo"
-msgstr "Retinalogo"
+msgstr "Retina-Logo"
 
 #: inc/customizer/customizer.php:135
 msgid ""
@@ -470,7 +470,7 @@ msgstr "Ecken-Radius bei Buttons"
 
 #: inc/customizer/customizer.php:201 inc/customizer/customizer.php:264
 msgid "Choose the degree of curvature."
-msgstr "Wählen sie den Grad der Abrundung."
+msgstr "Wähle den Grad der Abrundung."
 
 #: inc/customizer/customizer.php:206 inc/customizer/customizer.php:269
 msgid "square"
@@ -531,8 +531,7 @@ msgstr "Layout"
 
 #: inc/customizer/customizer.php:435
 msgid "Choose the column layout of your blog, archives and search results."
-msgstr ""
-"Wählen sie das Spalten-Layout für Blog-, Archiv- und Suchergebnis-Seiten."
+msgstr "Wähle das Spalten-Layout für Blog-, Archiv- und Suchergebnis-Seiten."
 
 #: inc/customizer/customizer.php:440
 msgid "1 column"
@@ -565,8 +564,8 @@ msgstr "Füge einen Blogtitel-Beschreibungstext hinzu."
 #: inc/customizer/customizer.php:503
 msgid "Choose how to display posts on your blog, archives and search results."
 msgstr ""
-"Stellen sie ein, wie Beiträge auf Blog-, Archiv- und Suchergebnis-Seiten "
-"anzeigen werden sollen."
+"Stelle ein, wie du Beiträge auf Blog-, Archiv- und Suchergebnis-Seiten "
+"anzeigen möchtest."
 
 #: inc/customizer/customizer.php:522
 msgid "Border Radius"
@@ -574,7 +573,7 @@ msgstr "Ecken-Radius"
 
 #: inc/customizer/customizer.php:523
 msgid "Choose the degree of curvature on blog card edges in pixels."
-msgstr "Wählen sie den Grad der Abrundung von Blogkarten in Pixeln."
+msgstr "Wähle den Grad der Abrundung von Blogkarten in Pixeln."
 
 #: inc/customizer/customizer.php:528 inc/customizer/customizer.php:740
 msgid "0"
@@ -633,8 +632,8 @@ msgstr "Exzerpt-Länge"
 msgid ""
 "Choose the number of words shown in excerpt. To hide excerpt set to zero."
 msgstr ""
-"Wählen sie die Anzahl der Wörter im Exzerpt. Setzen sie die Zahl auf Null, "
-"um den Exzerpt-Text zu verbergen."
+"Wähle die Anzahl der Wörter im Exzerpt. Wähle Null, um den Exzerpt-Text zu "
+"verbergen."
 
 #: inc/customizer/customizer.php:639
 msgid "Post Details"
@@ -662,7 +661,7 @@ msgstr "Ecken-Radius bei Beitragsbildern"
 
 #: inc/customizer/customizer.php:735
 msgid "Choose the degree of curvature on featured image edges in pixels."
-msgstr "Wählen sie den Grad der Abrundung von Beitragsbildern in Pixeln."
+msgstr "Wähle den Grad der Abrundung von Beitragsbildern in Pixeln."
 
 #: inc/customizer/customizer.php:760
 msgid "Show comments with borders"
@@ -670,7 +669,7 @@ msgstr "Zeige Kommentare mit Umrandung"
 
 #: inc/customizer/customizer.php:806
 msgid "The primary text link hover and button background color."
-msgstr "Die Farbe für Textlink-Hovers und Button-Hintergründe."
+msgstr ""
 
 #: inc/customizer/customizer.php:828
 msgid "The heading text color."
@@ -726,7 +725,7 @@ msgstr "Veröffentlicht von"
 
 #: template-parts/post/content-single.php:24
 msgid "Leave a reply"
-msgstr "Kommentar schreiben"
+msgstr "Schreibe einen Kommentar"
 
 #: template-parts/post/content-single.php:24 template-parts/post/content.php:76
 msgid "Comment 1"
@@ -764,8 +763,8 @@ msgstr "Nichts Gefunden"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
-"Sind sie bereit ihren ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">"
-"Dannn legen sie hier los</a>."
+"Bist du bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">"
+"Dann lege hier los</a>."
 
 #: template-parts/post/content-none.php:37
 msgid ""
@@ -773,7 +772,7 @@ msgid ""
 "different keywords."
 msgstr ""
 "Entschuldigung, leider konnte kein passender Eintrag zum Suchbegriff "
-"gefunden werden. Bitte versuchen sie es mit einem neuen Begriff."
+"gefunden werden. Bitte versuche es mit einem neuen Begriff."
 
 #: template-parts/post/content-none.php:42
 msgid ""

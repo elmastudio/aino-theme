@@ -535,6 +535,10 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Header.
+	if ( true === get_theme_mod( 'header_bigfont', aino_defaults( 'header_bigfont' ) ) ) {
+		$classes[] = 'header-big';
+	}
+
 	if ( true === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
 		$classes[] = 'has-header-search';
 	}
@@ -548,6 +552,10 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Footer.
+	if ( true === get_theme_mod( 'footer_bigfont', aino_defaults( 'footer_bigfont' ) ) ) {
+		$classes[] = 'footer-big';
+	}
+
 	if ( true === get_theme_mod( 'footer_light', aino_defaults( 'footer_light' ) ) ) {
 		$classes[] = 'footer-light';
 	}

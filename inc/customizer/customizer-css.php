@@ -127,7 +127,6 @@ function aino_customizer_css() {
 			fill: ' . esc_attr( $primary_one_color ) . ';
 		}
 	}
-	.entry-content p a:hover,
 	.entry-content li a:hover,
 	.authorbox-content p a:hover,
 	.comment-content li a:hover,

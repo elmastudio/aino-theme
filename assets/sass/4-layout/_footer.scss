@@ -9,7 +9,8 @@
 }
 
 .footer-wrap {
-	@include s-r-14 (padding);
+	@include s-r-14 (padding-top);
+	@include s-r-9 (padding-bottom);
 }
 
 .footer-widget-wrap {
@@ -28,6 +29,10 @@
 
 	@include breakpoint(sm) {
 		min-width: $col2;
+		padding: 0 $s-4;
+	}
+
+	@include breakpoint(md) {
 		padding: 0 $s-6;
 	}
 
@@ -45,7 +50,7 @@
 	@include flexbox;
 	flex-direction: column;
 	@include breakpoint(sm) {
-		flex-direction: row-reverse;
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -58,8 +63,6 @@
 }
 
 .site-info {
-
-	@include font-body-xs;
 	color: $color__text_two;
 
 	.footerinfo-centered & {
@@ -77,7 +80,6 @@
 
 	a {
 		padding: 0;
-		@include font-body-xs;
 		color: $color__text_two;
 
 		&:hover {

@@ -145,8 +145,20 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'      => __( 'XXL', 'aino' ),
 					'shortName' => __( 'XXL', 'aino' ),
-					'size'      => 35,
+					'size'      => 34,
 					'slug'      => 'xxl',
+				),
+				array(
+					'name'      => __( '3XL', 'aino' ),
+					'shortName' => __( '3XL', 'aino' ),
+					'size'      => 40,
+					'slug'      => 'xxxl',
+				),
+				array(
+					'name'      => __( '4XL', 'aino' ),
+					'shortName' => __( '4XL', 'aino' ),
+					'size'      => 48,
+					'slug'      => 'xxxxl',
 				),
 			)
 		);
@@ -297,6 +309,10 @@ if ( ! function_exists( 'aino_setup' ) ) :
 
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
+
+		// Add support for experimental link colour in blocks.
+		add_theme_support('experimental-link-color');
+
 	}
 	endif;
 	add_action( 'after_setup_theme', 'aino_setup' );

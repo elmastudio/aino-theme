@@ -28,7 +28,7 @@
 	align-items: center;
 
 	.author-badge {
-		@include font-body-xxs;
+		@include font-body-2xs;
 		@include font-bold;
 		line-height: 1;
 		color: $color__border;

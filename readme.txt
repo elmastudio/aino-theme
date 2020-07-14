@@ -44,8 +44,11 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.1.7 =
+* New: Add support for experimental link color in Paragraph, Heading, Group, Columns, and Media & Text blocks.
+* Enhance: Custom font size palette.
 * Enhance: Bold heading styles.
 * Enhance: CSS for grid and media query breakpoints.
+* Enhance: Translations.
 * Bugfix: Add custom color and gradient palette to editor styles.
 
 = 1.1.6 =

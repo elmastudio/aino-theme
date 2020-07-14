@@ -286,7 +286,7 @@
 	display: block;
 	padding-top: $s-2;
 	font-weight: normal;
-	@include font-body-xxs;
+	@include font-body-2xs;
 	@include breakpoint(sm) {
 		position: absolute;
 		top: 0;

@@ -26,16 +26,21 @@ cite a,
 	}
 }
 
+.page .entry-content .wp-block-group.has-link-color p a:hover,
+.page .entry-content p.has-link-color a:hover {
+	color: var(--wp--style--color--link);
+}
+
 h1, h2, h3, h4, h5, h6,
 .entry-content p,
 .entry-content li {
 
 	&.has-text-color {
 
-	&.has-white-color {
+		&.has-white-color {
 
-		a:hover {
-			color: $color__white_hover;
+			a:hover {
+				color: $color__white_hover;
 			}
 		}
 	}
