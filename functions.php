@@ -313,6 +313,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
 
+		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
+		remove_theme_support( 'core-block-patterns' );
+
 	}
 	endif;
 	add_action( 'after_setup_theme', 'aino_setup' );
