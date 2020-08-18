@@ -83,10 +83,6 @@
 
 .entry-content p {
 
-	&.has-background {
-		@include s-r-7(padding);
-	}
-
 	&.has-drop-cap:not(:focus):first-letter {
 		float: left;
 		margin: 5px 8px 0 -8px;
@@ -223,7 +219,6 @@
 		text-decoration: none;
 		outline: none;
 		height: auto;
-		background: $color__primary;
 		box-shadow: none;
 
 		&:not(.has-background) {
@@ -548,7 +543,6 @@
 .wp-block-separator {
 	border: none;
 	border-top: 1px solid rgba(0, 0, 0, 0.12);
-	@include s-r-9 (margin-bottom);
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {

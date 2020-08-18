@@ -121,7 +121,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'      => __( 'S', 'aino' ),
 					'shortName' => __( 'S', 'aino' ),
-					'size'      => 17,
+					'size'      => 16,
 					'slug'      => 's',
 				),
 				array(
@@ -139,7 +139,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'      => __( 'XL', 'aino' ),
 					'shortName' => __( 'XL', 'aino' ),
-					'size'      => 29,
+					'size'      => 28,
 					'slug'      => 'xl',
 				),
 				array(
@@ -315,6 +315,12 @@ if ( ! function_exists( 'aino_setup' ) ) :
 
 		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
 		remove_theme_support( 'core-block-patterns' );
+
+		// Add support for custom custom line-heights in blocks.
+		add_theme_support( 'custom-line-height' );
+
+		// Add support for custom units in blocks.
+		add_theme_support( 'custom-units' );
 
 	}
 	endif;

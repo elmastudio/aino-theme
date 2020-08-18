@@ -259,6 +259,38 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
+@mixin s-r-17($property) {
+	#{$property}: $s-14;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-15;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-16;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-17;
+	}
+}
+
+@mixin s-r-18($property) {
+	#{$property}: $s-15;
+
+	@include breakpoint(sm) {
+		#{$property}: $s-16;
+	}
+
+	@include breakpoint(md) {
+		#{$property}: $s-17;
+	}
+
+	@include breakpoint(lg) {
+		#{$property}: $s-18;
+	}
+}
+
 /* Base Typography */
 @mixin hyphenation {
 	word-wrap: break-word;
@@ -440,7 +472,7 @@ $var: true !default; // Can be overridden elsewhere
 
 	@include breakpoint(lg) {
 		font-size: 10.375rem !important;
-		letter-spacing: -4.15px;
+		letter-spacing: -10px;
 	}
 }
 

@@ -11,9 +11,9 @@
 .editor-styles-wrapper .wp-block[data-align="right"]{margin-right:0}
 .editor-styles-wrapper .wp-block[data-align="left"]{margin:0}
 .editor-styles-wrapper .wp-block[data-align="left"],.editor-styles-wrapper .wp-block[data-align="right"]{margin:0 auto;max-width:1392px}
-body{font-family:"Roboto",sans-serif;line-height:1.2;color:#222}
+body{font-family:"Roboto",sans-serif;line-height:1.2;color:#222;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 .editor-post-title .editor-post-title__input{font-family:"Roboto",sans-serif;line-height:1.2}
-.editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#111;font-weight:normal}
+.editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#111;font-weight:normal;line-height:1.2;margin-top:0;margin-bottom:0}
 .editor-post-title__input a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#111;text-decoration:none}
 .h-bold .editor-post-title__input,.h-bold h1,.h-bold h2,.h-bold h3,.h-bold h4,.h-bold h5,.h-bold h6{font-weight:bold}
 h1.has-xxxxl-font-size{font-size:5.125rem !important;letter-spacing:-2.05px}
@@ -219,7 +219,7 @@ p.has-xxl-font-size{font-size:1.875rem}
 }@media(min-width:80em){h1.has-xxxxl-font-size{font-size:25rem !important;letter-spacing:-10px}
 h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:18.625rem !important;letter-spacing:-7.45px}
 h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:13.875rem !important;letter-spacing:-5.55px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:10.375rem !important;letter-spacing:-4.15px}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:10.375rem !important;letter-spacing:-10px}
 h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:7.75rem !important;letter-spacing:-3.1px}
 h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:5.75rem !important;letter-spacing:-2.3px}
 .editor-post-title__input,h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:4.375rem !important;letter-spacing:-1.75px}

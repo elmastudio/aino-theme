@@ -273,13 +273,13 @@ h2.widget-title {
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-	margin-top: $s-4;
-	margin-bottom: $s-4;
+	@include s-r-4(padding-top);
+	@include s-r-4(padding-bottom);
 }
 
 address,
 p {
-	@include s-r-7(margin-bottom);
+	@include s-r-7(padding-bottom);
 }
 
 dfn,
@@ -308,6 +308,7 @@ blockquote {
 .entry-content blockquote p,
 blockquote p {
 	margin: 0;
+	padding: 0;
 }
 
 blockquote cite,

@@ -15,6 +15,8 @@
 
 .footer-widget-wrap {
 	@include flexbox;
+	justify-content: space-evenly;
+	align-items: stretch;
 	flex-direction: column;
 	@include s-r-9(padding-bottom);
 
@@ -27,8 +29,9 @@
 
 .footer-widget {
 
+	flex-grow: 1;
+
 	@include breakpoint(sm) {
-		min-width: $col2;
 		padding: 0 $s-4;
 	}
 

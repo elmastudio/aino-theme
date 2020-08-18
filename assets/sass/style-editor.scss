@@ -85,6 +85,8 @@
 body {
 	@include font-body;
 	color: $color__text_two;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 /* Headings */
@@ -101,6 +103,9 @@ h5,
 h6 {
 	color: $color__text_one;
 	font-weight: normal;
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 0;
 
 	& a {
 		color: $color__text_one;
@@ -778,7 +783,6 @@ pre.wp-block-verse {
 }
 
 /* Separator */
-
 .wp-block-separator {
 	margin-bottom: $s-8;
 	border-left: 0;
