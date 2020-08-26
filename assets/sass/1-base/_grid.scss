@@ -400,18 +400,6 @@
 	}
 }
 
-.post-navigation .nav-next,
-.post-navigation .nav-previous {
-	width: 100%; // 1-column on mobile
-	flex-grow: 0;
-
-	@include breakpoint(sm) {
-		flex-basis: calc(50%);
-		padding-left: $s-6;
-		padding-right: $s-6;
-	}
-}
-
 /* 3-Columns */
 .blog-3-column .posts-container .hentry,
 .header-infobar .col,

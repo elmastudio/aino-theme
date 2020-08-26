@@ -5,7 +5,6 @@ input,
 select,
 table,
 textarea,
-.post-navigation .nav-title span,
 .entry-content p.has-s-font-size,
 .wp-block-calendar table {
 	@include font-body;
@@ -86,8 +85,7 @@ h3,
 h4,
 h5,
 h6,
-.site-title,
-.post-navigation .nav-title {
+.site-title {
 	@include font-regular;
 	color: $color__text_one;
 	line-height: 1.1;
@@ -109,8 +107,7 @@ h2.entry-title {
 	h5,
 	h6,
 	.site-title,
-	&.single-post .byline,
-	.post-navigation .nav-title {
+	&.single-post .byline {
 		@include font-regular;
 	}
 }
@@ -124,14 +121,9 @@ h2.entry-title {
 	:not(.entry-content)>h5,
 	:not(.entry-content)>h6,
 	.site-title,
-	&.single-post .byline,
-	.post-navigation .nav-title {
+	&.single-post .byline {
 		@include font-bold;
 	}
-}
-
-.post-navigation .nav-title span {
-	@include font-regular;
 }
 
 h1.has-xxxxl-font-size {

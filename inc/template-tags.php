@@ -281,10 +281,8 @@ function aino_comment( $comment, $args, $depth ) {
 				<?php
 				printf(
 					/* translators: %s: Name of comment author. */
-					'<b class="fn">%s</b> %2$s',
+					'<b class="fn">%s</b>',
 					get_comment_author_link( $comment ),
-					// If current post author is also comment author, make it known visually.
-					( $comment->user_id === $post->post_author ) ? '<span class="author-badge">' . esc_html__( 'Author', 'aino' ) . '</span>' : ''
 				);
 				?>
 				</div><!-- .comment-author -->
@@ -298,10 +296,9 @@ function aino_comment( $comment, $args, $depth ) {
 					<time datetime="<?php comment_time( 'c' ); ?>">
 					<?php
 					printf(
-						/* translators: 1: The comment date. 2: the comment time. */
-						esc_html__( '%1$s at %2$s', 'aino' ),
-						esc_html( get_comment_date( '', $comment ) ),
-						esc_html( get_comment_time() )
+						/* translators: The comment date. */
+						esc_html__( '%1$s', 'aino' ),
+						esc_html( get_comment_date( '', $comment ) )
 					);
 					?>
 					</time>

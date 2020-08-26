@@ -182,6 +182,10 @@
 		margin-left: 46px;
 		padding: 0;
 		list-style: none;
+
+		.children {
+			margin-left: 0;
+		}
 	}
 }
 
@@ -204,7 +208,7 @@
 		margin: 0 0 $s-2;
 
 		&:last-child {
-			margin: 0;
+			padding-bottom: 0;
 		}
 	}
 }
