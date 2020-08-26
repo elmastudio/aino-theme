@@ -9,38 +9,39 @@
 }
 
 .footer-wrap {
-	padding: $spacing-mobile-10 0;
-
-	@include breakpoint(m) {
-		padding: $spacing-desktop-10 0;
-	}
+	@include s-r-14 (padding-top);
+	@include s-r-9 (padding-bottom);
 }
 
 .footer-widget-wrap {
 	@include flexbox;
+	justify-content: space-evenly;
+	align-items: stretch;
 	flex-direction: column;
-	padding-bottom: $spacing-mobile-6;
+	@include s-r-9(padding-bottom);
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding-bottom: $spacing-desktop-6;
 	}
 }
 
 .footer-widget {
 
-	@include breakpoint(m) {
-		min-width: $col2;
-		padding: 0 $spacing-3;
+	flex-grow: 1;
+
+	@include breakpoint(sm) {
+		padding: 0 $s-4;
+	}
+
+	@include breakpoint(md) {
+		padding: 0 $s-6;
 	}
 
 	.widget {
-		padding-bottom: $spacing-mobile-6;
-		@include breakpoint(m) {
-			padding-bottom: $spacing-desktop-6;
-		}
+		@include s-r-9(padding-bottom);
+
 		.footerwidgets-centered & {
 			text-align: center;
 		}
@@ -51,22 +52,20 @@
 .footer-info {
 	@include flexbox;
 	flex-direction: column;
-	@include breakpoint(m) {
-		flex-direction: row-reverse;
+	@include breakpoint(sm) {
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
 	.footerinfo-centered & {
 		justify-content: center;
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			flex-direction: column;
 		}
 	}
 }
 
 .site-info {
-
-	@include font-body-xs;
 	color: $color__text_two;
 
 	.footerinfo-centered & {
@@ -84,7 +83,6 @@
 
 	a {
 		padding: 0;
-		@include font-body-xs;
 		color: $color__text_two;
 
 		&:hover {
@@ -95,32 +93,29 @@
 
 /* Footer Social Nav */
 .social-footer-nav {
-	padding-bottom: $spacing-mobile-4;
+	padding-bottom: $s-6;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		padding: 0;
 	}
 
 	.footerinfo-centered & {
 		@include flexbox;
 		justify-content: center;
-		padding-bottom: $spacing-mobile-4;
-		@include breakpoint(m) {
-			padding-bottom: $spacing-desktop-4;
-		}
+		@include s-r-7(padding-bottom);
 	}
 }
 
 .footer-nav ul li {
 	display: block;
-	padding: 0 0 $spacing-3;
+	padding: 0 0 $s-6;
 
 	&:last-child {
 		padding: 0;
 	}
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		display: inline-block;
-		padding: 0 $spacing-3 0 0;
+		padding: 0 $s-6 0 0;
 	}
 }
 

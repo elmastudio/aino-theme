@@ -1,34 +1,24 @@
 .blog .site-content,
 .blog-archive .site-content {
-	padding-bottom: $spacing-desktop-9;
-
-	@include breakpoint(m) {
-		padding-bottom: $spacing-desktop-10;
-	}
+	@include s-r-12 (padding-bottom);
 }
 
-.site-main .navigation,
-.site-main .post-navigation {
-
+.site-main .navigation {
 	@include font-body-s;
 }
 
 .blog .site-main .navigation,
 .blog-archive .site-main .navigation {
 
-	@include breakpoint(m) {
-		margin-left: $spacing-3;
-		margin-right: $spacing-3;
+	@include breakpoint(sm) {
+		margin-left: $s-6;
+		margin-right: $s-6;
 	}
 }
 
 .blog .site-main .navigation .nav-links,
 .blog-archive .site-main .navigation .nav-links {
-	margin-top: $spacing-mobile-6;
-
-	@include breakpoint(m) {
-		margin-top: $spacing-desktop-6;
-	}
+	@include s-r-9(margin-top);
 }
 
 .blog .nav-links,
@@ -46,12 +36,12 @@
 .entry-content .page-links .post-page-numbers {
 	display: none;
 	text-align: center;
-	margin: 0 $spacing-xs;
+	margin: 0 $s-2;
 	padding: 0.906rem 0 0;
-	width: $spacing-desktop-6;
-	height: $spacing-desktop-6;
+	width: $s-9;
+	height: $s-9;
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 		display: block;
 	}
 }
@@ -66,8 +56,8 @@
 .blog-archive .site-main .navigation .prev,
 .blog-archive .site-main .navigation .next {
 	margin: 0;
-	width: $spacing-desktop-6;
-	height: $spacing-desktop-6;
+	width: $s-9;
+	height: $s-9;
 	background: transparent;
 	position: absolute;
 	top: 0;
@@ -100,82 +90,13 @@
 .site-main .navigation .prev .icon-arrow-left,
 .site-main .navigation .next .icon-arrow-right {
 	position: absolute;
-	left: $spacing-s;
-	top: $spacing-s;
+	left: $s-3;
+	top: $s-3;
 }
 
 .blog .site-main .navigation .meta-nav,
 .blog-archive .site-main .navigation .meta-nav {
 	display: none;
-}
-
-/* Pagination - Single Post */
-.single-post .nav-links {
-	padding: 0 0 $spacing-mobile-9;
-	@include breakpoint(m) {
-		padding: 0 0 $spacing-desktop-9;
-	}
-}
-
-.post-navigation {
-
-	.nav-previous,
-	.nav-next {
-		@include flexbox;
-		align-items: center;
-	}
-
-	.nav-previous {
-		padding-bottom: $spacing-mobile-6;
-
-		@include breakpoint(m) {
-			padding-bottom: 0;
-		}
-	}
-
-	.nav-next {
-		padding-top: $spacing-mobile-6;
-		border-top: 1px solid $color__border;
-
-		@include breakpoint(m) {
-			flex-direction: row-reverse;
-			justify-content: flex-end;
-			padding-top: 0;
-			border-top: none;
-			border-left: 1px solid $color__border;
-		}
-	}
-
-	.nav-thumb {
-		flex-basis: auto;
-		flex-shrink: 0;
-		width: $spacing-desktop-9;
-		height: $spacing-desktop-9;
-		margin: 0 $spacing-2 0 0;
-	}
-
-	.nav-next .nav-thumb {
-
-		@include breakpoint(m) {
-			margin: 0 0 0 $spacing-2;
-		}
-	}
-
-	.nav-title {
-		display: block;
-	}
-
-	.nav-next .nav-title {
-
-		@include breakpoint(m) {
-			text-align: right;
-			flex-grow: 3;
-		}
-	}
-
-	.nav-title span {
-		display: block;
-	}
 }
 
 .page-numbers,

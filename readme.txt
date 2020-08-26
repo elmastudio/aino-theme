@@ -4,7 +4,7 @@ Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images
 Requires at least: 5.0
 Tested up to: WordPress 5.4.2
 Requires PHP: 7.3
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -43,8 +43,18 @@ Aino WordPress Theme bundles the following third-party resources:
 
 == Changelog ==
 
+= 1.1.7 =
+* New: Support for custom line-height and custom units in blocks.
+* New: Add support for experimental link color in Paragraph, Heading, Group, Columns, and Media & Text blocks.
+* Enhance: Custom font size palette.
+* Enhance: Bold heading styles.
+* Enhance: CSS for grid and media query breakpoints.
+* Enhance: Footer widgets.
+* Enhance: Translations.
+* Bugfix: Add custom color and gradient palette to editor styles.
+
 = 1.1.6 =
-* Enhance: CSS styling for Aino blocks.
+* Bugfix: CSS styling for Aino blocks.
 
 = 1.1.5 =
 * Bugfix: Douple text domain issue in searchform.php

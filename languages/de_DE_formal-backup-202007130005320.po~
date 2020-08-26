@@ -670,7 +670,7 @@ msgstr "Zeige Kommentare mit Umrandung"
 
 #: inc/customizer/customizer.php:806
 msgid "The primary text link hover and button background color."
-msgstr "Die Farbe für Textlink-Hovers und Button-Hintergründe."
+msgstr ""
 
 #: inc/customizer/customizer.php:828
 msgid "The heading text color."

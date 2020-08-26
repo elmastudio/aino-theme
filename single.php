@@ -25,8 +25,6 @@ get_header(); ?>
 				<?php comments_template(); ?>
 			<?php endif; ?>
 
-			<?php get_template_part( 'template-parts/post/nav-single' ); ?>
-
 			<?php
 				endwhile; // End of the loop.
 		?>

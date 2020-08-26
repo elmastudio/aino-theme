@@ -18,11 +18,7 @@
 		.wp-block-calendar,
 		.wp-block-archives-dropdown {
 			@include push--auto;
-			margin-bottom: $spacing-mobile-4;
-	
-			@include breakpoint(m) {
-				margin-bottom: $spacing-desktop-4;
-			}
+			@include s-r-7(margin-bottom);
 		}
 	}
 }
@@ -39,14 +35,14 @@
 		margin-right: auto;
 		clear: both;
 
-		@include breakpoint(m) {
-			padding-left: $grid-margins-l;
-			padding-right: $grid-margins-l;
+		@include breakpoint(sm) {
+			padding-left: $s-9;
+			padding-right: $s-9;
 		}
 
-		@include breakpoint(xxl) {
-			padding-left: $grid-margins-s;
-			padding-right: $grid-margins-s;
+		@include breakpoint(xl) {
+			padding-left: $s-6;
+			padding-right: $s-6;
 		}
 	}
 
@@ -68,17 +64,17 @@
 		overflow: hidden;
 		margin-left: auto;
 		margin-right: auto;
-		padding-left: $grid-margins-s;
-		padding-right: $grid-margins-s;
+		padding-left: $s-6;
+		padding-right: $s-6;
 
-		@include breakpoint(s) {
-			padding-left: $grid-margins-l;
-			padding-right: $grid-margins-l;
+		@include breakpoint(sm) {
+			padding-left: $s-9;
+			padding-right: $s-9;
 		}
 
-		@include breakpoint(xxl) {
-			padding-left: $grid-margins-s;
-			padding-right: $grid-margins-s;
+		@include breakpoint(xl) {
+			padding-left: $s-6;
+			padding-right: $s-6;
 		}
 	}
 }
@@ -86,14 +82,6 @@
 /* Paragraph */
 
 .entry-content p {
-
-	&.has-background {
-		padding: $spacing-mobile-4;
-
-		@include breakpoint(m) {
-			padding: $spacing-desktop-4;
-		}
-	}
 
 	&.has-drop-cap:not(:focus):first-letter {
 		float: left;
@@ -103,7 +91,7 @@
 		font-style: normal;
 		font-size: 100px;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			font-size: 120px;
 			line-height: 0.77;
 			margin: 6px 12px 0 -8px;
@@ -111,7 +99,7 @@
 	}
 
 	&.intro.has-drop-cap:not(:focus):first-letter {
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			font-size: 142px;
 		}
 	}
@@ -120,14 +108,13 @@
 /* Columns */
 
 .wp-block-columns {
-
-	margin-bottom: $spacing-mobile-6;
+	margin-bottom: $s-7;
 
 	.wp-block-column>*:last-child {
 		margin-bottom: 0;
 	}
 
-	@include breakpoint(s) {
+	@include breakpoint(sm) {
 
 		@include flexbox;
 		flex-grow: 0;
@@ -140,7 +127,7 @@
 			flex: 1 0 21%;
 
 			&:nth-child(2n) {
-				margin-left: $spacing-mobile-6;
+				margin-left: $s-7;
 			}
 		}
 
@@ -161,7 +148,7 @@
 		}
 	}
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 
 		flex-basis: calc(50% - 48px);
 		padding-left: 0;
@@ -172,7 +159,7 @@
 			flex: 1 0 25%;
 
 			&:nth-child(2n) {
-				margin-left: $spacing-desktop-6;
+				margin-left: $s-9;
 			}
 		}
 
@@ -199,23 +186,15 @@
 
 	.wp-block-button {
 		margin-top: 0;
-		margin-bottom: $spacing-mobile-4;
-
-		@include breakpoint(m) {
-			margin-bottom: $spacing-desktop-4;
-		}
+		@include s-r-7(margin-bottom);
 	}
 
 	&.alignleft {
 
 		.wp-block-button {
 			float: left;
-			margin-top: $spacing-xxs;
-			margin-right: $spacing-mobile-4;
-
-			@include breakpoint(m) {
-				margin-right: $spacing-desktop-4;
-			}
+			margin-top: $s-1;
+			@include s-r-7(margin-right);
 		}
 	}
 
@@ -223,12 +202,8 @@
 
 		.wp-block-button {
 			float: right;
-			margin-top: $spacing-xxs;
-			margin-left: $spacing-mobile-4;
-
-			@include breakpoint(m) {
-				margin-left: $spacing-desktop-4;
-			}
+			margin-top: $s-1;
+			@include s-r-7(margin-left);
 		}
 	}
 }
@@ -244,7 +219,6 @@
 		text-decoration: none;
 		outline: none;
 		height: auto;
-		background: $color__primary;
 		box-shadow: none;
 
 		&:not(.has-background) {
@@ -279,14 +253,16 @@
 
 .wp-block-image {
 
+	margin-bottom: 0;
+
 	&.alignright {
 		display: block;
 		float: none;
-		margin-bottom: $spacing-mobile-5;
+		margin-bottom: $s-7;
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: right;
-			margin: $spacing-1 0 $spacing-desktop-4 $spacing-desktop-4;
+			margin: $s-2 0 $s-7 $s-7;
 		}
 	}
 
@@ -294,9 +270,9 @@
 		float: left;
 		margin-right: 1em;
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: left;
-			margin: $spacing-1 $spacing-desktop-4 $spacing-desktop-4 0;
+			margin: $s-2 $s-7 $s-7 0;
 		}
 	}
 
@@ -329,7 +305,7 @@
 .wp-block-audio figcaption,
 .wp-block-embed figcaption {
 	display: block;
-	margin: $spacing-2 0 0;
+	margin: $s-4 0 0;
 	text-align: center;
 	@include font-body-xs;
 }
@@ -360,7 +336,7 @@
 		}
 
 		&.alignwide {
-			@include breakpoint(m) {
+			@include breakpoint(sm) {
 				margin-left: calc(31.75% - 31.75vw);
 				margin-right: calc(31.75% - 31.75vw);
 			}
@@ -374,12 +350,8 @@
 
 	.blocks-gallery-caption {
 		width: 100%;
-		margin-bottom: $spacing-mobile-4;
+		@include s-r-7(margin-bottom);
 		text-align: center;
-
-		@include breakpoint(m) {
-			margin-bottom: $spacing-desktop-4;
-		}
 	}
 }
 
@@ -444,10 +416,9 @@
 
 	&.is-style-solid-color,
 	&.is-style-solid-color {
-		padding: $spacing-3;
+		padding: $s-6;
 		background-color: $color__background;
 		clear: both;
-		@include border-radius-m;
 
 		blockquote {
 			max-width: 100%;
@@ -475,7 +446,7 @@
 	.wp-block-cover__inner-container {
 
 		width: 100%;
-		padding: $spacing-desktop-6 0;
+		padding: $s-9 0;
 
 		p {
 			margin-bottom: 0;
@@ -496,10 +467,10 @@
 /* Media & Text */
 
 .wp-block-media-text .wp-block-media-text__content {
-	padding: 0 $grid-margins-s;
+	padding: 0 $s-6;
 	
-	@include breakpoint(m) {
-		padding: 0$grid-margins-l;
+	@include breakpoint(sm) {
+		padding: 0 $s-9;
 	}
 }
 
@@ -572,11 +543,6 @@
 .wp-block-separator {
 	border: none;
 	border-top: 1px solid rgba(0, 0, 0, 0.12);
-	margin-bottom: $spacing-mobile-6;
-
-	@include breakpoint(m) {
-		margin-bottom: $spacing-desktop-6;
-	}
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
@@ -602,11 +568,10 @@
 .entry-content .page-links {
 	align-items: baseline;
 	@include push--auto;
-	padding: $spacing-mobile-6 0;
-
-	@include breakpoint(m) {
-		padding: $spacing-desktop-6 0;
-	}
+	@include s-r-9 (padding-top);
+	@include s-r-9 (padding-bottom);
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /* Block category Widgets */
@@ -633,13 +598,13 @@
 
 	caption {
 		color: $color__text_one;
-		margin-bottom: $spacing-2;
+		margin-bottom: $s-4;
 		text-align: center;
 	}
 
 	table {
 
-		margin-bottom: $spacing-2;
+		margin-bottom: $s-4;
 		background: $color__white;
 
 		th {
@@ -667,7 +632,7 @@
 
 .wp-block-latest-comments__comment-excerpt p {
 	@include font-body-s;
-	margin: $spacing-1 0 $spacing-3;
+	margin: $s-2 0 $s-6;
 }
 
 /* Preformatted */
@@ -675,15 +640,9 @@
 .wp-block-preformatted,
 .wp-block-code {
 	overflow: auto;
-	padding: $spacing-mobile-4;
-	margin-bottom: $spacing-mobile-4;
-	@include border-radius-m;
+	@include s-r-7(padding);
+	@include s-r-7(margin-bottom);
 	@include font-code;
-
-	@include breakpoint(m) {
-		padding: $spacing-desktop-4;
-		margin-bottom: $spacing-desktop-4;
-	}
 }
 
 .wp-block-code {
@@ -728,7 +687,7 @@
 	&.alignright {
 		width: 100%;
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			max-width: $col3;
 		}
 	}
@@ -740,33 +699,33 @@
 
 	&.alignleft {
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: left;
-			margin: 0 $spacing-mobile-6 $spacing-mobile-6 0;
+			margin: 0 $s-7 $s-7 0;
 		}
 
-		@include breakpoint(m) {
-			margin: 0 $spacing-desktop-6 $spacing-desktop-6;
+		@include breakpoint(md) {
+			margin: 0 $s-9 $s-9;
 		}
 
-		@include breakpoint(xxl) {
-			margin: 0 $spacing-desktop-6 $spacing-desktop-6 $spacing-mobile-4;
+		@include breakpoint(xl) {
+			margin: 0 $s-9 $s-9 $s-7;
 		}
 	}
 
 	&.alignright {
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			float: right;
-			margin: 0 0 $spacing-mobile-6 $spacing-mobile-6;
+			margin: 0 0 $s-7 $s-7;
 		}
 
-		@include breakpoint(m) {
-			margin: 0 $spacing-desktop-6 $spacing-desktop-6;
+		@include breakpoint(md) {
+			margin: 0 $s-9 $s-9;
 		}
 
-		@include breakpoint(xxl) {
-			margin: 0 $spacing-mobile-4 $spacing-desktop-6 $spacing-desktop-6;
+		@include breakpoint(xl) {
+			margin: 0 $s-7 $s-9 $s-9;
 		}
 	}
 
@@ -855,78 +814,74 @@
 }
 
 /* Custom Gradients Palette */
+.has-grayish-blue-to-dark-grayish-blue-gradient-background {
+	background: linear-gradient(0deg, rgb(91, 108, 114) 0%, rgb(60, 68, 72) 100%);
+}
 
-.entry-content {
+.has-soft-orange-to-desaturated-dark-cyan-gradient-background {
+	background: linear-gradient(270deg, rgb(67, 92, 103) 0%, rgb(114, 164, 163) 46%, rgb(251, 162, 137) 74%, rgb(252, 202, 164) 100%);
+}
 
-	.has-grayish-blue-to-dark-grayish-blue-gradient-background {
-		background: linear-gradient(0deg, rgb(91, 108, 114) 0%, rgb(60, 68, 72) 100%);
-	}
+.has-light-grayish-magenta-to-very-dark-grayish-pink-gradient-background {
+	background: linear-gradient(0deg, rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%, rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%);
+}
 
-	.has-soft-orange-to-desaturated-dark-cyan-gradient-background {
-		background: linear-gradient(270deg, rgb(67, 92, 103) 0%, rgb(114, 164, 163) 46%, rgb(251, 162, 137) 74%, rgb(252, 202, 164) 100%);
-	}
+.has-light-grayish-red-to-dark-red-gradient-background {
+	background: linear-gradient(0deg, rgb(143, 34, 40) 0%, rgb(250, 110, 115) 50%, rgb(219, 191, 193) 100%);
+}
 
-	.has-light-grayish-magenta-to-very-dark-grayish-pink-gradient-background {
-		background: linear-gradient(0deg, rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%, rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%);
-	}
+.has-slightly-desaturated-cyan-to-very-soft-red-gradient-background {
+	background: linear-gradient(0deg, rgb(129, 195, 198) 0%, rgb(251, 198, 167) 48%, rgb(250, 168, 182) 100%);
+}
 
-	.has-light-grayish-red-to-dark-red-gradient-background {
-		background: linear-gradient(0deg, rgb(143, 34, 40) 0%, rgb(250, 110, 115) 50%, rgb(219, 191, 193) 100%);
-	}
+.has-very-soft-orange-to-very-soft-pink-gradient-background {
+	background: radial-gradient(circle at bottom, rgb(251, 219, 190) 0%, rgb(252, 170, 161) 26%, rgb(250, 152, 162) 54%, rgb(246, 182, 211) 75%, rgb(250, 232, 243) 100%);
+}
 
-	.has-slightly-desaturated-cyan-to-very-soft-red-gradient-background {
-		background: linear-gradient(0deg, rgb(129, 195, 198) 0%, rgb(251, 198, 167) 48%, rgb(250, 168, 182) 100%);
-	}
+.has-grayish-violet-to-soft-orange-gradient-background {
+	background: linear-gradient(180deg, rgb(173, 160, 191) 0%, rgb(225, 205, 236) 29%, rgb(243, 206, 225) 51%, rgb(241, 196, 141) 72%, rgb(240, 193, 97) 100%);
+}
 
-	.has-very-soft-orange-to-very-soft-pink-gradient-background {
-		background: radial-gradient(circle at bottom, rgb(251, 219, 190) 0%, rgb(252, 170, 161) 26%, rgb(250, 152, 162) 54%, rgb(246, 182, 211) 75%, rgb(250, 232, 243) 100%);
-	}
+.has-light-grayish-red-to-dark-grayish-blue-gradient-background {
+	background: linear-gradient(180deg, rgb(252, 202, 210) 0%, rgb(222, 158, 167) 46%, rgb(118, 119, 135) 100%);
+}
 
-	.has-grayish-violet-to-soft-orange-gradient-background {
-		background: linear-gradient(180deg, rgb(173, 160, 191) 0%, rgb(225, 205, 236) 29%, rgb(243, 206, 225) 51%, rgb(241, 196, 141) 72%, rgb(240, 193, 97) 100%);
-	}
+.has-light-grayish-red-to-very-soft-blue-gradient-background {
+	background: linear-gradient(135deg, rgb(237, 204, 211) 0%, rgb(177, 181, 225) 100%);
+}
 
-	.has-light-grayish-red-to-dark-grayish-blue-gradient-background {
-		background: linear-gradient(180deg, rgb(252, 202, 210) 0%, rgb(222, 158, 167) 46%, rgb(118, 119, 135) 100%);
-	}
+.has-soft-blue-to-lime-green-gradient-background {
+	background: linear-gradient(0deg, rgb(104, 134, 254) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 61%, rgb(213, 233, 207) 75%, rgb(8, 179, 82) 100%);
+}
 
-	.has-light-grayish-red-to-very-soft-blue-gradient-background {
-		background: linear-gradient(135deg, rgb(237, 204, 211) 0%, rgb(177, 181, 225) 100%);
-	}
+.has-soft-blue-to-dark-moderate-violet-gradient-background {
+	background: linear-gradient(135deg, rgb(103, 125, 239) 0%, rgb(117, 72, 166) 100%);
+}
 
-	.has-soft-blue-to-lime-green-gradient-background {
-		background: linear-gradient(0deg, rgb(104, 134, 254) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 61%, rgb(213, 233, 207) 75%, rgb(8, 179, 82) 100%);
-	}
+.has-soft-red-to-very-soft-blue-gradient-background {
+	background: linear-gradient(0deg, rgb(250, 110, 90) 0%, rgb(255, 202, 192) 24%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 62%, rgb(223, 227, 255) 77%, rgb(157, 144, 250) 100%);
+}
 
-	.has-soft-blue-to-dark-moderate-violet-gradient-background {
-		background: linear-gradient(135deg, rgb(103, 125, 239) 0%, rgb(117, 72, 166) 100%);
-	}
+.has-dark-blue-to-mostly-black-blue-gradient-background {
+	background: radial-gradient(circle at bottom, rgb(19, 20, 143) 0%, rgb(13, 11, 24) 100%);
+}
 
-	.has-soft-red-to-very-soft-blue-gradient-background {
-		background: linear-gradient(0deg, rgb(250, 110, 90) 0%, rgb(255, 202, 192) 24%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 62%, rgb(223, 227, 255) 77%, rgb(157, 144, 250) 100%);
-	}
+.has-very-soft-blue-to-dark-grayish-blue-gradient-background {
+	background: radial-gradient(circle at bottom, rgb(153, 203, 233) 0%, rgb(121, 132, 157) 100%);
+}
 
-	.has-dark-blue-to-mostly-black-blue-gradient-background {
-		background: radial-gradient(circle at bottom, rgb(19, 20, 143) 0%, rgb(13, 11, 24) 100%);
-	}
+.has-soft-pink-to-mostly-pure-orange-gradient-background {
+	background: radial-gradient(circle at bottom, rgb(253, 79, 156) 0%, rgb(254, 132, 0) 100%);
+}
 
-	.has-very-soft-blue-to-dark-grayish-blue-gradient-background {
-		background: radial-gradient(circle at bottom, rgb(153, 203, 233) 0%, rgb(121, 132, 157) 100%);
-	}
+.has-bright-cyan-to-soft-magenta-gradient-background {
+	background: linear-gradient(0deg, rgb(48, 203, 247) 0%, rgb(254, 128, 254) 100%);
+}
 
-	.has-soft-pink-to-mostly-pure-orange-gradient-background {
-		background: radial-gradient(circle at bottom, rgb(253, 79, 156) 0%, rgb(254, 132, 0) 100%);
-	}
+.has-light-red-to-very-light-pink-gradient-background {
+	background: linear-gradient(90deg, rgb(255, 131, 92) 0%, rgb(255, 148, 193) 100%);
+}
 
-	.has-bright-cyan-to-soft-magenta-gradient-background {
-		background: linear-gradient(0deg, rgb(48, 203, 247) 0%, rgb(254, 128, 254) 100%);
-	}
-
-	.has-light-red-to-very-light-pink-gradient-background {
-		background: linear-gradient(90deg, rgb(255, 131, 92) 0%, rgb(255, 148, 193) 100%);
-	}
-
-	.has-very-soft-violet-to-very-soft-pink-gradient-background {
-		background: linear-gradient(90deg, rgb(198, 163, 245) 0%, rgb(248, 162, 199) 100%);
-	}
+.has-very-soft-violet-to-very-soft-pink-gradient-background {
+	background: linear-gradient(90deg, rgb(198, 163, 245) 0%, rgb(248, 162, 199) 100%);
 }

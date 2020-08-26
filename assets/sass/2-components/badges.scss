@@ -10,7 +10,7 @@
 	line-height: 1.23;
 	background: $color__black;
 	color: $color__white;
-	padding: $spacing-1 $spacing-2;
+	padding: $s-2 $s-4;
 
 	.btn-curved & {
 		border-radius: $border-radius-xs;
@@ -28,7 +28,7 @@
 	align-items: center;
 
 	.author-badge {
-		@include font-body-xxs;
+		@include font-body-2xs;
 		@include font-bold;
 		line-height: 1;
 		color: $color__border;

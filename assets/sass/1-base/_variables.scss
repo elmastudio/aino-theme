@@ -1,4 +1,4 @@
-// New Colors
+/* Colour Variables */
 $color__primary      : #1765d8;
 $color__text_one     : #111111;
 $color__text_two     : #222222;
@@ -13,42 +13,37 @@ $color__black        : #000000;
 $color__white        : #ffffff;
 $color__white_hover  : rgba(255, 255, 255, 0.6);
 
-// New Typography
-$font__heading       : "Roboto", sans-serif;
-$font__body          : "Roboto", sans-serif;
-$font__code          : "Monaco", "Courier 10 Pitch", Courier, monospace;
+/* Fonts */
+$font__heading       : 'Roboto', sans-serif;
+$font__body          : 'Roboto', sans-serif;
+$font__code          : 'Monaco', 'Courier 10 Pitch', Courier, monospace;
 
-// Spacing
-$spacing-none        : 0;
-$spacing-1           : 0.5rem; // 8px
-$spacing-2           : 1rem;// 16px
-$spacing-3           : 1.5rem; // 24px
-$spacing-mobile-4    : 1.5rem; // 24px
-$spacing-desktop-4   : 2rem; // 32px
-$spacing-mobile-5    : 2rem; // 32px
-$spacing-desktop-5   : 2.5rem; // 40px
-$spacing-mobile-6    : 2rem; // 32px
-$spacing-desktop-6   : 3rem; // 48px
-$spacing-mobile-7    : 2.5rem; // 40px
-$spacing-desktop-7   : 3.5rem; // 56px
-$spacing-mobile-8    : 2.5rem; // 40px
-$spacing-desktop-8   : 4.5rem; // 72px
-$spacing-mobile-9    : 3rem; // 48px
-$spacing-desktop-9   : 6rem; // 96px
-$spacing-mobile-10   : 3rem; // 48px
-$spacing-desktop-10  : 9rem; // 144px
-$spacing-mobile-11   : 3.5rem; // 56px
-$spacing-desktop-11  : 12rem; // 192px
+/* Spacing */
+$s-0 : 0;
+$s-1 : 0.25rem;
+$s-2 : 0.5rem;
+$s-3 : 0.75rem;
+$s-4 : 1rem;
+$s-5 : 1.25rem;
+$s-6 : 1.5rem;
+$s-7 : 2rem;
+$s-8 : 2.5rem;
+$s-9 : 3rem;
+$s-10 : 4rem;
+$s-11: 5rem;
+$s-12: 6rem;
+$s-13: 7.5rem;
+$s-14: 9rem;
+$s-15: 11rem;
+$s-16: 13rem;
+$s-17: 15.5rem;
+$s-18: 18rem;
 
-$spacing-xxs         : 0.25rem; // 4px
-$spacing-xs          : 0.5rem; // 8px
-$spacing-s           : 0.75rem; // 12px
-
-// Spacing Headerbar
+/* Spacing Header Bar */
 $stickyheader-mobile : 3.438rem; // 55px
 $stickyheader-desktop: 5.5rem; // 88px
 
-// Grid Columns
+/* Grid Columns */
 $col1                : 7.5rem; // 1 grid column
 $col2                : 15rem; // 2 grid column
 $col3                : 22.5rem;
@@ -74,13 +69,8 @@ $col10-no-gutter     : 72rem;
 $col11-no-gutter     : 79.5rem;
 $col12-no-gutter     : 87rem;
 
-// Grid Margins
-$grid-margins-xs     : 1rem; // 16px
-$grid-margins-s      : 1.5rem; // 24px
-$grid-margins-m      : 2rem; // 32px
-$grid-margins-l      : 3rem; // 48px
 
-// Border Radius
+/* Border Radius */
 $border-radius-xs    : 0.5rem; // 8px
 $border-radius-s     : 0.75rem; // 12px
 $border-radius-m     : 1.5rem; // 24px

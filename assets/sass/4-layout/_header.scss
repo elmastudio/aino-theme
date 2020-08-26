@@ -1,9 +1,9 @@
 .site-header {
 
-	padding: $spacing-3 0;
+	padding: $s-6 0;
 
-	@include breakpoint(m) {
-		padding: $spacing-3 0;
+	@include breakpoint(sm) {
+		padding: $s-6 0;
 	}
 
 	.admin-bar & {
@@ -20,8 +20,8 @@
 	@include flexbox;
 	align-items: center;
 	margin: 0 auto 0 0;
-	padding-right: $spacing-desktop-4;
-	min-height: $spacing-mobile-5;
+	padding-right: $s-7;
+	min-height: $s-7;
 
 	h1.site-title,
 	.site-title,
@@ -32,13 +32,13 @@
 
 	.site-description {
 		display: none;
-		height: $spacing-desktop-4;
+		height: $s-7;
 		margin: 0;
-		padding: 0 0 0 $spacing-2;
-		@include font-body-xxs;
+		padding: 0 0 0 $s-4;
+		@include font-body-2xs;
 		color: $color__text_two;
 
-		@include breakpoint(m) {
+		@include breakpoint(sm) {
 			@include flexbox;
 			@include flex-center;
 		}
@@ -48,8 +48,8 @@
 			display: block;
 			width: 1px;
 			background-color: $color__border;
-			height: $spacing-3;
-			margin-right: $spacing-2;
+			height: $s-6;
+			margin-right: $s-4;
 		}
 
 		.tagline-hide & {
@@ -59,19 +59,23 @@
 
 	.custom-logo-link {
 		display: block;
-		padding: 0 $spacing-xs 0 0;
-		max-height: $spacing-mobile-5;
+		padding: 0 $s-2 0 0;
 
 		img {
 			width: auto !important;
-			height: $spacing-mobile-5;
+			height: $s-7;
+			object-fit: fill;
+			max-height: $s-7;
+
+			@include breakpoint(header) {
+				max-height: none;
+			}
 		}
 
 		@include breakpoint(header) {
 			max-height: 100%;
 
 			img {
-				width: auto !important;
 				height: auto;
 			}
 		}
@@ -81,11 +85,11 @@
 /* Header Search Form */
 .search-header {
 	position: relative;
-	margin: $spacing-2 0 0 0;
+	margin: $s-4 0 0 0;
 	padding: 0;
 
 	@include breakpoint(header) {
-		margin: 0 0 0 $spacing-desktop-4;
+		margin: 0 0 0 $s-7;
 		padding: 0;
 	}
 
@@ -108,7 +112,7 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $spacing-desktop-5;
+		height: $s-8;
 		padding: 0 0 0 46px;
 		vertical-align: middle;
 		border: 1px solid $color__border;
@@ -121,7 +125,7 @@
 .social-header-nav {
 	display: none;
 	margin: 0;
-	padding: $spacing-mobile-5 0;
+	padding: $s-7 0;
 
 	@include breakpoint(header) {
 		display: block;
@@ -129,15 +133,15 @@
 	}
 
 	ul li a {
-		padding: 0 $spacing-3 0 0;
+		padding: 0 $s-6 0 0;
 	}
 
 	.has-nav-main & {
-		margin-top: $spacing-mobile-5;
+		margin-top: $s-7;
 
 		@include breakpoint(header) {
 			margin-top: 0;
-			padding-left: $spacing-desktop-4;
+			padding-left: $s-7;
 		}
 	}
 }
@@ -165,8 +169,8 @@
 
 .menu-social-container ul li a {
 	display: block;
-	width: $spacing-desktop-5;
-	height: $spacing-desktop-5;
+	width: $s-8;
+	height: $s-8;
 	line-height: 1;
 	margin: 0;
 	overflow: hidden;
@@ -205,23 +209,24 @@
 			padding: 0;
 		}
 
-		@include breakpoint(s) {
+		@include breakpoint(sm) {
 			width: auto;
 		}
 		@include breakpoint(header) {
-			padding: 0 $spacing-2 0 0;
+			padding: 0 $s-4 0 0;
 		}
 	}
 
 	.has-nav-main &,
 	.has-nav-social & {
+
 		@include breakpoint(header) {
-			padding: 0 0 0 $spacing-desktop-4;
+			padding: 0 0 0 $s-7;
 		}
 	}
 
 	.has-nav-social & {
-		padding-top: $spacing-mobile-5;
+		padding-top: $s-7;
 
 		@include breakpoint(header) {
 			padding-top: 0;
@@ -297,21 +302,21 @@
 .nav-toggle {
 	position: absolute;
 	bottom: 0;
-	top: $spacing-3;
-	right: $spacing-3;
-	padding: $spacing-xxs;
+	top: $s-6;
+	right: $s-6;
+	padding: $s-1;
 	border-radius: 0;
 	color: $color__text_one;
-	width: $spacing-mobile-5;
-	height: $spacing-mobile-5;
+	width: $s-7;
+	height: $s-7;
 
-	@include breakpoint(s) {
-		right: $spacing-mobile-9;
+	@include breakpoint(sm) {
+		right: $s-9;
 	}
 }
 
 button.close-nav-toggle {
-	padding: $spacing-3;
+	padding: $s-6;
 	border-radius: 0;
 	color: $color__text_one;
 	align-items: center;
@@ -377,18 +382,18 @@ ul.primary-menu {
 	}
 
 	> li {
-		margin: 0 $spacing-desktop-4 0 0;
+		margin: 0 $s-7 0 0;
 
 		&:last-child {
 			margin-right: 0;
 		}
 
 		&.menu-item-has-children > a {
-			padding-right: $spacing-3;
+			padding-right: $s-6;
 		}
 
 		> .icon {
-			right: $spacing-xxs;
+			right: $s-1;
 			top: 0.375rem; // 6px
 		}
 	}
@@ -397,8 +402,8 @@ ul.primary-menu {
 		color: $color__text_one;
 		display: block;
 		text-decoration: none;
-		padding-top: $spacing-xxs;
-		padding-bottom: $spacing-xxs;
+		padding-top: $s-1;
+		padding-bottom: $s-1;
 	}
 
 	ul {
@@ -406,7 +411,7 @@ ul.primary-menu {
 		@include font-body-xs;
 		background: $color__white;
 		color: $color__text_one;
-		padding: $spacing-3;
+		padding: $s-6;
 		position: absolute;
 		opacity: 0;
 		right: 9999rem;
@@ -463,7 +468,7 @@ ul.primary-menu {
 		}
 
 		li {
-			margin-bottom: $spacing-xs;
+			margin-bottom: $s-2;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -506,7 +511,22 @@ ul.primary-menu {
 		}
 
 		ul a {
-			@include font-body-xxs;
+			@include font-body-2xs;
+		}
+	}
+}
+
+@include breakpoint(lg) {
+	.header-big ul.primary-menu li,
+	.header-big .btn-naked a {
+		@include font-body-xl;
+
+		li {
+			@include font-body-m;
+		}
+
+		>.icon {
+			top: 0.9rem;
 		}
 	}
 }
@@ -637,8 +657,8 @@ button.sub-menu-toggle {
 	flex-shrink: 0;
 	margin: 0;
 	padding: 0;
-	width: $spacing-desktop-7;
-	height: $spacing-desktop-7;
+	width: $s-10;
+	height: $s-10;
 	color: $color__text_one;
 	border-radius: 0;
 }
@@ -873,7 +893,7 @@ button.sub-menu-toggle.active svg {
 		}
 	}
 
-	@include breakpoint(m) {
+	@include breakpoint(sm) {
 
 		.site-title a,
 		.site-branding .site-description,

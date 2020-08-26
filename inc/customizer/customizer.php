@@ -296,6 +296,26 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Theme Options - Header - Bigger Font Size.
+	$wp_customize->add_setting(
+		'header_bigfont',
+		array(
+			'default'           => aino_defaults( 'header_bigfont' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'header_bigfont',
+		array(
+			'label'       => esc_html__( 'Bigger Font Size', 'aino' ),
+			'description' => esc_html__( 'Choose a bigger font size for the Header menu.', 'aino' ),
+			'section'     => 'aino_header',
+			'type'        => 'checkbox',
+			'priority'    => 2,
+		)
+	);
+
 	// Theme Options - Header - Primary menu bold.
 	$wp_customize->add_setting(
 		'header_menu_bold',
@@ -311,7 +331,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Bold font in primary menu', 'aino' ),
 			'section'  => 'aino_header',
 			'type'     => 'checkbox',
-			'priority' => 2,
+			'priority' => 3,
 		)
 	);
 
@@ -330,13 +350,33 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Uppercase font in primary menu', 'aino' ),
 			'section'  => 'aino_header',
 			'type'     => 'checkbox',
-			'priority' => 3,
+			'priority' => 4,
 		)
 	);
 
 	/**
 	 * Theme Options - Footer
 	 */
+
+	// Theme Options - Footer - Bigger Font Size.
+	$wp_customize->add_setting(
+		'footer_bigfont',
+		array(
+			'default'           => aino_defaults( 'footer_bigfont' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_bigfont',
+		array(
+			'label'       => esc_html__( 'Bigger Font Size', 'aino' ),
+			'description' => esc_html__( 'Choose a bigger font size for the Footer content.', 'aino' ),
+			'section'     => 'aino_footer',
+			'type'        => 'checkbox',
+			'priority'    => 1,
+		)
+	);
 
 	// Theme Options - Footer - Footer Light Text.
 	$wp_customize->add_setting(
@@ -354,7 +394,7 @@ function aino_customize_register( $wp_customize ) {
 			'description' => esc_html__( 'Choose light text colors with a dark Footer background.', 'aino' ),
 			'section'     => 'aino_footer',
 			'type'        => 'checkbox',
-			'priority'    => 1,
+			'priority'    => 2,
 		)
 	);
 
@@ -373,7 +413,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Center Align Footer Widgets', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'checkbox',
-			'priority' => 2,
+			'priority' => 3,
 		)
 	);
 
@@ -392,7 +432,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Center Align Footer Info', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'checkbox',
-			'priority' => 3,
+			'priority' => 4,
 		)
 	);
 
@@ -409,10 +449,10 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'footer_siteinfo',
 		array(
-			'label'    => esc_html__( 'Center Align Footer Info', 'aino' ),
+			'label'    => esc_html__( 'Custom Footer Info Text', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'text',
-			'priority' => 4,
+			'priority' => 5,
 		)
 	);
 
@@ -803,7 +843,7 @@ function aino_customize_register( $wp_customize ) {
 			'primary_one_color',
 			array(
 				'label'       => esc_html__( 'Primary', 'aino' ),
-				'description' => esc_html__( 'The primary link and button background color.', 'aino' ),
+				'description' => esc_html__( 'The primary text link hover and button background color.', 'aino' ),
 				'section'     => 'colors',
 				'priority'    => 2,
 			)

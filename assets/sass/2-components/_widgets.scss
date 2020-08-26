@@ -1,9 +1,9 @@
 /* Widget Areas */
 .header-menu-widget-area {
 	display: block;
-	padding: $spacing-2 0 0;
-	@include breakpoint(m) {
-		padding: $spacing-2 0 0;
+	padding: $s-4 0 0;
+	@include breakpoint(sm) {
+		padding: $s-4 0 0;
 	}
 }
 
@@ -12,7 +12,11 @@
 }
 
 .widget-title {
-	padding: 0 0 $spacing-3;
+	padding: 0 0 $s-6;
+
+	.footer-big & {
+		padding-bottom: $s-10;
+	}
 }
 
 /* Make sure select elements fit in widgets. */
@@ -26,7 +30,11 @@
 
 .widget ul li {
 	list-style: none;
-	padding: 0 0 $spacing-2;
+	padding: 0 0 $s-4;
+
+	.footer-big & {
+		padding-bottom: $s-8;
+	}
 }
 
 .widget ul ul li:last-child {
@@ -34,7 +42,7 @@
 }
 
 .site-footer .sub-menu {
-	padding: $spacing-2 0 0 0;
+	padding: $s-4 0 0 0;
 }
 
 /* Archive + Category + Pages + Nav Menu Widget */
@@ -56,9 +64,9 @@
 .widget-area-default .widget_categories ul.children,
 .widget-area-default .widget_nav_menu .sub-menu,
 .widget-area-default .widget_pages ul.children {
-	padding: $spacing-2 0 0 $spacing-3;
-	@include breakpoint(m) {
-		padding: $spacing-2 0 0 $spacing-3;
+	padding: $s-4 0 0 $s-6;
+	@include breakpoint(sm) {
+		padding: $s-4 0 0 $s-6;
 	}
 }
 /* Calendar Widget */
@@ -77,7 +85,7 @@
 /* Jetpack Sharing buttons */
 .widget_flickr .flickr-images {
 	text-align: left;
-	padding-bottom: $spacing-1;
+	padding-bottom: $s-2;
 }
 
 .entry-content .sharedaddy {

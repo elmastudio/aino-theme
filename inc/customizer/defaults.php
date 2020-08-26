@@ -32,7 +32,7 @@ function aino_defaults( $name ) {
 				'blogcards_bg_hover_color' => '#ffffff',
 
 				// Styling.
-				'heading_fontweight'       => 'bold',
+				'heading_fontweight'       => 'regular',
 				'button_style'             => 'squared',
 				'form_style'               => 'squared',
 				'featuredimg_style'        => 'radius-none',
@@ -42,6 +42,8 @@ function aino_defaults( $name ) {
 				'blogcards_borderradius'   => 'radius-none',
 				'blogcards_animation'      => 'blogcards-movein',
 				'post_excerpt_lengths'     => '15',
+				'header_bigfont'           => false,
+				'footer_bigfont'           => false,
 				'footer_light'             => false,
 				'footerwidget_alignment'   => true,
 				'footerinfo_alignment'     => true,

@@ -281,10 +281,8 @@ function aino_comment( $comment, $args, $depth ) {
 				<?php
 				printf(
 					/* translators: %s: Name of comment author. */
-					'<b class="fn">%s</b> %2$s',
+					'<b class="fn">%s</b>',
 					get_comment_author_link( $comment ),
-					// If current post author is also comment author, make it known visually.
-					( $comment->user_id === $post->post_author ) ? '<span class="author-badge">' . esc_html__( 'Author', 'aino' ) . '</span>' : ''
 				);
 				?>
 				</div><!-- .comment-author -->
@@ -298,10 +296,9 @@ function aino_comment( $comment, $args, $depth ) {
 					<time datetime="<?php comment_time( 'c' ); ?>">
 					<?php
 					printf(
-						/* translators: 1: The comment date. 2: the comment time. */
-						esc_html__( '%1$s at %2$s', 'aino' ),
-						esc_html( get_comment_date( '', $comment ) ),
-						esc_html( get_comment_time() )
+						/* translators: The comment date. */
+						esc_html__( '%1$s', 'aino' ),
+						esc_html( get_comment_date( '', $comment ) )
 					);
 					?>
 					</time>
@@ -500,6 +497,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'h-regular';
 	}
 
+	if ( 'bold' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
+		$classes[] = 'h-bold';
+	}
+
 	// Customizer Options - Styles.
 	if ( 'curved' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
 		$classes[] = 'btn-curved';
@@ -531,6 +532,10 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Header.
+	if ( true === get_theme_mod( 'header_bigfont', aino_defaults( 'header_bigfont' ) ) ) {
+		$classes[] = 'header-big';
+	}
+
 	if ( true === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
 		$classes[] = 'has-header-search';
 	}
@@ -544,6 +549,10 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Footer.
+	if ( true === get_theme_mod( 'footer_bigfont', aino_defaults( 'footer_bigfont' ) ) ) {
+		$classes[] = 'footer-big';
+	}
+
 	if ( true === get_theme_mod( 'footer_light', aino_defaults( 'footer_light' ) ) ) {
 		$classes[] = 'footer-light';
 	}
@@ -740,8 +749,12 @@ add_filter( 'body_class', 'aino_body_classes' );
  */
 function aino_custom_admin_body_class( $classes ) {
 
-	if ( 'bold' === get_theme_mod( 'heading_fontweight', 'regular' ) ) {
-		$classes .= ' h-bold ';
+	if ( 'regular' === get_theme_mod( 'heading_fontweight' ) ) {
+		$classes .= ' h-regular';
+	}
+
+	if ( 'bold' === get_theme_mod( 'heading_fontweight' ) ) {
+		$classes .= ' h-bold';
 	}
 
 	return $classes;

@@ -26,16 +26,21 @@ cite a,
 	}
 }
 
+.page .entry-content .wp-block-group.has-link-color p a:hover,
+.page .entry-content p.has-link-color a:hover {
+	color: var(--wp--style--color--link);
+}
+
 h1, h2, h3, h4, h5, h6,
 .entry-content p,
 .entry-content li {
 
 	&.has-text-color {
 
-	&.has-white-color {
+		&.has-white-color {
 
-		a:hover {
-			color: $color__white_hover;
+			a:hover {
+				color: $color__white_hover;
 			}
 		}
 	}
@@ -79,8 +84,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .entry-tags a {
 	border: 1px solid $color__border;
 	color: $color__text_two;
-	margin: 0 $spacing-xxs $spacing-xs;
-	padding: 6px $spacing-s;
+	margin: 0 $s-1 $s-2;
+	padding: 6px $s-3;
 	@include flexbox;
 	@include flex-center;
 	font-size: 13px;

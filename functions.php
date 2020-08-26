@@ -38,8 +38,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		 * Adds custom image sizes.
 		 */
 		add_image_size( 'aino-l', 1200, 800, true ); // Image Ratio 3:2.
-		add_image_size( 'aino-m', 681, 454, true ); // Image Ratio 3:2.
-		add_image_size( 'aino-s-squared', 96, 96, true );
+		add_image_size( 'aino-m', 735, 490, true ); // Image Ratio 3:2.
 
 		// Custom logo.
 		$logo_width  = 170;
@@ -121,7 +120,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'      => __( 'S', 'aino' ),
 					'shortName' => __( 'S', 'aino' ),
-					'size'      => 17,
+					'size'      => 16,
 					'slug'      => 's',
 				),
 				array(
@@ -139,14 +138,26 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'      => __( 'XL', 'aino' ),
 					'shortName' => __( 'XL', 'aino' ),
-					'size'      => 29,
+					'size'      => 28,
 					'slug'      => 'xl',
 				),
 				array(
 					'name'      => __( 'XXL', 'aino' ),
 					'shortName' => __( 'XXL', 'aino' ),
-					'size'      => 35,
+					'size'      => 34,
 					'slug'      => 'xxl',
+				),
+				array(
+					'name'      => __( '3XL', 'aino' ),
+					'shortName' => __( '3XL', 'aino' ),
+					'size'      => 40,
+					'slug'      => 'xxxl',
+				),
+				array(
+					'name'      => __( '4XL', 'aino' ),
+					'shortName' => __( '4XL', 'aino' ),
+					'size'      => 48,
+					'slug'      => 'xxxxl',
 				),
 			)
 		);
@@ -297,6 +308,19 @@ if ( ! function_exists( 'aino_setup' ) ) :
 
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
+
+		// Add support for experimental link colour in blocks.
+		add_theme_support('experimental-link-color');
+
+		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
+		remove_theme_support( 'core-block-patterns' );
+
+		// Add support for custom custom line-heights in blocks.
+		add_theme_support( 'custom-line-height' );
+
+		// Add support for custom units in blocks.
+		add_theme_support( 'custom-units' );
+
 	}
 	endif;
 	add_action( 'after_setup_theme', 'aino_setup' );
