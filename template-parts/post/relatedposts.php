@@ -24,7 +24,7 @@ if ( $categories ) {
 	$args = array(
 		'category__in'        => $category_ids,
 		'post__not_in'        => array( $post->ID ),
-		'posts_per_page'      => 6,
+		'posts_per_page'      => 2,
 		'ignore_sticky_posts' => 1,
 	);
 

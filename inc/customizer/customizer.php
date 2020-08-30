@@ -296,26 +296,6 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Theme Options - Header - Bigger Font Size.
-	$wp_customize->add_setting(
-		'header_bigfont',
-		array(
-			'default'           => aino_defaults( 'header_bigfont' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'header_bigfont',
-		array(
-			'label'       => esc_html__( 'Bigger Font Size', 'aino' ),
-			'description' => esc_html__( 'Choose a bigger font size for the Header menu.', 'aino' ),
-			'section'     => 'aino_header',
-			'type'        => 'checkbox',
-			'priority'    => 2,
-		)
-	);
-
 	// Theme Options - Header - Primary menu bold.
 	$wp_customize->add_setting(
 		'header_menu_bold',
@@ -357,27 +337,6 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Footer
 	 */
-
-	// Theme Options - Footer - Bigger Font Size.
-	$wp_customize->add_setting(
-		'footer_bigfont',
-		array(
-			'default'           => aino_defaults( 'footer_bigfont' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'footer_bigfont',
-		array(
-			'label'       => esc_html__( 'Bigger Font Size', 'aino' ),
-			'description' => esc_html__( 'Choose a bigger font size for the Footer content.', 'aino' ),
-			'section'     => 'aino_footer',
-			'type'        => 'checkbox',
-			'priority'    => 1,
-		)
-	);
-
 	// Theme Options - Footer - Footer Light Text.
 	$wp_customize->add_setting(
 		'footer_light',
@@ -782,25 +741,6 @@ function aino_customize_register( $wp_customize ) {
 				'radius-m'    => esc_html__( '24', 'aino' ),
 				'radius-l'    => esc_html__( '36', 'aino' ),
 			),
-		)
-	);
-
-	// Theme Options - Single Post - Comment Borders.
-	$wp_customize->add_setting(
-		'comments_border',
-		array(
-			'default'           => aino_defaults( 'comments_border' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'comments_border',
-		array(
-			'label'    => esc_html__( 'Show comments with borders', 'aino' ),
-			'section'  => 'aino_singlepost',
-			'type'     => 'checkbox',
-			'priority' => 2,
 		)
 	);
 

@@ -17,7 +17,7 @@
 	}
 
 	& .entry-meta {
-		padding: $s-4 0 0;
+		@include s-r-4 (padding-top);
 		text-align: center;
 	}
 
@@ -26,11 +26,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
-		padding: 0 0 $s-4;
-
-		a {
-			padding-left: $s-1;
-		}
+		padding: 0;
 	}
 
 	& .byline {
@@ -41,6 +37,10 @@
 	& .entry-comments {
 		position: relative;
 		display: inline-block;
+	}
+
+	& .posted-on {
+		display: block;
 	}
 
 	.post-thumb {
@@ -114,7 +114,6 @@
 
 		@include breakpoint(sm) {
 			@include flexbox;
-			letter-spacing: 0;
 		}
 	}
 }
@@ -211,10 +210,6 @@
 			padding-bottom: 0;
 		}
 	}
-}
-
-.comments-border .comment-content-wrap {
-	border: 1px solid $color__border;
 }
 
 .comment-meta {

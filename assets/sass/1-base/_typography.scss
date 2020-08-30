@@ -14,7 +14,6 @@ textarea,
 
 .posts-container .hentry .entry-footer,
 .hentry .entry-summary,
-.hentry .entry-header .entry-meta,
 .single-post .navigation a span.nav-subtitle,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
@@ -42,20 +41,20 @@ textarea,
 .entry-content p,
 .hentry ol,
 .hentry ul,
-.single-post .entry-cats,
 .page-header .description p,
 .entry-content p.has-m-font-size {
 	@include font-body-m;
 }
 
 .entry-content p.has-l-font-size,
-.entry-content .intro {
+.entry-content .intro,
+.site-branding .site-description,
+ul.primary-menu li,
+.hentry .entry-header .entry-meta {
 	@include font-body-l;
 }
 
-.entry-content p.has-xl-font-size,
-.footer-big .widget ul li,
-.footer-big .site-info {
+.entry-content p.has-xl-font-size {
 	@include font-body-xl;
 }
 
@@ -89,7 +88,6 @@ h6,
 	@include font-regular;
 	color: $color__text_one;
 	line-height: 1.1;
-	@include hyphenation;
 }
 
 h1.site-title,
@@ -148,6 +146,7 @@ h4.has-xxxxl-font-size {
 	@include font-h-9;
 }
 
+h1.entry-title,
 h1.has-l-font-size,
 h2.has-xl-font-size,
 h3.has-xxl-font-size,
@@ -165,7 +164,6 @@ h6.has-xxxxl-font-size {
 	@include font-h-7;
 }
 
-h1,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
@@ -193,8 +191,7 @@ h4.has-m-font-size,
 h5.has-l-font-size,
 h6.has-xl-font-size,
 .related .section-title,
-.comments-area .comments-title,
-.footer-big h2.widget-title {
+.comments-area .comments-title {
 	@include font-h-4;
 }
 
@@ -203,9 +200,7 @@ h3.has-xs-font-size,
 h4,
 h4.has-s-font-size,
 h5.has-m-font-size,
-h6.has-l-font-size,
-h1.site-title,
-.site-title {
+h6.has-l-font-size {
 	@include font-h-3;
 }
 
@@ -255,6 +250,14 @@ h2.widget-title {
 		@include breakpoint(sm) {
 			@include font-h-4;
 		}
+	}
+}
+
+.site-branding {
+
+	.site-title {
+		@include font-body-l;
+		line-height: 1.2;
 	}
 }
 

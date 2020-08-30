@@ -294,8 +294,6 @@ $var: true !default; // Can be overridden elsewhere
 /* Base Typography */
 @mixin hyphenation {
 	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
 	hyphens: auto;
 }
 
@@ -742,8 +740,8 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin avatar-l {
-	width: 96px;
-	height: 96px;
+	width: 80px;
+	height: 80px;
 }
 
 @mixin avatar-m {

@@ -177,6 +177,64 @@ a.btn-outline,
 		text-transform: uppercase;
 		font-size: 14px;
 		line-height: 19px;
-		letter-spacing: 2px;
+	}
+}
+
+/* Pill Shaped Buttons */
+.btn-pill,
+.single-post .entry-cats a {
+	text-transform: uppercase;
+	line-height: 1;
+	border: 1px solid $color__text_one;
+
+	&__xxxxl {
+		font-size: 3rem;
+		border-radius: 2rem;
+	}
+
+	&__xxxl {
+		font-size: 2.5rem;
+	}
+
+	&__xxl {
+		font-size: 2.125rem;
+	}
+
+	&__xl {
+		font-size: 1.75rem;
+	}
+
+	&__l {
+		font-size: 1.5rem;
+		padding: 0.375rem $s-4;
+		margin: 0 $s-2 $s-4;
+	}
+
+	&__m {
+		font-size: 1.25rem;
+	}
+
+	&__s {
+		font-size: 1rem;
+	}
+
+	&__xs {
+		font-size: 0.875rem;
+	}
+
+	&__xxs {
+		font-size: 0.75rem;
+	}
+}
+
+.single-post .entry-cats a {
+	font-size: 1.5rem;
+	padding: 0.375rem $s-4;
+	margin: 0 $s-2 $s-4;
+	border-radius: 1.125rem;
+
+	&:hover {
+		color: $color__white;
+		background: $color__text_one;
 	}
 }

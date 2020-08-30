@@ -11,8 +11,8 @@
 .editor-styles-wrapper .wp-block[data-align="right"]{margin-right:0}
 .editor-styles-wrapper .wp-block[data-align="left"]{margin:0}
 .editor-styles-wrapper .wp-block[data-align="left"],.editor-styles-wrapper .wp-block[data-align="right"]{margin:0 auto;max-width:1392px}
-body{font-family:"Roboto",sans-serif;line-height:1.2;color:#222;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
-.editor-post-title .editor-post-title__input{font-family:"Roboto",sans-serif;line-height:1.2}
+body{font-family:"IBM Plex Sans",sans-serif;line-height:1.2;color:#222;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+.editor-post-title .editor-post-title__input{font-family:"IBM Plex Sans",sans-serif;line-height:1.2}
 .editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#111;font-weight:normal;line-height:1.2;margin-top:0;margin-bottom:0}
 .editor-post-title__input a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#111;text-decoration:none}
 .h-bold .editor-post-title__input,.h-bold h1,.h-bold h2,.h-bold h3,.h-bold h4,.h-bold h5,.h-bold h6{font-weight:bold}
@@ -37,7 +37,7 @@ p.has-m-font-size{font-size:1.125rem}
 p.has-l-font-size{font-size:1.25rem}
 p.has-xl-font-size{font-size:1.375rem}
 p.has-xxl-font-size{font-size:1.5rem}
-p.has-drop-cap:not(:focus):first-letter {float:left;font-family:"Roboto",sans-serif;line-height:1.2;margin:5px 8px 0 -8px;line-height:.77;text-transform:uppercase;font-weight:normal;font-size:100px}
+p.has-drop-cap:not(:focus):first-letter {float:left;font-family:"IBM Plex Sans",sans-serif;line-height:1.2;margin:5px 8px 0 -8px;line-height:.77;text-transform:uppercase;font-weight:normal;font-size:100px}
 dfn,em,i{font-style:italic}
 blockquote{margin:0;padding:0}
 pre{background:rgba(0,0,0,0.15);font-family:"Courier 10 Pitch",Courier,monospace;font-size:15px;font-size:.9375rem;line-height:1.6;margin-bottom:1.6em;max-width:100%;overflow:auto;padding:1.6em}
@@ -61,13 +61,13 @@ li>ol,li>ul{margin-bottom:0;margin-left:1.5em}
 dt{font-weight:bold}
 dd{margin:0 1.5em 1.5em}
 img{height:auto;max-width:100%}
-.image-border img{border:4px solid #cacaca}
+.image-border img{border:4px solid #111}
 figure{margin:1em 0}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea{color:#666;border:1px solid #ccc;border-radius:3px;padding:3px}
 input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus{color:#111}
 select{border:1px solid #ccc}
 textarea{width:100%}
-.editor-default-block-appender .editor-default-block-appender__content{font-family:"Roboto",sans-serif;line-height:1.2;font-size:1.125rem}
+.editor-default-block-appender .editor-default-block-appender__content{font-family:"IBM Plex Sans",sans-serif;line-height:1.2;font-size:1.125rem}
 .wp-block-image figcaption,.wp-block-embed figcaption,.wp-block-audio figcaption{max-width:100%;font-size:.875rem;margin:6px 0 0;text-align:center}
 .wp-block-gallery{margin:0}
 .wp-block-gallery .blocks-gallery-image figcaption,.wp-block-gallery .blocks-gallery-item figcaption{padding:40px 12px 8px;font-size:14px;font-weight:300}
@@ -91,7 +91,7 @@ textarea{width:100%}
 .editor-styles-wrapper .wp-block-table.alignfull{width:96vw}
 .editor-styles-wrapper .wp-block-table td{border:0;padding:1rem}
 .editor-styles-wrapper .wp-block-table table{background:transparent}
-.editor-styles-wrapper .wp-block-table table tr{padding:1rem;border-bottom:1px solid #cacaca}
+.editor-styles-wrapper .wp-block-table table tr{padding:1rem;border-bottom:1px solid #111}
 .editor-styles-wrapper .wp-block-table table tr:last-of-type{border-bottom:0}
 .editor-styles-wrapper .wp-block-table.is-style-stripes{border-bottom:0}
 .editor-styles-wrapper .wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f7f7ff;border-bottom:0}
@@ -106,9 +106,9 @@ textarea{width:100%}
 .wp-block[data-type="core/verse"]{background:#f7f7ff;border-radius:1.5rem;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;font-size:.875rem;font-weight:normal;padding:1rem}
 .wp-block[data-type="core/verse"] pre{background:transparent}
 .wp-block-verse pre,pre.wp-block-verse{color:#222;white-space:nowrap;font-family:inherit;font-size:inherit;line-height:1;padding:0;overflow:auto}
-.wp-block-separator{margin-bottom:2.5rem;border-left:0;border-right:0;border-bottom:0;border-top:1px solid #cacaca}
+.wp-block-separator{margin-bottom:2.5rem;border-left:0;border-right:0;border-bottom:0;border-top:1px solid #111}
 .wp-block-separator.is-style-dots{border:0}
-.wp-block-separator.is-style-dots:before{color:#cacaca;font-size:1.25rem;letter-spacing:1em;padding-left:1em}
+.wp-block-separator.is-style-dots:before{color:#111;font-size:1.25rem;letter-spacing:1em;padding-left:1em}
 .wp-block-button .wp-block-button__link{display:inline-block;font-size:16px;line-height:1.1875;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;padding-top:19px;padding-bottom:18px;color:#fff;fill:#fff;background-color:#1765d8;font-weight:normal;color:#fff}
 .wp-block-button .wp-block-button__link:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
 .wp-block-button:not(.is-style-squared) .wp-block-button__link{border-radius:.75rem}
@@ -125,9 +125,9 @@ textarea{width:100%}
 .wp-block[data-type="core/calendar"] caption{color:#111;margin-bottom:1rem;text-align:center;font-weight:bold}
 .wp-block[data-type="core/calendar"] table{margin-bottom:1rem;background:#fff}
 .wp-block[data-type="core/calendar"] table th{font-weight:bold;background:transparent;text-align:center}
-.wp-block[data-type="core/calendar"] table tbody{color:#222;border-right:1px solid #cacaca}
+.wp-block[data-type="core/calendar"] table tbody{color:#222;border-right:1px solid #111}
 .wp-block[data-type="core/calendar"] table td#today{background:#f7f7ff}
-.wp-block[data-type="core/calendar"] table tbody td,.wp-block[data-type="core/calendar"] table th{padding:16px 8px;border:1px solid #cacaca;text-align:center}
+.wp-block[data-type="core/calendar"] table tbody td,.wp-block[data-type="core/calendar"] table th{padding:16px 8px;border:1px solid #111;text-align:center}
 .has-primary-one-color{color:#1765d8;fill:#1765d8}
 p.has-primary-one-color a{text-decoration:underline}
 .has-primary-one-background-color{background:#1765d8;border-color:#1765d8}
@@ -135,8 +135,8 @@ p.has-primary-one-color a{text-decoration:underline}
 .has-text-one-background-color{background:#111;border-color:#111}
 .has-text-two-color{color:#222;fill:#222}
 .has-text-two-background-color{background:#222;border-color:#222}
-.has-border-color{color:#cacaca;fill:#cacaca}
-.has-border-background-color{background:#cacaca;border-color:#cacaca}
+.has-border-color{color:#111;fill:#111}
+.has-border-background-color{background:#111;border-color:#111}
 .has-background-color{color:#f7f7ff;fill:#f7f7ff}
 .has-background-background-color{background:#f7f7ff;border-color:#f7f7ff}
 .has-white-color{color:#fff;fill:#fff}

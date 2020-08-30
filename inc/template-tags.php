@@ -157,24 +157,37 @@ if ( ! function_exists( 'aino_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		$byline = sprintf(
-			'<span class="author vcard"><span class="screen-reader-text">%1$s </span> <a class="url fn n" href="%2$s">%3$s</a></span>',
-			esc_html_x( 'Author', 'Used before post author name.', 'aino' ),
-			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_html( get_the_author() )
-		);
-
 		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
-		if ( get_avatar( get_the_author_meta( 'ID' ) ) ) :
-			echo '<figure class="author-avatar" aria-hidden="true"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" tabindex="-1">' . get_avatar( get_the_author_meta( 'ID' ), 80 ) . '</a></figure>';
-
-		endif;
-
-		echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '</span><span class="posted-on">' . $posted_on . '</span>';
+		echo '<span class="posted-on">' . $posted_on . '</span>';
 
 	}
 	endif;
+
+	if ( ! function_exists( 'aino_author' ) ) :
+
+		/**
+		 * Prints HTML with meta information for the post author.
+		 */
+		function aino_author() {
+	
+			$byline = sprintf(
+				'<span class="author vcard"><span class="screen-reader-text">%1$s </span> <a class="url fn n" href="%2$s">%3$s</a></span>',
+				esc_html_x( 'Author', 'Used before post author name.', 'aino' ),
+				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+				esc_html( get_the_author() )
+			);
+	
+			if ( get_avatar( get_the_author_meta( 'ID' ) ) ) :
+				echo '<figure class="author-avatar" aria-hidden="true"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" tabindex="-1">' . get_avatar( get_the_author_meta( 'ID' ), 160 ) . '</a></figure>';
+	
+			endif;
+	
+			echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '</span>';
+	
+		}
+		endif;
+	
 
 
 if ( ! function_exists( 'aino_entry_date_blog' ) ) :
@@ -237,7 +250,7 @@ if ( ! function_exists( 'aino_edit_link' ) ) :
 	function aino_edit_link() {
 
 		$editlink = sprintf(
-			esc_html__( 'Edit Post', 'aino' ) . '<span class="edit-link">' . aino_get_svg( array( 'icon' => 'baseline-edit-24px' ) ) . '</span><span class="screen-reader-text">' . get_the_title() . '</span>'
+			esc_html__( 'Edit Post', 'aino' ) . '<span class="screen-reader-text">' . get_the_title() . '</span>'
 		);
 
 		// Edit post link.
@@ -532,10 +545,6 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Header.
-	if ( true === get_theme_mod( 'header_bigfont', aino_defaults( 'header_bigfont' ) ) ) {
-		$classes[] = 'header-big';
-	}
-
 	if ( true === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
 		$classes[] = 'has-header-search';
 	}
@@ -549,10 +558,6 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Footer.
-	if ( true === get_theme_mod( 'footer_bigfont', aino_defaults( 'footer_bigfont' ) ) ) {
-		$classes[] = 'footer-big';
-	}
-
 	if ( true === get_theme_mod( 'footer_light', aino_defaults( 'footer_light' ) ) ) {
 		$classes[] = 'footer-light';
 	}
@@ -650,10 +655,6 @@ function aino_body_classes( $classes ) {
 
 	if ( 'radius-l' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-l';
-	}
-
-	if ( true === get_theme_mod( 'comments_border', aino_defaults( 'comments_border' ) ) ) {
-		$classes[] = 'comments-border';
 	}
 
 	// Disable Flexbox Post Card Stretch.

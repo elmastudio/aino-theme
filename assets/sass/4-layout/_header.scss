@@ -1,9 +1,9 @@
 .site-header {
 
-	padding: $s-6 0;
+	padding-top: $s-6;
 
 	@include breakpoint(sm) {
-		padding: $s-6 0;
+		padding-top: $s-9;
 	}
 
 	.admin-bar & {
@@ -35,7 +35,6 @@
 		height: $s-7;
 		margin: 0;
 		padding: 0 0 0 $s-4;
-		@include font-body-2xs;
 		color: $color__text_two;
 
 		@include breakpoint(sm) {
@@ -46,10 +45,10 @@
 		&:before {
 			content: "";
 			display: block;
-			width: 1px;
+			width: $s-9;
 			background-color: $color__border;
-			height: $s-6;
-			margin-right: $s-4;
+			height: 1px;
+			margin-right: $s-2;
 		}
 
 		.tagline-hide & {
@@ -507,26 +506,10 @@ ul.primary-menu {
 		a {
 			text-transform: uppercase;
 			@include font-body-xs;
-			letter-spacing: 2px;
 		}
 
 		ul a {
 			@include font-body-2xs;
-		}
-	}
-}
-
-@include breakpoint(lg) {
-	.header-big ul.primary-menu li,
-	.header-big .btn-naked a {
-		@include font-body-xl;
-
-		li {
-			@include font-body-m;
-		}
-
-		>.icon {
-			top: 0.9rem;
 		}
 	}
 }
@@ -896,7 +879,6 @@ button.sub-menu-toggle.active svg {
 	@include breakpoint(sm) {
 
 		.site-title a,
-		.site-branding .site-description,
 		.primary-menu a,
 		.btn-outline a,
 		.btn-naked a,

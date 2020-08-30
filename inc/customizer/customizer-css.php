@@ -77,9 +77,6 @@ function aino_customizer_css() {
 	h4 a:hover,
 	h5 a:hover,
 	h6 a:hover,
-	.site-title a:hover,
-	.single-post .entry-cats a:hover,
-	.single-post .entry-meta a:hover,
 	.btn-outline a,
 	a.btn-outline,
 	.btn-outline a:hover,
@@ -107,8 +104,7 @@ function aino_customizer_css() {
 	.site-main .navigation .next:hover,
 	.pagination a.page-numbers:hover,
 	.pagination a.page-numbers:hover .icon,
-	.wp-block-image figcaption a:hover,
-	.menu-social-container ul li a:hover .icon {
+	.wp-block-image figcaption a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}

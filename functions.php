@@ -193,11 +193,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => $main_bg_color,
 				),
 				array(
-					'name'  => __( 'Border', 'aino' ),
-					'slug'  => 'border',
-					'color' => '#dde2e5',
-				),
-				array(
 					'name'  => __( 'Black', 'aino' ),
 					'slug'  => 'black',
 					'color' => '#000000',
@@ -411,16 +406,16 @@ function aino_fonts_url() {
 
 	/*
 	 * Translators: If there are characters in your language that are not
-	 * supported by Roboto, translate this to 'off'. Do not translate
+	 * supported by IBM Plex Sans, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$roboto = esc_html_x( 'on', 'Roboto font: on or off', 'aino' );
+	$ibm_plex_sans = esc_html_x( 'on', 'IBM Plex Sans font: on or off', 'aino' );
 
-	if ( 'off' !== $roboto ) {
+	if ( 'off' !== $ibm_plex_sans ) {
 		$font_families = array();
 
-		if ( 'off' !== $roboto ) {
-			$font_families[] = 'Roboto:400,400i,700,700i&display=optional';
+		if ( 'off' !== $ibm_plex_sans ) {
+			$font_families[] = 'IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap';
 		}
 
 		$query_args = array(

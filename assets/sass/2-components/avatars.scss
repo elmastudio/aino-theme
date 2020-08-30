@@ -10,7 +10,7 @@
 }
 
 .author-avatar img {
-	@include avatar-s;
+	@include avatar-l;
 }
 
 /* Blog Posts Footer */
@@ -21,7 +21,7 @@
 /* Single Post Author */
 .single-post .author-avatar {
 	margin: 0 auto;
-	padding: 0 0 $s-1;
+	@include s-r-4 (padding-bottom);
 	display: inline-block;
 }
 
@@ -129,19 +129,4 @@
 
 .author-avatar-link:after {
 	@include avatar-m;
-}
-
-.authorbox-wrap a.author-pic-link,
-a.author-avatar-link {
-
-	@include transition-default;
-
-	&:hover {
-		@include avatar-transition;
-		@include img-bright;
-	}
-
-	&:after {
-		@include transition-default;
-	}
 }
