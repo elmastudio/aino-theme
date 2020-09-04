@@ -50,6 +50,7 @@ $custom_post_excerpt = array(
 			<div class="entry-footer">
 				<?php
 				$check = get_theme_mod( 'blogcards_authororcats', aino_defaults( 'blogcards_authororcats' ) );
+
 				if ( get_avatar( get_the_author_meta( 'user_email' ) ) && ( $check ) ) :
 					?>
 					<figure class="author-avatar">

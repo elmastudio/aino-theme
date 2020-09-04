@@ -10,7 +10,7 @@
 }
 
 .author-avatar img {
-	@include avatar-l;
+	@include avatar-m;
 }
 
 /* Blog Posts Footer */
@@ -22,43 +22,7 @@
 .single-post .author-avatar {
 	margin: 0 auto;
 	@include s-r-4 (padding-bottom);
-	display: inline-block;
-}
-
-/* Comments */
-.avatar-content-wrap {
-	@include flexbox;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-
-.comment-avatar {
-	flex-basis: 40px;
-	@include avatar-s;
-	border-radius: 50%;
-
-	.children & {
-		flex-basis: 24px;
-		@include avatar-xs;
-	}
-
-	img {
-		border-radius: 50%;
-	}
-}
-
-.comment-author .avatar span,
-.comment-author .avatar {
 	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	@include avatar-s;
-	margin: 0 $s-3 0 0;
-}
-
-.comment-list .children .avatar {
-	@include avatar-xs;
 }
 
 /* Authorbox */
@@ -66,10 +30,15 @@
 	position: relative;
 	@include avatar-l;
 	line-height: 0;
-	margin: 0 auto $s-4;
+	margin: 0 $s-4 $s-4;
 
 	@include breakpoint(sm) {
-		margin: 0 $s-6 0 0;
+		margin: 0 $s-6 $s-4 0;
+	}
+
+	@include breakpoint(lg) {
+		position: absolute;
+		margin: 0;
 	}
 
 	img {
@@ -80,7 +49,7 @@
 
 	.archive &,
 	.archive & img {
-		@include avatar-xl;
+		@include avatar-l;
 	}
 
 	.archive & {
@@ -98,33 +67,26 @@
 	border-radius: 50%;
 }
 
-.authorbox-wrap .author-pic-link:after,
+.authorbox__wrap .author-pic-link:after,
 .comment-avatar:after,
 .author-avatar-link:after,
 .entry-footer .author-avatar:after {
 	border-radius: 50%;
 	bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
 	top: 0;
 	z-index: 100;
 }
 
-.authorbox-wrap .author-pic-link:after {
+.authorbox__wrap .author-pic-link:after {
 	@include avatar-l;
-
-	.archive & {
-		@include avatar-xl;
-	}
 }
 
 .comment-avatar:after {
 	@include avatar-s;
-	.children & {
-		@include avatar-xs;
-	}
 }
 
 .author-avatar-link:after {

@@ -10,7 +10,7 @@ a {
 /* Primary Links */
 .entry-content p a,
 .entry-content li a,
-.authorbox-content p a,
+.authorbox__content p a,
 .comment-content li a,
 .comment-content p a,
 .wp-caption-text a,
@@ -68,32 +68,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .site-title a,
 .single-post .navigation .nav-title .nav-subtitle,
 .footer-widget-wrap a,
-.comment-metadata a,
 .comment-reply-title #cancel-comment-reply-link,
-.logged-in-as a {
+.logged-in-as a,
+.related-post .entry-cats a,
+.author-meta-info a {
 
 	&:hover {
 		color: $color__primary;
 		fill: $color__primary;
-	}
-}
-
-/* Tags */
-.entry-tags a {
-	border: 1px solid $color__border;
-	color: $color__text_two;
-	margin: 0 $s-1 $s-2;
-	padding: 6px $s-3;
-	@include flexbox;
-	@include flex-center;
-	font-size: 13px;
-	line-height: 1.23;
-	font-weight: bold;
-	@include border-radius-l;
-
-	&:hover {
-		background: $color__background;
-		border: 1px solid transparent;
 	}
 }
 
@@ -109,8 +91,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 }
 
 .pagination a,
-.related-img,
-.post-edit-link,
 .entry-link,
 .entry-link img,
 .navigation .nav-thumb {

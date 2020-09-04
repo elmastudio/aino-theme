@@ -1,4 +1,3 @@
-
 $var: true !default; // Can be overridden elsewhere
 
 /*--------------------------------------------------------------
@@ -11,31 +10,37 @@ $var: true !default; // Can be overridden elsewhere
 		 @include breakpoint(1140)	{ } header
 	* ------------------------------------------------------------ */
 @mixin breakpoint($class) {
-	@if $class == sm {
+	@if $class==sm {
 		@media (min-width: 48em) {
 			@content;
 		}
-	} @else
-	if $class == md {
+	}
+
+	@else if $class==md {
 		@media (min-width: 64em) {
 			@content;
 		}
-	} @else
-	if $class == lg {
+	}
+
+	@else if $class==lg {
 		@media (min-width: 80em) {
 			@content;
 		}
-	} @else
-	if $class == xl {
+	}
+
+	@else if $class==xl {
 		@media (min-width: 96em) {
 			@content;
 		}
-	} @else
-	if $class == header {
+	}
+
+	@else if $class==header {
 		@media (min-width: 71.25em) {
 			@content;
 		}
-	} @else {
+	}
+
+	@else {
 		@warn "Breakpoint mixin supports: sm, md, lg, xl, header";
 	}
 }
@@ -299,16 +304,18 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin font-body {
 	font-family: $font__body;
-	line-height: 1.2;
+	line-height: 1.3;
 }
 
 /* Font Weights */
 @mixin font-light {
 	font-weight: 300;
 }
+
 @mixin font-regular {
 	font-weight: normal;
 }
+
 @mixin font-bold {
 	font-weight: bold;
 }
@@ -389,7 +396,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 
 	@include breakpoint(lg) {
-		font-size:  3.25rem !important;
+		font-size: 3.25rem !important;
 		letter-spacing: -1.3px;
 	}
 }
@@ -631,15 +638,6 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Form Labels */
-@mixin font-label {
-	font-size: 12px;
-	line-height: 1.333; // 16px
-	letter-spacing: 0.063rem;
-	text-transform: uppercase;
-	color: $color__text_two;
-}
-
 /* Code */
 @mixin font-code {
 	font-family: $font__code;
@@ -650,15 +648,9 @@ $var: true !default; // Can be overridden elsewhere
 /* Buttons */
 @mixin btn {
 	display: inline-block;
-	font-size: 16px;
-	line-height: 1.1875; // 19px
+	line-height: 1;
 	font-weight: normal;
 	@include transition-default;
-	width: 100%;
-
-	@include breakpoint(sm) {
-		width: auto;
-	}
 
 	&:hover {
 		-webkit-transform: translateY(-2px);
@@ -685,8 +677,6 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin btn-naked {
 	display: inline-block;
-	font-size: 16px;
-	line-height: 1.5; // 24px
 	font-weight: normal;
 	color: $color__text_two;
 	fill: $color__text_two;
@@ -698,67 +688,307 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 /* Button Sizes */
-@mixin btn-s {
-	padding-top: 11px;
-	padding-bottom: 10px;
+@mixin btn-ssx {
+	padding: 0.75rem;
+	font-size: 0.75rem;
+}
 
-	@include breakpoint(sm) {
-		padding-left: $s-6;
-		padding-right: $s-6;
-	}
+@mixin btn-sx {
+	padding: 0.875rem;
+	font-size: 0.875rem;
+}
+
+@mixin btn-s {
+	padding: 1rem;
+	font-size: 1rem;
 }
 
 @mixin btn-m {
-		padding-top: 19px;
-		padding-bottom: 18px;
+	padding: 1.125rem;
+	font-size: 1.125rem;
 
-	@include breakpoint(sm) {
-		padding-left: $s-7;
-		padding-right: $s-7;
+	@include breakpoint(lg) {
+		padding: 1.25rem;
+		font-size: 1.25rem;
 	}
 }
 
 @mixin btn-l {
-		padding-top: 19px;
-		padding-bottom: 18px;
+	padding: 1.125rem;
+	font-size: 1.125rem;
 
-	@include breakpoint(sm) {
-		padding-left: $s-8;
-		padding-right: $s-8;
+	@include breakpoint(md) {
+		padding: 1.375rem;
+		font-size: 1.375rem;
 	}
 
-	@include breakpoint(sm) {
-		padding-top: 27px;
-		padding-bottom: 26px;
+	@include breakpoint(lg) {
+		padding: 1.5rem;
+		font-size: 1.5rem;
 	}
+}
+
+@mixin btn-xl {
+	padding: 1.375rem;
+	font-size: 1.375rem;
+
+	@include breakpoint(sm) {
+		padding: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	@include breakpoint(md) {
+		padding: 1.625rem;
+		font-size: 1.625rem;
+	}
+
+	@include breakpoint(lg) {
+		padding: 1.75rem;
+		font-size: 1.75rem;
+	}
+}
+
+@mixin btn-xxl {
+	padding: 1.5rem;
+	font-size: 1.5rem;
+
+	@include breakpoint(sm) {
+		padding: 1.75rem;
+		font-size: 1.75rem;
+	}
+
+	@include breakpoint(md) {
+		padding: 1.875rem;
+		font-size: 1.875rem;
+	}
+
+	@include breakpoint(lg) {
+		padding: 2.125rem;
+		font-size: 2.125rem;
+	}
+}
+
+@mixin btn-xxxl {
+	padding: 1.625rem;
+	font-size: 1.625rem;
+
+	@include breakpoint(sm) {
+		padding: 2rem;
+		font-size: 2rem;
+	}
+
+	@include breakpoint(md) {
+		padding: 2.25rem;
+		font-size: 2.25rem;
+	}
+
+	@include breakpoint(lg) {
+		padding: 2.5rem;
+		font-size: 2.5rem;
+	}
+}
+
+@mixin btn-xxxxl {
+	padding: 1.875rem;
+	font-size: 1.875rem;
+
+	@include breakpoint(sm) {
+		padding: 2.25rem;
+		font-size: 2.25rem;
+	}
+
+	@include breakpoint(md) {
+		padding: 2.625rem;
+		font-size: 2.625rem;
+	}
+
+	@include breakpoint(lg) {
+		padding: 3rem;
+		font-size: 3rem;
+	}
+}
+
+/* Pills */
+@mixin pill {
+	text-transform: uppercase;
+	line-height: 1;
+	border: 1px solid $color__text_one;
+}
+
+@mixin pill-dark {
+	background: $color__text_one;
+	color: $color__white;
+
+	&:hover {
+		color: $color__text_one;
+		background: $color__white;
+	}
+}
+
+@mixin pill-light {
+	background: $color__white;
+	color: $color__text_one;
+
+	&:hover {
+		color: $color__white;
+		background: $color__text_one;
+	}
+}
+
+@mixin pill-xxxxl {
+	font-size: 1.875rem;
+	border-radius: 2rem;
+	padding: $s-2 $s-6;
+
+	@include breakpoint(sm) {
+		font-size: 2.25rem;
+	}
+
+	@include breakpoint(md) {
+		font-size: 2.625rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 3rem;
+	}
+}
+
+@mixin pill-xxxl {
+	font-size: 1.625rem;
+	border-radius: 1.75rem;
+	padding: $s-2 1.375rem; // 8px and 22px
+
+	@include breakpoint(sm) {
+		font-size: 2rem;
+	}
+
+	@include breakpoint(md) {
+		font-size: 2.25rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 2.5rem;
+	}
+}
+
+@mixin pill-xxl {
+	font-size: $s-6;
+	border-radius: $s-6;
+	padding: 0.438rem $s-5; // 7px and 20px
+
+	@include breakpoint(sm) {
+		font-size: 1.75rem;
+	}
+
+	@include breakpoint(md) {
+		font-size: 1.875rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 2.125rem;
+	}
+}
+
+@mixin pill-xl {
+	font-size: 1.375rem;
+	border-radius: 1.313rem;
+	padding: 0.438rem 1.125rem; // 7px and 18px
+
+	@include breakpoint(sm) {
+		font-size: $s-6;
+	}
+
+	@include breakpoint(md) {
+		font-size: 1.625rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: 1.75rem;
+	}
+}
+
+@mixin pill-l {
+	font-size: 1.25rem;
+	border-radius: 1.125rem;
+	padding: 0.375rem $s-4; // 6px and 16px
+
+	@include breakpoint(md) {
+		font-size: 1.375rem;
+	}
+
+	@include breakpoint(lg) {
+		font-size: $s-6;
+	}
+}
+
+@mixin pill-m {
+	font-size: 1.125rem;
+	border-radius: $s-4;
+	padding: 0.375rem 0.875rem; // 6px and 14px
+
+	@include breakpoint(lg) {
+		font-size: 1.25rem;
+	}
+}
+
+@mixin pill-s {
+	font-size: $s-4;
+	border-radius: 0.813rem;
+	padding: 0.313rem 0.75rem;
+}
+
+@mixin pill-xs {
+	font-size: 0.875rem;
+	border-radius: 0.75rem;
+	padding: 0.313rem 0.625rem;
+}
+
+@mixin pill-xxs {
+	font-size: 0.75rem;
+	border-radius: 0.625rem;
+	padding: 0.25rem 0.5rem;
 }
 
 /* Avatars */
-@mixin avatar-xl {
-	width: 160px;
-	height: 160px;
-}
-
 @mixin avatar-l {
-	width: 80px;
-	height: 80px;
+	width: $s-11;
+	height: $s-11;
+
+	@include breakpoint(sm) {
+		width: $s-12;
+		height: $s-12;
+	}
+
+	@include breakpoint(md) {
+		width: $s-13;
+		height: $s-13;
+	}
+
+	@include breakpoint(lg) {
+		width: $s-14;
+		height: $s-14;
+	}
 }
 
 @mixin avatar-m {
-	width: 56px;
-	height: 56px;
+	width: $s-10;
+	height: $s-10;
+
+	@include breakpoint(sm) {
+		width: $s-11;
+		height: $s-11;
+	}
 }
 
 @mixin avatar-s {
-	width: 40px;
-	height: 40px;
-	min-width: 40px;
-}
+	width: $s-8;
+	height: $s-8;
 
-@mixin avatar-xs {
-	width: 24px;
-	height: 24px;
-	min-width: 24px;
+	@include breakpoint(sm) {
+		width: $s-9;
+		height: $s-9;
+		max-width: $s-9;
+	}
 }
 
 /* Placeholders */
@@ -788,6 +1018,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin col-padding {
 	padding-left: $s-6;
 	padding-right: $s-6;
+
 	@include breakpoint(sm) {
 		padding-left: $s-6;
 		padding-right: $s-6;
@@ -798,64 +1029,66 @@ $var: true !default; // Can be overridden elsewhere
 @mixin border-radius($radius) {
 	border-radius: $radius;
 }
+
 @mixin border-radius-none {
-		border-radius: 0;
+	border-radius: 0;
 }
-@mixin border-radius-xs {
-	border-radius: $border-radius-xs;
-}
+
 @mixin border-radius-s {
-		border-radius: $border-radius-s;
+	border-radius: $border-radius-s;
 }
+
 @mixin border-radius-m {
-		border-radius: $border-radius-m;
+	border-radius: $border-radius-m;
 }
+
 @mixin border-radius-l {
-		border-radius: $border-radius-l;
+	border-radius: $border-radius-l;
 }
+
 @mixin border-radius-100 {
-		border-radius: 50%;
+	border-radius: 50%;
 }
 
 /* Shadows in Forms */
 @mixin shadow-1 {
-	box-shadow        : 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Shadow Navigation bar */
 @mixin shadow-2 {
-	box-shadow        : 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
 	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
 }
 
 /* Shadows for Cards, Buttons */
 @mixin shadow-3 {
-	box-shadow        : 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Shadows for Cards */
 @mixin shadow-4 {
-	box-shadow        : 0 12px 32px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Shadow for Menu dropdown */
 @mixin shadow-5 {
-	box-shadow        : 0 24px 64px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1);
 }
 
 @mixin shadow-none {
-	box-shadow        : none;
+	box-shadow: none;
 	-webkit-box-shadow: none;
 }
 
 /* Transitions */
 @mixin transition-default {
 	-webkit-transition: all 0.2s ease;
-	transition : all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 @mixin transition-posthover {
@@ -871,17 +1104,16 @@ $var: true !default; // Can be overridden elsewhere
 /* Animations */
 @mixin scale {
 	-webkit-transform: scale(1.01);
-	transform        : scale(1.01);
-}
-
-@mixin img-bright {
-	-webkit-filter: brightness(105%);
-	filter: brightness(105%);
+	transform: scale(1.01);
 }
 
 /* Retina Images */
 @mixin image-2x($image, $width, $height) {
-	@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+
+	@media (min--moz-device-pixel-ratio: 1.3),
+	(-webkit-min-device-pixel-ratio: 1.3),
+	(min-device-pixel-ratio: 1.3),
+	(min-resolution: 1.3dppx) {
 		background-image: url($image);
 		background-size: $width $height;
 	}

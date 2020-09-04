@@ -3,10 +3,15 @@
 	@include s-r-12(padding-top);
 }
 
-.entry-content {
+.blog,
+.single-post,
+.archive,
+.page-template-default,
+.error404,
+.tpl-fullwidth,
+.search-no-results {
 
-	.error404 &,
-	.type-page & {
-		@include s-r-11(padding-bottom);
+	.site-content {
+		@include s-r-15 (padding-bottom);
 	}
 }

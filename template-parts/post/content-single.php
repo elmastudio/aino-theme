@@ -21,7 +21,7 @@
 
 		<?php aino_author(); ?>
 
-			<span class="entry-comments"><?php comments_popup_link( esc_html__( 'Leave a reply', 'aino' ), esc_html__( 'Comment 1', 'aino' ), esc_html__( 'Comments %', 'aino' ), 'comments-link' ); ?></span>
+			<span class="entry-comments"><?php comments_popup_link( esc_html__( 'Leave a reply', 'aino' ), esc_html__( 'Comment 1', 'aino' ), esc_html__( 'Comments %', 'aino' ), 'comments-link' ); ?><span aria-hidden="true">&#44;</span></span>
 
 			<?php aino_estimated_read_time(); ?>
 

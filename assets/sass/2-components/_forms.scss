@@ -17,18 +17,18 @@ input[type="color"] {
 	box-sizing: border-box;
 	background-color: transparent;
 	border: 1px solid $color__border;
-	height: $s-10;
-	padding: 0 $s-6;
 	outline: none;
+	line-height: 1;
+	max-height: 72px;
+	@include s-r-6 (padding);
 
 	@include input-placeholder {
 		color: #8e8e8e;
 	}
 
-	&:focus,
-	&:active {
-		outline: 0;
-		border: 1px solid #707070;
+	&:active,
+	&:focus {
+		background: $color__background;
 	}
 }
 
@@ -43,11 +43,15 @@ textarea {
 		color: #8e8e8e;
 	}
 
-	&:focus,
-	&:active {
-		outline: 0;
-		border: 1px solid #707070;
+	&:active,
+	&:focus {
+		background: $color__background;
 	}
+}
+
+input[type="checkbox"] {
+	width: $s-6;
+	height: $s-6;
 }
 
 .color-notice,
@@ -60,37 +64,28 @@ label.color-notice span {
 }
 
 form p {
-	margin: 0 0 $s-6;
-
-	@include breakpoint(sm) {
-		margin: 0 0 $s-6;
-	}
+	@include s-r-6 (padding-top);
+	padding-bottom: 0;
 }
 
 form .comment-form-cookies-consent {
-	margin: 0;
-	padding: $s-6 0 0 0;
 	clear: both;
-}
+	display: flex;
+	align-items: center;
 
-form .comment-form-cookies-consent label {
-	display: inline;
-	padding-left: 12px;
+	label {
+		@include s-r-4 (padding-left);
+		margin-bottom: 0;
+	}
 }
 
 form p.comment-form-comment {
 	margin: 0;
-	line-height: 0;
 }
 
 form label {
 	display: block;
-	padding: 0 0 $s-1;
-	@include font-label;
-}
-
-label .required {
-	@include font-label;
+	@include s-r-2 (margin-bottom);
 }
 
 select {
@@ -110,10 +105,6 @@ input[type="submit"],
 button[type="submit"] {
 	display: block;
 	clear: both;
-	margin-top: $s-6;
-	@include breakpoint(sm) {
-		margin-top: $s-6 0 0;
-	}
 }
 
 /* Search Form */
@@ -145,8 +136,7 @@ button[type="submit"] {
 .form-curved {
 	input,
 	textarea,
-	select,
-	.comment-content-wrap {
+	select {
 		@include border-radius-s;
 	}
 }
@@ -157,8 +147,20 @@ button[type="submit"] {
 		border-radius: 6.25em;
 	}
 
-	textarea,
-	.comment-content-wrap {
-		@include border-radius-m;
+	textarea {
+		@include border-radius-l;
 	}
+
+	label {
+		padding-left: 1.875rem;
+
+		@include breakpoint(md) {
+			padding-left: 2.063rem;
+		}
+
+		@include breakpoint(lg) {
+			padding-left: 2.25rem;
+		}
+	}
+
 }

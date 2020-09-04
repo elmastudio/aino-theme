@@ -282,18 +282,22 @@
 	}
 }
 
-/* Default Content width (680px on desktop screens) */
+/* Default content width */
 .entry-content>*,
-.page-template-default .entry-header,
-.error404 .entry-header,
-.single .entry-footer,
-.single .comments-area,
-.single-page .comments-area {
+.single .entry-tags,
+.comment-list,
+.comment-respond,
+.authorbox__content {
 	@include push--auto;
 	max-width: $col6-no-gutter;
 }
 
-/* Full width page template (1200px on desktop screens) */
+.authorbox__details {
+	@include push--auto;
+	max-width: $col6-no-gutter;
+}
+
+/* Full width page template */
 .tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header {
 	@include push--auto;
@@ -344,8 +348,7 @@
 }
 
 /* Grid Columns */
-.posts-container,
-.single-post .nav-links {
+.posts-container {
 	@include flexbox;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -359,7 +362,6 @@
 }
 
 /* Blog Post Columns */
-
 /* 1-Column */
 .blog-1-column .posts-container .type-page,
 .blog-1-column .posts-container .type-post,
@@ -380,6 +382,7 @@
 .blog-2-column .posts-container .hentry,
 .posts-container .hentry,
 .s6,
+.single-post .related-post,
 .single-post .related-post,
 .single-post .navigation .next,
 .single-post .navigation .prev {
@@ -402,8 +405,7 @@
 /* 3-Columns */
 .blog-3-column .posts-container .hentry,
 .header-infobar .col,
-.s4,
-.single-post .related-post {
+.s4 {
 	width: 100%;
 	flex-grow: 0;
 

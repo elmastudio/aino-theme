@@ -8,7 +8,6 @@
 		display: block;
 		text-align: center;
 		padding-top: 0;
-		@include s-r-11 (padding-bottom);
 	}
 }
 
@@ -16,6 +15,7 @@
 
 	.entry-title {
 		margin: 0;
+		@include s-r-9 (padding-bottom);
 	}
 
 	.archive .type-page &,

@@ -1,10 +1,6 @@
 .site-header {
 
-	padding-top: $s-6;
-
-	@include breakpoint(sm) {
-		padding-top: $s-9;
-	}
+	@include s-r-7 (padding-top);
 
 	.admin-bar & {
 		top: 32px;
@@ -34,7 +30,7 @@
 		display: none;
 		height: $s-7;
 		margin: 0;
-		padding: 0 0 0 $s-4;
+		padding: 0 0 0 $s-2;
 		color: $color__text_two;
 
 		@include breakpoint(sm) {

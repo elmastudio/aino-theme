@@ -183,7 +183,7 @@ if ( ! function_exists( 'aino_posted_on' ) ) :
 	
 			endif;
 	
-			echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '</span>';
+			echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '<span aria-hidden="true">&#44;</span></span>';
 	
 		}
 		endif;
@@ -266,9 +266,9 @@ endif;
 /**
  * Custom Aino Comment structure.
  *
- * @param  mixed $comment Custom comment parameter.
- * @param  mixed $args Comment arguments.
- * @param  mixed $depth Depth of the comment.
+ * @param mixed $comment Custom comment parameter.
+ * @param mixed $args Comment arguments.
+ * @param mixed $depth Depth of the comment.
  *
  * @return void
  */
@@ -281,7 +281,8 @@ function aino_comment( $comment, $args, $depth ) {
 	?>
 	<<?php echo esc_attr( $tag ); ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $args['has_children'] ? 'parent' : '', $comment ); ?>>
 	<article id="div-comment- <?php comment_ID(); ?>" class="comment-body">
-		<div class="avatar-content-wrap">
+		<div class="comment-content">
+			<div class="comment-author vcard">
 			<?php
 			if ( 0 !== $args['avatar_size'] ) {
 				echo '<span class="comment-avatar">';
@@ -289,54 +290,50 @@ function aino_comment( $comment, $args, $depth ) {
 				echo '</span>';
 			}
 			?>
-			<div class="comment-content-wrap">
-				<div class="comment-author vcard">
-				<?php
-				printf(
-					/* translators: %s: Name of comment author. */
-					'<b class="fn">%s</b>',
-					get_comment_author_link( $comment ),
-				);
-				?>
-				</div><!-- .comment-author -->
-					<?php comment_text(); ?>
-			</div><!-- .comment-content-wrap -->
-		</div><!-- .avatar-content-wrap -->
+			<?php
+			printf(
+				/* translators: %s: Name of comment author. */
+				'<span class="fn">%s</span>',
+				get_comment_author_link( $comment ),
+			);
+			?>
+			</div><!-- .comment-author -->
+			<?php comment_text(); ?>
 
-		<div class="comment-meta">
-			<div class="comment-metadata">
-				<a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
-					<time datetime="<?php comment_time( 'c' ); ?>">
+			<div class="comment-meta">
+				<div class="comment-metadata">
+					<a class="comment-time" href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
+						<time datetime="<?php comment_time( 'c' ); ?>">
+						<?php
+						printf(
+							/* translators: The comment date. */
+							esc_html__( '%1$s', 'aino' ),
+							esc_html( get_comment_date( '', $comment ) )
+						);
+						?>
+						</time>
+					</a>
 					<?php
-					printf(
-						/* translators: The comment date. */
-						esc_html__( '%1$s', 'aino' ),
-						esc_html( get_comment_date( '', $comment ) )
+					comment_reply_link(
+						array_merge(
+							$args,
+							array(
+								'add_below' => 'div-comment',
+								'depth'     => $depth,
+								'max_depth' => $args['max_depth'],
+								'before'    => '<div class = "reply">',
+								'after'     => '</div>',
+							)
+						)
 					);
 					?>
-					</time>
-				</a>
-				<?php
-				comment_reply_link(
-					array_merge(
-						$args,
-						array(
-							'add_below' => 'div-comment',
-							'depth'     => $depth,
-							'max_depth' => $args['max_depth'],
-							'before'    => '<div class = "reply">',
-							'after'     => '</div>',
-						)
-					)
-				);
-				?>
-				<?php edit_comment_link( __( 'Edit', 'aino' ), '<span class="edit-link">', '</span>' ); ?>
-			</div><!-- .comment-metadata -->
-
-			<?php if ( '0' === $comment->comment_approved ) : ?>
-				<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
-			<?php endif; ?>
-		</div><!-- .comment-meta -->
+					<?php edit_comment_link( __( 'Edit', 'aino' ), '<span class="edit-link">', '</span>' ); ?>
+				</div><!-- .comment-metadata -->
+				<?php if ( '0' === $comment->comment_approved ) : ?>
+					<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
+				<?php endif; ?>
+			</div><!-- .comment-meta -->
+		</div><!-- .comment-content -->
 	</article><!-- .comment-body -->
 	<?php
 }

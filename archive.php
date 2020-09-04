@@ -15,10 +15,10 @@ get_header(); ?>
 
 			<header class="page-header grid-margins">
 				<?php
-				the_archive_title( '<h1 class="page-title col col7">', '</h1>' );
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
 
 				if ( ! is_author() ) {
-					the_archive_description( '<div class="description col col7">', '</div>' );
+					the_archive_description( '<div class="description">', '</div>' );
 				}
 				?>
 
@@ -52,18 +52,7 @@ get_header(); ?>
 
 	</div><!-- .posts-container -->
 
-		<?php
-			the_posts_pagination(
-				array(
-					'<span class="meta-nav">' . esc_html__( 'Older posts', 'aino' ) . '</span> ' .
-					'<span class="screen-reader-text">' . esc_html__( 'Older posts', 'aino' ) . '</span> ',
-					'prev_text'          => '<span class="meta-nav">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ' .
-					'<span class="screen-reader-text">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ',
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'aino' ) . ' </span>',
-				)
-			);
-			?>
-
+	
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

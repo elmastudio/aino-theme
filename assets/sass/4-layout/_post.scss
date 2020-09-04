@@ -21,16 +21,20 @@
 		text-align: center;
 	}
 
-	& .entry-cats {
-		@include flexbox;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		padding: 0;
+	& .entry-header {
+
+		@include s-r-9 (padding-bottom);
+
+		.entry-cats {
+			@include flexbox;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 0;
+		}
 	}
 
 	& .byline {
-		display: block;
 		color: $color__text_two;
 	}
 
@@ -54,16 +58,12 @@
 	}
 
 	.entry-footer {
-		padding-top: $s-4;
-
-		@include breakpoint(sm) {
-			padding-top: $s-4;
-		}
+		padding-top: $s-9;
 
 		.entry-tags {
 			@include flexbox;
 			flex-wrap: wrap;
-			justify-content: center;
+			justify-content: start;
 		}
 	}
 }
@@ -92,85 +92,64 @@
 	}
 }
 
-/* Related Posts */
+/* Related Posts on Single Post */
 .related-wrap {
-	@include s-r-14 (margin-top);
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
-}
 
-.related .section-title {
-	@include flexbox;
-	justify-content: space-between;
-	@include s-r-9 (padding-bottom);
+	.section-title {
+		@include s-r-12 (padding-bottom);
 
-	@include breakpoint(sm) {
-		line-height: 1;
-	}
-
-	.related-more-link {
-		display: none;
-
-		@include breakpoint(sm) {
-			@include flexbox;
+		span {
+			display: block;
+			@include s-r-7 (padding-top);
+			border-top: 1px solid $color__border;
 		}
 	}
-}
 
-.related-container {
-	@include flexbox;
-	flex-direction: row;
-	align-items: flex-start;
-	flex-wrap: wrap;
-}
-
-.related-post {
-	@include s-r-9 (margin-bottom);
-
-	@include breakpoint(sm) {
-		float: left;
+	.related-container {
+		@include flexbox;
+		flex-direction: row;
+		align-items: flex-start;
+		flex-wrap: wrap;
 	}
-}
 
-.related-img {
-	position: relative;
-	overflow: hidden;
-	display: block;
-	margin: 0 0 $s-6;
+	.related-post {
+		padding-bottom: $s-6;
 
-	&:hover {
-		background: $color__white;
+		@include breakpoint(sm) {
+			float: left;
+			padding-bottom: 0;
+		}
+		.related-img {
+			position: relative;
+			overflow: hidden;
+			display: block;
+			@include s-r-6 (padding-bottom);
+		}
+		.related-thumb {
+			line-height: 0;
+		}
+
+		.entry-cats {
+			@include s-r-2 (padding-bottom);
+		}
 	}
-}
-
-.related-thumb {
-	line-height: 0;
 }
 
 /* Comments */
 .comments-area {
-	@include s-r-9 (padding-top);
-	@include s-r-9 (padding-bottom);
-	clear: both;
+	@include s-r-15 (padding-top);
 }
 
 .comments-area .comments-title {
-	display: block;
-	position: relative;
-	padding: 0 0 $s-6;
 
 	span {
-		display: none;
-		@include font-regular;
-		@include breakpoint(sm) {
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			margin-top: 12px;
-			padding: 0;
-		}
+		display: block;
+		@include s-r-7 (padding-top);
+		@include s-r-12 (padding-bottom);
+		border-top: 1px solid $color__border;
 	}
 }
 
@@ -178,7 +157,7 @@
 	list-style: none;
 
 	.children {
-		margin-left: 46px;
+		margin-left: 0;
 		padding: 0;
 		list-style: none;
 
@@ -194,43 +173,48 @@
 	padding: 0;
 }
 
-.comment-content-wrap {
-	margin-left: 6px;
-	background-color: $color__background;
-	padding: 6px $s-3;
-
-	@include breakpoint(sm) {
-		padding: $s-4;
-	}
+.comment-content {
+	border-bottom: 1px solid $color__border;
 
 	p {
-		margin: 0 0 $s-2;
+		margin: 0;
+		@include s-r-6 (padding-bottom);
+	}
 
-		&:last-child {
-			padding-bottom: 0;
-		}
+	.comment-meta {
+		@include s-r-7 (padding-bottom);
 	}
 }
 
-.comment-meta {
-	padding: $s-1 0 0 58px;
-	@include breakpoint(sm) {
-		padding: $s-1 0 0 62px;
-	}
+.comment-author {
+	display: flex;
+	align-items: center;
+	@include s-r-2 (padding-bottom);
+}
 
-	.children & {
-		padding: $s-1 0 0 42px;
-		@include breakpoint(sm) {
-			padding: $s-1 0 0 46px;
-		}
-	}
+.comment-avatar {
+	flex-basis: 40px;
+	@include avatar-s;
+	border-radius: 50%;
+	@include s-r-4 (margin-right);
 
-	time {
-		display: inline;
+	img {
+		border-radius: 50%;
+		max-width: 48px;
 	}
+}
+
+.comment-author .avatar {
+	display: block;
+	@include avatar-s;
+	margin: 0 $s-3 0 0;
 }
 
 .comment-body {
+
+	@include flexbox;
+	justify-content: flex-start;
+	align-items: flex-start;
 
 	p.comment-awaiting-moderation {
 		margin: 0 0 0;
@@ -238,6 +222,10 @@
 		@include breakpoint(sm) {
 			margin: 0 0 0;
 		}
+	}
+
+	.comment-metadata {
+		display: flex;
 	}
 
 	.reply {
@@ -249,31 +237,11 @@
 	@include s-r-8 (margin-top);
 }
 
-.comment-metadata .edit-link,
-.comment-metadata .reply {
-	display: inline;
-	margin-left: -2px;
-}
-
-.comment-edit-link,
-.comment-metadata .comment-reply-link {
-	padding-left: $s-1;
-}
-
-.comment-author {
-
-	padding-bottom: $s-1;
-
-	.fn {
-		@include font-body-xs;
-	}
-}
-
 /* Comments Reply */
 .comment-respond {
 	position: relative;
 	padding: 0;
-	@include s-r-8 (margin-top);
+	@include s-r-12 (margin-top);
 	margin-bottom: 0;
 }
 
@@ -283,14 +251,9 @@
 
 .comment-reply-title #cancel-comment-reply-link {
 	display: block;
-	padding-top: $s-2;
+	@include s-r-2 (padding-top);
 	font-weight: normal;
-	@include font-body-2xs;
-	@include breakpoint(sm) {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
+	letter-spacing: 0;
 }
 
 .comment-respond .form-submit {
@@ -300,40 +263,27 @@
 .comment-notes,
 .logged-in-as {
 	margin: 0;
-	padding: $s-2 0 $s-6;
-
-	@include breakpoint(sm) {
-		padding: $s-4 0 $s-7;
-	}
-}
-
-.comment-form-author,
-.comment-form-email,
-.comment-form-url {
-	margin: $s-4 0 0;
+	@include s-r-2 (padding-top);
+	padding-bottom: 0;
 }
 
 /* Authorbox */
-.authorbox-wrap {
-	@include flexbox;
-	flex-direction: column;
-	justify-content: center;
-	@include s-r-12 (padding-top);
-	padding-left: 0;
-	padding-right: 0;
-	padding-bottom: 0;
+.authorbox__wrap {
+	@include s-r-15 (padding-top);
 
-	@include breakpoint(sm) {
-		flex-direction: row;
-		justify-content: flex-start;
+	.section-title {
+		display: block;
+		border-top: 1px solid $color__border;
+		@include s-r-7 (padding-top);
+		@include s-r-12 (padding-bottom);
 	}
-}
 
-.authorbox-content {
-	text-align: center;
-	@include breakpoint(sm) {
-		text-align: left;
-		flex: 3;
+	.authorbox__content {
+		@include s-r-15 (padding-bottom);
+
+		@include breakpoint(lg) {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -349,20 +299,17 @@
 	padding: 0 0 $s-4;
 }
 
-.authorbox-content span {
+.authorbox__content span {
 	display: block;
 }
 
-.authorbox-content .author-bio {
+.authorbox__content .author-bio {
 	margin: 0;
-	padding: $s-4 0 0 0;
+	@include s-r-9 (padding-top);
+	padding-bottom: 0;
 }
 
 /* Authorbox on Archive */
-.archive.author .author-name span {
-	padding-top: $s-2;
-}
-
 .archive.author .author-pic {
 	display: block;
 	width: $s-11;
@@ -376,10 +323,10 @@
 }
 
 .archive.author .author-pic img {
-	@include avatar-xl;
+	@include avatar-l;
 }
 
-.archive.author .authorbox-content {
+.archive.author .authorbox__content {
 	width: 100%;
 
 	@include breakpoint(sm) {

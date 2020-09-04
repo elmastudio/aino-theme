@@ -13,7 +13,7 @@
 	padding: $s-2 $s-4;
 
 	.btn-curved & {
-		border-radius: $border-radius-xs;
+		border-radius: $border-radius-s;
 	}
 
 	.btn-round & {
@@ -21,20 +21,3 @@
 	}
 }
 
-/* Post Author Badge */
-.bypostauthor .comment-author {
-	@include flexbox;
-	justify-content: flex-start;
-	align-items: center;
-
-	.author-badge {
-		@include font-body-2xs;
-		@include font-bold;
-		line-height: 1;
-		color: $color__border;
-		margin-left: 4px;
-		padding: 3px 6px;
-		border-radius: $border-radius-circle;
-		border: 1px solid $color__border;
-	}
-}

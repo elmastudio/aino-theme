@@ -191,7 +191,7 @@ h3.has-s-font-size,
 h4.has-m-font-size,
 h5.has-l-font-size,
 h6.has-xl-font-size,
-.related .section-title,
+.related-wrap .section-title,
 .comments-area .comments-title {
 	@include font-h-4;
 }
@@ -222,8 +222,7 @@ h6,
 h6.has-s-font-size,
 h6.has-xs-font-size,
 h6.has-xxs-font-size,
-h6.has-xxs-font-size,
-h2.widget-title {
+h6.has-xxs-font-size {
 	@include font-h-1;
 }
 
