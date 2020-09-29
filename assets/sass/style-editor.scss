@@ -814,7 +814,7 @@ pre.wp-block-verse {
 	}
 
 	&:not(.is-style-squared) .wp-block-button__link {
-		border-radius: $border-radius-s;
+		border-radius: 8px;
 	}
 
 	&.is-style-outline {

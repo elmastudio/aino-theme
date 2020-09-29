@@ -65,13 +65,14 @@ h2.entry-title a,
 
 /* Link Hovers */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-.site-title a,
 .single-post .navigation .nav-title .nav-subtitle,
 .footer-widget-wrap a,
 .comment-reply-title #cancel-comment-reply-link,
 .logged-in-as a,
 .related-post .entry-cats a,
-.author-meta-info a {
+.author-meta-info a,
+.site-footer .footer-wrap .footer-info .site-info a,
+.site-footer a.back-top {
 
 	&:hover {
 		color: $color__primary;

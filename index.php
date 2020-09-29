@@ -58,18 +58,6 @@ get_header(); ?>
 
 	</div><!-- .posts-container -->
 
-		<?php
-		the_posts_pagination(
-			array(
-				'next_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Older posts', 'aino' ) . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Older posts', 'aino' ) . '</span> ',
-				'prev_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_left-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ',
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'aino' ) . ' </span>',
-			)
-		);
-		?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

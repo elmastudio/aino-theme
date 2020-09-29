@@ -405,7 +405,7 @@ function aino_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 			$toggle_duration      = aino_toggle_duration();
 
 			// Add the sub menu toggle.
-			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Show sub menu', 'aino' ) . '</span>' . aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '</button>';
+			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Show sub menu', 'aino' ) . '</span>' . aino_get_svg( array( 'icon' => 'dropdown' ) ) . '</button>';
 
 		}
 
@@ -415,7 +415,7 @@ function aino_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 		// Add sub menu icons to the primary menu without toggles.
 	} elseif ( 'primary' === $args->theme_location ) {
 		if ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
-			$args->after = '<span class="icon"></span>';
+			$args->after = '<span class="dropdown">' . aino_get_svg( array( 'icon' => 'dropdown' ) ) . '</span>';
 		} else {
 			$args->after = '';
 		}
@@ -567,6 +567,14 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'footerwidgets-centered';
 	}
 
+	if ( false === get_theme_mod( 'footer_bordertop', aino_defaults( 'footer_bordertop' ) ) ) {
+		$classes[] = 'no-footer-border-top';
+	}
+
+	if ( false === get_theme_mod( 'footer_borderbottom', aino_defaults( 'footer_borderbottom' ) ) ) {
+		$classes[] = 'no-footer-border-bottom';
+	}
+
 	// Customizer Options - Blog.
 	if ( 'onecolumn' === get_theme_mod( 'blog_columns', aino_defaults( 'blog_columns' ) ) ) {
 		$classes[] = 'blog-1-column';
@@ -578,6 +586,10 @@ function aino_body_classes( $classes ) {
 
 	if ( 'threecolumn' === get_theme_mod( 'blog_columns', aino_defaults( 'blog_columns' ) ) ) {
 		$classes[] = 'blog-3-column';
+	}
+
+	if ( true === get_theme_mod( 'sticky_bg', aino_defaults( 'sticky_bg' ) ) ) {
+		$classes[] = 'sticky-bg';
 	}
 
 	// Blog Display Options.
@@ -615,6 +627,11 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blogcards-radius-l';
 	}
 
+	// Blog Cards - Padding.
+	if ( true !== get_theme_mod( 'blogcards_padding', aino_defaults( 'blogcards_padding' ) ) ) {
+		$classes[] = 'no-blogcard-spacing';
+	}
+
 	// Blog Cards - Shadow default.
 	if ( 'shadow-a' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
 		$classes[] = 'blogcards-shadow-a';
@@ -637,6 +654,11 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blogcards-no-shadow';
 	}
 
+	// Blog Cards - Author.
+	if ( true === get_theme_mod( 'blogcards_author', aino_defaults( 'blogcards_author' ) ) ) {
+		$classes[] = 'has-post-author';
+	}
+
 	// Single Post - Featured Image Border Radius.
 	if ( 'radius-none' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-none';
@@ -655,7 +677,7 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Disable Flexbox Post Card Stretch.
-	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) === get_theme_mod( 'blogcards_bgcolor', aino_defaults( 'blogcards_bgcolor' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
+	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) === get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
 		$classes[] = 'blogcards-flexstart';
 	}
 

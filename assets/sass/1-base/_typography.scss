@@ -7,32 +7,28 @@ table,
 textarea,
 .entry-content p.has-s-font-size,
 .wp-block-calendar table,
-div[class*='wp-block-'] figcaption {
+div[class*='wp-block-'] figcaption,
+.hentry .entry-summary,
+.posts-container .hentry .entry-footer {
 	@include font-body;
 	@include font-body-s;
 	color: $color__text_two;
 }
 
-.posts-container .hentry .entry-footer,
-.hentry .entry-summary,
 .single-post .navigation a span.nav-subtitle,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
-.entry-content .sharedaddy h3.sd-title,
-.site-info {
+.entry-content .sharedaddy h3.sd-title {
 	@include font-body-xs;
 }
 
-.hentry .entry-summary {
-
-	.blog-2-column & {
-		@include breakpoint(md) {
-			@include font-body-s;
-		}
-	}
-
-	.blog-1-column & {
-		@include breakpoint(sm) {
+.hentry {
+	.entry-summary,
+	.entry-cats,
+	.entry-footer {
+		
+		.blog-1-column &,
+		.blog-2-column & {
 			@include font-body-m;
 		}
 	}
@@ -45,7 +41,8 @@ div[class*='wp-block-'] figcaption {
 .comment-metadata,
 .comment-notes,
 .logged-in-as,
-.comment-reply-title #cancel-comment-reply-link {
+.comment-reply-title #cancel-comment-reply-link,
+.footer-info {
 	@include font-body-m;
 }
 
@@ -64,7 +61,8 @@ input,
 select,
 table,
 textarea,
-.widget ul li {
+.widget ul li,
+.modal-menu {
 	@include font-body-l;
 }
 
@@ -76,7 +74,8 @@ textarea,
 	@include font-body-2xl;
 }
 
-.entry-content p.has-xxxl-font-size {
+.entry-content p.has-xxxl-font-size,
+.page-header .description p {
 	@include font-body-3xl;
 }
 
@@ -204,7 +203,9 @@ h3.has-s-font-size,
 h4.has-m-font-size,
 h5.has-l-font-size,
 h6.has-xl-font-size,
-h2.widget-title {
+h2.widget-title,
+.blog h2.entry-title,
+.blog-archive h2.entry-title {
 	@include font-h-4;
 }
 
@@ -216,7 +217,9 @@ h5.has-m-font-size,
 h6.has-l-font-size,
 .authorbox__wrap .section-title,
 .related-wrap .section-title,
-.comments-area .comments-title {
+.comments-area .comments-title,
+.blog .page-header h1.page-title,
+.blog-archive .page-header h1.page-title {
 	@include font-h-3;
 }
 
@@ -230,8 +233,6 @@ h1.site-logo {
 }
 
 .nav-title,
-.blog h2.entry-title,
-.blog-archive h2.entry-title,
 h3.has-xxs-font-size,
 h4.has-xs-font-size,
 h5,
@@ -253,16 +254,9 @@ h6.has-xxs-font-size {
 
 .blog,
 .blog-archive {
+	&.blog-1-column h2.entry-title,
 	&.blog-2-column h2.entry-title {
-		@include breakpoint(md) {
-			@include font-h-3;
-		}
-	}
-
-	&.blog-1-column h2.entry-title {
-		@include breakpoint(sm) {
-			@include font-h-4;
-		}
+		@include font-h-5;
 	}
 }
 

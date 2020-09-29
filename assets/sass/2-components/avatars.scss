@@ -1,7 +1,6 @@
 /* Avatar Hovers */
 .author-avatar .author-avatar-link,
-.author-avatar,
-.author-pic-link {
+.author-avatar {
 	display: block;
 }
 
@@ -15,7 +14,21 @@
 
 /* Blog Posts Footer */
 .entry-footer .author-avatar {
-	margin-right: 12px;
+	@include s-r-6 (margin-right);
+
+	img {
+		@include avatar-s;
+	}
+
+	.blog-3-column & {
+
+		margin-right: $s-4;
+
+		img {
+			max-width: $s-8;
+			max-height: $s-8;
+		}
+	}
 }
 
 /* Single Post Author */
@@ -28,39 +41,26 @@
 /* Authorbox */
 .author-pic-link {
 	position: relative;
-	@include avatar-l;
 	line-height: 0;
-	margin: 0 $s-4 $s-4;
+	display: block;
+	margin-bottom: $s-4;
 
-	@include breakpoint(sm) {
-		margin: 0 $s-6 $s-4 0;
-	}
-
-	@include breakpoint(lg) {
+	@include breakpoint(md) {
 		position: absolute;
 		margin: 0;
 	}
 
 	img {
 		display: block;
-		position: relative;
 		@include avatar-l;
 	}
 
-	.archive &,
 	.archive & img {
 		@include avatar-l;
-	}
-
-	.archive & {
-		@include breakpoint(sm) {
-			margin-right: $s-8;
-		}
 	}
 }
 
 /* Avatar Border Radius */
-.author-pic-link,
 .comment-author .avatar,
 .author-pic-link img,
 .author-avatar img {

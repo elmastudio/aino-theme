@@ -285,6 +285,13 @@
 			max-width: 100%;
 		}
 	}
+
+	.single & {
+		@include breakpoint(lg) {
+			margin-left: $s-7;
+			margin-right: $s-7;
+		}
+	}
 }
 
 .authorbox-title {
@@ -327,12 +334,6 @@
 }
 
 .archive.author .authorbox__content {
-	width: 100%;
-
-	@include breakpoint(sm) {
-		width: calc(100% - 208px);
-		max-width: 480px;
-	}
 
 	h1 {
 		margin: 0;

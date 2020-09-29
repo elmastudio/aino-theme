@@ -9,7 +9,7 @@ $avatar_xl = apply_filters( 'aino_author_bio_avatar_size', 144 );
 $author    = get_the_author();
 ?>
 
-<div class="authorbox__wrap grid-margins">
+<div class="authorbox__wrap">
 	<h2 class="section-title"><?php esc_html_e( 'Published by', 'aino' ); ?></h2>
 
 		<div class="authorbox__content">

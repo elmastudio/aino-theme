@@ -395,6 +395,44 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Theme Options - Footer - Footer Border Top.
+	$wp_customize->add_setting(
+		'footer_bordertop',
+		array(
+			'default'           => aino_defaults( 'footer_bordertop' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_bordertop',
+		array(
+			'label'    => esc_html__( 'Display Border Top', 'aino' ),
+			'section'  => 'aino_footer',
+			'type'     => 'checkbox',
+			'priority' => 5,
+		)
+	);
+
+	// Theme Options - Footer - Footer Border Bottom.
+	$wp_customize->add_setting(
+		'footer_borderbottom',
+		array(
+			'default'           => aino_defaults( 'footer_borderbottom' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_borderbottom',
+		array(
+			'label'    => esc_html__( 'Display Border Bottom', 'aino' ),
+			'section'  => 'aino_footer',
+			'type'     => 'checkbox',
+			'priority' => 6,
+		)
+	);
+
 	// Theme Options - Footer - Site info.
 	$wp_customize->add_setting(
 		'footer_siteinfo',
@@ -411,7 +449,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Custom Footer Info Text', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'text',
-			'priority' => 5,
+			'priority' => 7,
 		)
 	);
 
@@ -480,8 +518,27 @@ function aino_customize_register( $wp_customize ) {
 			'label'       => esc_html__( 'Blog Title Description', 'aino' ),
 			'description' => esc_html__( 'Add a custom blog title description.', 'aino' ),
 			'section'     => 'aino_blog',
-			'priority'    => 2,
+			'priority'    => 3,
 			'type'        => 'text',
+		)
+	);
+
+	// Theme Options - Blog - Sticky Badge with background.
+	$wp_customize->add_setting(
+		'sticky_bg',
+		array(
+			'default'           => aino_defaults( 'sticky_bg' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sticky_bg',
+		array(
+			'label'    => esc_html__( 'Display sticky badge with background.', 'aino' ),
+			'section'  => 'aino_blog',
+			'type'     => 'checkbox',
+			'priority' => 4,
 		)
 	);
 
@@ -525,12 +582,32 @@ function aino_customize_register( $wp_customize ) {
 			'type'        => 'select',
 			'choices'     => array(
 				'radius-none' => esc_html__( '0', 'aino' ),
-				'radius-s'    => esc_html__( '12', 'aino' ),
-				'radius-m'    => esc_html__( '24', 'aino' ),
-				'radius-l'    => esc_html__( '36', 'aino' ),
+				'radius-s'    => esc_html__( '24', 'aino' ),
+				'radius-m'    => esc_html__( '36', 'aino' ),
+				'radius-l'    => esc_html__( '42', 'aino' ),
 			),
 		)
 	);
+
+	// Theme Options - Blog Cards - Padding.
+	$wp_customize->add_setting(
+		'blogcards_padding',
+		array(
+			'default'           => aino_defaults( 'blogcards_padding' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'blogcards_padding',
+		array(
+			'label'    => esc_html__( 'Add inner spacing to Blog Card.', 'aino' ),
+			'section'  => 'aino_blogcards',
+			'type'     => 'checkbox',
+			'priority' => 2,
+		)
+	);
+
 
 	// Theme Options - Blog Cards - Shadow default.
 	$wp_customize->add_setting(
@@ -546,7 +623,7 @@ function aino_customize_register( $wp_customize ) {
 		array(
 			'label'    => esc_html__( 'Blog Card Shadow', 'aino' ),
 			'section'  => 'aino_blogcards',
-			'priority' => 2,
+			'priority' => 3,
 			'type'     => 'select',
 			'choices'  => array(
 				'shadow-none' => esc_html__( 'none', 'aino' ),
@@ -570,7 +647,7 @@ function aino_customize_register( $wp_customize ) {
 		array(
 			'label'    => esc_html__( 'Blog Card Shadow on Hover', 'aino' ),
 			'section'  => 'aino_blogcards',
-			'priority' => 3,
+			'priority' => 4,
 			'type'     => 'select',
 			'choices'  => array(
 				'shadow-none' => esc_html__( 'none', 'aino' ),
@@ -594,7 +671,7 @@ function aino_customize_register( $wp_customize ) {
 		array(
 			'label'    => esc_html__( 'Animation on Hover', 'aino' ),
 			'section'  => 'aino_blogcards',
-			'priority' => 4,
+			'priority' => 5,
 			'type'     => 'select',
 			'choices'  => array(
 				'cardhover_none'   => esc_html__( 'none', 'aino' ),
@@ -638,26 +715,26 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Post Details', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'type'     => 'hidden',
-			'priority' => 6,
+			'priority' => 7,
 		)
 	);
 
 	// Theme Options - Blog Cards - Display author instead of cats.
 	$wp_customize->add_setting(
-		'blogcards_authororcats',
+		'blogcards_author',
 		array(
-			'default'           => aino_defaults( 'blogcards_authororcats' ),
+			'default'           => aino_defaults( 'blogcards_author' ),
 			'sanitize_callback' => 'aino_sanitize_checkbox',
 		)
 	);
 
 	$wp_customize->add_control(
-		'blogcards_authororcats',
+		'blogcards_author',
 		array(
-			'label'    => esc_html__( 'Display author details instead categories', 'aino' ),
+			'label'    => esc_html__( 'Display author', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'type'     => 'checkbox',
-			'priority' => 7,
+			'priority' => 8,
 		)
 	);
 
@@ -676,7 +753,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Display author avatar', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'type'     => 'checkbox',
-			'priority' => 8,
+			'priority' => 9,
 		)
 	);
 
@@ -695,7 +772,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Display publish date', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'type'     => 'checkbox',
-			'priority' => 9,
+			'priority' => 10,
 		)
 	);
 
@@ -714,7 +791,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Display comments count', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'type'     => 'checkbox',
-			'priority' => 10,
+			'priority' => 11,
 		)
 	);
 
@@ -877,7 +954,29 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Colors - Background Color.
+	// Colors - Footer Border Color.
+	$wp_customize->add_setting(
+		'footer_border_color',
+		array(
+			'default'           => aino_defaults( 'footer_border_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'footer_border_color',
+			array(
+				'label'    => esc_html__( 'Footer Borders', 'aino' ),
+				'section'  => 'colors',
+				'priority' => 7,
+				'settings' => 'footer_border_color',
+			)
+		)
+	);
+
+	// Colors - Blog Cards Background Color.
 	$wp_customize->add_setting(
 		'blogcards_bg_color',
 		array(
@@ -893,13 +992,13 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 7,
+				'priority' => 8,
 				'settings' => 'blogcards_bg_color',
 			)
 		)
 	);
 
-	// Colors - Background Hover Color.
+	// Colors - Blog Cards Background Hover Color.
 	$wp_customize->add_setting(
 		'blogcards_bg_color_hover',
 		array(
@@ -915,29 +1014,8 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background on Hover', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 8,
-				'settings' => 'blogcards_bg_color_hover',
-			)
-		)
-	);
-
-	// Colors - Comments Background.
-	$wp_customize->add_setting(
-		'comments_bg_color',
-		array(
-			'default'           => aino_defaults( 'comments_bg_color' ),
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'comments_bg_color',
-			array(
-				'label'    => esc_html__( 'Comments Background', 'aino' ),
-				'section'  => 'colors',
 				'priority' => 9,
+				'settings' => 'blogcards_bg_color_hover',
 			)
 		)
 	);

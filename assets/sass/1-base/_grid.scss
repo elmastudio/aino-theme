@@ -236,21 +236,25 @@
 	}
 }
 
-// Mobile Grid margins for elements with 680px default width.
+// Mobile Grid margins for elements with default content width.
 .small-margins,
 .search-no-results .entry-content {
 	padding-left: $s-4;
 	padding-right: $s-4;
 
 	@include breakpoint(sm) {
-		padding-left: $s-9;
-		padding-right: $s-9;
+		padding-left: $s-7;
+		padding-right: $s-7;
 	}
 
 	@include breakpoint(lg) {
 		padding-left: 0;
 		padding-right: 0;
 	}
+}
+
+.col-margins {
+	@include col-margins;
 }
 
 /* Centered elements */
@@ -287,12 +291,8 @@
 .single .entry-tags,
 .comment-list,
 .comment-respond,
-.authorbox__content {
-	@include push--auto;
-	max-width: $col6-no-gutter;
-}
-
-.authorbox__details {
+.authorbox__details,
+.author-pic-link {
 	@include push--auto;
 	max-width: $col6-no-gutter;
 }
@@ -388,17 +388,14 @@
 .single-post .navigation .prev {
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
+	@include col-margins;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);
-		margin-left: $s-4;
-		margin-right: $s-4;
 	}
 
 	@include breakpoint(lg) {
 		flex-basis: calc(50% - 3rem);
-		margin-left: $s-6;
-		margin-right: $s-6;
 	}
 }
 
@@ -408,16 +405,13 @@
 .s4 {
 	width: 100%;
 	flex-grow: 0;
+	@include col-margins;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);
-		margin-left: $s-4;
-		margin-right: $s-4;
 	}
 
 	@include breakpoint(lg) {
 		flex-basis: calc(33.333% - 3rem);
-		margin-left: $s-6;
-		margin-right: $s-6;
 	}
 }

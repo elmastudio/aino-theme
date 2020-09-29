@@ -296,6 +296,20 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
+/* Grid Margins */
+@mixin col-margins {
+
+	@include breakpoint(sm) {
+		margin-left: $s-4;
+		margin-right: $s-4;
+	}
+
+	@include breakpoint(lg) {
+		margin-left: $s-6;
+		margin-right: $s-6;
+	}
+}
+
 /* Base Typography */
 @mixin hyphenation {
 	word-wrap: break-word;
@@ -895,7 +909,7 @@ $var: true !default; // Can be overridden elsewhere
 	padding: 0.438rem 1.125rem; // 7px and 18px
 
 	@include breakpoint(sm) {
-		font-size: $s-6;
+		font-size: 1.5rem;
 	}
 
 	@include breakpoint(md) {
@@ -917,7 +931,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 
 	@include breakpoint(lg) {
-		font-size: $s-6;
+		font-size: 1.5rem;
 	}
 }
 
@@ -932,7 +946,7 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin pill-s {
-	font-size: $s-4;
+	font-size: 1rem;
 	border-radius: 0.813rem;
 	padding: 0.313rem 0.75rem;
 }
@@ -1072,12 +1086,6 @@ $var: true !default; // Can be overridden elsewhere
 @mixin shadow-4 {
 	box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
-}
-
-/* Shadow for Menu dropdown */
-@mixin shadow-5 {
-	box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.1);
 }
 
 @mixin shadow-none {

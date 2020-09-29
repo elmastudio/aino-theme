@@ -1,12 +1,9 @@
 /* Blog Posts */
 .entry-link {
 	display: block;
-	@include s-r-7(padding-bottom);
 
-	.blog-2-column & {
-		@include breakpoint(md) {
-			padding-bottom: $s-10;
-		}
+	body:not(.no-blogcard-spacing) & {
+		@include s-r-6(padding-bottom);
 	}
 }
 
@@ -52,9 +49,14 @@
 }
 
 .posts-container .hentry .entry-footer {
-	margin-top: auto;
 	@include flexbox;
-	align-items: flex-start;
+	align-items: center;
+}
+
+body:not(.no-blogcard-spacing) {
+	.posts-container .hentry .entry-footer {
+		margin-top: auto;
+	}
 }
 
 .blogcards-flexstart .posts-container .hentry {
@@ -81,10 +83,6 @@
 			float: left;
 		}
 
-		& .hentry .entry-header {
-			padding: $s-9 $s-9 0;
-		}
-
 		& .has-post-thumbnail .entry-header {
 			float: left;
 			width: 43.334%;
@@ -92,7 +90,7 @@
 
 		& .posts-container .hentry .entry-footer {
 			margin: 0;
-			padding: $s-4 $s-9 $s-9 $s-9;
+			@include s-r-6(padding);
 		}
 
 		& .posts-container .has-post-thumbnail .entry-footer {
@@ -100,10 +98,19 @@
 			width: 43.334%;
 		}
 	}
+
+	&.no-blogcard-spacing {
+
+		.posts-container .hentry .entry-footer {
+			padding-right: 0;
+			padding-bottom: 0;
+		}
+	}
 }
 
 /* Blog Cards - Border Radius */
 .blogcards-radius-s {
+
 	.entry-link,
 	.related-post a,
 	.navigation .nav-thumb,
@@ -138,6 +145,7 @@
 }
 
 .blogcards-radius-m {
+
 	.entry-link,
 	.related-post a,
 	.navigation .nav-thumb,
@@ -172,6 +180,7 @@
 }
 
 .blogcards-radius-l {
+
 	.entry-link,
 	.related-post a,
 	.navigation .nav-thumb,
@@ -205,6 +214,28 @@
 	}
 }
 
+.cards-custom-bg {
+
+	&:not(.blog-1-column) {
+		.entry-link .post-thumb img {
+			border-bottom-left-radius: 0 !important;
+			border-bottom-right-radius: 0 !important;
+		}
+	}
+
+	&.blog-1-column {
+		.entry-link .post-thumb img {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			@include breakpoint(md) {
+				border-top-right-radius: 0 !important;
+				border-bottom-right-radius: 0 !important;
+			}
+		}
+	}
+}
+
 /* Blog Cards - Shadows */
 .blogcards-shadow-a .entry-link,
 .blogcards-shadowhover-a .entry-link:hover,
@@ -229,16 +260,16 @@
 }
 
 .cardhover-zoom .entry-link:hover,
-.cardhover-zoom .entry-link:hover + .post-edit-link,
-.cardhover-zoom .post-thumb-img:hover + .post-edit-link,
+.cardhover-zoom .entry-link:hover+.post-edit-link,
+.cardhover-zoom .post-thumb-img:hover+.post-edit-link,
 .cardhover-zoom .navigation .nav-thumb:hover {
 	-webkit-transform: perspective(1200) translateZ(30px);
 	transform: perspective(1200) translateZ(30px);
 }
 
 .cardhover-moveup .entry-link:hover,
-.cardhover-moveup .entry-link:hover + .post-edit-link,
-.cardhover-moveup .post-thumb-img:hover + .post-edit-link,
+.cardhover-moveup .entry-link:hover+.post-edit-link,
+.cardhover-moveup .post-thumb-img:hover+.post-edit-link,
 .single-post.cardhover-moveup .navigation .nav-thumb:hover {
 	-webkit-transform: translateY(-12px);
 	-ms-transform: translateY(-12px);
@@ -252,26 +283,47 @@
 }
 
 /* Blog Cards - Entry Header */
-.blog .hentry .entry-header,
-.archive .hentry .entry-header,
-.parent:not(.single-post) .hentry .entry-header {
-	padding: $s-6 $s-6 0;
+.blog,
+.archive,
+.parent:not(.single-post) {
 
-	@include breakpoint(sm) {
-		padding: $s-7 $s-7 0;
+	.hentry {
+		.entry-header {
+			@include s-r-6 (padding-top);
+		}
+	}
+
+	&:not(.no-blogcard-spacing) {
+
+		.hentry {
+			.entry-header {
+				@include s-r-6 (padding-right);
+				@include s-r-6 (padding-left);
+			}
+		}
+	}
+
+	&.blog-1-column {
+		&.no-blogcard-spacing {
+			.hentry {
+				.entry-header {
+					padding-top: 0;
+					@include s-r-6 (padding-left);
+				}
+			}
+		}
 	}
 }
 
-.blog.blog-2-column .hentry .entry-header,
-.blog-archive.blog-2-column .hentry .entry-header {
+.hentry {
 
-	@include breakpoint(md) {
-		padding: $s-10 $s-10 0;
+	.entry-cats {
+		@include s-r-2 (padding-bottom);
 	}
-}
 
-.hentry .entry-summary {
-	padding: $s-2 0 0;
+	.entry-summary {
+		@include s-r-4 (padding-top);
+	}
 }
 
 /* Blog Cards - Entry Meta Elements */
@@ -289,62 +341,67 @@
 
 /* Blog Cards - Entry Footer */
 .posts-container .hentry .entry-footer {
+	@include s-r-6 (padding-top);
+}
 
-	@include s-r-7(margin-left);
-	@include s-r-7(margin-right);
-	padding-top: $s-4;
+body:not(.blogcard-avatar-hide).has-post-author {
 
-	.blog.blog-2-column &,
-	.blog-archive.blog-2-column & {
+	.posts-container .hentry .entry-footer {
+		padding-top: 12px;
+	}
+}
 
-		@include breakpoint(md) {
-			margin-left: $s-10;
-			margin-right: $s-10;
+body:not(.no-blogcard-spacing) {
+
+	.posts-container .hentry .entry-footer {
+		@include s-r-6 (margin-left);
+		@include s-r-6 (margin-right);
+	}
+}
+
+.blog,
+.archive {
+
+	.entry-link {
+
+		.entry-comments,
+		.posted-on {
+			color: $color__text_two;
+		}
+
+		.posted-on {
+			display: flex;
+			align-items: center;
+
+			&:before {
+				content: "";
+				display: block;
+				@include s-r-9 (width);
+				background-color: #111;
+				height: 1px;
+				margin-left: $s-2;
+				margin-right: $s-2;
+			}
 		}
 	}
-}
 
-.no-postcats .posts-container .hentry .entry-footer {
-	padding-top: 28px;
-	@include breakpoint(sm) {
-		padding-top: 37px;
+	.entry-meta {
+		display: flex;
 	}
-}
 
-.no-postcats.no-postdate.no-postcommentscount .posts-container .hentry .entry-footer {
-	padding-top: 0;
-	@include breakpoint(sm) {
-		padding-top: 0;
+	.entry-header .entry-cats,
+	.entry-meta .author-name {
+		display: block;
 	}
-}
 
-.entry-meta .entry-cats,
-.entry-meta .author-name {
-	display: block;
-}
+	.entry-footer {
 
-.entry-footer .entry-author-pic,
-.entry-footer .entry-author-pic img {
-	width: $s-10;
-	height: $s-10;
-}
-
-.entry-link {
-
-	.entry-comments,
-	.posted-on,
-	.reading-time {
-		color: $color__text_two;
+		.entry-author-pic,
+		.entry-author-pic img {
+			width: $s-10;
+			height: $s-10;
+		}
 	}
-}
-
-.entry-link:hover .entry-comments,
-.entry-link:hover .posted-on {
-	display: inline;
-}
-
-.no-postcommentscount .posted-on:after {
-	content: "";
 }
 
 .divider {
@@ -384,21 +441,23 @@
 .blog-archive .page-header,
 .blog .page-header {
 
-	@include s-r-9(padding-bottom);
+	@include s-r-15(padding-bottom);
 
 	.page-title {
 		margin: 0;
-	}
+		@include s-r-7(padding-top);
+		border-top: 1px solid $color__border;
 
-	.page-title span {
-		display: block;
-		@include font-body-m;
-		@include font-regular;
-		color: $color__text_two;
+		span {
+			padding-right: 0.125rem;
+		}
 	}
 
 	.description p {
-		margin: $s-2 0 0 0;
+		margin: 0;
+		@include s-r-12(padding-top);
+		padding-bottom: 0;
+		max-width: $col8;
 	}
 }
 

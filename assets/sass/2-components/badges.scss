@@ -1,23 +1,18 @@
 /* Sticky Post Badge */
 .badge-highlight {
+	@include pill;
+	@include pill-m;
 	display: inline-block;
 	position: absolute;
-	top: 12px;
-	left: 12px;
+	@include s-r-6(top);
+	@include s-r-6(left);
 	z-index: 1;
-	font-size: 13px;
-	font-weight: bold;
-	line-height: 1.23;
-	background: $color__black;
-	color: $color__white;
-	padding: $s-2 $s-4;
+	background: transparent;
+	color: $color__text_one;
 
-	.btn-curved & {
-		border-radius: $border-radius-s;
-	}
-
-	.btn-round & {
-		border-radius: $border-radius-circle;
+	.sticky-bg & {
+		background: $color__text_one;
+		color: $color__white;
 	}
 }
 
