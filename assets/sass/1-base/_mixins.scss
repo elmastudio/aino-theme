@@ -852,7 +852,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin pill-xxxxl {
 	font-size: 1.875rem;
 	border-radius: 2rem;
-	padding: $s-2 $s-6;
+	padding: 0.438rem $s-6;
 
 	@include breakpoint(sm) {
 		font-size: 2.25rem;
@@ -870,7 +870,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin pill-xxxl {
 	font-size: 1.625rem;
 	border-radius: 1.75rem;
-	padding: $s-2 1.375rem; // 8px and 22px
+	padding: 0.438rem 1.375rem;
 
 	@include breakpoint(sm) {
 		font-size: 2rem;
@@ -888,7 +888,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin pill-xxl {
 	font-size: $s-6;
 	border-radius: $s-6;
-	padding: 0.438rem $s-5; // 7px and 20px
+	padding: 0.375rem $s-5;
 
 	@include breakpoint(sm) {
 		font-size: 1.75rem;
@@ -906,7 +906,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin pill-xl {
 	font-size: 1.375rem;
 	border-radius: 1.313rem;
-	padding: 0.438rem 1.125rem; // 7px and 18px
+	padding: 0.375rem 1.125rem;
 
 	@include breakpoint(sm) {
 		font-size: 1.5rem;
@@ -924,7 +924,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin pill-l {
 	font-size: 1.25rem;
 	border-radius: 1.125rem;
-	padding: 0.375rem $s-4; // 6px and 16px
+	padding: 0.313rem $s-4; // 6px and 16px
 
 	@include breakpoint(md) {
 		font-size: 1.375rem;
@@ -938,7 +938,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin pill-m {
 	font-size: 1.125rem;
 	border-radius: $s-4;
-	padding: 0.375rem 0.875rem; // 6px and 14px
+	padding: 0.313rem 0.875rem; // 6px and 14px
 
 	@include breakpoint(lg) {
 		font-size: 1.25rem;
@@ -948,25 +948,27 @@ $var: true !default; // Can be overridden elsewhere
 @mixin pill-s {
 	font-size: 1rem;
 	border-radius: 0.813rem;
-	padding: 0.313rem 0.75rem;
+	padding: 0.25rem 0.75rem;
 }
 
 @mixin pill-xs {
 	font-size: 0.875rem;
 	border-radius: 0.75rem;
-	padding: 0.313rem 0.625rem;
+	padding: 0.25rem 0.625rem;
 }
 
 @mixin pill-xxs {
 	font-size: 0.75rem;
 	border-radius: 0.625rem;
-	padding: 0.25rem 0.5rem;
+	padding: 0.188rem 0.5rem;
 }
 
 /* Avatars */
 @mixin avatar-l {
 	width: $s-11;
 	height: $s-11;
+	min-width: $s-11;
+	min-height: $s-11;
 
 	@include breakpoint(sm) {
 		width: $s-12;
@@ -987,6 +989,8 @@ $var: true !default; // Can be overridden elsewhere
 @mixin avatar-m {
 	width: $s-10;
 	height: $s-10;
+	min-width: $s-10;
+	min-height: $s-10;
 
 	@include breakpoint(sm) {
 		width: $s-11;
@@ -997,12 +1001,26 @@ $var: true !default; // Can be overridden elsewhere
 @mixin avatar-s {
 	width: $s-8;
 	height: $s-8;
+	min-width: $s-8;
+	min-height: $s-8;
 
 	@include breakpoint(sm) {
 		width: $s-9;
 		height: $s-9;
 		max-width: $s-9;
 	}
+}
+
+/* Divier short */
+
+@mixin divider-s {
+	content: "";
+	display: block;
+	@include s-r-9 (width);
+	background-color: #111;
+	height: 1px;
+	margin-left: $s-2;
+	margin-right: $s-2;
 }
 
 /* Placeholders */

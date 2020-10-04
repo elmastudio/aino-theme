@@ -83,8 +83,6 @@ function aino_customizer_css() {
 	.modal-menu a:hover,
 	.modal-menu li.current-menu-item > .ancestor-wrapper > a,
 	.modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
-	button.sub-menu-toggle:hover,
-	button.sub-menu-toggle:focus,
 	.wp-block-image figcaption a:hover,
 	.site-footer .footer-wrap .footer-info .site-info a:hover,
 	.site-footer a.back-top:hover {

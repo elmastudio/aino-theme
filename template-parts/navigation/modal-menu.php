@@ -15,13 +15,14 @@
 		<div class="menu-wrapper section-inner">
 
 			<div class="menu-top">
-
 				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
-					<span class="toggle-text"><?php esc_html_e( 'back', 'aino' ); ?></span>
+				<span class="toggle-inner">
+					<?php echo aino_get_svg( array( 'icon' => 'toggle-close' ) ); ?>
+					<span class="toggle-text"><?php esc_html_e( 'Close', 'aino' ); ?></span>
+				</span>
 				</button><!-- .nav-toggle -->
 
 				<?php
-
 				$mobile_menu_location = '';
 
 				// If the mobile menu location is not set, use the primary and expanded locations as fallbacks, in that order.

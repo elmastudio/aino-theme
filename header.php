@@ -40,7 +40,7 @@
 			<div id="nav-container" class="nav-container">
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 					<span class="toggle-inner">
-						<?php echo aino_get_svg( array( 'icon' => 'more_horiz-24px' ) ); ?>
+						<?php echo aino_get_svg( array( 'icon' => 'toggle-open' ) ); ?>
 						<span class="toggle-text"><?php esc_html_e( 'Menu', 'aino' ); ?></span>
 					</span>
 				</button><!-- .nav-toggle -->

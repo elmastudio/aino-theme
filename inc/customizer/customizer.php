@@ -788,7 +788,7 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'display_comments',
 		array(
-			'label'    => esc_html__( 'Display comments count', 'aino' ),
+			'label'    => esc_html__( 'Display comments count (Desktop only on blog pages)', 'aino' ),
 			'section'  => 'aino_blogcards',
 			'type'     => 'checkbox',
 			'priority' => 11,
@@ -814,9 +814,9 @@ function aino_customize_register( $wp_customize ) {
 			'type'        => 'select',
 			'choices'     => array(
 				'radius-none' => esc_html__( '0', 'aino' ),
-				'radius-s'    => esc_html__( '12', 'aino' ),
-				'radius-m'    => esc_html__( '24', 'aino' ),
-				'radius-l'    => esc_html__( '36', 'aino' ),
+				'radius-s'    => esc_html__( '24', 'aino' ),
+				'radius-m'    => esc_html__( '36', 'aino' ),
+				'radius-l'    => esc_html__( '42', 'aino' ),
 			),
 		)
 	);

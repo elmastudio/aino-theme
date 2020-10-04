@@ -654,9 +654,13 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blogcards-no-shadow';
 	}
 
-	// Blog Cards - Author.
+	// Blog Cards - Display or hide elements.
 	if ( true === get_theme_mod( 'blogcards_author', aino_defaults( 'blogcards_author' ) ) ) {
 		$classes[] = 'has-post-author';
+	}
+
+	if ( true === get_theme_mod( 'display_comments', aino_defaults( 'display_comments' ) ) ) {
+		$classes[] = 'has-comments-count';
 	}
 
 	// Single Post - Featured Image Border Radius.

@@ -374,19 +374,34 @@ body:not(.no-blogcard-spacing) {
 			align-items: center;
 
 			&:before {
-				content: "";
-				display: block;
-				@include s-r-9 (width);
-				background-color: #111;
-				height: 1px;
-				margin-left: $s-2;
-				margin-right: $s-2;
+				@include divider-s;
 			}
+		}
+	}
+
+	&.has-post-author.has-comments-count {
+
+			.entry-link {
+
+				.entry-comments {
+					@include breakpoint(lg) {
+						display: flex;
+						align-items: center;
+					}
+			
+					&:before {
+						@include divider-s;
+					}
+				}
 		}
 	}
 
 	.entry-meta {
 		display: flex;
+
+		.entry-comments {
+			display: none;
+		}
 	}
 
 	.entry-header .entry-cats,

@@ -1,6 +1,5 @@
 .site-header {
-
-	@include s-r-7 (padding-top);
+	@include s-r-7(padding-top);
 
 	.admin-bar & {
 		top: 32px;
@@ -17,7 +16,7 @@
 	align-items: center;
 	margin: 0 auto 0 0;
 	padding-right: $s-7;
-	min-height: $s-7;
+	min-height: 36px;
 
 	h1.site-title,
 	.site-title,
@@ -288,6 +287,7 @@
 .toggle:hover {
 	background-color: transparent;
 	@include shadow-none;
+	transform: none;
 }
 
 /* Navigation Toggle ------------------------- */
@@ -295,31 +295,53 @@
 	background: transparent;
 }
 .nav-toggle {
+	display: block;
 	position: absolute;
 	bottom: 0;
-	top: $s-6;
-	right: $s-6;
-	padding: $s-1;
+	top: $s-4;
+	right: $s-4;
+	padding: 17px;
 	border-radius: 0;
 	color: $color__text_one;
-	width: $s-7;
-	height: $s-7;
+	background: transparent;
+	border: 1px solid $color__text_one;
+	border-radius: 18px;
 
 	@include breakpoint(sm) {
-		right: $s-9;
+		right: $s-7;
+	}
+
+	.icon-toggle-open {
+		width: 28px;
+		height: 8px;
 	}
 }
 
 button.close-nav-toggle {
-	padding: $s-6;
+	margin-top: $s-4;
+	margin-left: $s-4;
+	margin-bottom: $s-4;
+	padding: 0;
 	border-radius: 0;
 	color: $color__text_one;
 	align-items: center;
 	display: flex;
-	justify-content: flex-start;
-	width: 100%;
-	height: 80px;
+	justify-content: center;
+	width: 64px;
+	height: 36px;
 	border-radius: 0;
+	background: transparent;
+	border: 1px solid $color__text_one;
+	border-radius: 18px;
+
+	@include breakpoint(sm) {
+		margin-left: $s-7;
+	}
+
+	.icon-toggle-close {
+		width: 28px;
+		height: 10px;
+	}
 }
 
 /* Primary Menu ---------------------------- */
@@ -574,13 +596,6 @@ ul.primary-menu {
 		flex-wrap: wrap;
 		line-height: 1;
 		justify-content: flex-start;
-		border-bottom: 1px solid red;
-		margin-left: 16px;
-		margin-right: 16px;
-	}
-
-	> li:last-child {
-		border-bottom-width: 0.1rem;
 	}
 
 	.ancestor-wrapper {
@@ -592,13 +607,18 @@ ul.primary-menu {
 	a {
 		display: block;
 		padding: $s-4 0;
+		margin: 0 $s-4;
 		text-decoration: none;
 		width: 100%;
+		border-top: 1px solid $color__border;
+	}
+
+	li:first-child a {
+		border-top: none;
 	}
 
 	ul li {
-		border-left-width: 24px;
-		border-color: transparent;
+		margin: 0;
 	}
 
 	ul li a {
@@ -606,30 +626,74 @@ ul.primary-menu {
 	}
 }
 
-.modal-menu a:focus,
-.modal-menu a:hover,
+.sub-menu {
+
+	li a {
+		padding-left: 32px;
+
+		@include breakpoint(lg) {
+			padding-left: 0;
+		}
+	}
+
+	li:first-child a {
+		border-top: none;
+	}
+
+	li:last-child a {
+		border-bottom: none;
+	}
+
+	.sub-menu {
+
+		li a {
+			padding-left: 64px;
+
+			@include breakpoint(lg) {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.menu-item-has-children {
+
+	a {
+		border-top: 1px solid $color__border;
+		width: calc(100% - 32px);
+		margin: 0 0 0 $s-4;
+
+		@include breakpoint(lg) {
+			border-top: none;
+			margin: 0;
+		}
+	}
+}
+
+.sub-menu {
+	a {
+		border-top: none;
+	}
+}
+
 .modal-menu li.current-menu-item > .ancestor-wrapper > a,
-.modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
-button.sub-menu-toggle:hover,
-button.sub-menu-toggle:focus {
+.modal-menu li.current_page_ancestor > .ancestor-wrapper > a {
 	color: $color__primary;
 }
 
 button.sub-menu-toggle {
-	flex-shrink: 0;
-	align-self: center;
-	margin: 0;
-	padding: 0;
-	width: 24px;
-	height: 24px;
+	margin: 0 16px 0 0;
+	padding: 0 0 0 16px;
 	color: $color__text_one;
 	border-radius: 0;
-	background: lightgreen;
+	position: absolute;
+	right: 0;
 
 	.icon {
 		width: 10px;
 		height: 12px;
 		text-align: right;
+		height: 53px;
 	}
 }
 
@@ -668,11 +732,6 @@ button.sub-menu-toggle {
 			&.active {
 				opacity: 0;
 			}
-		}
-
-		.modal-menu > li:last-child li {
-			border-top-color: transparent;
-			border-bottom-width: 0.1rem;
 		}
 	}
 
@@ -822,7 +881,7 @@ button.sub-menu-toggle {
 
 	&.page-template-tpl-hero-light .site-title a,
 	.custom-logo path,
-	.nav-toggle .icon-more_horiz-24px {
+	.nav-toggle .icon-toggle-open {
 		color: $color__white;
 		fill: $color__white;
 	}
