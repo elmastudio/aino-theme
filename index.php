@@ -9,15 +9,6 @@
 
 get_header(); ?>
 
-<?php
-	// Sticky Posts.
-	$sticky       = get_option( 'sticky_posts' );
-	$args_sticky  = array(
-		'post__in' => $sticky,
-	);
-	$query_sticky = new WP_Query( $args_sticky );
-	?>
-
 	<div id="primary" class="content-area">
 
 		<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -55,6 +46,16 @@ get_header(); ?>
 				endwhile;
 				?>
 		<?php endif; ?>
+
+		<?php the_posts_pagination(); ?>
+
+		<?php
+			$loadmorebtn = '<button class="loadmore btn-xl">' . __('Load more', 'aino') . '</button>';
+
+			// don't display the button if there are not enough posts
+			if ( $wp_query->max_num_pages > 1 )
+				echo $loadmorebtn;
+		?>
 
 	</div><!-- .posts-container -->
 

@@ -308,6 +308,7 @@
 	border-radius: 18px;
 
 	@include breakpoint(sm) {
+		top: $s-5;
 		right: $s-7;
 	}
 
@@ -662,6 +663,10 @@ ul.primary-menu {
 		border-top: 1px solid $color__border;
 		width: calc(100% - 32px);
 		margin: 0 0 0 $s-4;
+
+		@include breakpoint(sm) {
+			border-top: none;
+		}
 
 		@include breakpoint(lg) {
 			border-top: none;

@@ -52,6 +52,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * New: Display or hide Footer borders.
 * New: Footer borders colour.
 * New: 'Back to top' button.
+* New: Blog 'Load More' button replacing standard pagination.
 * New: Sticky badge design and Customizer option (see Theme/Blog).
 * New: No spacing option for Blog Cards (see Theme/Blog Cards).
 

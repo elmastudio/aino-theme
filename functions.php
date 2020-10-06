@@ -38,7 +38,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		 * Adds custom image sizes.
 		 */
 		add_image_size( 'aino-l', 1200, 800, true ); // Image Ratio 3:2.
-		add_image_size( 'aino-m', 735, 490, true ); // Image Ratio 3:2.
 
 		// Custom logo.
 		$logo_width  = 170;
@@ -336,7 +335,7 @@ function aino_content_width() {
 	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) || is_page_template( 'page-templates/tpl-hero.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 2010 );
 	} else {
-		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 680 );
+		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 789 );
 	}
 	// phpcs:enable
 }
@@ -564,6 +563,64 @@ function aino_skip_link_focus_fix() {
 	<?php
 }
 add_action( 'wp_print_footer_scripts', 'aino_skip_link_focus_fix' );
+
+/**
+ * Load more button.
+ */
+function aino_load_more_scripts() {
+ 
+	global $wp_query;
+ 
+	// register our main script but do not enqueue it yet
+	wp_register_script( 'aino_loadmore', get_theme_file_uri( '/assets/js/loadmore.js' ), array(), wp_get_theme()->get( 'Version' ), true );
+ 
+	// now the most interesting part
+	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
+	// you can define variables directly in your HTML but I decided that the most proper way is wp_localize_script()
+	wp_localize_script( 'aino_loadmore', 'aino_loadmore_params', array(
+		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+		'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
+		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
+		'max_page' => $wp_query->max_num_pages
+	) );
+
+	wp_enqueue_script( 'aino_loadmore' );
+}
+
+add_action( 'wp_enqueue_scripts', 'aino_load_more_scripts' );
+
+/**
+ * Load more ajax handler.
+ */
+function aino_loadmore_ajax_handler(){
+
+	// prepare our arguments for the query
+	$args = json_decode( stripslashes( $_POST['query'] ), true );
+	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
+	$args['post_status'] = 'publish';
+
+	// it is always better to use WP_Query but not here
+	query_posts( $args );
+
+	if( have_posts() ) :
+
+		// run the loop
+		while( have_posts() ): the_post();
+
+			// look into your theme code how the posts are inserted, but you can use your own HTML of course
+			// do you remember? - my example is adapted for Twenty Seventeen theme
+			get_template_part( 'template-parts/post/content', get_post_format() );
+			// for the test purposes comment the line above and uncomment the below one
+			// the_title();
+
+		endwhile;
+
+	endif;
+	die; // here we exit the script and even no wp_reset_query() required!
+}
+
+add_action('wp_ajax_loadmore', 'aino_loadmore_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_loadmore', 'aino_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
 /**
  * Add a custom max excerpt length.

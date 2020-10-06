@@ -425,6 +425,7 @@ body:not(.no-blogcard-spacing) {
 }
 
 /* Blog Cards - Hide Elements */
+.nav-links,
 .blogcard-avatar-hide .entry-footer .author-avatar,
 .no-postauthor .author,
 .no-postauthor .byline,
@@ -450,6 +451,20 @@ body:not(.no-blogcard-spacing) {
 .no-postdate-single .entry-comments:before,
 .no-postdate.no-postcommentscount .reading-time:before {
 	display: none;
+}
+
+/* Load More Button */
+.pagination {
+	width: 100%;
+	flex-basis: 100%;
+	height: 0;
+}
+
+.loadmore {
+	text-align: center;
+	@include s-r-9(margin-top);
+	@include push--auto;
+	outline: none;
 }
 
 /* Blog Archives */

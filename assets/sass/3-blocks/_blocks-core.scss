@@ -456,7 +456,7 @@ div[class*='wp-block-'] figcaption {
 
 .wp-block-media-text .wp-block-media-text__content {
 	padding: 0 $s-6;
-	
+
 	@include breakpoint(sm) {
 		padding: 0 $s-9;
 	}
@@ -527,10 +527,9 @@ div[class*='wp-block-'] figcaption {
 }
 
 /* Separator */
-
 .wp-block-separator {
 	border: none;
-	border-top: 1px solid rgba(0, 0, 0, 0.12);
+	border-top: 1px solid $color__border;
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {

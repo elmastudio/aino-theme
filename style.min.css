@@ -99,7 +99,7 @@ textarea{resize:vertical}
 .col5{max-width:37.5rem}
 .col5__no-gutter{max-width:34.5rem}
 .col6{max-width:45rem}
-.col6__no-gutter{max-width:43.25rem}
+.col6__no-gutter{max-width:43.5rem}
 .col7{max-width:52.5rem}
 .col7__no-gutter{max-width:49.5rem}
 .col8{max-width:60rem}
@@ -119,7 +119,7 @@ textarea{resize:vertical}
 .has-padding-top{padding-top:5rem}
 .has-padding-bottom{padding-bottom:5rem}
 .header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{margin-left:auto;margin-right:auto}
-.entry-content>*,.single .entry-tags,.comment-list,.comment-respond,.authorbox__details,.author-pic-link{margin-left:auto;margin-right:auto;max-width:43.25rem}
+.entry-content>*,.single .entry-tags,.comment-list,.comment-respond,.authorbox__details,.author-pic-link{margin-left:auto;margin-right:auto;max-width:43.5rem}
 .tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header{margin-left:auto;margin-right:auto;max-width:87rem}
 .tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header,.tpl-hero .entry-content>*,.tpl-hero .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
 .entry-content>*.alignwide{max-width:87rem}
@@ -289,7 +289,7 @@ h1.has-text-color.has-white-color a:hover,h2.has-text-color.has-white-color a:ho
 .posts-container .hentry .entry-meta a,.entry-comments a,.posted-on a,.comment-reply-title #cancel-comment-reply-link{color:#222;fill:#222}
 h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.single-post .navigation .nav-title .nav-subtitle:hover,.footer-widget-wrap a:hover,.comment-reply-title #cancel-comment-reply-link:hover,.logged-in-as a:hover,.related-post .entry-cats a:hover,.author-meta-info a:hover,.site-footer .footer-wrap .footer-info .site-info a:hover,.site-footer a.back-top:hover{color:#1765d8;fill:#1765d8}
 .site-branding a,.primary-menu a,.site-footer .widget_mc4wp_form_widget a,.site-footer a,.social-header-nav .icon,.social-footer-nav .icon,.sd-social-icon .sd-content ul li[class*='share-'] a{-webkit-transition:all .2s ease;transition:all .2s ease}
-.pagination a,.entry-link,.entry-link img,.navigation .nav-thumb{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.entry-link,.entry-link img,.navigation .nav-thumb{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 button,input[type="button"],input[type="reset"],input[type="submit"]{display:inline-block;line-height:1;font-weight:normal;-webkit-transition:all .2s ease;transition:all .2s ease;padding:1.125rem;font-size:1.125rem}
 button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
 button,input[type="button"],input[type="submit"]{color:#fff;fill:#fff;background-color:#1765d8}
@@ -312,8 +312,8 @@ a.btn-outline:hover,.btn-outline a:hover{color:#1765d8;fill:#1765d8}
 .btn-xxxxl{padding:1.875rem;font-size:1.875rem}
 .header-cta-wrap .btn-outline a{padding:1rem;font-size:1rem}
 .header-cta-wrap a{padding:1rem;font-size:1rem}
-.btn-curved .btn,.btn-curved input[type="submit"],.btn-curved button[type="submit"],.btn-curved a.btn-primary,.btn-curved .btn-primary a,.btn-curved a.btn-outline,.btn-curved .btn-outline a{border-radius:1.5rem}
-.btn-round .btn,.btn-round input[type="submit"],.btn-round button[type="submit"],.btn-round a.btn-primary,.btn-round .btn-primary a,.btn-round a.btn-outline,.btn-round .btn-outline a,.btn-round .search-header .search-field{border-radius:6.25em}
+.btn-curved .btn,.btn-curved input[type="submit"],.btn-curved button[type="submit"],.btn-curved a.btn-primary,.btn-curved .btn-primary a,.btn-curved a.btn-outline,.btn-curved .btn-outline a,.btn-curved .loadmore{border-radius:1.5rem}
+.btn-round .btn,.btn-round input[type="submit"],.btn-round button[type="submit"],.btn-round a.btn-primary,.btn-round .btn-primary a,.btn-round a.btn-outline,.btn-round .btn-outline a,.btn-round .search-header .search-field,.btn-round .loadmore{border-radius:6.25em}
 .header-cta-wrap ul li.sticky a{-webkit-transform:translateY(-100px);transform:translateY(-100px);-webkit-transition:-webkit-transform 150ms;transition:-webkit-transform 150ms;transition:transform 150ms;transition:transform 150ms,-webkit-transform 150ms;position:fixed;top:24px;right:48px;z-index:2}
 .has-sticky-cta .header-cta-wrap ul li.sticky a{-webkit-transform:translateY(0);transform:translateY(0)}
 #top-of-site-pixel-anchor{position:absolute;width:1px;height:1px;top:500px;left:0}
@@ -449,7 +449,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f7f7ff;border-bottom:0}
 .wp-block-table.is-style-stripes table tr{border-bottom:0}
 .wp-block-verse{color:#222;background:#f7f7ff}
-.wp-block-separator{border:0;border-top:1px solid rgba(0,0,0,0.12)}
+.wp-block-separator{border:0;border-top:1px solid #111}
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots){max-width:100px;margin-left:auto;margin-right:auto}
 .wp-block-separator.is-style-dots{background:0;border:0}
 .wp-block-separator.is-style-dots:before{color:#222;content:"\00b7 \00b7 \00b7";font-family:serif;font-size:1.25rem;letter-spacing:1em;padding-left:1em}
@@ -674,7 +674,9 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .blog .entry-header .entry-cats,.blog .entry-meta .author-name,.archive .entry-header .entry-cats,.archive .entry-meta .author-name{display:block}
 .blog .entry-footer .entry-author-pic,.blog .entry-footer .entry-author-pic img,.archive .entry-footer .entry-author-pic,.archive .entry-footer .entry-author-pic img{width:4rem;height:4rem}
 .divider{display:block;height:2.5rem}
-.blogcard-avatar-hide .entry-footer .author-avatar,.no-postauthor .author,.no-postauthor .byline,.no-postauthor .author-avatar,.no-postauthor .entry-footer .entry-meta .author-name,.no-postcats .entry-cats,.blog.no-postdate .entry-date,.blog.no-postdate .posted-on,.blog-archive.no-postdate .entry-date,.blog-archive.no-postdate .posted-on,.blog.no-postcommentscount .entry-comments,.blog-archive.no-postcommentscount .entry-comments,.no-postdate-single .entry-date,.no-postdate-single .posted-on,.blog.no-postreadtime .reading-time,.blog-archive.no-postreadtime .reading-time,.no-postreadtime-single .reading-time,.no-posttags .entry-tags,.single-post.no-postauthor .author-avatar,.single-post.no-postcommentscount-single .entry-comments,.blog.no-postdate .entry-comments:before,.blog-archive.no-postdate .entry-comments:before,.no-postdate-single .entry-comments:before,.no-postdate.no-postcommentscount .reading-time:before{display:none}
+.nav-links,.blogcard-avatar-hide .entry-footer .author-avatar,.no-postauthor .author,.no-postauthor .byline,.no-postauthor .author-avatar,.no-postauthor .entry-footer .entry-meta .author-name,.no-postcats .entry-cats,.blog.no-postdate .entry-date,.blog.no-postdate .posted-on,.blog-archive.no-postdate .entry-date,.blog-archive.no-postdate .posted-on,.blog.no-postcommentscount .entry-comments,.blog-archive.no-postcommentscount .entry-comments,.no-postdate-single .entry-date,.no-postdate-single .posted-on,.blog.no-postreadtime .reading-time,.blog-archive.no-postreadtime .reading-time,.no-postreadtime-single .reading-time,.no-posttags .entry-tags,.single-post.no-postauthor .author-avatar,.single-post.no-postcommentscount-single .entry-comments,.blog.no-postdate .entry-comments:before,.blog-archive.no-postdate .entry-comments:before,.no-postdate-single .entry-comments:before,.no-postdate.no-postcommentscount .reading-time:before{display:none}
+.pagination{width:100%;-ms-flex-preferred-size:100%;flex-basis:100%;height:0}
+.loadmore{text-align:center;margin-top:1.5rem;margin-left:auto;margin-right:auto;outline:0}
 .blog-archive .page-header,.blog .page-header{padding-bottom:6rem}
 .blog-archive .page-header .page-title,.blog .page-header .page-title{margin:0;padding-top:1rem;border-top:1px solid #111}
 .blog-archive .page-header .page-title span,.blog .page-header .page-title span{padding-right:.125rem}
@@ -744,27 +746,14 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .archive.author .author-pic img{width:5rem;height:5rem;min-width:5rem;min-height:5rem}
 .archive.author .authorbox__content h1{margin:0}
 .page-template-default .entry-header,.tpl-fullwidth .entry-header,.single-post .entry-header,.error404 .entry-header,.search-no-results .entry-header{display:block;text-align:center;padding-top:0}
-.page .entry-header .entry-title{margin:0;padding-bottom:1.5rem}
+.page .entry-header{padding-bottom:1.5rem}
+.page .entry-header .entry-title{margin:0}
 .archive .type-page .entry-footer,.search-results .type-page .entry-footer{display:none}
 .tpl-fullscreen .type-page .entry-header,.tpl-hero .type-page .entry-header{display:none}
 .tpl-fullscreen .site-content,.tpl-hero .site-content{max-width:none;padding:0}
 .tpl-fullscreen .site-content .type-page,.tpl-hero .site-content .type-page{clear:both;overflow:hidden}
 .tpl-fullscreen .site-content .entry-content,.tpl-hero .site-content .entry-content{padding-top:0;padding-bottom:0;float:none}
 .tpl-fullwidth-notitle .type-page .entry-header{display:none}
-.site-main .navigation{font-size:1rem}
-.entry-content .page-links{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.pagination .page-numbers,.pagination .current,.pagination .dots,.entry-content .page-links .post-page-numbers{display:none;text-align:center;margin:0 .5rem;padding:.906rem 0 0;width:3rem;height:3rem}
-.next.page-numbers,.pagination .prev.page-numbers{display:block}
-.blog .site-main .navigation .prev,.blog .site-main .navigation .next,.blog-archive .site-main .navigation .prev,.blog-archive .site-main .navigation .next{margin:0;width:3rem;height:3rem;background:transparent;position:absolute;top:0}
-.pagination .current,.entry-content .page-links .current,.entry-content .page-links .post-page-numbers:hover,.site-main .navigation .prev:hover,.site-main .navigation .next:hover,.pagination a.page-numbers:hover{color:#1765d8;background:#f7f7ff}
-.pagination a.page-numbers:hover .icon{fill:#1765d8}
-.pagination .prev.page-numbers,.blog-archive .site-main .navigation .prev{left:0}
-.pagination .next.page-numbers,.blog-archive .site-main .navigation .next{right:0}
-.site-main .navigation .prev .icon-arrow-left,.site-main .navigation .next .icon-arrow-right{position:absolute;left:.75rem;top:.75rem}
-.blog .site-main .navigation .meta-nav,.blog-archive .site-main .navigation .meta-nav{display:none}
-.page-numbers,.post-page-numbers{border-radius:50%}
-.infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
-.infinity-end.neverending .site-footer{display:block}
 .site-footer{background-color:#f7f7ff}
 .site-footer .textwidget p{color:#222;fill:#222}
 .site-footer .footer-wrap{padding-bottom:1.5rem}
@@ -891,8 +880,9 @@ td{padding:1rem}
 .site-header{padding-top:1.25rem}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .header-cta-wrap ul li{width:auto}
-.nav-toggle{right:2rem}
+.nav-toggle{top:1.25rem;right:2rem}
 button.close-nav-toggle{margin-left:2rem}
+.menu-item-has-children a{border-top:0}
 .header-light .site-title a,.header-light .primary-menu a,.header-light .btn-outline a,.header-light .btn-naked a,.header-light .site-header .menu-social-container .icon{color:#fff;fill:#fff}
 .header-light .site-title a:hover,.header-light .site-title a:focus,.header-light .primary-menu a:hover,.header-light .primary-menu a:focus,.header-light .btn-outline a:hover,.header-light .btn-outline a:focus,.header-light .btn-naked a:hover,.header-light .btn-naked a:focus,.header-light .site-header .menu-social-container .icon:hover,.header-light .site-header .menu-social-container .icon:focus{color:rgba(255,255,255,0.6);fill:rgba(255,255,255,0.6)}
 .header-light .header-inner .toggle .icon{fill:#fff}
@@ -905,6 +895,7 @@ button.close-nav-toggle{margin-left:2rem}
 .group-blog .byline{padding:0 1.5rem 0 0}
 .blog .entry-link .posted-on:before,.archive .entry-link .posted-on:before{width:2rem}
 .blog.has-post-author.has-comments-count .entry-link .entry-comments:before,.archive.has-post-author.has-comments-count .entry-link .entry-comments:before{width:2rem}
+.loadmore{margin-top:2rem}
 .blog-archive .page-header,.blog .page-header{padding-bottom:7.5rem}
 .blog-archive .page-header .page-title,.blog .page-header .page-title{padding-top:1.25rem}
 .blog-archive .page-header .description p,.blog .page-header .description p{padding-top:4rem}
@@ -931,9 +922,7 @@ button.close-nav-toggle{margin-left:2rem}
 .authorbox__content .author-bio{padding-top:2rem}
 .archive.author .author-pic{width:11rem;margin-right:3rem;padding-bottom:0}
 .archive.author .author-pic img{width:6rem;height:6rem}
-.page .entry-header .entry-title{padding-bottom:2rem}
-.blog .site-main .navigation,.blog-archive .site-main .navigation{margin-left:1.5rem;margin-right:1.5rem}
-.pagination .page-numbers,.pagination .current,.pagination .dots,.entry-content .page-links .post-page-numbers{display:block}
+.page .entry-header{padding-bottom:2rem}
 .site-footer .footer-wrap{padding-bottom:2rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:2rem}
 .site-footer .footer-wrap .footer-widget-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
@@ -1088,6 +1077,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-right:1.25rem}
 .blog .entry-link .posted-on:before,.archive .entry-link .posted-on:before{width:2.5rem}
 .blog.has-post-author.has-comments-count .entry-link .entry-comments:before,.archive.has-post-author.has-comments-count .entry-link .entry-comments:before{width:2.5rem}
+.loadmore{margin-top:2.5rem}
 .blog-archive .page-header,.blog .page-header{padding-bottom:9rem}
 .blog-archive .page-header .page-title,.blog .page-header .page-title{padding-top:1.5rem}
 .blog-archive .page-header .description p,.blog .page-header .description p{padding-top:5rem}
@@ -1110,7 +1100,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .authorbox__wrap .authorbox__content{padding-bottom:9rem}
 .authorbox__content .author-bio{padding-top:2.5rem}
 .archive.author .author-pic img{width:7.5rem;height:7.5rem}
-.page .entry-header .entry-title{padding-bottom:2.5rem}
+.page .entry-header{padding-bottom:2.5rem}
 .site-footer .footer-wrap{padding-bottom:2.5rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:2.5rem}
 .site-footer .footer-wrap .footer-widget-wrap .footer-widget .widget{padding-bottom:2.5rem}
@@ -1244,6 +1234,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .blog .entry-link .posted-on:before,.archive .entry-link .posted-on:before{width:3rem}
 .blog.has-post-author.has-comments-count .entry-link .entry-comments,.archive.has-post-author.has-comments-count .entry-link .entry-comments{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .blog.has-post-author.has-comments-count .entry-link .entry-comments:before,.archive.has-post-author.has-comments-count .entry-link .entry-comments:before{width:3rem}
+.loadmore{margin-top:3rem}
 .blog-archive .page-header,.blog .page-header{padding-bottom:11rem}
 .blog-archive .page-header .page-title,.blog .page-header .page-title{padding-top:2rem}
 .blog-archive .page-header .description p,.blog .page-header .description p{padding-top:6rem}
@@ -1268,7 +1259,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .single .authorbox__wrap{margin-left:2rem;margin-right:2rem}
 .authorbox__content .author-bio{padding-top:3rem}
 .archive.author .author-pic img{width:9rem;height:9rem}
-.page .entry-header .entry-title{padding-bottom:3rem}
+.page .entry-header{padding-bottom:3rem}
 .site-footer .footer-wrap{padding-bottom:3rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:3rem}
 .site-footer .footer-wrap .footer-widget-wrap .footer-widget .widget{padding-bottom:3rem}

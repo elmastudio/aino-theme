@@ -97,7 +97,7 @@ textarea{width:100%}
 .editor-styles-wrapper .wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f7f7ff;border-bottom:0}
 .editor-styles-wrapper .wp-block-table.is-style-stripes table tr{border-bottom:0}
 .wp-block-cover-image{height:75vh;min-height:400px;margin-top:1.25rem;margin-bottom:1.25rem}
-.wp-block-cover-image-text,.wp-block-cover-image h2{max-width:43.25rem;font-size:1.375rem !important;letter-spacing:-0.55px}
+.wp-block-cover-image-text,.wp-block-cover-image h2{max-width:43.5rem;font-size:1.375rem !important;letter-spacing:-0.55px}
 .wp-block-cover-image .wp-block-cover__inner-container,.wp-block-cover .wp-block-cover__inner-container{width:100%}
 .wp-block-code .block-editor-plain-text{background:#b2cacd;color:#062e32;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;font-size:.875rem;border-radius:2.25rem;padding:1rem}
 .wp-block-code .block-editor-plain-text .block-editor-plain-text{background:transparent}

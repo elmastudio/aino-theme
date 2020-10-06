@@ -32,9 +32,6 @@ function aino_customizer_css() {
 	.entry-link:hover {
 		background-color: ' . esc_attr( $blogcards_bg_color_hover ) . ';
 	}
-	.pagination .current {
-		border-color: ' . esc_attr( $primary_one_color ) . ';
-	}
 	.btn-outline a,
 	a.btn-outline {
 		box-shadow: inset 0px 0px 0px 1px ' . esc_attr( $primary_one_color ) . ';
@@ -48,6 +45,7 @@ function aino_customizer_css() {
 	.btn-primary a,
 	a.btn-primary,
 	input[type="submit"],
+	.loadmore,
 	.comment-respond input[type="submit"],
 	.widget_mc4wp_form_widget .subscribe-btn,
 	.widget_search .search-submit,

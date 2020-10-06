@@ -22,13 +22,9 @@ $custom_post_excerpt = array(
 		}
 		?>
 
-		<?php if ( '' !== get_the_post_thumbnail() && 'onecolumn' === get_theme_mod( 'blog_columns' ) ) : ?>
+		<?php if ( '' !== get_the_post_thumbnail() ) : ?>
 			<div class="post-thumb">
 				<?php the_post_thumbnail( 'aino-l' ); ?>
-			</div><!-- .post-thumb -->
-		<?php elseif ( '' !== get_the_post_thumbnail() ) : ?>
-			<div class="post-thumb">
-				<?php the_post_thumbnail( 'aino-m' ); ?>
 			</div><!-- .post-thumb -->
 		<?php endif; ?>
 
