@@ -59,7 +59,7 @@ textarea{overflow:auto}
 *,::before,::after{border-style:solid;border-width:0}
 *{margin:0;padding:0}
 :root{-webkit-box-sizing:border-box;box-sizing:border-box;cursor:default;font-family:sans-serif;font-size:100%;line-height:1.5;text-rendering:optimizeLegibility}
-html{background-color:#fff}
+html{background-color:#fff;scroll-behavior:smooth}
 a{text-decoration:none}
 audio,canvas,iframe,img,svg,video{vertical-align:middle}
 button,input,select,textarea{background-color:transparent}
