@@ -588,8 +588,8 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blog-3-column';
 	}
 
-	if ( true === get_theme_mod( 'sticky_bg', aino_defaults( 'sticky_bg' ) ) ) {
-		$classes[] = 'sticky-bg';
+	if ( true === get_theme_mod( 'sticky_light', aino_defaults( 'sticky_light' ) ) ) {
+		$classes[] = 'sticky-light';
 	}
 
 	// Blog Display Options.

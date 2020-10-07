@@ -523,19 +523,19 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Theme Options - Blog - Sticky Badge with background.
+	// Theme Options - Blog - Sticky Badge in white.
 	$wp_customize->add_setting(
-		'sticky_bg',
+		'sticky_light',
 		array(
-			'default'           => aino_defaults( 'sticky_bg' ),
+			'default'           => aino_defaults( 'sticky_light' ),
 			'sanitize_callback' => 'aino_sanitize_checkbox',
 		)
 	);
 
 	$wp_customize->add_control(
-		'sticky_bg',
+		'sticky_light',
 		array(
-			'label'    => esc_html__( 'Display sticky badge with background.', 'aino' ),
+			'label'    => esc_html__( 'Display sticky badge in light colour.', 'aino' ),
 			'section'  => 'aino_blog',
 			'type'     => 'checkbox',
 			'priority' => 4,

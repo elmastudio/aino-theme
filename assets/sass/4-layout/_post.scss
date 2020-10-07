@@ -167,13 +167,8 @@
 	}
 }
 
-.comment-body {
-	position: relative;
-	margin: $s-6 0 0;
-	padding: 0;
-}
-
 .comment-content {
+	flex-grow: 1;
 	border-bottom: 1px solid $color__border;
 
 	p {
@@ -211,7 +206,9 @@
 }
 
 .comment-body {
-
+	position: relative;
+	margin: $s-6 0 0;
+	padding: 0;
 	@include flexbox;
 	justify-content: flex-start;
 	align-items: flex-start;

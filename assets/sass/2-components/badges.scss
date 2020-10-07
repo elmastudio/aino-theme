@@ -1,8 +1,8 @@
 /* Sticky Post Badge */
 .badge-highlight {
 	@include pill;
-	@include pill-m;
-	display: inline-block;
+	@include pill-m-icon;
+	display: block;
 	position: absolute;
 	@include s-r-6(top);
 	@include s-r-6(left);
@@ -10,9 +10,34 @@
 	background: transparent;
 	color: $color__text_one;
 
-	.sticky-bg & {
-		background: $color__text_one;
+	.sticky-icon {
+		border-right: 1px solid $color__text_one;
+		padding: 0 14px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+
+		.icon {
+			width: 1.125rem; // 18px
+			height: 1.125rem;
+			display: block;
+			margin-top: 4px;
+
+			@include breakpoint(lg) {
+				width: 1.25rem; // 20px
+				height: 1.25rem;
+			}
+		}
+	}
+
+	.sticky-light & {
 		color: $color__white;
+		border: 1px solid $color__white;
+
+		.sticky-icon {
+			border-right: 1px solid $color__white;
+		}
 	}
 }
 

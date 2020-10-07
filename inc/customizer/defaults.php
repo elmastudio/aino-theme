@@ -50,7 +50,7 @@ function aino_defaults( $name ) {
 				'header_menu_uppercase'    => false,
 				'buttons_bold'             => false,
 				'buttons_uppercase'        => false,
-				'sticky_bg'                => false,
+				'sticky_light'             => false,
 				'blogcards_padding'        => true,
 
 				// Custom Content.

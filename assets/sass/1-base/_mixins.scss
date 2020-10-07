@@ -945,6 +945,17 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
+@mixin pill-m-icon {
+	font-size: 1.125rem;
+	border-radius: $s-4;
+	padding: .25rem .875rem .25rem 3.875rem;
+
+	@include breakpoint(lg) {
+		font-size: 1.25rem;
+		padding: .313rem .875rem .313rem 3.875rem;
+	}
+}
+
 @mixin pill-s {
 	font-size: 1rem;
 	border-radius: 0.813rem;
