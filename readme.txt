@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.2.0 =
 * Enhance: Single post, blog and archive page styles.
+* Enhance: Translations.
 * Update: Default font from Roboto to IBM Plex Sans.
 * Update: Font sizes.
 * Update: Remove border colour in Editor colour palette.
