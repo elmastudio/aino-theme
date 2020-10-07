@@ -8,12 +8,27 @@ Aino is a blocks-first free WordPress theme for everyone who wants to build webs
 __Author:__ elmastudio  
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
 __Requires at least:__ 5.0  
-__Tested up to:__ WordPress 5.4.2  
-__Requires PHP:__ 7.3    
+__Tested up to:__ WordPress 5.5  
+__Requires PHP:__ 7.4    
 __License:__ GPLv3 or later  
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 1.2.0   
+**Enhance:** Single post, blog and archive page styles.  
+**Enhance:** Translations.  
+**Update:** Default font from Roboto to IBM Plex Sans.  
+**Update:** Font sizes.  
+**Update:** Remove border colour in Editor colour palette.  
+**New:** Footer borders.  
+**New:** Display or hide Footer borders.  
+**New:** Footer borders colour.  
+**New:** 'Back to top' button.  
+**New:** Blog 'Load More' button replacing standard pagination.  
+**New:** Sticky badge design and Customizer option (see Theme/Blog).  
+**New:** No spacing option for Blog Cards (see Theme/Blog Cards).  
+**New:** Sticky post badge design and light colour option.  
 
 ### 1.1.6   
 **Enhance:** CSS styling for Aino blocks.  
