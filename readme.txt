@@ -55,6 +55,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * New: Blog 'Load More' button replacing standard pagination.
 * New: Sticky badge design and Customizer option (see Theme/Blog).
 * New: No spacing option for Blog Cards (see Theme/Blog Cards).
+* New: Sticky post badge design and light colour option.
 
 = 1.1.7 =
 * New: Support for custom line-height and custom units in blocks.
