@@ -8,10 +8,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header push-center small-margins">
+	<header class="entry-header push-center grid-margins">
 		<?php if ( has_category() ) : ?>
 			<div class="entry-cats">
-				<?php the_category( ',' ); ?>
+				<?php the_category( ' ' ); ?>
 			</div><!-- end .entry-cats -->
 		<?php endif; ?>
 
@@ -19,11 +19,13 @@
 
 		<div class="entry-meta">
 
-		<?php aino_posted_on(); ?>
+		<?php aino_author(); ?>
 
-			<span class="entry-comments"><?php comments_popup_link( esc_html__( 'Leave a reply', 'aino' ), esc_html__( 'Comment 1', 'aino' ), esc_html__( 'Comments %', 'aino' ), 'comments-link' ); ?></span>
+			<span class="entry-comments"><?php comments_popup_link( esc_html__( 'Leave a reply', 'aino' ), esc_html__( 'Comment 1', 'aino' ), esc_html__( 'Comments %', 'aino' ), 'comments-link' ); ?><span aria-hidden="true">&#44;</span></span>
 
 			<?php aino_estimated_read_time(); ?>
+
+			<?php aino_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 

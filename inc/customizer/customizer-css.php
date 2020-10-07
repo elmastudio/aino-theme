@@ -19,7 +19,7 @@ function aino_customizer_css() {
 	$blogcards_bg_color       = get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) );
 	$blogcards_bg_color_hover = get_theme_mod( 'blogcards_bg_color_hover', aino_defaults( 'blogcards_bg_color_hover' ) );
 	$footer_bg_color          = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );
-	$comments_bg_color        = get_theme_mod( 'comments_bg_color', aino_defaults( 'comments_bg_color' ) );
+	$footer_border_color      = get_theme_mod( 'footer_border_color', aino_defaults( 'footer_border_color' ) );
 
 	$css =
 	'
@@ -31,9 +31,6 @@ function aino_customizer_css() {
 	}
 	.entry-link:hover {
 		background-color: ' . esc_attr( $blogcards_bg_color_hover ) . ';
-	}
-	.pagination .current {
-		border-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	.btn-outline a,
 	a.btn-outline {
@@ -48,24 +45,18 @@ function aino_customizer_css() {
 	.btn-primary a,
 	a.btn-primary,
 	input[type="submit"],
+	.loadmore,
 	.comment-respond input[type="submit"],
 	.widget_mc4wp_form_widget .subscribe-btn,
 	.widget_search .search-submit,
 	.entry-content .search-submit,
 	.entry-content .has-primary-link-background-color,
-	.post-edit-link,
-	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background),
-	.primary-menu a:hover + .icon::before,
-	.primary-menu a:hover + .icon::after,
-	.primary-menu .sub-menu a:hover + .icon::before,
-	.primary-menu .sub-menu a:hover + .icon::after,
-	.header-light .primary-menu .sub-menu a:hover + .icon::before,
-	.header-light .primary-menu .sub-menu a:hover + .icon::after {
+	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	.entry-content p a:hover,
 	.entry-content li a:hover,
-	.authorbox-content p a:hover,
+	.authorbox__content p a:hover,
 	.comment-content li a:hover,
 	.comment-content p a:hover,
 	.wp-caption-text a:hover,
@@ -77,9 +68,6 @@ function aino_customizer_css() {
 	h4 a:hover,
 	h5 a:hover,
 	h6 a:hover,
-	.site-title a:hover,
-	.single-post .entry-cats a:hover,
-	.single-post .entry-meta a:hover,
 	.btn-outline a,
 	a.btn-outline,
 	.btn-outline a:hover,
@@ -87,39 +75,19 @@ function aino_customizer_css() {
 	.btn-naked:hover,
 	.btn-naked a:hover,
 	.entry-content .has-primary-one-color,
-	.primary-menu a:hover,
-	.primary-menu .sub-menu a:hover,
-	.primary-menu a:focus,
-	.primary-menu .sub-menu a:focus,
-	.primary-menu .current_page_ancestor,
-	.primary-menu .icon,
 	.wp-block-pullquote.is-style-default .has-text-color a:hover,
 	.comment-author .author-badge,
 	.modal-menu a:focus,
 	.modal-menu a:hover,
 	.modal-menu li.current-menu-item > .ancestor-wrapper > a,
 	.modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
-	button.sub-menu-toggle:hover,
-	button.sub-menu-toggle:focus,
-	.site-info a:hover,
-	.pagination .current,
-	.site-main .navigation .prev:hover,
-	.site-main .navigation .next:hover,
-	.pagination a.page-numbers:hover,
-	.pagination a.page-numbers:hover .icon,
 	.wp-block-image figcaption a:hover,
-	.menu-social-container ul li a:hover .icon {
+	.site-footer .footer-wrap .footer-info .site-info a:hover,
+	.site-footer a.back-top:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
 	@media (min-width: 75.000em) {
-		.main-navigation li a:hover,
-		.main-navigation li:focus > a,
-		.main-navigation li:hover > a,
-		.main-navigation ul ul li:focus > a,
-		.main-navigation ul ul li:hover > a,
-		.main-navigation ul ul a:hover,
-		.main-navigation ul ul.sub-menu a:hover,
 		.footer-widget-wrap a:hover,
 		.wp-block-quote .has-text-color a:hover,
 		.wp-block-pullquote .has-text-color a:hover {
@@ -128,30 +96,35 @@ function aino_customizer_css() {
 		}
 	}
 	.entry-content li a:hover,
-	.authorbox-content p a:hover,
+	.authorbox__content p a:hover,
 	.comment-content li a:hover,
 	.comment-content p a:hover,
-	.comment-metadata a:hover,
 	.comment-reply-title #cancel-comment-reply-link:hover,
 	.logged-in-as a:hover,
 	.wp-caption-text a:hover,
 	figcaption a:hover,
-	cite a:hover {
+	cite a:hover,
+	.related-post .entry-cats a:hover,
+	.author-meta-info a:hover {
 		color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	a.btn-outline:hover,
 	.btn-outline a:hover {
 		border-color: ' . esc_attr( $primary_one_color ) . ';
 	}
-	button, input[type="button"], input[type="submit"], .btn-primary a, a.btn-primary, .post-edit-link {
+	button, input[type="button"], input[type="submit"], .btn-primary a, a.btn-primary {
 		color: ' . esc_attr( $btn_text_color ) . ';
 		fill: ' . esc_attr( $btn_text_color ) . ';
 	}
 	.site-footer {
 		background-color: ' . esc_attr( $footer_bg_color ) . ';
 	}
-	.comment-content-wrap {
-		background-color: ' . esc_attr( $comments_bg_color ) . ';
+
+	.site-footer .footer-wrap .footer-info {
+		border-top: 1px solid ' . esc_attr( $footer_border_color ) . ';
+	}
+	.site-footer .footer-widget-wrap:before {
+		background-color: ' . esc_attr( $footer_border_color ) . ';
 	}
 	';
 

@@ -9,26 +9,11 @@
 	stroke: currentColor;
 	width: $s-6;
 	height: $s-6;
-	padding: 2px;
 }
 
 /* Social Icons */
 .menu-social-container .icon {
 	fill: $color__text_one;
-	width: $s-6;
-	height: $s-6;
-	margin: $s-2;
-}
-
-.menu-social-container ul li a:hover .icon {
-	fill: $color__primary;
-}
-
-/* Edit Link Icon */
-.edit-link .icon {
-	position: absolute;
-	top: 8px;
-	left: 16px;
 	width: $s-6;
 	height: $s-6;
 }

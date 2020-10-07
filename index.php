@@ -9,15 +9,6 @@
 
 get_header(); ?>
 
-<?php
-	// Sticky Posts.
-	$sticky       = get_option( 'sticky_posts' );
-	$args_sticky  = array(
-		'post__in' => $sticky,
-	);
-	$query_sticky = new WP_Query( $args_sticky );
-	?>
-
 	<div id="primary" class="content-area">
 
 		<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -56,19 +47,17 @@ get_header(); ?>
 				?>
 		<?php endif; ?>
 
-	</div><!-- .posts-container -->
+		<?php the_posts_pagination(); ?>
 
 		<?php
-		the_posts_pagination(
-			array(
-				'next_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Older posts', 'aino' ) . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Older posts', 'aino' ) . '</span> ',
-				'prev_text'          => aino_get_svg( array( 'icon' => 'baseline-chevron_left-24px' ) ) . '<span class="meta-nav">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ' .
-				'<span class="screen-reader-text">' . esc_html__( 'Newer posts', 'aino' ) . '</span> ',
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'aino' ) . ' </span>',
-			)
-		);
+			$loadmorebtn = '<button class="loadmore btn-xl">' . __('Load more', 'aino') . '</button>';
+
+			// don't display the button if there are not enough posts
+			if ( $wp_query->max_num_pages > 1 )
+				echo $loadmorebtn;
 		?>
+
+	</div><!-- .posts-container -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

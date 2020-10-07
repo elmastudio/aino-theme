@@ -12,12 +12,12 @@ if ( is_active_sidebar( 'footer-1' ) ||
 		is_active_sidebar( 'footer-5' ) ||
 		is_active_sidebar( 'footer-6' ) ) : ?>
 
-	<aside class="footer-widget-wrap widget-area widget-area-default mobile-margins" role="complementary">
+	<aside class="footer-widget-wrap widget-area widget-area-default" role="complementary">
 
 		<?php
 		if ( is_active_sidebar( 'footer-1' ) ) {
 			?>
-				<div id="footer-widget-1" class="footer-widget">
+				<div id="footer-widget-1" class="footer-widget col-margins">
 					<?php dynamic_sidebar( 'footer-1' ); ?>
 				</div>
 			<?php
@@ -25,7 +25,7 @@ if ( is_active_sidebar( 'footer-1' ) ||
 
 		if ( is_active_sidebar( 'footer-2' ) ) {
 			?>
-				<div id="footer-widget-2" class="footer-widget">
+				<div id="footer-widget-2" class="footer-widget col-margins">
 					<?php dynamic_sidebar( 'footer-2' ); ?>
 				</div>
 			<?php
@@ -33,7 +33,7 @@ if ( is_active_sidebar( 'footer-1' ) ||
 
 		if ( is_active_sidebar( 'footer-3' ) ) {
 			?>
-				<div id="footer-widget-3" class="footer-widget">
+				<div id="footer-widget-3" class="footer-widget col-margins">
 					<?php dynamic_sidebar( 'footer-3' ); ?>
 				</div>
 			<?php

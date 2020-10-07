@@ -236,21 +236,25 @@
 	}
 }
 
-// Mobile Grid margins for elements with 680px default width.
+// Mobile Grid margins for elements with default content width.
 .small-margins,
 .search-no-results .entry-content {
 	padding-left: $s-4;
 	padding-right: $s-4;
 
 	@include breakpoint(sm) {
-		padding-left: $s-9;
-		padding-right: $s-9;
+		padding-left: $s-7;
+		padding-right: $s-7;
 	}
 
 	@include breakpoint(lg) {
 		padding-left: 0;
 		padding-right: 0;
 	}
+}
+
+.col-margins {
+	@include col-margins;
 }
 
 /* Centered elements */
@@ -282,19 +286,18 @@
 	}
 }
 
-/* Default Content width (680px on desktop screens) */
+/* Default content width */
 .entry-content>*,
-.single .entry-header>*,
-.page-template-default .entry-header,
-.error404 .entry-header,
-.single .entry-footer,
-.single .comments-area,
-.single-page .comments-area {
+.single .entry-tags,
+.comment-list,
+.comment-respond,
+.authorbox__details,
+.author-pic-link {
 	@include push--auto;
 	max-width: $col6-no-gutter;
 }
 
-/* Full width page template (1200px on desktop screens) */
+/* Full width page template */
 .tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header {
 	@include push--auto;
@@ -345,8 +348,7 @@
 }
 
 /* Grid Columns */
-.posts-container,
-.single-post .nav-links {
+.posts-container {
 	@include flexbox;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -360,7 +362,6 @@
 }
 
 /* Blog Post Columns */
-
 /* 1-Column */
 .blog-1-column .posts-container .type-page,
 .blog-1-column .posts-container .type-post,
@@ -382,41 +383,35 @@
 .posts-container .hentry,
 .s6,
 .single-post .related-post,
+.single-post .related-post,
 .single-post .navigation .next,
 .single-post .navigation .prev {
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
+	@include col-margins;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);
-		margin-left: $s-4;
-		margin-right: $s-4;
 	}
 
 	@include breakpoint(lg) {
 		flex-basis: calc(50% - 3rem);
-		margin-left: $s-6;
-		margin-right: $s-6;
 	}
 }
 
 /* 3-Columns */
 .blog-3-column .posts-container .hentry,
 .header-infobar .col,
-.s4,
-.single-post .related-post {
+.s4 {
 	width: 100%;
 	flex-grow: 0;
+	@include col-margins;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);
-		margin-left: $s-4;
-		margin-right: $s-4;
 	}
 
 	@include breakpoint(lg) {
 		flex-basis: calc(33.333% - 3rem);
-		margin-left: $s-6;
-		margin-right: $s-6;
 	}
 }

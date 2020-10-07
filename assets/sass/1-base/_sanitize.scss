@@ -149,6 +149,7 @@ textarea {
 
 html {
 	background-color: $html-background-color;
+	scroll-behavior: smooth;
 }
 
 // specify the text decoration of anchors

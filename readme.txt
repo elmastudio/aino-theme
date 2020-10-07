@@ -2,9 +2,9 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
-Tested up to: WordPress 5.4.2
+Tested up to: WordPress 5.5.1
 Requires PHP: 7.3
-Stable tag: 1.1.7
+Stable tag: 1.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -42,6 +42,21 @@ Aino WordPress Theme bundles the following third-party resources:
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 1.2.0 =
+* Enhance: Single post, blog and archive page styles.
+* Enhance: Translations.
+* Update: Default font from Roboto to IBM Plex Sans.
+* Update: Font sizes.
+* Update: Remove border colour in Editor colour palette.
+* New: Footer borders.
+* New: Display or hide Footer borders.
+* New: Footer borders colour.
+* New: 'Back to top' button.
+* New: Blog 'Load More' button replacing standard pagination.
+* New: Sticky badge design and Customizer option (see Theme/Blog).
+* New: No spacing option for Blog Cards (see Theme/Blog Cards).
+* New: Sticky post badge design and light colour option.
 
 = 1.1.7 =
 * New: Support for custom line-height and custom units in blocks.

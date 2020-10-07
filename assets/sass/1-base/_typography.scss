@@ -6,56 +6,67 @@ select,
 table,
 textarea,
 .entry-content p.has-s-font-size,
-.wp-block-calendar table {
+.wp-block-calendar table,
+div[class*='wp-block-'] figcaption,
+.hentry .entry-summary,
+.posts-container .hentry .entry-footer {
 	@include font-body;
 	@include font-body-s;
 	color: $color__text_two;
 }
 
-.posts-container .hentry .entry-footer,
-.hentry .entry-summary,
-.hentry .entry-header .entry-meta,
 .single-post .navigation a span.nav-subtitle,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
-.entry-content .sharedaddy h3.sd-title,
-.widget ul li,
-.site-info {
+.entry-content .sharedaddy h3.sd-title {
 	@include font-body-xs;
 }
 
-.hentry .entry-summary {
-
-	.blog-2-column & {
-		@include breakpoint(md) {
-			@include font-body-s;
-		}
-	}
-
-	.blog-1-column & {
-		@include breakpoint(sm) {
+.hentry {
+	.entry-summary,
+	.entry-cats,
+	.entry-footer {
+		
+		.blog-1-column &,
+		.blog-2-column & {
 			@include font-body-m;
 		}
 	}
 }
 
-.entry-content p,
-.hentry ol,
-.hentry ul,
-.single-post .entry-cats,
 .page-header .description p,
-.entry-content p.has-m-font-size {
+.entry-content p.has-m-font-size,
+.related-wrap .related-post .entry-cats,
+.comment-author .fn,
+.comment-metadata,
+.comment-notes,
+.logged-in-as,
+.comment-reply-title #cancel-comment-reply-link,
+.footer-info {
 	@include font-body-m;
 }
 
 .entry-content p.has-l-font-size,
-.entry-content .intro {
+.site-branding .site-description,
+ul.primary-menu li,
+.hentry .entry-header .entry-meta,
+.comment-content p,
+.entry-content p,
+.hentry ol,
+.hentry ul,
+.authorbox__content .author-bio,
+form label,
+label .required,
+input,
+select,
+table,
+textarea,
+.widget ul li,
+.modal-menu {
 	@include font-body-l;
 }
 
-.entry-content p.has-xl-font-size,
-.footer-big .widget ul li,
-.footer-big .site-info {
+.entry-content p.has-xl-font-size {
 	@include font-body-xl;
 }
 
@@ -63,7 +74,8 @@ textarea,
 	@include font-body-2xl;
 }
 
-.entry-content p.has-xxxl-font-size {
+.entry-content p.has-xxxl-font-size,
+.page-header .description p {
 	@include font-body-3xl;
 }
 
@@ -71,9 +83,6 @@ textarea,
 	@include font-body-4xl;
 }
 
-.comment-metadata,
-.comment-notes,
-.logged-in-as,
 .entry-content p.has-xxs-font-size {
 	@include font-body-2xs;
 }
@@ -89,7 +98,6 @@ h6,
 	@include font-regular;
 	color: $color__text_one;
 	line-height: 1.1;
-	@include hyphenation;
 }
 
 h1.site-title,
@@ -148,6 +156,7 @@ h4.has-xxxxl-font-size {
 	@include font-h-9;
 }
 
+h1.entry-title,
 h1.has-l-font-size,
 h2.has-xl-font-size,
 h3.has-xxl-font-size,
@@ -165,7 +174,6 @@ h6.has-xxxxl-font-size {
 	@include font-h-7;
 }
 
-h1,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
@@ -181,7 +189,10 @@ h2.has-s-font-size,
 h3.has-m-font-size,
 h4.has-l-font-size,
 h5.has-xl-font-size,
-h6.has-xxl-font-size {
+h6.has-xxl-font-size,
+.authorbox__details .author-name,
+.related-title,
+.comment-reply-title {
 	@include font-h-5;
 }
 
@@ -192,9 +203,9 @@ h3.has-s-font-size,
 h4.has-m-font-size,
 h5.has-l-font-size,
 h6.has-xl-font-size,
-.related .section-title,
-.comments-area .comments-title,
-.footer-big h2.widget-title {
+h2.widget-title,
+.blog h2.entry-title,
+.blog-archive h2.entry-title {
 	@include font-h-4;
 }
 
@@ -204,8 +215,11 @@ h4,
 h4.has-s-font-size,
 h5.has-m-font-size,
 h6.has-l-font-size,
-h1.site-title,
-.site-title {
+.authorbox__wrap .section-title,
+.related-wrap .section-title,
+.comments-area .comments-title,
+.blog .page-header h1.page-title,
+.blog-archive .page-header h1.page-title {
 	@include font-h-3;
 }
 
@@ -218,11 +232,7 @@ h1.site-logo {
 	}
 }
 
-.related-title,
-.comment-reply-title,
 .nav-title,
-.blog h2.entry-title,
-.blog-archive h2.entry-title,
 h3.has-xxs-font-size,
 h4.has-xs-font-size,
 h5,
@@ -238,23 +248,23 @@ h6,
 h6.has-s-font-size,
 h6.has-xs-font-size,
 h6.has-xxs-font-size,
-h6.has-xxs-font-size,
-h2.widget-title {
+h6.has-xxs-font-size {
 	@include font-h-1;
 }
 
 .blog,
 .blog-archive {
+	&.blog-1-column h2.entry-title,
 	&.blog-2-column h2.entry-title {
-		@include breakpoint(md) {
-			@include font-h-3;
-		}
+		@include font-h-5;
 	}
+}
 
-	&.blog-1-column h2.entry-title {
-		@include breakpoint(sm) {
-			@include font-h-4;
-		}
+.site-branding {
+
+	.site-title {
+		@include font-body-l;
+		line-height: 1.2;
 	}
 }
 

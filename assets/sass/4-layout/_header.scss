@@ -1,10 +1,5 @@
 .site-header {
-
-	padding: $s-6 0;
-
-	@include breakpoint(sm) {
-		padding: $s-6 0;
-	}
+	@include s-r-7(padding-top);
 
 	.admin-bar & {
 		top: 32px;
@@ -21,7 +16,7 @@
 	align-items: center;
 	margin: 0 auto 0 0;
 	padding-right: $s-7;
-	min-height: $s-7;
+	min-height: 36px;
 
 	h1.site-title,
 	.site-title,
@@ -34,8 +29,7 @@
 		display: none;
 		height: $s-7;
 		margin: 0;
-		padding: 0 0 0 $s-4;
-		@include font-body-2xs;
+		padding: 0 0 0 $s-2;
 		color: $color__text_two;
 
 		@include breakpoint(sm) {
@@ -46,10 +40,10 @@
 		&:before {
 			content: "";
 			display: block;
-			width: 1px;
+			width: $s-9;
 			background-color: $color__border;
-			height: $s-6;
-			margin-right: $s-4;
+			height: 1px;
+			margin-right: $s-2;
 		}
 
 		.tagline-hide & {
@@ -141,7 +135,7 @@
 
 		@include breakpoint(header) {
 			margin-top: 0;
-			padding-left: $s-7;
+			padding-left: $s-6;
 		}
 	}
 }
@@ -160,7 +154,7 @@
 }
 
 .social-links-menu li {
-	padding-right: 12px;
+	padding-right: $s-6;
 
 	&:last-child {
 		padding-right: 0;
@@ -169,8 +163,8 @@
 
 .menu-social-container ul li a {
 	display: block;
-	width: $s-8;
-	height: $s-8;
+	width: $s-6;
+	height: $s-6;
 	line-height: 1;
 	margin: 0;
 	overflow: hidden;
@@ -293,6 +287,7 @@
 .toggle:hover {
 	background-color: transparent;
 	@include shadow-none;
+	transform: none;
 }
 
 /* Navigation Toggle ------------------------- */
@@ -300,31 +295,54 @@
 	background: transparent;
 }
 .nav-toggle {
+	display: block;
 	position: absolute;
 	bottom: 0;
-	top: $s-6;
-	right: $s-6;
-	padding: $s-1;
+	top: $s-4;
+	right: $s-4;
+	padding: 17px;
 	border-radius: 0;
 	color: $color__text_one;
-	width: $s-7;
-	height: $s-7;
+	background: transparent;
+	border: 1px solid $color__text_one;
+	border-radius: 18px;
 
 	@include breakpoint(sm) {
-		right: $s-9;
+		top: $s-5;
+		right: $s-7;
+	}
+
+	.icon-toggle-open {
+		width: 28px;
+		height: 8px;
 	}
 }
 
 button.close-nav-toggle {
-	padding: $s-6;
+	margin-top: $s-4;
+	margin-left: $s-4;
+	margin-bottom: $s-4;
+	padding: 0;
 	border-radius: 0;
 	color: $color__text_one;
 	align-items: center;
 	display: flex;
-	justify-content: flex-start;
-	width: 100%;
-	height: 80px;
+	justify-content: center;
+	width: 64px;
+	height: 36px;
 	border-radius: 0;
+	background: transparent;
+	border: 1px solid $color__text_one;
+	border-radius: 18px;
+
+	@include breakpoint(sm) {
+		margin-left: $s-7;
+	}
+
+	.icon-toggle-close {
+		width: 28px;
+		height: 10px;
+	}
 }
 
 /* Primary Menu ---------------------------- */
@@ -338,34 +356,22 @@ ul.primary-menu {
 	justify-content: flex-end;
 	margin: 0;
 
-	.icon {
+	.dropdown {
 		display: block;
-		height: 12px;
 		position: absolute;
-		pointer-events: none;
-		width: 12px;
-		transform: rotate(-45deg);
+		top: 0;
+		right: 0;
+		width: 10px;
+		padding: 0;
+		margin: 0;
 
-		&::before,
-		&::after {
-			content: "";
-			display: block;
-			background-color: $color__text_one;
-			position: absolute;
-			bottom: calc(50% - 2px);
-			left: 0;
+			.icon {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				fill: $color__text_one;
+			}
 		}
-
-		&::before {
-			height: 2px;
-			width: 8px;
-		}
-
-		&::after {
-			height: 8px;
-			width: 2px;
-		}
-	}
 
 	li {
 		font-size: inherit;
@@ -382,19 +388,19 @@ ul.primary-menu {
 	}
 
 	> li {
-		margin: 0 $s-7 0 0;
+		margin: 0 $s-6 0 0;
 
 		&:last-child {
 			margin-right: 0;
 		}
 
 		&.menu-item-has-children > a {
-			padding-right: $s-6;
+			padding-right: 18px; // 10px for the icon and 8px padding
 		}
 
 		> .icon {
-			right: $s-1;
-			top: 0.375rem; // 6px
+			right: 0;
+			top: 0;
 		}
 	}
 
@@ -402,37 +408,33 @@ ul.primary-menu {
 		color: $color__text_one;
 		display: block;
 		text-decoration: none;
-		padding-top: $s-1;
-		padding-bottom: $s-1;
+		line-height: 1;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	ul {
-		@include shadow-5;
 		@include font-body-xs;
 		background: $color__white;
 		color: $color__text_one;
 		padding: $s-6;
+		border: 1px solid $color__border;
 		position: absolute;
 		opacity: 0;
 		right: 9999rem;
-		top: calc(100% + 10px);
+		top: calc(100% + 4px);
 		transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
 		transform: translateY(0.6rem);
-		width: 264px;
+		width: 271px;
 		z-index: 10;
 		margin: 0;
-
-		.btn-curved & {
-			border-radius: $border-radius-s;
-		}
-
-		.btn-round & {
-			border-radius: $border-radius-m;
-		}
 
 		ul {
 			opacity: 0;
 			top: -1rem;
+			right: 5rem;
 
 			&::before {
 				bottom: 0;
@@ -453,7 +455,6 @@ ul.primary-menu {
 		}
 
 		&::before {
-			height: 10px;
 			left: 0;
 			right: 0;
 		}
@@ -468,7 +469,7 @@ ul.primary-menu {
 		}
 
 		li {
-			margin-bottom: $s-2;
+			margin-bottom: $s-6;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -481,13 +482,12 @@ ul.primary-menu {
 			&.menu-item-has-children .icon {
 				position: absolute;
 				right: 0;
-				top: 0.313rem; // 5px
 			}
 
 			&.menu-item-has-children:hover > ul,
 			&.menu-item-has-children:focus > ul,
 			&.menu-item-has-children.focus > ul {
-				right: calc(100% + 1.5rem);
+				right: calc(100% + 1rem);
 			}
 		}
 	}
@@ -507,26 +507,10 @@ ul.primary-menu {
 		a {
 			text-transform: uppercase;
 			@include font-body-xs;
-			letter-spacing: 2px;
 		}
 
 		ul a {
 			@include font-body-2xs;
-		}
-	}
-}
-
-@include breakpoint(lg) {
-	.header-big ul.primary-menu li,
-	.header-big .btn-naked a {
-		@include font-body-xl;
-
-		li {
-			@include font-body-m;
-		}
-
-		>.icon {
-			top: 0.9rem;
 		}
 	}
 }
@@ -604,6 +588,7 @@ ul.primary-menu {
 	ul {
 		display: none;
 		margin: 0;
+		padding: 0;
 		width: 100%;
 	}
 
@@ -612,13 +597,6 @@ ul.primary-menu {
 		flex-wrap: wrap;
 		line-height: 1;
 		justify-content: flex-start;
-		border-left-width: 48px;
-		border-right-width: 24px;
-		border-color: transparent;
-	}
-
-	> li:last-child {
-		border-bottom-width: 0.1rem;
 	}
 
 	.ancestor-wrapper {
@@ -629,14 +607,19 @@ ul.primary-menu {
 
 	a {
 		display: block;
-		padding: 20px 0;
+		padding: $s-4 0;
+		margin: 0 $s-4;
 		text-decoration: none;
 		width: 100%;
+		border-top: 1px solid $color__border;
+	}
+
+	li:first-child a {
+		border-top: none;
 	}
 
 	ul li {
-		border-left-width: 24px;
-		border-color: transparent;
+		margin: 0;
 	}
 
 	ul li a {
@@ -644,31 +627,79 @@ ul.primary-menu {
 	}
 }
 
-.modal-menu a:focus,
-.modal-menu a:hover,
+.sub-menu {
+
+	li a {
+		padding-left: 32px;
+
+		@include breakpoint(lg) {
+			padding-left: 0;
+		}
+	}
+
+	li:first-child a {
+		border-top: none;
+	}
+
+	li:last-child a {
+		border-bottom: none;
+	}
+
+	.sub-menu {
+
+		li a {
+			padding-left: 64px;
+
+			@include breakpoint(lg) {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.menu-item-has-children {
+
+	a {
+		border-top: 1px solid $color__border;
+		width: calc(100% - 32px);
+		margin: 0 0 0 $s-4;
+
+		@include breakpoint(sm) {
+			border-top: none;
+		}
+
+		@include breakpoint(lg) {
+			border-top: none;
+			margin: 0;
+		}
+	}
+}
+
+.sub-menu {
+	a {
+		border-top: none;
+	}
+}
+
 .modal-menu li.current-menu-item > .ancestor-wrapper > a,
-.modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
-button.sub-menu-toggle:hover,
-button.sub-menu-toggle:focus {
+.modal-menu li.current_page_ancestor > .ancestor-wrapper > a {
 	color: $color__primary;
 }
 
 button.sub-menu-toggle {
-	flex-shrink: 0;
-	margin: 0;
-	padding: 0;
-	width: $s-10;
-	height: $s-10;
+	margin: 0 16px 0 0;
+	padding: 0 0 0 16px;
 	color: $color__text_one;
 	border-radius: 0;
-}
+	position: absolute;
+	right: 0;
 
-button.sub-menu-toggle svg {
-	transform: rotate(90deg);
-}
-
-button.sub-menu-toggle.active svg {
-	transform: rotate(270deg);
+	.icon {
+		width: 10px;
+		height: 12px;
+		text-align: right;
+		height: 53px;
+	}
 }
 
 .menu-wrapper {
@@ -706,11 +737,6 @@ button.sub-menu-toggle.active svg {
 			&.active {
 				opacity: 0;
 			}
-		}
-
-		.modal-menu > li:last-child li {
-			border-top-color: transparent;
-			border-bottom-width: 0.1rem;
 		}
 	}
 
@@ -860,7 +886,7 @@ button.sub-menu-toggle.active svg {
 
 	&.page-template-tpl-hero-light .site-title a,
 	.custom-logo path,
-	.nav-toggle .icon-more_horiz-24px {
+	.nav-toggle .icon-toggle-open {
 		color: $color__white;
 		fill: $color__white;
 	}
@@ -896,7 +922,6 @@ button.sub-menu-toggle.active svg {
 	@include breakpoint(sm) {
 
 		.site-title a,
-		.site-branding .site-description,
 		.primary-menu a,
 		.btn-outline a,
 		.btn-naked a,

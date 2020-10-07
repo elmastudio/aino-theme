@@ -3,9 +3,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	@include btn;
-	@include btn-m;
-	padding-top: 19px;
-	padding-bottom: 18px;
+	@include btn-l;
 }
 
 button,
@@ -41,16 +39,40 @@ a.btn-outline,
 }
 
 /* Button Sizes */
-.btn-l {
-	@include btn-l;
+.btn-xxs {
+	@include btn-s;
+}
+
+.btn-xs {
+	@include btn-s;
+}
+
+.btn-s {
+	@include btn-s;
 }
 
 .btn-m {
 	@include btn-m;
 }
 
-.btn-s {
-	@include btn-s;
+.btn-l {
+	@include btn-l;
+}
+
+.btn-xl {
+	@include btn-xl;
+}
+
+.btn-xxl {
+	@include btn-xxl;
+}
+
+.btn-xxxl {
+	@include btn-xxxl;
+}
+
+.btn-xxxxl {
+	@include btn-xxxxl;
 }
 
 .header-cta-wrap {
@@ -73,17 +95,9 @@ a.btn-outline,
 	a.btn-primary,
 	.btn-primary a,
 	a.btn-outline,
-	.btn-outline a {
+	.btn-outline a,
+	.loadmore {
 		@include border-radius-s;
-	}
-
-	// smaller border radius for small buttons
-	.header-cta-wrap .btn-primary a,
-	.header-cta-wrap .btn-outline a,
-	.post-edit-link,
-	.btn-s,
-	.search-header .search-field {
-		@include border-radius-xs;
 	}
 }
 
@@ -96,27 +110,9 @@ a.btn-outline,
 	.btn-primary a,
 	a.btn-outline,
 	.btn-outline a,
-	.post-edit-link,
-	.search-header .search-field {
+	.search-header .search-field,
+	.loadmore {
 		border-radius: 6.25em;
-	}
-}
-
-/* Edit Button */
-.post-edit-link {
-	@include btn;
-	@include btn-s;
-	position: relative;
-	@include s-r-7(margin-top);
-	background: $color__primary;
-	color: $color__white;
-	fill: $color__white;
-	width: auto;
-	padding-left: 46px;
-	padding-right: 24px;
-
-	@include breakpoint(sm) {
-		padding-left: 46px;
 	}
 }
 
@@ -125,7 +121,7 @@ a.btn-outline,
 	transform: translateY(-100px);
 	transition: transform 150ms;
 	position: fixed;
-    top: 24px;
+	top: 24px;
 	right: 48px;
 	z-index: 2;
 }
@@ -153,8 +149,7 @@ a.btn-outline,
 	.btn-outline a,
 	.btn-primary a,
 	a.btn-outline,
-	a.btn-primary,
-	.post-edit-link {
+	a.btn-primary {
 		font-weight: bold;
 	}
 
@@ -172,11 +167,61 @@ a.btn-outline,
 	.btn-outline a,
 	.btn-primary a,
 	a.btn-outline,
-	a.btn-primary,
-	.post-edit-link {
+	a.btn-primary {
 		text-transform: uppercase;
 		font-size: 14px;
 		line-height: 19px;
-		letter-spacing: 2px;
+	}
+}
+
+/* Pill-shaped Buttons */
+.btn-pill,
+.single-post .entry-header .entry-cats a,
+.single-post .entry-tags a,
+.comment-metadata a,
+.post-edit-link {
+	@include pill;
+}
+
+.btn-pill,
+.single-post .entry-header .entry-cats a,
+.single-post .entry-tags a,
+.comment-metadata .reply a,
+.comment-time {
+	@include pill-light;
+}
+
+.post-edit-link,
+.comment-edit-link {
+	@include pill-dark;
+}
+
+.post-edit-link,
+.comment-metadata a {
+	display: inline-flex;
+	@include pill-m;
+}
+
+.post-edit-link {
+	@include s-r-4 (margin-top);
+}
+
+.comment-metadata a {
+	@include s-r-2 (margin-right);
+}
+
+.single {
+
+	.entry-header .entry-cats a,
+	.entry-tags a {
+		@include pill-xl;
+	}
+
+	.entry-header .entry-cats a {
+		margin: 0 $s-2 $s-2;
+	}
+
+	.entry-tags a {
+		margin: 0 $s-4 $s-2 0;
 	}
 }

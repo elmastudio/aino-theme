@@ -1,7 +1,6 @@
 /* Avatar Hovers */
 .author-avatar .author-avatar-link,
-.author-avatar,
-.author-pic-link {
+.author-avatar {
 	display: block;
 }
 
@@ -10,138 +9,86 @@
 }
 
 .author-avatar img {
-	@include avatar-s;
+	@include avatar-m;
 }
 
 /* Blog Posts Footer */
 .entry-footer .author-avatar {
-	margin-right: 12px;
+	@include s-r-6 (margin-right);
+
+	img {
+		@include avatar-s;
+	}
+
+	.blog-3-column & {
+
+		margin-right: $s-4;
+
+		img {
+			max-width: $s-8;
+			max-height: $s-8;
+		}
+	}
 }
 
 /* Single Post Author */
 .single-post .author-avatar {
 	margin: 0 auto;
-	padding: 0 0 $s-1;
-	display: inline-block;
-}
-
-/* Comments */
-.avatar-content-wrap {
-	@include flexbox;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-
-.comment-avatar {
-	flex-basis: 40px;
-	@include avatar-s;
-	border-radius: 50%;
-
-	.children & {
-		flex-basis: 24px;
-		@include avatar-xs;
-	}
-
-	img {
-		border-radius: 50%;
-	}
-}
-
-.comment-author .avatar span,
-.comment-author .avatar {
+	@include s-r-4 (padding-bottom);
 	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	@include avatar-s;
-	margin: 0 $s-3 0 0;
-}
-
-.comment-list .children .avatar {
-	@include avatar-xs;
 }
 
 /* Authorbox */
 .author-pic-link {
 	position: relative;
-	@include avatar-l;
 	line-height: 0;
-	margin: 0 auto $s-4;
+	display: block;
+	margin-bottom: $s-4;
 
-	@include breakpoint(sm) {
-		margin: 0 $s-6 0 0;
+	@include breakpoint(md) {
+		position: absolute;
+		margin: 0;
 	}
 
 	img {
 		display: block;
-		position: relative;
 		@include avatar-l;
 	}
 
-	.archive &,
 	.archive & img {
-		@include avatar-xl;
-	}
-
-	.archive & {
-		@include breakpoint(sm) {
-			margin-right: $s-8;
-		}
+		@include avatar-l;
 	}
 }
 
 /* Avatar Border Radius */
-.author-pic-link,
 .comment-author .avatar,
 .author-pic-link img,
 .author-avatar img {
 	border-radius: 50%;
 }
 
-.authorbox-wrap .author-pic-link:after,
+.authorbox__wrap .author-pic-link:after,
 .comment-avatar:after,
 .author-avatar-link:after,
 .entry-footer .author-avatar:after {
 	border-radius: 50%;
 	bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
 	top: 0;
 	z-index: 100;
 }
 
-.authorbox-wrap .author-pic-link:after {
+.authorbox__wrap .author-pic-link:after {
 	@include avatar-l;
-
-	.archive & {
-		@include avatar-xl;
-	}
 }
 
 .comment-avatar:after {
 	@include avatar-s;
-	.children & {
-		@include avatar-xs;
-	}
 }
 
 .author-avatar-link:after {
 	@include avatar-m;
-}
-
-.authorbox-wrap a.author-pic-link,
-a.author-avatar-link {
-
-	@include transition-default;
-
-	&:hover {
-		@include avatar-transition;
-		@include img-bright;
-	}
-
-	&:after {
-		@include transition-default;
-	}
 }

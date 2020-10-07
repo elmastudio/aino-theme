@@ -2,7 +2,7 @@
 $color__primary      : #1765d8;
 $color__text_one     : #111111;
 $color__text_two     : #222222;
-$color__border       : #cacaca;
+$color__border       : #111111;
 $color__background   : #f7f7ff;
 $color__success      : #408321;
 $color__notification : #1765D8;
@@ -14,30 +14,30 @@ $color__white        : #ffffff;
 $color__white_hover  : rgba(255, 255, 255, 0.6);
 
 /* Fonts */
-$font__heading       : 'Roboto', sans-serif;
-$font__body          : 'Roboto', sans-serif;
+$font__heading       : 'IBM Plex Sans', sans-serif;
+$font__body          : 'IBM Plex Sans', sans-serif;
 $font__code          : 'Monaco', 'Courier 10 Pitch', Courier, monospace;
 
 /* Spacing */
-$s-0 : 0;
-$s-1 : 0.25rem;
-$s-2 : 0.5rem;
-$s-3 : 0.75rem;
-$s-4 : 1rem;
-$s-5 : 1.25rem;
-$s-6 : 1.5rem;
-$s-7 : 2rem;
-$s-8 : 2.5rem;
-$s-9 : 3rem;
-$s-10 : 4rem;
-$s-11: 5rem;
-$s-12: 6rem;
-$s-13: 7.5rem;
-$s-14: 9rem;
-$s-15: 11rem;
-$s-16: 13rem;
-$s-17: 15.5rem;
-$s-18: 18rem;
+$s-0                 : 0;
+$s-1                 : 0.25rem;
+$s-2                 : 0.5rem;
+$s-3                 : 0.75rem;
+$s-4                 : 1rem;
+$s-5                 : 1.25rem;
+$s-6                 : 1.5rem;
+$s-7                 : 2rem;
+$s-8                 : 2.5rem;
+$s-9                 : 3rem;
+$s-10                : 4rem;
+$s-11                : 5rem;
+$s-12                : 6rem;
+$s-13                : 7.5rem;
+$s-14                : 9rem;
+$s-15                : 11rem;
+$s-16                : 13rem;
+$s-17                : 15.5rem;
+$s-18                : 18rem;
 
 /* Spacing Header Bar */
 $stickyheader-mobile : 3.438rem; // 55px
@@ -61,7 +61,7 @@ $col2-no-gutter      : 12rem; // 2 grid columns, no outer margins
 $col3-no-gutter      : 19.5rem;
 $col4-no-gutter      : 27rem;
 $col5-no-gutter      : 34.5rem;
-$col6-no-gutter      : 42rem;
+$col6-no-gutter      : 43.5rem;
 $col7-no-gutter      : 49.5rem;
 $col8-no-gutter      : 57rem;
 $col9-no-gutter      : 64.5rem;
@@ -71,8 +71,7 @@ $col12-no-gutter     : 87rem;
 
 
 /* Border Radius */
-$border-radius-xs    : 0.5rem; // 8px
-$border-radius-s     : 0.75rem; // 12px
-$border-radius-m     : 1.5rem; // 24px
-$border-radius-l     : 2.25rem; // 36px
+$border-radius-s     : 1.5rem; // 24px
+$border-radius-m     : 2.25rem; // 36px
+$border-radius-l     : 2.625rem; // 42px
 $border-radius-circle: 6.25rem; // 100px

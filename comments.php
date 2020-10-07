@@ -15,21 +15,18 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area col push-center small-margins">
+<div id="comments" class="comments-area grid-margins">
 
 	<?php
 	if ( have_comments() ) :
 		?>
 
-		<h2 class="comments-title">
-		<?php esc_html_e( 'Join the conversation', 'aino' ); ?>
-		</h2><!-- .comments-title -->
-
+		<h2 class="comments-title"><span><?php esc_html_e( 'Join the conversation', 'aino' ); ?></span></h2><!-- .comments-title -->
 		<ol class="comment-list">
 		<?php
 		wp_list_comments(
 			array(
-				'avatar_size' => 56,
+				'avatar_size' => 48,
 				'style'       => 'ol',
 				'short_ping'  => true,
 				'callback'    => 'aino_comment',

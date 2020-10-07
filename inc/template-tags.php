@@ -157,24 +157,37 @@ if ( ! function_exists( 'aino_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		$byline = sprintf(
-			'<span class="author vcard"><span class="screen-reader-text">%1$s </span> <a class="url fn n" href="%2$s">%3$s</a></span>',
-			esc_html_x( 'Author', 'Used before post author name.', 'aino' ),
-			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_html( get_the_author() )
-		);
-
 		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
-		if ( get_avatar( get_the_author_meta( 'ID' ) ) ) :
-			echo '<figure class="author-avatar" aria-hidden="true"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" tabindex="-1">' . get_avatar( get_the_author_meta( 'ID' ), 80 ) . '</a></figure>';
-
-		endif;
-
-		echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '</span><span class="posted-on">' . $posted_on . '</span>';
+		echo '<span class="posted-on">' . $posted_on . '</span>';
 
 	}
 	endif;
+
+	if ( ! function_exists( 'aino_author' ) ) :
+
+		/**
+		 * Prints HTML with meta information for the post author.
+		 */
+		function aino_author() {
+	
+			$byline = sprintf(
+				'<span class="author vcard"><span class="screen-reader-text">%1$s </span> <a class="url fn n" href="%2$s">%3$s</a></span>',
+				esc_html_x( 'Author', 'Used before post author name.', 'aino' ),
+				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+				esc_html( get_the_author() )
+			);
+	
+			if ( get_avatar( get_the_author_meta( 'ID' ) ) ) :
+				echo '<figure class="author-avatar" aria-hidden="true"><a class="author-avatar-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" tabindex="-1">' . get_avatar( get_the_author_meta( 'ID' ), 160 ) . '</a></figure>';
+	
+			endif;
+	
+			echo '<span class="author-meta-info"><span class="byline"> ' . wp_kses_post( $byline ) . '<span aria-hidden="true">&#44;</span></span>';
+	
+		}
+		endif;
+	
 
 
 if ( ! function_exists( 'aino_entry_date_blog' ) ) :
@@ -237,7 +250,7 @@ if ( ! function_exists( 'aino_edit_link' ) ) :
 	function aino_edit_link() {
 
 		$editlink = sprintf(
-			esc_html__( 'Edit Post', 'aino' ) . '<span class="edit-link">' . aino_get_svg( array( 'icon' => 'baseline-edit-24px' ) ) . '</span><span class="screen-reader-text">' . get_the_title() . '</span>'
+			esc_html__( 'Edit Post', 'aino' ) . '<span class="screen-reader-text">' . get_the_title() . '</span>'
 		);
 
 		// Edit post link.
@@ -253,9 +266,9 @@ endif;
 /**
  * Custom Aino Comment structure.
  *
- * @param  mixed $comment Custom comment parameter.
- * @param  mixed $args Comment arguments.
- * @param  mixed $depth Depth of the comment.
+ * @param mixed $comment Custom comment parameter.
+ * @param mixed $args Comment arguments.
+ * @param mixed $depth Depth of the comment.
  *
  * @return void
  */
@@ -268,7 +281,8 @@ function aino_comment( $comment, $args, $depth ) {
 	?>
 	<<?php echo esc_attr( $tag ); ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $args['has_children'] ? 'parent' : '', $comment ); ?>>
 	<article id="div-comment- <?php comment_ID(); ?>" class="comment-body">
-		<div class="avatar-content-wrap">
+		<div class="comment-content">
+			<div class="comment-author vcard">
 			<?php
 			if ( 0 !== $args['avatar_size'] ) {
 				echo '<span class="comment-avatar">';
@@ -276,54 +290,50 @@ function aino_comment( $comment, $args, $depth ) {
 				echo '</span>';
 			}
 			?>
-			<div class="comment-content-wrap">
-				<div class="comment-author vcard">
-				<?php
-				printf(
-					/* translators: %s: Name of comment author. */
-					'<b class="fn">%s</b>',
-					get_comment_author_link( $comment ),
-				);
-				?>
-				</div><!-- .comment-author -->
-					<?php comment_text(); ?>
-			</div><!-- .comment-content-wrap -->
-		</div><!-- .avatar-content-wrap -->
+			<?php
+			printf(
+				/* translators: %s: Name of comment author. */
+				'<span class="fn">%s</span>',
+				get_comment_author_link( $comment ),
+			);
+			?>
+			</div><!-- .comment-author -->
+			<?php comment_text(); ?>
 
-		<div class="comment-meta">
-			<div class="comment-metadata">
-				<a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
-					<time datetime="<?php comment_time( 'c' ); ?>">
+			<div class="comment-meta">
+				<div class="comment-metadata">
+					<a class="comment-time" href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
+						<time datetime="<?php comment_time( 'c' ); ?>">
+						<?php
+						printf(
+							/* translators: The comment date. */
+							esc_html__( '%1$s', 'aino' ),
+							esc_html( get_comment_date( '', $comment ) )
+						);
+						?>
+						</time>
+					</a>
 					<?php
-					printf(
-						/* translators: The comment date. */
-						esc_html__( '%1$s', 'aino' ),
-						esc_html( get_comment_date( '', $comment ) )
+					comment_reply_link(
+						array_merge(
+							$args,
+							array(
+								'add_below' => 'div-comment',
+								'depth'     => $depth,
+								'max_depth' => $args['max_depth'],
+								'before'    => '<div class = "reply">',
+								'after'     => '</div>',
+							)
+						)
 					);
 					?>
-					</time>
-				</a>
-				<?php
-				comment_reply_link(
-					array_merge(
-						$args,
-						array(
-							'add_below' => 'div-comment',
-							'depth'     => $depth,
-							'max_depth' => $args['max_depth'],
-							'before'    => '<div class = "reply">',
-							'after'     => '</div>',
-						)
-					)
-				);
-				?>
-				<?php edit_comment_link( __( 'Edit', 'aino' ), '<span class="edit-link">', '</span>' ); ?>
-			</div><!-- .comment-metadata -->
-
-			<?php if ( '0' === $comment->comment_approved ) : ?>
-				<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
-			<?php endif; ?>
-		</div><!-- .comment-meta -->
+					<?php edit_comment_link( __( 'Edit', 'aino' ), '<span class="edit-link">', '</span>' ); ?>
+				</div><!-- .comment-metadata -->
+				<?php if ( '0' === $comment->comment_approved ) : ?>
+					<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'aino' ); ?></p>
+				<?php endif; ?>
+			</div><!-- .comment-meta -->
+		</div><!-- .comment-content -->
 	</article><!-- .comment-body -->
 	<?php
 }
@@ -395,7 +405,7 @@ function aino_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 			$toggle_duration      = aino_toggle_duration();
 
 			// Add the sub menu toggle.
-			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Show sub menu', 'aino' ) . '</span>' . aino_get_svg( array( 'icon' => 'baseline-chevron_right-24px' ) ) . '</button>';
+			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Show sub menu', 'aino' ) . '</span>' . aino_get_svg( array( 'icon' => 'dropdown' ) ) . '</button>';
 
 		}
 
@@ -405,7 +415,7 @@ function aino_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 		// Add sub menu icons to the primary menu without toggles.
 	} elseif ( 'primary' === $args->theme_location ) {
 		if ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
-			$args->after = '<span class="icon"></span>';
+			$args->after = '<span class="dropdown">' . aino_get_svg( array( 'icon' => 'dropdown' ) ) . '</span>';
 		} else {
 			$args->after = '';
 		}
@@ -532,10 +542,6 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Header.
-	if ( true === get_theme_mod( 'header_bigfont', aino_defaults( 'header_bigfont' ) ) ) {
-		$classes[] = 'header-big';
-	}
-
 	if ( true === get_theme_mod( 'header_search', aino_defaults( 'header_search' ) ) ) {
 		$classes[] = 'has-header-search';
 	}
@@ -549,10 +555,6 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Footer.
-	if ( true === get_theme_mod( 'footer_bigfont', aino_defaults( 'footer_bigfont' ) ) ) {
-		$classes[] = 'footer-big';
-	}
-
 	if ( true === get_theme_mod( 'footer_light', aino_defaults( 'footer_light' ) ) ) {
 		$classes[] = 'footer-light';
 	}
@@ -563,6 +565,14 @@ function aino_body_classes( $classes ) {
 
 	if ( true === get_theme_mod( 'footerwidget_alignment', aino_defaults( 'footerwidget_alignment' ) ) ) {
 		$classes[] = 'footerwidgets-centered';
+	}
+
+	if ( false === get_theme_mod( 'footer_bordertop', aino_defaults( 'footer_bordertop' ) ) ) {
+		$classes[] = 'no-footer-border-top';
+	}
+
+	if ( false === get_theme_mod( 'footer_borderbottom', aino_defaults( 'footer_borderbottom' ) ) ) {
+		$classes[] = 'no-footer-border-bottom';
 	}
 
 	// Customizer Options - Blog.
@@ -576,6 +586,10 @@ function aino_body_classes( $classes ) {
 
 	if ( 'threecolumn' === get_theme_mod( 'blog_columns', aino_defaults( 'blog_columns' ) ) ) {
 		$classes[] = 'blog-3-column';
+	}
+
+	if ( true === get_theme_mod( 'sticky_light', aino_defaults( 'sticky_light' ) ) ) {
+		$classes[] = 'sticky-light';
 	}
 
 	// Blog Display Options.
@@ -613,6 +627,11 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blogcards-radius-l';
 	}
 
+	// Blog Cards - Padding.
+	if ( true !== get_theme_mod( 'blogcards_padding', aino_defaults( 'blogcards_padding' ) ) ) {
+		$classes[] = 'no-blogcard-spacing';
+	}
+
 	// Blog Cards - Shadow default.
 	if ( 'shadow-a' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
 		$classes[] = 'blogcards-shadow-a';
@@ -635,6 +654,15 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blogcards-no-shadow';
 	}
 
+	// Blog Cards - Display or hide elements.
+	if ( true === get_theme_mod( 'blogcards_author', aino_defaults( 'blogcards_author' ) ) ) {
+		$classes[] = 'has-post-author';
+	}
+
+	if ( true === get_theme_mod( 'display_comments', aino_defaults( 'display_comments' ) ) ) {
+		$classes[] = 'has-comments-count';
+	}
+
 	// Single Post - Featured Image Border Radius.
 	if ( 'radius-none' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-none';
@@ -652,12 +680,8 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'featuredimg-radius-l';
 	}
 
-	if ( true === get_theme_mod( 'comments_border', aino_defaults( 'comments_border' ) ) ) {
-		$classes[] = 'comments-border';
-	}
-
 	// Disable Flexbox Post Card Stretch.
-	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) === get_theme_mod( 'blogcards_bgcolor', aino_defaults( 'blogcards_bgcolor' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
+	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) === get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
 		$classes[] = 'blogcards-flexstart';
 	}
 

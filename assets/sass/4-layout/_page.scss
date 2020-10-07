@@ -8,20 +8,18 @@
 		display: block;
 		text-align: center;
 		padding-top: 0;
-		@include s-r-11 (padding-bottom);
 	}
 }
 
-.entry-header {
+.page {
 
-	.entry-title {
-		margin: 0;
-	}
+	.entry-header {
 
-	.archive .type-page &,
-	.search-results .type-page & {
-		@include s-r-7(padding-top);
-		padding-bottom: 0;
+		@include s-r-9 (padding-bottom);
+
+		.entry-title {
+			margin: 0;
+		}
 	}
 }
 

@@ -2,6 +2,7 @@
 .header-menu-widget-area {
 	display: block;
 	padding: $s-4 0 0;
+
 	@include breakpoint(sm) {
 		padding: $s-4 0 0;
 	}
@@ -12,11 +13,7 @@
 }
 
 .widget-title {
-	padding: 0 0 $s-6;
-
-	.footer-big & {
-		padding-bottom: $s-10;
-	}
+	@include s-r-6 (padding-bottom);
 }
 
 /* Make sure select elements fit in widgets. */
@@ -30,10 +27,10 @@
 
 .widget ul li {
 	list-style: none;
-	padding: 0 0 $s-4;
+	@include s-r-6 (padding-bottom);
 
-	.footer-big & {
-		padding-bottom: $s-8;
+	&:last-child {
+		padding-bottom: 0;
 	}
 }
 

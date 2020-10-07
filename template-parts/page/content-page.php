@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header push-center small-margins">
+	<header class="entry-header push-center grid-margins">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

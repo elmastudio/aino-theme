@@ -1,40 +1,43 @@
 /* Sticky Post Badge */
 .badge-highlight {
-	display: inline-block;
+	@include pill;
+	@include pill-m-icon;
+	display: block;
 	position: absolute;
-	top: 12px;
-	left: 12px;
+	@include s-r-6(top);
+	@include s-r-6(left);
 	z-index: 1;
-	font-size: 13px;
-	font-weight: bold;
-	line-height: 1.23;
-	background: $color__black;
-	color: $color__white;
-	padding: $s-2 $s-4;
+	background: transparent;
+	color: $color__text_one;
 
-	.btn-curved & {
-		border-radius: $border-radius-xs;
+	.sticky-icon {
+		border-right: 1px solid $color__text_one;
+		padding: 0 14px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+
+		.icon {
+			width: 1.125rem; // 18px
+			height: 1.125rem;
+			display: block;
+			margin-top: 4px;
+
+			@include breakpoint(lg) {
+				width: 1.25rem; // 20px
+				height: 1.25rem;
+			}
+		}
 	}
 
-	.btn-round & {
-		border-radius: $border-radius-circle;
+	.sticky-light & {
+		color: $color__white;
+		border: 1px solid $color__white;
+
+		.sticky-icon {
+			border-right: 1px solid $color__white;
+		}
 	}
 }
 
-/* Post Author Badge */
-.bypostauthor .comment-author {
-	@include flexbox;
-	justify-content: flex-start;
-	align-items: center;
-
-	.author-badge {
-		@include font-body-2xs;
-		@include font-bold;
-		line-height: 1;
-		color: $color__border;
-		margin-left: 4px;
-		padding: 3px 6px;
-		border-radius: $border-radius-circle;
-		border: 1px solid $color__border;
-	}
-}

@@ -48,7 +48,6 @@ module.exports = {
 	translationDestination: './languages', // Where to save the translation files.
 	packageName: 'aino', // Package name.
 	bugReport: 'https://github.com/elmastudio/aino-theme/issues', // Where can users report bugs.
-	lastTranslator: 'Ahmad Awais <your_email@email.com>', // Last translator Email ID.
 	team: 'Ellen Bauer <ellen.bauer@elmastudio.de>', // Team's Email ID.
 
 	// Browsers you care about for autoprefixing. Browserlist https://github.com/ai/browserslist
