@@ -40,6 +40,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
+* TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
 
