@@ -706,11 +706,52 @@ require get_template_directory() . '/inc/customizer/customizer-editor.php';
 require get_template_directory() . '/inc/customizer/sanitization-callbacks.php';
 
 /**
-* Load Jetpack compatibility file.
+ * SVG icons functions and filters.
+ */
+require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+/**
+  * Load Jetpack compatibility file.
 */
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
-* SVG icons functions and filters.
-*/
-require get_parent_theme_file_path( '/inc/icon-functions.php' );
+ * TGMPA plugin activation.
+ */
+require_once get_template_directory() . '/inc/classes/class-tgm-plugin-activation.php';
+
+add_action( 'tgmpa_register', 'aino_register_required_plugins' );
+
+/**
+ * Register the required plugins for this theme.
+ */
+function aino_register_required_plugins() {
+	/*
+	 * Array of plugin arrays. Required keys are name and slug.
+	 */
+	$plugins = array(
+
+		array(
+			'name'      => 'Aino Blocks - Creative Gutenberg Blocks',
+			'slug'      => 'aino-blocks',
+			'required'  => false,
+		),
+	);
+
+	/*
+	 * Array of configuration settings. Amend each line as needed.
+	 */
+	$config = array(
+		'id'           => 'aino',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path' => '',                      // Default absolute path to bundled plugins.
+		'menu'         => 'tgmpa-install-plugins', // Menu slug.
+		'has_notices'  => true,                    // Show admin notices or not.
+		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+		'message'      => '',                      // Message to output right before the plugins table.
+
+	);
+
+	tgmpa( $plugins, $config );
+}
