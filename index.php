@@ -16,7 +16,7 @@ get_header(); ?>
 			<header class="page-header grid-margins">
 
 			<?php if ( get_theme_mod( 'blog_title' ) ) : ?>
-				<h1 class="page-title col col7"><?php echo wp_kses_post( get_theme_mod( 'blog_title' ) ); ?></h1>
+				<h1 class="page-title"><?php echo wp_kses_post( get_theme_mod( 'blog_title' ) ); ?></h1>
 			<?php else : ?>
 				<h1 class="page-title screen-reader-text"><?php esc_html_e( 'Posts', 'aino' ); ?></h1>
 			<?php endif; ?>

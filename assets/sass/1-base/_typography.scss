@@ -15,7 +15,7 @@ div[class*='wp-block-'] figcaption,
 	color: $color__text_two;
 }
 
-.single-post .navigation a span.nav-subtitle,
+.single .navigation a span.nav-subtitle,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
 .entry-content .sharedaddy h3.sd-title {
@@ -23,10 +23,11 @@ div[class*='wp-block-'] figcaption,
 }
 
 .hentry {
+
 	.entry-summary,
 	.entry-cats,
 	.entry-footer {
-		
+
 		.blog-1-column &,
 		.blog-2-column & {
 			@include font-body-m;
@@ -42,7 +43,8 @@ div[class*='wp-block-'] figcaption,
 .comment-notes,
 .logged-in-as,
 .comment-reply-title #cancel-comment-reply-link,
-.footer-info {
+.footer-info,
+.footer-widget .widget ul li {
 	@include font-body-m;
 }
 
@@ -61,8 +63,8 @@ input,
 select,
 table,
 textarea,
-.widget ul li,
-.modal-menu {
+.modal-menu,
+.search-header .search-field {
 	@include font-body-l;
 }
 
@@ -93,8 +95,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.site-title {
+h6 {
 	@include font-regular;
 	color: $color__text_one;
 	line-height: 1.1;
@@ -254,6 +255,7 @@ h6.has-xxs-font-size {
 
 .blog,
 .blog-archive {
+
 	&.blog-1-column h2.entry-title,
 	&.blog-2-column h2.entry-title {
 		@include font-h-5;
@@ -264,24 +266,32 @@ h6.has-xxs-font-size {
 
 	.site-title {
 		@include font-body-l;
-		line-height: 1.2;
+		line-height: 1;
 	}
 }
 
 /* Padding for Headlines in Content Area */
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6 {
-	@include s-r-4(padding-top);
-	@include s-r-4(padding-bottom);
+.single {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@include s-r-4(padding-top);
+		@include s-r-4(padding-bottom);
+	}
+
 }
 
-address,
-p {
-	@include s-r-7(padding-bottom);
+/* Padding for Paragraphs in Content Area */
+.single {
+
+	address,
+	p {
+		@include s-r-7(padding-bottom);
+	}
 }
 
 dfn,

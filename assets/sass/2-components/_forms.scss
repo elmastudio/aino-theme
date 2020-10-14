@@ -63,7 +63,8 @@ label.color-notice span {
 		height: 150px;
 }
 
-form p {
+.single form p,
+.page form p {
 	@include s-r-6 (padding-top);
 	padding-bottom: 0;
 }
@@ -142,6 +143,7 @@ button[type="submit"] {
 }
 
 .form-round {
+
 	input,
 	select {
 		border-radius: 6.25em;
@@ -162,5 +164,4 @@ button[type="submit"] {
 			padding-left: 2.25rem;
 		}
 	}
-
 }

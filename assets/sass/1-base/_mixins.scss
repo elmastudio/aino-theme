@@ -1059,12 +1059,42 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Grid padding */
 @mixin col-padding {
-	padding-left: $s-6;
-	padding-right: $s-6;
+	padding-left: $s-4;
+	padding-right: $s-4;
 
 	@include breakpoint(sm) {
 		padding-left: $s-6;
 		padding-right: $s-6;
+	}
+}
+
+@mixin grid-margins {
+	padding-left: $s-4;
+	padding-right: $s-4;
+
+	@include breakpoint(sm) {
+		padding-left: $s-7;
+		padding-right: $s-7;
+	}
+
+	@include breakpoint(lg) {
+		padding-left: $s-9;
+		padding-right: $s-9;
+	}
+
+	@include breakpoint(xl) {
+		padding-left: $s-6;
+		padding-right: $s-6;
+	}
+}
+
+@mixin default-width-margins {
+	padding-left: $s-4;
+	padding-right: $s-4;
+
+	@include breakpoint(sm) {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 

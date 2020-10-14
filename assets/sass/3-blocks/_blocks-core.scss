@@ -62,19 +62,15 @@
 		max-width: $col12;
 		clear: both;
 		overflow: hidden;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: $s-6;
-		padding-right: $s-6;
+		@include push--auto;
+		@include grid-margins;
+	}
 
-		@include breakpoint(sm) {
-			padding-left: $s-9;
-			padding-right: $s-9;
-		}
+	.wp-block-group__inner-container {
 
-		@include breakpoint(xl) {
-			padding-left: $s-6;
-			padding-right: $s-6;
+		.wp-block-image:not([data-align=full]):not([data-align=wide]):not([data-align=left]):not([data-align=right]) {
+			@include default-width-margins;
+			@include push--auto;
 		}
 	}
 }
@@ -429,17 +425,37 @@ div[class*='wp-block-'] figcaption {
 
 /* Cover */
 
-.wp-block-cover {
+.hentry .entry-content {
 
-	.wp-block-cover__inner-container {
+	.wp-block-cover {
 
-		width: 100%;
-		padding: $s-9 0;
+		&.alignwide {
+			width: calc(100% - 2rem);
 
-		p {
-			margin-bottom: 0;
+			@include breakpoint(sm) {
+				width: calc(100% - 4rem);
+			}
+
+			@include breakpoint(lg) {
+				width: calc(100% - 6rem);
+			}
+
+			@include breakpoint(xl) {
+				max-width: $col12-no-gutter;
+			}
+		}
+
+		.wp-block-cover__inner-container {
+
+			width: 100%;
+			padding: $s-9 0;
+
+			p {
+				margin-bottom: 0;
+			}
 		}
 	}
+
 }
 
 .wp-block-cover-image .wp-block-cover-image-text,
@@ -529,17 +545,34 @@ div[class*='wp-block-'] figcaption {
 /* Separator */
 .wp-block-separator {
 	border: none;
-	border-top: 1px solid $color__border;
+	border-top: 1px solid;
+
+	&.is-style-dots {
+		background: none;
+		border: none;
+	}
+
+	&.is-style-wide {
+		margin: 0 $s-4;
+		max-width: $col12-no-gutter;
+
+		@include breakpoint(sm) {
+			margin: 0 $s-7;
+		}
+
+		@include breakpoint(lg) {
+			margin: 0 $s-9;
+		}
+
+		@include breakpoint(xl) {
+			margin: 0 auto;
+		}
+	}
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 100px;
 	@include push--auto;
-}
-
-.wp-block-separator.is-style-dots {
-	background: none;
-	border: none;
 }
 
 .wp-block-separator.is-style-dots:before {
@@ -661,10 +694,15 @@ div[class*='wp-block-'] figcaption {
 		margin-bottom: 0;
 	}
 
+	.wp-block-group__inner-container {
+		.wp-block-image:not(.alignwide):not(.alignfull) {
+			max-width: $col6-no-gutter;
+			@include push--auto;
+		}
+	}
 }
 
 /* Block Alignment */
-
 .wp-block-cover-image,
 .wp-block-cover,
 .wp-block-cover,

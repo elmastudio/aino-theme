@@ -38,20 +38,18 @@
 			</div><!-- .site-branding -->
 
 			<div id="nav-container" class="nav-container">
+
+				<?php if ( has_nav_menu( 'primary' ) ) : ?>
+
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 					<span class="toggle-inner">
 						<?php echo aino_get_svg( array( 'icon' => 'toggle-open' ) ); ?>
 						<span class="toggle-text"><?php esc_html_e( 'Menu', 'aino' ); ?></span>
 					</span>
 				</button><!-- .nav-toggle -->
-
 				<div class="header-navigation-wrapper">
-
-					<?php if ( has_nav_menu( 'primary' ) ) : ?>
-
 					<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Horizontal', 'aino' ); ?>" role="navigation">
 						<ul class="primary-menu reset-list-style">
-
 							<?php
 							if ( has_nav_menu( 'primary' ) ) {
 
@@ -64,13 +62,11 @@
 								);
 							}
 							?>
-
 						</ul><!-- .primary-menu -->
 					</nav><!-- .primary-menu-wrapper -->
-
-					<?php endif; ?>
-
 				</div><!-- .header-navigation-wrapper -->
+
+				<?php endif; ?>
 
 			</div><!-- .nav-container -->
 

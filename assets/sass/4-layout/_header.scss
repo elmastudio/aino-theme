@@ -11,7 +11,6 @@
 
 /* Site Title, Logo and Tagline */
 .site-branding {
-
 	@include flexbox;
 	align-items: center;
 	margin: 0 auto 0 0;
@@ -55,14 +54,16 @@
 		display: block;
 		padding: 0 $s-2 0 0;
 
-		img {
+		img,
+		.custom-logo {
 			width: auto !important;
-			height: $s-7;
+			height: 2.25rem;
 			object-fit: fill;
-			max-height: $s-7;
+			max-height: 2.25rem;
 
 			@include breakpoint(header) {
 				max-height: none;
+				height: auto;
 			}
 		}
 
@@ -79,11 +80,11 @@
 /* Header Search Form */
 .search-header {
 	position: relative;
-	margin: $s-4 0 0 0;
+	margin: $s-4 0;
 	padding: 0;
 
 	@include breakpoint(header) {
-		margin: 0 0 0 $s-7;
+		margin: 0 0 0 $s-6;
 		padding: 0;
 	}
 
@@ -93,8 +94,17 @@
 
 	label {
 		cursor: pointer;
+		margin: 0;
 		padding: 0;
 		color: $color__text_two;
+
+		@include breakpoint(md) {
+			padding: 0;
+		}
+	
+		@include breakpoint(lg) {
+			padding: 0;
+		}
 	}
 
 	.search-form {
@@ -106,12 +116,9 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $s-8;
-		padding: 0 0 0 46px;
+		height: $s-9;
 		vertical-align: middle;
 		border: 1px solid $color__border;
-		font-size: 14px;
-		line-height: 20px;
 	}
 }
 
@@ -306,6 +313,7 @@
 	background: transparent;
 	border: 1px solid $color__text_one;
 	border-radius: 18px;
+	max-height: 2.25rem;
 
 	@include breakpoint(sm) {
 		top: $s-5;
@@ -884,14 +892,22 @@ button.sub-menu-toggle {
 /* Light Header Style ---------------------------- */
 .header-light {
 
+	.site-branding .site-description,
 	&.page-template-tpl-hero-light .site-title a,
-	.custom-logo path,
-	.nav-toggle .icon-toggle-open {
+	.custom-logo-link .custom-logo path,
+	.nav-toggle,
+	.nav-toggle .icon-toggle-open,
+	ul.primary-menu .dropdown .icon {
 		color: $color__white;
 		fill: $color__white;
 	}
 
-	.search-header .search-field {
+	.nav-toggle {
+		border: 1px solid $color__white;
+	}
+
+	.search-header .search-field,
+	.site-branding .site-description:before {
 		border-color: transparent;
 		background-color: $color__white;
 
@@ -899,6 +915,10 @@ button.sub-menu-toggle {
 		&:active {
 			background-color: rgba(255, 255, 255, 0.9);
 		}
+	}
+
+	.primary-menu .sub-menu .dropdown .icon {
+		fill: $color__text_one;
 	}
 
 	.btn-outline a {
@@ -957,11 +977,6 @@ button.sub-menu-toggle {
 
 		.primary-menu .sub-menu a {
 			color: $color__text_one;
-		}
-
-		.primary-menu .sub-menu a:hover + .icon::before,
-		.primary-menu .sub-menu a:hover + .icon::after {
-			background-color: $color__primary;
 		}
 	}
 }

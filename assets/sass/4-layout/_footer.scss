@@ -177,9 +177,9 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 .footer-light {
 
 	.site-footer,
-	.site-info,
-	.site-info a,
-	.site-info span,
+	.site-footer .footer-wrap .footer-info .site-info,
+	.site-footer .footer-wrap .footer-info .site-info a,
+	.site-footer .footer-wrap .footer-info .site-info span,
 	.site-footer .widget-title,
 	.textwidget p,
 	.textwidget p a,
@@ -190,7 +190,8 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 	}
 
 	.footer-widget-wrap a,
-	.site-info a {
+	.site-footer .footer-wrap .footer-info .site-info a,
+	.site-footer a.back-top {
 
 		&:hover,
 		&:focus {
