@@ -78,11 +78,13 @@ a.btn-outline,
 .header-cta-wrap {
 
 	.btn-outline a {
-		@include btn-s;
+		@include btn-l;
 	}
 
 	a {
-		@include btn-s;
+		@include btn-l;
+		padding: 0 !important;
+		line-height: 1;
 	}
 }
 

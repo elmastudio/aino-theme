@@ -224,15 +224,6 @@ h6.has-l-font-size,
 	@include font-h-3;
 }
 
-h1.site-logo {
-	font-size: 1px;
-	line-height: 1;
-
-	@include breakpoint(sm) {
-		font-size: 1;
-	}
-}
-
 .nav-title,
 h3.has-xxs-font-size,
 h4.has-xs-font-size,

@@ -50,6 +50,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * Enhance: Footer site info.
 * Bugfix: Cover block responsiveness.
 * Bugfix: Responsive spacing.
+* Bugfix: Multiple alignfull blocks scrollbar issue. Fixes #131
  
 = 1.2.1 =
 * New: Aino Blocks plugin recommendation notice.

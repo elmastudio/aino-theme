@@ -48,9 +48,8 @@
 
 	&.alignfull {
 		position: relative;
-		width: 100vw;
-		margin-left: calc(50% - 50vw);
-		max-width: none;
+		max-width: 100%;
+		width: auto;
 	}
 }
 

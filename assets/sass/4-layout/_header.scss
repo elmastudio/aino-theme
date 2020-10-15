@@ -222,7 +222,7 @@
 	.has-nav-social & {
 
 		@include breakpoint(header) {
-			padding: 0 0 0 $s-7;
+			padding: 0 0 0 $s-6;
 		}
 	}
 
@@ -302,18 +302,17 @@
 	background: transparent;
 }
 .nav-toggle {
-	display: block;
 	position: absolute;
+	height: 2.25rem;
 	bottom: 0;
 	top: $s-4;
 	right: $s-4;
-	padding: 17px;
+	padding: 0 17px;
 	border-radius: 0;
 	color: $color__text_one;
 	background: transparent;
 	border: 1px solid $color__text_one;
 	border-radius: 18px;
-	max-height: 2.25rem;
 
 	@include breakpoint(sm) {
 		top: $s-5;
@@ -897,7 +896,8 @@ button.sub-menu-toggle {
 	.custom-logo-link .custom-logo path,
 	.nav-toggle,
 	.nav-toggle .icon-toggle-open,
-	ul.primary-menu .dropdown .icon {
+	ul.primary-menu .dropdown .icon,
+	.header-cta-wrap a {
 		color: $color__white;
 		fill: $color__white;
 	}
