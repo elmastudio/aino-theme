@@ -335,7 +335,7 @@ function aino_content_width() {
 	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) || is_page_template( 'page-templates/tpl-hero.php' ) ) {
 		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 2010 );
 	} else {
-		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 789 );
+		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 696 );
 	}
 	// phpcs:enable
 }

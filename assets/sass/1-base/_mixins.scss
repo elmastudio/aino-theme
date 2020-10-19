@@ -1024,14 +1024,21 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Divier short */
 
-@mixin divider-s {
+@mixin divider {
 	content: "";
 	display: block;
-	@include s-r-9 (width);
 	background-color: #111;
 	height: 1px;
 	margin-left: $s-2;
 	margin-right: $s-2;
+}
+
+@mixin divider-s {
+	@include s-r-8 (width);
+}
+
+@mixin divider-m {
+	@include s-r-9 (width);
 }
 
 /* Placeholders */
@@ -1068,7 +1075,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-@mixin grid-margins {
+@mixin outer-margins {
 	padding-left: $s-4;
 	padding-right: $s-4;
 

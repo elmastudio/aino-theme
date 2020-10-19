@@ -24,7 +24,7 @@
 
 <div id="page" class="site">
 	<header id="site-header" class="site-header" role="banner">
-		<div class="header-inner section-inner grid-margins">
+		<div class="header-inner section-inner outer-margins">
 			<div class="site-branding">
 
 				<?php

@@ -62,7 +62,7 @@
 		clear: both;
 		overflow: hidden;
 		@include push--auto;
-		@include grid-margins;
+		@include outer-margins;
 	}
 
 	.wp-block-group__inner-container {
@@ -440,7 +440,7 @@ div[class*='wp-block-'] figcaption {
 			}
 
 			@include breakpoint(xl) {
-				max-width: $col12-no-gutter;
+				max-width: $wide-content-width;
 			}
 		}
 
@@ -553,7 +553,7 @@ div[class*='wp-block-'] figcaption {
 
 	&.is-style-wide {
 		margin: 0 $s-4;
-		max-width: $col12-no-gutter;
+		max-width: $wide-content-width;
 
 		@include breakpoint(sm) {
 			margin: 0 $s-7;
@@ -565,6 +565,7 @@ div[class*='wp-block-'] figcaption {
 
 		@include breakpoint(xl) {
 			margin: 0 auto;
+			padding: 0 $s-6;
 		}
 	}
 }
@@ -695,7 +696,7 @@ div[class*='wp-block-'] figcaption {
 
 	.wp-block-group__inner-container {
 		.wp-block-image:not(.alignwide):not(.alignfull) {
-			max-width: $col6-no-gutter;
+			max-width: $default-content-width;
 			@include push--auto;
 		}
 	}

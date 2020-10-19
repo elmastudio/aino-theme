@@ -8,24 +8,29 @@
 @import "1-base/mixins";
 
 /* Structure */
+.wp-block {
+	max-width: 696px;
+}
 
 .editor-styles-wrapper {
 	text-rendering: optimizeLegibility;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
-
-	.wp-block {
-		max-width: $col6-no-gutter;
-	}
+	padding: 0 !important;
 
 	.wp-block[data-align="wide"] .wp-block[data-align="wide"],
 	.wp-block[data-align="full"] .wp-block[data-align="wide"] {
-		max-width: $col12-no-gutter;
+		max-width: $wide-content-width;
 
 		@include breakpoint(xl) {
-			width: $col12-no-gutter !important;
+			width: $wide-content-width !important;
 		}
 	}
+}
+
+.wp-block[data-align="full"] {
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
 .wp-block[data-align="full"] .wp-block[data-align="wide"] {
@@ -57,10 +62,10 @@
 
 .wp-block[data-align="wide"],
 .wp-block.alignwide {
-	max-width: $col12-no-gutter;
+	max-width: $wide-content-width;
 
 	.wp-block {
-		max-width: $col12-no-gutter;
+		max-width: $wide-content-width;
 	}
 }
 
@@ -74,12 +79,12 @@
 }
 
 .tpl-fullwidth .wp-block {
-	max-width: $col12-no-gutter;
+	max-width: $wide-content-width;
 }
 
 .wp-block {
 	.tpl-fullwidth & {
-		max-width: $col12-no-gutter;
+		max-width: $wide-content-width;
 	}
 }
 
@@ -94,7 +99,7 @@
 .editor-styles-wrapper .wp-block[data-align="left"],
 .editor-styles-wrapper .wp-block[data-align="right"] {
 	margin: 0 auto;
-	max-width: $col12-no-gutter;
+	max-width: $wide-content-width;
 }
 
 
@@ -650,7 +655,7 @@ textarea {
 	.wp-block[data-type="core/pullquote"][data-align="left"],
 	.wp-block[data-type="core/pullquote"][data-align="right"] {
 		margin: 0 auto;
-		max-width: $col12-no-gutter;
+		max-width: $wide-content-width;
 	}
 }
 
@@ -663,7 +668,7 @@ textarea {
 		.wp-block-group__inner-container {
 
 			.wp-block-image {
-				max-width: $col6-no-gutter;
+				max-width: $default-content-width;
 			}
 		}
 
@@ -728,7 +733,7 @@ textarea {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: $col6-no-gutter;
+	max-width: $default-content-width;
 	@include font-h-3;
 }
 
@@ -804,7 +809,7 @@ pre.wp-block-verse {
 
 /* Separator */
 .block-editor-block-list__block[data-type="core/separator"] {
-	max-width: $col12-no-gutter;
+	max-width: $wide-content-width;
 }
 
 .wp-block-separator {

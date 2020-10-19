@@ -44,31 +44,21 @@ $stickyheader-mobile : 3.438rem; // 55px
 $stickyheader-desktop: 5.5rem; // 88px
 
 /* Grid Columns */
-$col1                : 7.5rem; // 1 grid column
-$col2                : 15rem; // 2 grid column
-$col3                : 22.5rem;
-$col4                : 30rem;
-$col5                : 37.5rem;
-$col6                : 45rem;
-$col7                : 52.5rem;
-$col8                : 60rem;
-$col9                : 67.5rem;
-$col10               : 75rem;
-$col11               : 82.5rem;
-$col12               : 90rem;
-$col1-no-gutter      : 4.5rem; // 1 grid columns, no outer margins
-$col2-no-gutter      : 12rem; // 2 grid columns, no outer margins
-$col3-no-gutter      : 19.5rem;
-$col4-no-gutter      : 27rem;
-$col5-no-gutter      : 34.5rem;
-$col6-no-gutter      : 43.5rem;
-$col7-no-gutter      : 49.5rem;
-$col8-no-gutter      : 57rem;
-$col9-no-gutter      : 64.5rem;
-$col10-no-gutter     : 72rem;
-$col11-no-gutter     : 79.5rem;
-$col12-no-gutter     : 87rem;
+$col1                : 7.75rem; // 1 grid column
+$col2                : 15.5rem; // 2 grid column
+$col3                : 23.25rem;
+$col4                : 31rem;
+$col5                : 38.75rem;
+$col6                : 46.5rem;
+$col7                : 54.25rem;
+$col8                : 62rem;
+$col9                : 69.75rem;
+$col10               : 77.5rem;
+$col11               : 85.25rem;
+$col12               : 93rem;
 
+$default-content-width: 43.5rem;
+$wide-content-width     : 87rem;
 
 /* Border Radius */
 $border-radius-s     : 1.5rem; // 24px

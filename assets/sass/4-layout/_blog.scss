@@ -374,21 +374,45 @@ body:not(.no-blogcard-spacing) {
 			align-items: center;
 
 			&:before {
-				@include divider-s;
+				@include divider;
+				@include divider-m;
 			}
 		}
 	}
 
 	&.has-post-author.has-comments-count {
 
+		.entry-link {
+
+			.entry-comments {
+				@include breakpoint(lg) {
+					display: flex;
+					align-items: center;
+				}
+		
+				&:before {
+					@include divider;
+					@include divider-m;
+				}
+			}
+		}
+	}
+
+	&.blog-3-column {
+
+		.entry-link {
+			.posted-on {
+
+				&:before {
+					@include divider-s;
+				}
+			}
+		}
+
+		&.has-post-author.has-comments-count {
+
 			.entry-link {
 
-				.entry-comments {
-					@include breakpoint(lg) {
-						display: flex;
-						align-items: center;
-					}
-			
 					&:before {
 						@include divider-s;
 					}
