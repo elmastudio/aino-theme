@@ -1,6 +1,6 @@
 # Aino: A WordPress Theme for Gutenberg blocks
 
-![Digital Creators](https://user-images.githubusercontent.com/17613630/86550337-3695ad80-bf96-11ea-94e7-589d14545748.png)
+![Aino Screenshot](https://user-images.githubusercontent.com/17613630/86550337-3695ad80-bf96-11ea-94e7-589d14545748.png)
 
 Aino is a blocks-first free WordPress theme for everyone who wants to build websites with creative, individual page layouts.  
 #### Download: [Download Aino on WordPress.org](https://wordpress.org/themes/aino/)
