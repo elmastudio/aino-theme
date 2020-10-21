@@ -285,6 +285,7 @@ body:not(.no-blogcard-spacing) {
 /* Blog Cards - Entry Header */
 .blog,
 .archive,
+.search,
 .parent:not(.single-post) {
 
 	.hentry {
@@ -360,7 +361,8 @@ body:not(.no-blogcard-spacing) {
 }
 
 .blog,
-.archive {
+.archive,
+.search {
 
 	.entry-link {
 
