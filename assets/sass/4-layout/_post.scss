@@ -282,13 +282,6 @@
 			max-width: 100%;
 		}
 	}
-
-	.single & {
-		@include breakpoint(lg) {
-			margin-left: $s-7;
-			margin-right: $s-7;
-		}
-	}
 }
 
 .authorbox-title {

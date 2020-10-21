@@ -39,7 +39,7 @@
 		</figure><!-- .post-thumb -->
 	<?php endif; ?>
 
-	<div class="entry-content col push-center small-margins">
+	<div class="entry-content col push-center default-margins">
 		<?php
 			the_content(
 				sprintf(
@@ -58,7 +58,7 @@
 			?>
 	</div><!-- .entry-content -->
 
-	<div class="entry-footer col push-center small-margins">
+	<div class="entry-footer col push-center outer-margins">
 
 		<?php aino_entry_meta(); ?>
 

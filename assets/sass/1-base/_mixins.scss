@@ -1095,7 +1095,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-@mixin default-width-margins {
+@mixin default-margins {
 	padding-left: $s-4;
 	padding-right: $s-4;
 

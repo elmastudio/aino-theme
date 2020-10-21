@@ -33,6 +33,10 @@
 						text-align: center;
 					}
 				}
+
+				.wp-block-search {
+					@include s-r-9(padding-bottom);
+				}
 			}
 		}
 	

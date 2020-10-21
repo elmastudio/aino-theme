@@ -68,7 +68,7 @@
 	.wp-block-group__inner-container {
 
 		.wp-block-image:not([data-align=full]):not([data-align=wide]):not([data-align=left]):not([data-align=right]) {
-			@include default-width-margins;
+			@include default-margins;
 			@include push--auto;
 		}
 	}

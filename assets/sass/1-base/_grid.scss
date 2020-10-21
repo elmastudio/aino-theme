@@ -133,19 +133,9 @@
 }
 
 // Outer Grid margins for elements with default content width.
+.default-margins,
 .search-no-results .entry-content {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(sm) {
-		padding-left: $s-7;
-		padding-right: $s-7;
-	}
-
-	@include breakpoint(lg) {
-		padding-left: 0;
-		padding-right: 0;
-	}
+	@include default-margins;
 }
 
 .col-margins {
