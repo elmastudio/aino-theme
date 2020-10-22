@@ -120,7 +120,7 @@ textarea{resize:vertical}
 .has-padding-top{padding-top:5rem}
 .has-padding-bottom{padding-bottom:5rem}
 .header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{margin-left:auto;margin-right:auto}
-.entry-content>*,.single .entry-tags,.comment-list,.comment-respond,.authorbox__details,.author-pic-link{margin-left:auto;margin-right:auto;max-width:43.5rem}
+.entry-content>*,.single .entry-tags,.comment-list,.comment-respond,.authorbox__details,.author-pic-link,.default-content-width{margin-left:auto;margin-right:auto;max-width:43.5rem}
 .tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header{margin-left:auto;margin-right:auto;max-width:87rem}
 .tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header,.tpl-hero .entry-content>*,.tpl-hero .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
 .entry-content>*.alignwide{max-width:87rem}
@@ -301,6 +301,7 @@ a.btn-outline:hover,.btn-outline a:hover{color:#1765d8;fill:#1765d8}
 .btn-naked,.btn-naked a{display:inline-block;font-weight:normal;color:#222;fill:#222;padding-left:0 !important;padding-right:0 !important;-webkit-transition:all .2s ease;transition:all .2s ease}
 .btn-naked:hover,.btn-naked a:hover{color:#1765d8;fill:#1765d8}
 .btn-naked:hover,.btn-naked a:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
+.btn-white button{background:#fff;color:#000;fill:#000}
 .btn-xxs{padding:1rem;font-size:1rem}
 .btn-xs{padding:1rem;font-size:1rem}
 .btn-s{padding:1rem;font-size:1rem}

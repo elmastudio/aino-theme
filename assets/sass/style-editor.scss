@@ -9,7 +9,7 @@
 
 /* Structure */
 .wp-block {
-	max-width: 696px;
+	max-width: $default-content-width;
 }
 
 .editor-styles-wrapper {
@@ -250,7 +250,7 @@ h6.has-xxs-font-size {
 
 /* Paragraphs */
 p {
-	@include font-body-m;
+	@include font-body-l;
 
 	&.has-background {
 		@include s-r-7(padding);
@@ -813,7 +813,6 @@ pre.wp-block-verse {
 }
 
 .wp-block-separator {
-	margin-bottom: 0;
 	border-left: 0;
 	border-right: 0;
 	border-bottom: 0;

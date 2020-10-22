@@ -177,7 +177,8 @@
 .comment-list,
 .comment-respond,
 .authorbox__details,
-.author-pic-link {
+.author-pic-link,
+.default-content-width {
 	@include push--auto;
 	max-width: $default-content-width;
 }

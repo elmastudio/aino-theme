@@ -38,6 +38,12 @@ a.btn-outline,
 	}
 }
 
+.btn-white button {
+	background: $color__white;
+	color: $color__black;
+	fill: $color__black;
+}
+
 /* Button Sizes */
 .btn-xxs {
 	@include btn-s;

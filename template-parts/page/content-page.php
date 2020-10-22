@@ -15,7 +15,7 @@
 		<?php aino_edit_link(); ?>
 
 	</header><!-- .entry-header -->
-	<div class="entry-content col push-center default-margins">
+	<div class="entry-content col push-center">
 		<?php
 			the_content();
 			wp_link_pages(
