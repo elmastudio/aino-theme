@@ -296,20 +296,6 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Grid Margins */
-@mixin col-margins {
-
-	@include breakpoint(sm) {
-		margin-left: $s-4;
-		margin-right: $s-4;
-	}
-
-	@include breakpoint(lg) {
-		margin-left: $s-6;
-		margin-right: $s-6;
-	}
-}
-
 /* Base Typography */
 @mixin hyphenation {
 	word-wrap: break-word;
@@ -1102,6 +1088,19 @@ $var: true !default; // Can be overridden elsewhere
 	@include breakpoint(sm) {
 		padding-left: 0;
 		padding-right: 0;
+	}
+}
+
+@mixin col-margins {
+
+	@include breakpoint(sm) {
+		margin-left: $s-4;
+		margin-right: $s-4;
+	}
+
+	@include breakpoint(lg) {
+		margin-left: $s-6;
+		margin-right: $s-6;
 	}
 }
 

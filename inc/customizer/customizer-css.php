@@ -77,10 +77,6 @@ function aino_customizer_css() {
 	.entry-content .has-primary-one-color,
 	.wp-block-pullquote.is-style-default .has-text-color a:hover,
 	.comment-author .author-badge,
-	.modal-menu a:focus,
-	.modal-menu a:hover,
-	.modal-menu li.current-menu-item > .ancestor-wrapper > a,
-	.modal-menu li.current_page_ancestor > .ancestor-wrapper > a,
 	.wp-block-image figcaption a:hover,
 	.site-footer .footer-wrap .footer-info .site-info a:hover,
 	.site-footer a.back-top:hover {

@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.2.2 =
+* New: MC4WP: Mailchimp for WordPress plugin support.
 * Enhance: Screenshot image.
 * Enhance: Mobile menu.
 * Enhance: Footer site info.

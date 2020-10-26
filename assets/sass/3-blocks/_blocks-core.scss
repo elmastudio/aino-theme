@@ -34,16 +34,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		clear: both;
-
-		@include breakpoint(sm) {
-			padding-left: $s-9;
-			padding-right: $s-9;
-		}
-
-		@include breakpoint(xl) {
-			padding-left: $s-6;
-			padding-right: $s-6;
-		}
+		@include outer-margins;
 	}
 
 	&.alignfull {
