@@ -99,9 +99,13 @@
 .editor-styles-wrapper .wp-block[data-align="left"],
 .editor-styles-wrapper .wp-block[data-align="right"] {
 	margin: 0 auto;
-	max-width: $wide-content-width;
+	max-width: $wide-content-width !important;
 }
 
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	max-width: $wide-content-width;
+	@include outer-margins;
+}
 
 /* Typography */
 body {
@@ -114,6 +118,7 @@ body {
 /* Headings */
 .editor-post-title .editor-post-title__input {
 	@include font-body;
+	line-height: 1.1;
 }
 
 .editor-post-title__input,
@@ -125,7 +130,7 @@ h5,
 h6 {
 	color: $color__text_one;
 	font-weight: normal;
-	line-height: 1.2;
+	line-height: 1.1;
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -168,6 +173,7 @@ h4.has-xxxxl-font-size {
 	@include font-h-9;
 }
 
+.editor-post-title__input,
 h1.has-l-font-size,
 h2.has-xl-font-size,
 h3.has-xxl-font-size,
@@ -185,7 +191,6 @@ h6.has-xxxxl-font-size {
 	@include font-h-7;
 }
 
-.editor-post-title__input,
 h1,
 h1.has-s-font-size,
 h2.has-m-font-size,
@@ -249,7 +254,9 @@ h6.has-xxs-font-size {
 }
 
 /* Paragraphs */
-p {
+p,
+ol,
+ul {
 	@include font-body-l;
 
 	&.has-background {
@@ -394,9 +401,6 @@ blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover {
 /* Elements */
 
 @media screen and (min-width: 50em) {
-	.editor-post-title {
-		padding-right: 2em;
-	}
 
 	.editor-post-title:after,
 	.editor-post-title:before {
@@ -445,10 +449,15 @@ ol {
 	list-style: decimal;
 }
 
+ul li,
+ol li {
+	padding-bottom: $s-4;
+}
+
 li>ol,
 li>ul {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: $s-6;
 }
 
 dt {

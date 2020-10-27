@@ -44,6 +44,10 @@ a.btn-outline,
 	fill: $color__black;
 }
 
+.btn-long {
+ width: 100%;
+}
+
 /* Button Sizes */
 .btn-xxs {
 	@include btn-s;

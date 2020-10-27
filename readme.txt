@@ -52,6 +52,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * Enhance: Grid styles.
 * Enhance: Footer widgets.
 * Enhance: Search result pages.
+* Enhance: Editor font styles.
 * Bugfix: Cover block responsiveness.
 * Bugfix: Responsive spacing.
 * Bugfix: Multiple alignfull blocks scrollbar issue. Fixes #131

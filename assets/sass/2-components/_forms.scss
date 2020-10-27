@@ -82,6 +82,9 @@ textarea {
 input[type="checkbox"] {
 	width: $s-6;
 	height: $s-6;
+	position: absolute;
+	top: $s-1;
+	left: 0;
 }
 
 .color-notice,
@@ -115,6 +118,7 @@ form p.comment-form-comment {
 }
 
 form label {
+	position: relative;
 	display: block;
 	@include s-r-2 (margin-bottom);
 }
@@ -221,6 +225,10 @@ button[type="submit"] {
 			a:hover {
 				color: $color__white_hover;
 			}
+		}
+
+		input:not([type="submit"]) {
+			color: $color__white;
 		}
 	}
 }

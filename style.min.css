@@ -207,8 +207,8 @@ h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-siz
 h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-size,h6.has-xs-font-size,h6.has-xxs-font-size,h6.has-xxs-font-size{font-size:1rem !important;letter-spacing:-0.4px}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:1.75rem !important;letter-spacing:-0.7px}
 .site-branding .site-title{font-size:1.25rem;line-height:1}
-.single h1,.single h2,.single h3,.single h4,.single h5,.single h6{padding-top:1rem;padding-bottom:1rem}
-.single address,.single p{padding-bottom:1rem}
+.single h1,.single h2,.single h3,.single h4,.single h5,.single h6,.page-template-default h1,.page-template-default h2,.page-template-default h3,.page-template-default h4,.page-template-default h5,.page-template-default h6{padding-top:1rem;padding-bottom:1rem}
+.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:1rem}
 dfn,em,i{font-style:italic}
 dt{font-weight:bold}
 dd{margin:0 1.5rem 1.5rem}
@@ -221,6 +221,7 @@ abbr,acronym{text-decoration:none;border-bottom:1px dotted #666;cursor:help}
 ins,mark{background-color:rgba(63,192,224,0.1);text-decoration:none}
 big{font-size:125%}
 .dropcap{font-size:6.125rem;font-weight:300;float:left;padding:0 10px 0 0;line-height:.9;color:#111}
+.center-text{text-align:center}
 .page-content .wp-smiley,.entry-content .wp-smiley,.comment-content .wp-smiley{border:0;margin-bottom:0;margin-top:0;padding:0}
 .image-border img,.img-border{border:4px solid #111}
 embed,iframe,object{max-width:100%}
@@ -271,14 +272,14 @@ textarea:active,textarea:focus{background:#f7f7ff}
 .light-form textarea:-ms-input-placeholder{color:rgba(255,255,255,0.6)}
 .light-form textarea::-webkit-input-placeholder{color:rgba(255,255,255,0.6)}
 .light-form textarea:active,.light-form textarea:focus{background:#fff;color:#111}
-input[type="checkbox"]{width:1.5rem;height:1.5rem}
+input[type="checkbox"]{width:1.5rem;height:1.5rem;position:absolute;top:.25rem;left:0}
 .color-notice,label.color-notice span{color:#1765d8}
 .comment-respond textarea{height:150px}
 .single form p,.page form p{padding-top:1rem;padding-bottom:0}
 form .comment-form-cookies-consent{clear:both;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 form .comment-form-cookies-consent label{padding-left:1rem;margin-bottom:0}
 form p.comment-form-comment{margin:0}
-form label{display:block;margin-bottom:.5rem}
+form label{position:relative;display:block;margin-bottom:.5rem}
 select{background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");border:1px solid #111;background-repeat:no-repeat;background-position:right 14px top 21px;background-size:12px 12px;padding:15px 40px 15px 15px;border-radius:0;-webkit-appearance:none;width:100%}
 input[type="submit"],button[type="submit"]{display:block;clear:both}
 .light-btn input[type="submit"],.light-btn button[type="submit"]{background:#fff;color:#111}
@@ -294,6 +295,7 @@ input[type="submit"],button[type="submit"]{display:block;clear:both}
 .mc4wp-success p{color:#19d37b}
 .entry-content .light-form p{color:#fff}
 .entry-content .light-form p a:hover{color:rgba(255,255,255,0.6)}
+.entry-content .light-form input:not([type="submit"]){color:#fff}
 .icon{display:inline-block;fill:currentColor;position:relative;top:0;vertical-align:middle;text-align:center;stroke-width:0;stroke:currentColor;width:1.5rem;height:1.5rem}
 .menu-social-container .icon{fill:#111;width:1.5rem;height:1.5rem}
 .search-icon{display:none}
@@ -321,6 +323,7 @@ a.btn-outline:hover,.btn-outline a:hover{color:#1765d8;fill:#1765d8}
 .btn-naked:hover,.btn-naked a:hover{color:#1765d8;fill:#1765d8}
 .btn-naked:hover,.btn-naked a:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
 .btn-white button{background:#fff;color:#000;fill:#000}
+.btn-long{width:100%}
 .btn-xxs{padding:1rem;font-size:1rem}
 .btn-xs{padding:1rem;font-size:1rem}
 .btn-s{padding:1rem;font-size:1rem}
@@ -379,7 +382,7 @@ ol ol{list-style:lower-alpha}
 .site-footer ul{margin:0;padding:0;list-style:none}
 li>ul,li>ol{margin-bottom:0;margin-left:1.5rem}
 .entry-content ul,.entry-content ol{padding-left:1.5rem;padding-bottom:1.25rem}
-.entry-content ul li,.entry-content ol li{padding-bottom:0}
+.entry-content ul li,.entry-content ol li{padding-bottom:1rem}
 .entry-content ul ul,.entry-content ol ol,.entry-content ol ul,.entry-content ul ol{padding-bottom:0}
 .entry-content ul ul{list-style:circle}
 table{border-collapse:collapse;width:100%;background-color:#f7f7ff;margin-top:0;margin-left:0;margin-right:0;margin-bottom:1.25rem}
@@ -844,7 +847,7 @@ h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-siz
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.5rem !important;letter-spacing:-0.6px}
 .nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important;letter-spacing:-0.5px}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.25rem !important;letter-spacing:-0.9px}
-.single address,.single p{padding-bottom:1.25rem}
+.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:1.25rem}
 dd{margin:0 1.5rem 1.5rem}
 pre{padding:1.25rem}
 pre{margin-bottom:1.25rem}
@@ -1023,7 +1026,7 @@ h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-siz
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.625rem !important;letter-spacing:-0.65px}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.625rem !important;letter-spacing:-1.05px}
 .site-branding .site-title{font-size:1.375rem}
-.single address,.single p{padding-bottom:1.5rem}
+.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:1.5rem}
 pre{padding:1.5rem}
 pre{margin-bottom:1.5rem}
 .wp-caption .wp-caption-text{margin-top:1.5rem}
@@ -1191,7 +1194,7 @@ h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-siz
 .nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.375rem !important;letter-spacing:-0.55px}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:3.25rem !important;letter-spacing:-1.3px}
 .site-branding .site-title{font-size:1.5rem}
-.single address,.single p{padding-bottom:2rem}
+.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:2rem}
 pre{padding:2rem}
 pre{margin-bottom:2rem}
 .wide-content{max-width:93rem}

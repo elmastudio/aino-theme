@@ -262,7 +262,8 @@ h6.has-xxs-font-size {
 }
 
 /* Padding for Headlines in Content Area */
-.single {
+.single,
+.page-template-default {
 
 	h1,
 	h2,
@@ -277,7 +278,8 @@ h6.has-xxs-font-size {
 }
 
 /* Padding for Paragraphs in Content Area */
-.single {
+.single,
+.page-template-default {
 
 	address,
 	p {
@@ -377,4 +379,8 @@ big {
 	@include breakpoint(lg) {
 		max-width: $col12;
 	}
+}
+
+.center-text {
+	text-align: center;
 }
