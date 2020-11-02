@@ -3,6 +3,7 @@
 
 	.admin-bar & {
 		top: 32px;
+
 		@media screen and (max-width: 782px) {
 			top: 46px;
 		}
@@ -15,13 +16,25 @@
 	align-items: center;
 	margin: 0 auto 0 0;
 	padding-right: $s-7;
-	min-height: 36px;
+	height: 2.25rem;
+
+	@include breakpoint(sm) {
+		height: 2.375rem;
+	}
+
+	@include breakpoint(md) {
+		height: auto;
+	}
 
 	h1.site-title,
 	.site-title,
 	.site-logo {
 		display: block;
 		margin: 0;
+	}
+
+	.site-logo {
+		line-height: 0;
 	}
 
 	.site-description {
@@ -59,10 +72,20 @@
 			width: auto !important;
 			height: 2.25rem;
 			object-fit: fill;
-			max-height: 2.25rem;
 
 			@include breakpoint(header) {
-				max-height: none;
+				height: auto;
+			}
+
+			@include breakpoint(sm) {
+				height: 2.375rem;
+			}
+
+			@include breakpoint(md) {
+				height: 2.5rem;
+			}
+
+			@include breakpoint(lg) {
 				height: auto;
 			}
 		}
@@ -101,7 +124,7 @@
 		@include breakpoint(md) {
 			padding: 0;
 		}
-	
+
 		@include breakpoint(lg) {
 			padding: 0;
 		}
@@ -195,6 +218,7 @@
 		-webkit-box-align: center;
 		align-items: center;
 		flex-direction: column;
+
 		@include breakpoint(header) {
 			flex-direction: row;
 		}
@@ -213,6 +237,7 @@
 		@include breakpoint(sm) {
 			width: auto;
 		}
+
 		@include breakpoint(header) {
 			padding: 0 $s-4 0 0;
 		}
@@ -301,9 +326,9 @@
 .toggle {
 	background: transparent;
 }
+
 .nav-toggle {
 	position: absolute;
-	height: 2.25rem;
 	bottom: 0;
 	top: $s-4;
 	right: $s-4;
@@ -312,11 +337,14 @@
 	color: $color__text_one;
 	background: transparent;
 	border: 1px solid $color__text_one;
-	border-radius: 18px;
 
 	@include breakpoint(sm) {
-		top: $s-5;
 		right: $s-7;
+		top: $s-5;
+	}
+
+	@include breakpoint(md) {
+		top: $s-6;
 	}
 
 	.icon-toggle-open {
@@ -328,7 +356,6 @@
 button.close-nav-toggle {
 	margin-top: $s-4;
 	margin-left: $s-4;
-	margin-bottom: $s-4;
 	padding: 0;
 	border-radius: 0;
 	color: $color__text_one;
@@ -336,7 +363,6 @@ button.close-nav-toggle {
 	display: flex;
 	justify-content: center;
 	width: 64px;
-	height: 36px;
 	border-radius: 0;
 	background: transparent;
 	border: 1px solid $color__text_one;
@@ -344,12 +370,37 @@ button.close-nav-toggle {
 
 	@include breakpoint(sm) {
 		margin-left: $s-7;
+		margin-top: $s-5;
+	}
+
+	@include breakpoint(md) {
+		margin-top: $s-6;
 	}
 
 	.icon-toggle-close {
 		width: 28px;
 		height: 10px;
 	}
+}
+
+.nav-toggle,
+button.close-nav-toggle {
+	height: 2.25rem;
+	border-radius: 18px;
+
+	@include breakpoint(sm) {
+		height: 2.375rem;
+		border-radius: 19px;
+	}
+
+	@include breakpoint(md) {
+		height: 2.5rem;
+		border-radius: 20px;
+	}
+}
+
+.mobile-menu {
+padding-top: $s-7;
 }
 
 /* Primary Menu ---------------------------- */
@@ -372,21 +423,21 @@ ul.primary-menu {
 		padding: 0;
 		margin: 0;
 
-			.icon {
-				position: absolute;
-				top: 0;
-				width: 100%;
-				fill: $color__text_one;
-			}
+		.icon {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			fill: $color__text_one;
 		}
+	}
 
 	li {
 		font-size: inherit;
 		position: relative;
 
-		&.menu-item-has-children:hover > ul,
-		&.menu-item-has-children:focus > ul,
-		&.menu-item-has-children.focus > ul {
+		&.menu-item-has-children:hover>ul,
+		&.menu-item-has-children:focus>ul,
+		&.menu-item-has-children.focus>ul {
 			right: 0;
 			opacity: 1;
 			transform: translateY(0);
@@ -394,18 +445,18 @@ ul.primary-menu {
 		}
 	}
 
-	> li {
+	>li {
 		margin: 0 $s-6 0 0;
 
 		&:last-child {
 			margin-right: 0;
 		}
 
-		&.menu-item-has-children > a {
+		&.menu-item-has-children>a {
 			padding-right: 18px; // 10px for the icon and 8px padding
 		}
 
-		> .icon {
+		>.icon {
 			right: 0;
 			top: 0;
 		}
@@ -482,7 +533,7 @@ ul.primary-menu {
 				margin-bottom: 0;
 			}
 
-			&.menu-item-has-children > a {
+			&.menu-item-has-children>a {
 				padding-right: 0;
 			}
 
@@ -491,9 +542,9 @@ ul.primary-menu {
 				right: 0;
 			}
 
-			&.menu-item-has-children:hover > ul,
-			&.menu-item-has-children:focus > ul,
-			&.menu-item-has-children.focus > ul {
+			&.menu-item-has-children:hover>ul,
+			&.menu-item-has-children:focus>ul,
+			&.menu-item-has-children.focus>ul {
 				right: calc(100% + 1rem);
 			}
 		}
@@ -507,7 +558,7 @@ ul.primary-menu {
 
 	.menu-uppercase & {
 
-		> li > .icon {
+		>li>.icon {
 			top: 0.375rem; // 6px
 		}
 
@@ -619,6 +670,10 @@ ul.primary-menu {
 		text-decoration: none;
 		width: 100%;
 		border-top: 1px solid $color__border;
+
+		@include breakpoint(sm) {
+			margin: 0 $s-7;
+		}
 	}
 
 	li:first-child a {
@@ -671,14 +726,13 @@ ul.primary-menu {
 		width: calc(100% - 32px);
 		margin: 0 0 0 $s-4;
 
-		@include breakpoint(sm) {
+		@include breakpoint(md) {
 			border-top: none;
 		}
+	}
 
-		@include breakpoint(lg) {
-			border-top: none;
-			margin: 0;
-		}
+	@include breakpoint(md) {
+		padding-left: 0;
 	}
 }
 
@@ -689,12 +743,16 @@ ul.primary-menu {
 }
 
 button.sub-menu-toggle {
-	margin: 0 16px 0 0;
-	padding: 0 0 0 16px;
+	margin: 0 $s-4 0 0;
+	padding: 0 0 0 $s-4;
 	color: $color__text_one;
 	border-radius: 0;
 	position: absolute;
 	right: 0;
+
+	@include breakpoint(sm) {
+		margin: 0 $s-7 0 0;
+	}
 
 	.icon {
 		width: 10px;
@@ -788,7 +846,7 @@ button.sub-menu-toggle {
 		display: none !important;
 	}
 
-	.primary-menu-wrapper + .header-toggles {
+	.primary-menu-wrapper+.header-toggles {
 		margin-left: 3rem;
 	}
 
@@ -886,6 +944,7 @@ button.sub-menu-toggle {
 /* Light Header Style ---------------------------- */
 .header-light {
 
+	.site-branding .site-title a,
 	.site-branding .site-description,
 	&.page-template-tpl-hero-light .site-title a,
 	.custom-logo-link .custom-logo path,
@@ -961,8 +1020,8 @@ button.sub-menu-toggle {
 			background-color: $color__white;
 		}
 
-		.primary-menu a:hover + .icon::before,
-		.primary-menu a:hover + .icon::after {
+		.primary-menu a:hover+.icon::before,
+		.primary-menu a:hover+.icon::after {
 			background-color: $color__white_hover;
 		}
 

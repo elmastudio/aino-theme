@@ -714,8 +714,8 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-l {
-	padding: 1.125rem;
-	font-size: 1.125rem;
+	padding: 1.25rem;
+	font-size: 1.25rem;
 
 	@include breakpoint(md) {
 		padding: 1.375rem;

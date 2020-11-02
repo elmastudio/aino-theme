@@ -18,7 +18,8 @@ div[class*='wp-block-'] figcaption,
 .single .navigation a span.nav-subtitle,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
-.entry-content .sharedaddy h3.sd-title {
+.entry-content .sharedaddy h3.sd-title,
+.blocks-gallery-grid .blocks-gallery-item figcaption {
 	@include font-body-xs;
 }
 

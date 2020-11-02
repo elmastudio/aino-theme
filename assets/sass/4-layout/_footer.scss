@@ -63,17 +63,22 @@
 			.site-info {
 				color: $color__text_two;
 				align-self: center;
+				text-align: center;
 
 				@include breakpoint(sm) {
 					flex-basis: 33.3333333%;
 					flex-grow: 0;
+					text-align: left;
 				}
 			
 				.footerinfo-centered & {
-					@include flexbox;
-					justify-content: center;
-				}
-			
+
+					@include breakpoint(sm) {
+							@include flexbox;
+							justify-content: center;
+						} 
+					}
+
 				.site-name {
 					margin-right: 2px;
 			
