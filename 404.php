@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 			<div class="error-404 not-found">
-				<header class="entry-header push-center small-margins">
+				<header class="entry-header push-center outer-margins">
 					<h1 class="entry-title"><?php esc_html_e( 'Oops! Page Not Found', 'aino' ); ?></h1>
 				</header><!-- .page-header -->
 

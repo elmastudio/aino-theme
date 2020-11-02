@@ -3,6 +3,7 @@
 
 	.admin-bar & {
 		top: 32px;
+
 		@media screen and (max-width: 782px) {
 			top: 46px;
 		}
@@ -11,18 +12,29 @@
 
 /* Site Title, Logo and Tagline */
 .site-branding {
-
 	@include flexbox;
 	align-items: center;
 	margin: 0 auto 0 0;
 	padding-right: $s-7;
-	min-height: 36px;
+	height: 2.25rem;
+
+	@include breakpoint(sm) {
+		height: 2.375rem;
+	}
+
+	@include breakpoint(md) {
+		height: auto;
+	}
 
 	h1.site-title,
 	.site-title,
 	.site-logo {
 		display: block;
 		margin: 0;
+	}
+
+	.site-logo {
+		line-height: 0;
 	}
 
 	.site-description {
@@ -55,14 +67,26 @@
 		display: block;
 		padding: 0 $s-2 0 0;
 
-		img {
+		img,
+		.custom-logo {
 			width: auto !important;
-			height: $s-7;
+			height: 2.25rem;
 			object-fit: fill;
-			max-height: $s-7;
 
 			@include breakpoint(header) {
-				max-height: none;
+				height: auto;
+			}
+
+			@include breakpoint(sm) {
+				height: 2.375rem;
+			}
+
+			@include breakpoint(md) {
+				height: 2.5rem;
+			}
+
+			@include breakpoint(lg) {
+				height: auto;
 			}
 		}
 
@@ -79,11 +103,11 @@
 /* Header Search Form */
 .search-header {
 	position: relative;
-	margin: $s-4 0 0 0;
+	margin: $s-4 0;
 	padding: 0;
 
 	@include breakpoint(header) {
-		margin: 0 0 0 $s-7;
+		margin: 0 0 0 $s-6;
 		padding: 0;
 	}
 
@@ -93,8 +117,17 @@
 
 	label {
 		cursor: pointer;
+		margin: 0;
 		padding: 0;
 		color: $color__text_two;
+
+		@include breakpoint(md) {
+			padding: 0;
+		}
+
+		@include breakpoint(lg) {
+			padding: 0;
+		}
 	}
 
 	.search-form {
@@ -106,12 +139,9 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $s-8;
-		padding: 0 0 0 46px;
+		height: $s-9;
 		vertical-align: middle;
 		border: 1px solid $color__border;
-		font-size: 14px;
-		line-height: 20px;
 	}
 }
 
@@ -188,6 +218,7 @@
 		-webkit-box-align: center;
 		align-items: center;
 		flex-direction: column;
+
 		@include breakpoint(header) {
 			flex-direction: row;
 		}
@@ -206,6 +237,7 @@
 		@include breakpoint(sm) {
 			width: auto;
 		}
+
 		@include breakpoint(header) {
 			padding: 0 $s-4 0 0;
 		}
@@ -215,7 +247,7 @@
 	.has-nav-social & {
 
 		@include breakpoint(header) {
-			padding: 0 0 0 $s-7;
+			padding: 0 0 0 $s-6;
 		}
 	}
 
@@ -294,22 +326,25 @@
 .toggle {
 	background: transparent;
 }
+
 .nav-toggle {
-	display: block;
 	position: absolute;
 	bottom: 0;
 	top: $s-4;
 	right: $s-4;
-	padding: 17px;
+	padding: 0 17px;
 	border-radius: 0;
 	color: $color__text_one;
 	background: transparent;
 	border: 1px solid $color__text_one;
-	border-radius: 18px;
 
 	@include breakpoint(sm) {
-		top: $s-5;
 		right: $s-7;
+		top: $s-5;
+	}
+
+	@include breakpoint(md) {
+		top: $s-6;
 	}
 
 	.icon-toggle-open {
@@ -321,7 +356,6 @@
 button.close-nav-toggle {
 	margin-top: $s-4;
 	margin-left: $s-4;
-	margin-bottom: $s-4;
 	padding: 0;
 	border-radius: 0;
 	color: $color__text_one;
@@ -329,7 +363,6 @@ button.close-nav-toggle {
 	display: flex;
 	justify-content: center;
 	width: 64px;
-	height: 36px;
 	border-radius: 0;
 	background: transparent;
 	border: 1px solid $color__text_one;
@@ -337,12 +370,37 @@ button.close-nav-toggle {
 
 	@include breakpoint(sm) {
 		margin-left: $s-7;
+		margin-top: $s-5;
+	}
+
+	@include breakpoint(md) {
+		margin-top: $s-6;
 	}
 
 	.icon-toggle-close {
 		width: 28px;
 		height: 10px;
 	}
+}
+
+.nav-toggle,
+button.close-nav-toggle {
+	height: 2.25rem;
+	border-radius: 18px;
+
+	@include breakpoint(sm) {
+		height: 2.375rem;
+		border-radius: 19px;
+	}
+
+	@include breakpoint(md) {
+		height: 2.5rem;
+		border-radius: 20px;
+	}
+}
+
+.mobile-menu {
+padding-top: $s-7;
 }
 
 /* Primary Menu ---------------------------- */
@@ -365,21 +423,21 @@ ul.primary-menu {
 		padding: 0;
 		margin: 0;
 
-			.icon {
-				position: absolute;
-				top: 0;
-				width: 100%;
-				fill: $color__text_one;
-			}
+		.icon {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			fill: $color__text_one;
 		}
+	}
 
 	li {
 		font-size: inherit;
 		position: relative;
 
-		&.menu-item-has-children:hover > ul,
-		&.menu-item-has-children:focus > ul,
-		&.menu-item-has-children.focus > ul {
+		&.menu-item-has-children:hover>ul,
+		&.menu-item-has-children:focus>ul,
+		&.menu-item-has-children.focus>ul {
 			right: 0;
 			opacity: 1;
 			transform: translateY(0);
@@ -387,18 +445,18 @@ ul.primary-menu {
 		}
 	}
 
-	> li {
+	>li {
 		margin: 0 $s-6 0 0;
 
 		&:last-child {
 			margin-right: 0;
 		}
 
-		&.menu-item-has-children > a {
+		&.menu-item-has-children>a {
 			padding-right: 18px; // 10px for the icon and 8px padding
 		}
 
-		> .icon {
+		>.icon {
 			right: 0;
 			top: 0;
 		}
@@ -475,7 +533,7 @@ ul.primary-menu {
 				margin-bottom: 0;
 			}
 
-			&.menu-item-has-children > a {
+			&.menu-item-has-children>a {
 				padding-right: 0;
 			}
 
@@ -484,9 +542,9 @@ ul.primary-menu {
 				right: 0;
 			}
 
-			&.menu-item-has-children:hover > ul,
-			&.menu-item-has-children:focus > ul,
-			&.menu-item-has-children.focus > ul {
+			&.menu-item-has-children:hover>ul,
+			&.menu-item-has-children:focus>ul,
+			&.menu-item-has-children.focus>ul {
 				right: calc(100% + 1rem);
 			}
 		}
@@ -500,7 +558,7 @@ ul.primary-menu {
 
 	.menu-uppercase & {
 
-		> li > .icon {
+		>li>.icon {
 			top: 0.375rem; // 6px
 		}
 
@@ -612,6 +670,10 @@ ul.primary-menu {
 		text-decoration: none;
 		width: 100%;
 		border-top: 1px solid $color__border;
+
+		@include breakpoint(sm) {
+			margin: 0 $s-7;
+		}
 	}
 
 	li:first-child a {
@@ -664,14 +726,13 @@ ul.primary-menu {
 		width: calc(100% - 32px);
 		margin: 0 0 0 $s-4;
 
-		@include breakpoint(sm) {
+		@include breakpoint(md) {
 			border-top: none;
 		}
+	}
 
-		@include breakpoint(lg) {
-			border-top: none;
-			margin: 0;
-		}
+	@include breakpoint(md) {
+		padding-left: 0;
 	}
 }
 
@@ -681,18 +742,17 @@ ul.primary-menu {
 	}
 }
 
-.modal-menu li.current-menu-item > .ancestor-wrapper > a,
-.modal-menu li.current_page_ancestor > .ancestor-wrapper > a {
-	color: $color__primary;
-}
-
 button.sub-menu-toggle {
-	margin: 0 16px 0 0;
-	padding: 0 0 0 16px;
+	margin: 0 $s-4 0 0;
+	padding: 0 0 0 $s-4;
 	color: $color__text_one;
 	border-radius: 0;
 	position: absolute;
 	right: 0;
+
+	@include breakpoint(sm) {
+		margin: 0 $s-7 0 0;
+	}
 
 	.icon {
 		width: 10px;
@@ -786,7 +846,7 @@ button.sub-menu-toggle {
 		display: none !important;
 	}
 
-	.primary-menu-wrapper + .header-toggles {
+	.primary-menu-wrapper+.header-toggles {
 		margin-left: 3rem;
 	}
 
@@ -884,14 +944,24 @@ button.sub-menu-toggle {
 /* Light Header Style ---------------------------- */
 .header-light {
 
+	.site-branding .site-title a,
+	.site-branding .site-description,
 	&.page-template-tpl-hero-light .site-title a,
-	.custom-logo path,
-	.nav-toggle .icon-toggle-open {
+	.custom-logo-link .custom-logo path,
+	.nav-toggle,
+	.nav-toggle .icon-toggle-open,
+	ul.primary-menu .dropdown .icon,
+	.header-cta-wrap a {
 		color: $color__white;
 		fill: $color__white;
 	}
 
-	.search-header .search-field {
+	.nav-toggle {
+		border: 1px solid $color__white;
+	}
+
+	.search-header .search-field,
+	.site-branding .site-description:before {
 		border-color: transparent;
 		background-color: $color__white;
 
@@ -899,6 +969,10 @@ button.sub-menu-toggle {
 		&:active {
 			background-color: rgba(255, 255, 255, 0.9);
 		}
+	}
+
+	.primary-menu .sub-menu .dropdown .icon {
+		fill: $color__text_one;
 	}
 
 	.btn-outline a {
@@ -925,7 +999,8 @@ button.sub-menu-toggle {
 		.primary-menu a,
 		.btn-outline a,
 		.btn-naked a,
-		.site-header .menu-social-container .icon {
+		.site-header .menu-social-container .icon,
+		.header-cta-wrap a {
 			color: $color__white;
 			fill: $color__white;
 
@@ -945,8 +1020,8 @@ button.sub-menu-toggle {
 			background-color: $color__white;
 		}
 
-		.primary-menu a:hover + .icon::before,
-		.primary-menu a:hover + .icon::after {
+		.primary-menu a:hover+.icon::before,
+		.primary-menu a:hover+.icon::after {
 			background-color: $color__white_hover;
 		}
 
@@ -957,11 +1032,6 @@ button.sub-menu-toggle {
 
 		.primary-menu .sub-menu a {
 			color: $color__text_one;
-		}
-
-		.primary-menu .sub-menu a:hover + .icon::before,
-		.primary-menu .sub-menu a:hover + .icon::after {
-			background-color: $color__primary;
 		}
 	}
 }

@@ -7,7 +7,7 @@
 
 ?>
 
-<footer class="site-info" role="contentinfo">
+<div class="site-info" role="contentinfo">
 
 	<?php $blog_info = get_bloginfo( 'name' ); ?>
 
@@ -18,7 +18,14 @@
 		<?php else : ?>
 
 			<?php if ( ! empty( $blog_info ) ) : ?>
-				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<?php
+				printf(
+						/* Translators: %1$s: Copyright date. %2$s: Site name. */
+						esc_html__( '&copy; %1$s %2$s', 'aino' ),
+						esc_html( date_i18n( _x( 'Y', 'copyright date format', 'aino' ) ) ),
+						esc_html( get_bloginfo( 'name' ) . '.' )
+					);
+				?>
 			<?php endif; ?>
 
 			<a href="<?php echo esc_url( __( 'https://wpaino.com', 'aino' ) ); ?>" class="imprint">
@@ -36,4 +43,4 @@
 		}
 		?>
 
-</footer><!-- end .site-info -->
+	</div><!-- end .site-info -->

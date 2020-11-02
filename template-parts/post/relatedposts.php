@@ -31,7 +31,7 @@ if ( $categories ) {
 	$rp_query = new wp_query( $args );
 	if ( $rp_query->have_posts() ) {
 		echo '<div class="related-wrap">
-				<h2 class="section-title grid-margins"><span> ' . esc_html__( 'Related Posts', 'aino' ) . '</span></h2>
+				<h2 class="section-title outer-margins"><span> ' . esc_html__( 'Related Posts', 'aino' ) . '</span></h2>
 				<div class="related-container mobile-margins">';
 
 				while ( $rp_query->have_posts() ) {

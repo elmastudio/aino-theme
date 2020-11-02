@@ -20,18 +20,5 @@
 
 /* Search Form Icon */
 .search-icon {
-	position: absolute;
-	top: 8px;
-	left: 16px;
-	@include flexbox;
-	@include flex-center;
-	width: $s-6;
-	height: $s-6;
-	color: #707070;
-
-	.icon {
-		width: $s-6;
-		height: $s-6;
-		padding: 0;
-	}
+	display: none;
 }

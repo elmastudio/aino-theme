@@ -296,20 +296,6 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Grid Margins */
-@mixin col-margins {
-
-	@include breakpoint(sm) {
-		margin-left: $s-4;
-		margin-right: $s-4;
-	}
-
-	@include breakpoint(lg) {
-		margin-left: $s-6;
-		margin-right: $s-6;
-	}
-}
-
 /* Base Typography */
 @mixin hyphenation {
 	word-wrap: break-word;
@@ -728,8 +714,8 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-l {
-	padding: 1.125rem;
-	font-size: 1.125rem;
+	padding: 1.25rem;
+	font-size: 1.25rem;
 
 	@include breakpoint(md) {
 		padding: 1.375rem;
@@ -1024,14 +1010,21 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Divier short */
 
-@mixin divider-s {
+@mixin divider {
 	content: "";
 	display: block;
-	@include s-r-9 (width);
 	background-color: #111;
 	height: 1px;
 	margin-left: $s-2;
 	margin-right: $s-2;
+}
+
+@mixin divider-s {
+	@include s-r-8 (width);
+}
+
+@mixin divider-m {
+	@include s-r-9 (width);
 }
 
 /* Placeholders */
@@ -1059,12 +1052,55 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Grid padding */
 @mixin col-padding {
-	padding-left: $s-6;
-	padding-right: $s-6;
+	padding-left: $s-4;
+	padding-right: $s-4;
 
 	@include breakpoint(sm) {
 		padding-left: $s-6;
 		padding-right: $s-6;
+	}
+}
+
+@mixin outer-margins {
+	padding-left: $s-4;
+	padding-right: $s-4;
+
+	@include breakpoint(sm) {
+		padding-left: $s-7;
+		padding-right: $s-7;
+	}
+
+	@include breakpoint(lg) {
+		padding-left: $s-9;
+		padding-right: $s-9;
+	}
+
+	@include breakpoint(xl) {
+		padding-left: $s-6;
+		padding-right: $s-6;
+	}
+}
+
+@mixin default-margins {
+	padding-left: $s-4;
+	padding-right: $s-4;
+
+	@include breakpoint(sm) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@mixin col-margins {
+
+	@include breakpoint(sm) {
+		margin-left: $s-4;
+		margin-right: $s-4;
+	}
+
+	@include breakpoint(lg) {
+		margin-left: $s-6;
+		margin-right: $s-6;
 	}
 }
 

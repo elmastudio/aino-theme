@@ -3,8 +3,8 @@ Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
 Tested up to: WordPress 5.5.1
-Requires PHP: 7.3
-Stable tag: 1.2.1
+Requires PHP: 7.4
+Stable tag: 1.2.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -43,6 +43,19 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 1.2.2 =
+* New: MC4WP: Mailchimp for WordPress plugin support.
+* Enhance: Screenshot image.
+* Enhance: Mobile menu.
+* Enhance: Footer site info.
+* Enhance: Grid styles.
+* Enhance: Footer widgets.
+* Enhance: Search result pages.
+* Enhance: Editor font styles.
+* Bugfix: Cover block responsiveness.
+* Bugfix: Responsive spacing.
+* Bugfix: Multiple alignfull blocks scrollbar issue. Fixes #131
 
 = 1.2.1 =
 * New: Aino Blocks plugin recommendation notice.

@@ -7,19 +7,19 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
 
-		<?php
-		if ( have_posts() ) :
-			?>
+	<?php
+	if ( have_posts() ) :
+		?>
 
-			<header class="page-header">
-				<h1 class="page-title"><span><?php esc_html_e( 'Search Results for:', 'aino' ); ?></span><?php echo get_search_query(); ?></h1>
-			</header><!-- .page-header -->
+	<header class="page-header outer-margins">
+		<h1 class="page-title"><span><?php esc_html_e( 'Search Results for:', 'aino' ); ?></span><?php echo get_search_query(); ?></h1>
+	</header><!-- .page-header -->
 
-			<main id="main" class="site-main mobile-margins" role="main">
+	<main id="main" class="site-main mobile-margins" role="main">
 
-			<div id="posts-container" class="posts-container cf">
+		<div id="posts-container" class="posts-container cf">
 
 			<?php
 			/* Start the Loop */
@@ -37,8 +37,6 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			</div><!-- .posts-container -->
-
 			<?php the_posts_pagination(); ?>
 
 			<?php
@@ -49,8 +47,10 @@ get_header(); ?>
 					echo $loadmorebtn;
 			?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</div><!-- .posts-container -->
+
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 	<?php
 	get_footer();

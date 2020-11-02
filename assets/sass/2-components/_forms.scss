@@ -30,6 +30,21 @@ input[type="color"] {
 	&:focus {
 		background: $color__background;
 	}
+
+	.light-form & {
+		border: 1px solid $color__white;
+		color: $color__white;
+
+		@include input-placeholder {
+			color: $color__white_hover;
+		}
+
+		&:active,
+		&:focus {
+			background: $color__white;
+			color: $color__text_one;
+		}
+	}
 }
 
 textarea {
@@ -47,11 +62,29 @@ textarea {
 	&:focus {
 		background: $color__background;
 	}
+
+	.light-form & {
+		border: 1px solid $color__white;
+		color: $color__white;
+
+		@include input-placeholder {
+			color: $color__white_hover;
+		}
+
+		&:active,
+		&:focus {
+			background: $color__white;
+			color: $color__text_one;
+		}
+	}
 }
 
 input[type="checkbox"] {
 	width: $s-6;
 	height: $s-6;
+	position: absolute;
+	top: $s-1;
+	left: 0;
 }
 
 .color-notice,
@@ -63,7 +96,8 @@ label.color-notice span {
 		height: 150px;
 }
 
-form p {
+.single form p,
+.page form p {
 	@include s-r-6 (padding-top);
 	padding-bottom: 0;
 }
@@ -84,6 +118,7 @@ form p.comment-form-comment {
 }
 
 form label {
+	position: relative;
 	display: block;
 	@include s-r-2 (margin-bottom);
 }
@@ -105,6 +140,11 @@ input[type="submit"],
 button[type="submit"] {
 	display: block;
 	clear: both;
+
+	.light-btn & {
+		background: $color__white;
+		color: $color__text_one;
+	}
 }
 
 /* Search Form */
@@ -142,6 +182,7 @@ button[type="submit"] {
 }
 
 .form-round {
+
 	input,
 	select {
 		border-radius: 6.25em;
@@ -162,5 +203,32 @@ button[type="submit"] {
 			padding-left: 2.25rem;
 		}
 	}
+}
 
+/* Mailchimp Form */
+
+.mc4wp-form-fields {
+	@include s-r-6 (padding-top);
+}
+
+.mc4wp-success p {
+	color: $color__success;
+}
+
+/* Light Form Color */
+.entry-content {
+
+	.light-form {
+		p {
+			color: $color__white;
+	
+			a:hover {
+				color: $color__white_hover;
+			}
+		}
+
+		input:not([type="submit"]) {
+			color: $color__white;
+		}
+	}
 }

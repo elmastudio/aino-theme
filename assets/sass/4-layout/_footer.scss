@@ -33,6 +33,10 @@
 						text-align: center;
 					}
 				}
+
+				.wp-block-search {
+					@include s-r-9(padding-bottom);
+				}
 			}
 		}
 	
@@ -59,17 +63,22 @@
 			.site-info {
 				color: $color__text_two;
 				align-self: center;
+				text-align: center;
 
 				@include breakpoint(sm) {
 					flex-basis: 33.3333333%;
 					flex-grow: 0;
+					text-align: left;
 				}
 			
 				.footerinfo-centered & {
-					@include flexbox;
-					justify-content: center;
-				}
-			
+
+					@include breakpoint(sm) {
+							@include flexbox;
+							justify-content: center;
+						} 
+					}
+
 				.site-name {
 					margin-right: 2px;
 			
@@ -177,9 +186,9 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 .footer-light {
 
 	.site-footer,
-	.site-info,
-	.site-info a,
-	.site-info span,
+	.site-footer .footer-wrap .footer-info .site-info,
+	.site-footer .footer-wrap .footer-info .site-info a,
+	.site-footer .footer-wrap .footer-info .site-info span,
 	.site-footer .widget-title,
 	.textwidget p,
 	.textwidget p a,
@@ -190,7 +199,8 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 	}
 
 	.footer-widget-wrap a,
-	.site-info a {
+	.site-footer .footer-wrap .footer-info .site-info a,
+	.site-footer a.back-top {
 
 		&:hover,
 		&:focus {

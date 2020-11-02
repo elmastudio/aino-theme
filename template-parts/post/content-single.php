@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header push-center grid-margins">
+	<header class="entry-header push-center outer-margins">
 		<?php if ( has_category() ) : ?>
 			<div class="entry-cats">
 				<?php the_category( ' ' ); ?>
@@ -34,12 +34,12 @@
 	</header><!-- .entry-header -->
 
 	<?php if ( '' !== get_the_post_thumbnail() ) : ?>
-		<figure class="post-thumb push-center grid-margins">
+		<figure class="post-thumb push-center outer-margins">
 			<?php the_post_thumbnail(); ?>
 		</figure><!-- .post-thumb -->
 	<?php endif; ?>
 
-	<div class="entry-content col push-center small-margins">
+	<div class="entry-content col push-center default-margins">
 		<?php
 			the_content(
 				sprintf(
@@ -58,7 +58,7 @@
 			?>
 	</div><!-- .entry-content -->
 
-	<div class="entry-footer col push-center small-margins">
+	<div class="entry-footer col push-center outer-margins">
 
 		<?php aino_entry_meta(); ?>
 

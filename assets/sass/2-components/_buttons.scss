@@ -38,6 +38,16 @@ a.btn-outline,
 	}
 }
 
+.btn-white button {
+	background: $color__white;
+	color: $color__black;
+	fill: $color__black;
+}
+
+.btn-long {
+ width: 100%;
+}
+
 /* Button Sizes */
 .btn-xxs {
 	@include btn-s;
@@ -78,11 +88,13 @@ a.btn-outline,
 .header-cta-wrap {
 
 	.btn-outline a {
-		@include btn-s;
+		@include btn-l;
 	}
 
 	a {
-		@include btn-s;
+		@include btn-l;
+		padding: 0 !important;
+		line-height: 1;
 	}
 }
 

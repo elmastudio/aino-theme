@@ -1,4 +1,3 @@
-/* 12 Grid */
 .col,
 .column {
 	box-sizing: border-box;
@@ -20,207 +19,104 @@
 .col1 {
 	max-width: $col1;
 
-	&__no-gutter {
-		max-width: $col1-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col1} - #{$s-9});
 	}
 }
 
 .col2 {
 	max-width: $col2;
 
-	&__no-gutter {
-		max-width: $col2-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col2} - #{$s-9});
 	}
 }
 
 .col3 {
 	max-width: $col3;
 
-	&__no-gutter {
-		max-width: $col3-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col3} - #{$s-9});
 	}
 }
 
 .col4 {
 	max-width: $col4;
 
-	&__no-gutter {
-		max-width: $col4-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col4} - #{$s-9});
 	}
 }
 
 .col5 {
 	max-width: $col5;
 
-	&__no-gutter {
-		max-width: $col5-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col5} - #{$s-9});
 	}
 }
 
 .col6 {
 	max-width: $col6;
 
-	&__no-gutter {
-		max-width: $col6-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col6} - #{$s-9});
 	}
 }
 
 .col7 {
 	max-width: $col7;
 
-	&__no-gutter {
-		max-width: $col7-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col7} - #{$s-9});
 	}
 }
 
 .col8 {
 	max-width: $col8;
 
-	&__no-gutter {
-		max-width: $col8-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col8} - #{$s-9});
 	}
 }
 
 .col9 {
 	max-width: $col9;
 
-	&__no-gutter {
-		max-width: $col9-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col9} - #{$s-9});
 	}
 }
 
 .col10 {
 	max-width: $col10;
 
-	&__no-gutter {
-		max-width: $col10-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col10} - #{$s-9});
 	}
 }
 
 .col11 {
 	max-width: $col11;
 
-	&__no-gutter {
-		max-width: $col11-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col11} - #{$s-9});
 	}
 }
 
 .col12 {
 	max-width: $col12;
 
-	&__no-gutter {
-		max-width: $col12-no-gutter;
+	&.no-margins {
+		max-width: calc(#{$col12} - #{$s-9});
 	}
 }
 
-
-// Push padding left or right (Desktop only)
-@include breakpoint(md) {
-	.push-left-col1 {
-		padding-left: $col1;
-	}
-
-	.push-left-col2 {
-		padding-left: $col2;
-	}
-
-	.push-left-col3 {
-		padding-left: $col3;
-	}
-
-	.push-left-col4 {
-		padding-left: $col4;
-	}
-
-	.push-left-col5 {
-		padding-left: $col5;
-	}
-
-	.push-left-col6 {
-		padding-left: $col6;
-	}
-
-	.push-left-col7 {
-		padding-left: $col7;
-	}
-
-	.push-left-col8 {
-		padding-left: $col8;
-	}
-
-	.push-left-col9 {
-		padding-left: $col9;
-	}
-
-	.push-left-col10 {
-		padding-left: $col10;
-	}
-
-	.push-left-col11 {
-		padding-left: $col11;
-	}
-
-	.push-right-col1 {
-		padding-right: $col1;
-	}
-
-	.push-right-col2 {
-		padding-right: $col2;
-	}
-
-	.push-right-col3 {
-		padding-right: $col3;
-	}
-
-	.push-right-col4 {
-		padding-right: $col4;
-	}
-
-	.push-right-col5 {
-		padding-right: $col5;
-	}
-
-	.push-right-col6 {
-		padding-right: $col6;
-	}
-
-	.push-right-col7 {
-		padding-right: $col7;
-	}
-
-	.push-right-col8 {
-		padding-right: $col8;
-	}
-
-	.push-right-col9 {
-		padding-right: $col9;
-	}
-
-	.push-right-col10 {
-		padding-right: $col10;
-	}
-
-	.push-right-col11 {
-		padding-right: $col11;
-	}
+.outer-margins {
+	@include outer-margins;
 }
 
-.grid-margins {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(sm) {
-		padding-left: $s-7;
-		padding-right: $s-7;
-	}
-
-	@include breakpoint(lg) {
-		padding-left: $s-9;
-		padding-right: $s-9;
-	}
-}
-
-// Grid margins for elements which only require them on mobile.
+// Outer margins for elements which only require them on mobile.
 .mobile-margins {
 	padding-left: $s-4;
 	padding-right: $s-4;
@@ -236,21 +132,10 @@
 	}
 }
 
-// Mobile Grid margins for elements with default content width.
-.small-margins,
+// Outer Grid margins for elements with default content width.
+.default-margins,
 .search-no-results .entry-content {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(sm) {
-		padding-left: $s-7;
-		padding-right: $s-7;
-	}
-
-	@include breakpoint(lg) {
-		padding-left: 0;
-		padding-right: 0;
-	}
+	@include default-margins;
 }
 
 .col-margins {
@@ -292,16 +177,17 @@
 .comment-list,
 .comment-respond,
 .authorbox__details,
-.author-pic-link {
+.author-pic-link,
+.default-content-width {
 	@include push--auto;
-	max-width: $col6-no-gutter;
+	max-width: $default-content-width;
 }
 
 /* Full width page template */
 .tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header {
 	@include push--auto;
-	max-width: $col12-no-gutter;
+	max-width: $wide-content-width;
 }
 
 /* Fullscreen and hero page template */
@@ -315,7 +201,7 @@
 
 /* Alignwide and fullwidth Content widths */
 .entry-content>*.alignwide {
-	max-width: $col12-no-gutter;
+	max-width: $wide-content-width;
 }
 
 // All containers with 1200px default width.

@@ -34,23 +34,13 @@
 		margin-left: auto;
 		margin-right: auto;
 		clear: both;
-
-		@include breakpoint(sm) {
-			padding-left: $s-9;
-			padding-right: $s-9;
-		}
-
-		@include breakpoint(xl) {
-			padding-left: $s-6;
-			padding-right: $s-6;
-		}
+		@include outer-margins;
 	}
 
 	&.alignfull {
 		position: relative;
-		width: 100vw;
-		margin-left: calc(50% - 50vw);
-		max-width: none;
+		max-width: 100%;
+		width: auto;
 	}
 }
 
@@ -62,19 +52,15 @@
 		max-width: $col12;
 		clear: both;
 		overflow: hidden;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: $s-6;
-		padding-right: $s-6;
+		@include push--auto;
+		@include outer-margins;
+	}
 
-		@include breakpoint(sm) {
-			padding-left: $s-9;
-			padding-right: $s-9;
-		}
+	.wp-block-group__inner-container {
 
-		@include breakpoint(xl) {
-			padding-left: $s-6;
-			padding-right: $s-6;
+		.wp-block-image:not([data-align=full]):not([data-align=wide]):not([data-align=left]):not([data-align=right]) {
+			@include default-margins;
+			@include push--auto;
 		}
 	}
 }
@@ -108,7 +94,13 @@
 /* Columns */
 
 .wp-block-columns {
-	margin-bottom: $s-7;
+
+	margin-bottom: 0;
+
+	.alignwide {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 	.wp-block-column>*:last-child {
 		margin-bottom: 0;
@@ -176,6 +168,11 @@
 		.wp-block-column:nth-last-child(6):first-child,
 		.wp-block-column:nth-last-child(6):first-child~* {
 			flex: 1 0 10%;
+		}
+
+		&.has-background {
+			@include s-r-8(padding-top);
+			padding-bottom: 0;
 		}
 	}
 }
@@ -349,6 +346,10 @@ div[class*='wp-block-'] figcaption {
 .wp-block-pullquote {
 	padding: 0;
 
+	p {
+		@include font-body;
+	}
+
 	&.is-style-default {
 		background-color: transparent;
 	}
@@ -368,7 +369,8 @@ div[class*='wp-block-'] figcaption {
 
 	&.is-style-large p {
 		margin: 0;
-		@include font-body-l;
+		@include font-body;
+		@include font-body-xl;
 		font-style: normal;
 	}
 
@@ -391,6 +393,7 @@ div[class*='wp-block-'] figcaption {
 	}
 }
 
+.single .entry-content .wp-block-pullquote,
 .wp-block-pullquote {
 	border: none;
 	text-align: left;
@@ -399,6 +402,7 @@ div[class*='wp-block-'] figcaption {
 	& p,
 	&.is-style-solid-color p,
 	&.is-style-solid-color blockquote p {
+		@include font-body;
 		@include font-body-m;
 	}
 
@@ -413,12 +417,10 @@ div[class*='wp-block-'] figcaption {
 		}
 	}
 
-	&.alignleft {
-		margin-left: 0;
-	}
-
+	&.alignleft,
 	&.alignright {
-		margin-right: 0;
+		margin-right: $s-7;
+		margin-left: $s-7;
 	}
 
 	&.alignleft blockquote,
@@ -429,17 +431,37 @@ div[class*='wp-block-'] figcaption {
 
 /* Cover */
 
-.wp-block-cover {
+.hentry .entry-content {
 
-	.wp-block-cover__inner-container {
+	.wp-block-cover {
 
-		width: 100%;
-		padding: $s-9 0;
+		&.alignwide {
+			width: calc(100% - 2rem);
 
-		p {
-			margin-bottom: 0;
+			@include breakpoint(sm) {
+				width: calc(100% - 4rem);
+			}
+
+			@include breakpoint(lg) {
+				width: calc(100% - 6rem);
+			}
+
+			@include breakpoint(xl) {
+				max-width: $wide-content-width;
+			}
+		}
+
+		.wp-block-cover__inner-container {
+
+			width: 100%;
+			padding: $s-9 0;
+
+			p {
+				margin-bottom: 0;
+			}
 		}
 	}
+
 }
 
 .wp-block-cover-image .wp-block-cover-image-text,
@@ -529,17 +551,35 @@ div[class*='wp-block-'] figcaption {
 /* Separator */
 .wp-block-separator {
 	border: none;
-	border-top: 1px solid $color__border;
+	border-top: 1px solid;
+
+	&.is-style-dots {
+		background: none;
+		border: none;
+	}
+
+	&.is-style-wide {
+		margin: 0 $s-4;
+		max-width: $wide-content-width;
+
+		@include breakpoint(sm) {
+			margin: 0 $s-7;
+		}
+
+		@include breakpoint(lg) {
+			margin: 0 $s-9;
+		}
+
+		@include breakpoint(xl) {
+			margin: 0 auto;
+			padding: 0 $s-6;
+		}
+	}
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 100px;
 	@include push--auto;
-}
-
-.wp-block-separator.is-style-dots {
-	background: none;
-	border: none;
 }
 
 .wp-block-separator.is-style-dots:before {
@@ -661,10 +701,15 @@ div[class*='wp-block-'] figcaption {
 		margin-bottom: 0;
 	}
 
+	.wp-block-group__inner-container {
+		.wp-block-image:not(.alignwide):not(.alignfull) {
+			max-width: $default-content-width;
+			@include push--auto;
+		}
+	}
 }
 
 /* Block Alignment */
-
 .wp-block-cover-image,
 .wp-block-cover,
 .wp-block-cover,

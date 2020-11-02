@@ -8,20 +8,29 @@
 @import "1-base/mixins";
 
 /* Structure */
+.wp-block {
+	max-width: $default-content-width;
+}
 
 .editor-styles-wrapper {
 	text-rendering: optimizeLegibility;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
+	padding: 0 !important;
+
+	.wp-block[data-align="wide"] .wp-block[data-align="wide"],
+	.wp-block[data-align="full"] .wp-block[data-align="wide"] {
+		max-width: $wide-content-width;
+
+		@include breakpoint(xl) {
+			width: $wide-content-width !important;
+		}
+	}
 }
 
-.wp-block {
-	max-width: 672px;
-}
-
-.wp-block[data-align="wide"] .wp-block[data-align="wide"],
-.wp-block[data-align="full"] .wp-block[data-align="wide"] {
-	max-width: 1392px;
+.wp-block[data-align="full"] {
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
 .wp-block[data-align="full"] .wp-block[data-align="wide"] {
@@ -38,7 +47,12 @@
 .wp-block .wp-block[data-type="core/cover"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]) {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 672px;
+}
+
+// Inner blocks of wide and full aligned blocks
+.wp-block[data-align="full"] .wp-block[data-type="core/group"]:not([data-align="full"]):not([data-align="wide"]),
+.wp-block[data-align="wide"] .wp-block[data-type="core/group"]:not([data-align="full"]):not([data-align="wide"]) {
+	max-width: 100%;
 }
 
 *[data-align="right"] .wp-block-edit,
@@ -48,21 +62,29 @@
 
 .wp-block[data-align="wide"],
 .wp-block.alignwide {
-	max-width: 1392px;
+	max-width: $wide-content-width;
+
+	.wp-block {
+		max-width: $wide-content-width;
+	}
 }
 
 .wp-block[data-align="full"],
 .wp-block.alignfull {
 	max-width: none;
+
+	.wp-block {
+		max-width: 100%;
+	}
 }
 
 .tpl-fullwidth .wp-block {
-	max-width: 1392px;
+	max-width: $wide-content-width;
 }
 
 .wp-block {
 	.tpl-fullwidth & {
-		max-width: 1392px;
+		max-width: $wide-content-width;
 	}
 }
 
@@ -77,9 +99,13 @@
 .editor-styles-wrapper .wp-block[data-align="left"],
 .editor-styles-wrapper .wp-block[data-align="right"] {
 	margin: 0 auto;
-	max-width: 1392px;
+	max-width: $wide-content-width !important;
 }
 
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	max-width: $wide-content-width;
+	@include outer-margins;
+}
 
 /* Typography */
 body {
@@ -92,6 +118,7 @@ body {
 /* Headings */
 .editor-post-title .editor-post-title__input {
 	@include font-body;
+	line-height: 1.1;
 }
 
 .editor-post-title__input,
@@ -103,7 +130,7 @@ h5,
 h6 {
 	color: $color__text_one;
 	font-weight: normal;
-	line-height: 1.2;
+	line-height: 1.1;
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -146,6 +173,7 @@ h4.has-xxxxl-font-size {
 	@include font-h-9;
 }
 
+.editor-post-title__input,
 h1.has-l-font-size,
 h2.has-xl-font-size,
 h3.has-xxl-font-size,
@@ -163,7 +191,6 @@ h6.has-xxxxl-font-size {
 	@include font-h-7;
 }
 
-.editor-post-title__input,
 h1,
 h1.has-s-font-size,
 h2.has-m-font-size,
@@ -227,8 +254,10 @@ h6.has-xxs-font-size {
 }
 
 /* Paragraphs */
-p {
-	@include font-body-m;
+p,
+ol,
+ul {
+	@include font-body-l;
 
 	&.has-background {
 		@include s-r-7(padding);
@@ -372,9 +401,6 @@ blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover {
 /* Elements */
 
 @media screen and (min-width: 50em) {
-	.editor-post-title {
-		padding-right: 2em;
-	}
 
 	.editor-post-title:after,
 	.editor-post-title:before {
@@ -423,10 +449,15 @@ ol {
 	list-style: decimal;
 }
 
+ul li,
+ol li {
+	padding-bottom: $s-4;
+}
+
 li>ol,
 li>ul {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: $s-6;
 }
 
 dt {
@@ -633,7 +664,7 @@ textarea {
 	.wp-block[data-type="core/pullquote"][data-align="left"],
 	.wp-block[data-type="core/pullquote"][data-align="right"] {
 		margin: 0 auto;
-		max-width: $col12-no-gutter;
+		max-width: $wide-content-width;
 	}
 }
 
@@ -643,12 +674,16 @@ textarea {
 
 	.wp-block-group {
 
-		&.has-background {
-			padding-left: 0;
-			padding-right: 0;
+		.wp-block-group__inner-container {
+
+			.wp-block-image {
+				max-width: $default-content-width;
+			}
 		}
+
 	}
 }
+
 
 /* Table */
 
@@ -707,7 +742,7 @@ textarea {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: $col6-no-gutter;
+	max-width: $default-content-width;
 	@include font-h-3;
 }
 
@@ -782,12 +817,20 @@ pre.wp-block-verse {
 }
 
 /* Separator */
+.block-editor-block-list__block[data-type="core/separator"] {
+	max-width: $wide-content-width;
+}
+
 .wp-block-separator {
-	margin-bottom: $s-8;
 	border-left: 0;
 	border-right: 0;
 	border-bottom: 0;
-	border-top: 1px solid $color__border;
+	border-top: 1px solid;
+	opacity: 1;
+
+	&.is-style-wide {
+		border: none;
+	}
 
 	&.is-style-dots {
 		border: none;
