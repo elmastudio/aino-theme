@@ -58,11 +58,6 @@ textarea {
 		color: #8e8e8e;
 	}
 
-	&:active,
-	&:focus {
-		background: $color__background;
-	}
-
 	.light-form & {
 		border: 1px solid $color__white;
 		color: $color__white;

@@ -264,7 +264,6 @@ textarea:-moz-placeholder{color:#8e8e8e}
 textarea::-moz-placeholder{color:#8e8e8e}
 textarea:-ms-input-placeholder{color:#8e8e8e}
 textarea::-webkit-input-placeholder{color:#8e8e8e}
-textarea:active,textarea:focus{background:#f7f7ff}
 .light-form textarea{border:1px solid #fff;color:#fff}
 .light-form textarea.placeholder{color:rgba(255,255,255,0.6)}
 .light-form textarea:-moz-placeholder{color:rgba(255,255,255,0.6)}
