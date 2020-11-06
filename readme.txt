@@ -46,6 +46,8 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.2.3 =
 * Enhance: Mailchimp form stying.
+* Enhance: Custom logo support.
+* Bugfix: Default page responsive margins.
 
 = 1.2.2 =
 * New: MC4WP: Mailchimp for WordPress plugin support.

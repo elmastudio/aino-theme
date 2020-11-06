@@ -544,14 +544,14 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .blog .site-content,.single-post .site-content,.archive .site-content,.search .site-content,.page-template-default .site-content,.error404 .site-content,.tpl-fullwidth .site-content,.search-no-results .site-content{padding-bottom:6rem}
 .site-header{padding-top:1rem}
 .admin-bar .site-header{top:32px}
-.site-branding{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto 0 0;padding-right:2rem;height:2.25rem}
+.site-branding{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto 0 0;min-height:2.25rem}
 .site-branding h1.site-title,.site-branding .site-title,.site-branding .site-logo{display:block;margin:0}
-.site-branding .site-logo{line-height:0}
+.site-branding .site-logo{line-height:0;max-width:70%}
 .site-branding .site-description{display:none;height:2rem;margin:0;padding:0 0 0 .5rem;color:#222}
 .site-branding .site-description:before{content:"";display:block;width:3rem;background-color:#111;height:1px;margin-right:.5rem}
 .tagline-hide .site-branding .site-description{display:none}
 .site-branding .custom-logo-link{display:block;padding:0 .5rem 0 0}
-.site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{width:auto !important;height:2.25rem;-o-object-fit:fill;object-fit:fill}
+.site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{-o-object-fit:fill;object-fit:fill;height:auto !important}
 .search-header{position:relative;margin:1rem 0;padding:0}
 .search-header .search-submit{display:none}
 .search-header label{cursor:pointer;margin:0;padding:0;color:#222}
@@ -921,7 +921,6 @@ td{padding:1rem}
 .site-header{padding-top:1.25rem}
 .site-branding{height:2.375rem}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{height:2.375rem}
 .header-cta-wrap ul li{width:auto}
 .nav-toggle{right:2rem;top:1.25rem}
 button.close-nav-toggle{margin-left:2rem;margin-top:1.25rem}
@@ -1085,8 +1084,8 @@ table{margin-bottom:2rem}
 .site-content{padding-top:5rem}
 .blog .site-content,.single-post .site-content,.archive .site-content,.search .site-content,.page-template-default .site-content,.error404 .site-content,.tpl-fullwidth .site-content,.search-no-results .site-content{padding-bottom:9rem}
 .site-header{padding-top:1.5rem}
-.site-branding{height:auto}
-.site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{height:2.5rem}
+.site-branding{height:auto;padding-right:2rem}
+.site-branding .site-logo{max-width:100%}
 .search-header label{padding:0}
 .nav-toggle{top:1.5rem}
 button.close-nav-toggle{margin-top:1.5rem}
@@ -1152,9 +1151,8 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .site-footer .footer-widget-wrap:before{margin-bottom:5rem}
 }@media(min-width:64em) and (min-width:64em){.blog.blog-1-column .posts-container .hentry .entry-footer,.blog-archive.blog-1-column .posts-container .hentry .entry-footer{padding:1.25rem}
 }@media(min-width:64em) and (min-width:80em){.blog.blog-1-column .posts-container .hentry .entry-footer,.blog-archive.blog-1-column .posts-container .hentry .entry-footer{padding:1.5rem}
-}@media(min-width:71.25em){.site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{height:auto}
-.site-branding .custom-logo-link{max-height:100%}
-.site-branding .custom-logo-link img{height:auto}
+}@media(min-width:71.25em){.site-branding .custom-logo-link{max-height:100%}
+.site-branding .custom-logo-link img{height:auto !important}
 .search-header{margin:0 0 0 1.5rem;padding:0}
 .social-header-nav{display:block;padding:0}
 .has-nav-main .social-header-nav{margin-top:0;padding-left:1.5rem}
@@ -1268,7 +1266,6 @@ table{margin-bottom:2.5rem}
 .site-content{padding-top:6rem}
 .blog .site-content,.single-post .site-content,.archive .site-content,.search .site-content,.page-template-default .site-content,.error404 .site-content,.tpl-fullwidth .site-content,.search-no-results .site-content{padding-bottom:11rem}
 .site-header{padding-top:2rem}
-.site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{height:auto}
 .search-header label{padding:0}
 .sub-menu li a{padding-left:0}
 .sub-menu .sub-menu li a{padding-left:0}
