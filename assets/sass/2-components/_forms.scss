@@ -202,12 +202,23 @@ button[type="submit"] {
 
 /* Mailchimp Form */
 
-.mc4wp-form-fields {
-	@include s-r-6 (padding-top);
-}
+.mc4wp-form {
 
-.mc4wp-success p {
-	color: $color__success;
+	.mc4wp-form-fields {
+		@include s-r-6 (padding-top);
+	}
+
+	.mc4wp-alert p {
+		text-align: center;
+	}
+	
+	.mc4wp-success p {
+		color: $color__success;
+	}
+	
+	.mc4wp-notice p {
+		color: $color__notification;
+	}
 }
 
 /* Light Form Color */
@@ -220,10 +231,6 @@ button[type="submit"] {
 			a:hover {
 				color: $color__white_hover;
 			}
-		}
-
-		input:not([type="submit"]) {
-			color: $color__white;
 		}
 	}
 }

@@ -45,7 +45,8 @@ div[class*='wp-block-'] figcaption,
 .logged-in-as,
 .comment-reply-title #cancel-comment-reply-link,
 .footer-info,
-.footer-widget .widget ul li {
+.footer-widget .widget ul li,
+.mc4wp-form .mc4wp-alert p {
 	@include font-body-m;
 }
 
