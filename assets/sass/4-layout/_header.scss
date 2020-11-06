@@ -1,13 +1,5 @@
 .site-header {
 	@include s-r-7(padding-top);
-
-	.admin-bar & {
-		top: 32px;
-
-		@media screen and (max-width: 782px) {
-			top: 46px;
-		}
-	}
 }
 
 /* Site Title, Logo and Tagline */
@@ -15,8 +7,7 @@
 	@include flexbox;
 	align-items: center;
 	margin: 0 auto 0 0;
-	padding-right: $s-7;
-	height: 2.25rem;
+	min-height: 2.25rem;
 
 	@include breakpoint(sm) {
 		height: 2.375rem;
@@ -24,6 +15,7 @@
 
 	@include breakpoint(md) {
 		height: auto;
+		padding-right: $s-7;
 	}
 
 	h1.site-title,
@@ -35,6 +27,11 @@
 
 	.site-logo {
 		line-height: 0;
+		max-width: 70%;
+
+		@include breakpoint(md) {
+			max-width: 100%;
+		}
 	}
 
 	.site-description {
@@ -69,32 +66,15 @@
 
 		img,
 		.custom-logo {
-			width: auto !important;
-			height: 2.25rem;
 			object-fit: fill;
-
-			@include breakpoint(header) {
-				height: auto;
-			}
-
-			@include breakpoint(sm) {
-				height: 2.375rem;
-			}
-
-			@include breakpoint(md) {
-				height: 2.5rem;
-			}
-
-			@include breakpoint(lg) {
-				height: auto;
-			}
+			height: auto !important;
 		}
 
 		@include breakpoint(header) {
 			max-height: 100%;
 
 			img {
-				height: auto;
+				height: auto !important;
 			}
 		}
 	}
@@ -400,7 +380,7 @@ button.close-nav-toggle {
 }
 
 .mobile-menu {
-padding-top: $s-7;
+	padding-top: $s-7;
 }
 
 /* Primary Menu ---------------------------- */
