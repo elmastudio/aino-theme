@@ -15,6 +15,12 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 1.2.3   
+**Enhance:** Mailchimp form styling.  
+**Enhance:** Custom logo support.  
+**Bugfix:** Default page responsive margins.  
+**Bugfix:** Admin bar top spacing.  
+
 ### 1.2.2   
 **New:** MC4WP: Mailchimp for WordPress plugin support.  
 **Enhance:** Screenshot image.  
