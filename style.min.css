@@ -543,7 +543,6 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .site-content{padding-top:3rem}
 .blog .site-content,.single-post .site-content,.archive .site-content,.search .site-content,.page-template-default .site-content,.error404 .site-content,.tpl-fullwidth .site-content,.search-no-results .site-content{padding-bottom:6rem}
 .site-header{padding-top:1rem}
-.admin-bar .site-header{top:32px}
 .site-branding{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto 0 0;min-height:2.25rem}
 .site-branding h1.site-title,.site-branding .site-title,.site-branding .site-logo{display:block;margin:0}
 .site-branding .site-logo{line-height:0;max-width:70%}
@@ -1327,6 +1326,5 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .wp-block-cover.alignleft,.wp-block-gallery.alignleft,.wp-block-pullquote.alignleft{margin:0 3rem 3rem 2rem}
 .wp-block-cover.alignright,.wp-block-gallery.alignright,.wp-block-pullquote.alignright{margin:0 2rem 3rem 3rem}
 }@media(max-width:781px) and (min-width:600px){.wp-block-columns .wp-block-column{-ms-flex-preferred-size:calc(50% - 48px) !important;flex-basis:calc(50% - 48px) !important}
-}@media screen and (max-width:782px){.admin-bar .site-header{top:46px}
 }@media(max-width:782px){.admin-bar .menu-modal{top:46px}
 }

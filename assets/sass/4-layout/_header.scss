@@ -1,13 +1,5 @@
 .site-header {
 	@include s-r-7(padding-top);
-
-	.admin-bar & {
-		top: 32px;
-
-		@media screen and (max-width: 782px) {
-			top: 46px;
-		}
-	}
 }
 
 /* Site Title, Logo and Tagline */
@@ -388,7 +380,7 @@ button.close-nav-toggle {
 }
 
 .mobile-menu {
-padding-top: $s-7;
+	padding-top: $s-7;
 }
 
 /* Primary Menu ---------------------------- */
