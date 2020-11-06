@@ -770,6 +770,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .comment-reply-title #cancel-comment-reply-link{display:block;padding-top:.5rem;font-weight:normal;letter-spacing:0}
 .comment-respond .form-submit{margin:0}
 .comment-notes,.logged-in-as{margin:0;padding-top:.5rem;padding-bottom:0}
+.bypostauthor{padding-top:1px}
 .authorbox__wrap{padding-top:6rem}
 .authorbox__wrap .section-title{display:block;border-top:1px solid #111;padding-top:1rem;padding-bottom:3rem}
 .authorbox__wrap .authorbox__content{padding-bottom:6rem}
