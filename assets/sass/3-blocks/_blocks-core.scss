@@ -58,10 +58,10 @@
 
 	.wp-block-group__inner-container {
 
-		.wp-block-image:not([data-align=full]):not([data-align=wide]):not([data-align=left]):not([data-align=right]) {
-			@include default-margins;
-			@include push--auto;
-		}
+		&:not(.wp-block-ainoblocks-grid-container) > .wp-block-image:not([data-align=full]):not([data-align=wide]):not([data-align=left]):not([data-align=right]) {
+				@include default-margins;
+				@include push--auto;
+			}
 	}
 }
 
