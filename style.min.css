@@ -361,7 +361,8 @@ a.btn-outline:hover,.btn-outline a:hover{color:#1765d8;fill:#1765d8}
 .entry-footer .author-avatar img{width:2.5rem;height:2.5rem;min-width:2.5rem;min-height:2.5rem}
 .blog-3-column .entry-footer .author-avatar{margin-right:1rem}
 .blog-3-column .entry-footer .author-avatar img{max-width:2.5rem;max-height:2.5rem}
-.single-post .author-avatar{margin:0 auto;padding-bottom:.5rem;display:block}
+.single-post .author-avatar{display:none}
+.single-post.has-single-author .author-avatar{margin:0 auto;padding-bottom:.5rem;display:block}
 .author-pic-link{position:relative;line-height:0;display:block;margin-bottom:1rem}
 .author-pic-link img{display:block;width:5rem;height:5rem;min-width:5rem;min-height:5rem}
 .archive .author-pic-link img{width:5rem;height:5rem;min-width:5rem;min-height:5rem}
@@ -729,7 +730,8 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .single-post .entry-meta{padding-top:1.5rem;text-align:center}
 .single-post .entry-header{padding-bottom:2rem}
 .single-post .entry-header .entry-cats{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-bottom:.5rem}
-.single-post .byline{color:#222}
+.single-post .byline{display:none;color:#222}
+.single-post.has-single-author .byline{display:inline}
 .single-post .entry-comments{position:relative;display:inline-block}
 .single-post .posted-on{display:block}
 .single-post .post-thumb{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;display:-webkit-box;display:-ms-flexbox;display:flex}

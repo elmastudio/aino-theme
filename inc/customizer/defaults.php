@@ -66,7 +66,8 @@ function aino_defaults( $name ) {
 				'aino_displaydate'         => true,
 				'display_comments'         => false,
 				'aino_displayauthor'       => true,
-				'blogcards_author'           => false,
+				'blogcards_author'         => false,
+				'display_single_author'    => true,
 			)
 		);
 	}

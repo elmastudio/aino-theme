@@ -39,7 +39,15 @@
 	}
 
 	& .byline {
+		display: none;
 		color: $color__text_two;
+	}
+
+	&.has-single-author {
+
+		& .byline {
+			display: inline;
+		}
 	}
 
 	& .entry-comments {
