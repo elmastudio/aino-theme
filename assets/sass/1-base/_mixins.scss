@@ -304,7 +304,7 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin font-body {
 	font-family: $font__body;
-	line-height: 1.3;
+	line-height: 1.4;
 }
 
 /* Font Weights */
@@ -810,7 +810,6 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Pills */
 @mixin pill {
-	text-transform: uppercase;
 	line-height: 1;
 	border: 1px solid $color__text_one;
 }
@@ -984,14 +983,14 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin avatar-m {
-	width: $s-10;
-	height: $s-10;
-	min-width: $s-10;
-	min-height: $s-10;
+	width: $s-9;
+	height: $s-9;
+	min-width: $s-9;
+	min-height: $s-9;
 
 	@include breakpoint(sm) {
-		width: $s-11;
-		height: $s-11;
+		width: $s-10;
+		height: $s-10;
 	}
 }
 

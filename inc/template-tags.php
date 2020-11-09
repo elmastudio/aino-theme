@@ -762,6 +762,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'has-header-image';
 	}
 
+	if ( has_tag() ) {
+		$classes[] = 'has-tags';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'aino_body_classes' );

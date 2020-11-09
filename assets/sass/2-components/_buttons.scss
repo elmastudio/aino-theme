@@ -211,7 +211,7 @@ a.btn-outline,
 .post-edit-link,
 .comment-metadata a {
 	display: inline-flex;
-	@include pill-m;
+	@include pill-s;
 }
 
 .post-edit-link {
@@ -226,14 +226,14 @@ a.btn-outline,
 
 	.entry-header .entry-cats a,
 	.entry-tags a {
-		@include pill-xl;
+		@include pill-l;
 	}
 
 	.entry-header .entry-cats a {
-		margin: 0 $s-2 $s-2;
+		margin: 0 $s-2 $s-4;
 	}
 
 	.entry-tags a {
-		margin: 0 $s-4 $s-2 0;
+		margin: 0 $s-4 $s-4 0;
 	}
 }

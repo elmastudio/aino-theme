@@ -44,6 +44,10 @@ Aino WordPress Theme bundles the following third-party resources:
 
 == Changelog ==
 
+= 1.2.4 =
+* New: Hide author on single posts.
+* Enhance: Single post styling.
+
 = 1.2.3 =
 * Enhance: Mailchimp form styling.
 * Enhance: Custom logo support.

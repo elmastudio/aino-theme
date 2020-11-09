@@ -704,7 +704,7 @@ ul.primary-menu {
 	a {
 		border-top: 1px solid $color__border;
 		width: calc(100% - 32px);
-		margin: 0 0 0 $s-4;
+		margin: 0;
 
 		@include breakpoint(md) {
 			border-top: none;

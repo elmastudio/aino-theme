@@ -118,7 +118,9 @@ body {
 /* Headings */
 .editor-post-title .editor-post-title__input {
 	@include font-body;
-	line-height: 1.1;
+	line-height: 1;
+	text-align: center;
+	max-width: $col10;
 }
 
 .editor-post-title__input,
@@ -130,7 +132,7 @@ h5,
 h6 {
 	color: $color__text_one;
 	font-weight: normal;
-	line-height: 1.1;
+	line-height: 1;
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -173,7 +175,6 @@ h4.has-xxxxl-font-size {
 	@include font-h-9;
 }
 
-.editor-post-title__input,
 h1.has-l-font-size,
 h2.has-xl-font-size,
 h3.has-xxl-font-size,
@@ -182,6 +183,7 @@ h5.has-xxxxl-font-size {
 	@include font-h-8;
 }
 
+.editor-post-title__input,
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
