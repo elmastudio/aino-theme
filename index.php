@@ -11,15 +11,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 
-		<?php if ( is_home() && ! is_front_page() ) : ?>
+		<?php if ( is_home() && ! is_front_page() && get_theme_mod( 'blog_title' ) ) : ?>
 
 			<header class="page-header outer-margins">
 
-			<?php if ( get_theme_mod( 'blog_title' ) ) : ?>
 				<h1 class="page-title"><?php echo wp_kses_post( get_theme_mod( 'blog_title' ) ); ?></h1>
-			<?php else : ?>
-				<h1 class="page-title screen-reader-text"><?php esc_html_e( 'Posts', 'aino' ); ?></h1>
-			<?php endif; ?>
 
 			<?php if ( get_theme_mod( 'blog_title_description' ) ) : ?>
 				<div class="description col col7">

@@ -788,7 +788,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .archive.author .author-pic img{width:5rem;height:5rem;min-width:5rem;min-height:5rem}
 .archive.author .authorbox__content h1{margin:0}
 .page-template-default .entry-header,.tpl-fullwidth .entry-header,.single-post .entry-header,.error404 .entry-header,.search-no-results .entry-header{display:block;text-align:center;padding-top:0}
-.page .entry-header{padding-bottom:1.5rem}
+.page .entry-header{padding-bottom:2rem}
 .page .entry-header .entry-title{margin:0}
 .archive .type-page .entry-footer,.search-results .type-page .entry-footer{display:none}
 .tpl-fullscreen .type-page .entry-header,.tpl-hero .type-page .entry-header{display:none}
@@ -974,7 +974,7 @@ button.sub-menu-toggle{margin:0 2rem 0 0}
 .authorbox__content .author-bio{padding-top:2rem}
 .archive.author .author-pic{width:11rem;margin-right:3rem;padding-bottom:0}
 .archive.author .author-pic img{width:6rem;height:6rem}
-.page .entry-header{padding-bottom:2rem}
+.page .entry-header{padding-bottom:2.5rem}
 .site-footer .footer-wrap{padding-bottom:2rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:2rem}
 .site-footer .footer-wrap .footer-widget-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
@@ -1151,7 +1151,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .authorbox__wrap .authorbox__content{padding-bottom:9rem}
 .authorbox__content .author-bio{padding-top:2.5rem}
 .archive.author .author-pic img{width:7.5rem;height:7.5rem}
-.page .entry-header{padding-bottom:2.5rem}
+.page .entry-header{padding-bottom:3rem}
 .site-footer .footer-wrap{padding-bottom:2.5rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:2.5rem}
 .site-footer .footer-wrap .footer-widget-wrap .footer-widget .widget{padding-bottom:2.5rem}
@@ -1321,7 +1321,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .authorbox__wrap .authorbox__content{max-width:100%}
 .authorbox__content .author-bio{padding-top:3rem}
 .archive.author .author-pic img{width:9rem;height:9rem}
-.page .entry-header{padding-bottom:3rem}
+.page .entry-header{padding-bottom:4rem}
 .site-footer .footer-wrap{padding-bottom:3rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:3rem}
 .site-footer .footer-wrap .footer-widget-wrap .footer-widget .widget{padding-bottom:3rem}
