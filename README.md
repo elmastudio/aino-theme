@@ -15,6 +15,11 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 1.2.4   
+**New:** Hide author on single posts.
+**Enhance:** Single post styles.
+**Enhance:** 404 page styles.
+
 ### 1.2.3   
 **Enhance:** Mailchimp form styling.  
 **Enhance:** Custom logo support.  
