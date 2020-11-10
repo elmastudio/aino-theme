@@ -323,12 +323,20 @@
 	}
 
 	.authorbox__content {
-		@include s-r-15 (padding-bottom);
-
 		@include breakpoint(lg) {
 			max-width: 100%;
 		}
 	}
+}
+
+.single {
+
+	.authorbox__wrap {
+		.authorbox__content {
+			@include s-r-15 (padding-bottom);
+		}
+	}
+
 }
 
 .authorbox-title {

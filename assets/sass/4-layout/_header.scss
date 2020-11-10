@@ -145,7 +145,7 @@
 
 		@include breakpoint(header) {
 			margin-top: 0;
-			padding-left: $s-6;
+			padding-left: $s-7;
 		}
 	}
 }
@@ -164,7 +164,7 @@
 }
 
 .social-links-menu li {
-	padding-right: $s-6;
+	padding-right: $s-7;
 
 	&:last-child {
 		padding-right: 0;
@@ -227,7 +227,7 @@
 	.has-nav-social & {
 
 		@include breakpoint(header) {
-			padding: 0 0 0 $s-6;
+			padding: 0 0 0 $s-7;
 		}
 	}
 
@@ -426,7 +426,7 @@ ul.primary-menu {
 	}
 
 	>li {
-		margin: 0 $s-6 0 0;
+		margin: 0 $s-7 0 0;
 
 		&:last-child {
 			margin-right: 0;

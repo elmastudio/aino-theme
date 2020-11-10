@@ -92,9 +92,14 @@ a.btn-outline,
 	}
 
 	a {
+		@include btn;
 		@include btn-l;
-		padding: 0 !important;
 		line-height: 1;
+
+		&:hover {
+			text-decoration: none;
+			color: inherit;
+		}
 	}
 }
 

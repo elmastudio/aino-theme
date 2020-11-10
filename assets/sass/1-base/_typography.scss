@@ -269,8 +269,6 @@ h6.has-xxs-font-size {
 /* Padding for Headlines in Content Area */
 .single .entry-content,
 .page-template-default .entry-content {
-
-	h1,
 	h2,
 	h3,
 	h4,
@@ -279,7 +277,6 @@ h6.has-xxs-font-size {
 		@include s-r-4(padding-top);
 		@include s-r-4(padding-bottom);
 	}
-
 }
 
 /* Padding for Paragraphs in Content Area */

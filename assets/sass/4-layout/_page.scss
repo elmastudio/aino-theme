@@ -14,11 +14,11 @@
 .page {
 
 	.entry-header {
-
 		@include s-r-10 (padding-bottom);
 
 		.entry-title {
-			margin: 0;
+			margin: 0 auto;
+			max-width: $col10;
 		}
 	}
 }
