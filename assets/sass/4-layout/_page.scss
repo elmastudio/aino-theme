@@ -11,7 +11,8 @@
 	}
 }
 
-.page {
+.page,
+.error404 {
 
 	.entry-header {
 		@include s-r-10 (padding-bottom);

@@ -26,11 +26,6 @@ input[type="color"] {
 		color: #8e8e8e;
 	}
 
-	&:active,
-	&:focus {
-		background: $color__background;
-	}
-
 	.light-form & {
 		border: 1px solid $color__white;
 		color: $color__white;
@@ -162,6 +157,16 @@ button[type="submit"] {
 	width: 120px;
 	height: $s-10;
 	padding: 16px 0 0;
+}
+
+.error404 .entry-content {
+	.searchform-wrap {
+
+		.search-field {
+			@include s-r-6 (margin-bottom);
+		}
+	
+	}
 }
 
 /* Form Styles (via Customizer Settings) */

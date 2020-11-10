@@ -119,7 +119,6 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $s-9;
 		vertical-align: middle;
 		border: 1px solid $color__border;
 	}
@@ -944,11 +943,6 @@ button.sub-menu-toggle {
 	.site-branding .site-description:before {
 		border-color: transparent;
 		background-color: $color__white;
-
-		&:focus,
-		&:active {
-			background-color: rgba(255, 255, 255, 0.9);
-		}
 	}
 
 	.primary-menu .sub-menu .dropdown .icon {

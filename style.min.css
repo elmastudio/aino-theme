@@ -208,7 +208,7 @@ h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-s
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:1.75rem !important;letter-spacing:-0.7px}
 .site-branding .site-title{font-size:1.25rem;line-height:1}
 .single .entry-content h2,.single .entry-content h3,.single .entry-content h4,.single .entry-content h5,.single .entry-content h6,.page-template-default .entry-content h2,.page-template-default .entry-content h3,.page-template-default .entry-content h4,.page-template-default .entry-content h5,.page-template-default .entry-content h6{padding-top:1rem;padding-bottom:1rem}
-.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:1rem}
+.single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1rem}
 dfn,em,i{font-style:italic}
 dt{font-weight:bold}
 dd{margin:0 1.5rem 1.5rem}
@@ -250,7 +250,6 @@ input[type="text"]:-moz-placeholder,input[type="email"]:-moz-placeholder,input[t
 input[type="text"]::-moz-placeholder,input[type="email"]::-moz-placeholder,input[type="url"]::-moz-placeholder,input[type="password"]::-moz-placeholder,input[type="search"]::-moz-placeholder,input[type="number"]::-moz-placeholder,input[type="tel"]::-moz-placeholder,input[type="range"]::-moz-placeholder,input[type="date"]::-moz-placeholder,input[type="month"]::-moz-placeholder,input[type="week"]::-moz-placeholder,input[type="time"]::-moz-placeholder,input[type="datetime"]::-moz-placeholder,input[type="datetime-local"]::-moz-placeholder,input[type="color"]::-moz-placeholder{color:#8e8e8e}
 input[type="text"]:-ms-input-placeholder,input[type="email"]:-ms-input-placeholder,input[type="url"]:-ms-input-placeholder,input[type="password"]:-ms-input-placeholder,input[type="search"]:-ms-input-placeholder,input[type="number"]:-ms-input-placeholder,input[type="tel"]:-ms-input-placeholder,input[type="range"]:-ms-input-placeholder,input[type="date"]:-ms-input-placeholder,input[type="month"]:-ms-input-placeholder,input[type="week"]:-ms-input-placeholder,input[type="time"]:-ms-input-placeholder,input[type="datetime"]:-ms-input-placeholder,input[type="datetime-local"]:-ms-input-placeholder,input[type="color"]:-ms-input-placeholder{color:#8e8e8e}
 input[type="text"]::-webkit-input-placeholder,input[type="email"]::-webkit-input-placeholder,input[type="url"]::-webkit-input-placeholder,input[type="password"]::-webkit-input-placeholder,input[type="search"]::-webkit-input-placeholder,input[type="number"]::-webkit-input-placeholder,input[type="tel"]::-webkit-input-placeholder,input[type="range"]::-webkit-input-placeholder,input[type="date"]::-webkit-input-placeholder,input[type="month"]::-webkit-input-placeholder,input[type="week"]::-webkit-input-placeholder,input[type="time"]::-webkit-input-placeholder,input[type="datetime"]::-webkit-input-placeholder,input[type="datetime-local"]::-webkit-input-placeholder,input[type="color"]::-webkit-input-placeholder{color:#8e8e8e}
-input[type="text"]:active,input[type="text"]:focus,input[type="email"]:active,input[type="email"]:focus,input[type="url"]:active,input[type="url"]:focus,input[type="password"]:active,input[type="password"]:focus,input[type="search"]:active,input[type="search"]:focus,input[type="number"]:active,input[type="number"]:focus,input[type="tel"]:active,input[type="tel"]:focus,input[type="range"]:active,input[type="range"]:focus,input[type="date"]:active,input[type="date"]:focus,input[type="month"]:active,input[type="month"]:focus,input[type="week"]:active,input[type="week"]:focus,input[type="time"]:active,input[type="time"]:focus,input[type="datetime"]:active,input[type="datetime"]:focus,input[type="datetime-local"]:active,input[type="datetime-local"]:focus,input[type="color"]:active,input[type="color"]:focus{background:#f7f7ff}
 .light-form input[type="text"],.light-form input[type="email"],.light-form input[type="url"],.light-form input[type="password"],.light-form input[type="search"],.light-form input[type="number"],.light-form input[type="tel"],.light-form input[type="range"],.light-form input[type="date"],.light-form input[type="month"],.light-form input[type="week"],.light-form input[type="time"],.light-form input[type="datetime"],.light-form input[type="datetime-local"],.light-form input[type="color"]{border:1px solid #fff;color:#fff}
 .light-form input[type="text"].placeholder,.light-form input[type="email"].placeholder,.light-form input[type="url"].placeholder,.light-form input[type="password"].placeholder,.light-form input[type="search"].placeholder,.light-form input[type="number"].placeholder,.light-form input[type="tel"].placeholder,.light-form input[type="range"].placeholder,.light-form input[type="date"].placeholder,.light-form input[type="month"].placeholder,.light-form input[type="week"].placeholder,.light-form input[type="time"].placeholder,.light-form input[type="datetime"].placeholder,.light-form input[type="datetime-local"].placeholder,.light-form input[type="color"].placeholder{color:rgba(255,255,255,0.6)}
 .light-form input[type="text"]:-moz-placeholder,.light-form input[type="email"]:-moz-placeholder,.light-form input[type="url"]:-moz-placeholder,.light-form input[type="password"]:-moz-placeholder,.light-form input[type="search"]:-moz-placeholder,.light-form input[type="number"]:-moz-placeholder,.light-form input[type="tel"]:-moz-placeholder,.light-form input[type="range"]:-moz-placeholder,.light-form input[type="date"]:-moz-placeholder,.light-form input[type="month"]:-moz-placeholder,.light-form input[type="week"]:-moz-placeholder,.light-form input[type="time"]:-moz-placeholder,.light-form input[type="datetime"]:-moz-placeholder,.light-form input[type="datetime-local"]:-moz-placeholder,.light-form input[type="color"]:-moz-placeholder{color:rgba(255,255,255,0.6)}
@@ -286,6 +285,7 @@ input[type="submit"],button[type="submit"]{display:block;clear:both}
 .entry-content .search-form,.widget_search .search-form{position:relative}
 .entry-content label .search-icon,.widget_search label .search-icon{display:none}
 .entry-content .search-submit span.search-icon,.widget_search .search-submit span.search-icon{width:120px;height:4rem;padding:16px 0 0}
+.error404 .entry-content .searchform-wrap .search-field{margin-bottom:1rem}
 .form-curved input,.form-curved textarea,.form-curved select{border-radius:1.5rem}
 .form-round input,.form-round select{border-radius:6.25em}
 .form-round textarea{border-radius:2.625rem}
@@ -559,7 +559,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .search-header .search-submit{display:none}
 .search-header label{cursor:pointer;margin:0;padding:0;color:#222}
 .search-header .search-form{position:relative}
-.search-header .search-field{background:transparent;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;height:3rem;vertical-align:middle;border:1px solid #111}
+.search-header .search-field{background:transparent;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;vertical-align:middle;border:1px solid #111}
 .social-header-nav{display:none;margin:0;padding:2rem 0}
 .social-header-nav ul li a{padding:0 1.5rem 0 0}
 .has-nav-main .social-header-nav{margin-top:2rem}
@@ -655,7 +655,6 @@ button.sub-menu-toggle .icon{width:10px;height:12px;text-align:right;height:53px
 .header-light .site-branding .site-title a,.header-light .site-branding .site-description,.header-light.page-template-tpl-hero-light .site-title a,.header-light .custom-logo-link .custom-logo path,.header-light .nav-toggle,.header-light .nav-toggle .icon-toggle-open,.header-light ul.primary-menu .dropdown .icon,.header-light .header-cta-wrap a{color:#fff;fill:#fff}
 .header-light .nav-toggle{border:1px solid #fff}
 .header-light .search-header .search-field,.header-light .site-branding .site-description:before{border-color:transparent;background-color:#fff}
-.header-light .search-header .search-field:focus,.header-light .search-header .search-field:active,.header-light .site-branding .site-description:before:focus,.header-light .site-branding .site-description:before:active{background-color:rgba(255,255,255,0.9)}
 .header-light .primary-menu .sub-menu .dropdown .icon{fill:#111}
 .header-light .btn-outline a{-webkit-box-shadow:inset 0 0 0 1px #fff;box-shadow:inset 0 0 0 1px #fff}
 .header-light .btn-outline a:hover{-webkit-box-shadow:inset 0 0 0 1px rgba(255,255,255,0.6);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.6)}
@@ -790,8 +789,8 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .archive.author .author-pic img{width:5rem;height:5rem;min-width:5rem;min-height:5rem}
 .archive.author .authorbox__content h1{margin:0}
 .page-template-default .entry-header,.tpl-fullwidth .entry-header,.single-post .entry-header,.error404 .entry-header,.search-no-results .entry-header{display:block;text-align:center;padding-top:0}
-.page .entry-header{padding-bottom:2rem}
-.page .entry-header .entry-title{margin:0 auto;max-width:77.5rem}
+.page .entry-header,.error404 .entry-header{padding-bottom:2rem}
+.page .entry-header .entry-title,.error404 .entry-header .entry-title{margin:0 auto;max-width:77.5rem}
 .archive .type-page .entry-footer,.search-results .type-page .entry-footer{display:none}
 .tpl-fullscreen .type-page .entry-header,.tpl-hero .type-page .entry-header{display:none}
 .tpl-fullscreen .site-content,.tpl-hero .site-content{max-width:none;padding:0}
@@ -859,7 +858,7 @@ h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-siz
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.5rem !important;letter-spacing:-0.6px}
 .nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important;letter-spacing:-0.5px}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.25rem !important;letter-spacing:-0.9px}
-.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:1.25rem}
+.single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1.25rem}
 dd{margin:0 1.5rem 1.5rem}
 pre{padding:1.25rem}
 pre{margin-bottom:1.25rem}
@@ -976,7 +975,7 @@ button.sub-menu-toggle{margin:0 2rem 0 0}
 .authorbox__content .author-bio{padding-top:2rem}
 .archive.author .author-pic{width:11rem;margin-right:3rem;padding-bottom:0}
 .archive.author .author-pic img{width:6rem;height:6rem}
-.page .entry-header{padding-bottom:2.5rem}
+.page .entry-header,.error404 .entry-header{padding-bottom:2.5rem}
 .site-footer .footer-wrap{padding-bottom:2rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:2rem}
 .site-footer .footer-wrap .footer-widget-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
@@ -1047,7 +1046,7 @@ h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-siz
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.625rem !important;letter-spacing:-0.65px}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.625rem !important;letter-spacing:-1.05px}
 .site-branding .site-title{font-size:1.375rem}
-.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:1.5rem}
+.single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1.5rem}
 pre{padding:1.5rem}
 pre{margin-bottom:1.5rem}
 .wp-caption .wp-caption-text{margin-top:1.5rem}
@@ -1055,6 +1054,7 @@ pre{margin-bottom:1.5rem}
 .gallery,.entry-content .tiled-gallery{margin-bottom:2rem}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"]{padding:1.25rem}
 .single form p,.page form p{padding-top:1.25rem}
+.error404 .entry-content .searchform-wrap .search-field{margin-bottom:1.25rem}
 .form-round label{padding-left:2.063rem}
 .mc4wp-form .mc4wp-form-fields{padding-top:1.25rem}
 button,input[type="button"],input[type="reset"],input[type="submit"]{padding:1.375rem;font-size:1.375rem}
@@ -1153,7 +1153,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .single .authorbox__wrap .authorbox__content{padding-bottom:9rem}
 .authorbox__content .author-bio{padding-top:2.5rem}
 .archive.author .author-pic img{width:7.5rem;height:7.5rem}
-.page .entry-header{padding-bottom:3rem}
+.page .entry-header,.error404 .entry-header{padding-bottom:3rem}
 .site-footer .footer-wrap{padding-bottom:2.5rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:2.5rem}
 .site-footer .footer-wrap .footer-widget-wrap .footer-widget .widget{padding-bottom:2.5rem}
@@ -1225,7 +1225,7 @@ h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-siz
 .nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.375rem !important;letter-spacing:-0.55px}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:3.25rem !important;letter-spacing:-1.3px}
 .site-branding .site-title{font-size:1.5rem}
-.single address,.single p,.page-template-default address,.page-template-default p{padding-bottom:2rem}
+.single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:2rem}
 pre{padding:2rem}
 pre{margin-bottom:2rem}
 .wide-content{max-width:93rem}
@@ -1234,6 +1234,7 @@ pre{margin-bottom:2rem}
 .gallery,.entry-content .tiled-gallery{margin-bottom:2.5rem}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"]{padding:1.5rem}
 .single form p,.page form p{padding-top:1.5rem}
+.error404 .entry-content .searchform-wrap .search-field{margin-bottom:1.5rem}
 .form-round label{padding-left:2.25rem}
 .mc4wp-form .mc4wp-form-fields{padding-top:1.5rem}
 button,input[type="button"],input[type="reset"],input[type="submit"]{padding:1.5rem;font-size:1.5rem}
@@ -1323,7 +1324,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .single .authorbox__wrap .authorbox__content{padding-bottom:11rem}
 .authorbox__content .author-bio{padding-top:3rem}
 .archive.author .author-pic img{width:9rem;height:9rem}
-.page .entry-header{padding-bottom:4rem}
+.page .entry-header,.error404 .entry-header{padding-bottom:4rem}
 .site-footer .footer-wrap{padding-bottom:3rem}
 .site-footer .footer-wrap .footer-widget-wrap{padding-bottom:3rem}
 .site-footer .footer-wrap .footer-widget-wrap .footer-widget .widget{padding-bottom:3rem}
