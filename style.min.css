@@ -615,8 +615,7 @@ ul.primary-menu ul li.menu-item-has-children .icon{position:absolute;right:0}
 ul.primary-menu ul li.menu-item-has-children:hover>ul,ul.primary-menu ul li.menu-item-has-children:focus>ul,ul.primary-menu ul li.menu-item-has-children.focus>ul{right:calc(100% + 1rem)}
 .menu-bold ul.primary-menu a{font-weight:bold}
 .menu-uppercase ul.primary-menu>li>.icon{top:.375rem}
-.menu-uppercase ul.primary-menu a{text-transform:uppercase;font-size:.875rem}
-.menu-uppercase ul.primary-menu ul a{font-size:.75rem}
+.menu-uppercase ul.primary-menu a{text-transform:uppercase}
 .menu-modal{background:#fff;display:none;opacity:0;overflow-y:auto;overflow-x:hidden;position:fixed;bottom:0;left:-99999rem;right:99999rem;top:0;-webkit-transition:opacity .25s ease-in,left 0s .25s,right 0s .25s;transition:opacity .25s ease-in,left 0s .25s,right 0s .25s;z-index:99}
 .admin-bar .menu-modal{top:32px}
 .menu-modal.show-modal{display:-webkit-box;display:-ms-flexbox;display:flex}

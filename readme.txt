@@ -4,7 +4,7 @@ Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images
 Requires at least: 5.0
 Tested up to: WordPress 5.5.3
 Requires PHP: 7.4
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -46,10 +46,11 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.2.4 =
 * New: Hide author on single posts.
-* Enhance: Single post styling.
+* Enhance: Single post styles.
+* Enhance: 404 page styles.
 
 = 1.2.3 =
-* Enhance: Mailchimp form styling.
+* Enhance: Mailchimp form styles.
 * Enhance: Custom logo support.
 * Bugfix: Default page responsive margins.
 * Bugfix: Admin bar top spacing.

@@ -543,11 +543,6 @@ ul.primary-menu {
 
 		a {
 			text-transform: uppercase;
-			@include font-body-xs;
-		}
-
-		ul a {
-			@include font-body-2xs;
 		}
 	}
 }
