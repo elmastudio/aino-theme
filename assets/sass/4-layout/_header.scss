@@ -119,7 +119,6 @@
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
-		height: $s-9;
 		vertical-align: middle;
 		border: 1px solid $color__border;
 	}
@@ -145,7 +144,7 @@
 
 		@include breakpoint(header) {
 			margin-top: 0;
-			padding-left: $s-6;
+			padding-left: $s-7;
 		}
 	}
 }
@@ -164,7 +163,7 @@
 }
 
 .social-links-menu li {
-	padding-right: $s-6;
+	padding-right: $s-7;
 
 	&:last-child {
 		padding-right: 0;
@@ -227,7 +226,7 @@
 	.has-nav-social & {
 
 		@include breakpoint(header) {
-			padding: 0 0 0 $s-6;
+			padding: 0 0 0 $s-7;
 		}
 	}
 
@@ -426,7 +425,7 @@ ul.primary-menu {
 	}
 
 	>li {
-		margin: 0 $s-6 0 0;
+		margin: 0 $s-7 0 0;
 
 		&:last-child {
 			margin-right: 0;
@@ -544,11 +543,6 @@ ul.primary-menu {
 
 		a {
 			text-transform: uppercase;
-			@include font-body-xs;
-		}
-
-		ul a {
-			@include font-body-2xs;
 		}
 	}
 }
@@ -704,7 +698,7 @@ ul.primary-menu {
 	a {
 		border-top: 1px solid $color__border;
 		width: calc(100% - 32px);
-		margin: 0 0 0 $s-4;
+		margin: 0;
 
 		@include breakpoint(md) {
 			border-top: none;
@@ -944,11 +938,6 @@ button.sub-menu-toggle {
 	.site-branding .site-description:before {
 		border-color: transparent;
 		background-color: $color__white;
-
-		&:focus,
-		&:active {
-			background-color: rgba(255, 255, 255, 0.9);
-		}
 	}
 
 	.primary-menu .sub-menu .dropdown .icon {

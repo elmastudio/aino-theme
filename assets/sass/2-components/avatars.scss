@@ -32,10 +32,20 @@
 }
 
 /* Single Post Author */
-.single-post .author-avatar {
-	margin: 0 auto;
-	@include s-r-4 (padding-bottom);
-	display: block;
+.single-post {
+
+	.author-avatar {
+		display: none;
+	}
+
+	&.has-single-author {
+
+		.author-avatar {
+			margin: 0 auto;
+			@include s-r-2 (padding-bottom);
+			display: block;
+		}
+	}
 }
 
 /* Authorbox */

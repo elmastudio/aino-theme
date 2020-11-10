@@ -663,6 +663,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'has-comments-count';
 	}
 
+	if ( true === get_theme_mod( 'display_single_author', aino_defaults( 'display_single_author' ) ) ) {
+		$classes[] = 'has-single-author';
+	}
+
 	// Single Post - Featured Image Border Radius.
 	if ( 'radius-none' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-none';
@@ -760,6 +764,10 @@ function aino_body_classes( $classes ) {
 	// Add a class if there is a custom header.
 	if ( has_header_image() ) {
 		$classes[] = 'has-header-image';
+	}
+
+	if ( has_tag() ) {
+		$classes[] = 'has-tags';
 	}
 
 	return $classes;

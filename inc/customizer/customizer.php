@@ -821,6 +821,25 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Theme Options - Single Post - Display author info.
+	$wp_customize->add_setting(
+		'display_single_author',
+		array(
+			'default'           => aino_defaults( 'display_single_author' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'display_single_author',
+		array(
+			'label'    => esc_html__( 'Display author information in post header.', 'aino' ),
+			'section'  => 'aino_singlepost',
+			'type'     => 'checkbox',
+			'priority' => 2,
+		)
+	);
+
 	/**
 	 * Colors Panel
 	 */

@@ -26,11 +26,6 @@ input[type="color"] {
 		color: #8e8e8e;
 	}
 
-	&:active,
-	&:focus {
-		background: $color__background;
-	}
-
 	.light-form & {
 		border: 1px solid $color__white;
 		color: $color__white;
@@ -77,9 +72,6 @@ textarea {
 input[type="checkbox"] {
 	width: $s-6;
 	height: $s-6;
-	position: absolute;
-	top: $s-1;
-	left: 0;
 }
 
 .color-notice,
@@ -165,6 +157,16 @@ button[type="submit"] {
 	width: 120px;
 	height: $s-10;
 	padding: 16px 0 0;
+}
+
+.error404 .entry-content {
+	.searchform-wrap {
+
+		.search-field {
+			@include s-r-6 (margin-bottom);
+		}
+	
+	}
 }
 
 /* Form Styles (via Customizer Settings) */

@@ -11,14 +11,15 @@
 	}
 }
 
-.page {
+.page,
+.error404 {
 
 	.entry-header {
-
-		@include s-r-9 (padding-bottom);
+		@include s-r-10 (padding-bottom);
 
 		.entry-title {
-			margin: 0;
+			margin: 0 auto;
+			max-width: $col10;
 		}
 	}
 }

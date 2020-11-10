@@ -58,6 +58,9 @@ ul.primary-menu li,
 .entry-content p,
 .hentry ol,
 .hentry ul,
+dl,
+.comment-content ol,
+.comment-content ul,
 .authorbox__content .author-bio,
 form label,
 label .required,
@@ -100,7 +103,7 @@ h5,
 h6 {
 	@include font-regular;
 	color: $color__text_one;
-	line-height: 1.1;
+	line-height: 1;
 }
 
 h1.site-title,
@@ -159,7 +162,6 @@ h4.has-xxxxl-font-size {
 	@include font-h-9;
 }
 
-h1.entry-title,
 h1.has-l-font-size,
 h2.has-xl-font-size,
 h3.has-xxl-font-size,
@@ -168,6 +170,7 @@ h5.has-xxxxl-font-size {
 	@include font-h-8;
 }
 
+h1.entry-title,
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
@@ -264,10 +267,8 @@ h6.has-xxs-font-size {
 }
 
 /* Padding for Headlines in Content Area */
-.single,
-.page-template-default {
-
-	h1,
+.single .entry-content,
+.page-template-default .entry-content {
 	h2,
 	h3,
 	h4,
@@ -276,12 +277,12 @@ h6.has-xxs-font-size {
 		@include s-r-4(padding-top);
 		@include s-r-4(padding-bottom);
 	}
-
 }
 
 /* Padding for Paragraphs in Content Area */
 .single,
-.page-template-default {
+.page-template-default,
+.error404 {
 
 	address,
 	p {
