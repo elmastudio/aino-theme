@@ -924,7 +924,6 @@ td{padding:1rem}
 .site-content{padding-top:4rem}
 .blog .site-content,.single-post .site-content,.archive .site-content,.search .site-content,.page-template-default .site-content,.error404 .site-content,.tpl-fullwidth .site-content,.search-no-results .site-content{padding-bottom:7.5rem}
 .site-header{padding-top:1.25rem}
-.site-branding{height:2.375rem}
 .site-branding .site-description{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .header-cta-wrap ul li{width:auto}
 .nav-toggle{right:2rem;top:1.25rem}
@@ -1092,7 +1091,7 @@ table{margin-bottom:2rem}
 .site-content{padding-top:5rem}
 .blog .site-content,.single-post .site-content,.archive .site-content,.search .site-content,.page-template-default .site-content,.error404 .site-content,.tpl-fullwidth .site-content,.search-no-results .site-content{padding-bottom:9rem}
 .site-header{padding-top:1.5rem}
-.site-branding{height:auto;padding-right:2rem}
+.site-branding{padding-right:2rem}
 .site-branding .site-logo{max-width:100%}
 .search-header label{padding:0}
 .nav-toggle{top:1.5rem}
