@@ -506,7 +506,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-preformatted{background-color:#062e32;color:#b2cacd}
 .wp-block-group__inner-container .wp-block-group h1,.wp-block-group__inner-container .wp-block-group h2,.wp-block-group__inner-container .wp-block-group h3,.wp-block-group__inner-container .wp-block-group h4,.wp-block-group__inner-container .wp-block-group h5,.wp-block-group__inner-container .wp-block-group h6{margin-top:0}
 .wp-block-group .wp-block-group__inner-container>*:last-child{margin-bottom:0}
-.wp-block-group .wp-block-group__inner-container .wp-block-image:not(.alignwide):not(.alignfull){max-width:43.5rem;margin-left:auto;margin-right:auto}
+.wp-block-group .wp-block-group__inner-container:not(.wp-block-ainoblocks-grid-container)>.wp-block-image:not(.alignwide):not(.alignfull){max-width:43.5rem;margin-left:auto;margin-right:auto}
 .wp-block-cover-image.alignleft,.wp-block-cover-image.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-pullquote.alignleft,.wp-block-pullquote.alignright{width:100%}
 .wp-block-cover.aligncenter,.wp-block-gallery.aligncenter,.wp-block-pullquote.aligncenter{clear:both}
 .entry-content .has-primary-one-color{color:#1765d8;fill:#1765d8}
