@@ -179,7 +179,8 @@ textarea{resize:vertical}
 .pr__9{padding-right:3rem}
 .pr__10{padding-right:3rem}
 .pr__11{padding-right:3.5rem}
-body,button,input,select,table,textarea,.entry-content p.has-s-font-size,.wp-block-calendar table,div[class*='wp-block-'] figcaption,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-family:"IBM Plex Sans",sans-serif;line-height:1.4;font-size:1rem;color:#222}
+body,button,input,select,table,textarea{font-family:"IBM Plex Sans",sans-serif;line-height:1.4}
+div[class*='wp-block-'] figcaption,.entry-content p.has-s-font-size,.wp-block-calendar table,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-size:1rem;color:#222}
 .single .navigation a span.nav-subtitle,.entry-content p.has-extrasmall-font-size,.entry-content p.has-xs-font-size,.entry-content .sharedaddy h3.sd-title,.blocks-gallery-grid .blocks-gallery-item figcaption{font-size:.875rem}
 .blog-1-column .hentry .entry-summary,.blog-2-column .hentry .entry-summary,.blog-1-column .hentry .entry-cats,.blog-2-column .hentry .entry-cats,.blog-1-column .hentry .entry-footer,.blog-2-column .hentry .entry-footer{font-size:1.125rem}
 .page-header .description p,.entry-content p.has-m-font-size,.related-wrap .related-post .entry-cats,.comment-author .fn,.comment-metadata,.comment-notes,.logged-in-as,.comment-reply-title #cancel-comment-reply-link,.footer-info,.footer-widget .widget ul li,.mc4wp-form .mc4wp-alert p{font-size:1.125rem}
@@ -222,6 +223,7 @@ ins,mark{background-color:rgba(63,192,224,0.1);text-decoration:none}
 big{font-size:125%}
 .dropcap{font-size:6.125rem;font-weight:300;float:left;padding:0 10px 0 0;line-height:.9;color:#111}
 .center-text{text-align:center}
+.justify{text-align:justify}
 .page-content .wp-smiley,.entry-content .wp-smiley,.comment-content .wp-smiley{border:0;margin-bottom:0;margin-top:0;padding:0}
 .image-border img,.img-border{border:4px solid #111}
 embed,iframe,object{max-width:100%}

@@ -47,6 +47,8 @@ Aino WordPress Theme bundles the following third-party resources:
 = 1.2.5 =
 * Bugfix: Limited custom logo height in tablet view.
 * Bugfix: Outer margins for Fullscreen page template.
+* Enhance: Single post styles.
+* Enhance: New justify CSS class to justify align paragraphs.
 
 = 1.2.4 =
 * New: Hide author on single posts.
