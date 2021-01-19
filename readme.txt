@@ -2,7 +2,7 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
-Tested up to: WordPress 5.5.3
+Tested up to: WordPress 5.6
 Requires PHP: 7.4
 Stable tag: 1.2.5
 License: GPLv3 or later

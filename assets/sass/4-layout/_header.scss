@@ -941,19 +941,11 @@ button.sub-menu-toggle {
 
 	.btn-outline a {
 		box-shadow: inset 0px 0px 0px 1px $color__white;
-
-		&:hover {
-			box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.6);
-		}
 	}
 
 	&.menu-bold {
 		.btn-outline a {
 			box-shadow: inset 0px 0px 0px 2px $color__white;
-
-			&:hover {
-				box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0.6);
-			}
 		}
 	}
 
@@ -967,12 +959,6 @@ button.sub-menu-toggle {
 		.header-cta-wrap a {
 			color: $color__white;
 			fill: $color__white;
-
-			&:hover,
-			&:focus {
-				color: $color__white_hover;
-				fill: $color__white_hover;
-			}
 		}
 
 		.header-inner .toggle .icon {
@@ -982,11 +968,6 @@ button.sub-menu-toggle {
 		.primary-menu .icon::before,
 		.primary-menu .icon::after {
 			background-color: $color__white;
-		}
-
-		.primary-menu a:hover+.icon::before,
-		.primary-menu a:hover+.icon::after {
-			background-color: $color__white_hover;
 		}
 
 		.primary-menu .sub-menu .icon::before,

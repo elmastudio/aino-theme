@@ -198,22 +198,7 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 		fill: $color__white;
 	}
 
-	.footer-widget-wrap a,
-	.site-footer .footer-wrap .footer-info .site-info a,
-	.site-footer a.back-top {
-
-		&:hover,
-		&:focus {
-			color: $color__white_hover;
-			fill: $color__white_hover;
-		}
-	}
-
 	.site-footer {
-		.menu-social-container ul li a:hover .icon {
-			fill: $color__white_hover;
-		}
-
 		.footer-wrap .footer-info {
 			border-color: $color__white;
 		}

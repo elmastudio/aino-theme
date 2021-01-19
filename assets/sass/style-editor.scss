@@ -20,11 +20,7 @@
 
 	.wp-block[data-align="wide"] .wp-block[data-align="wide"],
 	.wp-block[data-align="full"] .wp-block[data-align="wide"] {
-		max-width: $wide-content-width;
-
-		@include breakpoint(xl) {
-			width: $wide-content-width !important;
-		}
+		max-width: $col12;
 	}
 }
 
@@ -62,7 +58,7 @@
 
 .wp-block[data-align="wide"],
 .wp-block.alignwide {
-	max-width: $wide-content-width;
+	max-width: $col12;;
 
 	.wp-block {
 		max-width: $wide-content-width;

@@ -22,28 +22,13 @@ cite a,
 	text-decoration: underline;
 
 	&:hover {
-		color: $color__primary;
+		text-decoration: none;
 	}
 }
 
 .page .entry-content .wp-block-group.has-link-color p a:hover,
 .page .entry-content p.has-link-color a:hover {
 	color: var(--wp--style--color--link);
-}
-
-h1, h2, h3, h4, h5, h6,
-.entry-content p,
-.entry-content li {
-
-	&.has-text-color {
-
-		&.has-white-color {
-
-			a:hover {
-				color: $color__white_hover;
-			}
-		}
-	}
 }
 
 /* Links that keep the default text color and only show link color on hover */
@@ -64,22 +49,6 @@ h2.entry-title a,
 }
 
 /* Link Hovers */
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-.single-post .navigation .nav-title .nav-subtitle,
-.footer-widget-wrap a,
-.comment-reply-title #cancel-comment-reply-link,
-.logged-in-as a,
-.related-post .entry-cats a,
-.author-meta-info a,
-.site-footer .footer-wrap .footer-info .site-info a,
-.site-footer a.back-top {
-
-	&:hover {
-		color: $color__primary;
-		fill: $color__primary;
-	}
-}
-
 .header-cta-wrap a,
 .footer-widget-wrap li a,
 .site-info a,
@@ -88,6 +57,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+/* Meta Textlink Hovers */
+h1, h2, h3, h4, h5, h6,
+.entry-meta,
+.related-post .entry-cats {
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 }
 
 /* Link Transitions */

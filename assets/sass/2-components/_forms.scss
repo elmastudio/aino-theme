@@ -31,7 +31,7 @@ input[type="color"] {
 		color: $color__white;
 
 		@include input-placeholder {
-			color: $color__white_hover;
+			color: $color__white_60;
 		}
 
 		&:active,
@@ -58,7 +58,7 @@ textarea {
 		color: $color__white;
 
 		@include input-placeholder {
-			color: $color__white_hover;
+			color: $color__white_60;
 		}
 
 		&:active,
@@ -229,10 +229,6 @@ button[type="submit"] {
 	.light-form {
 		p {
 			color: $color__white;
-	
-			a:hover {
-				color: $color__white_hover;
-			}
 		}
 	}
 }
