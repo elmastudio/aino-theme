@@ -636,7 +636,7 @@ ul.primary-menu ul li.menu-item-has-children:hover>ul,ul.primary-menu ul li.menu
 .sub-menu li:first-child a{border-top:0}
 .sub-menu li:last-child a{border-bottom:0}
 .sub-menu .sub-menu li a{padding-left:64px}
-.menu-item-has-children a{border-top:1px solid #111;width:calc(100% - 32px);margin:0}
+.menu-item-has-children a{border-top:1px solid #111;width:calc(100% - 32px)}
 .sub-menu a{border-top:0}
 button.sub-menu-toggle{margin:0 1rem 0 0;padding:0 0 0 1rem;color:#111;border-radius:0;position:absolute;right:0}
 button.sub-menu-toggle .icon{width:10px;height:12px;text-align:right;height:53px}
