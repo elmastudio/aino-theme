@@ -50,6 +50,7 @@ Aino WordPress Theme bundles the following third-party resources:
 * Bugfix: Gutter of Image block inside Aino Grid Item block.
 * Enhance: Single post styles.
 * Enhance: New justify CSS class to justify align paragraphs.
+* Enhance: Main menu CTA button.
 
 = 1.2.4 =
 * New: Hide author on single posts.
