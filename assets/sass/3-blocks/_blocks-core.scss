@@ -701,10 +701,11 @@ div[class*='wp-block-'] figcaption {
 	}
 
 	.wp-block-group__inner-container {
-		.wp-block-image:not(.alignwide):not(.alignfull) {
-			max-width: $default-content-width;
-			@include push--auto;
-		}
+
+		&:not(.wp-block-ainoblocks-grid-container) > .wp-block-image:not(.alignwide):not(.alignfull) {
+				max-width: $default-content-width;
+				@include push--auto;
+			}
 	}
 }
 

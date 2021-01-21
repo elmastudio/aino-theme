@@ -12,7 +12,7 @@
 
 	.sticky-icon {
 		border-right: 1px solid $color__text_one;
-		padding: 0 14px;
+		padding: 5px 14px;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -22,7 +22,6 @@
 			width: 1.125rem; // 18px
 			height: 1.125rem;
 			display: block;
-			margin-top: 4px;
 
 			@include breakpoint(lg) {
 				width: 1.25rem; // 20px

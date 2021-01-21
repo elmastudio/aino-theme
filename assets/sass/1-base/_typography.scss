@@ -4,13 +4,15 @@ button,
 input,
 select,
 table,
-textarea,
+textarea {
+	@include font-body;
+}
+
+div[class*='wp-block-'] figcaption,
 .entry-content p.has-s-font-size,
 .wp-block-calendar table,
-div[class*='wp-block-'] figcaption,
 .hentry .entry-summary,
 .posts-container .hentry .entry-footer {
-	@include font-body;
 	@include font-body-s;
 	color: $color__text_two;
 }
@@ -386,4 +388,8 @@ big {
 
 .center-text {
 	text-align: center;
+}
+
+.justify {
+	text-align: justify;
 }

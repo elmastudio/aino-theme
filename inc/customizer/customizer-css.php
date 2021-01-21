@@ -54,60 +54,17 @@ function aino_customizer_css() {
 	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 	}
-	.entry-content p a:hover,
-	.entry-content li a:hover,
-	.authorbox__content p a:hover,
-	.comment-content li a:hover,
-	.comment-content p a:hover,
-	.wp-caption-text a:hover,
-	figcaption a:hover,
-	cite a:hover,
-	h1 a:hover,
-	h2 a:hover,
-	h3 a:hover,
-	h4 a:hover,
-	h5 a:hover,
-	h6 a:hover,
 	.btn-outline a,
 	a.btn-outline,
 	.btn-outline a:hover,
 	a.btn-outline:hover,
 	.btn-naked:hover,
 	.btn-naked a:hover,
-	.entry-content .has-primary-one-color,
-	.wp-block-pullquote.is-style-default .has-text-color a:hover,
-	.comment-author .author-badge,
-	.wp-block-image figcaption a:hover,
-	.site-footer .footer-wrap .footer-info .site-info a:hover,
-	.site-footer a.back-top:hover {
+	.entry-content .has-primary-one-color {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
-	@media (min-width: 75.000em) {
-		.footer-widget-wrap a:hover,
-		.wp-block-quote .has-text-color a:hover,
-		.wp-block-pullquote .has-text-color a:hover {
-			color: ' . esc_attr( $primary_one_color ) . ';
-			fill: ' . esc_attr( $primary_one_color ) . ';
-		}
-	}
-	.entry-content li a:hover,
-	.authorbox__content p a:hover,
-	.comment-content li a:hover,
-	.comment-content p a:hover,
-	.comment-reply-title #cancel-comment-reply-link:hover,
-	.logged-in-as a:hover,
-	.wp-caption-text a:hover,
-	figcaption a:hover,
-	cite a:hover,
-	.related-post .entry-cats a:hover,
-	.author-meta-info a:hover {
-		color: ' . esc_attr( $primary_one_color ) . ';
-	}
-	a.btn-outline:hover,
-	.btn-outline a:hover {
-		border-color: ' . esc_attr( $primary_one_color ) . ';
-	}
+
 	button, input[type="button"], input[type="submit"], .btn-primary a, a.btn-primary {
 		color: ' . esc_attr( $btn_text_color ) . ';
 		fill: ' . esc_attr( $btn_text_color ) . ';

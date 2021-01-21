@@ -87,20 +87,31 @@ a.btn-outline,
 
 .header-cta-wrap {
 
-	.btn-outline a {
-		@include btn-l;
-	}
+	.menu-item {
 
-	a {
-		@include btn;
-		@include btn-l;
-		line-height: 1;
-
-		&:hover {
-			text-decoration: none;
-			color: inherit;
+		a {
+			@include btn;
+			color: $color__text_one;
+			box-shadow: inset 0px 0px 0px 1px $color__text_one;
+	
+			@include breakpoint(md) {
+				padding: 0.688rem 1.375rem;
+				font-size: 1.375rem;
+			}
+	
+			@include breakpoint(lg) {
+				padding: 0.75rem 1.5rem;
+				font-size: 1.5rem;
+			}
+	
+			&:hover {
+				text-decoration: none;
+				color: $color__text_one;
+			}
 		}
+
 	}
+
 }
 
 /* Button Styles (via Customizer Settings) */
@@ -204,13 +215,10 @@ a.btn-outline,
 .single-post .entry-header .entry-cats a,
 .single-post .entry-tags a,
 .comment-metadata .reply a,
-.comment-time {
-	@include pill-light;
-}
-
+.comment-time,
 .post-edit-link,
 .comment-edit-link {
-	@include pill-dark;
+	@include pill-light;
 }
 
 .post-edit-link,
