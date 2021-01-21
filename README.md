@@ -9,11 +9,14 @@ __Author:__ elmastudio
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
 __Requires at least:__ 5.0  
 __Tested up to:__ WordPress 5.6    
-__Requires PHP:__ 7.4    
+__Requires PHP:__ 7.0    
 __License:__ GPLv3 or later  
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 1.2.6  
+Enhance: Update required PHP version.  
 
 ### 1.2.5  
 **Bugfix:** Limited custom logo height in tablet view.  
