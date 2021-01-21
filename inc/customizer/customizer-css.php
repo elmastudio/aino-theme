@@ -64,10 +64,7 @@ function aino_customizer_css() {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
-	a.btn-outline:hover,
-	.btn-outline a:hover {
-		border-color: ' . esc_attr( $primary_one_color ) . ';
-	}
+
 	button, input[type="button"], input[type="submit"], .btn-primary a, a.btn-primary {
 		color: ' . esc_attr( $btn_text_color ) . ';
 		fill: ' . esc_attr( $btn_text_color ) . ';

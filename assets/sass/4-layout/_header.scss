@@ -924,6 +924,14 @@ button.sub-menu-toggle {
 		fill: $color__white;
 	}
 
+	.header-cta-wrap a {
+
+		&:hover {
+			color: $color__white;
+			fill: $color__white;
+		}
+	}
+
 	.nav-toggle {
 		border: 1px solid $color__white;
 	}
