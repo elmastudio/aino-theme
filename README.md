@@ -8,17 +8,25 @@ Aino is a blocks-first free WordPress theme for everyone who wants to build webs
 __Author:__ elmastudio  
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
 __Requires at least:__ 5.0  
-__Tested up to:__ WordPress 5.5.3    
+__Tested up to:__ WordPress 5.6    
 __Requires PHP:__ 7.4    
 __License:__ GPLv3 or later  
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
 
+### 1.2.5  
+**Bugfix:** Limited custom logo height in tablet view.  
+**Bugfix:** Outer margins for Fullscreen page template.  
+**Bugfix:** Gutter of Image block inside Aino Grid Item block.  
+**Enhance:** Single post styles.  
+**Enhance:** New justify CSS class to justify align paragraphs.  
+**Enhance:** Main menu CTA button.  
+
 ### 1.2.4   
-**New:** Hide author on single posts.
-**Enhance:** Single post styles.
-**Enhance:** 404 page styles.
+**New:** Hide author on single posts.  
+**Enhance:** Single post styles.  
+**Enhance:** 404 page styles.  
 
 ### 1.2.3   
 **Enhance:** Mailchimp form styling.  
