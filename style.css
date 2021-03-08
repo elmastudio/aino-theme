@@ -261,9 +261,9 @@ textarea { resize: vertical; }
 
 .col4.nogap { max-width: calc(31rem - 3rem); }
 
-.col5 { max-width: 38.75rem; }
+.col5 { max-width: 35.75rem; }
 
-.col5.nogap { max-width: calc(38.75rem - 3rem); }
+.col5.nogap { max-width: calc(35.75rem - 3rem); }
 
 .col6 { max-width: 46.5rem; }
 
