@@ -45,7 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.2.7 =
-Enhance: Change CSS class no-margins to nogrid.
+Enhance: Change CSS class no-margins to nogap.
 
 = 1.2.6 =
 Enhance: Update required PHP version.
