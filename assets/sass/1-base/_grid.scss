@@ -19,7 +19,7 @@
 .col1 {
 	max-width: $col1;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col1} - #{$s-9});
 	}
 }
@@ -27,7 +27,7 @@
 .col2 {
 	max-width: $col2;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col2} - #{$s-9});
 	}
 }
@@ -35,7 +35,7 @@
 .col3 {
 	max-width: $col3;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col3} - #{$s-9});
 	}
 }
@@ -43,7 +43,7 @@
 .col4 {
 	max-width: $col4;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col4} - #{$s-9});
 	}
 }
@@ -51,7 +51,7 @@
 .col5 {
 	max-width: $col5;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col5} - #{$s-9});
 	}
 }
@@ -59,7 +59,7 @@
 .col6 {
 	max-width: $col6;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col6} - #{$s-9});
 	}
 }
@@ -67,7 +67,7 @@
 .col7 {
 	max-width: $col7;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col7} - #{$s-9});
 	}
 }
@@ -75,7 +75,7 @@
 .col8 {
 	max-width: $col8;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col8} - #{$s-9});
 	}
 }
@@ -83,7 +83,7 @@
 .col9 {
 	max-width: $col9;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col9} - #{$s-9});
 	}
 }
@@ -91,7 +91,7 @@
 .col10 {
 	max-width: $col10;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col10} - #{$s-9});
 	}
 }
@@ -99,7 +99,7 @@
 .col11 {
 	max-width: $col11;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col11} - #{$s-9});
 	}
 }
@@ -107,7 +107,7 @@
 .col12 {
 	max-width: $col12;
 
-	&.no-margins {
+	&.nogap {
 		max-width: calc(#{$col12} - #{$s-9});
 	}
 }

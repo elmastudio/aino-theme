@@ -25,6 +25,15 @@
 
 /* Alignment */
 
+.entry-content {
+
+	.aligncenter {
+		clear: both;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .hentry .entry-content>* {
 
 	&.alignwide,
@@ -275,17 +284,7 @@
 	&.aligncenter {
 		clear: both;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
 		text-align: center;
-	}
-
-	&.aligncenter,
-	&.alignleft,
-	&.alignright,
-	&.is-resized {
-		margin-left: 0;
-		margin-right: 0;
 	}
 
 	&.alignfull img {
@@ -759,10 +758,6 @@ div[class*='wp-block-'] figcaption {
 		@include breakpoint(xl) {
 			margin: 0 $s-7 $s-9 $s-9;
 		}
-	}
-
-	&.aligncenter {
-		clear: both;
 	}
 }
 

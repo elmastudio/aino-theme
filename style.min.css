@@ -90,29 +90,29 @@ textarea{resize:vertical}
 .col,.column{-webkit-box-sizing:border-box;box-sizing:border-box}
 .no-gutter{margin-left:0 !important;margin-right:0 !important}
 .col1{max-width:7.75rem}
-.col1.no-margins{max-width:calc(7.75rem - 3rem)}
+.col1.nogap{max-width:calc(7.75rem - 3rem)}
 .col2{max-width:15.5rem}
-.col2.no-margins{max-width:calc(15.5rem - 3rem)}
+.col2.nogap{max-width:calc(15.5rem - 3rem)}
 .col3{max-width:23.25rem}
-.col3.no-margins{max-width:calc(23.25rem - 3rem)}
+.col3.nogap{max-width:calc(23.25rem - 3rem)}
 .col4{max-width:31rem}
-.col4.no-margins{max-width:calc(31rem - 3rem)}
+.col4.nogap{max-width:calc(31rem - 3rem)}
 .col5{max-width:38.75rem}
-.col5.no-margins{max-width:calc(38.75rem - 3rem)}
+.col5.nogap{max-width:calc(38.75rem - 3rem)}
 .col6{max-width:46.5rem}
-.col6.no-margins{max-width:calc(46.5rem - 3rem)}
+.col6.nogap{max-width:calc(46.5rem - 3rem)}
 .col7{max-width:54.25rem}
-.col7.no-margins{max-width:calc(54.25rem - 3rem)}
+.col7.nogap{max-width:calc(54.25rem - 3rem)}
 .col8{max-width:62rem}
-.col8.no-margins{max-width:calc(62rem - 3rem)}
+.col8.nogap{max-width:calc(62rem - 3rem)}
 .col9{max-width:69.75rem}
-.col9.no-margins{max-width:calc(69.75rem - 3rem)}
+.col9.nogap{max-width:calc(69.75rem - 3rem)}
 .col10{max-width:77.5rem}
-.col10.no-margins{max-width:calc(77.5rem - 3rem)}
+.col10.nogap{max-width:calc(77.5rem - 3rem)}
 .col11{max-width:85.25rem}
-.col11.no-margins{max-width:calc(85.25rem - 3rem)}
+.col11.nogap{max-width:calc(85.25rem - 3rem)}
 .col12{max-width:93rem}
-.col12.no-margins{max-width:calc(93rem - 3rem)}
+.col12.nogap{max-width:calc(93rem - 3rem)}
 .outer-margins{padding-left:1rem;padding-right:1rem}
 .mobile-margins{padding-left:1rem;padding-right:1rem}
 .default-margins,.search-no-results .entry-content{padding-left:1rem;padding-right:1rem}
@@ -323,7 +323,7 @@ a.btn-outline:hover,.btn-outline a:hover{color:#4d2cf0;fill:#4d2cf0}
 .btn-naked:hover,.btn-naked a:hover{color:#4d2cf0;fill:#4d2cf0}
 .btn-naked:hover,.btn-naked a:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
 .btn-white button{background:#fff;color:#000;fill:#000}
-.btn-long{width:100%}
+.btn-long,.cr_button{width:100%}
 .btn-xxs{padding:1rem;font-size:1rem}
 .btn-xs{padding:1rem;font-size:1rem}
 .btn-s{padding:1rem;font-size:1rem}
@@ -413,6 +413,7 @@ tr td:last-of-type{border-right:0}
 .entry-content .sharedaddy h3.sd-title:before{display:none}
 .entry-content .sharedaddy .sd-content ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0 !important}
 .single .entry-content .wp-block-button,.single .entry-content .wp-block-buttons .wp-block-button,.single .entry-content .wp-block-image,.single .entry-content .wp-block-quote,.single .entry-content .wp-block-pullquote,.single .entry-content .wp-block-media-text,.single .entry-content .entry-content .wp-block-gallery,.single .entry-content .wp-block-audio,.single .entry-content .wp-block-video,.single .entry-content .wp-block-ainoblocks-advanced-buttons,.single .entry-content .wp-block-search,.single .entry-content .wp-block-calendar,.single .entry-content .wp-block-archives-dropdown{margin-left:auto;margin-right:auto;margin-bottom:1rem}
+.entry-content .aligncenter{clear:both;margin-left:auto;margin-right:auto}
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{max-width:93rem;position:relative;margin-left:auto;margin-right:auto;clear:both;padding-left:1rem;padding-right:1rem}
 .hentry .entry-content>*.alignfull{position:relative;max-width:100%;width:auto}
 .hentry .entry-content .alignfull .alignwide{max-width:93rem;clear:both;overflow:hidden;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
@@ -435,8 +436,7 @@ tr td:last-of-type{border-right:0}
 .wp-block-image{margin-bottom:0}
 .wp-block-image.alignright{display:block;float:none;margin-bottom:2rem}
 .wp-block-image.alignleft{float:left;margin-right:1em}
-.wp-block-image.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto;text-align:center}
-.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright,.wp-block-image.is-resized{margin-left:0;margin-right:0}
+.wp-block-image.aligncenter{clear:both;display:block;text-align:center}
 .wp-block-image.alignfull img{width:100%;max-width:100%;display:block}
 div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0;text-align:center}
 .wp-caption.alignleft .wp-caption-text,.wp-caption.alignright .wp-caption-text{margin-bottom:0}
@@ -503,7 +503,6 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-group .wp-block-group__inner-container>*:last-child{margin-bottom:0}
 .wp-block-group .wp-block-group__inner-container:not(.wp-block-ainoblocks-grid-container)>.wp-block-image:not(.alignwide):not(.alignfull){max-width:43.5rem;margin-left:auto;margin-right:auto}
 .wp-block-cover-image.alignleft,.wp-block-cover-image.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-pullquote.alignleft,.wp-block-pullquote.alignright{width:100%}
-.wp-block-cover.aligncenter,.wp-block-gallery.aligncenter,.wp-block-pullquote.aligncenter{clear:both}
 .entry-content .has-primary-one-color{color:#4d2cf0;fill:#4d2cf0}
 .entry-content p.has-primary-one-color a{text-decoration:underline}
 .entry-content .has-primary-one-background-color{background:#4d2cf0;border-color:#4d2cf0}
@@ -550,7 +549,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .site-branding .site-description{display:none;height:2rem;margin:0;padding:0 0 0 .5rem;color:#222}
 .site-branding .site-description:before{content:"";display:block;width:3rem;background-color:#111;height:1px;margin-right:.5rem}
 .tagline-hide .site-branding .site-description{display:none}
-.site-branding .custom-logo-link{display:block;padding:0 .5rem 0 0}
+.site-branding .custom-logo-link{display:block;padding:0}
 .site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{-o-object-fit:fill;object-fit:fill;height:auto !important}
 .search-header{position:relative;margin:1rem 0;padding:0}
 .search-header .search-submit{display:none}
