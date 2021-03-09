@@ -438,6 +438,8 @@ tr td:last-of-type{border-right:0}
 .wp-block-image.alignleft{float:left;margin-right:1em}
 .wp-block-image.aligncenter{clear:both;display:block;text-align:center}
 .wp-block-image.alignfull img{width:100%;max-width:100%;display:block}
+.wp-block-image.ellipse-horizontal{-webkit-clip-path:ellipse(50% 45% at 50% 50%);clip-path:ellipse(50% 45% at 50% 50%)}
+.wp-block-image.ellipse-vertical{-webkit-clip-path:ellipse(50% 50% at 50% 50%);clip-path:ellipse(50% 50% at 50% 50%)}
 div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0;text-align:center}
 .wp-caption.alignleft .wp-caption-text,.wp-caption.alignright .wp-caption-text{margin-bottom:0}
 .wp-block-gallery .blocks-gallery-grid{padding:0;margin-bottom:0;list-style:none}
@@ -481,7 +483,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-verse{color:#222;background:#f7f7ff}
 .wp-block-separator{border:0;border-top:1px solid}
 .wp-block-separator.is-style-dots{background:0;border:0}
-.wp-block-separator.is-style-wide{margin:0 1rem;max-width:87rem}
+.wp-block-separator.is-style-wide{margin:0 1rem;max-width:100%}
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots){max-width:100px;margin-left:auto;margin-right:auto}
 .wp-block-separator.is-style-dots:before{color:#222;content:"\00b7 \00b7 \00b7";font-family:serif;font-size:1.25rem;letter-spacing:1em;padding-left:1em}
 .entry-content .page-links{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;margin-left:auto;margin-right:auto;padding-top:1.5rem;padding-bottom:1.5rem;padding-left:0;padding-right:0}

@@ -112,7 +112,7 @@ textarea{width:100%}
 .wp-block[data-type="core/verse"]{background:#f7f7ff;border-radius:2.25rem;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;font-size:.875rem;font-weight:normal;padding:1rem}
 .wp-block[data-type="core/verse"] pre{background:transparent}
 .wp-block-verse pre,pre.wp-block-verse{color:#222;white-space:nowrap;font-family:inherit;font-size:inherit;line-height:1;padding:0;overflow:auto}
-.block-editor-block-list__block[data-type="core/separator"]{max-width:87rem}
+.block-editor-block-list__block[data-type="core/separator"]{max-width:100%}
 .wp-block-separator{border-left:0;border-right:0;border-bottom:0;border-top:1px solid;opacity:1}
 .wp-block-separator.is-style-wide{border:0}
 .wp-block-separator.is-style-dots{border:0}

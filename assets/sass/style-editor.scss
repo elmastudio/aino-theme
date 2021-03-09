@@ -816,7 +816,7 @@ pre.wp-block-verse {
 
 /* Separator */
 .block-editor-block-list__block[data-type="core/separator"] {
-	max-width: $wide-content-width;
+	max-width: 100%;
 }
 
 .wp-block-separator {

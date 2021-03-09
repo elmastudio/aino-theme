@@ -292,6 +292,13 @@
 		max-width: 100%;
 		display: block;
 	}
+
+	&.ellipse-horizontal {
+		clip-path: ellipse(50% 45% at 50% 50%);
+	}
+	&.ellipse-vertical {
+		clip-path: ellipse(50% 50% at 50% 50%);
+	}
 }
 
 div[class*='wp-block-'] figcaption {
@@ -558,7 +565,7 @@ div[class*='wp-block-'] figcaption {
 
 	&.is-style-wide {
 		margin: 0 $s-4;
-		max-width: $wide-content-width;
+		max-width: 100%;
 
 		@include breakpoint(sm) {
 			margin: 0 $s-7;
