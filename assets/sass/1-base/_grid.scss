@@ -3,11 +3,6 @@
 	box-sizing: border-box;
 }
 
-.no-gutter {
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-}
-
 .desktop__overlap-top {
 
 	@include breakpoint(sm) {

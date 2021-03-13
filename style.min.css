@@ -88,7 +88,6 @@ textarea{resize:vertical}
 .no-hyphens{-webkit-hyphens:none !important;-ms-hyphens:none !important;hyphens:none !important}
 .no-letterspacing{letter-spacing:0 !important}
 .col,.column{-webkit-box-sizing:border-box;box-sizing:border-box}
-.no-gutter{margin-left:0 !important;margin-right:0 !important}
 .col1{max-width:7.75rem}
 .col1.nogap{max-width:calc(7.75rem - 3rem)}
 .col2{max-width:15.5rem}
@@ -483,7 +482,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-verse{color:#222;background:#f7f7ff}
 .wp-block-separator{border:0;border-top:1px solid}
 .wp-block-separator.is-style-dots{background:0;border:0}
-.wp-block-separator.is-style-wide{margin:0 1rem;max-width:100%}
+.wp-block-separator.is-style-wide{max-width:100%}
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots){max-width:100px;margin-left:auto;margin-right:auto}
 .wp-block-separator.is-style-dots:before{color:#222;content:"\00b7 \00b7 \00b7";font-family:serif;font-size:1.25rem;letter-spacing:1em;padding-left:1em}
 .entry-content .page-links{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;margin-left:auto;margin-right:auto;padding-top:1.5rem;padding-bottom:1.5rem;padding-left:0;padding-right:0}
@@ -908,7 +907,6 @@ td{padding:1rem}
 .wp-block-quote.is-style-large p,.wp-block-pullquote.is-style-large p{font-size:1.5rem}
 .hentry .entry-content .wp-block-cover.alignwide{width:calc(100% - 4rem)}
 .wp-block-media-text .wp-block-media-text__content{padding:0 3rem}
-.wp-block-separator.is-style-wide{margin:0 2rem}
 .entry-content .page-links{padding-top:2rem}
 .entry-content .page-links{padding-bottom:2rem}
 .wp-block-preformatted,.wp-block-code{padding:1.25rem}
@@ -1259,7 +1257,6 @@ table{margin-bottom:2.5rem}
 .wp-block-quote.is-style-large p,.wp-block-pullquote.is-style-large p{font-size:1.75rem}
 .single .entry-content .wp-block-pullquote p,.single .entry-content .wp-block-pullquote.is-style-solid-color p,.single .entry-content .wp-block-pullquote.is-style-solid-color blockquote p,.wp-block-pullquote p,.wp-block-pullquote.is-style-solid-color p,.wp-block-pullquote.is-style-solid-color blockquote p{font-size:1.25rem}
 .hentry .entry-content .wp-block-cover.alignwide{width:calc(100% - 6rem)}
-.wp-block-separator.is-style-wide{margin:0 3rem}
 .wp-block-separator.is-style-dots:before{font-size:1.5rem}
 .entry-content .page-links{padding-top:3rem}
 .entry-content .page-links{padding-bottom:3rem}
@@ -1329,7 +1326,6 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content .alignfull .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content .wp-block-cover.alignwide{max-width:87rem}
-.wp-block-separator.is-style-wide{margin:0 auto;padding:0 1.5rem}
 .wp-block-cover.alignleft,.wp-block-gallery.alignleft,.wp-block-pullquote.alignleft{margin:0 3rem 3rem 2rem}
 .wp-block-cover.alignright,.wp-block-gallery.alignright,.wp-block-pullquote.alignright{margin:0 2rem 3rem 3rem}
 }@media(max-width:781px) and (min-width:600px){.wp-block-columns .wp-block-column{-ms-flex-preferred-size:calc(50% - 48px) !important;flex-basis:calc(50% - 48px) !important}

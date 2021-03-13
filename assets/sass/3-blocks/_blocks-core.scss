@@ -564,21 +564,7 @@ div[class*='wp-block-'] figcaption {
 	}
 
 	&.is-style-wide {
-		margin: 0 $s-4;
 		max-width: 100%;
-
-		@include breakpoint(sm) {
-			margin: 0 $s-7;
-		}
-
-		@include breakpoint(lg) {
-			margin: 0 $s-9;
-		}
-
-		@include breakpoint(xl) {
-			margin: 0 auto;
-			padding: 0 $s-6;
-		}
 	}
 }
 

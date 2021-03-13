@@ -1,4 +1,5 @@
-/*! Editor Styles */.wp-block{max-width:43.5rem}
+/*! Editor Styles */.block-editor-block-list__block{margin-top:0 !important;margin-bottom:0 !important}
+.wp-block{max-width:43.5rem}
 .editor-styles-wrapper{text-rendering:optimizeLegibility;-moz-font-smoothing:antialiased;-webkit-font-smoothing:antialiased;padding:0 !important}
 .editor-styles-wrapper .wp-block[data-align="wide"] .wp-block[data-align="wide"],.editor-styles-wrapper .wp-block[data-align="full"] .wp-block[data-align="wide"]{max-width:93rem}
 .wp-block[data-align="full"]{margin-left:-10px;margin-right:-10px}
@@ -50,6 +51,30 @@ code,kbd,tt,var{font-size:15px}
 abbr,acronym{border-bottom:1px dotted #666;cursor:help}
 ins,mark{background:#fff9c0;text-decoration:none}
 big{font-size:125%}
+.col1{max-width:7.75rem}
+.col1.nogap{max-width:calc(7.75rem - 3rem)}
+.col2{max-width:15.5rem}
+.col2.nogap{max-width:calc(15.5rem - 3rem)}
+.col3{max-width:23.25rem}
+.col3.nogap{max-width:calc(23.25rem - 3rem)}
+.col4{max-width:31rem}
+.col4.nogap{max-width:calc(31rem - 3rem)}
+.col5{max-width:35.75rem}
+.col5.nogap{max-width:calc(35.75rem - 3rem)}
+.col6{max-width:46.5rem}
+.col6.nogap{max-width:calc(46.5rem - 3rem)}
+.col7{max-width:54.25rem}
+.col7.nogap{max-width:calc(54.25rem - 3rem)}
+.col8{max-width:62rem}
+.col8.nogap{max-width:calc(62rem - 3rem)}
+.col9{max-width:69.75rem}
+.col9.nogap{max-width:calc(69.75rem - 3rem)}
+.col10{max-width:77.5rem}
+.col10.nogap{max-width:calc(77.5rem - 3rem)}
+.col11{max-width:85.25rem}
+.col11.nogap{max-width:calc(85.25rem - 3rem)}
+.col12{max-width:93rem}
+.col12.nogap{max-width:calc(93rem - 3rem)}
 a{color:currentColor;text-decoration:underline}
 p a,blockquote:not(.has-text-color) .wp-block-pullquote__citation a{color:#222}
 a h1,h2 a,h3 a,h4 a,h5 a,h6 a{color:#111}
@@ -74,9 +99,12 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input
 select{border:1px solid #ccc}
 textarea{width:100%}
 .editor-default-block-appender .editor-default-block-appender__content{font-family:"IBM Plex Sans",sans-serif;line-height:1.4;font-size:1.125rem}
+.wp-block-group.has-background{padding-left:0;padding-right:0}
 .wp-block-image figcaption,.wp-block-embed figcaption,.wp-block-audio figcaption{max-width:100%;font-size:.875rem;margin:6px 0 0;text-align:center}
 .wp-block-gallery{margin:0}
 .wp-block-gallery .blocks-gallery-image figcaption,.wp-block-gallery .blocks-gallery-item figcaption{padding:40px 12px 8px;font-size:14px;font-weight:300}
+.wp-block-image.ellipse-horizontal{-webkit-clip-path:ellipse(50% 45% at 50% 50%);clip-path:ellipse(50% 45% at 50% 50%)}
+.wp-block-image.ellipse-vertical{-webkit-clip-path:ellipse(50% 50% at 50% 50%);clip-path:ellipse(50% 50% at 50% 50%)}
 .wp-block-pullquote,.wp-block-quote{margin:0;padding:0;font-style:normal}
 .wp-block-pullquote blockquote p,.wp-block-quote blockquote p{font-size:1.125rem}
 .wp-block-pullquote p:last-child,.wp-block-pullquote blockquote p:last-child,.wp-block-quote p:last-child,.wp-block-quote blockquote p:last-child{margin:0}
@@ -91,7 +119,6 @@ textarea{width:100%}
 .wp-block-pullquote .alignleft blockquote,.wp-block-pullquote .alignright blockquote{padding:0}
 .wp-block[data-type="core/pullquote"][data-align="right"],.wp-block[data-type="core/pullquote"][data-align="left"]{height:auto;max-height:none}
 .wp-block[data-type="core/pullquote"][data-align="right"]>.is-block-content,.wp-block[data-type="core/pullquote"][data-align="left"]>.is-block-content{max-width:23.25rem}
-.wp-block[data-align="full"] .wp-block-group .wp-block-group__inner-container .wp-block-image{max-width:43.5rem}
 .editor-styles-wrapper .wp-block-table{display:table;width:100%}
 .editor-styles-wrapper .wp-block-table .wp-block-table__cell-content{padding:1rem}
 .editor-styles-wrapper .wp-block-table.alignfull{width:96vw}
