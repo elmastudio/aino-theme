@@ -179,7 +179,8 @@ textarea{resize:vertical}
 .pr__10{padding-right:3rem}
 .pr__11{padding-right:3.5rem}
 body,button,input,select,table,textarea{font-family:"IBM Plex Sans",sans-serif;line-height:1.4}
-div[class*='wp-block-'] figcaption,.entry-content p.has-s-font-size,.wp-block-calendar table,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-size:1rem;color:#222}
+div[class*='wp-block-'] figcaption,.wp-block-calendar table,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-size:1rem;color:#222}
+.entry-content p.has-s-font-size{font-size:1rem}
 .single .navigation a span.nav-subtitle,.entry-content p.has-extrasmall-font-size,.entry-content p.has-xs-font-size,.entry-content .sharedaddy h3.sd-title,.blocks-gallery-grid .blocks-gallery-item figcaption{font-size:.875rem}
 .blog-1-column .hentry .entry-summary,.blog-2-column .hentry .entry-summary,.blog-1-column .hentry .entry-cats,.blog-2-column .hentry .entry-cats,.blog-1-column .hentry .entry-footer,.blog-2-column .hentry .entry-footer{font-size:1.125rem}
 .page-header .description p,.entry-content p.has-m-font-size,.related-wrap .related-post .entry-cats,.comment-author .fn,.comment-metadata,.comment-notes,.logged-in-as,.comment-reply-title #cancel-comment-reply-link,.footer-info,.footer-widget .widget ul li,.mc4wp-form .mc4wp-alert p{font-size:1.125rem}

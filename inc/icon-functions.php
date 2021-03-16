@@ -183,6 +183,7 @@ function aino_social_links_icons() {
 		'spotify.com'          => 'spotify',
 		'stackoverflow.com'    => 'stackoverflow',
 		'stripe.com'           => 'stripe',
+		'tiktok.com'            => 'tiktok',
 		'trello.com'           => 'trello',
 		'tripadvisor.com'      => 'tripadvisor',
 		'tumblr.com'           => 'tumblr',

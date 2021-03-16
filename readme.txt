@@ -2,7 +2,7 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
-Tested up to: WordPress 5.6
+Tested up to: WordPress 5.7
 Requires PHP: 7.0
 Stable tag: 1.2.7
 License: GPLv3 or later
@@ -46,6 +46,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.2.7 =
 Enhance: Change CSS class no-margins to nogap.
+New: TikTok social icon.
 
 = 1.2.6 =
 Enhance: Update required PHP version.
