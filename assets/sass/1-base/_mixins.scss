@@ -323,221 +323,177 @@ $var: true !default; // Can be overridden elsewhere
 /* Heading Font Sizes */
 @mixin font-h-1 {
 	font-size: 1rem !important;
-	letter-spacing: -0.4px;
 }
 
 @mixin font-h-2 {
 	font-size: 1.125rem !important;
-	letter-spacing: -0.45px;
 
 	@include breakpoint(sm) {
 		font-size: 1.25rem !important;
-		letter-spacing: -0.5px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 1.375rem !important;
-		letter-spacing: -0.55px;
 	}
 }
 
 @mixin font-h-3 {
 	font-size: 1.375rem !important;
-	letter-spacing: -0.55px;
 
 	@include breakpoint(sm) {
 		font-size: 1.5rem !important;
-		letter-spacing: -0.6px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 1.625rem !important;
-		letter-spacing: -0.65px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 1.75rem !important;
-		letter-spacing: -0.7px;
 	}
 }
 
 @mixin font-h-4 {
 	font-size: 1.5rem !important;
-	letter-spacing: -0.6px;
 
 	@include breakpoint(sm) {
 		font-size: 1.875rem !important;
-		letter-spacing: -0.75px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 2.125rem !important;
-		letter-spacing: -0.85px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 2.375rem !important;
-		letter-spacing: -0.95px;
 	}
 }
 
 @mixin font-h-5 {
 	font-size: 1.75rem !important;
-	letter-spacing: -0.7px;
 
 	@include breakpoint(sm) {
 		font-size: 2.25rem !important;
-		letter-spacing: -0.9px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 2.625rem !important;
-		letter-spacing: -1.05px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 3.25rem !important;
-		letter-spacing: -1.3px;
 	}
 }
 
 @mixin font-h-6 {
 	font-size: 2.125rem !important;
-	letter-spacing: -0.85px;
 
 	@include breakpoint(sm) {
 		font-size: 2.75rem !important;
-		letter-spacing: -1.1px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 3.375rem !important;
-		letter-spacing: -1.35px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 4.375rem !important;
-		letter-spacing: -1.75px;
 	}
 }
 
 @mixin font-h-7 {
 	font-size: 2.375rem !important;
-	letter-spacing: -0.95px;
 
 	@include breakpoint(sm) {
 		font-size: 3.25rem !important;
-		letter-spacing: -1.3px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 4.375rem !important;
-		letter-spacing: -1.75px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 5.75rem !important;
-		letter-spacing: -2.3px;
 	}
 }
 
 @mixin font-h-8 {
 	font-size: 2.875rem !important;
-	letter-spacing: -1.15px;
 
 	@include breakpoint(sm) {
 		font-size: 4rem !important;
-		letter-spacing: -1.6px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 5.625rem !important;
-		letter-spacing: -2.25px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 7.75rem !important;
-		letter-spacing: -3.1px;
 	}
 }
 
 @mixin font-h-9 {
 	font-size: 3.25rem !important;
-	letter-spacing: -1.3px;
 
 	@include breakpoint(sm) {
 		font-size: 4.875rem !important;
-		letter-spacing: -1.95px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 7.25rem !important;
-		letter-spacing: -2.9px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 10.375rem !important;
-		letter-spacing: -10px;
 	}
 }
 
 @mixin font-h-10 {
 	font-size: 3.75rem !important;
-	letter-spacing: -1.5px;
 
 	@include breakpoint(sm) {
 		font-size: 6rem !important;
-		letter-spacing: -2.4px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 9.25rem !important;
-		letter-spacing: -3.7px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 13.875rem !important;
-		letter-spacing: -5.55px;
 	}
 }
 
 @mixin font-h-11 {
 	font-size: 4.375rem !important;
-	letter-spacing: -1.75px;
 
 	@include breakpoint(sm) {
 		font-size: 10.375rem !important;
-		letter-spacing: -2.9px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 11.75rem !important;
-		letter-spacing: -4.7px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 18.625rem !important;
-		letter-spacing: -7.45px;
 	}
 }
 
 @mixin font-h-12 {
 	font-size: 5.125rem !important;
-	letter-spacing: -2.05px;
 
 	@include breakpoint(sm) {
 		font-size: 8.875rem !important;
-		letter-spacing: -3.55px;
 	}
 
 	@include breakpoint(md) {
 		font-size: 15.125rem !important;
-		letter-spacing: -6.05px;
 	}
 
 	@include breakpoint(lg) {
 		font-size: 25rem !important;
-		letter-spacing: -10px;
 	}
 }
 

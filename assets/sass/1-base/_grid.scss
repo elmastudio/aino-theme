@@ -52,7 +52,18 @@
 }
 
 .col6 {
-	max-width: $col6;
+
+	@include breakpoint(sm) {
+		max-width: 21rem;
+	}
+
+	@include breakpoint(md) {
+		max-width: 27rem;
+	}
+
+	@include breakpoint(lg) {
+		max-width: $col6;
+	}
 
 	&.nogap {
 		max-width: calc(#{$col6} - #{$s-9});
