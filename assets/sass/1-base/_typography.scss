@@ -9,12 +9,15 @@ textarea {
 }
 
 div[class*='wp-block-'] figcaption,
-.entry-content p.has-s-font-size,
 .wp-block-calendar table,
 .hentry .entry-summary,
 .posts-container .hentry .entry-footer {
 	@include font-body-s;
 	color: $color__text_two;
+}
+
+.entry-content p.has-s-font-size {
+	@include font-body-s;
 }
 
 .single .navigation a span.nav-subtitle,

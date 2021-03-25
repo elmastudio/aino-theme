@@ -1,4 +1,5 @@
-/*! Editor Styles */.wp-block{max-width:43.5rem}
+/*! Editor Styles */.block-editor-block-list__block{margin-top:0;margin-bottom:0}
+.wp-block{max-width:43.5rem}
 .editor-styles-wrapper{text-rendering:optimizeLegibility;-moz-font-smoothing:antialiased;-webkit-font-smoothing:antialiased;padding:0 !important}
 .editor-styles-wrapper .wp-block[data-align="wide"] .wp-block[data-align="wide"],.editor-styles-wrapper .wp-block[data-align="full"] .wp-block[data-align="wide"]{max-width:93rem}
 .wp-block[data-align="full"]{margin-left:-10px;margin-right:-10px}
@@ -21,18 +22,18 @@ body{font-family:"IBM Plex Sans",sans-serif;line-height:1.4;color:#222;text-rend
 .editor-post-title__input,h1,h2,h3,h4,h5,h6{color:#111;font-weight:normal;line-height:1;margin-top:0;margin-bottom:0}
 .editor-post-title__input a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#111;text-decoration:none}
 .h-bold .editor-post-title__input,.h-bold h1,.h-bold h2,.h-bold h3,.h-bold h4,.h-bold h5,.h-bold h6{font-weight:bold}
-h1.has-xxxxl-font-size{font-size:5.125rem !important;letter-spacing:-2.05px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:4.375rem !important;letter-spacing:-1.75px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:3.75rem !important;letter-spacing:-1.5px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:3.25rem !important;letter-spacing:-1.3px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:2.875rem !important;letter-spacing:-1.15px}
-.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:2.375rem !important;letter-spacing:-0.95px}
-h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.125rem !important;letter-spacing:-0.85px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:1.75rem !important;letter-spacing:-0.7px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:1.5rem !important;letter-spacing:-0.6px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.375rem !important;letter-spacing:-0.55px}
-h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.125rem !important;letter-spacing:-0.45px}
-h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-size,h6.has-xs-font-size,h6.has-xxs-font-size,h6.has-xxs-font-size{font-size:1rem !important;letter-spacing:-0.4px}
+h1.has-xxxxl-font-size{font-size:5.125rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:4.375rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:3.75rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:3.25rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:2.875rem !important}
+.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:2.375rem !important}
+h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.125rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:1.75rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:1.5rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.375rem !important}
+h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.125rem !important}
+h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-size,h6.has-xs-font-size,h6.has-xxs-font-size,h6.has-xxs-font-size{font-size:1rem !important}
 p,ol,ul{font-size:1.25rem}
 p.has-background,ol.has-background,ul.has-background{padding:1rem}
 p.has-xxs-font-size,ol.has-xxs-font-size,ul.has-xxs-font-size{font-size:.75rem}
@@ -50,6 +51,30 @@ code,kbd,tt,var{font-size:15px}
 abbr,acronym{border-bottom:1px dotted #666;cursor:help}
 ins,mark{background:#fff9c0;text-decoration:none}
 big{font-size:125%}
+.col1{max-width:7.75rem}
+.col1.nogap{max-width:calc(7.75rem - 3rem)}
+.col2{max-width:15.5rem}
+.col2.nogap{max-width:calc(15.5rem - 3rem)}
+.col3{max-width:23.25rem}
+.col3.nogap{max-width:calc(23.25rem - 3rem)}
+.col4{max-width:31rem}
+.col4.nogap{max-width:calc(31rem - 3rem)}
+.col5{max-width:35.75rem}
+.col5.nogap{max-width:calc(35.75rem - 3rem)}
+.col6{max-width:46.5rem}
+.col6.nogap{max-width:calc(46.5rem - 3rem)}
+.col7{max-width:54.25rem}
+.col7.nogap{max-width:calc(54.25rem - 3rem)}
+.col8{max-width:62rem}
+.col8.nogap{max-width:calc(62rem - 3rem)}
+.col9{max-width:69.75rem}
+.col9.nogap{max-width:calc(69.75rem - 3rem)}
+.col10{max-width:77.5rem}
+.col10.nogap{max-width:calc(77.5rem - 3rem)}
+.col11{max-width:85.25rem}
+.col11.nogap{max-width:calc(85.25rem - 3rem)}
+.col12{max-width:93rem}
+.col12.nogap{max-width:calc(93rem - 3rem)}
 a{color:currentColor;text-decoration:underline}
 p a,blockquote:not(.has-text-color) .wp-block-pullquote__citation a{color:#222}
 a h1,h2 a,h3 a,h4 a,h5 a,h6 a{color:#111}
@@ -74,9 +99,12 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input
 select{border:1px solid #ccc}
 textarea{width:100%}
 .editor-default-block-appender .editor-default-block-appender__content{font-family:"IBM Plex Sans",sans-serif;line-height:1.4;font-size:1.125rem}
+.wp-block-group.has-background{padding-left:0;padding-right:0}
 .wp-block-image figcaption,.wp-block-embed figcaption,.wp-block-audio figcaption{max-width:100%;font-size:.875rem;margin:6px 0 0;text-align:center}
 .wp-block-gallery{margin:0}
 .wp-block-gallery .blocks-gallery-image figcaption,.wp-block-gallery .blocks-gallery-item figcaption{padding:40px 12px 8px;font-size:14px;font-weight:300}
+.wp-block-image.ellipse-horizontal{-webkit-clip-path:ellipse(50% 45% at 50% 50%);clip-path:ellipse(50% 45% at 50% 50%)}
+.wp-block-image.ellipse-vertical{-webkit-clip-path:ellipse(50% 50% at 50% 50%);clip-path:ellipse(50% 50% at 50% 50%)}
 .wp-block-pullquote,.wp-block-quote{margin:0;padding:0;font-style:normal}
 .wp-block-pullquote blockquote p,.wp-block-quote blockquote p{font-size:1.125rem}
 .wp-block-pullquote p:last-child,.wp-block-pullquote blockquote p:last-child,.wp-block-quote p:last-child,.wp-block-quote blockquote p:last-child{margin:0}
@@ -91,7 +119,6 @@ textarea{width:100%}
 .wp-block-pullquote .alignleft blockquote,.wp-block-pullquote .alignright blockquote{padding:0}
 .wp-block[data-type="core/pullquote"][data-align="right"],.wp-block[data-type="core/pullquote"][data-align="left"]{height:auto;max-height:none}
 .wp-block[data-type="core/pullquote"][data-align="right"]>.is-block-content,.wp-block[data-type="core/pullquote"][data-align="left"]>.is-block-content{max-width:23.25rem}
-.wp-block[data-align="full"] .wp-block-group .wp-block-group__inner-container .wp-block-image{max-width:43.5rem}
 .editor-styles-wrapper .wp-block-table{display:table;width:100%}
 .editor-styles-wrapper .wp-block-table .wp-block-table__cell-content{padding:1rem}
 .editor-styles-wrapper .wp-block-table.alignfull{width:96vw}
@@ -103,7 +130,7 @@ textarea{width:100%}
 .editor-styles-wrapper .wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f7f7ff;border-bottom:0}
 .editor-styles-wrapper .wp-block-table.is-style-stripes table tr{border-bottom:0}
 .wp-block-cover-image{height:75vh;min-height:400px;margin-top:1.25rem;margin-bottom:1.25rem}
-.wp-block-cover-image-text,.wp-block-cover-image h2{max-width:43.5rem;font-size:1.375rem !important;letter-spacing:-0.55px}
+.wp-block-cover-image-text,.wp-block-cover-image h2{max-width:43.5rem;font-size:1.375rem !important}
 .wp-block-cover-image .wp-block-cover__inner-container,.wp-block-cover .wp-block-cover__inner-container{width:100%}
 .wp-block-code .block-editor-plain-text{background:#b2cacd;color:#062e32;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;font-size:.875rem;border-radius:2.25rem;padding:1rem}
 .wp-block-code .block-editor-plain-text .block-editor-plain-text{background:transparent}
@@ -112,7 +139,7 @@ textarea{width:100%}
 .wp-block[data-type="core/verse"]{background:#f7f7ff;border-radius:2.25rem;font-family:"Monaco","Courier 10 Pitch",Courier,monospace;font-size:14px;line-height:1.43;font-size:.875rem;font-weight:normal;padding:1rem}
 .wp-block[data-type="core/verse"] pre{background:transparent}
 .wp-block-verse pre,pre.wp-block-verse{color:#222;white-space:nowrap;font-family:inherit;font-size:inherit;line-height:1;padding:0;overflow:auto}
-.block-editor-block-list__block[data-type="core/separator"]{max-width:87rem}
+.block-editor-block-list__block[data-type="core/separator"]{max-width:100%}
 .wp-block-separator{border-left:0;border-right:0;border-bottom:0;border-top:1px solid;opacity:1}
 .wp-block-separator.is-style-wide{border:0}
 .wp-block-separator.is-style-dots{border:0}
@@ -170,17 +197,17 @@ p.has-primary-one-color a{text-decoration:underline}
 .has-light-red-to-very-light-pink-gradient-background{background:-webkit-gradient(linear,left top,right top,from(#ff835c),to(#ff94c1));background:linear-gradient(90deg,#ff835c 0,#ff94c1 100%)}
 .has-very-soft-violet-to-very-soft-pink-gradient-background{background:-webkit-gradient(linear,left top,right top,from(#c6a3f5),to(#f8a2c7));background:linear-gradient(90deg,#c6a3f5 0,#f8a2c7 100%)}
 @media(min-width:48em){.edit-post-visual-editor__post-title-wrapper .editor-post-title{padding-left:2rem;padding-right:2rem}
-h1.has-xxxxl-font-size{font-size:8.875rem !important;letter-spacing:-3.55px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:10.375rem !important;letter-spacing:-2.9px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:6rem !important;letter-spacing:-2.4px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:4.875rem !important;letter-spacing:-1.95px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:4rem !important;letter-spacing:-1.6px}
-.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:3.25rem !important;letter-spacing:-1.3px}
-h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.75rem !important;letter-spacing:-1.1px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:2.25rem !important;letter-spacing:-0.9px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:1.875rem !important;letter-spacing:-0.75px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.5rem !important;letter-spacing:-0.6px}
-h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important;letter-spacing:-0.5px}
+h1.has-xxxxl-font-size{font-size:8.875rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:10.375rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:6rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:4.875rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:4rem !important}
+.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:3.25rem !important}
+h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.75rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:2.25rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:1.875rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.5rem !important}
+h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important}
 p.has-background,ol.has-background,ul.has-background{padding:1.25rem}
 p.has-xl-font-size,ol.has-xl-font-size,ul.has-xl-font-size{font-size:1.5rem}
 p.has-xxl-font-size,ol.has-xxl-font-size,ul.has-xxl-font-size{font-size:1.75rem}
@@ -188,7 +215,7 @@ p.has-drop-cap:not(:focus):first-letter ,ol.has-drop-cap:not(:focus):first-lette
 p.intro.has-drop-cap:not(:focus):first-letter ,ol.intro.has-drop-cap:not(:focus):first-letter ,ul.intro.has-drop-cap:not(:focus):first-letter {font-size:142px}
 .wp-block-cover-image{margin-top:1.5rem}
 .wp-block-cover-image{margin-bottom:1.5rem}
-.wp-block-cover-image-text,.wp-block-cover-image h2{font-size:1.5rem !important;letter-spacing:-0.6px}
+.wp-block-cover-image-text,.wp-block-cover-image h2{font-size:1.5rem !important}
 .wp-block-code .block-editor-plain-text{padding:1.25rem}
 .wp-block-code .block-editor-plain-text{margin-bottom:2rem}
 .wp-block-preformatted{padding:1.25rem}
@@ -198,16 +225,16 @@ p.intro.has-drop-cap:not(:focus):first-letter ,ol.intro.has-drop-cap:not(:focus)
 }@media screen and (min-width:50em){.editor-post-title:after,.editor-post-title:before{left:-200%;width:200%}
 .editor-post-title:after{display:none}
 .editor-post-title>div:after,.editor-post-title>div:before{display:block}
-}@media(min-width:64em){h1.has-xxxxl-font-size{font-size:15.125rem !important;letter-spacing:-6.05px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:11.75rem !important;letter-spacing:-4.7px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:9.25rem !important;letter-spacing:-3.7px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:7.25rem !important;letter-spacing:-2.9px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:5.625rem !important;letter-spacing:-2.25px}
-.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:4.375rem !important;letter-spacing:-1.75px}
-h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:3.375rem !important;letter-spacing:-1.35px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:2.625rem !important;letter-spacing:-1.05px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:2.125rem !important;letter-spacing:-0.85px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.625rem !important;letter-spacing:-0.65px}
+}@media(min-width:64em){h1.has-xxxxl-font-size{font-size:15.125rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:11.75rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:9.25rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:7.25rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:5.625rem !important}
+.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:4.375rem !important}
+h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:3.375rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:2.625rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:2.125rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.625rem !important}
 p,ol,ul{font-size:1.375rem}
 p.has-background,ol.has-background,ul.has-background{padding:1.5rem}
 p.has-l-font-size,ol.has-l-font-size,ul.has-l-font-size{font-size:1.375rem}
@@ -216,7 +243,7 @@ p.has-xxl-font-size,ol.has-xxl-font-size,ul.has-xxl-font-size{font-size:1.875rem
 .wp-block-pullquote.is-large,.wp-block-pullquote.is-style-large p,.wp-block-quote.is-large,.wp-block-quote.is-style-large p{font-size:1.375rem}
 .wp-block-cover-image{margin-top:2rem}
 .wp-block-cover-image{margin-bottom:2rem}
-.wp-block-cover-image-text,.wp-block-cover-image h2{font-size:1.625rem !important;letter-spacing:-0.65px}
+.wp-block-cover-image-text,.wp-block-cover-image h2{font-size:1.625rem !important}
 .wp-block-code .block-editor-plain-text{padding:1.5rem}
 .wp-block-preformatted{padding:1.5rem}
 .wp-block-preformatted{margin-bottom:1.5rem}
@@ -224,17 +251,17 @@ p.has-xxl-font-size,ol.has-xxl-font-size,ul.has-xxl-font-size{font-size:1.875rem
 .wp-block-separator.is-style-dots:before{font-size:1.375rem}
 .wp-block-categories,.wp-block-latest-posts__post-date{margin-bottom:2.5rem}
 }@media(min-width:80em){.edit-post-visual-editor__post-title-wrapper .editor-post-title{padding-left:3rem;padding-right:3rem}
-h1.has-xxxxl-font-size{font-size:25rem !important;letter-spacing:-10px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:18.625rem !important;letter-spacing:-7.45px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:13.875rem !important;letter-spacing:-5.55px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:10.375rem !important;letter-spacing:-10px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:7.75rem !important;letter-spacing:-3.1px}
-.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:5.75rem !important;letter-spacing:-2.3px}
-h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:4.375rem !important;letter-spacing:-1.75px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:3.25rem !important;letter-spacing:-1.3px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:2.375rem !important;letter-spacing:-0.95px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.75rem !important;letter-spacing:-0.7px}
-h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.375rem !important;letter-spacing:-0.55px}
+h1.has-xxxxl-font-size{font-size:25rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:18.625rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:13.875rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:10.375rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:7.75rem !important}
+.editor-post-title__input,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:5.75rem !important}
+h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:4.375rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:3.25rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:2.375rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:1.75rem !important}
+h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.375rem !important}
 p,ol,ul{font-size:1.5rem}
 p.has-background,ol.has-background,ul.has-background{padding:2rem}
 p.has-m-font-size,ol.has-m-font-size,ul.has-m-font-size{font-size:1.25rem}
@@ -247,7 +274,7 @@ p.has-xxl-font-size,ol.has-xxl-font-size,ul.has-xxl-font-size{font-size:2.125rem
 .wp-block-pullquote.is-style-solid-color blockquote p{font-size:1.25rem}
 .wp-block-cover-image{margin-top:2.5rem}
 .wp-block-cover-image{margin-bottom:2.5rem}
-.wp-block-cover-image-text,.wp-block-cover-image h2{font-size:1.75rem !important;letter-spacing:-0.7px}
+.wp-block-cover-image-text,.wp-block-cover-image h2{font-size:1.75rem !important}
 .wp-block-code .block-editor-plain-text{padding:2rem}
 .wp-block-preformatted{padding:2rem}
 .wp-block-preformatted{margin-bottom:2rem}

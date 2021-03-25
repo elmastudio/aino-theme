@@ -25,6 +25,15 @@
 
 /* Alignment */
 
+.entry-content {
+
+	.aligncenter {
+		clear: both;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .hentry .entry-content>* {
 
 	&.alignwide,
@@ -275,23 +284,20 @@
 	&.aligncenter {
 		clear: both;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
 		text-align: center;
-	}
-
-	&.aligncenter,
-	&.alignleft,
-	&.alignright,
-	&.is-resized {
-		margin-left: 0;
-		margin-right: 0;
 	}
 
 	&.alignfull img {
 		width: 100%;
 		max-width: 100%;
 		display: block;
+	}
+
+	&.ellipse-horizontal {
+		clip-path: ellipse(50% 45% at 50% 50%);
+	}
+	&.ellipse-vertical {
+		clip-path: ellipse(50% 50% at 50% 50%);
 	}
 }
 
@@ -558,21 +564,7 @@ div[class*='wp-block-'] figcaption {
 	}
 
 	&.is-style-wide {
-		margin: 0 $s-4;
-		max-width: $wide-content-width;
-
-		@include breakpoint(sm) {
-			margin: 0 $s-7;
-		}
-
-		@include breakpoint(lg) {
-			margin: 0 $s-9;
-		}
-
-		@include breakpoint(xl) {
-			margin: 0 auto;
-			padding: 0 $s-6;
-		}
+		max-width: 100%;
 	}
 }
 
@@ -759,10 +751,6 @@ div[class*='wp-block-'] figcaption {
 		@include breakpoint(xl) {
 			margin: 0 $s-7 $s-9 $s-9;
 		}
-	}
-
-	&.aligncenter {
-		clear: both;
 	}
 }
 

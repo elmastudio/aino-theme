@@ -88,31 +88,29 @@ textarea{resize:vertical}
 .no-hyphens{-webkit-hyphens:none !important;-ms-hyphens:none !important;hyphens:none !important}
 .no-letterspacing{letter-spacing:0 !important}
 .col,.column{-webkit-box-sizing:border-box;box-sizing:border-box}
-.no-gutter{margin-left:0 !important;margin-right:0 !important}
 .col1{max-width:7.75rem}
-.col1.no-margins{max-width:calc(7.75rem - 3rem)}
+.col1.nogap{max-width:calc(7.75rem - 3rem)}
 .col2{max-width:15.5rem}
-.col2.no-margins{max-width:calc(15.5rem - 3rem)}
+.col2.nogap{max-width:calc(15.5rem - 3rem)}
 .col3{max-width:23.25rem}
-.col3.no-margins{max-width:calc(23.25rem - 3rem)}
+.col3.nogap{max-width:calc(23.25rem - 3rem)}
 .col4{max-width:31rem}
-.col4.no-margins{max-width:calc(31rem - 3rem)}
-.col5{max-width:38.75rem}
-.col5.no-margins{max-width:calc(38.75rem - 3rem)}
-.col6{max-width:46.5rem}
-.col6.no-margins{max-width:calc(46.5rem - 3rem)}
+.col4.nogap{max-width:calc(31rem - 3rem)}
+.col5{max-width:35.75rem}
+.col5.nogap{max-width:calc(35.75rem - 3rem)}
+.col6.nogap{max-width:calc(46.5rem - 3rem)}
 .col7{max-width:54.25rem}
-.col7.no-margins{max-width:calc(54.25rem - 3rem)}
+.col7.nogap{max-width:calc(54.25rem - 3rem)}
 .col8{max-width:62rem}
-.col8.no-margins{max-width:calc(62rem - 3rem)}
+.col8.nogap{max-width:calc(62rem - 3rem)}
 .col9{max-width:69.75rem}
-.col9.no-margins{max-width:calc(69.75rem - 3rem)}
+.col9.nogap{max-width:calc(69.75rem - 3rem)}
 .col10{max-width:77.5rem}
-.col10.no-margins{max-width:calc(77.5rem - 3rem)}
+.col10.nogap{max-width:calc(77.5rem - 3rem)}
 .col11{max-width:85.25rem}
-.col11.no-margins{max-width:calc(85.25rem - 3rem)}
+.col11.nogap{max-width:calc(85.25rem - 3rem)}
 .col12{max-width:93rem}
-.col12.no-margins{max-width:calc(93rem - 3rem)}
+.col12.nogap{max-width:calc(93rem - 3rem)}
 .outer-margins{padding-left:1rem;padding-right:1rem}
 .mobile-margins{padding-left:1rem;padding-right:1rem}
 .default-margins,.search-no-results .entry-content{padding-left:1rem;padding-right:1rem}
@@ -180,7 +178,8 @@ textarea{resize:vertical}
 .pr__10{padding-right:3rem}
 .pr__11{padding-right:3.5rem}
 body,button,input,select,table,textarea{font-family:"IBM Plex Sans",sans-serif;line-height:1.4}
-div[class*='wp-block-'] figcaption,.entry-content p.has-s-font-size,.wp-block-calendar table,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-size:1rem;color:#222}
+div[class*='wp-block-'] figcaption,.wp-block-calendar table,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-size:1rem;color:#222}
+.entry-content p.has-s-font-size{font-size:1rem}
 .single .navigation a span.nav-subtitle,.entry-content p.has-extrasmall-font-size,.entry-content p.has-xs-font-size,.entry-content .sharedaddy h3.sd-title,.blocks-gallery-grid .blocks-gallery-item figcaption{font-size:.875rem}
 .blog-1-column .hentry .entry-summary,.blog-2-column .hentry .entry-summary,.blog-1-column .hentry .entry-cats,.blog-2-column .hentry .entry-cats,.blog-1-column .hentry .entry-footer,.blog-2-column .hentry .entry-footer{font-size:1.125rem}
 .page-header .description p,.entry-content p.has-m-font-size,.related-wrap .related-post .entry-cats,.comment-author .fn,.comment-metadata,.comment-notes,.logged-in-as,.comment-reply-title #cancel-comment-reply-link,.footer-info,.footer-widget .widget ul li,.mc4wp-form .mc4wp-alert p{font-size:1.125rem}
@@ -194,19 +193,19 @@ h1,h2,h3,h4,h5,h6{font-weight:normal;color:#111;line-height:1}
 h1.site-title,.site-title,h2.entry-title{word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
 .h-regular h1,.h-regular h2,.h-regular h3,.h-regular h4,.h-regular h5,.h-regular h6,.h-regular .site-title,.h-regular.single-post .byline{font-weight:normal}
 .h-bold :not(.entry-content)>h1,.h-bold :not(.entry-content)>h2,.h-bold :not(.entry-content)>h3,.h-bold :not(.entry-content)>h4,.h-bold :not(.entry-content)>h5,.h-bold :not(.entry-content)>h6,.h-bold .site-title,.h-bold.single-post .byline{font-weight:bold}
-h1.has-xxxxl-font-size{font-size:5.125rem !important;letter-spacing:-2.05px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:4.375rem !important;letter-spacing:-1.75px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:3.75rem !important;letter-spacing:-1.5px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:3.25rem !important;letter-spacing:-1.3px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:2.875rem !important;letter-spacing:-1.15px}
-h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:2.375rem !important;letter-spacing:-0.95px}
-h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.125rem !important;letter-spacing:-0.85px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:1.75rem !important;letter-spacing:-0.7px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:1.5rem !important;letter-spacing:-0.6px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.375rem !important;letter-spacing:-0.55px}
-.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.125rem !important;letter-spacing:-0.45px}
-h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-size,h6.has-xs-font-size,h6.has-xxs-font-size,h6.has-xxs-font-size{font-size:1rem !important;letter-spacing:-0.4px}
-.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:1.75rem !important;letter-spacing:-0.7px}
+h1.has-xxxxl-font-size{font-size:5.125rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:4.375rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:3.75rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:3.25rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:2.875rem !important}
+h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:2.375rem !important}
+h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.125rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:1.75rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:1.5rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.375rem !important}
+.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.125rem !important}
+h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-size,h6.has-xs-font-size,h6.has-xxs-font-size,h6.has-xxs-font-size{font-size:1rem !important}
+.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:1.75rem !important}
 .site-branding .site-title{font-size:1.25rem;line-height:1}
 .single .entry-content h2,.single .entry-content h3,.single .entry-content h4,.single .entry-content h5,.single .entry-content h6,.page-template-default .entry-content h2,.page-template-default .entry-content h3,.page-template-default .entry-content h4,.page-template-default .entry-content h5,.page-template-default .entry-content h6{padding-top:1rem;padding-bottom:1rem}
 .single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1rem}
@@ -323,7 +322,7 @@ a.btn-outline:hover,.btn-outline a:hover{color:#4d2cf0;fill:#4d2cf0}
 .btn-naked:hover,.btn-naked a:hover{color:#4d2cf0;fill:#4d2cf0}
 .btn-naked:hover,.btn-naked a:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px)}
 .btn-white button{background:#fff;color:#000;fill:#000}
-.btn-long{width:100%}
+.btn-long,.cr_button{width:100%}
 .btn-xxs{padding:1rem;font-size:1rem}
 .btn-xs{padding:1rem;font-size:1rem}
 .btn-s{padding:1rem;font-size:1rem}
@@ -413,6 +412,7 @@ tr td:last-of-type{border-right:0}
 .entry-content .sharedaddy h3.sd-title:before{display:none}
 .entry-content .sharedaddy .sd-content ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0 !important}
 .single .entry-content .wp-block-button,.single .entry-content .wp-block-buttons .wp-block-button,.single .entry-content .wp-block-image,.single .entry-content .wp-block-quote,.single .entry-content .wp-block-pullquote,.single .entry-content .wp-block-media-text,.single .entry-content .entry-content .wp-block-gallery,.single .entry-content .wp-block-audio,.single .entry-content .wp-block-video,.single .entry-content .wp-block-ainoblocks-advanced-buttons,.single .entry-content .wp-block-search,.single .entry-content .wp-block-calendar,.single .entry-content .wp-block-archives-dropdown{margin-left:auto;margin-right:auto;margin-bottom:1rem}
+.entry-content .aligncenter{clear:both;margin-left:auto;margin-right:auto}
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{max-width:93rem;position:relative;margin-left:auto;margin-right:auto;clear:both;padding-left:1rem;padding-right:1rem}
 .hentry .entry-content>*.alignfull{position:relative;max-width:100%;width:auto}
 .hentry .entry-content .alignfull .alignwide{max-width:93rem;clear:both;overflow:hidden;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
@@ -435,9 +435,10 @@ tr td:last-of-type{border-right:0}
 .wp-block-image{margin-bottom:0}
 .wp-block-image.alignright{display:block;float:none;margin-bottom:2rem}
 .wp-block-image.alignleft{float:left;margin-right:1em}
-.wp-block-image.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto;text-align:center}
-.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright,.wp-block-image.is-resized{margin-left:0;margin-right:0}
+.wp-block-image.aligncenter{clear:both;display:block;text-align:center}
 .wp-block-image.alignfull img{width:100%;max-width:100%;display:block}
+.wp-block-image.ellipse-horizontal{-webkit-clip-path:ellipse(50% 45% at 50% 50%);clip-path:ellipse(50% 45% at 50% 50%)}
+.wp-block-image.ellipse-vertical{-webkit-clip-path:ellipse(50% 50% at 50% 50%);clip-path:ellipse(50% 50% at 50% 50%)}
 div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0;text-align:center}
 .wp-caption.alignleft .wp-caption-text,.wp-caption.alignright .wp-caption-text{margin-bottom:0}
 .wp-block-gallery .blocks-gallery-grid{padding:0;margin-bottom:0;list-style:none}
@@ -481,7 +482,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-verse{color:#222;background:#f7f7ff}
 .wp-block-separator{border:0;border-top:1px solid}
 .wp-block-separator.is-style-dots{background:0;border:0}
-.wp-block-separator.is-style-wide{margin:0 1rem;max-width:87rem}
+.wp-block-separator.is-style-wide{max-width:100%}
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots){max-width:100px;margin-left:auto;margin-right:auto}
 .wp-block-separator.is-style-dots:before{color:#222;content:"\00b7 \00b7 \00b7";font-family:serif;font-size:1.25rem;letter-spacing:1em;padding-left:1em}
 .entry-content .page-links{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;margin-left:auto;margin-right:auto;padding-top:1.5rem;padding-bottom:1.5rem;padding-left:0;padding-right:0}
@@ -503,7 +504,6 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-group .wp-block-group__inner-container>*:last-child{margin-bottom:0}
 .wp-block-group .wp-block-group__inner-container:not(.wp-block-ainoblocks-grid-container)>.wp-block-image:not(.alignwide):not(.alignfull){max-width:43.5rem;margin-left:auto;margin-right:auto}
 .wp-block-cover-image.alignleft,.wp-block-cover-image.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-cover.alignleft,.wp-block-cover.alignright,.wp-block-pullquote.alignleft,.wp-block-pullquote.alignright{width:100%}
-.wp-block-cover.aligncenter,.wp-block-gallery.aligncenter,.wp-block-pullquote.aligncenter{clear:both}
 .entry-content .has-primary-one-color{color:#4d2cf0;fill:#4d2cf0}
 .entry-content p.has-primary-one-color a{text-decoration:underline}
 .entry-content .has-primary-one-background-color{background:#4d2cf0;border-color:#4d2cf0}
@@ -550,7 +550,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .site-branding .site-description{display:none;height:2rem;margin:0;padding:0 0 0 .5rem;color:#222}
 .site-branding .site-description:before{content:"";display:block;width:3rem;background-color:#111;height:1px;margin-right:.5rem}
 .tagline-hide .site-branding .site-description{display:none}
-.site-branding .custom-logo-link{display:block;padding:0 .5rem 0 0}
+.site-branding .custom-logo-link{display:block;padding:0}
 .site-branding .custom-logo-link img,.site-branding .custom-logo-link .custom-logo{-o-object-fit:fill;object-fit:fill;height:auto !important}
 .search-header{position:relative;margin:1rem 0;padding:0}
 .search-header .search-submit{display:none}
@@ -824,6 +824,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 }@media(min-width:48em) and (min-width:48em){.wp-block-columns.has-background{padding-top:1.5rem}
 }@media(min-width:48em){.mobile-hide{display:block}
 .desktop__overlap-top{margin-top:-12rem}
+.col6{max-width:21rem}
 .outer-margins{padding-left:2rem;padding-right:2rem}
 .default-margins,.search-no-results .entry-content{padding-left:0;padding-right:0}
 .col-margins{margin-left:1rem;margin-right:1rem}
@@ -839,18 +840,18 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .entry-content p.has-xxl-font-size{font-size:1.75rem}
 .entry-content p.has-xxxl-font-size,.page-header .description p{font-size:2rem}
 .entry-content p.has-xxxxl-font-size{font-size:2.25rem}
-h1.has-xxxxl-font-size{font-size:8.875rem !important;letter-spacing:-3.55px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:10.375rem !important;letter-spacing:-2.9px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:6rem !important;letter-spacing:-2.4px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:4.875rem !important;letter-spacing:-1.95px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:4rem !important;letter-spacing:-1.6px}
-h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:3.25rem !important;letter-spacing:-1.3px}
-h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.75rem !important;letter-spacing:-1.1px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:2.25rem !important;letter-spacing:-0.9px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:1.875rem !important;letter-spacing:-0.75px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.5rem !important;letter-spacing:-0.6px}
-.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important;letter-spacing:-0.5px}
-.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.25rem !important;letter-spacing:-0.9px}
+h1.has-xxxxl-font-size{font-size:8.875rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:10.375rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:6rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:4.875rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:4rem !important}
+h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:3.25rem !important}
+h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:2.75rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:2.25rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:1.875rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.5rem !important}
+.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important}
+.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.25rem !important}
 .single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1.25rem}
 dd{margin:0 1.5rem 1.5rem}
 pre{padding:1.25rem}
@@ -907,7 +908,6 @@ td{padding:1rem}
 .wp-block-quote.is-style-large p,.wp-block-pullquote.is-style-large p{font-size:1.5rem}
 .hentry .entry-content .wp-block-cover.alignwide{width:calc(100% - 4rem)}
 .wp-block-media-text .wp-block-media-text__content{padding:0 3rem}
-.wp-block-separator.is-style-wide{margin:0 2rem}
 .entry-content .page-links{padding-top:2rem}
 .entry-content .page-links{padding-bottom:2rem}
 .wp-block-preformatted,.wp-block-code{padding:1.25rem}
@@ -1015,7 +1015,8 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 .pr__9{padding-right:6rem}
 .pr__10{padding-right:9rem}
 .pr__11{padding-right:12rem}
-}@media(min-width:64em){.has-padding-top{padding-top:7.5rem}
+}@media(min-width:64em){.col6{max-width:27rem}
+.has-padding-top{padding-top:7.5rem}
 .has-padding-bottom{padding-bottom:7.5rem}
 .tpl-fullwidth .entry-header,.tpl-fullwidth .hentry .entry-content{padding-left:1.5rem;padding-right:1.5rem}
 .tpl-fullwidth .entry-header .alignwide,.tpl-fullwidth .hentry .entry-content .alignwide{padding-left:1.5rem;padding-right:1.5rem}
@@ -1024,17 +1025,17 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 .entry-content p.has-xxl-font-size{font-size:1.875rem}
 .entry-content p.has-xxxl-font-size,.page-header .description p{font-size:2.25rem}
 .entry-content p.has-xxxxl-font-size{font-size:2.625rem}
-h1.has-xxxxl-font-size{font-size:15.125rem !important;letter-spacing:-6.05px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:11.75rem !important;letter-spacing:-4.7px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:9.25rem !important;letter-spacing:-3.7px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:7.25rem !important;letter-spacing:-2.9px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:5.625rem !important;letter-spacing:-2.25px}
-h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:4.375rem !important;letter-spacing:-1.75px}
-h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:3.375rem !important;letter-spacing:-1.35px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:2.625rem !important;letter-spacing:-1.05px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:2.125rem !important;letter-spacing:-0.85px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.625rem !important;letter-spacing:-0.65px}
-.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.625rem !important;letter-spacing:-1.05px}
+h1.has-xxxxl-font-size{font-size:15.125rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:11.75rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:9.25rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:7.25rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:5.625rem !important}
+h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:4.375rem !important}
+h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:3.375rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:2.625rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:2.125rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.625rem !important}
+.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.625rem !important}
 .site-branding .site-title{font-size:1.375rem}
 .single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1.5rem}
 pre{padding:1.5rem}
@@ -1185,7 +1186,8 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .expanded-menu{display:block}
 .menu-bottom{padding:0}
 .menu-bottom .social-menu{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
-}@media(min-width:80em){.outer-margins{padding-left:3rem;padding-right:3rem}
+}@media(min-width:80em){.col6{max-width:46.5rem}
+.outer-margins{padding-left:3rem;padding-right:3rem}
 .mobile-margins{padding-left:1.5rem;padding-right:1.5rem}
 .col-margins{margin-left:1.5rem;margin-right:1.5rem}
 .has-padding-top{padding-top:9rem}
@@ -1201,18 +1203,18 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .entry-content p.has-xxl-font-size{font-size:2.125rem}
 .entry-content p.has-xxxl-font-size,.page-header .description p{font-size:2.5rem}
 .entry-content p.has-xxxxl-font-size{font-size:3rem}
-h1.has-xxxxl-font-size{font-size:25rem !important;letter-spacing:-10px}
-h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:18.625rem !important;letter-spacing:-7.45px}
-h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:13.875rem !important;letter-spacing:-5.55px}
-h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:10.375rem !important;letter-spacing:-10px}
-h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:7.75rem !important;letter-spacing:-3.1px}
-h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:5.75rem !important;letter-spacing:-2.3px}
-h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:4.375rem !important;letter-spacing:-1.75px}
-h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:3.25rem !important;letter-spacing:-1.3px}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:2.375rem !important;letter-spacing:-0.95px}
-h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.75rem !important;letter-spacing:-0.7px}
-.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.375rem !important;letter-spacing:-0.55px}
-.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:3.25rem !important;letter-spacing:-1.3px}
+h1.has-xxxxl-font-size{font-size:25rem !important}
+h1.has-xxxl-font-size,h2.has-xxxxl-font-size{font-size:18.625rem !important}
+h1.has-xxl-font-size,h2.has-xxxl-font-size,h3.has-xxxxl-font-size{font-size:13.875rem !important}
+h1.has-xl-font-size,h2.has-xxl-font-size,h3.has-xxxl-font-size,h4.has-xxxxl-font-size{font-size:10.375rem !important}
+h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-size,h5.has-xxxxl-font-size{font-size:7.75rem !important}
+h1.entry-title,h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:5.75rem !important}
+h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:4.375rem !important}
+h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:3.25rem !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:2.375rem !important}
+h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.75rem !important}
+.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.375rem !important}
+.blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:3.25rem !important}
 .site-branding .site-title{font-size:1.5rem}
 .single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:2rem}
 pre{padding:2rem}
@@ -1258,7 +1260,6 @@ table{margin-bottom:2.5rem}
 .wp-block-quote.is-style-large p,.wp-block-pullquote.is-style-large p{font-size:1.75rem}
 .single .entry-content .wp-block-pullquote p,.single .entry-content .wp-block-pullquote.is-style-solid-color p,.single .entry-content .wp-block-pullquote.is-style-solid-color blockquote p,.wp-block-pullquote p,.wp-block-pullquote.is-style-solid-color p,.wp-block-pullquote.is-style-solid-color blockquote p{font-size:1.25rem}
 .hentry .entry-content .wp-block-cover.alignwide{width:calc(100% - 6rem)}
-.wp-block-separator.is-style-wide{margin:0 3rem}
 .wp-block-separator.is-style-dots:before{font-size:1.5rem}
 .entry-content .page-links{padding-top:3rem}
 .entry-content .page-links{padding-bottom:3rem}
@@ -1328,7 +1329,6 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content .alignfull .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content .wp-block-cover.alignwide{max-width:87rem}
-.wp-block-separator.is-style-wide{margin:0 auto;padding:0 1.5rem}
 .wp-block-cover.alignleft,.wp-block-gallery.alignleft,.wp-block-pullquote.alignleft{margin:0 3rem 3rem 2rem}
 .wp-block-cover.alignright,.wp-block-gallery.alignright,.wp-block-pullquote.alignright{margin:0 2rem 3rem 3rem}
 }@media(max-width:781px) and (min-width:600px){.wp-block-columns .wp-block-column{-ms-flex-preferred-size:calc(50% - 48px) !important;flex-basis:calc(50% - 48px) !important}
