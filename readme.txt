@@ -4,7 +4,7 @@ Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images
 Requires at least: 5.0
 Tested up to: WordPress 5.7
 Requires PHP: 7.0
-Stable tag: 1.2.7
+Stable tag: 1.3.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -35,7 +35,7 @@ GNU General Public License for more details.
 
 Aino WordPress Theme bundles the following third-party resources:
 
-* normalize.css, © 2012-2019 Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
+* normalize.css, Copyright © Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
 * TwentyTwenty theme, GPLv2 or later, https://wordpress.org/themes/twentytwenty/
 * Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
@@ -43,6 +43,9 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 1.3.0 =
+Enhance: Convert SASS color variables to CSS variables.
 
 = 1.2.7 =
 Enhance: Change CSS class no-margins to nogap.

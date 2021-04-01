@@ -52,8 +52,8 @@
 	line-height: 1.42857143;
 	background-color: #fafafa;
 	background-image: none;
-	border: 1px solid $color__border;
-	border-color: $color__border;
+	border: 1px solid var(--global--color-border);
+	border-color: var(--global--color-border);
 	@include border-radius(0);
 	box-shadow: none;
 }

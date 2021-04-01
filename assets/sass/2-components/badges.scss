@@ -8,10 +8,10 @@
 	@include s-r-6(left);
 	z-index: 1;
 	background: transparent;
-	color: $color__text_one;
+	color: var(--global--color-text-one);
 
 	.sticky-icon {
-		border-right: 1px solid $color__text_one;
+		border-right: 1px solid var(--global--color-text-one);
 		padding: 5px 14px;
 		position: absolute;
 		top: 0;
@@ -31,11 +31,11 @@
 	}
 
 	.sticky-light & {
-		color: $color__white;
-		border: 1px solid $color__white;
+		color: var(--global--color-white);
+		border: 1px solid var(--global--color-white);
 
 		.sticky-icon {
-			border-right: 1px solid $color__white;
+			border-right: 1px solid var(--global--color-white);
 		}
 	}
 }

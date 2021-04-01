@@ -13,7 +13,7 @@ div[class*='wp-block-'] figcaption,
 .hentry .entry-summary,
 .posts-container .hentry .entry-footer {
 	@include font-body-s;
-	color: $color__text_two;
+	color: var(--global--color-text-two);
 }
 
 .entry-content p.has-s-font-size {
@@ -107,7 +107,7 @@ h4,
 h5,
 h6 {
 	@include font-regular;
-	color: $color__text_one;
+	color: var(--global--color-text-one);
 	line-height: 1;
 }
 
@@ -374,7 +374,7 @@ big {
 	float: left;
 	padding: 0 10px 0 0;
 	line-height: 0.9;
-	color: $color__text_one;
+	color: var(--global--color-text-one);
 
 	@include breakpoint(sm) {
 		font-size: 7.75rem;
