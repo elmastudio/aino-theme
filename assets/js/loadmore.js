@@ -1,3 +1,4 @@
+
 jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" error
 	$('.loadmore').click(function(){
  

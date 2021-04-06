@@ -449,7 +449,7 @@ ul.primary-menu {
 
 	ul {
 		@include font-body-xs;
-		background: var(--global--color-white);
+		background: var(--global--color-background);
 		color: var(--global--color-text-one);
 		padding: $s-6;
 		border: 1px solid var(--global--color-border);
@@ -583,7 +583,7 @@ ul.primary-menu {
 }
 
 .menu-modal-inner {
-	background: var(--global--color-white);
+	background: var(--global--color-background);
 	display: flex;
 	justify-content: stretch;
 	overflow: auto;

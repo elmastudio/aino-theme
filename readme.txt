@@ -46,6 +46,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.3.0 =
 Enhance: Convert SASS color variables to CSS variables.
+New: Dark mode option (see Customizer/Colors).
 
 = 1.2.7 =
 Enhance: Change CSS class no-margins to nogap.

@@ -843,6 +843,26 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Colors Panel
 	 */
+	// Colors - Dark mode.
+	$wp_customize->add_setting(
+		'enable_dark_mode',
+		array(
+			'default'           => aino_defaults( 'enable_dark_mode' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'enable_dark_mode',
+		array(
+			'label'       => esc_html__( 'Enable Dark Mode', 'aino' ),
+			'description' => esc_html__( 'Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text.', 'aino' ),
+			'section'     => 'colors',
+			'type'        => 'checkbox',
+			'priority'    => 1,
+		)
+	);
+
 	// Colors - Main Background Color.
 	$wp_customize->add_setting(
 		'main_bg_color',

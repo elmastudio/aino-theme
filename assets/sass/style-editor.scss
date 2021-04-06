@@ -482,10 +482,6 @@ a {
 	h6 & {
 		color: var(--global--color-text-one);
 	}
-
-	&:hover {
-		color: var(var(--global--color-primary));
-	}
 }
 
 .wp-block-image figcaption a,

@@ -209,7 +209,7 @@ a.btn-outline,
 .single-post .entry-tags a,
 .comment-metadata a,
 .post-edit-link {
-	@include pill;
+	@include pill-dark;
 }
 
 .btn-pill,

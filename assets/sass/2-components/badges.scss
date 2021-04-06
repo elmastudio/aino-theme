@@ -1,6 +1,6 @@
 /* Sticky Post Badge */
 .badge-highlight {
-	@include pill;
+	@include pill-dark;
 	@include pill-m-icon;
 	display: block;
 	position: absolute;
@@ -8,10 +8,10 @@
 	@include s-r-6(left);
 	z-index: 1;
 	background: transparent;
-	color: var(--global--color-text-one);
+	color: var(--global--color-black);
 
 	.sticky-icon {
-		border-right: 1px solid var(--global--color-text-one);
+		border-right: 1px solid var(--global--color-black);
 		padding: 5px 14px;
 		position: absolute;
 		top: 0;

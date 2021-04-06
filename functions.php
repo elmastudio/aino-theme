@@ -572,6 +572,7 @@ function aino_load_more_scripts() {
 	global $wp_query;
  
 	// register our main script but do not enqueue it yet
+	wp_enqueue_script('jquery');
 	wp_register_script( 'aino_loadmore', get_theme_file_uri( '/assets/js/loadmore.js' ), array(), wp_get_theme()->get( 'Version' ), true );
  
 	// now the most interesting part

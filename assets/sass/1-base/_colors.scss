@@ -1,0 +1,25 @@
+
+@media only screen {
+
+	.is-dark-theme {
+		--global--color-primary: #ffffff;
+		--global--color-text-one: #ffffff;
+		--global--color-text-two: rgba(255, 255, 255, 0.87);
+		--global--color-border: #ffffff;
+		--global--color-background: #121212;
+		--global--color-code-one: #b2cacd;
+		--global--color-code-two: #062e32;
+		--global--color-success: #19d37b;
+		--global--color-notification: #1E90FF;
+		--global--color-error: #e52424;
+		--global--color-white-60: rgba(255, 255, 255, 0.6);
+	}
+
+	body {
+		&.is-dark-theme {
+			background-color: var(--global--color-background);
+			color: var(--global--color-text-two);
+		}
+	}
+}
+

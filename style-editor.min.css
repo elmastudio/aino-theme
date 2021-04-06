@@ -79,7 +79,6 @@ big{font-size:125%}
 a{color:currentColor;text-decoration:underline}
 p a,blockquote:not(.has-text-color) .wp-block-pullquote__citation a{color:var(--global--color-text-two)}
 a h1,h2 a,h3 a,h4 a,h5 a,h6 a{color:var(--global--color-text-one)}
-a:hover{color:var(var(--global--color-primary))}
 .wp-block-image figcaption a:hover,.wp-block-embed figcaption a:hover,.wp-block-audio figcaption a:hover{color:var(--global--color-primary)}
 blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover{color:var(--global--color-primary)}
 .editor-post-title textarea{background-color:transparent}

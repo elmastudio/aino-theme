@@ -502,6 +502,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'has-nav-cta';
 	}
 
+	if ( get_theme_mod( 'enable_dark_mode', false ) ) {
+		$classes[] = 'is-dark-theme';
+	}
+
 	// Customizer Options - Typography.
 	if ( 'regular' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
 		$classes[] = 'h-regular';
