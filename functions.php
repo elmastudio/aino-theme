@@ -572,8 +572,7 @@ function aino_load_more_scripts() {
 	global $wp_query;
  
 	// register our main script but do not enqueue it yet
-	wp_enqueue_script('jquery');
-	wp_register_script( 'aino_loadmore', get_theme_file_uri( '/assets/js/loadmore.js' ), array(), wp_get_theme()->get( 'Version' ), true );
+	wp_register_script( 'aino_loadmore', get_theme_file_uri( '/assets/js/loadmore.js' ), array('jquery'), wp_get_theme()->get( 'Version' ), true );
  
 	// now the most interesting part
 	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
