@@ -15,6 +15,11 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
+	$colors_section = $wp_customize->get_section( 'colors' );
+		if ( is_object( $colors_section ) ) {
+			$colors_section->title = __( 'Colors & Dark Mode', 'aino' );
+		}
+
 	/**
 	 * Add Theme Panels
 	 */
