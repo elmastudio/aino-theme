@@ -45,8 +45,9 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.3.0 =
-Enhance: Convert SASS color variables to CSS variables.
 New: Dark mode option (see Customizer/Colors).
+Enhance: Convert SASS color variables to CSS variables.
+Enhance: Convert Featured image aspect ratio from 3:2 to 16:9.
 Bugfix: Load more button.
 
 = 1.2.7 =

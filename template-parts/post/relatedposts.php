@@ -39,7 +39,7 @@ if ( $categories ) {
 					?>
 					<div class="related-post">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<div class="related-img"><?php the_post_thumbnail( 'aino-l' ); ?></div>
+							<div class="related-img"><?php the_post_thumbnail( 'aino-thumb' ); ?></div>
 						<?php endif; ?>
 						<div class="related-post-content">
 							<span class="entry-cats"><?php the_category( ', ' ); ?></span>
