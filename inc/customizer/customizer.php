@@ -337,26 +337,6 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Footer
 	 */
-	// Theme Options - Footer - Footer Light Text.
-	$wp_customize->add_setting(
-		'footer_light',
-		array(
-			'default'           => aino_defaults( 'footer_light' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'footer_light',
-		array(
-			'label'       => esc_html__( 'Light Text Colors', 'aino' ),
-			'description' => esc_html__( 'Choose light text colors with a dark Footer background.', 'aino' ),
-			'section'     => 'aino_footer',
-			'type'        => 'checkbox',
-			'priority'    => 2,
-		)
-	);
-
 	// Theme Options - Footer - Footer Widget Alignment.
 	$wp_customize->add_setting(
 		'footerwidget_alignment',
@@ -1015,6 +995,26 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+		// Theme Options - Footer - Footer Light Text.
+		$wp_customize->add_setting(
+			'footer_light',
+			array(
+				'default'           => aino_defaults( 'footer_light' ),
+				'sanitize_callback' => 'aino_sanitize_checkbox',
+			)
+		);
+	
+		$wp_customize->add_control(
+			'footer_light',
+			array(
+				'label'       => esc_html__( 'Light Footer Text Colors', 'aino' ),
+				'description' => esc_html__( 'Choose light Footer text color with a dark Footer background.', 'aino' ),
+				'section'     => 'colors',
+				'type'        => 'checkbox',
+				'priority'    => 8,
+			)
+		);
+
 	// Colors - Blog Cards Background Color.
 	$wp_customize->add_setting(
 		'blogcards_bg_color',
@@ -1031,7 +1031,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 8,
+				'priority' => 9,
 				'settings' => 'blogcards_bg_color',
 			)
 		)
@@ -1053,7 +1053,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background on Hover', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 9,
+				'priority' => 10,
 				'settings' => 'blogcards_bg_color_hover',
 			)
 		)

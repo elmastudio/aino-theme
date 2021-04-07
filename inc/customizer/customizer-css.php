@@ -23,7 +23,7 @@ function aino_customizer_css() {
 
 	$css =
 	'
-	body {
+	body, .menu-modal-inner, ul.primary-menu ul {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
 	.entry-link {
@@ -64,20 +64,18 @@ function aino_customizer_css() {
 		color: ' . esc_attr( $primary_one_color ) . ';
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
-
 	button, input[type="button"], input[type="submit"], .btn-primary a, a.btn-primary {
 		color: ' . esc_attr( $btn_text_color ) . ';
 		fill: ' . esc_attr( $btn_text_color ) . ';
 	}
-	.site-footer {
-		background-color: ' . esc_attr( $footer_bg_color ) . ';
-	}
-
 	.site-footer .footer-wrap .footer-info {
 		border-top: 1px solid ' . esc_attr( $footer_border_color ) . ';
 	}
 	.site-footer .footer-widget-wrap:before {
 		background-color: ' . esc_attr( $footer_border_color ) . ';
+	}
+	.site-footer {
+		background-color: ' . esc_attr( $footer_bg_color ) . ';
 	}
 	';
 

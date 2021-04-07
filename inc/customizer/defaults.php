@@ -25,7 +25,7 @@ function aino_defaults( $name ) {
 				'text_one_color'                => '#111111',
 				'text_two_color'                => '#222222',
 				'btn_text_color'                => '#ffffff',
-				'footer_bg_color'               => '#ffffff',
+				'footer_bg_color'               => false,
 				'footer_border_color'           => '#111111',
 				'blogcards_bg_color'            => '#ffffff',
 				'blogcards_bg_hover_color'      => '#ffffff',

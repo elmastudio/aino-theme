@@ -688,6 +688,11 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'featuredimg-radius-l';
 	}
 
+	// Honor custom Background color.
+	if ( '#ffffff' === get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) ) {
+		$classes[] = 'default-main-bg';
+	}
+
 	// Disable Flexbox Post Card Stretch.
 	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) === get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) ) && 'blogcards-shadow-none' === get_theme_mod( 'blogcards_shadow', aino_defaults( 'blogcards_shadow' ) ) ) {
 		$classes[] = 'blogcards-flexstart';

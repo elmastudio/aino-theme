@@ -765,27 +765,15 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 /* Pills */
-@mixin pill-dark {
+@mixin pill {
 	background: transparent;
-	color: var(--global--color-black);
-	border: 1px solid var(--global--color-black);
+	color: var(--global--color-text-one);
+	border: 1px solid var(--global--color-text-one);
 	line-height: 1;
 
 	&:hover {
-		color: var(--global--color-black);
-		background: var(--global--color-white);
-	}
-}
-
-@mixin pill-light {
-	background: transparent;
-	color: var(--global--color-white);
-	border: 1px solid var(--global--color-white);
-	line-height: 1;
-
-	&:hover {
-		color: var(--global--color-black);
-		background: var(--global--color-white);
+		color: var(--global--color-background);
+		background: var(--global--color-text-one);
 	}
 }
 

@@ -209,7 +209,7 @@ a.btn-outline,
 .single-post .entry-tags a,
 .comment-metadata a,
 .post-edit-link {
-	@include pill-dark;
+	@include pill;
 }
 
 .btn-pill,
@@ -219,7 +219,7 @@ a.btn-outline,
 .comment-time,
 .post-edit-link,
 .comment-edit-link {
-	@include pill-light;
+	@include pill;
 }
 
 .post-edit-link,
@@ -234,6 +234,11 @@ a.btn-outline,
 
 .comment-metadata a {
 	@include s-r-2 (margin-right);
+}
+
+.comment-meta .comment-metadata a.comment-time,
+.comment-meta .comment-metadata a.comment-time time {
+	line-height: 1;
 }
 
 .single {

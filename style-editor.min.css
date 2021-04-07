@@ -1,5 +1,4 @@
-/*! Editor Styles */:root{--global--color-primary:#7358de;--global--color-text-one:#111;--global--color-text-two:#222;--global--color-border:#111;--global--color-background:#f7f7ff;--global--color-code-one:#b2cacd;--global--color-code-two:#062e32;--global--color-success:#19d37b;--global--color-notification:#1e90ff;--global--color-error:#e52424;--global--color-black:#000;--global--color-white:#fff;--global--color-white-60:rgba(255,255,255,0.6)}
-.block-editor-block-list__block{margin-top:0;margin-bottom:0}
+/*! Editor Styles */.block-editor-block-list__block{margin-top:0;margin-bottom:0}
 .wp-block{max-width:43.5rem}
 .editor-styles-wrapper{text-rendering:optimizeLegibility;-moz-font-smoothing:antialiased;-webkit-font-smoothing:antialiased;padding:0 !important}
 .editor-styles-wrapper .wp-block[data-align="wide"] .wp-block[data-align="wide"],.editor-styles-wrapper .wp-block[data-align="full"] .wp-block[data-align="wide"]{max-width:93rem}
