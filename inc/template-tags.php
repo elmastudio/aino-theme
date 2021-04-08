@@ -502,6 +502,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'has-nav-cta';
 	}
 
+	if ( get_theme_mod( 'enable_dark_mode', false ) ) {
+		$classes[] = 'is-dark-theme';
+	}
+
 	// Customizer Options - Typography.
 	if ( 'regular' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
 		$classes[] = 'h-regular';
@@ -682,6 +686,11 @@ function aino_body_classes( $classes ) {
 
 	if ( 'radius-l' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-l';
+	}
+
+	// Honor custom Background color.
+	if ( '#ffffff' === get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) ) {
+		$classes[] = 'default-main-bg';
 	}
 
 	// Disable Flexbox Post Card Stretch.

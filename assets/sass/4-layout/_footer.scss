@@ -1,9 +1,9 @@
 .site-footer {
-	background-color: $color__background;
+	background-color: var(--global--color-background);
 
 	.textwidget p {
-		color: $color__text_two;
-		fill: $color__text_two;
+		color: var(--global--color-text-two);
+		fill: var(--global--color-text-two);
 	}
 
 	.footer-wrap {
@@ -45,7 +45,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			border-top: 1px solid $color__border;
+			border-top: 1px solid var(--global--color-border);
 			@include s-r-9 (padding-top);
 
 			@include breakpoint(sm) {
@@ -61,7 +61,7 @@
 			}
 
 			.site-info {
-				color: $color__text_two;
+				color: var(--global--color-text-two);
 				align-self: center;
 				text-align: center;
 
@@ -89,7 +89,7 @@
 			
 				a {
 					padding: 0;
-					color: $color__text_two;
+					color: var(--global--color-text-two);
 				}
 			}
 
@@ -136,7 +136,7 @@
 		&:before {
 			content: "";
 			display: block;
-			background-color: $color__border;
+			background-color: var(--global--color-border);
 			height: 1px;
 			@include s-r-12 (margin-bottom);
 
@@ -194,13 +194,13 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 	.textwidget p a,
 	.footer-widget-wrap a,
 	.site-footer .menu-social-container .icon {
-		color: $color__white;
-		fill: $color__white;
+		color: var(--global--color-white);
+		fill: var(--global--color-white);
 	}
 
 	.site-footer {
 		.footer-wrap .footer-info {
-			border-color: $color__white;
+			border-color: var(--global--color-white);
 		}
 	
 	}

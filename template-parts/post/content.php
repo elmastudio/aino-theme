@@ -24,7 +24,7 @@ $custom_post_excerpt = array(
 
 		<?php if ( '' !== get_the_post_thumbnail() ) : ?>
 			<div class="post-thumb">
-				<?php the_post_thumbnail( 'aino-l' ); ?>
+				<?php the_post_thumbnail( 'aino-thumb' ); ?>
 			</div><!-- .post-thumb -->
 		<?php endif; ?>
 

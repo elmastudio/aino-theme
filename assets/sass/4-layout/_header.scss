@@ -34,7 +34,7 @@
 		height: $s-7;
 		margin: 0;
 		padding: 0 0 0 $s-2;
-		color: $color__text_two;
+		color: var(--global--color-text-two);
 
 		@include breakpoint(sm) {
 			@include flexbox;
@@ -45,7 +45,7 @@
 			content: "";
 			display: block;
 			width: $s-9;
-			background-color: $color__border;
+			background-color: var(--global--color-border);
 			height: 1px;
 			margin-right: $s-2;
 		}
@@ -94,7 +94,7 @@
 		cursor: pointer;
 		margin: 0;
 		padding: 0;
-		color: $color__text_two;
+		color: var(--global--color-text-two);
 
 		@include breakpoint(md) {
 			padding: 0;
@@ -115,7 +115,7 @@
 		align-items: center;
 		max-width: 100%;
 		vertical-align: middle;
-		border: 1px solid $color__border;
+		border: 1px solid var(--global--color-border);
 	}
 }
 
@@ -308,9 +308,9 @@
 	right: $s-4;
 	padding: 0 17px;
 	border-radius: 0;
-	color: $color__text_one;
+	color: var(--global--color-text-one);
 	background: transparent;
-	border: 1px solid $color__text_one;
+	border: 1px solid var(--global--color-text-one);
 
 	@include breakpoint(sm) {
 		right: $s-7;
@@ -332,14 +332,14 @@ button.close-nav-toggle {
 	margin-left: $s-4;
 	padding: 0;
 	border-radius: 0;
-	color: $color__text_one;
+	color: var(--global--color-text-one);
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	width: 64px;
 	border-radius: 0;
 	background: transparent;
-	border: 1px solid $color__text_one;
+	border: 1px solid var(--global--color-text-one);
 	border-radius: 18px;
 
 	@include breakpoint(sm) {
@@ -401,7 +401,7 @@ ul.primary-menu {
 			position: absolute;
 			top: 0;
 			width: 100%;
-			fill: $color__text_one;
+			fill: var(--global--color-text-one);
 		}
 	}
 
@@ -437,7 +437,7 @@ ul.primary-menu {
 	}
 
 	a {
-		color: $color__text_one;
+		color: var(--global--color-text-one);
 		display: block;
 		text-decoration: none;
 		line-height: 1;
@@ -449,10 +449,10 @@ ul.primary-menu {
 
 	ul {
 		@include font-body-xs;
-		background: $color__white;
-		color: $color__text_one;
+		background: var(--global--color-background);
+		color: var(--global--color-text-one);
 		padding: $s-6;
-		border: 1px solid $color__border;
+		border: 1px solid var(--global--color-border);
 		position: absolute;
 		opacity: 0;
 		right: 9999rem;
@@ -546,7 +546,7 @@ ul.primary-menu {
 /*	Menu Modal
 /* -------------------------------------------------------------------------- */
 .menu-modal {
-	background: $color__white;
+	background: var(--global--color-white);
 	display: none;
 	opacity: 0;
 	overflow-y: auto;
@@ -583,7 +583,7 @@ ul.primary-menu {
 }
 
 .menu-modal-inner {
-	background: $color__white;
+	background: var(--global--color-background);
 	display: flex;
 	justify-content: stretch;
 	overflow: auto;
@@ -638,7 +638,7 @@ ul.primary-menu {
 		margin: 0 $s-4;
 		text-decoration: none;
 		width: 100%;
-		border-top: 1px solid $color__border;
+		border-top: 1px solid var(--global--color-border);
 
 		@include breakpoint(sm) {
 			margin: 0 $s-7;
@@ -691,7 +691,7 @@ ul.primary-menu {
 .menu-item-has-children {
 
 	a {
-		border-top: 1px solid $color__border;
+		border-top: 1px solid var(--global--color-border);
 		width: calc(100% - 32px);
 
 		@include breakpoint(md) {
@@ -713,7 +713,7 @@ ul.primary-menu {
 button.sub-menu-toggle {
 	margin: 0 $s-4 0 0;
 	padding: 0 0 0 $s-4;
-	color: $color__text_one;
+	color: var(--global--color-text-one);
 	border-radius: 0;
 	position: absolute;
 	right: 0;
@@ -920,39 +920,39 @@ button.sub-menu-toggle {
 	.nav-toggle .icon-toggle-open,
 	ul.primary-menu .dropdown .icon,
 	.header-cta-wrap a {
-		color: $color__white;
-		fill: $color__white;
+		color: var(--global--color-white);
+		fill: var(--global--color-white);
 	}
 
 	.header-cta-wrap a {
 
 		&:hover {
-			color: $color__white;
-			fill: $color__white;
+			color: var(--global--color-white);
+			fill: var(--global--color-white);
 		}
 	}
 
 	.nav-toggle {
-		border: 1px solid $color__white;
+		border: 1px solid var(--global--color-white);
 	}
 
 	.search-header .search-field,
 	.site-branding .site-description:before {
 		border-color: transparent;
-		background-color: $color__white;
+		background-color: var(--global--color-white);
 	}
 
 	.primary-menu .sub-menu .dropdown .icon {
-		fill: $color__text_one;
+		fill: var(--global--color-text-one);
 	}
 
 	.btn-outline a {
-		box-shadow: inset 0px 0px 0px 1px $color__white;
+		box-shadow: inset 0px 0px 0px 1px var(--global--color-white);
 	}
 
 	&.menu-bold {
 		.btn-outline a {
-			box-shadow: inset 0px 0px 0px 2px $color__white;
+			box-shadow: inset 0px 0px 0px 2px var(--global--color-white);
 		}
 	}
 
@@ -964,26 +964,26 @@ button.sub-menu-toggle {
 		.btn-naked a,
 		.site-header .menu-social-container .icon,
 		.header-cta-wrap a {
-			color: $color__white;
-			fill: $color__white;
+			color: var(--global--color-white);
+			fill: var(--global--color-white);
 		}
 
 		.header-inner .toggle .icon {
-			fill: $color__white;
+			fill: var(--global--color-white);
 		}
 
 		.primary-menu .icon::before,
 		.primary-menu .icon::after {
-			background-color: $color__white;
+			background-color: var(--global--color-white);
 		}
 
 		.primary-menu .sub-menu .icon::before,
 		.primary-menu .sub-menu .icon::after {
-			background-color: $color__text_one;
+			background-color: var(--global--color-text-one);
 		}
 
 		.primary-menu .sub-menu a {
-			color: $color__text_one;
+			color: var(--global--color-text-one);
 		}
 	}
 }

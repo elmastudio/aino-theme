@@ -615,31 +615,31 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-primary {
-	color: $color__white;
-	fill: $color__white;
-	background-color: $color__primary;
+	color: var(--global--color-white);
+	fill: var(--global--color-white);
+	background-color: var(--global--color-primary);
 }
 
 @mixin btn-outline {
-	color: $color__primary;
-	fill: $color__primary;
-	box-shadow: inset 0 0 0 1px $color__primary;
+	color: var(--global--color-primary);
+	fill: var(--global--color-primary);
+	box-shadow: inset 0 0 0 1px var(--global--color-primary);
 
 	&:hover {
-		color: $color__primary;
-		fill: $color__primary;
+		color: var(--global--color-primary);
+		fill: var(--global--color-primary);
 	}
 }
 
 @mixin btn-naked {
 	display: inline-block;
 	font-weight: normal;
-	color: $color__text_two;
-	fill: $color__text_two;
+	color: var(--global--color-text-two);
+	fill: var(--global--color-text-two);
 
 	&:hover {
-		color: $color__primary;
-		fill: $color__primary;
+		color: var(--global--color-primary);
+		fill: var(--global--color-primary);
 	}
 }
 
@@ -766,27 +766,14 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Pills */
 @mixin pill {
+	background: transparent;
+	color: var(--global--color-text-one);
+	border: 1px solid var(--global--color-text-one);
 	line-height: 1;
-	border: 1px solid $color__text_one;
-}
-
-@mixin pill-dark {
-	background: transparent;
-	color: $color__white;
 
 	&:hover {
-		color: $color__text_one;
-		background: $color__white;
-	}
-}
-
-@mixin pill-light {
-	background: transparent;
-	color: $color__text_one;
-
-	&:hover {
-		color: $color__white;
-		background: $color__text_one;
+		color: var(--global--color-background);
+		background: var(--global--color-text-one);
 	}
 }
 
@@ -963,12 +950,12 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Divier short */
+/* Divider short */
 
 @mixin divider {
 	content: "";
 	display: block;
-	background-color: #111;
+	background-color: var(--global--color-border);
 	height: 1px;
 	margin-left: $s-2;
 	margin-right: $s-2;

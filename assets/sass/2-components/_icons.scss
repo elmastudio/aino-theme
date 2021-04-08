@@ -13,7 +13,7 @@
 
 /* Social Icons */
 .menu-social-container .icon {
-	fill: $color__text_one;
+	fill: var(--global--color-text-one);
 	width: $s-6;
 	height: $s-6;
 }

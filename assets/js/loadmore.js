@@ -1,5 +1,6 @@
-jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" error
-	$('.loadmore').click(function(){
+
+(function($) {
+	$('#loadmore').click(function(){
  
 		var button = $(this),
 		    data = {
@@ -8,16 +9,16 @@ jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" e
 			'page' : aino_loadmore_params.current_page
 		};
  
-		$.ajax({ // you can also use $.post here
+		$.ajax({
 			url : aino_loadmore_params.ajaxurl, // AJAX handler
 			data : data,
 			type : 'POST',
 			beforeSend : function ( xhr ) {
-				button.text('Loading...'); // change the button text, you can also add a preloader image
+				button.text('Loading...', 'aino');
 			},
 			success : function( data ){
 				if( data ) { 
-					button.text( 'More posts' ).prev().before(data); // insert new posts
+					button.text( 'More posts', 'aino' ).prev().before(data); // insert new posts
 					aino_loadmore_params.current_page++;
  
 					if ( aino_loadmore_params.current_page == aino_loadmore_params.max_page ) 
@@ -31,4 +32,4 @@ jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" e
 			}
 		});
 	});
-});
+})(jQuery);

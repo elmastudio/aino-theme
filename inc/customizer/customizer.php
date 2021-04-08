@@ -15,6 +15,11 @@ function aino_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
+	$colors_section = $wp_customize->get_section( 'colors' );
+		if ( is_object( $colors_section ) ) {
+			$colors_section->title = __( 'Colors & Dark Mode', 'aino' );
+		}
+
 	/**
 	 * Add Theme Panels
 	 */
@@ -337,26 +342,6 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Theme Options - Footer
 	 */
-	// Theme Options - Footer - Footer Light Text.
-	$wp_customize->add_setting(
-		'footer_light',
-		array(
-			'default'           => aino_defaults( 'footer_light' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'footer_light',
-		array(
-			'label'       => esc_html__( 'Light Text Colors', 'aino' ),
-			'description' => esc_html__( 'Choose light text colors with a dark Footer background.', 'aino' ),
-			'section'     => 'aino_footer',
-			'type'        => 'checkbox',
-			'priority'    => 2,
-		)
-	);
-
 	// Theme Options - Footer - Footer Widget Alignment.
 	$wp_customize->add_setting(
 		'footerwidget_alignment',
@@ -843,6 +828,26 @@ function aino_customize_register( $wp_customize ) {
 	/**
 	 * Colors Panel
 	 */
+	// Colors - Dark mode.
+	$wp_customize->add_setting(
+		'enable_dark_mode',
+		array(
+			'default'           => aino_defaults( 'enable_dark_mode' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'enable_dark_mode',
+		array(
+			'label'       => esc_html__( 'Enable Dark Mode', 'aino' ),
+			'description' => esc_html__( 'Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text.', 'aino' ),
+			'section'     => 'colors',
+			'type'        => 'checkbox',
+			'priority'    => 1,
+		)
+	);
+
 	// Colors - Main Background Color.
 	$wp_customize->add_setting(
 		'main_bg_color',
@@ -995,6 +1000,26 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+		// Theme Options - Footer - Footer Light Text.
+		$wp_customize->add_setting(
+			'footer_light',
+			array(
+				'default'           => aino_defaults( 'footer_light' ),
+				'sanitize_callback' => 'aino_sanitize_checkbox',
+			)
+		);
+	
+		$wp_customize->add_control(
+			'footer_light',
+			array(
+				'label'       => esc_html__( 'Light Footer Text Colors', 'aino' ),
+				'description' => esc_html__( 'Choose light Footer text color with a dark Footer background.', 'aino' ),
+				'section'     => 'colors',
+				'type'        => 'checkbox',
+				'priority'    => 8,
+			)
+		);
+
 	// Colors - Blog Cards Background Color.
 	$wp_customize->add_setting(
 		'blogcards_bg_color',
@@ -1011,7 +1036,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 8,
+				'priority' => 9,
 				'settings' => 'blogcards_bg_color',
 			)
 		)
@@ -1033,7 +1058,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background on Hover', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 9,
+				'priority' => 10,
 				'settings' => 'blogcards_bg_color_hover',
 			)
 		)

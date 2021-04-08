@@ -37,7 +37,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		/**
 		 * Adds custom image sizes.
 		 */
-		add_image_size( 'aino-l', 1200, 800, true ); // Image Ratio 3:2.
+		add_image_size( 'aino-thumb', 1440, 810, true ); // Image Ratio 16:9.
 
 		// Custom logo.
 		$logo_width  = 170;
@@ -572,7 +572,7 @@ function aino_load_more_scripts() {
 	global $wp_query;
  
 	// register our main script but do not enqueue it yet
-	wp_register_script( 'aino_loadmore', get_theme_file_uri( '/assets/js/loadmore.js' ), array(), wp_get_theme()->get( 'Version' ), true );
+	wp_register_script( 'aino_loadmore', get_theme_file_uri( '/assets/js/loadmore.js' ), array('jquery'), wp_get_theme()->get( 'Version' ), true );
  
 	// now the most interesting part
 	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP

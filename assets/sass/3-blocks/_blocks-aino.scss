@@ -14,7 +14,7 @@
 		.wp-block-ainoblocks-advanced-button__link {
 
 			&:not(.has-background) {
-				background-color: $color__primary;
+				background-color: var(--global--color-primary);
 			}
 		}
 	}
@@ -24,8 +24,8 @@
 		.wp-block-ainoblocks-advanced-button__link {
 
 			&:not(.has-background) {
-				color: $color__primary;
-				border-color: $color__primary;
+				color: var(--global--color-primary);
+				border-color: var(--global--color-primary);
 			}
 		}
 	}
@@ -33,7 +33,7 @@
 	&.is-style-ghost {
 
 		.wp-block-ainoblocks-advanced-button__link {
-			color: $color__primary;
+			color: var(--global--color-primary);
 		}
 	}
 

@@ -36,16 +36,16 @@ cite a,
 h2.entry-title a,
 .comment-list b.fn a,
 .main-navigation a {
-	color: $color__text_one;
-	fill: $color__text_one;
+	color: var(--global--color-text-one);
+	fill: var(--global--color-text-one);
 }
 
 .posts-container .hentry .entry-meta a,
 .entry-comments a,
 .posted-on a,
 .comment-reply-title #cancel-comment-reply-link {
-	color: $color__text_two;
-	fill: $color__text_two;
+	color: var(--global--color-text-two);
+	fill: var(--global--color-text-two);
 }
 
 /* Link Hovers */

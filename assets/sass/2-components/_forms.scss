@@ -16,7 +16,7 @@ input[type="color"] {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: transparent;
-	border: 1px solid $color__border;
+	border: 1px solid var(--global--color-border);
 	outline: none;
 	line-height: 1;
 	max-height: 72px;
@@ -27,17 +27,17 @@ input[type="color"] {
 	}
 
 	.light-form & {
-		border: 1px solid $color__white;
-		color: $color__white;
+		border: 1px solid var(--global--color-white);
+		color: var(--global--color-white);
 
 		@include input-placeholder {
-			color: $color__white_60;
+			color: var(--global--color-white-60);
 		}
 
 		&:active,
 		&:focus {
-			background: $color__white;
-			color: $color__text_one;
+			background: var(--global--color-white);
+			color: var(--global--color-text-one);
 		}
 	}
 }
@@ -45,7 +45,7 @@ input[type="color"] {
 textarea {
 	width: 100%;
 	background-color: transparent;
-	border: 1px solid $color__border;
+	border: 1px solid var(--global--color-border);
 	padding: $s-4 $s-6;
 	outline: none;
 
@@ -54,17 +54,17 @@ textarea {
 	}
 
 	.light-form & {
-		border: 1px solid $color__white;
-		color: $color__white;
+		border: 1px solid var(--global--color-white);
+		color: var(--global--color-white);
 
 		@include input-placeholder {
-			color: $color__white_60;
+			color: var(--global--color-white-60);
 		}
 
 		&:active,
 		&:focus {
-			background: $color__white;
-			color: $color__text_one;
+			background: var(--global--color-white);
+			color: var(--global--color-text-one);
 		}
 	}
 }
@@ -76,7 +76,7 @@ input[type="checkbox"] {
 
 .color-notice,
 label.color-notice span {
-	color: $color__notification;
+	color: var(--global--color-notification);
 }
 
 .comment-respond textarea {
@@ -112,7 +112,7 @@ form label {
 
 select {
 	background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
-	border: 1px solid $color__border;
+	border: 1px solid var(--global--color-border);
 	background-repeat:no-repeat;
 	background-position: right 14px top 21px;
 	background-size: 12px 12px;
@@ -129,8 +129,8 @@ button[type="submit"] {
 	clear: both;
 
 	.light-btn & {
-		background: $color__white;
-		color: $color__text_one;
+		background: var(--global--color-white);
+		color: var(--global--color-text-one);
 	}
 }
 
@@ -215,11 +215,11 @@ button[type="submit"] {
 	}
 	
 	.mc4wp-success p {
-		color: $color__success;
+		color: var(--global--color-success);
 	}
 	
 	.mc4wp-notice p {
-		color: $color__notification;
+		color: var(--global--color-notification);
 	}
 }
 
@@ -228,7 +228,7 @@ button[type="submit"] {
 
 	.light-form {
 		p {
-			color: $color__white;
+			color: var(--global--color-white);
 		}
 	}
 }

@@ -368,7 +368,7 @@ body:not(.no-blogcard-spacing) {
 
 		.entry-comments,
 		.posted-on {
-			color: $color__text_two;
+			color: var(--global--color-text-two);
 		}
 
 		.posted-on {
@@ -502,7 +502,7 @@ body:not(.no-blogcard-spacing) {
 	.page-title {
 		margin: 0;
 		@include s-r-7(padding-top);
-		border-top: 1px solid $color__border;
+		border-top: 1px solid var(--global--color-border);
 
 		span {
 			padding-right: 0.125rem;

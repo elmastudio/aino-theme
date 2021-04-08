@@ -169,12 +169,16 @@
 .blog .site-content,
 .error404 .site-content,
 .search .site-content,
-.single-post .site-content {
+.single-post .post-thumb {
 	@include push--auto;
 
 	@include breakpoint(xl) {
 		max-width: $col12;
 	}
+}
+
+.single-post .site-content {
+	@include push--auto;
 }
 
 /* Default content width */
@@ -191,7 +195,10 @@
 
 /* Full width page template */
 .tpl-fullwidth .entry-content>*,
-.tpl-fullwidth .entry-header {
+.tpl-fullwidth .entry-header,
+.single-post .site-content .authorbox__wrap,
+.single-post .site-content .related-wrap,
+.single-post .comments-area {
 	@include push--auto;
 	max-width: $wide-content-width;
 }
