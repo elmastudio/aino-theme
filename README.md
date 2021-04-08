@@ -15,6 +15,14 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 1.3.0  
+**New:** Dark mode option (see Customizer/Colors).  
+**Enhance:** Convert SASS color variables to CSS variables.  
+**Enhance:** Convert Featured image aspect ratio from 3:2 to 16:9.  
+**Enhance:** German translation.  
+**Bugfix:** Load more button.  
+**Bugfix:** Full width blocks on single post.  
+
 ### 1.2.7  
 **Enhance:** Change CSS class no-margins to nogap.  
 **New:** TikTok social icon.  
