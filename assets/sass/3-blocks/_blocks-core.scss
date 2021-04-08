@@ -44,6 +44,11 @@
 		margin-right: auto;
 		clear: both;
 		@include outer-margins;
+
+		.alignwide {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
 	}
 
 	&.alignfull {
