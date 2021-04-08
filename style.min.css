@@ -118,9 +118,10 @@ textarea{resize:vertical}
 .push-center,.center{margin-left:auto;margin-right:auto}
 .has-padding-top{padding-top:5rem}
 .has-padding-bottom{padding-bottom:5rem}
-.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{margin-left:auto;margin-right:auto}
+.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .post-thumb{margin-left:auto;margin-right:auto}
+.single-post .site-content{margin-left:auto;margin-right:auto}
 .entry-content>*,.single .entry-tags,.comment-list,.comment-respond,.authorbox__details,.author-pic-link,.default-content-width{margin-left:auto;margin-right:auto;max-width:43.5rem}
-.tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header{margin-left:auto;margin-right:auto;max-width:87rem}
+.tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header,.single-post .site-content .authorbox__wrap,.single-post .site-content .related-wrap,.single-post .comments-area{margin-left:auto;margin-right:auto;max-width:87rem}
 .tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header,.tpl-hero .entry-content>*,.tpl-hero .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
 .entry-content>*.alignwide{max-width:87rem}
 .tpl-fullwidth .entry-header,.tpl-fullwidth .hentry .entry-content{padding-left:1.5rem;padding-right:1.5rem}
@@ -1333,7 +1334,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .site-footer .footer-widget-wrap:before{width:calc(100% - 3rem)}
 }@media(min-width:96em){.outer-margins{padding-left:1.5rem;padding-right:1.5rem}
 .mobile-margins{padding-left:0;padding-right:0}
-.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .site-content{max-width:93rem}
+.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .post-thumb{max-width:93rem}
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content .alignfull .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content .wp-block-cover.alignwide{max-width:87rem}
