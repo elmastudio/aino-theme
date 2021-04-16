@@ -841,7 +841,7 @@ function aino_customize_register( $wp_customize ) {
 		'enable_dark_mode',
 		array(
 			'label'       => esc_html__( 'Enable Dark Mode', 'aino' ),
-			'description' => esc_html__( 'Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text.', 'aino' ),
+			'description' => esc_html__( 'Your site will be shown with a dark background and light text.', 'aino' ),
 			'section'     => 'colors',
 			'type'        => 'checkbox',
 			'priority'    => 1,
