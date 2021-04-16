@@ -3,9 +3,9 @@
 */
 
 /* Includes */
-
 @import "1-base/variables";
 @import "1-base/mixins";
+@import "1-base/colors";
 
 .block-editor-block-list__block {
 	margin-top: 0;
@@ -315,6 +315,15 @@ ul {
 			font-size: 142px;
 		}
 	}
+}
+
+.wp-block-paragraph {
+	@include s-r-7(padding-bottom);
+}
+
+.wp-block[data-align="wide"] .wp-block-group__inner-container .wp-block-paragraph,
+.wp-block[data-align="full"] .wp-block-group__inner-container .wp-block-paragraph {
+	padding-bottom: 0;
 }
 
 dfn,
@@ -635,7 +644,6 @@ textarea {
 }
 
 /* Default Appender */
-
 .editor-default-block-appender .editor-default-block-appender__content {
 	@include font-body;
 	@include font-body-m;

@@ -39,7 +39,7 @@
 		</figure><!-- .post-thumb -->
 	<?php endif; ?>
 
-	<div class="entry-content col push-center default-margins">
+	<div class="entry-content post-width">
 		<?php
 			the_content(
 				sprintf(

@@ -1,3 +1,4 @@
+:root{--mobile--grid-gap:2rem}
 *,*:after,*:before{-webkit-box-sizing:inherit;box-sizing:inherit;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
@@ -112,9 +113,10 @@ textarea{resize:vertical}
 .col11.nogap{max-width:calc(85.25rem - 3rem)}
 .col12{max-width:93rem}
 .col12.nogap{max-width:calc(93rem - 3rem)}
-.outer-margins{padding-left:1rem;padding-right:1rem}
+.entry-content.post-width>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce){margin-left:auto;margin-right:auto;width:calc(100% - var(--mobile--grid-gap));max-width:43.5rem}
 .mobile-margins{padding-left:1rem;padding-right:1rem}
 .default-margins,.search-no-results .entry-content{padding-left:1rem;padding-right:1rem}
+.outer-margins{padding-left:1rem;padding-right:1rem}
 .push-center,.center{margin-left:auto;margin-right:auto}
 .has-padding-top{padding-top:5rem}
 .has-padding-bottom{padding-bottom:5rem}
@@ -179,7 +181,7 @@ textarea{resize:vertical}
 .pr__9{padding-right:3rem}
 .pr__10{padding-right:3rem}
 .pr__11{padding-right:3.5rem}
-body,button,input,select,table,textarea{font-family:"IBM Plex Sans",sans-serif;line-height:1.4}
+body,button,input,select,table,textarea{font-family:"IBM Plex Sans",sans-serif;line-height:1.4;color:var(--global--color-text-two)}
 div[class*='wp-block-'] figcaption,.wp-block-calendar table,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-size:1rem;color:var(--global--color-text-two)}
 .entry-content p.has-s-font-size{font-size:1rem}
 .single .navigation a span.nav-subtitle,.entry-content p.has-extrasmall-font-size,.entry-content p.has-xs-font-size,.entry-content .sharedaddy h3.sd-title,.blocks-gallery-grid .blocks-gallery-item figcaption{font-size:.875rem}
@@ -835,9 +837,9 @@ body.is-dark-theme.default-main-bg .menu-modal-inner,body.is-dark-theme.default-
 }@media(min-width:48em){.mobile-hide{display:block}
 .desktop__overlap-top{margin-top:-12rem}
 .col6{max-width:21rem}
-.outer-margins{padding-left:2rem;padding-right:2rem}
 .default-margins,.search-no-results .entry-content{padding-left:0;padding-right:0}
 .col-margins{margin-left:1rem;margin-right:1rem}
+.outer-margins{padding-left:2rem;padding-right:2rem}
 .has-padding-top{padding-top:6rem}
 .has-padding-bottom{padding-bottom:6rem}
 .tpl-fullwidth .entry-header,.tpl-fullwidth .hentry .entry-content{padding-left:3rem;padding-right:3rem}
@@ -1197,9 +1199,9 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .menu-bottom{padding:0}
 .menu-bottom .social-menu{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 }@media(min-width:80em){.col6{max-width:46.5rem}
-.outer-margins{padding-left:3rem;padding-right:3rem}
 .mobile-margins{padding-left:1.5rem;padding-right:1.5rem}
 .col-margins{margin-left:1.5rem;margin-right:1.5rem}
+.outer-margins{padding-left:3rem;padding-right:3rem}
 .has-padding-top{padding-top:9rem}
 .has-padding-bottom{padding-bottom:9rem}
 .blog-2-column .posts-container .hentry,.posts-container .hentry,.s6,.single-post .related-post,.single-post .related-post,.single-post .navigation .next,.single-post .navigation .prev{margin-left:1.5rem;margin-right:1.5rem}
@@ -1333,8 +1335,8 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .footerinfo-centered .site-footer .footer-wrap .footer-info .back-top{padding-top:1.5rem}
 .site-footer .footer-widget-wrap:before{margin-bottom:6rem}
 .site-footer .footer-widget-wrap:before{width:calc(100% - 3rem)}
-}@media(min-width:96em){.outer-margins{padding-left:1.5rem;padding-right:1.5rem}
-.mobile-margins{padding-left:0;padding-right:0}
+}@media(min-width:96em){.mobile-margins{padding-left:0;padding-right:0}
+.outer-margins{padding-left:1.5rem;padding-right:1.5rem}
 .header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .post-thumb{max-width:93rem}
 .hentry .entry-content>*.alignwide,.hentry .entry-content>* .alignwide{padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content .alignfull .alignwide{padding-left:1.5rem;padding-right:1.5rem}

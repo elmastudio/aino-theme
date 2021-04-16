@@ -6,6 +6,7 @@ select,
 table,
 textarea {
 	@include font-body;
+	color: var(--global--color-text-two);
 }
 
 div[class*='wp-block-'] figcaption,
