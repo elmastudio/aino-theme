@@ -24,7 +24,6 @@
 }
 
 /* Alignment */
-
 .entry-content {
 
 	.aligncenter {
@@ -36,18 +35,27 @@
 
 .hentry .entry-content>* {
 
-	&.alignwide,
-	.alignwide {
+	&.alignwide {
 		max-width: $col12;
 		position: relative;
-		margin-left: auto;
-		margin-right: auto;
 		clear: both;
+	}
+
+	&.alignwide:not(.wp-block-group) {
 		@include outer-margins;
+		@include push--auto;
 
 		.alignwide {
 			padding-left: 0 !important;
 			padding-right: 0 !important;
+		}
+	}
+
+	&.wp-block-group.alignwide {
+		width: calc(100% - var(--global--grid-gap));
+
+		@include breakpoint(xl) {
+			max-width: calc(var(--global--max-content-width) - var(--global--grid-gap));
 		}
 	}
 

@@ -45,6 +45,7 @@ $col12               : 93rem;
 
 $default-content-width: 43.5rem;
 $wide-content-width     : 87rem;
+$max-content-width     : 87rem;
 
 /* Border Radius */
 $border-radius-s     : 1.5rem; // 24px
@@ -53,5 +54,6 @@ $border-radius-l     : 2.625rem; // 42px
 $border-radius-circle: 6.25rem; // 100px
 
 :root {
-	--mobile--grid-gap: #{2 * $s-4}; // 2rem.
+	--global--max-content-width: 93rem;
+	--global--grid-gap: #{2 * $s-4}; // 1rem.
 }

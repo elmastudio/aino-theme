@@ -45,7 +45,8 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.3.1 =
-Enhance: German translation
+Enhance: German translation.
+Enhance: Wide aligned blocks responsiveness.
 
 = 1.3.0 =
 New: Dark mode option (see Customizer/Colors).
