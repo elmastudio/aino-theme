@@ -21,7 +21,7 @@ function aino_customizer_css() {
 	$footer_bg_color          = get_theme_mod( 'footer_bg_color', aino_defaults( 'footer_bg_color' ) );
 	$footer_border_color      = get_theme_mod( 'footer_border_color', aino_defaults( 'footer_border_color' ) );
 
-	$css =
+	$theme_css =
 	'
 	body, .menu-modal-inner, ul.primary-menu ul {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
@@ -79,7 +79,7 @@ function aino_customizer_css() {
 	}
 	';
 
-	wp_add_inline_style( 'aino-style', wp_strip_all_tags( $css ) );
+	wp_add_inline_style( 'aino-style', wp_strip_all_tags( $theme_css ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'aino_customizer_css' );

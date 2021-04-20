@@ -11,12 +11,14 @@
 function aino_editor_customizer_generated_values() {
 
 	// Retrieve colors from the Customizer.
-	$main_bg_color     = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
+	
 	$primary_one_color = get_theme_mod( 'primary_one_color', aino_defaults( 'primary_one_color' ) );
 	$btn_text_color    = get_theme_mod( 'btn_text_color', aino_defaults( 'btn_text_color' ) );
+	$main_bg_color = get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) );
+
 
 	// Build styles.
-	$css = '
+	$editor_css = '
 	.editor-styles-wrapper {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
@@ -33,6 +35,29 @@ function aino_editor_customizer_generated_values() {
 		fill: ' . esc_attr( $primary_one_color ) . ';
 	}
 
+	.theme-dark-mode .editor-styles-wrapper {
+		background-color: #000000;
+	}
+
+	.theme-dark-mode .editor-styles-wrapper,
+	.theme-dark-mode .editor-styles-wrapper .editor-post-title__input,
+	.theme-dark-mode .editor-styles-wrapper h1,
+	.theme-dark-mode .editor-styles-wrapper h2,
+	.theme-dark-mode .editor-styles-wrapper h3,
+	.theme-dark-mode .editor-styles-wrapper h4,
+	.theme-dark-mode .editor-styles-wrapper h5,
+	.theme-dark-mode .editor-styles-wrapper h6,
+	.theme-dark-mode .editor-styles-wrapper p,
+	.theme-dark-mode .editor-styles-wrapper h1 a,
+	.theme-dark-mode .editor-styles-wrapper h2 a,
+	.theme-dark-mode .editor-styles-wrapper h3 a,
+	.theme-dark-mode .editor-styles-wrapper h4 a,
+	.theme-dark-mode .editor-styles-wrapper h5 a,
+	.theme-dark-mode .editor-styles-wrapper h6 a,
+	.theme-dark-mode .editor-styles-wrapper p a {
+		color: #ffffff;
+	}
+
 	.block-editor__container .editor-styles-wrapper .wp-block-button .wp-block-button__link {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 		color: ' . esc_attr( $btn_text_color ) . ';
@@ -44,7 +69,7 @@ function aino_editor_customizer_generated_values() {
 
 	';
 
-	return wp_strip_all_tags( apply_filters( 'aino_editor_customizer_generated_values', $css ) );
+	return wp_strip_all_tags( apply_filters( 'aino_editor_customizer_generated_values', $editor_css ) );
 }
 
 /**

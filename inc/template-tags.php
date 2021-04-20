@@ -798,6 +798,10 @@ function aino_custom_admin_body_class( $classes ) {
 		$classes .= ' h-bold';
 	}
 
+	if ( true === get_theme_mod( 'enable_dark_mode', aino_defaults( 'enable_dark_mode' ) ) ) {
+		$classes .= ' theme-dark-mode';
+	}
+
 	return $classes;
 }
 add_filter( 'admin_body_class', 'aino_custom_admin_body_class' );
