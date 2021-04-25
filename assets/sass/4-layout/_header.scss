@@ -110,7 +110,6 @@
 	}
 
 	.search-field {
-		background: transparent;
 		@include flexbox;
 		align-items: center;
 		max-width: 100%;
@@ -934,12 +933,6 @@ button.sub-menu-toggle {
 
 	.nav-toggle {
 		border: 1px solid var(--global--color-white);
-	}
-
-	.search-header .search-field,
-	.site-branding .site-description:before {
-		border-color: transparent;
-		background-color: var(--global--color-white);
 	}
 
 	.primary-menu .sub-menu .dropdown .icon {

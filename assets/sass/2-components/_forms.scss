@@ -26,6 +26,12 @@ input[type="color"] {
 		color: #8e8e8e;
 	}
 
+	&:active,
+	&:focus {
+		background: var(--global--color-white);
+		color: var(--global--color-black);
+	}
+
 	.light-form & {
 		border: 1px solid var(--global--color-white);
 		color: var(--global--color-white);
@@ -37,7 +43,7 @@ input[type="color"] {
 		&:active,
 		&:focus {
 			background: var(--global--color-white);
-			color: var(--global--color-text-one);
+			color: var(--global--color-black);
 		}
 	}
 }
