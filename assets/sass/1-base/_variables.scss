@@ -1,9 +1,4 @@
 
-/* Fonts */
-$font__heading       : 'IBM Plex Sans', sans-serif;
-$font__body          : 'IBM Plex Sans', sans-serif;
-$font__code          : 'Monaco', 'Courier 10 Pitch', Courier, monospace;
-
 /* Spacing */
 $s-0                 : 0;
 $s-1                 : 0.25rem;
@@ -54,6 +49,20 @@ $border-radius-l     : 2.625rem; // 42px
 $border-radius-circle: 6.25rem; // 100px
 
 :root {
+	/* Fonts */
+	--global--font-primary: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+	--global--font-secondary: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+	--global--font-code: 'Monaco', 'Courier 10 Pitch', -apple-system, Courier, monospace;
+
+	/* Font Families */
+	--heading--font-family: var(--global--font-primary);
+	--body--font-family: var(--global--font-secondary);
+	--code--font-family: var(--global--font-code);
+
+	/* Content widths and grid */
 	--global--max-content-width: 93rem;
 	--global--grid-gap: #{2 * $s-4}; // 1rem.
 }
+
+/* Fonts */
+$font__heading       : 'IBM Plex Sans', sans-serif;

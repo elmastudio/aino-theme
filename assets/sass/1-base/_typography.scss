@@ -106,9 +106,9 @@ h3,
 h4,
 h5,
 h6 {
+	@include font-heading;
 	@include font-regular;
 	color: var(--global--color-text-one);
-	line-height: 1;
 }
 
 h1.site-title,

@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.3.1 =
+Enhance: Add support for local fonts.
 Enhance: German translation.
 Enhance: Theme screenshot.
 Enhance: Header search form.
