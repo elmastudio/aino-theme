@@ -289,6 +289,7 @@ body:not(.no-blogcard-spacing) {
 .parent:not(.single-post) {
 
 	.hentry {
+
 		.entry-header {
 			@include s-r-6 (padding-top);
 		}
@@ -311,7 +312,21 @@ body:not(.no-blogcard-spacing) {
 					padding-top: 0;
 					@include s-r-6 (padding-left);
 				}
+
+				&.no-featured-image {
+					.entry-header {
+						padding-left: 0;
+						@include s-r-10 (padding-top);
+					}
+				}
 			}
+		}
+	}
+
+	.hentry.no-featured-image {
+
+		.entry-header {
+			@include s-r-10 (padding-top);
 		}
 	}
 }

@@ -377,12 +377,12 @@ a.btn-outline:hover,.btn-outline a:hover{color:var(--global--color-primary);fill
 .authorbox__wrap .author-pic-link:after{width:5rem;height:5rem;min-width:5rem;min-height:5rem}
 .comment-avatar:after{width:2.5rem;height:2.5rem;min-width:2.5rem;min-height:2.5rem}
 .author-avatar-link:after{width:3rem;height:3rem;min-width:3rem;min-height:3rem}
-.badge-highlight{background:transparent;color:var(--global--color-text-one);border:1px solid var(--global--color-text-one);line-height:1;font-size:1.125rem;border-radius:1rem;padding:.25rem .875rem .25rem 3.875rem;display:block;position:absolute;top:1rem;left:1rem;z-index:1;background:transparent !important;color:var(--global--color-black);border-color:var(--global--color-black)}
-.badge-highlight:hover{color:var(--global--color-background);background:var(--global--color-text-one)}
+.badge-highlight{background:transparent;color:var(--global--color-text-one);border:1px solid var(--global--color-text-one);line-height:1;font-size:1.125rem;border-radius:1rem;padding:.25rem .875rem .25rem 3.875rem;display:block;position:absolute;top:1rem;left:1rem;z-index:1}
 .badge-highlight .sticky-icon{border-right:1px solid var(--global--color-black);padding:5px 14px;position:absolute;top:0;left:0;height:100%}
 .badge-highlight .sticky-icon .icon{width:1.125rem;height:1.125rem;display:block}
 .sticky-light .badge-highlight{color:var(--global--color-white);border:1px solid var(--global--color-white)}
 .sticky-light .badge-highlight .sticky-icon{border-right:1px solid var(--global--color-white)}
+.no-featured-image .badge-highlight{top:0;left:0}
 ul,ol{margin:0}
 ul{list-style:disc}
 ol{list-style:decimal}
@@ -701,6 +701,8 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-top
 .blog .hentry .entry-header,.archive .hentry .entry-header,.search .hentry .entry-header,.parent:not(.single-post) .hentry .entry-header{padding-top:1rem}
 .blog:not(.no-blogcard-spacing) .hentry .entry-header,.archive:not(.no-blogcard-spacing) .hentry .entry-header,.search:not(.no-blogcard-spacing) .hentry .entry-header,.parent:not(.single-post):not(.no-blogcard-spacing) .hentry .entry-header{padding-right:1rem;padding-left:1rem}
 .blog.blog-1-column.no-blogcard-spacing .hentry .entry-header,.archive.blog-1-column.no-blogcard-spacing .hentry .entry-header,.search.blog-1-column.no-blogcard-spacing .hentry .entry-header,.parent:not(.single-post).blog-1-column.no-blogcard-spacing .hentry .entry-header{padding-top:0;padding-left:1rem}
+.blog.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.archive.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.search.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.parent:not(.single-post).blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header{padding-left:0;padding-top:2rem}
+.blog .hentry.no-featured-image .entry-header,.archive .hentry.no-featured-image .entry-header,.search .hentry.no-featured-image .entry-header,.parent:not(.single-post) .hentry.no-featured-image .entry-header{padding-top:2rem}
 .hentry .entry-cats{padding-bottom:.5rem}
 .hentry .entry-summary{padding-top:1rem}
 .updated:not(.published){display:none}
@@ -947,6 +949,8 @@ button.sub-menu-toggle{margin:0 2rem 0 0}
 .header-light .primary-menu .sub-menu .icon::before,.header-light .primary-menu .sub-menu .icon::after{background-color:var(--global--color-text-one)}
 .header-light .primary-menu .sub-menu a{color:var(--global--color-text-one)}
 .posts-container .hentry{margin-bottom:2rem}
+.blog.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.archive.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.search.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.parent:not(.single-post).blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header{padding-top:2.5rem}
+.blog .hentry.no-featured-image .entry-header,.archive .hentry.no-featured-image .entry-header,.search .hentry.no-featured-image .entry-header,.parent:not(.single-post) .hentry.no-featured-image .entry-header{padding-top:2.5rem}
 .group-blog .byline{padding:0 1.5rem 0 0}
 .blog .entry-link .posted-on:before,.archive .entry-link .posted-on:before,.search .entry-link .posted-on:before{width:2rem}
 .blog.has-post-author.has-comments-count .entry-link .entry-comments:before,.archive.has-post-author.has-comments-count .entry-link .entry-comments:before,.search.has-post-author.has-comments-count .entry-link .entry-comments:before{width:2rem}
@@ -1126,6 +1130,8 @@ body:not(.no-blogcard-spacing) .entry-link{padding-bottom:1.25rem}
 .blog:not(.no-blogcard-spacing) .hentry .entry-header,.archive:not(.no-blogcard-spacing) .hentry .entry-header,.search:not(.no-blogcard-spacing) .hentry .entry-header,.parent:not(.single-post):not(.no-blogcard-spacing) .hentry .entry-header{padding-right:1.25rem}
 .blog:not(.no-blogcard-spacing) .hentry .entry-header,.archive:not(.no-blogcard-spacing) .hentry .entry-header,.search:not(.no-blogcard-spacing) .hentry .entry-header,.parent:not(.single-post):not(.no-blogcard-spacing) .hentry .entry-header{padding-left:1.25rem}
 .blog.blog-1-column.no-blogcard-spacing .hentry .entry-header,.archive.blog-1-column.no-blogcard-spacing .hentry .entry-header,.search.blog-1-column.no-blogcard-spacing .hentry .entry-header,.parent:not(.single-post).blog-1-column.no-blogcard-spacing .hentry .entry-header{padding-left:1.25rem}
+.blog.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.archive.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.search.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.parent:not(.single-post).blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header{padding-top:3rem}
+.blog .hentry.no-featured-image .entry-header,.archive .hentry.no-featured-image .entry-header,.search .hentry.no-featured-image .entry-header,.parent:not(.single-post) .hentry.no-featured-image .entry-header{padding-top:3rem}
 .posts-container .hentry .entry-footer{padding-top:1.25rem}
 body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-left:1.25rem}
 body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-right:1.25rem}
@@ -1296,6 +1302,8 @@ body:not(.no-blogcard-spacing) .entry-link{padding-bottom:1.5rem}
 .blog:not(.no-blogcard-spacing) .hentry .entry-header,.archive:not(.no-blogcard-spacing) .hentry .entry-header,.search:not(.no-blogcard-spacing) .hentry .entry-header,.parent:not(.single-post):not(.no-blogcard-spacing) .hentry .entry-header{padding-right:1.5rem}
 .blog:not(.no-blogcard-spacing) .hentry .entry-header,.archive:not(.no-blogcard-spacing) .hentry .entry-header,.search:not(.no-blogcard-spacing) .hentry .entry-header,.parent:not(.single-post):not(.no-blogcard-spacing) .hentry .entry-header{padding-left:1.5rem}
 .blog.blog-1-column.no-blogcard-spacing .hentry .entry-header,.archive.blog-1-column.no-blogcard-spacing .hentry .entry-header,.search.blog-1-column.no-blogcard-spacing .hentry .entry-header,.parent:not(.single-post).blog-1-column.no-blogcard-spacing .hentry .entry-header{padding-left:1.5rem}
+.blog.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.archive.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.search.blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header,.parent:not(.single-post).blog-1-column.no-blogcard-spacing .hentry.no-featured-image .entry-header{padding-top:4rem}
+.blog .hentry.no-featured-image .entry-header,.archive .hentry.no-featured-image .entry-header,.search .hentry.no-featured-image .entry-header,.parent:not(.single-post) .hentry.no-featured-image .entry-header{padding-top:4rem}
 .posts-container .hentry .entry-footer{padding-top:1.5rem}
 body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-left:1.5rem}
 body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-right:1.5rem}

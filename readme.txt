@@ -50,6 +50,7 @@ Enhance: Theme screenshot.
 Enhance: Header search form.
 Bugfix: Wide aligned blocks responsiveness.
 Bugfix: Dark mode in editor view.
+Bugfix: Styles for posts without featured image.
 
 = 1.3.0 =
 New: Dark mode option (see Customizer/Colors).
