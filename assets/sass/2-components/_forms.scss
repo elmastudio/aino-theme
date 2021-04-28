@@ -193,7 +193,7 @@ button[type="submit"] {
 	input,
 	textarea,
 	select {
-		@include border-radius-s;
+		border-radius: var(--global--border-radius-s);
 	}
 }
 

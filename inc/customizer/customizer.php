@@ -28,7 +28,7 @@ function aino_customize_register( $wp_customize ) {
 		array(
 			'priority'       => 1,
 			'theme_supports' => '',
-			'title'          => esc_html__( 'Theme', 'aino' ),
+			'title'          => esc_html__( 'Theme Options', 'aino' ),
 		)
 	);
 
@@ -566,10 +566,16 @@ function aino_customize_register( $wp_customize ) {
 			'priority'    => 1,
 			'type'        => 'select',
 			'choices'     => array(
-				'radius-none' => esc_html__( '0', 'aino' ),
-				'radius-s'    => esc_html__( '24', 'aino' ),
-				'radius-m'    => esc_html__( '36', 'aino' ),
-				'radius-l'    => esc_html__( '42', 'aino' ),
+				'border-radius-none'  => esc_html__( 'none', 'aino' ),
+				'border-radius-xxs'   => esc_html__( 'XXS', 'aino' ),
+				'border-radius-xs'    => esc_html__( 'XS', 'aino' ),
+				'border-radius-s'     => esc_html__( 'S', 'aino' ),
+				'border-radius-m'     => esc_html__( 'M', 'aino' ),
+				'border-radius-l'     => esc_html__( 'L', 'aino' ),
+				'border-radius-xl'    => esc_html__( 'XL', 'aino' ),
+				'border-radius-xxl'   => esc_html__( 'XXL', 'aino' ),
+				'border-radius-xxxl'  => esc_html__( '3XL', 'aino' ),
+				'border-radius-xxxxl' => esc_html__( '4XL', 'aino' ),
 			),
 		)
 	);
@@ -798,10 +804,16 @@ function aino_customize_register( $wp_customize ) {
 			'priority'    => 1,
 			'type'        => 'select',
 			'choices'     => array(
-				'radius-none' => esc_html__( '0', 'aino' ),
-				'radius-s'    => esc_html__( '24', 'aino' ),
-				'radius-m'    => esc_html__( '36', 'aino' ),
-				'radius-l'    => esc_html__( '42', 'aino' ),
+				'border-radius-none'  => esc_html__( 'none', 'aino' ),
+				'border-radius-xxs'   => esc_html__( 'XXS', 'aino' ),
+				'border-radius-xs'    => esc_html__( 'XS', 'aino' ),
+				'border-radius-s'     => esc_html__( 'S', 'aino' ),
+				'border-radius-m'     => esc_html__( 'M', 'aino' ),
+				'border-radius-l'     => esc_html__( 'L', 'aino' ),
+				'border-radius-xl'    => esc_html__( 'XL', 'aino' ),
+				'border-radius-xxl'   => esc_html__( 'XXL', 'aino' ),
+				'border-radius-xxxl'  => esc_html__( '3XL', 'aino' ),
+				'border-radius-xxxxl' => esc_html__( '4XL', 'aino' ),
 			),
 		)
 	);

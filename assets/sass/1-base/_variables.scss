@@ -62,7 +62,34 @@ $border-radius-circle: 6.25rem; // 100px
 	/* Content widths and grid */
 	--global--max-content-width: 93rem;
 	--global--grid-gap: #{2 * $s-4}; // 1rem.
+
+	/* Border radius */
+	--global--border-radius-xxs: 0.625rem;
+	--global--border-radius-xs: 0.938rem;
+	--global--border-radius-s: 1.25rem;
+	--global--border-radius-m: 1.563rem;
+	--global--border-radius-l: 1.875rem;
+	--global--border-radius-xl: 2.5rem;
+	--global--border-radius-xxl: 3.125rem;
+	--global--border-radius-xxxl: 3.75rem;
+	--global--border-radius-xxxxl: 4.375rem;
 }
 
 /* Fonts */
 $font__heading       : 'IBM Plex Sans', sans-serif;
+
+@media only screen and (min-width: 48em) { // from small tablet screens (md)
+
+	:root {
+		/* Border radius */
+		--global--border-radius-xxs: 0.625rem;
+		--global--border-radius-xs: 1.25rem;
+		--global--border-radius-s: 1.875rem;
+		--global--border-radius-m: 2.5rem;
+		--global--border-radius-l: 3.125rem;
+		--global--border-radius-xl: 3.75rem;
+		--global--border-radius-xxl: 4.375rem;
+		--global--border-radius-xxxl: 5rem;
+		--global--border-radius-xxxxl: 5.625rem;
+	}
+}

@@ -109,21 +109,91 @@ body:not(.no-blogcard-spacing) {
 }
 
 /* Blog Cards - Border Radius */
+.blogcards-radius-xxs {
+
+	.entry-link,
+	.related-post a,
+	.navigation .nav-thumb,
+	.navigation .nav-thumb img {
+		border-radius: var(--global--border-radius-xxs);
+	}
+
+	.entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxs) var(--global--border-radius-xxs) 0 ;
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxs);
+	}
+}
+
+.blog-1-column.blogcards-radius-xxs {
+
+	.entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxs) 0 0 var(--global--border-radius-xxs);
+		}
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxs);
+		}
+	}
+}
+
+.blogcards-radius-xs {
+
+	.entry-link,
+	.related-post a,
+	.navigation .nav-thumb,
+	.navigation .nav-thumb img {
+		border-radius: var(--global--border-radius-xs);
+	}
+
+	.entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xs) var(--global--border-radius-xs) 0 ;
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xs);
+	}
+}
+
+.blog-1-column.blogcards-radius-xs {
+
+	.entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xs) 0 0 var(--global--border-radius-xs);
+		}
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xs);
+		}
+	}
+}
+
 .blogcards-radius-s {
 
 	.entry-link,
 	.related-post a,
 	.navigation .nav-thumb,
 	.navigation .nav-thumb img {
-		@include border-radius-s;
+		border-radius: var(--global--border-radius-s);
 	}
 
 	.entry-link .post-thumb img {
-		border-radius: $border-radius-s $border-radius-s 0 0;
+		border-radius: var(--global--border-radius-s) var(--global--border-radius-s) 0 ;
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
-		border-radius: $border-radius-s;
+		border-radius: var(--global--border-radius-s);
 	}
 }
 
@@ -132,14 +202,14 @@ body:not(.no-blogcard-spacing) {
 	.entry-link .post-thumb img {
 
 		@include breakpoint(md) {
-			border-radius: $border-radius-s 0 0 $border-radius-s;
+			border-radius: var(--global--border-radius-s) 0 0 var(--global--border-radius-s);
 		}
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
 
 		@include breakpoint(md) {
-			border-radius: $border-radius-s;
+			border-radius: var(--global--border-radius-s);
 		}
 	}
 }
@@ -150,15 +220,15 @@ body:not(.no-blogcard-spacing) {
 	.related-post a,
 	.navigation .nav-thumb,
 	.navigation .nav-thumb img {
-		@include border-radius-m;
+		border-radius: var(--global--border-radius-m);
 	}
 
 	.entry-link .post-thumb img {
-		border-radius: $border-radius-m $border-radius-m 0 0;
+		border-radius: var(--global--border-radius-m) var(--global--border-radius-m) 0 0;
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
-		border-radius: $border-radius-m;
+		border-radius: var(--global--border-radius-m);
 	}
 }
 
@@ -167,14 +237,14 @@ body:not(.no-blogcard-spacing) {
 	.entry-link .post-thumb img {
 
 		@include breakpoint(md) {
-			border-radius: $border-radius-m 0 0 $border-radius-m;
+			border-radius: var(--global--border-radius-m) 0 0 var(--global--border-radius-m);
 		}
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
 
 		@include breakpoint(md) {
-			border-radius: $border-radius-m;
+			border-radius: var(--global--border-radius-m);
 		}
 	}
 }
@@ -185,15 +255,15 @@ body:not(.no-blogcard-spacing) {
 	.related-post a,
 	.navigation .nav-thumb,
 	.navigation .nav-thumb img {
-		@include border-radius-l;
+		border-radius: var(--global--border-radius-l);
 	}
 
 	.entry-link .post-thumb img {
-		border-radius: $border-radius-l $border-radius-l 0 0;
+		border-radius: var(--global--border-radius-l) var(--global--border-radius-l) 0 0;
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
-		border-radius: $border-radius-l;
+		border-radius: var(--global--border-radius-l);
 	}
 }
 
@@ -202,14 +272,154 @@ body:not(.no-blogcard-spacing) {
 	.entry-link .post-thumb img {
 
 		@include breakpoint(md) {
-			border-radius: $border-radius-l 0 0 $border-radius-l;
+			border-radius: var(--global--border-radius-l)l 0 0 var(--global--border-radius-l);
 		}
 	}
 
 	&.blogcards-no-shadow .entry-link .post-thumb img {
 
 		@include breakpoint(md) {
-			border-radius: $border-radius-l;
+			border-radius: var(--global--border-radius-l);
+		}
+	}
+}
+
+.blogcards-radius-xl {
+
+	.entry-link,
+	.related-post a,
+	.navigation .nav-thumb,
+	.navigation .nav-thumb img {
+		border-radius: var(--global--border-radius-xl);
+	}
+
+	.entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xl) var(--global--border-radius-xl) 0 0;
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xl);
+	}
+}
+
+.blog-1-column.blogcards-radius-xl {
+
+	.entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xl)l 0 0 var(--global--border-radius-xl);
+		}
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xl);
+		}
+	}
+}
+
+.blogcards-radius-xxl {
+
+	.entry-link,
+	.related-post a,
+	.navigation .nav-thumb,
+	.navigation .nav-thumb img {
+		border-radius: var(--global--border-radius-xxl);
+	}
+
+	.entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxl) var(--global--border-radius-xxl) 0 0;
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxl);
+	}
+}
+
+.blog-1-column.blogcards-radius-xxl {
+
+	.entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxl)l 0 0 var(--global--border-radius-xxl);
+		}
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxl);
+		}
+	}
+}
+
+.blogcards-radius-xxxl {
+
+	.entry-link,
+	.related-post a,
+	.navigation .nav-thumb,
+	.navigation .nav-thumb img {
+		border-radius: var(--global--border-radius-xxxl);
+	}
+
+	.entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxxl) var(--global--border-radius-xxxl) 0 0;
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxxl);
+	}
+}
+
+.blog-1-column.blogcards-radius-xxxl {
+
+	.entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxxl)l 0 0 var(--global--border-radius-xxxl);
+		}
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxxl);
+		}
+	}
+}
+
+.blogcards-radius-xxxxl {
+
+	.entry-link,
+	.related-post a,
+	.navigation .nav-thumb,
+	.navigation .nav-thumb img {
+		border-radius: var(--global--border-radius-xxxxl);
+	}
+
+	.entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxxxl) var(--global--border-radius-xxxxl) 0 0;
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+		border-radius: var(--global--border-radius-xxxxl);
+	}
+}
+
+.blog-1-column.blogcards-radius-xxxxl {
+
+	.entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxxxl)l 0 0 var(--global--border-radius-xxxxl);
+		}
+	}
+
+	&.blogcards-no-shadow .entry-link .post-thumb img {
+
+		@include breakpoint(md) {
+			border-radius: var(--global--border-radius-xxxxl);
 		}
 	}
 }

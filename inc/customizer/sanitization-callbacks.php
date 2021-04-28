@@ -126,10 +126,16 @@ function aino_sanitize_blogcards_animation( $choice ) {
  */
 function aino_sanitize_borderradius( $choice ) {
 	$valid = array(
-		'radius-none',
-		'radius-s',
-		'radius-m',
-		'radius-l',
+		'border-radius-none',
+		'border-radius-xxs',
+		'border-radius-xs',
+		'border-radius-s',
+		'border-radius-m',
+		'border-radius-l',
+		'border-radius-xl',
+		'border-radius-xxl',
+		'border-radius-xxxl',
+		'border-radius-xxxxl',
 	);
 
 	if ( in_array( $choice, $valid, true ) ) {
