@@ -18,7 +18,7 @@
 		.wp-block-calendar,
 		.wp-block-archives-dropdown {
 			@include push--auto;
-			@include s-r-7(margin-bottom);
+			@include s-r-6(margin-bottom);
 		}
 	}
 }
@@ -205,7 +205,6 @@
 
 	.wp-block-button {
 		margin-top: 0;
-		@include s-r-7(margin-bottom);
 	}
 
 	&.alignleft {
@@ -213,7 +212,7 @@
 		.wp-block-button {
 			float: left;
 			margin-top: $s-1;
-			@include s-r-7(margin-right);
+			@include s-r-6(margin-right);
 		}
 	}
 
@@ -222,7 +221,7 @@
 		.wp-block-button {
 			float: right;
 			margin-top: $s-1;
-			@include s-r-7(margin-left);
+			@include s-r-6(margin-left);
 		}
 	}
 }
@@ -276,11 +275,11 @@
 	&.alignright {
 		display: block;
 		float: none;
-		margin-bottom: $s-7;
+		margin-bottom: $s-6;
 
 		@include breakpoint(sm) {
 			float: right;
-			margin: $s-2 0 $s-7 $s-7;
+			margin: $s-2 0 $s-6 $s-6;
 		}
 	}
 
@@ -290,7 +289,7 @@
 
 		@include breakpoint(sm) {
 			float: left;
-			margin: $s-2 $s-7 $s-7 0;
+			margin: $s-2 $s-6 $s-6 0;
 		}
 	}
 
@@ -353,7 +352,7 @@ div[class*='wp-block-'] figcaption {
 
 	.blocks-gallery-caption {
 		width: 100%;
-		@include s-r-7(margin-bottom);
+		@include s-r-6(margin-bottom);
 		text-align: center;
 	}
 }
@@ -671,8 +670,8 @@ div[class*='wp-block-'] figcaption {
 .wp-block-preformatted,
 .wp-block-code {
 	overflow: auto;
-	@include s-r-7(padding);
-	@include s-r-7(margin-bottom);
+	@include s-r-6(padding);
+	@include s-r-6(margin-bottom);
 	@include font-code;
 }
 

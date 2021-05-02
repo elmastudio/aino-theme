@@ -649,12 +649,12 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 /* Button Sizes */
-@mixin btn-ssx {
+@mixin btn-xxs {
 	padding: 0.75rem;
 	font-size: 0.75rem;
 }
 
-@mixin btn-sx {
+@mixin btn-xs {
 	padding: 0.875rem;
 	font-size: 0.875rem;
 }

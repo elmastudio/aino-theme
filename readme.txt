@@ -50,6 +50,7 @@ Enhance: German translation.
 Enhance: Theme screenshot.
 Enhance: Header search form.
 Enhance: Border radius for Featured images.
+Enhance: Default paragraph and list styles.
 Bugfix: Wide aligned blocks responsiveness.
 Bugfix: Dark mode in editor view.
 Bugfix: Styles for posts without featured image.

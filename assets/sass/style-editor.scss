@@ -317,7 +317,7 @@ ul {
 }
 
 .wp-block-paragraph {
-	@include s-r-7(padding-bottom);
+	@include s-r-6(padding-bottom);
 }
 
 .wp-block[data-align="wide"] .wp-block-group__inner-container .wp-block-paragraph,
@@ -554,11 +554,6 @@ ul {
 
 ol {
 	list-style: decimal;
-}
-
-ul li,
-ol li {
-	padding-bottom: $s-4;
 }
 
 li>ol,
@@ -893,7 +888,7 @@ textarea {
 	max-width: 100%;
 	overflow: auto;
 	@include s-r-7(padding);
-	@include s-r-7(margin-bottom);
+	@include s-r-6(margin-bottom);
 	@include border-radius-m;
 	@include font-code;
 

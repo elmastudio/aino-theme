@@ -40,14 +40,6 @@ li > ul, li > ol {
 		@include breakpoint(sm) {
 			padding-left: $s-6;
 		}
-
-		li {
-			@include s-r-4(padding-bottom);
-
-			&:last-child {
-				padding-bottom: 0;
-			}
-		}
 	}
 
 	ul ul,
