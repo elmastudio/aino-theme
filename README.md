@@ -1,6 +1,6 @@
 # Aino: A WordPress Theme for Gutenberg blocks
 
-![Aino Screenshot](https://user-images.githubusercontent.com/17613630/96525519-a32f8080-12d7-11eb-881b-dafd46b1b5c1.png)
+![Aino Screenshot](https://user-images.githubusercontent.com/17613630/116842552-00b26b80-ac31-11eb-849e-39868cdd4d74.png)
 
 Aino is a blocks-first free WordPress theme for everyone who wants to build websites with creative, individual page layouts.  
 #### Download: [Download Aino on WordPress.org](https://wordpress.org/themes/aino/)
@@ -14,6 +14,19 @@ __License:__ GPLv3 or later
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 1.3.1  
+**Enhance:** Add support for local fonts.  
+**Enhance:** German translation.  
+**Enhance:** Theme screenshot.  
+**Enhance:** Header search form.  
+**Enhance:** Border radius for Featured images.  
+**Enhance:** Default paragraph and list styles.  
+**Enhance:** Max Featured image size.  
+**Bugfix:** Wide aligned blocks responsiveness.  
+**Bugfix:** Dark mode in editor view.  
+**Bugfix:** Styles for posts without featured image.  
+**Bugfix:** 'Hero' page template for pages using the Aino Hero block.  
 
 ### 1.3.0  
 **New:** Dark mode option (see Customizer/Colors).  
