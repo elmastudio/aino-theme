@@ -16,9 +16,9 @@
 	}
 
 	.entry-header .entry-title {
-		margin: 0 auto;
-		max-width: $col10;
 		display: block;
+		@include push--auto;
+		max-width: $col10-nogap;
 	}
 
 	& .entry-meta {
@@ -59,13 +59,15 @@
 		display: block;
 	}
 
-	.post-thumb {
-
+	.post-thumb {;
 		justify-content: center;
 		@include flexbox;
 
 		& img {
 			display: block;
+			@include breakpoint(lg) {
+				max-width: $col10-nogap;
+			}
 		}
 	}
 

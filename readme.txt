@@ -51,6 +51,7 @@ Enhance: Theme screenshot.
 Enhance: Header search form.
 Enhance: Border radius for Featured images.
 Enhance: Default paragraph and list styles.
+Enhance: Max Featured image size.
 Bugfix: Wide aligned blocks responsiveness.
 Bugfix: Dark mode in editor view.
 Bugfix: Styles for posts without featured image.

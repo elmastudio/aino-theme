@@ -194,8 +194,7 @@
 .archive .site-content,
 .blog .site-content,
 .error404 .site-content,
-.search .site-content,
-.single-post .post-thumb {
+.search .site-content {
 	@include push--auto;
 
 	@include breakpoint(xl) {

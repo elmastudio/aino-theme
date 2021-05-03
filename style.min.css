@@ -120,7 +120,7 @@ textarea{resize:vertical}
 .push-center,.center{margin-left:auto;margin-right:auto}
 .has-padding-top{padding-top:5rem}
 .has-padding-bottom{padding-bottom:5rem}
-.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .post-thumb{margin-left:auto;margin-right:auto}
+.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content{margin-left:auto;margin-right:auto}
 .single-post .site-content{margin-left:auto;margin-right:auto}
 .entry-content>*,.single .entry-tags,.comment-list,.comment-respond,.authorbox__details,.author-pic-link,.default-content-width{margin-left:auto;margin-right:auto;max-width:43.5rem}
 .tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header,.single-post .site-content .authorbox__wrap,.single-post .site-content .related-wrap,.single-post .comments-area{margin-left:auto;margin-right:auto;max-width:87rem}
@@ -751,7 +751,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .single-post .site-main{padding:0}
 .single-post .has-post-thumbnail .entry-content{padding-top:2rem}
 .single-post .hentry.comments-closed.no-comments{padding-bottom:1.5rem}
-.single-post .entry-header .entry-title{margin:0 auto;max-width:77.5rem;display:block}
+.single-post .entry-header .entry-title{display:block;margin-left:auto;margin-right:auto;max-width:74.5rem}
 .single-post .entry-meta{padding-top:1.5rem;text-align:center}
 .single-post .entry-header{padding-bottom:2rem}
 .single-post .entry-header .entry-cats{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-bottom:.5rem}
@@ -1343,6 +1343,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .single-post .hentry.comments-closed.no-comments{padding-bottom:3rem}
 .single-post .entry-meta{padding-top:3rem}
 .single-post .entry-header{padding-bottom:4rem}
+.single-post .post-thumb img{max-width:74.5rem}
 .single-post .entry-footer{padding-top:11rem}
 .single-post.has-tags .entry-footer .entry-tags{padding-bottom:11rem}
 .related-wrap .section-title{padding-bottom:6rem}
@@ -1376,7 +1377,7 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 }@media(min-width:96em){:root{--global--grid-gap:3rem}
 .mobile-margins{padding-left:0;padding-right:0}
 .outer-margins{padding-left:1.5rem;padding-right:1.5rem}
-.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content,.single-post .post-thumb{max-width:93rem}
+.header-inner,.archive .site-content,.blog .site-content,.error404 .site-content,.search .site-content{max-width:93rem}
 .hentry .entry-content>*.alignwide:not(.wp-block-group){padding-left:1.5rem;padding-right:1.5rem}
 .hentry .entry-content>*.wp-block-group.alignwide{max-width:calc(var(--global--max-content-width) - var(--global--grid-gap))}
 .hentry .entry-content .alignfull .alignwide{padding-left:1.5rem;padding-right:1.5rem}

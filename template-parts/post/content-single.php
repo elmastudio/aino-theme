@@ -15,7 +15,7 @@
 			</div><!-- end .entry-cats -->
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title col10">', '</h1>' ); ?>
 
 		<div class="entry-meta">
 
