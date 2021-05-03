@@ -692,6 +692,20 @@ function aino_the_categories() {
 }
 
 /**
+* Add post class to posts without featured image
+*/
+function aino_add_featured_image_post_class( $classes ) {
+	global $post;
+
+	if ( isset ( $post->ID ) && !get_the_post_thumbnail($post->ID)) {
+		$classes[] = 'no-featured-image';
+	}
+
+	return $classes;
+}
+add_filter( 'post_class', 'aino_add_featured_image_post_class' );
+
+/**
 * Custom template tags for this theme.
 */
 require get_template_directory() . '/inc/template-tags.php';

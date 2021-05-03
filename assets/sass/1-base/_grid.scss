@@ -1,3 +1,22 @@
+// Default outer spacing
+@include breakpoint(sm) {
+	:root {
+		--global--grid-gap: #{2 * $s-7};
+	}
+}
+
+@include breakpoint(lg) {
+	:root {
+		--global--grid-gap: #{2 * $s-9};
+	}
+}
+
+@include breakpoint(xl) {
+	:root {
+		--global--grid-gap: #{2 * $s-6};
+	}
+}
+
 .col,
 .column {
 	box-sizing: border-box;
@@ -118,8 +137,11 @@
 	}
 }
 
-.outer-margins {
-	@include outer-margins;
+// Default post width
+.entry-content.post-width > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+	@include push--auto;
+	width: calc(100% - var(--global--grid-gap));
+	max-width: $default-content-width;
 }
 
 // Outer margins for elements which only require them on mobile.
@@ -148,6 +170,10 @@
 	@include col-margins;
 }
 
+.outer-margins {
+	@include outer-margins;
+}
+
 /* Centered elements */
 .push-center,
 .center {
@@ -168,8 +194,7 @@
 .archive .site-content,
 .blog .site-content,
 .error404 .site-content,
-.search .site-content,
-.single-post .post-thumb {
+.search .site-content {
 	@include push--auto;
 
 	@include breakpoint(xl) {

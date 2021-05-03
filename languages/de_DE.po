@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Aino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-07 02:17+0000\n"
-"PO-Revision-Date: 2021-04-07 23:33+0000\n"
+"PO-Revision-Date: 2021-04-16 01:37+0000\n"
 "Last-Translator: Ellen Bauer\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.5.2; wp-5.7"
+"X-Loco-Version: 2.5.2; wp-5.7.1"
 
 #. The comment date.
 #: inc/template-tags.php:310
@@ -20,32 +20,38 @@ msgstr ""
 msgid "%1$s"
 msgstr ""
 
+#. %1$s: Copyright date. %2$s: Site name.
+#: template-parts/footer/site-info.php:24
+#, php-format
+msgid "&copy; %1$s %2$s"
+msgstr ""
+
 #. used between list items, there is a space after the comma
 #: inc/template-tags.php:223
 msgid ", "
 msgstr ", "
 
-#: inc/customizer/customizer.php:584 inc/customizer/customizer.php:816
+#: inc/customizer/customizer.php:569 inc/customizer/customizer.php:801
 msgid "0"
 msgstr "0"
 
-#: inc/customizer/customizer.php:477
+#: inc/customizer/customizer.php:462
 msgid "1 column"
 msgstr "1-spaltig"
 
-#: inc/customizer/customizer.php:478
+#: inc/customizer/customizer.php:463
 msgid "2 column"
 msgstr "2-spaltig"
 
-#: inc/customizer/customizer.php:585 inc/customizer/customizer.php:817
+#: inc/customizer/customizer.php:570 inc/customizer/customizer.php:802
 msgid "24"
 msgstr "24"
 
-#: inc/customizer/customizer.php:479
+#: inc/customizer/customizer.php:464
 msgid "3 column"
 msgstr "3-spaltig"
 
-#: inc/customizer/customizer.php:586 inc/customizer/customizer.php:818
+#: inc/customizer/customizer.php:571 inc/customizer/customizer.php:803
 msgid "36"
 msgstr "36"
 
@@ -53,7 +59,7 @@ msgstr "36"
 msgid "3XL"
 msgstr "3XL"
 
-#: inc/customizer/customizer.php:587 inc/customizer/customizer.php:819
+#: inc/customizer/customizer.php:572 inc/customizer/customizer.php:804
 msgid "42"
 msgstr "42"
 
@@ -61,15 +67,15 @@ msgstr "42"
 msgid "4XL"
 msgstr "4XL"
 
-#: inc/customizer/customizer.php:519
+#: inc/customizer/customizer.php:504
 msgid "Add a custom blog title description."
 msgstr "Füge einen Blogtitel-Beschreibungstext hinzu."
 
-#: inc/customizer/customizer.php:498
+#: inc/customizer/customizer.php:483
 msgid "Add a custom blog title to your blog pages."
 msgstr "Füge einen eigenen Blogtitel auf deinen Blogseiten ein."
 
-#: inc/customizer/customizer.php:604
+#: inc/customizer/customizer.php:589
 msgid "Add inner spacing to Blog Card."
 msgstr "Füge einen Abstand um Blogkarten hinzu."
 
@@ -109,7 +115,7 @@ msgstr "Aino ist ein Gutenberg-first WordPress-Theme."
 msgid "All posts by"
 msgstr "Alle Beiträge von"
 
-#: inc/customizer/customizer.php:672
+#: inc/customizer/customizer.php:657
 msgid "Animation on Hover"
 msgstr "Animation bei Hover"
 
@@ -117,7 +123,7 @@ msgstr "Animation bei Hover"
 msgid "Back to Top"
 msgstr "nach oben"
 
-#: functions.php:190 inc/customizer/customizer.php:841
+#: functions.php:190 inc/customizer/customizer.php:865
 msgid "Background"
 msgstr "Hintergrund"
 
@@ -125,47 +131,47 @@ msgstr "Hintergrund"
 msgid "Black"
 msgstr "Schwarz"
 
-#: inc/customizer/customizer.php:72
+#: inc/customizer/customizer.php:77
 msgid "Blog"
 msgstr "Blog"
 
-#: inc/customizer/customizer.php:624
+#: inc/customizer/customizer.php:609
 msgid "Blog Card Shadow"
 msgstr "Blogkarten-Schatten"
 
-#: inc/customizer/customizer.php:648
+#: inc/customizer/customizer.php:633
 msgid "Blog Card Shadow on Hover"
 msgstr "Blogkarten-Schatten bei Hover"
 
-#: inc/customizer/customizer.php:81
+#: inc/customizer/customizer.php:86
 msgid "Blog Cards"
 msgstr "Blogkarten"
 
-#: inc/customizer/customizer.php:993
+#: inc/customizer/customizer.php:1037
 msgid "Blog Cards Background"
 msgstr "Blogkarten-Hintergrund"
 
-#: inc/customizer/customizer.php:1015
+#: inc/customizer/customizer.php:1059
 msgid "Blog Cards Background on Hover"
 msgstr "Blogkarten-Hintergrund bei Hover"
 
-#: inc/customizer/customizer.php:497
+#: inc/customizer/customizer.php:482
 msgid "Blog Title"
 msgstr "Blogtitel"
 
-#: inc/customizer/customizer.php:518
+#: inc/customizer/customizer.php:503
 msgid "Blog Title Description"
 msgstr "Blogtitel-Beschreibung"
 
-#: inc/customizer/customizer.php:179
+#: inc/customizer/customizer.php:184
 msgid "bold"
 msgstr "fett"
 
-#: inc/customizer/customizer.php:311
+#: inc/customizer/customizer.php:316
 msgid "Bold font in primary menu"
 msgstr "Hauptmenü in fetter Schrift"
 
-#: inc/customizer/customizer.php:578
+#: inc/customizer/customizer.php:563
 msgid "Border Radius"
 msgstr "Ecken-Radius"
 
@@ -173,58 +179,59 @@ msgstr "Ecken-Radius"
 msgid "Bright cyan to soft magenta"
 msgstr "Helles Cyan zu zartem Magenta"
 
-#: inc/customizer/customizer.php:200
+#: inc/customizer/customizer.php:205
 msgid "Button Border Radius"
 msgstr "Ecken-Radius bei Buttons"
 
-#: inc/customizer/customizer.php:928
+#: inc/customizer/customizer.php:952
 msgid "Button Text"
 msgstr "Button-Text"
 
-#: inc/customizer/customizer.php:244
+#: inc/customizer/customizer.php:249
 msgid "Buttons font uppercase"
 msgstr "Button-Text in Großbuchstaben"
 
-#: inc/customizer/customizer.php:225
+#: inc/customizer/customizer.php:230
 msgid "Buttons font weight bold"
 msgstr "Button-Text in fett"
 
-#: inc/customizer/customizer.php:391
+#: inc/customizer/customizer.php:376
 msgid "Center Align Footer Info"
 msgstr "Footer-Info zentrieren"
 
-#: inc/customizer/customizer.php:372
+#: inc/customizer/customizer.php:357
 msgid "Center Align Footer Widgets"
 msgstr "Footer-Widgets zentrieren"
 
-#: inc/customizer/customizer.php:559
+#: inc/customizer/customizer.php:544
 msgid "Choose how to display posts on your blog, archives and search results."
 msgstr ""
 "Stelle ein, wie du Beiträge auf Blog-, Archiv- und Suchergebnis-Seiten "
 "anzeigen möchtest."
 
-#: inc/customizer/customizer.php:353
-msgid "Choose light text colors with a dark Footer background."
+#: inc/customizer/customizer.php:1016
+#| msgid "Choose light text colors with a dark Footer background."
+msgid "Choose light Footer text color with a dark Footer background."
 msgstr ""
-"Wähle eine helle Textfarbe, wenn deine Footer-Hintergrundfarbe dunkel ist."
+"Wähle eine helle Schriftfarbe, wenn deine Footer-Hintergrundfarbe dunkel ist."
 
-#: inc/customizer/customizer.php:472
+#: inc/customizer/customizer.php:457
 msgid "Choose the column layout of your blog, archives and search results."
 msgstr "Wähle das Spalten-Layout für Blog-, Archiv- und Suchergebnis-Seiten."
 
-#: inc/customizer/customizer.php:579
+#: inc/customizer/customizer.php:564
 msgid "Choose the degree of curvature on blog card edges in pixels."
 msgstr "Wähle den Grad der Abrundung von Blogkarten in Pixeln."
 
-#: inc/customizer/customizer.php:811
+#: inc/customizer/customizer.php:796
 msgid "Choose the degree of curvature on featured image edges in pixels."
 msgstr "Wähle den Grad der Abrundung von Beitragsbildern in Pixeln."
 
-#: inc/customizer/customizer.php:201 inc/customizer/customizer.php:264
+#: inc/customizer/customizer.php:206 inc/customizer/customizer.php:269
 msgid "Choose the degree of curvature."
 msgstr "Wähle den Grad der Abrundung."
 
-#: inc/customizer/customizer.php:697
+#: inc/customizer/customizer.php:682
 msgid ""
 "Choose the number of words shown in excerpt. To hide excerpt set to zero."
 msgstr ""
@@ -234,6 +241,10 @@ msgstr ""
 #: template-parts/navigation/modal-menu.php:21
 msgid "Close"
 msgstr "Schließen"
+
+#: inc/customizer/customizer.php:20
+msgid "Colors & Dark Mode"
+msgstr "Farben & Dark-Mode"
 
 #: template-parts/post/content-single.php:24 template-parts/post/content.php:71
 msgid "Comment 1"
@@ -261,11 +272,16 @@ msgstr "Kommentare sind geschlossen."
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Weiterlesen %s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/customizer/customizer.php:207 inc/customizer/customizer.php:270
+#: template-parts/footer/site-info.php:25
+msgctxt "copyright date format"
+msgid "Y"
+msgstr ""
+
+#: inc/customizer/customizer.php:212 inc/customizer/customizer.php:275
 msgid "curved"
 msgstr "abgerundet"
 
-#: inc/customizer/customizer.php:449
+#: inc/customizer/customizer.php:434
 msgid "Custom Footer Info Text"
 msgstr "Eigener Footer-Infotext"
 
@@ -273,39 +289,43 @@ msgstr "Eigener Footer-Infotext"
 msgid "Dark blue to mostly black blue"
 msgstr "Dunkelblau zu Schwarz/Blau"
 
-#: inc/customizer/customizer.php:154
+#: inc/customizer/customizer.php:159
 msgid "Disable Google fonts in theme"
 msgstr "Google-Schriften im Theme deaktivieren"
 
-#: inc/customizer/customizer.php:734
+#: inc/customizer/customizer.php:719
 msgid "Display author"
 msgstr "Zeige Autor"
 
-#: inc/customizer/customizer.php:753
+#: inc/customizer/customizer.php:738
 msgid "Display author avatar"
 msgstr "Autoren-Avatar anzeigen"
 
-#: inc/customizer/customizer.php:429
+#: inc/customizer/customizer.php:821
+msgid "Display author information in post header."
+msgstr "Autoren-Info im Beitrags-Header anzeigen."
+
+#: inc/customizer/customizer.php:414
 msgid "Display Border Bottom"
 msgstr "Zeige untere Linie"
 
-#: inc/customizer/customizer.php:410
+#: inc/customizer/customizer.php:395
 msgid "Display Border Top"
 msgstr "Zeige obere Linie"
 
-#: inc/customizer/customizer.php:791
+#: inc/customizer/customizer.php:776
 msgid "Display comments count (Desktop only on blog pages)"
 msgstr "Zeige Anzahl der Kommentare (nur auf großen Bildschirmen sichtbar)"
 
-#: inc/customizer/customizer.php:772
+#: inc/customizer/customizer.php:757
 msgid "Display publish date"
 msgstr "Veröffentlichungsdatum anzeigen"
 
-#: inc/customizer/customizer.php:292
+#: inc/customizer/customizer.php:297
 msgid "Display Search Form"
 msgstr "Suchformular anzeigen"
 
-#: inc/customizer/customizer.php:538
+#: inc/customizer/customizer.php:523
 msgid "Display sticky badge in light colour."
 msgstr "Zeige Badge für hervorgehobene Beiträge in heller Farbe."
 
@@ -321,7 +341,11 @@ msgstr "Beitrag bearbeiten"
 msgid "elmastudio"
 msgstr "Elmastudio"
 
-#: inc/customizer/customizer.php:696
+#: inc/customizer/customizer.php:843
+msgid "Enable Dark Mode"
+msgstr "Dark-Mode aktivieren"
+
+#: inc/customizer/customizer.php:681
 msgid "Excerpt Length"
 msgstr "Exzerpt-Länge"
 
@@ -329,7 +353,7 @@ msgstr "Exzerpt-Länge"
 msgid "Featured"
 msgstr "Hervorgehoben"
 
-#: inc/customizer/customizer.php:810
+#: inc/customizer/customizer.php:795
 msgid "Featured Image Border Radius"
 msgstr "Ecken-Radius bei Beitragsbildern"
 
@@ -337,7 +361,7 @@ msgstr "Ecken-Radius bei Beitragsbildern"
 msgid "Filed under"
 msgstr "Archiviert unter"
 
-#: inc/customizer/customizer.php:63
+#: inc/customizer/customizer.php:68
 msgid "Footer"
 msgstr "Footer"
 
@@ -365,11 +389,11 @@ msgstr "Footer 5"
 msgid "Footer 6"
 msgstr "Footer 6"
 
-#: inc/customizer/customizer.php:949
+#: inc/customizer/customizer.php:973
 msgid "Footer Background"
 msgstr "Footer Hintergrund"
 
-#: inc/customizer/customizer.php:971
+#: inc/customizer/customizer.php:995
 msgid "Footer Borders"
 msgstr "Footer-Linien"
 
@@ -381,7 +405,7 @@ msgstr "Soziale Netzwerke-Menü im Footer"
 msgid "Footer Social Menu"
 msgstr "Footer Social-Menü"
 
-#: inc/customizer/customizer.php:263
+#: inc/customizer/customizer.php:268
 msgid "Form Border Radius"
 msgstr "Ecken-Radius bei Formularen"
 
@@ -409,7 +433,7 @@ msgstr "Gräuliches Blau zu Dunkel-Graublau"
 msgid "Grayish violet to soft orange"
 msgstr "Gräuliches Violet zu zartem Orange"
 
-#: inc/customizer/customizer.php:54
+#: inc/customizer/customizer.php:59
 msgid "Header"
 msgstr "Header"
 
@@ -425,7 +449,7 @@ msgstr "Soziale Netzwerke-Menü im Header"
 msgid "Header Social Menu (Desktop only)"
 msgstr "Header Social-Menü (nur in Desktopansicht)"
 
-#: inc/customizer/customizer.php:173
+#: inc/customizer/customizer.php:178
 msgid "Heading Font Weight"
 msgstr "Schriftstärke der Überschriften"
 
@@ -437,16 +461,16 @@ msgstr "Hero"
 msgid "Hero, light header"
 msgstr "Hero, heller Header"
 
-#: inc/customizer/customizer.php:112
+#: inc/customizer/customizer.php:117
 msgid "Hide tagline"
 msgstr "Untertitel verbergen"
 
-#: header.php:52
+#: header.php:51
 msgid "Horizontal"
 msgstr "Horizontal"
 
 #. URI of the theme
-#: template-parts/footer/site-info.php:24
+#: template-parts/footer/site-info.php:31
 msgid "https://wpaino.com"
 msgstr "https://wpaino.com"
 
@@ -475,18 +499,22 @@ msgctxt "label"
 msgid "Search"
 msgstr "Suche"
 
-#: searchform.php:19
+#: searchform.php:20
 msgctxt "label"
 msgid "Search for:"
 msgstr "Suche nach:"
 
-#: inc/customizer/customizer.php:471
+#: inc/customizer/customizer.php:456
 msgid "Layout"
 msgstr "Layout"
 
 #: template-parts/post/content-single.php:24
 msgid "Leave a reply"
 msgstr "Antworten"
+
+#: inc/customizer/customizer.php:1015
+msgid "Light Footer Text Colors"
+msgstr "Helle Footer-Schrift"
 
 #: functions.php:221
 msgid "Light grayish magenta to very dark grayish pink"
@@ -508,11 +536,7 @@ msgstr "Helles Grau-Rot zu zartem Hellblau"
 msgid "Light red to very light pink"
 msgstr "Hellrot zu hellem Pink"
 
-#: inc/customizer/customizer.php:352
-msgid "Light Text Colors"
-msgstr "Helle Textfarbe"
-
-#: index.php:53 archive.php:52 search.php:45
+#: index.php:49 archive.php:52 search.php:43
 msgid "Load more"
 msgstr "Mehr laden"
 
@@ -524,7 +548,7 @@ msgstr "M"
 msgid "Maybe try a search instead?"
 msgstr "Versuche es doch mit einem neuen Suchbegriff."
 
-#: header.php:44
+#: header.php:47
 msgid "Menu"
 msgstr "Menü"
 
@@ -532,11 +556,11 @@ msgstr "Menü"
 msgid "Mobile"
 msgstr "Mobil"
 
-#: inc/customizer/customizer.php:678
+#: inc/customizer/customizer.php:663
 msgid "move in"
 msgstr "nach vorne"
 
-#: inc/customizer/customizer.php:679
+#: inc/customizer/customizer.php:664
 msgid "move up"
 msgstr "nach oben"
 
@@ -544,8 +568,8 @@ msgstr "nach oben"
 msgid "Newer Comments"
 msgstr "Neuere Kommentare"
 
-#: inc/customizer/customizer.php:629 inc/customizer/customizer.php:653
-#: inc/customizer/customizer.php:677
+#: inc/customizer/customizer.php:614 inc/customizer/customizer.php:638
+#: inc/customizer/customizer.php:662
 msgid "none"
 msgstr "keiner"
 
@@ -558,11 +582,12 @@ msgid "Oops! Page Not Found"
 msgstr "Ups! Seite nicht gefunden."
 
 #: template-parts/page/content-page.php:23
+#: template-parts/page/content-page-fullscreen.php:23
 #: template-parts/post/content-single.php:54
 msgid "Pages:"
 msgstr "Seiten:"
 
-#: searchform.php:17
+#: searchform.php:18
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr "Suche&hellip;"
@@ -575,21 +600,17 @@ msgstr "Bitte definiere SVG Icon im Dateiname."
 msgid "Please define default parameters in the form of an array."
 msgstr "Bitte definiere Standardparameter in Form eines array."
 
-#: inc/customizer/customizer.php:715
+#: inc/customizer/customizer.php:700
 msgid "Post Details"
 msgstr "Beitragsdetails"
 
-#: index.php:21
-msgid "Posts"
-msgstr "Beiträge"
-
 #. %s: theme name
-#: template-parts/footer/site-info.php:27
+#: template-parts/footer/site-info.php:34
 #, php-format
 msgid "Powered by %s."
 msgstr "Powered by %s."
 
-#: functions.php:175 inc/customizer/customizer.php:862
+#: functions.php:175 inc/customizer/customizer.php:886
 msgid "Primary"
 msgstr "Hauptmenü"
 
@@ -601,7 +622,7 @@ msgstr "Hauptmenü"
 msgid "Published by"
 msgstr "Veröffentlicht von"
 
-#: inc/customizer/customizer.php:178
+#: inc/customizer/customizer.php:183
 msgid "regular"
 msgstr "normal"
 
@@ -609,11 +630,11 @@ msgstr "normal"
 msgid "Related Posts"
 msgstr "Ähnliche Beiträge"
 
-#: inc/customizer/customizer.php:134
+#: inc/customizer/customizer.php:139
 msgid "Retina logo"
 msgstr "Retina-Logo"
 
-#: inc/customizer/customizer.php:208 inc/customizer/customizer.php:271
+#: inc/customizer/customizer.php:213 inc/customizer/customizer.php:276
 msgid "round"
 msgstr "rund"
 
@@ -621,7 +642,7 @@ msgstr "rund"
 msgid "S"
 msgstr "S"
 
-#: inc/customizer/customizer.php:135
+#: inc/customizer/customizer.php:140
 msgid ""
 "Scales the logo to half its uploaded size, making it sharp on high-res "
 "screens."
@@ -641,7 +662,7 @@ msgstr "Suchergebnisse für:"
 msgid "Show sub menu"
 msgstr "Zeige Untermenü"
 
-#: inc/customizer/customizer.php:90
+#: inc/customizer/customizer.php:95
 msgid "Single Post"
 msgstr "Einzelbeiträge"
 
@@ -673,48 +694,48 @@ msgstr "Zartes Pink zu Orange"
 msgid "Soft red to very soft blue"
 msgstr "Zartes Rot zu zartem Blau"
 
-#: inc/customizer/customizer.php:206 inc/customizer/customizer.php:269
+#: inc/customizer/customizer.php:211 inc/customizer/customizer.php:274
 msgid "square"
 msgstr "eckig"
 
-#: inc/customizer/customizer.php:45
+#: inc/customizer/customizer.php:50
 msgid "Styles"
 msgstr "Stile"
 
-#: functions.php:180 inc/customizer/customizer.php:884
+#: functions.php:180 inc/customizer/customizer.php:908
 msgid "Text One"
 msgstr "Textfarbe 1"
 
-#: functions.php:185 inc/customizer/customizer.php:906
+#: functions.php:185 inc/customizer/customizer.php:930
 msgid "Text Two"
 msgstr "Textfarbe 2"
 
-#: inc/customizer/customizer.php:907
+#: inc/customizer/customizer.php:931
 msgid "The default text color."
 msgstr "Die Standard-Textfarbe."
 
-#: inc/customizer/customizer.php:885
+#: inc/customizer/customizer.php:909
 msgid "The heading text color."
 msgstr "Die Überschriften-Textfarbe."
 
-#: inc/customizer/customizer.php:863
+#: inc/customizer/customizer.php:887
 msgid "The primary text link hover and button background color."
 msgstr "Die Farbe für Textlink-Hovers und Button-Hintergründe."
 
-#: inc/customizer/customizer.php:26
+#: inc/customizer/customizer.php:31
 msgid "Theme"
 msgstr "Theme"
 
-#: inc/customizer/customizer.php:631 inc/customizer/customizer.php:655
+#: inc/customizer/customizer.php:616 inc/customizer/customizer.php:640
 msgid "thick"
 msgstr "stark"
 
-#: inc/customizer/customizer.php:630 inc/customizer/customizer.php:654
+#: inc/customizer/customizer.php:615 inc/customizer/customizer.php:639
 msgid "thin"
 msgstr "leicht"
 
 #. 1: The [datetime] attribute for the <time> tag. 2: Estimated reading time text, in minutes.
-#: inc/template-tags.php:863
+#: inc/template-tags.php:880
 #, php-format
 msgctxt "Time to read"
 msgid "%s min read"
@@ -722,11 +743,11 @@ msgid_plural "%s min read"
 msgstr[0] "%s min Lesezeit"
 msgstr[1] "%s min Lesezeit"
 
-#: inc/customizer/customizer.php:36
+#: inc/customizer/customizer.php:41
 msgid "Typography"
 msgstr "Typografie"
 
-#: inc/customizer/customizer.php:330
+#: inc/customizer/customizer.php:335
 msgid "Uppercase font in primary menu"
 msgstr "Hauptmenü in Großbuchstaben"
 
@@ -778,3 +799,9 @@ msgstr "XXS"
 #: inc/template-tags.php:333
 msgid "Your comment is awaiting moderation."
 msgstr "Kommentare warten auf Moderation."
+
+#: inc/customizer/customizer.php:844
+msgid "Your site will be shown with a dark background and light text."
+msgstr ""
+"Deine Website wird mit einem dunklen Hintergrund und heller Schrift "
+"angezeigt."

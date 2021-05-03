@@ -2,9 +2,9 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
-Tested up to: WordPress 5.7
+Tested up to: WordPress 5.7.1
 Requires PHP: 7.0
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -43,6 +43,19 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 1.3.1 =
+Enhance: Add support for local fonts.
+Enhance: German translation.
+Enhance: Theme screenshot.
+Enhance: Header search form.
+Enhance: Border radius for Featured images.
+Enhance: Default paragraph and list styles.
+Enhance: Max Featured image size.
+Bugfix: Wide aligned blocks responsiveness.
+Bugfix: Dark mode in editor view.
+Bugfix: Styles for posts without featured image.
+Bugfix: 'Hero' page template for pages using the Aino Hero block.
 
 = 1.3.0 =
 New: Dark mode option (see Customizer/Colors).

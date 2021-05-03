@@ -619,16 +619,40 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Blog Cards - Border Radius.
-	if ( 'radius-s' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+	if ( 'border-radius-xxs' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+		$classes[] = 'blogcards-radius-xxs';
+	}
+
+	if ( 'border-radius-xs' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+		$classes[] = 'blogcards-radius-xs';
+	}
+
+	if ( 'border-radius-s' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
 		$classes[] = 'blogcards-radius-s';
 	}
 
-	if ( 'radius-m' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+	if ( 'border-radius-m' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
 		$classes[] = 'blogcards-radius-m';
 	}
 
-	if ( 'radius-l' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+	if ( 'border-radius-l' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
 		$classes[] = 'blogcards-radius-l';
+	}
+
+	if ( 'border-radius-xl' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+		$classes[] = 'blogcards-radius-xl';
+	}
+
+	if ( 'border-radius-xxl' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+		$classes[] = 'blogcards-radius-xxl';
+	}
+
+	if ( 'border-radius-xxxl' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+		$classes[] = 'blogcards-radius-xxxl';
+	}
+
+	if ( 'border-radius-xxxxl' === get_theme_mod( 'blogcards_borderradius', aino_defaults( 'blogcards_borderradius' ) ) ) {
+		$classes[] = 'blogcards-radius-xxxxl';
 	}
 
 	// Blog Cards - Padding.
@@ -672,25 +696,55 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Single Post - Featured Image Border Radius.
-	if ( 'radius-none' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+	if ( 'border-radius-none' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-none';
 	}
 
-	if ( 'radius-s' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+	if ( 'border-radius-xxs' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+		$classes[] = 'featuredimg-radius-xxs';
+	}
+
+	if ( 'border-radius-xs' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+		$classes[] = 'featuredimg-radius-xs';
+	}
+
+	if ( 'border-radius-s' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-s';
 	}
 
-	if ( 'radius-m' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+	if ( 'border-radius-m' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-m';
 	}
 
-	if ( 'radius-l' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+	if ( 'border-radius-l' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
 		$classes[] = 'featuredimg-radius-l';
+	}
+
+	if ( 'border-radius-xl' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+		$classes[] = 'featuredimg-radius-xl';
+	}
+
+	if ( 'border-radius-xxl' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+		$classes[] = 'featuredimg-radius-xxl';
+	}
+
+	if ( 'border-radius-xxxl' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+		$classes[] = 'featuredimg-radius-xxxl';
+	}
+
+
+	if ( 'border-radius-xxxxl' === get_theme_mod( 'featuredimg_style', aino_defaults( 'featuredimg_style' ) ) ) {
+		$classes[] = 'featuredimg-radius-xxxxl';
 	}
 
 	// Honor custom Background color.
 	if ( '#ffffff' === get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) ) {
 		$classes[] = 'default-main-bg';
+	}
+
+	// Blog Cards with custom background
+	if ( '#ffffff' !== get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) ) && false === get_theme_mod( 'enable_dark_mode', aino_defaults( 'enable_dark_mode' ) ) ) {
+		$classes[] = 'cards-custom-bg';
 	}
 
 	// Disable Flexbox Post Card Stretch.
@@ -796,6 +850,10 @@ function aino_custom_admin_body_class( $classes ) {
 
 	if ( 'bold' === get_theme_mod( 'heading_fontweight' ) ) {
 		$classes .= ' h-bold';
+	}
+
+	if ( true === get_theme_mod( 'enable_dark_mode', aino_defaults( 'enable_dark_mode' ) ) ) {
+		$classes .= ' theme-dark-mode';
 	}
 
 	return $classes;

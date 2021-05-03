@@ -303,8 +303,13 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin font-body {
-	font-family: $font__body;
+	font-family: var(--body--font-family);
 	line-height: 1.4;
+}
+
+@mixin font-heading {
+	font-family: var(--heading--font-family);
+	line-height: 1;
 }
 
 /* Font Weights */
@@ -596,7 +601,7 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Code */
 @mixin font-code {
-	font-family: $font__code;
+	font-family: var(--code--font-family);
 	font-size: 14px;
 	line-height: 1.43;
 }
@@ -644,12 +649,12 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 /* Button Sizes */
-@mixin btn-ssx {
+@mixin btn-xxs {
 	padding: 0.75rem;
 	font-size: 0.75rem;
 }
 
-@mixin btn-sx {
+@mixin btn-xs {
 	padding: 0.875rem;
 	font-size: 0.875rem;
 }
@@ -1053,10 +1058,6 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin border-radius-none {
 	border-radius: 0;
-}
-
-@mixin border-radius-s {
-	border-radius: $border-radius-s;
 }
 
 @mixin border-radius-m {

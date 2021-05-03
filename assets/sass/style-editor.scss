@@ -3,9 +3,9 @@
 */
 
 /* Includes */
-
 @import "1-base/variables";
 @import "1-base/mixins";
+@import "1-base/colors";
 
 .block-editor-block-list__block {
 	margin-top: 0;
@@ -152,7 +152,6 @@ h6 {
 .h-bold h6 {
 	font-weight: bold;
 }
-
 
 h1.has-xxxxl-font-size {
 	@include font-h-12;
@@ -315,6 +314,15 @@ ul {
 			font-size: 142px;
 		}
 	}
+}
+
+.wp-block-paragraph {
+	@include s-r-6(padding-bottom);
+}
+
+.wp-block[data-align="wide"] .wp-block-group__inner-container .wp-block-paragraph,
+.wp-block[data-align="full"] .wp-block-group__inner-container .wp-block-paragraph {
+	padding-bottom: 0;
 }
 
 dfn,
@@ -548,11 +556,6 @@ ol {
 	list-style: decimal;
 }
 
-ul li,
-ol li {
-	padding-bottom: $s-4;
-}
-
 li>ol,
 li>ul {
 	margin-bottom: 0;
@@ -635,7 +638,6 @@ textarea {
 }
 
 /* Default Appender */
-
 .editor-default-block-appender .editor-default-block-appender__content {
 	@include font-body;
 	@include font-body-m;
@@ -658,7 +660,7 @@ textarea {
 
 	figcaption {
 		max-width: 100%;
-		@include font-body-xs;
+		@include font-body-s;
 		margin: 6px 0 0;
 		text-align: center;
 	}
@@ -886,7 +888,7 @@ textarea {
 	max-width: 100%;
 	overflow: auto;
 	@include s-r-7(padding);
-	@include s-r-7(margin-bottom);
+	@include s-r-6(margin-bottom);
 	@include border-radius-m;
 	@include font-code;
 

@@ -6,6 +6,7 @@ select,
 table,
 textarea {
 	@include font-body;
+	color: var(--global--color-text-two);
 }
 
 div[class*='wp-block-'] figcaption,
@@ -105,9 +106,9 @@ h3,
 h4,
 h5,
 h6 {
+	@include font-heading;
 	@include font-regular;
 	color: var(--global--color-text-one);
-	line-height: 1;
 }
 
 h1.site-title,
@@ -290,7 +291,7 @@ h6.has-xxs-font-size {
 
 	address,
 	p {
-		@include s-r-7(padding-bottom);
+		@include s-r-6(padding-bottom);
 	}
 }
 
@@ -344,7 +345,7 @@ pre {
 	max-width: 100%;
 	overflow: auto;
 	@include s-r-7(padding);
-	@include s-r-7(margin-bottom);
+	@include s-r-6(margin-bottom);
 	border: none;
 	@include border-radius-m;
 	@include font-code;
