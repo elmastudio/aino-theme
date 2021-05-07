@@ -492,19 +492,6 @@ a {
 	}
 }
 
-.wp-block-image figcaption a,
-.wp-block-embed figcaption a,
-.wp-block-audio figcaption a {
-
-	&:hover {
-		color: var(--global--color-primary);
-	}
-}
-
-blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover {
-	color: var(--global--color-primary);
-}
-
 /* Elements */
 
 @media screen and (min-width: 50em) {
@@ -654,18 +641,13 @@ textarea {
 
 /* Media */
 
-.wp-block-image,
-.wp-block-embed,
-.wp-block-audio {
-
-	figcaption {
-		max-width: 100%;
-		@include font-body-s;
-		@include s-r-4 (margin-top);
-		@include s-r-6 (margin-bottom);
-		color: var(--global--color-text-two);
-		text-align: center;
-	}
+figcaption {
+	max-width: 100%;
+	@include font-body-s;
+	@include s-r-4 (margin-top);
+	@include s-r-6 (margin-bottom);
+	color: var(--global--color-text-two);
+	text-align: left;
 }
 
 .wp-block-gallery {

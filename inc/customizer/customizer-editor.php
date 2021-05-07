@@ -48,13 +48,15 @@ function aino_editor_customizer_generated_values() {
 	.theme-dark-mode .editor-styles-wrapper h5,
 	.theme-dark-mode .editor-styles-wrapper h6,
 	.theme-dark-mode .editor-styles-wrapper p,
+	.theme-dark-mode .editor-styles-wrapper figcaption,
 	.theme-dark-mode .editor-styles-wrapper h1 a,
 	.theme-dark-mode .editor-styles-wrapper h2 a,
 	.theme-dark-mode .editor-styles-wrapper h3 a,
 	.theme-dark-mode .editor-styles-wrapper h4 a,
 	.theme-dark-mode .editor-styles-wrapper h5 a,
 	.theme-dark-mode .editor-styles-wrapper h6 a,
-	.theme-dark-mode .editor-styles-wrapper p a {
+	.theme-dark-mode .editor-styles-wrapper p a,
+	.theme-dark-mode .editor-styles-wrapper figcaption a {
 		color: #ffffff;
 	}
 
