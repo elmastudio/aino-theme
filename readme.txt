@@ -4,15 +4,15 @@ Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images
 Requires at least: 5.0
 Tested up to: WordPress 5.7.1
 Requires PHP: 7.0
-Stable tag: 1.3.1
+Stable tag: 1.4.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Aino is a blocks-first WordPress theme for everyone who wants to build websites with creative, individual page layouts.
+Aino is a WordPress theme for everyone who wants to build websites with creative, individual layouts in the WordPress block editor.
 
 == Description ==
 
-Aino is a Gutenberg-first WordPress theme, especially created to work with blocks in the WordPress editor. Blocks and the Aino theme make it easier to create beautiful websites with individual layouts. Our goal is to make the creative process of building a WordPress website fun and intuitiv.
+Aino is a multi-purpose WordPress theme for the block editor. Aino theme and Aino blocks make it easier to build creative websites with individual layouts.
 
 You can find more information and helpful resources about Aino on https://wpaino.com.
 
@@ -43,6 +43,9 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 1.4.0 =
+Enhance: Color Palette.
 
 = 1.3.1 =
 Enhance: Add support for local fonts.

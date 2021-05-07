@@ -316,7 +316,7 @@ ul {
 	}
 }
 
-.wp-block-paragraph {
+.wp-block[data-type="core/paragraph"] {
 	@include s-r-6(padding-bottom);
 }
 
@@ -661,7 +661,9 @@ textarea {
 	figcaption {
 		max-width: 100%;
 		@include font-body-s;
-		margin: 6px 0 0;
+		@include s-r-4 (margin-top);
+		@include s-r-6 (margin-bottom);
+		color: var(--global--color-text-two);
 		text-align: center;
 	}
 }
@@ -674,9 +676,7 @@ textarea {
 .wp-block-gallery .blocks-gallery-item {
 
 	figcaption {
-		padding: 40px 12px 8px;
-		font-size: 14px;
-		font-weight: 300;
+		@include font-body-xs;
 	}
 }
 

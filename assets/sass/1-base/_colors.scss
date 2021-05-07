@@ -1,34 +1,51 @@
-/* Colors */
 :root {
-	--global--color-primary: #7358de;
-	--global--color-text-one: #111111;
-	--global--color-text-two: #222222;
-	--global--color-border: #111111;
-	--global--color-background: #ffffff;
-	--global--color-code-one: #b2cacd;
-	--global--color-code-two: #062e32;
-	--global--color-success: #19d37b;
-	--global--color-notification: #1E90FF;
-	--global--color-error: #e52424;
+
+	/* Colors */
 	--global--color-black: #000;
 	--global--color-white: #fff;
-	--global--color-white-60: rgba(255, 255, 255, 0.6);
+	--global--color-light-blue-magenta: #AE9FF2;
+	--global--color-cyan: #539b92;
+	--global--color-medium-dark-brown: #8F6539;
+	--global--color-very-light-blue: #C7C9EF;
+	--global--color-light-green-cyan: #C9D5D3;
+	--global--color-very-light-orange: #FFD1B9;
+	--global--color-shade_of_cyan: #539B92;
+	--global--color-very-light-pink: #FFB9CE;
+	--global--color-yellow: #FFCA32;
+	--global--color-medium-dark-cyan: #2F5853;
+	--global--color-very-dark-gray: #222222;
+	--global--color-very-light-gray: #E9E9E9;
+	--global--color-medium-light-gray: #999999;
+	--global--color-medium-light-red-orange: #F79670;
+	--global--color-blue: #6579BD;
+	--global--color-very-light-orange: #FFD1B9;
+	--global--color-medium-light-green: #80FCA6;
+	--global--color-medium-light-cyan-blue: #7ECAF8;
+	--global--color-medium-light-brown: #C59A6D;
+	--global--color-medium-light-yellow-green: #FFFF50;
+	--global--color-blue-magenta: #4D2CF0;
+	--global--color-medium-light-blue-magenta: #755CE9;
+
+	--global--color-primary: var(--global--color-medium-light-blue-magenta); /* Button or button border background color. */
+	--global--color-text-one: var(--global--color-black); /* Headings, site title, menu color. */
+	--global--color-text-two: var(--global--color-very-dark-gray); /* Body and meta text color. */
+	--global--color-border: var(--global--color-black); /* Default border color. */
+	--global--color-background: var(--global--color-white); /* Default body background. */
+	--global--color-code-one: var(--global--color-light-green-cyan); /* Code background. */
+	--global--color-code-two: var(--global--color-medium-dark-cyan); /* Dark code background. */
+	--global--color-success: var(--global--color-medium-light-green);
+	--global--color-notification: var(--global--color-medium-light-blue-magenta);
+	--global--color-error: var (--global--color-medium-light-red-orange);
 }
 
 @media only screen {
 
 	.is-dark-theme {
-		--global--color-primary: #ffffff;
-		--global--color-text-one: #ffffff;
-		--global--color-text-two: #ffffff;
-		--global--color-border: #ffffff;
-		--global--color-background: #000000;
-		--global--color-code-one: #b2cacd;
-		--global--color-code-two: #062e32;
-		--global--color-success: #19d37b;
-		--global--color-notification: #1E90FF;
-		--global--color-error: #e52424;
-		--global--color-white-60: rgba(255, 255, 255, 0.6);
+		--global--color-primary: var(--global--color-white);
+		--global--color-text-one: var(--global--color-white);
+		--global--color-text-two: var(--global--color-white);
+		--global--color-border: var(--global--color-white);
+		--global--color-background: var(--global--color-black);
 	}
 
 	body {
