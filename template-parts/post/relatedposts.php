@@ -12,14 +12,15 @@ global $post;
 
 // Get the category IDs.
 $categories = get_the_category( $post->ID );
-// Get the URL of this category.
-$category_link = get_category_link( $categories[0] );
 
 if ( $categories ) {
 	$category_ids = array();
 	foreach ( $categories as $individual_category ) {
 		$category_ids[] = $individual_category->term_id;
 	}
+
+	// Get the URL of this category.
+	$category_link = get_category_link( $categories[0] );
 
 	$args = array(
 		'category__in'        => $category_ids,
