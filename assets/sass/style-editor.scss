@@ -847,16 +847,15 @@ figcaption {
 
 /* Monospace */
 
-.wp-block-code .block-editor-plain-text {
+.wp-block-code {
 	background: var(--global--color-code-one);
 	color: var(--global--color-code-two);
 	@include font-code;
 	@include font-body-xs;
-	@include border-radius-m;
-	@include s-r-7(padding);
+	@include s-r-6(padding);
 
 	@include breakpoint(sm) {
-		margin-bottom: $s-7;
+		margin-bottom: $s-6;
 	}
 
 	.block-editor-plain-text {
@@ -867,11 +866,9 @@ figcaption {
 .wp-block-preformatted {
 	background-color: var(--global--color-code-two);
 	color: var(--global--color-code-one);
-	max-width: 100%;
 	overflow: auto;
-	@include s-r-7(padding);
+	@include s-r-6(padding);
 	@include s-r-6(margin-bottom);
-	@include border-radius-m;
 	@include font-code;
 
 	& pre {
@@ -884,11 +881,10 @@ figcaption {
 
 .wp-block[data-type="core/verse"] {
 	background: var(--global--color-background);
-	@include border-radius-m;
 	@include font-code;
 	@include font-body-xs;
 	@include font-regular;
-	@include s-r-7(padding);
+	@include s-r-6(padding);
 
 	pre {
 		background: transparent;

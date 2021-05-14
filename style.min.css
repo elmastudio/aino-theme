@@ -220,7 +220,7 @@ blockquote{margin:0;padding:0}
 .entry-content blockquote p,blockquote p{margin:0;padding:0}
 blockquote cite,.wp-block-pullquote cite{text-align:left;display:block;padding:1rem 0 0;font-size:.875rem;font-style:normal;font-weight:bold}
 code,kbd,tt,var{font-family:var(--code--font-family);font-size:14px;line-height:1.43}
-pre{max-width:100%;overflow:auto;padding:1rem;margin-bottom:1rem;border:0;border-radius:2.25rem;font-family:var(--code--font-family);font-size:14px;line-height:1.43}
+pre{padding:1rem;margin-bottom:1rem;border:0;font-family:var(--code--font-family);font-size:14px;line-height:1.43}
 abbr,acronym{text-decoration:none;border-bottom:1px dotted #666;cursor:help}
 ins,mark{background-color:rgba(63,192,224,0.1);text-decoration:none}
 big{font-size:125%}
@@ -507,8 +507,9 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:1
 .entry-content .wp-block-calendar table td#today{background:var(--global--color-background)}
 .entry-content .wp-block-calendar table tbody td,.entry-content .wp-block-calendar table th{padding:16px 8px;border:1px solid var(--global--color-border)}
 .wp-block-latest-comments__comment-excerpt p{font-size:1rem;margin:.5rem 0 1.5rem}
-.wp-block-preformatted,.wp-block-code{overflow:auto;padding:1rem;margin-bottom:1rem;font-family:var(--code--font-family);font-size:14px;line-height:1.43}
+.wp-block-preformatted,.wp-block-preformatted.has-background,.wp-block-code{overflow:auto;padding:1rem;margin-bottom:1rem;font-family:var(--code--font-family);font-size:14px;line-height:1.43}
 .wp-block-code{background:var(--global--color-code-one);color:var(--global--color-code-two)}
+.wp-block-code code{overflow-x:auto;white-space:pre;display:block;overflow-wrap:break-word}
 .wp-block-preformatted{background-color:var(--global--color-code-two);color:var(--global--color-code-one)}
 .wp-block-group__inner-container .wp-block-group h1,.wp-block-group__inner-container .wp-block-group h2,.wp-block-group__inner-container .wp-block-group h3,.wp-block-group__inner-container .wp-block-group h4,.wp-block-group__inner-container .wp-block-group h5,.wp-block-group__inner-container .wp-block-group h6{margin-top:0}
 .wp-block-group .wp-block-group__inner-container>*:last-child{margin-bottom:0}
@@ -956,7 +957,6 @@ h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-siz
 .nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.25rem !important}
 dd{margin:0 1.5rem 1.5rem}
-pre{padding:1.25rem}
 .dropcap{font-size:7.75rem;margin-left:-11px;line-height:.79}
 .wp-caption .wp-caption-text{margin-top:1.25rem}
 .wp-caption .wp-caption-text{margin-bottom:1.5rem}
@@ -1103,7 +1103,7 @@ h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-siz
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.625rem !important}
 .site-branding .site-title{font-size:1.375rem}
 .single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1.25rem}
-pre{padding:1.5rem}
+pre{padding:1.25rem}
 pre{margin-bottom:1.25rem}
 .wp-caption .wp-caption-text{margin-top:1.5rem}
 .wp-caption .wp-caption-text{margin-bottom:2rem}
@@ -1142,8 +1142,8 @@ div[class*='wp-block-'] figcaption{margin-bottom:1.25rem}
 .wp-block-separator.is-style-dots:before{font-size:1.375rem}
 .entry-content .page-links{padding-top:2.5rem}
 .entry-content .page-links{padding-bottom:2.5rem}
-.wp-block-preformatted,.wp-block-code{padding:1.25rem}
-.wp-block-preformatted,.wp-block-code{margin-bottom:1.25rem}
+.wp-block-preformatted,.wp-block-preformatted.has-background,.wp-block-code{padding:1.25rem}
+.wp-block-preformatted,.wp-block-preformatted.has-background,.wp-block-code{margin-bottom:1.25rem}
 .wp-block-cover.alignleft,.wp-block-gallery.alignleft,.wp-block-pullquote.alignleft{margin:0 3rem 3rem}
 .wp-block-cover.alignright,.wp-block-gallery.alignright,.wp-block-pullquote.alignright{margin:0 3rem 3rem}
 .site-content{padding-top:5rem}
@@ -1297,7 +1297,7 @@ h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-siz
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:3.25rem !important}
 .site-branding .site-title{font-size:1.5rem}
 .single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1.5rem}
-pre{padding:2rem}
+pre{padding:1.5rem}
 pre{margin-bottom:1.5rem}
 .wide-content{max-width:93rem}
 .wp-caption .wp-caption-text{margin-top:2rem}
@@ -1344,8 +1344,8 @@ div[class*='wp-block-'] figcaption{margin-bottom:1.5rem}
 .wp-block-separator.is-style-dots:before{font-size:1.5rem}
 .entry-content .page-links{padding-top:3rem}
 .entry-content .page-links{padding-bottom:3rem}
-.wp-block-preformatted,.wp-block-code{padding:1.5rem}
-.wp-block-preformatted,.wp-block-code{margin-bottom:1.5rem}
+.wp-block-preformatted,.wp-block-preformatted.has-background,.wp-block-code{padding:1.5rem}
+.wp-block-preformatted,.wp-block-preformatted.has-background,.wp-block-code{margin-bottom:1.5rem}
 .site-content{padding-top:6rem}
 .blog .site-content,.single-post .site-content,.archive .site-content,.search .site-content,.page-template-default .site-content,.error404 .site-content,.tpl-fullwidth .site-content,.search-no-results .site-content{padding-bottom:11rem}
 .site-header{padding-top:2rem}

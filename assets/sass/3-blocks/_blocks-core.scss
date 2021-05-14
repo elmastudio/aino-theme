@@ -669,6 +669,7 @@ div[class*='wp-block-'] figcaption {
 /* Preformatted */
 
 .wp-block-preformatted,
+.wp-block-preformatted.has-background,
 .wp-block-code {
 	overflow: auto;
 	@include s-r-6(padding);
@@ -679,6 +680,13 @@ div[class*='wp-block-'] figcaption {
 .wp-block-code {
 	background: var(--global--color-code-one);
 	color: var(--global--color-code-two);
+
+	code {
+		overflow-x: auto;
+		white-space: pre;
+		display: block;
+		overflow-wrap: break-word;
+	}
 }
 
 .wp-block-preformatted {
