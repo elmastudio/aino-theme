@@ -342,12 +342,9 @@ var {
 }
 
 pre {
-	max-width: 100%;
-	overflow: auto;
 	@include s-r-7(padding);
 	@include s-r-6(margin-bottom);
 	border: none;
-	@include border-radius-m;
 	@include font-code;
 }
 
