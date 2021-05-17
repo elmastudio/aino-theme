@@ -182,7 +182,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		$medium_light_gray         = '#999999';
 		$light_red_orange          = '#F79670';
 		$blue                      = '#6579BD';
-		$medium_light_red_orange   = '#EA7152';
+		$medium_red_orange         = '#EA7152';
 		$medium_light_green        = '#80FCA6';
 		$medium_light_cyan_blue    = '#7ECAF8';
 		$medium_light_brown        = '#C59A6D';
@@ -271,7 +271,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 				array(
 					'name'  => __( 'Light shade of Red Orange', 'aino' ),
 					'slug'  => 'light-red-orange',
-					'color' => $medium_light_red_orange,
+					'color' => $light_red_orange,
 				),
 				array(
 					'name'  => __( 'Shade of Blue', 'aino' ),
