@@ -9,20 +9,20 @@
 	--global--color-very-light-blue: #C7C9EF;
 	--global--color-light-green-cyan: #C9D5D3;
 	--global--color-very-light-orange: #FFD1B9;
-	--global--color-cyan: #539B92;
+	--global--color-medium-light-yellow-green: #C7F151;
 	--global--color-very-light-pink: #FFB9CE;
 	--global--color-yellow: #FFCA32;
 	--global--color-medium-dark-cyan: #2F5853;
 	--global--color-very-dark-gray: #222222;
 	--global--color-very-light-gray: #E9E9E9;
 	--global--color-medium-light-gray: #999999;
-	--global--color-medium-light-red-orange: #F79670;
+	--global--color-light-red-orange: #F79670;
 	--global--color-blue: #6579BD;
-	--global--color-very-light-orange: #FFD1B9;
+	--global--color-medium-red-orange: #EA7152;
 	--global--color-medium-light-green: #80FCA6;
 	--global--color-medium-light-cyan-blue: #7ECAF8;
 	--global--color-medium-light-brown: #C59A6D;
-	--global--color-medium-light-yellow-green: #FFFF50;
+	--global--color-light-yellow: #FFFF50;
 	--global--color-blue-magenta: #4D2CF0;
 	--global--color-medium-light-blue-magenta: #755CE9;
 
@@ -35,7 +35,7 @@
 	--global--color-code-two: var(--global--color-medium-dark-cyan); /* Dark code background. */
 	--global--color-success: var(--global--color-medium-light-green);
 	--global--color-notification: var(--global--color-medium-light-blue-magenta);
-	--global--color-error: var (--global--color-medium-light-red-orange);
+	--global--color-error: var (--global--color-medium-red-orange);
 }
 
 @media only screen {

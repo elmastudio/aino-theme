@@ -173,20 +173,20 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		$very_light_blue           = '#C7C9EF';
 		$light_green_cyan          = '#C9D5D3';
 		$very_light_orange         = '#FFD1B9';
-		$cyan                      = '#539B92';
+		$medium_light_yellow_green = '#C7F151';
 		$very_light_pink           = '#FFB9CE';
 		$yellow                    = '#FFCA32';
 		$medium_dark_cyan          = '#2F5853';
 		$very_dark_gray            = '#222222';
 		$very_light_gray           = "#E9E9E9";
 		$medium_light_gray         = '#999999';
-		$medium_light_red_orange   = '#F79670';
+		$light_red_orange          = '#F79670';
 		$blue                      = '#6579BD';
-		$very_light_orange         = '#FFD1B9';
+		$medium_light_red_orange   = '#EA7152';
 		$medium_light_green        = '#80FCA6';
 		$medium_light_cyan_blue    = '#7ECAF8';
 		$medium_light_brown        = '#C59A6D';
-		$medium_light_yellow_green = '#FFFF50';
+		$light_yellow              = '#FFFF50';
 		$blue_magenta              = '#4D2CF0';
 		$medium_light_blue_magenta = '#755CE9';
 	
@@ -234,9 +234,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => $very_light_orange,
 				),
 				array(
-					'name'  => __( 'Shade of Cyan', 'aino' ),
-					'slug'  => 'cyan',
-					'color' => $cyan,
+					'name'  => __( 'Medium light shade of Yellow Green', 'aino' ),
+					'slug'  => 'medium-light-yellow-green',
+					'color' => $medium_light_yellow_green,
 				),
 				array(
 					'name'  => __( 'Very light shade of Pink', 'aino' ),
@@ -269,8 +269,8 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => $medium_light_gray,
 				),
 				array(
-					'name'  => __( 'Medium light shade of Red Orange', 'aino' ),
-					'slug'  => 'medium-light-red-orange',
+					'name'  => __( 'Light shade of Red Orange', 'aino' ),
+					'slug'  => 'light-red-orange',
 					'color' => $medium_light_red_orange,
 				),
 				array(
@@ -279,9 +279,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => $blue,
 				),
 				array(
-					'name'  => __( 'Very light shade of Orange', 'aino' ),
-					'slug'  => 'very-light-orange',
-					'color' => $very_light_orange,
+					'name'  => __( 'Medium shade of Red Orange', 'aino' ),
+					'slug'  => 'medium-red-orange',
+					'color' => $medium_red_orange,
 				),
 				array(
 					'name'  => __( 'Medium light shade of Green', 'aino' ),
@@ -299,9 +299,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 					'color' => $medium_light_brown,
 				),
 				array(
-					'name'  => __( 'Medium light shade of Yellow Green', 'aino' ),
-					'slug'  => 'medium-light-yellow-green',
-					'color' => $medium_light_yellow_green,
+					'name'  => __( 'Light shade of Yellow ', 'aino' ),
+					'slug'  => 'light-yellow',
+					'color' => $light_yellow,
 				),
 				array(
 					'name'  => __( 'Shade of Blue Magenta', 'aino' ),
