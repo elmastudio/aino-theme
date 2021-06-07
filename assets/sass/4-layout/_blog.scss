@@ -544,11 +544,11 @@ body:not(.no-blogcard-spacing) {
 .hentry {
 
 	.entry-cats {
-		@include s-r-2 (padding-bottom);
+		@include s-r-4 (padding-bottom);
 	}
 
 	.entry-summary {
-		@include s-r-4 (padding-top);
+		@include s-r-6 (padding-top);
 	}
 }
 

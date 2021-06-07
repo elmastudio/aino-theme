@@ -100,6 +100,16 @@ select{border:1px solid #ccc}
 textarea{width:100%}
 .editor-default-block-appender .editor-default-block-appender__content{font-family:var(--body--font-family);line-height:1.4;font-size:1.125rem}
 .wp-block-group.has-background{padding-left:0;padding-right:0}
+.wp-block-query .wp-block-query-loop{padding:0}
+.wp-block-query .wp-block-query-loop li{padding-bottom:1.5rem}
+.wp-block-query .wp-block-query-loop li a{text-decoration:none}
+.wp-block-query .wp-block-query-loop li a:hover{text-decoration:underline}
+.wp-block-query .wp-block-query-loop .wp-block-post-featured-image{padding-bottom:1rem}
+.wp-block-query .wp-block-query-loop .wp-block-post-excerpt__excerpt,.wp-block-query .wp-block-query-loop .wp-block-post-terms{padding-top:1rem}
+.wp-block-query .wp-block-query-loop .wp-block-post-terms{visibility:hidden}
+.wp-block-query .wp-block-query-loop .wp-block-post-terms a{visibility:visible}
+.wp-block-query .wp-block-query-loop .wp-block-post-terms a:not(:last-child):after{content:","}
+.wp-block-query .wp-block-query-loop .wp-block-post-terms a:not(:first-child){margin-left:-7px}
 figcaption{max-width:100%;font-size:1rem;margin-top:1rem;margin-bottom:1rem;color:var(--global--color-text-two);text-align:left}
 .wp-block-gallery{margin:0}
 .wp-block-gallery .blocks-gallery-image figcaption,.wp-block-gallery .blocks-gallery-item figcaption{font-size:.875rem}
@@ -218,6 +228,10 @@ p.has-xl-font-size,ol.has-xl-font-size,ul.has-xl-font-size{font-size:1.5rem}
 p.has-xxl-font-size,ol.has-xxl-font-size,ul.has-xxl-font-size{font-size:1.75rem}
 p.has-drop-cap:not(:focus):first-letter ,ol.has-drop-cap:not(:focus):first-letter ,ul.has-drop-cap:not(:focus):first-letter {font-size:120px;line-height:.77;margin:6px 12px 0 -8px}
 p.intro.has-drop-cap:not(:focus):first-letter ,ol.intro.has-drop-cap:not(:focus):first-letter ,ul.intro.has-drop-cap:not(:focus):first-letter {font-size:142px}
+.wp-block-query .wp-block-query-loop li{padding-bottom:2rem}
+.wp-block-query .wp-block-query-loop.three-columns{display:grid;grid-template-columns:repeat(2,1fr);-webkit-column-gap:2rem;-moz-column-gap:2rem;column-gap:2rem}
+.wp-block-query .wp-block-query-loop.three-columns li{grid-template-columns:1fr 1fr}
+.wp-block-query .wp-block-query-loop.three-columns li:nth-last-child(-n+2){padding-bottom:0}
 .wp-block-cover-image{margin-top:1.5rem}
 .wp-block-cover-image{margin-bottom:1.5rem}
 .wp-block-cover-image-text,.wp-block-cover-image h2{font-size:1.5rem !important}
@@ -242,6 +256,9 @@ p.has-l-font-size,ol.has-l-font-size,ul.has-l-font-size{font-size:1.375rem}
 p.has-xl-font-size,ol.has-xl-font-size,ul.has-xl-font-size{font-size:1.625rem}
 p.has-xxl-font-size,ol.has-xxl-font-size,ul.has-xxl-font-size{font-size:1.875rem}
 .wp-block[data-type="core/paragraph"]{padding-bottom:1.25rem}
+.wp-block-query .wp-block-query-loop li{padding-bottom:2.5rem}
+.wp-block-query .wp-block-query-loop .wp-block-post-featured-image{padding-bottom:1.25rem}
+.wp-block-query .wp-block-query-loop .wp-block-post-excerpt__excerpt,.wp-block-query .wp-block-query-loop .wp-block-post-terms{padding-top:1.25rem}
 figcaption{margin-bottom:1.25rem}
 .wp-block-pullquote.is-large,.wp-block-pullquote.is-style-large p,.wp-block-quote.is-large,.wp-block-quote.is-style-large p{font-size:1.375rem}
 .wp-block-cover-image{margin-top:2rem}
@@ -273,6 +290,12 @@ p.has-xl-font-size,ol.has-xl-font-size,ul.has-xl-font-size{font-size:1.75rem}
 p.has-xxl-font-size,ol.has-xxl-font-size,ul.has-xxl-font-size{font-size:2.125rem}
 .wp-block[data-type="core/paragraph"]{padding-bottom:1.5rem}
 .editor-default-block-appender .editor-default-block-appender__content{font-size:1.25rem}
+.wp-block-query .wp-block-query-loop li{padding-bottom:3rem}
+.wp-block-query .wp-block-query-loop .wp-block-post-featured-image{padding-bottom:1.5rem}
+.wp-block-query .wp-block-query-loop .wp-block-post-excerpt__excerpt,.wp-block-query .wp-block-query-loop .wp-block-post-terms{padding-top:1.5rem}
+.wp-block-query .wp-block-query-loop.three-columns{grid-template-columns:repeat(3,1fr);-webkit-column-gap:3rem;-moz-column-gap:3rem;column-gap:3rem}
+.wp-block-query .wp-block-query-loop.three-columns li{grid-template-columns:1fr 1fr 1fr}
+.wp-block-query .wp-block-query-loop.three-columns li:nth-last-child(-n+3){padding-bottom:0}
 figcaption{margin-bottom:1.5rem}
 .wp-block-pullquote blockquote p,.wp-block-quote blockquote p{font-size:1.25rem}
 .wp-block-pullquote.is-large,.wp-block-pullquote.is-style-large p,.wp-block-quote.is-large,.wp-block-quote.is-style-large p{font-size:1.5rem}

@@ -418,14 +418,14 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
 
-		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
-		remove_theme_support( 'core-block-patterns' );
-
 		// Add support for custom custom line-heights in blocks.
 		add_theme_support( 'custom-line-height' );
 
 		// Add support for custom units in blocks.
 		add_theme_support( 'custom-units' );
+
+		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
+		remove_theme_support( 'core-block-patterns' );
 
 	}
 	endif;
@@ -817,9 +817,7 @@ function aino_add_featured_image_post_class( $classes ) {
 }
 add_filter( 'post_class', 'aino_add_featured_image_post_class' );
 
-/**
-* Custom template tags for this theme.
-*/
+// Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
@@ -831,15 +829,14 @@ require get_template_directory() . '/inc/customizer/customizer-css.php';
 require get_template_directory() . '/inc/customizer/customizer-editor.php';
 require get_template_directory() . '/inc/customizer/sanitization-callbacks.php';
 
-/**
- * SVG icons functions and filters.
- */
+// SVG icons functions and filters.
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
-/**
-  * Load Jetpack compatibility file.
-*/
+// Load Jetpack compatibility file.
 require get_template_directory() . '/inc/jetpack.php';
+
+// Aino Block Patterns.
+require get_template_directory() . '/inc/block-patterns.php';
 
 /**
  * TGMPA plugin activation.
@@ -847,6 +844,7 @@ require get_template_directory() . '/inc/jetpack.php';
 require_once get_template_directory() . '/inc/classes/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'aino_register_required_plugins' );
+
 
 /**
  * Register the required plugins for this theme.

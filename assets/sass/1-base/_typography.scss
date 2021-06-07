@@ -17,16 +17,23 @@ div[class*='wp-block-'] figcaption,
 	color: var(--global--color-text-two);
 }
 
-.entry-content p.has-s-font-size {
-	@include font-body-s;
-}
-
 .single .navigation a span.nav-subtitle,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
+.entry-content .wp-block-post-excerpt.has-xs-font-size p,
+.entry-content .wp-block-post-terms.has-xs-font-size,
 .entry-content .sharedaddy h3.sd-title,
 .blocks-gallery-grid .blocks-gallery-item figcaption {
 	@include font-body-xs;
+}
+
+.entry-content {
+
+	p.has-s-font-size,
+	.wp-block-post-excerpt.has-s-font-size p,
+	.wp-block-post-terms.has-s-font-size {
+		@include font-body-s;
+	}
 }
 
 .hentry {
@@ -44,6 +51,8 @@ div[class*='wp-block-'] figcaption,
 
 .page-header .description p,
 .entry-content p.has-m-font-size,
+.entry-content .wp-block-post-excerpt.has-m-font-size p,
+.entry-content .wp-block-post-terms.has-m-font-size,
 .related-wrap .related-post .entry-cats,
 .comment-author .fn,
 .comment-notes,
@@ -74,28 +83,40 @@ select,
 table,
 textarea,
 .modal-menu,
-.search-header .search-field {
+.search-header .search-field,
+.entry-content .wp-block-post-excerpt.has-l-font-size p,
+.entry-content .wp-block-post-terms.has-l-font-size {
 	@include font-body-l;
 }
 
-.entry-content p.has-xl-font-size {
+.entry-content p.has-xl-font-size,
+.entry-content .wp-block-post-excerpt.has-xl-font-size p,
+.entry-content .wp-block-post-terms.has-xl-font-size {
 	@include font-body-xl;
 }
 
-.entry-content p.has-xxl-font-size {
+.entry-content p.has-xxl-font-size,
+.entry-content .wp-block-post-excerpt.has-xxl-font-size p,
+.entry-content .wp-block-post-terms.has-xxl-font-size {
 	@include font-body-2xl;
 }
 
 .entry-content p.has-xxxl-font-size,
-.page-header .description p {
+.page-header .description p,
+.entry-content .wp-block-post-excerpt.has-xxxl-font-size p,
+.entry-content .wp-block-post-terms.has-xxxl-font-size {
 	@include font-body-3xl;
 }
 
-.entry-content p.has-xxxxl-font-size {
+.entry-content p.has-xxxxl-font-size,
+.entry-content .wp-block-post-excerpt.has-xxxxl-font-size p,
+.entry-content .wp-block-post-terms.has-xxxxl-font-size {
 	@include font-body-4xl;
 }
 
-.entry-content p.has-xxs-font-size {
+.entry-content p.has-xxs-font-size,
+.entry-content .wp-block-post-excerpt.has-xxs-font-size p,
+.entry-content .wp-block-post-terms.has-xxs-font-size {
 	@include font-body-2xs;
 }
 

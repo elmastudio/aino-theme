@@ -41,7 +41,7 @@
 		clear: both;
 	}
 
-	&.alignwide:not(.wp-block-group) {
+	&.alignwide:not(.wp-block-group, .wp-block-ainoblocks-grid-container) {
 		@include outer-margins;
 		@include push--auto;
 
@@ -695,7 +695,6 @@ div[class*='wp-block-'] figcaption {
 }
 
 /* Group */
-
 .wp-block-group {
 
 	h1,
@@ -721,6 +720,87 @@ div[class*='wp-block-'] figcaption {
 			}
 	}
 }
+
+
+/* Query Block */
+
+.wp-block-query {
+
+	.wp-block-query-loop {
+		padding: 0;
+
+		li {
+			@include s-r-9 (padding-bottom);
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.wp-block-post-featured-image {
+
+			@include s-r-6 (padding-bottom);
+		}
+	
+		.wp-block-post-excerpt__excerpt,
+		.wp-block-post-terms {
+			@include s-r-6 (padding-top);
+		}
+
+		.wp-block-post-terms {
+			visibility: hidden;
+
+			a {
+				visibility: visible;
+			}
+
+			a:not(:last-child):after {
+				content: ",";
+			}
+
+			a:not(:first-child) {
+				margin-left: -7px; // temporary fix for post term separators
+			}
+		}
+
+
+	&.three-columns {
+
+			@include breakpoint(sm) {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 2rem;
+
+				li {
+					grid-template-columns: 1fr 1fr;
+
+					&:nth-last-child(-n+2) {
+						padding-bottom: 0;
+					}
+				}
+			}
+
+			@include breakpoint(lg) {
+
+				grid-template-columns: repeat(3, 1fr);
+				column-gap: 3rem;
+
+				li {
+					grid-template-columns: 1fr 1fr 1fr;
+
+					&:nth-last-child(-n+3) {
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 /* Block Alignment */
 .wp-block-cover-image,
