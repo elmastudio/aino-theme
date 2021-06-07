@@ -29,9 +29,9 @@ div[class*='wp-block-'] figcaption,
 
 .entry-content {
 
+	.has-s-font-size,
 	p.has-s-font-size,
-	.wp-block-post-excerpt.has-s-font-size p,
-	.wp-block-post-terms.has-s-font-size {
+	.has-s-font-size p {
 		@include font-body-s;
 	}
 }

@@ -45,6 +45,8 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.4.0 =
+New: Basic Block Patterns.
+New: Support Query block.
 Enhance: Color Palette.
 Enhance: Core Code, Preformatted, Verse block styles.
 
