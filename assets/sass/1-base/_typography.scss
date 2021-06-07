@@ -31,7 +31,8 @@ div[class*='wp-block-'] figcaption,
 
 	.has-s-font-size,
 	p.has-s-font-size,
-	.has-s-font-size p {
+	.has-s-font-size p,
+	.onsale {
 		@include font-body-s;
 	}
 }
@@ -60,7 +61,13 @@ div[class*='wp-block-'] figcaption,
 .comment-reply-title #cancel-comment-reply-link,
 .footer-info,
 .footer-widget .widget ul li,
-.mc4wp-form .mc4wp-alert p {
+.mc4wp-form .mc4wp-alert p,
+form label,
+label .required,
+input,
+select,
+table,
+textarea {
 	@include font-body-m;
 }
 
@@ -76,12 +83,6 @@ dl,
 .comment-content ol,
 .comment-content ul,
 .authorbox__content .author-bio,
-form label,
-label .required,
-input,
-select,
-table,
-textarea,
 .modal-menu,
 .search-header .search-field,
 .entry-content .wp-block-post-excerpt.has-l-font-size p,
@@ -260,7 +261,8 @@ h3.has-xxs-font-size,
 h4.has-xs-font-size,
 h5,
 h5.has-s-font-size,
-h6.has-m-font-size {
+h6.has-m-font-size,
+h2.woocommerce-loop-product__title {
 	@include font-h-2;
 }
 

@@ -11,8 +11,8 @@
 function aino_register_pattern_categories() {
 
 	register_block_pattern_category(
-		'aino-basics',
-		array( 'label' => __( 'Aino Basics', 'aino' ) )
+		'aino-building-blocks',
+		array( 'label' => __( 'Aino Building Blocks', 'aino' ) )
 	);
 }
 
@@ -28,7 +28,7 @@ function aino_register_patterns() {
 		array(
 			'title'       => __( 'Team Members', 'aino' ),
 			'description' => _x( 'Two horizontal buttons, the left button is filled in, and the right button is outlined.', 'Block pattern description', 'aino' ),
-			'categories'	=> array( 'aino-basics' ),
+			'categories'	=> array( 'aino-building-blocks' ),
 			'content'     => '<!-- wp:group {"align":"full","backgroundColor":"#ffff50","paddingTop":8,"paddingBottom":6} --><div class="wp-block-group alignfull has-ffff-50-background-color has-background pt__8 pb__6"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.2"}},"fontSize":"s","paddingBottom":5} -->
 			<p class="has-text-align-center has-s-font-size pb__5" style="line-height:1.2">OFFICIIS EST ODIT ULLAM REM ISTE QUIA FUGA ESSE. ADIPISCI AUTEM QUIA MAIORES UT.</p>
 			<!-- /wp:paragraph --><!-- wp:heading {"textAlign":"center","style":{"typography":{"lineHeight":"0.9"}},"fontSize":"xxl"} -->

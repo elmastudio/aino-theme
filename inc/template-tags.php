@@ -752,6 +752,11 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blogcards-flexstart';
 	}
 
+	// If our main sidebar doesn't contain widgets, adjust the layout to be full-width.
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'no-sidebar';
+	}
+
 	// Classes for Footer Widgets.
 	if ( is_active_sidebar( 'footer-1' ) &&
 		is_active_sidebar( 'footer-2' ) &&

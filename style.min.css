@@ -184,10 +184,10 @@ textarea{resize:vertical}
 body,button,input,select,table,textarea{font-family:var(--body--font-family);line-height:1.4;color:var(--global--color-text-two)}
 div[class*='wp-block-'] figcaption,.wp-block-calendar table,.hentry .entry-summary,.posts-container .hentry .entry-footer{font-size:1rem;color:var(--global--color-text-two)}
 .single .navigation a span.nav-subtitle,.entry-content p.has-extrasmall-font-size,.entry-content p.has-xs-font-size,.entry-content .wp-block-post-excerpt.has-xs-font-size p,.entry-content .wp-block-post-terms.has-xs-font-size,.entry-content .sharedaddy h3.sd-title,.blocks-gallery-grid .blocks-gallery-item figcaption{font-size:.875rem}
-.entry-content .has-s-font-size,.entry-content p.has-s-font-size,.entry-content .has-s-font-size p{font-size:1rem}
+.entry-content .has-s-font-size,.entry-content p.has-s-font-size,.entry-content .has-s-font-size p,.entry-content .onsale{font-size:1rem}
 .blog-1-column .hentry .entry-summary,.blog-2-column .hentry .entry-summary,.blog-1-column .hentry .entry-cats,.blog-2-column .hentry .entry-cats,.blog-1-column .hentry .entry-footer,.blog-2-column .hentry .entry-footer{font-size:1.125rem}
-.page-header .description p,.entry-content p.has-m-font-size,.entry-content .wp-block-post-excerpt.has-m-font-size p,.entry-content .wp-block-post-terms.has-m-font-size,.related-wrap .related-post .entry-cats,.comment-author .fn,.comment-notes,.logged-in-as,.comment-reply-title #cancel-comment-reply-link,.footer-info,.footer-widget .widget ul li,.mc4wp-form .mc4wp-alert p{font-size:1.125rem}
-.entry-content p.has-l-font-size,.site-branding .site-description,ul.primary-menu li,.hentry .entry-header .entry-meta,.comment-content p,.entry-content p,.hentry ol,.hentry ul,dl,.comment-content ol,.comment-content ul,.authorbox__content .author-bio,form label,label .required,input,select,table,textarea,.modal-menu,.search-header .search-field,.entry-content .wp-block-post-excerpt.has-l-font-size p,.entry-content .wp-block-post-terms.has-l-font-size{font-size:1.25rem}
+.page-header .description p,.entry-content p.has-m-font-size,.entry-content .wp-block-post-excerpt.has-m-font-size p,.entry-content .wp-block-post-terms.has-m-font-size,.related-wrap .related-post .entry-cats,.comment-author .fn,.comment-notes,.logged-in-as,.comment-reply-title #cancel-comment-reply-link,.footer-info,.footer-widget .widget ul li,.mc4wp-form .mc4wp-alert p,form label,label .required,input,select,table,textarea{font-size:1.125rem}
+.entry-content p.has-l-font-size,.site-branding .site-description,ul.primary-menu li,.hentry .entry-header .entry-meta,.comment-content p,.entry-content p,.hentry ol,.hentry ul,dl,.comment-content ol,.comment-content ul,.authorbox__content .author-bio,.modal-menu,.search-header .search-field,.entry-content .wp-block-post-excerpt.has-l-font-size p,.entry-content .wp-block-post-terms.has-l-font-size{font-size:1.25rem}
 .entry-content p.has-xl-font-size,.entry-content .wp-block-post-excerpt.has-xl-font-size p,.entry-content .wp-block-post-terms.has-xl-font-size{font-size:1.375rem}
 .entry-content p.has-xxl-font-size,.entry-content .wp-block-post-excerpt.has-xxl-font-size p,.entry-content .wp-block-post-terms.has-xxl-font-size{font-size:1.5rem}
 .entry-content p.has-xxxl-font-size,.page-header .description p,.entry-content .wp-block-post-excerpt.has-xxxl-font-size p,.entry-content .wp-block-post-terms.has-xxxl-font-size{font-size:1.625rem}
@@ -207,7 +207,7 @@ h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.
 h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:1.75rem !important}
 h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:1.5rem !important}
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.375rem !important}
-.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.125rem !important}
+.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size,h2.woocommerce-loop-product__title{font-size:1.125rem !important}
 h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-size,h6.has-xs-font-size,h6.has-xxs-font-size,h6.has-xxs-font-size{font-size:1rem !important}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:1.75rem !important}
 .site-branding .site-title{font-size:1.25rem;line-height:1}
@@ -285,7 +285,7 @@ form .comment-form-cookies-consent{clear:both;display:-webkit-box;display:-ms-fl
 form .comment-form-cookies-consent label{padding-left:1rem;margin-bottom:0}
 form p.comment-form-comment{margin:0}
 form label{position:relative;display:block;margin-bottom:.5rem}
-select{background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");border:1px solid var(--global--color-border);background-repeat:no-repeat;background-position:right 14px top 21px;background-size:12px 12px;padding:15px 40px 15px 15px;border-radius:0;-webkit-appearance:none;width:100%}
+select{background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");border:1px solid var(--global--color-border);background-repeat:no-repeat;background-position:right 14px top 21px;background-size:12px 12px;border-radius:0;-webkit-appearance:none}
 input[type="submit"],button[type="submit"]{display:block;clear:both}
 .light-btn input[type="submit"],.light-btn button[type="submit"]{background:var(--global--color-white);color:var(--global--color-text-one)}
 .searchform-wrap,.form-wrap{position:relative;display:block;clear:both}
@@ -831,6 +831,17 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-lef
 .footer-light .site-footer,.footer-light .site-footer .footer-wrap .footer-info .site-info,.footer-light .site-footer .footer-wrap .footer-info .site-info a,.footer-light .site-footer .footer-wrap .footer-info .site-info span,.footer-light .site-footer .widget-title,.footer-light .textwidget p,.footer-light .textwidget p a,.footer-light .footer-widget-wrap a,.footer-light .site-footer .menu-social-container .icon{color:var(--global--color-white);fill:var(--global--color-white)}
 .footer-light .site-footer .footer-wrap .footer-info{border-color:var(--global--color-white)}
 .footer-light .footer-widget-wrap:before{background-color:transparent}
+.woocommerce-shop .site-content{padding-left:1rem;padding-right:1rem}
+.woocommerce-shop .site-content .woocommerce-products-header__title{display:none}
+.woocommerce-shop .site-content .woocommerce-ordering{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;padding-bottom:1.5rem}
+.products{display:grid;list-style:none}
+.products .product{padding-bottom:1.5rem}
+.products .product .woocommerce-loop-product__title,.products .product .price{display:block;line-height:1}
+.products .product .woocommerce-loop-product__title{padding-top:1rem}
+.products .product .price{padding-top:.5rem}
+.products .product .added_to_cart,.products .product .add_to_cart_button,.products .product .button.product_type_grouped{opacity:0;margin-top:1rem;padding:8px 16px;font-size:1rem;line-height:1;width:100%;display:block;border:1px solid var(--global--color-black);text-align:center;border-radius:6.25em}
+.products .product .added_to_cart,.products .product:hover .add_to_cart_button,.products .product:hover .button.product_type_grouped{opacity:1}
+.onsale{position:absolute;z-index:1;top:1rem;left:1rem;line-height:1;background:var(--global--color-white);padding:5px 12px;border-radius:6.25em}
 .entry-content .has-black-color{color:var(--global--color-black);fill:var(--global--color-black)}
 .entry-content .has-black-background-color{background:var(--global--color-black);border-color:var(--global--color-black)}
 .entry-content .has-white-color{color:var(--global--color-white);fill:var(--global--color-white)}
@@ -965,7 +976,7 @@ h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.
 h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:2.25rem !important}
 h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:1.875rem !important}
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.5rem !important}
-.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.25rem !important}
+.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size,h2.woocommerce-loop-product__title{font-size:1.25rem !important}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:2.25rem !important}
 dd{margin:0 1.5rem 1.5rem}
 .dropcap{font-size:7.75rem;margin-left:-11px;line-height:.79}
@@ -1092,6 +1103,12 @@ button.sub-menu-toggle{margin:0 2rem 0 0}
 .site-footer .footer-widget-wrap:before{margin-bottom:4rem}
 .site-footer .footer-widget-wrap:before{width:calc(100% - 2rem)}
 body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-footer-nav{padding-top:0}
+.woocommerce-shop .site-content{padding-left:2rem;padding-right:2rem}
+.woocommerce-shop .site-content .woocommerce-ordering{padding-bottom:2rem}
+.products .product{padding-bottom:2rem}
+.products.columns-2,.products.columns-3,.products.columns-4{display:grid;grid-template-columns:repeat(2,1fr);-webkit-column-gap:2rem;-moz-column-gap:2rem;column-gap:2rem}
+.products.columns-2 li,.products.columns-3 li,.products.columns-4 li{position:relative;list-style:none;grid-template-columns:1fr 1fr}
+.products.columns-2 li:nth-last-child(-n+2),.products.columns-3 li:nth-last-child(-n+2),.products.columns-4 li:nth-last-child(-n+2){padding-bottom:0}
 }@media(min-width:48em) and (min-width:48em){.wp-block-columns.has-background{padding-top:1.5rem}
 }@media(min-width:48em) and (min-width:64em){.wp-block-columns.has-background{padding-top:2rem}
 }@media(min-width:64em) and (min-width:80em){.blog.blog-1-column .posts-container .hentry .entry-footer,.blog-archive.blog-1-column .posts-container .hentry .entry-footer{padding:1.5rem}
@@ -1100,7 +1117,7 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 .has-padding-bottom{padding-bottom:7.5rem}
 .tpl-fullwidth .entry-header,.tpl-fullwidth .hentry .entry-content{padding-left:1.5rem;padding-right:1.5rem}
 .tpl-fullwidth .entry-header .alignwide,.tpl-fullwidth .hentry .entry-content .alignwide{padding-left:1.5rem;padding-right:1.5rem}
-.entry-content p.has-l-font-size,.site-branding .site-description,ul.primary-menu li,.hentry .entry-header .entry-meta,.comment-content p,.entry-content p,.hentry ol,.hentry ul,dl,.comment-content ol,.comment-content ul,.authorbox__content .author-bio,form label,label .required,input,select,table,textarea,.modal-menu,.search-header .search-field,.entry-content .wp-block-post-excerpt.has-l-font-size p,.entry-content .wp-block-post-terms.has-l-font-size{font-size:1.375rem}
+.entry-content p.has-l-font-size,.site-branding .site-description,ul.primary-menu li,.hentry .entry-header .entry-meta,.comment-content p,.entry-content p,.hentry ol,.hentry ul,dl,.comment-content ol,.comment-content ul,.authorbox__content .author-bio,.modal-menu,.search-header .search-field,.entry-content .wp-block-post-excerpt.has-l-font-size p,.entry-content .wp-block-post-terms.has-l-font-size{font-size:1.375rem}
 .entry-content p.has-xl-font-size,.entry-content .wp-block-post-excerpt.has-xl-font-size p,.entry-content .wp-block-post-terms.has-xl-font-size{font-size:1.625rem}
 .entry-content p.has-xxl-font-size,.entry-content .wp-block-post-excerpt.has-xxl-font-size p,.entry-content .wp-block-post-terms.has-xxl-font-size{font-size:1.875rem}
 .entry-content p.has-xxxl-font-size,.page-header .description p,.entry-content .wp-block-post-excerpt.has-xxxl-font-size p,.entry-content .wp-block-post-terms.has-xxxl-font-size{font-size:2.25rem}
@@ -1259,6 +1276,14 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .site-footer .footer-wrap .footer-info .social-footer-nav{padding-top:1.25rem}
 .footerinfo-centered .site-footer .footer-wrap .footer-info .back-top{padding-top:1.25rem}
 .site-footer .footer-widget-wrap:before{margin-bottom:5rem}
+.woocommerce-shop .site-content .woocommerce-ordering{padding-bottom:2.5rem}
+.products .product{padding-bottom:2.5rem}
+.products.columns-3,.products.columns-6{grid-template-columns:repeat(3,1fr)}
+.products.columns-3 li,.products.columns-6 li{grid-template-columns:1fr 1fr 1fr}
+.products.columns-3 li:nth-last-child(-n+3),.products.columns-6 li:nth-last-child(-n+3){padding-bottom:0}
+.products.columns-4{grid-template-columns:repeat(4,1fr)}
+.products.columns-4 li{grid-template-columns:1fr 1fr 1fr 1fr}
+.products.columns-4 li:nth-last-child(-n+4){padding-bottom:0}
 }@media(min-width:64em) and (min-width:64em){.blog.blog-1-column .posts-container .hentry .entry-footer,.blog-archive.blog-1-column .posts-container .hentry .entry-footer{padding:1.25rem}
 }@media(min-width:71.25em){.site-branding .custom-logo-link{max-height:100%}
 .site-branding .custom-logo-link img{height:auto !important}
@@ -1304,8 +1329,8 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .blog-3-column .posts-container .hentry,.header-infobar .col,.s4{margin-left:1.5rem;margin-right:1.5rem}
 .blog-3-column .posts-container .hentry,.header-infobar .col,.s4{-ms-flex-preferred-size:calc(33.333% - 3rem);flex-basis:calc(33.333% - 3rem)}
 .blog-1-column .hentry .entry-summary,.blog-2-column .hentry .entry-summary,.blog-1-column .hentry .entry-cats,.blog-2-column .hentry .entry-cats,.blog-1-column .hentry .entry-footer,.blog-2-column .hentry .entry-footer{font-size:1.25rem}
-.page-header .description p,.entry-content p.has-m-font-size,.entry-content .wp-block-post-excerpt.has-m-font-size p,.entry-content .wp-block-post-terms.has-m-font-size,.related-wrap .related-post .entry-cats,.comment-author .fn,.comment-notes,.logged-in-as,.comment-reply-title #cancel-comment-reply-link,.footer-info,.footer-widget .widget ul li,.mc4wp-form .mc4wp-alert p{font-size:1.25rem}
-.entry-content p.has-l-font-size,.site-branding .site-description,ul.primary-menu li,.hentry .entry-header .entry-meta,.comment-content p,.entry-content p,.hentry ol,.hentry ul,dl,.comment-content ol,.comment-content ul,.authorbox__content .author-bio,form label,label .required,input,select,table,textarea,.modal-menu,.search-header .search-field,.entry-content .wp-block-post-excerpt.has-l-font-size p,.entry-content .wp-block-post-terms.has-l-font-size{font-size:1.5rem}
+.page-header .description p,.entry-content p.has-m-font-size,.entry-content .wp-block-post-excerpt.has-m-font-size p,.entry-content .wp-block-post-terms.has-m-font-size,.related-wrap .related-post .entry-cats,.comment-author .fn,.comment-notes,.logged-in-as,.comment-reply-title #cancel-comment-reply-link,.footer-info,.footer-widget .widget ul li,.mc4wp-form .mc4wp-alert p,form label,label .required,input,select,table,textarea{font-size:1.25rem}
+.entry-content p.has-l-font-size,.site-branding .site-description,ul.primary-menu li,.hentry .entry-header .entry-meta,.comment-content p,.entry-content p,.hentry ol,.hentry ul,dl,.comment-content ol,.comment-content ul,.authorbox__content .author-bio,.modal-menu,.search-header .search-field,.entry-content .wp-block-post-excerpt.has-l-font-size p,.entry-content .wp-block-post-terms.has-l-font-size{font-size:1.5rem}
 .entry-content p.has-xl-font-size,.entry-content .wp-block-post-excerpt.has-xl-font-size p,.entry-content .wp-block-post-terms.has-xl-font-size{font-size:1.75rem}
 .entry-content p.has-xxl-font-size,.entry-content .wp-block-post-excerpt.has-xxl-font-size p,.entry-content .wp-block-post-terms.has-xxl-font-size{font-size:2.125rem}
 .entry-content p.has-xxxl-font-size,.page-header .description p,.entry-content .wp-block-post-excerpt.has-xxxl-font-size p,.entry-content .wp-block-post-terms.has-xxxl-font-size{font-size:2.5rem}
@@ -1320,7 +1345,7 @@ h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.
 h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size,.authorbox__details .author-name,.related-title,.comment-reply-title{font-size:3.25rem !important}
 h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,h2.widget-title,.blog h2.entry-title,.blog-archive h2.entry-title{font-size:2.375rem !important}
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,.authorbox__wrap .section-title,.related-wrap .section-title,.comments-area .comments-title,.blog .page-header h1.page-title,.blog-archive .page-header h1.page-title{font-size:1.75rem !important}
-.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size{font-size:1.375rem !important}
+.nav-title,h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size,h2.woocommerce-loop-product__title{font-size:1.375rem !important}
 .blog.blog-1-column h2.entry-title,.blog.blog-2-column h2.entry-title,.blog-archive.blog-1-column h2.entry-title,.blog-archive.blog-2-column h2.entry-title{font-size:3.25rem !important}
 .site-branding .site-title{font-size:1.5rem}
 .single address,.single p,.page-template-default address,.page-template-default p,.error404 address,.error404 p{padding-bottom:1.5rem}
@@ -1442,6 +1467,10 @@ body:not(.no-blogcard-spacing) .posts-container .hentry .entry-footer{margin-rig
 .footerinfo-centered .site-footer .footer-wrap .footer-info .back-top{padding-top:1.5rem}
 .site-footer .footer-widget-wrap:before{margin-bottom:6rem}
 .site-footer .footer-widget-wrap:before{width:calc(100% - 3rem)}
+.woocommerce-shop .site-content{padding-left:3rem;padding-right:3rem}
+.woocommerce-shop .site-content .woocommerce-ordering{padding-bottom:3rem}
+.products .product{padding-bottom:3rem}
+.products.columns-2,.products.columns-3,.products.columns-4{-webkit-column-gap:3rem;-moz-column-gap:3rem;column-gap:3rem}
 }@media(min-width:96em){:root{--global--grid-gap:3rem}
 .mobile-margins{padding-left:0;padding-right:0}
 .outer-margins{padding-left:1.5rem;padding-right:1.5rem}

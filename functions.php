@@ -427,6 +427,19 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
 		remove_theme_support( 'core-block-patterns' );
 
+		// Add support for the WooCommerce eCommerce plugin.
+		add_theme_support( 'woocommerce', array(
+			'thumbnail_image_width' => 600,
+			'single_image_width'	=> 1200,
+		) );
+
+		// Disable WooCommerce default styling.
+		add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
+
 	}
 	endif;
 	add_action( 'after_setup_theme', 'aino_setup' );
@@ -563,6 +576,15 @@ add_action( 'wp_body_open', 'aino_skip_link', 5 );
  * Register widget area.
  */
 function aino_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'aino' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets to the shop page.', 'aino' ),
+		)
+	);
+
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Footer 1', 'aino' ),
