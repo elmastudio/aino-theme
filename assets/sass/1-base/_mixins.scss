@@ -667,7 +667,6 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-s-slim {
 	padding: 8px 16px;
 	font-size: 1rem;
-	line-height: 1;
 }
 
 @mixin btn-m {
@@ -683,7 +682,6 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-m-slim {
 	padding: 9px;
 	font-size: 1.125rem;
-	line-height: 1;
 
 	@include breakpoint(lg) {
 		font-size: 1.25rem;

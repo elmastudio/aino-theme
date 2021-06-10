@@ -50,6 +50,7 @@
 		.button.product_type_grouped {
 			opacity: 0;
 			@include s-r-4 (margin-top);
+			@include btn;
 			@include btn-s-slim;
 			width: 100%;
 			display: block;
@@ -64,7 +65,19 @@
 			opacity: 1;
 		}
 
-		@include s-r-9 (padding-bottom);
+		.added_to_cart {
+			position: absolute;
+			bottom: 0;
+		}
+
+		.add_to_cart_button {
+
+			&.added {
+				display: none;
+			}
+		}
+
+		@include s-r-9 (margin-bottom);
 	}
 
 	&.columns-2,

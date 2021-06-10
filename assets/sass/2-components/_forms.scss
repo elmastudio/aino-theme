@@ -19,8 +19,8 @@ input[type="color"] {
 	border: 1px solid var(--global--color-border);
 	outline: none;
 	line-height: 1;
-	max-height: 72px;
-	@include s-r-6 (padding);
+	max-height: 60px;
+	@include s-r-5 (padding);
 
 	@include input-placeholder {
 		color: #8e8e8e;
@@ -29,7 +29,7 @@ input[type="color"] {
 	&:active,
 	&:focus {
 		background: var(--global--color-white);
-		color: var(--global--color-black);
+		color: var(--global--color-text-one);
 	}
 
 	.light-form & {
@@ -61,6 +61,7 @@ input[type="color"] {
 	}
 }
 
+// Testarea
 textarea {
 	width: 100%;
 	background-color: transparent;
@@ -88,11 +89,111 @@ textarea {
 	}
 }
 
-input[type="checkbox"] {
-	width: $s-6;
-	height: $s-6;
+// Form labels
+form label {
+	position: relative;
+	display: block;
+	line-height: 1;
+	color: var(--global--color-light-gray);
+	@include s-r-2 (margin-bottom);
+	border-radius: var(--global--border-radius-xxs);
 }
 
+// Select forms
+select {
+	background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+	border: 1px solid var(--global--color-border);
+	background-repeat:no-repeat;
+	background-position: right 14px top 21px;
+	background-size: 12px 12px;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+// Checkboxes
+.checkbox,
+form .comment-form-cookies-consent {
+	color: var(--global--color-text-one);
+	display: flex;
+	align-items: center;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance:none;
+    width:24px;
+    height:24px;
+    border:1px solid darkgray;
+    border-radius:50%;
+    outline:none;
+	@include s-r-2 (margin-right);
+	margin-bottom: 0;
+}
+
+input[type='checkbox']:before {
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+input[type='checkbox'] {
+	position: relative;
+
+	&:focus {
+		border-color: rgba(82, 168, 236, 1);
+		box-shadow: 0 0 2px 2px rgba(82, 168, 236, 1);
+		outline: 0 none;
+	}
+
+	&:checked:before {
+		background: var(--global--color-text-one);
+	}
+
+	&:after {
+	content: "";
+	position: absolute;
+	display: none;
+	}
+
+	  &:checked:after {
+		display: block;
+	  }
+	
+	  &:after {
+		left: 8px;
+		top: 4px;
+		width: 7px;
+		height: 12px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	  }
+}
+
+.comment-form-cookies-consent {
+	label {
+		margin-bottom: 0;
+		color: var(--global--color-text-one);
+	}
+}
+
+/* Form Submit */
+input[type="submit"],
+button[type="submit"] {
+	display: block;
+	clear: both;
+
+	.light-btn & {
+		background: var(--global--color-white);
+		color: var(--global--color-text-one);
+	}
+}
+
+
+// Default comment form
 .color-notice,
 label.color-notice span {
 	color: var(--global--color-notification);
@@ -108,47 +209,8 @@ label.color-notice span {
 	padding-bottom: 0;
 }
 
-form .comment-form-cookies-consent {
-	clear: both;
-	display: flex;
-	align-items: center;
-
-	label {
-		@include s-r-4 (padding-left);
-		margin-bottom: 0;
-	}
-}
-
 form p.comment-form-comment {
 	margin: 0;
-}
-
-form label {
-	position: relative;
-	display: block;
-	@include s-r-2 (margin-bottom);
-}
-
-select {
-	background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
-	border: 1px solid var(--global--color-border);
-	background-repeat:no-repeat;
-	background-position: right 14px top 21px;
-	background-size: 12px 12px;
-	border-radius: 0;
-	-webkit-appearance: none;
-}
-
-/* Form Submit */
-input[type="submit"],
-button[type="submit"] {
-	display: block;
-	clear: both;
-
-	.light-btn & {
-		background: var(--global--color-white);
-		color: var(--global--color-text-one);
-	}
 }
 
 /* Search Form */
@@ -188,10 +250,11 @@ button[type="submit"] {
 
 /* Form Styles (via Customizer Settings) */
 .form-curved {
-	input,
+
+	input:not([type='checkbox']),
 	textarea,
 	select {
-		border-radius: var(--global--border-radius-s);
+		border-radius: var(--global--border-radius-xxs);
 	}
 }
 
@@ -204,18 +267,6 @@ button[type="submit"] {
 
 	textarea {
 		@include border-radius-l;
-	}
-
-	label {
-		padding-left: 1.875rem;
-
-		@include breakpoint(md) {
-			padding-left: 2.063rem;
-		}
-
-		@include breakpoint(lg) {
-			padding-left: 2.25rem;
-		}
 	}
 }
 

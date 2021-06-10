@@ -3,7 +3,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	@include btn;
-	@include btn-l;
+	@include btn-m;
 }
 
 button,
