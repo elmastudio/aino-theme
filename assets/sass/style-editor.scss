@@ -14,7 +14,7 @@
 
 /* Structure */
 .wp-block {
-	max-width: $default-content-width;
+	max-width: var(--global--default-content-width);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -27,7 +27,7 @@
 
 	.wp-block[data-align="wide"] .wp-block[data-align="wide"],
 	.wp-block[data-align="full"] .wp-block[data-align="wide"] {
-		max-width: $col12;
+		max-width: var(--global--max-content-width);
 	}
 }
 
@@ -65,7 +65,7 @@
 
 .wp-block[data-align="wide"],
 .wp-block.alignwide {
-	max-width: $col12;;
+	max-width: var(--global--max-content-width);
 
 	.wp-block {
 		max-width: $wide-content-width;
@@ -465,7 +465,7 @@ big {
 }
 
 .col12 {
-	max-width: $col12;
+	max-width: var(--global--max-content-width);
 
 	&.nogap {
 		max-width: calc(#{$col12} - #{$s-9});
@@ -982,7 +982,7 @@ figcaption {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: $default-content-width;
+	max-width: var(--global--default-content-width);
 	@include font-h-3;
 }
 

@@ -1,5 +1,4 @@
-
-/* Shop Archive Page */
+/* Products archive page */
 .woocommerce-shop .site-content {
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -133,16 +132,4 @@
 				}
 			}
 		}
-}
-
-/* Reusable Shop Components */
-.onsale {
-	position: absolute;
-	z-index: 1;
-	top: $s-4;
-	left: $s-4;
-	line-height: 1;
-	background: var(--global--color-white);
-	padding: 5px 12px;
-	border-radius: 6.25em;
 }

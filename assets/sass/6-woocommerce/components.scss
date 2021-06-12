@@ -1,0 +1,29 @@
+
+.wc_payment_methods,
+.woocommerce-error {
+	list-style: none;
+}
+
+.onsale {
+	position: absolute;
+	z-index: 1;
+	top: $s-4;
+	left: $s-4;
+	line-height: 1;
+	background: var(--global--color-white);
+	padding: 5px 12px;
+	border-radius: 6.25em;
+}
+
+.entry-content {
+	.woocommerce-notices-wrapper {
+		ul {
+			@include s-r-7(padding);
+
+			&.woocommerce-error {
+				background: var(--global--color-error);
+				border-radius: --global--border-radius-xxs;
+			}
+		}
+	}
+}

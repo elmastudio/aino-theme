@@ -19,6 +19,7 @@
 		display: block;
 		@include push--auto;
 		max-width: $col10-nogap;
+		text-align: center;
 	}
 
 	& .entry-meta {
@@ -245,7 +246,7 @@
 }
 
 .comment-content {
-	max-width: $default-content-width;
+	max-width: var(--global--default-content-width);
 	flex-grow: 1;
 	border-bottom: 1px solid var(--global--color-border);
 

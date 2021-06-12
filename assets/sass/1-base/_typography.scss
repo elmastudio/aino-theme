@@ -37,7 +37,10 @@ div[class*='wp-block-'] figcaption,
 	.has-s-font-size,
 	p.has-s-font-size,
 	.has-s-font-size p,
-	.onsale {
+	.onsale,
+	.woocommerce-checkout-review-order-table,
+	.payment_box p,
+	.woocommerce-notices-wrapper ul {
 		@include font-body-s;
 	}
 }
@@ -67,7 +70,11 @@ div[class*='wp-block-'] figcaption,
 input,
 select,
 table,
-textarea {
+textarea,
+.woocommerce-info,
+.page .woocommerce-form p,
+.woocommerce-form-login-toggle,
+.entry-content form p {
 	@include font-body-m;
 }
 
@@ -92,7 +99,8 @@ dl,
 
 .entry-content p.has-xl-font-size,
 .entry-content .wp-block-post-excerpt.has-xl-font-size p,
-.entry-content .wp-block-post-terms.has-xl-font-size {
+.entry-content .wp-block-post-terms.has-xl-font-size,
+.order-total .woocommerce-Price-amount {
 	@include font-body-xl;
 }
 
@@ -197,7 +205,7 @@ h5.has-xxxxl-font-size {
 	@include font-h-8;
 }
 
-h1.entry-title,
+.single-post h1.entry-title,
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
@@ -207,6 +215,7 @@ h6.has-xxxxl-font-size {
 	@include font-h-7;
 }
 
+h1.entry-title,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
@@ -225,7 +234,7 @@ h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
 .related-title,
-.comment-reply-title {
+.comment-reply-title{
 	@include font-h-5;
 }
 
@@ -252,7 +261,8 @@ h6.has-l-font-size,
 .related-wrap .section-title,
 .comments-area .comments-title,
 .blog .page-header h1.page-title,
-.blog-archive .page-header h1.page-title {
+.blog-archive .page-header h1.page-title,
+.woocommerce-checkout h3 {
 	@include font-h-3;
 }
 
@@ -295,8 +305,7 @@ h6.has-xxs-font-size {
 }
 
 /* Padding for Headlines in Content Area */
-.single .entry-content,
-.page-template-default .entry-content {
+.single .entry-content {
 	h2,
 	h3,
 	h4,
@@ -405,7 +414,7 @@ big {
 
 .wide-content {
 	@include breakpoint(lg) {
-		max-width: $col12;
+		max-width: var(--global--max-content-width);
 	}
 }
 

@@ -17,7 +17,8 @@ a {
 cite a,
 .wp-block-image figcaption a,
 .wp-block-audio figcaption a,
-.wp-block-embed figcaption a {
+.wp-block-embed figcaption a,
+.woocommerce-info a {
 	color: currentColor;
 	text-decoration: underline;
 

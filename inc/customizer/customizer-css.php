@@ -51,7 +51,8 @@ function aino_customizer_css() {
 	.widget_search .search-submit,
 	.entry-content .search-submit,
 	.entry-content .has-primary-link-background-color,
-	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
+	.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background),
+	button, input[type="button"], input[type="submit"] {
 		background-color: ' . esc_attr( $primary_one_color ) . ';
 	}
 	.btn-outline a,

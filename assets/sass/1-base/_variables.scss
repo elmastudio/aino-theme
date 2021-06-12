@@ -38,7 +38,7 @@ $col10               : 77.5rem;
 $col11               : 85.25rem;
 $col12               : 93rem;
 
-$default-content-width: 43.5rem;
+
 $wide-content-width   : 87rem;
 $max-content-width    : 87rem;
 $col10-nogap          : 74.5rem;
@@ -60,7 +60,14 @@ $border-radius-circle: 6.25rem; // 100px
 	--body--font-family: var(--global--font-secondary);
 	--code--font-family: var(--global--font-code);
 
+	/* Line Height */
+	--global--line-height-body: 1.4;
+	--global--line-height-heading: 1;
+	--global--line-height-page-title: 1;
+	--global--line-height-reset: 1;
+
 	/* Content widths and grid */
+	--global--default-content-width: 43.5rem;
 	--global--max-content-width: 93rem;
 	--global--grid-gap: #{2 * $s-4}; // 1rem.
 
@@ -74,6 +81,13 @@ $border-radius-circle: 6.25rem; // 100px
 	--global--border-radius-xxl: 3.125rem;
 	--global--border-radius-xxxl: 3.75rem;
 	--global--border-radius-xxxxl: 4.375rem;
+
+	--heading--line-height-h6: var(--global--line-height-heading);
+	--heading--line-height-h5: var(--global--line-height-heading);
+	--heading--line-height-h4: var(--global--line-height-heading);
+	--heading--line-height-h3: var(--global--line-height-heading);
+	--heading--line-height-h2: var(--global--line-height-heading);
+	--heading--line-height-h1: var(--global--line-height-page-title);
 }
 
 /* Fonts */

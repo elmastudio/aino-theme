@@ -304,12 +304,12 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin font-body {
 	font-family: var(--body--font-family);
-	line-height: 1.4;
+	line-height: var(--global--line-height-body);
 }
 
 @mixin font-heading {
 	font-family: var(--heading--font-family);
-	line-height: 1;
+	line-height: var(--global--line-height-heading);
 }
 
 /* Font Weights */
@@ -603,13 +603,13 @@ $var: true !default; // Can be overridden elsewhere
 @mixin font-code {
 	font-family: var(--code--font-family);
 	font-size: 14px;
-	line-height: 1.43;
+	line-height: var(--global--line-height-body);
 }
 
 /* Buttons */
 @mixin btn {
 	display: inline-block;
-	line-height: 1;
+	line-height: var(--global--line-height-reset);
 	font-weight: normal;
 	@include transition-default;
 
@@ -788,7 +788,7 @@ $var: true !default; // Can be overridden elsewhere
 	background: transparent;
 	color: var(--global--color-text-one);
 	border: 1px solid var(--global--color-text-one);
-	line-height: 1;
+	line-height: var(--global--line-height-reset);
 
 	&:hover {
 		color: var(--global--color-background);

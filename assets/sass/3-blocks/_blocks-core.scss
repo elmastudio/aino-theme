@@ -36,7 +36,7 @@
 .hentry .entry-content>* {
 
 	&.alignwide {
-		max-width: $col12;
+		max-width: var(--global--max-content-width);
 		position: relative;
 		clear: both;
 	}
@@ -71,7 +71,7 @@
 .hentry .entry-content .alignfull {
 
 	.alignwide {
-		max-width: $col12;
+		max-width: var(--global--max-content-width);
 		clear: both;
 		overflow: hidden;
 		@include push--auto;
@@ -715,7 +715,7 @@ div[class*='wp-block-'] figcaption {
 	.wp-block-group__inner-container {
 
 		&:not(.wp-block-ainoblocks-grid-container) > .wp-block-image:not(.alignwide):not(.alignfull) {
-				max-width: $default-content-width;
+			max-width: var(--global--default-content-width);
 				@include push--auto;
 			}
 	}
