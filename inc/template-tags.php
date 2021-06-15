@@ -466,6 +466,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'tpl-fullwidth';
 	}
 
+	if ( is_page_template( 'page-templates/block-shop.php' ) ) {
+		$classes[] = 'tpl-shop';
+	}
+
 	if ( is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
 		$classes[] = 'tpl-fullwidth';
 		$classes[] = 'tpl-fullwidth-notitle';

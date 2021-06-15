@@ -84,17 +84,44 @@ form label {
 	color: var(--global--color-light-gray);
 	@include s-r-2 (margin-bottom);
 	border-radius: var(--global--border-radius-xxs);
+
+	&.checkbox {
+		@include s-r-4 (margin-bottom);
+	}
 }
 
 // Select forms
-select {
-	background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+select,
+.select2-selection--single {
 	border: 1px solid var(--global--color-form-border);
+	@include s-r-5 (padding);
 	background-repeat:no-repeat;
 	background-position: right 14px top 21px;
 	background-size: 12px 12px;
-	border-radius: 0;
 	-webkit-appearance: none;
+}
+
+.select2-container
+.select2-selection--single {
+	margin-bottom: 0;
+	height: auto;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding-left: 0;
+    padding-right: 0;
+}
+
+.select2-results__options {
+	background: var(--global--color-text-one);
+}
+
+.select2-selection__arrow svg {
+	color: var(--global--color-text-one);
+}
+
+.select2-search--dropdown {
+	display: none;
 }
 
 // Checkboxes

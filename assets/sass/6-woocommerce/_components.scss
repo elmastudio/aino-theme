@@ -1,0 +1,214 @@
+.wc-block-components-form .wc-block-components-text-input label,
+.wc-block-components-text-input label {
+font-family: var(--body--font-family);
+}
+
+// Page Headings
+.woocommerce-page {
+
+	.entry-header {
+		@include s-r-12(padding-bottom);
+	}
+}
+
+// Grid Layout Sidebar
+.wc-block-components-sidebar-layout {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 48px;
+	margin: 0;
+	grid-template-rows: auto;
+}
+
+.wc-block-components-sidebar-layout .wc-block-components-main {
+	margin: 0;
+	padding-right: 0;
+	width: auto;
+	grid-column-start: 1;
+	grid-column-end: 7;
+}
+
+.wc-block-components-sidebar {
+	background: var(--global--color-very-light-gray);
+	grid-column-start: 7;
+	grid-column-end: 13;
+	margin: 0;
+	@include s-r-6(padding-top);
+	@include s-r-9(padding-left);
+	@include s-r-9(padding-right);
+	@include s-r-9(padding-bottom);
+	width: auto;
+	height: fit-content;
+}
+
+.wc-block-components-form,
+.wc-block-components-form .wc-block-components-select,
+.wc-block-components-select {
+
+	.wc-block-components-text-input {
+		margin-top: 1rem;
+
+		&.is-active {
+			label {
+				transform: translateY(4px) scale(.6);
+			}
+		}
+
+		&.has-error {
+			margin-bottom: 2rem;
+			outline: none;
+
+			input:focus {
+				outline: none;
+				outline-offset: 0;
+			}
+		}
+	}
+}
+
+.wc-block-components-text-input.has-error input:focus {
+	outline: none;
+	outline-offset: 0;
+}
+
+// WooCommerce forms
+
+.wc-block-components-form .wc-block-components-text-input label {
+    @include font-body-m;
+}
+
+.wc-block-components-form .wc-block-components-text-input label {
+    position: absolute;
+    transform: translateY(1.25rem);
+    line-height: var(--global--line-height-reset);
+    color: var(--global--color-text-one);
+    margin: 0 0 0 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 32px);
+    cursor: text;
+}
+
+
+.wc-block-components-form {
+
+	.wc-block-components-text-input {
+
+		input[type=email],
+		input[type=number],
+		input[type=tel],
+		input[type=text],
+		input[type=url] {
+			@include font-body-m;
+			padding: .75em 16px;
+			border-radius: var(--global--border-radius-xxs);
+			border: 1px solid var(--global--color-form-border);
+			line-height: var(--global--line-height-body);
+			font-family: inherit;
+			margin: 0;
+			box-sizing: border-box;
+			height: 3em;
+			min-height: 0;
+		}
+
+		label {
+			@include font-body-2xs;
+		}
+
+		&.has-error {
+			input,
+			input:active,
+			input:focus,
+			input:hover {
+				border-color: var(--global--color-error);
+			}
+
+			label {
+				color: var(--global--color-error);
+			}
+
+			p {
+				line-height: var(--global--line-height-reset);
+				@include font-body-2xs;
+				margin: 0;
+				@include s-r-1(padding-top);
+			}
+		}
+	}
+}
+
+.wc-block-components-validation-error {
+    @include font-body-2xs;
+    color: var(--global--color-error);
+    max-width: 100%;
+    position: absolute;
+    top: calc(100% - 1px);
+    white-space: normal;
+}
+
+.wc-block-components-product-metadata {
+
+	&__description>p,
+	.wc-block-components-product-metadata__variation-data {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.wc-block-components-totals-item {
+	@include s-r-6(margin-top);
+	@include s-r-6(margin-bottom);
+}
+
+.is-large .wc-block-components-sidebar .wc-block-components-panel, .is-large .wc-block-components-sidebar .wc-block-components-totals-item {
+	padding: 0;
+}
+
+.is-large.wc-block-cart .wc-block-cart__payment-options {
+	@include s-r-6(margin-top);
+	@include s-r-9(padding-left);
+	@include s-r-9(padding-right);
+	@include s-r-9(padding-bottom);
+}
+
+
+.wc-block-components-panel {
+
+	&__button {
+		@include s-r-6(margin-top);
+		@include s-r-6(margin-bottom);
+		padding: 0;
+
+		&:hover {
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+}
+
+.wc-block-components-product-image {
+
+	.wc-block-components-product-sale-badge {
+		margin: 0;
+		padding: 5px 12px;
+		width: auto;
+		border: 0;
+		border-radius: var(--global--border-radius-s);
+		color: var(--global--color-text-one);
+		background: var(--global--color-white);
+		text-transform: none;
+		font-weight: normal;
+		
+		&--align-left {
+			left: $s-4;
+			top: $s-4;
+		}
+		&--align-center {
+			top: $s-4;
+		}
+		&--align-right {
+			right: $s-4;
+			top: $s-4;
+		}
+	}
+}

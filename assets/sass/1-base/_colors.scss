@@ -35,9 +35,9 @@
 	--global--color-background: var(--global--color-white); /* Default body background. */
 	--global--color-code-one: var(--global--color-light-green-cyan); /* Code background. */
 	--global--color-code-two: var(--global--color-medium-dark-cyan); /* Dark code background. */
-	--global--color-success: var(--global--color-medium-light-green);
-	--global--color-notification: var(--global--color-yellow);
-	--global--color-error: var(--global--color-medium-red-orange);
+	--global--color-notification: var(--global--color-yellow); /* Background color for general notifications e.g. in forms. */
+	--global--color-success: var(--global--color-medium-light-green); /* Background color for success notifications e.g. in forms. */
+	--global--color-error: var(--global--color-medium-red-orange); /* Background color for error notifications e.g. in forms. */
 }
 
 @media only screen {

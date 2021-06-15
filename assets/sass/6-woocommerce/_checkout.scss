@@ -1,0 +1,84 @@
+// Checkout Block
+.wc-block-components-form .wc-block-components-checkout-step {
+	padding: 0;
+	@include s-r-10(margin-bottom);
+}
+.is-large .wc-block-components-form .wc-block-components-checkout-step {
+	padding-right: 0;
+}
+
+.page {
+	.wc-block-components-checkout-step {
+
+		&__heading {
+			display: block;
+			margin-bottom: 0;
+		}
+	
+		&__heading-content,
+		&__description {
+			@include s-r-2(padding-top);
+			display: block;
+		}
+	
+	
+		&__container {
+	
+			p {
+				@include s-r-7(margin-bottom);
+			}
+	
+			&__description {
+				background: green;
+			}
+		}
+
+		&__content {
+			@include s-r-4(padding-bottom);
+		}
+	}
+}
+
+.wc-block-checkout__billing-fields {
+
+	.wc-block-components-address-form {
+
+		.wc-block-components-text-input,
+		.wc-block-components-country-input,
+		.wc-block-components-state-input {
+			margin: 0;
+		}
+
+	}
+
+}
+
+
+.wc-block-components-checkout-step--with-step-number .wc-block-components-checkout-step__container:after,
+.wc-block-components-checkout-step--with-step-number .wc-block-components-checkout-step__title:before,
+.wc-block-components-form .wc-block-components-checkout-step .wc-block-components-checkout-step__heading:after {
+	display: none;
+}
+
+// Order Summary
+.wc-block-components-order-summary {
+
+	h2 {
+		font-size: 20px !important;
+		line-height: 1;
+	}
+
+	.wc-block-components-order-summary__button-text {
+		@include font-body-m;
+	}
+
+	&.has-border {
+		border-bottom: 1px solid var(--global--color-border);
+		padding-bottom: 24px;
+		
+		&:after {
+			display: none;
+		}
+	}
+	
+}
