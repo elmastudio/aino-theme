@@ -82,7 +82,7 @@ form label {
 	display: block;
 	line-height: var(--global--line-height-reset);
 	color: var(--global--color-light-gray);
-	@include s-r-2 (margin-bottom);
+	@include s-r-1 (margin-bottom);
 	border-radius: var(--global--border-radius-xxs);
 
 	&.checkbox {

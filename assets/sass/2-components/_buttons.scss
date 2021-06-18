@@ -125,7 +125,8 @@ a.btn-outline,
 	.btn-primary a,
 	a.btn-outline,
 	.btn-outline a,
-	.loadmore {
+	.loadmore,
+	.wc-block-components-button {
 		border-radius: var(--global--border-radius-s);
 	}
 }
@@ -140,7 +141,8 @@ a.btn-outline,
 	a.btn-outline,
 	.btn-outline a,
 	.search-header .search-field,
-	.loadmore {
+	.loadmore,
+	.wc-block-components-button {
 		border-radius: 6.25em;
 	}
 }

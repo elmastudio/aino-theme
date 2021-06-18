@@ -14,7 +14,8 @@ div[class*='wp-block-'] figcaption,
 .hentry .entry-summary,
 .posts-container .hentry .entry-footer,
 .wc-block-grid__product-price,
-.wc-block-components-product-sale-badge {
+.wc-block-components-product-sale-badge,
+.wc-block-components-sort-select__select {
 	@include font-body-s;
 	color: var(--global--color-text-two);
 }
@@ -27,13 +28,14 @@ div[class*='wp-block-'] figcaption,
 .entry-content .sharedaddy h3.sd-title,
 .blocks-gallery-grid .blocks-gallery-item figcaption,
 .wc-block-components-checkout-step__heading-content,
-.entry-content p.wc-block-components-checkout-step__description {
+.entry-content p.wc-block-components-checkout-step__description,
+.entry-content .wc-block-components-product-metadata__description p {
 	@include font-body-xs;
 }
 
 .entry-content {
 
-	form label,
+	form label,mark
 	label .required,
 	.comment-notes,
 	.logged-in-as,
@@ -45,7 +47,8 @@ div[class*='wp-block-'] figcaption,
 	.woocommerce-checkout-review-order-table,
 	.payment_box p,
 	.woocommerce-notices-wrapper ul,
-	.wc-block-components-product-metadata__description p {
+	.wc-block-grid__product-onsale,
+	.wc-block-components-sale-badge {
 		@include font-body-s;
 	}
 }
@@ -79,7 +82,8 @@ textarea,
 .woocommerce-info,
 .page .woocommerce-form p,
 .woocommerce-form-login-toggle,
-.entry-content form p {
+.entry-content form p,
+.wc-block-cart__sidebar .wc-block-cart__totals-title {
 	@include font-body-m;
 }
 
@@ -106,7 +110,8 @@ dl,
 .entry-content p.has-xl-font-size,
 .entry-content .wp-block-post-excerpt.has-xl-font-size p,
 .entry-content .wp-block-post-terms.has-xl-font-size,
-.order-total .woocommerce-Price-amount {
+.order-total .woocommerce-Price-amount,
+.entry-summary p.price {
 	@include font-body-xl;
 }
 
@@ -240,8 +245,7 @@ h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
 .related-title,
-.comment-reply-title,
-.woocommerce-page h1.entry-title {
+.comment-reply-title {
 	@include font-h-5;
 }
 
@@ -254,6 +258,7 @@ h5.has-l-font-size,
 h6.has-xl-font-size,
 h2.widget-title,
 .blog h2.entry-title,
+.woocommerce-page h1.entry-title,
 .blog-archive h2.entry-title {
 	@include font-h-4;
 }
@@ -271,7 +276,6 @@ h6.has-l-font-size,
 .blog-archive .page-header h1.page-title,
 .woocommerce-account h2,
 .woocommerce-checkout h3,
-.wc-block-cart__totals-title,
 .wc-block-components-title {
 	@include font-h-3;
 }
@@ -282,7 +286,7 @@ h4.has-xs-font-size,
 h5,
 h5.has-s-font-size,
 h6.has-m-font-size,
-h2.woocommerce-loop-product__title {
+.woocommerce-loop-product__title {
 	@include font-h-2;
 }
 
@@ -293,7 +297,8 @@ h6,
 h6.has-s-font-size,
 h6.has-xs-font-size,
 h6.has-xxs-font-size,
-h6.has-xxs-font-size {
+h6.has-xxs-font-size,
+.wc-block-cart__empty-cart__title {
 	@include font-h-1;
 }
 
@@ -399,7 +404,6 @@ acronym {
 
 ins,
 mark {
-	background-color: rgba(63, 192, 224, .1);
 	text-decoration: none;
 }
 
