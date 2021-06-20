@@ -33,13 +33,13 @@ div[class*='wp-block-'] figcaption,
 	@include font-body-xs;
 }
 
-.entry-content {
+.entry-content,
+.site-content {
 
 	form label,mark
 	label .required,
 	.comment-notes,
 	.logged-in-as,
-	.comment-reply-title #cancel-comment-reply-link,
 	.has-s-font-size,
 	p.has-s-font-size,
 	.has-s-font-size p,
@@ -48,7 +48,8 @@ div[class*='wp-block-'] figcaption,
 	.payment_box p,
 	.woocommerce-notices-wrapper ul,
 	.wc-block-grid__product-onsale,
-	.wc-block-components-sale-badge {
+	.wc-block-components-sale-badge,
+	.comment-reply-title #cancel-comment-reply-link {
 		@include font-body-s;
 	}
 }
@@ -158,20 +159,6 @@ h2.entry-title {
 	@include hyphenation;
 }
 
-.h-regular {
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	.site-title,
-	&.single-post .byline {
-		@include font-regular;
-	}
-}
-
 .h-bold {
 
 	:not(.entry-content)>h1,
@@ -244,8 +231,7 @@ h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
-.related-title,
-.comment-reply-title {
+.related-title {
 	@include font-h-5;
 }
 
@@ -259,7 +245,8 @@ h6.has-xl-font-size,
 h2.widget-title,
 .blog h2.entry-title,
 .woocommerce-page h1.entry-title,
-.blog-archive h2.entry-title {
+.blog-archive h2.entry-title,
+.comment-reply-title {
 	@include font-h-4;
 }
 

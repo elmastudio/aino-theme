@@ -60,7 +60,7 @@
 		display: block;
 	}
 
-	.post-thumb {;
+	.post-thumb {
 		justify-content: center;
 		@include flexbox;
 
@@ -328,7 +328,7 @@
 .has-comments {
 
 	.comment-respond {
-		@include s-r-12 (margin-top);
+		@include s-r-10 (margin-top);
 	}
 }
 
@@ -352,7 +352,7 @@
 	.comment-notes,
 	.logged-in-as {
 		margin: 0;
-		@include s-r-4 (padding-top);
+		@include s-r-2(padding-top);
 		padding-bottom: 0;
 	}
 }

@@ -511,10 +511,6 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Typography.
-	if ( 'regular' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
-		$classes[] = 'h-regular';
-	}
-
 	if ( 'bold' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
 		$classes[] = 'h-bold';
 	}
@@ -852,10 +848,6 @@ add_filter( 'body_class', 'aino_body_classes' );
  * @param array $classes Classes for the body element.
  */
 function aino_custom_admin_body_class( $classes ) {
-
-	if ( 'regular' === get_theme_mod( 'heading_fontweight' ) ) {
-		$classes .= ' h-regular';
-	}
 
 	if ( 'bold' === get_theme_mod( 'heading_fontweight' ) ) {
 		$classes .= ' h-bold';

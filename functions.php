@@ -100,6 +100,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Enqueue fonts in the editor.
 		add_editor_style( aino_fonts_url() );
 
+		// Add FSE Global styles (experimental)
+		add_theme_support( 'wp-block-styles' );
+
 		// Add custom editor font sizes.
 		add_theme_support(
 			'editor-font-sizes',
@@ -571,6 +574,17 @@ function aino_skip_link() {
 }
 
 add_action( 'wp_body_open', 'aino_skip_link', 5 );
+
+/**
+ * Custom WooCommerce image sizes
+ */
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
+	return array(
+	'width' => 150,
+	'height' => 150,
+	'crop' => 0,
+	);
+} );
 
 /**
  * Register widget area.
