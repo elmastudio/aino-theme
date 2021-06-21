@@ -1,24 +1,21 @@
-// Checkout Block
-.wc-block-components-form .wc-block-components-checkout-step {
-	padding: 0;
-	@include s-r-10(margin-bottom);
-}
-.is-large .wc-block-components-form .wc-block-components-checkout-step {
-	padding-right: 0;
-}
-
 .page {
 	.wc-block-components-checkout-step {
+		padding: 0;
+		@include s-r-9(margin-bottom);
 
 		&__heading {
 			display: block;
-			margin-bottom: 0;
+			margin: 0;
 		}
 	
 		&__heading-content,
 		&__description {
 			@include s-r-2(padding-top);
 			display: block;
+
+			a {
+				font-weight: normal;
+			}
 		}
 	
 	
@@ -39,6 +36,47 @@
 	}
 }
 
+// Shipping Options
+.wc-block-checkout__shipping-option {
+	.wc-block-components-shipping-rates-control__no-results-notice {
+		margin: 0;
+	}
+}
+
+// Payment Methods
+.wc-block-checkout__payment-method {
+
+	.wc-block-components-radio-control-accordion-option,
+	.wc-block-components-radio-control__option {
+
+		&:after {
+			border: none;
+		}
+	}
+
+	.wc-block-components-radio-control {
+
+		&__option {
+			background: lightyellow;
+
+			.wc-block-components-radio-control__input {
+				left: 0;
+				border: 1px solid #50575e;
+			}
+		}
+
+		&__option,
+		&__option:first-child,
+		&__option:last-child {
+			padding-top: 0;
+		}
+	}
+
+	.wc-block-components-radio-control-accordion-content {
+		padding: 0;
+	}
+}
+
 .wc-block-checkout__billing-fields {
 
 	.wc-block-components-address-form {
@@ -48,17 +86,46 @@
 		.wc-block-components-state-input {
 			margin: 0;
 		}
-
 	}
-
 }
-
 
 .wc-block-components-checkout-step--with-step-number .wc-block-components-checkout-step__container:after,
 .wc-block-components-checkout-step--with-step-number .wc-block-components-checkout-step__title:before,
 .wc-block-components-form .wc-block-components-checkout-step .wc-block-components-checkout-step__heading:after {
 	display: none;
 }
+
+// Checkout Main
+.wc-block-checkout__main {
+
+	#order-notes {
+		margin-bottom: 0;
+	}
+
+	.wc-block-checkout__actions {
+		margin: 0;
+		padding: 0;
+		flex-direction: column-reverse;
+
+		.wc-block-components-checkout-place-order-button {
+			@include s-r-6(margin-bottom);
+		}
+
+		.wc-block-components-checkout-return-to-cart-button {
+			@include font-body-m;
+			padding-left: 0;
+
+				svg {
+				display: none;
+			}
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
 
 // Order Summary
 .wc-block-components-order-summary {
@@ -74,11 +141,97 @@
 
 	&.has-border {
 		border-bottom: 1px solid var(--global--color-border);
-		padding-bottom: 24px;
+		@include s-r-6(padding-bottom);
 		
 		&:after {
 			display: none;
 		}
 	}
+
+	.wc-block-components-order-summary__content {
+
+		.wc-block-components-order-summary-item {
+			@include s-r-6(padding-bottom);
+			font-size: inherit;
+
+			&:not(:first-child) {
+				@include s-r-6(padding-top);
+			}
 	
+			&__image,
+			&__image>img {
+				width: 6rem;
+				max-width: 6rem;
+				padding: 0;
+	
+				.wc-block-components-order-summary-item__quantity {
+					border: none;
+					background: var(--global--color-primary);
+					color: var(--global--color-white);
+					box-shadow: none;
+					font-size: 12px;
+				}
+			}
+	
+			&__description {
+				@include s-r-6(padding-left);
+				@include s-r-6(padding-right);
+				padding-bottom: 0;
+	
+				.wc-block-components-product-name,
+				.wc-block-components-product-price {
+					@include font-body-s;
+					@include s-r-6(padding-bottom);
+				}
+	
+				.wc-block-components-product-metadata {
+					margin: 0;
+	
+					p {
+						padding-bottom: 0;
+						margin: 0;
+					}
+				}
+			}
+	
+			&__total-price {
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+.wc-block-components-totals-item {
+	
+	&__value {
+		font-weight: normal;
+	}
+
+	&__description {
+		@include font-body-xs;
+	}
+}
+
+.wc-block-components-totals-shipping {
+
+
+	.wc-block-components-totals-shipping {
+
+		&__via {
+			margin: 0;
+			@include s-r-4(padding-top);
+		}
+	}
+}
+
+.wc-block-components-totals-footer-item {
+	@include font-body-m;
+
+	span {
+		@include s-r-6(padding-top);
+	}
+
+	.wc-block-components-totals-item__label {
+		font-weight: normal;
+	}
 }

@@ -273,7 +273,8 @@ h4.has-xs-font-size,
 h5,
 h5.has-s-font-size,
 h6.has-m-font-size,
-.woocommerce-loop-product__title {
+.woocommerce-loop-product__title,
+.is-large.wc-block-cart .wc-block-cart__totals-title  {
 	@include font-h-2;
 }
 

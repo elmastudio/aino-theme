@@ -7,39 +7,49 @@ font-family: var(--body--font-family);
 .page.woocommerce-page {
 
 	.entry-header {
-		@include s-r-6(padding-bottom);
+		@include s-r-12(padding-bottom);
 	}
 }
 
 // Grid Layout Sidebar
 .wc-block-components-sidebar-layout {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	column-gap: 48px;
 	margin: 0;
-	grid-template-rows: auto;
+
+	@include breakpoint(md) {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		column-gap: 48px;
+		grid-template-rows: auto;
+	}
 }
 
 .wc-block-components-sidebar-layout .wc-block-components-main {
 	margin: 0;
 	padding-right: 0;
-	width: auto;
-	grid-column-start: 1;
-	grid-column-end: 7;
+	width: 100%;
+
+	@include breakpoint(md) {
+		grid-column-start: 1;
+		grid-column-end: 7;
+	}
 }
 
 .wc-block-components-sidebar {
 	background: var(--global--color-very-light-gray);
 	border-radius: var(--global--border-radius-s);
-	grid-column-start: 7;
-	grid-column-end: 13;
-	margin: 0;
+	margin: 48px 0 0 0;
 	@include s-r-6(padding-top);
 	@include s-r-9(padding-left);
 	@include s-r-9(padding-right);
 	@include s-r-9(padding-bottom);
-	width: auto;
+	width: 100%;
 	height: fit-content;
+
+	@include breakpoint(md) {
+		margin-top: 0;
+		grid-column-start: 7;
+		grid-column-end: 13;
+	}
 }
 
 .wc-block-components-form,
@@ -85,7 +95,6 @@ font-family: var(--body--font-family);
 	margin: 0 0 0 1.25rem;
 	max-width: calc(100% - 32px);
 }
-
 
 .wc-block-components-form {
 
@@ -145,12 +154,12 @@ font-family: var(--body--font-family);
 }
 
 .wc-block-components-validation-error {
-    @include font-body-2xs;
-    color: var(--global--color-error);
-    max-width: 100%;
-    position: absolute;
-    top: calc(100% - 1px);
-    white-space: normal;
+	@include font-body-2xs;
+	color: var(--global--color-error);
+	max-width: 100%;
+	position: absolute;
+	top: calc(100% - 1px);
+	white-space: normal;
 }
 
 .wc-block-components-product-metadata {
@@ -167,7 +176,8 @@ font-family: var(--body--font-family);
 	@include s-r-6(margin-bottom);
 }
 
-.is-large .wc-block-components-sidebar .wc-block-components-panel, .is-large .wc-block-components-sidebar .wc-block-components-totals-item {
+.is-large .wc-block-components-sidebar .wc-block-components-panel,
+.is-large .wc-block-components-sidebar .wc-block-components-totals-item {
 	padding: 0;
 }
 
@@ -182,6 +192,10 @@ font-family: var(--body--font-family);
 			-webkit-transform: none;
 			transform: none;
 		}
+	}
+
+	&__content {
+		padding-bottom: 0;
 	}
 }
 
@@ -249,16 +263,82 @@ font-family: var(--body--font-family);
 }
 
 // Notification wrappers
-.woocommerce-notices-wrapper {
-	
-		div {
-		display: block;
-		@include s-r-6(padding);
-		@include s-r-9(margin-bottom);
-		border-radius: var(--global--border-radius-xxs);
+.wc-block-components-notices {
 
+		.wc-block-components-notices__notice {
+			position: relative;
+			display: flex;
+			align-items: center;
+			@include s-r-6(padding);
+			@include s-r-9(margin-bottom);
+			border-radius: var(--global--border-radius-xxs);
+		
+		&.woocommerce-error {
+			background: var(--global--color-notification);
+		}
+
+		.components-notice__content {
+			max-width:calc(100% - 2rem);
+		}
+
+		.components-notice__dismiss {
+
+			&.has-icon {
+				width: 1.5rem;
+				height: 1.5rem;
+				min-height: auto;
+				background: black;
+				display: block;
+				color: white;
+				fill: white;
+				border-radius: 6.25rem;
+
+				svg {
+					max-width: 12px;
+				}
+			}
+		}
+	}
+}
+
+.woocommerce-notices-wrapper {
+
+		div {
+			display: block;
+			@include s-r-6(padding);
+			@include s-r-9(margin-bottom);
+			border-radius: var(--global--border-radius-xxs);
+		
 		&.woocommerce-message {
 			background: var(--global--color-notification);
 		}
 	}
 }
+
+// Star Ratings Blog grid
+.wc-block-grid__product-rating {
+	font-size: 14px;
+
+	.star-rating,
+	.wc-block-grid__product-rating__stars {
+		margin: 0;
+
+		span {
+			max-height: 22px;
+			letter-spacing: 1px;
+		}
+
+		&:before,
+		span:before {
+			content: '\2605\2605\2605\2605\2605';
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+// Woo Products Pagination
+.wc-block-components-pagination {
+	@include s-r-12(margin-bottom);
+}
+

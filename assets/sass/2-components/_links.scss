@@ -19,7 +19,9 @@ cite a,
 .wp-block-audio figcaption a,
 .wp-block-embed figcaption a,
 .woocommerce-info a,
-.comment-reply-title #cancel-comment-reply-link {
+.comment-reply-title #cancel-comment-reply-link,
+.wc-block-components-checkout-return-to-cart-button,
+.wc-block-components-checkout-step__heading-content a {
 	color: currentColor;
 	text-decoration: underline;
 
