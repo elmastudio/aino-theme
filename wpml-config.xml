@@ -1,0 +1,9 @@
+<wpml-config>
+    <admin-texts>
+	    <key name="theme_mods_aino">
+	        <key name="footer_siteinfo" />
+	        <key name="blog_title" />
+	        <key name="blog_title_description" />
+	    </key>
+    </admin-texts>
+</wpml-config>
