@@ -54,7 +54,7 @@
 	background-image: none;
 	border: 1px solid var(--global--color-border);
 	border-color: var(--global--color-border);
-	@include border-radius(0);
+	border-radius: 0;
 	box-shadow: none;
 }
 

@@ -1065,27 +1065,6 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Border Radius */
-@mixin border-radius($radius) {
-	border-radius: $radius;
-}
-
-@mixin border-radius-none {
-	border-radius: 0;
-}
-
-@mixin border-radius-m {
-	border-radius: $border-radius-m;
-}
-
-@mixin border-radius-l {
-	border-radius: $border-radius-l;
-}
-
-@mixin border-radius-100 {
-	border-radius: 50%;
-}
-
 /* Shadows in Forms */
 @mixin shadow-1 {
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);

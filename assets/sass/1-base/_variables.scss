@@ -46,8 +46,6 @@ $col10-nogap          : 74.5rem;
 /* Border Radius */
 $border-radius-s     : 1.5rem; // 24px
 $border-radius-m     : 2.25rem; // 36px
-$border-radius-l     : 2.625rem; // 42px
-$border-radius-circle: 6.25rem; // 100px
 
 :root {
 	/* Fonts */
@@ -81,6 +79,7 @@ $border-radius-circle: 6.25rem; // 100px
 	--global--border-radius-xxl: 3.125rem;
 	--global--border-radius-xxxl: 3.75rem;
 	--global--border-radius-xxxxl: 4.375rem;
+	--global--border-radius-round: 6.25em;
 
 	--heading--line-height-h6: var(--global--line-height-heading);
 	--heading--line-height-h5: var(--global--line-height-heading);

@@ -872,7 +872,7 @@ figcaption {
 
 .wp-block-pullquote {
 	text-align: left;
-	@include border-radius-m;
+	border-radius: var(--global--border-radius-s);
 	color: var(--global--color-text-two);
 
 	&.is-style-solid-color {
@@ -884,7 +884,7 @@ figcaption {
 		blockquote {
 			max-width: 100%;
 			padding: $s-6;
-			@include border-radius-m;
+			border-radius: var(--global--border-radius-s);
 
 			p {
 				@include font-body-m;

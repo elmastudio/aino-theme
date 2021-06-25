@@ -203,4 +203,24 @@
 			}
 		}
 	}
+
+
+.wc-block-components-totals-coupon__button {
+	@include s-r-4(margin-left);
+}
+
+	&.woocommerce-cart {
+
+		.wp-block-separator.is-style-dots {
+			display: none;
+		}
+
+		h2.has-text-align-center {
+			@include font-h-3;
+		}
+
+		.wc-block-product-new {
+			@include s-r-9(padding-top);
+		}
+	}
 }

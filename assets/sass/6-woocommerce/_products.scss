@@ -75,9 +75,16 @@
 			&:hover .button.product_type_grouped {
 				opacity: 1;
 		}
-	
-		.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link.added::after {
-			display: none;
+
+		.wc-block-grid__product-add-to-cart.wp-block-button {
+
+			.wp-block-button__link {
+
+				&.added::after,
+				&.loading::after {
+					display: none;
+				}
+			}
 		}
 
 		.wc-block-grid__product-image,

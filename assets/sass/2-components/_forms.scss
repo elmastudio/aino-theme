@@ -289,7 +289,7 @@ form p.comment-form-comment {
 	}
 
 	textarea {
-		@include border-radius-l;
+		border-radius: var(--global--border-radius-s);
 	}
 }
 

@@ -1,8 +1,3 @@
-.wc-block-components-form .wc-block-components-text-input label,
-.wc-block-components-text-input label {
-font-family: var(--body--font-family);
-}
-
 // Page Headings
 .page.woocommerce-page {
 
@@ -83,10 +78,13 @@ font-family: var(--body--font-family);
 }
 
 // WooCommerce forms
-.wc-block-components-form .wc-block-components-text-input label {
+.wc-block-components-totals-coupon__form .wc-block-components-text-input label,
+.wc-block-components-form .wc-block-components-text-input label,
+.wc-block-components-text-input label {
 	@include font-body-m;
 }
 
+.wc-block-components-totals-coupon__form .wc-block-components-text-input label,
 .wc-block-components-form .wc-block-components-text-input label {
 	position: absolute;
 	transform: translateY(1.25rem);
@@ -96,49 +94,72 @@ font-family: var(--body--font-family);
 	max-width: calc(100% - 32px);
 }
 
-.wc-block-components-form {
+.wc-block-components-totals-coupon__form .wc-block-components-text-input,
+.wc-block-components-form .wc-block-components-text-input,
+.wc-block-components-text-input {
 
+	input[type=email],
+	input[type=number],
+	input[type=tel],
+	input[type=text],
+	input[type=url] {
+		@include font-body-m;
+		border-radius: var(--global--border-radius-xxs);
+		border: 1px solid var(--global--color-form-border);
+		line-height: var(--global--line-height-body);
+		font-family: inherit;
+		margin: 0;
+		box-sizing: border-box;
+		height: 3em;
+		min-height: 0;
+	}
+
+	&.has-error {
+		input,
+		input:active,
+		input:focus,
+		input:hover {
+			border-color: var(--global--color-error);
+		}
+
+		label {
+			color: var(--global--color-error);
+		}
+
+		p {
+			line-height: var(--global--line-height-reset);
+			@include font-body-2xs;
+			margin: 0;
+			@include s-r-1(padding-top);
+		}
+	}
+
+	&.is-active input[type="tel"],
+	&.is-active input[type="url"],
+	&.is-active input[type="text"],
+	&.is-active input[type="number"],
+	&.is-active input[type="email"] {
+		padding: 1rem 0 0 1.25rem;
+	}
+
+	&.is-active label {
+		transform: translateY(10px) scale(0.7);
+		color: var(--global--color-light-gray);
+	}
+}
+
+.form-round {
+
+	.wc-block-components-totals-coupon__form .wc-block-components-text-input,
+	.wc-block-components-form .wc-block-components-text-input,
 	.wc-block-components-text-input {
-
+	
 		input[type=email],
 		input[type=number],
 		input[type=tel],
 		input[type=text],
 		input[type=url] {
-			@include font-body-m;
-			padding: .75em 16px;
-			border-radius: var(--global--border-radius-xxs);
-			border: 1px solid var(--global--color-form-border);
-			line-height: var(--global--line-height-body);
-			font-family: inherit;
-			margin: 0;
-			box-sizing: border-box;
-			height: 3em;
-			min-height: 0;
-		}
-
-		label {
-			@include font-body-2xs;
-		}
-
-		&.has-error {
-			input,
-			input:active,
-			input:focus,
-			input:hover {
-				border-color: var(--global--color-error);
-			}
-
-			label {
-				color: var(--global--color-error);
-			}
-
-			p {
-				line-height: var(--global--line-height-reset);
-				@include font-body-2xs;
-				margin: 0;
-				@include s-r-1(padding-top);
-			}
+			border-radius: var(--global--border-radius-round);
 		}
 	}
 }
@@ -223,8 +244,8 @@ font-family: var(--body--font-family);
 }
 
 .wc-block-components-sale-badge {
-	color: var(--global--color-white);
-	background: var(--global--color-text-one );
+	background: none;
+	border: 1px solid var(--global--color-text-one);
 }
 
 .onsale {
@@ -284,14 +305,14 @@ font-family: var(--body--font-family);
 		.components-notice__dismiss {
 
 			&.has-icon {
+				display: block;
 				width: 1.5rem;
 				height: 1.5rem;
 				min-height: auto;
-				background: black;
-				display: block;
-				color: white;
-				fill: white;
-				border-radius: 6.25rem;
+				background: var(--global--color-black);
+				color: var(--global--color-white);
+				fill: var(--global--color-white);
+				border-radius: var(--global--border-radius-round);
 
 				svg {
 					max-width: 12px;
@@ -342,3 +363,7 @@ font-family: var(--body--font-family);
 	@include s-r-12(margin-bottom);
 }
 
+// Coupon code form
+.wc-block-components-totals-coupon__content {
+	@include s-r-6(padding-bottom);
+}
