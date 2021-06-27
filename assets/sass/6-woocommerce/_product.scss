@@ -48,11 +48,42 @@
 		grid-column-end: 13;
 		@include s-r-9(padding-bottom);
 
-		.woocommerce-product-gallery__trigger {
+		&__trigger {
 			position: absolute;
 			top: $s-4;
 			right: $s-4;
 			z-index: 10;
+			font-size: 0;
+			background: var(--global--color-white);
+			border-radius: var(--global--border-radius-l);
+			display: block;
+			width: $s-9;
+			height: $s-9;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				background: var(--global--color-text-one);
+				z-index: 9;
+			}
+
+			&::after {
+				height: 1px;
+				margin-top: -1px;
+				top: 50%;
+				left: 12px;
+				right: 12px;
+			}
+
+			&::before {
+				width: 1px;
+				margin-left: -1px;
+				left: 50%;
+				top: 12px;
+				bottom: 12px;
+			}
 		}
 
 		@include breakpoint(sm) {
@@ -74,7 +105,7 @@
 				}
 
 				img {
-					max-width: 102px;
+					max-width: 96px;
 					@include s-r-4(margin-right);
 				}
 			}

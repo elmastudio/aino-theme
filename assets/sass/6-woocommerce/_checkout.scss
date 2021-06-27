@@ -1,4 +1,13 @@
 .page {
+
+	.wp-block-woocommerce-checkout {
+
+		&.alignwide {
+			padding: 0;
+		}
+
+	}
+
 	.wc-block-components-checkout-step {
 		padding: 0;
 		@include s-r-9(margin-bottom);
@@ -46,8 +55,18 @@
 // Payment Methods
 .wc-block-checkout__payment-method {
 
+	.wc-block-components-checkout-step__content {
+		padding-bottom: 0;
+	}
+
+	.wc-block-components-radio-control-accordion-option:not(:last-of-type) {
+		@include s-r-4(margin-bottom);
+	}
+
 	.wc-block-components-radio-control-accordion-option,
 	.wc-block-components-radio-control__option {
+		position: relative;
+		padding-left: 0;
 
 		&:after {
 			border: none;
@@ -57,7 +76,6 @@
 	.wc-block-components-radio-control {
 
 		&__option {
-			background: lightyellow;
 
 			.wc-block-components-radio-control__input {
 				left: 0;
@@ -74,6 +92,8 @@
 
 	.wc-block-components-radio-control-accordion-content {
 		padding: 0;
+		margin-top: $s-2;
+		margin-left: $s-7;
 	}
 }
 
@@ -84,8 +104,32 @@
 		.wc-block-components-text-input,
 		.wc-block-components-country-input,
 		.wc-block-components-state-input {
-			margin: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+			margin-right: 0;
 		}
+	}
+}
+
+// Order notes
+.wc-block-checkout {
+
+	&__order-notes {
+
+		.wc-block-checkout__add-note {
+			margin-left: 0;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.wc-block-components-sidebar-layout .wc-block-components-main {
+	.wc-block-components-checkout-policies {
+		padding: 0;
+		margin-bottom: 0;
 	}
 }
 
