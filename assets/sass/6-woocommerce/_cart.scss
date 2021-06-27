@@ -50,12 +50,21 @@
 							width: 137px;
 							border-color: var(--global--color-form-border);
 							border-radius: var(--global--border-radius-s);
+							background: transparent;
 
 							.wc-block-components-quantity-selector__input {
 								@include font-body-s;
 								padding: 0;
 								min-height: 40px;
 								min-width: 30px;
+
+								&:active,
+								&:focus {
+									outline: none;
+									background: transparent;
+									box-shadow: none;
+
+								}
 							}
 
 							.wc-block-components-quantity-selector__button {
@@ -85,6 +94,9 @@
 				}
 			}
 
+			.wc-block-components-shipping-calculator-address {
+				@include s-r-6(padding-bottom);
+			}
 
 			tr {
 				border-bottom: none;
@@ -197,8 +209,15 @@
 					border-color: var(--global--color-border);
 				}
 
-				.wc-block-components-totals-shipping .wc-block-components-shipping-rates-control__no-results-notice {
-					@include s-r-6(margin-bottom);
+				.wc-block-components-totals-shipping {
+
+					&__change-address-button {
+						transform: none;
+					}
+
+					.wc-block-components-shipping-rates-control__no-results-notice {
+						@include s-r-6(margin-bottom);
+					}
 				}
 			}
 		}
