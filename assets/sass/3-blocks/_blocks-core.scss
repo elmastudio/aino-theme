@@ -465,7 +465,7 @@ div[class*='wp-block-'] figcaption {
 			}
 
 			@include breakpoint(xl) {
-				max-width: $wide-content-width;
+				max-width: var(--global--wide-content-width);
 			}
 		}
 

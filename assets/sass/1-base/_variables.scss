@@ -25,8 +25,8 @@ $stickyheader-mobile : 3.438rem; // 55px
 $stickyheader-desktop: 5.5rem; // 88px
 
 /* Grid Columns */
-$col1                : 7.75rem; // 1 grid column
-$col2                : 15.5rem; // 2 grid column
+$col1                : 7.75rem;
+$col2                : 15.5rem;
 $col3                : 23.25rem;
 $col4                : 31rem;
 $col5                : 35.75rem;
@@ -37,15 +37,6 @@ $col9                : 69.75rem;
 $col10               : 77.5rem;
 $col11               : 85.25rem;
 $col12               : 93rem;
-
-
-$wide-content-width   : 87rem;
-$max-content-width    : 87rem;
-$col10-nogap          : 74.5rem;
-
-/* Border Radius */
-$border-radius-s     : 1.5rem; // 24px
-$border-radius-m     : 2.25rem; // 36px
 
 :root {
 	/* Fonts */
@@ -66,6 +57,8 @@ $border-radius-m     : 2.25rem; // 36px
 
 	/* Content widths and grid */
 	--global--default-content-width: 43.5rem;
+	--global--10col-nogap-content-width: 74.5rem;
+	--global--wide-content-width: 87rem;
 	--global--max-content-width: 93rem;
 	--global--grid-gap: #{2 * $s-4}; // 1rem.
 
@@ -88,9 +81,6 @@ $border-radius-m     : 2.25rem; // 36px
 	--heading--line-height-h2: var(--global--line-height-heading);
 	--heading--line-height-h1: var(--global--line-height-page-title);
 }
-
-/* Fonts */
-$font__heading       : 'IBM Plex Sans', sans-serif;
 
 @media only screen and (min-width: 48em) { // from small tablet screens (md)
 

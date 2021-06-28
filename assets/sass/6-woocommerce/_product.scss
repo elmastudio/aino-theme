@@ -24,7 +24,7 @@
 	}
 
 	.woocommerce-breadcrumb {
-		@include s-r-9(padding-bottom);
+		@include s-r-8(padding-bottom);
 	}
 
 	div.product {
@@ -155,11 +155,10 @@
 
 			.quantity {
 				@include s-r-4(margin-right);
+				line-height: var(--global--line-height-reset);
 
 				.qty {
-					max-width: 72px;
-					padding-left: 12px;
-					padding-right: 12px;
+					max-width: 96px;
 				}
 			}
 	

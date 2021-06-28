@@ -241,7 +241,7 @@
 
 /* Alignwide and fullwidth Content widths */
 .entry-content>*.alignwide {
-	max-width: $wide-content-width;
+	max-width: var(--global--wide-content-width);
 }
 
 // All containers with 1200px default width.

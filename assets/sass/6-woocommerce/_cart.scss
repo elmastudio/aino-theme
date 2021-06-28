@@ -177,17 +177,6 @@
 					@include s-r-7(margin-top);
 				}
 
-				.wc-block-components-totals-coupon {
-
-					&__content {
-						@include s-r-6(padding-bottom);
-					}
-
-					&__form {
-						margin-bottom: 0;
-					}
-				}
-
 				.wc-block-components-totals-footer-item::after {
 					display: none;
 				}

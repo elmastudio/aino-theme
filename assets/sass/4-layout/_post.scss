@@ -18,7 +18,7 @@
 	.entry-header .entry-title {
 		display: block;
 		@include push--auto;
-		max-width: $col10-nogap;
+		max-width: var(--global--10col-nogap-content-width);
 		text-align: center;
 	}
 
@@ -67,7 +67,7 @@
 		& img {
 			display: block;
 			@include breakpoint(lg) {
-				max-width: $col10-nogap;
+				max-width: var(--global--10col-nogap-content-width);
 			}
 		}
 	}

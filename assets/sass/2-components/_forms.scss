@@ -20,7 +20,7 @@ textarea {
 	border: 1px solid var(--global--color-form-border);
 	outline: none;
 	line-height: var(--global--line-height-reset);
-	max-height: 3.75rem;
+	max-height: 3.75rem; // 60px
 	@include s-r-5 (padding);
 
 	@include input-placeholder {
@@ -29,9 +29,8 @@ textarea {
 
 	&:active,
 	&:focus {
-		background: var(--global--color-white);
 		color: var(--global--color-text-one);
-		border-color: var(--global--color-text-one);
+		border-color: var(--global--color-form-border-active);
 		box-shadow: 0 0 0 4px rgba(179, 179, 179, 0.5);
 	}
 
@@ -45,7 +44,6 @@ textarea {
 
 		&:active,
 		&:focus {
-			background: var(--global--color-white);
 			color: var(--global--color-black);
 			border-color: var(--global--color-white);
 		}
@@ -69,6 +67,7 @@ textarea {
 textarea {
 	width: 100%;
 	background-color: transparent;
+	background: var(--global--color-white);
 	border: 1px solid var(--global--color-form-border);
 	padding: $s-4 $s-6;
 	outline: none;
@@ -135,8 +134,9 @@ form .comment-form-cookies-consent {
 input[type="checkbox"],
 input[type="radio"] {
 	-webkit-appearance: none;
-	width: 1.5rem;
-	height: 1.5rem;
+	min-width: $s-6;
+	width: $s-6;
+	height: $s-6;
 	border:1px solid var(--global--color-form-border);
 	background-color: var(--global--color-white);
 	border-radius:50%;
@@ -252,9 +252,9 @@ form p.comment-form-comment {
 
 .entry-content .search-submit span.search-icon,
 .widget_search .search-submit span.search-icon {
-	width: 120px;
+	width: $s-13;
 	height: $s-10;
-	padding: 16px 0 0;
+	padding: $s-4 0 0;
 }
 
 .error404 .entry-content {
@@ -286,7 +286,7 @@ form p.comment-form-comment {
 
 	input,
 	select {
-		border-radius: 6.25em;
+		border-radius: var(--global--border-radius-round);
 	}
 
 	textarea {

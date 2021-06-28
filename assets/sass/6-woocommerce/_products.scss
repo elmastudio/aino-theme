@@ -250,19 +250,28 @@
 	}
 
 	.woocommerce-ordering {
-		@include s-r-8(padding-bottom);
 		display: flex;
 		flex-direction: row-reverse;
 
 		select {
-			height: 40px;
-			padding: 8px 20px;
+			height: $s-8;
+			padding: $s-2 87px $s-2 1.25rem;
 			line-height: 1;
 			font-size: 1rem;
+		}
+	}
+}
 
-			&::after {
+.woocommerce-pagination {
 
-			}
+	.page-numbers {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		li {
+			padding: .3em .6em;
+			min-width: 2.2em;
 		}
 	}
 }

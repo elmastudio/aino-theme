@@ -16,7 +16,7 @@
 	--global--color-very-dark-gray: #222222;
 	--global--color-very-light-gray: #f4f4f4;
 	--global--color-light-gray: #757575;
-	--global--color-medium-light-gray: #aeaeae;
+	--global--color-medium-light-gray: #AEAEAE;
 	--global--color-light-red-orange: #F79670;
 	--global--color-blue: #6579BD;
 	--global--color-medium-red-orange: #F15A29;
@@ -32,6 +32,7 @@
 	--global--color-text-two: var(--global--color-very-dark-gray); /* Body and meta text color. */
 	--global--color-border: var(--global--color-medium-light-gray); /* Default border color. */
 	--global--color-form-border: var(--global--color-medium-light-gray); /* Form border color. */
+	--global--color-form-border-active: var(--global--color-black); /* Form border active color. */
 	--global--color-background: var(--global--color-white); /* Default body background. */
 	--global--color-code-one: var(--global--color-light-green-cyan); /* Code background. */
 	--global--color-code-two: var(--global--color-medium-dark-cyan); /* Dark code background. */
