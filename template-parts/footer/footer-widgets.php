@@ -17,7 +17,7 @@ if ( is_active_sidebar( 'footer-1' ) ||
 		<?php
 		if ( is_active_sidebar( 'footer-1' ) ) {
 			?>
-				<div id="footer-widget-1" class="footer-widget col-margins">
+				<div id="footer-widget-1" class="footer-widget col-gaps">
 					<?php dynamic_sidebar( 'footer-1' ); ?>
 				</div>
 			<?php
@@ -25,7 +25,7 @@ if ( is_active_sidebar( 'footer-1' ) ||
 
 		if ( is_active_sidebar( 'footer-2' ) ) {
 			?>
-				<div id="footer-widget-2" class="footer-widget col-margins">
+				<div id="footer-widget-2" class="footer-widget col-gaps">
 					<?php dynamic_sidebar( 'footer-2' ); ?>
 				</div>
 			<?php
@@ -33,7 +33,7 @@ if ( is_active_sidebar( 'footer-1' ) ||
 
 		if ( is_active_sidebar( 'footer-3' ) ) {
 			?>
-				<div id="footer-widget-3" class="footer-widget col-margins">
+				<div id="footer-widget-3" class="footer-widget col-gaps">
 					<?php dynamic_sidebar( 'footer-3' ); ?>
 				</div>
 			<?php
@@ -41,7 +41,7 @@ if ( is_active_sidebar( 'footer-1' ) ||
 
 		if ( is_active_sidebar( 'footer-4' ) ) {
 			?>
-				<div id="footer-widget-4" class="footer-widget">
+				<div id="footer-widget-4" class="footer-widget col-gaps">
 					<?php dynamic_sidebar( 'footer-4' ); ?>
 				</div>
 			<?php
@@ -49,16 +49,8 @@ if ( is_active_sidebar( 'footer-1' ) ||
 
 		if ( is_active_sidebar( 'footer-5' ) ) {
 			?>
-				<div id="footer-widget-5" class="footer-widget">
+				<div id="footer-widget-5" class="footer-widget col-gaps">
 					<?php dynamic_sidebar( 'footer-5' ); ?>
-				</div>
-			<?php
-		}
-
-		if ( is_active_sidebar( 'footer-6' ) ) {
-			?>
-				<div id="footer-widget-6" class="footer-widget">
-					<?php dynamic_sidebar( 'footer-6' ); ?>
 				</div>
 			<?php
 		}

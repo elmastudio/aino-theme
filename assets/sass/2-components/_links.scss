@@ -21,7 +21,11 @@ cite a,
 .woocommerce-info a,
 .comment-reply-title #cancel-comment-reply-link,
 .wc-block-components-checkout-return-to-cart-button,
-.wc-block-components-checkout-step__heading-content a {
+.wc-block-components-checkout-step__heading-content a,
+.reset_variations,
+.woocommerce-notices-wrapper a,
+.woocommerce-message a,
+.custom-product-page-link {
 	color: currentColor;
 	text-decoration: underline;
 
@@ -56,7 +60,11 @@ h2.entry-title a,
 .header-cta-wrap a,
 .footer-widget-wrap li a,
 .site-info a,
-.site-footer a.back-top {
+.site-footer a.back-top,
+.woocommerce-breadcrumb a,
+.mc4wp-form p a,
+.woocommerce-review-link,
+.posted_in a {
 
 	&:hover {
 		text-decoration: underline;
@@ -64,7 +72,7 @@ h2.entry-title a,
 }
 
 /* Meta Textlink Hovers */
-h1, h2, h3, h4, h5, h6,
+h1:not(.site-title), h2, h3, h4, h5, h6,
 .entry-meta,
 .related-post .entry-cats {
 

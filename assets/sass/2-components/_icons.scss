@@ -12,13 +12,45 @@
 }
 
 /* Social Icons */
-.menu-social-container .icon {
-	fill: var(--global--color-text-one);
-	width: $s-6;
-	height: $s-6;
+.menu-social-container {
+
+	.icon {
+		fill: var(--global--color-text-one);
+		width: $s-6;
+		height: $s-6;
+	}
+
+	.icon-large {
+
+		.icon {
+			@include s-r-8 (width);
+			@include s-r-8 (height);
+		}
+	}
 }
 
 /* Search Form Icon */
 .search-icon {
 	display: none;
+}
+
+/* Back to top icon */
+.top {
+	&:before {
+		content: "\2191"; // top arrow glyth
+		@include s-r-1(margin-right);
+	}
+}
+
+/* Arrow Icons */
+.arrow-left {
+	position: relative;
+
+	&:before {
+		text-indent: 0;
+		content: "\2192";
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }

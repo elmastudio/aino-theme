@@ -27,12 +27,14 @@
 	--global--color-blue-magenta: #4D2CF0;
 	--global--color-medium-light-blue-magenta: #755CE9;
 
-	--global--color-primary: var(--global--color-medium-light-blue-magenta); /* Button or button border background color. */
-	--global--color-text-one: var(--global--color-black); /* Headings, site title, menu color. */
-	--global--color-text-two: var(--global--color-very-dark-gray); /* Body and meta text color. */
-	--global--color-border: var(--global--color-medium-light-gray); /* Default border color. */
-	--global--color-form-border: var(--global--color-medium-light-gray); /* Form border color. */
-	--global--color-form-border-active: var(--global--color-black); /* Form border active color. */
+	--global--color-primary: var(--global--color-medium-light-blue-magenta); /* Text link and Button background. */
+	--global--color-btn-background-hover: var(--global--color-blue-magenta); /* Button background hover. */
+	--global--color-text-one: var(--global--color-black); /* Headings, site title, menu. */
+	--global--color-text-two: var(--global--color-very-dark-gray); /* Body and meta text. */
+	--global--color-border: var(--global--color-medium-light-gray); /* Default border. */
+	--global--color-form-border: var(--global--color-medium-light-gray); /* Form border. */
+	--global--color-form-active: #0E72FF; /* Form border active. */
+	--global--color-form-boxshadow: rgba(14, 114, 255, 0.4); /* Form active form glow. */
 	--global--color-background: var(--global--color-white); /* Default body background. */
 	--global--color-code-one: var(--global--color-light-green-cyan); /* Code background. */
 	--global--color-code-two: var(--global--color-medium-dark-cyan); /* Dark code background. */

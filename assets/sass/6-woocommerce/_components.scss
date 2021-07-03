@@ -36,7 +36,7 @@
 .wc-block-components-sidebar {
 	background: var(--global--color-very-light-gray);
 	border-radius: var(--global--border-radius-s);
-	margin: 48px 0 0 0;
+	margin: 0;
 	@include s-r-6(padding-top);
 	@include s-r-9(padding-left);
 	@include s-r-9(padding-right);
@@ -48,6 +48,10 @@
 		margin-top: 0;
 		grid-column-start: 7;
 		grid-column-end: 13;
+	}
+
+	@include breakpoint(md) {
+	
 	}
 }
 
@@ -169,7 +173,7 @@ padding-right: 0;
 	&.is-active input[type="number"],
 	&.is-active input[type="email"] {
 		padding: 1rem 0 0 1.25rem;
-		border: 1px solid var(--global--color-form-border-active);
+		border: 1px solid var(--global--color-form-active);
 	}
 
 	&.is-active label {
@@ -203,9 +207,9 @@ padding-right: 0;
 		transform: none;
 
 		&:focus {
-			border-color: var(--global--color-text-one);
-			box-shadow: 0 0 0 4px rgba(179, 179, 179, 0.5);
-			background: var(--global--color-text-one);
+			border-color: var(--global--color-form-active);
+			box-shadow: 0 0 0 4px var(--global--color-form-boxshadow);
+			background: var(--global--color-form-active);
 		}
 
 		&__mark {
@@ -213,7 +217,8 @@ padding-right: 0;
 		}
 
 		&:checked {
-			background: var(--global--color-text-one);
+			border-color: var(--global--color-form-active);
+			background: var(--global--color-form-active);
 			fill: var(--global--color-white);
 			color: var(--global--color-white);
 		}
@@ -494,6 +499,7 @@ padding-right: 0;
 }
 
 .wc-block-components-sale-badge {
+	@include s-r-1(margin-top);
 	background: none;
 	border: 1px solid var(--global--color-text-one);
 }
@@ -526,62 +532,97 @@ padding-right: 0;
 	@include font-body-m;
 	padding: 18px 20px;
 	@include transition-default;
-
-	&:hover {
-		-webkit-transform: translateY(-2px);
-		transform: translateY(-2px);
-	}
 }
 
 // Notification wrappers
-.wc-block-components-notices {
+.woocommerce-page .entry-content .woocommerce-message,
+.woocommerce-message,
+.wc-block-components-notices .wc-block-components-notices__notice {
+	max-width: var(--global--wide-content-width);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	@include s-r-6(padding);
+	border-radius: var(--global--border-radius-xxs);
+	background: var(--global--color-notification);
 
-		.wc-block-components-notices__notice {
-			position: relative;
-			display: flex;
-			align-items: center;
-			@include s-r-6(padding);
-			@include s-r-9(margin-bottom);
-			border-radius: var(--global--border-radius-xxs);
+	@include breakpoint(sm) {
+		@include s-r-9(margin-bottom);
+	}
 		
-		&.woocommerce-error {
-			background: var(--global--color-notification);
-		}
+	&.woocommerce-error {
+		background: var(--global--color-error);
+	}
 
-		.components-notice__content {
-			max-width:calc(100% - 2rem);
-		}
+	.components-notice__content {
+		max-width:calc(100% - 2rem);
+	}
 
-		.components-notice__dismiss {
+	.components-notice__dismiss {
 
-			&.has-icon {
-				display: block;
-				width: 1.5rem;
-				height: 1.5rem;
-				min-height: auto;
-				background: var(--global--color-black);
-				color: var(--global--color-white);
-				fill: var(--global--color-white);
-				border-radius: var(--global--border-radius-round);
+		&.has-icon {
+			display: block;
+			width: 1.5rem;
+			height: 1.5rem;
+			min-height: auto;
+			background: var(--global--color-black);
+			color: var(--global--color-white);
+			fill: var(--global--color-white);
+			border-radius: var(--global--border-radius-round);
 
-				svg {
-					max-width: 12px;
-				}
+			svg {
+				max-width: 12px;
 			}
 		}
+	}
+}
+.woocommerce-page .entry-content .woocommerce-message,
+.woocommerce-message {
+	margin-bottom: $s-6;
+
+	@include breakpoint(sm) {
+		margin-left: $s-7;
+		margin-right: $s-7;
+		margin-bottom: 0;
+	}
+
+	@include breakpoint(lg) {
+		margin-left: $s-9;
+		margin-right: $s-9;
+	}
+
+	@include breakpoint(xl) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	a {
+		@include s-r-2(margin-right);
 	}
 }
 
 .woocommerce-notices-wrapper {
 
-		div {
+		div,
+		ul {
 			display: block;
 			@include s-r-6(padding);
 			@include s-r-9(margin-bottom);
 			border-radius: var(--global--border-radius-xxs);
+			list-style: none;
 		
 		&.woocommerce-message {
 			background: var(--global--color-notification);
+		}
+
+		&.woocommerce-error {
+			background: var(--global--color-error);
+		}
+
+		a {
+			@include s-r-2(margin-right);
 		}
 	}
 }
@@ -633,12 +674,6 @@ padding-right: 0;
 	
 		&__form {
 			margin-bottom: 0;
-		}
-	
-		&.has-border {
-			&:after{
-				border-bottom: none;
-			}
 		}
 	}
 

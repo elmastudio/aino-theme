@@ -46,11 +46,12 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 1.4.0 =
 New: WooCommerce plugin support.
-New: Basic Block Patterns.
+New: Building Blocks patterns.
 New: Support Query block.
 Enhance: Color Palette.
 Enhance: Core Code, Preformatted, Verse block styles.
-
+Enhance: Form styles.
+Bugfix: Load more on archive pages.
 
 = 1.3.1 =
 Enhance: Add support for local fonts.

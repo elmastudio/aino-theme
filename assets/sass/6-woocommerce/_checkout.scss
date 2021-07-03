@@ -205,7 +205,6 @@
 	}
 }
 
-
 // Order Summary
 .wc-block-components-order-summary {
 
@@ -280,13 +279,15 @@
 	}
 }
 
+.wc-block-components-product-details,
 .wc-block-components-totals-item {
 	
 	&__value {
 		font-weight: normal;
 	}
 
-	&__description {
+	&__description,
+	li {
 		@include font-body-xs;
 	}
 }
@@ -313,4 +314,12 @@
 	.wc-block-components-totals-item__label {
 		font-weight: normal;
 	}
+}
+
+.wc-block-checkout__sidebar .wc-block-components-totals-footer-item:after,
+.wc-block-checkout__sidebar .wc-block-components-totals-taxes:after,
+.wc-block-components-panel.has-border:after,
+.wc-block-components-order-summary-item:after {
+	border-color: var(--global--color-border);
+	opacity: 1;
 }

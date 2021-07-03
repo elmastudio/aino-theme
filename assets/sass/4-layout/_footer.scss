@@ -8,26 +8,48 @@
 
 	.footer-wrap {
 		@include s-r-9 (padding-bottom);
-	
+
 		/* Footer Widget Area */
 		.footer-widget-wrap {
-			@include flexbox;
-			justify-content: space-evenly;
-			align-items: stretch;
-			flex-direction: column;
-			@include s-r-9(padding-bottom);
-		
+			@include s-r-13(padding-bottom);
+
 			@include breakpoint(sm) {
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: center;
+				display: grid;
+				grid-template-columns: repeat(12, 8.333%);
 			}
-		
+
 			.footer-widget {
-				flex-grow: 1;
-			
+
+				@include breakpoint(sm) {
+
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3) {
+						grid-column-start: span 4;
+					}
+
+					&:nth-child(4),
+					&:nth-child(5) {
+						grid-column-start: span 6;
+					}
+				}
+
+				@include breakpoint(md) {
+
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4) {
+						grid-column-start: span 2;
+					}
+
+					&:nth-child(5) {
+						grid-column-start: span 4;
+					}
+				}
+
 				.widget {
-					@include s-r-9(padding-bottom);
+					@include s-r-9(margin-top);
 			
 					.footerwidgets-centered & {
 						text-align: center;
@@ -39,7 +61,7 @@
 				}
 			}
 		}
-	
+
 		/* Footer Credit Info and Social Menu */
 		.footer-info {
 			display: flex;
@@ -48,21 +70,32 @@
 			border-top: 1px solid var(--global--color-border);
 			@include s-r-9 (padding-top);
 
-			@include breakpoint(sm) {
-				flex-direction: row;
+			.footer-spacebetween & {
+
+				@include breakpoint(md) {
+					flex-direction: row-reverse;
+				}
 			}
 
-			.footerinfo-centered & {
+			.footer-left & {
+				align-self: flex-start;
+			}
+
+			.footer-right & {
+				align-self: flex-end;
+			}
+
+			.footer-centered & {
 				justify-content: center;
-	
-				@include breakpoint(sm) {
-					flex-direction: column;
-				}
+			}
+
+			.footer-left & {
+				justify-content: flex-start;
+				flex-direction: column;
 			}
 
 			.site-info {
 				color: var(--global--color-text-two);
-				align-self: center;
 				text-align: center;
 
 				@include breakpoint(sm) {
@@ -70,23 +103,27 @@
 					flex-grow: 0;
 					text-align: left;
 				}
-			
-				.footerinfo-centered & {
 
-					@include breakpoint(sm) {
-							@include flexbox;
-							justify-content: center;
-						} 
-					}
+				.footer-centered & {
+					align-self: center;
+				}
+
+				.footer-left & {
+					align-self: flex-start;
+				}
+
+				.footer-right & {
+					align-self: flex-end;
+				}
 
 				.site-name {
 					margin-right: 2px;
-			
+
 					&:after {
 						content: '.';
 					}
 				}
-			
+
 				a {
 					padding: 0;
 					color: var(--global--color-text-two);
@@ -94,7 +131,6 @@
 			}
 
 			.social-footer-nav {
-				@include s-r-6(padding-top);
 
 				@include breakpoint(sm) {
 					flex-basis: 33.3333333%;
@@ -106,10 +142,38 @@
 					justify-content: center;
 				}
 
-				.footerinfo-centered & {
-					@include flexbox;
+				.footer-centered & {
 					justify-content: center;
 				}
+
+				.footer-left & {
+					align-self: flex-start;
+				}
+
+				.footer-right & {
+					align-self: flex-end;
+				}
+
+				.footer-spacebetween & {
+					.social-links-menu {
+						justify-content: flex-end;
+					}
+				}
+
+				.footer-left &,
+				.footer-right &,
+				.footer-centered &,
+				.footer-spacebetween & {
+					@include s-r-4(padding-bottom);
+				}
+
+				
+					@include breakpoint(lg) {
+
+						.footer-spacebetween & {
+							padding-bottom: 0;
+						}
+					}
 			}
 
 			.back-top {
@@ -123,29 +187,10 @@
 					padding-top: 0;
 				}
 
-				.footerinfo-centered & {
+				.footer-centered & {
 					@include s-r-6(padding-top);
 					align-self: center;
 				}
-			}
-		}
-	}
-
-	.footer-widget-wrap {
-
-		&:before {
-			content: "";
-			display: block;
-			background-color: var(--global--color-border);
-			height: 1px;
-			@include s-r-12 (margin-bottom);
-
-			@include breakpoint(sm) {
-				width: calc(100% - 2rem);
-			}
-	
-			@include breakpoint(lg) {
-				width: calc(100% - 3rem);
 			}
 		}
 	}
@@ -166,16 +211,11 @@
 			.footer-info {
 				border-top: none;
 			}
-		
-			.footer-widget-wrap {
-				padding-bottom: 0;
-			}
 		}
 	}
 }
 
-
-body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-footer-nav {
+body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer-nav {
 
 	@include breakpoint(sm) {
 		padding-top: 0;
@@ -203,13 +243,6 @@ body:not(.footerinfo-centered) .site-footer .footer-wrap .footer-info .social-fo
 			border-color: var(--global--color-white);
 		}
 	
-	}
-
-	.footer-widget-wrap {
-
-		&:before {
-			background-color: transparent;
-		}
 	}
 }
 

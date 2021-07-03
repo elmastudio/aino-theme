@@ -166,8 +166,8 @@
 	@include default-margins;
 }
 
-.col-margins {
-	@include col-margins;
+.col-gaps {
+	@include col-gaps;
 }
 
 .outer-margins {
@@ -319,7 +319,7 @@
 .single-post .navigation .prev {
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
-	@include col-margins;
+	@include col-gaps;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);
@@ -336,7 +336,7 @@
 .s4 {
 	width: 100%;
 	flex-grow: 0;
-	@include col-margins;
+	@include col-gaps;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);

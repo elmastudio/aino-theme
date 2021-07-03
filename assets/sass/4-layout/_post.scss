@@ -96,75 +96,104 @@
 }
 
 /* Customize Setting - Theme - Style Featured Images Border Radius */
-.single-post {
+.single {
 
 	&.featuredimg-radius-none {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: 0;
 		}
 	}
 
 	&.featuredimg-radius-xxs {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery img,
+
+		.flex-control-nav img {
 			border-radius: var(--global--border-radius-xxs);
 		}
 	}
 
 	&.featuredimg-radius-xs {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: var(--global--border-radius-xs);
+		}
+
+		.flex-control-nav img {
+			border-radius: var(--global--border-radius-xxs);
 		}
 	}
 
 	&.featuredimg-radius-s {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: var(--global--border-radius-s);
 		}
 	}
 
 	&.featuredimg-radius-m {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: var(--global--border-radius-m);
 		}
 	}
 
 	&.featuredimg-radius-l {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: var(--global--border-radius-l);
 		}
 	}
 
 	&.featuredimg-radius-xl {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: var(--global--border-radius-xl);
 		}
 	}
 
 	&.featuredimg-radius-xxl {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: var(--global--border-radius-xxl);
 		}
 	}
 
 	&.featuredimg-radius-xxxl {
 
-		.wp-post-image {
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
 			border-radius: var(--global--border-radius-xxxl);
 		}
 	}
 
-	&.featuredimg-radius-xxxl {
+	&.featuredimg-radius-xxxxl {
 
-		.wp-post-image {
-			border-radius: var(--global--border-radius-xxxl);
+		.wp-post-image,
+		.woocommerce-product-gallery__wrapper img {
+			border-radius: var(--global--border-radius-xxxxl);
+		}
+	}
+
+	&.featuredimg-radius-s,
+	&.featuredimg-radius-m,
+	&.featuredimg-radius-l,
+	&.featuredimg-radius-xl,
+	&.featuredimg-radius-xxl,
+	&.featuredimg-radius-xxxl,
+	&.featuredimg-radius-xxxxl {
+		
+		.flex-control-nav img {
+			border-radius: var(--global--border-radius-xs);
 		}
 	}
 }

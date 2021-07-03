@@ -606,8 +606,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 1. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -618,8 +618,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 2. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -630,8 +630,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 3. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -642,8 +642,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 4. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -654,20 +654,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 5. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer 6', 'aino' ),
-			'id'            => 'footer-6',
-			'description'   => esc_html__( 'Add widgets here to appear in the 6. column of your footer.', 'aino' ),
-			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 

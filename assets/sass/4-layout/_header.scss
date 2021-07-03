@@ -1,10 +1,10 @@
 .site-header {
-	@include s-r-7(padding-top);
+	@include s-r-6(padding-top);
 }
 
 /* Site Title, Logo and Tagline */
 .site-branding {
-	@include flexbox;
+	display: flex;
 	align-items: center;
 	margin: 0 auto 0 0;
 	min-height: 2.25rem;
@@ -143,36 +143,6 @@
 	}
 }
 
-.social-links-menu {
-	@include flexbox;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-.menu-social-container ul,
-.social-nav ul {
-	margin: 0;
-	padding: 0;
-
-}
-
-.social-links-menu li {
-	padding-right: $s-7;
-
-	&:last-child {
-		padding-right: 0;
-	}
-}
-
-.menu-social-container ul li a {
-	display: block;
-	width: $s-6;
-	height: $s-6;
-	line-height: 1;
-	margin: 0;
-	overflow: hidden;
-}
-
 /* Header CTA Buttons */
 .header-cta-wrap {
 	display: none;
@@ -242,7 +212,7 @@
 
 .header-inner {
 	@include breakpoint(header) {
-		@include flexbox;
+		display: flex;
 		align-items: center;
 		justify-content: flex-end;
 	}

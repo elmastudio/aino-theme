@@ -4,40 +4,16 @@
 	color: var(--global--color-text-one);
 	border: 1px solid var(--global--color-text-one);
 	line-height: 1;
-	@include pill-m-icon;
+	@include pill-s;
 	display: block;
 	position: absolute;
-	@include s-r-6(top);
-	@include s-r-6(left);
+	@include s-r-4(top);
+	@include s-r-4(left);
 	z-index: 1;
-
-	.sticky-icon {
-		border-right: 1px solid var(--global--color-black);
-		padding: 5px 14px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-
-		.icon {
-			width: 1.125rem; // 18px
-			height: 1.125rem;
-			display: block;
-
-			@include breakpoint(lg) {
-				width: 1.25rem; // 20px
-				height: 1.25rem;
-			}
-		}
-	}
 
 	.sticky-light & {
 		color: var(--global--color-white);
 		border: 1px solid var(--global--color-white);
-
-		.sticky-icon {
-			border-right: 1px solid var(--global--color-white);
-		}
 	}
 
 	.no-featured-image & {

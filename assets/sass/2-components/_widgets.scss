@@ -13,7 +13,7 @@
 }
 
 .widget-title {
-	@include s-r-6 (padding-bottom);
+	@include s-r-4 (padding-bottom);
 }
 
 /* Make sure select elements fit in widgets. */
@@ -27,7 +27,8 @@
 
 .footer-widget .widget ul li {
 	list-style: none;
-	@include s-r-6 (padding-bottom);
+	@include s-r-4 (padding-bottom);
+	line-height: var(--global--line-height-body);
 
 	&:last-child {
 		padding-bottom: 0;
@@ -43,29 +44,33 @@
 }
 
 /* Archive + Category + Pages + Nav Menu Widget */
-.widget_archive select,
-.widget_categories select {
-	display: block;
-	width: 100%;
-	height: 34px;
-	padding: 6px 12px;
-	line-height: 1.42857143;
-	background-color: #fafafa;
-	background-image: none;
-	border: 1px solid var(--global--color-border);
-	border-color: var(--global--color-border);
-	border-radius: 0;
-	box-shadow: none;
-}
+.widget_archive,
+.widget_categories {
 
-.widget-area-default .widget_categories ul.children,
-.widget-area-default .widget_nav_menu .sub-menu,
-.widget-area-default .widget_pages ul.children {
-	padding: $s-4 0 0 $s-6;
-	@include breakpoint(sm) {
-		padding: $s-4 0 0 $s-6;
+	select {
+		display: block;
+		width: 100%;
+		height: 34px;
+		padding: 6px 12px;
+		line-height: 1.42857143;
+		background-color: var(--global--color-white);
+		background-image: none;
+		border: 1px solid var(--global--color-border);
+		border-color: var(--global--color-border);
+		border-radius: 0;
+		box-shadow: none;
 	}
 }
+.widget-area-default {
+
+	.widget_categories .children,
+	.widget_nav_menu .sub-menu,
+	.widget_pages ul.children {
+		padding-top: 0;
+		@include s-r-6(padding-left);
+	}
+}
+
 /* Calendar Widget */
 #wp-calendar caption {
 	font-weight: bold;
@@ -80,14 +85,8 @@
 }
 
 /* Jetpack Sharing buttons */
-.widget_flickr .flickr-images {
-	text-align: left;
-	padding-bottom: $s-2;
-}
-
 .entry-content .sharedaddy {
-
-	padding-top: 16px;
+	@include s-r-4(padding-top);
 
 	h3.sd-title {
 		display: block;

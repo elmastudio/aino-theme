@@ -50,7 +50,6 @@
 							width: 137px;
 							border-color: var(--global--color-form-border);
 							border-radius: var(--global--border-radius-s);
-							background: transparent;
 
 							.wc-block-components-quantity-selector__input {
 								@include font-body-s;
@@ -61,7 +60,6 @@
 								&:active,
 								&:focus {
 									outline: none;
-									background: transparent;
 									box-shadow: none;
 
 								}

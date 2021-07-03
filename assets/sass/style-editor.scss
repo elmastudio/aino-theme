@@ -263,10 +263,6 @@ ol,
 ul {
 	@include font-body-l;
 
-	&.has-background {
-		@include s-r-7(padding);
-	}
-
 	&.has-xxs-font-size {
 		@include font-body-2xs;
 	}
@@ -318,15 +314,6 @@ ul {
 	}
 }
 
-.wp-block[data-type="core/paragraph"] {
-	@include s-r-6(padding-bottom);
-}
-
-.wp-block[data-align="wide"] .wp-block-group__inner-container .wp-block-paragraph,
-.wp-block[data-align="full"] .wp-block-group__inner-container .wp-block-paragraph {
-	padding-bottom: 0;
-}
-
 dfn,
 em,
 i {
@@ -368,11 +355,6 @@ mark {
 	background: #fff9c0;
 	text-decoration: none;
 }
-
-big {
-	font-size: 125%;
-}
-
 
 /* Grid */
 

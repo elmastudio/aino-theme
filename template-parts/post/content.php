@@ -18,7 +18,7 @@ $custom_post_excerpt = array(
 
 		<?php
 		if ( is_sticky() && is_home() && ! is_paged() ) {
-			printf( '<span class="sticky-post badge-highlight"><span class="sticky-icon">' . aino_get_svg( array( 'icon' => 'star-line' ) ) . '</span>%s</span>', esc_attr__( 'Featured', 'aino' ) );
+			printf( '<span class="sticky-post badge-highlight">%s</span>', esc_attr__( 'Featured', 'aino' ) );
 		}
 		?>
 

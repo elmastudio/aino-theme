@@ -30,8 +30,8 @@ textarea {
 	&:active,
 	&:focus {
 		color: var(--global--color-text-one);
-		border-color: var(--global--color-form-border-active);
-		box-shadow: 0 0 0 4px rgba(179, 179, 179, 0.5);
+		border-color: var(--global--color-form-active);
+		box-shadow: 0 0 0 4px var(--global--color-form-boxshadow);
 	}
 
 	.light-form & {
@@ -39,7 +39,7 @@ textarea {
 		color: var(--global--color-white);
 
 		@include input-placeholder {
-			color: var(--global--color-white);
+			color: var(--global--color-text-one);
 		}
 
 		&:active,
@@ -137,7 +137,7 @@ input[type="radio"] {
 	min-width: $s-6;
 	width: $s-6;
 	height: $s-6;
-	border:1px solid var(--global--color-form-border);
+	border: 1px solid var(--global--color-form-border);
 	background-color: var(--global--color-white);
 	border-radius:50%;
 	outline:none;
@@ -159,12 +159,16 @@ input[type='checkbox'] {
 	position: relative;
 
 	&:focus {
-		border-color: var(--global--color-text-one);
-		box-shadow: 0 0 0 4px rgba(179, 179, 179, 0.5);
+		border-color: var(--global--color-form-active);
+		box-shadow: 0 0 0 4px var(--global--color-form-boxshadow);
+		background: var(--global--color-form-active);
 	}
 
 	&:checked:before {
-		background: var(--global--color-text-one);
+		border-color: var(--global--color-form-active);
+		background: var(--global--color-form-active);
+		fill: var(--global--color-white);
+		color: var(--global--color-white);
 	}
 
 	&:after {
@@ -176,7 +180,10 @@ input[type='checkbox'] {
 	&:checked:after {
 		display: block;
 	}
-	
+}
+
+input[type='checkbox'] {
+
 	&:after {
 		left: 8px;
 		top: 4px;
@@ -187,6 +194,19 @@ input[type='checkbox'] {
 		-webkit-transform: rotate(45deg);
 		-ms-transform: rotate(45deg);
 		transform: rotate(45deg);
+	}
+}
+
+
+input[type='radio'] {
+
+	&:after {
+		left: 8px;
+		top: 8px;
+		width: 6px;
+		height: 6px;
+		border-radius: 100px;
+		background-color: var(--global--color-white);
 	}
 }
 
@@ -269,7 +289,6 @@ form p.comment-form-comment {
 
 /* Form Styles (via Customizer Settings) */
 .form-curved {
-
 	input,
 	textarea,
 	select {
@@ -297,8 +316,8 @@ form p.comment-form-comment {
 /* Mailchimp Form */
 .mc4wp-form {
 
-	.mc4wp-form-fields {
-		@include s-r-6 (padding-top);
+	.mc4wp-form-fields p.has-m-font-size:first-of-type {
+		padding-top: 0 !important;
 	}
 
 	.mc4wp-alert p {
@@ -311,6 +330,13 @@ form p.comment-form-comment {
 	
 	.mc4wp-notice p {
 		color: var(--global--color-notification);
+	}
+}
+
+.footer-widget-wrap {
+
+	.mc4wp-form p {
+		@include s-r-4 (padding-top);
 	}
 }
 

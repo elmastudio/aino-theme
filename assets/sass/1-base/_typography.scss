@@ -73,8 +73,6 @@ div[class*='wp-block-'] figcaption,
 .entry-content .wp-block-post-terms.has-m-font-size,
 .related-wrap .related-post .entry-cats,
 .comment-author .fn,
-.footer-info,
-.footer-widget .widget ul li,
 .mc4wp-form .mc4wp-alert p,
 input,
 select,
@@ -84,7 +82,11 @@ textarea,
 .page .woocommerce-form p,
 .woocommerce-form-login-toggle,
 .entry-content form p,
-.wc-block-cart__sidebar .wc-block-cart__totals-title {
+.wc-block-cart__sidebar .wc-block-cart__totals-title,
+.footer-widget .widget ul li,
+.footer-widget .widget_text p,
+.site-footer .widget-title,
+.custom-product-page-link {
 	@include font-body-m;
 }
 
@@ -242,11 +244,11 @@ h3.has-s-font-size,
 h4.has-m-font-size,
 h5.has-l-font-size,
 h6.has-xl-font-size,
-h2.widget-title,
 .blog h2.entry-title,
 .woocommerce-page h1.entry-title,
 .blog-archive h2.entry-title,
-.comment-reply-title {
+.comment-reply-title,
+.wp-block-query h2.wp-block-post-title {
 	@include font-h-4;
 }
 
@@ -274,7 +276,7 @@ h5,
 h5.has-s-font-size,
 h6.has-m-font-size,
 .woocommerce-loop-product__title,
-.is-large.wc-block-cart .wc-block-cart__totals-title  {
+.is-large.wc-block-cart .wc-block-cart__totals-title {
 	@include font-h-2;
 }
 
@@ -412,6 +414,10 @@ big {
 		margin-left: -11px;
 		line-height: 0.79;
 	}
+}
+
+.indent {
+	text-indent: 3.5rem;
 }
 
 .wide-content {
