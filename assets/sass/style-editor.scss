@@ -777,7 +777,6 @@ figcaption {
 	max-width: 100%;
 	@include font-body-s;
 	@include s-r-4 (margin-top);
-	@include s-r-6 (margin-bottom);
 	color: var(--global--color-text-two);
 	text-align: left;
 }

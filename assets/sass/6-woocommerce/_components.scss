@@ -538,7 +538,7 @@ padding-right: 0;
 .woocommerce-page .entry-content .woocommerce-message,
 .woocommerce-message,
 .wc-block-components-notices .wc-block-components-notices__notice {
-	max-width: var(--global--wide-content-width);
+	max-width: var(--global--max-content-width-nogap);
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -675,9 +675,5 @@ padding-right: 0;
 		&__form {
 			margin-bottom: 0;
 		}
-	}
-
-	.wc-block-components-totals-shipping {
-		border-top: 1px solid var(--global--color-border);
 	}
 }

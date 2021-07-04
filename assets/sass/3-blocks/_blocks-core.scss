@@ -312,7 +312,7 @@
 
 div[class*='wp-block-'] figcaption {
 	display: block;
-	@include s-r-6 (margin-top);
+	@include s-r-4 (margin-top);
 	margin-bottom: 0;
 	text-align: left;
 }

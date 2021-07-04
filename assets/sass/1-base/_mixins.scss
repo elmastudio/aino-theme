@@ -504,98 +504,98 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Body Fonts */
 @mixin font-body-2xs {
-	font-size: 0.75rem;
+	font-size: 0.75rem !important;
 }
 
 @mixin font-body-xs {
-	font-size: 0.875rem;
+	font-size: 0.875rem !important;
 }
 
 @mixin font-body-s {
-	font-size: 1rem;
+	font-size: 1rem !important;
 }
 
 @mixin font-body-m {
-	font-size: 1.125rem;
+	font-size: 1.125rem !important;
 
 	@include breakpoint(lg) {
-		font-size: 1.25rem;
+		font-size: 1.25rem !important;
 	}
 }
 
 @mixin font-body-l {
-	font-size: 1.25rem;
+	font-size: 1.25rem !important;
 
 	@include breakpoint(md) {
-		font-size: 1.375rem;
+		font-size: 1.375rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 1.5rem;
+		font-size: 1.5rem !important;
 	}
 }
 
 @mixin font-body-xl {
-	font-size: 1.375rem;
+	font-size: 1.375rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 1.5rem;
+		font-size: 1.5rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 1.625rem;
+		font-size: 1.625rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 1.75rem;
+		font-size: 1.75rem !important;
 	}
 }
 
 @mixin font-body-2xl {
-	font-size: 1.5rem;
+	font-size: 1.5rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 1.75rem;
+		font-size: 1.75rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 1.875rem;
+		font-size: 1.875rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 2.125rem;
+		font-size: 2.125rem !important;
 	}
 }
 
 @mixin font-body-3xl {
-	font-size: 1.625rem;
+	font-size: 1.625rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 2rem;
+		font-size: 2rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 2.25rem;
+		font-size: 2.25rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 2.5rem;
+		font-size: 2.5rem !important;
 	}
 }
 
 @mixin font-body-4xl {
-	font-size: 1.875rem;
+	font-size: 1.875rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 2.25rem;
+		font-size: 2.25rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 2.625rem;
+		font-size: 2.625rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 3rem;
+		font-size: 3rem !important;
 	}
 }
 

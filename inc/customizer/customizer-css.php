@@ -24,7 +24,7 @@ function aino_customizer_css() {
 
 	$theme_css =
 	'
-	body, .menu-modal-inner, ul.primary-menu ul {
+	body, .menu-modal-inner {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
 	.entry-link {
