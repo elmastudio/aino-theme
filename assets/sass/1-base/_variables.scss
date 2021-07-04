@@ -25,8 +25,8 @@ $stickyheader-mobile : 3.438rem; // 55px
 $stickyheader-desktop: 5.5rem; // 88px
 
 /* Grid Columns */
-$col1                : 7.75rem; // 1 grid column
-$col2                : 15.5rem; // 2 grid column
+$col1                : 7.75rem;
+$col2                : 15.5rem;
 $col3                : 23.25rem;
 $col4                : 31rem;
 $col5                : 35.75rem;
@@ -37,17 +37,6 @@ $col9                : 69.75rem;
 $col10               : 77.5rem;
 $col11               : 85.25rem;
 $col12               : 93rem;
-
-$default-content-width: 43.5rem;
-$wide-content-width   : 87rem;
-$max-content-width    : 87rem;
-$col10-nogap          : 74.5rem;
-
-/* Border Radius */
-$border-radius-s     : 1.5rem; // 24px
-$border-radius-m     : 2.25rem; // 36px
-$border-radius-l     : 2.625rem; // 42px
-$border-radius-circle: 6.25rem; // 100px
 
 :root {
 	/* Fonts */
@@ -60,9 +49,19 @@ $border-radius-circle: 6.25rem; // 100px
 	--body--font-family: var(--global--font-secondary);
 	--code--font-family: var(--global--font-code);
 
+	/* Line Height */
+	--global--line-height-body: 1.4;
+	--global--line-height-heading: 1;
+	--global--line-height-page-title: 1;
+	--global--line-height-reset: 1;
+
 	/* Content widths and grid */
+	--global--default-content-width: 43.5rem;
+	--global--10col-nogap-content-width: 74.5rem;
+	--global--wide-content-width: 87rem;
+	--global--max-content-width-nogap: 90rem; //1440px
 	--global--max-content-width: 93rem;
-	--global--grid-gap: #{2 * $s-4}; // 1rem.
+	--global--grid-gap: #{2 * $s-4};
 
 	/* Border radius */
 	--global--border-radius-xxs: 0.625rem;
@@ -74,10 +73,15 @@ $border-radius-circle: 6.25rem; // 100px
 	--global--border-radius-xxl: 3.125rem;
 	--global--border-radius-xxxl: 3.75rem;
 	--global--border-radius-xxxxl: 4.375rem;
-}
+	--global--border-radius-round: 6.25em;
 
-/* Fonts */
-$font__heading       : 'IBM Plex Sans', sans-serif;
+	--heading--line-height-h6: var(--global--line-height-heading);
+	--heading--line-height-h5: var(--global--line-height-heading);
+	--heading--line-height-h4: var(--global--line-height-heading);
+	--heading--line-height-h3: var(--global--line-height-heading);
+	--heading--line-height-h2: var(--global--line-height-heading);
+	--heading--line-height-h1: var(--global--line-height-page-title);
+}
 
 @media only screen and (min-width: 48em) { // from small tablet screens (md)
 

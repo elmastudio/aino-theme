@@ -81,6 +81,28 @@ function aino_sanitize_shapes( $choice ) {
 }
 
 /**
+ * Sanitize Alignment
+ *
+ * @param string $choice Whether elements are left, center or right aligned.
+ *
+ * @return string
+ */
+function aino_sanitize_align( $choice ) {
+	$valid = array(
+		'left',
+		'center',
+		'right',
+		'spacebetween',
+	);
+
+	if ( in_array( $choice, $valid, true ) ) {
+		return $choice;
+	}
+
+	return 'center';
+}
+
+/**
  * Sanitize Numbers.
  *
  * @param integer              $number Check if number is a non-decimal number.

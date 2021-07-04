@@ -3,7 +3,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	@include btn;
-	@include btn-l;
+	@include btn-m;
 }
 
 button,
@@ -31,11 +31,6 @@ a.btn-outline,
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	@include transition-default;
-
-	&:hover {
-		-webkit-transform: translateY(-2px);
-		transform: translateY(-2px);
-	}
 }
 
 .btn-white button {
@@ -125,8 +120,10 @@ a.btn-outline,
 	.btn-primary a,
 	a.btn-outline,
 	.btn-outline a,
-	.loadmore {
-		border-radius: var(--global--border-radius-s);
+	.loadmore,
+	.wc-block-components-button,
+	.form-submit.wp-block-button input {
+		border-radius: var(--global--border-radius-xxs);
 	}
 }
 
@@ -140,7 +137,9 @@ a.btn-outline,
 	a.btn-outline,
 	.btn-outline a,
 	.search-header .search-field,
-	.loadmore {
+	.loadmore,
+	.wc-block-components-button,
+	.form-submit.wp-block-button input {
 		border-radius: 6.25em;
 	}
 }
@@ -180,11 +179,6 @@ a.btn-outline,
 	a.btn-outline,
 	a.btn-primary {
 		font-weight: bold;
-	}
-
-	.btn-outline a,
-	a.btn-outline {
-		box-shadow: inset 0px 0px 0px 2px var(--global--color-primary);
 	}
 }
 

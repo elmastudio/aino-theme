@@ -100,6 +100,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Enqueue fonts in the editor.
 		add_editor_style( aino_fonts_url() );
 
+		// Add FSE Global styles (experimental)
+		add_theme_support( 'wp-block-styles' );
+
 		// Add custom editor font sizes.
 		add_theme_support(
 			'editor-font-sizes',
@@ -165,41 +168,153 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_theme_support( 'disable-custom-font-sizes' );
 
 		// Editor color palette.
-		$color_primary_one = get_theme_mod( 'primary_one_color' );
-		$main_bg_color     = get_theme_mod( 'main_bg_color' );
-
+		$black                     = '#000000';
+		$white                     = '#FFFFFF';
+		$light_blue_magenta        = '#AE9FF2';
+		$cyan                      = '#539b92';
+		$medium_dark_brown         = '#8F6539';
+		$very_light_blue           = '#C7C9EF';
+		$light_green_cyan          = '#C9D5D3';
+		$very_light_orange         = '#FFD1B9';
+		$medium_light_yellow_green = '#C7F151';
+		$very_light_pink           = '#FFB9CE';
+		$yellow                    = '#FFCA32';
+		$medium_dark_cyan          = '#2F5853';
+		$very_dark_gray            = '#222222';
+		$very_light_gray           = "#E9E9E9";
+		$medium_light_gray         = '#999999';
+		$light_red_orange          = '#F79670';
+		$blue                      = '#6579BD';
+		$medium_red_orange         = '#EA7152';
+		$medium_light_green        = '#80FCA6';
+		$medium_light_cyan_blue    = '#7ECAF8';
+		$medium_light_brown        = '#C59A6D';
+		$light_yellow              = '#FFFF50';
+		$blue_magenta              = '#4D2CF0';
+		$medium_light_blue_magenta = '#755CE9';
+	
 		add_theme_support(
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Primary', 'aino' ),
-					'slug'  => 'primary-one',
-					'color' => $color_primary_one,
-				),
-				array(
-					'name'  => __( 'Text One', 'aino' ),
-					'slug'  => 'text-one',
-					'color' => '#111111',
-				),
-				array(
-					'name'  => __( 'Text Two', 'aino' ),
-					'slug'  => 'text-two',
-					'color' => '#111111',
-				),
-				array(
-					'name'  => __( 'Background', 'aino' ),
-					'slug'  => 'background',
-					'color' => $main_bg_color,
-				),
-				array(
-					'name'  => __( 'Black', 'aino' ),
+					'name'  => esc_html__( 'Black', 'aino' ),
 					'slug'  => 'black',
-					'color' => '#000000',
+					'color' => $black,
 				),
 				array(
 					'name'  => __( 'White', 'aino' ),
 					'slug'  => 'white',
-					'color' => '#ffffff',
+					'color' => $white,
+				),
+				array(
+					'name'  => __( 'Light shade of Blue Magenta', 'aino' ),
+					'slug'  => 'light-blue-magenta',
+					'color' => $light_blue_magenta,
+				),
+				array(
+					'name'  => __( 'Shade of Cyan', 'aino' ),
+					'slug'  => 'cyan',
+					'color' => $cyan,
+				),
+				array(
+					'name'  => __( 'Medium dark shade of Brown', 'aino' ),
+					'slug'  => 'medium-dark-brown',
+					'color' => $medium_dark_brown,
+				),
+				array(
+					'name'  => __( 'Very light shade of Blue', 'aino' ),
+					'slug'  => 'very-light-blue',
+					'color' => $very_light_blue,
+				),
+				array(
+					'name'  => __( 'Light shade of Green Cyan', 'aino' ),
+					'slug'  => 'light-green-cyan',
+					'color' => $light_green_cyan,
+				),
+				array(
+					'name'  => __( 'Very light shade of Orange', 'aino' ),
+					'slug'  => 'very-light-orange',
+					'color' => $very_light_orange,
+				),
+				array(
+					'name'  => __( 'Medium light shade of Yellow Green', 'aino' ),
+					'slug'  => 'medium-light-yellow-green',
+					'color' => $medium_light_yellow_green,
+				),
+				array(
+					'name'  => __( 'Very light shade of Pink', 'aino' ),
+					'slug'  => 'very-light-pink',
+					'color' => $very_light_pink,
+				),
+				array(
+					'name'  => __( 'Shade of Yellow', 'aino' ),
+					'slug'  => 'yellow',
+					'color' => $yellow,
+				),
+				array(
+					'name'  => __( 'Medium dark shade of Cyan', 'aino' ),
+					'slug'  => 'medium-dark-cyan',
+					'color' => $medium_dark_cyan,
+				),
+				array(
+					'name'  => __( 'Very dark shade of Gray', 'aino' ),
+					'slug'  => 'very-dark-gray',
+					'color' => $very_dark_gray,
+				),
+				array(
+					'name'  => __( 'Very light shade of Gray', 'aino' ),
+					'slug'  => 'very-light-gray',
+					'color' => $very_light_gray,
+				),
+				array(
+					'name'  => __( 'Medium light shade of Gray', 'aino' ),
+					'slug'  => 'medium-light-gray',
+					'color' => $medium_light_gray,
+				),
+				array(
+					'name'  => __( 'Light shade of Red Orange', 'aino' ),
+					'slug'  => 'light-red-orange',
+					'color' => $light_red_orange,
+				),
+				array(
+					'name'  => __( 'Shade of Blue', 'aino' ),
+					'slug'  => 'blue',
+					'color' => $blue,
+				),
+				array(
+					'name'  => __( 'Medium shade of Red Orange', 'aino' ),
+					'slug'  => 'medium-red-orange',
+					'color' => $medium_red_orange,
+				),
+				array(
+					'name'  => __( 'Medium light shade of Green', 'aino' ),
+					'slug'  => 'medium-light-green',
+					'color' => $medium_light_green,
+				),
+				array(
+					'name'  => __( 'Medium light shade of Cyan Blue', 'aino' ),
+					'slug'  => 'medium-light-cyan-blue',
+					'color' => $medium_light_cyan_blue,
+				),
+				array(
+					'name'  => __( 'Medium light shade of Brown', 'aino' ),
+					'slug'  => 'medium-light-brown',
+					'color' => $medium_light_brown,
+				),
+				array(
+					'name'  => __( 'Light shade of Yellow ', 'aino' ),
+					'slug'  => 'light-yellow',
+					'color' => $light_yellow,
+				),
+				array(
+					'name'  => __( 'Shade of Blue Magenta', 'aino' ),
+					'slug'  => 'blue-magenta',
+					'color' => $blue_magenta,
+				),
+				array(
+					'name'  => __( 'Medium light shade of blue magenta', 'aino' ),
+					'slug'  => 'medium-light-blue-magenta',
+					'color' => $medium_light_blue_magenta,
 				),
 			)
 		);
@@ -306,14 +421,27 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
 
-		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
-		remove_theme_support( 'core-block-patterns' );
-
 		// Add support for custom custom line-heights in blocks.
 		add_theme_support( 'custom-line-height' );
 
 		// Add support for custom units in blocks.
 		add_theme_support( 'custom-units' );
+
+		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
+		remove_theme_support( 'core-block-patterns' );
+
+		// Add support for the WooCommerce eCommerce plugin.
+		add_theme_support( 'woocommerce', array(
+			'thumbnail_image_width' => 600,
+			'single_image_width'	=> 1200,
+		) );
+
+		// Disable WooCommerce default styling.
+		add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 
 	}
 	endif;
@@ -448,9 +576,29 @@ function aino_skip_link() {
 add_action( 'wp_body_open', 'aino_skip_link', 5 );
 
 /**
+ * Custom WooCommerce image sizes
+ */
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
+	return array(
+	'width' => 150,
+	'height' => 150,
+	'crop' => 0,
+	);
+} );
+
+/**
  * Register widget area.
  */
 function aino_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'aino' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets to the shop page.', 'aino' ),
+		)
+	);
+
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Footer 1', 'aino' ),
@@ -458,8 +606,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 1. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -470,8 +618,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 2. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -482,8 +630,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 3. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -494,8 +642,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 4. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -506,20 +654,8 @@ function aino_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in the 5. column of your footer.', 'aino' ),
 			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer 6', 'aino' ),
-			'id'            => 'footer-6',
-			'description'   => esc_html__( 'Add widgets here to appear in the 6. column of your footer.', 'aino' ),
-			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class   = "widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class = "widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 
@@ -623,6 +759,23 @@ add_action('wp_ajax_loadmore', 'aino_loadmore_ajax_handler'); // wp_ajax_{action
 add_action('wp_ajax_nopriv_loadmore', 'aino_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
 /**
+ * Show WooCommerce cart contents / total Ajax
+ */
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+
+	ob_start();
+
+	?>
+	<a class="cart-customlocation" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
+	<?php
+	$fragments['a.cart-customlocation'] = ob_get_clean();
+	return $fragments;
+}
+
+/**
  * Add a custom max excerpt length.
  *
  * @param string $limit Maximum number of words in excerpt text.
@@ -705,9 +858,7 @@ function aino_add_featured_image_post_class( $classes ) {
 }
 add_filter( 'post_class', 'aino_add_featured_image_post_class' );
 
-/**
-* Custom template tags for this theme.
-*/
+// Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
@@ -719,15 +870,14 @@ require get_template_directory() . '/inc/customizer/customizer-css.php';
 require get_template_directory() . '/inc/customizer/customizer-editor.php';
 require get_template_directory() . '/inc/customizer/sanitization-callbacks.php';
 
-/**
- * SVG icons functions and filters.
- */
+// SVG icons functions and filters.
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
-/**
-  * Load Jetpack compatibility file.
-*/
+// Load Jetpack compatibility file.
 require get_template_directory() . '/inc/jetpack.php';
+
+// Aino Block Patterns.
+require get_template_directory() . '/inc/block-patterns.php';
 
 /**
  * TGMPA plugin activation.
@@ -735,6 +885,7 @@ require get_template_directory() . '/inc/jetpack.php';
 require_once get_template_directory() . '/inc/classes/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'aino_register_required_plugins' );
+
 
 /**
  * Register the required plugins for this theme.

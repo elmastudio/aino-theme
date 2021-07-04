@@ -36,12 +36,12 @@
 .hentry .entry-content>* {
 
 	&.alignwide {
-		max-width: $col12;
+		max-width: var(--global--max-content-width);
 		position: relative;
 		clear: both;
 	}
 
-	&.alignwide:not(.wp-block-group) {
+	&.alignwide:not(.wp-block-group, .wp-block-ainoblocks-grid-container) {
 		@include outer-margins;
 		@include push--auto;
 
@@ -71,7 +71,7 @@
 .hentry .entry-content .alignfull {
 
 	.alignwide {
-		max-width: $col12;
+		max-width: var(--global--max-content-width);
 		clear: both;
 		overflow: hidden;
 		@include push--auto;
@@ -232,20 +232,17 @@
 		@include btn;
 		@include btn-m;
 		@include btn-primary;
-		border: none;
+		border: 1px solid transparent;
 		box-sizing: border-box;
 		text-decoration: none;
 		outline: none;
 		height: auto;
 		box-shadow: none;
+		border-radius: 0;
 
 		&:not(.has-background) {
 			background-color: var(--global--color-primary);
 		}
-	}
-
-	&:not(.is-style-squared) .wp-block-button__link {
-		border-radius: 16px;
 	}
 
 	&.is-style-outline {
@@ -317,7 +314,7 @@ div[class*='wp-block-'] figcaption {
 	display: block;
 	@include s-r-4 (margin-top);
 	margin-bottom: 0;
-	text-align: center;
+	text-align: left;
 }
 
 .wp-caption.alignleft .wp-caption-text,
@@ -464,7 +461,7 @@ div[class*='wp-block-'] figcaption {
 			}
 
 			@include breakpoint(xl) {
-				max-width: $wide-content-width;
+				max-width: var(--global--wide-content-width);
 			}
 		}
 
@@ -668,6 +665,7 @@ div[class*='wp-block-'] figcaption {
 /* Preformatted */
 
 .wp-block-preformatted,
+.wp-block-preformatted.has-background,
 .wp-block-code {
 	overflow: auto;
 	@include s-r-6(padding);
@@ -678,6 +676,13 @@ div[class*='wp-block-'] figcaption {
 .wp-block-code {
 	background: var(--global--color-code-one);
 	color: var(--global--color-code-two);
+
+	code {
+		overflow-x: auto;
+		white-space: pre;
+		display: block;
+		overflow-wrap: break-word;
+	}
 }
 
 .wp-block-preformatted {
@@ -686,8 +691,11 @@ div[class*='wp-block-'] figcaption {
 }
 
 /* Group */
-
 .wp-block-group {
+
+	&.has-background {
+		padding: inherit;
+	}
 
 	h1,
 	h2,
@@ -707,9 +715,156 @@ div[class*='wp-block-'] figcaption {
 	.wp-block-group__inner-container {
 
 		&:not(.wp-block-ainoblocks-grid-container) > .wp-block-image:not(.alignwide):not(.alignfull) {
-				max-width: $default-content-width;
+			max-width: var(--global--default-content-width);
 				@include push--auto;
 			}
+	}
+}
+
+
+/* Query Block */
+.wp-block-query {
+
+	.wp-block-post-template {
+		padding: 0;
+
+		&.is-flex-container {
+
+			li {
+				width: auto !important;
+				margin: 0;
+			}
+
+			&.columns-2,
+			&.columns-3,
+			&.columns-4,
+			&.columns-5,
+			&.columns-6 {
+
+				@include breakpoint(sm) {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					column-gap: 2rem;
+	
+					li {
+						grid-template-columns: 1fr 1fr;
+	
+						&:nth-last-child(-n+2) {
+							padding-bottom: 0;
+						}
+					}
+				}
+
+				@include breakpoint(lg) {
+					column-gap: 3rem;
+				}
+			}
+
+			&.columns-3,
+			&.columns-6 {
+				@include breakpoint(md) {
+					grid-template-columns: repeat(3, 1fr);
+
+					li {
+						grid-template-columns: 1fr 1fr 1fr;
+
+						&:nth-last-child(-n+3) {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+
+			&.columns-4 {
+				@include breakpoint(md) {
+					grid-template-columns: repeat(4, 1fr);
+
+					li {
+						grid-template-columns: 1fr 1fr 1fr 1fr;
+
+						&:nth-last-child(-n+4) {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+
+			&.columns-5 {
+				@include breakpoint(md) {
+					grid-template-columns: repeat(5, 1fr);
+
+					li {
+						grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+						&:nth-last-child(-n+5) {
+							padding-bottom: 0;
+						}
+					}
+				}
+
+				@include breakpoint(lg) {
+					column-gap: 1.5rem;
+				}
+			}
+
+			&.columns-6 {
+				@include breakpoint(lg) {
+					grid-template-columns: repeat(6, 1fr);
+					column-gap: 1.5rem;
+
+					li {
+						grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+						&:nth-last-child(-n+6) {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		li {
+			@include s-r-9 (padding-bottom);
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			> :first-child {
+
+				padding-top: 0;
+	
+			}
+		}
+		
+		.wp-block-post-title,
+		.wp-block-post-featured-image,
+		.wp-block-post-excerpt__excerpt,
+		.wp-block-post-terms,
+		.wp-block-post-excerpt__more-text,
+		.wp-block-post-date {
+			@include s-r-4 (padding-top);
+		}
+
+		.wp-block-post-terms {
+			visibility: hidden;
+
+			a {
+				visibility: visible;
+			}
+
+			a:not(:last-child):after {
+				content: ",";
+			}
+
+			a:not(:first-child) {
+				margin-left: -7px; // temporary fix for post term separators
+			}
+		}
 	}
 }
 
@@ -764,156 +919,4 @@ div[class*='wp-block-'] figcaption {
 			margin: 0 $s-7 $s-9 $s-9;
 		}
 	}
-}
-
-/* Custom Color Palette */
-
-.entry-content {
-
-	.has-primary-one-color {
-		color: var(--global--color-primary);
-		fill: var(--global--color-primary);
-	}
-
-	p.has-primary-one-color a {
-		text-decoration: underline;
-	}
-
-	.has-primary-one-background-color {
-		background: var(--global--color-primary);
-		border-color: var(--global--color-primary);
-	}
-
-	.has-text-one-color {
-		color: var(--global--color-text-one);
-		fill: var(--global--color-text-one);
-	}
-
-	.has-text-one-background-color {
-		background: var(--global--color-text-one);
-		border-color: var(--global--color-text-one);
-	}
-
-	.has-text-two-color {
-		color: var(--global--color-text-two);
-		fill: var(--global--color-text-two);
-	}
-
-	.has-text-two-background-color {
-		background: var(--global--color-text-two);
-		border-color: var(--global--color-text-two);
-	}
-
-	.has-border-color {
-		color: var(--global--color-border);
-		fill: var(--global--color-border);
-	}
-
-	.has-border-background-color {
-		background: var(--global--color-border);
-		border-color: var(--global--color-border);
-	}
-
-	.has-background-color {
-		color: var(--global--color-background);
-		fill: var(--global--color-background);
-	}
-
-	.has-background-background-color {
-		background: var(--global--color-background);
-		border-color: var(--global--color-background);
-	}
-
-	.has-white-color {
-		color: var(--global--color-white);
-		fill: var(--global--color-white);
-	}
-
-	.has-white-background-color {
-		background: var(--global--color-white);
-		border-color: var(--global--color-white);
-	}
-
-	.has-black-color {
-		color: var(--global--color-black);
-		fill: var(--global--color-black);
-	}
-
-	.has-black-background-color {
-		background: var(--global--color-black);
-		border-color: var(--global--color-black);
-	}
-}
-
-/* Custom Gradients Palette */
-.has-grayish-blue-to-dark-grayish-blue-gradient-background {
-	background: linear-gradient(0deg, rgb(91, 108, 114) 0%, rgb(60, 68, 72) 100%);
-}
-
-.has-soft-orange-to-desaturated-dark-cyan-gradient-background {
-	background: linear-gradient(270deg, rgb(67, 92, 103) 0%, rgb(114, 164, 163) 46%, rgb(251, 162, 137) 74%, rgb(252, 202, 164) 100%);
-}
-
-.has-light-grayish-magenta-to-very-dark-grayish-pink-gradient-background {
-	background: linear-gradient(0deg, rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%, rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%);
-}
-
-.has-light-grayish-red-to-dark-red-gradient-background {
-	background: linear-gradient(0deg, rgb(143, 34, 40) 0%, rgb(250, 110, 115) 50%, rgb(219, 191, 193) 100%);
-}
-
-.has-slightly-desaturated-cyan-to-very-soft-red-gradient-background {
-	background: linear-gradient(0deg, rgb(129, 195, 198) 0%, rgb(251, 198, 167) 48%, rgb(250, 168, 182) 100%);
-}
-
-.has-very-soft-orange-to-very-soft-pink-gradient-background {
-	background: radial-gradient(circle at bottom, rgb(251, 219, 190) 0%, rgb(252, 170, 161) 26%, rgb(250, 152, 162) 54%, rgb(246, 182, 211) 75%, rgb(250, 232, 243) 100%);
-}
-
-.has-grayish-violet-to-soft-orange-gradient-background {
-	background: linear-gradient(180deg, rgb(173, 160, 191) 0%, rgb(225, 205, 236) 29%, rgb(243, 206, 225) 51%, rgb(241, 196, 141) 72%, rgb(240, 193, 97) 100%);
-}
-
-.has-light-grayish-red-to-dark-grayish-blue-gradient-background {
-	background: linear-gradient(180deg, rgb(252, 202, 210) 0%, rgb(222, 158, 167) 46%, rgb(118, 119, 135) 100%);
-}
-
-.has-light-grayish-red-to-very-soft-blue-gradient-background {
-	background: linear-gradient(135deg, rgb(237, 204, 211) 0%, rgb(177, 181, 225) 100%);
-}
-
-.has-soft-blue-to-lime-green-gradient-background {
-	background: linear-gradient(0deg, rgb(104, 134, 254) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 61%, rgb(213, 233, 207) 75%, rgb(8, 179, 82) 100%);
-}
-
-.has-soft-blue-to-dark-moderate-violet-gradient-background {
-	background: linear-gradient(135deg, rgb(103, 125, 239) 0%, rgb(117, 72, 166) 100%);
-}
-
-.has-soft-red-to-very-soft-blue-gradient-background {
-	background: linear-gradient(0deg, rgb(250, 110, 90) 0%, rgb(255, 202, 192) 24%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 62%, rgb(223, 227, 255) 77%, rgb(157, 144, 250) 100%);
-}
-
-.has-dark-blue-to-mostly-black-blue-gradient-background {
-	background: radial-gradient(circle at bottom, rgb(19, 20, 143) 0%, rgb(13, 11, 24) 100%);
-}
-
-.has-very-soft-blue-to-dark-grayish-blue-gradient-background {
-	background: radial-gradient(circle at bottom, rgb(153, 203, 233) 0%, rgb(121, 132, 157) 100%);
-}
-
-.has-soft-pink-to-mostly-pure-orange-gradient-background {
-	background: radial-gradient(circle at bottom, rgb(253, 79, 156) 0%, rgb(254, 132, 0) 100%);
-}
-
-.has-bright-cyan-to-soft-magenta-gradient-background {
-	background: linear-gradient(0deg, rgb(48, 203, 247) 0%, rgb(254, 128, 254) 100%);
-}
-
-.has-light-red-to-very-light-pink-gradient-background {
-	background: linear-gradient(90deg, rgb(255, 131, 92) 0%, rgb(255, 148, 193) 100%);
-}
-
-.has-very-soft-violet-to-very-soft-pink-gradient-background {
-	background: linear-gradient(90deg, rgb(198, 163, 245) 0%, rgb(248, 162, 199) 100%);
 }

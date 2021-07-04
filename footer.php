@@ -15,15 +15,16 @@
 
 			<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 
-			<div class="footer-info col-margins">
-
-				<?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
+			<div class="footer-info col-gaps">
 
 				<?php get_template_part( 'template-parts/footer/footer', 'menu-social' ); ?>
 
-				<a class="back-top" href="#site-header">
-					<span><?php printf( __( 'Back to Top', 'aino' ) ); ?></span>
-				</a><!-- .back-top -->
+				<?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
+
+				<?php if ( true === get_theme_mod( 'footer_backtotop' ) ) : ?>
+					<a class="back-top" href="#site-header"><span><?php printf( __( 'Back to Top', 'aino' ) ); ?></span></a><!-- .back-top -->
+				<?php endif; ?>
+
 			</div><!-- .footer-info -->
 		</div><!-- .footer-wrap -->
 	</div><!-- .site-footer -->

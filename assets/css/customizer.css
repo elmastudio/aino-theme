@@ -94,7 +94,6 @@ input[type="number"]:focus {
 }
 .text_radio_button_control .radio-button-label span {
 	cursor: pointer;
-	font-weight: 500;
 	border: 2px solid #f9f9fe;
 	margin: 0;
 	background-color: #eee;

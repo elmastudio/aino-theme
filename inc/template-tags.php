@@ -466,6 +466,10 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'tpl-fullwidth';
 	}
 
+	if ( is_page_template( 'page-templates/block-shop.php' ) ) {
+		$classes[] = 'tpl-shop';
+	}
+
 	if ( is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
 		$classes[] = 'tpl-fullwidth';
 		$classes[] = 'tpl-fullwidth-notitle';
@@ -507,10 +511,6 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Customizer Options - Typography.
-	if ( 'regular' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
-		$classes[] = 'h-regular';
-	}
-
 	if ( 'bold' === get_theme_mod( 'heading_fontweight', aino_defaults( 'heading_fontweight' ) ) ) {
 		$classes[] = 'h-bold';
 	}
@@ -563,8 +563,20 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'footer-light';
 	}
 
-	if ( true === get_theme_mod( 'footerinfo_alignment', aino_defaults( 'footerinfo_alignment' ) ) ) {
-		$classes[] = 'footerinfo-centered';
+	if ( 'left' === get_theme_mod( 'footerinfo_alignment', aino_defaults( 'footerinfo_alignment' ) ) ) {
+		$classes[] = 'footer-left';
+	}
+
+	if ( 'center' === get_theme_mod( 'footerinfo_alignment', aino_defaults( 'footerinfo_alignment' ) ) ) {
+		$classes[] = 'footer-centered';
+	}
+
+	if ( 'right' === get_theme_mod( 'footerinfo_alignment', aino_defaults( 'footerinfo_alignment' ) ) ) {
+		$classes[] = 'footer-right';
+	}
+
+	if ( 'spacebetween' === get_theme_mod( 'footerinfo_alignment', aino_defaults( 'footerinfo_alignment' ) ) ) {
+		$classes[] = 'footer-spacebetween';
 	}
 
 	if ( true === get_theme_mod( 'footerwidget_alignment', aino_defaults( 'footerwidget_alignment' ) ) ) {
@@ -743,7 +755,7 @@ function aino_body_classes( $classes ) {
 	}
 
 	// Blog Cards with custom background
-	if ( '#ffffff' !== get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) ) && false === get_theme_mod( 'enable_dark_mode', aino_defaults( 'enable_dark_mode' ) ) ) {
+	if ( get_theme_mod( 'main_bg_color', aino_defaults( 'main_bg_color' ) ) !== get_theme_mod( 'blogcards_bg_color', aino_defaults( 'blogcards_bg_color' ) ) && false === get_theme_mod( 'enable_dark_mode', aino_defaults( 'enable_dark_mode' ) ) ) {
 		$classes[] = 'cards-custom-bg';
 	}
 
@@ -752,31 +764,25 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'blogcards-flexstart';
 	}
 
+	// If our main sidebar doesn't contain widgets, adjust the layout to be full-width.
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'no-sidebar';
+	}
+
 	// Classes for Footer Widgets.
 	if ( is_active_sidebar( 'footer-1' ) &&
 		is_active_sidebar( 'footer-2' ) &&
 		is_active_sidebar( 'footer-3' ) &&
 		is_active_sidebar( 'footer-4' ) &&
-		is_active_sidebar( 'footer-5' ) &&
-		is_active_sidebar( 'footer-6' ) ) {
-		$classes[] = 'footer-6-column';
+		is_active_sidebar( 'footer-5' ) ) {
+		$classes[] = 'footer-5-col';
 	}
 
 	if ( is_active_sidebar( 'footer-1' ) &&
 		is_active_sidebar( 'footer-2' ) &&
 		is_active_sidebar( 'footer-3' ) &&
 		is_active_sidebar( 'footer-4' ) &&
-		is_active_sidebar( 'footer-5' ) &&
-		! is_active_sidebar( 'footer-6' ) ) {
-		$classes[] = 'footer-5-column';
-	}
-
-	if ( is_active_sidebar( 'footer-1' ) &&
-		is_active_sidebar( 'footer-2' ) &&
-		is_active_sidebar( 'footer-3' ) &&
-		is_active_sidebar( 'footer-4' ) &&
-		! is_active_sidebar( 'footer-5' ) &&
-		! is_active_sidebar( 'footer-6' ) ) {
+		! is_active_sidebar( 'footer-5' ) ) {
 		$classes[] = 'footer-4-column';
 	}
 
@@ -784,27 +790,24 @@ function aino_body_classes( $classes ) {
 		is_active_sidebar( 'footer-2' ) &&
 		is_active_sidebar( 'footer-3' ) &&
 		! is_active_sidebar( 'footer-4' ) &&
-		! is_active_sidebar( 'footer-5' ) &&
-		! is_active_sidebar( 'footer-6' ) ) {
-		$classes[] = 'footer-3-column';
+		! is_active_sidebar( 'footer-5' ) ) {
+		$classes[] = 'footer-3-col';
 	}
 
 	if ( is_active_sidebar( 'footer-1' ) &&
 		is_active_sidebar( 'footer-2' ) &&
 		! is_active_sidebar( 'footer-3' ) &&
 		! is_active_sidebar( 'footer-4' ) &&
-		! is_active_sidebar( 'footer-5' ) &&
-		! is_active_sidebar( 'footer-6' ) ) {
-		$classes[] = 'footer-2-column';
+		! is_active_sidebar( 'footer-5' ) ) {
+		$classes[] = 'footer-2-col';
 	}
 
 	if ( is_active_sidebar( 'footer-1' ) &&
 		! is_active_sidebar( 'footer-2' ) &&
 		! is_active_sidebar( 'footer-3' ) &&
 		! is_active_sidebar( 'footer-4' ) &&
-		! is_active_sidebar( 'footer-5' ) &&
-		! is_active_sidebar( 'footer-6' ) ) {
-		$classes[] = 'footer-1-column';
+		! is_active_sidebar( 'footer-5' ) ) {
+		$classes[] = 'footer-1-col';
 	}
 
 	// Author classes:
@@ -843,10 +846,6 @@ add_filter( 'body_class', 'aino_body_classes' );
  * @param array $classes Classes for the body element.
  */
 function aino_custom_admin_body_class( $classes ) {
-
-	if ( 'regular' === get_theme_mod( 'heading_fontweight' ) ) {
-		$classes .= ' h-regular';
-	}
 
 	if ( 'bold' === get_theme_mod( 'heading_fontweight' ) ) {
 		$classes .= ' h-bold';

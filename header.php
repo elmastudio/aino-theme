@@ -62,6 +62,9 @@
 								);
 							}
 							?>
+							<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+								<?php get_template_part( 'template-parts/navigation/shop-menu' ); ?>
+							<?php endif; ?>
 						</ul><!-- .primary-menu -->
 					</nav><!-- .primary-menu-wrapper -->
 				</div><!-- .header-navigation-wrapper -->

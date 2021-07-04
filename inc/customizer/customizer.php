@@ -361,25 +361,6 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Theme Options - Footer - Footer Info Alignment.
-	$wp_customize->add_setting(
-		'footerinfo_alignment',
-		array(
-			'default'           => aino_defaults( 'footerinfo_alignment' ),
-			'sanitize_callback' => 'aino_sanitize_checkbox',
-		)
-	);
-
-	$wp_customize->add_control(
-		'footerinfo_alignment',
-		array(
-			'label'    => esc_html__( 'Center Align Footer Info', 'aino' ),
-			'section'  => 'aino_footer',
-			'type'     => 'checkbox',
-			'priority' => 4,
-		)
-	);
-
 	// Theme Options - Footer - Footer Border Top.
 	$wp_customize->add_setting(
 		'footer_bordertop',
@@ -395,7 +376,7 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Display Border Top', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'checkbox',
-			'priority' => 5,
+			'priority' => 4,
 		)
 	);
 
@@ -414,7 +395,51 @@ function aino_customize_register( $wp_customize ) {
 			'label'    => esc_html__( 'Display Border Bottom', 'aino' ),
 			'section'  => 'aino_footer',
 			'type'     => 'checkbox',
+			'priority' => 5,
+		)
+	);
+
+	// Theme Options - Footer - Hide Back to top button.
+	$wp_customize->add_setting(
+		'footer_backtotop',
+		array(
+			'default'           => aino_defaults( 'footer_backtotop' ),
+			'sanitize_callback' => 'aino_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_backtotop',
+		array(
+			'label'    => esc_html__( 'Display Back to top button', 'aino' ),
+			'section'  => 'aino_footer',
+			'type'     => 'checkbox',
 			'priority' => 6,
+		)
+	);
+
+	// Theme Options - Footer - Footer Info Alignment.
+	$wp_customize->add_setting(
+		'footerinfo_alignment',
+		array(
+			'default'           => aino_defaults( 'footerinfo_alignment' ),
+			'sanitize_callback' => 'aino_sanitize_align',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footerinfo_alignment',
+		array(
+			'label'       => esc_html__( 'Footer Info Alignment', 'aino' ),
+			'section'     => 'aino_footer',
+			'priority'    => 7,
+			'type'        => 'select',
+			'choices'     => array(
+				'left'         => esc_html__( 'left', 'aino' ),
+				'center'       => esc_html__( 'center', 'aino' ),
+				'right'        => esc_html__( 'right', 'aino' ),
+				'spacebetween' => esc_html__( 'space between', 'aino' ),
+			),
 		)
 	);
 
@@ -424,7 +449,7 @@ function aino_customize_register( $wp_customize ) {
 		array(
 			'default'           => aino_defaults( 'footer_siteinfo' ),
 			'transport'         => 'postMessage',
-			'sanitize_callback' => 'sanitize_text_field',
+			'sanitize_callback' => 'wp_kses_post',
 		)
 	);
 
@@ -433,8 +458,8 @@ function aino_customize_register( $wp_customize ) {
 		array(
 			'label'    => esc_html__( 'Custom Footer Info Text', 'aino' ),
 			'section'  => 'aino_footer',
-			'type'     => 'text',
-			'priority' => 7,
+			'type'     => 'textarea',
+			'priority' => 8,
 		)
 	);
 
@@ -903,6 +928,48 @@ function aino_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Colors - Button Text Color.
+	$wp_customize->add_setting(
+		'btn_text_color',
+		array(
+			'default'           => aino_defaults( 'btn_text_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'btn_text_color',
+			array(
+				'label'    => esc_html__( 'Button Text', 'aino' ),
+				'section'  => 'colors',
+				'priority' => 3,
+			)
+		)
+	);
+
+	// Colors - Button Background Hover Color.
+	$wp_customize->add_setting(
+		'btn_bg_hover_color',
+		array(
+			'default'           => aino_defaults( 'btn_bg_hover_color' ),
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'btn_bg_hover_color',
+			array(
+				'label'    => esc_html__( 'Button Background Hover', 'aino' ),
+				'section'  => 'colors',
+				'priority' => 4,
+			)
+		)
+	);
+
 	// Colors - Text One.
 	$wp_customize->add_setting(
 		'text_one_color',
@@ -918,9 +985,9 @@ function aino_customize_register( $wp_customize ) {
 			'text_one_color',
 			array(
 				'label'       => esc_html__( 'Text One', 'aino' ),
-				'description' => esc_html__( 'The heading text color.', 'aino' ),
+				'description' => esc_html__( 'Text color for headings.', 'aino' ),
 				'section'     => 'colors',
-				'priority'    => 3,
+				'priority'    => 5,
 			)
 		)
 	);
@@ -940,30 +1007,9 @@ function aino_customize_register( $wp_customize ) {
 			'text_two_color',
 			array(
 				'label'       => esc_html__( 'Text Two', 'aino' ),
-				'description' => esc_html__( 'The default text color.', 'aino' ),
+				'description' => esc_html__( 'Default text color.', 'aino' ),
 				'section'     => 'colors',
-				'priority'    => 4,
-			)
-		)
-	);
-
-	// Colors - Button Text Color.
-	$wp_customize->add_setting(
-		'btn_text_color',
-		array(
-			'default'           => aino_defaults( 'btn_text_color' ),
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'btn_text_color',
-			array(
-				'label'    => esc_html__( 'Button Text', 'aino' ),
-				'section'  => 'colors',
-				'priority' => 5,
+				'priority'    => 6,
 			)
 		)
 	);
@@ -984,7 +1030,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Footer Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 6,
+				'priority' => 7,
 				'settings' => 'footer_bg_color',
 			)
 		)
@@ -1006,7 +1052,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Footer Borders', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 7,
+				'priority' => 8,
 				'settings' => 'footer_border_color',
 			)
 		)
@@ -1028,7 +1074,7 @@ function aino_customize_register( $wp_customize ) {
 				'description' => esc_html__( 'Choose light Footer text color with a dark Footer background.', 'aino' ),
 				'section'     => 'colors',
 				'type'        => 'checkbox',
-				'priority'    => 8,
+				'priority'    => 9,
 			)
 		);
 
@@ -1048,7 +1094,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 9,
+				'priority' => 10,
 				'settings' => 'blogcards_bg_color',
 			)
 		)
@@ -1070,7 +1116,7 @@ function aino_customize_register( $wp_customize ) {
 			array(
 				'label'    => esc_html__( 'Blog Cards Background on Hover', 'aino' ),
 				'section'  => 'colors',
-				'priority' => 10,
+				'priority' => 11,
 				'settings' => 'blogcards_bg_color_hover',
 			)
 		)

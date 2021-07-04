@@ -22,18 +22,6 @@ function aino_editor_customizer_generated_values() {
 	.editor-styles-wrapper {
 		background-color: ' . esc_attr( $main_bg_color ) . ';
 	}
-	.editor-styles-wrapper p a:hover,
-	.editor-styles-wrapper h1 a:hover,
-	.editor-styles-wrapper h2 a:hover,
-	.editor-styles-wrapper h3 a:hover,
-	.editor-styles-wrapper h4 a:hover,
-	.editor-styles-wrapper h5 a:hover,
-	.editor-styles-wrapper h6 a:hover,
-	.editor-styles-wrapper blockquote:not(.has-text-color) .wp-block-pullquote__citation a:hover,
-	.wp-block-pullquote__citation a:hover {
-		color: ' . esc_attr( $primary_one_color ) . ';
-		fill: ' . esc_attr( $primary_one_color ) . ';
-	}
 
 	.theme-dark-mode .editor-styles-wrapper {
 		background-color: #000000;
@@ -48,13 +36,15 @@ function aino_editor_customizer_generated_values() {
 	.theme-dark-mode .editor-styles-wrapper h5,
 	.theme-dark-mode .editor-styles-wrapper h6,
 	.theme-dark-mode .editor-styles-wrapper p,
+	.theme-dark-mode .editor-styles-wrapper figcaption,
 	.theme-dark-mode .editor-styles-wrapper h1 a,
 	.theme-dark-mode .editor-styles-wrapper h2 a,
 	.theme-dark-mode .editor-styles-wrapper h3 a,
 	.theme-dark-mode .editor-styles-wrapper h4 a,
 	.theme-dark-mode .editor-styles-wrapper h5 a,
 	.theme-dark-mode .editor-styles-wrapper h6 a,
-	.theme-dark-mode .editor-styles-wrapper p a {
+	.theme-dark-mode .editor-styles-wrapper p a,
+	.theme-dark-mode .editor-styles-wrapper figcaption a {
 		color: #ffffff;
 	}
 

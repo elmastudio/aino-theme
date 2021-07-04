@@ -46,7 +46,7 @@ get_header(); ?>
 		<?php the_posts_pagination(); ?>
 
 		<?php
-			$loadmorebtn = '<button id="loadmore" class="loadmore btn-xl">' . __('Load more', 'aino') . '</button>';
+		$loadmorebtn = '<button id="loadmore" class="loadmore btn-xl">' . __('Load more', 'aino') . '</button>';
 
 			// don't display the button if there are not enough posts
 			if ( $wp_query->max_num_pages > 1 )

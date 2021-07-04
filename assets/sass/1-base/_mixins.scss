@@ -304,12 +304,12 @@ $var: true !default; // Can be overridden elsewhere
 
 @mixin font-body {
 	font-family: var(--body--font-family);
-	line-height: 1.4;
+	line-height: var(--global--line-height-body);
 }
 
 @mixin font-heading {
 	font-family: var(--heading--font-family);
-	line-height: 1;
+	line-height: var(--global--line-height-heading);
 }
 
 /* Font Weights */
@@ -504,98 +504,98 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Body Fonts */
 @mixin font-body-2xs {
-	font-size: 0.75rem;
+	font-size: 0.75rem !important;
 }
 
 @mixin font-body-xs {
-	font-size: 0.875rem;
+	font-size: 0.875rem !important;
 }
 
 @mixin font-body-s {
-	font-size: 1rem;
+	font-size: 1rem !important;
 }
 
 @mixin font-body-m {
-	font-size: 1.125rem;
+	font-size: 1.125rem !important;
 
 	@include breakpoint(lg) {
-		font-size: 1.25rem;
+		font-size: 1.25rem !important;
 	}
 }
 
 @mixin font-body-l {
-	font-size: 1.25rem;
+	font-size: 1.25rem !important;
 
 	@include breakpoint(md) {
-		font-size: 1.375rem;
+		font-size: 1.375rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 1.5rem;
+		font-size: 1.5rem !important;
 	}
 }
 
 @mixin font-body-xl {
-	font-size: 1.375rem;
+	font-size: 1.375rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 1.5rem;
+		font-size: 1.5rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 1.625rem;
+		font-size: 1.625rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 1.75rem;
+		font-size: 1.75rem !important;
 	}
 }
 
 @mixin font-body-2xl {
-	font-size: 1.5rem;
+	font-size: 1.5rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 1.75rem;
+		font-size: 1.75rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 1.875rem;
+		font-size: 1.875rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 2.125rem;
+		font-size: 2.125rem !important;
 	}
 }
 
 @mixin font-body-3xl {
-	font-size: 1.625rem;
+	font-size: 1.625rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 2rem;
+		font-size: 2rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 2.25rem;
+		font-size: 2.25rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 2.5rem;
+		font-size: 2.5rem !important;
 	}
 }
 
 @mixin font-body-4xl {
-	font-size: 1.875rem;
+	font-size: 1.875rem !important;
 
 	@include breakpoint(sm) {
-		font-size: 2.25rem;
+		font-size: 2.25rem !important;
 	}
 
 	@include breakpoint(md) {
-		font-size: 2.625rem;
+		font-size: 2.625rem !important;
 	}
 
 	@include breakpoint(lg) {
-		font-size: 3rem;
+		font-size: 3rem !important;
 	}
 }
 
@@ -603,34 +603,35 @@ $var: true !default; // Can be overridden elsewhere
 @mixin font-code {
 	font-family: var(--code--font-family);
 	font-size: 14px;
-	line-height: 1.43;
+	line-height: var(--global--line-height-body);
 }
 
 /* Buttons */
 @mixin btn {
 	display: inline-block;
-	line-height: 1;
+	line-height: var(--global--line-height-reset);
 	font-weight: normal;
 	@include transition-default;
-
-	&:hover {
-		-webkit-transform: translateY(-2px);
-		transform: translateY(-2px);
-	}
 }
 
 @mixin btn-primary {
 	color: var(--global--color-white);
 	fill: var(--global--color-white);
 	background-color: var(--global--color-primary);
+
+	&:hover {
+		background-color: var(--global--color-primary);
+	}
 }
 
 @mixin btn-outline {
 	color: var(--global--color-primary);
 	fill: var(--global--color-primary);
-	box-shadow: inset 0 0 0 1px var(--global--color-primary);
+	border: 1px solid;
+	border-color: var(--global--color-primary);
 
 	&:hover {
+		border-color: var(--global--color-primary);
 		color: var(--global--color-primary);
 		fill: var(--global--color-primary);
 	}
@@ -650,122 +651,122 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Button Sizes */
 @mixin btn-xxs {
-	padding: 0.75rem;
+	padding: 0.75rem 1rem;
 	font-size: 0.75rem;
 }
 
 @mixin btn-xs {
-	padding: 0.875rem;
+	padding: 0.875rem 1.5rem;
 	font-size: 0.875rem;
 }
 
 @mixin btn-s {
-	padding: 1rem;
+	padding: 1rem 2rem;
 	font-size: 1rem;
 }
 
 @mixin btn-m {
-	padding: 1.125rem;
-	font-size: 1.125rem;
+	padding: 1rem 2rem;
+	font-size: 1.125rem; //18px
 
 	@include breakpoint(lg) {
-		padding: 1.25rem;
-		font-size: 1.25rem;
+		padding: 1.25rem 2.5rem;
+		font-size: 1.25rem; //20px
 	}
 }
 
 @mixin btn-l {
-	padding: 1.25rem;
+	padding: 1rem 2rem;
 	font-size: 1.25rem;
 
 	@include breakpoint(md) {
-		padding: 1.375rem;
+		padding: 1.25rem 2.5rem;
 		font-size: 1.375rem;
 	}
 
 	@include breakpoint(lg) {
-		padding: 1.5rem;
+		padding: 1.5rem 3rem;
 		font-size: 1.5rem;
 	}
 }
 
 @mixin btn-xl {
-	padding: 1.375rem;
+	padding: 1rem 2rem;
 	font-size: 1.375rem;
 
 	@include breakpoint(sm) {
-		padding: 1.5rem;
+		padding: 1.25rem 2.5rem;
 		font-size: 1.5rem;
 	}
 
 	@include breakpoint(md) {
-		padding: 1.625rem;
+		padding: 1.5rem 3rem;
 		font-size: 1.625rem;
 	}
 
 	@include breakpoint(lg) {
-		padding: 1.75rem;
+		padding: 2rem 4rem;
 		font-size: 1.75rem;
 	}
 }
 
 @mixin btn-xxl {
-	padding: 1.5rem;
-	font-size: 1.5rem;
+	padding: 1.5rem 3rem;
+	font-size: 1.375rem;
 
 	@include breakpoint(sm) {
-		padding: 1.75rem;
-		font-size: 1.75rem;
+		padding: 2rem 4rem;
+		font-size: 1.5rem;
 	}
 
 	@include breakpoint(md) {
-		padding: 1.875rem;
-		font-size: 1.875rem;
+		padding: 2.5rem 5rem;
+		font-size: 1.625rem;
 	}
 
 	@include breakpoint(lg) {
-		padding: 2.125rem;
-		font-size: 2.125rem;
+		padding: 3rem 6rem;
+		font-size: 1.75rem;
 	}
 }
 
 @mixin btn-xxxl {
-	padding: 1.625rem;
-	font-size: 1.625rem;
+	padding: 2.5rem 5rem;
+	font-size: 1.375rem;
 
 	@include breakpoint(sm) {
-		padding: 2rem;
-		font-size: 2rem;
+		padding: 3rem 6rem;
+		font-size: 1.5rem;
 	}
 
 	@include breakpoint(md) {
-		padding: 2.25rem;
-		font-size: 2.25rem;
+		padding: 4rem 8rem;
+		font-size: 1.625rem;
 	}
 
 	@include breakpoint(lg) {
-		padding: 2.5rem;
-		font-size: 2.5rem;
+		padding: 5rem 10rem;
+		font-size: 1.75rem;
 	}
 }
 
 @mixin btn-xxxxl {
-	padding: 1.875rem;
-	font-size: 1.875rem;
+	padding: 4rem 8rem;
+	font-size: 1.375rem;
 
 	@include breakpoint(sm) {
-		padding: 2.25rem;
-		font-size: 2.25rem;
+		padding: 5rem 10rem;
+		font-size: 1.5rem;
 	}
 
 	@include breakpoint(md) {
-		padding: 2.625rem;
-		font-size: 2.625rem;
+		padding: 6rem 12rem;
+		font-size: 1.625rem;
 	}
 
 	@include breakpoint(lg) {
-		padding: 3rem;
-		font-size: 3rem;
+		padding: 7.5rem 15rem;
+		font-size: 1.75rem;
 	}
 }
 
@@ -774,7 +775,7 @@ $var: true !default; // Can be overridden elsewhere
 	background: transparent;
 	color: var(--global--color-text-one);
 	border: 1px solid var(--global--color-text-one);
-	line-height: 1;
+	line-height: var(--global--line-height-reset);
 
 	&:hover {
 		color: var(--global--color-background);
@@ -1038,7 +1039,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-@mixin col-margins {
+@mixin col-gaps {
 
 	@include breakpoint(sm) {
 		margin-left: $s-4;
@@ -1049,27 +1050,6 @@ $var: true !default; // Can be overridden elsewhere
 		margin-left: $s-6;
 		margin-right: $s-6;
 	}
-}
-
-/* Border Radius */
-@mixin border-radius($radius) {
-	border-radius: $radius;
-}
-
-@mixin border-radius-none {
-	border-radius: 0;
-}
-
-@mixin border-radius-m {
-	border-radius: $border-radius-m;
-}
-
-@mixin border-radius-l {
-	border-radius: $border-radius-l;
-}
-
-@mixin border-radius-100 {
-	border-radius: 50%;
 }
 
 /* Shadows in Forms */
@@ -1103,13 +1083,13 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Transitions */
 @mixin transition-default {
-	-webkit-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
 
 @mixin transition-posthover {
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 
 @mixin avatar-transition {

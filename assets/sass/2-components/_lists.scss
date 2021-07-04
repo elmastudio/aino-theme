@@ -53,3 +53,46 @@ li > ul, li > ol {
 		list-style: circle;
 	}
 }
+
+// Social Icon List
+.social-links-menu {
+	@include flexbox;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.menu-social-container ul,
+.social-nav ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+.social-links-menu li {
+	@include s-r-4 (padding-right);
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+.menu-social-container ul {
+
+	li {
+		a {
+			display: block;
+			width: $s-6;
+			height: $s-6;
+			line-height: 1;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		&.icon-large {
+			a {
+				@include s-r-8 (width);
+				@include s-r-8 (height);
+			}
+		}
+	}
+}

@@ -141,7 +141,7 @@
 .entry-content.post-width > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
 	@include push--auto;
 	width: calc(100% - var(--global--grid-gap));
-	max-width: $default-content-width;
+	max-width: var(--global--default-content-width);
 }
 
 // Outer margins for elements which only require them on mobile.
@@ -166,8 +166,8 @@
 	@include default-margins;
 }
 
-.col-margins {
-	@include col-margins;
+.col-gaps {
+	@include col-gaps;
 }
 
 .outer-margins {
@@ -198,7 +198,7 @@
 	@include push--auto;
 
 	@include breakpoint(xl) {
-		max-width: $col12;
+		max-width: var(--global--max-content-width);
 	}
 }
 
@@ -207,7 +207,8 @@
 }
 
 /* Default content width */
-.entry-content>*,
+.single-post .entry-content>*,
+.page-template-default .entry-content>*,
 .single .entry-tags,
 .comment-list,
 .comment-respond,
@@ -215,17 +216,18 @@
 .author-pic-link,
 .default-content-width {
 	@include push--auto;
-	max-width: $default-content-width;
+	max-width: var(--global--default-content-width);
 }
 
 /* Full width page template */
+.tpl-fullwidth .entry-content,
 .tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header,
 .single-post .site-content .authorbox__wrap,
 .single-post .site-content .related-wrap,
 .single-post .comments-area {
 	@include push--auto;
-	max-width: $wide-content-width;
+	max-width: var(--global--max-content-width);
 }
 
 /* Fullscreen and hero page template */
@@ -239,21 +241,26 @@
 
 /* Alignwide and fullwidth Content widths */
 .entry-content>*.alignwide {
-	max-width: $wide-content-width;
+	max-width: var(--global--wide-content-width);
 }
 
 // All containers with 1200px default width.
 .tpl-fullwidth .entry-header,
 .tpl-fullwidth .hentry .entry-content {
-	padding-left: $s-6;
-	padding-right: $s-6;
+	padding-left: $s-4;
+	padding-right: $s-4;
 
 	@include breakpoint(sm) {
+		padding-left: $s-7;
+		padding-right: $s-7;
+	}
+
+	@include breakpoint(lg) {
 		padding-left: $s-9;
 		padding-right: $s-9;
 	}
 
-	@include breakpoint(md) {
+	@include breakpoint(xl) {
 		padding-left: $s-6;
 		padding-right: $s-6;
 	}
@@ -312,7 +319,7 @@
 .single-post .navigation .prev {
 	width: 100%; // 1-column on mobile
 	flex-grow: 0;
-	@include col-margins;
+	@include col-gaps;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);
@@ -329,7 +336,7 @@
 .s4 {
 	width: 100%;
 	flex-grow: 0;
-	@include col-margins;
+	@include col-gaps;
 
 	@include breakpoint(sm) {
 		flex-basis: calc(50% - 2rem);

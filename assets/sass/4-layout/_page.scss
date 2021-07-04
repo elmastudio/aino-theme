@@ -15,11 +15,12 @@
 .error404 {
 
 	.entry-header {
-		@include s-r-10 (padding-bottom);
+		max-width: var(--global--max-content-width);
+		@include s-r-9 (padding-bottom);
 
 		.entry-title {
 			margin: 0 auto;
-			max-width: $col10;
+			text-align: center;
 		}
 	}
 }

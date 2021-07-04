@@ -1,0 +1,92 @@
+.woocommerce-account {
+
+	.site-content .woocommerce {
+		max-width: var(--global--max-content-width);
+		margin-left: auto;
+		margin-right: auto;
+
+		@include breakpoint(sm) {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			column-gap: 2rem;
+		}
+
+		@include breakpoint(sm) {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+		@include breakpoint(lg) {
+			padding-left: 3rem;
+			padding-right: 3rem;
+			column-gap: 3rem;
+		}
+
+		@include breakpoint(xl) {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	h2 {
+		padding: 0;
+	}
+
+	h2,
+	.woocommerce-form-login,
+	.woocommerce-notices-wrapper {
+
+		@include breakpoint(sm) {
+			grid-column-start: 2;
+			grid-column-end: 12;
+		}
+
+		@include breakpoint(md) {
+			grid-column-start: 3;
+			grid-column-end: 11;
+		}
+
+		@include breakpoint(lg) {
+			grid-column-start: 4;
+			grid-column-end: 10;
+		}
+	}
+
+	.woocommerce-form-login__rememberme {
+		display: flex;
+		align-items: center;
+		@include s-r-6(margin-bottom);
+	}
+
+	.woocommerce-MyAccount-navigation {
+		
+		ul {
+			padding-left: 0;
+			@include s-r-9(padding-bottom);
+		}
+
+		@include breakpoint(sm) {
+			grid-column-start: 2;
+			grid-column-end: 5;
+		}
+	}
+
+	.woocommerce-MyAccount-content {
+
+		@include breakpoint(sm) {
+			grid-column-start: 5;
+		grid-column-end: 11;
+		}
+
+		.woocommerce-form-row--first {
+			padding-top: 0;
+		}
+	}
+
+	.woocommerce-EditAccountForm {
+
+		fieldset {
+			@include s-r-9(margin-top);
+		}
+	}
+}

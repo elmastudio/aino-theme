@@ -21,8 +21,9 @@ function aino_defaults( $name ) {
 
 				// Colors.
 				'main_bg_color'                 => '#ffffff',
-				'primary_one_color'             => '#7358de',
-				'text_one_color'                => '#111111',
+				'primary_one_color'             => '#755CE9',
+				'text_one_color'                => '#000000',
+				'btn_bg_hover_color'             => '#4D2CF0',
 				'text_two_color'                => '#222222',
 				'btn_text_color'                => '#ffffff',
 				'footer_bg_color'               => false,
@@ -44,9 +45,10 @@ function aino_defaults( $name ) {
 				'post_excerpt_lengths'          => '15',
 				'footer_light'                  => false,
 				'footerwidget_alignment'        => true,
-				'footerinfo_alignment'          => true,
+				'footerinfo_alignment'          => 'center',
 				'footer_bordertop'              => true,
 				'footer_borderbottom'           => true,
+				'footer_backtotop'              => false,
 				'header_menu_bold'              => false,
 				'header_menu_uppercase'         => false,
 				'buttons_bold'                  => false,
