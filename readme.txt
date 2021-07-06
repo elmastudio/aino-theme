@@ -2,9 +2,9 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
 Requires at least: 5.0
-Tested up to: WordPress 5.7.2
+Tested up to: WordPress 5.8.0
 Requires PHP: 7.0
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -43,6 +43,9 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 1.4.1 =
+Bugfix: Deleted Group block max width.
 
 = 1.4.0 =
 New: WooCommerce plugin support.

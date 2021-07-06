@@ -715,7 +715,6 @@ div[class*='wp-block-'] figcaption {
 	.wp-block-group__inner-container {
 
 		&:not(.wp-block-ainoblocks-grid-container) > .wp-block-image:not(.alignwide):not(.alignfull) {
-			max-width: var(--global--default-content-width);
 				@include push--auto;
 			}
 	}

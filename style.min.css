@@ -518,7 +518,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-group.has-background{padding:inherit}
 .wp-block-group__inner-container .wp-block-group h1,.wp-block-group__inner-container .wp-block-group h2,.wp-block-group__inner-container .wp-block-group h3,.wp-block-group__inner-container .wp-block-group h4,.wp-block-group__inner-container .wp-block-group h5,.wp-block-group__inner-container .wp-block-group h6{margin-top:0}
 .wp-block-group .wp-block-group__inner-container>*:last-child{margin-bottom:0}
-.wp-block-group .wp-block-group__inner-container:not(.wp-block-ainoblocks-grid-container)>.wp-block-image:not(.alignwide):not(.alignfull){max-width:var(--global--default-content-width);margin-left:auto;margin-right:auto}
+.wp-block-group .wp-block-group__inner-container:not(.wp-block-ainoblocks-grid-container)>.wp-block-image:not(.alignwide):not(.alignfull){margin-left:auto;margin-right:auto}
 .wp-block-query .wp-block-post-template{padding:0}
 .wp-block-query .wp-block-post-template.is-flex-container li{width:auto !important;margin:0}
 .wp-block-query .wp-block-post-template li{padding-bottom:1.5rem}
