@@ -315,6 +315,7 @@ div[class*='wp-block-'] figcaption {
 	@include s-r-4 (margin-top);
 	margin-bottom: 0;
 	text-align: left;
+	color: var(--global--color-text-two);
 }
 
 .wp-caption.alignleft .wp-caption-text,

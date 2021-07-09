@@ -533,16 +533,16 @@ function aino_fonts_url() {
 
 	/*
 	 * Translators: If there are characters in your language that are not
-	 * supported by IBM Plex Sans, translate this to 'off'. Do not translate
+	 * supported by Arimo, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$ibm_plex_sans = esc_html_x( 'on', 'IBM Plex Sans font: on or off', 'aino' );
+	$arimo = esc_html_x( 'on', 'Arimo font: on or off', 'aino' );
 
-	if ( 'off' !== $ibm_plex_sans ) {
+	if ( 'off' !== $arimo ) {
 		$font_families = array();
 
-		if ( 'off' !== $ibm_plex_sans ) {
-			$font_families[] = 'IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+		if ( 'off' !== $arimo ) {
+			$font_families[] = 'Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap';
 		}
 
 		$query_args = array(
