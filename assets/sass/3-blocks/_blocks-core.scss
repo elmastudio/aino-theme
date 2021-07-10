@@ -241,7 +241,7 @@
 		border-radius: 0;
 
 		&:not(.has-background) {
-			background-color: var(--global--color-primary);
+			background-color: var(--global--color--primary);
 		}
 	}
 
@@ -257,8 +257,8 @@
 			}
 
 			&:hover {
-				color: var(--global--color-primary);
-				fill: var(--global--color-primary);
+				color: var(--global--color--primary);
+				fill: var(--global--color--primary);
 			}
 		}
 	}
@@ -315,7 +315,7 @@ div[class*='wp-block-'] figcaption {
 	@include s-r-4 (margin-top);
 	margin-bottom: 0;
 	text-align: left;
-	color: var(--global--color-text-two);
+	color: var(--global--color--text-two);
 }
 
 .wp-caption.alignleft .wp-caption-text,
@@ -375,7 +375,7 @@ div[class*='wp-block-'] figcaption {
 	}
 
 	.has-text-color a:hover {
-		color: var(--global--color-primary);
+		color: var(--global--color--primary);
 	}
 
 	&.is-style-large {
@@ -424,7 +424,7 @@ div[class*='wp-block-'] figcaption {
 	&.is-style-solid-color,
 	&.is-style-solid-color {
 		padding: $s-6;
-		background-color: var(--global--color-background);
+		background-color: var(--global--color--background);
 		clear: both;
 
 		blockquote {
@@ -534,7 +534,7 @@ div[class*='wp-block-'] figcaption {
 		background: transparent;
 
 		tr {
-			border-bottom: 1px solid var(--global--color-border);
+			border-bottom: 1px solid var(--global--color--border);
 
 			&:last-of-type {
 				border-bottom: 0;
@@ -546,7 +546,7 @@ div[class*='wp-block-'] figcaption {
 		border-bottom: none;
 
 		tbody tr:nth-child(odd) {
-			background-color: var(--global--color-background);
+			background-color: var(--global--color--background);
 			border-bottom: none;
 		}
 
@@ -559,8 +559,8 @@ div[class*='wp-block-'] figcaption {
 /* Verse */
 
 .wp-block-verse {
-	color: var(--global--color-text-two);
-	background: var(--global--color-background);
+	color: var(--global--color--text-two);
+	background: var(--global--color--background);
 }
 
 /* Separator */
@@ -584,7 +584,7 @@ div[class*='wp-block-'] figcaption {
 }
 
 .wp-block-separator.is-style-dots:before {
-	color: var(--global--color-text-two);
+	color: var(--global--color--text-two);
 	content: "\00b7 \00b7 \00b7";
 	font-family: serif;
 	@include font-body-l;
@@ -625,7 +625,7 @@ div[class*='wp-block-'] figcaption {
 .entry-content .wp-block-calendar {
 
 	caption {
-		color: var(--global--color-text-one);
+		color: var(--global--color--text-one);
 		margin-bottom: $s-4;
 		text-align: center;
 	}
@@ -633,7 +633,7 @@ div[class*='wp-block-'] figcaption {
 	table {
 
 		margin-bottom: $s-4;
-		background: var(--global--color-white);
+		background: var(--wp--custom--color--white);
 
 		th {
 			@include font-bold;
@@ -642,18 +642,18 @@ div[class*='wp-block-'] figcaption {
 		}
 
 		tbody {
-			color: var(--global--color-text-two);
-			border-right: 1px solid var(--global--color-border);
+			color: var(--global--color--text-two);
+			border-right: 1px solid var(--global--color--border);
 		}
 
 		td#today {
-			background: var(--global--color-background);
+			background: var(--global--color--background);
 		}
 
 		tbody td,
 		th {
 			padding: 16px 8px;
-			border: 1px solid var(--global--color-border);
+			border: 1px solid var(--global--color--border);
 		}
 	}
 }
@@ -675,8 +675,8 @@ div[class*='wp-block-'] figcaption {
 }
 
 .wp-block-code {
-	background: var(--global--color-code-one);
-	color: var(--global--color-code-two);
+	background: var(--global--color--code-background);
+	color: var(--global--color--code-text);
 
 	code {
 		overflow-x: auto;
@@ -687,8 +687,8 @@ div[class*='wp-block-'] figcaption {
 }
 
 .wp-block-preformatted {
-	background-color: var(--global--color-code-two);
-	color: var(--global--color-code-one);
+	background-color: var(--global--color--code-text);
+	color: var(--global--color--code-background);
 }
 
 /* Group */

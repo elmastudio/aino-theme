@@ -6,7 +6,7 @@ select,
 table,
 textarea {
 	@include font-body;
-	color: var(--global--color-text-two);
+	color: var(--global--color--text-two);
 }
 
 .wp-block-image figcaption,
@@ -18,7 +18,7 @@ div[class*='wp-block-'] figcaption,
 .wc-block-components-product-sale-badge,
 .wc-block-components-sort-select__select {
 	@include font-body-s;
-	color: var(--global--color-text-two);
+	color: var(--global--color--text-two);
 }
 
 .single .navigation a span.nav-subtitle,
@@ -153,7 +153,7 @@ h5,
 h6 {
 	@include font-heading;
 	@include font-regular;
-	color: var(--global--color-text-one);
+	color: var(--global--color--text-one);
 }
 
 h1.site-title,
@@ -408,7 +408,7 @@ big {
 	float: left;
 	padding: 0 10px 0 0;
 	line-height: 0.9;
-	color: var(--global--color-text-one);
+	color: var(--global--color--text-one);
 
 	@include breakpoint(sm) {
 		font-size: 7.75rem;

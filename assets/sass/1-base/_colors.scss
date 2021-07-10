@@ -1,70 +1,44 @@
-:root {
+body {
 
-	/* Colors */
-	--global--color-black: #000;
-	--global--color-white: #fff;
-	--global--color-light-blue-magenta: #AE9FF2;
-	--global--color-cyan: #539b92;
-	--global--color-medium-dark-brown: #8F6539;
-	--global--color-very-light-blue: #C7C9EF;
-	--global--color-light-green-cyan: #C9D5D3;
-	--global--color-very-light-orange: #FFD1B9;
-	--global--color-medium-light-yellow-green: #C7F151;
-	--global--color-very-light-pink: #FFB9CE;
-	--global--color-yellow: #F8A32D;
-	--global--color-medium-dark-cyan: #2F5853;
-	--global--color-very-dark-gray: #222222;
-	--global--color-very-light-gray: #f4f4f4;
-	--global--color-light-gray: #757575;
-	--global--color-medium-light-gray: #AEAEAE;
-	--global--color-light-red-orange: #F79670;
-	--global--color-blue: #6579BD;
-	--global--color-medium-red-orange: #F15A29;
-	--global--color-medium-light-green: #80FCA6;
-	--global--color-medium-light-cyan-blue: #7ECAF8;
-	--global--color-medium-light-brown: #C59A6D;
-	--global--color-light-yellow: #FFFF50;
-	--global--color-blue-magenta: #4D2CF0;
-	--global--color-medium-light-blue-magenta: #755CE9;
-
-	--global--color-primary: var(--global--color-medium-light-blue-magenta); /* Text link and Button background. */
-	--global--color-btn-background-hover: var(--global--color-blue-magenta); /* Button background hover. */
-	--global--color-text-one: var(--global--color-black); /* Headings, site title, menu. */
-	--global--color-text-two: var(--global--color-very-dark-gray); /* Body and meta text. */
-	--global--color-border: var(--global--color-medium-light-gray); /* Default border. */
-	--global--color-form-border: var(--global--color-medium-light-gray); /* Form border. */
-	--global--color-form-active: #0E72FF; /* Form border active. */
-	--global--color-form-boxshadow: rgba(14, 114, 255, 0.4); /* Form active form glow. */
-	--global--color-background: var(--global--color-white); /* Default body background. */
-	--global--color-code-one: var(--global--color-light-green-cyan); /* Code background. */
-	--global--color-code-two: var(--global--color-medium-dark-cyan); /* Dark code background. */
-	--global--color-notification: var(--global--color-light-blue-magenta); /* Background color for notifications. */
-	--global--color-success: var(--global--color-cyan); /* Background color for success notifications e.g. in forms. */
-	--global--color-error: var(--global--color-medium-red-orange); /* Background color for error notifications e.g. in forms. */
-	--global--color-star-rating: var(--global--color-medium-light-blue-magenta); /* eCommerce star ratings. */
+	/* Global Colors */
+	--global--color--primary: var(--wp--custom--color--primary); /* Text link and Button background. */
+	--global--color--background: var(--wp--custom--color--white);
+	--global--color--light-background: var(--wp--custom--color--light-background);
+	--global--color--text-one: var(--wp--custom--color--black); /* Headings, site title, menu. */
+	--global--color--text-two: var(--wp--custom--color--black); /* Body and meta text. */
+	--global--color--border: var(--wp--custom--color--border);
+	--global--color--form-border: var(--wp--custom--color--form-border);
+	--global--color--code-background: var(--wp--custom--color--code-background);
+	--global--color--code-text: var(--wp--custom--color--code-text);
+	--global--color--notification: var(--wp--custom--color--notification); /* Background color for notifications. */
+	--global--color--success: var(--wp--custom--color--success); /* Background color for success notifications e.g. in forms. */
+	--global--color--error: var(--wp--custom--color--error); /* Background color for error notifications e.g. in forms. */
+	--global--color--star-rating: var(--wp--custom--color--star-rating); /* eCommerce star ratings. */
+	--global--color--form-active: var(--wp--custom--color--form-active); /* Form border active. */
+	--global--color--form-glow: var(--wp--custom--color--form-glow); /* Form active form glow. */
 }
 
 @media only screen {
 
 	.is-dark-theme {
-		--global--color-primary: var(--global--color-white);
-		--global--color-text-one: var(--global--color-white);
-		--global--color-text-two: var(--global--color-white);
-		--global--color-border: var(--global--color-white);
-		--global--color-background: var(--global--color-black);
+		--global--color--primary: var(--wp--custom--color--white);
+		--global--color--text-one: var(--wp--custom--color--white);
+		--global--color--text-two: var(--wp--custom--color--white);
+		--global--color--border: var(--wp--custom--color--white);
+		--global--color--background: var(--wp--custom--color--black);
 	}
 
 	body {
 
 		&.is-dark-theme {
-			color: var(--global--color-text-two);
+			color: var(--global--color--text-two);
 
 			&.default-main-bg {
-				background-color: var(--global--color-background);
+				background-color: var(--global--color--background);
 
 				.menu-modal-inner,
 					ul.primary-menu ul {
-						background-color: var(--global--color-background);
+						background-color: var(--global--color--background);
 				}
 			}
 		}

@@ -41,7 +41,7 @@
 
 	& .byline {
 		display: none;
-		color: var(--global--color-text-two);
+		color: var(--global--color--text-two);
 	}
 
 	&.has-single-author {
@@ -210,7 +210,7 @@
 		span {
 			display: block;
 			@include s-r-7 (padding-top);
-			border-top: 1px solid var(--global--color-border);
+			border-top: 1px solid var(--global--color--border);
 		}
 	}
 
@@ -256,7 +256,7 @@
 		display: block;
 		@include s-r-7 (padding-top);
 		@include s-r-12 (padding-bottom);
-		border-top: 1px solid var(--global--color-border);
+		border-top: 1px solid var(--global--color--border);
 	}
 }
 
@@ -277,7 +277,7 @@
 .comment-content {
 	max-width: var(--global--default-content-width);
 	flex-grow: 1;
-	border-bottom: 1px solid var(--global--color-border);
+	border-bottom: 1px solid var(--global--color--border);
 
 	p {
 		margin: 0;
@@ -399,7 +399,7 @@
 
 	.section-title {
 		display: block;
-		border-top: 1px solid var(--global--color-border);
+		border-top: 1px solid var(--global--color--border);
 		@include s-r-7 (padding-top);
 		@include s-r-12 (padding-bottom);
 	}

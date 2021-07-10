@@ -1,9 +1,9 @@
 .site-footer {
-	background-color: var(--global--color-background);
+	background-color: var(--global--color--background);
 
 	.textwidget p {
-		color: var(--global--color-text-two);
-		fill: var(--global--color-text-two);
+		color: var(--global--color--text-two);
+		fill: var(--global--color--text-two);
 	}
 
 	.footer-wrap {
@@ -67,7 +67,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			border-top: 1px solid var(--global--color-border);
+			border-top: 1px solid var(--global--color--border);
 			@include s-r-9 (padding-top);
 
 			.footer-spacebetween & {
@@ -95,7 +95,7 @@
 			}
 
 			.site-info {
-				color: var(--global--color-text-two);
+				color: var(--global--color--text-two);
 				text-align: center;
 
 				@include breakpoint(sm) {
@@ -126,7 +126,7 @@
 
 				a {
 					padding: 0;
-					color: var(--global--color-text-two);
+					color: var(--global--color--text-two);
 				}
 			}
 
@@ -234,13 +234,13 @@ body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer
 	.textwidget p a,
 	.footer-widget-wrap a,
 	.site-footer .menu-social-container .icon {
-		color: var(--global--color-white);
-		fill: var(--global--color-white);
+		color: var(--wp--custom--color--white);
+		fill: var(--wp--custom--color--white);
 	}
 
 	.site-footer {
 		.footer-wrap .footer-info {
-			border-color: var(--global--color-white);
+			border-color: var(--wp--custom--color--white);
 		}
 	
 	}

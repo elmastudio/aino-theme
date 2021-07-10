@@ -45,6 +45,9 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.4.1 =
+New: Add theme.json file.
+Enhance: Block editor color palette and theme custom colors.
+Enhance: Add theme support for block styles.
 Bugfix: Deleted Group block max width.
 
 = 1.4.0 =

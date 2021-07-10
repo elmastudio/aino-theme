@@ -56,7 +56,7 @@
 			@include font-body-s;
 			line-height: var(--global--line-height-reset);
 			background: none !important;
-			color: var(--global--color-text-one);
+			color: var(--global--color--text-one);
 			padding: 0;
 			text-align: left;
 			display: inline;
@@ -186,8 +186,8 @@
 		width: auto;
 		border: 0;
 		border-radius: var(--global--border-radius-s);
-		color: var(--global--color-text-one);
-		background: var(--global--color-white);
+		color: var(--global--color--text-one);
+		background: var(--wp--custom--color--white);
 		line-height: var(--global--line-height-reset);
 		text-transform: none;
 		font-weight: normal;

@@ -54,7 +54,7 @@
 			right: $s-4;
 			z-index: 10;
 			font-size: 0;
-			background: var(--global--color-white);
+			background: var(--wp--custom--color--white);
 			border-radius: var(--global--border-radius-l);
 			display: block;
 			width: $s-9;
@@ -65,7 +65,7 @@
 				content: "";
 				position: absolute;
 				display: block;
-				background: var(--global--color-text-one);
+				background: var(--global--color--text-one);
 				z-index: 9;
 			}
 
@@ -193,7 +193,7 @@
 					width: 100%;
 					max-height: 3.75rem;
 					line-height: var(--global--line-height-reset);
-					background: var(--global--color-white);
+					background: var(--wp--custom--color--white);
 
 					&:active,
 					&:focus {
@@ -237,7 +237,7 @@
 					padding: 0;
 
 					a {
-						color: var(--global--color-text-one);
+						color: var(--global--color--text-one);
 						@include font-body-m;
 					}
 				}
@@ -418,7 +418,7 @@
 					transition: none;
 					font-size: 0;
 					opacity: .4;
-					color: var(--global--color-star-rating);
+					color: var(--global--color--star-rating);
 					margin: 0;
 
 					&:before {
@@ -461,7 +461,7 @@
 	.star-rating:before,
 	.wc-block-review-list-item__rating>.wc-block-review-list-item__rating__stars:before {
 		content: '\2605\2605\2605\2605\2605';
-		color: var(--global--color-star-rating);
+		color: var(--global--color--star-rating);
 		letter-spacing: 0;
 		@include s-r-1(padding-bottom);
 		opacity: .4;
@@ -483,7 +483,7 @@
 
 		&::before {
 			content: '\2605\2605\2605\2605\2605';
-			color: var(--global--color-star-rating);
+			color: var(--global--color--star-rating);
 			letter-spacing: 0;
 			opacity: 1;
 			font-size: 13px;

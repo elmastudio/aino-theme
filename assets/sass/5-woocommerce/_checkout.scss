@@ -140,7 +140,7 @@
 
 			.wc-block-components-textarea {
 				@include font-body-m;
-				border: 1px solid var(--global--color-form-border);
+				border: 1px solid var(--global--color--form-border);
 			}
 		}
 	}
@@ -218,7 +218,7 @@
 	}
 
 	&.has-border {
-		border-bottom: 1px solid var(--global--color-border);
+		border-bottom: 1px solid var(--global--color--border);
 		@include s-r-6(padding-bottom);
 		
 		&:after {
@@ -244,8 +244,8 @@
 	
 				.wc-block-components-order-summary-item__quantity {
 					border: none;
-					background: var(--global--color-primary);
-					color: var(--global--color-white);
+					background: var(--global--color--primary);
+					color: var(--wp--custom--color--white);
 					box-shadow: none;
 					font-size: 12px;
 				}
@@ -320,6 +320,6 @@
 .wc-block-checkout__sidebar .wc-block-components-totals-taxes:after,
 .wc-block-components-panel.has-border:after,
 .wc-block-components-order-summary-item:after {
-	border-color: var(--global--color-border);
+	border-color: var(--global--color--border);
 	opacity: 1;
 }

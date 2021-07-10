@@ -615,37 +615,37 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-primary {
-	color: var(--global--color-white);
-	fill: var(--global--color-white);
-	background-color: var(--global--color-primary);
+	color: var(--wp--custom--color--white);
+	fill: var(--wp--custom--color--white);
+	background-color: var(--global--color--primary);
 
 	&:hover {
-		background-color: var(--global--color-primary);
+		background-color: var(--global--color--primary);
 	}
 }
 
 @mixin btn-outline {
-	color: var(--global--color-primary);
-	fill: var(--global--color-primary);
+	color: var(--global--color--primary);
+	fill: var(--global--color--primary);
 	border: 1px solid;
-	border-color: var(--global--color-primary);
+	border-color: var(--global--color--primary);
 
 	&:hover {
-		border-color: var(--global--color-primary);
-		color: var(--global--color-primary);
-		fill: var(--global--color-primary);
+		border-color: var(--global--color--primary);
+		color: var(--global--color--primary);
+		fill: var(--global--color--primary);
 	}
 }
 
 @mixin btn-naked {
 	display: inline-block;
 	font-weight: normal;
-	color: var(--global--color-text-two);
-	fill: var(--global--color-text-two);
+	color: var(--global--color--text-two);
+	fill: var(--global--color--text-two);
 
 	&:hover {
-		color: var(--global--color-primary);
-		fill: var(--global--color-primary);
+		color: var(--global--color--primary);
+		fill: var(--global--color--primary);
 	}
 }
 
@@ -773,13 +773,13 @@ $var: true !default; // Can be overridden elsewhere
 /* Pills */
 @mixin pill {
 	background: transparent;
-	color: var(--global--color-text-one);
-	border: 1px solid var(--global--color-text-one);
+	color: var(--global--color--text-one);
+	border: 1px solid var(--global--color--text-one);
 	line-height: var(--global--line-height-reset);
 
 	&:hover {
-		color: var(--global--color-background);
-		background: var(--global--color-text-one);
+		color: var(--global--color--background);
+		background: var(--global--color--text-one);
 	}
 }
 
@@ -961,7 +961,7 @@ $var: true !default; // Can be overridden elsewhere
 @mixin divider {
 	content: "";
 	display: block;
-	background-color: var(--global--color-border);
+	background-color: var(--global--color--border);
 	height: 1px;
 	margin-left: $s-2;
 	margin-right: $s-2;

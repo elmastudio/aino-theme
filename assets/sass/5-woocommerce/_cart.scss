@@ -48,7 +48,7 @@
 						.wc-block-components-quantity-selector {
 							@include s-r-4(margin-bottom);
 							width: 137px;
-							border-color: var(--global--color-form-border);
+							border-color: var(--global--color--form-border);
 							border-radius: var(--global--border-radius-s);
 
 							.wc-block-components-quantity-selector__input {
@@ -185,15 +185,15 @@
 				}
 
 				.wc-block-components-shipping-rates-control__package.wc-block-components-panel {
-					border-top: 1px solid var(--global--color-border);
-					border-bottom: 1px solid var(--global--color-border);
+					border-top: 1px solid var(--global--color--border);
+					border-bottom: 1px solid var(--global--color--border);
 				}
 
 				.wc-block-components-panel.has-border::after,
 				.wc-block-cart__totals-title:after,
 				.wc-block-components-shipping-rates-control__package.wc-block-components-panel:after  {
 					opacity: 1;
-					border-color: var(--global--color-border);
+					border-color: var(--global--color--border);
 				}
 
 				.wc-block-components-totals-shipping {

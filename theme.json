@@ -1,0 +1,157 @@
+{
+	"version": 1,
+	"settings": {
+		"color": {
+			"link": true,
+			"custom": true,
+			"palette": [
+				{
+					"slug": "black",
+					"color": "#000000",
+					"name": "Black"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "White"
+				},
+				{
+					"slug": "light-blue-magenta",
+					"color": "#AE9FF2",
+					"name": "Light Blue Magenta"
+				},
+				{
+					"slug": "cyan",
+					"color": "#539b92",
+					"name": "Cyan"
+				},
+				{
+					"slug": "medium-dark-brown",
+					"color": "#8F6539",
+					"name": "Medium Dark Brown"
+				},
+				{
+					"slug": "light-blue",
+					"color": "#C7C9EF",
+					"name": "Light Blue"
+				},
+				{
+					"slug": "light-green-cyan",
+					"color": "#C9D5D3",
+					"name": "Light Green Cyan"
+				},
+				{
+					"slug": "light-orange",
+					"color": "#FFD1B9",
+					"name": "Light Orange"
+				},
+				{
+					"slug": "light-yellow-green",
+					"color": "#C7F151",
+					"name": "Light Yellow Green"
+				},
+				{
+					"slug": "light-pink",
+					"color": "#FFB9CE",
+					"name": "Light Pink"
+				},
+				{
+					"slug": "yellow",
+					"color": "#FFCA32",
+					"name": "Yellow"
+				},
+				{
+					"slug": "medium-dark-cyan",
+					"color": "#2F5853",
+					"name": "Medium Dark Cyan"
+				},
+				{
+					"slug": "dark-grey",
+					"color": "#222222",
+					"name": "Dark Grey"
+				},
+				{
+					"slug": "medium-grey",
+					"color": "#999999",
+					"name": "Medium Grey"
+				},
+				{
+					"slug": "light-grey",
+					"color": "#f4f4f4",
+					"name": "Light Grey"
+				},
+				{
+					"slug": "light-red-orange",
+					"color": "#F79670",
+					"name": "Light Red Orange"
+				},
+				{
+					"slug": "blue",
+					"color": "#0E72FF",
+					"name": "Blue"
+				},
+				{
+					"slug": "medium-red-orange",
+					"color": "#EA7152",
+					"name": "Medium Red Orange"
+				},
+				{
+					"slug": "medium-green",
+					"color": "#80FCA6",
+					"name": "Medium Green"
+				},
+				{
+					"slug": "medium-cyan-blue",
+					"color": "#7ECAF8",
+					"name": "Medium Cyan Blue"
+				},
+				{
+					"slug": "medium-brown",
+					"color": "#C59A6D",
+					"name": "Medium Brown"
+				},
+				{
+					"slug": "light-yellow",
+					"color": "#FFFF50",
+					"name": "Light Yellow"
+				},
+				{
+					"slug": "blue-magenta",
+					"color": "#4D2CF0",
+					"name": "Blue Magenta"
+				},
+				{
+					"slug": "medium-blue-magenta",
+					"color": "#755CE9",
+					"name": "Medium Blue Magenta"
+				}
+			],
+			"gradients": [
+			
+			]
+		},
+		"custom": {
+			"color": {
+				"black": "var(--wp--preset--color--black)",
+				"white": "var(--wp--preset--color--white)",
+				"main-background": "var(--wp--preset--color--white)",
+				"light-background": "var(--wp--preset--color--light-grey)",
+				"primary": "var(--wp--preset--color--medium-blue-magenta)",
+				"border": "var(--wp--preset--color--medium-grey)",
+				"form-border": "var(--wp--preset--color--medium-grey)",
+				"code-background": "var(--wp--preset--color--light-green-cyan)",
+				"code-text": "var(--wp--preset--color--medium-dark-cyan)",
+				"notification": "var(--wp--preset--color--light-blue-magenta)",
+				"success": "var(--wp--preset--color--cyan)",
+				"error": "var(--wp--preset--color--medium-red-orange)",
+				"star-rating": "var(--wp--preset--color--medium-blue-magenta)",
+				"form-active": "var(--wp--preset--color--blue)",
+				"form-glow": "rgba(14, 114, 255, 0.4)"
+			}
+		},
+		"layout": {
+			"contentSize": "696px",
+			"wideSize": "1440px"
+		}
+	}
+}
