@@ -17,19 +17,12 @@
 	}
 }
 
+// 12 grid columns
 .col,
 .column {
 	box-sizing: border-box;
 }
 
-.desktop__overlap-top {
-
-	@include breakpoint(sm) {
-		margin-top: -12rem;
-	}
-}
-
-// 12 grid columns
 .col1 {
 	max-width: $col1;
 

@@ -112,15 +112,15 @@
 
 /* Typography */
 body {
-	@include font-body;
-	color: var(--global--color--text-two);
+	font-family: var(--body--font-family);
+	line-height: var(--global--line-height--body);
+	color: var(--global--color--font-body);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
 
 /* Headings */
 .editor-post-title .editor-post-title__input {
-	@include font-body;
 	line-height: 1;
 	text-align: center;
 	max-width: $col10;
@@ -133,14 +133,14 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-heading);
+	line-height: var(--global--line-height--heading);
 	font-weight: normal;
-	line-height: 1;
 	margin-top: 0;
 	margin-bottom: 0;
 
 	& a {
-		color: var(--global--color--text-one);
+		color: var(--global--color--font-heading);
 		text-decoration: none;
 	}
 }
@@ -156,25 +156,25 @@ h6 {
 }
 
 h1.has-xxxxl-font-size {
-	@include font-h-12;
+	font-size: var(--font-size--h12) !important;
 }
 
 h1.has-xxxl-font-size,
 h2.has-xxxxl-font-size {
-	@include font-h-11;
+	font-size: var(--font-size--h11) !important;
 }
 
 h1.has-xxl-font-size,
 h2.has-xxxl-font-size,
 h3.has-xxxxl-font-size {
-	@include font-h-10;
+	font-size: var(--font-size--h10) !important;
 }
 
 h1.has-xl-font-size,
 h2.has-xxl-font-size,
 h3.has-xxxl-font-size,
 h4.has-xxxxl-font-size {
-	@include font-h-9;
+	font-size: var(--font-size--h9) !important;
 }
 
 h1.has-l-font-size,
@@ -182,7 +182,7 @@ h2.has-xl-font-size,
 h3.has-xxl-font-size,
 h4.has-xxxl-font-size,
 h5.has-xxxxl-font-size {
-	@include font-h-8;
+	font-size: var(--font-size--h8) !important;
 }
 
 .editor-post-title__input,
@@ -192,7 +192,7 @@ h3.has-xl-font-size,
 h4.has-xxl-font-size,
 h5.has-xxxl-font-size,
 h6.has-xxxxl-font-size {
-	@include font-h-7;
+	font-size: var(--font-size--h7) !important;
 }
 
 h1,
@@ -202,7 +202,7 @@ h3.has-l-font-size,
 h4.has-xl-font-size,
 h5.has-xxl-font-size,
 h6.has-xxxl-font-size {
-	@include font-h-6;
+	font-size: var(--font-size--h6) !important;
 }
 
 h2,
@@ -212,7 +212,7 @@ h3.has-m-font-size,
 h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size {
-	@include font-h-5;
+	font-size: var(--font-size--h5) !important;
 }
 
 h3,
@@ -224,7 +224,7 @@ h5.has-l-font-size,
 h6.has-xl-font-size,
 .related-wrap .section-title,
 .comments-area .comments-title {
-	@include font-h-4;
+	font-size: var(--font-size--h4) !important;
 }
 
 h2.has-xxs-font-size,
@@ -235,7 +235,7 @@ h5.has-m-font-size,
 h6.has-l-font-size,
 h1.site-title,
 .site-title {
-	@include font-h-3;
+	font-size: var(--font-size--h3) !important;
 }
 
 h3.has-xxs-font-size,
@@ -243,7 +243,7 @@ h4.has-xs-font-size,
 h5,
 h5.has-s-font-size,
 h6.has-m-font-size {
-	@include font-h-2;
+	font-size: var(--font-size--h2) !important;
 }
 
 h4.has-xxs-font-size,
@@ -254,46 +254,45 @@ h6.has-s-font-size,
 h6.has-xs-font-size,
 h6.has-xxs-font-size,
 h6.has-xxs-font-size {
-	@include font-h-1;
+	font-size: var(--font-size--h1) !important;
 }
 
 /* Paragraphs */
 p:not(.wp-block-post-excerpt__more-text),
 ol,
 ul {
-	@include font-body-l;
+	font-size: var(--font-size--body-l);
 
 	&.has-xxs-font-size {
-		@include font-body-2xs;
+		font-size: var(--font-size--body-xxs);
 	}
 
 	&.has-xs-font-size {
-		@include font-body-xs;
+		font-size: var(--font-size--body-xs);
 	}
 
 	&.has-s-font-size {
-		@include font-body-s;
+		font-size: var(--font-size--body-s);
 	}
 
 	&.has-m-font-size {
-		@include font-body-m;
+		font-size: var(--font-size--body-m);
 	}
 
 	&.has-l-font-size {
-		@include font-body-l;
+		font-size: var(--font-size--body-l);
 	}
 
 	&.has-xl-font-size {
-		@include font-body-xl;
+		font-size: var(--font-size--body-xl);
 	}
 
 	&.has-xxl-font-size {
-		@include font-body-2xl;
+		font-size: var(--font-size--body-xxl);
 	}
 
 	&.has-drop-cap:not(:focus):first-letter {
 		float: left;
-		@include font-body;
 		margin: 5px 8px 0 -8px;
 		line-height: 0.77;
 		text-transform: uppercase;
@@ -463,7 +462,7 @@ a {
 
 	p &,
 	blockquote:not(.has-text-color) .wp-block-pullquote__citation & {
-		color: var(--global--color--text-two);
+		color: var(--global--color--font-body);
 	}
 
 	h1,
@@ -472,7 +471,7 @@ a {
 	h4 &,
 	h5 &,
 	h6 & {
-		color: var(--global--color--text-one);
+		color: var(--global--color--font-heading);
 	}
 }
 
@@ -610,8 +609,9 @@ textarea {
 
 /* Default Appender */
 .editor-default-block-appender .editor-default-block-appender__content {
-	@include font-body;
-	@include font-body-m;
+	font-family: var(--body--font-family);
+	line-height: var(--global--line-height-body);
+	font-size: var(--font-size--body-m);
 }
 
 /* Group */
@@ -775,9 +775,9 @@ textarea {
 
 figcaption {
 	max-width: 100%;
-	@include font-body-s;
+	font-size: var(--font-size--body-s);
 	@include s-r-4 (margin-top);
-	color: var(--global--color--text-two);
+	color: var(--global--color--font-body);
 	text-align: left;
 }
 
@@ -789,7 +789,7 @@ figcaption {
 .wp-block-gallery .blocks-gallery-item {
 
 	figcaption {
-		@include font-body-xs;
+		font-size: var(--font-size--body-xs);
 	}
 }
 
@@ -811,7 +811,7 @@ figcaption {
 	font-style: normal;
 
 	blockquote p {
-		@include font-body-m;
+		font-size: var(--font-size--body-m);
 	}
 
 	p:last-child,
@@ -826,7 +826,7 @@ figcaption {
 	&.is-large,
 	&.is-style-large p {
 		margin: 0;
-		@include font-body-l;
+		font-size: var(--font-size--body-l);
 		font-style: normal;
 	}
 
@@ -840,26 +840,26 @@ figcaption {
 		font-weight: bold;
 		font-style: normal;
 		text-transform: none;
-		@include font-body-xs;
+		font-size: var(--font-size--body-xs);
 	}
 
 	cite,
 	footer,
 	.wp-block-quote__citation,
 	& blockquote:not(.has-text-color) .wp-block-pullquote__citation {
-		color: var(--global--color--text-two);
+		color: var(--global--color--font-body);
 	}
 }
 
 .wp-block-pullquote {
 	text-align: left;
 	border-radius: var(--global--border-radius-s);
-	color: var(--global--color--text-two);
+	color: var(--global--color--font-body);
 
 	&.is-style-solid-color {
 
 		&:not(.has-background) {
-			background: var(--global--color--background);
+			background: var(--global--color--background-primary);
 		}
 
 		blockquote {
@@ -868,7 +868,7 @@ figcaption {
 			border-radius: var(--global--border-radius-s);
 
 			p {
-				@include font-body-m;
+				font-size: var(--font-size--body-m);
 			}
 		}
 	}
@@ -942,7 +942,7 @@ figcaption {
 		border-bottom: none;
 
 		tbody tr:nth-child(odd) {
-			background-color: var(--global--color--background);
+			background-color: var(--global--color--background-primary);
 			border-bottom: none;
 		}
 
@@ -964,7 +964,7 @@ figcaption {
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
 	max-width: var(--global--default-content-width);
-	@include font-h-3;
+	font-size: var(--font-size--h3) !important;
 }
 
 .wp-block-cover-image,
@@ -977,12 +977,17 @@ figcaption {
 }
 
 /* Monospace */
+.wp-block-code,
+.wp-block-preformatted,
+.wp-block[data-type="core/verse"] {
+	font-family: var(--code--font-family);
+	line-height: var(--global--line-height-body);
+	font-size: var(--font-size--body-xs);
+}
 
 .wp-block-code {
 	background: var(--global--color--code-background);
-	color: var(--global--color--code-text);
-	@include font-code;
-	@include font-body-xs;
+	color: var(--global--color--code-font);
 	@include s-r-6(padding);
 
 	@include breakpoint(sm) {
@@ -995,26 +1000,23 @@ figcaption {
 }
 
 .wp-block-preformatted {
-	background-color: var(--global--color--code-text);
+	background-color: var(--global--color--code-font);
 	color: var(--global--color--code-background);
 	overflow: auto;
 	@include s-r-6(padding);
 	@include s-r-6(margin-bottom);
-	@include font-code;
 
 	& pre {
 		margin: 0;
 		padding: 0;
-		background-color: var(--global--color--code-text);
+		background-color: var(--global--color--code-font);
 		color: var(--global--color--code-background);
 	}
 }
 
 .wp-block[data-type="core/verse"] {
-	background: var(--global--color--background);
-	@include font-code;
-	@include font-body-xs;
-	@include font-regular;
+	background: var(--global--color--background-primary);
+	font-weight: normal;
 	@include s-r-6(padding);
 
 	pre {
@@ -1024,7 +1026,7 @@ figcaption {
 
 .wp-block-verse pre,
 pre.wp-block-verse {
-	color: var(--global--color--text-two);
+	color: var(--global--color--font-body);
 	white-space: nowrap;
 	font-family: inherit;
 	font-size: inherit;
@@ -1055,7 +1057,7 @@ pre.wp-block-verse {
 
 	&.is-style-dots:before {
 		color: var(--global--color--border);
-		@include font-body-l;
+		font-size: var(--font-size--body-l);
 		letter-spacing: 1em;
 		padding-left: 1em;
 	}
@@ -1070,7 +1072,7 @@ pre.wp-block-verse {
 		@include btn-m;
 		@include btn-primary;
 		font-weight: normal;
-		color: var(--wp--custom--color--white);
+		color: var(--global--color--white);
 	}
 
 	&:not(.is-style-squared) .wp-block-button__link {
@@ -1119,14 +1121,14 @@ pre.wp-block-verse {
 .wp-block-latest-posts li a {
 	border: none;
 	text-decoration: none;
-	color: var(--global--color--text-two);
+	color: var(--global--color--font-body);
 }
 
 .wp-block[data-type="core/archives"] .wp-block-archives,
 .wp-block[data-type="core/latest-posts"] .wp-block-latest-posts {
 	margin: 0;
 	padding-left: 1.5rem;
-	@include font-body-m;
+	font-size: var(--font-size--body-m);
 }
 
 .wp-block[data-type="core/latest-comments"] .wp-block-latest-comments {
@@ -1134,7 +1136,7 @@ pre.wp-block-verse {
 	padding: 0;
 
 	.wp-block-latest-comments__comment-excerpt p {
-		@include font-body-s;
+		font-size: var(--font-size--body-s);
 		margin: 0;
 	}
 }
@@ -1142,30 +1144,30 @@ pre.wp-block-verse {
 .wp-block[data-type="core/calendar"] {
 
 	caption {
-		color: var(--global--color--text-one);
+		color: var(--global--color--font-heading);
 		margin-bottom: $s-4;
 		text-align: center;
-		@include font-bold;
+		font-weight: bold;
 	}
 
 	table {
 
 		margin-bottom: $s-4;
-		background: var(--wp--custom--color--white);
+		background: var(--global--color--white);
 
 		th {
-			@include font-bold;
+			font-weight: bold;
 			background: transparent;
 			text-align: center;
 		}
 
 		tbody {
-			color: var(--global--color--text-two);
+			color: var(--global--color--font-body);
 			border-right: 1px solid var(--global--color--border);
 		}
 
 		td#today {
-			background: var(--global--color--background);
+			background: var(--global--color--background-primary);
 		}
 
 		tbody td,

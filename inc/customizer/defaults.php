@@ -21,10 +21,10 @@ function aino_defaults( $name ) {
 
 				// Colors.
 				'main_bg_color'                 => '#ffffff',
-				'primary_one_color'             => '#755CE9',
-				'text_one_color'                => '#000000',
-				'btn_bg_hover_color'             => '#4D2CF0',
-				'text_two_color'                => '#222222',
+				'primary_one_color'             => '#1F299C',
+				'text_one_color'                => '#1E1E1E',
+				'btn_bg_hover_color'             => '#10154F',
+				'text_two_color'                => '#282828',
 				'btn_text_color'                => '#ffffff',
 				'footer_bg_color'               => false,
 				'footer_border_color'           => '#111111',

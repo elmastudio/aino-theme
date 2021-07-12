@@ -296,316 +296,6 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Base Typography */
-@mixin hyphenation {
-	word-wrap: break-word;
-	hyphens: auto;
-}
-
-@mixin font-body {
-	font-family: var(--body--font-family);
-	line-height: var(--global--line-height-body);
-}
-
-@mixin font-heading {
-	font-family: var(--heading--font-family);
-	line-height: var(--global--line-height-heading);
-}
-
-/* Font Weights */
-@mixin font-light {
-	font-weight: 300;
-}
-
-@mixin font-regular {
-	font-weight: normal;
-}
-
-@mixin font-bold {
-	font-weight: bold;
-}
-
-/* Heading Font Sizes */
-@mixin font-h-1 {
-	font-size: 1rem !important;
-}
-
-@mixin font-h-2 {
-	font-size: 1.125rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.375rem !important;
-	}
-}
-
-@mixin font-h-3 {
-	font-size: 1.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.5rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.75rem !important;
-	}
-}
-
-@mixin font-h-4 {
-	font-size: 1.5rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.875rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.125rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.375rem !important;
-	}
-}
-
-@mixin font-h-5 {
-	font-size: 1.75rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2.25rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 3.25rem !important;
-	}
-}
-
-@mixin font-h-6 {
-	font-size: 2.125rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2.75rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 3.375rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 4.375rem !important;
-	}
-}
-
-@mixin font-h-7 {
-	font-size: 2.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 3.25rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 4.375rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 5.75rem !important;
-	}
-}
-
-@mixin font-h-8 {
-	font-size: 2.875rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 4rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 5.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 7.75rem !important;
-	}
-}
-
-@mixin font-h-9 {
-	font-size: 3.25rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 4.875rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 7.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 10.375rem !important;
-	}
-}
-
-@mixin font-h-10 {
-	font-size: 3.75rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 6rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 9.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 13.875rem !important;
-	}
-}
-
-@mixin font-h-11 {
-	font-size: 4.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 10.375rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 11.75rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 18.625rem !important;
-	}
-}
-
-@mixin font-h-12 {
-	font-size: 5.125rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 8.875rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 15.125rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 25rem !important;
-	}
-}
-
-/* Body Fonts */
-@mixin font-body-2xs {
-	font-size: 0.75rem !important;
-}
-
-@mixin font-body-xs {
-	font-size: 0.875rem !important;
-}
-
-@mixin font-body-s {
-	font-size: 1rem !important;
-}
-
-@mixin font-body-m {
-	font-size: 1.125rem !important;
-
-	@include breakpoint(lg) {
-		font-size: 1.25rem !important;
-	}
-}
-
-@mixin font-body-l {
-	font-size: 1.25rem !important;
-
-	@include breakpoint(md) {
-		font-size: 1.375rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.5rem !important;
-	}
-}
-
-@mixin font-body-xl {
-	font-size: 1.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.5rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.75rem !important;
-	}
-}
-
-@mixin font-body-2xl {
-	font-size: 1.5rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.75rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.875rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.125rem !important;
-	}
-}
-
-@mixin font-body-3xl {
-	font-size: 1.625rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.5rem !important;
-	}
-}
-
-@mixin font-body-4xl {
-	font-size: 1.875rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2.25rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 3rem !important;
-	}
-}
-
-/* Code */
-@mixin font-code {
-	font-family: var(--code--font-family);
-	font-size: 14px;
-	line-height: var(--global--line-height-body);
-}
-
 /* Buttons */
 @mixin btn {
 	display: inline-block;
@@ -615,8 +305,8 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-primary {
-	color: var(--wp--custom--color--white);
-	fill: var(--wp--custom--color--white);
+	color: var(--global--color--white);
+	fill: var(--global--color--white);
 	background-color: var(--global--color--primary);
 
 	&:hover {
@@ -640,8 +330,8 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-naked {
 	display: inline-block;
 	font-weight: normal;
-	color: var(--global--color--text-two);
-	fill: var(--global--color--text-two);
+	color: var(--global--color--font-heading);
+	fill: var(--global--color--font-heading);
 
 	&:hover {
 		color: var(--global--color--primary);
@@ -773,13 +463,13 @@ $var: true !default; // Can be overridden elsewhere
 /* Pills */
 @mixin pill {
 	background: transparent;
-	color: var(--global--color--text-one);
-	border: 1px solid var(--global--color--text-one);
+	color: var(--global--color--font-heading);
+	border: 1px solid var(--global--color--font-heading);
 	line-height: var(--global--line-height-reset);
 
 	&:hover {
-		color: var(--global--color--background);
-		background: var(--global--color--text-one);
+		color: var(--global--color--white);
+		background: var(--global--color--font-heading);
 	}
 }
 
@@ -957,7 +647,6 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 /* Divider short */
-
 @mixin divider {
 	content: "";
 	display: block;

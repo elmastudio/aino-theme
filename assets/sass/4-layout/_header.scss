@@ -2,6 +2,15 @@
 	@include s-r-6(padding-top);
 }
 
+/* Block Template Part Header */
+.wp-block-group {
+	&.site-header {
+		max-width: var(--global--max-content-width-nogap);
+		@include push--auto;
+		padding-top: 0 !important;
+	}
+}
+
 /* Site Title, Logo and Tagline */
 .site-branding {
 	display: flex;
@@ -34,7 +43,7 @@
 		height: $s-7;
 		margin: 0;
 		padding: 0 0 0 $s-2;
-		color: var(--global--color--text-two);
+		color: var(--global--color--font-body);
 
 		@include breakpoint(sm) {
 			@include flexbox;
@@ -94,7 +103,7 @@
 		cursor: pointer;
 		margin: 0;
 		padding: 0;
-		color: var(--global--color--text-two);
+		color: var(--global--color--font-body);
 
 		@include breakpoint(md) {
 			padding: 0;
@@ -277,9 +286,9 @@
 	right: $s-4;
 	padding: 0 17px;
 	border-radius: 0;
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-heading);
 	background: transparent;
-	border: 1px solid var(--global--color--text-one);
+	border: 1px solid var(--global--color--font-heading);
 
 	@include breakpoint(sm) {
 		right: $s-7;
@@ -301,14 +310,14 @@ button.close-nav-toggle {
 	margin-left: $s-4;
 	padding: 0;
 	border-radius: 0;
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-heading);
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	width: 64px;
 	border-radius: 0;
 	background: transparent;
-	border: 1px solid var(--global--color--text-one);
+	border: 1px solid var(--global--color--font-heading);
 	border-radius: 18px;
 
 	@include breakpoint(sm) {
@@ -370,12 +379,11 @@ ul.primary-menu {
 			position: absolute;
 			top: 0;
 			width: 100%;
-			fill: var(--global--color--text-one);
+			fill: var(--global--color--font-heading);
 		}
 	}
 
 	li {
-		font-size: inherit;
 		position: relative;
 
 		&.menu-item-has-children:hover>ul,
@@ -406,7 +414,7 @@ ul.primary-menu {
 	}
 
 	a {
-		color: var(--global--color--text-one);
+		color: var(--global--color--font-heading);
 		display: block;
 		text-decoration: none;
 		line-height: 1;
@@ -417,9 +425,9 @@ ul.primary-menu {
 	}
 
 	ul {
-		@include font-body-xs;
-		background: var(--global--color--background);
-		color: var(--global--color--text-one);
+		font-size: var(--font-size--body-xs);
+		background: var(--global--color--background-primary);
+		color: var(--global--color--font-heading);
 		padding: $s-6;
 		border: 1px solid var(--global--color--border);
 		position: absolute;
@@ -515,7 +523,7 @@ ul.primary-menu {
 /*	Menu Modal
 /* -------------------------------------------------------------------------- */
 .menu-modal {
-	background: var(--wp--custom--color--white);
+	background: var(--global--color--white);
 	display: none;
 	opacity: 0;
 	overflow-y: auto;
@@ -552,7 +560,7 @@ ul.primary-menu {
 }
 
 .menu-modal-inner {
-	background: var(--global--color--background);
+	background: var(--global--color--background-primary);
 	display: flex;
 	justify-content: stretch;
 	overflow: auto;
@@ -682,7 +690,7 @@ ul.primary-menu {
 button.sub-menu-toggle {
 	margin: 0 $s-4 0 0;
 	padding: 0 0 0 $s-4;
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-heading);
 	border-radius: 0;
 	position: absolute;
 	right: 0;
@@ -889,33 +897,33 @@ button.sub-menu-toggle {
 	.nav-toggle .icon-toggle-open,
 	ul.primary-menu .dropdown .icon,
 	.header-cta-wrap a {
-		color: var(--wp--custom--color--white);
-		fill: var(--wp--custom--color--white);
+		color: var(--global--color--white);
+		fill: var(--global--color--white);
 	}
 
 	.header-cta-wrap a {
 
 		&:hover {
-			color: var(--wp--custom--color--white);
-			fill: var(--wp--custom--color--white);
+			color: var(--global--color--white);
+			fill: var(--global--color--white);
 		}
 	}
 
 	.nav-toggle {
-		border: 1px solid var(--wp--custom--color--white);
+		border: 1px solid var(--global--color--white);
 	}
 
 	.primary-menu .sub-menu .dropdown .icon {
-		fill: var(--global--color--text-one);
+		fill: var(--global--color--font-heading);
 	}
 
 	.btn-outline a {
-		box-shadow: inset 0px 0px 0px 1px var(--wp--custom--color--white);
+		box-shadow: inset 0px 0px 0px 1px var(--global--color--white);
 	}
 
 	&.menu-bold {
 		.btn-outline a {
-			box-shadow: inset 0px 0px 0px 2px var(--wp--custom--color--white);
+			box-shadow: inset 0px 0px 0px 2px var(--global--color--white);
 		}
 	}
 
@@ -927,26 +935,26 @@ button.sub-menu-toggle {
 		.btn-naked a,
 		.site-header .menu-social-container .icon,
 		.header-cta-wrap a {
-			color: var(--wp--custom--color--white);
-			fill: var(--wp--custom--color--white);
+			color: var(--global--color--white);
+			fill: var(--global--color--white);
 		}
 
 		.header-inner .toggle .icon {
-			fill: var(--wp--custom--color--white);
+			fill: var(--global--color--white);
 		}
 
 		.primary-menu .icon::before,
 		.primary-menu .icon::after {
-			background-color: var(--wp--custom--color--white);
+			background-color: var(--global--color--white);
 		}
 
 		.primary-menu .sub-menu .icon::before,
 		.primary-menu .sub-menu .icon::after {
-			background-color: var(--global--color--text-one);
+			background-color: var(--global--color--font-heading);
 		}
 
 		.primary-menu .sub-menu a {
-			color: var(--global--color--text-one);
+			color: var(--global--color--font-heading);
 		}
 	}
 }

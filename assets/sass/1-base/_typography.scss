@@ -5,8 +5,9 @@ input,
 select,
 table,
 textarea {
-	@include font-body;
-	color: var(--global--color--text-two);
+	font-family: var(--body--font-family);
+	line-height: var(--global--line-height--body);
+	color: var(--global--color--font-body);
 }
 
 .wp-block-image figcaption,
@@ -17,8 +18,8 @@ div[class*='wp-block-'] figcaption,
 .wc-block-grid__product-price,
 .wc-block-components-product-sale-badge,
 .wc-block-components-sort-select__select {
-	@include font-body-s;
-	color: var(--global--color--text-two);
+	font-size: var(--font-size--body-s);
+	color: var(--global--color--font-body);
 }
 
 .single .navigation a span.nav-subtitle,
@@ -31,7 +32,7 @@ div[class*='wp-block-'] figcaption,
 .wc-block-components-checkout-step__heading-content,
 .entry-content p.wc-block-components-checkout-step__description,
 .entry-content .wc-block-components-product-metadata__description p {
-	@include font-body-xs;
+	font-size: var(--font-size--body-xs);
 }
 
 .entry-content,
@@ -51,7 +52,7 @@ div[class*='wp-block-'] figcaption,
 	.wc-block-grid__product-onsale,
 	.wc-block-components-sale-badge,
 	.comment-reply-title #cancel-comment-reply-link {
-		@include font-body-s;
+		font-size: var(--font-size--body-s);
 	}
 }
 
@@ -63,7 +64,7 @@ div[class*='wp-block-'] figcaption,
 
 		.blog-1-column &,
 		.blog-2-column & {
-			@include font-body-m;
+			font-size: var(--font-size--body-m);
 		}
 	}
 }
@@ -87,8 +88,10 @@ textarea,
 .footer-widget .widget ul li,
 .footer-widget .widget_text p,
 .site-footer .widget-title,
-.custom-product-page-link {
-	@include font-body-m;
+.custom-product-page-link,
+.wp-block-navigation-link,
+h1.wp-block-site-title {
+	font-size: var(--font-size--body-m);
 }
 
 .entry-content p.has-l-font-size,
@@ -107,8 +110,9 @@ dl,
 .search-header .search-field,
 .entry-content .wp-block-post-excerpt.has-l-font-size p,
 .entry-content .wp-block-post-terms.has-l-font-size,
-.wc-block-components-order-summary__button-text {
-	@include font-body-l;
+.wc-block-components-order-summary__button-text,
+.wp-block-separator.is-style-dots:before {
+	font-size: var(--font-size--body-l);
 }
 
 .entry-content p.has-xl-font-size,
@@ -116,32 +120,32 @@ dl,
 .entry-content .wp-block-post-terms.has-xl-font-size,
 .order-total .woocommerce-Price-amount,
 .entry-summary p.price {
-	@include font-body-xl;
+	font-size: var(--font-size--body-xl);
 }
 
 .entry-content p.has-xxl-font-size,
 .entry-content .wp-block-post-excerpt.has-xxl-font-size p,
 .entry-content .wp-block-post-terms.has-xxl-font-size {
-	@include font-body-2xl;
+	font-size: var(--font-size--body-xxl);
 }
 
 .entry-content p.has-xxxl-font-size,
 .page-header .description p,
 .entry-content .wp-block-post-excerpt.has-xxxl-font-size p,
 .entry-content .wp-block-post-terms.has-xxxl-font-size {
-	@include font-body-3xl;
+	font-size: var(--font-size--body-xxxl);
 }
 
 .entry-content p.has-xxxxl-font-size,
 .entry-content .wp-block-post-excerpt.has-xxxxl-font-size p,
 .entry-content .wp-block-post-terms.has-xxxxl-font-size {
-	@include font-body-4xl;
+	font-size: var(--font-size--body-xxxxl);
 }
 
 .entry-content p.has-xxs-font-size,
 .entry-content .wp-block-post-excerpt.has-xxs-font-size p,
 .entry-content .wp-block-post-terms.has-xxs-font-size {
-	@include font-body-2xs;
+	font-size: var(--font-size--body-xxs);
 }
 
 /* Headings */
@@ -151,15 +155,17 @@ h3,
 h4,
 h5,
 h6 {
-	@include font-heading;
-	@include font-regular;
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-heading);
+	font-family: var(--heading--font-family);
+	line-height: var(--global--line-height--heading);
+	font-weight: normal;
 }
 
 h1.site-title,
 .site-title,
 h2.entry-title {
-	@include hyphenation;
+	word-wrap: break-word;
+	hyphens: auto;
 }
 
 .h-bold {
@@ -172,30 +178,30 @@ h2.entry-title {
 	:not(.entry-content)>h6,
 	.site-title,
 	&.single-post .byline {
-		@include font-bold;
+		font-weight: bold;
 	}
 }
 
 h1.has-xxxxl-font-size {
-	@include font-h-12;
+	font-size: var(--font-size--h12) !important;
 }
 
 h1.has-xxxl-font-size,
 h2.has-xxxxl-font-size {
-	@include font-h-11;
+	font-size: var(--font-size--h11) !important;
 }
 
 h1.has-xxl-font-size,
 h2.has-xxxl-font-size,
 h3.has-xxxxl-font-size {
-	@include font-h-10;
+	font-size: var(--font-size--h10) !important;
 }
 
 h1.has-xl-font-size,
 h2.has-xxl-font-size,
 h3.has-xxxl-font-size,
 h4.has-xxxxl-font-size {
-	@include font-h-9;
+	font-size: var(--font-size--h9) !important;
 }
 
 h1.has-l-font-size,
@@ -203,7 +209,7 @@ h2.has-xl-font-size,
 h3.has-xxl-font-size,
 h4.has-xxxl-font-size,
 h5.has-xxxxl-font-size {
-	@include font-h-8;
+	font-size: var(--font-size--h8) !important;
 }
 
 .single-post h1.entry-title,
@@ -213,7 +219,7 @@ h3.has-xl-font-size,
 h4.has-xxl-font-size,
 h5.has-xxxl-font-size,
 h6.has-xxxxl-font-size {
-	@include font-h-7;
+	font-size: var(--font-size--h7) !important;
 }
 
 h1.entry-title,
@@ -223,7 +229,7 @@ h3.has-l-font-size,
 h4.has-xl-font-size,
 h5.has-xxl-font-size,
 h6.has-xxxl-font-size {
-	@include font-h-6;
+	font-size: var(--font-size--h6) !important;
 }
 
 h2,
@@ -235,7 +241,7 @@ h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
 .related-title {
-	@include font-h-5;
+	font-size: var(--font-size--h5) !important;
 }
 
 h3,
@@ -250,7 +256,7 @@ h6.has-xl-font-size,
 .blog-archive h2.entry-title,
 .comment-reply-title,
 .wp-block-query h2.wp-block-post-title {
-	@include font-h-4;
+	font-size: var(--font-size--h4) !important;
 }
 
 h2.has-xxs-font-size,
@@ -267,7 +273,7 @@ h6.has-l-font-size,
 .woocommerce-account h2,
 .woocommerce-checkout h3,
 .wc-block-components-title {
-	@include font-h-3;
+	font-size: var(--font-size--h3) !important;
 }
 
 .nav-title,
@@ -278,7 +284,7 @@ h5.has-s-font-size,
 h6.has-m-font-size,
 .woocommerce-loop-product__title,
 .is-large.wc-block-cart .wc-block-cart__totals-title {
-	@include font-h-2;
+	font-size: var(--font-size--h2) !important;
 }
 
 h4.has-xxs-font-size,
@@ -290,7 +296,7 @@ h6.has-xs-font-size,
 h6.has-xxs-font-size,
 h6.has-xxs-font-size,
 .wc-block-cart__empty-cart__title {
-	@include font-h-1;
+	font-size: var(--font-size--h1) !important;
 }
 
 .blog,
@@ -298,14 +304,14 @@ h6.has-xxs-font-size,
 
 	&.blog-1-column h2.entry-title,
 	&.blog-2-column h2.entry-title {
-		@include font-h-5;
+		font-size: var(--font-size--h5) !important;
 	}
 }
 
 .site-branding {
 
 	.site-title {
-		@include font-body-l;
+		font-size: var(--font-size--body-l);
 		line-height: 1;
 	}
 }
@@ -367,7 +373,7 @@ blockquote cite,
 	text-align: left;
 	display: block;
 	padding: $s-4 0 0;
-	@include font-body-xs;
+	font-size: var(--font-size--body-xs);
 	font-style: normal;
 	font-weight: bold;
 }
@@ -375,15 +381,20 @@ blockquote cite,
 code,
 kbd,
 tt,
-var {
-	@include font-code;
+var,
+pre,
+.wp-block-preformatted,
+.wp-block-preformatted.has-background,
+.wp-block-code {
+	font-family: var(--code--font-family);
+	line-height: var(--global--line-height-body);
+	font-size: var(--font-size--body-s);
 }
 
 pre {
 	@include s-r-6(padding);
 	@include s-r-6(margin-bottom);
 	border: none;
-	@include font-code;
 }
 
 abbr,
@@ -408,7 +419,7 @@ big {
 	float: left;
 	padding: 0 10px 0 0;
 	line-height: 0.9;
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-body);
 
 	@include breakpoint(sm) {
 		font-size: 7.75rem;

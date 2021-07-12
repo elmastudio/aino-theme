@@ -16,7 +16,7 @@ input[type="color"],
 textarea {
 	width: 100%;
 	box-sizing: border-box;
-	background-color: var(--wp--custom--color--white);
+	background-color: var(--global--color--white);
 	border: 1px solid var(--global--color--form-border);
 	outline: none;
 	line-height: var(--global--line-height-reset);
@@ -29,23 +29,23 @@ textarea {
 
 	&:active,
 	&:focus {
-		color: var(--global--color--text-one);
-		border-color: var(--global--color--form-active);
+		color: var(--global--color--font-body);
+		border-color: var(--global--color--form-border-active);
 		box-shadow: 0 0 0 4px var(--global--color--form-glow);
 	}
 
 	.light-form & {
-		border: 1px solid var(--wp--custom--color--white);
-		color: var(--wp--custom--color--white);
+		border: 1px solid var(--global--color--white);
+		color: var(--global--color--white);
 
 		@include input-placeholder {
-			color: var(--global--color--text-one);
+			color: var(--global--color--font-body);
 		}
 
 		&:active,
 		&:focus {
-			color: var(--wp--custom--color--black);
-			border-color: var(--wp--custom--color--white);
+			color: var(--global--color--black);
+			border-color: var(--global--color--white);
 		}
 	}
 }
@@ -67,7 +67,7 @@ textarea {
 textarea {
 	width: 100%;
 	background-color: transparent;
-	background: var(--wp--custom--color--white);
+	background: var(--global--color--white);
 	border: 1px solid var(--global--color--form-border);
 	padding: $s-4 $s-6;
 	outline: none;
@@ -112,11 +112,11 @@ select,
 }
 
 .select2-results__options {
-	background: var(--global--color--text-one);
+	background: var(--global--color--font-body);
 }
 
 .select2-selection__arrow svg {
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-body);
 }
 
 .select2-search--dropdown {
@@ -126,7 +126,7 @@ select,
 // Checkboxes
 .checkbox,
 form .comment-form-cookies-consent {
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-body);
 	display: flex;
 	align-items: center;
 }
@@ -138,7 +138,7 @@ input[type="radio"] {
 	width: $s-6;
 	height: $s-6;
 	border: 1px solid var(--global--color--form-border);
-	background-color: var(--wp--custom--color--white);
+	background-color: var(--global--color--white);
 	border-radius:50%;
 	outline:none;
 	@include s-r-2 (margin-right);
@@ -159,16 +159,16 @@ input[type='checkbox'] {
 	position: relative;
 
 	&:focus {
-		border-color: var(--global--color--form-active);
+		border-color: var(--global--color--form-border-active);
 		box-shadow: 0 0 0 4px var(--global--color--form-glow);
-		background: var(--global--color--form-active);
+		background: var(--global--color--form-border-active);
 	}
 
 	&:checked:before {
-		border-color: var(--global--color--form-active);
-		background: var(--global--color--form-active);
-		fill: var(--wp--custom--color--white);
-		color: var(--wp--custom--color--white);
+		border-color: var(--global--color--form-border-active);
+		background: var(--global--color--form-border-active);
+		fill: var(--global--color--white);
+		color: var(--global--color--white);
 	}
 
 	&:after {
@@ -206,7 +206,7 @@ input[type='radio'] {
 		width: 6px;
 		height: 6px;
 		border-radius: 100px;
-		background-color: var(--wp--custom--color--white);
+		background-color: var(--global--color--white);
 	}
 }
 
@@ -214,7 +214,7 @@ input[type='radio'] {
 .comment-form-cookies-consent {
 	label {
 		margin-bottom: 0;
-		color: var(--global--color--text-one);
+		color: var(--global--color--font-body);
 	}
 }
 
@@ -225,8 +225,8 @@ button[type="submit"] {
 	clear: both;
 
 	.light-btn & {
-		background: var(--wp--custom--color--white);
-		color: var(--global--color--text-one);
+		background: var(--global--color--white);
+		color: var(--global--color--font-body);
 	}
 }
 
@@ -345,7 +345,7 @@ form p.comment-form-comment {
 
 	.light-form {
 		p {
-			color: var(--wp--custom--color--white);
+			color: var(--global--color--white);
 		}
 	}
 }

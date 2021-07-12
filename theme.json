@@ -1,6 +1,45 @@
 {
 	"version": 1,
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"area": "footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
+			"name": "header-footer-only",
+			"title": "Header and Footer Only",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		}
+	],
 	"settings": {
+		"border": {
+			"customColor": true,
+			"customRadius": true,
+			"customStyle": true,
+			"customWidth": true
+		},
+		"spacing": {
+			"customMargin": false,
+			"customPadding": false,
+			"units": [ "px", "em", "rem", "vh", "vw" ]
+		},
 		"color": {
 			"link": true,
 			"custom": true,
@@ -16,142 +55,313 @@
 					"name": "White"
 				},
 				{
-					"slug": "light-blue-magenta",
-					"color": "#AE9FF2",
-					"name": "Light Blue Magenta"
+					"slug": "font-heading",
+					"color": "#1e1e1e",
+					"name": "Font Heading"
 				},
 				{
-					"slug": "cyan",
-					"color": "#539b92",
-					"name": "Cyan"
+					"slug": "font-body",
+					"color": "#282828",
+					"name": "Font Body"
 				},
 				{
-					"slug": "medium-dark-brown",
-					"color": "#8F6539",
-					"name": "Medium Dark Brown"
+					"slug": "font-meta",
+					"color": "#757575",
+					"name": "Font Meta"
 				},
 				{
-					"slug": "light-blue",
-					"color": "#C7C9EF",
-					"name": "Light Blue"
+					"slug": "background-primary",
+					"color": "#ffffff",
+					"name": "Background Primary"
 				},
 				{
-					"slug": "light-green-cyan",
-					"color": "#C9D5D3",
-					"name": "Light Green Cyan"
+					"slug": "background-secondary",
+					"color": "#F4F4F4",
+					"name": "Background Secondary"
 				},
 				{
-					"slug": "light-orange",
-					"color": "#FFD1B9",
-					"name": "Light Orange"
+					"slug": "primary",
+					"color": "#1F299C",
+					"name": "Primary"
 				},
 				{
-					"slug": "light-yellow-green",
-					"color": "#C7F151",
-					"name": "Light Yellow Green"
+					"slug": "secondary",
+					"color": "#10154F",
+					"name": "Secondary"
 				},
 				{
-					"slug": "light-pink",
-					"color": "#FFB9CE",
-					"name": "Light Pink"
+					"slug": "border",
+					"color": "#D6D6D6",
+					"name": "Border"
 				},
 				{
-					"slug": "yellow",
-					"color": "#FFCA32",
-					"name": "Yellow"
+					"slug": "border",
+					"color": "#D6D6D6",
+					"name": "Border"
 				},
 				{
-					"slug": "medium-dark-cyan",
-					"color": "#2F5853",
-					"name": "Medium Dark Cyan"
+					"slug": "form-border",
+					"color": "#AEAEAE",
+					"name": "Form Border"
 				},
 				{
-					"slug": "dark-grey",
-					"color": "#222222",
-					"name": "Dark Grey"
-				},
-				{
-					"slug": "medium-grey",
-					"color": "#999999",
-					"name": "Medium Grey"
-				},
-				{
-					"slug": "light-grey",
-					"color": "#f4f4f4",
-					"name": "Light Grey"
-				},
-				{
-					"slug": "light-red-orange",
-					"color": "#F79670",
-					"name": "Light Red Orange"
-				},
-				{
-					"slug": "blue",
+					"slug": "form-border-active",
 					"color": "#0E72FF",
-					"name": "Blue"
+					"name": "Form Border Active"
 				},
 				{
-					"slug": "medium-red-orange",
-					"color": "#EA7152",
-					"name": "Medium Red Orange"
+					"slug": "form-glow",
+					"color": "rgba(14, 114, 255, 0.4)",
+					"name": "Form Border Glow"
 				},
 				{
-					"slug": "medium-green",
-					"color": "#80FCA6",
-					"name": "Medium Green"
+					"slug": "code-background",
+					"color": "#002F33",
+					"name": "Code Background"
 				},
 				{
-					"slug": "medium-cyan-blue",
-					"color": "#7ECAF8",
-					"name": "Medium Cyan Blue"
+					"slug": "code-font",
+					"color": "#4F868C",
+					"name": "Code Font"
 				},
 				{
-					"slug": "medium-brown",
-					"color": "#C59A6D",
-					"name": "Medium Brown"
+					"slug": "notification",
+					"color": "#A3A9F5",
+					"name": "Notification"
 				},
 				{
-					"slug": "light-yellow",
-					"color": "#FFFF50",
-					"name": "Light Yellow"
+					"slug": "success",
+					"color": "#33D1FF",
+					"name": "Success"
 				},
 				{
-					"slug": "blue-magenta",
-					"color": "#4D2CF0",
-					"name": "Blue Magenta"
+					"slug": "error",
+					"color": "#F15A29",
+					"name": "Error"
 				},
 				{
-					"slug": "medium-blue-magenta",
-					"color": "#755CE9",
-					"name": "Medium Blue Magenta"
+					"slug": "star-rating",
+					"color": "#EEA549",
+					"name": "star-rating"
 				}
 			],
 			"gradients": [
-			
+				{
+					"slug": "grayish-blue-to-dark-grayish-blue",
+					"gradient": "linear-gradient(0deg,rgb(91, 108, 114) 0%,rgb(60, 68, 72) 100%)",
+					"name": "Grayish blue to dark grayish blue"
+				},
+				{
+					"slug": "soft-orange-to-desaturated-dark-cyan",
+					"gradient": "linear-gradient(270deg,rgb(67, 92, 103) 0%, rgb(114, 164, 163) 46%,rgb(251, 162, 137) 74%, rgb(252, 202, 164) 100%)",
+					"name": "Soft orange to desaturated dark cyan"
+				},
+				{
+					"slug": "light-grayish-magenta-to-very-dark-grayish-pink",
+					"gradient": "linear-gradient(0deg,rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%,rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%)",
+					"name": "Light grayish magenta to very dark grayish pink"
+				},
+				{
+					"slug": "light-grayish-red-to-dark-red",
+					"gradient": "linear-gradient(0deg,rgb(143, 34, 40) 0%, rgb(250, 110, 115) 50%, rgb(219, 191, 193) 100%)",
+					"name": "Light grayish red to dark red"
+				},
+				{
+					"slug": "slightly-desaturated-cyan-to-very-soft-red",
+					"gradient": "linear-gradient(0deg,rgb(129, 195, 198) 0%, rgb(251, 198, 167) 48%, rgb(251, 198, 167) 100%)",
+					"name": "Slightly desaturated cyan to very soft red"
+				},
+				{
+					"slug": "very-soft-orange-to-very-soft-pink",
+					"gradient": "radial-gradient(circle at bottom, rgb(251, 219, 190) 0%, rgb(252, 170, 161) 26%, rgb(250, 152, 162) 54%,rgb(246, 182, 211) 75%, rgb(250, 232, 243) 100%)",
+					"name": "Very soft orange to very soft pink"
+				},
+				{
+					"slug": "grayish-violet-to-soft-orange",
+					"gradient": "linear-gradient(180deg, rgb(173, 160, 191) 0%, rgb(225, 205, 236) 29%, rgb(243, 206, 225) 51%, rgb(241, 196, 141) 72%, rgb(240, 193, 97) 100%)",
+					"name": "Grayish violet to soft orange"
+				},
+				{
+					"slug": "light-grayish-red-to-dark-grayish-blue",
+					"gradient": "linear-gradient(180deg, rgb(252, 202, 210) 0%, rgb(222, 158, 167) 46%, rgb(118, 119, 135) 100%)",
+					"name": "Light grayish red to dark grayish blue"
+				},
+				{
+					"slug": "light-grayish-red-to-very-soft-blue",
+					"gradient": "linear-gradient(135deg, rgb(237, 204, 211) 0%, rgb(177, 181, 225) 100%)",
+					"name": "Light grayish red to very soft blue"
+				},
+				{
+					"slug": "soft-blue-to-lime-green",
+					"gradient": "linear-gradient(0deg, rgb(104, 134, 254) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 61%, rgb(213, 233, 207) 75%, rgb(8, 179, 82) 100%)",
+					"name": "Soft blue to lime green"
+				},
+				{
+					"slug": "soft-blue-to-dark-moderate-violet",
+					"gradient": "linear-gradient(135deg, rgb(103, 125, 239) 0%, rgb(117, 72, 166) 100%)",
+					"name": "Soft blue to dark moderate violet"
+				},
+				{
+					"slug": "soft-red-to-very-soft-blue",
+					"gradient": "linear-gradient(0deg, rgb(250, 110, 90) 0%, rgb(255, 202, 192) 24%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 62%, rgb(223, 227, 255) 77%, rgb(157, 144, 250) 100%)",
+					"name": "Soft red to very soft blue"
+				},
+				{
+					"slug": "soft-red-to-very-soft-blue",
+					"gradient": "radial-gradient(circle at bottom, rgb(19, 20, 143) 0%, rgb(13, 11, 24) 100%)",
+					"name": "dark-blue-to-mostly-black-blue"
+				},
+				{
+					"slug": "Very soft blue to dark grayish blue",
+					"gradient": "radial-gradient(circle at bottom, rgb(153, 203, 233) 0%, rgb(121, 132, 157) 100%)",
+					"name": "very-soft-blue-to-dark-grayish-blue"
+				},
+				{
+					"slug": "soft-pink-to-mostly-pure-orange",
+					"gradient": "radial-gradient(circle at bottom, rgb(253, 79, 156) 0%, rgb(254, 132, 0) 100%)",
+					"name": "Soft pink to mostly pure orange"
+				},
+				{
+					"slug": "bright-cyan-to-soft-magenta",
+					"gradient": "linear-gradient( 0deg, rgb(48, 203, 247) 0%, rgb(254, 128, 254) 100%)",
+					"name": "Bright cyan to soft magenta"
+				},
+				{
+					"slug": "light-red-to-very-light-pink",
+					"gradient": "linear-gradient( 90deg, rgb(255, 131, 92) 0%, rgb(255, 148, 193) 100%)",
+					"name": "Light red to very light pink"
+				},
+				{
+					"slug": "very-soft-violet-to-very-soft-pink",
+					"gradient": "linear-gradient( 90deg, rgb(198, 163, 245) 0%, rgb(248, 162, 199) 100%)",
+					"name": "Very soft violet to very soft pink"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "696px",
+			"wideSize": "1440px"
+		},
+		"typography": {
+			"customFontSize": false,
+			"customLineHeight": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "'Arimo', sans-serif",
+					"slug": "arimo-font",
+					"name": "Arimo Font"
+				},
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"slug": "system-font",
+					"name": "System Font"
+				},
+				{
+					"fontFamily": "'Monaco', 'Courier 10 Pitch', monospace",
+					"slug": "monospace-font",
+					"name": "Monospace Font"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "XXS",
+					"size": "12px",
+					"slug": "xxs"
+				},
+				{
+					"name": "XS",
+					"size": "14px",
+					"slug": "xs"
+				},
+				{
+					"name": "S",
+					"size": "16px",
+					"slug": "s"
+				},
+				{
+					"name": "M",
+					"size": "20px",
+					"slug": "m"
+				},
+				{
+					"name": "L",
+					"size": "24px",
+					"slug": "l"
+				},
+				{
+					"name": "XL",
+					"size": "28px",
+					"slug": "xl"
+				},
+				{
+					"name": "XXL",
+					"size": "34px",
+					"slug": "xxl"
+				},
+				{
+					"name": "3XL",
+					"size": "40px",
+					"slug": "xxxl"
+				},
+				{
+					"name": "4XL",
+					"size": "48px",
+					"slug": "xxxxl"
+				}
 			]
 		},
 		"custom": {
 			"color": {
 				"black": "var(--wp--preset--color--black)",
 				"white": "var(--wp--preset--color--white)",
-				"main-background": "var(--wp--preset--color--white)",
-				"light-background": "var(--wp--preset--color--light-grey)",
-				"primary": "var(--wp--preset--color--medium-blue-magenta)",
-				"border": "var(--wp--preset--color--medium-grey)",
-				"form-border": "var(--wp--preset--color--medium-grey)",
-				"code-background": "var(--wp--preset--color--light-green-cyan)",
-				"code-text": "var(--wp--preset--color--medium-dark-cyan)",
-				"notification": "var(--wp--preset--color--light-blue-magenta)",
-				"success": "var(--wp--preset--color--cyan)",
-				"error": "var(--wp--preset--color--medium-red-orange)",
-				"star-rating": "var(--wp--preset--color--medium-blue-magenta)",
-				"form-active": "var(--wp--preset--color--blue)",
-				"form-glow": "rgba(14, 114, 255, 0.4)"
+				"font-heading": "var(--wp--preset--color--font-heading)",
+				"font-body": "var(--wp--preset--color--font-body)",
+				"font-meta": "var(--wp--preset--color--font-meta)",
+				"background-primary": "var(--wp--preset--color--background-primary)",
+				"background-secondary": "var(--wp--preset--color--background-secondary)",
+				"primary": "var(--wp--preset--color--primary)",
+				"secondary": "var(--wp--preset--color--secondary)",
+				"border": "var(--wp--preset--color--border)",
+				"form-border": "var(--wp--preset--color--form-border)",
+				"form-border-active": "var(--wp--preset--color--form-border-active)",
+				"form-glow": "var(--wp--preset--color--form-glow)",
+				"code-background": "var(--wp--preset--color--code-background)",
+				"code-font": "var(--wp--preset--color--code-font)",
+				"notification": "var(--wp--preset--color--notification)",
+				"success": "var(--wp--preset--color--success)",
+				"error": "var(--wp--preset--color--error)",
+				"star-rating": "var(--wp--preset--color--star-rating)"
+			},
+			"line-height": {
+				"body": 1.4,
+				"heading": 1
+			},
+			"body": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
+					"lineHeight": "var(--wp--custom--line-height--body)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family-arimo-font)",
+					"fontWeight": 400,
+					"lineHeight": "var(--wp--custom--line-height--heading)"
+				}
+			},
+			"code": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--monospace-font)",
+					"lineHeight": "var(--wp--custom--line-height--body)"
+				}
 			}
-		},
-		"layout": {
-			"contentSize": "696px",
-			"wideSize": "1440px"
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--custom--color--main-background)",
+			"text": "var(--wp--custom--color--text-two)",
+			"link": "var(--wp--custom--color--primary)"
 		}
 	}
 }

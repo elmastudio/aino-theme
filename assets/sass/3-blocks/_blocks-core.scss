@@ -315,7 +315,7 @@ div[class*='wp-block-'] figcaption {
 	@include s-r-4 (margin-top);
 	margin-bottom: 0;
 	text-align: left;
-	color: var(--global--color--text-two);
+	color: var(--global--color--font-body);
 }
 
 .wp-caption.alignleft .wp-caption-text,
@@ -344,7 +344,7 @@ div[class*='wp-block-'] figcaption {
 
 		&.blocks-gallery-image figcaption,
 		&.wp-block-gallery .blocks-gallery-item figcaption {
-			@include font-body-xs;
+			font-size: var(--font-size--body-xs);
 		}
 	}
 
@@ -360,10 +360,6 @@ div[class*='wp-block-'] figcaption {
 .wp-block-quote,
 .wp-block-pullquote {
 	padding: 0;
-
-	p {
-		@include font-body;
-	}
 
 	&.is-style-default {
 		background-color: transparent;
@@ -384,14 +380,13 @@ div[class*='wp-block-'] figcaption {
 
 	&.is-style-large p {
 		margin: 0;
-		@include font-body;
-		@include font-body-xl;
+		font-size: var(--font-size--body-xl);
 		font-style: normal;
 	}
 
 	&.is-style-large cite,
 	& cite {
-		@include font-body-xs;
+		font-size: var(--font-size--body-xs);
 		text-align: left;
 	}
 
@@ -417,14 +412,13 @@ div[class*='wp-block-'] figcaption {
 	& p,
 	&.is-style-solid-color p,
 	&.is-style-solid-color blockquote p {
-		@include font-body;
-		@include font-body-m;
+		font-size: var(--font-size--body-m);
 	}
 
 	&.is-style-solid-color,
 	&.is-style-solid-color {
 		padding: $s-6;
-		background-color: var(--global--color--background);
+		background-color: var(--global--color--background-primary);
 		clear: both;
 
 		blockquote {
@@ -546,7 +540,7 @@ div[class*='wp-block-'] figcaption {
 		border-bottom: none;
 
 		tbody tr:nth-child(odd) {
-			background-color: var(--global--color--background);
+			background-color: var(--global--color--background-primary);
 			border-bottom: none;
 		}
 
@@ -559,8 +553,8 @@ div[class*='wp-block-'] figcaption {
 /* Verse */
 
 .wp-block-verse {
-	color: var(--global--color--text-two);
-	background: var(--global--color--background);
+	color: var(--global--color--font-body);
+	background: var(--global--color--background-primary);
 }
 
 /* Separator */
@@ -584,10 +578,8 @@ div[class*='wp-block-'] figcaption {
 }
 
 .wp-block-separator.is-style-dots:before {
-	color: var(--global--color--text-two);
+	color: var(--global--color--font-body);
 	content: "\00b7 \00b7 \00b7";
-	font-family: serif;
-	@include font-body-l;
 	letter-spacing: 1em;
 	padding-left: 1em;
 }
@@ -615,7 +607,7 @@ div[class*='wp-block-'] figcaption {
 }
 
 .wp-block-latest-comments__comment {
-	@include font-body-s;
+	font-size: var(--font-size--body-s);
 }
 
 .wp-block-search button[type="submit"] {
@@ -625,7 +617,7 @@ div[class*='wp-block-'] figcaption {
 .entry-content .wp-block-calendar {
 
 	caption {
-		color: var(--global--color--text-one);
+		color: var(--global--color--font-heading);
 		margin-bottom: $s-4;
 		text-align: center;
 	}
@@ -633,21 +625,21 @@ div[class*='wp-block-'] figcaption {
 	table {
 
 		margin-bottom: $s-4;
-		background: var(--wp--custom--color--white);
+		background: var(--global--color--white);
 
 		th {
-			@include font-bold;
 			background: transparent;
 			text-align: center;
+			font-weight: bold;
 		}
 
 		tbody {
-			color: var(--global--color--text-two);
+			color: var(--global--color--font-body);
 			border-right: 1px solid var(--global--color--border);
 		}
 
 		td#today {
-			background: var(--global--color--background);
+			background: var(--global--color--background-primary);
 		}
 
 		tbody td,
@@ -659,24 +651,22 @@ div[class*='wp-block-'] figcaption {
 }
 
 .wp-block-latest-comments__comment-excerpt p {
-	@include font-body-s;
+	font-size: var(--font-size--body-s);
 	margin: $s-2 0 $s-6;
 }
 
 /* Preformatted */
-
 .wp-block-preformatted,
 .wp-block-preformatted.has-background,
 .wp-block-code {
 	overflow: auto;
 	@include s-r-6(padding);
 	@include s-r-6(margin-bottom);
-	@include font-code;
 }
 
 .wp-block-code {
 	background: var(--global--color--code-background);
-	color: var(--global--color--code-text);
+	color: var(--global--color--code-font);
 
 	code {
 		overflow-x: auto;
@@ -687,7 +677,7 @@ div[class*='wp-block-'] figcaption {
 }
 
 .wp-block-preformatted {
-	background-color: var(--global--color--code-text);
+	background-color: var(--global--color--code-font);
 	color: var(--global--color--code-background);
 }
 

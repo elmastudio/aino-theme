@@ -110,7 +110,7 @@ padding-right: 0;
 .wc-block-components-totals-coupon__form .wc-block-components-text-input label,
 .wc-block-components-form .wc-block-components-text-input label,
 .wc-block-components-text-input label {
-	@include font-body-m;
+	font-size: var(--font-size--body-m);
 }
 
 .wc-block-components-shipping-calculator-address .wc-block-components-text-input label, 
@@ -119,7 +119,7 @@ padding-right: 0;
 	position: absolute;
 	transform: translateY(1.25rem);
 	line-height: var(--global--line-height-reset);
-	color: var(--global--color--text-one);
+	color: var(--global--color--font-body);
 	margin: 0 0 0 1.25rem;
 	max-width: calc(100% - 32px);
 }
@@ -135,11 +135,11 @@ padding-right: 0;
 	input[type=text],
 	input[type=url],
 	.components-custom-select-control__button {
-		@include font-body-m;
+		font-size: var(--font-size--body-m);
 		border-radius: var(--global--border-radius-xxs);
 		border: 1px solid var(--global--color--form-border);
 		line-height: var(--global--line-height-body);
-		color: var(--global--color--text-one);
+		color: var(--global--color--font-body);
 		font-family: inherit;
 		margin: 0;
 		box-sizing: border-box;
@@ -161,7 +161,7 @@ padding-right: 0;
 
 		p {
 			line-height: var(--global--line-height-reset);
-			@include font-body-2xs;
+			font-size: var(--font-size--body-xxs);
 			margin: 0;
 			@include s-r-1(padding-top);
 		}
@@ -173,7 +173,7 @@ padding-right: 0;
 	&.is-active input[type="number"],
 	&.is-active input[type="email"] {
 		padding: 1rem 0 0 1.25rem;
-		border: 1px solid var(--global--color--form-active);
+		border: 1px solid var(--global--color--form-border-active);
 	}
 
 	&.is-active label {
@@ -207,9 +207,9 @@ padding-right: 0;
 		transform: none;
 
 		&:focus {
-			border-color: var(--global--color--form-active);
+			border-color: var(--global--color--form-border-active);
 			box-shadow: 0 0 0 4px var(--global--color--form-glow);
-			background: var(--global--color--form-active);
+			background: var(--global--color--form-border-active);
 		}
 
 		&__mark {
@@ -217,10 +217,10 @@ padding-right: 0;
 		}
 
 		&:checked {
-			border-color: var(--global--color--form-active);
-			background: var(--global--color--form-active);
-			fill: var(--wp--custom--color--white);
-			color: var(--wp--custom--color--white);
+			border-color: var(--global--color--form-border-active);
+			background: var(--global--color--form-border-active);
+			fill: var(--global--color--white);
+			color: var(--global--color--white);
 		}
 
 		&:not(:checked) + .wc-block-components-checkbox__mark {
@@ -248,11 +248,11 @@ padding-right: 0;
 	height: 3.75rem;
 
 	label.components-custom-select-control__label {
-		@include font-body-m;
+		font-size: var(--font-size--body-m);
 	}
 
 	.components-custom-select-control__button {
-		@include font-body-m;
+		font-size: var(--font-size--body-m);
 		height: 3.75rem;
 		padding: 1rem 0 0 1.25rem;
 		line-height: var(--global--line-height-body);
@@ -289,7 +289,7 @@ padding-right: 0;
 		}
 
 		&:hover {
-			@include font-body-m;
+			font-size: var(--font-size--body-m);
 			line-height: var(--global--line-height-body);
 			transform: none;
 		}
@@ -297,11 +297,11 @@ padding-right: 0;
 		&:focus,
 		&:active,
 		&:hover {
-			@include font-body-m;
+			font-size: var(--font-size--body-m);
 			line-height: var(--global--line-height-body);
 			transform: none;
 			height: 3.75rem;
-			color: var(--global--color--text-one);
+			color: var(--global--color--font-body);
 			padding: $s-4 0 0 1.25rem;
 		}
 	}
@@ -309,7 +309,7 @@ padding-right: 0;
 	.components-custom-select-control__menu {
 		padding: 0;
 		margin: 0;
-		@include font-body-s;
+		font-size: var(--font-size--body-s);
 		border-color: var(--global--color--form-border);
 
 		.components-custom-select-control__item {
@@ -336,7 +336,7 @@ padding-right: 0;
 		.wc-block-components-state-input {
 			
 			label.components-custom-select-control__label {
-				color: var(--global--color--text-one);
+				color: var(--global--color--font-body);
 				line-height: var(--global--line-height-body);
 			}
 		}
@@ -384,7 +384,7 @@ padding-right: 0;
 	.wc-block-sort-select__select {
 		height: $s-8;
 		min-width: 12.5rem;
-		background: var(--wp--custom--color--white);
+		background: var(--global--color--white);
 		border: 1px solid var(--global--color--form-border);
 		padding: $s-2 87px $s-2 1.25rem;
 
@@ -394,7 +394,7 @@ padding-right: 0;
 		}
 
 		label {
-			@include font-body-m;
+			font-size: var(--font-size--body-m);
 			line-height: var(--global--line-height-body);
 		}
 	}
@@ -430,7 +430,7 @@ padding-right: 0;
 }
 
 .wc-block-components-validation-error {
-	@include font-body-2xs;
+	font-size: var(--font-size--body-xxs);
 	color: var(--global--color--error);
 	max-width: 100%;
 	position: absolute;
@@ -494,14 +494,14 @@ padding-right: 0;
 	z-index: 100;
 	margin: 0;
 	border-radius: var(--global--border-radius-s);
-	color: var(--global--color--text-one);
-	background: var(--wp--custom--color--white);
+	color: var(--global--color--font-heading);
+	background: var(--global--color--white);
 }
 
 .wc-block-components-sale-badge {
 	@include s-r-1(margin-top);
 	background: none;
-	border: 1px solid var(--global--color--text-one);
+	border: 1px solid var(--global--color--font-heading);
 }
 
 .onsale {
@@ -529,7 +529,7 @@ padding-right: 0;
 // WC buttons
 .wc-block-components-button:not(.is-link) {
 	font-weight: normal;
-	@include font-body-m;
+	font-size: var(--font-size--body-m);
 	padding: 18px 20px;
 	@include transition-default;
 }
@@ -567,9 +567,9 @@ padding-right: 0;
 			width: 1.5rem;
 			height: 1.5rem;
 			min-height: auto;
-			background: var(--wp--custom--color--black);
-			color: var(--wp--custom--color--white);
-			fill: var(--wp--custom--color--white);
+			background: var(--global--color--black);
+			color: var(--global--color--white);
+			fill: var(--global--color--white);
 			border-radius: var(--global--border-radius-round);
 
 			svg {
