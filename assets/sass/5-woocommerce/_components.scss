@@ -119,7 +119,7 @@ padding-right: 0;
 	position: absolute;
 	transform: translateY(1.25rem);
 	line-height: var(--global--line-height-reset);
-	color: var(--global--color--font-body);
+	color: var(--global--color--font-secondary);
 	margin: 0 0 0 1.25rem;
 	max-width: calc(100% - 32px);
 }
@@ -139,7 +139,7 @@ padding-right: 0;
 		border-radius: var(--global--border-radius-xxs);
 		border: 1px solid var(--global--color--form-border);
 		line-height: var(--global--line-height-body);
-		color: var(--global--color--font-body);
+		color: var(--global--color--font-secondary);
 		font-family: inherit;
 		margin: 0;
 		box-sizing: border-box;
@@ -219,8 +219,8 @@ padding-right: 0;
 		&:checked {
 			border-color: var(--global--color--form-border-active);
 			background: var(--global--color--form-border-active);
-			fill: var(--global--color--white);
-			color: var(--global--color--white);
+			fill: var(--global--color--light-form-select-fill);
+			color: var(--global--color--light-form-select-fill);
 		}
 
 		&:not(:checked) + .wc-block-components-checkbox__mark {
@@ -276,7 +276,7 @@ padding-right: 0;
 			height: 7px;
 			width: 7px;
 			border-style: solid;
-			border-color: black;
+			border-color: #000000;
 			border-width: 0px 1px 1px 0px;
 			transform: rotate(45deg);
 			transition: border-width 150ms ease-in-out;
@@ -301,7 +301,7 @@ padding-right: 0;
 			line-height: var(--global--line-height-body);
 			transform: none;
 			height: 3.75rem;
-			color: var(--global--color--font-body);
+			color: var(--global--color--font-secondary);
 			padding: $s-4 0 0 1.25rem;
 		}
 	}
@@ -336,7 +336,7 @@ padding-right: 0;
 		.wc-block-components-state-input {
 			
 			label.components-custom-select-control__label {
-				color: var(--global--color--font-body);
+				color: var(--global--color--font-secondary);
 				line-height: var(--global--line-height-body);
 			}
 		}
@@ -359,7 +359,7 @@ padding-right: 0;
 		height: 7px;
 		width: 7px;
 		border-style: solid;
-		border-color: black;
+		border-color: #000000;
 		border-width: 0px 1px 1px 0px;
 		transform: rotate(45deg);
 		transition: border-width 150ms ease-in-out;
@@ -384,7 +384,7 @@ padding-right: 0;
 	.wc-block-sort-select__select {
 		height: $s-8;
 		min-width: 12.5rem;
-		background: var(--global--color--white);
+		background: var(--global--color--light-form-background);
 		border: 1px solid var(--global--color--form-border);
 		padding: $s-2 87px $s-2 1.25rem;
 
@@ -494,14 +494,14 @@ padding-right: 0;
 	z-index: 100;
 	margin: 0;
 	border-radius: var(--global--border-radius-s);
-	color: var(--global--color--font-heading);
-	background: var(--global--color--white);
+	color: var(--global--color--light-badge-color);
+	background: var(--global--color--light-badge-background);
 }
 
 .wc-block-components-sale-badge {
 	@include s-r-1(margin-top);
 	background: none;
-	border: 1px solid var(--global--color--font-heading);
+	border: 1px solid var(--global--color--light-badge-color);
 }
 
 .onsale {
@@ -567,9 +567,9 @@ padding-right: 0;
 			width: 1.5rem;
 			height: 1.5rem;
 			min-height: auto;
-			background: var(--global--color--black);
-			color: var(--global--color--white);
-			fill: var(--global--color--white);
+			background: #000000;
+			color: #ffffff;
+			fill: #ffffff;
 			border-radius: var(--global--border-radius-round);
 
 			svg {

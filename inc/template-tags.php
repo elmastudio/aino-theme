@@ -462,35 +462,12 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'single-page';
 	}
 
-	if ( is_page_template( 'page-templates/tpl-fullwidth.php' ) ) {
-		$classes[] = 'tpl-fullwidth';
-	}
-
 	if ( is_page_template( 'page-templates/block-shop.php' ) ) {
 		$classes[] = 'tpl-shop';
 	}
 
-	if ( is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
-		$classes[] = 'tpl-fullwidth';
-		$classes[] = 'tpl-fullwidth-notitle';
-	}
-
 	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) ) {
 		$classes[] = 'tpl-fullscreen';
-	}
-
-	if ( is_page_template( 'page-templates/tpl-fullscreen-light.php' ) ) {
-		$classes[] = 'tpl-fullscreen';
-		$classes[] = 'header-light';
-	}
-
-	if ( is_page_template( 'page-templates/tpl-hero.php' ) ) {
-		$classes[] = 'tpl-hero';
-	}
-
-	if ( is_page_template( 'page-templates/tpl-hero-light.php' ) ) {
-		$classes[] = 'tpl-hero';
-		$classes[] = 'header-light';
 	}
 
 	// Classes for Menus.

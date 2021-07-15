@@ -32,23 +32,6 @@ li > ul, li > ol {
 .entry-content,
 .comment-content {
 
-	ul, ol {
-	padding-left: $s-6;
-
-		@include s-r-8(padding-bottom);
-
-		@include breakpoint(sm) {
-			padding-left: $s-6;
-		}
-	}
-
-	ul ul,
-	ol ol,
-	ol ul,
-	ul ol {
-		padding-bottom: 0;
-	}
-
 		ul ul {
 		list-style: circle;
 	}

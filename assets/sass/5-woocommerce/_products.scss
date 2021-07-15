@@ -56,7 +56,7 @@
 			font-size: var(--font-size--body-s);
 			line-height: var(--global--line-height-reset);
 			background: none !important;
-			color: var(--global--color--font-body);
+			color: var(--global--color--font-secondary);
 			padding: 0;
 			text-align: left;
 			display: inline;
@@ -186,8 +186,8 @@
 		width: auto;
 		border: 0;
 		border-radius: var(--global--border-radius-s);
-		color: var(--global--color--font-heading);
-		background: var(--global--color--white);
+		color: var(--global--color--font-primary);
+		background: var(--global--color--light-badge-background);
 		line-height: var(--global--line-height-reset);
 		text-transform: none;
 		font-weight: normal;

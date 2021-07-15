@@ -560,8 +560,6 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer/defaults.php';
 require get_template_directory() . '/inc/customizer/customizer.php';
-require get_template_directory() . '/inc/customizer/customizer-css.php';
-require get_template_directory() . '/inc/customizer/customizer-editor.php';
 require get_template_directory() . '/inc/customizer/sanitization-callbacks.php';
 
 // SVG icons functions and filters.
@@ -580,6 +578,8 @@ require_once get_template_directory() . '/inc/classes/class-tgm-plugin-activatio
 
 add_action( 'tgmpa_register', 'aino_register_required_plugins' );
 
+/** Add a checkbox to hide the Site Editor */
+require get_template_directory() . '/inc/disable-site-editor.php';
 
 /**
  * Register the required plugins for this theme.
@@ -591,7 +591,7 @@ function aino_register_required_plugins() {
 	$plugins = array(
 
 		array(
-			'name'      => 'Aino Blocks - Creative Gutenberg Blocks',
+			'name'      => 'Aino Blocks - Creative Block Collection',
 			'slug'      => 'aino-blocks',
 			'required'  => false,
 		),

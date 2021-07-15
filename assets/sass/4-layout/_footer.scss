@@ -2,8 +2,8 @@
 	background-color: var(--global--color--background-primary);
 
 	.textwidget p {
-		color: var(--global--color--font-body);
-		fill: var(--global--color--font-body);
+		color: var(--global--color--font-secondary);
+		fill: var(--global--color--font-secondary);
 	}
 
 	.footer-wrap {
@@ -95,7 +95,7 @@
 			}
 
 			.site-info {
-				color: var(--global--color--font-body);
+				color: var(--global--color--font-secondary);
 				text-align: center;
 
 				@include breakpoint(sm) {
@@ -126,7 +126,7 @@
 
 				a {
 					padding: 0;
-					color: var(--global--color--font-body);
+					color: var(--global--color--font-secondary);
 				}
 			}
 
@@ -215,6 +215,8 @@
 	}
 }
 
+// Block Theme Footer
+
 body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer-nav {
 
 	@include breakpoint(sm) {
@@ -222,27 +224,21 @@ body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer
 	}
 }
 
-/* Light Footer Style ---------------------------- */
-.footer-light {
+.site-footer {
 
-	.site-footer,
-	.site-footer .footer-wrap .footer-info .site-info,
-	.site-footer .footer-wrap .footer-info .site-info a,
-	.site-footer .footer-wrap .footer-info .site-info span,
-	.site-footer .widget-title,
-	.textwidget p,
-	.textwidget p a,
-	.footer-widget-wrap a,
-	.site-footer .menu-social-container .icon {
-		color: var(--global--color--white);
-		fill: var(--global--color--white);
-	}
+	.wp-block-ainoblocks-grid-item {
 
-	.site-footer {
-		.footer-wrap .footer-info {
-			border-color: var(--global--color--white);
+		.wp-block-group:not(:last-child) {
+			padding-bottom: 4rem;
+
+			@include breakpoint(md) {
+				padding-bottom: 0;
+			}
+
+			@include breakpoint(lg) {
+				padding-bottom: inherit;
+				background :green;
+			}
 		}
-	
 	}
 }
-

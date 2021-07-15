@@ -10,6 +10,8 @@
 
 get_header(); ?>
 
+<?php echo gutenberg_block_template_part( 'header' ); ?>
+
 <?php
 while (
 	have_posts() ) :
@@ -20,5 +22,4 @@ while (
 endwhile; // End of the loop.
 ?>
 
-<?php
-get_footer();
+<?php echo gutenberg_block_template_part( 'footer' ); ?>

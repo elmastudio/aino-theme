@@ -1,0 +1,28 @@
+.wp-block-cover {
+
+	&.alignwide {
+		width: calc(100% - 2rem);
+
+		@include breakpoint(sm) {
+			width: calc(100% - 4rem);
+		}
+
+		@include breakpoint(lg) {
+			width: calc(100% - 6rem);
+		}
+
+		@include breakpoint(xl) {
+			max-width: var(--global--wide-content-width);
+		}
+	}
+
+	.wp-block-cover__inner-container {
+
+		width: 100%;
+		padding: $s-9 0;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

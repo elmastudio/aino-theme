@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<?php echo gutenberg_block_template_part( 'header' ); ?>
+
 <div id="primary" class="content-area">
 
 	<?php
@@ -52,5 +54,4 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-	<?php
-	get_footer();
+<?php echo gutenberg_block_template_part( 'footer' ); ?>

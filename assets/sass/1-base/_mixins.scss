@@ -305,12 +305,12 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-primary {
-	color: var(--global--color--white);
-	fill: var(--global--color--white);
+	color: var(--global--color--light-button-color-primary);
+	fill: var(--global--color--light-button-color-primary);
 	background-color: var(--global--color--primary);
 
 	&:hover {
-		background-color: var(--global--color--primary);
+		background-color: var(--global--color--secondary);
 	}
 }
 
@@ -330,8 +330,8 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-naked {
 	display: inline-block;
 	font-weight: normal;
-	color: var(--global--color--font-heading);
-	fill: var(--global--color--font-heading);
+	color: var(--global--color--font-primary);
+	fill: var(--global--color--font-primary);
 
 	&:hover {
 		color: var(--global--color--primary);
@@ -463,13 +463,13 @@ $var: true !default; // Can be overridden elsewhere
 /* Pills */
 @mixin pill {
 	background: transparent;
-	color: var(--global--color--font-heading);
-	border: 1px solid var(--global--color--font-heading);
+	color: var(--global--color--font-primary);
+	border: 1px solid var(--global--color--font-primary);
 	line-height: var(--global--line-height-reset);
 
 	&:hover {
-		color: var(--global--color--white);
-		background: var(--global--color--font-heading);
+		color: var(--global--color--light-form-background);
+		background: var(--global--color--font-primary);
 	}
 }
 

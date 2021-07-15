@@ -43,7 +43,7 @@
 		height: $s-7;
 		margin: 0;
 		padding: 0 0 0 $s-2;
-		color: var(--global--color--font-body);
+		color: var(--global--color--font-secondary);
 
 		@include breakpoint(sm) {
 			@include flexbox;
@@ -103,7 +103,7 @@
 		cursor: pointer;
 		margin: 0;
 		padding: 0;
-		color: var(--global--color--font-body);
+		color: var(--global--color--font-secondary);
 
 		@include breakpoint(md) {
 			padding: 0;
@@ -286,9 +286,9 @@
 	right: $s-4;
 	padding: 0 17px;
 	border-radius: 0;
-	color: var(--global--color--font-heading);
+	color: var(--global--color--font-primary);
 	background: transparent;
-	border: 1px solid var(--global--color--font-heading);
+	border: 1px solid var(--global--color--font-primary);
 
 	@include breakpoint(sm) {
 		right: $s-7;
@@ -310,14 +310,14 @@ button.close-nav-toggle {
 	margin-left: $s-4;
 	padding: 0;
 	border-radius: 0;
-	color: var(--global--color--font-heading);
+	color: var(--global--color--font-primary);
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	width: 64px;
 	border-radius: 0;
 	background: transparent;
-	border: 1px solid var(--global--color--font-heading);
+	border: 1px solid var(--global--color--font-primary);
 	border-radius: 18px;
 
 	@include breakpoint(sm) {
@@ -379,7 +379,7 @@ ul.primary-menu {
 			position: absolute;
 			top: 0;
 			width: 100%;
-			fill: var(--global--color--font-heading);
+			fill: var(--global--color--font-primary);
 		}
 	}
 
@@ -414,7 +414,7 @@ ul.primary-menu {
 	}
 
 	a {
-		color: var(--global--color--font-heading);
+		color: var(--global--color--font-primary);
 		display: block;
 		text-decoration: none;
 		line-height: 1;
@@ -427,7 +427,7 @@ ul.primary-menu {
 	ul {
 		font-size: var(--font-size--body-xs);
 		background: var(--global--color--background-primary);
-		color: var(--global--color--font-heading);
+		color: var(--global--color--font-primary);
 		padding: $s-6;
 		border: 1px solid var(--global--color--border);
 		position: absolute;
@@ -523,7 +523,6 @@ ul.primary-menu {
 /*	Menu Modal
 /* -------------------------------------------------------------------------- */
 .menu-modal {
-	background: var(--global--color--white);
 	display: none;
 	opacity: 0;
 	overflow-y: auto;
@@ -690,7 +689,7 @@ ul.primary-menu {
 button.sub-menu-toggle {
 	margin: 0 $s-4 0 0;
 	padding: 0 0 0 $s-4;
-	color: var(--global--color--font-heading);
+	color: var(--global--color--font-primary);
 	border-radius: 0;
 	position: absolute;
 	right: 0;
@@ -897,33 +896,33 @@ button.sub-menu-toggle {
 	.nav-toggle .icon-toggle-open,
 	ul.primary-menu .dropdown .icon,
 	.header-cta-wrap a {
-		color: var(--global--color--white);
-		fill: var(--global--color--white);
+		color: var(--global--color--light-button-color-primary);
+		fill: var(--global--color--light-button-color-primary);
 	}
 
 	.header-cta-wrap a {
 
 		&:hover {
-			color: var(--global--color--white);
-			fill: var(--global--color--white);
+			color: var(--global--color--light-button-color-primary);
+			fill: var(--global--color--light-button-color-primary);
 		}
 	}
 
 	.nav-toggle {
-		border: 1px solid var(--global--color--white);
+		border: 1px solid var(--global--color--light-button-color-primary);
 	}
 
 	.primary-menu .sub-menu .dropdown .icon {
-		fill: var(--global--color--font-heading);
+		fill: var(--global--color--font-primary);
 	}
 
 	.btn-outline a {
-		box-shadow: inset 0px 0px 0px 1px var(--global--color--white);
+		box-shadow: inset 0px 0px 0px 1px var(--global--color--light-button-color-primary);
 	}
 
 	&.menu-bold {
 		.btn-outline a {
-			box-shadow: inset 0px 0px 0px 2px var(--global--color--white);
+			box-shadow: inset 0px 0px 0px 2px var(--global--color--light-button-color-primary);
 		}
 	}
 
@@ -935,26 +934,26 @@ button.sub-menu-toggle {
 		.btn-naked a,
 		.site-header .menu-social-container .icon,
 		.header-cta-wrap a {
-			color: var(--global--color--white);
-			fill: var(--global--color--white);
+			color: var(--global--color--light-button-color-primary);
+			fill: var(--global--color--light-button-color-primary);
 		}
 
 		.header-inner .toggle .icon {
-			fill: var(--global--color--white);
+			fill: var(--global--color--light-button-color-primary);
 		}
 
 		.primary-menu .icon::before,
 		.primary-menu .icon::after {
-			background-color: var(--global--color--white);
+			background-color: var(--global--color--light-button-color-primary);
 		}
 
 		.primary-menu .sub-menu .icon::before,
 		.primary-menu .sub-menu .icon::after {
-			background-color: var(--global--color--font-heading);
+			background-color: var(--global--color--font-primary);
 		}
 
 		.primary-menu .sub-menu a {
-			color: var(--global--color--font-heading);
+			color: var(--global--color--font-primary);
 		}
 	}
 }

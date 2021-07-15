@@ -1,40 +1,38 @@
 <?php
 /**
- * Block Patterns
- *
- * @link https://developer.wordpress.org/reference/functions/register_block_pattern/
- * @link https://developer.wordpress.org/reference/functions/register_block_pattern_category/
+ * Aino Theme : Building Block Patterns
  *
  * @package Aino
+ * @since   1.5.0
  */
+if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 
-/**
- * Register Block Pattern Category.
- */
-function aino_register_pattern_categories() {
+	function aino_register_block_patterns() {
 
-	register_block_pattern_category(
-		'aino-building-blocks',
-		array( 'label' => __( 'Aino Building Block', 'aino' ) )
-	);
-}
+		if ( function_exists( 'register_block_pattern_category' ) ) {
+			register_block_pattern_category(
+				'aino-abouts',
+				array( 'label' => __( 'Aino Abouts', 'aino' ) )
+			);
+		}
 
-add_action( 'init', 'aino_register_pattern_categories' );
+		if ( function_exists( 'register_block_pattern' ) ) {
+			$block_patterns = array(
+				'about-one',
+			);
 
-/**
- * Register Block Patterns.
- */
-function aino_register_patterns() {
+			if ( class_exists( 'WP_Block_Type_Registry' ) ) {
+				$block_patterns[] = 'about-one';
+			}
 
-	register_block_pattern(
-		'aino/latest-posts',
-		array(
-			'title'       => __( 'Latest Posts', 'aino' ),
-			'description' => _x( 'Two horizontal buttons, the left button is filled in, and the right button is outlined.', 'Block pattern description', 'aino' ),
-			'categories'  => array( 'aino-building-blocks' ),
-			'content'     => '',
-		)
-	);
-}
+			foreach ( $block_patterns as $block_pattern ) {
+				register_block_pattern(
+					'aino/' . $block_pattern,
+					require __DIR__ . '/patterns/' . $block_pattern . '.php'
+				);
+			}
+		}
+	}
+endif;
 
-add_action( 'init', 'aino_register_patterns' );
+add_action( 'init', 'aino_register_block_patterns', 9 );

@@ -1,49 +1,27 @@
 body {
 
 	/* Global Colors */
-	--global--color--black: var(--wp--custom--color--black);
-	--global--color--white: var(--wp--custom--color--white);
-	--global--color--background-primary: var(--wp--custom--color--background-primary);
-	--global--color--background-secondary: var(--wp--custom--color--background-secondary);
-	--global--color--primary: var(--wp--custom--color--primary);
-	--global--color--secondary: var(--wp--custom--color--secondary);
-	--global--color--font-heading: var(--wp--custom--color--font-heading);
-	--global--color--font-body: var(--wp--custom--color--font-body);
-	--global--color--border: var(--wp--custom--color--border);
-	--global--color--form-border: var(--wp--custom--color--form-border);
-	--global--color--form-glow: var(--wp--custom--color--form-glow);
-	--global--color--star-rating: var(--wp--custom--color--star-rating);
-	--global--color--code-background: var(--wp--custom--color--code-background);
-	--global--color--code-font: var(--wp--custom--color--code-font);
-	--global--color--notification: var(--wp--custom--color--notification);
-	--global--color--success: var(--wp--custom--color--success);
-	--global--color--error: var(--wp--custom--color--error);
-	--global--color--form-border-active: var(--wp--custom--color--form-border-active);
-}
-
-@media only screen {
-
-	.is-dark-theme {
-		--global--color--primary: var(--global--color--white);
-		--global--color--font-heading: var(--global--color--white);
-		--global--color--font-body: var(--global--color--white);
-		--global--color--border: var(--global--color--white);
-		--global--color--background-primary: var(--global--color--black);
-	}
-
-	body {
-
-		&.is-dark-theme {
-			color: var(--global--color--font-body);
-
-			&.default-main-bg {
-				background-color: var(--global--color--background-primary);
-
-				.menu-modal-inner,
-					ul.primary-menu ul {
-						background-color: var(--global--color--background-primary);
-				}
-			}
-		}
-	}
+	--global--color--background-primary: var(--wp--custom--color--light-background-primary);
+	--global--color--background-secondary: var(--wp--custom--color--light-background-secondary);
+	--global--color--primary: var(--wp--custom--color--light-primary);
+	--global--color--secondary: var(--wp--custom--color--light-secondary);
+	--global--color--font-primary: var(--wp--custom--color--light-font-primary);
+	--global--color--font-secondary: var(--wp--custom--color--light-font-secondary);
+	--global--color--font-tertiary: var(--wp--custom--color--light-font-tertiary);
+	--global--color--border: var(--wp--custom--color--light-border);
+	--global--color--form-border: var(--wp--custom--color--light-form-border);
+	--global--color--form-glow: var(--wp--custom--color--light-form-glow);
+	--global--color--star-rating: var(--wp--custom--color--light-star-rating);
+	--global--color--code-background: var(--wp--custom--color--light-code-background);
+	--global--color--code-color: var(--wp--custom--color--light-code-color);
+	--global--color--notification: var(--wp--custom--color--light-notification);
+	--global--color--success: var(--wp--custom--color--light-success);
+	--global--color--error: var(--wp--custom--color--light-error);
+	--global--color--form-border-active: var(--wp--custom--color--light-form-border-active);
+	--global--color--light-form-select-fill: var(--wp--custom--color--light-form-select-fill);
+	--global--color--light-form-background: var(--wp--custom--color--light-form-background);
+	--global--color--light-badge-background: var(--wp--custom--color--light-badge-background);
+	--global--color--light-badge-color: var(--wp--custom--color--light-badge-color);
+	--global--color--light-button-color-primary: var(--wp--custom--color--light-button-color-primary);
+	--global--color--light-button-color-secondary: var(--wp--custom--color--light-button-color-secondary);
 }

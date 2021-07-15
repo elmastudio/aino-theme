@@ -16,7 +16,7 @@ input[type="color"],
 textarea {
 	width: 100%;
 	box-sizing: border-box;
-	background-color: var(--global--color--white);
+	background-color: var(--global--color--light-form-background);
 	border: 1px solid var(--global--color--form-border);
 	outline: none;
 	line-height: var(--global--line-height-reset);
@@ -29,23 +29,23 @@ textarea {
 
 	&:active,
 	&:focus {
-		color: var(--global--color--font-body);
+		color: var(--global--color--font-secondary);
 		border-color: var(--global--color--form-border-active);
 		box-shadow: 0 0 0 4px var(--global--color--form-glow);
 	}
 
 	.light-form & {
-		border: 1px solid var(--global--color--white);
-		color: var(--global--color--white);
+		border: 1px solid #ffffff;
+		color: #ffffff;
 
 		@include input-placeholder {
-			color: var(--global--color--font-body);
+			color: var(--global--color--font-secondary);
 		}
 
 		&:active,
 		&:focus {
-			color: var(--global--color--black);
-			border-color: var(--global--color--white);
+			color: var(--global--color--font-secondary);
+			border-color: #ffffff;
 		}
 	}
 }
@@ -67,7 +67,7 @@ textarea {
 textarea {
 	width: 100%;
 	background-color: transparent;
-	background: var(--global--color--white);
+	background: var(--global--color--light-form-background);
 	border: 1px solid var(--global--color--form-border);
 	padding: $s-4 $s-6;
 	outline: none;
@@ -112,11 +112,11 @@ select,
 }
 
 .select2-results__options {
-	background: var(--global--color--font-body);
+	background: var(--global--color--font-secondary);
 }
 
 .select2-selection__arrow svg {
-	color: var(--global--color--font-body);
+	color: var(--global--color--font-secondary);
 }
 
 .select2-search--dropdown {
@@ -126,7 +126,7 @@ select,
 // Checkboxes
 .checkbox,
 form .comment-form-cookies-consent {
-	color: var(--global--color--font-body);
+	color: var(--global--color--font-secondary);
 	display: flex;
 	align-items: center;
 }
@@ -138,7 +138,7 @@ input[type="radio"] {
 	width: $s-6;
 	height: $s-6;
 	border: 1px solid var(--global--color--form-border);
-	background-color: var(--global--color--white);
+	background-color: var(--global--color--light-form-background);
 	border-radius:50%;
 	outline:none;
 	@include s-r-2 (margin-right);
@@ -167,8 +167,8 @@ input[type='checkbox'] {
 	&:checked:before {
 		border-color: var(--global--color--form-border-active);
 		background: var(--global--color--form-border-active);
-		fill: var(--global--color--white);
-		color: var(--global--color--white);
+		fill: var(--global--color--light-form-select-fill);
+		color: var(--global--color--light-form-select-fill);
 	}
 
 	&:after {
@@ -206,7 +206,7 @@ input[type='radio'] {
 		width: 6px;
 		height: 6px;
 		border-radius: 100px;
-		background-color: var(--global--color--white);
+		background-color: var(--global--color--light-form-select-fill);
 	}
 }
 
@@ -214,7 +214,7 @@ input[type='radio'] {
 .comment-form-cookies-consent {
 	label {
 		margin-bottom: 0;
-		color: var(--global--color--font-body);
+		color: var(--global--color--font-secondary);
 	}
 }
 
@@ -225,11 +225,10 @@ button[type="submit"] {
 	clear: both;
 
 	.light-btn & {
-		background: var(--global--color--white);
-		color: var(--global--color--font-body);
+		background: #ffffff;
+		color: var(--global--color--font-secondary);
 	}
 }
-
 
 // Default comment form
 .color-notice,
@@ -345,7 +344,7 @@ form p.comment-form-comment {
 
 	.light-form {
 		p {
-			color: var(--global--color--white);
+			color: var(--global--color--light-button-color-primary);
 		}
 	}
 }

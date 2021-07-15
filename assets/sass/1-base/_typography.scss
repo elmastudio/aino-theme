@@ -7,7 +7,7 @@ table,
 textarea {
 	font-family: var(--body--font-family);
 	line-height: var(--global--line-height--body);
-	color: var(--global--color--font-body);
+	color: var(--global--color--font-secondary);
 }
 
 .wp-block-image figcaption,
@@ -19,7 +19,7 @@ div[class*='wp-block-'] figcaption,
 .wc-block-components-product-sale-badge,
 .wc-block-components-sort-select__select {
 	font-size: var(--font-size--body-s);
-	color: var(--global--color--font-body);
+	color: var(--global--color--font-secondary);
 }
 
 .single .navigation a span.nav-subtitle,
@@ -90,7 +90,8 @@ textarea,
 .site-footer .widget-title,
 .custom-product-page-link,
 .wp-block-navigation-link,
-h1.wp-block-site-title {
+h1.wp-block-site-title,
+.site-footer ul li {
 	font-size: var(--font-size--body-m);
 }
 
@@ -99,9 +100,9 @@ h1.wp-block-site-title {
 ul.primary-menu li,
 .hentry .entry-header .entry-meta,
 .comment-content p,
-.entry-content p,
-.hentry ol,
-.hentry ul,
+.main .entry-content p,
+.main .hentry ol,
+.main .hentry ul,
 dl,
 .comment-content ol,
 .comment-content ul,
@@ -155,7 +156,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--global--color--font-heading);
+	color: var(--global--color--font-primary);
 	font-family: var(--heading--font-family);
 	line-height: var(--global--line-height--heading);
 	font-weight: normal;
@@ -419,7 +420,7 @@ big {
 	float: left;
 	padding: 0 10px 0 0;
 	line-height: 0.9;
-	color: var(--global--color--font-body);
+	color: var(--global--color--font-secondary);
 
 	@include breakpoint(sm) {
 		font-size: 7.75rem;

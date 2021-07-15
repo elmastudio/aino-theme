@@ -54,7 +54,7 @@
 			right: $s-4;
 			z-index: 10;
 			font-size: 0;
-			background: var(--global--color--white);
+			background: #ffffff;
 			border-radius: var(--global--border-radius-l);
 			display: block;
 			width: $s-9;
@@ -65,7 +65,7 @@
 				content: "";
 				position: absolute;
 				display: block;
-				background: var(--global--color--font-heading);
+				background: var(--global--color--font-primary);
 				z-index: 9;
 			}
 
@@ -193,7 +193,7 @@
 					width: 100%;
 					max-height: 3.75rem;
 					line-height: var(--global--line-height-reset);
-					background: var(--global--color--white);
+					background: var(--global--color--light-form-background);
 
 					&:active,
 					&:focus {
@@ -236,7 +236,7 @@
 					padding: 0;
 
 					a {
-						color: var(--global--color--font-body);
+						color: var(--global--color--font-secondary);
 						font-size: var(--font-size--body-m);
 					}
 				}

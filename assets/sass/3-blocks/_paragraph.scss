@@ -1,0 +1,23 @@
+.entry-content p {
+
+	&.has-drop-cap:not(:focus):first-letter {
+		float: left;
+		margin: 5px 8px 0 -8px;
+		line-height: 0.77;
+		text-transform: uppercase;
+		font-style: normal;
+		font-size: 100px;
+
+		@include breakpoint(sm) {
+			font-size: 120px;
+			line-height: 0.77;
+			margin: 6px 12px 0 -8px;
+		}
+	}
+
+	&.intro.has-drop-cap:not(:focus):first-letter {
+		@include breakpoint(sm) {
+			font-size: 142px;
+		}
+	}
+}

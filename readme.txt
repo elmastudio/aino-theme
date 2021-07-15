@@ -4,7 +4,7 @@ Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images
 Requires at least: 5.0
 Tested up to: WordPress 5.8.0
 Requires PHP: 7.0
-Stable tag: 1.4.1
+Stable tag: 2.0.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -43,6 +43,12 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 2.0.0 =
+New: Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.
+New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
+New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
+New: Default Google font Arimo.
 
 = 1.4.1 =
 New: Add theme.json file.

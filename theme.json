@@ -12,14 +12,6 @@
 	],
 	"customTemplates": [
 		{
-			"name": "blank",
-			"title": "Blank",
-			"postTypes": [
-				"page",
-				"post"
-			]
-		},
-		{
 			"name": "header-footer-only",
 			"title": "Header and Footer Only",
 			"postTypes": [
@@ -45,104 +37,119 @@
 			"custom": true,
 			"palette": [
 				{
-					"slug": "black",
-					"color": "#000000",
-					"name": "Black"
-				},
-				{
-					"slug": "white",
-					"color": "#FFFFFF",
-					"name": "White"
-				},
-				{
-					"slug": "font-heading",
-					"color": "#1e1e1e",
-					"name": "Font Heading"
-				},
-				{
-					"slug": "font-body",
-					"color": "#282828",
-					"name": "Font Body"
-				},
-				{
-					"slug": "font-meta",
-					"color": "#757575",
-					"name": "Font Meta"
-				},
-				{
-					"slug": "background-primary",
+					"slug": "light-background-primary",
 					"color": "#ffffff",
-					"name": "Background Primary"
+					"name": "Light Background Primary"
 				},
 				{
-					"slug": "background-secondary",
+					"slug": "light-background-secondary",
 					"color": "#F4F4F4",
-					"name": "Background Secondary"
+					"name": "Light Background Secondary"
 				},
 				{
-					"slug": "primary",
-					"color": "#1F299C",
-					"name": "Primary"
-				},
-				{
-					"slug": "secondary",
-					"color": "#10154F",
-					"name": "Secondary"
-				},
-				{
-					"slug": "border",
+					"slug": "light-border",
 					"color": "#D6D6D6",
-					"name": "Border"
+					"name": "Light Border"
 				},
 				{
-					"slug": "border",
-					"color": "#D6D6D6",
-					"name": "Border"
+					"slug": "light-button-color-primary",
+					"color": "#ffffff",
+					"name": "Light Button Color Primary"
 				},
 				{
-					"slug": "form-border",
-					"color": "#AEAEAE",
-					"name": "Form Border"
+					"slug": "light-button-color-secondary",
+					"color": "#121212",
+					"name": "Light Button Color Secondary"
 				},
 				{
-					"slug": "form-border-active",
-					"color": "#0E72FF",
-					"name": "Form Border Active"
-				},
-				{
-					"slug": "form-glow",
-					"color": "rgba(14, 114, 255, 0.4)",
-					"name": "Form Border Glow"
-				},
-				{
-					"slug": "code-background",
+					"slug": "light-code-background",
 					"color": "#002F33",
-					"name": "Code Background"
+					"name": "Light Code Background"
 				},
 				{
-					"slug": "code-font",
-					"color": "#4F868C",
-					"name": "Code Font"
+					"slug": "light-code-color",
+					"color": "#68C7C4",
+					"name": "Light Code Color"
 				},
 				{
-					"slug": "notification",
+					"slug": "light-error",
+					"color": "#D30F0F",
+					"name": "Light Error"
+				},
+				{
+					"slug": "light-font-primary",
+					"color": "#121212",
+					"name": "Light Font Primary"
+				},
+				{
+					"slug": "light-font-secondary",
+					"color": "#282828",
+					"name": "Light Font Secondary"
+				},
+				{
+					"slug": "light-font-tertiary",
+					"color": "#777B7D",
+					"name": "Light Font Tertiary"
+				},
+				{
+					"slug": "light-form-border",
+					"color": "#aeaeae",
+					"name": "Light Form Border"
+				},
+				{
+					"slug": "light-form-border-active",
+					"color": "#F46119",
+					"name": "Light Form Border Active"
+				},
+				{
+					"slug": "light-form-glow",
+					"color": "RGBA(244, 97, 25, 0.5)",
+					"name": "Light Form Border Glow"
+				},
+				{
+					"slug": "light-form-background",
+					"color": "#ffffff",
+					"name": "Light Form Background"
+				},
+				{
+					"slug": "light-form-select-fill",
+					"color": "#ffffff",
+					"name": "Light Form Select Fill"
+				},
+				{
+					"slug": "light-notification",
 					"color": "#A3A9F5",
-					"name": "Notification"
+					"name": "Light Notification"
 				},
 				{
-					"slug": "success",
+					"slug": "light-primary",
+					"color": "#777B7D",
+					"name": "Light Primary"
+				},
+				{
+					"slug": "light-product-badge-background",
+					"color": "#ffffff",
+					"name": "Light Product Badge Background"
+				},
+				{
+					"slug": "light-product-badge-color",
+					"color": "#111111",
+					"name": "Light Product Badge Color"
+				},
+				{
+					"slug": "light-secondary",
+					"color": "#F46119",
+					"name": "Light Secondary"
+				},
+				{
+					"slug": "light-star-rating",
+					"color": "#777B7D",
+					"name": "Light Star Rating"
+				},
+				{
+					"slug": "light-success",
 					"color": "#33D1FF",
-					"name": "Success"
-				},
-				{
-					"slug": "error",
-					"color": "#F15A29",
-					"name": "Error"
-				},
-				{
-					"slug": "star-rating",
-					"color": "#EEA549",
-					"name": "star-rating"
+					"name": "Light Success"
 				}
 			],
 			"gradients": [
@@ -243,8 +250,6 @@
 			"wideSize": "1440px"
 		},
 		"typography": {
-			"customFontSize": false,
-			"customLineHeight": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "'Arimo', sans-serif",
@@ -308,29 +313,58 @@
 					"size": "48px",
 					"slug": "xxxxl"
 				}
-			]
+			],
+			"fontWeights": [
+                { "slug": "200", "value": "200", "name": "Thin" },
+                { "slug": "300", "value": "300", "name": "Light" },
+                { "slug": "400", "value": "400", "name": "Regular" },
+                { "slug": "500", "value": "500", "name": "Medium" },
+                { "slug": "600", "value": "600", "name": "Semibold" },
+                { "slug": "700", "value": "700", "name": "Bold" },
+                { "slug": "800", "value": "800", "name": "Heavy" },
+                { "slug": "900", "value": "900", "name": "Black" }
+            ],
+            "textTransforms": [
+                { "name": "AB", "slug": "uppercase" },
+                { "name": "ab", "slug": "lowercase" },
+                { "name": "Ab", "slug": "capitalize" }
+            ],
+            "textDecorations": [
+                { "name": "Underline", "slug": "underline", "value": "underline" },
+                {
+                    "name": "Strikethrough",
+                    "slug": "strikethrough",
+                    "value": "line-through"
+                }
+			],
+			"customFontSize": false,
+			"customLineHeight": true
 		},
 		"custom": {
 			"color": {
-				"black": "var(--wp--preset--color--black)",
-				"white": "var(--wp--preset--color--white)",
-				"font-heading": "var(--wp--preset--color--font-heading)",
-				"font-body": "var(--wp--preset--color--font-body)",
-				"font-meta": "var(--wp--preset--color--font-meta)",
-				"background-primary": "var(--wp--preset--color--background-primary)",
-				"background-secondary": "var(--wp--preset--color--background-secondary)",
-				"primary": "var(--wp--preset--color--primary)",
-				"secondary": "var(--wp--preset--color--secondary)",
-				"border": "var(--wp--preset--color--border)",
-				"form-border": "var(--wp--preset--color--form-border)",
-				"form-border-active": "var(--wp--preset--color--form-border-active)",
-				"form-glow": "var(--wp--preset--color--form-glow)",
-				"code-background": "var(--wp--preset--color--code-background)",
-				"code-font": "var(--wp--preset--color--code-font)",
-				"notification": "var(--wp--preset--color--notification)",
-				"success": "var(--wp--preset--color--success)",
-				"error": "var(--wp--preset--color--error)",
-				"star-rating": "var(--wp--preset--color--star-rating)"
+				"light-background-primary": "var(--wp--preset--color--light-background-primary)",
+				"light-background-secondary": "var(--wp--preset--color--light-background-secondary)",
+				"light-border": "var(--wp--preset--color--light-border)",
+				"light-button-color-primary": "var(--wp--preset--color--light-button-color-primary)",
+				"light-button-color-secondary": "var(--wp--preset--color--light-button-color-secondary)",
+				"light-code-background": "var(--wp--preset--color--light-code-background)",
+				"light-code-color": "var(--wp--preset--color--light-code-color)",
+				"light-error": "var(--wp--preset--color--light-error)",
+				"light-font-primary": "var(--wp--preset--color--light-font-primary)",
+				"light-font-secondary": "var(--wp--preset--color--light-font-secondary)",
+				"light-font-tertiary": "var(--wp--preset--color--light-font-tertiary)",
+				"light-form-border": "var(--wp--preset--color--light-form-border)",
+				"light-form-border-active": "var(--wp--preset--color--light-form-border-active)",
+				"light-form-glow": "var(--wp--preset--color--light-form-glow)",
+				"light-form-select-fill": "var(--wp--preset--color--light-form-select-fill)",
+				"light-form-background": "var(--wp--preset--color--light-form-background)",
+				"light-notification": "var(--wp--preset--color--light-notification)",
+				"light-primary": "var(--wp--preset--color--light-primary)",
+				"light-product-badge-background": "var(--wp--preset--color--light-product-badge-background)",
+				"light-product-badge-color": "var(--wp--preset--color--light-product-badge-color)",
+				"light-secondary": "var(--wp--preset--color--light-secondary)",
+				"light-star-rating": "var(--wp--preset--color--light-star-rating)",
+				"light-success": "var(--wp--preset--color--light-success)"
 			},
 			"line-height": {
 				"body": 1.4,
@@ -358,6 +392,19 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var(--wp--custom--color--primary)",
+					"text": "var(--wp--custom--color--font-primary)"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--s)"
+				}
+			}
+		},
 		"color": {
 			"background": "var(--wp--custom--color--main-background)",
 			"text": "var(--wp--custom--color--text-two)",

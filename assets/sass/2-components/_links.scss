@@ -44,16 +44,16 @@ cite a,
 h2.entry-title a,
 .comment-list b.fn a,
 .main-navigation a {
-	color: var(--global--color--font-heading);
-	fill: var(--global--color--font-heading);
+	color: var(--global--color--font-primary);
+	fill: var(--global--color--font-primary);
 }
 
 .posts-container .hentry .entry-meta a,
 .entry-comments a,
 .posted-on a,
 .comment-reply-title #cancel-comment-reply-link {
-	color: var(--global--color--font-body);
-	fill: var(--global--color--font-body);
+	color: var(--global--color--font-secondary);
+	fill: var(--global--color--font-secondary);
 }
 
 /* Link Hovers */
