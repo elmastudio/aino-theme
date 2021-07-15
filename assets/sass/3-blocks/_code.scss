@@ -6,6 +6,7 @@
 	@include s-r-6(margin-bottom);
 }
 
+.wp-block-preformatted,
 .wp-block-code {
 	background: var(--global--color--code-background);
 	color: var(--global--color--code-color);
@@ -16,9 +17,4 @@
 		display: block;
 		overflow-wrap: break-word;
 	}
-}
-
-.wp-block-preformatted {
-	background-color: var(--global--color--code-color);
-	color: var(--global--color--code-background);
 }

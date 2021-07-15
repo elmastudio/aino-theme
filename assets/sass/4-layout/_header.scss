@@ -5,7 +5,7 @@
 /* Block Template Part Header */
 .wp-block-group {
 	&.site-header {
-		max-width: var(--global--max-content-width-nogap);
+		max-width: var(--global--max-content-width);
 		@include push--auto;
 		padding-top: 0 !important;
 	}

@@ -163,7 +163,8 @@
 	@include col-gaps;
 }
 
-.outer-margins {
+.outer-margins,
+.wp-block-group.has-background.outer-margins {
 	@include outer-margins;
 }
 

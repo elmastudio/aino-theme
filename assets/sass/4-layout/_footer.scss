@@ -229,15 +229,10 @@ body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer
 	.wp-block-ainoblocks-grid-item {
 
 		.wp-block-group:not(:last-child) {
-			padding-bottom: 4rem;
-
-			@include breakpoint(md) {
-				padding-bottom: 0;
-			}
+			padding-bottom: 5rem;
 
 			@include breakpoint(lg) {
-				padding-bottom: inherit;
-				background :green;
+				@include s-r-11(padding-bottom);
 			}
 		}
 	}
