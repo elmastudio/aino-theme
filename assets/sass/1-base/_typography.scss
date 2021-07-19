@@ -7,7 +7,7 @@ table,
 textarea {
 	font-family: var(--body--font-family);
 	line-height: var(--global--line-height--body);
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
 }
 
 .wp-block-image figcaption,
@@ -17,9 +17,10 @@ div[class*='wp-block-'] figcaption,
 .posts-container .hentry .entry-footer,
 .wc-block-grid__product-price,
 .wc-block-components-product-sale-badge,
-.wc-block-components-sort-select__select {
+.wc-block-components-sort-select__select,
+#cancel-comment-reply-link {
 	font-size: var(--font-size--body-s);
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
 }
 
 .single .navigation a span.nav-subtitle,
@@ -31,10 +32,17 @@ div[class*='wp-block-'] figcaption,
 .blocks-gallery-grid .blocks-gallery-item figcaption,
 .wc-block-components-checkout-step__heading-content,
 .entry-content p.wc-block-components-checkout-step__description,
-.entry-content .wc-block-components-product-metadata__description p {
+.entry-content .wc-block-components-product-metadata__description p,
+.wp-block-post-template.columns-5 .wp-block-post-excerpt__excerpt,
+.wp-block-post-template.columns-5 .wp-block-post-date,
+.wp-block-post-template.columns-5 .wp-block-post-author__name,
+.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
+.wp-block-post-template.columns-6 .wp-block-post-date,
+.wp-block-post-template.columns-6 .wp-block-post-author__name {
 	font-size: var(--font-size--body-xs);
 }
 
+.commentlist,
 .entry-content,
 .site-content {
 
@@ -51,7 +59,10 @@ div[class*='wp-block-'] figcaption,
 	.woocommerce-notices-wrapper ul,
 	.wc-block-grid__product-onsale,
 	.wc-block-components-sale-badge,
-	.comment-reply-title #cancel-comment-reply-link {
+	.comment-reply-title #cancel-comment-reply-link,
+	.reply,
+	.comment-metadata,
+	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt {
 		font-size: var(--font-size--body-s);
 	}
 }
@@ -91,28 +102,28 @@ textarea,
 .custom-product-page-link,
 .wp-block-navigation-link,
 h1.wp-block-site-title,
-.site-footer ul li {
-	font-size: var(--font-size--body-m);
-}
-
-.entry-content p.has-l-font-size,
-.site-branding .site-description,
-ul.primary-menu li,
-.hentry .entry-header .entry-meta,
+.site-footer ul li,
 .comment-content p,
+.comment-content ol,
+.comment-content ul,
+.wp-block-post-comments .commentlist .comment p,
 .entry-content p,
 .hentry ol,
 .hentry ul,
 dl,
-.comment-content ol,
-.comment-content ul,
+.authorbox-wrap .wp-block-post-author__bio {
+	font-size: var(--font-size--body-m);
+}
+
+.entry-content p.has-l-font-size,
 .authorbox__content .author-bio,
-.modal-menu,
-.search-header .search-field,
 .entry-content .wp-block-post-excerpt.has-l-font-size p,
 .entry-content .wp-block-post-terms.has-l-font-size,
 .wc-block-components-order-summary__button-text,
-.wp-block-separator.is-style-dots:before {
+.wp-block-separator.is-style-dots:before,
+.authorbox-wrap .wp-block-post-author__byline,
+.authorbox-wrap .wp-block-post-author__name,
+.wp-block-post-comments p.nocomments {
 	font-size: var(--font-size--body-l);
 }
 
@@ -156,10 +167,10 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--global--color--font-primary);
 	font-family: var(--heading--font-family);
 	line-height: var(--global--line-height--heading);
-	font-weight: normal;
+	color: var(--wp--custom--color--font-primary);
+	font-weight: 400;
 }
 
 h1.site-title,
@@ -241,7 +252,8 @@ h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
-.related-title {
+.related-title,
+.wp-block-post-template.columns-2 h2.wp-block-post-title {
 	font-size: var(--font-size--h5) !important;
 }
 
@@ -255,8 +267,7 @@ h6.has-xl-font-size,
 .blog h2.entry-title,
 .woocommerce-page h1.entry-title,
 .blog-archive h2.entry-title,
-.comment-reply-title,
-.wp-block-query h2.wp-block-post-title {
+.wp-block-post-template.columns-3 h2.wp-block-post-title {
 	font-size: var(--font-size--h4) !important;
 }
 
@@ -273,7 +284,10 @@ h6.has-l-font-size,
 .blog-archive .page-header h1.page-title,
 .woocommerce-account h2,
 .woocommerce-checkout h3,
-.wc-block-components-title {
+.wc-block-components-title,
+.comment-reply-title,
+#comments,
+.wp-block-post-template.columns-4 h2.wp-block-post-title {
 	font-size: var(--font-size--h3) !important;
 }
 
@@ -284,7 +298,8 @@ h5,
 h5.has-s-font-size,
 h6.has-m-font-size,
 .woocommerce-loop-product__title,
-.is-large.wc-block-cart .wc-block-cart__totals-title {
+.is-large.wc-block-cart .wc-block-cart__totals-title,
+.wp-block-post-template.columns-5 h2.wp-block-post-title {
 	font-size: var(--font-size--h2) !important;
 }
 
@@ -296,7 +311,8 @@ h6.has-s-font-size,
 h6.has-xs-font-size,
 h6.has-xxs-font-size,
 h6.has-xxs-font-size,
-.wc-block-cart__empty-cart__title {
+.wc-block-cart__empty-cart__title,
+.wp-block-post-template.columns-6 h2.wp-block-post-title {
 	font-size: var(--font-size--h1) !important;
 }
 
@@ -330,11 +346,8 @@ h6.has-xxs-font-size,
 }
 
 /* Padding for Paragraphs in Content Area */
-.single,
-.page-template-default,
-.error404 {
+.enrty-content {
 
-	address,
 	p {
 		@include s-r-6(padding-bottom);
 	}
@@ -388,8 +401,8 @@ pre,
 .wp-block-preformatted.has-background,
 .wp-block-code {
 	font-family: var(--code--font-family);
-	line-height: var(--global--line-height-body);
-	font-size: var(--font-size--body-s);
+	font-size: var(--font-size--body-xs);
+	line-height: 1.2;
 }
 
 pre {
@@ -420,7 +433,7 @@ big {
 	float: left;
 	padding: 0 10px 0 0;
 	line-height: 0.9;
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
 
 	@include breakpoint(sm) {
 		font-size: 7.75rem;

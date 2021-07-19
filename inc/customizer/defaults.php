@@ -20,44 +20,9 @@ function aino_defaults( $name ) {
 			array(
 
 				// Styling.
-				'heading_fontweight'            => 'regular',
-				'button_style'                  => 'squared',
-				'form_style'                    => 'squared',
-				'featuredimg_style'             => 'border-radius-none',
-				'blog_columns'                  => 'twocolumn',
-				'blogcards_shadow'              => 'shadow-a',
-				'blogcards_shadow_hover'        => 'shadow-b',
-				'blogcards_borderradius'        => 'border-radius-none',
-				'blogcards_animation'           => 'blogcards-movein',
-				'post_excerpt_lengths'          => '15',
-				'footer_light'                  => false,
-				'footerwidget_alignment'        => true,
-				'footerinfo_alignment'          => 'center',
-				'footer_bordertop'              => true,
-				'footer_borderbottom'           => true,
-				'footer_backtotop'              => false,
-				'header_menu_bold'              => false,
-				'header_menu_uppercase'         => false,
-				'buttons_bold'                  => false,
-				'buttons_uppercase'             => false,
-				'sticky_light'                  => false,
-				'blogcards_padding'             => true,
-
-				// Custom Content.
-				'blog_title'                    => '',
-				'blog_title_description'        => '',
-				'footer_siteinfo'               => '',
-
-				// Visibility.
-				'disable_googlefonts'           => false,
-				'sitedescription'               => true,
-				'retina_logo'                   => false,
-				'header_search'                 => false,
-				'aino_displaydate'              => true,
-				'display_comments'              => false,
-				'aino_displayauthor'            => true,
-				'blogcards_author'              => false,
-				'display_single_author'         => true,
+				'button_style'        => 'squared',
+				'form_style'          => 'squared',
+				'disable_googlefonts' => false,
 			)
 		);
 	}

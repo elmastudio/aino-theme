@@ -45,8 +45,8 @@ $col12               : 93rem;
 	--global--default-content-width: 43.5rem;
 	--global--10col-nogap-content-width: 74.5rem;
 	--global--wide-content-width: 87rem;
-	--global--max-content-width-nogap: 90rem; //1440px
-	--global--max-content-width: 93rem;
+	--global--max-content-width-nogap: 90rem; // 1440px
+	--global--max-content-width: 93rem; // 1488px
 	--global--grid-gap: #{2 * $s-4};
 
 	/* Border radius */
@@ -66,6 +66,7 @@ $col12               : 93rem;
 @media only screen and (min-width: 48em) {
 
 	:root {
+
 		/* Border radius */
 		--global--border-radius-xxs: 0.625rem;
 		--global--border-radius-xs: 1.25rem;
@@ -98,7 +99,7 @@ body {
 	--global--font-size--h8: 2.875rem;
 	--global--font-size--h7: 2.375rem;
 	--global--font-size--h6: 2.125rem;
-	--global--font-size--h5: 1.75rem;
+	--global--font-size--h5: 1.875rem;
 	--global--font-size--h4: 1.5rem;
 	--global--font-size--h3: 1.25rem;
 	--global--font-size--h2: 1.125rem;
@@ -115,8 +116,13 @@ body {
 	--global--font-size--body-xxxl: 1.625rem;
 	--global--font-size--body-xxxxl: 1.875rem;
 
+	/* Default content padding */
+	--global--content--padding--left: 1rem;
+	--global--content--padding--right: 1rem;
+
 	// SM breakpoint
 	@media only screen and (min-width: 48em) {
+
 		--global--font-size--h12: 8.875rem;
 		--global--font-size--h11: 10.375rem;
 		--global--font-size--h10: 6rem;
@@ -125,16 +131,21 @@ body {
 		--global--font-size--h7: 3.25rem;
 		--global--font-size--h6: 2.75rem;
 		--global--font-size--h5: 2.25rem;
-		--global--font-size--h4: 1.875rem;
+		--global--font-size--h4: 1.75rem;
 
 		--global--font-size--body-xl: 1.5rem;
 		--global--font-size--body-xxl: 1.75rem;
 		--global--font-size--body-xxxl: 2rem;
 		--global--font-size--body-xxxxl: 2.25rem;
+
+		/* Default content padding */
+		--global--content--padding--left: 2rem;
+		--global--content--padding--right: 2rem;
 	}
 
 	// MD breakpoint
 	@media only screen and (min-width: 64em) {
+
 		--global--font-size--h12: 15.125rem;
 		--global--font-size--h11: 11.75rem;
 		--global--font-size--h10: 9.25rem;
@@ -143,7 +154,7 @@ body {
 		--global--font-size--h7: 4.375rem;
 		--global--font-size--h6: 3.375rem;
 		--global--font-size--h5: 2.625rem;
-		--global--font-size--h4: 2.125rem;
+		--global--font-size--h4: 1.875rem;
 		--global--font-size--h3: 1.375rem;
 
 		--global--font-size--body-l: 1.375rem;
@@ -162,8 +173,8 @@ body {
 		--global--font-size--h8: 7.75rem;
 		--global--font-size--h7: 5.75rem;
 		--global--font-size--h6: 4.375rem;
-		--global--font-size--h5: 3.25rem;
-		--global--font-size--h4: 2.375rem;
+		--global--font-size--h5: 3rem;
+		--global--font-size--h4: 2.125rem;
 		--global--font-size--h3: 1.5rem;
 		--global--font-size--h2: 1.25rem;
 
@@ -173,6 +184,17 @@ body {
 		--global--font-size--body-xxl: 2.125rem;
 		--global--font-size--body-xxxl: 2.5rem;
 		--global--font-size--body-xxxxl: 3rem;
+
+		/* Default content padding */
+		--global--content--padding--left: 3rem;
+		--global--content--padding--right: 3rem;
+	}
+
+	// LG breakpoint
+	@media only screen and (min-width: 96em) {
+		/* Default content padding */
+		--global--content--padding--left: 0;
+		--global--content--padding--right: 0;
 	}
 
 	/* Theme Heading font sizes */

@@ -10,7 +10,7 @@
  }
 
  thead th {
-	 border-bottom: 2px solid var(--global--color--border);
+	 border-bottom: 2px solid var(--wp--custom--color--border);
 	 padding-bottom: $s-4;
 	 @include breakpoint(sm) {
 		 margin: 0 0 $s-4;
@@ -26,7 +26,7 @@
  }
 
  tr {
-	 border-bottom: 1px solid var(--global--color--border);
+	 border-bottom: 1px solid var(--wp--custom--color--border);
  }
 
  table tr:last-of-type {
@@ -35,7 +35,7 @@
 
  td {
 	 padding: $s-4;
-	 border-right: 1px solid var(--global--color--border);
+	 border-right: 1px solid var(--wp--custom--color--border);
 	 @include breakpoint(sm) {
 		 padding: $s-4;
 	 }

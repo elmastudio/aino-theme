@@ -281,82 +281,6 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
 } );
 
 /**
- * Register widget area.
- */
-function aino_widgets_init() {
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'aino' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets to the shop page.', 'aino' ),
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer 1', 'aino' ),
-			'id'            => 'footer-1',
-			'description'   => esc_html__( 'Add widgets here to appear in the 1. column of your footer.', 'aino' ),
-			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<p class = "widget-title">',
-			'after_title'   => '</p>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer 2', 'aino' ),
-			'id'            => 'footer-2',
-			'description'   => esc_html__( 'Add widgets here to appear in the 2. column of your footer.', 'aino' ),
-			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<p class = "widget-title">',
-			'after_title'   => '</p>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer 3', 'aino' ),
-			'id'            => 'footer-3',
-			'description'   => esc_html__( 'Add widgets here to appear in the 3. column of your footer.', 'aino' ),
-			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<p class = "widget-title">',
-			'after_title'   => '</p>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer 4', 'aino' ),
-			'id'            => 'footer-4',
-			'description'   => esc_html__( 'Add widgets here to appear in the 4. column of your footer.', 'aino' ),
-			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<p class = "widget-title">',
-			'after_title'   => '</p>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer 5', 'aino' ),
-			'id'            => 'footer-5',
-			'description'   => esc_html__( 'Add widgets here to appear in the 5. column of your footer.', 'aino' ),
-			'before_widget' => '<section id = "%1$s" class = "widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<p class = "widget-title">',
-			'after_title'   => '</p>',
-		)
-	);
-
-}
-add_action( 'widgets_init', 'aino_widgets_init' );
-
-/**
  * Enqueue scripts and styles.
  */
 function aino_scripts() {
@@ -377,82 +301,6 @@ function aino_scripts() {
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
 /**
- * Fix skip link focus in IE11.
- *
- * This does not enqueue the script because it is tiny and because it is only for IE11,
- * thus it does not warrant having an entire dedicated blocking script being loaded.
- *
- * @link https://git.io/vWdr2
- */
-function aino_skip_link_focus_fix() {
-	// The following is minified via `terser --compress --mangle -- assets/js/skip-link-focus-fix.js`.
-	?>
-	<script>
-	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
-	</script>
-	<?php
-}
-add_action( 'wp_print_footer_scripts', 'aino_skip_link_focus_fix' );
-
-/**
- * Load more button.
- */
-function aino_load_more_scripts() {
- 
-	global $wp_query;
- 
-	// register our main script but do not enqueue it yet
-	wp_register_script( 'aino_loadmore', get_theme_file_uri( '/assets/js/loadmore.js' ), array('jquery'), wp_get_theme()->get( 'Version' ), true );
- 
-	// now the most interesting part
-	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
-	// you can define variables directly in your HTML but I decided that the most proper way is wp_localize_script()
-	wp_localize_script( 'aino_loadmore', 'aino_loadmore_params', array(
-		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
-		'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
-		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
-		'max_page' => $wp_query->max_num_pages
-	) );
-
-	wp_enqueue_script( 'aino_loadmore' );
-}
-
-add_action( 'wp_enqueue_scripts', 'aino_load_more_scripts' );
-
-/**
- * Load more ajax handler.
- */
-function aino_loadmore_ajax_handler(){
-
-	// prepare our arguments for the query
-	$args = json_decode( stripslashes( $_POST['query'] ), true );
-	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
-	$args['post_status'] = 'publish';
-
-	// it is always better to use WP_Query but not here
-	query_posts( $args );
-
-	if( have_posts() ) :
-
-		// run the loop
-		while( have_posts() ): the_post();
-
-			// look into your theme code how the posts are inserted, but you can use your own HTML of course
-			// do you remember? - my example is adapted for Twenty Seventeen theme
-			get_template_part( 'template-parts/post/content', get_post_format() );
-			// for the test purposes comment the line above and uncomment the below one
-			// the_title();
-
-		endwhile;
-
-	endif;
-	die; // here we exit the script and even no wp_reset_query() required!
-}
-
-add_action('wp_ajax_loadmore', 'aino_loadmore_ajax_handler'); // wp_ajax_{action}
-add_action('wp_ajax_nopriv_loadmore', 'aino_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
-
-/**
  * Show WooCommerce cart contents / total Ajax
  */
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
@@ -470,36 +318,6 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 }
 
 /**
- * Add a custom max excerpt length.
- *
- * @param string $limit Maximum number of words in excerpt text.
- */
-function aino_custom_excerpt_length( $limit ) {
-	$excerpt = explode( ' ', get_the_excerpt(), $limit );
-	if ( count( $excerpt ) >= $limit ) {
-		array_pop( $excerpt );
-		$excerpt = implode( ' ', $excerpt ) . '&hellip;';
-	} else {
-		$excerpt = implode( ' ', $excerpt );
-	}
-	$excerpt = preg_replace( '`[[^]]*]`', '', $excerpt );
-
-	return $excerpt;
-}
-
-/**
- * Replace "[...]" with custom read more in excerpts.
- *
- * @param  mixed $morevalue for custom excerpt ending.
- * @return void
- */
-function aino_excerpt_more( $more ) {
-	if ( is_admin() ) return $more;
-	return '&hellip;';
-}
-add_filter( 'excerpt_more', 'aino_excerpt_more' );
-
-/**
  * Creates a custom Archive title.
  *
  * @param  mixed $title
@@ -515,28 +333,6 @@ function aino_archive_title ( $title ) {
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'aino_archive_title' );
-
-/**
- * Get list of post categories without links.
- */
-function aino_the_categories() {
-	$cats = array();
-	foreach ( get_the_category() as $c ) {
-		$cat = get_category( $c );
-		array_push(
-			$cats,
-			$cat->name
-		);
-	}
-
-	if ( count( $cats ) > 0 ) {
-		$post_categories = implode( ', ', $cats );
-	} else {
-		$post_categories = '';
-	}
-
-	echo esc_attr( $post_categories );
-}
 
 /**
 * Add post class to posts without featured image

@@ -13,25 +13,25 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
-textarea {
+textarea,
+.wp-block-post-comments textarea {
 	width: 100%;
 	box-sizing: border-box;
-	background-color: var(--global--color--light-form-background);
-	border: 1px solid var(--global--color--form-border);
+	background-color: var(--wp--custom--color--form-background);
+	border: 1px solid var(--wp--custom--color--form-border);
 	outline: none;
 	line-height: var(--global--line-height-reset);
-	max-height: 3.75rem; // 60px
 	@include s-r-5 (padding);
 
 	@include input-placeholder {
-		color: var(--global--color-light-gray);
+		color: var(--wp--custom--color--font-tertiary);
 	}
 
 	&:active,
 	&:focus {
-		color: var(--global--color--font-secondary);
-		border-color: var(--global--color--form-border-active);
-		box-shadow: 0 0 0 4px var(--global--color--form-glow);
+		color: var(--wp--custom--color--font-secondary);
+		border-color: var(--wp--custom--color--form-border-active);
+		box-shadow: 0 0 0 4px var(--wp--custom--color--form-glow);
 	}
 
 	.light-form & {
@@ -39,12 +39,12 @@ textarea {
 		color: #ffffff;
 
 		@include input-placeholder {
-			color: var(--global--color--font-secondary);
+			color: var(--wp--custom--color--font-secondary);
 		}
 
 		&:active,
 		&:focus {
-			color: var(--global--color--font-secondary);
+			color: var(--wp--custom--color--font-secondary);
 			border-color: #ffffff;
 		}
 	}
@@ -67,8 +67,8 @@ textarea {
 textarea {
 	width: 100%;
 	background-color: transparent;
-	background: var(--global--color--light-form-background);
-	border: 1px solid var(--global--color--form-border);
+	background: var(--wp--custom--color--form-background);
+	border: 1px solid var(--wp--custom--color--form-border);
 	padding: $s-4 $s-6;
 	outline: none;
 	max-height: $s-13;
@@ -80,7 +80,7 @@ form label {
 	position: relative;
 	display: block;
 	line-height: var(--global--line-height-reset);
-	color: var(--global--color-light-gray);
+	color: var(--wp--custom--color--font-tertiary);
 	@include s-r-1 (margin-bottom);
 	border-radius: var(--global--border-radius-xxs);
 
@@ -92,7 +92,7 @@ form label {
 // Select forms
 select,
 .select2-selection--single {
-	border: 1px solid var(--global--color--form-border);
+	border: 1px solid var(--wp--custom--color--form-border);
 	@include s-r-5 (padding);
 	background-repeat:no-repeat;
 	background-position: right 14px top 21px;
@@ -112,11 +112,11 @@ select,
 }
 
 .select2-results__options {
-	background: var(--global--color--font-secondary);
+	background: var(--wp--custom--color--font-secondary);
 }
 
 .select2-selection__arrow svg {
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
 }
 
 .select2-search--dropdown {
@@ -126,7 +126,7 @@ select,
 // Checkboxes
 .checkbox,
 form .comment-form-cookies-consent {
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
 	display: flex;
 	align-items: center;
 }
@@ -137,8 +137,8 @@ input[type="radio"] {
 	min-width: $s-6;
 	width: $s-6;
 	height: $s-6;
-	border: 1px solid var(--global--color--form-border);
-	background-color: var(--global--color--light-form-background);
+	border: 1px solid var(--wp--custom--color--form-border);
+	background-color: var(--wp--custom--color--form-background);
 	border-radius:50%;
 	outline:none;
 	@include s-r-2 (margin-right);
@@ -159,16 +159,16 @@ input[type='checkbox'] {
 	position: relative;
 
 	&:focus {
-		border-color: var(--global--color--form-border-active);
-		box-shadow: 0 0 0 4px var(--global--color--form-glow);
-		background: var(--global--color--form-border-active);
+		border-color: var(--wp--custom--color--form-border-active);
+		box-shadow: 0 0 0 4px var(--wp--custom--color--form-glow);
+		background: var(--wp--custom--color--form-border-active);
 	}
 
 	&:checked:before {
-		border-color: var(--global--color--form-border-active);
-		background: var(--global--color--form-border-active);
-		fill: var(--global--color--light-form-select-fill);
-		color: var(--global--color--light-form-select-fill);
+		border-color: var(--wp--custom--color--form-border-active);
+		background: var(--wp--custom--color--form-border-active);
+		fill: var(--wp--custom--color--form-select-fill);
+		color: var(--wp--custom--color--form-select-fill);
 	}
 
 	&:after {
@@ -206,7 +206,7 @@ input[type='radio'] {
 		width: 6px;
 		height: 6px;
 		border-radius: 100px;
-		background-color: var(--global--color--light-form-select-fill);
+		background-color: var(--wp--custom--color--form-select-fill);
 	}
 }
 
@@ -214,7 +214,7 @@ input[type='radio'] {
 .comment-form-cookies-consent {
 	label {
 		margin-bottom: 0;
-		color: var(--global--color--font-secondary);
+		color: var(--wp--custom--color--font-secondary);
 	}
 }
 
@@ -226,18 +226,22 @@ button[type="submit"] {
 
 	.light-btn & {
 		background: #ffffff;
-		color: var(--global--color--font-secondary);
+		color: var(--wp--custom--color--font-secondary);
 	}
+}
+
+.wp-block-post-comments .submit {
+	border: none;
 }
 
 // Default comment form
 .color-notice,
 label.color-notice span {
-	color: var(--global--color--notification);
+	color: var(--wp--custom--color--notification);
 }
 
 .comment-respond textarea {
-		height: 150px;
+		height: 120px;
 }
 
 .single form p,
@@ -324,11 +328,11 @@ form p.comment-form-comment {
 	}
 	
 	.mc4wp-success p {
-		color: var(--global--color--success);
+		color: var(--wp--custom--color--success);
 	}
 	
 	.mc4wp-notice p {
-		color: var(--global--color--notification);
+		color: var(--wp--custom--color--notification);
 	}
 }
 
@@ -344,7 +348,7 @@ form p.comment-form-comment {
 
 	.light-form {
 		p {
-			color: var(--global--color--light-button-color-primary);
+			color: var(--wp--custom--color--button-color-primary);
 		}
 	}
 }

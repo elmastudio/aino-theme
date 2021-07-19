@@ -1,9 +1,8 @@
-/* Spacing Below Blocks */
-
+/* Default spacing inside posts and page contents */
 .single {
 
 	.entry-content {
-
+		p,
 		.wp-block-button,
 		.wp-block-buttons .wp-block-button,
 		.wp-block-image,
@@ -17,73 +16,11 @@
 		.wp-block-search,
 		.wp-block-calendar,
 		.wp-block-archives-dropdown {
-			@include push--auto;
-			@include s-r-6(margin-bottom);
-		}
-	}
-}
 
-/* Alignment */
-.entry-content {
-
-	.aligncenter {
-		clear: both;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-.hentry .entry-content>* {
-
-	&.alignwide {
-		max-width: var(--global--max-content-width);
-		position: relative;
-		clear: both;
-	}
-
-	&.alignwide:not(.wp-block-group, .wp-block-ainoblocks-grid-container) {
-		@include outer-margins;
-		@include push--auto;
-
-		.alignwide {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-		}
-	}
-
-	&.wp-block-group.alignwide {
-		width: calc(100% - var(--global--grid-gap));
-
-		@include breakpoint(xl) {
-			max-width: calc(var(--global--max-content-width) - var(--global--grid-gap));
-		}
-	}
-
-	&.alignfull {
-		position: relative;
-		max-width: 100%;
-		width: auto;
-	}
-}
-
-/* Nested Block Alignment: alignwide inside alignfull */
-
-.hentry .entry-content .alignfull {
-
-	.alignwide {
-		max-width: var(--global--max-content-width);
-		clear: both;
-		overflow: hidden;
-		@include push--auto;
-		@include outer-margins;
-	}
-
-	.wp-block-group__inner-container {
-
-		&:not(.wp-block-ainoblocks-grid-container) > .wp-block-image:not([data-align=full]):not([data-align=wide]):not([data-align=left]):not([data-align=right]) {
-				@include default-margins;
-				@include push--auto;
+			&:not(:last-child) {
+				@include s-r-6(margin-bottom);
 			}
+		}
 	}
 }
 
@@ -139,7 +76,7 @@
 }
 
 .wp-block-separator.is-style-dots:before {
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
 	content: "\00b7 \00b7 \00b7";
 	letter-spacing: 1em;
 	padding-left: 1em;

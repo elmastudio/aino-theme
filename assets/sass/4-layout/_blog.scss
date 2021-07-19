@@ -11,12 +11,6 @@
 	@include s-r-9(margin-bottom);
 }
 
-.entry-content,
-.entry-summary,
-.page-content {
-	margin: 0;
-}
-
 .page-links {
 	clear: both;
 	margin: 0;
@@ -603,7 +597,7 @@ body:not(.no-blogcard-spacing) {
 
 		.entry-comments,
 		.posted-on {
-			color: var(--global--color--font-secondary);
+			color: var(--wp--custom--color--font-secondary);
 		}
 
 		.posted-on {
@@ -737,7 +731,7 @@ body:not(.no-blogcard-spacing) {
 	.page-title {
 		margin: 0;
 		@include s-r-7(padding-top);
-		border-top: 1px solid var(--global--color--border);
+		border-top: 1px solid var(--wp--custom--color--border);
 
 		span {
 			padding-right: 0.125rem;

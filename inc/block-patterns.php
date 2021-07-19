@@ -18,11 +18,11 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 
 		if ( function_exists( 'register_block_pattern' ) ) {
 			$block_patterns = array(
-				'about-one',
+				'about-three-columns',
 			);
 
 			if ( class_exists( 'WP_Block_Type_Registry' ) ) {
-				$block_patterns[] = 'about-one';
+				$block_patterns[] = 'about-three-columns';
 			}
 
 			foreach ( $block_patterns as $block_pattern ) {

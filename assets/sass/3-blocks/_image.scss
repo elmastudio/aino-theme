@@ -47,7 +47,11 @@ div[class*='wp-block-'] figcaption {
 	@include s-r-4 (margin-top);
 	margin-bottom: 0;
 	text-align: left;
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
+}
+
+.wp-block-image.alignfull figcaption {
+	text-align: center;
 }
 
 .wp-caption.alignleft .wp-caption-text,

@@ -11,16 +11,14 @@
 			}
 
 			&.columns-2,
-			&.columns-3,
 			&.columns-4,
-			&.columns-5,
-			&.columns-6 {
+			&.columns-5 {
 
 				@include breakpoint(sm) {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
 					column-gap: 2rem;
-	
+
 					li {
 						grid-template-columns: 1fr 1fr;
 	
@@ -37,8 +35,23 @@
 
 			&.columns-3,
 			&.columns-6 {
+				@include breakpoint(sm) {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					column-gap: 2rem;
+
+					li {
+						grid-template-columns: 1fr 1fr 1fr;
+	
+						&:nth-last-child(-n+3) {
+							padding-bottom: 0;
+						}
+					}
+				}
+
 				@include breakpoint(md) {
 					grid-template-columns: repeat(3, 1fr);
+					column-gap: 3rem;
 
 					li {
 						grid-template-columns: 1fr 1fr 1fr;
@@ -65,6 +78,7 @@
 			}
 
 			&.columns-5 {
+				column-gap: 1rem !important;
 				@include breakpoint(md) {
 					grid-template-columns: repeat(5, 1fr);
 
@@ -76,16 +90,13 @@
 						}
 					}
 				}
-
-				@include breakpoint(lg) {
-					column-gap: 1.5rem;
-				}
 			}
 
 			&.columns-6 {
+				column-gap: 1rem !important;
+
 				@include breakpoint(lg) {
 					grid-template-columns: repeat(6, 1fr);
-					column-gap: 1.5rem;
 
 					li {
 						grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -99,7 +110,7 @@
 		}
 
 		li {
-			@include s-r-9 (padding-bottom);
+			@include s-r-12 (padding-bottom);
 
 			a {
 				text-decoration: none;
@@ -115,14 +126,29 @@
 	
 			}
 		}
-		
-		.wp-block-post-title,
-		.wp-block-post-featured-image,
-		.wp-block-post-excerpt__excerpt,
-		.wp-block-post-terms,
-		.wp-block-post-excerpt__more-text,
-		.wp-block-post-date {
+
+		.wp-block-post:not(.no-featured-image) .wp-block-post-title,
+		.wp-block-post-terms {
 			@include s-r-4 (padding-top);
+		}
+
+		.wp-block-post-title,
+		.wp-block-post-excerpt__excerpt {
+			@include s-r-4 (padding-bottom);
+		}
+
+		.wp-block-post-date,
+		.wp-block-post-author__name,
+		.wp-block-post-author__content {
+			display: inline-block;
+		}
+
+		.wp-block-post-author {
+			display: inline;
+
+			&:after {
+				content: ",";
+			}
 		}
 
 		.wp-block-post-terms {
@@ -139,6 +165,10 @@
 			a:not(:first-child) {
 				margin-left: -7px; // temporary fix for post term separators
 			}
+		}
+
+		.wp-block-post-author__name {
+			font-weight: 400;
 		}
 	}
 }

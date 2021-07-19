@@ -1,7 +1,6 @@
 {
 	"version": 1,
-	"templateParts": [
-		{
+	"templateParts": [{
 			"name": "header",
 			"area": "header"
 		},
@@ -10,16 +9,14 @@
 			"area": "footer"
 		}
 	],
-	"customTemplates": [
-		{
-			"name": "header-footer-only",
-			"title": "Header and Footer Only",
-			"postTypes": [
-				"page",
-				"post"
-			]
-		}
-	],
+	"customTemplates": [{
+		"name": "header-footer-only",
+		"title": "Header and Footer Only",
+		"postTypes": [
+			"page",
+			"post"
+		]
+	}],
 	"settings": {
 		"border": {
 			"customColor": true,
@@ -30,130 +27,244 @@
 		"spacing": {
 			"customMargin": false,
 			"customPadding": false,
-			"units": [ "px", "em", "rem", "vh", "vw" ]
+			"units": ["px", "em", "rem", "vh", "vw"]
 		},
 		"color": {
 			"link": true,
 			"custom": true,
 			"palette": [
 				{
-					"slug": "light-background-primary",
+					"slug": "background-primary",
 					"color": "#ffffff",
-					"name": "Light Background Primary"
+					"name": "Background Primary"
 				},
 				{
-					"slug": "light-background-secondary",
-					"color": "#F4F4F4",
-					"name": "Light Background Secondary"
+					"slug": "background-secondary",
+					"color": "#f4f4f4",
+					"name": "Background Secondary"
 				},
 				{
-					"slug": "light-border",
-					"color": "#D6D6D6",
-					"name": "Light Border"
+					"slug": "border",
+					"color": "#d7d7d7",
+					"name": "Border"
 				},
 				{
-					"slug": "light-button-color-primary",
+					"slug": "button-color-primary",
 					"color": "#ffffff",
-					"name": "Light Button Color Primary"
+					"name": "Button Color Primary"
 				},
 				{
-					"slug": "light-button-color-secondary",
+					"slug": "button-color-secondary",
 					"color": "#121212",
-					"name": "Light Button Color Secondary"
+					"name": "Button Color Secondary"
 				},
 				{
-					"slug": "light-code-background",
+					"slug": "code-background",
 					"color": "#002F33",
-					"name": "Light Code Background"
+					"name": "Code Background"
 				},
 				{
-					"slug": "light-code-color",
+					"slug": "code-color",
 					"color": "#68C7C4",
-					"name": "Light Code Color"
+					"name": "Code Color"
 				},
 				{
-					"slug": "light-error",
+					"slug": "error",
 					"color": "#D30F0F",
-					"name": "Light Error"
+					"name": "Error"
 				},
 				{
-					"slug": "light-font-primary",
+					"slug": "font-primary",
 					"color": "#121212",
-					"name": "Light Font Primary"
+					"name": "Font Primary"
 				},
 				{
-					"slug": "light-font-secondary",
+					"slug": "font-secondary",
 					"color": "#282828",
-					"name": "Light Font Secondary"
+					"name": "Font Secondary"
 				},
 				{
-					"slug": "light-font-tertiary",
+					"slug": "font-tertiary",
 					"color": "#777B7D",
-					"name": "Light Font Tertiary"
+					"name": "Font Tertiary"
 				},
 				{
-					"slug": "light-form-border",
-					"color": "#aeaeae",
-					"name": "Light Form Border"
+					"slug": "form-border",
+					"color": "#AEAEAE",
+					"name": "Form Border"
 				},
 				{
-					"slug": "light-form-border-active",
-					"color": "#F46119",
-					"name": "Light Form Border Active"
+					"slug": "form-border-active",
+					"color": "#121212",
+					"name": "Form Border Active"
 				},
 				{
-					"slug": "light-form-glow",
-					"color": "RGBA(244, 97, 25, 0.5)",
-					"name": "Light Form Border Glow"
+					"slug": "form-glow",
+					"color": "RGBA(18, 18, 18, 0.2)",
+					"name": "Form Border Glow"
 				},
 				{
-					"slug": "light-form-background",
+					"slug": "form-select-fill",
 					"color": "#ffffff",
-					"name": "Light Form Background"
+					"name": "Form Select Fill"
 				},
 				{
-					"slug": "light-form-select-fill",
+					"slug": "form-background",
 					"color": "#ffffff",
-					"name": "Light Form Select Fill"
+					"name": "Form Background"
 				},
 				{
-					"slug": "light-notification",
+					"slug": "notification",
 					"color": "#A3A9F5",
-					"name": "Light Notification"
+					"name": "Notification"
 				},
 				{
-					"slug": "light-primary",
-					"color": "#777B7D",
-					"name": "Light Primary"
+					"slug": "primary",
+					"color": "#282828",
+					"name": "Primary"
 				},
 				{
-					"slug": "light-product-badge-background",
+					"slug": "product-badge-background",
 					"color": "#ffffff",
-					"name": "Light Product Badge Background"
+					"name": "Product Badge Background"
 				},
 				{
-					"slug": "light-product-badge-color",
-					"color": "#111111",
-					"name": "Light Product Badge Color"
+					"slug": "product-badge-color",
+					"color": "#282828",
+					"name": "Product Badge Color"
 				},
 				{
-					"slug": "light-secondary",
-					"color": "#F46119",
-					"name": "Light Secondary"
+					"slug": "secondary",
+					"color": "#FF4002",
+					"name": "Secondary"
 				},
 				{
-					"slug": "light-star-rating",
+					"slug": "star-rating",
 					"color": "#777B7D",
-					"name": "Light Star Rating"
+					"name": "Star Rating"
 				},
 				{
-					"slug": "light-success",
+					"slug": "success",
 					"color": "#33D1FF",
-					"name": "Light Success"
+					"name": "Success"
+				},
+				{
+					"slug": "variant-background-primary",
+					"color": "#121212",
+					"name": "Variant Background Primary"
+				},
+				{
+					"slug": "variant-background-secondary",
+					"color": "#282828",
+					"name": "Variant Background Secondary"
+				},
+				{
+					"slug": "variant-border",
+					"color": "#4A4D4E",
+					"name": "Variant Border"
+				},
+				{
+					"slug": "variant-button-color-primary",
+					"color": "#ffffff",
+					"name": "Variant Button Color Primary"
+				},
+				{
+					"slug": "variant-button-color-secondary",
+					"color": "#121212",
+					"name": "Variant Button Color Secondary"
+				},
+				{
+					"slug": "variant-code-background",
+					"color": "#F9F9F9",
+					"name": "Variant Code Background"
+				},
+				{
+					"slug": "variant-code-color",
+					"color": "#0351AB",
+					"name": "Variant Code Color"
+				},
+				{
+					"slug": "variant-error",
+					"color": "#F13D3D",
+					"name": "Variant Error"
+				},
+				{
+					"slug": "variant-font-primary",
+					"color": "#ffffff",
+					"name": "Variant Font Primary"
+				},
+				{
+					"slug": "variant-font-secondary",
+					"color": "#ffffff",
+					"name": "Variant Font Secondary"
+				},
+				{
+					"slug": "variant-font-tertiary",
+					"color": "#777B7D",
+					"name": "Variant Font Tertiary"
+				},
+				{
+					"slug": "variant-form-border",
+					"color": "#666A6B",
+					"name": "Variant Form Border"
+				},
+				{
+					"slug": "variant-form-border-active",
+					"color": "#ffffff",
+					"name": "Variant Form Border Active"
+				},
+				{
+					"slug": "variant-form-glow",
+					"color": "RGBA(255, 255, 255, 0.3)",
+					"name": "Variant Form Border Glow"
+				},
+				{
+					"slug": "variant-form-select-fill",
+					"color": "#ffffff",
+					"name": "Variant Form Select Fill"
+				},
+				{
+					"slug": "variant-form-background",
+					"color": "#121212",
+					"name": "Variant Form Background"
+				},
+				{
+					"slug": "variant-notification",
+					"color": "#E8EAFD",
+					"name": "Variant Notification"
+				},
+				{
+					"slug": "variant-primary",
+					"color": "#777B7D",
+					"name": "Variant Primary"
+				},
+				{
+					"slug": "variant-product-badge-background",
+					"color": "#ffffff",
+					"name": "Variant Product Badge Background"
+				},
+				{
+					"slug": "variant-product-badge-color",
+					"color": "#111111",
+					"name": "Variant Product Badge Color"
+				},
+				{
+					"slug": "variant-secondary",
+					"color": "#FF6837",
+					"name": "Variant Secondary"
+				},
+				{
+					"slug": "variant-star-rating",
+					"color": "#777B7D",
+					"name": "Variant Star Rating"
+				},
+				{
+					"slug": "variant-success",
+					"color": "#80E2FF",
+					"name": "Variant Success"
 				}
 			],
-			"gradients": [
-				{
+			"gradients": [{
 					"slug": "grayish-blue-to-dark-grayish-blue",
 					"gradient": "linear-gradient(0deg,rgb(91, 108, 114) 0%,rgb(60, 68, 72) 100%)",
 					"name": "Grayish blue to dark grayish blue"
@@ -246,12 +357,11 @@
 			]
 		},
 		"layout": {
-			"contentSize": "696px",
-			"wideSize": "1440px"
+			"contentSize": "43.5rem",
+			"wideSize": "90rem"
 		},
 		"typography": {
-			"fontFamilies": [
-				{
+			"fontFamilies": [{
 					"fontFamily": "'Arimo', sans-serif",
 					"slug": "arimo-font",
 					"name": "Arimo Font"
@@ -267,8 +377,7 @@
 					"name": "Monospace Font"
 				}
 			],
-			"fontSizes": [
-				{
+			"fontSizes": [{
 					"name": "XXS",
 					"size": "12px",
 					"slug": "xxs"
@@ -314,57 +423,122 @@
 					"slug": "xxxxl"
 				}
 			],
-			"fontWeights": [
-                { "slug": "200", "value": "200", "name": "Thin" },
-                { "slug": "300", "value": "300", "name": "Light" },
-                { "slug": "400", "value": "400", "name": "Regular" },
-                { "slug": "500", "value": "500", "name": "Medium" },
-                { "slug": "600", "value": "600", "name": "Semibold" },
-                { "slug": "700", "value": "700", "name": "Bold" },
-                { "slug": "800", "value": "800", "name": "Heavy" },
-                { "slug": "900", "value": "900", "name": "Black" }
-            ],
-            "textTransforms": [
-                { "name": "AB", "slug": "uppercase" },
-                { "name": "ab", "slug": "lowercase" },
-                { "name": "Ab", "slug": "capitalize" }
-            ],
-            "textDecorations": [
-                { "name": "Underline", "slug": "underline", "value": "underline" },
-                {
-                    "name": "Strikethrough",
-                    "slug": "strikethrough",
-                    "value": "line-through"
-                }
+			"fontWeights": [{
+					"slug": "200",
+					"value": "200",
+					"name": "Thin"
+				},
+				{
+					"slug": "300",
+					"value": "300",
+					"name": "Light"
+				},
+				{
+					"slug": "400",
+					"value": "400",
+					"name": "Regular"
+				},
+				{
+					"slug": "500",
+					"value": "500",
+					"name": "Medium"
+				},
+				{
+					"slug": "600",
+					"value": "600",
+					"name": "Semibold"
+				},
+				{
+					"slug": "700",
+					"value": "700",
+					"name": "Bold"
+				},
+				{
+					"slug": "800",
+					"value": "800",
+					"name": "Heavy"
+				},
+				{
+					"slug": "900",
+					"value": "900",
+					"name": "Black"
+				}
+			],
+			"textTransforms": [{
+					"name": "AB",
+					"slug": "uppercase"
+				},
+				{
+					"name": "ab",
+					"slug": "lowercase"
+				},
+				{
+					"name": "Ab",
+					"slug": "capitalize"
+				}
+			],
+			"textDecorations": [{
+					"name": "Underline",
+					"slug": "underline",
+					"value": "underline"
+				},
+				{
+					"name": "Strikethrough",
+					"slug": "strikethrough",
+					"value": "line-through"
+				}
 			],
 			"customFontSize": false,
 			"customLineHeight": true
 		},
 		"custom": {
 			"color": {
-				"light-background-primary": "var(--wp--preset--color--light-background-primary)",
-				"light-background-secondary": "var(--wp--preset--color--light-background-secondary)",
-				"light-border": "var(--wp--preset--color--light-border)",
-				"light-button-color-primary": "var(--wp--preset--color--light-button-color-primary)",
-				"light-button-color-secondary": "var(--wp--preset--color--light-button-color-secondary)",
-				"light-code-background": "var(--wp--preset--color--light-code-background)",
-				"light-code-color": "var(--wp--preset--color--light-code-color)",
-				"light-error": "var(--wp--preset--color--light-error)",
-				"light-font-primary": "var(--wp--preset--color--light-font-primary)",
-				"light-font-secondary": "var(--wp--preset--color--light-font-secondary)",
-				"light-font-tertiary": "var(--wp--preset--color--light-font-tertiary)",
-				"light-form-border": "var(--wp--preset--color--light-form-border)",
-				"light-form-border-active": "var(--wp--preset--color--light-form-border-active)",
-				"light-form-glow": "var(--wp--preset--color--light-form-glow)",
-				"light-form-select-fill": "var(--wp--preset--color--light-form-select-fill)",
-				"light-form-background": "var(--wp--preset--color--light-form-background)",
-				"light-notification": "var(--wp--preset--color--light-notification)",
-				"light-primary": "var(--wp--preset--color--light-primary)",
-				"light-product-badge-background": "var(--wp--preset--color--light-product-badge-background)",
-				"light-product-badge-color": "var(--wp--preset--color--light-product-badge-color)",
-				"light-secondary": "var(--wp--preset--color--light-secondary)",
-				"light-star-rating": "var(--wp--preset--color--light-star-rating)",
-				"light-success": "var(--wp--preset--color--light-success)"
+				"background-primary": "var(--wp--preset--color--background-primary)",
+				"background-secondary": "var(--wp--preset--color--background-secondary)",
+				"border": "var(--wp--preset--color--border)",
+				"button-color-primary": "var(--wp--preset--color--button-color-primary)",
+				"button-color-secondary": "var(--wp--preset--color--button-color-secondary)",
+				"code-background": "var(--wp--preset--color--code-background)",
+				"code-color": "var(--wp--preset--color--code-color)",
+				"error": "var(--wp--preset--color--error)",
+				"font-primary": "var(--wp--preset--color--font-primary)",
+				"font-secondary": "var(--wp--preset--color--font-secondary)",
+				"font-tertiary": "var(--wp--preset--color--font-tertiary)",
+				"form-border": "var(--wp--preset--color--form-border)",
+				"form-border-active": "var(--wp--preset--color--form-border-active)",
+				"form-glow": "var(--wp--preset--color--form-glow)",
+				"form-select-fill": "var(--wp--preset--color--form-select-fill)",
+				"form-background": "var(--wp--preset--color--form-background)",
+				"notification": "var(--wp--preset--color--notification)",
+				"primary": "var(--wp--preset--color--primary)",
+				"product-badge-background": "var(--wp--preset--color--product-badge-background)",
+				"product-badge-color": "var(--wp--preset--color--product-badge-color)",
+				"secondary": "var(--wp--preset--color--secondary)",
+				"star-rating": "var(--wp--preset--color--star-rating)",
+				"success": "var(--wp--preset--color--success)",
+				"variant-background-primary": "var(--wp--preset--color--variant-background-primary)",
+				"variant-background-secondary": "var(--wp--preset--color--variant-background-secondary)",
+				"variant-border": "var(--wp--preset--color--variant-border)",
+				"variant-button-color-primary": "var(--wp--preset--color--variant-button-color-primary)",
+				"variant-button-color-secondary": "var(--wp--preset--color--variant-button-color-secondary)",
+				"variant-code-background": "var(--wp--preset--color--variant-code-background)",
+				"variant-code-color": "var(--wp--preset--color--variant-code-color)",
+				"variant-error": "var(--wp--preset--color--variant-error)",
+				"variant-font-primary": "var(--wp--preset--color--variant-font-primary)",
+				"variant-font-secondary": "var(--wp--preset--color--variant-font-secondary)",
+				"variant-font-tertiary": "var(--wp--preset--color--variant-font-tertiary)",
+				"variant-form-border": "var(--wp--preset--color--variant-form-border)",
+				"variant-form-border-active": "var(--wp--preset--color--variant-form-border-active)",
+				"variant-form-glow": "var(--wp--preset--color--variant-form-glow)",
+				"variant-form-select-fill": "var(--wp--preset--color--variant-form-select-fill)",
+				"variant-form-background": "var(--wp--preset--color--variant-form-background)",
+				"variant-notification": "var(--wp--preset--color--variant-notification)",
+				"variant-primary": "var(--wp--preset--color--variant-primary)",
+				"variant-product-badge-background": "var(--wp--preset--color--variant-product-badge-background)",
+				"variant-product-badge-color": "var(--wp--preset--color--variant-product-badge-color)",
+				"variant-secondary": "var(--wp--preset--color--variant-secondary)",
+				"variant-star-rating": "var(--wp--preset--color--variant-star-rating)",
+				"variant-success": "var(--wp--preset--color--variant-success)"
 			},
 			"line-height": {
 				"body": 1.4,
@@ -379,7 +553,6 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family-arimo-font)",
-					"fontWeight": 400,
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				}
 			},
@@ -389,6 +562,81 @@
 					"lineHeight": "var(--wp--custom--line-height--body)"
 				}
 			}
+		},
+		"blocks": {
+			"core/button": {
+				"color": {
+					"palette": [
+						{
+							"slug": "color-primary",
+							"color": "var(--wp--preset--color--primary)",
+							"name": "Primary"
+						},
+						{
+							"slug": "color-secondary",
+							"color": "var(--wp--preset--color--secondary)",
+							"name": "Secondary"
+						},
+						{
+							"slug": "button-color-primary",
+							"color": "var(--wp--preset--color--button-color-primary)",
+							"name": "Button Color Primary"
+						},
+						{
+							"slug": "button-color-secondary",
+							"color": "var(--wp--preset--color--button-color-secondary)",
+							"name": "Button Color Secondary"
+						}
+					]
+				}
+			},
+			"core/preformatted": {
+				"color": {
+					"palette": [
+						{
+							"slug": "code-background",
+							"color": "var(--wp--preset--color--code-background)",
+							"name": "Code Background"
+						},
+						{
+							"slug": "code-color",
+							"color": "var(--wp--preset--color--code-color)",
+							"name": "Code Color"
+						},
+						{
+							"slug": "variant-code-background",
+							"color": "var(--wp--preset--color--variant-code-background)",
+							"name": "Variant Code Background"
+						},
+						{
+							"slug": "variant-code-color",
+							"color": "var(--wp--preset--color--variant-code-color)",
+							"name": "Variant Code Color"
+						}
+					]
+				}
+			},
+			"core/separator": {
+				"color": {
+					"palette": [
+						{
+							"slug": "border",
+							"color": "var(--wp--preset--color--border)",
+							"name": "Border"
+						},
+						{
+							"slug": "variant-border",
+							"color": "var(--wp--preset--color--variant-border)",
+							"name": "Variant Border"
+						}
+					]
+				}
+			},
+			"core/image": {
+				"border": {
+					"customRadius": false
+				}
+			}
 		}
 	},
 	"styles": {
@@ -396,12 +644,13 @@
 			"core/button": {
 				"color": {
 					"background": "var(--wp--custom--color--primary)",
-					"text": "var(--wp--custom--color--font-primary)"
+					"text": "var(--wp--custom--color--button-color-primary)"
 				}
 			},
 			"core/site-title": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--s)"
+					"fontSize": "var(--wp--preset--font-size--s)",
+					"fontWeight": 400
 				}
 			}
 		},

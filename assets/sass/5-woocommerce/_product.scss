@@ -65,7 +65,7 @@
 				content: "";
 				position: absolute;
 				display: block;
-				background: var(--global--color--font-primary);
+				background: var(--wp--custom--color--font-primary);
 				z-index: 9;
 			}
 
@@ -193,7 +193,7 @@
 					width: 100%;
 					max-height: 3.75rem;
 					line-height: var(--global--line-height-reset);
-					background: var(--global--color--light-form-background);
+					background: var(--wp--custom--color--form-background);
 
 					&:active,
 					&:focus {
@@ -236,7 +236,7 @@
 					padding: 0;
 
 					a {
-						color: var(--global--color--font-secondary);
+						color: var(--wp--custom--color--font-secondary);
 						font-size: var(--font-size--body-m);
 					}
 				}
@@ -417,7 +417,7 @@
 					transition: none;
 					font-size: 0;
 					opacity: .4;
-					color: var(--global--color--star-rating);
+					color: var(--wp--custom--color--star-rating);
 					margin: 0;
 
 					&:before {
@@ -460,7 +460,7 @@
 	.star-rating:before,
 	.wc-block-review-list-item__rating>.wc-block-review-list-item__rating__stars:before {
 		content: '\2605\2605\2605\2605\2605';
-		color: var(--global--color--star-rating);
+		color: var(--wp--custom--color--star-rating);
 		letter-spacing: 0;
 		@include s-r-1(padding-bottom);
 		opacity: .4;
@@ -482,7 +482,7 @@
 
 		&::before {
 			content: '\2605\2605\2605\2605\2605';
-			color: var(--global--color--star-rating);
+			color: var(--wp--custom--color--star-rating);
 			letter-spacing: 0;
 			opacity: 1;
 			font-size: 13px;

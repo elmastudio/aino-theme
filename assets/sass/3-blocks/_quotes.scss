@@ -12,7 +12,7 @@
 	}
 
 	.has-text-color a:hover {
-		color: var(--global--color--primary);
+		color: var(--wp--custom--color--primary);
 	}
 
 	&.is-style-large {
@@ -59,7 +59,7 @@
 	&.is-style-solid-color,
 	&.is-style-solid-color {
 		padding: $s-6;
-		background-color: var(--global--color--background-primary);
+		background-color: var(--wp--custom--color--background-primary);
 		clear: both;
 
 		blockquote {

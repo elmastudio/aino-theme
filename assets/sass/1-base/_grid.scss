@@ -23,110 +23,31 @@
 	box-sizing: border-box;
 }
 
-.col1 {
-	max-width: $col1;
-
-	&.nogap {
-		max-width: calc(#{$col1} - #{$s-9});
-	}
+/* Alignments and block widths */
+.wp-block-group.alignfull,
+*[class*="wp-container-"] {
+	padding-left: var(--global--content--padding--left);
+	padding-right: var(--global--content--padding--right);
 }
 
-.col2 {
-	max-width: $col2;
-
-	&.nogap {
-		max-width: calc(#{$col2} - #{$s-9});
-	}
+.wp-block-group.alignfull *[class*="wp-container-"],
+.wp-block-group.alignfull > .alignfull,
+*[class*="wp-container-"] *[class*="wp-container-"],
+*[class*="wp-container-"] > .alignfull {
+	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
+	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
+	width: calc( 100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 }
 
-.col3 {
-	max-width: $col3;
+.entry-content > * {
 
-	&.nogap {
-		max-width: calc(#{$col3} - #{$s-9});
-	}
-}
-
-.col4 {
-	max-width: $col4;
-
-	&.nogap {
-		max-width: calc(#{$col4} - #{$s-9});
-	}
-}
-
-.col5 {
-	max-width: $col5;
-
-	&.nogap {
-		max-width: calc(#{$col5} - #{$s-9});
-	}
-}
-
-.col6 {
-
-	@include breakpoint(sm) {
-		max-width: 21rem;
+	&.alignwide {
+		max-width: var(--global--max-content-width);
 	}
 
-	@include breakpoint(md) {
-		max-width: 27rem;
-	}
-
-	@include breakpoint(lg) {
-		max-width: $col6;
-	}
-
-	&.nogap {
-		max-width: calc(#{$col6} - #{$s-9});
-	}
-}
-
-.col7 {
-	max-width: $col7;
-
-	&.nogap {
-		max-width: calc(#{$col7} - #{$s-9});
-	}
-}
-
-.col8 {
-	max-width: $col8;
-
-	&.nogap {
-		max-width: calc(#{$col8} - #{$s-9});
-	}
-}
-
-.col9 {
-	max-width: $col9;
-
-	&.nogap {
-		max-width: calc(#{$col9} - #{$s-9});
-	}
-}
-
-.col10 {
-	max-width: $col10;
-
-	&.nogap {
-		max-width: calc(#{$col10} - #{$s-9});
-	}
-}
-
-.col11 {
-	max-width: $col11;
-
-	&.nogap {
-		max-width: calc(#{$col11} - #{$s-9});
-	}
-}
-
-.col12 {
-	max-width: $col12;
-
-	&.nogap {
-		max-width: calc(#{$col12} - #{$s-9});
+	.aligncenter {
+		clear: both;
+		@include push--auto;
 	}
 }
 
@@ -165,7 +86,8 @@
 
 .outer-margins,
 .wp-block-group.has-background.outer-margins {
-	@include outer-margins;
+	padding-left: var(--global--content--padding--left);
+	padding-right: var(--global--content--padding--right);
 }
 
 /* Centered elements */
@@ -196,10 +118,6 @@
 	}
 }
 
-.single-post .site-content {
-	@include push--auto;
-}
-
 /* Default content width */
 .single-post .entry-content>*,
 .page-template-default .entry-content>*,
@@ -209,7 +127,6 @@
 .authorbox__details,
 .author-pic-link,
 .default-content-width {
-	@include push--auto;
 	max-width: var(--global--default-content-width);
 }
 
@@ -217,7 +134,6 @@
 .tpl-fullwidth .entry-content,
 .tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header,
-.single-post .site-content .authorbox__wrap,
 .single-post .site-content .related-wrap,
 .single-post .comments-area {
 	@include push--auto;

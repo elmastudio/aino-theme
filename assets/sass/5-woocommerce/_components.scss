@@ -34,7 +34,7 @@
 }
 
 .wc-block-components-sidebar {
-	background: var(--global--color--light-background);
+	background: var(--wp--custom--color--light-background);
 	border-radius: var(--global--border-radius-s);
 	margin: 0;
 	@include s-r-6(padding-top);
@@ -119,7 +119,7 @@ padding-right: 0;
 	position: absolute;
 	transform: translateY(1.25rem);
 	line-height: var(--global--line-height-reset);
-	color: var(--global--color--font-secondary);
+	color: var(--wp--custom--color--font-secondary);
 	margin: 0 0 0 1.25rem;
 	max-width: calc(100% - 32px);
 }
@@ -137,9 +137,9 @@ padding-right: 0;
 	.components-custom-select-control__button {
 		font-size: var(--font-size--body-m);
 		border-radius: var(--global--border-radius-xxs);
-		border: 1px solid var(--global--color--form-border);
+		border: 1px solid var(--wp--custom--color--form-border);
 		line-height: var(--global--line-height-body);
-		color: var(--global--color--font-secondary);
+		color: var(--wp--custom--color--font-secondary);
 		font-family: inherit;
 		margin: 0;
 		box-sizing: border-box;
@@ -152,11 +152,11 @@ padding-right: 0;
 		input:active,
 		input:focus,
 		input:hover {
-			border-color: var(--global--color--error);
+			border-color: var(--wp--custom--color--error);
 		}
 
 		label {
-			color: var(--global--color--error);
+			color: var(--wp--custom--color--error);
 		}
 
 		p {
@@ -173,12 +173,12 @@ padding-right: 0;
 	&.is-active input[type="number"],
 	&.is-active input[type="email"] {
 		padding: 1rem 0 0 1.25rem;
-		border: 1px solid var(--global--color--form-border-active);
+		border: 1px solid var(--wp--custom--color--form-border-active);
 	}
 
 	&.is-active label {
 		transform: translateY(10px) scale(0.7);
-		color: var(--global--color-light-gray);
+		color: var(--wp--custom--color--font-tertiary);
 	}
 }
 
@@ -197,7 +197,7 @@ padding-right: 0;
 	.wc-block-components-checkbox__input[type="checkbox"] {
 		position: relative;
 		-webkit-appearance: none;
-		border: 1px solid var(--global--color--form-border);
+		border: 1px solid var(--wp--custom--color--form-border);
 		width: 1.5rem;
 		height: 1.5rem;
 		border-radius: 50%;
@@ -207,9 +207,9 @@ padding-right: 0;
 		transform: none;
 
 		&:focus {
-			border-color: var(--global--color--form-border-active);
-			box-shadow: 0 0 0 4px var(--global--color--form-glow);
-			background: var(--global--color--form-border-active);
+			border-color: var(--wp--custom--color--form-border-active);
+			box-shadow: 0 0 0 4px var(--wp--custom--color--form-glow);
+			background: var(--wp--custom--color--form-border-active);
 		}
 
 		&__mark {
@@ -217,10 +217,10 @@ padding-right: 0;
 		}
 
 		&:checked {
-			border-color: var(--global--color--form-border-active);
-			background: var(--global--color--form-border-active);
-			fill: var(--global--color--light-form-select-fill);
-			color: var(--global--color--light-form-select-fill);
+			border-color: var(--wp--custom--color--form-border-active);
+			background: var(--wp--custom--color--form-border-active);
+			fill: var(--wp--custom--color--form-select-fill);
+			color: var(--wp--custom--color--form-select-fill);
 		}
 
 		&:not(:checked) + .wc-block-components-checkbox__mark {
@@ -256,7 +256,7 @@ padding-right: 0;
 		height: 3.75rem;
 		padding: 1rem 0 0 1.25rem;
 		line-height: var(--global--line-height-body);
-		border: 1px solid var(--global--color--form-border);
+		border: 1px solid var(--wp--custom--color--form-border);
 
 		&:after {
 			content: "";
@@ -268,7 +268,7 @@ padding-right: 0;
 			bottom: $s-2;
 			height: calc(100% - 16px);
 			width: 1px;
-			background: var(--global--color--form-border);
+			background: var(--wp--custom--color--form-border);
 		}
 
 		.components-custom-select-control__button-icon {
@@ -301,7 +301,7 @@ padding-right: 0;
 			line-height: var(--global--line-height-body);
 			transform: none;
 			height: 3.75rem;
-			color: var(--global--color--font-secondary);
+			color: var(--wp--custom--color--font-secondary);
 			padding: $s-4 0 0 1.25rem;
 		}
 	}
@@ -310,7 +310,7 @@ padding-right: 0;
 		padding: 0;
 		margin: 0;
 		font-size: var(--font-size--body-s);
-		border-color: var(--global--color--form-border);
+		border-color: var(--wp--custom--color--form-border);
 
 		.components-custom-select-control__item {
 			padding: $s-2 1.25rem;
@@ -336,7 +336,7 @@ padding-right: 0;
 		.wc-block-components-state-input {
 			
 			label.components-custom-select-control__label {
-				color: var(--global--color--font-secondary);
+				color: var(--wp--custom--color--font-secondary);
 				line-height: var(--global--line-height-body);
 			}
 		}
@@ -377,15 +377,15 @@ padding-right: 0;
 		bottom: $s-2;
 		height: calc(100% - 1rem);
 		width: 1px;
-		background: var(--global--color--form-border);
+		background: var(--wp--custom--color--form-border);
 	}
 
 	.orderby,
 	.wc-block-sort-select__select {
 		height: $s-8;
 		min-width: 12.5rem;
-		background: var(--global--color--light-form-background);
-		border: 1px solid var(--global--color--form-border);
+		background: var(--wp--custom--color--form-background);
+		border: 1px solid var(--wp--custom--color--form-border);
 		padding: $s-2 87px $s-2 1.25rem;
 
 		&:active,
@@ -431,7 +431,7 @@ padding-right: 0;
 
 .wc-block-components-validation-error {
 	font-size: var(--font-size--body-xxs);
-	color: var(--global--color--error);
+	color: var(--wp--custom--color--error);
 	max-width: 100%;
 	position: absolute;
 	top: calc(100% - 1px);
@@ -494,14 +494,14 @@ padding-right: 0;
 	z-index: 100;
 	margin: 0;
 	border-radius: var(--global--border-radius-s);
-	color: var(--global--color--light-badge-color);
-	background: var(--global--color--light-badge-background);
+	color: var(--wp--custom--color--badge-color);
+	background: var(--wp--custom--color--badge-background);
 }
 
 .wc-block-components-sale-badge {
 	@include s-r-1(margin-top);
 	background: none;
-	border: 1px solid var(--global--color--light-badge-color);
+	border: 1px solid var(--wp--custom--color--badge-color);
 }
 
 .onsale {
@@ -546,14 +546,14 @@ padding-right: 0;
 	align-items: center;
 	@include s-r-6(padding);
 	border-radius: var(--global--border-radius-xxs);
-	background: var(--global--color--notification);
+	background: var(--wp--custom--color--notification);
 
 	@include breakpoint(sm) {
 		@include s-r-9(margin-bottom);
 	}
 		
 	&.woocommerce-error {
-		background: var(--global--color--error);
+		background: var(--wp--custom--color--error);
 	}
 
 	.components-notice__content {
@@ -614,11 +614,11 @@ padding-right: 0;
 			list-style: none;
 		
 		&.woocommerce-message {
-			background: var(--global--color--notification);
+			background: var(--wp--custom--color--notification);
 		}
 
 		&.woocommerce-error {
-			background: var(--global--color--error);
+			background: var(--wp--custom--color--error);
 		}
 
 		a {

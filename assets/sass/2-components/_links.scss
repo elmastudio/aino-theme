@@ -44,16 +44,17 @@ cite a,
 h2.entry-title a,
 .comment-list b.fn a,
 .main-navigation a {
-	color: var(--global--color--font-primary);
-	fill: var(--global--color--font-primary);
+	color: var(--wp--custom--color--font-primary);
+	fill: var(--wp--custom--color--font-primary);
 }
 
 .posts-container .hentry .entry-meta a,
 .entry-comments a,
 .posted-on a,
-.comment-reply-title #cancel-comment-reply-link {
-	color: var(--global--color--font-secondary);
-	fill: var(--global--color--font-secondary);
+.comment-reply-title #cancel-comment-reply-link,
+.comment-body .reply a {
+	color: var(--wp--custom--color--font-tertiary);
+	fill: var(--wp--custom--color--font-tertiary);
 }
 
 /* Link Hovers */
@@ -64,7 +65,11 @@ h2.entry-title a,
 .woocommerce-breadcrumb a,
 .mc4wp-form p a,
 .woocommerce-review-link,
-.posted_in a {
+.posted_in a,
+.post-meta a,
+.wp-block-post-terms a,
+.comment-meta a,
+.comment-body .reply a {
 
 	&:hover {
 		text-decoration: underline;
@@ -74,7 +79,8 @@ h2.entry-title a,
 /* Meta Textlink Hovers */
 h1:not(.site-title), h2, h3, h4, h5, h6,
 .entry-meta,
-.related-post .entry-cats {
+.related-post .entry-cats,
+.wp-block-ainoblocks-grid-item {
 
 	a {
 		&:hover {

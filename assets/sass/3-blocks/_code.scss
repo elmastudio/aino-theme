@@ -8,8 +8,10 @@
 
 .wp-block-preformatted,
 .wp-block-code {
-	background: var(--global--color--code-background);
-	color: var(--global--color--code-color);
+	background: var(--wp--custom--color--code-background);
+	color: var(--wp--custom--color--code-color);
+	border: none;
+	border-radius: 0;
 
 	code {
 		overflow-x: auto;

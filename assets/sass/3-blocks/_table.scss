@@ -10,7 +10,7 @@
 		background: transparent;
 
 		tr {
-			border-bottom: 1px solid var(--global--color--border);
+			border-bottom: 1px solid var(--wp--custom--color--border);
 
 			&:last-of-type {
 				border-bottom: 0;
@@ -22,7 +22,7 @@
 		border-bottom: none;
 
 		tbody tr:nth-child(odd) {
-			background-color: var(--global--color--background-primary);
+			background-color: var(--wp--custom--color--background-primary);
 			border-bottom: none;
 		}
 

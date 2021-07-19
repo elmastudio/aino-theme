@@ -1,9 +1,9 @@
 .site-footer {
-	background-color: var(--global--color--background-primary);
+	background-color: var(--wp--custom--color--background-primary);
 
 	.textwidget p {
-		color: var(--global--color--font-secondary);
-		fill: var(--global--color--font-secondary);
+		color: var(--wp--custom--color--font-secondary);
+		fill: var(--wp--custom--color--font-secondary);
 	}
 
 	.footer-wrap {
@@ -67,7 +67,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			border-top: 1px solid var(--global--color--border);
+			border-top: 1px solid var(--wp--custom--color--border);
 			@include s-r-9 (padding-top);
 
 			.footer-spacebetween & {
@@ -95,7 +95,7 @@
 			}
 
 			.site-info {
-				color: var(--global--color--font-secondary);
+				color: var(--wp--custom--color--font-secondary);
 				text-align: center;
 
 				@include breakpoint(sm) {
@@ -126,7 +126,7 @@
 
 				a {
 					padding: 0;
-					color: var(--global--color--font-secondary);
+					color: var(--wp--custom--color--font-secondary);
 				}
 			}
 
