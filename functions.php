@@ -318,23 +318,6 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 }
 
 /**
- * Creates a custom Archive title.
- *
- * @param  mixed $title
- * @return void
- */
-function aino_archive_title ( $title ) {
-	if ( is_author() ) {
-		$title = '<span>' . esc_html__( 'All posts by', 'aino' ) . '</span>'; }
-	if ( is_category() ) {
-		$title = '<span>' . esc_html__( 'Filed under', 'aino' ) . '</span>' . single_cat_title( '', false ); }
-	if ( is_tag() ) {
-		$title = '<span>' . esc_html__( 'Filed under', 'aino' ) . '</span>' . single_tag_title( '', false ); }
-	return $title;
-}
-add_filter( 'get_the_archive_title', 'aino_archive_title' );
-
-/**
 * Add post class to posts without featured image
 */
 function aino_add_featured_image_post_class( $classes ) {
