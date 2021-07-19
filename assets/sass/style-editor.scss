@@ -8,8 +8,8 @@
 
 /* Typography */
 body {
-	font-family: var(--body--font-family);
-	line-height: var(--global--line-height--body);
+	font-family: var(--wp--custom--body--typography--font-family);
+	line-height: var(--wp--custom--line-height--body);
 	color: var(--wp--custom--color--font-secondary);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
 	color: var(--wp--custom--color--font-primary);
-	line-height: var(--global--line-height--heading);
+	line-height: var(--wp--custom--line-height--heading);
 	font-weight: normal;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -356,7 +356,7 @@ textarea {
 
 /* Default Appender */
 .editor-default-block-appender .editor-default-block-appender__content {
-	font-family: var(--body--font-family);
+	font-family: var(--wp--custom--body--typography--font-family);
 	line-height: var(--global--line-height-body);
 	font-size: var(--font-size--body-m);
 }
@@ -638,7 +638,7 @@ figcaption {
 	max-height: none;
 
 	&>.is-block-content {
-		max-width: $col3;
+		max-width: 23.25rem;
 	}
 }
 
@@ -733,7 +733,7 @@ figcaption {
 .wp-block-code,
 .wp-block-preformatted,
 .wp-block[data-type="core/verse"] {
-	font-family: var(--code--font-family);
+	font-family: var(--wp--custom--code--typography--font-family);
 	line-height: var(--global--line-height-body);
 	font-size: var(--font-size--body-xs);
 }

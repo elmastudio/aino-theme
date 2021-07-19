@@ -5,8 +5,8 @@ input,
 select,
 table,
 textarea {
-	font-family: var(--body--font-family);
-	line-height: var(--global--line-height--body);
+	font-family: var(--wp--custom--body--typography--font-family);
+	line-height: var(--wp--custom--line-height--body);
 	color: var(--wp--custom--color--font-secondary);
 }
 
@@ -167,8 +167,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--heading--font-family);
-	line-height: var(--global--line-height--heading);
+	font-family: var(--wp--custom--heading--typography--font-family);
+	line-height: var(--wp--custom--line-height--heading);
 	color: var(--wp--custom--color--font-primary);
 	font-weight: 400;
 }
@@ -400,7 +400,7 @@ pre,
 .wp-block-preformatted,
 .wp-block-preformatted.has-background,
 .wp-block-code {
-	font-family: var(--code--font-family);
+	font-family: var(--wp--custom--code--typography--font-family);
 	font-size: var(--font-size--body-xs);
 	line-height: 1.2;
 }

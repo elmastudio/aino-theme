@@ -19,24 +19,6 @@ $s-16                : 13rem;
 $s-17                : 15.5rem;
 $s-18                : 18rem;
 
-/* Spacing Header Bar */
-$stickyheader-mobile : 3.438rem; // 55px
-$stickyheader-desktop: 5.5rem; // 88px
-
-/* Grid Columns */
-$col1                : 7.75rem;
-$col2                : 15.5rem;
-$col3                : 23.25rem;
-$col4                : 31rem;
-$col5                : 35.75rem;
-$col6                : 46.5rem;
-$col7                : 54.25rem;
-$col8                : 62rem;
-$col9                : 69.75rem;
-$col10               : 77.5rem;
-$col11               : 85.25rem;
-$col12               : 93rem;
-
 :root {
 	/* Line Height */
 	--global--line-height-reset: 1;
@@ -82,14 +64,6 @@ $col12               : 93rem;
 
 /* Custom Global styles */
 body {
-	/* Font Family */
-	--heading--font-family: var(--wp--custom--heading--typography--font-family);
-	--body--font-family: var(--wp--custom--body--typography--font-family);
-	--code--font-family: var(--wp--custom--code--typography--font-family);
-
-	/* Line Height */
-	--global--line-height--body: var(--wp--custom--line-height--body);
-	--global--line-height--heading: var(--wp--custom--line-height--heading);
 
 	/* Global Heading Font sizes */
 	--global--font-size--h12: 5.125rem;

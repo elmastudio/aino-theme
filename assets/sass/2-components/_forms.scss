@@ -81,7 +81,7 @@ form label {
 	display: block;
 	line-height: var(--global--line-height-reset);
 	color: var(--wp--custom--color--font-tertiary);
-	@include s-r-1 (margin-bottom);
+	@include s-r-2 (margin-bottom);
 	border-radius: var(--global--border-radius-xxs);
 
 	&.checkbox {
