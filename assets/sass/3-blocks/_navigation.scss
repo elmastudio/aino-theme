@@ -21,11 +21,6 @@
 	}
 }
 
-.wp-block-navigation:where(.has-background) a,
-.wp-block-navigation :where(.submenu-container,
-.wp-block-navigation-link__container) a {
-	@include s-r-2(padding);
-}
 
 .site-footer {
 
@@ -34,4 +29,18 @@
 	.wp-block-page-list>.wp-block-pages-list__item {
 		margin: 0;
 	}
+}
+
+
+.wp-block-navigation:where(.has-background) a,
+.wp-block-navigation :where(.submenu-container,
+.wp-block-navigation-link__container) a {
+	@include s-r-2(padding);
+}
+
+
+.wp-block-navigation__container>.wp-block-navigation-link,
+.wp-block-page-list,
+.wp-block-page-list>.wp-block-pages-list__item {
+	@include s-r-6(margin-right);
 }

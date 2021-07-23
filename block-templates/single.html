@@ -1,70 +1,73 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"className":"post-header outer-margins","paddingTop":15} -->
-<div class="wp-block-group pt__15 post-header outer-margins">
+<div class="wp-block-group post-header outer-margins pt__15">
 
 	<!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide">
 		<div class="wp-block-ainoblocks-grid-container__inner">
-			<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":10,"gridColumnStartTablet":1,"gridColumnEndTablet":11,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch} -->
-			<div
-				class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__10 col_start_t__1 col_end_t__11 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking">
+
+			<!-- wp:ainoblocks/grid-item {"className":"col_start_d__1 col_start_t__1 col_start_m__1 col_end_d__10 col_end_t__11 col_end_m__13 justify-self__stretch"} -->
+			<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_start_t__1 col_start_m__1 col_end_d__10 col_end_t__11 col_end_m__13 justify-self__stretch">
 
 				<!-- wp:post-title {"level":1,"align":"wide","fontSize":"s"} /-->
+	
+				<!-- wp:group {"textColor":"font-tertiary","className":"post-meta","paddingTop":10,"paddingBottom":13} -->
+				<div class="wp-block-group post-meta has-font-tertiary-color has-text-color pt__10 pb__13">
 
-				<!-- wp:group {"className":"post-meta","paddingTop":10,"paddingBottom":13,"textColor":"font-tertiary"} -->
-				<div class="wp-block-group post-meta pt__10 pb__13 has-font-tertiary-color has-text-color">
 					<!-- wp:post-date /-->
 					<!-- wp:post-author {"showAvatar":false,"showBio":false} /-->
 					<!-- wp:post-comments-link /-->
+
 				</div>
 				<!-- /wp:group -->
-
 			</div>
 			<!-- /wp:ainoblocks/grid-item -->
 		</div>
 	</div>
 	<!-- /wp:ainoblocks/grid-container -->
 
-	<!-- wp:post-featured-image {"align":"wide","paddingBottom":10,"className":"pb__10"} /-->
-</div>
+	<!-- wp:post-featured-image {"align":"wide","className":"border-radius-xs"} /-->
 
 </div>
 <!-- /wp:group -->
-
+	
 <!-- wp:post-content {"layout":{"inherit":true}} /-->
-
-<!-- wp:group {"paddingTop":9,"paddingBottom":17,"layout":{"inherit":true},"textColor":"font-tertiary","className":"outer-margins"} -->
-<div class="wp-block-group pt__9 pb__17 has-font-tertiary-color has-text-color outer-margins">
+	
+<!-- wp:group {"textColor":"font-tertiary","className":"outer-margins","layout":{"inherit":true},"paddingTop":9,"paddingBottom":17} -->
+<div class="wp-block-group outer-margins has-font-tertiary-color has-text-color pt__9 pb__17">
 	<!-- wp:post-terms {"term":"category"} /-->
 </div>
 <!-- /wp:group -->
-
-<!-- wp:group {"paddingBottom":13,"layout":{"inherit":true},"className":"authorbox-wrap outer-margins"} -->
-<div class="wp-block-group pb__13 authorbox-wrap outer-margins">
+	
+<!-- wp:group {"className":"authorbox-wrap outer-margins","layout":{"inherit":true},"paddingBottom":13} -->
+<div class="wp-block-group authorbox-wrap outer-margins pb__13">
 	<!-- wp:post-author {"avatarSize":96,"showBio":true,"byline":"Published by"} /-->
 </div>
 <!-- /wp:group -->
-
-<!-- wp:group {"paddingTop":13,"paddingBottom":17,"backgroundColor":"background-secondary","className":"outer-margins","layout":{"inherit":true}} -->
-<div class="wp-block-group pt__13 pb__17 has-background-secondary-background-color has-background outer-margins">
+	
+<!-- wp:group {"backgroundColor":"background-secondary","className":"outer-margins","layout":{"inherit":true},"paddingTop":13,"paddingBottom":17} -->
+<div class="wp-block-group outer-margins has-background-secondary-background-color has-background pt__13 pb__17">
 	<!-- wp:post-comments /-->
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"backgroundColor":"button-color-secondary","textColor":"background-primary","layout":{"inherit":true},"paddingTop":13,"paddingBottom":17} -->
-<div
-	class="wp-block-group has-background-primary-color has-button-color-secondary-background-color has-text-color has-background pt__13 pb__17">
-	<!-- wp:query {"queryId":1,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"displayLayout":{"type":"flex","columns":3},"align":"wide","textColor":"font-tertiary","className":"outer-margins"} -->
-	<div class="wp-block-query alignwide has-font-tertiary-color has-text-color outer-margins">
+<!-- wp:group {"backgroundColor":"button-color-secondary","textColor":"background-primary","className":"related-posts-wrap outer-margins","layout":{"inherit":true},"paddingTop":13,"paddingBottom":17} -->
+<div class="wp-block-group related-posts-wrap has-background-primary-color has-button-color-secondary-background-color has-text-color has-background pt__13 pb__17 outer-margins">
+
+	<!-- wp:query {"queryId":1,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"displayLayout":{"type":"flex","columns":3},"align":"wide","textColor":"font-tertiary"} -->
+	<div class="wp-block-query alignwide has-font-tertiary-color has-text-color">
+
 		<!-- wp:heading {"level":3,"textColor":"background-primary","fontSize":"xs","paddingBottom":10} -->
 		<h3 class="has-background-primary-color has-text-color has-xs-font-size pb__10">More blog posts</h3>
 		<!-- /wp:heading -->
+
 		<!-- wp:post-template -->
-		<!-- wp:post-featured-image {"isLink":true} /-->
-		<!-- wp:post-title {"isLink":true,"textColor":"background-primary"} /-->
-		<!-- wp:post-terms {"term":"category"} /-->
+		<!-- wp:post-featured-image {"isLink":true,"className":"border-radius-xs"} /-->
+		<!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|variant-font-primary"}}}},"textColor":"variant-font-primary"} /-->
+		<!-- wp:post-terms {"term":"category","style":{"elements":{"link":{"color":{"text":"var:preset|color|variant-font-tertiary"}}}},"textColor":"variant-font-tertiary"} /-->
 		<!-- /wp:post-template -->
+
 	</div>
 	<!-- /wp:query -->
 </div>

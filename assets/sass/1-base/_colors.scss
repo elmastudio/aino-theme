@@ -1,19 +1,21 @@
-body {
+:root {
 
-	/* Global Colors */
+	/* Theme specific Colors */
+	--global--color--form-background: #ffffff;
+	--global--color--variant-form-background: #121212;
 
+	--global--color--form-border: #aeaeae;
+	--global--color--variant-form-border: #666A6B;
 
-	--wp--custom--color--form-glow: var(--wp--custom--color--form-glow);
-	--wp--custom--color--star-rating: var(--wp--custom--color--star-rating);
-	--wp--custom--color--code-background: var(--wp--custom--color--code-background);
-	--wp--custom--color--code-color: var(--wp--custom--color--code-color);
-	--wp--custom--color--notification: var(--wp--custom--color--notification);
-	--wp--custom--color--success: var(--wp--custom--color--success);
-	--wp--custom--color--error: var(--wp--custom--color--error);
-	--wp--custom--color--form-select-fill: var(--wp--custom--color--form-select-fill);
-	--wp--custom--color--form-background: var(--wp--custom--color--form-background);
-	--wp--custom--color--badge-background: var(--wp--custom--color--badge-background);
-	--wp--custom--color--badge-color: var(--wp--custom--color--badge-color);
-	--wp--custom--color--button-color-primary: var(--wp--custom--color--button-color-primary);
-	--wp--custom--color--button-color-secondary: var(--wp--custom--color--button-color-secondary);
+	--global--color--form-select-fill: #ffffff;
+	--global--color--variant-form-select-fill: #ffffff;
+
+	--global--color--variant-code-color: #0351AB;
+	--global--color--variant-code-background: #F9F9F9;
+	--global--color--notification: #A3A9F5;
+	--global--color--variant-notification: #E8EAFD;
+	--global--color--success: #33D1FF;
+	--global--color--variant-success: #80E2FF;
+	--global--color--error: #D30F0F;
+	--global--color--variant-error: #F13D3D;
 }

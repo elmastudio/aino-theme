@@ -64,35 +64,8 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		register_nav_menus(
 			array(
 				'primary'       => esc_html__( 'Primary Menu', 'aino' ),
-				'cta-header'    => esc_html__( 'Header Buttons (Desktop only)', 'aino' ),
-				'social'        => esc_html__( 'Header Social Menu (Desktop only)', 'aino' ),
-				'social-footer' => esc_html__( 'Footer Social Menu', 'aino' ),
 			)
 		);
-
-		/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
-		add_theme_support(
-			'html5',
-			array(
-				'search-form',
-				'comment-form',
-				'comment-list','comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
-				'style',
-				'script',
-				'navigation-widgets',
-				'gallery',
-				'caption',
-			)
-		);
-
-		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		// Add support for full and wide align images.
 		add_theme_support( 'align-wide' );
@@ -108,9 +81,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 
 		// Enqueue fonts in the editor.
 		add_editor_style( aino_fonts_url() );
-
-		// Add support for responsive embedded content.
-		add_theme_support( 'responsive-embeds' );
 
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
@@ -142,84 +112,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 	add_action( 'after_setup_theme', 'aino_setup' );
 
 /**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width Content width.
- */
-function aino_content_width() {
-	// This variable is intended to be overruled from themes.
-	// phpcs:disable WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
-	if ( is_page_template( 'page-templates/tpl-fullwidth.php' ) || is_page_template( 'page-templates/tpl-fullwidth-notitle.php' ) ) {
-		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 1200 );
-	}
-	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) || is_page_template( 'page-templates/tpl-hero.php' ) ) {
-		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 2010 );
-	} else {
-		$GLOBALS['content_width'] = apply_filters( 'aino_content_width', 696 );
-	}
-	// phpcs:enable
-}
-add_action( 'after_setup_theme', 'aino_content_width', 0 );
-
-/**
- * Get the information about the logo.
- *
- * @param string $html The HTML output from get_custom_logo (core function).
- *
- * @return string $html
- */
-function aino_get_custom_logo( $html ) {
-
-	$logo_id = get_theme_mod( 'custom_logo' );
-
-	if ( ! $logo_id ) {
-		return $html;
-	}
-
-	$logo = wp_get_attachment_image_src( $logo_id, 'full' );
-
-	if ( $logo ) {
-		// For clarity.
-		$logo_width  = esc_attr( $logo[1] );
-		$logo_height = esc_attr( $logo[2] );
-
-		// If the retina logo setting is active, reduce the width/height by half.
-		if ( get_theme_mod( 'retina_logo', false ) ) {
-			$logo_width  = floor( $logo_width / 2 );
-			$logo_height = floor( $logo_height / 2 );
-
-			$search = array(
-				'/width=\"\d+\"/iU',
-				'/height=\"\d+\"/iU',
-			);
-
-			$replace = array(
-				"width=\"{$logo_width}\"",
-				"height=\"{$logo_height}\"",
-			);
-
-			// Add a style attribute with the height, or append the height to the style attribute if the style attribute already exists.
-			if ( strpos( $html, ' style=' ) === false ) {
-				$search[]  = '/(src=)/';
-				$replace[] = "style=\"height: {$logo_height}px;\" src=";
-			} else {
-				$search[]  = '/(style="[^"]*)/';
-				$replace[] = "$1 height: {$logo_height}px;";
-			}
-
-			$html = preg_replace( $search, $replace, $html );
-
-		}
-	}
-
-	return $html;
-}
-
-add_filter( 'get_custom_logo', 'aino_get_custom_logo' );
-
-/**
  * Register custom fonts.
  */
 function aino_fonts_url() {
@@ -248,16 +140,6 @@ function aino_fonts_url() {
 	}
 
 	return esc_url_raw( $fonts_url );
-}
-
-if ( ! function_exists( 'wp_body_open' ) ) {
-
-	/**
-	 * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
-	 */
-	function wp_body_open() {
-		do_action( 'wp_body_open' );
-	}
 }
 
 /**
@@ -293,10 +175,6 @@ function aino_scripts() {
 
 	wp_enqueue_script( 'aino-custom', get_theme_file_uri( '/assets/js/index.js' ), array(), wp_get_theme()->get( 'Version' ), true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
@@ -317,20 +195,6 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	return $fragments;
 }
 
-/**
-* Add post class to posts without featured image
-*/
-function aino_add_featured_image_post_class( $classes ) {
-	global $post;
-
-	if ( isset ( $post->ID ) && !get_the_post_thumbnail($post->ID)) {
-		$classes[] = 'no-featured-image';
-	}
-
-	return $classes;
-}
-add_filter( 'post_class', 'aino_add_featured_image_post_class' );
-
 // Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
@@ -344,11 +208,11 @@ require get_template_directory() . '/inc/customizer/sanitization-callbacks.php';
 // SVG icons functions and filters.
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
-// Load Jetpack compatibility file.
-require get_template_directory() . '/inc/jetpack.php';
-
 // Aino Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
+
+// Aino Block Styles.
+require get_template_directory() . '/inc/block-styles.php';
 
 /**
  * TGMPA plugin activation.
@@ -370,9 +234,14 @@ function aino_register_required_plugins() {
 	$plugins = array(
 
 		array(
+			'name'      => 'Gutenberg',
+			'slug'      => 'gutenberg',
+			'required'  => true,
+		),
+		array(
 			'name'      => 'Aino Blocks - Creative Block Collection',
 			'slug'      => 'aino-blocks',
-			'required'  => false,
+			'required'  => true,
 		),
 	);
 

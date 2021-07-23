@@ -17,12 +17,6 @@
 	}
 }
 
-// 12 grid columns
-.col,
-.column {
-	box-sizing: border-box;
-}
-
 /* Alignments and block widths */
 .wp-block-group.alignfull,
 *[class*="wp-container-"] {
@@ -105,15 +99,9 @@
 	@include s-r-14 (padding-bottom);
 }
 
-/* Pages with 12 column max-width */
-.header-inner,
-.archive .site-content,
-.blog .site-content,
-.error404 .site-content,
-.search .site-content {
-	@include push--auto;
-
-	@include breakpoint(xl) {
+/* Default wide page width */
+.site-main {
+	.site-content {
 		max-width: var(--global--max-content-width);
 	}
 }
@@ -152,6 +140,12 @@
 /* Alignwide and fullwidth Content widths */
 .entry-content>*.alignwide {
 	max-width: var(--global--wide-content-width);
+	@include push--auto;
+}
+
+.alignwide {
+	max-width: var(--global--wide-content-width);
+	@include push--auto;
 }
 
 // All containers with 1200px default width.

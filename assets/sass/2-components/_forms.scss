@@ -17,8 +17,8 @@ textarea,
 .wp-block-post-comments textarea {
 	width: 100%;
 	box-sizing: border-box;
-	background-color: var(--wp--custom--color--form-background);
-	border: 1px solid var(--wp--custom--color--form-border);
+	background-color: var(--global--color--form-background);
+	border: 1px solid var(--global--color--form-border);
 	outline: none;
 	line-height: var(--global--line-height-reset);
 	@include s-r-5 (padding);
@@ -67,8 +67,8 @@ textarea,
 textarea {
 	width: 100%;
 	background-color: transparent;
-	background: var(--wp--custom--color--form-background);
-	border: 1px solid var(--wp--custom--color--form-border);
+	background: var(--global--color--form-background);
+	border: 1px solid var(--global--color--form-border);
 	padding: $s-4 $s-6;
 	outline: none;
 	max-height: $s-13;
@@ -92,7 +92,7 @@ form label {
 // Select forms
 select,
 .select2-selection--single {
-	border: 1px solid var(--wp--custom--color--form-border);
+	border: 1px solid var(--global--color--form-border);
 	@include s-r-5 (padding);
 	background-repeat:no-repeat;
 	background-position: right 14px top 21px;
@@ -137,8 +137,8 @@ input[type="radio"] {
 	min-width: $s-6;
 	width: $s-6;
 	height: $s-6;
-	border: 1px solid var(--wp--custom--color--form-border);
-	background-color: var(--wp--custom--color--form-background);
+	border: 1px solid var(--global--color--form-border);
+	background-color: var(--global--color--form-background);
 	border-radius:50%;
 	outline:none;
 	@include s-r-2 (margin-right);
@@ -167,8 +167,8 @@ input[type='checkbox'] {
 	&:checked:before {
 		border-color: var(--wp--custom--color--form-border-active);
 		background: var(--wp--custom--color--form-border-active);
-		fill: var(--wp--custom--color--form-select-fill);
-		color: var(--wp--custom--color--form-select-fill);
+		fill: var(--global--color--form-select-fill);
+		color: var(--global--color--form-select-fill);
 	}
 
 	&:after {
@@ -206,7 +206,7 @@ input[type='radio'] {
 		width: 6px;
 		height: 6px;
 		border-radius: 100px;
-		background-color: var(--wp--custom--color--form-select-fill);
+		background-color: var(--global--color--form-select-fill);
 	}
 }
 
@@ -237,7 +237,7 @@ button[type="submit"] {
 // Default comment form
 .color-notice,
 label.color-notice span {
-	color: var(--wp--custom--color--notification);
+	color: var(--global--color--notification);
 }
 
 .comment-respond textarea {
@@ -326,13 +326,13 @@ form p.comment-form-comment {
 	.mc4wp-alert p {
 		text-align: center;
 	}
-	
+
 	.mc4wp-success p {
-		color: var(--wp--custom--color--success);
+		color: var(--global--color--success);
 	}
-	
+
 	.mc4wp-notice p {
-		color: var(--wp--custom--color--notification);
+		color: var(--global--color--notification);
 	}
 }
 

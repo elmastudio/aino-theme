@@ -1,0 +1,26 @@
+.wp-block-separator {
+	opacity: 1;
+	border-bottom: 1px solid;
+
+	&.is-style-dots {
+		background: none;
+		border: none;
+	}
+
+	&.is-style-wide {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	max-width: 100px;
+	@include push--auto;
+}
+
+.wp-block-separator.is-style-dots:before {
+	color: var(--wp--custom--color--font-secondary);
+	content: "\00b7 \00b7 \00b7";
+	letter-spacing: 1em;
+	padding-left: 1em;
+}

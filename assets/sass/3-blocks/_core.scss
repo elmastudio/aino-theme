@@ -2,20 +2,7 @@
 .single {
 
 	.entry-content {
-		p,
-		.wp-block-button,
-		.wp-block-buttons .wp-block-button,
-		.wp-block-image,
-		.wp-block-quote,
-		.wp-block-pullquote,
-		.wp-block-media-text,
-		.entry-content .wp-block-gallery,
-		.wp-block-audio,
-		.wp-block-video,
-		.wp-block-ainoblocks-advanced-buttons,
-		.wp-block-search,
-		.wp-block-calendar,
-		.wp-block-archives-dropdown {
+		p {
 
 			&:not(:last-child) {
 				@include s-r-6(margin-bottom);
@@ -49,37 +36,6 @@
 			@include s-r-6(margin-left);
 		}
 	}
-}
-
-
-
-
-
-/* Separator */
-.wp-block-separator {
-	border: none;
-	border-top: 1px solid;
-
-	&.is-style-dots {
-		background: none;
-		border: none;
-	}
-
-	&.is-style-wide {
-		max-width: 100%;
-	}
-}
-
-.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-	max-width: 100px;
-	@include push--auto;
-}
-
-.wp-block-separator.is-style-dots:before {
-	color: var(--wp--custom--color--font-secondary);
-	content: "\00b7 \00b7 \00b7";
-	letter-spacing: 1em;
-	padding-left: 1em;
 }
 
 /* Page Break */

@@ -5,6 +5,8 @@
 /* Includes */
 @import "1-base/variables";
 @import "1-base/mixins";
+@import "1-base/colors";
+@import "1-base/radius";
 
 /* Typography */
 body {
@@ -523,6 +525,53 @@ p.wp-block-paragraph {
 	}
 }
 
+// 3 column list style
+.wp-block-query {
+
+	&.is-style-aino-3col-list {
+
+		@include breakpoint(sm) {
+
+			li.block-editor-block-list__layout,
+			.block-editor-block-list__layout.is-root-container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				column-gap: 2rem;
+				align-content: start;
+				grid-auto-flow: row;
+			}
+	
+			.wp-block-post-title {
+				grid-column: 1 / 5;
+				justify-self: start;
+				justify-self: stretch;
+				grid-row: 1 / 2;
+			}
+	
+			.post-excerpt-wrap {
+				justify-self: stretch;
+				justify-self: start;
+				padding: 0;
+				grid-column: 5 / 9;
+				grid-row: 1 / 2;
+			}
+	
+			.wp-block-post-featured-image {
+				justify-self: stretch;
+				justify-self: start;
+				grid-column: 9 / 13;
+				grid-row: 1 / 2;
+			}
+		}
+
+		@include breakpoint(lg) {
+			.wp-block-post {
+				column-gap: 3rem;
+			}
+		}
+	}
+}
+
 
 /* Media */
 
@@ -739,8 +788,9 @@ figcaption {
 }
 
 .wp-block-code {
-	background: var(--wp--custom--color--code-background);
-	color: var(--wp--custom--color--code-color);
+	border: none;
+	background: var(--global--color--variant-code-background);
+	color: var(--global--color--variant-code-color);
 	@include s-r-6(padding);
 
 	@include breakpoint(sm) {
@@ -753,8 +803,6 @@ figcaption {
 }
 
 .wp-block-preformatted {
-	background: var(--wp--custom--color--code-background);
-	color: var(--wp--custom--color--code-color);
 	overflow: auto;
 	@include s-r-6(padding);
 	@include s-r-6(margin-bottom);
@@ -762,8 +810,6 @@ figcaption {
 	& pre {
 		margin: 0;
 		padding: 0;
-		background-color: var(--wp--custom--color--code-color);
-		color: var(--wp--custom--color--code-background);
 	}
 }
 
@@ -904,7 +950,7 @@ pre.wp-block-verse {
 	table {
 
 		margin-bottom: $s-4;
-		background: var(--wp--custom--color--form-background);
+		background: var(--global--color--form-background);
 
 		th {
 			font-weight: bold;

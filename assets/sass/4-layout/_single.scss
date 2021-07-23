@@ -1,5 +1,9 @@
 .single-post {
 
+	.wp-block-post-featured-image {
+		@include s-r-9 (padding-bottom);
+	}
+
 	.hentry.comments-closed.no-comments {
 		@include s-r-9 (padding-bottom);
 	}

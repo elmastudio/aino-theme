@@ -8,8 +8,6 @@
 
 .wp-block-preformatted,
 .wp-block-code {
-	background: var(--wp--custom--color--code-background);
-	color: var(--wp--custom--color--code-color);
 	border: none;
 	border-radius: 0;
 
@@ -19,4 +17,9 @@
 		display: block;
 		overflow-wrap: break-word;
 	}
+}
+
+.wp-block-code {
+	background: var(--global--color--variant-code-background);
+	color: var(--global--color--variant-code-color);
 }

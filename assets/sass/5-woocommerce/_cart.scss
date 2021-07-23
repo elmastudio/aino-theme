@@ -48,7 +48,7 @@
 						.wc-block-components-quantity-selector {
 							@include s-r-4(margin-bottom);
 							width: 137px;
-							border-color: var(--wp--custom--color--form-border);
+							border-color: var(--global--color--form-border);
 							border-radius: var(--global--border-radius-s);
 
 							.wc-block-components-quantity-selector__input {

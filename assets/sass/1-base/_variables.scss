@@ -26,7 +26,7 @@ $s-18                : 18rem;
 	/* Content widths and grid */
 	--global--default-content-width: 43.5rem;
 	--global--10col-nogap-content-width: 74.5rem;
-	--global--wide-content-width: 87rem;
+	--global--wide-content-width: 90rem; // 1440px
 	--global--max-content-width-nogap: 90rem; // 1440px
 	--global--max-content-width: 93rem; // 1488px
 	--global--grid-gap: #{2 * $s-4};
@@ -167,8 +167,8 @@ body {
 	// LG breakpoint
 	@media only screen and (min-width: 96em) {
 		/* Default content padding */
-		--global--content--padding--left: 0;
-		--global--content--padding--right: 0;
+		--global--content--padding--left: 1.5rem;
+		--global--content--padding--right: 1.5rem;
 	}
 
 	/* Theme Heading font sizes */

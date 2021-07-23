@@ -10,10 +10,5 @@
 	@include s-r-4(top);
 	@include s-r-4(left);
 	z-index: 1;
-
-	.no-featured-image & {
-		top: 0;
-		left: 0;
-	}
 }
 

@@ -25,7 +25,8 @@ cite a,
 .reset_variations,
 .woocommerce-notices-wrapper a,
 .woocommerce-message a,
-.custom-product-page-link {
+.custom-product-page-link,
+.wp-block-post-excerpt__more-link {
 	color: currentColor;
 	text-decoration: underline;
 
@@ -69,7 +70,8 @@ h2.entry-title a,
 .post-meta a,
 .wp-block-post-terms a,
 .comment-meta a,
-.comment-body .reply a {
+.comment-body .reply a,
+.wp-block-query-pagination a {
 
 	&:hover {
 		text-decoration: underline;

@@ -137,7 +137,7 @@ padding-right: 0;
 	.components-custom-select-control__button {
 		font-size: var(--font-size--body-m);
 		border-radius: var(--global--border-radius-xxs);
-		border: 1px solid var(--wp--custom--color--form-border);
+		border: 1px solid var(--global--color--form-border);
 		line-height: var(--global--line-height-body);
 		color: var(--wp--custom--color--font-secondary);
 		font-family: inherit;
@@ -152,11 +152,11 @@ padding-right: 0;
 		input:active,
 		input:focus,
 		input:hover {
-			border-color: var(--wp--custom--color--error);
+			border-color: var(--global--color--error);
 		}
 
 		label {
-			color: var(--wp--custom--color--error);
+			color: var(--global--color--error);
 		}
 
 		p {
@@ -197,7 +197,7 @@ padding-right: 0;
 	.wc-block-components-checkbox__input[type="checkbox"] {
 		position: relative;
 		-webkit-appearance: none;
-		border: 1px solid var(--wp--custom--color--form-border);
+		border: 1px solid var(--global--color--form-border);
 		width: 1.5rem;
 		height: 1.5rem;
 		border-radius: 50%;
@@ -219,8 +219,8 @@ padding-right: 0;
 		&:checked {
 			border-color: var(--wp--custom--color--form-border-active);
 			background: var(--wp--custom--color--form-border-active);
-			fill: var(--wp--custom--color--form-select-fill);
-			color: var(--wp--custom--color--form-select-fill);
+			fill: var(--global--color--form-select-fill);
+			color: var(--global--color--form-select-fill);
 		}
 
 		&:not(:checked) + .wc-block-components-checkbox__mark {
@@ -256,7 +256,7 @@ padding-right: 0;
 		height: 3.75rem;
 		padding: 1rem 0 0 1.25rem;
 		line-height: var(--global--line-height-body);
-		border: 1px solid var(--wp--custom--color--form-border);
+		border: 1px solid var(--global--color--form-border);
 
 		&:after {
 			content: "";
@@ -268,7 +268,7 @@ padding-right: 0;
 			bottom: $s-2;
 			height: calc(100% - 16px);
 			width: 1px;
-			background: var(--wp--custom--color--form-border);
+			background: var(--global--color--form-border);
 		}
 
 		.components-custom-select-control__button-icon {
@@ -310,7 +310,7 @@ padding-right: 0;
 		padding: 0;
 		margin: 0;
 		font-size: var(--font-size--body-s);
-		border-color: var(--wp--custom--color--form-border);
+		border-color: var(--global--color--form-border);
 
 		.components-custom-select-control__item {
 			padding: $s-2 1.25rem;
@@ -377,15 +377,15 @@ padding-right: 0;
 		bottom: $s-2;
 		height: calc(100% - 1rem);
 		width: 1px;
-		background: var(--wp--custom--color--form-border);
+		background: var(--global--color--form-border);
 	}
 
 	.orderby,
 	.wc-block-sort-select__select {
 		height: $s-8;
 		min-width: 12.5rem;
-		background: var(--wp--custom--color--form-background);
-		border: 1px solid var(--wp--custom--color--form-border);
+		background: var(--global--color--form-background);
+		border: 1px solid var(--global--color--form-border);
 		padding: $s-2 87px $s-2 1.25rem;
 
 		&:active,
@@ -431,7 +431,7 @@ padding-right: 0;
 
 .wc-block-components-validation-error {
 	font-size: var(--font-size--body-xxs);
-	color: var(--wp--custom--color--error);
+	color: var(--global--color--error);
 	max-width: 100%;
 	position: absolute;
 	top: calc(100% - 1px);
@@ -546,14 +546,14 @@ padding-right: 0;
 	align-items: center;
 	@include s-r-6(padding);
 	border-radius: var(--global--border-radius-xxs);
-	background: var(--wp--custom--color--notification);
+	background: var(--global--color--notification);
 
 	@include breakpoint(sm) {
 		@include s-r-9(margin-bottom);
 	}
 		
 	&.woocommerce-error {
-		background: var(--wp--custom--color--error);
+		background: var(--global--color--error);
 	}
 
 	.components-notice__content {
@@ -614,11 +614,11 @@ padding-right: 0;
 			list-style: none;
 		
 		&.woocommerce-message {
-			background: var(--wp--custom--color--notification);
+			background: var(--global--color--notification);
 		}
 
 		&.woocommerce-error {
-			background: var(--wp--custom--color--error);
+			background: var(--global--color--error);
 		}
 
 		a {

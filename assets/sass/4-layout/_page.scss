@@ -15,8 +15,9 @@
 .error404 {
 
 	.entry-header {
-		max-width: var(--global--max-content-width);
+		max-width: var(--global--default-content-width);
 		@include s-r-9 (padding-bottom);
+		@include push--auto;
 
 		.entry-title {
 			margin: 0 auto;

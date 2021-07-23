@@ -1,18 +1,18 @@
 === Aino ===
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
-Tags: blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
-Requires at least: 5.0
-Tested up to: WordPress 5.8.0
+Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, wide-blocks, block-patterns, full-site-editing
+Requires at least: 5.7
+Tested up to: WordPress 5.8
 Requires PHP: 7.0
 Stable tag: 2.0.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Aino is a WordPress theme for everyone who wants to build websites with creative, individual layouts in the WordPress block editor.
+Aino is a full site editing block theme for everyone who wants to build creative, individual WordPress websites.
 
 == Description ==
 
-Aino is a multi-purpose WordPress theme for the block editor. Aino theme and Aino blocks make it easier to build creative websites with individual layouts.
+Aino is a full site editing block theme for the WordPress block editor. Let's start to build creative websites with Aino theme and the Aino blocks plugin.
 
 You can find more information and helpful resources about Aino on https://wpaino.com.
 
@@ -46,6 +46,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 2.0.0 =
 New: Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.
+New: Added Gutenberg plugin to list of required plugins.
 New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
 New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
 New: Default Google font Arimo.
