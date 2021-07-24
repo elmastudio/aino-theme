@@ -1,21 +1,19 @@
 :root {
 
-	/* Theme specific Colors */
+	/* Base Colors (default and variant color palette) */
 	--global--color--form-background: #ffffff;
-	--global--color--variant-form-background: #121212;
-
 	--global--color--form-border: #aeaeae;
-	--global--color--variant-form-border: #666A6B;
-
 	--global--color--form-select-fill: #ffffff;
-	--global--color--variant-form-select-fill: #ffffff;
+	--global--color--notification: #A3A9F5;
+	--global--color--success: #33D1FF;
+	--global--color--error: #D30F0F;
 
+	--global--color--variant-form-background: #121212;
+	--global--color--variant-form-border: #666A6B;
+	--global--color--variant-form-select-fill: #ffffff;
+	--global--color--variant-notification: #E8EAFD;
+	--global--color--variant-success: #80E2FF;
+	--global--color--variant-error: #F13D3D;
 	--global--color--variant-code-color: #0351AB;
 	--global--color--variant-code-background: #F9F9F9;
-	--global--color--notification: #A3A9F5;
-	--global--color--variant-notification: #E8EAFD;
-	--global--color--success: #33D1FF;
-	--global--color--variant-success: #80E2FF;
-	--global--color--error: #D30F0F;
-	--global--color--variant-error: #F13D3D;
 }
