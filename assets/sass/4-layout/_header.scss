@@ -2,7 +2,8 @@
 	position: relative;
 	@include s-r-6(padding-top);
 
-	&.site-header {
+	&__content {
+		background: red;
 		display: flex;
 		align-items: center;
 		align-content: stretch;
@@ -12,9 +13,13 @@
 	}
 
 	.wp-block-navigation {
-		justify-content:flex-start;
-		flex-grow: 1;
 		display: flex;
+		justify-content: flex-end;
+		flex-grow: 1;
+
+		@media (min-width: 600px) {
+			justify-content: stretch;
+		}
 	}
 
 	.wp-block-site-title {
@@ -115,6 +120,6 @@
 	}
 
 	.wp-block-navigation .has-child :where(.submenu-container,.wp-block-navigation-link__container) {
-		min-width: 248px;
+		min-width: 15.5rem; // 248px
 	}
 }

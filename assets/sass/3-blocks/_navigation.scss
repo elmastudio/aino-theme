@@ -31,13 +31,11 @@
 	}
 }
 
-
 .wp-block-navigation:where(.has-background) a,
 .wp-block-navigation :where(.submenu-container,
 .wp-block-navigation-link__container) a {
-	@include s-r-2(padding);
+	padding: 0;
 }
-
 
 .wp-block-navigation__container>.wp-block-navigation-link,
 .wp-block-page-list,

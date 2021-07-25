@@ -50,7 +50,6 @@ div[class*='wp-block-'] figcaption,
 	label .required,
 	.comment-notes,
 	.logged-in-as,
-	.has-s-font-size,
 	p.has-s-font-size,
 	.has-s-font-size p,
 	.onsale,
@@ -63,7 +62,7 @@ div[class*='wp-block-'] figcaption,
 	.comment-body .commentmetadata,
 	.reply,
 	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt {
-		font-size: var(--font-size--body-s) !important;;
+		font-size: var(--font-size--body-s) !important;
 	}
 }
 
@@ -96,9 +95,7 @@ textarea,
 .woocommerce-form-login-toggle,
 .entry-content form p,
 .wc-block-cart__sidebar .wc-block-cart__totals-title,
-.site-footer .widget-title,
 .custom-product-page-link,
-h1.wp-block-site-title,
 .comment-content p,
 .comment-content ol,
 .comment-content ul,
@@ -180,7 +177,6 @@ h6 {
 	font-family: var(--wp--custom--heading--typography--font-family);
 	line-height: var(--wp--custom--line-height--heading);
 	color: var(--wp--custom--color--font-primary);
-	font-weight: 400;
 }
 
 h1.site-title,
@@ -310,7 +306,8 @@ h5.has-s-font-size,
 h6.has-m-font-size,
 .woocommerce-loop-product__title,
 .is-large.wc-block-cart .wc-block-cart__totals-title,
-.wp-block-post-template.columns-5 h2.wp-block-post-title {
+.wp-block-post-template.columns-5 h2.wp-block-post-title,
+h1.wp-block-site-title {
 	font-size: var(--font-size--h2) !important;
 }
 

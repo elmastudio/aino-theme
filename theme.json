@@ -130,7 +130,7 @@
 				},
 				{
 					"slug": "variant-font-secondary",
-					"color": "#ffffff",
+					"color": "#d9d9d9",
 					"name": "Variant Font Secondary"
 				},
 				{
@@ -274,17 +274,17 @@
 			"fontFamilies": [{
 					"fontFamily": "'Arimo', sans-serif",
 					"slug": "arimo-font",
-					"name": "Arimo Font"
+					"name": "Sans-serif (Arimo Google font)"
 				},
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 					"slug": "system-font",
-					"name": "System Font"
+					"name": "System"
 				},
 				{
 					"fontFamily": "'Monaco', 'Courier 10 Pitch', monospace",
 					"slug": "monospace-font",
-					"name": "Monospace Font"
+					"name": "Monospace"
 				}
 			],
 			"fontSizes": [{
@@ -445,7 +445,8 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family-arimo-font)",
-					"lineHeight": "var(--wp--custom--line-height--heading)"
+					"lineHeight": "var(--wp--custom--line-height--heading)",
+					"font-weight": 700
 				}
 			},
 			"code": {

@@ -1,28 +1,46 @@
 <?php
 /**
- * Aino Theme : Building Block Patterns
+ * Aino Foundation Patterns
  *
  * @package Aino
- * @since   1.5.0
  */
+
 if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 
 	function aino_register_block_patterns() {
 
 		if ( function_exists( 'register_block_pattern_category' ) ) {
 			register_block_pattern_category(
-				'aino-abouts',
-				array( 'label' => __( 'Aino Abouts', 'aino' ) )
+				'aino-team',
+				array( 'label' => __( 'Aino Team', 'aino' ) )
 			);
 		}
 
 		if ( function_exists( 'register_block_pattern' ) ) {
 			$block_patterns = array(
-				'about-three-columns',
+				'team-four-img-light',
+				'team-four-img-dark',
+				'team-three-img-light',
+				'team-three-img-dark',
+				'team-two-img-light',
+				'team-two-img-dark',
+				'team-one-img-small-light',
+				'team-one-img-small-dark',
+				'team-one-img-large-light',
+				'team-one-img-large-dark',
 			);
 
 			if ( class_exists( 'WP_Block_Type_Registry' ) ) {
-				$block_patterns[] = 'about-three-columns';
+				$block_patterns[] = 'team-four-img-light';
+				$block_patterns[] = 'team-four-img-dark';
+				$block_patterns[] = 'team-three-img-light';
+				$block_patterns[] = 'team-three-img-dark';
+				$block_patterns[] = 'team-two-img-light';
+				$block_patterns[] = 'team-two-img-dark';
+				$block_patterns[] = 'team-one-img-small-light';
+				$block_patterns[] = 'team-one-img-small-dark';
+				$block_patterns[] = 'team-one-img-large-light';
+				$block_patterns[] = 'team-one-img-large-dark';
 			}
 
 			foreach ( $block_patterns as $block_pattern ) {

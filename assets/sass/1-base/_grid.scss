@@ -52,32 +52,6 @@
 	max-width: var(--global--default-content-width);
 }
 
-// Outer margins for elements which only require them on mobile.
-.mobile-margins {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(lg) {
-		padding-left: $s-6;
-		padding-right: $s-6;
-	}
-
-	@include breakpoint(xl) {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-// Outer Grid margins for elements with default content width.
-.default-margins,
-.search-no-results .entry-content {
-	@include default-margins;
-}
-
-.col-gaps {
-	@include col-gaps;
-}
-
 .outer-margins,
 .wp-block-group.has-background.outer-margins {
 	padding-left: var(--global--content--padding--left);
@@ -213,40 +187,19 @@
 	float: none;
 }
 
-/* 2-Columns */
-.blog-2-column .posts-container .hentry,
-.posts-container .hentry,
-.s6,
-.single-post .related-post,
-.single-post .related-post,
-.single-post .navigation .next,
-.single-post .navigation .prev {
-	width: 100%; // 1-column on mobile
-	flex-grow: 0;
-	@include col-gaps;
+/* 2-Column grid tablet */
+@include breakpoint(sm) {
 
-	@include breakpoint(sm) {
-		flex-basis: calc(50% - 2rem);
-	}
-
-	@include breakpoint(lg) {
-		flex-basis: calc(50% - 3rem);
+	.two-col-grid-tablet {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
 	}
 }
 
-/* 3-Columns */
-.blog-3-column .posts-container .hentry,
-.header-infobar .col,
-.s4 {
-	width: 100%;
-	flex-grow: 0;
-	@include col-gaps;
+@include breakpoint(lg) {
 
-	@include breakpoint(sm) {
-		flex-basis: calc(50% - 2rem);
-	}
-
-	@include breakpoint(lg) {
-		flex-basis: calc(33.333% - 3rem);
+	.two-col-grid-tablet {
+		display: block;
 	}
 }

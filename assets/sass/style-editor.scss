@@ -8,8 +8,10 @@
 @import "1-base/colors";
 @import "1-base/radius";
 
+
 /* Typography */
 body {
+
 	font-family: var(--wp--custom--body--typography--font-family);
 	line-height: var(--wp--custom--line-height--body);
 	color: var(--wp--custom--color--font-secondary);
@@ -18,9 +20,6 @@ body {
 }
 
 /* Headings */
-.editor-post-title .editor-post-title__input {
-}
-
 .editor-post-title__input,
 h1,
 h2,
@@ -30,7 +29,6 @@ h5,
 h6 {
 	color: var(--wp--custom--color--font-primary);
 	line-height: var(--wp--custom--line-height--heading);
-	font-weight: normal;
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -127,7 +125,8 @@ h3.has-xxs-font-size,
 h4.has-xs-font-size,
 h5,
 h5.has-s-font-size,
-h6.has-m-font-size {
+h6.has-m-font-size,
+h1.wp-block-site-title {
 	font-size: var(--font-size--h2) !important;
 }
 
@@ -363,19 +362,39 @@ textarea {
 	font-size: var(--font-size--body-m);
 }
 
-/* Paragraph */
-p.wp-block-paragraph {
-	@include s-r-6(padding-bottom);
-	font-size: var(--font-size--body-m);
+/* Alignment */
+.alignwide {
+	max-width: var(--global--wide-content-width);
+	margin-left: auto;
+	margin-right: auto;
 }
 
-/* Group */
-.wp-block-group {
+.wp-block-group.has-background.alignfull,
+.wp-block-group.alignfull *[class*="wp-container-"],
+.wp-block-group.alignfull>.alignfull,
+*[class*="wp-container-"] *[class*="wp-container-"],
+*[class*="wp-container-"]>.alignfull {
+    margin-left: calc(-1 * var(--global--content--padding--left)) !important;
+    margin-right: calc(-1 * var(--global--content--padding--right)) !important;
+    width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
+}
 
-	&.has-background {
-		padding-left: 0;
-		padding-right: 0;
+/* Template Parts */
+.site-header {
+
+	&__content {
+		display: flex;
+		align-items: center;
+		align-content: stretch;
+		justify-content: space-between;
+		max-width: var(--global--max-content-width);
+		@include push--auto;
 	}
+}
+
+/* Paragraph */
+p.wp-block-paragraph {
+	font-size: var(--font-size--body-m);
 }
 
 /* Query Block */
@@ -596,6 +615,8 @@ figcaption {
 }
 
 .wp-block-image {
+	margin: 0;
+
 	&.ellipse-horizontal {
 		clip-path: ellipse(50% 45% at 50% 50%);
 	}
@@ -935,7 +956,7 @@ pre.wp-block-verse {
 .wp-block-navigation__container>.wp-block-navigation-link,
 .wp-block-page-list,
 .wp-block-page-list>.wp-block-pages-list__item {
-	margin: 0;
+	@include s-r-6(margin-right);
 }
 
 .wp-block[data-type="core/calendar"] {

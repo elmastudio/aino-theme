@@ -681,7 +681,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Grid padding */
+/* Grid gaps */
 @mixin col-padding {
 	padding-left: $s-4;
 	padding-right: $s-4;
@@ -689,16 +689,6 @@ $var: true !default; // Can be overridden elsewhere
 	@include breakpoint(sm) {
 		padding-left: $s-6;
 		padding-right: $s-6;
-	}
-}
-
-@mixin default-margins {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(sm) {
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
 
