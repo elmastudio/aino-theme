@@ -12,18 +12,8 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 		if ( function_exists( 'register_block_pattern_category' ) ) {
 
 			register_block_pattern_category(
-				'aino-header',
-				array( 'label' => __( 'Aino Header', 'aino' ) )
-			);
-
-			register_block_pattern_category(
-				'aino-header',
-				array( 'label' => __( 'Aino Footer', 'aino' ) )
-			);
-
-			register_block_pattern_category(
-				'aino-hero',
-				array( 'label' => __( 'Aino Hero', 'aino' ) )
+				'aino-team',
+				array( 'label' => __( 'Aino Team', 'aino' ) )
 			);
 
 			register_block_pattern_category(
@@ -32,8 +22,8 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			);
 
 			register_block_pattern_category(
-				'aino-team',
-				array( 'label' => __( 'Aino Team', 'aino' ) )
+				'aino-hero',
+				array( 'label' => __( 'Aino Hero', 'aino' ) )
 			);
 
 			register_block_pattern_category(
@@ -50,10 +40,22 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'aino-contact',
 				array( 'label' => __( 'Aino Contact', 'aino' ) )
 			);
+
+			register_block_pattern_category(
+				'aino-header',
+				array( 'label' => __( 'Aino Header', 'aino' ) )
+			);
+
+			register_block_pattern_category(
+				'aino-footer',
+				array( 'label' => __( 'Aino Footer', 'aino' ) )
+			);
 		}
 
 		if ( function_exists( 'register_block_pattern' ) ) {
 			$block_patterns = array(
+				'header-centered-slim-light',
+				'header-centered-slim-dark',
 				'team-four-img-light',
 				'team-four-img-dark',
 				'team-three-img-light',

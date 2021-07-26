@@ -50,6 +50,7 @@ New: Added Gutenberg plugin to list of required plugins.
 New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
 New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
 New: Default Google font Arimo.
+New: Block Patterns.
 
 = 1.4.1 =
 New: Add theme.json file.

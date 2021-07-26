@@ -568,10 +568,18 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .comment-body .comment-awaiting-moderation{margin-top:1rem;display:block;font-style:normal;padding:1rem;background:var(--global--color--notification);border-radius:var(--global--border-radius-xxs)}
 .comment-body .reply{display:block;padding-top:.5rem;margin-bottom:0}
 .comment-body .says{display:none}
-.site-header{position:relative;padding-top:1rem}
-.site-header__content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:var(--global--max-content-width);margin-left:auto;margin-right:auto}
-.site-header .wp-block-navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
+.site-header{position:relative}
+.site-header__content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-top:1rem}
+.site-header__content.has-background{padding-top:1rem;padding-bottom:0}
+.site-header .wp-block-navigation.is-responsive{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
 .site-header .wp-block-site-title{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;line-height:var(--wp--custom--line-height--body)}
+.site-header .wp-block-social-links{display:none}
+.site-header .wp-block-social-links.has-normal-icon-size{font-size:29px}
+.site-header .wp-block-social-links .wp-social-link a{padding:0}
+.site-header .wp-block-social-links .wp-social-link.wp-social-link.wp-social-link{margin:0}
+.site-header .wp-block-social-links.is-style-logos-only .wp-social-link{padding:0 4px}
+.site-header .site-header__wrap.header-dark .wp-block-navigation.is-responsive .wp-block-navigation__responsive-container-open,.site-header .site-header__wrap.header-dark .wp-block-navigation:not(.has-background) .submenu-container,.site-header .site-header__wrap.header-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container,.site-header .site-header__wrap.header-dark .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{background:var(--wp--custom--color--variant-background-secondary)}
+.site-header .site-header__wrap.header-dark .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{color:var(--wp--custom--color--variant-font-secondary)}
 .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{background:var(--wp--custom--color--background-secondary);color:var(--wp--custom--color--font-secondary)}
 .wp-block-navigation.is-responsive__responsive-container.is-menu-open{padding:1rem}
 .wp-block-navigation.is-responsive .has-child.wp-block-navigation-link .wp-block-navigation-link__container{margin-left:0}
@@ -1045,6 +1053,7 @@ td{padding:1rem}
 .wp-block-post-comments #comments{padding-bottom:2rem}
 .wp-block-post-comments .commentlist .comment .comment-respond{padding-bottom:2rem}
 .comment-body{margin-bottom:2rem}
+.site-header .wp-block-social-links{display:-webkit-box;display:-ms-flexbox;display:flex}
 .archive .wp-block-query.is-style-aino-3col-list{margin-top:2rem}
 .single-post .wp-block-post-featured-image{padding-bottom:2rem}
 .single-post .hentry.comments-closed.no-comments{padding-bottom:2rem}
@@ -1211,7 +1220,8 @@ table{margin-bottom:2rem}
 .wp-block-post-comments .commentlist .comment .comment-author .avatar{margin-right:1rem}
 .comment-body{margin-bottom:2.5rem}
 .comment-body .comment-awaiting-moderation{padding:1.25rem}
-.site-header{padding-top:1.25rem}
+.site-header__content{padding-top:1.25rem}
+.site-header__content.has-background{padding-top:1.25rem}
 .archive .wp-block-query.is-style-aino-3col-list{margin-top:2.5rem}
 .single-post .wp-block-post-featured-image{padding-bottom:2.5rem}
 .single-post .hentry.comments-closed.no-comments{padding-bottom:2.5rem}
@@ -1379,7 +1389,8 @@ table{margin-bottom:2.5rem}
 .wp-block-post-comments .commentlist .comment .comment-respond{padding-bottom:3rem}
 .comment-body{margin-bottom:3rem}
 .comment-body .comment-awaiting-moderation{padding:1.5rem}
-.site-header{padding-top:1.5rem}
+.site-header__content{padding-top:1.5rem}
+.site-header__content.has-background{padding-top:1.5rem}
 .archive .wp-block-query.is-style-aino-3col-list{margin-top:3rem}
 .single-post .wp-block-post-featured-image{padding-bottom:3rem}
 .single-post .hentry.comments-closed.no-comments{padding-bottom:3rem}
@@ -1489,7 +1500,7 @@ table{margin-bottom:2.5rem}
 .single-product .site-content{padding-left:1.5rem;padding-right:1.5rem}
 .woocommerce-account .site-content .woocommerce{padding-left:1.5rem;padding-right:1.5rem}
 }@media only screen and (min-width:96em){body{--global--content--padding--left:1.5rem;--global--content--padding--right:1.5rem}
-}@media(min-width:600px){.site-header .wp-block-navigation{-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch}
+}@media(min-width:600px){.site-header .wp-block-navigation.is-responsive{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .wp-block-navigation.is-responsive .wp-block-navigation__responsive-container-open{display:none}
 .wp-block-navigation.is-responsive .wp-block-navigation__responsive-container-close{display:none}
 .wp-block-navigation:not(.has-background) .submenu-container,.wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container{background:var(--wp--custom--color--background-secondary);color:var(--wp--custom--color--font-secondary);border:0;border-radius:var(--global--border-radius-xxs)}
