@@ -106,7 +106,8 @@ h4.has-m-font-size,
 h5.has-l-font-size,
 h6.has-xl-font-size,
 .related-wrap .section-title,
-.comments-area .comments-title {
+.comments-area .comments-title,
+.wp-block-post-template.columns-3 h2.wp-block-post-title {
 	font-size: var(--font-size--h4) !important;
 }
 
@@ -215,6 +216,13 @@ var {
 	font-size: 14px;
 }
 
+/* Grid */
+.site-content {
+	max-width: var(--global--max-content-width);
+	@include push--auto;
+	padding-left: var(--global--content--padding--left);
+	padding-right: var(--global--content--padding--right);
+}
 
 /* Links */
 
@@ -367,16 +375,6 @@ textarea {
 	max-width: var(--global--wide-content-width);
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.wp-block-group.has-background.alignfull,
-.wp-block-group.alignfull *[class*="wp-container-"],
-.wp-block-group.alignfull>.alignfull,
-*[class*="wp-container-"] *[class*="wp-container-"],
-*[class*="wp-container-"]>.alignfull {
-    margin-left: calc(-1 * var(--global--content--padding--left)) !important;
-    margin-right: calc(-1 * var(--global--content--padding--right)) !important;
-    width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 }
 
 /* Template Parts */

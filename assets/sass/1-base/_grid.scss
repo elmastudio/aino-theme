@@ -77,6 +77,7 @@
 .site-main {
 	.site-content {
 		max-width: var(--global--max-content-width);
+		@include push--auto;
 	}
 }
 
