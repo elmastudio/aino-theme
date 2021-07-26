@@ -12,8 +12,8 @@ return array(
 	<div class="wp-block-group alignfull has-background-primary-background-color has-background pb__17"><!-- wp:separator {"color":"border","className":"is-style-wide"} -->
 	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
 	<!-- /wp:separator -->
-	<!-- wp:ainoblocks/grid-container {"paddingTop":13} -->
-	<div class="wp-block-ainoblocks-grid-container alignwide pt__13"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomMobile":7} -->
+	<!-- wp:ainoblocks/grid-container {"paddingTop":15} -->
+	<div class="wp-block-ainoblocks-grid-container alignwide pt__15"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomMobile":7} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mb_m__7"><!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"xxs"} -->
 	<h2 class="has-font-primary-color has-text-color has-xxs-font-size">About us</h2>
 	<!-- /wp:heading --></div>
