@@ -99,7 +99,7 @@ textarea{resize:vertical}
 .push-center,.center{margin-left:auto;margin-right:auto}
 .has-padding-top{padding-top:5rem}
 .has-padding-bottom{padding-bottom:5rem}
-.site-main .site-content{max-width:var(--global--max-content-width)}
+.site-main .site-content{max-width:var(--global--max-content-width);margin-left:auto;margin-right:auto}
 .single-post .entry-content>*,.page-template-default .entry-content>*,.single .entry-tags,.comment-list,.comment-respond,.authorbox__details,.author-pic-link,.default-content-width{max-width:var(--global--default-content-width)}
 .tpl-fullwidth .entry-content,.tpl-fullwidth .entry-content>*,.tpl-fullwidth .entry-header,.single-post .site-content .related-wrap,.single-post .comments-area{margin-left:auto;margin-right:auto;max-width:var(--global--max-content-width)}
 .tpl-fullscreen .entry-content>*,.tpl-fullscreen .entry-header,.tpl-hero .entry-content>*,.tpl-hero .entry-header{margin-left:auto;margin-right:auto;max-width:100%}
@@ -569,7 +569,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .comment-body .reply{display:block;padding-top:.5rem;margin-bottom:0}
 .comment-body .says{display:none}
 .site-header{position:relative;padding-top:1rem}
-.site-header__content{background:red;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:var(--global--max-content-width);margin-left:auto;margin-right:auto}
+.site-header__content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:var(--global--max-content-width);margin-left:auto;margin-right:auto}
 .site-header .wp-block-navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
 .site-header .wp-block-site-title{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;line-height:var(--wp--custom--line-height--body)}
 .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{background:var(--wp--custom--color--background-secondary);color:var(--wp--custom--color--font-secondary)}

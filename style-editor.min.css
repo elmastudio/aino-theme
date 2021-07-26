@@ -62,7 +62,7 @@ h1.has-l-font-size,h2.has-xl-font-size,h3.has-xxl-font-size,h4.has-xxxl-font-siz
 h1.has-m-font-size,h2.has-l-font-size,h3.has-xl-font-size,h4.has-xxl-font-size,h5.has-xxxl-font-size,h6.has-xxxxl-font-size{font-size:var(--font-size--h7) !important}
 .editor-post-title__input,h1,h1.has-s-font-size,h2.has-m-font-size,h3.has-l-font-size,h4.has-xl-font-size,h5.has-xxl-font-size,h6.has-xxxl-font-size{font-size:var(--font-size--h6) !important}
 h2,h1.has-xs-font-size,h2.has-s-font-size,h3.has-m-font-size,h4.has-l-font-size,h5.has-xl-font-size,h6.has-xxl-font-size{font-size:var(--font-size--h5) !important}
-h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title{font-size:var(--font-size--h4) !important}
+h3,h1.has-xxs-font-size,h2.has-xs-font-size,h3.has-s-font-size,h4.has-m-font-size,h5.has-l-font-size,h6.has-xl-font-size,.related-wrap .section-title,.comments-area .comments-title,.wp-block-post-template.columns-3 h2.wp-block-post-title{font-size:var(--font-size--h4) !important}
 h2.has-xxs-font-size,h3.has-xs-font-size,h4,h4.has-s-font-size,h5.has-m-font-size,h6.has-l-font-size,h1.site-title,.site-title{font-size:var(--font-size--h3) !important}
 h3.has-xxs-font-size,h4.has-xs-font-size,h5,h5.has-s-font-size,h6.has-m-font-size,h1.wp-block-site-title{font-size:var(--font-size--h2) !important}
 h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-size,h6.has-xs-font-size,h6.has-xxs-font-size,h6.has-xxs-font-size{font-size:var(--font-size--h1) !important}
@@ -77,6 +77,7 @@ h4.has-xxs-font-size,h5.has-xs-font-size,h5.has-xxs-font-size,h6,h6.has-s-font-s
 dfn,em,i{font-style:italic}
 blockquote{margin:0;padding:0}
 code,kbd,tt,var{font-size:14px}
+.site-content{max-width:var(--global--max-content-width);margin-left:auto;margin-right:auto;padding-left:var(--global--content--padding--left);padding-right:var(--global--content--padding--right)}
 a{color:currentColor;text-decoration:underline}
 .editor-post-title textarea{background-color:transparent}
 *,*:after,*:before{-webkit-box-sizing:inherit;box-sizing:inherit}
@@ -96,7 +97,6 @@ select{border:1px solid #ccc}
 textarea{width:100%}
 .editor-default-block-appender .editor-default-block-appender__content{font-family:var(--wp--custom--body--typography--font-family);line-height:var(--global--line-height-body);font-size:var(--font-size--body-m)}
 .alignwide{max-width:var(--global--wide-content-width);margin-left:auto;margin-right:auto}
-.wp-block-group.has-background.alignfull,.wp-block-group.alignfull *[class*="wp-container-"],.wp-block-group.alignfull>.alignfull,*[class*="wp-container-"] *[class*="wp-container-"],*[class*="wp-container-"]>.alignfull{margin-left:calc(-1 * var(--global--content--padding--left)) !important;margin-right:calc(-1 * var(--global--content--padding--right)) !important;width:calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important}
 .site-header__content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:var(--global--max-content-width);margin-left:auto;margin-right:auto}
 p.wp-block-paragraph{font-size:var(--font-size--body-m)}
 .wp-block-query .wp-block-query-loop{padding:0}

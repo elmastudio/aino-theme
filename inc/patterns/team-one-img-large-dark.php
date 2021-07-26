@@ -12,11 +12,11 @@ return array(
 	<div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__13 pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomTablet":0,"marginBottomMobile":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mb_t__0 mb_m__0"><!-- wp:heading {"level":2,"textColor":"variant-font-primary","fontSize":"xl","paddingBottom":13} -->
-	<h2 class="has-variant-font-primary-color has-text-color has-xl-font-size pb__13"><meta charset="utf-8">We are part of the Tuscany design and fashion show</h2>
+	<h2 class="has-variant-font-primary-color has-text-color has-xl-font-size pb__13"><meta charset="utf-8">We design and develop advanced app solutions</h2>
 	<!-- /wp:heading -->
 	
 	<!-- wp:image {sizeSlug":"full","linkDestination":"none","borderRadius":"xs","paddingBottom":13} -->
-	<figure class="wp-block-image size-full  br-all__xs pb__13"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-large-dark.jpeg" alt=""/></figure>
+	<figure class="wp-block-image size-full br-all__xs pb__13"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-large-dark.jpeg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
