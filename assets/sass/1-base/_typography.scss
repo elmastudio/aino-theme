@@ -5,7 +5,6 @@ input,
 select,
 table,
 textarea {
-	font-family: var(--wp--custom--body--typography--font-family);
 	line-height: var(--wp--custom--line-height--body);
 	color: var(--wp--custom--color--font-secondary);
 }
@@ -174,7 +173,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--wp--custom--heading--typography--font-family);
 	line-height: var(--wp--custom--line-height--heading);
 	color: var(--wp--custom--color--font-primary);
 }
@@ -184,20 +182,6 @@ h1.site-title,
 h2.entry-title {
 	word-wrap: break-word;
 	hyphens: auto;
-}
-
-.h-bold {
-
-	:not(.entry-content)>h1,
-	:not(.entry-content)>h2,
-	:not(.entry-content)>h3,
-	:not(.entry-content)>h4,
-	:not(.entry-content)>h5,
-	:not(.entry-content)>h6,
-	.site-title,
-	&.single-post .byline {
-		font-weight: bold;
-	}
 }
 
 h1.has-xxxxl-font-size {

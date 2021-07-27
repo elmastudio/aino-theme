@@ -271,18 +271,24 @@
 			"wideSize": "90rem"
 		},
 		"typography": {
-			"fontFamilies": [{
-					"fontFamily": "'Arimo', sans-serif",
+			"fontFamilies": [
+				{
+					"fontFamily": "Arimo, sans-serif",
 					"slug": "arimo-font",
-					"name": "Sans-serif (Arimo Google font)"
+					"name": "Arimo"
 				},
 				{
-					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"fontFamily": "\"PT Serif\", serif",
+					"slug": "pt-serif-font",
+					"name": "PT Serif"
+				},
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
 					"slug": "system-font",
 					"name": "System"
 				},
 				{
-					"fontFamily": "'Monaco', 'Courier 10 Pitch', monospace",
+					"fontFamily": "Monaco, \"Courier 10 Pitch\", monospace",
 					"slug": "monospace-font",
 					"name": "Monospace"
 				}
@@ -444,7 +450,7 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family-arimo-font)",
+					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
 					"lineHeight": "var(--wp--custom--line-height--heading)",
 					"font-weight": 700
 				}

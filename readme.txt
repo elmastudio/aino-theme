@@ -36,11 +36,11 @@ GNU General Public License for more details.
 Aino WordPress Theme bundles the following third-party resources:
 
 * normalize.css, Copyright © Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
-* TwentyTwenty theme, GPLv2 or later, https://wordpress.org/themes/twentytwenty/
 * Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
+* Webfonts Loader, WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
 
@@ -49,7 +49,9 @@ New: Block Theme support. Please activate the Gutenberg plugin in order to use t
 New: Added Gutenberg plugin to list of required plugins.
 New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
 New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
-New: Default Google font Arimo.
+New: Default font Arimo.
+New: Serif font option PT Serif.
+New: Load Google fonts locally.
 New: Block Patterns.
 
 = 1.4.1 =

@@ -112,34 +112,23 @@ if ( ! function_exists( 'aino_setup' ) ) :
 	add_action( 'after_setup_theme', 'aino_setup' );
 
 /**
- * Register custom fonts.
+ * Register fonts.
  */
 function aino_fonts_url() {
-	$fonts_url = '';
 
-	/*
-	 * Translators: If there are characters in your language that are not
-	 * supported by Arimo, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	$arimo = esc_html_x( 'on', 'Arimo font: on or off', 'aino' );
+	$font_families = array(
+		'Arimo:ital,wght@400;700;400;700',
+		'PT+Serif:ital,wght@400;700;400;700'
+	);
 
-	if ( 'off' !== $arimo ) {
-		$font_families = array();
+	$fonts_url = add_query_arg( array(
+		'family' => implode( '&family=', $font_families ),
+		'display' => 'swap',
+	), 'https://fonts.googleapis.com/css2' );
 
-		if ( 'off' !== $arimo ) {
-			$font_families[] = 'Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap';
-		}
+	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
 
-		$query_args = array(
-			'family' => rawurlencode( implode( '|', $font_families ) ),
-			'subset' => rawurlencode( 'latin,latin-ext' ),
-		);
-
-		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-	}
-
-	return esc_url_raw( $fonts_url );
+	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
 
 /**
@@ -168,7 +157,7 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
 function aino_scripts() {
 
 	// Add custom fonts, used in the main stylesheet.
-	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), false, wp_get_theme()->get( 'Version' ), 'all' );
+	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.min.css', false, wp_get_theme()->get( 'Version' ) );
