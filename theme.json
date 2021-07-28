@@ -548,6 +548,10 @@
 				}
 			}
 		},
+		"typography": {
+			"fontFamily": "var(--wp--custom--body--typography--font-family)",
+			"lineHeight": "var(--wp--custom--body--typography--line-height)"
+		},
 		"color": {
 			"background": "var(--wp--custom--color--main-background)",
 			"text": "var(--wp--custom--color--text-two)",

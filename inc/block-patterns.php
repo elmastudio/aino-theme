@@ -12,11 +12,6 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 		if ( function_exists( 'register_block_pattern_category' ) ) {
 
 			register_block_pattern_category(
-				'aino-team',
-				array( 'label' => __( 'Aino Team', 'aino' ) )
-			);
-
-			register_block_pattern_category(
 				'aino-feature',
 				array( 'label' => __( 'Aino Feature', 'aino' ) )
 			);
@@ -27,8 +22,8 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			);
 
 			register_block_pattern_category(
-				'aino-services',
-				array( 'label' => __( 'Aino Service', 'aino' ) )
+				'aino-team',
+				array( 'label' => __( 'Aino Team', 'aino' ) )
 			);
 
 			register_block_pattern_category(
@@ -54,6 +49,14 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 
 		if ( function_exists( 'register_block_pattern' ) ) {
 			$block_patterns = array(
+				'feature-heading-two-text-img-dark',
+				'feature-heading-two-text-img-light',
+				'feature-big-headline-two-col-text-dark',
+				'feature-big-headline-two-col-text-light',
+				'feature-text-left-img-right-dark',
+				'feature-text-left-img-right-light',
+				'feature-text-right-img-left-dark',
+				'feature-text-right-img-left-light',
 				'header-centered-slim-light',
 				'header-centered-slim-dark',
 				'team-four-img-light',
@@ -68,7 +71,6 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'team-one-img-small-dark',
 				'team-one-img-large-light',
 				'team-one-img-large-dark',
-				'hero-big-img-below-light',
 			);
 
 			foreach ( $block_patterns as $block_pattern ) {

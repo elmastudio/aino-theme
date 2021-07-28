@@ -6,7 +6,7 @@
  */
 
 return array(
-	'title'      => __( 'Slim centered header with site logo, navigation and social links (Light).', 'aino' ),
+	'title'      => __( 'Slim centered header with site logo, navigation and social links (Light)', 'aino' ),
 	'blockTypes' => array( 'core/block-template-part/header' ),
 	'categories' => array( 'aino-header' ),
 	'content'    => '<!-- wp:group {"className":"site-header__wrap outer-margins"} -->

@@ -311,6 +311,7 @@ $var: true !default; // Can be overridden elsewhere
 
 	&:hover {
 		background-color: var(--wp--custom--color--secondary);
+		text-decoration: none;
 	}
 }
 
@@ -324,6 +325,7 @@ $var: true !default; // Can be overridden elsewhere
 		border-color: var(--wp--custom--color--primary);
 		color: var(--wp--custom--color--primary);
 		fill: var(--wp--custom--color--primary);
+		text-decoration: none;
 	}
 }
 

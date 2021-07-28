@@ -6,7 +6,7 @@
  */
 
 return array(
-	'title'      => __( 'Four team images with large heading and intro text (Light).', 'aino' ),
+	'title'      => __( 'Four team images with large heading and intro text (Light)', 'aino' ),
 	'categories' => array( 'aino-team' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-background-primary-background-color has-background pb__17"><!-- wp:separator {"color":"border","className":"is-style-wide"} -->
@@ -18,8 +18,8 @@ return array(
 	<h2 class="has-font-primary-color has-text-color has-m-font-size pb__9">Meet the team</h2>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary"} -->
-	<p class="has-font-secondary-color has-text-color">We are a small creative team from Portland, Oregon. Our clients value that we create individual software solutions tailored to their needs.</p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"m"} -->
+	<p class="has-font-secondary-color has-text-color has-m-font-size">We are a small creative team from Portland, Oregon. Our clients value that we create individual software solutions tailored to their needs.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -53,17 +53,17 @@ return array(
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
-	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":3,"gridColumnEndMobile":11,"alignItem":"stretch","justifyItem":"stretch","marginBottomTablet":0} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__3 col_end_m__11 align-self__stretch justify-self__stretch no-stacking mb_t__0"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":3,"gridColumnEndMobile":11,"alignItem":"stretch","justifyItem":"stretch","marginBottomTablet":0,"marginBottomMobile":10} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__3 col_end_m__11 align-self__stretch justify-self__stretch no-stacking mb_t__0 mb_m__10"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-four-img-03.jpeg" alt=""/></figure>
 	<!-- /wp:image -->
 	
 	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"xs","paddingTop":5} -->
-	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Andre Williams</h3>
+	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Tony Scott</h3>
 	<!-- /wp:heading -->
 	
 	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">App Developer</p>
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">Support</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

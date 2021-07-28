@@ -6,7 +6,7 @@
  */
 
 return array(
-	'title'      => __( 'Slim centered header with site title, navigation and social links (Dark).', 'aino' ),
+	'title'      => __( 'Slim centered header with site title, navigation and social links (Dark)', 'aino' ),
 	'categories' => array( 'aino-header' ),
 	'content'    => '<!-- wp:group {"backgroundColor":"variant-background-primary","className":"site-header__wrap outer-margins"} -->
 	<div class="wp-block-group site-header__wrap header-dark has-variant-background-primary-background-color has-background outer-margins">

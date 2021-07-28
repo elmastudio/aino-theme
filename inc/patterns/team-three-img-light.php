@@ -6,7 +6,7 @@
  */
 
 return array(
-	'title'      => __( 'Three team images with heading and large intro text (Light).', 'aino' ),
+	'title'      => __( 'Three team images with heading and large intro text (Light)', 'aino' ),
 	'categories' => array( 'aino-team' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-background-primary-background-color has-background pb__17"><!-- wp:separator {"color":"border","className":"is-style-wide"} -->
