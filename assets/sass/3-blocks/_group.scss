@@ -1,0 +1,28 @@
+.wp-block-group {
+
+	&.has-background {
+		padding: inherit;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		.wp-block-group__inner-container & {
+			margin-top: 0;
+		}
+	}
+
+	.wp-block-group__inner-container>*:last-child {
+		margin-bottom: 0;
+	}
+
+	.wp-block-group__inner-container {
+
+		&:not(.wp-block-ainoblocks-grid-container) > .wp-block-image:not(.alignwide):not(.alignfull) {
+				@include push--auto;
+			}
+	}
+}

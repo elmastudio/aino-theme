@@ -1,0 +1,25 @@
+.wp-block-preformatted,
+.wp-block-preformatted.has-background,
+.wp-block-code {
+	overflow: auto;
+	@include s-r-6(padding);
+	@include s-r-6(margin-bottom);
+}
+
+.wp-block-preformatted,
+.wp-block-code {
+	border: none;
+	border-radius: 0;
+
+	code {
+		overflow-x: auto;
+		white-space: pre;
+		display: block;
+		overflow-wrap: break-word;
+	}
+}
+
+.wp-block-code {
+	background: var(--global--color--variant-code-background);
+	color: var(--global--color--variant-code-color);
+}

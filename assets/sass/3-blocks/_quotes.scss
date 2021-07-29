@@ -1,0 +1,80 @@
+.wp-block-quote,
+.wp-block-pullquote {
+	padding: 0;
+
+	&.is-style-default {
+		background-color: transparent;
+	}
+
+	&.is-style-solid-color .has-text-color a {
+		text-decoration: underline;
+		box-shadow: none;
+	}
+
+	.has-text-color a:hover {
+		color: var(--wp--custom--color--primary);
+	}
+
+	&.is-style-large {
+		padding: 0;
+	}
+
+	&.is-style-large p {
+		margin: 0;
+		font-size: var(--font-size--body-xl) !important;
+		font-style: normal;
+	}
+
+	&.is-style-large cite,
+	& cite {
+		font-size: var(--font-size--body-xs) !important;
+		text-align: left;
+	}
+
+	&.has-text-align-left cite {
+		text-align: left;
+	}
+
+	&.has-text-align-right cite {
+		text-align: right;
+	}
+
+	&.has-text-align-center cite {
+		text-align: center;
+	}
+}
+
+.single .entry-content .wp-block-pullquote,
+.wp-block-pullquote {
+	border: none;
+	text-align: left;
+	padding: 0;
+
+	& p,
+	&.is-style-solid-color p,
+	&.is-style-solid-color blockquote p {
+		font-size: var(--font-size--body-m) !important;
+	}
+
+	&.is-style-solid-color,
+	&.is-style-solid-color {
+		padding: $s-6;
+		background-color: var(--wp--custom--color--background-primary);
+		clear: both;
+
+		blockquote {
+			max-width: 100%;
+		}
+	}
+
+	&.alignleft,
+	&.alignright {
+		margin-right: $s-7;
+		margin-left: $s-7;
+	}
+
+	&.alignleft blockquote,
+	&.alignright blockquote {
+		padding: 0;
+	}
+}

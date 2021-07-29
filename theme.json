@@ -1,0 +1,561 @@
+{
+	"version": 1,
+	"templateParts": [{
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"area": "footer"
+		}
+	],
+	"customTemplates": [{
+		"name": "header-footer-only",
+		"title": "Header and Footer Only",
+		"postTypes": [
+			"page",
+			"post"
+		]
+	}],
+	"settings": {
+		"border": {
+			"customColor": true,
+			"customRadius": true,
+			"customStyle": true,
+			"customWidth": true
+		},
+		"spacing": {
+			"customMargin": false,
+			"customPadding": false,
+			"units": ["px", "em", "rem", "vh", "vw"]
+		},
+		"color": {
+			"link": true,
+			"custom": true,
+			"palette": [
+				{
+					"slug": "background-primary",
+					"color": "#ffffff",
+					"name": "Background Primary"
+				},
+				{
+					"slug": "background-secondary",
+					"color": "#f4f4f4",
+					"name": "Background Secondary"
+				},
+				{
+					"slug": "button-color-primary",
+					"color": "#ffffff",
+					"name": "Button Color Primary"
+				},
+				{
+					"slug": "button-color-secondary",
+					"color": "#121212",
+					"name": "Button Color Secondary"
+				},
+				{
+					"slug": "font-primary",
+					"color": "#121212",
+					"name": "Font Primary"
+				},
+				{
+					"slug": "font-secondary",
+					"color": "#282828",
+					"name": "Font Secondary"
+				},
+				{
+					"slug": "font-tertiary",
+					"color": "#777B7D",
+					"name": "Font Tertiary"
+				},
+				{
+					"slug": "form-border-active",
+					"color": "#121212",
+					"name": "Form Border Active"
+				},
+				{
+					"slug": "form-glow",
+					"color": "RGBA(18, 18, 18, 0.2)",
+					"name": "Form Border Glow"
+				},
+				{
+					"slug": "primary",
+					"color": "#282828",
+					"name": "Primary"
+				},
+				{
+					"slug": "product-badge-background",
+					"color": "#ffffff",
+					"name": "Product Badge Background"
+				},
+				{
+					"slug": "product-badge-color",
+					"color": "#282828",
+					"name": "Product Badge Color"
+				},
+				{
+					"slug": "secondary",
+					"color": "#FF4002",
+					"name": "Secondary"
+				},
+				{
+					"slug": "star-rating",
+					"color": "#777B7D",
+					"name": "Star Rating"
+				},
+				{
+					"slug": "variant-background-primary",
+					"color": "#121212",
+					"name": "Variant Background Primary"
+				},
+				{
+					"slug": "variant-background-secondary",
+					"color": "#282828",
+					"name": "Variant Background Secondary"
+				},
+				{
+					"slug": "variant-button-color-primary",
+					"color": "#ffffff",
+					"name": "Variant Button Color Primary"
+				},
+				{
+					"slug": "variant-button-color-secondary",
+					"color": "#121212",
+					"name": "Variant Button Color Secondary"
+				},
+				{
+					"slug": "variant-font-primary",
+					"color": "#ffffff",
+					"name": "Variant Font Primary"
+				},
+				{
+					"slug": "variant-font-secondary",
+					"color": "#d9d9d9",
+					"name": "Variant Font Secondary"
+				},
+				{
+					"slug": "variant-font-tertiary",
+					"color": "#777B7D",
+					"name": "Variant Font Tertiary"
+				},
+				{
+					"slug": "variant-form-border-active",
+					"color": "#ffffff",
+					"name": "Variant Form Border Active"
+				},
+				{
+					"slug": "variant-form-glow",
+					"color": "RGBA(255, 255, 255, 0.3)",
+					"name": "Variant Form Border Glow"
+				},
+				{
+					"slug": "variant-primary",
+					"color": "#777B7D",
+					"name": "Variant Primary"
+				},
+				{
+					"slug": "variant-product-badge-background",
+					"color": "#ffffff",
+					"name": "Variant Product Badge Background"
+				},
+				{
+					"slug": "variant-product-badge-color",
+					"color": "#111111",
+					"name": "Variant Product Badge Color"
+				},
+				{
+					"slug": "variant-secondary",
+					"color": "#FF6837",
+					"name": "Variant Secondary"
+				},
+				{
+					"slug": "variant-star-rating",
+					"color": "#777B7D",
+					"name": "Variant Star Rating"
+				}
+			],
+			"gradients": [{
+					"slug": "grayish-blue-to-dark-grayish-blue",
+					"gradient": "linear-gradient(0deg,rgb(91, 108, 114) 0%,rgb(60, 68, 72) 100%)",
+					"name": "Grayish blue to dark grayish blue"
+				},
+				{
+					"slug": "soft-orange-to-desaturated-dark-cyan",
+					"gradient": "linear-gradient(270deg,rgb(67, 92, 103) 0%, rgb(114, 164, 163) 46%,rgb(251, 162, 137) 74%, rgb(252, 202, 164) 100%)",
+					"name": "Soft orange to desaturated dark cyan"
+				},
+				{
+					"slug": "light-grayish-magenta-to-very-dark-grayish-pink",
+					"gradient": "linear-gradient(0deg,rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%,rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%)",
+					"name": "Light grayish magenta to very dark grayish pink"
+				},
+				{
+					"slug": "light-grayish-red-to-dark-red",
+					"gradient": "linear-gradient(0deg,rgb(143, 34, 40) 0%, rgb(250, 110, 115) 50%, rgb(219, 191, 193) 100%)",
+					"name": "Light grayish red to dark red"
+				},
+				{
+					"slug": "slightly-desaturated-cyan-to-very-soft-red",
+					"gradient": "linear-gradient(0deg,rgb(129, 195, 198) 0%, rgb(251, 198, 167) 48%, rgb(251, 198, 167) 100%)",
+					"name": "Slightly desaturated cyan to very soft red"
+				},
+				{
+					"slug": "very-soft-orange-to-very-soft-pink",
+					"gradient": "radial-gradient(circle at bottom, rgb(251, 219, 190) 0%, rgb(252, 170, 161) 26%, rgb(250, 152, 162) 54%,rgb(246, 182, 211) 75%, rgb(250, 232, 243) 100%)",
+					"name": "Very soft orange to very soft pink"
+				},
+				{
+					"slug": "grayish-violet-to-soft-orange",
+					"gradient": "linear-gradient(180deg, rgb(173, 160, 191) 0%, rgb(225, 205, 236) 29%, rgb(243, 206, 225) 51%, rgb(241, 196, 141) 72%, rgb(240, 193, 97) 100%)",
+					"name": "Grayish violet to soft orange"
+				},
+				{
+					"slug": "light-grayish-red-to-dark-grayish-blue",
+					"gradient": "linear-gradient(180deg, rgb(252, 202, 210) 0%, rgb(222, 158, 167) 46%, rgb(118, 119, 135) 100%)",
+					"name": "Light grayish red to dark grayish blue"
+				},
+				{
+					"slug": "light-grayish-red-to-very-soft-blue",
+					"gradient": "linear-gradient(135deg, rgb(237, 204, 211) 0%, rgb(177, 181, 225) 100%)",
+					"name": "Light grayish red to very soft blue"
+				},
+				{
+					"slug": "soft-blue-to-lime-green",
+					"gradient": "linear-gradient(0deg, rgb(104, 134, 254) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 61%, rgb(213, 233, 207) 75%, rgb(8, 179, 82) 100%)",
+					"name": "Soft blue to lime green"
+				},
+				{
+					"slug": "soft-blue-to-dark-moderate-violet",
+					"gradient": "linear-gradient(135deg, rgb(103, 125, 239) 0%, rgb(117, 72, 166) 100%)",
+					"name": "Soft blue to dark moderate violet"
+				},
+				{
+					"slug": "soft-red-to-very-soft-blue",
+					"gradient": "linear-gradient(0deg, rgb(250, 110, 90) 0%, rgb(255, 202, 192) 24%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 62%, rgb(223, 227, 255) 77%, rgb(157, 144, 250) 100%)",
+					"name": "Soft red to very soft blue"
+				},
+				{
+					"slug": "soft-red-to-very-soft-blue",
+					"gradient": "radial-gradient(circle at bottom, rgb(19, 20, 143) 0%, rgb(13, 11, 24) 100%)",
+					"name": "dark-blue-to-mostly-black-blue"
+				},
+				{
+					"slug": "Very soft blue to dark grayish blue",
+					"gradient": "radial-gradient(circle at bottom, rgb(153, 203, 233) 0%, rgb(121, 132, 157) 100%)",
+					"name": "very-soft-blue-to-dark-grayish-blue"
+				},
+				{
+					"slug": "soft-pink-to-mostly-pure-orange",
+					"gradient": "radial-gradient(circle at bottom, rgb(253, 79, 156) 0%, rgb(254, 132, 0) 100%)",
+					"name": "Soft pink to mostly pure orange"
+				},
+				{
+					"slug": "bright-cyan-to-soft-magenta",
+					"gradient": "linear-gradient( 0deg, rgb(48, 203, 247) 0%, rgb(254, 128, 254) 100%)",
+					"name": "Bright cyan to soft magenta"
+				},
+				{
+					"slug": "light-red-to-very-light-pink",
+					"gradient": "linear-gradient( 90deg, rgb(255, 131, 92) 0%, rgb(255, 148, 193) 100%)",
+					"name": "Light red to very light pink"
+				},
+				{
+					"slug": "very-soft-violet-to-very-soft-pink",
+					"gradient": "linear-gradient( 90deg, rgb(198, 163, 245) 0%, rgb(248, 162, 199) 100%)",
+					"name": "Very soft violet to very soft pink"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "43.5rem",
+			"wideSize": "90rem"
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Arimo, sans-serif",
+					"slug": "arimo-font",
+					"name": "Arimo"
+				},
+				{
+					"fontFamily": "\"PT Serif\", serif",
+					"slug": "pt-serif-font",
+					"name": "PT Serif"
+				},
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"slug": "system-font",
+					"name": "System"
+				},
+				{
+					"fontFamily": "Monaco, \"Courier 10 Pitch\", monospace",
+					"slug": "monospace-font",
+					"name": "Monospace"
+				}
+			],
+			"fontSizes": [{
+					"name": "XXS",
+					"size": "12px",
+					"slug": "xxs"
+				},
+				{
+					"name": "XS",
+					"size": "14px",
+					"slug": "xs"
+				},
+				{
+					"name": "S",
+					"size": "16px",
+					"slug": "s"
+				},
+				{
+					"name": "M",
+					"size": "20px",
+					"slug": "m"
+				},
+				{
+					"name": "L",
+					"size": "24px",
+					"slug": "l"
+				},
+				{
+					"name": "XL",
+					"size": "28px",
+					"slug": "xl"
+				},
+				{
+					"name": "XXL",
+					"size": "34px",
+					"slug": "xxl"
+				},
+				{
+					"name": "3XL",
+					"size": "40px",
+					"slug": "xxxl"
+				},
+				{
+					"name": "4XL",
+					"size": "48px",
+					"slug": "xxxxl"
+				}
+			],
+			"fontWeights": [{
+					"slug": "200",
+					"value": "200",
+					"name": "Thin"
+				},
+				{
+					"slug": "300",
+					"value": "300",
+					"name": "Light"
+				},
+				{
+					"slug": "400",
+					"value": "400",
+					"name": "Regular"
+				},
+				{
+					"slug": "500",
+					"value": "500",
+					"name": "Medium"
+				},
+				{
+					"slug": "600",
+					"value": "600",
+					"name": "Semibold"
+				},
+				{
+					"slug": "700",
+					"value": "700",
+					"name": "Bold"
+				},
+				{
+					"slug": "800",
+					"value": "800",
+					"name": "Heavy"
+				},
+				{
+					"slug": "900",
+					"value": "900",
+					"name": "Black"
+				}
+			],
+			"textTransforms": [{
+					"name": "AB",
+					"slug": "uppercase"
+				},
+				{
+					"name": "ab",
+					"slug": "lowercase"
+				},
+				{
+					"name": "Ab",
+					"slug": "capitalize"
+				}
+			],
+			"textDecorations": [{
+					"name": "Underline",
+					"slug": "underline",
+					"value": "underline"
+				},
+				{
+					"name": "Strikethrough",
+					"slug": "strikethrough",
+					"value": "line-through"
+				}
+			],
+			"customFontSize": false,
+			"customLineHeight": true
+		},
+		"custom": {
+			"color": {
+				"background-primary": "var(--wp--preset--color--background-primary)",
+				"background-secondary": "var(--wp--preset--color--background-secondary)",
+				"button-color-primary": "var(--wp--preset--color--button-color-primary)",
+				"button-color-secondary": "var(--wp--preset--color--button-color-secondary)",
+				"font-primary": "var(--wp--preset--color--font-primary)",
+				"font-secondary": "var(--wp--preset--color--font-secondary)",
+				"font-tertiary": "var(--wp--preset--color--font-tertiary)",
+				"form-border-active": "var(--wp--preset--color--form-border-active)",
+				"form-glow": "var(--wp--preset--color--form-glow)",
+				"primary": "var(--wp--preset--color--primary)",
+				"product-badge-background": "var(--wp--preset--color--product-badge-background)",
+				"product-badge-color": "var(--wp--preset--color--product-badge-color)",
+				"secondary": "var(--wp--preset--color--secondary)",
+				"star-rating": "var(--wp--preset--color--star-rating)",
+				"variant-background-primary": "var(--wp--preset--color--variant-background-primary)",
+				"variant-background-secondary": "var(--wp--preset--color--variant-background-secondary)",
+				"variant-button-color-primary": "var(--wp--preset--color--variant-button-color-primary)",
+				"variant-button-color-secondary": "var(--wp--preset--color--variant-button-color-secondary)",
+				"variant-font-primary": "var(--wp--preset--color--variant-font-primary)",
+				"variant-font-secondary": "var(--wp--preset--color--variant-font-secondary)",
+				"variant-font-tertiary": "var(--wp--preset--color--variant-font-tertiary)",
+				"variant-form-border-active": "var(--wp--preset--color--variant-form-border-active)",
+				"variant-form-glow": "var(--wp--preset--color--variant-form-glow)",
+				"variant-primary": "var(--wp--preset--color--variant-primary)",
+				"variant-product-badge-background": "var(--wp--preset--color--variant-product-badge-background)",
+				"variant-product-badge-color": "var(--wp--preset--color--variant-product-badge-color)",
+				"variant-secondary": "var(--wp--preset--color--variant-secondary)",
+				"variant-star-rating": "var(--wp--preset--color--variant-star-rating)"
+			},
+			"line-height": {
+				"body": 1.4,
+				"heading": 1
+			},
+			"body": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
+					"lineHeight": "var(--wp--custom--line-height--body)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
+					"lineHeight": "var(--wp--custom--line-height--heading)",
+					"font-weight": 700
+				}
+			},
+			"code": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--monospace-font)",
+					"lineHeight": "var(--wp--custom--line-height--body)"
+				}
+			}
+		},
+		"blocks": {
+			"core/button": {
+				"color": {
+					"palette": [
+						{
+							"slug": "color-primary",
+							"color": "var(--wp--preset--color--primary)",
+							"name": "Primary"
+						},
+						{
+							"slug": "color-secondary",
+							"color": "var(--wp--preset--color--secondary)",
+							"name": "Secondary"
+						},
+						{
+							"slug": "button-color-primary",
+							"color": "var(--wp--preset--color--button-color-primary)",
+							"name": "Button Color Primary"
+						},
+						{
+							"slug": "button-color-secondary",
+							"color": "var(--wp--preset--color--button-color-secondary)",
+							"name": "Button Color Secondary"
+						}
+					]
+				}
+			},
+			"core/preformatted": {
+				"color": {
+					"palette": [
+						{
+							"slug": "code-background",
+							"color": "#002F33",
+							"name": "Code Background"
+						},
+						{
+							"slug": "code-color",
+							"color": "#68C7C4",
+							"name": "Code Color"
+						},
+						{
+							"slug": "variant-code-background",
+							"color": "#F9F9F9",
+							"name": "Variant Code Background"
+						},
+						{
+							"slug": "variant-code-color",
+							"color": "#0351AB",
+							"name": "Variant Code Color"
+						}
+					]
+				}
+			},
+			"core/separator": {
+				"color": {
+					"palette": [
+						{
+							"slug": "border",
+							"color": "#d7d7d7",
+							"name": "Border"
+						},
+						{
+							"slug": "variant-border",
+							"color": "#4A4D4E",
+							"name": "Variant Border"
+						}
+					]
+				}
+			}
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var(--wp--custom--color--primary)",
+					"text": "var(--wp--custom--color--button-color-primary)"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--s)",
+					"fontWeight": 400
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--custom--body--typography--font-family)",
+			"lineHeight": "var(--wp--custom--body--typography--line-height)"
+		},
+		"color": {
+			"background": "var(--wp--custom--color--main-background)",
+			"text": "var(--wp--custom--color--text-two)",
+			"link": "var(--wp--custom--color--primary)"
+		}
+	}
+}

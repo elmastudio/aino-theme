@@ -1,3 +1,4 @@
+/* Structure */
 .page-template-default,
 .tpl-fullwidth,
 .single-post,
@@ -11,31 +12,26 @@
 	}
 }
 
-.page,
+
+/* 404 Error page */
 .error404 {
 
-	.entry-header {
-		max-width: var(--global--max-content-width);
-		@include s-r-9 (padding-bottom);
+	.wp-block-search {
 
-		.entry-title {
-			margin: 0 auto;
-			text-align: center;
+		.wp-block-search__button {
+			background: var(--wp--custom--color--primary);
+			color: var(--wp--custom--color--button-color-primary);
+			padding: 1rem 2rem;
+		}
+
+		.wp-block-search__label {
+			width: auto;
 		}
 	}
 }
 
-.entry-footer {
-
-	.archive .type-page &,
-	.search-results .type-page & {
-		display: none;
-	}
-}
-
 /* Site Building Page */
-.tpl-fullscreen,
-.tpl-hero {
+.tpl-fullscreen {
 
 	.type-page .entry-header {
 		display: none;

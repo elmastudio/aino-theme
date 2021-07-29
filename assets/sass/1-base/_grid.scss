@@ -17,123 +17,31 @@
 	}
 }
 
-.col,
-.column {
-	box-sizing: border-box;
+/* Alignments and block widths */
+.wp-block-group.alignfull,
+*[class*="wp-container-"] {
+	padding-left: var(--global--content--padding--left);
+	padding-right: var(--global--content--padding--right);
 }
 
-.desktop__overlap-top {
-
-	@include breakpoint(sm) {
-		margin-top: -12rem;
-	}
+.wp-block-group.alignfull *[class*="wp-container-"],
+.wp-block-group.alignfull > .alignfull,
+*[class*="wp-container-"] *[class*="wp-container-"],
+*[class*="wp-container-"] > .alignfull {
+	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
+	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
+	width: calc( 100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 }
 
-// 12 grid columns
-.col1 {
-	max-width: $col1;
+.entry-content > * {
 
-	&.nogap {
-		max-width: calc(#{$col1} - #{$s-9});
-	}
-}
-
-.col2 {
-	max-width: $col2;
-
-	&.nogap {
-		max-width: calc(#{$col2} - #{$s-9});
-	}
-}
-
-.col3 {
-	max-width: $col3;
-
-	&.nogap {
-		max-width: calc(#{$col3} - #{$s-9});
-	}
-}
-
-.col4 {
-	max-width: $col4;
-
-	&.nogap {
-		max-width: calc(#{$col4} - #{$s-9});
-	}
-}
-
-.col5 {
-	max-width: $col5;
-
-	&.nogap {
-		max-width: calc(#{$col5} - #{$s-9});
-	}
-}
-
-.col6 {
-
-	@include breakpoint(sm) {
-		max-width: 21rem;
+	&.alignwide {
+		max-width: var(--global--max-content-width);
 	}
 
-	@include breakpoint(md) {
-		max-width: 27rem;
-	}
-
-	@include breakpoint(lg) {
-		max-width: $col6;
-	}
-
-	&.nogap {
-		max-width: calc(#{$col6} - #{$s-9});
-	}
-}
-
-.col7 {
-	max-width: $col7;
-
-	&.nogap {
-		max-width: calc(#{$col7} - #{$s-9});
-	}
-}
-
-.col8 {
-	max-width: $col8;
-
-	&.nogap {
-		max-width: calc(#{$col8} - #{$s-9});
-	}
-}
-
-.col9 {
-	max-width: $col9;
-
-	&.nogap {
-		max-width: calc(#{$col9} - #{$s-9});
-	}
-}
-
-.col10 {
-	max-width: $col10;
-
-	&.nogap {
-		max-width: calc(#{$col10} - #{$s-9});
-	}
-}
-
-.col11 {
-	max-width: $col11;
-
-	&.nogap {
-		max-width: calc(#{$col11} - #{$s-9});
-	}
-}
-
-.col12 {
-	max-width: $col12;
-
-	&.nogap {
-		max-width: calc(#{$col12} - #{$s-9});
+	.aligncenter {
+		clear: both;
+		@include push--auto;
 	}
 }
 
@@ -144,34 +52,10 @@
 	max-width: var(--global--default-content-width);
 }
 
-// Outer margins for elements which only require them on mobile.
-.mobile-margins {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(lg) {
-		padding-left: $s-6;
-		padding-right: $s-6;
-	}
-
-	@include breakpoint(xl) {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-// Outer Grid margins for elements with default content width.
-.default-margins,
-.search-no-results .entry-content {
-	@include default-margins;
-}
-
-.col-gaps {
-	@include col-gaps;
-}
-
-.outer-margins {
-	@include outer-margins;
+.outer-margins,
+.wp-block-group.has-background.outer-margins {
+	padding-left: var(--global--content--padding--left);
+	padding-right: var(--global--content--padding--right);
 }
 
 /* Centered elements */
@@ -189,21 +73,12 @@
 	@include s-r-14 (padding-bottom);
 }
 
-/* Pages with 12 column max-width */
-.header-inner,
-.archive .site-content,
-.blog .site-content,
-.error404 .site-content,
-.search .site-content {
-	@include push--auto;
-
-	@include breakpoint(xl) {
+/* Default wide page width */
+.site-main {
+	.site-content {
 		max-width: var(--global--max-content-width);
+		@include push--auto;
 	}
-}
-
-.single-post .site-content {
-	@include push--auto;
 }
 
 /* Default content width */
@@ -215,7 +90,6 @@
 .authorbox__details,
 .author-pic-link,
 .default-content-width {
-	@include push--auto;
 	max-width: var(--global--default-content-width);
 }
 
@@ -223,7 +97,6 @@
 .tpl-fullwidth .entry-content,
 .tpl-fullwidth .entry-content>*,
 .tpl-fullwidth .entry-header,
-.single-post .site-content .authorbox__wrap,
 .single-post .site-content .related-wrap,
 .single-post .comments-area {
 	@include push--auto;
@@ -242,6 +115,12 @@
 /* Alignwide and fullwidth Content widths */
 .entry-content>*.alignwide {
 	max-width: var(--global--wide-content-width);
+	@include push--auto;
+}
+
+.alignwide {
+	max-width: var(--global--wide-content-width);
+	@include push--auto;
 }
 
 // All containers with 1200px default width.
@@ -309,40 +188,19 @@
 	float: none;
 }
 
-/* 2-Columns */
-.blog-2-column .posts-container .hentry,
-.posts-container .hentry,
-.s6,
-.single-post .related-post,
-.single-post .related-post,
-.single-post .navigation .next,
-.single-post .navigation .prev {
-	width: 100%; // 1-column on mobile
-	flex-grow: 0;
-	@include col-gaps;
+/* 2-Column grid tablet */
+@include breakpoint(sm) {
 
-	@include breakpoint(sm) {
-		flex-basis: calc(50% - 2rem);
-	}
-
-	@include breakpoint(lg) {
-		flex-basis: calc(50% - 3rem);
+	.two-col-grid-tablet {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
 	}
 }
 
-/* 3-Columns */
-.blog-3-column .posts-container .hentry,
-.header-infobar .col,
-.s4 {
-	width: 100%;
-	flex-grow: 0;
-	@include col-gaps;
+@include breakpoint(lg) {
 
-	@include breakpoint(sm) {
-		flex-basis: calc(50% - 2rem);
-	}
-
-	@include breakpoint(lg) {
-		flex-basis: calc(33.333% - 3rem);
+	.two-col-grid-tablet {
+		display: block;
 	}
 }

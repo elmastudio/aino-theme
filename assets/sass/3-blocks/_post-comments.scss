@@ -1,0 +1,91 @@
+.wp-block-post-comments {
+	#comments {
+		@include s-r-9 (padding-bottom);
+	}
+
+	.commentlist {
+
+		.comment {
+			padding-left: 0;
+
+			.commentmetadata {
+				margin-top: 2px;
+				color: var(--wp--preset--color--font-tertiary);
+			}
+
+			p {
+				line-height: var(--wp--custom--line-height--body);
+				margin-bottom: 0;
+			}
+
+			.comment-respond {
+				@include s-r-9 (padding-bottom);
+			}
+
+			.comment-content {
+				@include s-r-2 (padding-top);
+				display: block;
+			}
+
+			.comment-author {
+
+				.fn {
+					padding-top: 2px;
+					display: block;
+				}
+
+				.avatar {
+					@include s-r-2 (margin-right);
+	
+					@include breakpoint(md) {
+						@include s-r-4 (margin-right);
+					}
+				}
+			}
+		}
+
+		.comment-meta {
+			display: block;
+		}
+
+		.comment-metadata {
+			color: var(--wp--custom--color--font-tertiary);
+
+			time {
+				@include s-r-1 (padding-top);
+				display: block;
+			}
+		}
+	}
+
+	.comment-meta,
+	.comment-author {
+		line-height: 1;
+		margin-left: 0;
+	}
+}
+
+.comment-body {
+	position: relative;
+	@include s-r-9 (margin-bottom);
+	padding: 0;
+
+	.comment-awaiting-moderation {
+		@include s-r-4 (margin-top);
+		display: block;
+		font-style: normal;
+		@include s-r-6(padding);
+		background: var(--global--color--notification);
+		border-radius: var(--global--border-radius-xxs);
+	}
+
+	.reply {
+		display: block;
+		@include s-r-2 (padding-top);
+		margin-bottom: 0;
+	}
+
+	.says {
+		display: none;
+	}
+}

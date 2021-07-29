@@ -1,4 +1,3 @@
-
 /* Spacing */
 $s-0                 : 0;
 $s-1                 : 0.25rem;
@@ -20,47 +19,17 @@ $s-16                : 13rem;
 $s-17                : 15.5rem;
 $s-18                : 18rem;
 
-/* Spacing Header Bar */
-$stickyheader-mobile : 3.438rem; // 55px
-$stickyheader-desktop: 5.5rem; // 88px
-
-/* Grid Columns */
-$col1                : 7.75rem;
-$col2                : 15.5rem;
-$col3                : 23.25rem;
-$col4                : 31rem;
-$col5                : 35.75rem;
-$col6                : 46.5rem;
-$col7                : 54.25rem;
-$col8                : 62rem;
-$col9                : 69.75rem;
-$col10               : 77.5rem;
-$col11               : 85.25rem;
-$col12               : 93rem;
-
 :root {
-	/* Fonts */
-	--global--font-primary: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
-	--global--font-secondary: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
-	--global--font-code: 'Monaco', 'Courier 10 Pitch', -apple-system, Courier, monospace;
-
-	/* Font Families */
-	--heading--font-family: var(--global--font-primary);
-	--body--font-family: var(--global--font-secondary);
-	--code--font-family: var(--global--font-code);
 
 	/* Line Height */
-	--global--line-height-body: 1.4;
-	--global--line-height-heading: 1;
-	--global--line-height-page-title: 1;
 	--global--line-height-reset: 1;
 
 	/* Content widths and grid */
 	--global--default-content-width: 43.5rem;
 	--global--10col-nogap-content-width: 74.5rem;
-	--global--wide-content-width: 87rem;
-	--global--max-content-width-nogap: 90rem; //1440px
-	--global--max-content-width: 93rem;
+	--global--wide-content-width: 90rem; // 1440px
+	--global--max-content-width-nogap: 90rem; // 1440px
+	--global--max-content-width: 93rem; // 1488px
 	--global--grid-gap: #{2 * $s-4};
 
 	/* Border radius */
@@ -74,18 +43,13 @@ $col12               : 93rem;
 	--global--border-radius-xxxl: 3.75rem;
 	--global--border-radius-xxxxl: 4.375rem;
 	--global--border-radius-round: 6.25em;
-
-	--heading--line-height-h6: var(--global--line-height-heading);
-	--heading--line-height-h5: var(--global--line-height-heading);
-	--heading--line-height-h4: var(--global--line-height-heading);
-	--heading--line-height-h3: var(--global--line-height-heading);
-	--heading--line-height-h2: var(--global--line-height-heading);
-	--heading--line-height-h1: var(--global--line-height-page-title);
 }
 
-@media only screen and (min-width: 48em) { // from small tablet screens (md)
+/* SM breakpoint */
+@media only screen and (min-width: 48em) {
 
 	:root {
+
 		/* Border radius */
 		--global--border-radius-xxs: 0.625rem;
 		--global--border-radius-xs: 1.25rem;
@@ -97,4 +61,139 @@ $col12               : 93rem;
 		--global--border-radius-xxxl: 5rem;
 		--global--border-radius-xxxxl: 5.625rem;
 	}
+}
+
+/* Custom Global styles */
+body {
+
+	/* Global Heading Font sizes */
+	--global--font-size--h12: 5.125rem;
+	--global--font-size--h11: 4.375rem;
+	--global--font-size--h10: 3.75rem;
+	--global--font-size--h9: 3.25rem;
+	--global--font-size--h8: 2.875rem;
+	--global--font-size--h7: 2.375rem;
+	--global--font-size--h6: 2.125rem;
+	--global--font-size--h5: 1.875rem;
+	--global--font-size--h4: 1.5rem;
+	--global--font-size--h3: 1.25rem;
+	--global--font-size--h2: 1.125rem;
+	--global--font-size--h1: 1rem;
+
+	/* Global body font sizes */
+	--global--font-size--body-xxs: 0.75rem;
+	--global--font-size--body-xs: 0.875rem;
+	--global--font-size--body-s: 1rem;
+	--global--font-size--body-m: 1.125rem;
+	--global--font-size--body-l: 1.25rem;
+	--global--font-size--body-xl: 1.375rem;
+	--global--font-size--body-xxl: 1.5rem;
+	--global--font-size--body-xxxl: 1.625rem;
+	--global--font-size--body-xxxxl: 1.875rem;
+
+	/* Default content padding */
+	--global--content--padding--left: 1rem;
+	--global--content--padding--right: 1rem;
+
+	// SM breakpoint
+	@media only screen and (min-width: 48em) {
+
+		--global--font-size--h12: 8.875rem;
+		--global--font-size--h11: 10.375rem;
+		--global--font-size--h10: 6rem;
+		--global--font-size--h9: 4.875rem;
+		--global--font-size--h8: 4rem;
+		--global--font-size--h7: 3.25rem;
+		--global--font-size--h6: 2.75rem;
+		--global--font-size--h5: 2.25rem;
+		--global--font-size--h4: 1.75rem;
+
+		--global--font-size--body-xl: 1.5rem;
+		--global--font-size--body-xxl: 1.75rem;
+		--global--font-size--body-xxxl: 2rem;
+		--global--font-size--body-xxxxl: 2.25rem;
+
+		/* Default content padding */
+		--global--content--padding--left: 2rem;
+		--global--content--padding--right: 2rem;
+	}
+
+	// MD breakpoint
+	@media only screen and (min-width: 64em) {
+
+		--global--font-size--h12: 15.125rem;
+		--global--font-size--h11: 11.75rem;
+		--global--font-size--h10: 9.25rem;
+		--global--font-size--h9: 7.25rem;
+		--global--font-size--h8: 5.625rem;
+		--global--font-size--h7: 4.375rem;
+		--global--font-size--h6: 3.375rem;
+		--global--font-size--h5: 2.625rem;
+		--global--font-size--h4: 1.875rem;
+		--global--font-size--h3: 1.375rem;
+
+		--global--font-size--body-l: 1.375rem;
+		--global--font-size--body-xl: 1.625rem;
+		--global--font-size--body-xxl: 1.875rem;
+		--global--font-size--body-xxxl: 2.25rem;
+		--global--font-size--body-xxxxl: 2.625rem;
+	}
+
+	// LG breakpoint
+	@media only screen and (min-width: 80em) {
+		--global--font-size--h12: 25rem;
+		--global--font-size--h11: 18.625rem;
+		--global--font-size--h10: 13.875rem;
+		--global--font-size--h9: 10.375rem;
+		--global--font-size--h8: 7.75rem;
+		--global--font-size--h7: 5.75rem;
+		--global--font-size--h6: 4.375rem;
+		--global--font-size--h5: 3rem;
+		--global--font-size--h4: 2.125rem;
+		--global--font-size--h3: 1.5rem;
+		--global--font-size--h2: 1.25rem;
+
+		--global--font-size--body-m: 1.25rem;
+		--global--font-size--body-l: 1.5rem;
+		--global--font-size--body-xl: 1.75rem;
+		--global--font-size--body-xxl: 2.125rem;
+		--global--font-size--body-xxxl: 2.5rem;
+		--global--font-size--body-xxxxl: 3rem;
+
+		/* Default content padding */
+		--global--content--padding--left: 3rem;
+		--global--content--padding--right: 3rem;
+	}
+
+	// LG breakpoint
+	@media only screen and (min-width: 96em) {
+		/* Default content padding */
+		--global--content--padding--left: 1.5rem;
+		--global--content--padding--right: 1.5rem;
+	}
+
+	/* Theme Heading font sizes */
+	--font-size--h12: var(--global--font-size--h12);
+	--font-size--h11: var(--global--font-size--h11);
+	--font-size--h10: var(--global--font-size--h10);
+	--font-size--h9: var(--global--font-size--h9);
+	--font-size--h8: var(--global--font-size--h8);
+	--font-size--h7: var(--global--font-size--h7);
+	--font-size--h6: var(--global--font-size--h6);
+	--font-size--h5: var(--global--font-size--h5);
+	--font-size--h4: var(--global--font-size--h4);
+	--font-size--h3: var(--global--font-size--h3);
+	--font-size--h2: var(--global--font-size--h2);
+	--font-size--h1: var(--global--font-size--h1);
+
+	/* Theme Body font sizes */
+	--font-size--body-xxs: var(--global--font-size--body-xxs);
+	--font-size--body-xs: var(--global--font-size--body-xs);
+	--font-size--body-s: var(--global--font-size--body-s);
+	--font-size--body-m: var(--global--font-size--body-m);
+	--font-size--body-l: var(--global--font-size--body-l);
+	--font-size--body-xl: var(--global--font-size--body-xl);
+	--font-size--body-xxl: var(--global--font-size--body-xxl);
+	--font-size--body-xxxl: var(--global--font-size--body-xxxl);
+	--font-size--body-xxxxl: var(--global--font-size--body-xxxxl);
 }

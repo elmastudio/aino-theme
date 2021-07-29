@@ -5,14 +5,14 @@ Theme URI: https://wpaino.com
 Author: elmastudio
 Author URI: https://www.elmastudio.de/en/
 Description: Aino is an avant-garde, multi-purpose WordPress theme for the block editor. In combination with the Aino Blocks plugin you can build advanced page layouts using Aino's pre-designed block patterns with one click. Create a unique business website, portfolio or personal blog with Aino and stand out from the crowd.
-Requires at least: 5.0
-Tested up to: 5.8.0
+Requires at least: 5.7
+Tested up to: 5.8
 Requires PHP: 7.0
-Version: 1.4.0
+Version: 2.0.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Text Domain: aino
-Tags: blog, grid-layout, one-column, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks, block-patterns
+Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, wide-blocks, block-patterns, full-site-editing
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -28,7 +28,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## sanitize
 	## accessibility
 	## clearings
-	## colors
 	## grid
 	## typography
 	## media
@@ -52,15 +51,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## post
 	## page
 	## footer
-# 5-utilities
-	## Color Palettes
-# 6-woocommerce
-	## 
+# 5-woocommerce
+	##
 --------------------------------------------------------------*/
 
 @import "1-base/base-index";
 @import "2-components/components-index";
 @import "3-blocks/blocks-index";
 @import "4-layout/layout-index";
-@import "5-utilities/utilities-index";
-@import "6-woocommerce/woocommerce-index";
+@import "5-woocommerce/woocommerce-index";

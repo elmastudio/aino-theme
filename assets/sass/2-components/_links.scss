@@ -25,7 +25,8 @@ cite a,
 .reset_variations,
 .woocommerce-notices-wrapper a,
 .woocommerce-message a,
-.custom-product-page-link {
+.custom-product-page-link,
+.wp-block-post-excerpt__more-link {
 	color: currentColor;
 	text-decoration: underline;
 
@@ -44,16 +45,17 @@ cite a,
 h2.entry-title a,
 .comment-list b.fn a,
 .main-navigation a {
-	color: var(--global--color-text-one);
-	fill: var(--global--color-text-one);
+	color: var(--wp--custom--color--font-primary);
+	fill: var(--wp--custom--color--font-primary);
 }
 
 .posts-container .hentry .entry-meta a,
 .entry-comments a,
 .posted-on a,
-.comment-reply-title #cancel-comment-reply-link {
-	color: var(--global--color-text-two);
-	fill: var(--global--color-text-two);
+.comment-reply-title #cancel-comment-reply-link,
+.comment-body .reply a {
+	color: var(--wp--custom--color--font-tertiary);
+	fill: var(--wp--custom--color--font-tertiary);
 }
 
 /* Link Hovers */
@@ -64,7 +66,12 @@ h2.entry-title a,
 .woocommerce-breadcrumb a,
 .mc4wp-form p a,
 .woocommerce-review-link,
-.posted_in a {
+.posted_in a,
+.post-meta a,
+.wp-block-post-terms a,
+.comment-meta a,
+.comment-body .reply a,
+.wp-block-query-pagination a {
 
 	&:hover {
 		text-decoration: underline;
@@ -74,7 +81,8 @@ h2.entry-title a,
 /* Meta Textlink Hovers */
 h1:not(.site-title), h2, h3, h4, h5, h6,
 .entry-meta,
-.related-post .entry-cats {
+.related-post .entry-cats,
+.wp-block-ainoblocks-grid-item {
 
 	a {
 		&:hover {
@@ -99,4 +107,10 @@ h1:not(.site-title), h2, h3, h4, h5, h6,
 .entry-link img,
 .navigation .nav-thumb {
 	@include transition-posthover;
+}
+
+.wp-block-navigation:not([style*=text-decoration]) a:hover,
+.wp-block-navigation:not([style*=text-decoration]) a:active,
+.wp-block-navigation:not([style*=text-decoration]) a:focus {
+	text-decoration: underline;
 }

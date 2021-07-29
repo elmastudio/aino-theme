@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","paddingTop":15,"layout":{"inherit":true},"className":"search-results outer-margins"} -->
+<main class="wp-block-group pt__15 search-results outer-margins">
+
+	<!-- wp:heading -->
+	<h2>Search results:</h2>
+	<!-- /wp:heading -->
+
+		<!-- wp:query {"queryId":1,"query":{"perPage":9,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","sticky":""},"displayLayout":{"type":"flex","columns":3},"align":"wide"} -->
+		<div class="wp-block-query alignwide">
+			<!-- wp:post-template -->
+			<!-- wp:group {} -->
+			<div class="wp-block-group">
+				<!-- wp:post-featured-image {"isLink":true} /-->
+				<!-- wp:post-title {"isLink":true} /-->
+				<!-- wp:post-excerpt {"showMoreOnNewLine":false} /-->
+				<!-- wp:post-author {"showAvatar":false,"showBio":false,"fontSize":"s"} /-->
+				<!-- wp:post-date /-->
+			</div>
+			<!-- /wp:group -->
+			<!-- /wp:post-template -->
+		</div>
+		<!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer","layout":{"inherit":true}} /-->

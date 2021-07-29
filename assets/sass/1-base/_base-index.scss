@@ -1,16 +1,16 @@
 /**
  * Base Index
  */
-
+ @import "mixins";
  @import "fonts";
  @import "variables";
- @import "mixins";
+ @import "colors";
  @import "normalize";
  @import "sanitize";
  @import "accessibility";
  @import "clearings";
- @import "colors";
  @import "grid";
- @import "spacing";
  @import "typography";
+ @import "spacing";
+ @import "radius";
  @import "media";

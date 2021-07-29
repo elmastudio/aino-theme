@@ -1,0 +1,30 @@
+.wp-block-gallery {
+
+	.blocks-gallery-grid {
+		padding: 0;
+		margin-bottom: 0;
+		list-style: none;
+
+		& li {
+			padding: 0;
+		}
+
+		&.alignwide {
+			@include breakpoint(sm) {
+				margin-left: calc(31.75% - 31.75vw);
+				margin-right: calc(31.75% - 31.75vw);
+			}
+		}
+
+		&.blocks-gallery-image figcaption,
+		&.wp-block-gallery .blocks-gallery-item figcaption {
+			font-size: var(--font-size--body-xs) !important;
+		}
+	}
+
+	.blocks-gallery-caption {
+		width: 100%;
+		@include s-r-6(margin-bottom);
+		text-align: center;
+	}
+}

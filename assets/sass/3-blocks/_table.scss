@@ -1,0 +1,33 @@
+.wp-block-table {
+	display: table;
+	width: 100%;
+
+	&.alignfull {
+		width: 96vw;
+	}
+
+	table {
+		background: transparent;
+
+		tr {
+			border-bottom: 1px solid var(--wp--custom--color--border);
+
+			&:last-of-type {
+				border-bottom: 0;
+			}
+		}
+	}
+
+	&.is-style-stripes {
+		border-bottom: none;
+
+		tbody tr:nth-child(odd) {
+			background-color: var(--wp--custom--color--background-primary);
+			border-bottom: none;
+		}
+
+		table tr {
+			border-bottom: none;
+		}
+	}
+}

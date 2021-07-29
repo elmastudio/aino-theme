@@ -10,7 +10,7 @@
 /* Images */
 .image-border img,
 .img-border {
-	border: 4px solid var(--global--color-border);
+	border: 4px solid var(--wp--custom--color--border);
 }
 
 /* Make sure embeds and iframes fit their containers. */
@@ -49,7 +49,7 @@ figure {
 }
 
 .wp-caption .wp-caption-text {
-	@include font-body-xs;
+	font-size: var(--font-size--body-xs);
 	@include s-r-7(margin-top);
 	@include s-r-8(margin-bottom);
 }

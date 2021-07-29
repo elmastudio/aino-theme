@@ -1,9 +1,9 @@
 .site-footer {
-	background-color: var(--global--color-background);
+	background-color: var(--wp--custom--color--background-primary);
 
 	.textwidget p {
-		color: var(--global--color-text-two);
-		fill: var(--global--color-text-two);
+		color: var(--wp--custom--color--font-secondary);
+		fill: var(--wp--custom--color--font-secondary);
 	}
 
 	.footer-wrap {
@@ -67,7 +67,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			border-top: 1px solid var(--global--color-border);
+			border-top: 1px solid var(--wp--custom--color--border);
 			@include s-r-9 (padding-top);
 
 			.footer-spacebetween & {
@@ -95,7 +95,7 @@
 			}
 
 			.site-info {
-				color: var(--global--color-text-two);
+				color: var(--wp--custom--color--font-secondary);
 				text-align: center;
 
 				@include breakpoint(sm) {
@@ -126,7 +126,7 @@
 
 				a {
 					padding: 0;
-					color: var(--global--color-text-two);
+					color: var(--wp--custom--color--font-secondary);
 				}
 			}
 
@@ -215,6 +215,8 @@
 	}
 }
 
+// Block Theme Footer
+
 body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer-nav {
 
 	@include breakpoint(sm) {
@@ -222,27 +224,16 @@ body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer
 	}
 }
 
-/* Light Footer Style ---------------------------- */
-.footer-light {
+.site-footer {
 
-	.site-footer,
-	.site-footer .footer-wrap .footer-info .site-info,
-	.site-footer .footer-wrap .footer-info .site-info a,
-	.site-footer .footer-wrap .footer-info .site-info span,
-	.site-footer .widget-title,
-	.textwidget p,
-	.textwidget p a,
-	.footer-widget-wrap a,
-	.site-footer .menu-social-container .icon {
-		color: var(--global--color-white);
-		fill: var(--global--color-white);
-	}
+	.wp-block-ainoblocks-grid-item {
 
-	.site-footer {
-		.footer-wrap .footer-info {
-			border-color: var(--global--color-white);
+		.wp-block-group:not(:last-child) {
+			padding-bottom: 5rem;
+
+			@include breakpoint(lg) {
+				@include s-r-11(padding-bottom);
+			}
 		}
-	
 	}
 }
-

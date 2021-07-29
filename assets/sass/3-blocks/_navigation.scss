@@ -1,0 +1,44 @@
+.wp-block-navigation {
+
+	.site-footer & {
+		li {
+			@include s-r-2(padding-bottom);
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			&.has-child {
+				li {
+					padding-bottom: 0;
+				}
+
+				:where(.submenu-container,.wp-block-navigation-link__container) {
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
+
+.site-footer {
+
+	.wp-block-navigation__container>.wp-block-navigation-link,
+	.wp-block-page-list,
+	.wp-block-page-list>.wp-block-pages-list__item {
+		margin: 0;
+	}
+}
+
+.wp-block-navigation:where(.has-background) a,
+.wp-block-navigation :where(.submenu-container,
+.wp-block-navigation-link__container) a {
+	padding: 0;
+}
+
+.wp-block-navigation__container>.wp-block-navigation-link,
+.wp-block-page-list,
+.wp-block-page-list>.wp-block-pages-list__item {
+	@include s-r-6(margin-right);
+}

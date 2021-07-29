@@ -1,8 +1,8 @@
 /* Sticky Post Badge */
 .badge-highlight {
 	background: transparent;
-	color: var(--global--color-text-one);
-	border: 1px solid var(--global--color-text-one);
+	color: var(--wp--custom--color--font-primary);
+	border: 1px solid var(--wp--custom--color--font-primary);
 	line-height: 1;
 	@include pill-s;
 	display: block;
@@ -10,15 +10,5 @@
 	@include s-r-4(top);
 	@include s-r-4(left);
 	z-index: 1;
-
-	.sticky-light & {
-		color: var(--global--color-white);
-		border: 1px solid var(--global--color-white);
-	}
-
-	.no-featured-image & {
-		top: 0;
-		left: 0;
-	}
 }
 

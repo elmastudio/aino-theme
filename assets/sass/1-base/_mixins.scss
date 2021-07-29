@@ -296,316 +296,6 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Base Typography */
-@mixin hyphenation {
-	word-wrap: break-word;
-	hyphens: auto;
-}
-
-@mixin font-body {
-	font-family: var(--body--font-family);
-	line-height: var(--global--line-height-body);
-}
-
-@mixin font-heading {
-	font-family: var(--heading--font-family);
-	line-height: var(--global--line-height-heading);
-}
-
-/* Font Weights */
-@mixin font-light {
-	font-weight: 300;
-}
-
-@mixin font-regular {
-	font-weight: normal;
-}
-
-@mixin font-bold {
-	font-weight: bold;
-}
-
-/* Heading Font Sizes */
-@mixin font-h-1 {
-	font-size: 1rem !important;
-}
-
-@mixin font-h-2 {
-	font-size: 1.125rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.375rem !important;
-	}
-}
-
-@mixin font-h-3 {
-	font-size: 1.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.5rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.75rem !important;
-	}
-}
-
-@mixin font-h-4 {
-	font-size: 1.5rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.875rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.125rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.375rem !important;
-	}
-}
-
-@mixin font-h-5 {
-	font-size: 1.75rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2.25rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 3.25rem !important;
-	}
-}
-
-@mixin font-h-6 {
-	font-size: 2.125rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2.75rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 3.375rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 4.375rem !important;
-	}
-}
-
-@mixin font-h-7 {
-	font-size: 2.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 3.25rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 4.375rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 5.75rem !important;
-	}
-}
-
-@mixin font-h-8 {
-	font-size: 2.875rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 4rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 5.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 7.75rem !important;
-	}
-}
-
-@mixin font-h-9 {
-	font-size: 3.25rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 4.875rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 7.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 10.375rem !important;
-	}
-}
-
-@mixin font-h-10 {
-	font-size: 3.75rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 6rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 9.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 13.875rem !important;
-	}
-}
-
-@mixin font-h-11 {
-	font-size: 4.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 10.375rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 11.75rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 18.625rem !important;
-	}
-}
-
-@mixin font-h-12 {
-	font-size: 5.125rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 8.875rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 15.125rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 25rem !important;
-	}
-}
-
-/* Body Fonts */
-@mixin font-body-2xs {
-	font-size: 0.75rem !important;
-}
-
-@mixin font-body-xs {
-	font-size: 0.875rem !important;
-}
-
-@mixin font-body-s {
-	font-size: 1rem !important;
-}
-
-@mixin font-body-m {
-	font-size: 1.125rem !important;
-
-	@include breakpoint(lg) {
-		font-size: 1.25rem !important;
-	}
-}
-
-@mixin font-body-l {
-	font-size: 1.25rem !important;
-
-	@include breakpoint(md) {
-		font-size: 1.375rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.5rem !important;
-	}
-}
-
-@mixin font-body-xl {
-	font-size: 1.375rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.5rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.75rem !important;
-	}
-}
-
-@mixin font-body-2xl {
-	font-size: 1.5rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 1.75rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.875rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.125rem !important;
-	}
-}
-
-@mixin font-body-3xl {
-	font-size: 1.625rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.25rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.5rem !important;
-	}
-}
-
-@mixin font-body-4xl {
-	font-size: 1.875rem !important;
-
-	@include breakpoint(sm) {
-		font-size: 2.25rem !important;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.625rem !important;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 3rem !important;
-	}
-}
-
-/* Code */
-@mixin font-code {
-	font-family: var(--code--font-family);
-	font-size: 14px;
-	line-height: var(--global--line-height-body);
-}
-
 /* Buttons */
 @mixin btn {
 	display: inline-block;
@@ -615,37 +305,39 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-primary {
-	color: var(--global--color-white);
-	fill: var(--global--color-white);
-	background-color: var(--global--color-primary);
+	color: var(--wp--custom--color--button-color-primary);
+	fill: var(--wp--custom--color--button-color-primary);
+	background-color: var(--wp--custom--color--primary);
 
 	&:hover {
-		background-color: var(--global--color-primary);
+		background-color: var(--wp--custom--color--secondary);
+		text-decoration: none;
 	}
 }
 
 @mixin btn-outline {
-	color: var(--global--color-primary);
-	fill: var(--global--color-primary);
+	color: var(--wp--custom--color--primary);
+	fill: var(--wp--custom--color--primary);
 	border: 1px solid;
-	border-color: var(--global--color-primary);
+	border-color: var(--wp--custom--color--primary);
 
 	&:hover {
-		border-color: var(--global--color-primary);
-		color: var(--global--color-primary);
-		fill: var(--global--color-primary);
+		border-color: var(--wp--custom--color--primary);
+		color: var(--wp--custom--color--primary);
+		fill: var(--wp--custom--color--primary);
+		text-decoration: none;
 	}
 }
 
 @mixin btn-naked {
 	display: inline-block;
 	font-weight: normal;
-	color: var(--global--color-text-two);
-	fill: var(--global--color-text-two);
+	color: var(--wp--custom--color--font-primary);
+	fill: var(--wp--custom--color--font-primary);
 
 	&:hover {
-		color: var(--global--color-primary);
-		fill: var(--global--color-primary);
+		color: var(--wp--custom--color--primary);
+		fill: var(--wp--custom--color--primary);
 	}
 }
 
@@ -773,13 +465,13 @@ $var: true !default; // Can be overridden elsewhere
 /* Pills */
 @mixin pill {
 	background: transparent;
-	color: var(--global--color-text-one);
-	border: 1px solid var(--global--color-text-one);
+	color: var(--wp--custom--color--font-primary);
+	border: 1px solid var(--wp--custom--color--font-primary);
 	line-height: var(--global--line-height-reset);
 
 	&:hover {
-		color: var(--global--color-background);
-		background: var(--global--color-text-one);
+		color: var(--global--color--form-background);
+		background: var(--wp--custom--color--font-primary);
 	}
 }
 
@@ -948,20 +640,13 @@ $var: true !default; // Can be overridden elsewhere
 	height: $s-8;
 	min-width: $s-8;
 	min-height: $s-8;
-
-	@include breakpoint(sm) {
-		width: $s-9;
-		height: $s-9;
-		max-width: $s-9;
-	}
 }
 
 /* Divider short */
-
 @mixin divider {
 	content: "";
 	display: block;
-	background-color: var(--global--color-border);
+	background-color: var(--wp--custom--color--border);
 	height: 1px;
 	margin-left: $s-2;
 	margin-right: $s-2;
@@ -998,7 +683,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Grid padding */
+/* Grid gaps */
 @mixin col-padding {
 	padding-left: $s-4;
 	padding-right: $s-4;
@@ -1006,36 +691,6 @@ $var: true !default; // Can be overridden elsewhere
 	@include breakpoint(sm) {
 		padding-left: $s-6;
 		padding-right: $s-6;
-	}
-}
-
-@mixin outer-margins {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(sm) {
-		padding-left: $s-7;
-		padding-right: $s-7;
-	}
-
-	@include breakpoint(lg) {
-		padding-left: $s-9;
-		padding-right: $s-9;
-	}
-
-	@include breakpoint(xl) {
-		padding-left: $s-6;
-		padding-right: $s-6;
-	}
-}
-
-@mixin default-margins {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(sm) {
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
 

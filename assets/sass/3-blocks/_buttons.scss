@@ -1,0 +1,38 @@
+.wp-block-button {
+
+	.wp-block-button__link {
+		@include btn;
+		@include btn-m;
+		@include btn-primary;
+		border: 1px solid transparent;
+		box-sizing: border-box;
+		text-decoration: none;
+		outline: none;
+		height: auto;
+		box-shadow: none;
+		border-radius: 0;
+
+		&:not(.has-background) {
+			background-color: var(--wp--custom--color--primary);
+		}
+	}
+
+	&.is-style-outline {
+
+		.wp-block-button__link {
+			@include btn-outline;
+			box-shadow: none;
+			border: 1px solid;
+
+			&:not(.has-background) {
+				background: transparent;
+			}
+
+			&:hover {
+				background-color: var(--wp--custom--color--secondary);
+				color: var(--wp--custom--color--button-color-secondary);
+				fill: var(--wp--custom--color--button-color-secondary);
+			}
+		}
+	}
+}

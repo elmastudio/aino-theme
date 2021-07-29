@@ -12,6 +12,14 @@ input[type="submit"] {
 	@include btn-primary;
 }
 
+
+.wc-block-components-button:not(.is-link):active,
+.wc-block-components-button:not(.is-link):disabled,
+.wc-block-components-button:not(.is-link):focus,
+.wc-block-components-button:not(.is-link):hover {
+	background-color: var(--wp--custom--color--secondary);
+}
+
 /* Button Styles */
 a.btn-primary,
 .btn-primary a {
@@ -31,12 +39,6 @@ a.btn-outline,
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	@include transition-default;
-}
-
-.btn-white button {
-	background: var(--global--color-white);
-	color: var(--global--color-black);
-	fill: var(--global--color-black);
 }
 
 .btn-long,
@@ -87,8 +89,8 @@ a.btn-outline,
 
 		a {
 			@include btn;
-			color: var(--global--color-text-one);
-			box-shadow: inset 0px 0px 0px 1px var(--global--color-text-one);
+			color: var(--wp--custom--color--font-primary);
+			box-shadow: inset 0px 0px 0px 1px var(--wp--custom--color--font-primary);
 	
 			@include breakpoint(md) {
 				padding: 0.688rem 1.375rem;
@@ -102,7 +104,7 @@ a.btn-outline,
 	
 			&:hover {
 				text-decoration: none;
-				color: var(--global--color-text-one);
+				color: var(--wp--custom--color--font-primary);
 			}
 		}
 
@@ -194,59 +196,5 @@ a.btn-outline,
 		text-transform: uppercase;
 		font-size: 14px;
 		line-height: 19px;
-	}
-}
-
-/* Pill-shaped Buttons */
-.btn-pill,
-.single-post .entry-header .entry-cats a,
-.single-post .entry-tags a,
-.comment-metadata a,
-.post-edit-link {
-	@include pill;
-}
-
-.btn-pill,
-.single-post .entry-header .entry-cats a,
-.single-post .entry-tags a,
-.comment-metadata .reply a,
-.comment-time,
-.post-edit-link,
-.comment-edit-link {
-	@include pill;
-}
-
-.post-edit-link,
-.comment-metadata a {
-	display: inline-flex;
-	@include pill-s;
-}
-
-.post-edit-link {
-	@include s-r-4 (margin-top);
-}
-
-.comment-metadata a {
-	@include s-r-2 (margin-right);
-}
-
-.comment-meta .comment-metadata a.comment-time,
-.comment-meta .comment-metadata a.comment-time time {
-	line-height: 1;
-}
-
-.single {
-
-	.entry-header .entry-cats a,
-	.entry-tags a {
-		@include pill-l;
-	}
-
-	.entry-header .entry-cats a {
-		margin: 0 $s-2 $s-4;
-	}
-
-	.entry-tags a {
-		margin: 0 $s-4 $s-4 0;
 	}
 }

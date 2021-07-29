@@ -1,0 +1,59 @@
+/* Advanced Button */
+
+.wp-block-ainoblocks-advanced-button {
+
+	.wp-block-ainoblocks-advanced-button__link {
+		@include transition-default;
+	}
+}
+
+.wp-block-ainoblocks-advanced-button {
+
+	&.is-style-primary {
+		.wp-block-ainoblocks-advanced-button__link {
+			&:not(.has-background) {
+				background-color: var(--wp--custom--color--primary);
+			}
+		}
+	}
+
+	&.is-style-outline {
+		.wp-block-ainoblocks-advanced-button__link {
+			&:not(.has-background) {
+				color: var(--wp--custom--color--primary);
+				border-color: var(--wp--custom--color--primary);
+			}
+		}
+	}
+
+	&.is-style-ghost {
+		.wp-block-ainoblocks-advanced-button__link {
+			color: var(--wp--custom--color--primary);
+		}
+	}
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.ad-circle-fixed {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+
+	@include breakpoint(sd) {
+	bottom: 1.25rem;
+	right: 1.25rem;
+	}
+
+	@include breakpoint(md) {
+	bottom: 1.5rem;
+	right: 1.5rem;
+	}
+
+	@include breakpoint(lg) {
+		bottom: 2rem;
+		right: 2rem;
+	}
+}
