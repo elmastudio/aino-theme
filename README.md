@@ -7,13 +7,40 @@ Aino is a blocks-first free WordPress theme for everyone who wants to build webs
 
 __Author:__ elmastudio  
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
-__Requires at least:__ 5.0  
-__Tested up to:__ WordPress 5.7.1    
+__Requires at least:__ 5.5  
+__Tested up to:__ WordPress 5.8.0    
 __Requires PHP:__ 7.0    
 __License:__ GPLv3 or later  
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 2.0.0  
+**New:** Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.  
+**New:** Added Gutenberg plugin to list of required plugins.  
+**New:** Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).  
+**New:** Option to enable/disable the Site Editor via Gutenberg/Experiments.  
+**New:** Default font Arimo.  
+**New:** Serif font option PT Serif.  
+**New:** Load Google fonts locally.  
+**New:** Block Patterns.  
+
+### 1.4.1  
+**New:** Add theme.json file.  
+**New:** New Global Styles Color Palette and color updates.  
+**Enhance:** Block editor color, gradient palette and theme custom colors.  
+**Enhance:** Add theme support for block styles.  
+**Enhance:** Font styles as CSS variables.  
+Bugfix: Deleted Group block max width.  
+
+### 1.4.0  
+**New:** WooCommerce plugin support.  
+**New:** Building Blocks patterns.  
+**New:** Support Query block.  
+**Enhance:** Color Palette.  
+**Enhance:** Core Code, Preformatted, Verse block styles.  
+**Enhance:** Form styles.  
+**Bugfix:** Load more on archive pages.  
 
 ### 1.3.1  
 **Enhance:** Add support for local fonts.  
