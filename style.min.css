@@ -354,6 +354,7 @@ a:active,a:hover{outline:0}
 h1:not(.site-title) a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.entry-meta a:hover,.related-post .entry-cats a:hover,.wp-block-ainoblocks-grid-item a:hover{text-decoration:underline}
 .site-branding a,.primary-menu a,.site-footer .widget_mc4wp_form_widget a,.site-footer a,.social-header-nav .icon,.social-footer-nav .icon,.sd-social-icon .sd-content ul li[class*='share-'] a{-webkit-transition:all .25s ease;transition:all .25s ease}
 .entry-link,.entry-link img,.navigation .nav-thumb{-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out}
+.wp-block-navigation:not([style*=text-decoration]) a:hover,.wp-block-navigation:not([style*=text-decoration]) a:active,.wp-block-navigation:not([style*=text-decoration]) a:focus{text-decoration:underline}
 button,input[type="button"],input[type="reset"],input[type="submit"]{display:inline-block;line-height:var(--global--line-height-reset);font-weight:normal;-webkit-transition:all .25s ease;transition:all .25s ease;padding:1rem 2rem;font-size:1.125rem}
 button,input[type="button"],input[type="submit"]{color:var(--wp--custom--color--button-color-primary);fill:var(--wp--custom--color--button-color-primary);background-color:var(--wp--custom--color--primary)}
 button:hover,input[type="button"]:hover,input[type="submit"]:hover{background-color:var(--wp--custom--color--secondary);text-decoration:none}

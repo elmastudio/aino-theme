@@ -68,6 +68,8 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'team-one-img-small-dark',
 				'team-one-img-large-light',
 				'team-one-img-large-dark',
+				'contact-big-heading-three-col-light',
+				'contact-big-heading-three-col-dark',
 				'header-centered-slim-light',
 				'header-centered-slim-dark',
 				'footer-five-col-sitelogo-light',

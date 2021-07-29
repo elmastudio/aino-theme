@@ -108,3 +108,9 @@ h1:not(.site-title), h2, h3, h4, h5, h6,
 .navigation .nav-thumb {
 	@include transition-posthover;
 }
+
+.wp-block-navigation:not([style*=text-decoration]) a:hover,
+.wp-block-navigation:not([style*=text-decoration]) a:active,
+.wp-block-navigation:not([style*=text-decoration]) a:focus {
+	text-decoration: underline;
+}
