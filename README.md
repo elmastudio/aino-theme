@@ -1,6 +1,6 @@
 # Aino: A theme for the WordPress block editor
 
-![Aino Screenshot](https://user-images.githubusercontent.com/17613630/116842552-00b26b80-ac31-11eb-849e-39868cdd4d74.png)
+![Aino Screenshot](https://user-images.githubusercontent.com/17613630/127469578-6d68db51-54b2-45a2-a2e8-7ecef3816ee4.png)
 
 Aino is a blocks-first free WordPress theme for everyone who wants to build websites with creative, individual page layouts.  
 #### Download: [Download Aino on WordPress.org](https://wordpress.org/themes/aino/)
