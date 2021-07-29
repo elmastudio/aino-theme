@@ -12,6 +12,14 @@ input[type="submit"] {
 	@include btn-primary;
 }
 
+
+.wc-block-components-button:not(.is-link):active,
+.wc-block-components-button:not(.is-link):disabled,
+.wc-block-components-button:not(.is-link):focus,
+.wc-block-components-button:not(.is-link):hover {
+	background-color: var(--wp--custom--color--secondary);
+}
+
 /* Button Styles */
 a.btn-primary,
 .btn-primary a {

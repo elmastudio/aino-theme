@@ -103,9 +103,9 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Disable WooCommerce default styling.
 		add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
-		add_theme_support( 'wc-product-gallery-zoom' );
-		add_theme_support( 'wc-product-gallery-lightbox' );
-		add_theme_support( 'wc-product-gallery-slider' );
+		remove_theme_support( 'wc-product-gallery-zoom' );
+		remove_theme_support( 'wc-product-gallery-lightbox' );
+		remove_theme_support( 'wc-product-gallery-slider' );
 
 	}
 	endif;

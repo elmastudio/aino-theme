@@ -106,13 +106,6 @@
 padding-right: 0;
 }
 
-.wc-block-components-shipping-calculator-address .wc-block-components-text-input label,
-.wc-block-components-totals-coupon__form .wc-block-components-text-input label,
-.wc-block-components-form .wc-block-components-text-input label,
-.wc-block-components-text-input label {
-	font-size: var(--font-size--body-m);
-}
-
 .wc-block-components-shipping-calculator-address .wc-block-components-text-input label, 
 .wc-block-components-totals-coupon__form .wc-block-components-text-input label,
 .wc-block-components-form .wc-block-components-text-input label {
@@ -135,7 +128,7 @@ padding-right: 0;
 	input[type=text],
 	input[type=url],
 	.components-custom-select-control__button {
-		font-size: var(--font-size--body-m);
+		font-size: var(--font-size--body-m) !important;
 		border-radius: var(--global--border-radius-xxs);
 		border: 1px solid var(--global--color--form-border);
 		line-height: var(--global--line-height-body);
@@ -161,7 +154,7 @@ padding-right: 0;
 
 		p {
 			line-height: var(--global--line-height-reset);
-			font-size: var(--font-size--body-xxs);
+			font-size: var(--font-size--body-xxs) !important;
 			margin: 0;
 			@include s-r-1(padding-top);
 		}
@@ -248,11 +241,11 @@ padding-right: 0;
 	height: 3.75rem;
 
 	label.components-custom-select-control__label {
-		font-size: var(--font-size--body-m);
+		font-size: var(--font-size--body-m) !important;
 	}
 
 	.components-custom-select-control__button {
-		font-size: var(--font-size--body-m);
+		font-size: var(--font-size--body-m) !important;
 		height: 3.75rem;
 		padding: 1rem 0 0 1.25rem;
 		line-height: var(--global--line-height-body);
@@ -289,7 +282,7 @@ padding-right: 0;
 		}
 
 		&:hover {
-			font-size: var(--font-size--body-m);
+			font-size: var(--font-size--body-m) !important;
 			line-height: var(--global--line-height-body);
 			transform: none;
 		}
@@ -297,7 +290,7 @@ padding-right: 0;
 		&:focus,
 		&:active,
 		&:hover {
-			font-size: var(--font-size--body-m);
+			font-size: var(--font-size--body-m) !important;
 			line-height: var(--global--line-height-body);
 			transform: none;
 			height: 3.75rem;
@@ -309,7 +302,7 @@ padding-right: 0;
 	.components-custom-select-control__menu {
 		padding: 0;
 		margin: 0;
-		font-size: var(--font-size--body-s);
+		font-size: var(--font-size--body-s) !important;
 		border-color: var(--global--color--form-border);
 
 		.components-custom-select-control__item {
@@ -394,7 +387,7 @@ padding-right: 0;
 		}
 
 		label {
-			font-size: var(--font-size--body-m);
+			font-size: var(--font-size--body-m) !important;
 			line-height: var(--global--line-height-body);
 		}
 	}
@@ -430,7 +423,7 @@ padding-right: 0;
 }
 
 .wc-block-components-validation-error {
-	font-size: var(--font-size--body-xxs);
+	font-size: var(--font-size--body-xxs) !important;
 	color: var(--global--color--error);
 	max-width: 100%;
 	position: absolute;
@@ -494,14 +487,14 @@ padding-right: 0;
 	z-index: 100;
 	margin: 0;
 	border-radius: var(--global--border-radius-s);
-	color: var(--wp--custom--color--badge-color);
-	background: var(--wp--custom--color--badge-background);
+	color: var(--wp--custom--color--product-badge-color);
+	background: var(--wp--custom--color--product-badge-background);
 }
 
 .wc-block-components-sale-badge {
 	@include s-r-1(margin-top);
 	background: none;
-	border: 1px solid var(--wp--custom--color--badge-color);
+	border: 1px solid var(--wp--custom--color--product-badge-color);
 }
 
 .onsale {
@@ -529,7 +522,7 @@ padding-right: 0;
 // WC buttons
 .wc-block-components-button:not(.is-link) {
 	font-weight: normal;
-	font-size: var(--font-size--body-m);
+	font-size: var(--font-size--body-m) !important;
 	padding: 18px 20px;
 	@include transition-default;
 }
@@ -554,6 +547,7 @@ padding-right: 0;
 		
 	&.woocommerce-error {
 		background: var(--global--color--error);
+		color: #ffffff;
 	}
 
 	.components-notice__content {
@@ -580,17 +574,10 @@ padding-right: 0;
 }
 .woocommerce-page .entry-content .woocommerce-message,
 .woocommerce-message {
-	margin-bottom: $s-6;
+	margin-bottom: $s-4;
 
 	@include breakpoint(sm) {
-		margin-left: $s-7;
-		margin-right: $s-7;
 		margin-bottom: 0;
-	}
-
-	@include breakpoint(lg) {
-		margin-left: $s-9;
-		margin-right: $s-9;
 	}
 
 	@include breakpoint(xl) {
@@ -629,7 +616,7 @@ padding-right: 0;
 
 // Star Ratings Blog grid
 .wc-block-grid__product-rating {
-	font-size: 14px;
+	font-size: 0.875rem;
 
 	.star-rating,
 	.wc-block-grid__product-rating__stars {
@@ -643,7 +630,7 @@ padding-right: 0;
 		&:before,
 		span:before {
 			content: '\2605\2605\2605\2605\2605';
-			font-size: 14px;
+			font-size: 0.875rem;
 			letter-spacing: 1px;
 		}
 	}
@@ -651,7 +638,7 @@ padding-right: 0;
 
 // Woo Products Pagination
 .wc-block-components-pagination {
-	@include s-r-15(margin-bottom);
+	@include s-r-17(margin-bottom);
 
 	button {
 		&:hover {

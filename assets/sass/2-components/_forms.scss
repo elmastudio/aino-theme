@@ -14,7 +14,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea,
-.wp-block-post-comments textarea {
+.wp-block-post-comments textarea,
+#rating {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: var(--global--color--form-background);
@@ -22,6 +23,7 @@ textarea,
 	outline: none;
 	line-height: var(--global--line-height-reset);
 	@include s-r-5 (padding);
+	max-height: 3.75rem;
 
 	@include input-placeholder {
 		color: var(--wp--custom--color--font-tertiary);

@@ -1,32 +1,19 @@
-.page-template-block-shop {
+.page-template-shop,
+.archive.woocommerce-page {
 
-	.entry-header {
-		display: none;
-	}
-
-	.entry-content {
-		max-width: var(--global--max-content-width);
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 1rem;
-		padding-right: 1rem;
-
-		@include breakpoint(sm) {
-			padding-left: 2rem;
-			padding-right: 2rem;
-		}
-
-		@include breakpoint(lg) {
-			padding-left: 3rem;
-			padding-right: 3rem;
-		}
-
-		@include breakpoint(xl) {
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
-		}
+	.entry-content,
+	.content-area {
+		@include s-r-11(padding-top);
 	}
 }
+
+.archive.woocommerce-page {
+
+	.content-area {
+		@include s-r-15(padding-bottom);
+	}
+}
+
 
 .wc-block-grid.has-aligned-buttons .wc-block-grid__product>:last-child {
 	margin: 0;
@@ -53,7 +40,7 @@
 	
 		.add_to_cart_button {
 			opacity: 0;
-			font-size: var(--font-size--body-s);
+			font-size: var(--font-size--body-s) !important;
 			line-height: var(--global--line-height-reset);
 			background: none !important;
 			color: var(--wp--custom--color--font-secondary);
@@ -187,7 +174,7 @@
 		border: 0;
 		border-radius: var(--global--border-radius-s);
 		color: var(--wp--custom--color--font-primary);
-		background: var(--wp--custom--color--badge-background);
+		background: var(--wp--custom--color--product-badge-background);
 		line-height: var(--global--line-height-reset);
 		text-transform: none;
 		font-weight: normal;
@@ -227,7 +214,9 @@
 
 /* Products archive page */
 .archive.woocommerce-page .site-content,
-.woocommerce-shop .site-content {
+.woocommerce-shop .site-content,
+.archive.woocommerce-page .site-main,
+.woocommerce-shop .site-main {
 	padding-left: 1rem;
 	padding-right: 1rem;
 

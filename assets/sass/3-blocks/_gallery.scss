@@ -18,7 +18,7 @@
 
 		&.blocks-gallery-image figcaption,
 		&.wp-block-gallery .blocks-gallery-item figcaption {
-			font-size: var(--font-size--body-xs);
+			font-size: var(--font-size--body-xs) !important;
 		}
 	}
 

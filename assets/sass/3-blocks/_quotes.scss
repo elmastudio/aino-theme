@@ -21,13 +21,13 @@
 
 	&.is-style-large p {
 		margin: 0;
-		font-size: var(--font-size--body-xl);
+		font-size: var(--font-size--body-xl) !important;
 		font-style: normal;
 	}
 
 	&.is-style-large cite,
 	& cite {
-		font-size: var(--font-size--body-xs);
+		font-size: var(--font-size--body-xs) !important;
 		text-align: left;
 	}
 
@@ -53,7 +53,7 @@
 	& p,
 	&.is-style-solid-color p,
 	&.is-style-solid-color blockquote p {
-		font-size: var(--font-size--body-m);
+		font-size: var(--font-size--body-m) !important;
 	}
 
 	&.is-style-solid-color,

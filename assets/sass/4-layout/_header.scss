@@ -12,7 +12,6 @@
 			@include s-r-6(padding-top);
 			padding-bottom: 0;
 		}
-	}
 
 	.wp-block-navigation.is-responsive {
 		display: flex;
@@ -28,7 +27,6 @@
 	}
 
 	.wp-block-site-title {
-		flex-grow: 1;
 		line-height: var(--wp--custom--line-height--body);
 	}
 
@@ -62,6 +60,7 @@
 				display: flex;
 		}
 	}
+}
 
 	//Header Dark
 	.site-header__wrap {

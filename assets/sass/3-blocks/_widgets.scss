@@ -35,7 +35,7 @@
 }
 
 .wp-block-latest-comments__comment {
-	font-size: var(--font-size--body-s);
+	font-size: var(--font-size--body-s) !important;
 }
 
 .wp-block-search button[type="submit"] {
@@ -78,6 +78,6 @@
 }
 
 .wp-block-latest-comments__comment-excerpt p {
-	font-size: var(--font-size--body-s);
+	font-size: var(--font-size--body-s) !important;
 	margin: $s-2 0 $s-6;
 }

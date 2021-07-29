@@ -60,7 +60,8 @@ div[class*='wp-block-'] figcaption,
 	.comment-reply-title #cancel-comment-reply-link,
 	.comment-body .commentmetadata,
 	.reply,
-	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt {
+	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
+	.woocommerce-review__published-date {
 		font-size: var(--font-size--body-s) !important;
 	}
 }
@@ -104,7 +105,11 @@ textarea,
 .hentry ol,
 .hentry ul,
 dl,
-.authorbox-wrap .wp-block-post-author__bio {
+.authorbox-wrap .wp-block-post-author__bio,
+.wc-block-components-shipping-calculator-address .wc-block-components-text-input label,
+.wc-block-components-totals-coupon__form .wc-block-components-text-input label,
+.wc-block-components-form .wc-block-components-text-input label,
+.wc-block-components-text-input label {
 	font-size: var(--font-size--body-m) !important;;
 }
 
