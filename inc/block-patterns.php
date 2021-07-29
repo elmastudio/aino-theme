@@ -27,11 +27,6 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			);
 
 			register_block_pattern_category(
-				'aino-facts',
-				array( 'label' => __( 'Aino Facts', 'aino' ) )
-			);
-
-			register_block_pattern_category(
 				'aino-contact',
 				array( 'label' => __( 'Aino Contact', 'aino' ) )
 			);
@@ -59,6 +54,8 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'feature-text-left-img-right-light',
 				'feature-text-right-img-left-dark',
 				'feature-text-right-img-left-light',
+				'feature-five-col-text-dark',
+				'feature-five-col-text-light',
 				'team-four-img-light',
 				'team-four-img-dark',
 				'team-three-img-light',
