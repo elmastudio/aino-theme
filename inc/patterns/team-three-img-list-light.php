@@ -9,11 +9,12 @@ return array(
 	'title'      => __( 'Three team images list view with team member description text (Light)', 'aino' ),
 	'categories' => array( 'aino-team' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingBottom":17} -->
-	<div class="wp-block-group alignfull has-background-primary-background-color has-background pb__17"><!-- wp:separator {"color":"border","className":"is-style-wide"} -->
+	<div class="wp-block-group alignfull has-background-primary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
+	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","paddingBottom":15} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking pb__15"><!-- wp:separator {"color":"border","className":"is-style-wide"} -->
 	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
-	<!-- /wp:separator -->
-	<!-- wp:ainoblocks/grid-container {"paddingTop":15} -->
-	<div class="wp-block-ainoblocks-grid-container alignwide pt__15"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomDesktop":0,"marginBottomTablet":11,"marginBottomMobile":10} -->
+	<!-- /wp:separator --></div>
+	<!-- /wp:ainoblocks/grid-item --><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomDesktop":0,"marginBottomTablet":11,"marginBottomMobile":10} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_d__0 mb_t__11 mb_m__10"><!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"xxs"} -->
 	<h2 class="has-font-primary-color has-text-color has-xxs-font-size">Who we are</h2>
 	<!-- /wp:heading --></div>
