@@ -24,13 +24,20 @@
 	padding-right: var(--global--content--padding--right);
 }
 
-.wp-block-group.alignfull *[class*="wp-container-"],
 .wp-block-group.alignfull > .alignfull,
-*[class*="wp-container-"] *[class*="wp-container-"],
 *[class*="wp-container-"] > .alignfull {
 	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
 	width: calc( 100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
+}
+
+.wp-block-group.alignfull {
+
+	.default-content-width {
+		@include push--auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .entry-content > * {
