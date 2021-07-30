@@ -453,8 +453,8 @@ pre,
 .wp-block-preformatted,
 .wp-block-preformatted.has-background,
 .wp-block-code {
-	font-family: var(--wp--custom--code--typography--font-family);
-	font-size: var(--font-size--body-xs);
+	font-family: var(--wp--preset--font-family--monospace);
+	font-size: var(--font-size--body-s);
 	line-height: 1.2;
 }
 

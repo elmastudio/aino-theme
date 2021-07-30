@@ -150,7 +150,7 @@ dd{margin:0 1.5rem 1.5rem}
 blockquote{margin:0;padding:0}
 .entry-content blockquote p,blockquote p{margin:0;padding:0}
 blockquote cite,.wp-block-pullquote cite{text-align:left;display:block;padding:1rem 0 0;font-size:var(--font-size--body-xs);font-style:normal;font-weight:bold}
-code,kbd,tt,var,pre,.wp-block-preformatted,.wp-block-preformatted.has-background,.wp-block-code{font-family:var(--wp--custom--code--typography--font-family);font-size:var(--font-size--body-xs);line-height:1.2}
+code,kbd,tt,var,pre,.wp-block-preformatted,.wp-block-preformatted.has-background,.wp-block-code{font-family:var(--wp--preset--font-family--monospace);font-size:var(--font-size--body-s);line-height:1.2}
 pre{padding:1rem;margin-bottom:1rem;border:0}
 abbr,acronym{text-decoration:none;border-bottom:1px dotted #666;cursor:help}
 ins,mark{text-decoration:none}

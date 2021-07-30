@@ -9,14 +9,22 @@
 			"area": "footer"
 		}
 	],
-	"customTemplates": [{
-		"name": "header-footer-only",
-		"title": "Header and Footer Only",
-		"postTypes": [
-			"page",
-			"post"
-		]
-	}],
+	"customTemplates": [
+		{
+			"name": "header-footer-only",
+			"title": "Header and Footer Only",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "shop",
+			"title": "WooCommerce Shop",
+			"postTypes": [
+				"page"
+			]
+		}
+],
 	"settings": {
 		"border": {
 			"customColor": true,
@@ -274,22 +282,22 @@
 			"fontFamilies": [
 				{
 					"fontFamily": "Arimo, sans-serif",
-					"slug": "arimo-font",
+					"slug": "arimo",
 					"name": "Arimo"
 				},
 				{
 					"fontFamily": "\"PT Serif\", serif",
-					"slug": "pt-serif-font",
+					"slug": "pt-serif",
 					"name": "PT Serif"
 				},
 				{
 					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-					"slug": "system-font",
+					"slug": "system",
 					"name": "System"
 				},
 				{
 					"fontFamily": "Monaco, \"Courier 10 Pitch\", monospace",
-					"slug": "monospace-font",
+					"slug": "monospace",
 					"name": "Monospace"
 				}
 			],
@@ -337,47 +345,6 @@
 					"name": "4XL",
 					"size": "48px",
 					"slug": "xxxxl"
-				}
-			],
-			"fontWeights": [{
-					"slug": "200",
-					"value": "200",
-					"name": "Thin"
-				},
-				{
-					"slug": "300",
-					"value": "300",
-					"name": "Light"
-				},
-				{
-					"slug": "400",
-					"value": "400",
-					"name": "Regular"
-				},
-				{
-					"slug": "500",
-					"value": "500",
-					"name": "Medium"
-				},
-				{
-					"slug": "600",
-					"value": "600",
-					"name": "Semibold"
-				},
-				{
-					"slug": "700",
-					"value": "700",
-					"name": "Bold"
-				},
-				{
-					"slug": "800",
-					"value": "800",
-					"name": "Heavy"
-				},
-				{
-					"slug": "900",
-					"value": "900",
-					"name": "Black"
 				}
 			],
 			"textTransforms": [{
@@ -444,21 +411,14 @@
 			},
 			"body": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
+					"fontFamily": "var(--wp--preset--font-family--arimo)",
 					"lineHeight": "var(--wp--custom--line-height--body)"
 				}
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
-					"lineHeight": "var(--wp--custom--line-height--heading)",
-					"font-weight": 700
-				}
-			},
-			"code": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--monospace-font)",
-					"lineHeight": "var(--wp--custom--line-height--body)"
+					"fontFamily": "var(--wp--preset--font-family--arimo)",
+					"lineHeight": "var(--wp--custom--line-height--heading)"
 				}
 			}
 		},
@@ -534,28 +494,44 @@
 		}
 	},
 	"styles": {
+		"color": {
+			"background": "var(--wp--custom--color--main-background)",
+			"text": "var(--wp--custom--color--font-secondary)",
+			"link": "var(--wp--custom--color--font-secondary)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--arimo)",
+			"lineHeight": "var(--wp--custom--line-height--body)"
+		},
 		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
+			"core/paragraph": {
+				"typography": {
+					"fontWeight": "400"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--s)",
+					"fontWeight": "400"
+				}
+			},
 			"core/button": {
 				"color": {
 					"background": "var(--wp--custom--color--primary)",
 					"text": "var(--wp--custom--color--button-color-primary)"
 				}
 			},
-			"core/site-title": {
+			"core/preformatted": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--s)",
-					"fontWeight": 400
+					"fontFamily": "var(--wp--preset--font-family--monospace)",
+					"fontSize": "var(--wp--preset--font-size--s)"
 				}
 			}
-		},
-		"typography": {
-			"fontFamily": "var(--wp--custom--body--typography--font-family)",
-			"lineHeight": "var(--wp--custom--body--typography--line-height)"
-		},
-		"color": {
-			"background": "var(--wp--custom--color--main-background)",
-			"text": "var(--wp--custom--color--text-two)",
-			"link": "var(--wp--custom--color--primary)"
 		}
 	}
 }
