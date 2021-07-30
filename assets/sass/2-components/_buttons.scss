@@ -12,12 +12,14 @@ input[type="submit"] {
 	@include btn-primary;
 }
 
+/* Button Hover Color */
+.wp-block-button__link,
+.wp-block-ainoblocks-button .wp-block-ainoblocks-button__link,
+.wc-block-components-button:not(.is-link) {
 
-.wc-block-components-button:not(.is-link):active,
-.wc-block-components-button:not(.is-link):disabled,
-.wc-block-components-button:not(.is-link):focus,
-.wc-block-components-button:not(.is-link):hover {
-	background-color: var(--wp--custom--color--secondary);
+	&:hover {
+		background-color: var(--wp--custom--color--secondary);
+	}
 }
 
 /* Button Styles */

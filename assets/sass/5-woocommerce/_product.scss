@@ -433,7 +433,7 @@
 					transition: none;
 					font-size: 0;
 					opacity: .4;
-					color: var(--wp--custom--color--star-rating);
+					color: var(--global--color--star-rating);
 					margin: 0;
 
 					&:before {
@@ -480,7 +480,7 @@
 	.star-rating:before,
 	.wc-block-review-list-item__rating>.wc-block-review-list-item__rating__stars:before {
 		content: '\2605\2605\2605\2605\2605';
-		color: var(--wp--custom--color--star-rating);
+		color: var(--global--color--star-rating);
 		letter-spacing: 0;
 		@include s-r-1(padding-bottom);
 		opacity: .4;
@@ -502,7 +502,7 @@
 
 		&::before {
 			content: '\2605\2605\2605\2605\2605';
-			color: var(--wp--custom--color--star-rating);
+			color: var(--global--color--star-rating);
 			letter-spacing: 0;
 			opacity: 1;
 			font-size: 13px;

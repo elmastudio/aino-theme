@@ -487,14 +487,14 @@ padding-right: 0;
 	z-index: 100;
 	margin: 0;
 	border-radius: var(--global--border-radius-s);
-	color: var(--wp--custom--color--product-badge-color);
-	background: var(--wp--custom--color--product-badge-background);
+	color: var(--global--color--product-badge-color);
+	background: var(--global--color--product-badge-background);
 }
 
 .wc-block-components-sale-badge {
 	@include s-r-1(margin-top);
 	background: none;
-	border: 1px solid var(--wp--custom--color--product-badge-color);
+	border: 1px solid var(--global--color--product-badge-color);
 }
 
 .onsale {

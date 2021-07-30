@@ -73,7 +73,7 @@
 				},
 				{
 					"slug": "font-tertiary",
-					"color": "#777B7D",
+					"color": "#787b7d",
 					"name": "Font Tertiary"
 				},
 				{
@@ -92,24 +92,9 @@
 					"name": "Primary"
 				},
 				{
-					"slug": "product-badge-background",
-					"color": "#ffffff",
-					"name": "Product Badge Background"
-				},
-				{
-					"slug": "product-badge-color",
-					"color": "#282828",
-					"name": "Product Badge Color"
-				},
-				{
 					"slug": "secondary",
 					"color": "#FF4002",
 					"name": "Secondary"
-				},
-				{
-					"slug": "star-rating",
-					"color": "#777B7D",
-					"name": "Star Rating"
 				},
 				{
 					"slug": "variant-background-primary",
@@ -123,7 +108,7 @@
 				},
 				{
 					"slug": "variant-button-color-primary",
-					"color": "#ffffff",
+					"color": "#fcfcfc",
 					"name": "Variant Button Color Primary"
 				},
 				{
@@ -162,24 +147,9 @@
 					"name": "Variant Primary"
 				},
 				{
-					"slug": "variant-product-badge-background",
-					"color": "#ffffff",
-					"name": "Variant Product Badge Background"
-				},
-				{
-					"slug": "variant-product-badge-color",
-					"color": "#111111",
-					"name": "Variant Product Badge Color"
-				},
-				{
 					"slug": "variant-secondary",
 					"color": "#FF6837",
 					"name": "Variant Secondary"
-				},
-				{
-					"slug": "variant-star-rating",
-					"color": "#777B7D",
-					"name": "Variant Star Rating"
 				}
 			],
 			"gradients": [{
@@ -386,8 +356,6 @@
 				"form-border-active": "var(--wp--preset--color--form-border-active)",
 				"form-glow": "var(--wp--preset--color--form-glow)",
 				"primary": "var(--wp--preset--color--primary)",
-				"product-badge-background": "var(--wp--preset--color--product-badge-background)",
-				"product-badge-color": "var(--wp--preset--color--product-badge-color)",
 				"secondary": "var(--wp--preset--color--secondary)",
 				"star-rating": "var(--wp--preset--color--star-rating)",
 				"variant-background-primary": "var(--wp--preset--color--variant-background-primary)",
@@ -400,8 +368,6 @@
 				"variant-form-border-active": "var(--wp--preset--color--variant-form-border-active)",
 				"variant-form-glow": "var(--wp--preset--color--variant-form-glow)",
 				"variant-primary": "var(--wp--preset--color--variant-primary)",
-				"variant-product-badge-background": "var(--wp--preset--color--variant-product-badge-background)",
-				"variant-product-badge-color": "var(--wp--preset--color--variant-product-badge-color)",
 				"variant-secondary": "var(--wp--preset--color--variant-secondary)",
 				"variant-star-rating": "var(--wp--preset--color--variant-star-rating)"
 			},
@@ -427,14 +393,9 @@
 				"color": {
 					"palette": [
 						{
-							"slug": "color-primary",
+							"slug": "primary",
 							"color": "var(--wp--preset--color--primary)",
 							"name": "Primary"
-						},
-						{
-							"slug": "color-secondary",
-							"color": "var(--wp--preset--color--secondary)",
-							"name": "Secondary"
 						},
 						{
 							"slug": "button-color-primary",
@@ -442,9 +403,14 @@
 							"name": "Button Color Primary"
 						},
 						{
-							"slug": "button-color-secondary",
-							"color": "var(--wp--preset--color--button-color-secondary)",
-							"name": "Button Color Secondary"
+							"slug": "variant-primary",
+							"color": "var(--wp--preset--color--variant-primary)",
+							"name": "Variant Primary"
+						},
+						{
+							"slug": "variant-button-color-primary",
+							"color": "var(--wp--preset--color--variant-button-color-primary)",
+							"name": "Variant Button Color Primary"
 						}
 					]
 				}
@@ -490,6 +456,17 @@
 						}
 					]
 				}
+			}
+		},
+		"ainoblocks/card": {
+			"color": {
+				"palette": [
+					{
+						"slug": "color-test",
+						"color": "#dddddd",
+						"name": "Test"
+					}
+				]
 			}
 		}
 	},
