@@ -116,6 +116,8 @@ figcaption{max-width:100%;font-size:var(--font-size--body-s);margin-top:1rem;col
 .wp-block-image{margin:0}
 .wp-block-image.ellipse-horizontal{-webkit-clip-path:ellipse(50% 45% at 50% 50%);clip-path:ellipse(50% 45% at 50% 50%)}
 .wp-block-image.ellipse-vertical{-webkit-clip-path:ellipse(50% 50% at 50% 50%);clip-path:ellipse(50% 50% at 50% 50%)}
+.wp-block-image.is-style-aino-border-dark img{border:2px solid;border-color:var(--wp--custom--color--font-secondary)}
+.wp-block-image.is-style-aino-border-light img{border:2px solid;border-color:var(--wp--custom--color--variant-font-secondary)}
 .wp-block-pullquote,.wp-block-quote{margin:0;padding:0;font-style:normal}
 .wp-block-pullquote blockquote p,.wp-block-quote blockquote p{font-size:var(--font-size--body-m)}
 .wp-block-pullquote p:last-child,.wp-block-pullquote blockquote p:last-child,.wp-block-quote p:last-child,.wp-block-quote blockquote p:last-child{margin:0}
