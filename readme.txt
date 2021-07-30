@@ -48,6 +48,7 @@ Aino WordPress Theme bundles the following third-party resources:
 Bugfix: Font weights and font family in theme.json.
 Bugfix: Default block container alignment.
 Bugfix: Default padding for heading blocks on default page template.
+Enhance: Page templates.
 
 = 2.0.0 =
 New: Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.

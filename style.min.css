@@ -560,7 +560,8 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .wp-block-post-comments .commentlist .comment p{line-height:var(--wp--custom--line-height--body);margin-bottom:0}
 .wp-block-post-comments .commentlist .comment .comment-respond{padding-bottom:1.5rem}
 .wp-block-post-comments .commentlist .comment .comment-content{padding-top:.5rem;display:block}
-.wp-block-post-comments .commentlist .comment .comment-author .fn{padding-top:2px;display:block}
+.wp-block-post-comments .commentlist .comment .comment-author .fn{padding-bottom:4px;display:block}
+.wp-block-post-comments .commentlist .comment .comment-author .fn a{text-decoration:none}
 .wp-block-post-comments .commentlist .comment .comment-author .avatar{margin-right:.5rem}
 .wp-block-post-comments .commentlist .comment-meta{display:block}
 .wp-block-post-comments .commentlist .comment-metadata{color:var(--wp--custom--color--font-tertiary)}

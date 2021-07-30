@@ -30,8 +30,12 @@
 			.comment-author {
 
 				.fn {
-					padding-top: 2px;
+					padding-bottom: 4px;
 					display: block;
+
+					a {
+						text-decoration: none;
+					}
 				}
 
 				.avatar {
