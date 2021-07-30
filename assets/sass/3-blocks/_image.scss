@@ -40,6 +40,22 @@
 	&.ellipse-vertical {
 		clip-path: ellipse(50% 50% at 50% 50%);
 	}
+
+	&.is-style-aino-border-dark {
+
+		img {
+			border: 2px solid;
+			border-color: var(--wp--custom--color--font-secondary);
+		}
+	}
+
+	&.is-style-aino-border-light {
+
+		img {
+			border: 2px solid;
+			border-color: var(--wp--custom--color--variant-font-secondary);
+		}
+	}
 }
 
 div[class*='wp-block-'] figcaption {
