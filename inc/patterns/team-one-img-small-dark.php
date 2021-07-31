@@ -22,7 +22,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:image {"sizeSlug":"full","linkDestination":"none","borderRadius":"xs"} -->
-	<figure class="wp-block-image size-full br-all__xs"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-small-dark.jpeg" alt=""/></figure>
+	<figure class="wp-block-image size-full br-all__xs"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-small-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

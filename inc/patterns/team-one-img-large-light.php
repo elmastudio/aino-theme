@@ -20,7 +20,7 @@ return array(
 	<!-- /wp:heading -->
 	
 	<!-- wp:image {sizeSlug":"full","linkDestination":"none","paddingBottom":13} -->
-	<figure class="wp-block-image size-full pb__13"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-large.jpeg" alt=""/></figure>
+	<figure class="wp-block-image size-full pb__13"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-large.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

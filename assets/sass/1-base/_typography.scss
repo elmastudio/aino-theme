@@ -41,6 +41,7 @@ div[class*='wp-block-'] figcaption,
 	font-size: var(--font-size--body-xs) !important;;
 }
 
+.post-header,
 .commentlist,
 .entry-content,
 .site-content {
@@ -61,7 +62,8 @@ div[class*='wp-block-'] figcaption,
 	.comment-body .commentmetadata,
 	.reply,
 	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
-	.woocommerce-review__published-date {
+	.woocommerce-review__published-date,
+	.wp-block-post-author__name {
 		font-size: var(--font-size--body-s) !important;
 	}
 }

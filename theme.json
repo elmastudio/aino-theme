@@ -1,18 +1,34 @@
 {
 	"version": 1,
-	"templateParts": [{
+	"templateParts": [
+		{
 			"name": "header",
 			"area": "header"
 		},
 		{
+			"name": "header-dark",
+			"area": "header"
+		},
+		{
 			"name": "footer",
+			"area": "footer"
+		},
+		{
+			"name": "footer-dark",
 			"area": "footer"
 		}
 	],
 	"customTemplates": [
 		{
 			"name": "header-footer-only",
-			"title": "Header and Footer Only",
+			"title": "Header and Footer only",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "header-footer-only-dark",
+			"title": "Header and Footer only (Dark)",
 			"postTypes": [
 				"page"
 			]
@@ -415,6 +431,32 @@
 					]
 				}
 			},
+			"ainoblocks/card": {
+				"color": {
+					"palette": [
+						{
+							"slug": "primary",
+							"color": "var(--wp--preset--color--primary)",
+							"name": "Primary"
+						},
+						{
+							"slug": "button-color-primary",
+							"color": "var(--wp--preset--color--button-color-primary)",
+							"name": "Button Color Primary"
+						},
+						{
+							"slug": "variant-primary",
+							"color": "var(--wp--preset--color--variant-primary)",
+							"name": "Variant Primary"
+						},
+						{
+							"slug": "variant-button-color-primary",
+							"color": "var(--wp--preset--color--variant-button-color-primary)",
+							"name": "Variant Button Color Primary"
+						}
+					]
+				}
+			},
 			"core/preformatted": {
 				"color": {
 					"palette": [
@@ -486,11 +528,6 @@
 					"fontWeight": "700"
 				}
 			},
-			"core/paragraph": {
-				"typography": {
-					"fontWeight": "400"
-				}
-			},
 			"core/site-title": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--s)",
@@ -503,10 +540,19 @@
 					"text": "var(--wp--custom--color--button-color-primary)"
 				}
 			},
+			"core/list": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--m)"
+				}
+			},
 			"core/preformatted": {
+				"color": {
+					"background": "var(--wp--preset--color--code-background)",
+					"text": "var(--wp--preset--color--code-color)"
+				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--monospace)",
-					"fontSize": "var(--wp--preset--font-size--s)"
+					"fontSize": "s"
 				}
 			}
 		}
