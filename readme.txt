@@ -49,7 +49,7 @@ New: Blank block page template.
 New: 'Header and Footer Dark' block page template.
 New: Core Image block light and dark border styles.
 Bugfix: Author name alignment.
-Bugfix: Local Google fonts.
+Bugfix: Google fonts integration.
 Bugfix: body width 100%.
 Bugfix: Font weights and font family in theme.json.
 Bugfix: Default block container alignment.
@@ -66,8 +66,6 @@ New: Added Gutenberg plugin to list of required plugins.
 New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
 New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
 New: Default font Arimo.
-New: Serif font option PT Serif.
-New: Load Google fonts locally.
 New: Block Patterns.
 
 = 1.4.1 =
