@@ -145,19 +145,6 @@ function aino_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
-
-/**
- * Enqueue editor scripts and styles.
- */
-function aino_editor_scripts() {
-	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.min.css', array(), wp_get_theme()->get( 'Version' ) );
-
-	// Enqueue fonts stylesheet.
-	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
-}
-add_action( 'enqueue_block_editor_assets', 'aino_editor_scripts' );
-
 /**
  * Get Google fonts.
  */
