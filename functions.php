@@ -117,13 +117,12 @@ if ( ! function_exists( 'aino_setup' ) ) :
 function aino_fonts_url() {
 
 	$font_families = array(
-		'Arimo:ital,wght@400;700;400;700',
-		'PT+Serif:ital,wght@400;700;400;700'
+		'Arimo:wght@400;700',
+		'PT+Serif:wght@400;700;'
 	);
 
 	$fonts_url = add_query_arg( array(
-		'family' => rawurlencode( implode( '|', $font_families ) ),
-		'subset' => rawurlencode( 'latin,latin-ext' ),
+		'family' => implode( '&family=', $font_families ),
 		'display' => 'swap',
 	), 'https://fonts.googleapis.com/css' );
 
