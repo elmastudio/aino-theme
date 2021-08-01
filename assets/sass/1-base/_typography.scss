@@ -5,6 +5,7 @@ input,
 select,
 table,
 textarea {
+	font-family: var(--wp--custom--body--typography--font-family);
 	line-height: var(--wp--custom--line-height--body);
 	color: var(--wp--custom--color--font-secondary);
 }
