@@ -108,27 +108,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 	endif;
 	add_action( 'after_setup_theme', 'aino_setup' );
 
-
-/**
- * Include a skip to content link at the top of the page so that users can bypass the menu.
- */
-function aino_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . esc_html__( 'Skip to the content', 'aino' ) . '</a>';
-}
-
-add_action( 'wp_body_open', 'aino_skip_link', 5 );
-
-/**
- * Custom WooCommerce image sizes
- */
-add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
-	return array(
-	'width' => 150,
-	'height' => 150,
-	'crop' => 0,
-	);
-} );
-
 /**
  * Enqueue scripts and styles.
  */
@@ -139,8 +118,6 @@ function aino_scripts() {
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.min.css', false, wp_get_theme()->get( 'Version' ) );
-
-	wp_enqueue_script( 'aino-custom', get_theme_file_uri( '/assets/js/index.js' ), array(), wp_get_theme()->get( 'Version' ), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
@@ -177,23 +154,6 @@ function aino_fonts_url() {
 	}
 
 	return esc_url_raw( $fonts_url );
-}
-
-/**
- * Show WooCommerce cart contents / total Ajax
- */
-add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
-
-function woocommerce_header_add_to_cart_fragment( $fragments ) {
-	global $woocommerce;
-
-	ob_start();
-
-	?>
-	<a class="cart-customlocation" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
-	<?php
-	$fragments['a.cart-customlocation'] = ob_get_clean();
-	return $fragments;
 }
 
 // Custom template tags for this theme.
