@@ -547,7 +547,7 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 */
 		public function get_subfolder_name() {
 			if ( ! $this->subfolder_name ) {
-				$this->subfolder_name = apply_filters( 'wptt_get_local_fonts_subfolder_name', 'fonts' );
+				$this->subfolder_name = apply_filters( 'wptt_get_local_fonts_subfolder_name', 'localfonts' );
 			}
 			return $this->subfolder_name;
 		}

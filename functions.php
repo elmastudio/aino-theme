@@ -159,12 +159,12 @@ function aino_editor_scripts() {
 add_action( 'enqueue_block_editor_assets', 'aino_editor_scripts' );
 
 /**
- * Save Google fonts locally with WPTT Webfont Loader.
+ * Get Google fonts and save locally with WPTT Webfont Loader.
  */
 function aino_fonts_url() {
 	$font_families = array(
-		'Arimo:wght@400;700',
-		'PT+Serif:wght@400;700;'
+		'Arimo:wght@400;700;400',
+		'PT+Serif:wght@400;700'
 	);
 
 	$fonts_url = add_query_arg( array(
@@ -176,6 +176,7 @@ function aino_fonts_url() {
 
 	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
+
 
 /**
  * Show WooCommerce cart contents / total Ajax
