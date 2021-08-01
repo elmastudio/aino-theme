@@ -475,7 +475,7 @@ tr td:last-of-type{border-right:0}
 .wp-block-query .wp-block-post-template li a:not(.wp-block-post-excerpt__more-link):hover{text-decoration:underline}
 .wp-block-query .wp-block-post-template li>:first-child{padding-top:0}
 .wp-block-query .wp-block-post-template .wp-block-post-featured-image,.wp-block-query .wp-block-post-template .wp-block-post-title,.wp-block-query .wp-block-post-template .wp-block-post-excerpt__excerpt,.wp-block-query .wp-block-post-template .wp-block-post-excerpt__more-text{padding-bottom:1rem}
-.wp-block-query .wp-block-post-template .wp-block-post-date,.wp-block-query .wp-block-post-template .wp-block-post-author__name,.wp-block-query .wp-block-post-template .wp-block-post-author__content{display:inline-block}
+.wp-block-query .wp-block-post-template .wp-block-post-date,.wp-block-query .wp-block-post-template .wp-block-post-author__name,.wp-block-query .wp-block-post-template .wp-block-post-author__content{display:inline}
 .wp-block-query .wp-block-post-template .wp-block-post-author{display:inline}
 .wp-block-query .wp-block-post-template .wp-block-post-author:after{content:","}
 .wp-block-query .wp-block-post-template .wp-block-post-terms{visibility:hidden}
