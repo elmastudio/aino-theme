@@ -77,10 +77,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( 'style-editor.css' );
-
-		// Enqueue fonts in the editor.
-		add_editor_style( aino_fonts_url() );
+		add_editor_style( array( 'style-editor.css', aino_fonts_url() ) );
 
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
@@ -111,25 +108,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 	endif;
 	add_action( 'after_setup_theme', 'aino_setup' );
 
-/**
- * Register fonts.
- */
-function aino_fonts_url() {
-
-	$font_families = array(
-		'Arimo:wght@400;700',
-		'PT+Serif:wght@400;700;'
-	);
-
-	$fonts_url = add_query_arg( array(
-		'family' => implode( '&family=', $font_families ),
-		'display' => 'swap',
-	), 'https://fonts.googleapis.com/css' );
-
-	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
-
-	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
-}
 
 /**
  * Include a skip to content link at the top of the page so that users can bypass the menu.
@@ -156,8 +134,8 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
  */
 function aino_scripts() {
 
-	// Add custom fonts, used in the main stylesheet.
-	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
+	// Enqueue fonts stylesheet.
+	wp_enqueue_style( 'aino-fonts-style', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.min.css', false, wp_get_theme()->get( 'Version' ) );
@@ -166,6 +144,38 @@ function aino_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
+
+
+/**
+ * Enqueue editor scripts and styles.
+ */
+function aino_editor_scripts() {
+	// Enqueue theme stylesheet.
+	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+
+	// Enqueue fonts stylesheet.
+	wp_enqueue_style( 'aino-fonts-style', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
+}
+add_action( 'enqueue_block_editor_assets', 'aino_editor_scripts' );
+
+/**
+ * Save Google fonts locally with WPTT Webfont Loader.
+ */
+function aino_fonts_url() {
+	$font_families = array(
+		'Arimo:wght@400;700',
+		'PT+Serif:wght@400;700;'
+	);
+
+	$fonts_url = add_query_arg( array(
+		'family' => implode( '&family=', $font_families ),
+		'display' => 'swap',
+	), 'https://fonts.googleapis.com/css2' );
+
+	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
+
+	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
+}
 
 /**
  * Show WooCommerce cart contents / total Ajax

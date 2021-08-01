@@ -49,7 +49,7 @@ New: Blank block page template.
 New: 'Header and Footer Dark' block page template.
 New: Core Image block light and dark border styles.
 Bugfix: Author name alignment.
-Bugfix: Font integration.
+Bugfix: Local Google fonts.
 Bugfix: body width 100%.
 Bugfix: Font weights and font family in theme.json.
 Bugfix: Default block container alignment.
