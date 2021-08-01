@@ -15,8 +15,8 @@ return array(
 	<h2 class="has-variant-font-primary-color has-text-color has-xl-font-size pb__13">We build creative web solutions for WordPress</h2>
 	<!-- /wp:heading -->
 	
-	<!-- wp:image {sizeSlug":"full","linkDestination":"none","borderRadius":"xs","paddingBottom":13} -->
-	<figure class="wp-block-image size-full br-all__xs pb__13"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-large-dark.jpg" alt=""/></figure>
+	<!-- wp:image {sizeSlug":"full","linkDestination":"none","paddingBottom":13} -->
+	<figure class="wp-block-image size-full pb__13"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-large-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

@@ -8,13 +8,9 @@
 return array(
 	'title'      => __( 'One large team member image, large heading and intro text (Light)', 'aino' ),
 	'categories' => array( 'aino-team' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingBottom":17} -->
-	<div class="wp-block-group alignfull has-background-primary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
-	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","paddingBottom":15} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking pb__15"><!-- wp:separator {"color":"border","className":"is-style-wide"} -->
-	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
-	<!-- /wp:separator --></div>
-	<!-- /wp:ainoblocks/grid-item --><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomTablet":0,"marginBottomMobile":0} -->
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingtop":15,"paddingBottom":17} -->
+	<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
+	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomTablet":0,"marginBottomMobile":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mb_t__0 mb_m__0"><!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"xl","paddingBottom":13} -->
 	<h2 class="has-font-primary-color has-text-color has-xl-font-size pb__13">We build creative web solutions for WordPress</h2>
 	<!-- /wp:heading -->

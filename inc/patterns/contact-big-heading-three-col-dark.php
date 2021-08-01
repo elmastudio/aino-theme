@@ -22,15 +22,15 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":5,"gridColumnEndDesktop":8,"gridColumnStartTablet":3,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopDesktop":0,"marginBottomDesktop":0,"marginBottomMobile":10,"paddingBottom":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__8 col_start_t__3 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_d__0 mb_d__0 mb_m__10"><!-- wp:navigation {"orientation":"vertical","textColor":"variant-font-secondary","fontSize":"xxl"} -->
-	<!-- wp:navigation-link {"label":"Twitter","type":"custom","url":"https://twitter.com/ainodesign","kind":"custom","isTopLevelLink":true} /-->
+	<!-- wp:navigation-link {"label":"Twitter","type":"custom","url":"https://twitter.com/","kind":"custom","isTopLevelLink":true} /-->
 	
-	<!-- wp:navigation-link {"label":"Facebook","type":"custom","url":"https://www.facebook.com/wpainodesign/","kind":"custom","isTopLevelLink":true} /-->
+	<!-- wp:navigation-link {"label":"Facebook","type":"custom","url":"https://www.facebook.com/","kind":"custom","isTopLevelLink":true} /-->
 	
 	<!-- wp:navigation-link {"label":"TikTok","type":"custom","url":"https://www.tiktok.com/","kind":"custom","isTopLevelLink":true} /-->
 	
 	<!-- wp:navigation-link {"label":"WordPress","type":"custom","url":"https://wordpress.com/","kind":"custom","isTopLevelLink":true} /-->
 	
-	<!-- wp:navigation-link {"label":"Instagram","url":"https://www.instagram.com/aino.design/","kind":"custom","isTopLevelLink":true} /-->
+	<!-- wp:navigation-link {"label":"Instagram","url":"https://www.instagram.com/","kind":"custom","isTopLevelLink":true} /-->
 	<!-- /wp:navigation --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

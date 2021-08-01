@@ -51,6 +51,8 @@ New: Core Image block light and dark border styles.
 Bugfix: Font weights and font family in theme.json.
 Bugfix: Default block container alignment.
 Bugfix: Default padding for heading blocks on default page template.
+Enhance: Delete default separator in light patterns.
+Enhance: Deleted default border radius on images in dark patterns.
 Enhance: Page templates.
 Enhance: Optimize color palette.
 Enhance: Renamed 'Header and Footer only' to 'Header and Footer Light' block page template.

@@ -21,8 +21,8 @@ return array(
 	<p class="has-variant-font-secondary-color has-text-color has-m-font-size pb__11">We are a creative team from Wellington, New Zealand who produce creative sustainable packaging solutions tailored to our clients individual needs. We have been working on new innovative ways to eliminate the waste created by small businesses for the last ten years. Each one of us has our strengths, combining them makes us a unique team.</p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:image {"sizeSlug":"full","linkDestination":"none","borderRadius":"xs"} -->
-	<figure class="wp-block-image size-full br-all__xs"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-small-dark.jpg" alt=""/></figure>
+	<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-small-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>
