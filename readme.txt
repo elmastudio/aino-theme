@@ -8,11 +8,11 @@ Stable tag: 2.0.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Aino is a full site editing block theme for everyone who wants to build creative, individual WordPress websites.
+Aino is a full site editing block theme for everyone who wants to build creative, individual WordPress websites with ease.
 
 == Description ==
 
-Aino is an avant-garde, multi-purpose WordPress theme for the block editor. In combination with the Aino Blocks plugin you can build advanced page layouts using Aino's pre-designed block patterns with one click. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
+Aino is a multi-purpose block theme for the WordPress block editor. In combination with the Aino Blocks and Gutenberg plugins you can build advanced page layouts using Aino's pre-designed block patterns with one click. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
 
 You can find more information and helpful resources about Aino on https://wpaino.com.
 
@@ -49,6 +49,7 @@ New: Blank block page template.
 New: 'Header and Footer Dark' block page template.
 New: Core Image block light and dark border styles.
 Bugfix: Author name alignment.
+Bugfix: Font integration.
 Bugfix: body width 100%.
 Bugfix: Font weights and font family in theme.json.
 Bugfix: Default block container alignment.

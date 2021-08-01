@@ -122,9 +122,10 @@ function aino_fonts_url() {
 	);
 
 	$fonts_url = add_query_arg( array(
-		'family' => implode( '&family=', $font_families ),
+		'family' => rawurlencode( implode( '|', $font_families ) ),
+		'subset' => rawurlencode( 'latin,latin-ext' ),
 		'display' => 'swap',
-	), 'https://fonts.googleapis.com/css2' );
+	), 'https://fonts.googleapis.com/css' );
 
 	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
 
