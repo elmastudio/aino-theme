@@ -49,8 +49,10 @@ Bugfix: Font weights and font family in theme.json.
 Bugfix: Default block container alignment.
 Bugfix: Default padding for heading blocks on default page template.
 Enhance: Page templates.
-Enhance: Minimalise mail color palette.
-New: Image block light and dark border styles.
+Enhance: Optimize color palette.
+Enhance: Renamed 'Header and Footer only' to 'Header and Footer Light' block page template.
+New: 'Header and Footer Dark' block page template.
+New: Core Image block light and dark border styles.
 
 = 2.0.0 =
 New: Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.
