@@ -9,9 +9,14 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
+html {
+	padding: 0;
+}
 
 body {
+	max-width: none;
 	margin: 0;
+	padding: 0;
 }
 
 article,

@@ -48,6 +48,7 @@ Aino WordPress Theme bundles the following third-party resources:
 New: Blank block page template.
 New: 'Header and Footer Dark' block page template.
 New: Core Image block light and dark border styles.
+Bugfix: body width 100%.
 Bugfix: Font weights and font family in theme.json.
 Bugfix: Default block container alignment.
 Bugfix: Default padding for heading blocks on default page template.
