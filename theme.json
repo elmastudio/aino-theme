@@ -20,17 +20,11 @@
 	],
 	"customTemplates": [
 		{
-			"name": "header-footer-light",
-			"title": "Header and Footer Light",
+			"name": "header-footer",
+			"title": "Header and Footer",
 			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "header-footer-dark",
-			"title": "Header and Footer Dark",
-			"postTypes": [
-				"page"
+				"page",
+				"post"
 			]
 		},
 		{
