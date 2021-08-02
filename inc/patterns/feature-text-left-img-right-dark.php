@@ -13,8 +13,8 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":6,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","marginTopDesktop":0,"marginBottomDesktop":0,"marginTopMobile":0,"marginBottomMobile":0} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__6 col_start_m__1 col_end_m__13 align-self__center justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0"><!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"s","paddingTop":0,"paddingBottom":3} -->
-	<p class="has-variant-font-tertiary-color has-text-color has-s-font-size pb__3">Learn and explore</p>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__6 col_start_m__1 col_end_m__13 align-self__center justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0"><!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"m","paddingTop":0,"paddingBottom":3} -->
+	<p class="has-variant-font-tertiary-color has-text-color has-m-font-size pb__3">Learn and explore</p>
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:heading {"level":2,"textColor":"variant-font-primary","fontSize":"m"} -->

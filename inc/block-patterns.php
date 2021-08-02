@@ -27,6 +27,11 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			);
 
 			register_block_pattern_category(
+				'aino-text',
+				array( 'label' => __( 'Aino Text', 'aino' ) )
+			);
+
+			register_block_pattern_category(
 				'aino-contact',
 				array( 'label' => __( 'Aino Contact', 'aino' ) )
 			);
@@ -48,14 +53,10 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'hero-text-img-below-dark',
 				'feature-heading-two-text-img-dark',
 				'feature-heading-two-text-img-light',
-				'feature-big-headline-two-col-text-dark',
-				'feature-big-headline-two-col-text-light',
-				'feature-text-left-img-right-dark',
-				'feature-text-left-img-right-light',
 				'feature-text-right-img-left-dark',
 				'feature-text-right-img-left-light',
-				'feature-five-col-text-dark',
-				'feature-five-col-text-light',
+				'feature-text-left-img-right-dark',
+				'feature-text-left-img-right-light',
 				'team-four-img-light',
 				'team-four-img-dark',
 				'team-three-img-light',
@@ -68,6 +69,10 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'team-one-img-small-dark',
 				'team-one-img-large-light',
 				'team-one-img-large-dark',
+				'text-big-headline-two-col-text-dark',
+				'text-big-headline-two-col-text-light',
+				'text-five-col-text-dark',
+				'text-five-col-text-light',
 				'contact-big-heading-three-col-light',
 				'contact-big-heading-three-col-dark',
 				'header-centered-slim-light',

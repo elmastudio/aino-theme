@@ -32,7 +32,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">Lisa a a the head of our art department. She is responsible for the coordination of the entire team and and a great coworker to talk to. She is fun, easy going and loves dogs, hiking and outdoor adventures.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->
@@ -60,7 +60,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">Jessa loves marketing and is the pep talker in our team. If you are down, talk to Jessa and she will make sure you feel better. She is helping our clients to empower them and their brand in the digital market. In short, she is just an awesome person.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->
@@ -88,7 +88,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">If you need help with tech, Jon will be your guy. He is calm and a coffee lover, so if you like coffee you will have something in common with Jon. He is our code guy and we all love him for this.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>
