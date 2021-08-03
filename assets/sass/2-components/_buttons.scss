@@ -48,6 +48,15 @@ a.btn-outline,
  width: 100%;
 }
 
+.stretch {
+	width: 100% !important;
+
+	.wp-block-ainoblocks-multiple-buttons__inner,
+	.wp-block-ainoblocks-button__link {
+		width: 100% !important;
+	}
+}
+
 /* Button Sizes */
 .btn-xxs {
 	@include btn-s;
