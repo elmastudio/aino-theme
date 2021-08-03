@@ -12,12 +12,14 @@ input[type="submit"] {
 	@include btn-primary;
 }
 
+/* Button Hover Color */
+.wp-block-button__link,
+.wp-block-ainoblocks-button .wp-block-ainoblocks-button__link,
+.wc-block-components-button:not(.is-link) {
 
-.wc-block-components-button:not(.is-link):active,
-.wc-block-components-button:not(.is-link):disabled,
-.wc-block-components-button:not(.is-link):focus,
-.wc-block-components-button:not(.is-link):hover {
-	background-color: var(--wp--custom--color--secondary);
+	&:hover {
+		background-color: var(--wp--custom--color--secondary);
+	}
 }
 
 /* Button Styles */
@@ -44,6 +46,15 @@ a.btn-outline,
 .btn-long,
 .cr_button {
  width: 100%;
+}
+
+.stretch {
+	width: 100% !important;
+
+	.wp-block-ainoblocks-multiple-buttons__inner,
+	.wp-block-ainoblocks-button__link {
+		width: 100% !important;
+	}
 }
 
 /* Button Sizes */
@@ -122,7 +133,6 @@ a.btn-outline,
 	.btn-primary a,
 	a.btn-outline,
 	.btn-outline a,
-	.loadmore,
 	.wc-block-components-button,
 	.form-submit.wp-block-button input {
 		border-radius: var(--global--border-radius-xxs);
@@ -139,7 +149,6 @@ a.btn-outline,
 	a.btn-outline,
 	.btn-outline a,
 	.search-header .search-field,
-	.loadmore,
 	.wc-block-components-button,
 	.form-submit.wp-block-button input {
 		border-radius: 6.25em;

@@ -77,10 +77,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( 'style-editor.css' );
-
-		// Enqueue fonts in the editor.
-		add_editor_style( aino_fonts_url() );
+		add_editor_style( array( 'style-editor.css', aino_fonts_url() ) );
 
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
@@ -112,76 +109,51 @@ if ( ! function_exists( 'aino_setup' ) ) :
 	add_action( 'after_setup_theme', 'aino_setup' );
 
 /**
- * Register fonts.
- */
-function aino_fonts_url() {
-
-	$font_families = array(
-		'Arimo:ital,wght@400;700;400;700',
-		'PT+Serif:ital,wght@400;700;400;700'
-	);
-
-	$fonts_url = add_query_arg( array(
-		'family' => implode( '&family=', $font_families ),
-		'display' => 'swap',
-	), 'https://fonts.googleapis.com/css2' );
-
-	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
-
-	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
-}
-
-/**
- * Include a skip to content link at the top of the page so that users can bypass the menu.
- */
-function aino_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . esc_html__( 'Skip to the content', 'aino' ) . '</a>';
-}
-
-add_action( 'wp_body_open', 'aino_skip_link', 5 );
-
-/**
- * Custom WooCommerce image sizes
- */
-add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
-	return array(
-	'width' => 150,
-	'height' => 150,
-	'crop' => 0,
-	);
-} );
-
-/**
  * Enqueue scripts and styles.
  */
 function aino_scripts() {
 
-	// Add custom fonts, used in the main stylesheet.
+	// Enqueue fonts stylesheet.
 	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.min.css', false, wp_get_theme()->get( 'Version' ) );
 
-	wp_enqueue_script( 'aino-custom', get_theme_file_uri( '/assets/js/index.js' ), array(), wp_get_theme()->get( 'Version' ), true );
-
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
 /**
- * Show WooCommerce cart contents / total Ajax
+ * Get Google fonts.
  */
-add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+/**
+ * Register custom fonts.
+ */
+function aino_fonts_url() {
+	$fonts_url = '';
 
-function woocommerce_header_add_to_cart_fragment( $fragments ) {
-	global $woocommerce;
+	/*
+	 * Translators: If there are characters in your language that are not
+	 * supported by Arimo, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$arimo = esc_html_x( 'on', 'Arimo font: on or off', 'aino' );
 
-	ob_start();
+	if ( 'off' !== $arimo ) {
+		$font_families = array();
 
-	?>
-	<a class="cart-customlocation" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
-	<?php
-	$fragments['a.cart-customlocation'] = ob_get_clean();
-	return $fragments;
+		if ( 'off' !== $arimo ) {
+			$font_families[] = 'Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+		}
+
+		$query_args = array(
+			'family' => rawurlencode( implode( '|', $font_families ) ),
+			'subset' => rawurlencode( 'latin,latin-ext' ),
+		);
+
+		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+	}
+
+	return esc_url_raw( $fonts_url );
 }
 
 // Custom template tags for this theme.

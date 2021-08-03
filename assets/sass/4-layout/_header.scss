@@ -60,6 +60,11 @@
 				display: flex;
 		}
 	}
+
+	.wp-block-navigation .has-child :where(.submenu-container,
+	.wp-block-navigation-link__container) {
+		left: -1.5rem;
+	}
 }
 
 	//Header Dark
@@ -70,7 +75,7 @@
 			.wp-block-navigation.is-responsive .wp-block-navigation__responsive-container-open,
 			.wp-block-navigation:not(.has-background) .submenu-container,
 			.wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container,
-			.wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open  {
+			.wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
 				background: var(--wp--custom--color--variant-background-secondary);
 			}
 

@@ -17,8 +17,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginBottomDesktop":12,"marginBottomTablet":10,"marginBottomMobile":4} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__1 col_end_t__5 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__4"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","borderRadius":"xs"} -->
-	<figure class="wp-block-image size-full br-all__xs"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-three-img-list-01-dark.jpeg" alt=""/></figure>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__1 col_end_t__5 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__4"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-three-img-list-01-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -32,7 +32,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pt__7">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pt__7">Lisa a a the head of our art department. She is responsible for the coordination of the entire team and and a great coworker to talk to. She is fun, easy going and loves dogs, hiking and outdoor adventures.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->
@@ -45,8 +45,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginBottomDesktop":12,"marginBottomTablet":10,"marginBottomMobile":4} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__1 col_end_t__5 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__4"><!-- wp:image {"className":"size-full","linkDestination":"none","borderRadius":"xs"} -->
-	<figure class="wp-block-image size-full br-all__xs"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-three-img-list-02-dark.jpg" alt=""/></figure>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__1 col_end_t__5 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__4"><!-- wp:image {"className":"size-full","linkDestination":"none"} -->
+	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-three-img-list-02-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -60,7 +60,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pt__7">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pt__7">Jessa loves marketing and is the pep talker in our team. If you are down, talk to Jessa and she will make sure you feel better. She is helping our clients to empower them and their brand in the digital market. In short, she is just an awesome person.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->
@@ -73,8 +73,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginBottomDesktop":0,"marginBottomTablet":0,"marginBottomMobile":4} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__1 col_end_t__5 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__0 mb_t__0 mb_m__4"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","borderRadius":"xs"} -->
-	<figure class="wp-block-image size-full br-all__xs"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-three-img-list-03-dark.jpeg" alt=""/></figure>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__1 col_end_t__5 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__0 mb_t__0 mb_m__4"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-three-img-list-03-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -88,7 +88,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pt__7">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pt__7">If you need help with tech, Jon will be your guy. He is calm and a coffee lover, so if you like coffee you will have something in common with Jon. He is our code guy and we all love him for this.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

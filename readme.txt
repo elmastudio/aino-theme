@@ -4,15 +4,15 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.7
 Tested up to: WordPress 5.8
 Requires PHP: 7.0
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Aino is a full site editing block theme for everyone who wants to build creative, individual WordPress websites.
+Aino is a full site editing block theme for everyone who wants to build creative, individual WordPress websites with ease.
 
 == Description ==
 
-Aino is a full site editing block theme for the WordPress block editor. Let's start to build creative websites with Aino theme and the Aino blocks plugin.
+Aino is a multi-purpose block theme for the WordPress block editor. In combination with the Aino Blocks and Gutenberg plugins you can build advanced page layouts using Aino's pre-designed block patterns with one click. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
 
 You can find more information and helpful resources about Aino on https://wpaino.com.
 
@@ -40,9 +40,23 @@ Aino WordPress Theme bundles the following third-party resources:
 * Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
 * Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
-* Webfonts Loader, WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.0.1 =
+New: Blank block page template.
+New: Core Image block light and dark border styles.
+Bugfix: Author name alignment.
+Bugfix: Global font settings.
+Bugfix: body width 100%.
+Bugfix: Font weights and font family in theme.json.
+Bugfix: Default block container alignment.
+Bugfix: Default padding for heading blocks on default page template.
+Enhance: Delete default separator in light patterns.
+Enhance: Deleted default border radius on images in dark patterns.
+Enhance: Page templates.
+Enhance: Optimize color palette.
+Enhance: Renamed 'Header and Footer only' to 'Header and Footer' block page template.
 
 = 2.0.0 =
 New: Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.
@@ -50,8 +64,6 @@ New: Added Gutenberg plugin to list of required plugins.
 New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
 New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
 New: Default font Arimo.
-New: Serif font option PT Serif.
-New: Load Google fonts locally.
 New: Block Patterns.
 
 = 1.4.1 =

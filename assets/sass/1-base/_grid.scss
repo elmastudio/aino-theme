@@ -24,13 +24,20 @@
 	padding-right: var(--global--content--padding--right);
 }
 
-.wp-block-group.alignfull *[class*="wp-container-"],
 .wp-block-group.alignfull > .alignfull,
-*[class*="wp-container-"] *[class*="wp-container-"],
 *[class*="wp-container-"] > .alignfull {
 	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
 	width: calc( 100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
+}
+
+.wp-block-group.alignfull {
+
+	.default-content-width {
+		@include push--auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .entry-content > * {
@@ -202,5 +209,57 @@
 
 	.two-col-grid-tablet {
 		display: block;
+	}
+}
+
+// Flexbox Container (under development)
+.flexbox {
+	display: flex;
+
+	.flex-direction {
+
+		&__row {
+		flex-direction: row;
+		}
+
+		&__row-reverse {
+			flex-direction: row-reverse;
+		}
+
+		&__column {
+			flex-direction: column;
+		}
+
+		&__column-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+
+	.justify-content {
+
+		&__flexstart {
+			justify-content: flex-start;
+		}
+
+
+		&__flexend {
+			justify-content: flex-end;
+		}
+
+		&__center {
+			justify-content: center;
+		}
+
+		&__space-between {
+			justify-content: space-between;
+		}
+
+		&__space-around {
+			justify-content: space-around;
+		}
+
+		&__space-evenly {
+			justify-content: space-evenly;
+		}
 	}
 }

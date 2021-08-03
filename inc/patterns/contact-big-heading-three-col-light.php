@@ -8,14 +8,10 @@
 return array(
 	'title'      => __( 'Big heading and three text columns (Light)', 'aino' ),
 	'categories' => array( 'aino-contact' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingBottom":17} -->
-	<div class="wp-block-group alignfull has-background-primary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
-	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","paddingBottom":15} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking pb__15"><!-- wp:separator {"color":"border","className":"is-style-wide"} -->
-	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
-	<!-- /wp:separator --></div>
-	<!-- /wp:ainoblocks/grid-item -->
-	
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17} -->
+	<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
+	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner">
+
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopDesktop":0,"marginBottomDesktop":0,"marginTopMobile":0,"marginBottomMobile":0,"paddingBottom":14} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0 pb__14"><!-- wp:heading {"textColor":"font-primary","fontSize":"xl"} -->
 	<h2 class="has-font-primary-color has-text-color has-xl-font-size">All the ways to get in touch with us</h2>
@@ -24,15 +20,15 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":5,"gridColumnEndDesktop":8,"gridColumnStartTablet":3,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopDesktop":0,"marginBottomDesktop":0,"marginBottomMobile":10,"paddingBottom":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__8 col_start_t__3 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_d__0 mb_d__0 mb_m__10"><!-- wp:navigation {"orientation":"vertical","textColor":"font-secondary","fontSize":"xxl"} -->
-	<!-- wp:navigation-link {"label":"Twitter","type":"custom","url":"https://twitter.com/ainodesign","kind":"custom","isTopLevelLink":true} /-->
+	<!-- wp:navigation-link {"label":"Twitter","type":"custom","url":"https://twitter.com/","kind":"custom","isTopLevelLink":true} /-->
 	
-	<!-- wp:navigation-link {"label":"Facebook","type":"custom","url":"https://www.facebook.com/wpainodesign/","kind":"custom","isTopLevelLink":true} /-->
+	<!-- wp:navigation-link {"label":"Facebook","type":"custom","url":"https://www.facebook.com/","kind":"custom","isTopLevelLink":true} /-->
 	
 	<!-- wp:navigation-link {"label":"TikTok","type":"custom","url":"https://www.tiktok.com/","kind":"custom","isTopLevelLink":true} /-->
 	
 	<!-- wp:navigation-link {"label":"WordPress","type":"custom","url":"https://wordpress.com/","kind":"custom","isTopLevelLink":true} /-->
 	
-	<!-- wp:navigation-link {"label":"Instagram","url":"https://www.instagram.com/aino.design/","kind":"custom","isTopLevelLink":true} /-->
+	<!-- wp:navigation-link {"label":"Instagram","url":"https://www.instagram.com/","kind":"custom","isTopLevelLink":true} /-->
 	<!-- /wp:navigation --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

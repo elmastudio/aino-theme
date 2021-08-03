@@ -1,22 +1,48 @@
 {
 	"version": 1,
-	"templateParts": [{
+	"templateParts": [
+		{
 			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "header-dark",
 			"area": "header"
 		},
 		{
 			"name": "footer",
 			"area": "footer"
+		},
+		{
+			"name": "footer-dark",
+			"area": "footer"
 		}
 	],
-	"customTemplates": [{
-		"name": "header-footer-only",
-		"title": "Header and Footer Only",
-		"postTypes": [
-			"page",
-			"post"
-		]
-	}],
+	"customTemplates": [
+		{
+			"name": "header-footer",
+			"title": "Header and Footer",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
+			"name": "shop",
+			"title": "WooCommerce Shop",
+			"postTypes": [
+				"page"
+			]
+		}
+],
 	"settings": {
 		"border": {
 			"customColor": true,
@@ -65,7 +91,7 @@
 				},
 				{
 					"slug": "font-tertiary",
-					"color": "#777B7D",
+					"color": "#787b7d",
 					"name": "Font Tertiary"
 				},
 				{
@@ -84,24 +110,9 @@
 					"name": "Primary"
 				},
 				{
-					"slug": "product-badge-background",
-					"color": "#ffffff",
-					"name": "Product Badge Background"
-				},
-				{
-					"slug": "product-badge-color",
-					"color": "#282828",
-					"name": "Product Badge Color"
-				},
-				{
 					"slug": "secondary",
 					"color": "#FF4002",
 					"name": "Secondary"
-				},
-				{
-					"slug": "star-rating",
-					"color": "#777B7D",
-					"name": "Star Rating"
 				},
 				{
 					"slug": "variant-background-primary",
@@ -115,7 +126,7 @@
 				},
 				{
 					"slug": "variant-button-color-primary",
-					"color": "#ffffff",
+					"color": "#fcfcfc",
 					"name": "Variant Button Color Primary"
 				},
 				{
@@ -154,24 +165,9 @@
 					"name": "Variant Primary"
 				},
 				{
-					"slug": "variant-product-badge-background",
-					"color": "#ffffff",
-					"name": "Variant Product Badge Background"
-				},
-				{
-					"slug": "variant-product-badge-color",
-					"color": "#111111",
-					"name": "Variant Product Badge Color"
-				},
-				{
 					"slug": "variant-secondary",
 					"color": "#FF6837",
 					"name": "Variant Secondary"
-				},
-				{
-					"slug": "variant-star-rating",
-					"color": "#777B7D",
-					"name": "Variant Star Rating"
 				}
 			],
 			"gradients": [{
@@ -274,22 +270,17 @@
 			"fontFamilies": [
 				{
 					"fontFamily": "Arimo, sans-serif",
-					"slug": "arimo-font",
+					"slug": "arimo",
 					"name": "Arimo"
 				},
 				{
-					"fontFamily": "\"PT Serif\", serif",
-					"slug": "pt-serif-font",
-					"name": "PT Serif"
-				},
-				{
 					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-					"slug": "system-font",
+					"slug": "system",
 					"name": "System"
 				},
 				{
 					"fontFamily": "Monaco, \"Courier 10 Pitch\", monospace",
-					"slug": "monospace-font",
+					"slug": "monospace",
 					"name": "Monospace"
 				}
 			],
@@ -339,47 +330,6 @@
 					"slug": "xxxxl"
 				}
 			],
-			"fontWeights": [{
-					"slug": "200",
-					"value": "200",
-					"name": "Thin"
-				},
-				{
-					"slug": "300",
-					"value": "300",
-					"name": "Light"
-				},
-				{
-					"slug": "400",
-					"value": "400",
-					"name": "Regular"
-				},
-				{
-					"slug": "500",
-					"value": "500",
-					"name": "Medium"
-				},
-				{
-					"slug": "600",
-					"value": "600",
-					"name": "Semibold"
-				},
-				{
-					"slug": "700",
-					"value": "700",
-					"name": "Bold"
-				},
-				{
-					"slug": "800",
-					"value": "800",
-					"name": "Heavy"
-				},
-				{
-					"slug": "900",
-					"value": "900",
-					"name": "Black"
-				}
-			],
 			"textTransforms": [{
 					"name": "AB",
 					"slug": "uppercase"
@@ -419,8 +369,6 @@
 				"form-border-active": "var(--wp--preset--color--form-border-active)",
 				"form-glow": "var(--wp--preset--color--form-glow)",
 				"primary": "var(--wp--preset--color--primary)",
-				"product-badge-background": "var(--wp--preset--color--product-badge-background)",
-				"product-badge-color": "var(--wp--preset--color--product-badge-color)",
 				"secondary": "var(--wp--preset--color--secondary)",
 				"star-rating": "var(--wp--preset--color--star-rating)",
 				"variant-background-primary": "var(--wp--preset--color--variant-background-primary)",
@@ -433,8 +381,6 @@
 				"variant-form-border-active": "var(--wp--preset--color--variant-form-border-active)",
 				"variant-form-glow": "var(--wp--preset--color--variant-form-glow)",
 				"variant-primary": "var(--wp--preset--color--variant-primary)",
-				"variant-product-badge-background": "var(--wp--preset--color--variant-product-badge-background)",
-				"variant-product-badge-color": "var(--wp--preset--color--variant-product-badge-color)",
 				"variant-secondary": "var(--wp--preset--color--variant-secondary)",
 				"variant-star-rating": "var(--wp--preset--color--variant-star-rating)"
 			},
@@ -444,21 +390,12 @@
 			},
 			"body": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
-					"lineHeight": "var(--wp--custom--line-height--body)"
+					"fontFamily": "var(--wp--preset--font-family--arimo)"
 				}
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--arimo-font)",
-					"lineHeight": "var(--wp--custom--line-height--heading)",
-					"font-weight": 700
-				}
-			},
-			"code": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--monospace-font)",
-					"lineHeight": "var(--wp--custom--line-height--body)"
+					"fontFamily": "var(--wp--preset--font-family--arimo)"
 				}
 			}
 		},
@@ -467,14 +404,9 @@
 				"color": {
 					"palette": [
 						{
-							"slug": "color-primary",
+							"slug": "primary",
 							"color": "var(--wp--preset--color--primary)",
 							"name": "Primary"
-						},
-						{
-							"slug": "color-secondary",
-							"color": "var(--wp--preset--color--secondary)",
-							"name": "Secondary"
 						},
 						{
 							"slug": "button-color-primary",
@@ -482,9 +414,25 @@
 							"name": "Button Color Primary"
 						},
 						{
-							"slug": "button-color-secondary",
-							"color": "var(--wp--preset--color--button-color-secondary)",
-							"name": "Button Color Secondary"
+							"slug": "variant-primary",
+							"color": "var(--wp--preset--color--variant-primary)",
+							"name": "Variant Primary"
+						},
+						{
+							"slug": "variant-button-color-primary",
+							"color": "var(--wp--preset--color--variant-button-color-primary)",
+							"name": "Variant Button Color Primary"
+						}
+					]
+				}
+			},
+			"ainoblocks/card": {
+				"color": {
+					"palette": [
+						{
+							"slug": "code-background",
+							"color": "#002F33",
+							"name": "Code Background"
 						}
 					]
 				}
@@ -535,27 +483,47 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontWeight": "700",
+					"lineHeight": "var(--wp--custom--line-height--heading)"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--s)",
+					"fontWeight": "400"
+				}
+			},
 			"core/button": {
 				"color": {
 					"background": "var(--wp--custom--color--primary)",
 					"text": "var(--wp--custom--color--button-color-primary)"
 				}
 			},
-			"core/site-title": {
+			"core/list": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--s)",
-					"fontWeight": 400
+					"fontSize": "var(--wp--preset--font-size--m)"
+				}
+			},
+			"core/preformatted": {
+				"color": {
+					"background": "var(--wp--preset--color--code-background)",
+					"text": "var(--wp--preset--color--code-color)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--monospace)",
+					"fontSize": "s"
 				}
 			}
 		},
-		"typography": {
-			"fontFamily": "var(--wp--custom--body--typography--font-family)",
-			"lineHeight": "var(--wp--custom--body--typography--line-height)"
-		},
 		"color": {
 			"background": "var(--wp--custom--color--main-background)",
-			"text": "var(--wp--custom--color--text-two)",
-			"link": "var(--wp--custom--color--primary)"
+			"text": "var(--wp--custom--color--font-secondary)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--custom--body--typography--font-family)",
+			"lineHeight": "var(--wp--custom--line-height--body)"
 		}
 	}
 }
