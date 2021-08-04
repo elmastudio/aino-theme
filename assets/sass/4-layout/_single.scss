@@ -70,11 +70,6 @@
 			display: inline;
 		}
 
-		.wp-block-post-author {
-			border-top: 1px solid var(--wp--custom--color--border);
-			@include s-r-7 (padding-top);
-		}
-
 		.wp-block-post-author__avatar {
 			@include s-r-6 (margin-right);
 

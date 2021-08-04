@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 2.0.2 =
 Enhance: Comment styles.
+Enhance: Archive and search templates.
 
 = 2.0.1 =
 New: Blank block page template.
