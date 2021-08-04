@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 2.0.3 =
 Bugfix: Aino text domain missing.
+Bugfix: Added footer.php to meet Wp.org requirements.
 
 = 2.0.2 =
 Enhance: Comment styles.
