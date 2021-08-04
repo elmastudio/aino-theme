@@ -15,6 +15,27 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 2.0.2   
+**Enhance:** Comment styles.  
+**Enhance:** Archive and search templates.  
+**Enhance:** Preset color palette.  
+
+### 2.0.1  
+**New:** Blank block page template.  
+**New:** Core Image block light and dark border styles.  
+**Bugfix:** Author name alignment.  
+**Bugfix:** Global font settings.  
+**Bugfix:** body width 100%.  
+**Bugfix:** Font weights and font family in theme.json.  
+**Bugfix:** Default block container alignment.  
+**Bugfix:** Default padding for heading blocks on default page template.  
+**Enhance:** Delete default separator in light patterns.  
+**Enhance:** Deleted default border radius on images in dark patterns.  
+**Enhance:** Page templates.  
+**Enhance:** Optimize color palette.  
+**Enhance:** Renamed 'Header and Footer only' to 'Header and Footer' block page template.  
+
+
 ### 2.0.0  
 **New:** Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.  
 **New:** Added Gutenberg plugin to list of required plugins.  
@@ -31,7 +52,7 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 **Enhance:** Block editor color, gradient palette and theme custom colors.  
 **Enhance:** Add theme support for block styles.  
 **Enhance:** Font styles as CSS variables.  
-Bugfix: Deleted Group block max width.  
+**Bugfix:** Deleted Group block max width.  
 
 ### 1.4.0  
 **New:** WooCommerce plugin support.  
