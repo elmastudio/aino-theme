@@ -10,12 +10,12 @@ function add_disable_site_editor_setting() {
 
 	add_settings_field(
 		'universal-theme-disable-site-editor',
-		__( 'Site Editor', 'gutenberg' ),
+		__( 'Site Editor', 'aino' ),
 		'gutenberg_display_experiment_field',
 		'gutenberg-experiments',
 		'gutenberg_experiments_section',
 		array(
-			'label' => __( 'Disable Site Editor', 'gutenberg' ),
+			'label' => __( 'Disable Site Editor', 'aino' ),
 			'id'    => 'universal-theme-disable-site-editor',
 		)
 	);
@@ -59,8 +59,8 @@ function readd_legacy_admin_links() {
 			// Add Widgets back to the admin menu.
 			if ( ! $has_widgets_menu ) {
 				add_theme_page(
-					__( 'Widgets', 'gutenberg' ),
-					__( 'Widgets', 'gutenberg' ),
+					__( 'Widgets', 'aino' ),
+					__( 'Widgets', 'aino' ),
 					'edit_theme_options',
 					'gutenberg-widgets',
 					'the_gutenberg_widgets',
