@@ -95,23 +95,13 @@
 					"name": "Font Tertiary"
 				},
 				{
-					"slug": "form-border-active",
-					"color": "#121212",
-					"name": "Form Border Active"
-				},
-				{
-					"slug": "form-glow",
-					"color": "RGBA(18, 18, 18, 0.2)",
-					"name": "Form Border Glow"
-				},
-				{
 					"slug": "primary",
 					"color": "#282828",
 					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
-					"color": "#FF4002",
+					"color": "#0573E6",
 					"name": "Secondary"
 				},
 				{
@@ -150,23 +140,13 @@
 					"name": "Variant Font Tertiary"
 				},
 				{
-					"slug": "variant-form-border-active",
-					"color": "#ffffff",
-					"name": "Variant Form Border Active"
-				},
-				{
-					"slug": "variant-form-glow",
-					"color": "RGBA(255, 255, 255, 0.3)",
-					"name": "Variant Form Border Glow"
-				},
-				{
 					"slug": "variant-primary",
 					"color": "#777B7D",
 					"name": "Variant Primary"
 				},
 				{
 					"slug": "variant-secondary",
-					"color": "#FF6837",
+					"color": "#7EBBFC",
 					"name": "Variant Secondary"
 				}
 			],
@@ -366,8 +346,6 @@
 				"font-primary": "var(--wp--preset--color--font-primary)",
 				"font-secondary": "var(--wp--preset--color--font-secondary)",
 				"font-tertiary": "var(--wp--preset--color--font-tertiary)",
-				"form-border-active": "var(--wp--preset--color--form-border-active)",
-				"form-glow": "var(--wp--preset--color--form-glow)",
 				"primary": "var(--wp--preset--color--primary)",
 				"secondary": "var(--wp--preset--color--secondary)",
 				"star-rating": "var(--wp--preset--color--star-rating)",
@@ -378,8 +356,6 @@
 				"variant-font-primary": "var(--wp--preset--color--variant-font-primary)",
 				"variant-font-secondary": "var(--wp--preset--color--variant-font-secondary)",
 				"variant-font-tertiary": "var(--wp--preset--color--variant-font-tertiary)",
-				"variant-form-border-active": "var(--wp--preset--color--variant-form-border-active)",
-				"variant-form-glow": "var(--wp--preset--color--variant-form-glow)",
 				"variant-primary": "var(--wp--preset--color--variant-primary)",
 				"variant-secondary": "var(--wp--preset--color--variant-secondary)",
 				"variant-star-rating": "var(--wp--preset--color--variant-star-rating)"
