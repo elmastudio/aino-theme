@@ -166,7 +166,7 @@ padding-right: 0;
 	&.is-active input[type="number"],
 	&.is-active input[type="email"] {
 		padding: 1rem 0 0 1.25rem;
-		border: 1px solid var(--wp--custom--color--form-border-active);
+		border: 1px solid var(--global--color--form-border-active);
 	}
 
 	&.is-active label {
@@ -200,9 +200,9 @@ padding-right: 0;
 		transform: none;
 
 		&:focus {
-			border-color: var(--wp--custom--color--form-border-active);
-			box-shadow: 0 0 0 4px var(--wp--custom--color--form-glow);
-			background: var(--wp--custom--color--form-border-active);
+			border-color: var(--global--color--form-border-active);
+			box-shadow: 0 0 0 4px var(--global--color--form-glow);
+			background: var(--global--color--form-border-active);
 		}
 
 		&__mark {
@@ -210,8 +210,8 @@ padding-right: 0;
 		}
 
 		&:checked {
-			border-color: var(--wp--custom--color--form-border-active);
-			background: var(--wp--custom--color--form-border-active);
+			border-color: var(--global--color--form-border-active);
+			background: var(--global--color--form-border-active);
 			fill: var(--global--color--form-select-fill);
 			color: var(--global--color--form-select-fill);
 		}

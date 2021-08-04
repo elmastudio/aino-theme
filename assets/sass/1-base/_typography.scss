@@ -64,7 +64,8 @@ div[class*='wp-block-'] figcaption,
 	.reply,
 	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
 	.woocommerce-review__published-date,
-	.wp-block-post-author__name {
+	.wp-block-post-author__name,
+	.comment-body .comment-author {
 		font-size: var(--font-size--body-s) !important;
 	}
 }
@@ -88,7 +89,6 @@ li.has-m-font-size,
 .entry-content .wp-block-post-excerpt.has-m-font-size p,
 .entry-content .wp-block-post-terms.has-m-font-size,
 .related-wrap .related-post .entry-cats,
-.comment-author .fn,
 .mc4wp-form .mc4wp-alert p,
 input,
 select,
