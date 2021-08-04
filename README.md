@@ -15,6 +15,11 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 2.0.3   
+**Bugfix:** Aino text domain missing.  
+**Bugfix:** Added footer.php to meet Wp.org requirements.  
+**Bugfix:** Default social icons links to header.html.  
+
 ### 2.0.2   
 **Enhance:** Comment styles.  
 **Enhance:** Archive and search templates.  
