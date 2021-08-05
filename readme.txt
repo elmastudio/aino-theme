@@ -44,7 +44,9 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 2.0.4 =
+Enhance: Pattern library.
 Bugfix: Post comments and textarea.
+Bugfix: Layout aligment for patterns and header-footer.html template.
 
 = 2.0.3 =
 Bugfix: Aino text domain missing.

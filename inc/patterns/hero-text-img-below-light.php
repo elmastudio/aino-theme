@@ -8,7 +8,7 @@
 return array(
 	'title'      => __( 'Centered heading with CTA button and image below (Light)', 'aino' ),
 	'categories' => array( 'aino-hero' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingBottom":0} -->
+	'content'    => '<!-- wp:group {"className":"alignfull","backgroundColor":"background-primary","paddingBottom":0} -->
 	<div class="wp-block-group alignfull has-background-primary-background-color has-background"><!-- wp:ainoblocks/grid-container {"paddingTop":13} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide pt__13"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"center","marginBottomTablet":0,"marginBottomMobile":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__center no-stacking mb_t__0 mb_m__0"><!-- wp:heading {"level":2,"textAlign":"center","textColor":"font-primary","fontSize":"xl","paddingBottom":0} -->
@@ -32,7 +32,7 @@ return array(
 	<!-- /wp:ainoblocks/grid-container --></div>
 	<!-- /wp:group -->
 	
-	<!-- wp:group {"align":"full","backgroundColor":"button-color-secondary","paddingBottom":17} -->
+	<!-- wp:group {"className":"alignfull","backgroundColor":"button-color-secondary","paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-button-color-secondary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginTopDesktop":-12,"marginTopTablet":-11,"marginTopMobile":-8} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__2 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mt_d__-12 mt_t__-11 mt_m__-8"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->

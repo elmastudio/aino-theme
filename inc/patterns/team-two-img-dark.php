@@ -8,7 +8,7 @@
 return array(
 	'title'      => __( 'Two team images with heading and intro text (Dark)', 'aino' ),
 	'categories' => array( 'aino-team' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17} -->
+	'content'    => '<!-- wp:group {"className":"alignfull","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomTablet":12,"marginBottomMobile":10,"className":"two-col-grid-tablet"} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_t__12 mb_m__10 two-col-grid-tablet"><!-- wp:heading {"level":2,"textColor":"variant-font-primary","fontSize":"xxs","paddingBottom":11} -->

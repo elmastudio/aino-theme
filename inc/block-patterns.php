@@ -27,6 +27,11 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			);
 
 			register_block_pattern_category(
+				'aino-portfolio',
+				array( 'label' => __( 'Aino Portfolio', 'aino' ) )
+			);
+
+			register_block_pattern_category(
 				'aino-text',
 				array( 'label' => __( 'Aino Text', 'aino' ) )
 			);
@@ -69,6 +74,12 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'team-one-img-small-dark',
 				'team-one-img-large-light',
 				'team-one-img-large-dark',
+				'portfolio-four-img-dark',
+				'portfolio-four-img-light',
+				'text-heading-centered-dark',
+				'text-heading-centered-light',
+				'text-centered-paragraph-dark',
+				'text-centered-paragraph-light',
 				'text-big-headline-two-col-text-dark',
 				'text-big-headline-two-col-text-light',
 				'text-five-col-text-dark',
