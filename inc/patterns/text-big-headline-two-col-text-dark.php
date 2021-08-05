@@ -8,7 +8,7 @@
 return array(
 	'title'      => __( 'Big heading and two-column paragraphs (Dark)', 'aino' ),
 	'categories' => array( 'aino-text' ),
-	'content'    => '<!-- wp:group {"className":"alignfull","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17} -->
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__15 pb__17">
 	
 	<!-- wp:ainoblocks/grid-container -->
