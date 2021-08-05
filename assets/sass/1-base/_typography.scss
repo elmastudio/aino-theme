@@ -42,8 +42,8 @@ div[class*='wp-block-'] figcaption,
 	font-size: var(--font-size--body-xs) !important;;
 }
 
+.wp-block-post-comments .commentlist,
 .post-header,
-.commentlist,
 .entry-content,
 .site-content {
 
@@ -60,12 +60,12 @@ div[class*='wp-block-'] figcaption,
 	.wc-block-grid__product-onsale,
 	.wc-block-components-sale-badge,
 	.comment-reply-title #cancel-comment-reply-link,
-	.comment-body .commentmetadata,
 	.reply,
 	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
 	.woocommerce-review__published-date,
 	.wp-block-post-author__name,
-	.comment-body .comment-author {
+	.comment-body .comment-author,
+	.comment p {
 		font-size: var(--font-size--body-s) !important;
 	}
 }
@@ -100,10 +100,6 @@ textarea,
 .entry-content form p,
 .wc-block-cart__sidebar .wc-block-cart__totals-title,
 .custom-product-page-link,
-.comment-content p,
-.comment-content ol,
-.comment-content ul,
-.wp-block-post-comments .commentlist .comment p,
 .entry-content p,
 .hentry ol,
 .hentry ul,

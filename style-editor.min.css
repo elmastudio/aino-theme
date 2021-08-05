@@ -95,7 +95,7 @@ input[type="text"],input[type="email"],input[type="url"],input[type="password"],
 input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus{color:#111}
 select{border:1px solid #ccc}
 textarea{width:100%}
-.editor-default-block-appender .editor-default-block-appender__content{font-family:var(--wp--custom--body--typography--font-family);line-height:var(--global--line-height-body);font-size:var(--font-size--body-m)}
+.editor-default-block-appender .editor-default-block-appender__content{font-family:var(--wp--custom--body--typography--font-family);line-height:var(--wp--custom--line-height--body);font-size:var(--font-size--body-m)}
 .alignwide{max-width:var(--global--wide-content-width);margin-left:auto;margin-right:auto}
 .site-header__content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:var(--global--max-content-width);margin-left:auto;margin-right:auto}
 p.wp-block-paragraph{font-size:var(--font-size--body-m)}
@@ -145,7 +145,7 @@ figcaption{max-width:100%;font-size:var(--font-size--body-s);margin-top:1rem;col
 .wp-block-cover-image{height:75vh;min-height:400px;margin-top:1.25rem;margin-bottom:1.25rem}
 .wp-block-cover-image-text,.wp-block-cover-image h2{max-width:var(--global--default-content-width);font-size:var(--font-size--h3) !important}
 .wp-block-cover-image .wp-block-cover__inner-container,.wp-block-cover .wp-block-cover__inner-container{width:100%}
-.wp-block-code,.wp-block-preformatted,.wp-block[data-type="core/verse"]{font-family:var(--wp--custom--code--typography--font-family);line-height:var(--global--line-height-body);font-size:var(--font-size--body-xs)}
+.wp-block-code,.wp-block-preformatted,.wp-block[data-type="core/verse"]{font-family:var(--wp--custom--code--typography--font-family);line-height:var(--wp--custom--line-height--body);font-size:var(--font-size--body-xs)}
 .wp-block-code{border:0;background:var(--global--color--variant-code-background);color:var(--global--color--variant-code-color);padding:1rem}
 .wp-block-code .block-editor-plain-text{background:transparent}
 .wp-block-preformatted{overflow:auto;padding:1rem;margin-bottom:1rem}
