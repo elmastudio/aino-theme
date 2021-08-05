@@ -8,7 +8,7 @@
 return array(
 	'title'      => __( 'Five content columns with heading. (Dark)', 'aino' ),
 	'categories' => array( 'aino-text' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingBottom":17} -->
+	'content'    => '<!-- wp:group {"className":"alignfull","backgroundColor":"variant-background-primary","paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","paddingBottom":15} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking pb__15"></div>

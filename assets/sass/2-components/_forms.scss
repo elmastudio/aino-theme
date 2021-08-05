@@ -23,7 +23,6 @@ textarea,
 	outline: none;
 	line-height: var(--global--line-height-reset);
 	@include s-r-5 (padding);
-	max-height: 3.75rem;
 
 	@include input-placeholder {
 		color: var(--wp--custom--color--font-tertiary);
@@ -34,21 +33,6 @@ textarea,
 		color: var(--wp--custom--color--font-secondary);
 		border-color: var(--global--color--form-border-active);
 		box-shadow: 0 0 0 4px var(--global--color--form-glow);
-	}
-
-	.light-form & {
-		border: 1px solid #ffffff;
-		color: #ffffff;
-
-		@include input-placeholder {
-			color: var(--wp--custom--color--font-secondary);
-		}
-
-		&:active,
-		&:focus {
-			color: var(--wp--custom--color--font-secondary);
-			border-color: #ffffff;
-		}
 	}
 }
 
@@ -73,8 +57,11 @@ textarea {
 	border: 1px solid var(--global--color--form-border);
 	padding: $s-4 $s-6;
 	outline: none;
-	max-height: $s-13;
-	line-height: var(--global--line-height-body);
+}
+
+textarea,
+.wp-block-post-comments textarea {
+	line-height: var(--wp--custom--line-height--body);
 }
 
 // Form labels

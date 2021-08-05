@@ -131,7 +131,7 @@ padding-right: 0;
 		font-size: var(--font-size--body-m) !important;
 		border-radius: var(--global--border-radius-xxs);
 		border: 1px solid var(--global--color--form-border);
-		line-height: var(--global--line-height-body);
+		line-height: var(--wp--custom--line-height--body);
 		color: var(--wp--custom--color--font-secondary);
 		font-family: inherit;
 		margin: 0;
@@ -248,7 +248,7 @@ padding-right: 0;
 		font-size: var(--font-size--body-m) !important;
 		height: 3.75rem;
 		padding: 1rem 0 0 1.25rem;
-		line-height: var(--global--line-height-body);
+		line-height: var(--wp--custom--line-height--body);
 		border: 1px solid var(--global--color--form-border);
 
 		&:after {
@@ -283,7 +283,7 @@ padding-right: 0;
 
 		&:hover {
 			font-size: var(--font-size--body-m) !important;
-			line-height: var(--global--line-height-body);
+			line-height: var(--wp--custom--line-height--body);
 			transform: none;
 		}
 
@@ -291,7 +291,7 @@ padding-right: 0;
 		&:active,
 		&:hover {
 			font-size: var(--font-size--body-m) !important;
-			line-height: var(--global--line-height-body);
+			line-height: var(--wp--custom--line-height--body);
 			transform: none;
 			height: 3.75rem;
 			color: var(--wp--custom--color--font-secondary);
@@ -330,7 +330,7 @@ padding-right: 0;
 			
 			label.components-custom-select-control__label {
 				color: var(--wp--custom--color--font-secondary);
-				line-height: var(--global--line-height-body);
+				line-height: var(--wp--custom--line-height--body);
 			}
 		}
 	}
@@ -388,7 +388,7 @@ padding-right: 0;
 
 		label {
 			font-size: var(--font-size--body-m) !important;
-			line-height: var(--global--line-height-body);
+			line-height: var(--wp--custom--line-height--body);
 		}
 	}
 }

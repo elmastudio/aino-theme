@@ -67,9 +67,6 @@ if ( ! function_exists( 'aino_setup' ) ) :
 			)
 		);
 
-		// Add support for full and wide align images.
-		add_theme_support( 'align-wide' );
-
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
 

@@ -8,6 +8,15 @@
 @import "1-base/colors";
 @import "1-base/radius";
 
+/* Group block */
+.wp-block-group.alignfull {
+	max-width: 100% !important;
+}
+
+.site-content {
+	padding-left: var(--global--content--padding--left);
+	padding-right: var(--global--content--padding--right);
+}
 
 /* Typography */
 body {
@@ -216,14 +225,6 @@ var {
 	font-size: 14px;
 }
 
-/* Grid */
-.site-content {
-	max-width: var(--global--max-content-width);
-	@include push--auto;
-	padding-left: var(--global--content--padding--left);
-	padding-right: var(--global--content--padding--right);
-}
-
 /* Links */
 
 a {
@@ -366,13 +367,12 @@ textarea {
 /* Default Appender */
 .editor-default-block-appender .editor-default-block-appender__content {
 	font-family: var(--wp--custom--body--typography--font-family);
-	line-height: var(--global--line-height-body);
+	line-height: var(--wp--custom--line-height--body);
 	font-size: var(--font-size--body-m);
 }
 
 /* Alignment */
 .alignwide {
-	max-width: var(--global--wide-content-width);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -385,7 +385,6 @@ textarea {
 		align-items: center;
 		align-content: stretch;
 		justify-content: space-between;
-		max-width: var(--global--max-content-width);
 		@include push--auto;
 	}
 }
@@ -716,33 +715,6 @@ figcaption {
 	}
 }
 
-.wp-block[data-type="core/pullquote"][data-align="right"],
-.wp-block[data-type="core/pullquote"][data-align="left"] {
-	height: auto;
-	max-height: none;
-
-	&>.is-block-content {
-		max-width: 23.25rem;
-	}
-}
-
-@media (min-width: 480px) {
-
-	.wp-block[data-type="core/pullquote"][data-align="right"],
-	.wp-block[data-type="core/pullquote"][data-align="left"] {
-		height: 0;
-	}
-}
-
-@media (min-width: 1360px) {
-
-	.wp-block[data-type="core/pullquote"][data-align="left"],
-	.wp-block[data-type="core/pullquote"][data-align="right"] {
-		margin: 0 auto;
-		max-width: var(--global--wide-content-width);
-	}
-}
-
 /* Table */
 
 .editor-styles-wrapper .wp-block-table {
@@ -800,7 +772,6 @@ figcaption {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-	max-width: var(--global--default-content-width);
 	font-size: var(--font-size--h3) !important;
 }
 
@@ -818,7 +789,7 @@ figcaption {
 .wp-block-preformatted,
 .wp-block[data-type="core/verse"] {
 	font-family: var(--wp--custom--code--typography--font-family);
-	line-height: var(--global--line-height-body);
+	line-height: var(--wp--custom--line-height--body);
 	font-size: var(--font-size--body-xs);
 }
 

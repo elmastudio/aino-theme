@@ -8,7 +8,7 @@
 return array(
 	'title'      => __( 'Big heading and three text columns (Light)', 'aino' ),
 	'categories' => array( 'aino-contact' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17} -->
+	'content'    => '<!-- wp:group {"className":"alignfull","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner">
 

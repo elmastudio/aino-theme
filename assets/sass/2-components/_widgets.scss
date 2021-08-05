@@ -28,7 +28,7 @@
 .footer-widget .widget ul li {
 	list-style: none;
 	@include s-r-4 (padding-bottom);
-	line-height: var(--global--line-height-body);
+	line-height: var(--wp--custom--line-height--body);
 
 	&:last-child {
 		padding-bottom: 0;
