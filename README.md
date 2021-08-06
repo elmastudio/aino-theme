@@ -15,6 +15,19 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 2.1.0  
+**New:** Text patterns.  
+**New:** Portfolio pattern.  
+**New:** Query pattern.  
+**Enhance:** Header max-width and outside content gap.  
+**Bugfix:** Alignment for parent Group block in patterns.  
+**Bugfix:** WooCommerce shop archive page content width.  
+
+### 2.0.4  
+**Enhance:** Pattern library.   
+**Bugfix:** Post comments and textarea.   
+**Bugfix:** Layout aligment for patterns and header-footer.html template.   
+
 ### 2.0.3   
 **Bugfix:** Aino text domain missing.  
 **Bugfix:** Added footer.php to meet Wp.org requirements.  
