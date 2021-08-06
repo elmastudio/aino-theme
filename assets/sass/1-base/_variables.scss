@@ -165,13 +165,6 @@ body {
 		--global--content--padding--right: 3rem;
 	}
 
-	// LG breakpoint
-	@media only screen and (min-width: 96em) {
-		/* Default content padding */
-		--global--content--padding--left: 1.5rem;
-		--global--content--padding--right: 1.5rem;
-	}
-
 	/* Theme Heading font sizes */
 	--font-size--h12: var(--global--font-size--h12);
 	--font-size--h11: var(--global--font-size--h11);

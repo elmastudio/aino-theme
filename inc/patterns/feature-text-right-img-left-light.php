@@ -8,7 +8,7 @@
 return array(
 	'title'      => __( 'Right-aligned content with left-aligned image. (Light)', 'aino' ),
 	'categories' => array( 'aino-feature' ),
-	'content'    => '<!-- wp:group {"className":"alignfull","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17} -->
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17} -->
 	<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":12,"gridColumnStartTablet":8,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","marginTopDesktop":0,"marginBottomDesktop":0,"marginTopMobile":0,"marginBottomMobile":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__8 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0"><!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"m","paddingTop":0,"paddingBottom":3} -->

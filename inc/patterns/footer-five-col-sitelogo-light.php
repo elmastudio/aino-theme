@@ -9,9 +9,9 @@ return array(
 	'title'      => __( 'Five-column footer with site logo (Light)', 'aino' ),
 	'blockTypes' => array( 'core/block-template-part/footer' ),
 	'categories' => array( 'aino-footer' ),
-	'content'    => '<!-- wp:group {"className":"alignfull","backgroundColor":"background-secondary","paddingTop":10,"paddingBottom":15,"className":"outer-margins"} -->
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-secondary","paddingTop":10,"paddingBottom":15,"className":"content-gap"} -->
 	<div
-		class="wp-block-group alignfull outer-margins has-background-secondary-background-color has-background pt__10 pb__15">
+		class="wp-block-group alignfull content-gap has-background-secondary-background-color has-background pt__10 pb__15">
 		<!-- wp:ainoblocks/grid-container -->
 		<div class="wp-block-ainoblocks-grid-container alignwide">
 			<div class="wp-block-ainoblocks-grid-container__inner">

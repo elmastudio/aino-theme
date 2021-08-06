@@ -1,29 +1,5 @@
 .single-product {
 
-	.site-content {
-		@include s-r-13(padding-top);
-		max-width: var(--global--max-content-width);
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 1rem;
-		padding-right: 1rem;
-
-		@include breakpoint(sm) {
-			padding-left: 2rem;
-			padding-right: 2rem;
-		}
-
-		@include breakpoint(lg) {
-			padding-left: 3rem;
-			padding-right: 3rem;
-		}
-
-		@include breakpoint(xl) {
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
-		}
-	}
-
 	.woocommerce-breadcrumb {
 		@include s-r-8(padding-bottom);
 	}
@@ -518,7 +494,6 @@
 	.related.products {
 		grid-column-start: 1;
 		grid-column-end: 13;
-		@include s-r-15(padding-bottom);
 
 		h2:not(.woocommerce-loop-product__title) {
 			font-size: var(--font-size--h3) !important;

@@ -1,20 +1,3 @@
-.page-template-shop,
-.archive.woocommerce-page {
-
-	.entry-content,
-	.content-area {
-		@include s-r-11(padding-top);
-	}
-}
-
-.archive.woocommerce-page {
-
-	.content-area {
-		@include s-r-15(padding-bottom);
-	}
-}
-
-
 .wc-block-grid.has-aligned-buttons .wc-block-grid__product>:last-child {
 	margin: 0;
 }
@@ -217,18 +200,6 @@
 .woocommerce-shop .site-content,
 .archive.woocommerce-page .site-main,
 .woocommerce-shop .site-main {
-	padding-left: 1rem;
-	padding-right: 1rem;
-
-	@include breakpoint(sm) {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
-
-	@include breakpoint(lg) {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
 
 	.woocommerce-breadcrumb {
 		display: none;
