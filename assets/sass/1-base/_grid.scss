@@ -59,8 +59,10 @@
 	max-width: var(--global--default-content-width);
 }
 
-.outer-margins,
-.wp-block-group.has-background.outer-margins {
+// Outer content padding
+.site-header__wrap,
+.content-gap,
+.wp-block-group.has-background.content-gap {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }

@@ -230,5 +230,4 @@ body{--global--font-size--h12:8.875rem;--global--font-size--h11:10.375rem;--glob
 .wp-block[data-type="core/verse"]{padding:1.5rem}
 .wp-block-button .wp-block-button__link{padding:1.25rem 2.5rem;font-size:1.25rem}
 .wp-block-navigation__container>.wp-block-navigation-link,.wp-block-page-list,.wp-block-page-list>.wp-block-pages-list__item{margin-right:1.5rem}
-}@media only screen and (min-width:96em){body{--global--content--padding--left:1.5rem;--global--content--padding--right:1.5rem}
 }
