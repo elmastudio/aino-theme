@@ -91,13 +91,14 @@ textarea{resize:vertical}
 .mobile-hide{display:none}
 .no-hyphens{-webkit-hyphens:none !important;-ms-hyphens:none !important;hyphens:none !important}
 .no-letterspacing{letter-spacing:0 !important}
-.wp-block-group.alignfull,*[class*="wp-container-"]{padding-left:var(--global--content--padding--left);padding-right:var(--global--content--padding--right)}
+.wp-block-group.alignfull,*[class*="wp-container-"],.wp-block-group.alignfull .wp-block-group.alignfull{padding-left:var(--global--content--padding--left);padding-right:var(--global--content--padding--right)}
+.wp-block-group.alignfull .wp-block-group.alignwide{padding-left:0;padding-right:0}
 .wp-block-group.alignfull>.alignfull,*[class*="wp-container-"]>.alignfull{margin-left:calc(-1 * var(--global--content--padding--left)) !important;margin-right:calc(-1 * var(--global--content--padding--right)) !important;width:calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important}
 .wp-block-group.alignfull .default-content-width{margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}
 .entry-content>*.alignwide{max-width:var(--global--max-content-width)}
 .entry-content>* .aligncenter{clear:both;margin-left:auto;margin-right:auto}
 .entry-content.post-width>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce){margin-left:auto;margin-right:auto;width:calc(100% - var(--global--grid-gap));max-width:var(--global--default-content-width)}
-.site-header__wrap,.content-gap,.wp-block-group.has-background.content-gap{padding-left:var(--global--content--padding--left);padding-right:var(--global--content--padding--right)}
+.site-header__wrap,.theme-aino .site-header__wrap.has-background,.content-gap,.wp-block-group.has-background.content-gap{padding-left:var(--global--content--padding--left);padding-right:var(--global--content--padding--right)}
 .push-center,.center{margin-left:auto;margin-right:auto}
 .has-padding-top{padding-top:5rem}
 .has-padding-bottom{padding-bottom:5rem}

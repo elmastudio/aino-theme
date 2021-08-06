@@ -8,11 +8,11 @@
 return array(
 	'title'      => __( 'Slim centered header with site title, navigation and social links (Dark)', 'aino' ),
 	'categories' => array( 'aino-header' ),
-	'content'    => '<!-- wp:group {"backgroundColor":"variant-background-primary","className":"site-header__wrap"} -->
-	<div class="wp-block-group site-header__wrap header-dark has-variant-background-primary-background-color has-background">
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","className":"site-header__wrap"} -->
+	<div class="wp-block-group site-header__wrap alignfull header-dark has-variant-background-primary-background-color has-background">
 	
-		<!-- wp:group {"className":"site-header__content","align":"wide"} -->
-		<div class="wp-block-group site-header__content alignwide">
+		<!-- wp:group {"className":"site-header__content"} -->
+		<div class="wp-block-group site-header__content">
 
 			<!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|variant-font-primary"}}}}} /-->
 			<!-- wp:navigation {"isResponsive":true,"__unstableLocation":"primary","fontSize":"m","textColor":"variant-font-secondary"} /-->

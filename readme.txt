@@ -46,8 +46,9 @@ Aino WordPress Theme bundles the following third-party resources:
 = 2.1.0 =
 New: Text patterns.
 New: Portfolio pattern.
+New: Query pattern.
 Enhance: Header max-width and outside content gap.
-Bugfix: Alignment for parent Group block.
+Bugfix: Alignment for parent Group block in patterns.
 Bugfix: WooCommerce shop archive page content width.
 
 = 2.0.4 =

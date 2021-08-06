@@ -42,6 +42,11 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			);
 
 			register_block_pattern_category(
+				'aino-query',
+				array( 'label' => __( 'Aino Query', 'aino' ) )
+			);
+
+			register_block_pattern_category(
 				'aino-header',
 				array( 'label' => __( 'Aino Header', 'aino' ) )
 			);
@@ -78,14 +83,20 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'portfolio-four-img-light',
 				'text-heading-centered-dark',
 				'text-heading-centered-light',
+				'text-big-heading-left-text-right-dark',
+				'text-big-heading-left-text-right-light',
 				'text-centered-paragraph-dark',
 				'text-centered-paragraph-light',
+				'text-small-heading-left-text-right-dark',
+				'text-small-heading-left-text-right-light',
 				'text-big-headline-two-col-text-dark',
 				'text-big-headline-two-col-text-light',
 				'text-five-col-text-dark',
 				'text-five-col-text-light',
 				'contact-big-heading-three-col-light',
 				'contact-big-heading-three-col-dark',
+				'query-three-col-light',
+				'query-three-col-dark',
 				'header-centered-slim-light',
 				'header-centered-slim-dark',
 				'footer-five-col-sitelogo-light',
