@@ -10,6 +10,10 @@
 			"area": "header"
 		},
 		{
+			"name": "header-logo",
+			"area": "header"
+		},
+		{
 			"name": "footer",
 			"area": "footer"
 		},
@@ -33,6 +37,13 @@
 			"postTypes": [
 				"page",
 				"post"
+			]
+		},
+		{
+			"name": "header-logo-blank",
+			"title": "Header Logo Blank",
+			"postTypes": [
+				"page"
 			]
 		},
 		{

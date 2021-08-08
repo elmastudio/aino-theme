@@ -969,6 +969,7 @@ div[class*='wp-block-'] figcaption{display:block;margin-top:1rem;margin-bottom:0
 .woocommerce-account .woocommerce-MyAccount-navigation ul{padding-left:0;padding-bottom:1.5rem}
 .woocommerce-account .woocommerce-MyAccount-content .woocommerce-form-row--first{padding-top:0}
 .woocommerce-account .woocommerce-EditAccountForm fieldset{margin-top:1.5rem}
+.woocommerce-form__label-for-checkbox{display:-webkit-box;display:-ms-flexbox;display:flex}
 @media screen{[hidden~="screen"]{display:inherit}
 [hidden~="screen"]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0) !important;position:absolute !important}
 }@media(min-width:48em) and (min-width:64em){.wp-block-query.is-style-aino-3col-list .wp-block-post-title{padding-bottom:2.5rem}

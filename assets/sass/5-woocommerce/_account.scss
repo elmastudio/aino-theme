@@ -89,4 +89,12 @@
 			@include s-r-9(margin-top);
 		}
 	}
+
+}
+
+.woocommerce-form {
+
+	&__label-for-checkbox {
+		display: flex;
+	}
 }
