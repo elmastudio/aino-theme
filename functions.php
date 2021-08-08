@@ -212,9 +212,6 @@ function aino_separate_registration_form() {
 
 			</form>
 
-		</div>
-	</div>
-
 	<?php
 
 	return ob_get_clean();
