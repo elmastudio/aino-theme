@@ -65,7 +65,8 @@ div[class*='wp-block-'] figcaption,
 	.woocommerce-review__published-date,
 	.wp-block-post-author__name,
 	.comment-body .comment-author,
-	.comment p {
+	.comment p,
+	.wc-form-card .woocommerce-form-register p {
 		font-size: var(--font-size--body-s) !important;
 	}
 }

@@ -22,7 +22,7 @@ textarea,
 	border: 1px solid var(--global--color--form-border);
 	outline: none;
 	line-height: var(--global--line-height-reset);
-	@include s-r-5 (padding);
+	padding: 1.063rem 1.25rem 1.125rem;
 
 	@include input-placeholder {
 		color: var(--wp--custom--color--font-tertiary);

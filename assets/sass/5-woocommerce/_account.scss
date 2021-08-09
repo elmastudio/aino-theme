@@ -94,7 +94,18 @@
 
 .woocommerce-form {
 
+	&.woocommerce-form-register {
+
+		.woocommerce-form-row:first-of-type {
+			padding-top: 0;
+		}
+	}
+
 	&__label-for-checkbox {
 		display: flex;
+	}
+
+	.woocommerce-form-register__submit {
+		width: 100% !important;
 	}
 }
