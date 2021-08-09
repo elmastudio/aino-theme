@@ -1,54 +1,19 @@
 .woocommerce-account {
 
+	&.logged-in {
+
+		.woocommerce {
+			max-width: var(--global--max-content-width);
+		}
+	}
+
 	.site-content .woocommerce {
-		max-width: var(--global--max-content-width);
-		margin-left: auto;
-		margin-right: auto;
-
-		@include breakpoint(sm) {
-			display: grid;
-			grid-template-columns: repeat(12, 1fr);
-			column-gap: 2rem;
+		h2 {
+			padding: 0;
 		}
 
-		@include breakpoint(sm) {
-			padding-left: 2rem;
-			padding-right: 2rem;
-		}
-
-		@include breakpoint(lg) {
-			padding-left: 3rem;
-			padding-right: 3rem;
-			column-gap: 3rem;
-		}
-
-		@include breakpoint(xl) {
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
-		}
-	}
-
-	h2 {
-		padding: 0;
-	}
-
-	h2,
-	.woocommerce-form-login,
-	.woocommerce-notices-wrapper {
-
-		@include breakpoint(sm) {
-			grid-column-start: 2;
-			grid-column-end: 12;
-		}
-
-		@include breakpoint(md) {
-			grid-column-start: 3;
-			grid-column-end: 11;
-		}
-
-		@include breakpoint(lg) {
-			grid-column-start: 4;
-			grid-column-end: 10;
+		.u-column2 {
+			@include s-r-11(padding-top);
 		}
 	}
 
@@ -92,20 +57,29 @@
 
 }
 
-.woocommerce-form {
+// WooCommerce Shortcode forms
+.wc-form-card {
 
-	&.woocommerce-form-register {
+	.woocommerce-form {
 
-		.woocommerce-form-row:first-of-type {
-			padding-top: 0;
+		&.woocommerce-form-register {
+	
+			.woocommerce-form-row:first-of-type {
+				padding-top: 0;
+			}
 		}
-	}
-
-	&__label-for-checkbox {
-		display: flex;
-	}
-
-	.woocommerce-form-register__submit {
-		width: 100% !important;
+	
+		&__label-for-checkbox {
+			display: flex;
+		}
+	
+		.woocommerce-form-register__submit,
+		.woocommerce-form-login__submit {
+			width: 100% !important;
+		}
+	
+		.woocommerce-form-login__submit {
+			margin-top: 24px;
+		}
 	}
 }

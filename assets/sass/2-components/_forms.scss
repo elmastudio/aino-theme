@@ -114,10 +114,12 @@ select,
 
 // Checkboxes
 .checkbox,
-form .comment-form-cookies-consent {
+form .comment-form-cookies-consent,
+.woocommerce-form__label-for-checkbox {
 	color: var(--wp--custom--color--font-secondary);
 	display: flex;
 	align-items: center;
+	margin-bottom: 0;
 }
 
 input[type="checkbox"],
@@ -324,15 +326,5 @@ form p.comment-form-comment {
 
 	.mc4wp-form p {
 		@include s-r-4 (padding-top);
-	}
-}
-
-/* Light Form Color */
-.entry-content {
-
-	.light-form {
-		p {
-			color: var(--wp--custom--color--button-color-primary);
-		}
 	}
 }
