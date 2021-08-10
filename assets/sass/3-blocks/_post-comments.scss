@@ -90,6 +90,7 @@
 		@include s-r-6(padding);
 		background: var(--global--color--notification-background);
 		color: var(--global--color--notification);
+		background: 1px solid var(--global--color--notification-border);
 		border-radius: var(--global--border-radius-xxs);
 	}
 

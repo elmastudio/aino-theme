@@ -67,7 +67,9 @@ div[class*='wp-block-'] figcaption,
 	.comment-body .comment-author,
 	.comment p,
 	.woocommerce .woocommerce-form-register p,
-	.wc-form-card .woocommerce-form-register p,
+	.wp-block-ainoblocks-card  .woocommerce-form-register p,
+	.woocommerce .woocommerce-ResetPassword p,
+	.wp-block-ainoblocks-card .woocommerce-ResetPassword p,
 	.woocommerce-form .lost_password,
 	.woocommerce-privacy-policy-text p {
 		font-size: var(--font-size--body-s) !important;

@@ -1,3 +1,8 @@
+// Fix pattern inserter preview for fullwidth container blocks
+.block-editor-block-list__layout.is-root-container > .fullwidth {
+	max-width: none !important;
+}
+
 // Default outer spacing
 @include breakpoint(sm) {
 	:root {

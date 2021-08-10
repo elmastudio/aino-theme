@@ -74,7 +74,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( array( 'style-editor.css', aino_fonts_url() ) );
+		add_editor_style( array( 'style-editor.min.css', aino_fonts_url() ) );
 
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
@@ -154,7 +154,7 @@ function aino_fonts_url() {
 }
 
 // Separate WooCommerce User Registration form
-function aino_separate_registration_form() {
+function aino_separate_wc_registration_form() {
 	if ( is_admin() ) return;
 	if ( is_user_logged_in() ) return;
 	ob_start();
@@ -217,10 +217,10 @@ function aino_separate_registration_form() {
 	return ob_get_clean();
 
 }
-add_shortcode( 'woocommerce_registration_form', 'aino_separate_registration_form' );
+add_shortcode( 'woocommerce_registration_form', 'aino_separate_wc_registration_form' );
 
 // Separate WooCommerce User Login form
-function aino_separate_login_form() {
+function aino_separate_wc_login_form() {
 	if ( is_admin() ) return;
 	if ( is_user_logged_in() ) return;
 	ob_start();
@@ -271,7 +271,45 @@ function aino_separate_login_form() {
 	return ob_get_clean();
 
 }
-add_shortcode( 'woocommerce_login_form', 'aino_separate_login_form' );
+add_shortcode( 'woocommerce_login_form', 'aino_separate_wc_login_form' );
+
+// Separate WooCommerce User reset password form
+function aino_separate_wc_resetpassword_form() {
+	if ( is_admin() ) return;
+	if ( is_user_logged_in() ) return;
+	ob_start();
+
+	// Form copied from /woocommerce/myaccount/form-login.php (version 4.1.0) Update as needed.
+	do_action( 'woocommerce_before_lost_password_form' ); ?>
+
+		<form method="post" class="woocommerce-ResetPassword lost_reset_password">
+
+			<p><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'woocommerce' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
+
+			<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
+				<label for="user_login"><?php esc_html_e( 'Username or email', 'woocommerce' ); ?></label>
+				<input class="woocommerce-Input woocommerce-Input--text input-text" type="text" name="user_login" id="user_login" autocomplete="username" />
+			</p>
+
+			<div class="clear"></div>
+
+			<?php do_action( 'woocommerce_lostpassword_form' ); ?>
+
+			<p class="woocommerce-form-row form-row">
+				<input type="hidden" name="wc_reset_password" value="true" />
+				<button type="submit" class="woocommerce-Button button" value="<?php esc_attr_e( 'Reset password', 'woocommerce' ); ?>"><?php esc_html_e( 'Reset password', 'woocommerce' ); ?></button>
+			</p>
+
+			<?php wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ); ?>
+
+		</form>
+
+	<?php
+
+	return ob_get_clean();
+
+}
+add_shortcode( 'woocommerce_resetpassword_form', 'aino_separate_wc_resetpassword_form' );
 
 // Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
