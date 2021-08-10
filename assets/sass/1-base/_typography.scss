@@ -71,7 +71,10 @@ div[class*='wp-block-'] figcaption,
 	.woocommerce .woocommerce-ResetPassword p,
 	.wp-block-ainoblocks-card .woocommerce-ResetPassword p,
 	.woocommerce-form .lost_password,
-	.woocommerce-privacy-policy-text p {
+	.woocommerce-privacy-policy-text p,
+	.woocommerce-message,
+	.woocommerce-notice,
+	.woocommerce-order-details .woocommerce-table {
 		font-size: var(--font-size--body-s) !important;
 	}
 }
@@ -100,6 +103,7 @@ input,
 select,
 table,
 textarea,
+address,
 .woocommerce-info,
 .page .woocommerce-form p,
 .woocommerce-form-login-toggle,
@@ -289,7 +293,8 @@ h6.has-l-font-size,
 .comment-reply-title,
 #comments,
 .wp-block-post-template.columns-4 h2.wp-block-post-title,
-h1.archive-title {
+h1.archive-title,
+.woocommerce-order-received h2 {
 	font-size: var(--font-size--h3) !important;
 }
 

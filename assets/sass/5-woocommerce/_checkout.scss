@@ -153,26 +153,6 @@
 	}
 }
 
-// Hide element
-.wc-block-components-form {
-
-	.wc-block-components-checkout-step,
-	.wc-block-components-checkout-step--with-step-number {
-
-		.wc-block-components-checkout-step {
-	
-			&__container,
-			&__title,
-			&__heading {
-				&:after,
-				:before {
-					display: none;
-				}
-			}
-		}
-	}
-}
-
 // Checkout Main
 .wc-block-checkout__main {
 
@@ -318,4 +298,31 @@
 .wc-block-components-order-summary-item:after {
 	border-color: var(--wp--custom--color--border);
 	opacity: 1;
+}
+
+// Hide element
+.woocommerce-checkout {
+
+	.woocommerce-message {
+		display: none;
+	}
+
+	.wc-block-components-form {
+
+		.wc-block-components-checkout-step,
+		.wc-block-components-checkout-step--with-step-number {
+	
+			.wc-block-components-checkout-step {
+		
+				&__container,
+				&__title,
+				&__heading {
+					&:after,
+					:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 }

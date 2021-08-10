@@ -37,18 +37,34 @@
 	}
 
 	.woocommerce-MyAccount-content {
+		background: var(--wp--custom--color--background-secondary);
+		border-radius: var(--global--border-radius-xxs);
+		@include s-r-7(padding);
 
 		@include breakpoint(sm) {
 			grid-column-start: 5;
-		grid-column-end: 11;
+			grid-column-end: 11;
 		}
 
 		.woocommerce-form-row--first {
 			padding-top: 0;
 		}
+
+		.woocommerce-notices-wrapper {
+			margin-bottom: 0;
+		}
+
+		.woocommerce-message {
+			margin-bottom: 0 !important;
+		}
+
+		p {
+			font-size: var(--font-size--body-s) !important;
+		}
 	}
 
 	.woocommerce-EditAccountForm {
+		max-width: var(--global--default-content-width);
 
 		fieldset {
 			@include s-r-9(margin-top);
