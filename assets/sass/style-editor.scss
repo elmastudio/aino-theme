@@ -8,7 +8,16 @@
 @import "1-base/colors";
 @import "1-base/radius";
 
-/* Group block */
+/* Container and Alignment */
+.block-editor-block-list__layout.is-root-container > .fullwidth {
+	max-width: none !important;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .wp-block[data-align=full] {
+	max-width: none !important;
+}
+
+
 .wp-block-group.alignfull {
 	max-width: 100% !important;
 }
@@ -20,7 +29,6 @@
 
 /* Typography */
 body {
-
 	font-family: var(--wp--custom--body--typography--font-family);
 	line-height: var(--wp--custom--line-height--body);
 	color: var(--wp--custom--color--font-secondary);
@@ -417,10 +425,10 @@ p.wp-block-paragraph {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
 					column-gap: 2rem;
-	
+
 					li {
 						grid-template-columns: 1fr 1fr;
-	
+
 						&:nth-last-child(-n+2) {
 							padding-bottom: 0;
 						}
@@ -509,10 +517,10 @@ p.wp-block-paragraph {
 			> :first-child {
 
 				padding-top: 0;
-	
+
 			}
 		}
-		
+
 		.wp-block-post-title,
 		.wp-block-post-featured-image,
 		.wp-block-post-excerpt__excerpt,
@@ -556,14 +564,14 @@ p.wp-block-paragraph {
 				align-content: start;
 				grid-auto-flow: row;
 			}
-	
+
 			.wp-block-post-title {
 				grid-column: 1 / 5;
 				justify-self: start;
 				justify-self: stretch;
 				grid-row: 1 / 2;
 			}
-	
+
 			.post-excerpt-wrap {
 				justify-self: stretch;
 				justify-self: start;
@@ -571,7 +579,7 @@ p.wp-block-paragraph {
 				grid-column: 5 / 9;
 				grid-row: 1 / 2;
 			}
-	
+
 			.wp-block-post-featured-image {
 				justify-self: stretch;
 				justify-self: start;
@@ -588,9 +596,7 @@ p.wp-block-paragraph {
 	}
 }
 
-
 /* Media */
-
 figcaption {
 	max-width: 100%;
 	font-size: var(--font-size--body-s);
@@ -617,6 +623,7 @@ figcaption {
 	&.ellipse-horizontal {
 		clip-path: ellipse(50% 45% at 50% 50%);
 	}
+
 	&.ellipse-vertical {
 		clip-path: ellipse(50% 50% at 50% 50%);
 	}
@@ -639,7 +646,6 @@ figcaption {
 }
 
 /* Quotes */
-
 .wp-block-pullquote,
 .wp-block-quote {
 	margin: 0;

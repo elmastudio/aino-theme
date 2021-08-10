@@ -8,8 +8,8 @@
 return array(
 	'title'      => __( 'Big heading and two-column paragraphs (Dark)', 'aino' ),
 	'categories' => array( 'aino-text' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17} -->
-	<div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__15 pb__17">
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
+	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pt__15 pb__17">
 	
 	<!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomTablet":0,"marginBottomMobile":6} -->
