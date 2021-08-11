@@ -46,6 +46,7 @@ Aino WordPress Theme bundles the following third-party resources:
 = 2.2.0 =
 New: Bank page template and site logo header template part.
 New: Separate WooCommerce registration form shortcodes.
+Enhance: Change Shop block page template to WooCommerce.
 Enhance: WooCommerce account styles.
 Bugfix: Fullwidth aligned container blocks in patterns preview.
 Bugfix: Delete unneeded page templates and CSS styles.
