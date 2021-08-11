@@ -16,6 +16,14 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 ## Changelog  
 
 ### 2.1.0  
+New: Blank page template and site logo header template part.  
+New: Separate WooCommerce registration form shortcodes.  
+Enhance: Change Shop block page template to WooCommerce.  
+Enhance: WooCommerce account styles.  
+Bugfix: Fullwidth aligned container blocks in patterns preview.  
+Bugfix: Delete unneeded page templates and CSS styles.  
+
+### 2.1.0  
 **New:** Text patterns.  
 **New:** Portfolio pattern.  
 **New:** Query pattern.  
