@@ -26,7 +26,8 @@ cite a,
 .woocommerce-notices-wrapper a,
 .woocommerce-message a,
 .custom-product-page-link,
-.wp-block-post-excerpt__more-link {
+.wp-block-post-excerpt__more-link,
+.comment .comment-body p a {
 	color: currentColor;
 	text-decoration: underline;
 

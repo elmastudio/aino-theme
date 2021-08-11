@@ -1,54 +1,19 @@
 .woocommerce-account {
 
+	&.logged-in {
+
+		.woocommerce {
+			max-width: var(--global--wide-content-width);
+		}
+	}
+
 	.site-content .woocommerce {
-		max-width: var(--global--max-content-width);
-		margin-left: auto;
-		margin-right: auto;
-
-		@include breakpoint(sm) {
-			display: grid;
-			grid-template-columns: repeat(12, 1fr);
-			column-gap: 2rem;
+		h2 {
+			padding: 0;
 		}
 
-		@include breakpoint(sm) {
-			padding-left: 2rem;
-			padding-right: 2rem;
-		}
-
-		@include breakpoint(lg) {
-			padding-left: 3rem;
-			padding-right: 3rem;
-			column-gap: 3rem;
-		}
-
-		@include breakpoint(xl) {
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
-		}
-	}
-
-	h2 {
-		padding: 0;
-	}
-
-	h2,
-	.woocommerce-form-login,
-	.woocommerce-notices-wrapper {
-
-		@include breakpoint(sm) {
-			grid-column-start: 2;
-			grid-column-end: 12;
-		}
-
-		@include breakpoint(md) {
-			grid-column-start: 3;
-			grid-column-end: 11;
-		}
-
-		@include breakpoint(lg) {
-			grid-column-start: 4;
-			grid-column-end: 10;
+		.u-column2 {
+			@include s-r-10(padding-top);
 		}
 	}
 
@@ -72,21 +37,85 @@
 	}
 
 	.woocommerce-MyAccount-content {
+		background: var(--wp--custom--color--background-secondary);
+		border-radius: var(--global--border-radius-xxs);
+		@include s-r-7(padding);
 
 		@include breakpoint(sm) {
 			grid-column-start: 5;
-		grid-column-end: 11;
+			grid-column-end: 11;
 		}
 
 		.woocommerce-form-row--first {
 			padding-top: 0;
 		}
+
+		.woocommerce-notices-wrapper {
+			margin-bottom: 0;
+		}
+
+		.woocommerce-message {
+			margin-bottom: 0 !important;
+		}
+
+		p {
+			font-size: var(--font-size--body-s) !important;
+		}
 	}
 
 	.woocommerce-EditAccountForm {
+		max-width: var(--global--default-content-width);
 
 		fieldset {
 			@include s-r-9(margin-top);
 		}
+	}
+
+}
+
+// WooCommerce Shortcode forms
+.wc-form-card {
+
+	.woocommerce-form {
+
+		&.woocommerce-form-register {
+	
+			.woocommerce-form-row:first-of-type {
+				padding-top: 0;
+			}
+		}
+	
+		&__label-for-checkbox {
+			display: flex;
+		}
+	
+		.woocommerce-form-register__submit,
+		.woocommerce-form-login__submit {
+			width: 100% !important;
+		}
+	
+		.woocommerce-form-login__submit {
+			margin-top: 24px;
+		}
+	}
+}
+
+// WooCommerce Shortcode forms
+.woocommerce-orders-table {
+	margin-bottom: 0;
+
+	thead th,
+	td,
+	th {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	tr {
+		border-bottom: 1px solid var(--global--color--border);
+	}
+
+	tr:last-child {
+		border-bottom: 0px;
 	}
 }

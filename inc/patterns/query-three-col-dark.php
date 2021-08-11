@@ -8,8 +8,8 @@
 return array(
 	'title'      => __( '3-column post grid with small heading. (Dark)', 'aino' ),
 	'categories' => array( 'aino-query' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":14} -->
-	<div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__15 pb__14"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":14,"className":"fullwidth"} -->
+	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pt__15 pb__14"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomMobile":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mb_m__0"><!-- wp:heading {"textColor":"background-primary","fontSize":"xxs","paddingBottom":13} -->
 	<h2 class="has-background-primary-color has-text-color has-xxs-font-size pb__13">From the blog</h2>

@@ -1,46 +1,42 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+	background: transparent;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	@include s-r-6(margin-bottom);
+}
 
- table {
-	 border-collapse: collapse;
-	 width: 100%;
-	 background: transparent;
-	 margin-top: 0;
-	 margin-left: 0;
-	 margin-right: 0;
-	 @include s-r-8(margin-bottom);
- }
+thead th {
+	border-bottom: 1px solid var(--global--color--border);
+	margin-top: 0;
+	@include s-r-6(padding-bottom);
+	padding-top: 0;
+}
 
- thead th {
-	 border-bottom: 2px solid var(--wp--custom--color--border);
-	 padding-bottom: $s-4;
-	 @include breakpoint(sm) {
-		 margin: 0 0 $s-4;
-	 }
- }
+th {
+	@include s-r-8(padding);
+	text-align: left;
 
- th {
-	 padding: $s-4;
-	 text-align: left;
-	 @include breakpoint(sm) {
-		 padding: $s-4;
-	 }
- }
+	@include breakpoint(sm) {
+		@include s-r-6(padding);
+	}
+}
 
- tr {
-	 border-bottom: 1px solid var(--wp--custom--color--border);
- }
+tr {
+	border-bottom: 1px solid var(--global--color--border);
+}
 
- table tr:last-of-type {
-	 border-bottom: none;
- }
+table tr:last-of-type {
+	border-bottom: none;
+}
 
- td {
-	 padding: $s-4;
-	 border-right: 1px solid var(--wp--custom--color--border);
-	 @include breakpoint(sm) {
-		 padding: $s-4;
-	 }
- }
+td {
+	@include s-r-6(padding);
+	border-right: 0;
+}
 
- tr td:last-of-type {
-	 border-right: none;
- }
+tr td:last-of-type {
+	border-right: none;
+}

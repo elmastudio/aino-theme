@@ -6,7 +6,7 @@
 
 	div.product {
 		position: relative;
-		max-width: var(--global--max-content-width);
+		max-width: var(--global--wide-content-width);
 
 		@include breakpoint(sm) {
 			display: grid;

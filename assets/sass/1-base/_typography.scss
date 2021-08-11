@@ -38,7 +38,8 @@ div[class*='wp-block-'] figcaption,
 .wp-block-post-template.columns-5 .wp-block-post-author__name,
 .wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
 .wp-block-post-template.columns-6 .wp-block-post-date,
-.wp-block-post-template.columns-6 .wp-block-post-author__name {
+.wp-block-post-template.columns-6 .wp-block-post-author__name,
+.woocommerce-notices-wrapper ul {
 	font-size: var(--font-size--body-xs) !important;;
 }
 
@@ -56,7 +57,6 @@ div[class*='wp-block-'] figcaption,
 	.onsale,
 	.woocommerce-checkout-review-order-table,
 	.payment_box p,
-	.woocommerce-notices-wrapper ul,
 	.wc-block-grid__product-onsale,
 	.wc-block-components-sale-badge,
 	.comment-reply-title #cancel-comment-reply-link,
@@ -65,7 +65,17 @@ div[class*='wp-block-'] figcaption,
 	.woocommerce-review__published-date,
 	.wp-block-post-author__name,
 	.comment-body .comment-author,
-	.comment p {
+	.comment p,
+	.woocommerce .woocommerce-form-register p,
+	.wp-block-ainoblocks-card  .woocommerce-form-register p,
+	.woocommerce .woocommerce-ResetPassword p,
+	.wp-block-ainoblocks-card .woocommerce-ResetPassword p,
+	.woocommerce-form .lost_password,
+	.woocommerce-privacy-policy-text p,
+	.woocommerce-message,
+	.woocommerce-notice,
+	.woocommerce-order-details .woocommerce-table,
+	.woocommerce-orders-table {
 		font-size: var(--font-size--body-s) !important;
 	}
 }
@@ -94,6 +104,7 @@ input,
 select,
 table,
 textarea,
+address,
 .woocommerce-info,
 .page .woocommerce-form p,
 .woocommerce-form-login-toggle,
@@ -283,7 +294,8 @@ h6.has-l-font-size,
 .comment-reply-title,
 #comments,
 .wp-block-post-template.columns-4 h2.wp-block-post-title,
-h1.archive-title {
+h1.archive-title,
+.woocommerce-order-received h2 {
 	font-size: var(--font-size--h3) !important;
 }
 

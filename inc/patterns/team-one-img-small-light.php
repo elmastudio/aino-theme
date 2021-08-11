@@ -8,8 +8,8 @@
 return array(
 	'title'      => __( 'One small team image, heading and intro text (Light)', 'aino' ),
 	'categories' => array( 'aino-team' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17} -->
-	<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
+	<div class="wp-block-group alignfull fullwidth has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":6,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomTablet":0,"marginBottomMobile":7} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__6 col_start_t__1 col_end_t__6 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mb_t__0 mb_m__7"><!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"m"} -->
 	<h2 class="has-font-primary-color has-text-color has-m-font-size">Our story</h2>

@@ -1,3 +1,8 @@
+// Fix pattern inserter preview for fullwidth container blocks
+.block-editor-block-list__layout.is-root-container > .fullwidth {
+	max-width: none !important;
+}
+
 // Default outer spacing
 @include breakpoint(sm) {
 	:root {
@@ -18,9 +23,10 @@
 }
 
 /* Alignments and block widths */
+.page-template-woocommerce .wp-block-group.entry-header,
 .wp-block-group.alignfull,
 *[class*="wp-container-"],
-.wp-block-group.alignfull .wp-block-group.alignfull  {
+.wp-block-group.alignfull .wp-block-group.alignfull {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }
@@ -110,22 +116,10 @@
 }
 
 /* Full width page template */
-.tpl-fullwidth .entry-content,
-.tpl-fullwidth .entry-content>*,
-.tpl-fullwidth .entry-header,
 .single-post .site-content .related-wrap,
 .single-post .comments-area {
 	@include push--auto;
 	max-width: var(--global--max-content-width);
-}
-
-/* Fullscreen and hero page template */
-.tpl-fullscreen .entry-content>*,
-.tpl-fullscreen .entry-header,
-.tpl-hero .entry-content>*,
-.tpl-hero .entry-header {
-	@include push--auto;
-	max-width: 100%;
 }
 
 /* Alignwide and fullwidth Content widths */
@@ -137,40 +131,6 @@
 .alignwide {
 	max-width: var(--global--wide-content-width);
 	@include push--auto;
-}
-
-// All containers with 1200px default width.
-.tpl-fullwidth .entry-header,
-.tpl-fullwidth .hentry .entry-content {
-	padding-left: $s-4;
-	padding-right: $s-4;
-
-	@include breakpoint(sm) {
-		padding-left: $s-7;
-		padding-right: $s-7;
-	}
-
-	@include breakpoint(lg) {
-		padding-left: $s-9;
-		padding-right: $s-9;
-	}
-
-	@include breakpoint(xl) {
-		padding-left: $s-6;
-		padding-right: $s-6;
-	}
-
-	.alignwide {
-		@include breakpoint(sm) {
-			padding-left: 0;
-			padding-right: 0;
-		}
-
-		@include breakpoint(md) {
-			padding-left: $s-6;
-			padding-right: $s-6;
-		}
-	}
 }
 
 /* Grid Columns */

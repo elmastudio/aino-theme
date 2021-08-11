@@ -9,8 +9,8 @@ return array(
 	'title'      => __( 'Slim centered header with site logo, navigation and social links (Light)', 'aino' ),
 	'blockTypes' => array( 'core/block-template-part/header' ),
 	'categories' => array( 'aino-header' ),
-	'content'    => '<!-- wp:group {"align":"full","className":"site-header__wrap"} -->
-	<div class="wp-block-group site-header__wrap alignfull">
+	'content'    => '<!-- wp:group {"align":"full","className":"site-header__wrap fullwidth"} -->
+	<div class="wp-block-group site-header__wrap fullwidth alignfull">
 	
 		<!-- wp:group {"className":"site-header__content"} -->
 		<div class="wp-block-group site-header__content">

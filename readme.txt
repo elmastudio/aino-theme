@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.7
 Tested up to: WordPress 5.8
 Requires PHP: 7.0
-Stable tag: 2.1.0
+Stable tag: 2.2.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -42,6 +42,14 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 2.2.0 =
+New: Bank page template and site logo header template part.
+New: Separate WooCommerce registration form shortcodes.
+Enhance: Change Shop block page template to WooCommerce.
+Enhance: WooCommerce account styles.
+Bugfix: Fullwidth aligned container blocks in patterns preview.
+Bugfix: Delete unneeded page templates and CSS styles.
 
 = 2.1.0 =
 New: Text patterns.

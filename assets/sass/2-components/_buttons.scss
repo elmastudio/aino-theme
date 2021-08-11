@@ -155,30 +155,6 @@ a.btn-outline,
 	}
 }
 
-/* Header CTA Sticky Button */
-.header-cta-wrap ul li.sticky a {
-	transform: translateY(-100px);
-	transition: transform 150ms;
-	position: fixed;
-	top: 24px;
-	right: 48px;
-	z-index: 2;
-}
-
-.has-sticky-cta {
-	.header-cta-wrap ul li.sticky a {
-		transform: translateY(0px);
-	}
-}
-
-#top-of-site-pixel-anchor {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	top: 500px;
-	left: 0;
-}
-
 /* Customizer Button Options */
 .buttons-bold {
 	button,

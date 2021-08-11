@@ -156,11 +156,6 @@
 					font-size: var(--font-size--body-s) !important;
 				}
 
-				.wc-block-components-shipping-rates-control__package .wc-block-components-panel__button {
-					@include s-r-6(padding-top);
-					@include s-r-6(padding-bottom);
-				}
-
 				.wc-block-cart__totals-title {
 					display: block;
 					text-transform: none;
@@ -200,10 +195,6 @@
 
 					&__change-address-button {
 						transform: none;
-					}
-
-					.wc-block-components-shipping-rates-control__no-results-notice {
-						@include s-r-6(margin-bottom);
 					}
 				}
 			}
