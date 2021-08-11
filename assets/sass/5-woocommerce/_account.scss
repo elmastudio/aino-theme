@@ -3,7 +3,7 @@
 	&.logged-in {
 
 		.woocommerce {
-			max-width: var(--global--max-content-width);
+			max-width: var(--global--wide-content-width);
 		}
 	}
 
@@ -97,5 +97,25 @@
 		.woocommerce-form-login__submit {
 			margin-top: 24px;
 		}
+	}
+}
+
+// WooCommerce Shortcode forms
+.woocommerce-orders-table {
+	margin-bottom: 0;
+
+	thead th,
+	td,
+	th {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	tr {
+		border-bottom: 1px solid var(--global--color--border);
+	}
+
+	tr:last-child {
+		border-bottom: 0px;
 	}
 }

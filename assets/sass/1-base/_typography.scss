@@ -74,7 +74,8 @@ div[class*='wp-block-'] figcaption,
 	.woocommerce-privacy-policy-text p,
 	.woocommerce-message,
 	.woocommerce-notice,
-	.woocommerce-order-details .woocommerce-table {
+	.woocommerce-order-details .woocommerce-table,
+	.woocommerce-orders-table {
 		font-size: var(--font-size--body-s) !important;
 	}
 }

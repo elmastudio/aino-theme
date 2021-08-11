@@ -737,7 +737,7 @@ figcaption {
 
 	td {
 		border: none;
-		padding: 1rem;
+		@include s-r-6(padding);
 	}
 
 	table {
@@ -981,7 +981,7 @@ pre.wp-block-verse {
 
 		tbody td,
 		th {
-			padding: 16px 8px;
+			@include s-r-8(padding);
 			border: 1px solid var(--wp--custom--color--border);
 			text-align: center;
 		}

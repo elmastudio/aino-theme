@@ -1,4 +1,5 @@
-.woocommerce {
+.woocommerce,
+.page-template-woocommerce {
 
 	&.archive,
 	&.post-type-archive-product,
@@ -7,7 +8,7 @@
 		.site-content {
 			@include s-r-15(padding-top);
 			@include s-r-17(padding-bottom);
-			max-width: var(--global--max-content-width);
+			max-width: var(--global--wide-content-width);
 			margin-left: auto;
 			margin-right: auto;
 			padding-left: 1rem;
@@ -39,7 +40,7 @@
 	}
 
 	.entry-header {
-		@include s-r-10(padding-bottom);
+		@include s-r-9(padding-bottom);
 	}
 }
 
@@ -734,7 +735,7 @@ padding-right: 0;
 		}
 
 		tr {
-			border-bottom: 1px solid #d7d7d7;
+			border-bottom: 1px solid var(--global--color--border);
 		}
 
 		tr:last-child {

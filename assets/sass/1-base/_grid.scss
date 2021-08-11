@@ -23,9 +23,10 @@
 }
 
 /* Alignments and block widths */
+.page-template-woocommerce .wp-block-group.entry-header,
 .wp-block-group.alignfull,
 *[class*="wp-container-"],
-.wp-block-group.alignfull .wp-block-group.alignfull  {
+.wp-block-group.alignfull .wp-block-group.alignfull {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }

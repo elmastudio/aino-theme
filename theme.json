@@ -47,8 +47,8 @@
 			]
 		},
 		{
-			"name": "shop",
-			"title": "WooCommerce Shop",
+			"name": "woocommmerce",
+			"title": "WooCommerce",
 			"postTypes": [
 				"page"
 			]
