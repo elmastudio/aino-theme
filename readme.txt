@@ -48,6 +48,7 @@ New: Bank page template and site logo header template part.
 New: Separate WooCommerce registration form shortcodes.
 Enhance: WooCommerce account styles.
 Bugfix: Fullwidth aligned container blocks in patterns preview.
+Bugfix: Delete unneeded page templates and CSS styles.
 
 = 2.1.0 =
 New: Text patterns.

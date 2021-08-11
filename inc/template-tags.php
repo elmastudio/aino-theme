@@ -37,30 +37,9 @@ function aino_body_classes( $classes ) {
 		$classes[] = 'single-page';
 	}
 
-	if ( is_page_template( 'page-templates/block-shop.php' ) ) {
-		$classes[] = 'tpl-shop';
-	}
-
-	if ( is_page_template( 'page-templates/tpl-fullscreen.php' ) ) {
-		$classes[] = 'tpl-fullscreen';
-	}
-
 	// Classes for Menus.
 	if ( has_nav_menu( 'primary' ) ) {
 		$classes[] = 'has-nav-main';
-	}
-
-
-	if ( 'round' === get_theme_mod( 'button_style', aino_defaults( 'button_style' ) ) ) {
-		$classes[] = 'btn-round';
-	}
-
-	if ( 'curved' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
-		$classes[] = 'form-curved';
-	}
-
-	if ( 'round' === get_theme_mod( 'form_style', aino_defaults( 'form_style' ) ) ) {
-		$classes[] = 'form-round';
 	}
 
 	// Additional classes:
