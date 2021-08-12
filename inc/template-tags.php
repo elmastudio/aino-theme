@@ -56,35 +56,3 @@ function aino_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'aino_body_classes' );
-
-
-/**
- * Add Classes to posts and pages.
- *
- * @param  mixed $classes This is a description.
- * @param  mixed $class This is a description.
- * @param  mixed $post_id This is a description.
- *
- * @return array
- */
-function aino_post_classes( $classes, $class, $post_id ) {
-
-	if ( comments_open( $post_id ) ) {
-		$classes[] = 'comments-open';
-	}
-
-	if ( ! comments_open( $post_id ) ) {
-		$classes[] = 'comments-closed';
-	}
-
-	if ( 0 === get_comments_number( $post_id ) ) {
-		$classes[] = 'no-comments';
-	}
-
-	if ( 0 !== get_comments_number( $post_id ) ) {
-		$classes[] = 'has-comments';
-	}
-
-	return $classes;
-}
-add_filter( 'post_class', 'aino_post_classes', 10, 3 );
