@@ -45,6 +45,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 = 2.2.1 =
 Enhance: WooCommerce account styles.
+Enhance: Form styles.
 
 = 2.2.0 =
 New: Blank page template and site logo header template part.
