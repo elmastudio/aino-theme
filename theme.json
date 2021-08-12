@@ -47,8 +47,8 @@
 			]
 		},
 		{
-			"name": "woocommmerce",
-			"title": "WooCommerce",
+			"name": "woocommmerce-default",
+			"title": "WooCommerce Default Page",
 			"postTypes": [
 				"page"
 			]

@@ -1,12 +1,12 @@
 .woocommerce,
-.page-template-woocommerce {
+.page-template-woocommerce-default {
 
 	&.archive,
 	&.post-type-archive-product,
 	&.single-product {
 
 		.site-content {
-			@include s-r-15(padding-top);
+			@include s-r-10(padding-top);
 			@include s-r-17(padding-bottom);
 			max-width: var(--global--wide-content-width);
 			margin-left: auto;
@@ -739,7 +739,7 @@ padding-right: 0;
 		}
 
 		tr:last-child {
-			border-bottom: 0px;
+			border-bottom: none;
 		}
 	}
 }

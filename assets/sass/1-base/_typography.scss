@@ -73,9 +73,12 @@ div[class*='wp-block-'] figcaption,
 	.woocommerce-form .lost_password,
 	.woocommerce-privacy-policy-text p,
 	.woocommerce-message,
+	.woocommerce-info,
 	.woocommerce-notice,
+	.woocommerce-MyAccount-content address,
 	.woocommerce-order-details .woocommerce-table,
-	.woocommerce-orders-table {
+	.woocommerce-orders-table,
+	.woocommerce-MyAccount-navigation li {
 		font-size: var(--font-size--body-s) !important;
 	}
 }
@@ -295,7 +298,8 @@ h6.has-l-font-size,
 #comments,
 .wp-block-post-template.columns-4 h2.wp-block-post-title,
 h1.archive-title,
-.woocommerce-order-received h2 {
+.woocommerce-order-received h2,
+.woocommerce-Address-title h3 {
 	font-size: var(--font-size--h3) !important;
 }
 
