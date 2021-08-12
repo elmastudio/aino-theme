@@ -159,7 +159,7 @@ figcaption{max-width:100%;font-size:var(--font-size--body-s);margin-top:1rem;col
 .wp-block-separator.is-style-wide{border:0}
 .wp-block-separator.is-style-dots{border:0}
 .wp-block-separator.is-style-dots:before{color:var(--wp--custom--color--border);font-size:var(--font-size--body-l);letter-spacing:1em;padding-left:1em}
-.wp-block-button .wp-block-button__link{display:inline-block;line-height:var(--global--line-height-reset);font-weight:normal;-webkit-transition:all .25s ease;transition:all .25s ease;padding:1rem 2rem;font-size:1.125rem;color:var(--wp--custom--color--button-color-primary);fill:var(--wp--custom--color--button-color-primary);background-color:var(--wp--custom--color--primary);font-weight:normal;color:var(--wp--custom--color--button-color-primary)}
+.wp-block-button .wp-block-button__link{display:inline-block;line-height:var(--global--line-height-reset);font-weight:normal;padding:1rem 2rem;font-size:1.125rem;color:var(--wp--custom--color--button-color-primary);fill:var(--wp--custom--color--button-color-primary);background-color:var(--wp--custom--color--primary);font-weight:normal;color:var(--wp--custom--color--button-color-primary)}
 .wp-block-button .wp-block-button__link:hover{background-color:var(--wp--custom--color--secondary);text-decoration:none}
 .wp-block-button:not(.is-style-squared) .wp-block-button__link{border-radius:8px}
 .wp-block-button.is-style-outline .wp-block-button__link{color:var(--wp--custom--color--primary);fill:var(--wp--custom--color--primary);border:1px solid;border-color:var(--wp--custom--color--primary);background:transparent;-webkit-box-shadow:none;box-shadow:none;border:1px solid}

@@ -301,7 +301,6 @@ $var: true !default; // Can be overridden elsewhere
 	display: inline-block;
 	line-height: var(--global--line-height-reset);
 	font-weight: normal;
-	@include transition-default;
 }
 
 @mixin btn-primary {
@@ -312,6 +311,18 @@ $var: true !default; // Can be overridden elsewhere
 	&:hover {
 		background-color: var(--wp--custom--color--secondary);
 		text-decoration: none;
+	}
+}
+
+@mixin btn-tab {
+	color: var(--wp--custom--color--font-secondary);
+	fill: var(--wp--custom--color--font-secondary);
+	background-color: transparent;
+	border: 1px solid var(--global--color--border);
+
+	&:hover {
+		background-color: var(--global--color--border);
+		border: 1px solid var(--global--color--border);
 	}
 }
 
@@ -343,7 +354,7 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Button Sizes */
 @mixin btn-xxs {
-	padding: 0.75rem 1rem;
+	padding: 0.5rem 1rem;
 	font-size: 0.75rem;
 }
 
@@ -460,144 +471,6 @@ $var: true !default; // Can be overridden elsewhere
 		padding: 7.5rem 15rem;
 		font-size: 1.75rem;
 	}
-}
-
-/* Pills */
-@mixin pill {
-	background: transparent;
-	color: var(--wp--custom--color--font-primary);
-	border: 1px solid var(--wp--custom--color--font-primary);
-	line-height: var(--global--line-height-reset);
-
-	&:hover {
-		color: var(--global--color--form-background);
-		background: var(--wp--custom--color--font-primary);
-	}
-}
-
-@mixin pill-xxxxl {
-	font-size: 1.875rem;
-	border-radius: 2rem;
-	padding: 0.438rem $s-6;
-
-	@include breakpoint(sm) {
-		font-size: 2.25rem;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.625rem;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 3rem;
-	}
-}
-
-@mixin pill-xxxl {
-	font-size: 1.625rem;
-	border-radius: 1.75rem;
-	padding: 0.438rem 1.375rem;
-
-	@include breakpoint(sm) {
-		font-size: 2rem;
-	}
-
-	@include breakpoint(md) {
-		font-size: 2.25rem;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.5rem;
-	}
-}
-
-@mixin pill-xxl {
-	font-size: $s-6;
-	border-radius: $s-6;
-	padding: 0.375rem $s-5;
-
-	@include breakpoint(sm) {
-		font-size: 1.75rem;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.875rem;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 2.125rem;
-	}
-}
-
-@mixin pill-xl {
-	font-size: 1.375rem;
-	border-radius: 1.313rem;
-	padding: 0.375rem 1.125rem;
-
-	@include breakpoint(sm) {
-		font-size: 1.5rem;
-	}
-
-	@include breakpoint(md) {
-		font-size: 1.625rem;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.75rem;
-	}
-}
-
-@mixin pill-l {
-	font-size: 1.25rem;
-	border-radius: 1.125rem;
-	padding: 0.313rem $s-4; // 6px and 16px
-
-	@include breakpoint(md) {
-		font-size: 1.375rem;
-	}
-
-	@include breakpoint(lg) {
-		font-size: 1.5rem;
-	}
-}
-
-@mixin pill-m {
-	font-size: 1.125rem;
-	border-radius: $s-4;
-	padding: 0.313rem 0.875rem; // 6px and 14px
-
-	@include breakpoint(lg) {
-		font-size: 1.25rem;
-	}
-}
-
-@mixin pill-m-icon {
-	font-size: 1.125rem;
-	border-radius: $s-4;
-	padding: .25rem .875rem .25rem 3.875rem;
-
-	@include breakpoint(lg) {
-		font-size: 1.25rem;
-		padding: .313rem .875rem .313rem 3.875rem;
-	}
-}
-
-@mixin pill-s {
-	font-size: 1rem;
-	border-radius: 0.813rem;
-	padding: 0.25rem 0.75rem;
-}
-
-@mixin pill-xs {
-	font-size: 0.875rem;
-	border-radius: 0.75rem;
-	padding: 0.25rem 0.625rem;
-}
-
-@mixin pill-xxs {
-	font-size: 0.75rem;
-	border-radius: 0.625rem;
-	padding: 0.188rem 0.5rem;
 }
 
 /* Avatars */

@@ -11,7 +11,7 @@ table {
 thead th {
 	border-bottom: 1px solid var(--global--color--border);
 	margin-top: 0;
-	@include s-r-6(padding-bottom);
+	@include s-r-4(padding-bottom);
 	padding-top: 0;
 }
 

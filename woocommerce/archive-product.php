@@ -24,7 +24,7 @@ get_header( 'shop' );
 <?php echo gutenberg_block_template_part( 'header' ); ?>
 
 <div class="content-wrap">
-	<div id="site-content" class="site-content huhu">
+	<div id="site-content" class="site-content btn-round form-round">
 
 	<?php
 	/**
