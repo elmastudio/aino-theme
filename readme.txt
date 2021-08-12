@@ -49,7 +49,6 @@ Enhance: Form styles.
 
 = 2.2.0 =
 New: Blank page template and site logo header template part.
-New: Separate WooCommerce registration form shortcodes.
 Enhance: Change Shop block page template to WooCommerce.
 Enhance: WooCommerce account styles.
 Bugfix: Fullwidth aligned container blocks in patterns preview.
