@@ -5,7 +5,6 @@ input,
 select,
 table,
 textarea {
-	font-family: var(--wp--custom--body--typography--font-family);
 	line-height: var(--wp--custom--line-height--body);
 	color: var(--wp--custom--color--font-secondary);
 }
@@ -192,7 +191,6 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: var(--wp--custom--line-height--heading);
 	color: var(--wp--custom--color--font-primary);
 }
 
