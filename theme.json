@@ -20,6 +20,14 @@
 		{
 			"name": "footer-dark",
 			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-light",
+			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-dark",
+			"area": "footer"
 		}
 	],
 	"customTemplates": [

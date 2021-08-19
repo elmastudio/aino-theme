@@ -44,7 +44,7 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 2.3.0 =
-Enhance: Footer update.
+Enhance: Slim default Footers and new 2 column Footers.
 Enhance: New PT Serif Google font option.
 Bugfix: Google fonts loading.
 
