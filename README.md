@@ -2,18 +2,38 @@
 
 ![Aino Screenshot](https://user-images.githubusercontent.com/17613630/127469578-6d68db51-54b2-45a2-a2e8-7ecef3816ee4.png)
 
-Aino is a blocks-first free WordPress theme for everyone who wants to build websites with creative, individual page layouts.  
+Aino is a free WordPress block theme for everyone who wants to build creative WordPress websites with ease.  
 #### Download: [Download Aino on WordPress.org](https://wordpress.org/themes/aino/)
 
 __Author:__ elmastudio  
 __Tags:__  blog, grid-layout, one-column, two-columns, three-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks  
 __Requires at least:__ 5.7  
-__Tested up to:__ WordPress 5.8.0    
+__Tested up to:__ WordPress 5.8    
 __Requires PHP:__ 7.0    
 __License:__ GPLv3 or later  
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+  
+### 2.3.0  
+Enhance: Slim default Footers and new 2 column Footers.  
+Enhance: New PT Serif Google font option.  
+Bugfix: Google fonts loading.  
+Bugfix: Patterns update for patterns including the Button block.  
+  
+### 2.2.2  
+Bugfix: Remove unneeded custom post classes.  
+  
+### 2.2.1  
+Enhance: WooCommerce account styles.  
+Enhance: Form styles.  
+  
+### 2.2.0  
+New: Blank page template and site logo header template part.  
+Enhance: Change Shop block page template to WooCommerce.  
+Enhance: WooCommerce account styles.  
+Bugfix: Fullwidth aligned container blocks in patterns preview.  
+Bugfix: Delete unneeded page templates and CSS styles.  
 
 ### 2.1.0  
 New: Blank page template and site logo header template part.  
