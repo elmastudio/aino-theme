@@ -50,12 +50,12 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"m","paddingTop":11} -->
-	<p class="has-variant-font-secondary-color has-text-color has-m-font-size pt__11"><strong>Write us a note</strong><br>We love to hear from you<strong><br></strong></p>
+	<p class="has-variant-font-secondary-color has-text-color has-m-font-size pt__11"><strong>Write us a note</strong><br>We always love to hear from you<strong><br></strong></p>
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:ainoblocks/multiple-buttons {"paddingTop":5} -->
-	<div class="wp-block-ainoblocks-multiple-buttons pt__5"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":200,"backgroundColor":"#777B7D","textColor":"#ffffff","label":"Email us"} -->
-	<div class="wp-block-ainoblocks-button" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200 has-custom-background has-custom-text-color" style="background-color:#777B7D;color:#ffffff;border-radius:200px">Email us</a></div>
+	<div class="wp-block-ainoblocks-multiple-buttons pt__5"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":200,"label":"Email us"} -->
+	<div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200" style="border-radius:200px">Email us</a></div>
 	<!-- /wp:ainoblocks/button --></div></div>
 	<!-- /wp:ainoblocks/multiple-buttons --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
