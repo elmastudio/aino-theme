@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.7
 Tested up to: WordPress 5.8
 Requires PHP: 7.0
-Stable tag: 2.2.2
+Stable tag: 2.3.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -42,6 +42,12 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 2.3.0 =
+Enhance: Slim default Footers and new 2 column Footers.
+Enhance: New PT Serif Google font option.
+Bugfix: Google fonts loading.
+Bugfix: Patterns update for patterns including the Button block.
 
 = 2.2.2 =
 Bugfix: Remove unneeded custom post classes.

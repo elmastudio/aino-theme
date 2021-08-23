@@ -20,6 +20,14 @@
 		{
 			"name": "footer-dark",
 			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-light",
+			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-dark",
+			"area": "footer"
 		}
 	],
 	"customTemplates": [
@@ -55,6 +63,9 @@
 		}
 	],
 	"settings": {
+		"fontsToLoadFromGoogle": [
+			"family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700"
+		],
 		"border": {
 			"customColor": true,
 			"customRadius": true,
@@ -263,6 +274,11 @@
 					"fontFamily": "Arimo, sans-serif",
 					"slug": "arimo",
 					"name": "Arimo"
+				},
+				{
+					"fontFamily": "\"PT Serif\", serif",
+					"slug": "pt-serif",
+					"name": "PT Serif"
 				},
 				{
 					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
