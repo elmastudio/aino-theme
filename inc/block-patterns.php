@@ -47,6 +47,11 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			);
 
 			register_block_pattern_category(
+				'aino-banner',
+				array( 'label' => __( 'Aino Banner', 'aino' ) )
+			);
+
+			register_block_pattern_category(
 				'aino-header',
 				array( 'label' => __( 'Aino Header', 'aino' ) )
 			);
@@ -97,6 +102,10 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 				'contact-big-heading-three-col-dark',
 				'query-three-col-light',
 				'query-three-col-dark',
+				'banner-default-light',
+				'banner-default-dark',
+				'banner-wide-light',
+				'banner-wide-dark',
 				'header-centered-slim-light',
 				'header-centered-slim-dark',
 				'footer-five-col-sitelogo-light',
