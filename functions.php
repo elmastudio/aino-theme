@@ -74,7 +74,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( array( 'style-editor.min.css', aino_fonts_url() ) );
+		add_editor_style( array( 'assets/build/css/editor.css', aino_fonts_url() ) );
 
 		// Add support for experimental link colour in blocks.
 		add_theme_support('experimental-link-color');
@@ -109,19 +109,13 @@ if ( ! function_exists( 'aino_setup' ) ) :
  * Enqueue scripts and styles.
  */
 function aino_scripts() {
-
 	// Enqueue fonts stylesheet.
 	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
-
 	// Theme stylesheet.
-	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/style.min.css', false, wp_get_theme()->get( 'Version' ) );
-
+	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/assets/build/css/main.css', array(), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
-/**
- * Get Google fonts.
- */
 /**
  * Register custom fonts.
  */

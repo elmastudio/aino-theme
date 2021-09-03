@@ -75,6 +75,7 @@
 		"spacing": {
 			"customMargin": false,
 			"customPadding": false,
+			"blockGap": null,
 			"units": ["px", "em", "rem", "vh", "vw"]
 		},
 		"color": {
@@ -486,6 +487,9 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/template-part": {
+			
+			},
 			"core/heading": {
 				"typography": {
 					"fontWeight": "700",

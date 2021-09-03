@@ -227,10 +227,6 @@ padding-right: 0;
 			background: var(--global--color--form-border-active);
 		}
 
-		&__mark {
-			display: none;
-		}
-
 		&:checked {
 			border-color: var(--global--color--form-border-active);
 			background: var(--global--color--form-border-active);
@@ -686,8 +682,6 @@ padding-right: 0;
 
 // Woo Products Pagination
 .wc-block-components-pagination {
-	@include s-r-17(margin-bottom);
-
 	button {
 		&:hover {
 			transform: none;

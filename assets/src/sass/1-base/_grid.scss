@@ -23,14 +23,33 @@
 }
 
 /* Alignments and block widths */
+[class*="wp-container-"].wp-block-template-part,
+[class*="wp-container-"] .wp-block-post-author,
+[class*="wp-container-"] .wp-block-post-comments-link,
+[class*="wp-container-"] .wp-block-post-featured-image {
+	margin-top: 0;
+}
+
+.wp-site-blocks > * + * {
+	margin-top: 0;
+}
+
+[class*="wp-container-"] {
+	.wp-block-group,
+	.wp-block-post-author,
+	.wp-block-post-comments-link,
+	.wp-block-post-featured-image {
+		margin-top: 0;
+	}
+}
 .page-template-woocommerce-default .wp-block-group.entry-header,
 .wp-block-group.alignfull,
-*[class*="wp-container-"],
 .wp-block-group.alignfull .wp-block-group.alignfull {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }
 
+.wp-block-template-part,
 .wp-block-group.alignfull .wp-block-group.alignwide {
 	padding-left: 0;
 	padding-right: 0;

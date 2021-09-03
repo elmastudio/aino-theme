@@ -1,0 +1,20 @@
+body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer-nav {
+
+	@include breakpoint(sm) {
+		padding-top: 0;
+	}
+}
+
+.site-footer {
+
+	.wp-block-ainoblocks-grid-item {
+
+		.wp-block-group:not(:last-child) {
+			padding-bottom: 5rem;
+
+			@include breakpoint(lg) {
+				@include s-r-11(padding-bottom);
+			}
+		}
+	}
+}
