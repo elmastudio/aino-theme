@@ -46,6 +46,9 @@ Aino WordPress Theme bundles the following third-party resources:
 = 2.4.2 =
 Enhance: Update to webpack building tools.
 Enhance: Clean up Sass styles.
+Enhance: Set Contentgap to 'null' in theme.json file.
+Enhance: Footer navigation menu's default setting.
+Bugfix: Padding of blocks on single post.
 
 = 2.4.1 =
 Bugfix: Group block padding fix that caused extra borders around container blocks.

@@ -134,13 +134,6 @@
 	max-width: var(--global--default-content-width);
 }
 
-/* Full width page template */
-.single-post .site-content .related-wrap,
-.single-post .comments-area {
-	@include push--auto;
-	max-width: var(--global--max-content-width);
-}
-
 /* Alignwide and fullwidth Content widths */
 .entry-content>*.alignwide {
 	max-width: var(--global--wide-content-width);

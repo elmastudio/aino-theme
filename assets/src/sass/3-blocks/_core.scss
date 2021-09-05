@@ -1,16 +1,3 @@
-/* Default spacing inside posts and page contents */
-.single {
-
-	.entry-content {
-		p {
-
-			&:not(:last-child) {
-				@include s-r-6(margin-bottom);
-			}
-		}
-	}
-}
-
 /* Buttons */
 
 .wp-block-buttons {
