@@ -861,13 +861,17 @@ textarea {
 }
 
 /* Template Parts */
-.site-header__content {
+.site-header .header-content {
   display: flex;
   align-items: center;
   align-content: stretch;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-footer .footer-content {
+  max-width: 100%;
 }
 
 /* Paragraph */

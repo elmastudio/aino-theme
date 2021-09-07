@@ -1,7 +1,7 @@
 .site-header {
 	position: relative;
 
-	&__content {
+	.header-content {
 		display: flex;
 		align-items: center;
 		align-content: stretch;
@@ -15,7 +15,7 @@
 
 		.wp-block-navigation.is-responsive {
 			display: flex;
-			justify-content: flex-end;
+			justify-content: center;
 			flex-grow: 1;
 		}
 
@@ -68,7 +68,7 @@
 	}
 
 	//Header Dark
-	.site-header__wrap {
+	.site-header-wrap {
 
 		&.header-dark {
 

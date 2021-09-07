@@ -7,6 +7,10 @@ body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer
 
 .site-footer {
 
+	.footer-content {
+		max-width: 100%;
+	}
+
 	.wp-block-ainoblocks-grid-item {
 
 		.wp-block-group:not(:last-child) {

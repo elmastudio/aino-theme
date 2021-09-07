@@ -8,8 +8,8 @@
 return array(
 	'title'      => __( 'Slim centered header with site title, navigation and social links (Dark)', 'aino' ),
 	'categories' => array( 'aino-header' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","className":"site-header__wrap fullwidth"} -->
-	<div class="wp-block-group site-header__wrap fullwidth alignfull header-dark has-variant-background-primary-background-color has-background">
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","className":"site-header-wrap fullwidth"} -->
+	<div class="wp-block-group site-header-wrap fullwidth alignfull header-dark has-variant-background-primary-background-color has-background">
 	
 		<!-- wp:group {"className":"site-header__content"} -->
 		<div class="wp-block-group site-header__content">

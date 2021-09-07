@@ -387,12 +387,19 @@ textarea {
 /* Template Parts */
 .site-header {
 
-	&__content {
+	.header-content {
 		display: flex;
 		align-items: center;
 		align-content: stretch;
 		justify-content: space-between;
 		@include push--auto;
+	}
+}
+
+.site-footer {
+
+	.footer-content {
+		max-width: 100%;
 	}
 }
 
