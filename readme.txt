@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.7
 Tested up to: WordPress 5.8
 Requires PHP: 7.0
-Stable tag: 2.4.2
+Stable tag: 2.4.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -42,6 +42,9 @@ Aino WordPress Theme bundles the following third-party resources:
 * TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 == Changelog ==
+
+= 2.4.3 =
+Bugfix: Page template content gap.
 
 = 2.4.2 =
 Enhance: Update to webpack building tools.
