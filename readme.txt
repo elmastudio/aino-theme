@@ -51,6 +51,7 @@ Enhance: Footer navigation menu's default setting.
 Enhance: Color variables.
 Enhance: font sizes.
 Bugfix: Padding of blocks on single post.
+Bugfix: Header alignment.
 
 = 2.4.1 =
 Bugfix: Group block padding fix that caused extra borders around container blocks.

@@ -5641,12 +5641,12 @@ div[class*=wp-block-] figcaption {
 }
 .site-header .header-content .wp-block-navigation.is-responsive {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-grow: 1;
 }
 @media (min-width: 600px) {
   .site-header .header-content .wp-block-navigation.is-responsive {
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 .site-header .header-content .wp-block-site-title {
@@ -5670,6 +5670,11 @@ div[class*=wp-block-] figcaption {
 @media (min-width: 48em) {
   .site-header .header-content .wp-block-social-links {
     display: flex;
+  }
+}
+@media (min-width: 48em) {
+  .site-header .header-content .wp-block-navigation.is-responsive {
+    justify-content: center;
   }
 }
 .site-header .header-content .wp-block-navigation .has-child :where(.submenu-container,

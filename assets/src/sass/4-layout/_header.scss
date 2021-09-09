@@ -15,14 +15,14 @@
 
 		.wp-block-navigation.is-responsive {
 			display: flex;
-			justify-content: center;
+			justify-content: flex-end;
 			flex-grow: 1;
 		}
 
 		@media (min-width: 600px) {
 
 			.wp-block-navigation.is-responsive {
-				justify-content: center;
+				justify-content: flex-end;
 			}
 		}
 
@@ -58,6 +58,14 @@
 
 			@include breakpoint(sm) {
 				display: flex;
+
+
+			}
+		}
+
+		@include breakpoint(sm) {
+			.wp-block-navigation.is-responsive {
+				justify-content: center;
 			}
 		}
 
