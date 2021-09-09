@@ -15,6 +15,9 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 2.4.3  
+Bugfix: Page template content gap.  
+
 ### 2.4.2  
 Enhance: Update to webpack building tools.  
 Enhance: Clean up Sass styles.  
