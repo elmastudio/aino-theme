@@ -42,7 +42,7 @@ return array(
 						<h4 class="has-variant-font-primary-color has-text-color has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"s","textColor":"variant-font-secondary"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"xs","textColor":"variant-font-secondary"} -->
 						<!-- wp:navigation-link {"label":"Accessibility","type":"page","id":703,"url":"http://ainodev.local/blog/","kind":"post-type"} /-->
 	
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -66,7 +66,7 @@ return array(
 						<h4 class="has-variant-font-primary-color has-text-color has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"s","textColor":"variant-font-secondary"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"xs","textColor":"variant-font-secondary"} -->
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -87,7 +87,7 @@ return array(
 						<h4 class="has-variant-font-primary-color has-text-color has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"s","textColor":"variant-font-secondary"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"xs","textColor":"variant-font-secondary"} -->
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -108,7 +108,7 @@ return array(
 						<h4 class="has-variant-font-primary-color has-text-color has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"__unstableLocation":"primary","fontSize":"s","textColor":"variant-font-secondary"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"__unstableLocation":"primary","fontSize":"xs","textColor":"variant-font-secondary"} -->
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->

@@ -23,7 +23,7 @@
 	
 		.add_to_cart_button {
 			opacity: 0;
-			font-size: var(--font-size--body-s) !important;
+			font-size: var(--global--font-size--body-xs) !important;
 			line-height: var(--global--line-height-reset);
 			background: none !important;
 			color: var(--wp--custom--color--font-secondary);
@@ -80,7 +80,7 @@
 
 		.wc-block-grid__product-title,
 		.wc-block-grid__product-title a {
-			font-size: var(--font-size--h2) !important;
+			font-size: var(--global--font-size--heading-03) !important;
 			line-height: var(--global--line-height-reset);
 		}
 

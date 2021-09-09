@@ -27,9 +27,8 @@
   --global--border-radius-xxxl: 3.75rem;
   --global--border-radius-xxxxl: 4.375rem;
   --global--border-radius-round: 6.25em;
+  /* SM breakpoint */
 }
-
-/* SM breakpoint */
 @media only screen and (min-width: 48em) {
   :root {
     /* Border radius */
@@ -44,120 +43,100 @@
     --global--border-radius-xxxxl: 5.625rem;
   }
 }
-/* Custom Global styles */
+
+/* Theme Global Styles */
 body {
+  /* Spacing */
   --wp--style--block-gap: 0;
-  /* Global Heading Font sizes */
-  --global--font-size--h12: 5.125rem;
-  --global--font-size--h11: 4.375rem;
-  --global--font-size--h10: 3.75rem;
-  --global--font-size--h9: 3.25rem;
-  --global--font-size--h8: 2.875rem;
-  --global--font-size--h7: 2.375rem;
-  --global--font-size--h6: 2.125rem;
-  --global--font-size--h5: 1.875rem;
-  --global--font-size--h4: 1.5rem;
-  --global--font-size--h3: 1.25rem;
-  --global--font-size--h2: 1.125rem;
-  --global--font-size--h1: 1rem;
-  /* Global body font sizes */
-  --global--font-size--body-xxs: 0.75rem;
-  --global--font-size--body-xs: 0.875rem;
-  --global--font-size--body-s: 1rem;
-  --global--font-size--body-m: 1.125rem;
+  --global--content--padding--left: 1rem;
+  --global--content--padding--right: 1rem;
+  /* Heading Font sizes */
+  --global--font-size--heading-01: 1rem;
+  --global--font-size--heading-02: 1.125rem;
+  --global--font-size--heading-03: 1.125rem;
+  --global--font-size--heading-04: 1.25rem;
+  --global--font-size--heading-05: 1.5rem;
+  --global--font-size--heading-06: 1.875rem;
+  --global--font-size--heading-07: 2.125rem;
+  --global--font-size--heading-08: 2.375rem;
+  --global--font-size--heading-09: 2.875rem;
+  --global--font-size--heading-10: 3.25rem;
+  --global--font-size--heading-11: 3.75rem;
+  --global--font-size--heading-12: 4.375rem;
+  --global--font-size--heading-13: 5.125rem;
+  /* Body font sizes */
+  --global--font-size--body-xxxs: 0.75rem;
+  --global--font-size--body-xxs: 0.875rem;
+  --global--font-size--body-xs: 1rem;
+  --global--font-size--body-s: 1.125rem;
+  --global--font-size--body-m: 1.25rem;
   --global--font-size--body-l: 1.25rem;
   --global--font-size--body-xl: 1.375rem;
   --global--font-size--body-xxl: 1.5rem;
-  --global--font-size--body-xxxl: 1.625rem;
-  --global--font-size--body-xxxxl: 1.875rem;
-  /* Default content padding */
-  --global--content--padding--left: 1rem;
-  --global--content--padding--right: 1rem;
-  /* Theme Heading font sizes */
-  --font-size--h12: var(--global--font-size--h12);
-  --font-size--h11: var(--global--font-size--h11);
-  --font-size--h10: var(--global--font-size--h10);
-  --font-size--h9: var(--global--font-size--h9);
-  --font-size--h8: var(--global--font-size--h8);
-  --font-size--h7: var(--global--font-size--h7);
-  --font-size--h6: var(--global--font-size--h6);
-  --font-size--h5: var(--global--font-size--h5);
-  --font-size--h4: var(--global--font-size--h4);
-  --font-size--h3: var(--global--font-size--h3);
-  --font-size--h2: var(--global--font-size--h2);
-  --font-size--h1: var(--global--font-size--h1);
-  /* Theme Body font sizes */
-  --font-size--body-xxs: var(--global--font-size--body-xxs);
-  --font-size--body-xs: var(--global--font-size--body-xs);
-  --font-size--body-s: var(--global--font-size--body-s);
-  --font-size--body-m: var(--global--font-size--body-m);
-  --font-size--body-l: var(--global--font-size--body-l);
-  --font-size--body-xl: var(--global--font-size--body-xl);
-  --font-size--body-xxl: var(--global--font-size--body-xxl);
-  --font-size--body-xxxl: var(--global--font-size--body-xxxl);
-  --font-size--body-xxxxl: var(--global--font-size--body-xxxxl);
+  --global--font-size--body-xxxl: 1.5rem;
+  --global--font-size--body-xxxxl: 1.75rem;
 }
 @media only screen and (min-width: 48em) {
   body {
-    --global--font-size--h12: 8.875rem;
-    --global--font-size--h11: 10.375rem;
-    --global--font-size--h10: 6rem;
-    --global--font-size--h9: 4.875rem;
-    --global--font-size--h8: 4rem;
-    --global--font-size--h7: 3.25rem;
-    --global--font-size--h6: 2.75rem;
-    --global--font-size--h5: 2.25rem;
-    --global--font-size--h4: 1.75rem;
-    --global--font-size--body-xl: 1.5rem;
-    --global--font-size--body-xxl: 1.75rem;
-    --global--font-size--body-xxxl: 2rem;
-    --global--font-size--body-xxxxl: 2.25rem;
-    /* Default content padding */
+    /* Spacing */
     --global--content--padding--left: 2rem;
     --global--content--padding--right: 2rem;
+    /* Heading Font sizes */
+    --global--font-size--heading-05: 1.75rem;
+    --global--font-size--heading-06: 2.25rem;
+    --global--font-size--heading-07: 2.75rem;
+    --global--font-size--heading-08: 3.25rem;
+    --global--font-size--heading-09: 4rem;
+    --global--font-size--heading-10: 4.875rem;
+    --global--font-size--heading-11: 6rem;
+    --global--font-size--heading-12: 7.25rem;
+    --global--font-size--heading-13: 8.875rem;
+    /* Body font sizes */
+    --global--font-size--body-xl: 1.5rem;
+    --global--font-size--body-xxl: 1.75rem;
+    --global--font-size--body-xxxl: 2.125rem;
+    --global--font-size--body-xxxxl: 2.5rem;
   }
 }
 @media only screen and (min-width: 64em) {
   body {
-    --global--font-size--h12: 15.125rem;
-    --global--font-size--h11: 11.75rem;
-    --global--font-size--h10: 9.25rem;
-    --global--font-size--h9: 7.25rem;
-    --global--font-size--h8: 5.625rem;
-    --global--font-size--h7: 4.375rem;
-    --global--font-size--h6: 3.375rem;
-    --global--font-size--h5: 2.625rem;
-    --global--font-size--h4: 1.875rem;
-    --global--font-size--h3: 1.375rem;
-    --global--font-size--body-l: 1.375rem;
-    --global--font-size--body-xl: 1.625rem;
-    --global--font-size--body-xxl: 1.875rem;
-    --global--font-size--body-xxxl: 2.25rem;
-    --global--font-size--body-xxxxl: 2.625rem;
+    /* Heading Font sizes */
+    --global--font-size--heading-04: 1.375rem;
+    --global--font-size--heading-05: 1.875rem;
+    --global--font-size--heading-06: 2.625rem;
+    --global--font-size--heading-07: 3.375rem;
+    --global--font-size--heading-08: 4.375rem;
+    --global--font-size--heading-09: 5.625rem;
+    --global--font-size--heading-10: 7.25rem;
+    --global--font-size--heading-11: 9.25rem;
+    --global--font-size--heading-12: 11.75rem;
+    --global--font-size--heading-13: 15.125rem;
+    /* Body font sizes */
+    --global--font-size--body-l: 1.5rem;
+    --global--font-size--body-xl: 1.75rem;
   }
 }
 @media only screen and (min-width: 80em) {
   body {
-    --global--font-size--h12: 25rem;
-    --global--font-size--h11: 18.625rem;
-    --global--font-size--h10: 13.875rem;
-    --global--font-size--h9: 10.375rem;
-    --global--font-size--h8: 7.75rem;
-    --global--font-size--h7: 5.75rem;
-    --global--font-size--h6: 4.375rem;
-    --global--font-size--h5: 3rem;
-    --global--font-size--h4: 2.125rem;
-    --global--font-size--h3: 1.5rem;
-    --global--font-size--h2: 1.25rem;
-    --global--font-size--body-m: 1.25rem;
-    --global--font-size--body-l: 1.5rem;
-    --global--font-size--body-xl: 1.75rem;
+    /* Spacing */
+    --global--content--padding--left: 3rem;
+    --global--content--padding--right: 3rem;
+    /* Heading font sizes */
+    --global--font-size--heading-03: 1.25rem;
+    --global--font-size--heading-04: 1.5rem;
+    --global--font-size--heading-05: 2.125rem;
+    --global--font-size--heading-06: 3rem;
+    --global--font-size--heading-07: 4.375rem;
+    --global--font-size--heading-08: 5.75rem;
+    --global--font-size--heading-09: 7.75rem;
+    --global--font-size--heading-10: 10.375rem;
+    --global--font-size--heading-11: 13.875rem;
+    --global--font-size--heading-12: 18.625rem;
+    --global--font-size--heading-13: 25rem;
+    /* Body font sizes */
     --global--font-size--body-xxl: 2.125rem;
     --global--font-size--body-xxxl: 2.5rem;
     --global--font-size--body-xxxxl: 3rem;
-    /* Default content padding */
-    --global--content--padding--left: 3rem;
-    --global--content--padding--right: 3rem;
   }
 }
 
@@ -179,10 +158,7 @@ body {
 /* Divider short */
 /* Placeholders */
 /* Grid gaps */
-/* Shadows in Forms */
-/* Shadow Navigation bar */
-/* Shadows for Cards, Buttons */
-/* Shadows for Cards */
+/* Shadows */
 /* Transitions */
 /* Animations */
 /* Retina Images */
@@ -530,25 +506,25 @@ h6 a {
 }
 
 h1.has-xxxxl-font-size {
-  font-size: var(--font-size--h12) !important;
+  font-size: var(--global--font-size--heading-13) !important;
 }
 
 h1.has-xxxl-font-size,
 h2.has-xxxxl-font-size {
-  font-size: var(--font-size--h11) !important;
+  font-size: var(--global--font-size--heading-12) !important;
 }
 
 h1.has-xxl-font-size,
 h2.has-xxxl-font-size,
 h3.has-xxxxl-font-size {
-  font-size: var(--font-size--h10) !important;
+  font-size: var(--global--font-size--heading-11) !important;
 }
 
 h1.has-xl-font-size,
 h2.has-xxl-font-size,
 h3.has-xxxl-font-size,
 h4.has-xxxxl-font-size {
-  font-size: var(--font-size--h9) !important;
+  font-size: var(--global--font-size--heading-10) !important;
 }
 
 h1.has-l-font-size,
@@ -556,19 +532,19 @@ h2.has-xl-font-size,
 h3.has-xxl-font-size,
 h4.has-xxxl-font-size,
 h5.has-xxxxl-font-size {
-  font-size: var(--font-size--h8) !important;
+  font-size: var(--global--font-size--heading-09) !important;
 }
 
+.editor-post-title__input,
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
 h4.has-xxl-font-size,
 h5.has-xxxl-font-size,
 h6.has-xxxxl-font-size {
-  font-size: var(--font-size--h7) !important;
+  font-size: var(--global--font-size--heading-08) !important;
 }
 
-.editor-post-title__input,
 h1,
 h1.has-s-font-size,
 h2.has-m-font-size,
@@ -576,7 +552,7 @@ h3.has-l-font-size,
 h4.has-xl-font-size,
 h5.has-xxl-font-size,
 h6.has-xxxl-font-size {
-  font-size: var(--font-size--h6) !important;
+  font-size: var(--global--font-size--heading-07) !important;
 }
 
 h2,
@@ -586,7 +562,7 @@ h3.has-m-font-size,
 h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size {
-  font-size: var(--font-size--h5) !important;
+  font-size: var(--global--font-size--heading-06) !important;
 }
 
 h3,
@@ -598,82 +574,94 @@ h5.has-l-font-size,
 h6.has-xl-font-size,
 .comments-area .comments-title,
 .wp-block-post-template.columns-3 h2.wp-block-post-title {
-  font-size: var(--font-size--h4) !important;
+  font-size: var(--global--font-size--heading-05) !important;
 }
 
+h1.has-xxxs-font-size,
 h2.has-xxs-font-size,
 h3.has-xs-font-size,
 h4,
 h4.has-s-font-size,
 h5.has-m-font-size,
 h6.has-l-font-size,
-h1.site-title,
 .site-title {
-  font-size: var(--font-size--h3) !important;
+  font-size: var(--global--font-size--heading-04) !important;
 }
 
+h2.has-xxxs-font-size,
 h3.has-xxs-font-size,
 h4.has-xs-font-size,
-h5,
 h5.has-s-font-size,
-h6.has-m-font-size,
-h1.wp-block-site-title {
-  font-size: var(--font-size--h2) !important;
+h6.has-m-font-size h1.wp-block-site-title {
+  font-size: var(--global--font-size--heading-03) !important;
 }
 
 h4.has-xxs-font-size,
+h3.has-xxxs-font-size,
+h5,
 h5.has-xs-font-size,
-h5.has-xxs-font-size,
-h6,
 h6.has-s-font-size,
-h6.has-xs-font-size,
+h6.has-xs-font-size {
+  font-size: var(--global--font-size--heading-02) !important;
+}
+
+h4.has-xxxs-font-size,
+h5.has-xxs-font-size,
+h5.has-xxxs-font-size,
+h6,
 h6.has-xxs-font-size,
-h6.has-xxs-font-size {
-  font-size: var(--font-size--h1) !important;
+h6.has-xxxs-font-size {
+  font-size: var(--global--font-size--heading-01) !important;
 }
 
 /* Body fonts */
+.wp-block-navigation.has-xxxs-font-size,
+p:not(.wp-block-post-excerpt__more-text).has-xxxs-font-size,
+ol.has-xxxs-font-size,
+ul.has-xxxs-font-size {
+  font-size: var(--global--font-size--body-xxxs);
+}
 .wp-block-navigation.has-xxs-font-size,
 p:not(.wp-block-post-excerpt__more-text).has-xxs-font-size,
 ol.has-xxs-font-size,
 ul.has-xxs-font-size {
-  font-size: var(--font-size--body-xxs);
+  font-size: var(--global--font-size--body-xxs);
 }
 .wp-block-navigation.has-xs-font-size,
 p:not(.wp-block-post-excerpt__more-text).has-xs-font-size,
 ol.has-xs-font-size,
 ul.has-xs-font-size {
-  font-size: var(--font-size--body-xs);
+  font-size: var(--global--font-size--body-xs);
 }
 .wp-block-navigation.has-s-font-size,
 p:not(.wp-block-post-excerpt__more-text).has-s-font-size,
 ol.has-s-font-size,
 ul.has-s-font-size {
-  font-size: var(--font-size--body-s);
+  font-size: var(--global--font-size--body-s);
 }
 .wp-block-navigation.has-m-font-size,
 p:not(.wp-block-post-excerpt__more-text).has-m-font-size,
 ol.has-m-font-size,
 ul.has-m-font-size {
-  font-size: var(--font-size--body-m);
+  font-size: var(--global--font-size--body-m);
 }
 .wp-block-navigation.has-l-font-size,
 p:not(.wp-block-post-excerpt__more-text).has-l-font-size,
 ol.has-l-font-size,
 ul.has-l-font-size {
-  font-size: var(--font-size--body-l);
+  font-size: var(--global--font-size--body-l);
 }
 .wp-block-navigation.has-xl-font-size,
 p:not(.wp-block-post-excerpt__more-text).has-xl-font-size,
 ol.has-xl-font-size,
 ul.has-xl-font-size {
-  font-size: var(--font-size--body-xl);
+  font-size: var(--global--font-size--body-xl);
 }
 .wp-block-navigation.has-xxl-font-size,
 p:not(.wp-block-post-excerpt__more-text).has-xxl-font-size,
 ol.has-xxl-font-size,
 ul.has-xxl-font-size {
-  font-size: var(--font-size--body-xxl);
+  font-size: var(--global--font-size--body-xxl);
 }
 .wp-block-navigation.has-drop-cap:not(:focus):first-letter,
 p:not(.wp-block-post-excerpt__more-text).has-drop-cap:not(:focus):first-letter,
@@ -861,7 +849,7 @@ textarea {
 .editor-default-block-appender .editor-default-block-appender__content {
   font-family: var(--wp--custom--body--typography--font-family);
   line-height: var(--wp--custom--line-height--body);
-  font-size: var(--font-size--body-m);
+  font-size: var(--global--font-size--body-m);
 }
 
 /* Alignment */
@@ -886,7 +874,7 @@ textarea {
 
 /* Paragraph */
 p.wp-block-paragraph {
-  font-size: var(--font-size--body-m);
+  font-size: var(--global--font-size--body-m);
 }
 
 /* Query Block */
@@ -1074,7 +1062,7 @@ p.wp-block-paragraph {
 /* Media */
 figcaption {
   max-width: 100%;
-  font-size: var(--font-size--body-s);
+  font-size: var(--global--font-size--body-xs);
   margin-top: 1rem;
   color: var(--wp--custom--color--font-secondary);
   text-align: left;
@@ -1086,7 +1074,7 @@ figcaption {
 
 .wp-block-gallery .blocks-gallery-image figcaption,
 .wp-block-gallery .blocks-gallery-item figcaption {
-  font-size: var(--font-size--body-xs);
+  font-size: var(--global--font-size--body-xs);
 }
 
 .wp-block-image {
@@ -1116,7 +1104,7 @@ figcaption {
 }
 .wp-block-pullquote blockquote p,
 .wp-block-quote blockquote p {
-  font-size: var(--font-size--body-m);
+  font-size: var(--global--font-size--body-m);
 }
 .wp-block-pullquote p:last-child,
 .wp-block-pullquote blockquote p:last-child,
@@ -1132,7 +1120,7 @@ figcaption {
 .wp-block-quote.is-large,
 .wp-block-quote.is-style-large p {
   margin: 0;
-  font-size: var(--font-size--body-l);
+  font-size: var(--global--font-size--body-l);
   font-style: normal;
 }
 .wp-block-pullquote cite,
@@ -1149,7 +1137,7 @@ figcaption {
   font-weight: bold;
   font-style: normal;
   text-transform: none;
-  font-size: var(--font-size--body-xs);
+  font-size: var(--global--font-size--body-xs);
 }
 .wp-block-pullquote cite,
 .wp-block-pullquote footer,
@@ -1175,7 +1163,7 @@ figcaption {
   border-radius: var(--global--border-radius-s);
 }
 .wp-block-pullquote.is-style-solid-color blockquote p {
-  font-size: var(--font-size--body-m);
+  font-size: var(--global--font-size--body-m);
 }
 .wp-block-pullquote .alignleft blockquote,
 .wp-block-pullquote .alignright blockquote {
@@ -1268,7 +1256,7 @@ figcaption {
 
 .wp-block-cover-image-text,
 .wp-block-cover-image h2 {
-  font-size: var(--font-size--h3) !important;
+  font-size: var(--global--font-size--heading-04) !important;
 }
 
 .wp-block-cover-image .wp-block-cover__inner-container,
@@ -1282,7 +1270,7 @@ figcaption {
 .wp-block[data-type="core/verse"] {
   font-family: var(--wp--custom--code--typography--font-family);
   line-height: var(--wp--custom--line-height--body);
-  font-size: var(--font-size--body-xs);
+  font-size: var(--global--font-size--body-xs);
 }
 
 .wp-block-code {
@@ -1390,7 +1378,7 @@ pre.wp-block-verse {
 }
 .wp-block-separator.is-style-dots:before {
   color: var(--wp--custom--color--border);
-  font-size: var(--font-size--body-l);
+  font-size: var(--global--font-size--body-l);
   letter-spacing: 1em;
   padding-left: 1em;
 }
@@ -1465,7 +1453,7 @@ pre.wp-block-verse {
 .wp-block[data-type="core/latest-posts"] .wp-block-latest-posts {
   margin: 0;
   padding-left: 0;
-  font-size: var(--font-size--body-m);
+  font-size: var(--global--font-size--body-m);
 }
 
 .wp-block[data-type="core/latest-comments"] .wp-block-latest-comments {
@@ -1473,7 +1461,7 @@ pre.wp-block-verse {
   padding: 0;
 }
 .wp-block[data-type="core/latest-comments"] .wp-block-latest-comments .wp-block-latest-comments__comment-excerpt p {
-  font-size: var(--font-size--body-s);
+  font-size: var(--global--font-size--body-xs);
   margin: 0;
 }
 

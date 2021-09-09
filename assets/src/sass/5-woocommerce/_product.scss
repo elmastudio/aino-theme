@@ -186,7 +186,7 @@
 
 				.reset_variations {
 					display: none;
-					font-size: var(--font-size--body-s) !important;
+					font-size: var(--global--font-size--body-xs) !important;
 				}
 			}
 
@@ -198,7 +198,7 @@
 				@include s-r-6(padding-top);
 				@include s-r-6(padding-bottom);
 				display: block;
-				font-size: var(--font-size--body-xl) !important;
+				font-size: var(--global--font-size--body-xl) !important;
 			}
 		}
 
@@ -220,7 +220,7 @@
 
 					a {
 						color: var(--wp--custom--color--font-secondary);
-						font-size: var(--font-size--body-m) !important;
+						font-size: var(--global--font-size--body-m) !important;
 					}
 				}
 
@@ -266,7 +266,7 @@
 
 		.wc-tabs {
 			list-style: none;
-			font-size: var(--font-size--body-l) !important;
+			font-size: var(--global--font-size--body-l) !important;
 			grid-column-start: 1;
 			grid-column-end: 13;
 
@@ -364,12 +364,12 @@
 
 			.meta {
 				margin-bottom: 0;
-				font-size: var(--font-size--body-s) !important;
+				font-size: var(--global--font-size--body-xs) !important;
 				line-height: var(--global--line-height-reset);
 			}
 
 			.description p {
-				font-size: var(--font-size--body-m) !important;
+				font-size: var(--global--font-size--body-m) !important;
 			}
 
 			.description {
@@ -496,7 +496,7 @@
 		grid-column-end: 13;
 
 		h2:not(.woocommerce-loop-product__title) {
-			font-size: var(--font-size--h3) !important;
+			font-size: var(--global--font-size--heading-04) !important;
 			@include s-r-9(padding-bottom);
 		}
 

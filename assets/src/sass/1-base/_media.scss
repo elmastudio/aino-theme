@@ -49,7 +49,7 @@ figure {
 }
 
 .wp-caption .wp-caption-text {
-	font-size: var(--font-size--body-xs);
+	font-size: var(--global--font-size--body-xs);
 	@include s-r-7(margin-top);
 	@include s-r-8(margin-bottom);
 }

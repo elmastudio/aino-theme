@@ -15,8 +15,8 @@ return array(
 	<h2 class="has-variant-font-primary-color has-text-color has-xxs-font-size pb__7">Packaging Design</h2>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"s","paddingTop":0} -->
-	<p class="has-variant-font-secondary-color has-text-color has-s-font-size">We had the pleasure to design the new packaging of Wallis cookies, a famous New Zealand vegan dog cookies brand.</p>
+	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"xs","paddingTop":0} -->
+	<p class="has-variant-font-secondary-color has-text-color has-xs-font-size">We had the pleasure to design the new packaging of Wallis cookies, a famous New Zealand vegan dog cookies brand.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

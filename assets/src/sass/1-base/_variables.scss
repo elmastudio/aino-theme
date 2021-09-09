@@ -20,7 +20,6 @@ $s-17                : 15.5rem;
 $s-18                : 18rem;
 
 :root {
-
 	/* Line Height */
 	--global--line-height-reset: 1;
 
@@ -43,12 +42,9 @@ $s-18                : 18rem;
 	--global--border-radius-xxxl: 3.75rem;
 	--global--border-radius-xxxxl: 4.375rem;
 	--global--border-radius-round: 6.25em;
-}
 
-/* SM breakpoint */
-@media only screen and (min-width: 48em) {
-
-	:root {
+	/* SM breakpoint */
+	@media only screen and (min-width: 48em) {
 
 		/* Border radius */
 		--global--border-radius-xxs: 0.625rem;
@@ -63,132 +59,108 @@ $s-18                : 18rem;
 	}
 }
 
-/* Custom Global styles */
+/* Theme Global Styles */
 body {
-
+	/* Spacing */
 	--wp--style--block-gap: 0;
+	--global--content--padding--left: 1rem;
+	--global--content--padding--right: 1rem;
 
-	/* Global Heading Font sizes */
-	--global--font-size--h12: 5.125rem;
-	--global--font-size--h11: 4.375rem;
-	--global--font-size--h10: 3.75rem;
-	--global--font-size--h9: 3.25rem;
-	--global--font-size--h8: 2.875rem;
-	--global--font-size--h7: 2.375rem;
-	--global--font-size--h6: 2.125rem;
-	--global--font-size--h5: 1.875rem;
-	--global--font-size--h4: 1.5rem;
-	--global--font-size--h3: 1.25rem;
-	--global--font-size--h2: 1.125rem;
-	--global--font-size--h1: 1rem;
+	/* Heading Font sizes */
+	--global--font-size--heading-01: 1rem;
+	--global--font-size--heading-02: 1.125rem; //18px
+	--global--font-size--heading-03: 1.125rem;
+	--global--font-size--heading-04: 1.25rem;
+	--global--font-size--heading-05: 1.5rem;
+	--global--font-size--heading-06: 1.875rem;
+	--global--font-size--heading-07: 2.125rem;
+	--global--font-size--heading-08: 2.375rem;
+	--global--font-size--heading-09: 2.875rem;
+	--global--font-size--heading-10: 3.25rem;
+	--global--font-size--heading-11: 3.75rem;
+	--global--font-size--heading-12: 4.375rem;
+	--global--font-size--heading-13: 5.125rem;
 
-	/* Global body font sizes */
-	--global--font-size--body-xxs: 0.75rem;
-	--global--font-size--body-xs: 0.875rem;
-	--global--font-size--body-s: 1rem;
-	--global--font-size--body-m: 1.125rem;
+	/* Body font sizes */
+	--global--font-size--body-xxxs: 0.75rem;
+	--global--font-size--body-xxs: 0.875rem;
+	--global--font-size--body-xs: 1rem;
+	--global--font-size--body-s: 1.125rem;
+	--global--font-size--body-m: 1.25rem;
 	--global--font-size--body-l: 1.25rem;
 	--global--font-size--body-xl: 1.375rem;
 	--global--font-size--body-xxl: 1.5rem;
-	--global--font-size--body-xxxl: 1.625rem;
-	--global--font-size--body-xxxxl: 1.875rem;
-
-	/* Default content padding */
-	--global--content--padding--left: 1rem;
-	--global--content--padding--right: 1rem;
+	--global--font-size--body-xxxl: 1.5rem;
+	--global--font-size--body-xxxxl: 1.75rem;
 
 	// SM breakpoint
 	@media only screen and (min-width: 48em) {
 
-		--global--font-size--h12: 8.875rem;
-		--global--font-size--h11: 10.375rem;
-		--global--font-size--h10: 6rem;
-		--global--font-size--h9: 4.875rem;
-		--global--font-size--h8: 4rem;
-		--global--font-size--h7: 3.25rem;
-		--global--font-size--h6: 2.75rem;
-		--global--font-size--h5: 2.25rem;
-		--global--font-size--h4: 1.75rem;
-
-		--global--font-size--body-xl: 1.5rem;
-		--global--font-size--body-xxl: 1.75rem;
-		--global--font-size--body-xxxl: 2rem;
-		--global--font-size--body-xxxxl: 2.25rem;
-
-		/* Default content padding */
+		/* Spacing */
 		--global--content--padding--left: 2rem;
 		--global--content--padding--right: 2rem;
+	
+		/* Heading Font sizes */
+		--global--font-size--heading-05: 1.75rem;
+		--global--font-size--heading-06: 2.25rem;
+		--global--font-size--heading-07: 2.75rem;
+		--global--font-size--heading-08: 3.25rem;
+		--global--font-size--heading-09: 4rem;
+		--global--font-size--heading-10: 4.875rem;
+		--global--font-size--heading-11: 6rem;
+		--global--font-size--heading-12: 7.25rem;
+		--global--font-size--heading-13: 8.875rem;
+
+		/* Body font sizes */
+		--global--font-size--body-xl: 1.5rem;
+		--global--font-size--body-xxl: 1.75rem;
+		--global--font-size--body-xxxl: 2.125rem;
+		--global--font-size--body-xxxxl: 2.5rem;
 	}
 
 	// MD breakpoint
 	@media only screen and (min-width: 64em) {
 
-		--global--font-size--h12: 15.125rem;
-		--global--font-size--h11: 11.75rem;
-		--global--font-size--h10: 9.25rem;
-		--global--font-size--h9: 7.25rem;
-		--global--font-size--h8: 5.625rem;
-		--global--font-size--h7: 4.375rem;
-		--global--font-size--h6: 3.375rem;
-		--global--font-size--h5: 2.625rem;
-		--global--font-size--h4: 1.875rem;
-		--global--font-size--h3: 1.375rem;
+		/* Heading Font sizes */
+		--global--font-size--heading-04: 1.375rem;
+		--global--font-size--heading-05: 1.875rem;
+		--global--font-size--heading-06: 2.625rem;
+		--global--font-size--heading-07: 3.375rem;
+		--global--font-size--heading-08: 4.375rem;
+		--global--font-size--heading-09: 5.625rem;
+		--global--font-size--heading-10: 7.25rem;
+		--global--font-size--heading-11: 9.25rem;
+		--global--font-size--heading-12: 11.75rem;
+		--global--font-size--heading-13: 15.125rem;
 
-		--global--font-size--body-l: 1.375rem;
-		--global--font-size--body-xl: 1.625rem;
-		--global--font-size--body-xxl: 1.875rem;
-		--global--font-size--body-xxxl: 2.25rem;
-		--global--font-size--body-xxxxl: 2.625rem;
+		/* Body font sizes */
+		--global--font-size--body-l: 1.5rem;
+		--global--font-size--body-xl: 1.75rem;
 	}
 
 	// LG breakpoint
 	@media only screen and (min-width: 80em) {
-		--global--font-size--h12: 25rem;
-		--global--font-size--h11: 18.625rem;
-		--global--font-size--h10: 13.875rem;
-		--global--font-size--h9: 10.375rem;
-		--global--font-size--h8: 7.75rem;
-		--global--font-size--h7: 5.75rem;
-		--global--font-size--h6: 4.375rem;
-		--global--font-size--h5: 3rem;
-		--global--font-size--h4: 2.125rem;
-		--global--font-size--h3: 1.5rem;
-		--global--font-size--h2: 1.25rem;
 
-		--global--font-size--body-m: 1.25rem;
-		--global--font-size--body-l: 1.5rem;
-		--global--font-size--body-xl: 1.75rem;
+		/* Spacing */
+		--global--content--padding--left: 3rem;
+		--global--content--padding--right: 3rem;
+
+		/* Heading font sizes */
+		--global--font-size--heading-03: 1.25rem;
+		--global--font-size--heading-04: 1.5rem;
+		--global--font-size--heading-05: 2.125rem;
+		--global--font-size--heading-06: 3rem;
+		--global--font-size--heading-07: 4.375rem;
+		--global--font-size--heading-08: 5.75rem;
+		--global--font-size--heading-09: 7.75rem;
+		--global--font-size--heading-10: 10.375rem;
+		--global--font-size--heading-11: 13.875rem;
+		--global--font-size--heading-12: 18.625rem;
+		--global--font-size--heading-13: 25rem;
+
+		/* Body font sizes */
 		--global--font-size--body-xxl: 2.125rem;
 		--global--font-size--body-xxxl: 2.5rem;
 		--global--font-size--body-xxxxl: 3rem;
-
-		/* Default content padding */
-		--global--content--padding--left: 3rem;
-		--global--content--padding--right: 3rem;
 	}
-
-	/* Theme Heading font sizes */
-	--font-size--h12: var(--global--font-size--h12);
-	--font-size--h11: var(--global--font-size--h11);
-	--font-size--h10: var(--global--font-size--h10);
-	--font-size--h9: var(--global--font-size--h9);
-	--font-size--h8: var(--global--font-size--h8);
-	--font-size--h7: var(--global--font-size--h7);
-	--font-size--h6: var(--global--font-size--h6);
-	--font-size--h5: var(--global--font-size--h5);
-	--font-size--h4: var(--global--font-size--h4);
-	--font-size--h3: var(--global--font-size--h3);
-	--font-size--h2: var(--global--font-size--h2);
-	--font-size--h1: var(--global--font-size--h1);
-
-	/* Theme Body font sizes */
-	--font-size--body-xxs: var(--global--font-size--body-xxs);
-	--font-size--body-xs: var(--global--font-size--body-xs);
-	--font-size--body-s: var(--global--font-size--body-s);
-	--font-size--body-m: var(--global--font-size--body-m);
-	--font-size--body-l: var(--global--font-size--body-l);
-	--font-size--body-xl: var(--global--font-size--body-xl);
-	--font-size--body-xxl: var(--global--font-size--body-xxl);
-	--font-size--body-xxxl: var(--global--font-size--body-xxxl);
-	--font-size--body-xxxxl: var(--global--font-size--body-xxxxl);
 }

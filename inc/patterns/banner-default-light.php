@@ -10,8 +10,8 @@ return array(
 	'categories' => array( 'aino-banner' ),
 	'content'    => '<!-- wp:ainoblocks/flexbox {"flexDirectionMobile":"direction__colrev__m","justifyContentDesktop":"justify__center__d","style":{"color":{"background":"#c2c7c9"}}} -->
 	<div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__colrev__m nowrap__d nowrap_t nowrap_m justify__center__d justify__flexstart__t justify__flexstart__m align-items__stretch__d align-items__stretch__t align-itms__stretch__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none has-background" style="background-color:#c2c7c9"><!-- wp:ainoblocks/flex-item {"flexGrow":2,"paddingTop":9,"paddingBottom":9,"paddingLeft":8,"paddingRight":8} -->
-	<div class="wp-block-ainoblocks-flex-item auto pt__9 pb__9 pl__8 pr__8" style="flex-grow:2"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s","paddingTop":0,"paddingBottom":3} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size pb__3">Our new WordPress theme</p>
+	<div class="wp-block-ainoblocks-flex-item auto pt__9 pb__9 pl__8 pr__8" style="flex-grow:2"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":0,"paddingBottom":3} -->
+	<p class="has-font-secondary-color has-text-color has-xs-font-size pb__3">Our new WordPress theme</p>
 	<!-- /wp:paragraph -->
 	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"m","paddingTop":0,"paddingBottom":5,"paddingLeft":0,"paddingRight":0} -->
 	<h3 class="has-font-primary-color has-text-color has-m-font-size pb__5">Build a shiny new website</h3>

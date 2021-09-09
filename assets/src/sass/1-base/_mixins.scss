@@ -580,25 +580,22 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Shadows in Forms */
+/* Shadows */
 @mixin shadow-1 {
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Shadow Navigation bar */
 @mixin shadow-2 {
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
 	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
 }
 
-/* Shadows for Cards, Buttons */
 @mixin shadow-3 {
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Shadows for Cards */
 @mixin shadow-4 {
 	box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);

@@ -49,6 +49,7 @@ Enhance: Clean up Sass styles.
 Enhance: Set Contentgap to 'null' in theme.json file.
 Enhance: Footer navigation menu's default setting.
 Enhance: Color variables.
+Enhance: font sizes.
 Bugfix: Padding of blocks on single post.
 
 = 2.4.1 =

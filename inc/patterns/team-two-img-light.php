@@ -17,8 +17,8 @@ return array(
 	<h2 class="has-font-primary-color has-text-color has-xxs-font-size pb__11">Our team</h2>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s"} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size">We are a small design studio in Berlin, Germany. Our clients value that we build them individual, creative solutions tailored to their needs..</p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs"} -->
+	<p class="has-font-secondary-color has-text-color has-xs-font-size">We are a small design studio in Berlin, Germany. Our clients value that we build them individual, creative solutions tailored to their needs..</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -29,12 +29,12 @@ return array(
 	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-two-img-01.jpg" alt=""/></figure>
 	<!-- /wp:image -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"s","paddingTop":5} -->
-	<h3 class="has-font-primary-color has-text-color has-s-font-size pt__5">Lilly Wong</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"xs","paddingTop":5} -->
+	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Lilly Wong</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__3">Creative Director</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">Creative Director</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -43,12 +43,12 @@ return array(
 	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-two-img-02.jpg" alt=""/></figure>
 	<!-- /wp:image -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"s","paddingTop":5} -->
-	<h3 class="has-font-primary-color has-text-color has-s-font-size pt__5">Sandy Garcia</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"xs","paddingTop":5} -->
+	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Sandy Garcia</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__3">Senior Developer</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">Senior Developer</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

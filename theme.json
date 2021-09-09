@@ -292,19 +292,25 @@
 					"name": "Monospace"
 				}
 			],
-			"fontSizes": [{
-					"name": "XXS",
+			"fontSizes": [
+				{
+					"name": "XXXS",
 					"size": "12px",
+					"slug": "xxxs"
+				},
+				{
+					"name": "XXS",
+					"size": "14px",
 					"slug": "xxs"
 				},
 				{
 					"name": "XS",
-					"size": "14px",
+					"size": "16px",
 					"slug": "xs"
 				},
 				{
 					"name": "S",
-					"size": "16px",
+					"size": "18px",
 					"slug": "s"
 				},
 				{

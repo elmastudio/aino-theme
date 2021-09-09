@@ -150,7 +150,7 @@ padding-right: 0;
 	input[type=text],
 	input[type=url],
 	.components-custom-select-control__button {
-		font-size: var(--font-size--body-m) !important;
+		font-size: var(--global--font-size--body-m) !important;
 		border-radius: var(--global--border-radius-xxs);
 		border: 1px solid var(--global--color--form-border);
 		line-height: var(--wp--custom--line-height--body);
@@ -176,7 +176,7 @@ padding-right: 0;
 
 		p {
 			line-height: var(--global--line-height-reset);
-			font-size: var(--font-size--body-xxs) !important;
+			font-size: var(--global--font-size--body-xxs) !important;
 			margin: 0;
 			@include s-r-1(padding-top);
 		}
@@ -259,11 +259,11 @@ padding-right: 0;
 	height: 3.75rem;
 
 	label.components-custom-select-control__label {
-		font-size: var(--font-size--body-m) !important;
+		font-size: var(--global--font-size--body-m) !important;
 	}
 
 	.components-custom-select-control__button {
-		font-size: var(--font-size--body-m) !important;
+		font-size: var(--global--font-size--body-m) !important;
 		height: 3.75rem;
 		padding: 1rem 0 0 1.25rem;
 		line-height: var(--wp--custom--line-height--body);
@@ -300,7 +300,7 @@ padding-right: 0;
 		}
 
 		&:hover {
-			font-size: var(--font-size--body-m) !important;
+			font-size: var(--global--font-size--body-m) !important;
 			line-height: var(--wp--custom--line-height--body);
 			transform: none;
 		}
@@ -308,7 +308,7 @@ padding-right: 0;
 		&:focus,
 		&:active,
 		&:hover {
-			font-size: var(--font-size--body-m) !important;
+			font-size: var(--global--font-size--body-m) !important;
 			line-height: var(--wp--custom--line-height--body);
 			transform: none;
 			height: 3.75rem;
@@ -320,7 +320,7 @@ padding-right: 0;
 	.components-custom-select-control__menu {
 		padding: 0;
 		margin: 0;
-		font-size: var(--font-size--body-s) !important;
+		font-size: var(--global--font-size--body-xs) !important;
 		border-color: var(--global--color--form-border);
 
 		.components-custom-select-control__item {
@@ -405,7 +405,7 @@ padding-right: 0;
 		}
 
 		label {
-			font-size: var(--font-size--body-m) !important;
+			font-size: var(--global--font-size--body-m) !important;
 			line-height: var(--wp--custom--line-height--body);
 		}
 	}
@@ -441,7 +441,7 @@ padding-right: 0;
 }
 
 .wc-block-components-validation-error {
-	font-size: var(--font-size--body-xxs) !important;
+	font-size: var(--global--font-size--body-xxs) !important;
 	color: var(--global--color--error);
 	max-width: 100%;
 	position: absolute;
@@ -539,7 +539,7 @@ padding-right: 0;
 // WC buttons
 .wc-block-components-button:not(.is-link) {
 	font-weight: normal;
-	font-size: var(--font-size--body-m) !important;
+	font-size: var(--global--font-size--body-m) !important;
 	padding: 18px 20px;
 	@include transition-default;
 }

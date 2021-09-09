@@ -17,8 +17,8 @@ return array(
 	<h2 class="has-variant-font-primary-color has-text-color has-m-font-size">New Ideas</h2>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"s","paddingTop":7} -->
-	<p class="has-variant-font-tertiary-color has-text-color has-s-font-size pt__7">Innovative designs and new beginnings</p>
+	<!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"xs","paddingTop":7} -->
+	<p class="has-variant-font-tertiary-color has-text-color has-xs-font-size pt__7">Innovative designs and new beginnings</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -27,16 +27,16 @@ return array(
 	<h3 class="has-variant-font-primary-color has-text-color has-xxs-font-size pb__4">Built for the WordPress editor</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"s","paddingBottom":11} -->
-	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pb__11"><meta charset="utf-8">We have been building designs for WordPress for over ten years and we are excited to announce our latest project. The development of the WordPress editor creates a fresh perspective of the role themes play in the WP ecosystem.</p>
+	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"xs","paddingBottom":11} -->
+	<p class="has-variant-font-secondary-color has-text-color has-xs-font-size pb__11"><meta charset="utf-8">We have been building designs for WordPress for over ten years and we are excited to announce our latest project. The development of the WordPress editor creates a fresh perspective of the role themes play in the WP ecosystem.</p>
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"xxs","paddingBottom":4} -->
 	<h3 class="has-variant-font-primary-color has-text-color has-xxs-font-size pb__4">A flexible module system</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"s"} -->
-	<p class="has-variant-font-secondary-color has-text-color has-s-font-size">With our Aino base theme, a growing block pattern library and a creative block collection we can bring innovative, fun and individual website designs to you. Let’s create websites that don’t look like every other template.</p>
+	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"xs"} -->
+	<p class="has-variant-font-secondary-color has-text-color has-xs-font-size">With our Aino base theme, a growing block pattern library and a creative block collection we can bring innovative, fun and individual website designs to you. Let’s create websites that don’t look like every other template.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
