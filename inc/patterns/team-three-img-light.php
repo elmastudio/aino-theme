@@ -33,8 +33,8 @@ return array(
 	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Linda Chen</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__3">Creative Director</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">Creative Director</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -47,8 +47,8 @@ return array(
 	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Sandra Garcia</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__3">Senior Designer</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">Senior Designer</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -61,8 +61,8 @@ return array(
 	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Andre Williams</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__3">App Developer</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">App Developer</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

@@ -19,8 +19,8 @@ return array(
 	<h2 class="has-variant-font-primary-color has-text-color has-m-font-size">Creative Design</h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"s","paddingTop":11} -->
-	<p class="has-variant-font-secondary-color has-text-color has-s-font-size pt__11">With our Aino base theme, a growing block pattern library and a creative block collection we can bring innovative, fun and individual website designs to you. Let’s create websites that don’t look like every other template.</p>
+	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"xs","paddingTop":11} -->
+	<p class="has-variant-font-secondary-color has-text-color has-xs-font-size pt__11">With our Aino base theme, a growing block pattern library and a creative block collection we can bring innovative, fun and individual website designs to you. Let’s create websites that don’t look like every other template.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:ainoblocks/multiple-buttons {"paddingTop":9} -->

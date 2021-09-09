@@ -1,0 +1,43 @@
+:root {
+
+	/* Base Colors (default and variant color palette) */
+	--global--color--border: #D8D8D8;
+	--global--color--form-border: #bbbbbb;
+	--global--color--form-background: #ffffff;
+	--global--color--form-select-fill: #ffffff;
+	--global--color--notification: #003679;
+	--global--color--notification-border: #5CA5FF;
+	--global--color--notification-background: #B8D7FF;
+	--global--color--success: #006319;
+	--global--color--success-border: #63D383;
+	--global--color--success-background: #B8F3C6;
+	--global--color--error: #790000;
+	--global--color--error-border: #FF5C60;
+	--global--color--error-background: #FFB8B8;
+	--global--color--product-badge-color: #282828;
+	--global--color--product-badge-background: #ffffff;
+	--global--color--star-rating: #282828;
+	--global--color--form-border-active: #0075EE;
+	--global--color--form-glow: rgba(0, 119, 247, 0.2);
+	// Variant colors
+	--global--color--variant-border: #4A4A4A;
+	--global--color--variant-form-border: #666666;
+	--global--color--variant-form-border-active: #2E8CFD;
+	--global--color--variant-form-glow: rgba(46, 140, 253, 0.2);
+	--global--color--variant-form-background: #121212;
+	--global--color--variant-form-select-fill: #121212;
+	--global--color--variant-notification: #B8D7FF;
+	--global--color--variant-notification-border: #005ED2;
+	--global--color--variant-notification-background: #003679;
+	--global--color--variant-success: #B8F3C6;
+	--global--color--variant-success-border: #119236;
+	--global--color--variant-success-background: #006319;
+	--global--color--variant-error: #FFB8B8;
+	--global--color--variant-error-border: #C70510;
+	--global--color--variant-error-background: #790000;
+	--global--color--variant-code-color: #216F6D;
+	--global--color--variant-code-background: #CAFAF8;
+	--global--color--variant-star-rating: #F4F4F4;
+	--global--color--variant-product-badge-color: #F4F4F4;
+	--global--color--variant-product-badge-background: #121212;
+}

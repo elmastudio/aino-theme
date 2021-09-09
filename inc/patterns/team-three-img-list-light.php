@@ -27,12 +27,12 @@ return array(
 	<h3 class="has-font-primary-color has-text-color has-m-font-size">Lisa Jones</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":4} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__4">Art Director</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":4} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__4">Art Director</p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">Lisa a a the head of our art department. She is responsible for the coordination of the entire team and and a great coworker to talk to. She is fun, easy going and loves dogs, hiking and outdoor adventures.</p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":7} -->
+	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__7">Lisa a a the head of our art department. She is responsible for the coordination of the entire team and and a great coworker to talk to. She is fun, easy going and loves dogs, hiking and outdoor adventures.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->
@@ -55,12 +55,12 @@ return array(
 	<h3 class="has-font-primary-color has-text-color has-m-font-size">Jessa Miller </h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":4} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__4">Marketing Assistant</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":4} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__4">Marketing Assistant</p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">Jessa loves marketing and is the pep talker in our team. If you are down, talk to Jessa and she will make sure you feel better. She is helping our clients to empower them and their brand in the digital market. In short, she is just an awesome person.</p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":7} -->
+	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__7">Jessa loves marketing and is the pep talker in our team. If you are down, talk to Jessa and she will make sure you feel better. She is helping our clients to empower them and their brand in the digital market. In short, she is just an awesome person.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->
@@ -83,12 +83,12 @@ return array(
 	<h3 class="has-font-primary-color has-text-color has-m-font-size">Jon Smith </h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"s","paddingTop":4} -->
-	<p class="has-font-tertiary-color has-text-color has-s-font-size pt__4">Frontend Developer</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":4} -->
+	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__4">Frontend Developer</p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"s","paddingTop":7} -->
-	<p class="has-font-secondary-color has-text-color has-s-font-size pt__7">If you need help with tech, Jon will be your guy. He is calm and a coffee lover, so if you like coffee you will have something in common with Jon. He is our code guy and we all love him for this.</p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":7} -->
+	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__7">If you need help with tech, Jon will be your guy. He is calm and a coffee lover, so if you like coffee you will have something in common with Jon. He is our code guy and we all love him for this.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

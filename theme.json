@@ -75,6 +75,7 @@
 		"spacing": {
 			"customMargin": false,
 			"customPadding": false,
+			"blockGap": null,
 			"units": ["px", "em", "rem", "vh", "vw"]
 		},
 		"color": {
@@ -92,16 +93,6 @@
 					"name": "Background Secondary"
 				},
 				{
-					"slug": "button-color-primary",
-					"color": "#ffffff",
-					"name": "Button Color Primary"
-				},
-				{
-					"slug": "button-color-secondary",
-					"color": "#121212",
-					"name": "Button Color Secondary"
-				},
-				{
 					"slug": "font-primary",
 					"color": "#121212",
 					"name": "Font Primary"
@@ -113,8 +104,18 @@
 				},
 				{
 					"slug": "font-tertiary",
-					"color": "#787b7d",
+					"color": "#838383",
 					"name": "Font Tertiary"
+				},
+				{
+					"slug": "button-color-primary",
+					"color": "#ffffff",
+					"name": "Button Color Primary"
+				},
+				{
+					"slug": "button-color-secondary",
+					"color": "#121212",
+					"name": "Button Color Secondary"
 				},
 				{
 					"slug": "primary",
@@ -137,39 +138,39 @@
 					"name": "Variant Background Secondary"
 				},
 				{
-					"slug": "variant-button-color-primary",
-					"color": "#fcfcfc",
-					"name": "Variant Button Color Primary"
-				},
-				{
-					"slug": "variant-button-color-secondary",
-					"color": "#121212",
-					"name": "Variant Button Color Secondary"
-				},
-				{
 					"slug": "variant-font-primary",
 					"color": "#ffffff",
 					"name": "Variant Font Primary"
 				},
 				{
 					"slug": "variant-font-secondary",
-					"color": "#d9d9d9",
+					"color": "#f4f4f4",
 					"name": "Variant Font Secondary"
 				},
 				{
 					"slug": "variant-font-tertiary",
-					"color": "#777B7D",
+					"color": "#9F9F9F",
 					"name": "Variant Font Tertiary"
 				},
 				{
 					"slug": "variant-primary",
-					"color": "#777B7D",
+					"color": "#ffffff",
 					"name": "Variant Primary"
 				},
 				{
 					"slug": "variant-secondary",
-					"color": "#7EBBFC",
+					"color": "#2E8CFD",
 					"name": "Variant Secondary"
+				},
+				{
+					"slug": "variant-button-color-primary",
+					"color": "#121212",
+					"name": "Variant Button Color Primary"
+				},
+				{
+					"slug": "variant-button-color-secondary",
+					"color": "#121212",
+					"name": "Variant Button Color Secondary"
 				}
 			],
 			"gradients": [{
@@ -291,19 +292,25 @@
 					"name": "Monospace"
 				}
 			],
-			"fontSizes": [{
-					"name": "XXS",
+			"fontSizes": [
+				{
+					"name": "XXXS",
 					"size": "12px",
+					"slug": "xxxs"
+				},
+				{
+					"name": "XXS",
+					"size": "14px",
 					"slug": "xxs"
 				},
 				{
 					"name": "XS",
-					"size": "14px",
+					"size": "16px",
 					"slug": "xs"
 				},
 				{
 					"name": "S",
-					"size": "16px",
+					"size": "18px",
 					"slug": "s"
 				},
 				{
@@ -429,23 +436,12 @@
 					]
 				}
 			},
-			"ainoblocks/card": {
-				"color": {
-					"palette": [
-						{
-							"slug": "code-background",
-							"color": "#002F33",
-							"name": "Code Background"
-						}
-					]
-				}
-			},
 			"core/preformatted": {
 				"color": {
 					"palette": [
 						{
 							"slug": "code-background",
-							"color": "#002F33",
+							"color": "#114A48",
 							"name": "Code Background"
 						},
 						{
@@ -486,6 +482,9 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/template-part": {
+			
+			},
 			"core/heading": {
 				"typography": {
 					"fontWeight": "700",
