@@ -14,6 +14,23 @@ __License:__ GPLv3 or later
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 2.4.2  
+Enhance: Update to webpack building tools.  
+Enhance: Clean up Sass styles.  
+Enhance: Set Contentgap to 'null' in theme.json file.  
+Enhance: Footer navigation menu's default setting.  
+Enhance: Color variables.  
+Enhance: font sizes.  
+Bugfix: Padding of blocks on single post.  
+Bugfix: Header alignment.  
+
+
+### 2.4.1  
+Bugfix: Group block padding fix that caused extra borders around container blocks.  
+
+### 2.4.0  
+New: Banner block patterns.  
   
 ### 2.3.0  
 Enhance: Slim default Footers and new 2 column Footers.  
