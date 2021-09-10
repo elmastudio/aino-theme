@@ -1,6 +1,6 @@
 {
 	"name": "aino",
-	"version": "2.4.4",
+	"version": "2.4.5",
 	"description": "Aino is a blocks-first WordPress theme for everyone who wants to build websites with creative, individual page layouts.",
 	"scripts": {
 		"prod": "cross-env NODE_ENV=production webpack --mode production --progress",
