@@ -44,6 +44,7 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 2.4.5 =
+Bugfix: Default page template outer page gap.
 
 = 2.4.4 =
 Bugfix: Header template part alignment and padding.
