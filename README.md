@@ -15,6 +15,10 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 2.4.6  
+Enhance: Outer content gap.  
+Enhance: Typography variables.  
+
 ### 2.4.5  
 Bugfix: Default page template outer page gap.  
 
