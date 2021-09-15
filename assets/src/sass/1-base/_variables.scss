@@ -63,8 +63,8 @@ $s-18                : 18rem;
 body {
 	/* Spacing */
 	--wp--style--block-gap: 0;
-	--global--content--padding--left: 1rem;
-	--global--content--padding--right: 1rem;
+	--global--content--padding--left: 1.5rem;
+	--global--content--padding--right: 1.5rem;
 
 	/* Heading Font sizes */
 	--global--font-size--heading-01: 1rem;
@@ -120,6 +120,10 @@ body {
 
 	// MD breakpoint
 	@media only screen and (min-width: 64em) {
+
+		/* Spacing */
+		--global--content--padding--left: 2.5rem;
+		--global--content--padding--right: 2.5rem;
 
 		/* Heading Font sizes */
 		--global--font-size--heading-04: 1.375rem;
