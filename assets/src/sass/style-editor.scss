@@ -27,6 +27,11 @@
 	padding-right: var(--global--content--padding--right);
 }
 
+//Delete default padding for Fullwidth group block with background
+.editor-styles-wrapper .wp-block[data-align=full] .wp-block-group.has-background {
+	padding: 0 !important;
+}
+
 /* Typography */
 body {
 	font-family: var(--wp--custom--body--typography--font-family);

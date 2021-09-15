@@ -14,10 +14,11 @@ input[type="submit"] {
 
 /* Button Hover Color */
 .wp-block-button__link,
-.wp-block-ainoblocks-button .wp-block-ainoblocks-button__link,
+.wp-block-ainoblocks-button:not(.is-style-outline) .wp-block-ainoblocks-button__link,
 .wc-block-components-button:not(.is-link) {
 
 	&:hover {
+		color: var(--wp--custom--color--button-color-secondary);
 		background-color: var(--wp--custom--color--secondary);
 	}
 }

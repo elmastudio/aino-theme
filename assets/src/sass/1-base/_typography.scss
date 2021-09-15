@@ -41,6 +41,16 @@ div[class*='wp-block-'] figcaption,
 	font-size: var(--global--font-size--body-xs) !important;;
 }
 
+.post-header,
+.entry-content,
+.site-content {
+
+	p.has-x-font-size,
+	.has-x-font-size p {
+		font-size: var(--global--font-size--body-s) !important;
+	}
+}
+
 .wp-block-post-comments .commentlist,
 .post-header,
 .entry-content,
@@ -96,6 +106,8 @@ div[class*='wp-block-'] figcaption,
 
 .page-header .description p,
 .entry-content p.has-m-font-size,
+.single-post .entry-content p,
+.single-product .entry-content p,
 li.has-m-font-size,
 .entry-content .wp-block-post-excerpt.has-m-font-size p,
 .entry-content .wp-block-post-terms.has-m-font-size,
@@ -111,7 +123,6 @@ address,
 .entry-content form p,
 .wc-block-cart__sidebar .wc-block-cart__totals-title,
 .custom-product-page-link,
-.entry-content p,
 .hentry ol,
 .hentry ul,
 dl,
