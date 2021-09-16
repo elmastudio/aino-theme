@@ -1,4 +1,4 @@
-# Aino: A theme for the WordPress block editor
+# Aino: A Full Site Editing block theme for WordPress
 
 ![Aino Screenshot](https://user-images.githubusercontent.com/17613630/127469578-6d68db51-54b2-45a2-a2e8-7ecef3816ee4.png)
 
@@ -14,6 +14,12 @@ __License:__ GPLv3 or later
 __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 ## Changelog  
+
+### 2.5.0  
+New: Feature patterns.  
+
+### 2.4.7  
+Bugfix: Group block with background.  
 
 ### 2.4.6  
 Enhance: Outer content gap.  
