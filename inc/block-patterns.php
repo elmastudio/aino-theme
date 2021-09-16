@@ -66,6 +66,8 @@ if ( ! function_exists( 'aino_register_block_patterns' ) ) :
 			$block_patterns = array(
 				'hero-text-img-below-light',
 				'hero-text-img-below-dark',
+				'feature-grid-one-two-col-light',
+				'feature-grid-one-two-col-dark',
 				'feature-heading-two-text-img-dark',
 				'feature-heading-two-text-img-light',
 				'feature-text-right-img-left-dark',
