@@ -1,6 +1,10 @@
 .site-header {
 	position: relative;
 
+	.wp-block-navigation__container {
+		gap: 0;
+	}
+
 	.header-content,
 	&__content {
 		display: flex;
