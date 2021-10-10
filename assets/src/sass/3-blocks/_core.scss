@@ -10,7 +10,7 @@
 
 		.wp-block-button {
 			float: left;
-			margin-top: $s-1;
+			margin-top: var(--space-01);
 			@include s-r-6(margin-right);
 		}
 	}
@@ -19,7 +19,7 @@
 
 		.wp-block-button {
 			float: right;
-			margin-top: $s-1;
+			margin-top: var(--space-01);
 			@include s-r-6(margin-left);
 		}
 	}
@@ -59,15 +59,15 @@
 
 		@include breakpoint(sm) {
 			float: left;
-			margin: 0 $s-7 $s-7 0;
+			margin: 0 var(--space-07)var(--space-07) 0;
 		}
 
 		@include breakpoint(md) {
-			margin: 0 $s-9 $s-9;
+			margin: 0 var(--space-09) var(--space-09);
 		}
 
 		@include breakpoint(xl) {
-			margin: 0 $s-9 $s-9 $s-7;
+			margin: 0 var(--space-09) var(--space-09) var(--space-07);
 		}
 	}
 
@@ -75,15 +75,15 @@
 
 		@include breakpoint(sm) {
 			float: right;
-			margin: 0 0 $s-7 $s-7;
+			margin: 0 0 var(--space-07) var(--space-07);
 		}
 
 		@include breakpoint(md) {
-			margin: 0 $s-9 $s-9;
+			margin: 0 var(--space-09) var(--space-09);
 		}
 
 		@include breakpoint(xl) {
-			margin: 0 $s-7 $s-9 $s-9;
+			margin: 0 var(--space-07) var(--space-09) var(--space-09);
 		}
 	}
 }

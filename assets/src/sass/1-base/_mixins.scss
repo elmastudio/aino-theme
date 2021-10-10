@@ -65,235 +65,79 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Responsive Spacing */
 @mixin s-r-0($property) {
-	#{$property}: $s-0;
+	#{$property}: 0;
 }
 
 @mixin s-r-1($property) {
-	#{$property}: $s-1;
+	#{$property}: var(--s-r-1);
 }
 
 @mixin s-r-2($property) {
-	#{$property}: $s-2;
+	#{$property}: var(--s-r-2);
 }
 
 @mixin s-r-3($property) {
-	#{$property}: $s-3;
+	#{$property}: var(--s-r-3);
 }
 
 @mixin s-r-4($property) {
-	#{$property}: $s-4;
+	#{$property}: var(--s-r-4);
 }
 
 @mixin s-r-5($property) {
-	#{$property}: $s-4;
-
-	@include breakpoint(lg) {
-		#{$property}: $s-5;
-	}
+	#{$property}: var(--s-r-5);
 }
 
 @mixin s-r-6($property) {
-	#{$property}: $s-4;
-
-	@include breakpoint(md) {
-		#{$property}: $s-5;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-6;
-	}
+	#{$property}: var(--s-r-6);
 }
 
 @mixin s-r-7($property) {
-	#{$property}: $s-4;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-5;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-6;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-7;
-	}
+	#{$property}: var(--s-r-7);
 }
 
 @mixin s-r-8($property) {
-	#{$property}: $s-5;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-6;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-7;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-8;
-	}
+	#{$property}: var(--s-r-8);
 }
 
 @mixin s-r-9($property) {
-	#{$property}: $s-6;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-7;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-8;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-9;
-	}
+	#{$property}: var(--s-r-9);
 }
 
 @mixin s-r-10($property) {
-	#{$property}: $s-7;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-8;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-9;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-10;
-	}
+	#{$property}: var(--s-r-10);
 }
 
 @mixin s-r-11($property) {
-	#{$property}: $s-8;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-9;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-10;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-11;
-	}
+	#{$property}: var(--s-r-11);
 }
 
 @mixin s-r-12($property) {
-	#{$property}: $s-9;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-10;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-11;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-12;
-	}
+	#{$property}: var(--s-r-12);
 }
 
 @mixin s-r-13($property) {
-	#{$property}: $s-10;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-11;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-12;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-13;
-	}
+	#{$property}: var(--s-r-13);
 }
 
 @mixin s-r-14($property) {
-	#{$property}: $s-11;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-12;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-13;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-14;
-	}
+	#{$property}: var(--s-r-14);
 }
 
 @mixin s-r-15($property) {
-	#{$property}: $s-12;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-13;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-14;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-15;
-	}
+	#{$property}: var(--s-r-15);
 }
 
 @mixin s-r-16($property) {
-	#{$property}: $s-13;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-14;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-15;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-16;
-	}
+	#{$property}: var(--s-r-16);
 }
 
 @mixin s-r-17($property) {
-	#{$property}: $s-14;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-15;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-16;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-17;
-	}
+	#{$property}: var(--s-r-17);
 }
 
 @mixin s-r-18($property) {
-	#{$property}: $s-15;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-16;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-17;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-18;
-	}
+	#{$property}: var(--s-r-18);
 }
 
 /* Buttons */
@@ -475,44 +319,44 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Avatars */
 @mixin avatar-l {
-	width: $s-11;
-	height: $s-11;
-	min-width: $s-11;
-	min-height: $s-11;
+	width: var(--space-11);
+	height: var(--space-11);
+	min-width: var(--space-11);
+	min-height: var(--space-11);
 
 	@include breakpoint(sm) {
-		width: $s-12;
-		height: $s-12;
+		width: var(--space-12);
+		height: var(--space-12);
 	}
 
 	@include breakpoint(md) {
-		width: $s-13;
-		height: $s-13;
+		width: var(--space-13);
+		height: var(--space-13);
 	}
 
 	@include breakpoint(lg) {
-		width: $s-14;
-		height: $s-14;
+		width: var(--space-14);
+		height: var(--space-14);
 	}
 }
 
 @mixin avatar-m {
-	width: $s-9;
-	height: $s-9;
-	min-width: $s-9;
-	min-height: $s-9;
+	width: var(--space-09);
+	height: var(--space-09);
+	min-width: var(--space-09);
+	min-height: var(--space-09);
 
 	@include breakpoint(sm) {
-		width: $s-10;
-		height: $s-10;
+		width: var(--space-10);
+		height: var(--space-10);
 	}
 }
 
 @mixin avatar-s {
-	width: $s-8;
-	height: $s-8;
-	min-width: $s-8;
-	min-height: $s-8;
+	width: var(--space-08);
+	height: var(--space-08);
+	min-width: var(--space-08);
+	min-height: var(--space-08);
 }
 
 /* Divider short */
@@ -521,8 +365,8 @@ $var: true !default; // Can be overridden elsewhere
 	display: block;
 	background-color: var(--wp--custom--color--border);
 	height: 1px;
-	margin-left: $s-2;
-	margin-right: $s-2;
+	margin-left: var(--space-02);
+	margin-right: var(--space-02);
 }
 
 @mixin divider-s {
@@ -558,25 +402,25 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Grid gaps */
 @mixin col-padding {
-	padding-left: $s-4;
-	padding-right: $s-4;
+	padding-left: var(--space-04);
+	padding-right: var(--space-04);
 
 	@include breakpoint(sm) {
-		padding-left: $s-6;
-		padding-right: $s-6;
+		padding-left: var(--space-06);
+		padding-right: var(--space-06);
 	}
 }
 
 @mixin col-gaps {
 
 	@include breakpoint(sm) {
-		margin-left: $s-4;
-		margin-right: $s-4;
+		margin-left: var(--space-04);
+		margin-right: var(--space-04);
 	}
 
 	@include breakpoint(lg) {
-		margin-left: $s-6;
-		margin-right: $s-6;
+		margin-left: var(--space-06);
+		margin-right: var(--space-06);
 	}
 }
 

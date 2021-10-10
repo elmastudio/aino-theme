@@ -46,13 +46,13 @@
 
 	caption {
 		color: var(--wp--custom--color--font-primary);
-		margin-bottom: $s-4;
+		margin-bottom: var(--space-04);
 		text-align: center;
 	}
 
 	table {
 
-		margin-bottom: $s-4;
+		margin-bottom: var(--space-04);
 
 		th {
 			background: transparent;
@@ -79,5 +79,5 @@
 
 .wp-block-latest-comments__comment-excerpt p {
 	font-size: var(--global--font-size--body-xs) !important;
-	margin: $s-2 0 $s-6;
+	margin: var(--space-02) 0 var(--space-06);
 }

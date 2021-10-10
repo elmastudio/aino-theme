@@ -1,10 +1,10 @@
 /* Widget Areas */
 .header-menu-widget-area {
 	display: block;
-	padding: $s-4 0 0;
+	padding: var(--space-04) 0 0;
 
 	@include breakpoint(sm) {
-		padding: $s-4 0 0;
+		padding: var(--space-04) 0 0;
 	}
 }
 
@@ -40,7 +40,7 @@
 }
 
 .site-footer .sub-menu {
-	padding: $s-4 0 0 0;
+	padding: var(--space-04) 0 0 0;
 }
 
 /* Archive + Category + Pages + Nav Menu Widget */

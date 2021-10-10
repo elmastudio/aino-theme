@@ -8,6 +8,41 @@ textarea {
 	color: var(--wp--custom--color--font-secondary);
 }
 
+.wp-block-post-excerpt__excerpt,
+.wp-block-post-author .wp-block-post-author__name,
+.wp-block-post-terms {
+	font-size: var(--global--font-size--body-m) !important;;
+}
+
+.columns-6,
+.columns-5,
+.columns-4 {
+	.wp-block-post-excerpt__excerpt,
+	.wp-block-post-date,
+	.wp-block-post-author__name,
+	.wp-block-post-terms {
+		font-size: var(--global--font-size--body-xxs) !important;;
+	}
+}
+
+.columns-3 {
+	.wp-block-post-excerpt__excerpt,
+	.wp-block-post-date,
+	.wp-block-post-author__name,
+	.wp-block-post-terms {
+		font-size: var(--global--font-size--body-xs) !important;;
+	}
+}
+
+.columns-2 {
+	.wp-block-post-excerpt__excerpt,
+	.wp-block-post-date,
+	.wp-block-post-author__name,
+	.wp-block-post-terms {
+		font-size: var(--global--font-size--body-s) !important;;
+	}
+}
+
 .wp-block-image figcaption,
 div[class*='wp-block-'] figcaption,
 .wp-block-calendar table,
@@ -31,12 +66,6 @@ div[class*='wp-block-'] figcaption,
 .wc-block-components-checkout-step__heading-content,
 .entry-content p.wc-block-components-checkout-step__description,
 .entry-content .wc-block-components-product-metadata__description p,
-.wp-block-post-template.columns-5 .wp-block-post-excerpt__excerpt,
-.wp-block-post-template.columns-5 .wp-block-post-date,
-.wp-block-post-template.columns-5 .wp-block-post-author__name,
-.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
-.wp-block-post-template.columns-6 .wp-block-post-date,
-.wp-block-post-template.columns-6 .wp-block-post-author__name,
 .woocommerce-notices-wrapper ul {
 	font-size: var(--global--font-size--body-xs) !important;;
 }
@@ -69,9 +98,7 @@ div[class*='wp-block-'] figcaption,
 	.wc-block-components-sale-badge,
 	.comment-reply-title #cancel-comment-reply-link,
 	.reply,
-	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
 	.woocommerce-review__published-date,
-	.wp-block-post-author__name,
 	.comment-body .comment-author,
 	.comment p,
 	.woocommerce .woocommerce-form-register p,
@@ -256,7 +283,8 @@ h2.has-m-font-size,
 h3.has-l-font-size,
 h4.has-xl-font-size,
 h5.has-xxl-font-size,
-h6.has-xxxl-font-size {
+h6.has-xxxl-font-size,
+.wp-block-post-template h2.wp-block-post-title {
 	font-size: var(--global--font-size--heading-07) !important;
 }
 
@@ -269,7 +297,7 @@ h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
 .related-title,
-.wp-block-post-template.columns-2 h2.wp-block-post-title {
+.columns-2 h2.wp-block-post-title {
 	font-size: var(--global--font-size--heading-06) !important;
 }
 
@@ -283,7 +311,7 @@ h6.has-xl-font-size,
 .blog h2.entry-title,
 .woocommerce-page h1.entry-title,
 .blog-archive h2.entry-title,
-.wp-block-post-template.columns-3 h2.wp-block-post-title {
+.columns-3 h2.wp-block-post-title {
 	font-size: var(--global--font-size--heading-05) !important;
 }
 
@@ -303,7 +331,7 @@ h6.has-l-font-size,
 .wc-block-components-title,
 .comment-reply-title,
 #comments,
-.wp-block-post-template.columns-4 h2.wp-block-post-title,
+.columns-4 h2.wp-block-post-title,
 h1.archive-title,
 .woocommerce-order-received h2,
 .woocommerce-Address-title h3 {
@@ -318,7 +346,7 @@ h5.has-s-font-size,
 h6.has-m-font-size,
 .woocommerce-loop-product__title,
 .is-large.wc-block-cart .wc-block-cart__totals-title,
-.wp-block-post-template.columns-5 h2.wp-block-post-title,
+.columns-5 h2.wp-block-post-title,
 .wp-block-ainoblocks-accordion-faq-block h3 {
 	font-size: var(--global--font-size--heading-03) !important;
 }
@@ -329,7 +357,8 @@ h5,
 h5.has-xs-font-size,
 h6.has-s-font-size,
 h6.has-xs-font-size,
-h1.wp-block-site-title {
+h1.wp-block-site-title,
+.columns-6 h2.wp-block-post-title {
 	font-size: var(--global--font-size--heading-02) !important;
 }
 
@@ -339,8 +368,7 @@ h5.has-xxxs-font-size,
 h6,
 h6.has-xxs-font-size,
 h6.has-xxxs-font-size,
-.wc-block-cart__empty-cart__title,
-.wp-block-post-template.columns-6 h2.wp-block-post-title {
+.wc-block-cart__empty-cart__title {
 	font-size: var(--global--font-size--heading-01) !important;
 }
 
@@ -449,10 +477,10 @@ dt {
 }
 
 dd {
-	margin: 0 $s-6 $s-6;
+	margin: 0 var(--space-06) var(--space-06);
 
 	@include breakpoint(sm) {
-		margin: 0 $s-6 $s-6;
+		margin: 0 var(--space-06) var(--space-06);
 	}
 }
 
@@ -471,7 +499,7 @@ blockquote cite,
 .wp-block-pullquote cite {
 	text-align: left;
 	display: block;
-	padding: $s-4 0 0;
+	padding: var(--space-04) 0 0;
 	font-size: var(--global--font-size--body-xs);
 	font-style: normal;
 	font-weight: bold;

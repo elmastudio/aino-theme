@@ -1,25 +1,45 @@
-/* Spacing */
-$s-0                 : 0;
-$s-1                 : 0.25rem;
-$s-2                 : 0.5rem;
-$s-3                 : 0.75rem;
-$s-4                 : 1rem;
-$s-5                 : 1.25rem;
-$s-6                 : 1.5rem;
-$s-7                 : 2rem;
-$s-8                 : 2.5rem;
-$s-9                 : 3rem;
-$s-10                : 4rem;
-$s-11                : 5rem;
-$s-12                : 6rem;
-$s-13                : 7.5rem;
-$s-14                : 9rem;
-$s-15                : 11rem;
-$s-16                : 13rem;
-$s-17                : 15.5rem;
-$s-18                : 18rem;
-
 :root {
+	/* Spacing Values */
+	--space-00: 0.125rem;
+	--space-01: 0.125rem;
+	--space-02: 0.5rem;
+	--space-03: 0.75rem;
+	--space-04: 1rem;
+	--space-05: 1.25rem;
+	--space-06: 1.5rem;
+	--space-07: 2rem;
+	--space-08: 2.5rem;
+	--space-09: 3rem;
+	--space-10: 4rem;
+	--space-11: 5rem;
+	--space-12: 6rem;
+	--space-13: 7.5rem;
+	--space-14: 9rem;
+	--space-15: 11rem;
+	--space-16: 13rem;
+	--space-17: 15.5rem;
+	--space-18: 18rem;
+
+	/* Responsive Spacing */
+	--s-r-1:var(--space-00);
+	--s-r-2:var(--space-01);
+	--s-r-3:var(--space-02);
+	--s-r-4:var(--space-02);
+	--s-r-5:var(--space-04);
+	--s-r-6:var(--space-04);
+	--s-r-7:var(--space-04);
+	--s-r-8:var(--space-05);
+	--s-r-9:var(--space-06);
+	--s-r-10:var(--space-07);
+	--s-r-11:var(--space-08);
+	--s-r-12:var(--space-09);
+	--s-r-13:var(--space-10);
+	--s-r-14:var(--space-11);
+	--s-r-15:var(--space-12);
+	--s-r-16:var(--space-13);
+	--s-r-17:var(--space-14);
+	--s-r-18:var(--space-15);
+
 	/* Line Height */
 	--global--line-height-reset: 1;
 
@@ -29,7 +49,6 @@ $s-18                : 18rem;
 	--global--wide-content-width: 90rem; // 1440px
 	--global--max-content-width-nogap: 90rem; // 1440px
 	--global--max-content-width: 93rem; // 1488px
-	--global--grid-gap: #{2 * $s-4};
 
 	/* Border radius */
 	--global--border-radius-xxs: 0.625rem;
@@ -46,6 +65,20 @@ $s-18                : 18rem;
 	/* SM breakpoint */
 	@media only screen and (min-width: 48em) {
 
+		/* Responsive Spacing */
+		--s-r-7:var(--space-05);
+		--s-r-8:var(--space-06);
+		--s-r-9:var(--space-07);
+		--s-r-10:var(--space-08);
+		--s-r-11:var(--space-09);
+		--s-r-12:var(--space-10);
+		--s-r-13:var(--space-11);
+		--s-r-14:var(--space-13);
+		--s-r-15:var(--space-13);
+		--s-r-16:var(--space-14);
+		--s-r-17:var(--space-15);
+		--s-r-18:var(--space-16);
+
 		/* Border radius */
 		--global--border-radius-xxs: 0.625rem;
 		--global--border-radius-xs: 1.25rem;
@@ -56,6 +89,50 @@ $s-18                : 18rem;
 		--global--border-radius-xxl: 4.375rem;
 		--global--border-radius-xxxl: 5rem;
 		--global--border-radius-xxxxl: 5.625rem;
+	}
+
+	/* MD breakpoint */
+	@media only screen and (min-width: 64em) {
+
+		/* Responsive Spacing */
+		--s-r-1: var(--space-01);
+		--s-r-2:var(--space-02);
+		--s-r-3:var(--space-03);
+		--s-r-4:var(--space-03);
+		--s-r-6:var(--space-05);
+		--s-r-7:var(--space-06);
+		--s-r-8:var(--space-07);
+		--s-r-9:var(--space-08);
+		--s-r-10:var(--space-09);
+		--s-r-11:var(--space-10);
+		--s-r-12:var(--space-11);
+		--s-r-13:var(--space-12);
+		--s-r-14:var(--space-13);
+		--s-r-15:var(--space-14);
+		--s-r-16:var(--space-15);
+		--s-r-17:var(--space-16);
+		--s-r-18:var(--space-17);
+	}
+
+	/* LG breakpoint */
+	@media only screen and (min-width: 80em) {
+
+		/* Responsive Spacing */
+		--s-r-4:var(--space-04);
+		--s-r-5:var(--space-05);
+		--s-r-6:var(--space-06);
+		--s-r-7:var(--space-07);
+		--s-r-8:var(--space-08);
+		--s-r-9:var(--space-09);
+		--s-r-10:var(--space-10);
+		--s-r-11:var(--space-11);
+		--s-r-12:var(--space-12);
+		--s-r-13:var(--space-13);
+		--s-r-14:var(--space-14);
+		--s-r-15:var(--space-15);
+		--s-r-16:var(--space-16);
+		--s-r-17:var(--space-17);
+		--s-r-18:var(--space-18);
 	}
 }
 

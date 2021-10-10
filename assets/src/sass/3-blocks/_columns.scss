@@ -27,7 +27,7 @@
 			flex: 1 0 21%;
 
 			&:nth-child(2n) {
-				margin-left: $s-7;
+				margin-left: var(--space-07);
 			}
 		}
 
@@ -59,7 +59,7 @@
 			flex: 1 0 25%;
 
 			&:nth-child(2n) {
-				margin-left: $s-9;
+				margin-left:  var(--space-09);
 			}
 		}
 

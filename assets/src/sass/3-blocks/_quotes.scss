@@ -58,7 +58,7 @@
 
 	&.is-style-solid-color,
 	&.is-style-solid-color {
-		padding: $s-6;
+		padding: var(--space-06);
 		background-color: var(--wp--custom--color--background-primary);
 		clear: both;
 
@@ -69,8 +69,8 @@
 
 	&.alignleft,
 	&.alignright {
-		margin-right: $s-7;
-		margin-left: $s-7;
+		margin-right: var(--space-07);
+		margin-left: var(--space-07);
 	}
 
 	&.alignleft blockquote,

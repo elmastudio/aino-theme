@@ -107,8 +107,8 @@
 
 	.wc-block-components-radio-control-accordion-content {
 		padding: 0;
-		margin-top: $s-2;
-		margin-left: $s-7;
+		margin-top: var(--space-02);
+		margin-left: var(--space-07);
 	}
 }
 

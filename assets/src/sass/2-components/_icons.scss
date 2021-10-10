@@ -7,8 +7,8 @@
 	text-align: center;
 	stroke-width: 0;
 	stroke: currentColor;
-	width: $s-6;
-	height: $s-6;
+	width: var(--space-06);
+	height: var(--space-06);
 }
 
 /* Social Icons */
@@ -16,8 +16,8 @@
 
 	.icon {
 		fill: var(--wp--custom--color--font-primary);
-		width: $s-6;
-		height: $s-6;
+		width: var(--space-06);
+		height: var(--space-06);
 	}
 
 	.icon-large {
