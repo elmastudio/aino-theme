@@ -30,7 +30,7 @@
 :root {
   /* Spacing Values */
   --space-00: 0.125rem;
-  --space-01: 0.125rem;
+  --space-01: 0.25rem;
   --space-02: 0.5rem;
   --space-03: 0.75rem;
   --space-04: 1rem;
@@ -72,9 +72,7 @@
   /* Content widths and grid */
   --global--default-content-width: 43.5rem;
   --global--10col-nogap-content-width: 74.5rem;
-  --global--wide-content-width: 90rem;
-  --global--max-content-width-nogap: 90rem;
-  --global--max-content-width: 93rem;
+  --global--wide-content-width: 112.5rem;
   /* Border radius */
   --global--border-radius-xxs: 0.625rem;
   --global--border-radius-xs: 0.938rem;
@@ -895,7 +893,7 @@ textarea {
 }
 
 .entry-content > *.alignwide {
-  max-width: var(--global--max-content-width);
+  max-width: var(--global--wide-content-width);
 }
 .entry-content > * .aligncenter {
   clear: both;
@@ -942,7 +940,7 @@ textarea {
 
 /* Default wide page width */
 .site-main .site-content {
-  max-width: var(--global--max-content-width);
+  max-width: var(--global--wide-content-width);
   margin-left: auto;
   margin-right: auto;
 }
@@ -2889,8 +2887,8 @@ a:active, a:hover {
 }
 
 /* Primary Links */
-.entry-content p a,
-.entry-content li a,
+.single .wp-block-post-content p a,
+.single .wp-block-post-content li a,
 .authorbox__content p a,
 .comment-content li a,
 .comment-content p a,
@@ -2912,8 +2910,8 @@ cite a,
   color: currentColor;
   text-decoration: underline;
 }
-.entry-content p a:hover,
-.entry-content li a:hover,
+.single .wp-block-post-content p a:hover,
+.single .wp-block-post-content li a:hover,
 .authorbox__content p a:hover,
 .comment-content li a:hover,
 .comment-content p a:hover,
@@ -3957,6 +3955,12 @@ tr td:last-of-type {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+.wp-block-query .wp-block-post-template.is-flex-container.columns-5 .wp-block-post-title {
+  padding-top: var(--s-r-1);
+}
+.wp-block-query .wp-block-post-template.is-flex-container.columns-5 .wp-block-post-title:not(:last-child) {
+  padding-bottom: var(--s-r-1);
+}
 @media (min-width: 48em) {
   .wp-block-query .wp-block-post-template.is-flex-container.columns-5 {
     display: grid;
@@ -3975,6 +3979,12 @@ tr td:last-of-type {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
+.wp-block-query .wp-block-post-template.is-flex-container.columns-6 .wp-block-post-title {
+  padding-top: var(--s-r-1);
+}
+.wp-block-query .wp-block-post-template.is-flex-container.columns-6 .wp-block-post-title:not(:last-child) {
+  padding-bottom: var(--s-r-1);
+}
 @media (min-width: 48em) {
   .wp-block-query .wp-block-post-template.is-flex-container.columns-6 {
     display: grid;
@@ -3986,7 +3996,6 @@ tr td:last-of-type {
 }
 @media (min-width: 64em) {
   .wp-block-query .wp-block-post-template.is-flex-container.columns-6 {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
   .wp-block-query .wp-block-post-template.is-flex-container.columns-6 li {
@@ -4007,6 +4016,14 @@ tr td:last-of-type {
   grid-column-end: 13;
   justify-self: stretch;
 }
+@media (min-width: 64em) {
+  .wp-block-query .wp-block-post-template.is-flex-container.columns-5 .wp-block-post, .wp-block-query .wp-block-post-template.is-flex-container.columns-6 .wp-block-post {
+    display: block;
+  }
+  .wp-block-query .wp-block-post-template.is-flex-container.columns-5 .wp-block-post .wp-block-post-featured-image, .wp-block-query .wp-block-post-template.is-flex-container.columns-6 .wp-block-post .wp-block-post-featured-image {
+    padding-bottom: var(--s-r-4);
+  }
+}
 @media (min-width: 48em) {
   .wp-block-query .wp-block-post-template.is-flex-container.columns-5 .wp-block-post, .wp-block-query .wp-block-post-template.is-flex-container.columns-6 .wp-block-post {
     grid-template-columns: repeat(6, 1fr);
@@ -4018,7 +4035,6 @@ tr td:last-of-type {
   .wp-block-query .wp-block-post-template.is-flex-container.columns-5 .wp-block-post .post-content, .wp-block-query .wp-block-post-template.is-flex-container.columns-6 .wp-block-post .post-content {
     grid-column-start: 4;
     grid-column-end: 7;
-    background: green;
   }
 }
 .wp-block-query .wp-block-post-template:not(.is-flex-container) li {
@@ -5546,7 +5562,6 @@ div[class*=wp-block-] figcaption {
 .woocommerce-page .entry-content .woocommerce-message,
 .woocommerce-message,
 .wc-block-components-notices .wc-block-components-notices__notice {
-  max-width: var(--global--max-content-width-nogap);
   margin-left: auto;
   margin-right: auto;
   position: relative;

@@ -267,7 +267,7 @@
 		},
 		"layout": {
 			"contentSize": "43.5rem",
-			"wideSize": "90rem"
+			"wideSize": "112.5rem"
 		},
 		"typography": {
 			"fontFamilies": [
@@ -295,52 +295,52 @@
 			"fontSizes": [
 				{
 					"name": "XXXS",
-					"size": "12px",
+					"size": "0.75rem",
 					"slug": "xxxs"
 				},
 				{
 					"name": "XXS",
-					"size": "14px",
+					"size": "0.875rem",
 					"slug": "xxs"
 				},
 				{
 					"name": "XS",
-					"size": "16px",
+					"size": "1rem",
 					"slug": "xs"
 				},
 				{
 					"name": "S",
-					"size": "18px",
+					"size": "1.125rem",
 					"slug": "s"
 				},
 				{
 					"name": "M",
-					"size": "20px",
+					"size": "1.25rem",
 					"slug": "m"
 				},
 				{
 					"name": "L",
-					"size": "24px",
+					"size": "1.5rem",
 					"slug": "l"
 				},
 				{
 					"name": "XL",
-					"size": "28px",
+					"size": "1.75rem",
 					"slug": "xl"
 				},
 				{
 					"name": "XXL",
-					"size": "34px",
+					"size": "2.125rem",
 					"slug": "xxl"
 				},
 				{
 					"name": "3XL",
-					"size": "40px",
+					"size": "2.5rem",
 					"slug": "xxxl"
 				},
 				{
 					"name": "4XL",
-					"size": "48px",
+					"size": "3rem",
 					"slug": "xxxxl"
 				}
 			],

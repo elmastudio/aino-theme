@@ -48,7 +48,7 @@
 .entry-content > * {
 
 	&.alignwide {
-		max-width: var(--global--max-content-width);
+		max-width: var(--global--wide-content-width);
 	}
 
 	.aligncenter {
@@ -97,7 +97,7 @@
 /* Default wide page width */
 .site-main {
 	.site-content {
-		max-width: var(--global--max-content-width);
+		max-width: var(--global--wide-content-width);
 		@include push--auto;
 	}
 }

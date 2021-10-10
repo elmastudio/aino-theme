@@ -8,7 +8,7 @@
 :root {
   /* Spacing Values */
   --space-00: 0.125rem;
-  --space-01: 0.125rem;
+  --space-01: 0.25rem;
   --space-02: 0.5rem;
   --space-03: 0.75rem;
   --space-04: 1rem;
@@ -50,9 +50,7 @@
   /* Content widths and grid */
   --global--default-content-width: 43.5rem;
   --global--10col-nogap-content-width: 74.5rem;
-  --global--wide-content-width: 90rem;
-  --global--max-content-width-nogap: 90rem;
-  --global--max-content-width: 93rem;
+  --global--wide-content-width: 112.5rem;
   /* Border radius */
   --global--border-radius-xxs: 0.625rem;
   --global--border-radius-xs: 0.938rem;
