@@ -147,15 +147,16 @@ function aino_fonts_url() {
 	return esc_url_raw( $fonts_url );
 }
 
+/**
+ * Restores the Customizer since we still rely on it.
+ */
+function aino_restore_customizer() {
+	remove_action( 'admin_menu', 'gutenberg_remove_legacy_pages' );
+}
+add_action( 'init', 'aino_restore_customizer' );
+
 // Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer/defaults.php';
-require get_template_directory() . '/inc/customizer/customizer.php';
-require get_template_directory() . '/inc/customizer/sanitization-callbacks.php';
 
 // SVG icons functions and filters.
 require get_parent_theme_file_path( '/inc/icon-functions.php' );

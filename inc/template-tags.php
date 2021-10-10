@@ -8,19 +8,6 @@
  */
 
 /**
- * Disable Google fonts.
- */
-function aino_remove_google_fonts() {
-
-	if ( true === get_theme_mod( 'disable_googlefonts', aino_defaults( 'disable_googlefonts' ) ) ) {
-		wp_dequeue_style( 'aino-fonts' );
-		wp_deregister_style( 'aino-fonts' );
-	}
-}
-
-add_action( 'wp_enqueue_scripts', 'aino_remove_google_fonts', 100 );
-
-/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
