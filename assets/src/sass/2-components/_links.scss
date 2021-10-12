@@ -93,23 +93,6 @@ h1:not(.site-title), h2, h3, h4, h5, h6,
 
 }
 
-/* Link Transitions */
-.site-branding a,
-.primary-menu a,
-.site-footer .widget_mc4wp_form_widget a,
-.site-footer a,
-.social-header-nav .icon,
-.social-footer-nav .icon,
-.sd-social-icon .sd-content ul li[class*='share-'] a {
-	@include transition-default;
-}
-
-.entry-link,
-.entry-link img,
-.navigation .nav-thumb {
-	@include transition-posthover;
-}
-
 .wp-block-navigation:not([style*=text-decoration]) a:hover,
 .wp-block-navigation:not([style*=text-decoration]) a:active,
 .wp-block-navigation:not([style*=text-decoration]) a:focus {

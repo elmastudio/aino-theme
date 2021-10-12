@@ -324,61 +324,6 @@
 	}
 }
 
-// Small, medium, lager grid gap
-.gap-s {
-
-	.wp-block-post-template {
-		column-gap: 0.5rem;
-
-		@include breakpoint(md) {
-			column-gap: 0.75rem;
-		}
-
-		@include breakpoint(lg) {
-			column-gap: 1rem;
-		}
-	}
-}
-
-.gap-m {
-
-	.wp-block-post-template {
-		column-gap: 0.75rem;
-
-		@include breakpoint(sm) {
-			column-gap: 1rem;
-		}
-
-		@include breakpoint(md) {
-			column-gap: 1.25rem;
-		}
-
-		@include breakpoint(lg) {
-			column-gap: 1.5rem;
-		}
-	}
-}
-
-.gap-l {
-
-	.wp-block-post-template {
-
-		column-gap: 1.5rem;
-
-		@include breakpoint(sm) {
-			column-gap: 2rem;
-		}
-
-		@include breakpoint(md) {
-			column-gap: 2.5rem;
-		}
-
-		@include breakpoint(lg) {
-			column-gap: 3rem;
-		}
-	}
-}
-
 // Related Posts on Single
 .related-posts-wrap {
 

@@ -707,7 +707,7 @@ figcaption {
 	&.is-style-aino-border-dark {
 
 		img {
-			border: 2px solid;
+			border: 1px solid;
 			border-color: var(--wp--custom--color--font-secondary);
 		}
 	}
@@ -715,7 +715,7 @@ figcaption {
 	&.is-style-aino-border-light {
 
 		img {
-			border: 2px solid;
+			border: 1px solid;
 			border-color: var(--wp--custom--color--variant-font-secondary);
 		}
 	}
@@ -933,10 +933,6 @@ pre.wp-block-verse {
 	border-bottom: 0;
 	border-top: 1px solid;
 	opacity: 1;
-
-	&.is-style-wide {
-		border: none;
-	}
 
 	&.is-style-dots {
 		border: none;
