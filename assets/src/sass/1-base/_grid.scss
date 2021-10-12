@@ -1,5 +1,5 @@
 // Fix pattern inserter preview for fullwidth container blocks
-.block-editor-block-list__layout.is-root-container > .fullwidth {
+.block-editor-block-list__layout.is-root-container>.fullwidth {
 	max-width: none !important;
 }
 
@@ -11,12 +11,11 @@
 	margin-top: 0;
 }
 
-.wp-site-blocks > * + * {
+.wp-site-blocks>*+* {
 	margin-top: 0;
 }
 
 .page-template-woocommerce-default .wp-block-group.entry-header,
-.wp-block-group.alignfull,
 .wp-block-group.alignfull .wp-block-group.alignfull,
 .site-footer .footer-content {
 	padding-left: var(--global--content--padding--left);
@@ -29,11 +28,11 @@
 	padding-right: 0;
 }
 
-.wp-block-group.alignfull > .alignfull,
-*[class*="wp-container-"] > .alignfull {
+.wp-block-group.alignfull>.alignfull,
+*[class*="wp-container-"]>.alignfull {
 	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
-	width: calc( 100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
+	width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 }
 
 .wp-block-group.alignfull {
@@ -45,7 +44,7 @@
 	}
 }
 
-.entry-content > * {
+.entry-content>* {
 
 	&.alignwide {
 		max-width: var(--global--wide-content-width);
@@ -58,7 +57,7 @@
 }
 
 // Default post width
-.entry-content.post-width > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+.entry-content.post-width>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
 	@include push--auto;
 	max-width: var(--global--default-content-width);
 }
@@ -180,7 +179,7 @@
 	.flex-direction {
 
 		&__row {
-		flex-direction: row;
+			flex-direction: row;
 		}
 
 		&__row-reverse {
@@ -228,18 +227,42 @@
 // Width classes for flex items, workaround
 @include breakpoint(lg) {
 	.desktop__width__50 {
-	width: 50%;
+		width: 50%;
 	}
+
 	.desktop__width__55 {
 		width: 55%;
-		}
+	}
+
 	.desktop__width__60 {
 		width: 60%;
 	}
+
 	.desktop__width__40 {
 		width: 40%;
 	}
+
 	.desktop__width__45 {
 		width: 45%;
+	}
+}
+
+
+// Small, medium, lager grid gap
+.gap-s {
+	.wp-block-post-template {
+		@include gap-s;
+	}
+}
+
+.gap-m {
+	.wp-block-post-template {
+		@include gap-m;
+	}
+}
+
+.gap-l {
+	.wp-block-post-template {
+		@include gap-l;
 	}
 }

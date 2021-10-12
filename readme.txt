@@ -44,8 +44,10 @@ Aino WordPress Theme bundles the following third-party resources:
 == Changelog ==
 
 = 2.5.1 =
+Enhance: Wider max wide content width.
 Enhance: Post query block support.
 Enhance: Navigation block spacing.
+Enhance: Grid gaps.
 Bugfix: Blank page template.
 
 = 2.5.0 =
