@@ -48,6 +48,7 @@ Enhance: Wider max wide content width.
 Enhance: Post query block support.
 Enhance: Navigation block spacing.
 Enhance: Grid gaps.
+Enhance: Delete outdated theme files.
 Bugfix: Blank page template.
 
 = 2.5.0 =

@@ -32,7 +32,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		 * Enable support for Post Thumbnails on posts and pages.
 		 */
 		add_theme_support( 'post-thumbnails' );
-		set_post_thumbnail_size( 1500, 99999 );
+		set_post_thumbnail_size( 1800, 99999 );
 
 		/**
 		 * Adds custom image sizes.
@@ -158,9 +158,6 @@ add_action( 'init', 'aino_restore_customizer' );
 // Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
-// SVG icons functions and filters.
-require get_parent_theme_file_path( '/inc/icon-functions.php' );
-
 // Aino Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
 
@@ -173,9 +170,6 @@ require get_template_directory() . '/inc/block-styles.php';
 require_once get_template_directory() . '/inc/classes/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'aino_register_required_plugins' );
-
-/** Add a checkbox to hide the Site Editor */
-require get_template_directory() . '/inc/disable-site-editor.php';
 
 /**
  * Register the required plugins for this theme.
