@@ -114,12 +114,12 @@
 				},
 				{
 					"slug": "button-color-secondary",
-					"color": "#121212",
+					"color": "#ffffff",
 					"name": "Button Color Secondary"
 				},
 				{
 					"slug": "primary",
-					"color": "#282828",
+					"color": "#121212",
 					"name": "Primary"
 				},
 				{

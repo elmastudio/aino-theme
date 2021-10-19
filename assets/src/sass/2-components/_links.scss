@@ -27,7 +27,9 @@ cite a,
 .woocommerce-message a,
 .custom-product-page-link,
 .wp-block-post-excerpt__more-link,
-.comment .comment-body p a {
+.wp-block-ainoblocks-grid-item .wp-block-post-excerpt__more-link,
+.comment .comment-body p a,
+.wp-block-ainoblocks-card p a {
 	color: currentColor;
 	text-decoration: underline;
 

@@ -1,5 +1,4 @@
-.wp-block-quote,
-.wp-block-pullquote {
+.wp-block-quote {
 	padding: 0;
 
 	&.is-style-default {
@@ -11,23 +10,17 @@
 		box-shadow: none;
 	}
 
-	.has-text-color a:hover {
-		color: var(--wp--custom--color--primary);
-	}
-
 	&.is-style-large {
 		padding: 0;
 	}
 
 	&.is-style-large p {
 		margin: 0;
-		font-size: var(--global--font-size--body-xl) !important;
 		font-style: normal;
 	}
 
 	&.is-style-large cite,
 	& cite {
-		font-size: var(--global--font-size--body-xs) !important;
 		text-align: left;
 	}
 

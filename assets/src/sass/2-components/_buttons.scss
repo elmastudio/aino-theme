@@ -31,7 +31,9 @@ a.btn-primary,
 }
 
 a.btn-outline,
-.btn-outline a {
+.btn-outline a,
+.wp-block-tag-cloud.is-style-aino-tags-btns a,
+.wp-block-categories.is-style-aino-cats-btns a {
 	@include btn;
 	@include btn-outline;
 }
@@ -59,11 +61,13 @@ a.btn-outline,
 
 /* Button Sizes */
 .btn-xxs {
-	@include btn-s;
+	@include btn-xxs;
 }
 
+.wp-block-tag-cloud.is-style-aino-tags-btns a,
+.wp-block-categories.is-style-aino-cats-btns a,
 .btn-xs {
-	@include btn-s;
+	@include btn-xs;
 }
 
 .btn-s {

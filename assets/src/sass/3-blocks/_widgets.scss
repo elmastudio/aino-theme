@@ -23,23 +23,24 @@
 	}
 }
 
-/* Block category Widgets */
-.entry-content .wp-block-latest-posts,
-.entry-content .wp-block-latest-comments {
-	padding-left: 0;
-}
+/* Widget Blocks */
+.entry-content {
+	.wp-block-latest-posts,
+	.wp-block-latest-comments {
+		padding-left: 0;
+	}
 
-.entry-content .wp-block-categories-list li a,
-.entry-content .wp-block-latest-posts li a {
-	border: none;
+	.wp-block-categories-list {
+		list-style: none;
+	}
+
+	.wp-block-latest-posts li a {
+		border: none;
+	}
 }
 
 .wp-block-latest-comments__comment {
 	font-size: var(--global--font-size--body-xs) !important;
-}
-
-.wp-block-search button[type="submit"] {
-	margin-top: 0;
 }
 
 .entry-content .wp-block-calendar {
@@ -80,4 +81,28 @@
 .wp-block-latest-comments__comment-excerpt p {
 	font-size: var(--global--font-size--body-xs) !important;
 	margin: var(--space-02) 0 var(--space-06);
+}
+
+// Lists with Button Styles
+.wp-block-tag-cloud,
+.wp-block-categories {
+
+	&.is-style-aino-tags-btns,
+	&.is-style-aino-cats-btns {
+		display: flex;
+		flex-wrap: wrap;
+
+		ul li a,
+		a {
+			display: block;
+			line-height: 1;
+			@include s-r-2 (margin-right);
+			@include s-r-2 (margin-bottom);
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+	}
 }
