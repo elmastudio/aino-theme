@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.8
 Tested up to: WordPress 5.8.1
 Requires PHP: 7.0
-Stable tag: 2.5.1
+Stable tag: 2.6.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -43,7 +43,7 @@ Aino WordPress Theme bundles the following third-party resources:
 
 == Changelog ==
 
-= 2.5.1 =
+= 2.6.0 =
 Enhance: Wider max wide content width.
 Enhance: Post query block support.
 Enhance: Navigation block spacing and alignment.
