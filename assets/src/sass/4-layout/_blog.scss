@@ -1,20 +1,60 @@
 // Pagination
-.wp-block-query-pagination {
-	justify-content: space-between;
+.pagination-wrap {
 
-	.wp-block-query-pagination-next,
-	.wp-block-query-pagination-numbers,
-	.wp-block-query-pagination-previous {
-		margin-bottom: 0;
-	}
+	.wp-block-query-pagination,
+	.wp-block-query-pagination-numbers {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0;
+	
+		.page-numbers:not(.dots),
+		.wp-block-query-pagination-previous,
+		.wp-block-query-pagination-next {
+			@include s-r-1 (margin-right);
+			@include s-r-1 (margin-left);
+			@include btn;
+			@include btn-tab;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-	.page-numbers {
-		@include s-r-1 (padding-right);
-	}
+		.page-numbers {
+			width: var(--space-09);
+			height: var(--space-09);
+			border-radius: 50%;
+		}
 
-	.current {
-		text-decoration: underline;
+		.page-numbers.dots {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.wp-block-query-pagination-previous,
+		.wp-block-query-pagination-next {
+			display: none;
+			@include btn-s;
+			border-radius: 6rem;
+		}
+
+		@include breakpoint(md) {
+			.wp-block-query-pagination-previous,
+			.wp-block-query-pagination-next {
+				display: flex;
+			}
+		}
+		
+	
+		.page-numbers.current,
+		.page-numbers.current:hover {
+			background-color: var(--wp--custom--color--primary);
+			border-color: var(--wp--custom--color--primary);
+			color: var(--wp--custom--color--button-color-primary);
+		}
 	}
+	
 }
 
 // Archive
@@ -34,11 +74,4 @@
 			@include s-r-9 (margin-top);
 		}
 	}
-}
-
-/* Load More Button */
-.pagination {
-	width: 100%;
-	flex-basis: 100%;
-	height: 0;
 }

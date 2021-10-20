@@ -60,6 +60,13 @@
 			"postTypes": [
 				"page"
 			]
+		},
+		{
+			"name": "single-without-featured-image",
+			"title": "Post without Featured Image",
+			"postTypes": [
+				"post"
+			]
 		}
 	],
 	"settings": {

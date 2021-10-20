@@ -7,49 +7,49 @@
 			@include s-r-9 (padding-bottom);
 		}
 
-			.wp-block-post-author {
-				display: flex;
-				align-items:center;
+		.wp-block-post-author {
+			display: flex;
+			align-items: center;
 
-				&:after {
-					content: "";
-				}
+			&:after {
+				content: "";
+			}
 
-				&__avatar {
+			&__avatar {
 
-					img {
-						border-radius: 50%;
-						border: 1px solid var(--wp--custom--color--font-primary);
-					}
-				}
-
-				&__byline,
-				&__name {
-					display: inline;
+				img {
+					border-radius: 50%;
+					border: 1px solid var(--wp--custom--color--font-primary);
 				}
 			}
-	
-			.wp-block-post-terms__separator {
-				display: none;
-			}
-	
-			.wp-block-post-terms {
-	
-				a:not(:first-child) {
-					@include s-r-2 (margin-left);
-				}
-			}
-	
-			.wp-block-post-author {
 
-				&__name {
-					font-weight: 400;
-				}
-
-				&__byline {
-					font-size: inherit;
-				}
+			&__byline,
+			&__name {
+				display: inline;
 			}
+		}
+
+		.wp-block-post-terms__separator {
+			display: none;
+		}
+
+		.wp-block-post-terms {
+
+			a:not(:first-child) {
+				@include s-r-2 (margin-left);
+			}
+		}
+
+		.wp-block-post-author {
+
+			&__name {
+				font-weight: 400;
+			}
+
+			&__byline {
+				font-size: inherit;
+			}
+		}
 
 		//Post Grid
 		&.is-flex-container {
@@ -63,7 +63,7 @@
 
 				.wp-block-post-title {
 					@include s-r-2 (padding-top);
-	
+
 					&:not(:last-child) {
 						@include s-r-2 (padding-bottom);
 					}
@@ -78,7 +78,7 @@
 
 				.wp-block-post-title {
 					@include s-r-2 (padding-top);
-	
+
 					&:not(:last-child) {
 						@include s-r-2 (padding-bottom);
 					}
@@ -87,7 +87,7 @@
 
 			&.columns-2 {
 				@include breakpoint(sm) {
-				display: grid;
+					display: grid;
 					grid-template-columns: repeat(2, 1fr);
 
 					li {
@@ -101,7 +101,7 @@
 
 				.wp-block-post-title {
 					@include s-r-3 (padding-top);
-	
+
 					&:not(:last-child) {
 						@include s-r-3 (padding-bottom);
 					}
@@ -128,7 +128,7 @@
 				}
 
 				@include breakpoint(lg) {
-				.wp-block-post {
+					.wp-block-post {
 						&:nth-last-of-type(-n+3) {
 							padding-bottom: 0;
 						}
@@ -165,7 +165,7 @@
 
 				.wp-block-post-title {
 					@include s-r-1 (padding-top);
-	
+
 					&:not(:last-child) {
 						@include s-r-1 (padding-bottom);
 					}
@@ -188,6 +188,7 @@
 						grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 					}
 				}
+
 				@include breakpoint(lg) {
 					.wp-block-post {
 						&:nth-last-of-type(-n+5) {
@@ -201,7 +202,7 @@
 
 				.wp-block-post-title {
 					@include s-r-1 (padding-top);
-	
+
 					&:not(:last-child) {
 						@include s-r-1 (padding-bottom);
 					}
@@ -266,11 +267,11 @@
 					.wp-block-post {
 						grid-template-columns: repeat(6, 1fr);
 						gap: 1rem;
-	
+
 						.wp-block-post-featured-image {
 							grid-column-end: 4;
 						}
-	
+
 						.entry-header {
 							grid-column-start: 4;
 							grid-column-end: 7;
@@ -279,27 +280,19 @@
 				}
 			}
 		}
-	
+
 		&:not(.is-flex-container) {
 
 			// Post List
 			li {
 
-				a:not(.wp-block-post-excerpt__more-link) {
-					text-decoration: none;
-	
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-	
 				.wp-block-post-featured-image {
 					@include s-r-7 (padding-bottom);
 				}
-	
+
 				.wp-block-post-title {
 					@include s-r-4 (padding-top);
-	
+
 					&:not(:last-child) {
 						@include s-r-4 (padding-bottom);
 					}
@@ -371,14 +364,14 @@
 				align-content: start;
 				grid-auto-flow: row;
 			}
-	
+
 			.wp-block-post-title {
 				grid-column: 1 / 5;
 				justify-self: stretch;
 				grid-row: 1 / 2;
 				@include s-r-9 (padding-bottom);
 			}
-	
+
 			.post-excerpt-wrap {
 				justify-self: stretch;
 				padding: 0;
@@ -386,7 +379,7 @@
 				grid-row: 1 / 2;
 				@include s-r-9 (padding-bottom);
 			}
-	
+
 			.wp-block-post-featured-image {
 				justify-self: stretch;
 				grid-column: 9 / 13;
@@ -435,7 +428,7 @@
 		}
 
 		.wp-block-post-terms {
-	
+
 			a:not(:first-child) {
 				@include s-r-4 (margin-left);
 			}
