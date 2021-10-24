@@ -181,14 +181,9 @@ function aino_register_required_plugins() {
 	$plugins = array(
 
 		array(
-			'name'      => 'Gutenberg',
-			'slug'      => 'gutenberg',
-			'required'  => true,
-		),
-		array(
 			'name'      => 'Aino Blocks - Creative Block Collection',
 			'slug'      => 'aino-blocks',
-			'required'  => true,
+			'required'  => false,
 		),
 	);
 

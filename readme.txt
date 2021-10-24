@@ -51,6 +51,7 @@ Enhance: Grid gaps.
 Enhance: Delete outdated theme files.
 Enhance: Query Loop block grid posts.
 Bugfix: Blank page template.
+Bugfix: Change required to recommended plugins.
 
 = 2.5.0 =
 New: Feature patterns.
