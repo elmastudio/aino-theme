@@ -659,8 +659,7 @@ h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
-.related-title,
-.wp-block-post-template.columns-2 h2.wp-block-post-title {
+.related-title {
   font-size: var(--global--font-size--heading-06) !important;
 }
 
@@ -673,8 +672,7 @@ h5.has-l-font-size,
 h6.has-xl-font-size,
 .blog h2.entry-title,
 .woocommerce-page h1.entry-title,
-.blog-archive h2.entry-title,
-.wp-block-post-template.columns-3 h2.wp-block-post-title {
+.blog-archive h2.entry-title {
   font-size: var(--global--font-size--heading-05) !important;
 }
 
@@ -694,7 +692,6 @@ h6.has-l-font-size,
 .wc-block-components-title,
 .comment-reply-title,
 #comments,
-.wp-block-post-template.columns-4 h2.wp-block-post-title,
 h1.archive-title,
 .woocommerce-order-received h2,
 .woocommerce-Address-title h3 {
@@ -709,7 +706,6 @@ h5.has-s-font-size,
 h6.has-m-font-size,
 .woocommerce-loop-product__title,
 .is-large.wc-block-cart .wc-block-cart__totals-title,
-.wp-block-post-template.columns-5 h2.wp-block-post-title,
 .wp-block-ainoblocks-accordion-faq-block h3 {
   font-size: var(--global--font-size--heading-03) !important;
 }
@@ -720,8 +716,7 @@ h5,
 h5.has-xs-font-size,
 h6.has-s-font-size,
 h6.has-xs-font-size,
-h1.wp-block-site-title,
-.columns-6 h2.wp-block-post-title {
+h1.wp-block-site-title {
   font-size: var(--global--font-size--heading-02) !important;
 }
 
