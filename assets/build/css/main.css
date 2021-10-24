@@ -3020,6 +3020,31 @@ h2.entry-title a,
 }
 
 /* Link Hovers */
+.header-cta-wrap a,
+.footer-widget-wrap li a,
+.site-info a,
+.woocommerce-breadcrumb a,
+.mc4wp-form p a,
+.woocommerce-review-link a,
+.posted_in a,
+.post-meta a,
+.wp-block-post-terms a,
+.comment-meta a,
+.comment-body .reply a,
+h1:not(.site-title) a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.entry-meta a,
+.related-post .entry-cats a,
+.wp-block-ainoblocks-grid-item a,
+.wp-block-post-template a,
+.wp-block-navigation-link a,
+.wp-block-navigation:not([style*=text-decoration]) a {
+  text-decoration: none;
+}
 .header-cta-wrap a:hover,
 .footer-widget-wrap li a:hover,
 .site-info a:hover,
@@ -3903,6 +3928,9 @@ tr td:last-of-type {
 .wp-block-query .wp-block-post-template.columns-3 .wp-block-post-title:not(:last-child) {
   padding-bottom: var(--s-r-2);
 }
+.wp-block-query .wp-block-post-template.columns-3 .wp-block-post-terms a:not(:first-child) {
+  margin-left: var(--s-r-3);
+}
 @media (min-width: 48em) {
   .wp-block-query .wp-block-post-template.columns-2 {
     display: grid;
@@ -3921,6 +3949,9 @@ tr td:last-of-type {
 .wp-block-query .wp-block-post-template.columns-2 .wp-block-post-title:not(:last-child) {
   padding-bottom: var(--s-r-3);
 }
+.wp-block-query .wp-block-post-template.columns-2 .wp-block-post-terms a:not(:first-child) {
+  margin-left: var(--s-r-4);
+}
 .wp-block-query .wp-block-post-template.columns-2.posts-small .wp-block-post-featured-image {
   padding-bottom: var(--s-r-4);
 }
@@ -3929,6 +3960,9 @@ tr td:last-of-type {
 }
 .wp-block-query .wp-block-post-template.columns-2.posts-small .wp-block-post-title:not(:last-child) {
   padding-bottom: var(--s-r-1);
+}
+.wp-block-query .wp-block-post-template.columns-2.posts-small .wp-block-post-terms a:not(:first-child) {
+  margin-left: var(--s-r-2);
 }
 @media (min-width: 80em) {
   .wp-block-query .wp-block-post-template.columns-2 .wp-block-post:nth-last-of-type(-n+2) {
@@ -4070,6 +4104,9 @@ tr td:last-of-type {
 }
 .wp-block-query .wp-block-post-template:not(.is-flex-container) li .wp-block-post-title:not(:last-child) {
   padding-bottom: var(--s-r-4);
+}
+.wp-block-query .wp-block-post-template:not(.is-flex-container) li .wp-block-post-terms a:not(:first-child) {
+  margin-left: var(--s-r-4);
 }
 .wp-block-query .wp-block-post-template:not(.is-flex-container):not(:last-of-type) li {
   padding-bottom: var(--s-r-13);

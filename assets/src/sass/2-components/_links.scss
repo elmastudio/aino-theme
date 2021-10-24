@@ -85,6 +85,7 @@ h6,
 .wp-block-navigation:not([style*=text-decoration]) {
 
 	a {
+		text-decoration: none;
 
 		&:hover {
 			@include underline-default;
