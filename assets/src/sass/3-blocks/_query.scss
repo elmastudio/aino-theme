@@ -89,6 +89,10 @@
 					@include s-r-3 (margin-left);
 				}
 			}
+
+			.wp-block-post-excerpt:not(:last-child) {
+				@include s-r-3 (padding-bottom);
+			}
 		}
 
 		&.columns-2 {
