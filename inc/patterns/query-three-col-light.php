@@ -22,7 +22,7 @@ return array(
 	<div class="wp-block-query alignwide"><!-- wp:post-template -->
 	<!-- wp:post-featured-image {"isLink":true} /-->
 	
-	<!-- wp:post-title {"isLink":true,"textColor":"font-primary"} /-->
+	<!-- wp:post-title {"isLink":true,"textColor":"font-primary","fontSize":"xs"} /-->
 	
 	<!-- wp:post-excerpt {"textColor":"font-secondary","fontSize":"xs"} /-->
 	

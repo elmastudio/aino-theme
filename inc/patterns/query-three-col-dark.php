@@ -22,7 +22,7 @@ return array(
 	<div class="wp-block-query alignwide"><!-- wp:post-template -->
 	<!-- wp:post-featured-image {"isLink":true} /-->
 	
-	<!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|variant-font-primary"}}}},"textColor":"variant-font-primary"} /-->
+	<!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|variant-font-primary"}}}},"textColor":"variant-font-primary","fontSize":"xs"} /-->
 	
 	<!-- wp:post-excerpt {"textColor":"variant-font-secondary","fontSize":"xs"} /-->
 	

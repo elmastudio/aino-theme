@@ -50,6 +50,7 @@ Enhance: Navigation block spacing and alignment.
 Enhance: Grid gaps.
 Enhance: Delete outdated theme files.
 Enhance: Query Loop block grid posts.
+Enhance: Query patterns.
 Bugfix: Blank page template.
 Bugfix: Change required to recommended plugins.
 

@@ -45,13 +45,11 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--wp--custom--color--font-primary);
 	line-height: var(--wp--custom--line-height--heading);
 	margin-top: 0;
 	margin-bottom: 0;
 
 	& a {
-		color: var(--wp--custom--color--font-primary);
 		text-decoration: none;
 	}
 }
