@@ -327,28 +327,35 @@
 // Query Block Styles
 .wp-block-query {
 
-	&.three-col-small {
+	&.columns-3-small {
 
-		.wp-block-post {
-			display: grid;
-			grid-template-columns: repeat(12, 1fr);
-			gap: 0.75rem;
+		.wp-block-post-template {
 
-			.wp-block-post-featured-image {
-				grid-column-start: 1;
-				grid-column-end: 4;
-			}
-
-			.entry-header {
-				grid-column-start: 4;
-				grid-column-end: 13;
-				justify-self: stretch;
-
-				.wp-block-post-title {
-					padding-top: var(--s-r-1);
-
-					&:not(:last-child) {
-						padding-bottom: var(--s-r-1);
+			.wp-block-post {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				gap: 0.75rem;
+	
+				.wp-block-post-featured-image {
+					grid-column-start: 1;
+					grid-column-end: 4;
+	
+					@include breakpoint(sm) {
+						padding-bottom: 0;
+					}
+				}
+	
+				.entry-header {
+					grid-column-start: 4;
+					grid-column-end: 13;
+					justify-self: stretch;
+	
+					.wp-block-post-title {
+						padding-top: var(--s-r-1);
+	
+						&:not(:last-child) {
+							padding-bottom: var(--s-r-1);
+						}
 					}
 				}
 			}
