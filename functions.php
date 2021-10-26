@@ -116,7 +116,6 @@ function aino_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
-
 /**
  * Get Google fonts and save locally with WPTT Webfont Loader.
  */
