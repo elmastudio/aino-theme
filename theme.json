@@ -1,35 +1,5 @@
 {
 	"version": 1,
-	"templateParts": [
-		{
-			"name": "header",
-			"area": "header"
-		},
-		{
-			"name": "header-dark",
-			"area": "header"
-		},
-		{
-			"name": "header-logo",
-			"area": "header"
-		},
-		{
-			"name": "footer",
-			"area": "footer"
-		},
-		{
-			"name": "footer-dark",
-			"area": "footer"
-		},
-		{
-			"name": "footer-five-columns-light",
-			"area": "footer"
-		},
-		{
-			"name": "footer-five-columns-dark",
-			"area": "footer"
-		}
-	],
 	"customTemplates": [
 		{
 			"name": "header-footer",
@@ -69,10 +39,37 @@
 			]
 		}
 	],
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "header-dark",
+			"area": "header"
+		},
+		{
+			"name": "header-logo",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"area": "footer"
+		},
+		{
+			"name": "footer-dark",
+			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-light",
+			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-dark",
+			"area": "footer"
+		}
+	],
 	"settings": {
-		"fontsToLoadFromGoogle": [
-			"family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700"
-		],
 		"border": {
 			"customColor": true,
 			"customRadius": true,
