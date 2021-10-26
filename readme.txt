@@ -35,11 +35,10 @@ GNU General Public License for more details.
 
 Aino WordPress Theme bundles the following third-party resources:
 
-* normalize.css, Copyright © Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
-* Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
-* Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
-* Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
-* TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
+* normalize.css, Copyright (c) Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
+* Screenshot image #1, (c) Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
+* TGM-Plugin-Activation, (c) Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
+Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
 
