@@ -18,8 +18,8 @@ You can find more information and helpful resources about Aino on https://wpaino
 
 == Copyright ==
 
-Aino WordPress Theme, Copyright 2020 Elmastudio Ltd.
-Aino is distributed under the terms of the GNU GPL
+Aino Theme, (C) 2021 Elmastudio Ltd.
+Aino is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -43,6 +43,7 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 == Changelog ==
 
 = 2.6.0 =
+Enhance: Load Google fonts locally.
 Enhance: Wider max wide content width.
 Enhance: Post query block support.
 Enhance: Navigation block spacing and alignment.
