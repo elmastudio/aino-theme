@@ -66,19 +66,10 @@
 }
 
 // Outer content padding
-.site-header__wrap,
-.theme-aino .site-header__wrap.has-background,
-.site-header-wrap,
-.theme-aino .site-header-wrap.has-background,
 .content-gap,
 .wp-block-group.has-background.content-gap {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
-}
-
-.site-header-wrap.has-background {
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 /* Centered elements */

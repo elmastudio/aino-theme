@@ -45,6 +45,7 @@ h3,
 h4,
 h5,
 h6 {
+	color: var(--wp--custom--color--font-primary);
 	line-height: var(--wp--custom--line-height--heading);
 	margin-top: 0;
 	margin-bottom: 0;
@@ -339,12 +340,6 @@ hr {
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
-}
-
-ol,
-ul {
-	margin: 0;
-	padding: 0;
 }
 
 ul {

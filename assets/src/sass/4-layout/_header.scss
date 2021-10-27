@@ -1,5 +1,8 @@
 .site-header {
 	position: relative;
+	@include push--auto;
+	padding-left: var(--s-r-9);
+	padding-right: var(--s-r-9);
 
 	.wp-block-site-title,
 	.wp-block-navigation {
