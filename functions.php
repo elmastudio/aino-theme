@@ -1,69 +1,18 @@
 <?php
-/**
- * Aino functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package Aino
- */
-
 if ( ! function_exists( 'aino_setup' ) ) :
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
-	 */
 	function aino_setup() {
-		/**
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		*/
-		load_theme_textdomain( 'aino', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
-
-		// Let WordPress manage the document title.
-		add_theme_support( 'title-tag' );
-
-		/**
-		 * Enable support for Post Thumbnails on posts and pages.
-		 */
+		// Adding support for featured images.
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1800, 99999 );
 
-		/**
-		 * Adds custom image sizes.
-		 */
-		add_image_size( 'aino-thumb', 1440, 810, true ); // Image Ratio 16:9.
-
-		// Custom logo.
-		$logo_width  = 170;
-		$logo_height = 48;
-
-		// If the retina setting is active, double the recommended width and height.
-		if ( get_theme_mod( 'retina_logo', false ) ) {
-			$logo_width  = floor( $logo_width * 2 );
-			$logo_height = floor( $logo_height * 2 );
-		}
-
-		// Add support for core custom logo.
-		add_theme_support(
-			'custom-logo',
-			array(
-				'height'      => $logo_height,
-				'width'       => $logo_width,
-				'flex-width'  => true,
-				'flex-height' => true,
-			)
-		);
+		// Adds custom image sizes.
+		add_image_size( 'aino-thumb', 1800, 1012, true ); // Image Ratio 16:9.
 
 		// Register Navigation menus.
 		register_nav_menus(
 			array(
-				'primary'       => esc_html__( 'Primary Menu', 'aino' ),
+				'primary' => esc_html__( 'Primary Menu', 'aino' ),
 			)
 		);
 
@@ -76,19 +25,10 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		// Enqueue editor styles.
 		add_editor_style( array( 'assets/build/css/editor.css', aino_fonts_url() ) );
 
-		// Add support for experimental link colour in blocks.
-		add_theme_support('experimental-link-color');
-
-		// Add support for custom custom line-heights in blocks.
-		add_theme_support( 'custom-line-height' );
-
-		// Add support for custom units in blocks.
-		add_theme_support( 'custom-units' );
-
-		// Remove core block patterns, since Aino ships its own patterns via the Aino blocks plugin.
+		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
 
-		// Add support for the WooCommerce eCommerce plugin.
+		// Add support for the WooCommerce.
 		add_theme_support( 'woocommerce', array(
 			'thumbnail_image_width' => 600,
 			'single_image_width'	=> 1200,
@@ -143,13 +83,10 @@ function aino_restore_customizer() {
 }
 add_action( 'init', 'aino_restore_customizer' );
 
-// Custom template tags for this theme.
-require get_template_directory() . '/inc/template-tags.php';
-
-// Aino Block Patterns.
+// Theme Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
 
-// Aino Block Styles.
+// Theme Block Styles.
 require get_template_directory() . '/inc/block-styles.php';
 
 /**
