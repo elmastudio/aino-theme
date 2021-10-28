@@ -9,10 +9,6 @@
 		padding-top: 18px;
 	}
 
-	.wp-block-social-links {
-		@include s-r-4(padding-top);
-	}
-
 	.wp-block-navigation {
 		display: flex;
 		flex-grow: 1;
@@ -38,6 +34,7 @@
 		.wp-block-social-links {
 			gap: var(--space-01);
 			display: none;
+			padding-top: var(--space-04);
 
 			.wp-social-link {
 
