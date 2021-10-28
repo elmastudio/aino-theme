@@ -299,14 +299,12 @@ var {
 }
 
 /* Links */
-
 a {
 	color: currentColor;
 	text-decoration: underline;
 }
 
 /* Elements */
-
 @media screen and (min-width: 50em) {
 
 	.editor-post-title:after,
@@ -332,7 +330,6 @@ a {
 *,
 *:after,
 *:before {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
 
@@ -445,7 +442,10 @@ textarea {
 }
 
 /* Template Parts */
+
 .site-header {
+	padding-left: var(--s-r-9);
+	padding-right: var(--s-r-9);
 
 	.header-content {
 		display: flex;
@@ -985,13 +985,13 @@ pre.wp-block-verse {
 	display: flex;
 	flex-wrap: wrap;
 
-		a {
-			@include btn;
-			@include btn-outline;
-			@include btn-xs;
-			@include s-r-2 (margin-right);
-			@include s-r-2 (margin-bottom);
-		}
+	a {
+		@include btn;
+		@include btn-outline;
+		@include btn-xs;
+		@include s-r-2 (margin-right);
+		@include s-r-2 (margin-bottom);
+	}
 }
 
 .wp-block-latest-posts li a {
@@ -1021,6 +1021,10 @@ pre.wp-block-verse {
 .wp-block-page-list,
 .wp-block-page-list>.wp-block-pages-list__item {
 	@include s-r-6(margin-right);
+}
+
+.wp-block-navigation {
+	flex-grow: 1;
 }
 
 .wp-block[data-type="core/calendar"] {
