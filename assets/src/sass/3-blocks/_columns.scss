@@ -1,13 +1,17 @@
-
-/* Columns */
-
 .wp-block-columns {
-
 	margin-bottom: 0;
+	gap: 1.5rem;
 
-	.alignwide {
-		padding-left: 0;
-		padding-right: 0;
+	@include breakpoint(sm) {
+		gap: 2rem;
+	}
+
+	@include breakpoint(md) {
+		gap: 2.5rem;
+	}
+
+	@include breakpoint(lg) {
+		gap: 3rem;
 	}
 
 	.wp-block-column>*:last-child {

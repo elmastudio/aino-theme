@@ -135,3 +135,28 @@ a.btn-outline,
 		border-radius: var(--global--border-radius-round);
 	}
 }
+
+// Search Icon Button
+.site-header {
+
+	.btn-search-icon {
+		padding-top: 1rem;
+
+		.wp-block-ainoblocks-button__link {
+			display: flex;
+			width: 2.5rem;
+			height: 2.5rem;
+			text-indent: -9000px;
+			text-transform: capitalize;
+			padding:0;
+			background-image: url(/assets/images/search.svg) !important;
+			background-repeat:no-repeat;
+			background-position: center center;
+			background-color: red !important;
+
+			&:hover {
+				background-color: red !important;
+			}
+		}
+	}
+}
