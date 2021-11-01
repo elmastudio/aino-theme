@@ -53,6 +53,7 @@ Enhance: Query Loop block grid posts.
 Enhance: Query patterns.
 Bugfix: Blank page template.
 Bugfix: Change required to recommended plugins.
+New: Single post Template without comments.
 
 = 2.5.0 =
 New: Feature patterns.

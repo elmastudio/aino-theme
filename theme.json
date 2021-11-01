@@ -5,16 +5,14 @@
 			"name": "header-footer",
 			"title": "Header and Footer",
 			"postTypes": [
-				"page",
-				"post"
+				"page"
 			]
 		},
 		{
 			"name": "blank",
 			"title": "Blank",
 			"postTypes": [
-				"page",
-				"post"
+				"page"
 			]
 		},
 		{
@@ -32,8 +30,15 @@
 			]
 		},
 		{
-			"name": "single-without-featured-image",
+			"name": "single-no-featured-image",
 			"title": "Post without Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-no-comments",
+			"title": "Post without Comments",
 			"postTypes": [
 				"post"
 			]
