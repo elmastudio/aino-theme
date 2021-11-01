@@ -1,8 +1,7 @@
 <?php
 /**
  * Team One Member large (Dark version)
- *
- * @package aino
+
  */
 
 return array(

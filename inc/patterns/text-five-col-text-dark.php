@@ -1,8 +1,7 @@
 <?php
 /**
  * Five content columns with heading. (DArk version)
- *
- * @package aino
+
  */
 
 return array(

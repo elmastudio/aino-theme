@@ -1,8 +1,7 @@
 <?php
 /**
  * Team 3 Images List View (Dark version)
- *
- * @package aino
+
  */
 
 return array(

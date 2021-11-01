@@ -1,8 +1,6 @@
 <?php
 /**
  * Default content width (Dark version)
- *
- * @package aino
  */
 
 return array(

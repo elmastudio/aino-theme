@@ -1,8 +1,7 @@
 <?php
 /**
  * Portfolio with small heading and two column images. (Dark version)
- *
- * @package aino
+
  */
 
 return array(

@@ -1,8 +1,7 @@
 <?php
 /**
  * Five content columns with heading. (Light version)
- *
- * @package aino
+
  */
 
 return array(

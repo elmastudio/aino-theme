@@ -1,8 +1,6 @@
 <?php
 /**
  * Big heading and three text columns (Dark version)
- *
- * @package aino
  */
 
 return array(

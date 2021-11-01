@@ -1,8 +1,6 @@
 <?php
 /**
  * Wide content width (Light version)
- *
- * @package aino
  */
 
 return array(

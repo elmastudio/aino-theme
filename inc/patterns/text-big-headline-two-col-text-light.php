@@ -1,8 +1,7 @@
 <?php
 /**
  * Big headline and two column paragraphs (Light version)
- *
- * @package aino
+
  */
 
 return array(

@@ -1,8 +1,7 @@
 <?php
 /**
  * Centered paragraph. (Light version)
- *
- * @package aino
+
  */
 
 return array(

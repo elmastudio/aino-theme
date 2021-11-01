@@ -1,8 +1,6 @@
 <?php
 /**
  * One big column, two smaller columns. (Dark version)
- *
- * @package aino
  */
 
 return array(

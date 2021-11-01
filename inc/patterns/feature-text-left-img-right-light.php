@@ -1,8 +1,7 @@
 <?php
 /**
  * Text content left, image right aligned. (Light version)
- *
- * @package aino
+
  */
 
 return array(

@@ -1,8 +1,7 @@
 <?php
 /**
  * Slim centered header (Dark version)
- *
- * @package aino
+
  */
 
 return array(

@@ -1,8 +1,6 @@
 <?php
 /**
  * Heading, two paragraphs and horizontal image. (Dark version)
- *
- * @package aino
  */
 
 return array(

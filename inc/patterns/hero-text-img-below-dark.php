@@ -1,8 +1,7 @@
 <?php
 /**
  * Hero Centered heading with CTA button and image below. (Dark version)
- *
- * @package aino
+
  */
 
 return array(

@@ -1,8 +1,7 @@
 <?php
 /**
  * Team 2 Images (Dark version)
- *
- * @package aino
+
  */
 
 return array(

@@ -1,8 +1,7 @@
 <?php
 /**
  * Centered heading and paragraph. (Dark version)
- *
- * @package aino
+
  */
 
 return array(

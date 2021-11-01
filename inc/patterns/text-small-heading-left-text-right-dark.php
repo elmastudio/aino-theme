@@ -1,8 +1,7 @@
 <?php
 /**
  * Left-aligned small heading with right-aligned text. (Dark version)
- *
- * @package aino
+
  */
 
 return array(

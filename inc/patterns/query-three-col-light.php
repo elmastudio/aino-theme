@@ -1,8 +1,7 @@
 <?php
 /**
  * 3-column post grid with small heading (Light version)
- *
- * @package aino
+
  */
 
 return array(

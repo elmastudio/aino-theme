@@ -1,8 +1,7 @@
 <?php
 /**
  * Five-column footer with site logo (Light version)
- *
- * @package aino
+
  */
 
 return array(
