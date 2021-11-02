@@ -480,8 +480,10 @@
 		}
 	}
 
+	@include breakpoint(md) {
 	&.one-col-img-overlay,
 	&.two-col-img-overlay {
+
 
 		.wp-block-post-template {
 			overflow: hidden;
@@ -510,8 +512,25 @@
 					}
 				}
 
+				.entry-header,
+				.entry-meta {
+					position: absolute;
+					left: 0;
+					z-index: 1;
+					@include s-r-7 (padding-top);
+					@include s-r-7 (padding-left);
+					@include s-r-7 (padding-bottom);
+				}
+
+				.entry-header {
+					top: 0;
+				}
+
+				.entry-meta {
+					bottom: 0;
+				}
+
 				.wp-block-post-author {
-					display: none;
 
 					&__avatar {
 
@@ -527,6 +546,7 @@
 			}
 		}
 	}
+	}
 
 	// Posts styles for large posts
 	&.one-col-img-large,
@@ -536,7 +556,7 @@
 
 			&__avatar {
 				@include avatar-m;
-				@include s-r-2 (margin-right);
+				margin-right: var(--space-02);
 			}
 		}
 

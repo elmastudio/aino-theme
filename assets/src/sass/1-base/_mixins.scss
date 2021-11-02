@@ -302,7 +302,7 @@ $var: true !default; // Can be overridden elsewhere
 	min-width: var(--space-09);
 	min-height: var(--space-09);
 
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		width: var(--space-10);
 		height: var(--space-10);
 	}

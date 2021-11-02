@@ -45,7 +45,7 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 = 2.6.0 =
 Enhance: Load Google fonts locally.
 Enhance: Wider max wide content width.
-Enhance: Post query block support.
+Enhance: Query block support.
 Enhance: Navigation block spacing and alignment.
 Enhance: Grid gaps.
 Enhance: Delete outdated theme files.
