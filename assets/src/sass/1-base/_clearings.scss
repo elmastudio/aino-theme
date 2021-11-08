@@ -37,3 +37,7 @@
 .no-letterspacing {
 	letter-spacing: 0 !important;
 }
+
+.wp-block-group:where(.has-background) {
+	padding: inherit;
+}

@@ -235,7 +235,6 @@ h5.has-xxxxl-font-size {
 	font-size: var(--global--font-size--heading-09) !important;
 }
 
-.single-post h1.entry-title,
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
@@ -245,7 +244,6 @@ h6.has-xxxxl-font-size {
 	font-size: var(--global--font-size--heading-08) !important;
 }
 
-h1.entry-title,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
@@ -526,4 +524,16 @@ big {
 
 .justify {
 	text-align: justify;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.serif {
+	font-family: var(--wp--custom--serif--typography--font-family) !important;
+}
+
+.sans-serif {
+	font-family: var(--wp--custom--sans-serif--typography--font-family) !important;
 }

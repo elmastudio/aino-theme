@@ -491,9 +491,6 @@
 	},
 	"styles": {
 		"blocks": {
-			"core/template-part": {
-			
-			},
 			"core/heading": {
 				"typography": {
 					"fontWeight": "700",

@@ -31,56 +31,9 @@
 			line-height: var(--wp--custom--line-height--body);
 		}
 
-		.wp-block-social-links {
-			gap: var(--space-01);
-			display: none;
-			padding-top: var(--space-04);
-
-			.wp-social-link {
-
-				a {
-					padding: 0;
-				}
-
-				&.wp-social-link.wp-social-link {
-					margin: 0;
-				}
-
-				&:hover {
-					transform: none;
-				}
-
-			}
-
-			&.is-style-logos-only {
-
-				.wp-social-link {
-					padding: 0;
-
-					a {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						padding: 0;
-						width: var(--space-08);
-						height: var(--space-08);
-
-						svg {
-							width: var(--space-06);
-							height: var(--space-06);
-						}
-					}
-				}
-			}
-
-			@include breakpoint(sm) {
-				display: flex;
-			}
-		}
-
 		.wp-block-navigation .has-child :where(.submenu-container,
 			.wp-block-navigation-link__container) {
-				left: -1.5rem;
+			left: -1.5rem;
 		}
 	}
 

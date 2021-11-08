@@ -309,10 +309,10 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin avatar-s {
-	width: var(--space-08);
-	height: var(--space-08);
-	min-width: var(--space-08);
-	min-height: var(--space-08);
+	width: var(--space-07);
+	height: var(--space-07);
+	min-width: var(--space-07);
+	min-height: var(--space-07);
 }
 
 /* Placeholders */
