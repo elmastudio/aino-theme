@@ -3,6 +3,10 @@
 	&:not(.has-background) {
 
 		.wp-block-navigation {
+
+			&__submenu-icon {
+				margin-left: 4px;
+			}
 		
 			&__submenu-container {
 				background: var(--wp--custom--color--background-secondary);
@@ -32,7 +36,7 @@
 
 	&__container {
 		.wp-block-navigation-item:not(:last-child) {
-			@include s-r-6(margin-right);
+			@include s-r-7(margin-right);
 		}
 	}
 
