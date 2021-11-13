@@ -161,8 +161,8 @@
 		text-transform: none;
 		font-weight: normal;
 			position: absolute;
-			top: $s-4;
-			right: $s-4;
+			top: var(--space-04);
+			right: var(--space-04);
 		}
 	}
 
@@ -213,8 +213,8 @@
 		flex-direction: row-reverse;
 
 		select {
-			height: $s-8;
-			padding: $s-2 87px $s-2 1.25rem;
+			height: var(--space-08);
+			padding: var(--space-02) 87px var(--space-02) 1.25rem;
 			line-height: 1;
 			font-size: 1rem;
 		}

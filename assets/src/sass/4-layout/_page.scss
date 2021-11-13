@@ -6,25 +6,6 @@
 
 	.entry-header {
 		display: block;
-		text-align: center;
 		padding-top: 0;
-	}
-}
-
-
-/* 404 Error page */
-.error404 {
-
-	.wp-block-search {
-
-		.wp-block-search__button {
-			background: var(--wp--custom--color--primary);
-			color: var(--wp--custom--color--button-color-primary);
-			padding: 1rem 2rem;
-		}
-
-		.wp-block-search__label {
-			width: auto;
-		}
 	}
 }

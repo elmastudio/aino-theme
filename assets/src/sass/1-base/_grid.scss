@@ -1,66 +1,35 @@
 // Fix pattern inserter preview for fullwidth container blocks
-.block-editor-block-list__layout.is-root-container > .fullwidth {
+.block-editor-block-list__layout.is-root-container>.fullwidth {
 	max-width: none !important;
-}
-
-// Default outer spacing
-@include breakpoint(sm) {
-	:root {
-		--global--grid-gap: #{2 * $s-7};
-	}
-}
-
-@include breakpoint(lg) {
-	:root {
-		--global--grid-gap: #{2 * $s-9};
-	}
-}
-
-@include breakpoint(xl) {
-	:root {
-		--global--grid-gap: #{2 * $s-6};
-	}
 }
 
 /* Alignments and block widths */
 [class*="wp-container-"].wp-block-template-part,
-[class*="wp-container-"] .wp-block-post-author,
 [class*="wp-container-"] .wp-block-post-comments-link,
 [class*="wp-container-"] .wp-block-post-featured-image {
 	margin-top: 0;
 }
 
-.wp-site-blocks > * + * {
+.wp-site-blocks>*+* {
 	margin-top: 0;
 }
 
-[class*="wp-container-"] {
-	.wp-block-group,
-	.wp-block-post-author,
-	.wp-block-post-comments-link,
-	.wp-block-post-featured-image {
-		margin-top: 0;
-	}
-}
-.page-template-woocommerce-default .wp-block-group.entry-header,
-.wp-block-group.alignfull,
-.wp-block-group.alignfull .wp-block-group.alignfull,
+.wp-block-group.alignfull .alignwide,
 .site-footer .footer-content {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }
 
-.wp-block-template-part,
-.wp-block-group.alignfull .wp-block-group.alignwide {
+.wp-block-group.alignfull .alignwide .alignwide {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.wp-block-group.alignfull > .alignfull,
-*[class*="wp-container-"] > .alignfull {
+.wp-block-group.alignfull>.alignfull,
+*[class*="wp-container-"]>.alignfull {
+	width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
-	width: calc( 100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 }
 
 .wp-block-group.alignfull {
@@ -70,13 +39,15 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	.alignwide {
+		max-width: var(--global--wide-content-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-.entry-content > * {
-
-	&.alignwide {
-		max-width: var(--global--max-content-width);
-	}
+.entry-content>* {
 
 	.aligncenter {
 		clear: both;
@@ -85,26 +56,17 @@
 }
 
 // Default post width
-.entry-content.post-width > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+.entry-content.post-width>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
 	@include push--auto;
-	width: calc(100% - var(--global--grid-gap));
 	max-width: var(--global--default-content-width);
 }
 
 // Outer content padding
-.site-header__wrap,
-.theme-aino .site-header__wrap.has-background,
-.site-header-wrap,
-.theme-aino .site-header-wrap.has-background,
 .content-gap,
-.wp-block-group.has-background.content-gap {
+.wp-block-group.has-background.content-gap,
+.site-header {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
-}
-
-.site-header-wrap.has-background {
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 /* Centered elements */
@@ -125,7 +87,7 @@
 /* Default wide page width */
 .site-main {
 	.site-content {
-		max-width: var(--global--max-content-width);
+		max-width: var(--global--wide-content-width);
 		@include push--auto;
 	}
 }
@@ -140,17 +102,6 @@
 .author-pic-link,
 .default-content-width {
 	max-width: var(--global--default-content-width);
-}
-
-/* Alignwide and fullwidth Content widths */
-.entry-content>*.alignwide {
-	max-width: var(--global--wide-content-width);
-	@include push--auto;
-}
-
-.alignwide {
-	max-width: var(--global--wide-content-width);
-	@include push--auto;
 }
 
 /* Grid Columns */
@@ -208,7 +159,7 @@
 	.flex-direction {
 
 		&__row {
-		flex-direction: row;
+			flex-direction: row;
 		}
 
 		&__row-reverse {
@@ -256,18 +207,42 @@
 // Width classes for flex items, workaround
 @include breakpoint(lg) {
 	.desktop__width__50 {
-	width: 50%;
+		width: 50%;
 	}
+
 	.desktop__width__55 {
 		width: 55%;
-		}
+	}
+
 	.desktop__width__60 {
 		width: 60%;
 	}
+
 	.desktop__width__40 {
 		width: 40%;
 	}
+
 	.desktop__width__45 {
 		width: 45%;
+	}
+}
+
+
+// Small, medium, lager grid gap
+.gap-s {
+	.wp-block-post-template {
+		@include gap-s;
+	}
+}
+
+.gap-m {
+	.wp-block-post-template {
+		@include gap-m;
+	}
+}
+
+.gap-l {
+	.wp-block-post-template {
+		@include gap-l;
 	}
 }

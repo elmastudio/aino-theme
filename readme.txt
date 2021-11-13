@@ -2,9 +2,9 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, wide-blocks, block-patterns, full-site-editing
 Requires at least: 5.8
-Tested up to: WordPress 5.8.1
+Tested up to: WordPress 5.8.2
 Requires PHP: 7.0
-Stable tag: 2.5.0
+Stable tag: 2.6.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -18,8 +18,8 @@ You can find more information and helpful resources about Aino on https://wpaino
 
 == Copyright ==
 
-Aino WordPress Theme, Copyright 2020 Elmastudio Ltd.
-Aino is distributed under the terms of the GNU GPL
+Aino Theme, (C) 2021 Elmastudio Ltd.
+Aino is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -35,13 +35,26 @@ GNU General Public License for more details.
 
 Aino WordPress Theme bundles the following third-party resources:
 
-* normalize.css, Copyright © Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
-* Material Design Icons, © Google, Inc., Apache License 2.0, https://material.io/resources/icons/
-* Simple Icons, Started by Dan Leech, CC0 1.0 Universal, https://simpleicons.org/
-* Screenshot image #1, © Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
-* TGM-Plugin-Activation, Copyright 2011, Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
+* normalize.css, Copyright (c) Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
+* Screenshot image #1, (c) Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
+* TGM-Plugin-Activation, (c) Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
+Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.0 =
+New: Single post Template without comments.
+New: Single post Template without Featured Image.
+Enhance: Load Google fonts locally.
+Enhance: Wider max wide content width.
+Enhance: Query block support.
+Enhance: Navigation block spacing and alignment.
+Enhance: Grid gaps.
+Enhance: Delete outdated theme files.
+Enhance: Query Loop block grid posts.
+Enhance: Query patterns.
+Bugfix: Blank page template.
+Bugfix: Change required to recommended plugins.
 
 = 2.5.0 =
 New: Feature patterns.

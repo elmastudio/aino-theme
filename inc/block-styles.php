@@ -11,7 +11,7 @@ if ( function_exists( 'register_block_style' ) ) {
 
 	function aino_register_block_styles() {
 
-		// Query Loop three column list
+		// Query three column list
 		register_block_style(
 			'core/query',
 			array(
@@ -35,6 +35,24 @@ if ( function_exists( 'register_block_style' ) ) {
 			array(
 				'name'  => 'aino-border-dark',
 				'label' => esc_html__( 'Border Dark', 'aino' ),
+			)
+		);
+
+		// Tagcloud as buttons
+		register_block_style(
+			'core/tag-cloud',
+			array(
+				'name'  => 'aino-tags-btns',
+				'label' => esc_html__( 'Tagcloud with buttons', 'aino' ),
+			)
+		);
+
+		// Categories as buttons
+		register_block_style(
+			'core/categories',
+			array(
+				'name'  => 'aino-cats-btns',
+				'label' => esc_html__( 'Categories as buttons', 'aino' ),
 			)
 		);
 	}

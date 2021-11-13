@@ -1,6 +1,6 @@
 {
 	"name": "aino",
-	"version": "2.5.0",
+	"version": "2.6.0",
 	"description": "Aino is a Full Site Editing blocks theme for everyone who wants to build websites with creative, individual page layouts.",
 	"scripts": {
 		"prod": "cross-env NODE_ENV=production webpack --mode production --progress",
@@ -33,5 +33,8 @@
 		"terser-webpack-plugin": "^5.2.0",
 		"webpack": "^5.51.2",
 		"webpack-cli": "^4.8.0"
+	},
+	"dependencies": {
+		"browser-sync": "^2.27.5"
 	}
 }

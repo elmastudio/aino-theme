@@ -1,12 +1,4 @@
 /* Advanced Button */
-
-.wp-block-ainoblocks-advanced-button {
-
-	.wp-block-ainoblocks-advanced-button__link {
-		@include transition-default;
-	}
-}
-
 .wp-block-ainoblocks-advanced-button {
 
 	&.is-style-primary {

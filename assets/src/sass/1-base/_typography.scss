@@ -8,6 +8,12 @@ textarea {
 	color: var(--wp--custom--color--font-secondary);
 }
 
+.page-template-default .entry-content p,
+.single-post .entry-content p,
+.single-product .entry-content p {
+	font-size: var(--global--font-size--body-m) !important;;
+}
+
 .wp-block-image figcaption,
 div[class*='wp-block-'] figcaption,
 .wp-block-calendar table,
@@ -24,20 +30,14 @@ div[class*='wp-block-'] figcaption,
 .single .navigation a span.nav-subtitle,
 .entry-content p.has-extrasmall-font-size,
 .entry-content p.has-xs-font-size,
-.entry-content .wp-block-post-excerpt.has-xs-font-size p,
-.entry-content .wp-block-post-terms.has-xs-font-size,
 .entry-content .sharedaddy h3.sd-title,
 .blocks-gallery-grid .blocks-gallery-item figcaption,
 .wc-block-components-checkout-step__heading-content,
 .entry-content p.wc-block-components-checkout-step__description,
 .entry-content .wc-block-components-product-metadata__description p,
-.wp-block-post-template.columns-5 .wp-block-post-excerpt__excerpt,
-.wp-block-post-template.columns-5 .wp-block-post-date,
-.wp-block-post-template.columns-5 .wp-block-post-author__name,
-.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
-.wp-block-post-template.columns-6 .wp-block-post-date,
-.wp-block-post-template.columns-6 .wp-block-post-author__name,
-.woocommerce-notices-wrapper ul {
+.woocommerce-notices-wrapper ul,
+.is-style-aino-cats-btns li a,
+.wp-block-tag-cloud.is-style-aino-tags-btns a {
 	font-size: var(--global--font-size--body-xs) !important;;
 }
 
@@ -69,9 +69,7 @@ div[class*='wp-block-'] figcaption,
 	.wc-block-components-sale-badge,
 	.comment-reply-title #cancel-comment-reply-link,
 	.reply,
-	.wp-block-post-template.columns-6 .wp-block-post-excerpt__excerpt,
 	.woocommerce-review__published-date,
-	.wp-block-post-author__name,
 	.comment-body .comment-author,
 	.comment p,
 	.woocommerce .woocommerce-form-register p,
@@ -99,18 +97,14 @@ div[class*='wp-block-'] figcaption,
 
 		.blog-1-column &,
 		.blog-2-column & {
-			font-size: var(--global--font-size--body-m) !important;;
+			font-size: var(--global--font-size--body-m) !important;
 		}
 	}
 }
 
 .page-header .description p,
 .entry-content p.has-m-font-size,
-.single-post .entry-content p,
-.single-product .entry-content p,
 li.has-m-font-size,
-.entry-content .wp-block-post-excerpt.has-m-font-size p,
-.entry-content .wp-block-post-terms.has-m-font-size,
 .mc4wp-form .mc4wp-alert p,
 input,
 select,
@@ -131,7 +125,7 @@ dl,
 .wc-block-components-totals-coupon__form .wc-block-components-text-input label,
 .wc-block-components-form .wc-block-components-text-input label,
 .wc-block-components-text-input label {
-	font-size: var(--global--font-size--body-m) !important;;
+	font-size: var(--global--font-size--body-m) !important;
 }
 
 .entry-content p.has-l-font-size,
@@ -143,7 +137,7 @@ dl,
 .authorbox-wrap .wp-block-post-author__byline,
 .authorbox-wrap .wp-block-post-author__name,
 .wp-block-post-comments p.nocomments {
-	font-size: var(--global--font-size--body-l) !important;;
+	font-size: var(--global--font-size--body-l) !important;
 }
 
 .entry-content p.has-xl-font-size,
@@ -151,22 +145,23 @@ dl,
 .entry-content .wp-block-post-terms.has-xl-font-size,
 .order-total .woocommerce-Price-amount,
 .entry-summary p.price {
-	font-size: var(--global--font-size--body-xl) !important;;
+	font-size: var(--global--font-size--body-xl) !important;
 }
 
 .entry-content {
 	p.has-xxl-font-size,
 	.wp-block-post-excerpt.has-xxl-font-size p,
 	.wp-block-post-terms.has-xxl-font-size {
-		font-size: var(--global--font-size--body-xxl) !important;;
+		font-size: var(--global--font-size--body-xxl) !important;
 	}
 }
 
 .entry-content {
 	p.has-xxl-font-size,
 	.wp-block-post-excerpt.has-xxl-font-size p,
-	.wp-block-post-terms.has-xxl-font-size {
-		font-size: var(--global--font-size--body-xxl) !important;;
+	.wp-block-post-terms.has-xxl-font-size,
+	.wp-block-quote.is-style-large p {
+		font-size: var(--global--font-size--body-xxl) !important;
 	}
 }
 
@@ -174,14 +169,14 @@ dl,
 .page-header .description p,
 .entry-content .wp-block-post-excerpt.has-xxxl-font-size p,
 .entry-content .wp-block-post-terms.has-xxxl-font-size {
-	font-size: var(--global--font-size--body-xxxl) !important;;
+	font-size: var(--global--font-size--body-xxxl) !important;
 }
 
 .entry-content {
 	p.has-xxxxl-font-size,
 	.wp-block-post-excerpt.has-xxxxl-font-size p,
 	.wp-block-post-terms.has-xxxxl-font-size {
-		font-size: var(--global--font-size--body-xxxxl) !important;;
+		font-size: var(--global--font-size--body-xxxxl) !important;
 	}
 }
 
@@ -189,8 +184,12 @@ dl,
 		p.has-xxs-font-size,
 		.wp-block-post-excerpt.has-xxs-font-size p,
 		.wp-block-post-terms.has-xxs-font-size {
-		font-size: var(--global--font-size--body-xxs) !important;;
+		font-size: var(--global--font-size--body-xxs) !important;
 	}
+}
+
+.wp-block-navigation__submenu-container .has-xxxl-font-size {
+	font-size: var(--global--font-size--body-s) !important;
 }
 
 /* Headings */
@@ -240,7 +239,6 @@ h5.has-xxxxl-font-size {
 	font-size: var(--global--font-size--heading-09) !important;
 }
 
-.single-post h1.entry-title,
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
@@ -250,7 +248,6 @@ h6.has-xxxxl-font-size {
 	font-size: var(--global--font-size--heading-08) !important;
 }
 
-h1.entry-title,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
@@ -268,8 +265,7 @@ h4.has-l-font-size,
 h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
-.related-title,
-.wp-block-post-template.columns-2 h2.wp-block-post-title {
+.related-title {
 	font-size: var(--global--font-size--heading-06) !important;
 }
 
@@ -282,8 +278,7 @@ h5.has-l-font-size,
 h6.has-xl-font-size,
 .blog h2.entry-title,
 .woocommerce-page h1.entry-title,
-.blog-archive h2.entry-title,
-.wp-block-post-template.columns-3 h2.wp-block-post-title {
+.blog-archive h2.entry-title {
 	font-size: var(--global--font-size--heading-05) !important;
 }
 
@@ -303,7 +298,6 @@ h6.has-l-font-size,
 .wc-block-components-title,
 .comment-reply-title,
 #comments,
-.wp-block-post-template.columns-4 h2.wp-block-post-title,
 h1.archive-title,
 .woocommerce-order-received h2,
 .woocommerce-Address-title h3 {
@@ -318,7 +312,7 @@ h5.has-s-font-size,
 h6.has-m-font-size,
 .woocommerce-loop-product__title,
 .is-large.wc-block-cart .wc-block-cart__totals-title,
-.wp-block-post-template.columns-5 h2.wp-block-post-title {
+.wp-block-ainoblocks-accordion-faq-block h3 {
 	font-size: var(--global--font-size--heading-03) !important;
 }
 
@@ -327,8 +321,7 @@ h3.has-xxxs-font-size,
 h5,
 h5.has-xs-font-size,
 h6.has-s-font-size,
-h6.has-xs-font-size,
-h1.wp-block-site-title {
+h6.has-xs-font-size {
 	font-size: var(--global--font-size--heading-02) !important;
 }
 
@@ -338,8 +331,7 @@ h5.has-xxxs-font-size,
 h6,
 h6.has-xxs-font-size,
 h6.has-xxxs-font-size,
-.wc-block-cart__empty-cart__title,
-.wp-block-post-template.columns-6 h2.wp-block-post-title {
+.wc-block-cart__empty-cart__title {
 	font-size: var(--global--font-size--heading-01) !important;
 }
 
@@ -361,7 +353,8 @@ h6.has-xxxs-font-size,
 }
 
 /* Default heading and paragraph paddings for single posts and default page template */
-.single,
+.single-post,
+.page-template-default,
 .page-template-default {
 
 	.entry-content {
@@ -430,7 +423,7 @@ h6.has-xxxs-font-size,
 				@include s-r-8(padding-bottom);
 			}
 	
-			p {
+			p:not(:last-child) {
 				@include s-r-6(padding-bottom);
 			}
 		}
@@ -448,10 +441,10 @@ dt {
 }
 
 dd {
-	margin: 0 $s-6 $s-6;
+	margin: 0 var(--space-06) var(--space-06);
 
 	@include breakpoint(sm) {
-		margin: 0 $s-6 $s-6;
+		margin: 0 var(--space-06) var(--space-06);
 	}
 }
 
@@ -470,10 +463,9 @@ blockquote cite,
 .wp-block-pullquote cite {
 	text-align: left;
 	display: block;
-	padding: $s-4 0 0;
+	padding: var(--space-04) 0 0;
 	font-size: var(--global--font-size--body-xs);
 	font-style: normal;
-	font-weight: bold;
 }
 
 code,
@@ -536,4 +528,16 @@ big {
 
 .justify {
 	text-align: justify;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.serif {
+	font-family: var(--wp--custom--serif--typography--font-family) !important;
+}
+
+.sans-serif {
+	font-family: var(--wp--custom--sans-serif--typography--font-family) !important;
 }

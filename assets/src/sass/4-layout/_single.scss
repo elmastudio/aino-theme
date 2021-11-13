@@ -40,22 +40,25 @@
 		}
 	}
 
-	.wp-block-post-terms {
-		visibility: hidden;
+	.post-footer {
 
-		a {
-			visibility: visible;
-		}
-
-		a:not(:last-child) {
-
-			&:after {
-				content: ",";
+		.wp-block-post-terms {
+			visibility: hidden;
+	
+			a {
+				visibility: visible;
 			}
-		}
-
-		a:not(:first-child) {
-			margin-left: -9px;
+	
+			a:not(:last-child) {
+	
+				&:after {
+					content: ",";
+				}
+			}
+	
+			a:not(:first-child) {
+				margin-left: -5px;
+			}
 		}
 	}
 
@@ -74,13 +77,13 @@
 			@include s-r-6 (margin-right);
 
 			img {
-				width: $s-9;
-				height: $s-9;
+				width: var(--space-09);
+				height: var(--space-09);
 				border-radius: 100px;
 
 				@include breakpoint(sm) {
-					width: $s-12;
-					height: $s-12;
+					width: var(--space-12);
+					height: var(--space-12);
 				}
 			}
 		}

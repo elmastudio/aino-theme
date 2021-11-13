@@ -22,7 +22,7 @@ get_header( 'shop' );
 ?>
 
 <header class="site-header wp-block-template-part">
-	<?php echo gutenberg_block_template_part( 'header' ); ?>
+	<?php echo block_template_part( 'header' ); ?>
 </header>
 
 <div class="content-wrap">
@@ -116,6 +116,6 @@ get_header( 'shop' );
 
 	</div>
 </div>
-<footer class="site-header wp-block-template-part">
-	<?php echo gutenberg_block_template_part( 'footer' ); ?>
+<footer class="site-footer wp-block-template-part">
+	<?php echo block_template_part( 'footer' ); ?>
 </footer>

@@ -1,5 +1,49 @@
 {
 	"version": 1,
+	"customTemplates": [
+		{
+			"name": "header-footer",
+			"title": "Header and Footer",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "header-logo-blank",
+			"title": "Header Logo Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "woocommmerce-default",
+			"title": "WooCommerce Default Page",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single-no-featured-image",
+			"title": "Post without Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-no-comments",
+			"title": "Post without Comments",
+			"postTypes": [
+				"post"
+			]
+		}
+	],
 	"templateParts": [
 		{
 			"name": "header",
@@ -30,42 +74,7 @@
 			"area": "footer"
 		}
 	],
-	"customTemplates": [
-		{
-			"name": "header-footer",
-			"title": "Header and Footer",
-			"postTypes": [
-				"page",
-				"post"
-			]
-		},
-		{
-			"name": "blank",
-			"title": "Blank",
-			"postTypes": [
-				"page",
-				"post"
-			]
-		},
-		{
-			"name": "header-logo-blank",
-			"title": "Header Logo Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "woocommmerce-default",
-			"title": "WooCommerce Default Page",
-			"postTypes": [
-				"page"
-			]
-		}
-	],
 	"settings": {
-		"fontsToLoadFromGoogle": [
-			"family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700"
-		],
 		"border": {
 			"customColor": true,
 			"customRadius": true,
@@ -114,12 +123,12 @@
 				},
 				{
 					"slug": "button-color-secondary",
-					"color": "#121212",
+					"color": "#ffffff",
 					"name": "Button Color Secondary"
 				},
 				{
 					"slug": "primary",
-					"color": "#282828",
+					"color": "#121212",
 					"name": "Primary"
 				},
 				{
@@ -267,7 +276,7 @@
 		},
 		"layout": {
 			"contentSize": "43.5rem",
-			"wideSize": "90rem"
+			"wideSize": "112.5rem"
 		},
 		"typography": {
 			"fontFamilies": [
@@ -295,52 +304,52 @@
 			"fontSizes": [
 				{
 					"name": "XXXS",
-					"size": "12px",
+					"size": "0.75rem",
 					"slug": "xxxs"
 				},
 				{
 					"name": "XXS",
-					"size": "14px",
+					"size": "0.875rem",
 					"slug": "xxs"
 				},
 				{
 					"name": "XS",
-					"size": "16px",
+					"size": "1rem",
 					"slug": "xs"
 				},
 				{
 					"name": "S",
-					"size": "18px",
+					"size": "1.125rem",
 					"slug": "s"
 				},
 				{
 					"name": "M",
-					"size": "20px",
+					"size": "1.25rem",
 					"slug": "m"
 				},
 				{
 					"name": "L",
-					"size": "24px",
+					"size": "1.5rem",
 					"slug": "l"
 				},
 				{
 					"name": "XL",
-					"size": "28px",
+					"size": "1.75rem",
 					"slug": "xl"
 				},
 				{
 					"name": "XXL",
-					"size": "34px",
+					"size": "2.125rem",
 					"slug": "xxl"
 				},
 				{
 					"name": "3XL",
-					"size": "40px",
+					"size": "2.5rem",
 					"slug": "xxxl"
 				},
 				{
 					"name": "4XL",
-					"size": "48px",
+					"size": "3rem",
 					"slug": "xxxxl"
 				}
 			],
@@ -481,10 +490,15 @@
 		}
 	},
 	"styles": {
+		"color": {
+			"background": "var(--wp--custom--color--main-background)",
+			"text": "var(--wp--custom--color--font-secondary)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--custom--body--typography--font-family)",
+			"lineHeight": "var(--wp--custom--line-height--body)"
+		},
 		"blocks": {
-			"core/template-part": {
-			
-			},
 			"core/heading": {
 				"typography": {
 					"fontWeight": "700",
@@ -518,14 +532,6 @@
 					"fontSize": "s"
 				}
 			}
-		},
-		"color": {
-			"background": "var(--wp--custom--color--main-background)",
-			"text": "var(--wp--custom--color--font-secondary)"
-		},
-		"typography": {
-			"fontFamily": "var(--wp--custom--body--typography--font-family)",
-			"lineHeight": "var(--wp--custom--line-height--body)"
 		}
 	}
 }

@@ -65,235 +65,79 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Responsive Spacing */
 @mixin s-r-0($property) {
-	#{$property}: $s-0;
+	#{$property}: 0;
 }
 
 @mixin s-r-1($property) {
-	#{$property}: $s-1;
+	#{$property}: var(--s-r-1);
 }
 
 @mixin s-r-2($property) {
-	#{$property}: $s-2;
+	#{$property}: var(--s-r-2);
 }
 
 @mixin s-r-3($property) {
-	#{$property}: $s-3;
+	#{$property}: var(--s-r-3);
 }
 
 @mixin s-r-4($property) {
-	#{$property}: $s-4;
+	#{$property}: var(--s-r-4);
 }
 
 @mixin s-r-5($property) {
-	#{$property}: $s-4;
-
-	@include breakpoint(lg) {
-		#{$property}: $s-5;
-	}
+	#{$property}: var(--s-r-5);
 }
 
 @mixin s-r-6($property) {
-	#{$property}: $s-4;
-
-	@include breakpoint(md) {
-		#{$property}: $s-5;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-6;
-	}
+	#{$property}: var(--s-r-6);
 }
 
 @mixin s-r-7($property) {
-	#{$property}: $s-4;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-5;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-6;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-7;
-	}
+	#{$property}: var(--s-r-7);
 }
 
 @mixin s-r-8($property) {
-	#{$property}: $s-5;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-6;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-7;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-8;
-	}
+	#{$property}: var(--s-r-8);
 }
 
 @mixin s-r-9($property) {
-	#{$property}: $s-6;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-7;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-8;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-9;
-	}
+	#{$property}: var(--s-r-9);
 }
 
 @mixin s-r-10($property) {
-	#{$property}: $s-7;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-8;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-9;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-10;
-	}
+	#{$property}: var(--s-r-10);
 }
 
 @mixin s-r-11($property) {
-	#{$property}: $s-8;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-9;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-10;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-11;
-	}
+	#{$property}: var(--s-r-11);
 }
 
 @mixin s-r-12($property) {
-	#{$property}: $s-9;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-10;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-11;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-12;
-	}
+	#{$property}: var(--s-r-12);
 }
 
 @mixin s-r-13($property) {
-	#{$property}: $s-10;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-11;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-12;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-13;
-	}
+	#{$property}: var(--s-r-13);
 }
 
 @mixin s-r-14($property) {
-	#{$property}: $s-11;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-12;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-13;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-14;
-	}
+	#{$property}: var(--s-r-14);
 }
 
 @mixin s-r-15($property) {
-	#{$property}: $s-12;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-13;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-14;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-15;
-	}
+	#{$property}: var(--s-r-15);
 }
 
 @mixin s-r-16($property) {
-	#{$property}: $s-13;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-14;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-15;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-16;
-	}
+	#{$property}: var(--s-r-16);
 }
 
 @mixin s-r-17($property) {
-	#{$property}: $s-14;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-15;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-16;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-17;
-	}
+	#{$property}: var(--s-r-17);
 }
 
 @mixin s-r-18($property) {
-	#{$property}: $s-15;
-
-	@include breakpoint(sm) {
-		#{$property}: $s-16;
-	}
-
-	@include breakpoint(md) {
-		#{$property}: $s-17;
-	}
-
-	@include breakpoint(lg) {
-		#{$property}: $s-18;
-	}
+	#{$property}: var(--s-r-18);
 }
 
 /* Buttons */
@@ -333,9 +177,10 @@ $var: true !default; // Can be overridden elsewhere
 	border-color: var(--wp--custom--color--primary);
 
 	&:hover {
+		background-color: var(--wp--custom--color--primary);
 		border-color: var(--wp--custom--color--primary);
-		color: var(--wp--custom--color--primary);
-		fill: var(--wp--custom--color--primary);
+		color: var(--wp--custom--color--button-color-primary);
+		fill: var(--wp--custom--color--button-color-primary);
 		text-decoration: none;
 	}
 }
@@ -353,184 +198,121 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 /* Button Sizes */
-@mixin btn-xxs {
-	padding: 0.5rem 1rem;
+@mixin btn-xxxs {
+	padding: 0.375rem 0.75rem;
 	font-size: 0.75rem;
 }
 
-@mixin btn-xs {
-	padding: 0.875rem 1.5rem;
+@mixin btn-xxs {
+	padding: 0.563rem 1.125rem;
 	font-size: 0.875rem;
 }
 
-@mixin btn-s {
-	padding: 1rem 2rem;
+@mixin btn-xs {
+	padding: 0.75rem 1.5rem;
 	font-size: 1rem;
 }
 
-@mixin btn-m {
-	padding: 1rem 2rem;
-	font-size: 1.125rem; //18px
+@mixin btn-s {
+	padding: 0.938rem 1.875rem;
+	font-size: 1.125rem;
+}
 
-	@include breakpoint(lg) {
-		padding: 1.25rem 2.5rem;
-		font-size: 1.25rem; //20px
-	}
+@mixin btn-m {
+	padding: 1.125rem 2.25rem;
+	font-size: 1.25rem;
 }
 
 @mixin btn-l {
-	padding: 1rem 2rem;
+	padding: 1.125rem 2.25rem;
 	font-size: 1.25rem;
 
 	@include breakpoint(md) {
 		padding: 1.25rem 2.5rem;
-		font-size: 1.375rem;
-	}
-
-	@include breakpoint(lg) {
-		padding: 1.5rem 3rem;
 		font-size: 1.5rem;
 	}
 }
 
 @mixin btn-xl {
-	padding: 1rem 2rem;
-	font-size: 1.375rem;
-
-	@include breakpoint(sm) {
-		padding: 1.25rem 2.5rem;
-		font-size: 1.5rem;
-	}
+	padding: 1.25rem 2.5rem;
+	font-size: 1.5rem;
 
 	@include breakpoint(md) {
-		padding: 1.5rem 3rem;
-		font-size: 1.625rem;
-	}
-
-	@include breakpoint(lg) {
-		padding: 2rem 4rem;
+		padding: 1.625rem 3.25rem;
 		font-size: 1.75rem;
 	}
 }
 
 @mixin btn-xxl {
-	padding: 1.5rem 3rem;
-	font-size: 1.375rem;
-
-	@include breakpoint(sm) {
-		padding: 2rem 4rem;
-		font-size: 1.5rem;
-	}
+	padding: 2.25rem 4.5rem;
+	font-size: 1.5rem;
 
 	@include breakpoint(md) {
-		padding: 2.5rem 5rem;
-		font-size: 1.625rem;
-	}
-
-	@include breakpoint(lg) {
-		padding: 3rem 6rem;
+		padding: 2.875rem 5.75rem;
 		font-size: 1.75rem;
 	}
 }
 
 @mixin btn-xxxl {
-	padding: 2.5rem 5rem;
-	font-size: 1.375rem;
-
-	@include breakpoint(sm) {
-		padding: 3rem 6rem;
-		font-size: 1.5rem;
-	}
+	padding: 3rem 6rem;
+	font-size: 1.5rem;
 
 	@include breakpoint(md) {
-		padding: 4rem 8rem;
-		font-size: 1.625rem;
-	}
-
-	@include breakpoint(lg) {
-		padding: 5rem 10rem;
+		padding: 3.625rem 7.25rem;
 		font-size: 1.75rem;
 	}
 }
 
 @mixin btn-xxxxl {
-	padding: 4rem 8rem;
-	font-size: 1.375rem;
-
-	@include breakpoint(sm) {
-		padding: 5rem 10rem;
-		font-size: 1.5rem;
-	}
+	padding: 3.75rem 7.5rem;
+	font-size: 1.5rem;
 
 	@include breakpoint(md) {
-		padding: 6rem 12rem;
-		font-size: 1.625rem;
-	}
-
-	@include breakpoint(lg) {
-		padding: 7.5rem 15rem;
+		padding: 5.625rem 11.25rem;
 		font-size: 1.75rem;
 	}
 }
 
 /* Avatars */
 @mixin avatar-l {
-	width: $s-11;
-	height: $s-11;
-	min-width: $s-11;
-	min-height: $s-11;
+	width: var(--space-11);
+	height: var(--space-11);
+	min-width: var(--space-11);
+	min-height: var(--space-11);
 
 	@include breakpoint(sm) {
-		width: $s-12;
-		height: $s-12;
+		width: var(--space-12);
+		height: var(--space-12);
 	}
 
 	@include breakpoint(md) {
-		width: $s-13;
-		height: $s-13;
+		width: var(--space-13);
+		height: var(--space-13);
 	}
 
 	@include breakpoint(lg) {
-		width: $s-14;
-		height: $s-14;
+		width: var(--space-14);
+		height: var(--space-14);
 	}
 }
 
 @mixin avatar-m {
-	width: $s-9;
-	height: $s-9;
-	min-width: $s-9;
-	min-height: $s-9;
+	width: var(--space-09);
+	height: var(--space-09);
+	min-width: var(--space-09);
+	min-height: var(--space-09);
 
-	@include breakpoint(sm) {
-		width: $s-10;
-		height: $s-10;
+	@include breakpoint(md) {
+		width: var(--space-10);
+		height: var(--space-10);
 	}
 }
 
 @mixin avatar-s {
-	width: $s-8;
-	height: $s-8;
-	min-width: $s-8;
-	min-height: $s-8;
-}
-
-/* Divider short */
-@mixin divider {
-	content: "";
-	display: block;
-	background-color: var(--wp--custom--color--border);
-	height: 1px;
-	margin-left: $s-2;
-	margin-right: $s-2;
-}
-
-@mixin divider-s {
-	@include s-r-8 (width);
-}
-
-@mixin divider-m {
-	@include s-r-9 (width);
+	width: var(--space-07);
+	height: var(--space-07);
+	min-width: var(--space-07);
+	min-height: var(--space-07);
 }
 
 /* Placeholders */
@@ -557,85 +339,52 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 /* Grid gaps */
-@mixin col-padding {
-	padding-left: $s-4;
-	padding-right: $s-4;
+@mixin gap-s {
+	column-gap: 0.5rem;
 
-	@include breakpoint(sm) {
-		padding-left: $s-6;
-		padding-right: $s-6;
-	}
-}
-
-@mixin col-gaps {
-
-	@include breakpoint(sm) {
-		margin-left: $s-4;
-		margin-right: $s-4;
+	@include breakpoint(md) {
+		column-gap: 0.75rem;
 	}
 
 	@include breakpoint(lg) {
-		margin-left: $s-6;
-		margin-right: $s-6;
+		column-gap: 1rem;
 	}
 }
 
-/* Shadows */
-@mixin shadow-1 {
-	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-}
+@mixin gap-m {
+	column-gap: 0.75rem;
 
-@mixin shadow-2 {
-	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
-	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
-}
-
-@mixin shadow-3 {
-	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-}
-
-@mixin shadow-4 {
-	box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
-}
-
-@mixin shadow-none {
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-
-/* Transitions */
-@mixin transition-default {
-	-webkit-transition: all 0.25s ease;
-	transition: all 0.25s ease;
-}
-
-@mixin transition-posthover {
-	-webkit-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
-}
-
-@mixin avatar-transition {
-	-webkit-transform: translate(0px, -2px);
-	transform: translate(0px, -2px);
-}
-
-/* Animations */
-@mixin scale {
-	-webkit-transform: scale(1.01);
-	transform: scale(1.01);
-}
-
-/* Retina Images */
-@mixin image-2x($image, $width, $height) {
-
-	@media (min--moz-device-pixel-ratio: 1.3),
-	(-webkit-min-device-pixel-ratio: 1.3),
-	(min-device-pixel-ratio: 1.3),
-	(min-resolution: 1.3dppx) {
-		background-image: url($image);
-		background-size: $width $height;
+	@include breakpoint(sm) {
+		column-gap: 1rem;
 	}
+
+	@include breakpoint(md) {
+		column-gap: 1.25rem;
+	}
+
+	@include breakpoint(lg) {
+		column-gap: 1.5rem;
+	}
+}
+
+@mixin gap-l {
+	column-gap: 1.5rem;
+
+	@include breakpoint(sm) {
+		column-gap: 2rem;
+	}
+
+	@include breakpoint(md) {
+		column-gap: 2.5rem;
+	}
+
+	@include breakpoint(lg) {
+		column-gap: 3rem;
+	}
+}
+
+/* Text underlines */
+@mixin underline-default {
+	text-decoration-line: underline;
+	text-decoration-thickness: 0.09em;
 }

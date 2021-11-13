@@ -22,10 +22,10 @@ ol ol {
 
 li > ul, li > ol {
 	margin-bottom: 0;
-	margin-left: $s-6;
+	margin-left: var(--space-06);
 
 	@include breakpoint(sm) {
-		margin-left: $s-6;
+		margin-left: var(--space-06);
 	}
 }
 
@@ -64,8 +64,8 @@ li > ul, li > ol {
 	li {
 		a {
 			display: block;
-			width: $s-6;
-			height: $s-6;
+			width: var(--space-06);
+			height: var(--space-06);
 			line-height: 1;
 			margin: 0;
 			overflow: hidden;
