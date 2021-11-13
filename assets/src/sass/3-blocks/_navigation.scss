@@ -27,7 +27,7 @@
 					}
 
 					&:not(:last-child) {
-						padding-bottom: 1rem;
+						padding-bottom: var(--space-02);
 					}
 				}
 			}
@@ -35,12 +35,21 @@
 	}
 
 	&__container {
+
 		.wp-block-navigation-item:not(:last-child) {
 			@include s-r-7(margin-right);
 		}
 	}
 
 	.site-footer & {
+		.wp-block-navigation__container {
+			display: block;
+		}
+
+		.wp-block-navigation__submenu-container {
+			display: none;
+		}
+
 		li {
 			@include s-r-2(padding-bottom);
 
@@ -65,22 +74,31 @@
 			margin: 0;
 		}
 	}
+
+	button {
+		&:hover {
+			background-color: transparent;
+		}
+	}
 }
 
 .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
-	padding: 0 24px;
+	padding: 0 1.5rem;
 }
 
 //mobile menu
-.wp-block-navigation.is-responsive {
+.wp-block-navigation {
 
-	&:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-		background: var(--wp--custom--color--background-secondary);
-		color: var(--wp--custom--color--font-secondary);
-	}
+	&.is-responsive {
 
-	&__responsive-container.is-menu-open {
-		@include s-r-4(padding);
+		.wp-block-navigation__responsive-container {
+
+			&.is-menu-open {
+				padding-left: var(--global--content--padding--left);
+				padding-right: var(--global--content--padding--right);
+				@include s-r-13(padding-top);
+			}
+		}
 	}
 
 	.has-child.wp-block-navigation-link {
@@ -90,40 +108,96 @@
 		}
 	}
 
-	.wp-block-navigation__responsive-container-open {
-		width: 3rem;
-		height: 3rem;
-		background: var(--wp--custom--color--background-secondary);
-		border-radius: 100px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.wp-block-navigation {
+		&__responsive-container-open,
+		&__responsive-container-close {
+			width: 2.5rem;
+			height: 2.5rem;
+			justify-content: center;
+			align-items: center;
+			background-repeat: no-repeat;
+			background-position: center center;
 
-		&:hover {
-			background: var(--wp--custom--color--background-secondary);
+			svg {
+				display: none;
+			}
 		}
 
-		@media (min-width: 600px) {
-			display: none;
+		&__responsive-container-open {
+			background-image: url(/assets/images/menu.svg) !important;
+		}
+
+		&__responsive-container-close {
+			background-image: url(/assets/images/close.svg) !important;
+			background-size: 1rem;
+			background-color: var(--wp--custom--color--background-primary);
+			top: 1rem;
+			right: var(--global--content--padding--right);
+			border-radius: var(--global--border-radius-round);
+
+			&:hover {
+				background-color: var(--wp--custom--color--background-primary);
+			}
 		}
 	}
 
-	.wp-block-navigation__responsive-container-close {
-		width: 3rem;
-		height: 3rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		top: 1rem;
-		right: 1rem;
+	&:not(.has-background) {
 
-		&:hover {
-			background: transparent;
+		.wp-block-navigation__responsive-container.is-menu-open {
+			background-color: var(--wp--custom--color--variant-background-primary);
+			color: var(--wp--custom--color--variant-font-primary);
 		}
+	}
 
-		@media (min-width: 600px) {
-			display: none;
+	&.mobile-hide {
+		display: none;
+
+		@include breakpoint(sm) {
+			display: flex;
 		}
+	}
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+
+	.wp-block-navigation__responsive-container-content {
+
+		@include breakpoint(sm) {
+			.wp-block-navigation__container {
+				flex-direction: row;
+			}
+		}
+	}
+
+	&.has-child {
+
+		.wp-block-navigation__submenu-container {
+			padding-left: 0;
+			@include s-r-12(padding-bottom);
+		
+			li {
+				margin: 0;
+		
+				a {
+					padding: 0;
+					font-weight: inherit;
+					line-height: var(--wp--custom--line-height--body);
+		
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content a {
+	font-weight: 700;
+	padding-bottom: var(--space-02);
+
+	&:hover {
+		text-decoration: none;
 	}
 }
 
@@ -161,7 +235,6 @@
 	}
 }
 
-// Left align mobile menu
 .items-justified-right {
 	.wp-block-navigation__responsive-container.is-menu-open {
 

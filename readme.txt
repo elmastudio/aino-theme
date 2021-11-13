@@ -43,6 +43,8 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 == Changelog ==
 
 = 2.6.0 =
+New: Single post Template without comments.
+New: Single post Template without Featured Image.
 Enhance: Load Google fonts locally.
 Enhance: Wider max wide content width.
 Enhance: Query block support.
@@ -53,7 +55,6 @@ Enhance: Query Loop block grid posts.
 Enhance: Query patterns.
 Bugfix: Blank page template.
 Bugfix: Change required to recommended plugins.
-New: Single post Template without comments.
 
 = 2.5.0 =
 New: Feature patterns.

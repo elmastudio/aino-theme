@@ -63,7 +63,8 @@
 
 // Outer content padding
 .content-gap,
-.wp-block-group.has-background.content-gap {
+.wp-block-group.has-background.content-gap,
+.site-header {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }

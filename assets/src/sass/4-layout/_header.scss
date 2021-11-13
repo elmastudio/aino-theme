@@ -1,22 +1,27 @@
 .site-header {
 	position: relative;
 	@include push--auto;
-	padding-left: var(--s-r-9);
-	padding-right: var(--s-r-9);
 
-	.wp-block-site-title,
-	.wp-block-navigation {
-		padding-top: 18px;
+	@include breakpoint(xl) {
+		padding-left: var(--space-09);
+		padding-right: var(--space-09);
+	}
+
+	.header-content {
+		.wp-block-site-title,
+		.wp-block-navigation {
+			margin-top: var(--space-04);
+		}
+	}
+
+	.wp-block-social-links {
+		margin-left: var(--s-r-7);
 	}
 
 	.wp-block-navigation {
-		display: flex;
-		flex-grow: 1;
 
 		&__container {
 			gap: 0;
-			padding-left: var(--space-07);
-			padding-right: var(--space-07);
 		}
 	}
 
@@ -34,6 +39,14 @@
 		.wp-block-navigation .has-child :where(.submenu-container,
 			.wp-block-navigation-link__container) {
 			left: -1.5rem;
+		}
+	}
+
+	.wp-block-ainoblocks-multiple-buttons__inner {
+		display: flex;
+
+		.wp-block-ainoblocks-button:not(:last-child) {
+			margin-bottom: 0;
 		}
 	}
 

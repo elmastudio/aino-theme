@@ -511,7 +511,6 @@
 		}
 	}
 
-	// Posts styles for large posts
 	&.one-col-img-large,
 	&.one-col-img-overlay,
 	&.two-col-img-overlay {
@@ -531,7 +530,46 @@
 			}
 		}
 	}
+
+	&.one-col-img-overlay {
+
+		.wp-block-ainoblocks-grid-container__inner {
+			display: block;
+		}
+
+		.wp-block-ainoblocks-grid-item.has-stacking {
+			position: relative;
+		}
+
+		.wp-block-post-template li {
+			padding-bottom: 0;
+		}
+
+		@include breakpoint(sm) {
+			.wp-block-ainoblocks-grid-container__inner {
+				display: grid;
+			}
+
+			.wp-block-ainoblocks-grid-item.has-stacking {
+				position: absolute;
+				@include s-r-11 (padding-left);
+				@include s-r-11 (padding-right);
+				color: var(--wp--custom--color--variant-font-primary);
+
+				h2 {
+					color: var(--wp--custom--color--variant-font-primary);
+				}
+			}
+		}
+
+		@include breakpoint(lg) {
+			.wp-block-ainoblocks-grid-item.has-stacking {
+				padding-right: 0;
+			}
+		}
+	}
 }
+
 
 @include breakpoint(md) {
 	.wp-block-group {
