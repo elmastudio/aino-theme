@@ -46,6 +46,28 @@
 			border-color: var(--wp--custom--color--variant-font-secondary);
 		}
 	}
+
+	&.icon-s {
+		max-width: var(--space-04);
+		max-height: var(--space-04);
+		width: var(--space-04);
+		height: var(--space-04);
+
+		img {
+			vertical-align: top;
+		}
+	}
+
+	&.icon-l {
+		max-width: var(--space-11);
+		max-height: var(--space-11);
+		width: var(--space-11);
+		height: var(--space-11);
+
+		img {
+			vertical-align: top;
+		}
+	}
 }
 
 div[class*='wp-block-'] figcaption {

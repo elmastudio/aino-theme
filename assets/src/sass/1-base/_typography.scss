@@ -276,7 +276,7 @@ h3.has-s-font-size,
 h4.has-m-font-size,
 h5.has-l-font-size,
 h6.has-xl-font-size,
-.blog h2.entry-title,
+.archive .archive-title,
 .woocommerce-page h1.entry-title,
 .blog-archive h2.entry-title {
 	font-size: var(--global--font-size--heading-05) !important;
@@ -291,14 +291,11 @@ h5.has-m-font-size,
 h6.has-l-font-size,
 .authorbox__wrap .section-title,
 .comments-area .comments-title,
-.blog .page-header h1.page-title,
-.blog-archive .page-header h1.page-title,
 .woocommerce-account h2,
 .woocommerce-checkout h3,
 .wc-block-components-title,
 .comment-reply-title,
 #comments,
-h1.archive-title,
 .woocommerce-order-received h2,
 .woocommerce-Address-title h3 {
 	font-size: var(--global--font-size--heading-04) !important;

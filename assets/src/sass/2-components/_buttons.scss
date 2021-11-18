@@ -1,7 +1,8 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.wp-block-search__button {
 	@include btn;
 	@include btn-m;
 }

@@ -13,8 +13,8 @@
 				border: none;
 				margin-left: 0;
 				left: -1.5rem;
-				@include s-r-6(padding-top);
-				@include s-r-6(padding-bottom);
+				padding-top: var(--space-03);
+				padding-bottom: var(--space-06);
 
 				li {
 
@@ -26,8 +26,12 @@
 						line-height: 1;
 					}
 
+					&:first-child {
+						padding-top: var(--space-03);
+					}
+
 					&:not(:last-child) {
-						padding-bottom: var(--space-02);
+						padding-bottom: var(--space-03);
 					}
 				}
 			}
