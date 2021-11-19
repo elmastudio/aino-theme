@@ -43,6 +43,7 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 == Changelog ==
 
 = 2.6.1 =
+New: WooCommerce block templates.
 Enhance: Wrap post info in "entry-header" div on index.html.
 Enhance: Query block styles.
 
