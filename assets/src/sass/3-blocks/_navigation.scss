@@ -1,33 +1,42 @@
 .wp-block-navigation {
 
-	&:not(.has-background) {
+	&:not(.has-background):not(.has-l-font-size) {
 
 		.wp-block-navigation {
 
 			&__submenu-icon {
 				margin-left: 4px;
 			}
-		
+
 			&__submenu-container {
 				background: var(--wp--custom--color--background-secondary);
 				border: none;
 				margin-left: 0;
 				left: -1.5rem;
-				@include s-r-6(padding-top);
-				@include s-r-6(padding-bottom);
+				padding-top: var(--space-03);
+				padding-bottom: var(--space-06);
 
 				li {
 
-					a {
+					.wp-block-navigation-item__content {
+						font-family: var(--wp--custom--body--typography--font-family);
+						align-items: stretch;
 						@include s-r-6(padding-left);
 						@include s-r-6(padding-right);
 						padding-top: 0;
 						padding-bottom: 0;
 						line-height: 1;
+						font-weight: normal;
+						text-transform: none;
+						font-size: var(--wp--preset--font-size--s) !important;
+					}
+
+					&:first-child {
+						padding-top: var(--space-03);
 					}
 
 					&:not(:last-child) {
-						padding-bottom: var(--space-02);
+						padding-bottom: var(--space-03);
 					}
 				}
 			}
@@ -38,6 +47,12 @@
 
 		.wp-block-navigation-item:not(:last-child) {
 			@include s-r-7(margin-right);
+		}
+
+		.wp-block-navigation__submenu-container {
+			.wp-block-navigation-item:not(:last-child) {
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -168,6 +183,13 @@
 			}
 		}
 
+		.wp-block-navigation-item {
+
+			.wp-block-navigation-item__content {
+				font-weight: 700;
+			}
+		}
+
 		.has-child {
 
 			.wp-block-navigation__submenu-container {
@@ -177,9 +199,9 @@
 				li {
 					margin: 0;
 			
-					a {
+					.wp-block-navigation-item__content {
+						font-weight: normal;
 						padding: 0;
-						font-weight: inherit;
 						line-height: var(--wp--custom--line-height--body);
 			
 						&:hover {

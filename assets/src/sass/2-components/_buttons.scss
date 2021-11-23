@@ -1,7 +1,8 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.wp-block-search__button {
 	@include btn;
 	@include btn-m;
 }
@@ -30,11 +31,20 @@ a.btn-primary,
 }
 
 a.btn-outline,
-.btn-outline a,
-.wp-block-tag-cloud.is-style-aino-tags-btns a,
-.wp-block-categories.is-style-aino-cats-btns a {
+.btn-outline a {
 	@include btn;
 	@include btn-outline;
+}
+
+.wp-block-tag-cloud.is-style-btn a,
+.wp-block-categories.is-style-btn a {
+	@include btn;
+	@include btn-outline;
+}
+
+.wp-block-tag-cloud.is-style-btn.btn-light a,
+.wp-block-categories.is-style-btn.btn-light a {
+	@include btn-outline-light;
 }
 
 .btn-naked,
@@ -62,8 +72,8 @@ a.btn-outline,
 	@include btn-xxs;
 }
 
-.wp-block-tag-cloud.is-style-aino-tags-btns a,
-.wp-block-categories.is-style-aino-cats-btns a,
+.wp-block-tag-cloud.is-style-btn a,
+.wp-block-categories.is-style-btn a,
 .btn-xs {
 	@include btn-xs;
 }
@@ -96,7 +106,8 @@ a.btn-outline,
 	@include btn-xxxxl;
 }
 
-.btn-curved {
+.btn-curved,
+.btn-rounded {
 
 	.btn,
 	input[type="submit"],

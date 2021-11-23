@@ -1,11 +1,4 @@
 <?php
-/**
- * Aino Block Styles
- *
- * @link https://developer.wordpress.org/reference/functions/register_block_style/
- *
- * @package Aino
- */
 
 if ( function_exists( 'register_block_style' ) ) {
 
@@ -15,7 +8,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/query',
 			array(
-				'name'  => 'aino-3col-list',
+				'name'  => '3col-list',
 				'label' => esc_html__( '3 Column List', 'aino' ),
 			)
 		);
@@ -24,7 +17,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/image',
 			array(
-				'name'  => 'aino-border-light',
+				'name'  => 'border-light',
 				'label' => esc_html__( 'Border Light', 'aino' ),
 			)
 		);
@@ -33,7 +26,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/image',
 			array(
-				'name'  => 'aino-border-dark',
+				'name'  => 'border-dark',
 				'label' => esc_html__( 'Border Dark', 'aino' ),
 			)
 		);
@@ -42,7 +35,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/tag-cloud',
 			array(
-				'name'  => 'aino-tags-btns',
+				'name'  => 'btn',
 				'label' => esc_html__( 'Tagcloud with buttons', 'aino' ),
 			)
 		);
@@ -51,7 +44,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/categories',
 			array(
-				'name'  => 'aino-cats-btns',
+				'name'  => 'btn',
 				'label' => esc_html__( 'Categories as buttons', 'aino' ),
 			)
 		);

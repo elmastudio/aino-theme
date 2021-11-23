@@ -14,25 +14,28 @@
 	margin-top: 0;
 }
 
-.wp-block-group.alignfull .alignwide,
-.site-footer .footer-content {
+.alignfull .alignwide,
+.site-footer .footer-content,
+.wp-block-ainoblocks-accordion-faq-block.alignfull {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }
 
-.wp-block-group.alignfull .alignwide .alignwide {
+.wp-block-group.alignfull .alignwide .alignwide,
+.wp-block-ainoblocks-accordion-faq-block.alignfull .alignwide {
 	padding-left: 0;
 	padding-right: 0;
 }
 
 .wp-block-group.alignfull>.alignfull,
-*[class*="wp-container-"]>.alignfull {
+*[class*="wp-container-"]>.alignfull,
+.wp-block-ainoblocks-accordion-faq-block.alignfull .wp-block-separator.alignfull {
 	width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
 }
 
-.wp-block-group.alignfull {
+.alignfull {
 
 	.default-content-width {
 		@include push--auto;

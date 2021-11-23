@@ -185,6 +185,21 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
+@mixin btn-outline-light {
+	color: var(--wp--custom--color--variant-primary);
+	fill: var(--wp--custom--color--variant-primary);
+	border: 1px solid;
+	border-color: var(--wp--custom--color--variant-primary);
+
+	&:hover {
+		background-color: var(--wp--custom--color--variant-primary);
+		border-color: var(--wp--custom--color--variant-primary);
+		color: var(--wp--custom--color--variant-button-color-primary);
+		fill: var(--wp--custom--color--variant-button-color-primary);
+		text-decoration: none;
+	}
+}
+
 @mixin btn-naked {
 	display: inline-block;
 	font-weight: normal;

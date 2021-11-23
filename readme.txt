@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.8
 Tested up to: WordPress 5.8.2
 Requires PHP: 7.0
-Stable tag: 2.6.0
+Stable tag: 2.6.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -12,7 +12,7 @@ Aino is a full site editing block theme for everyone who wants to build creative
 
 == Description ==
 
-Aino is a multi-purpose block theme for the WordPress block editor. In combination with the Aino Blocks and Gutenberg plugins you can build advanced page layouts using Aino's pre-designed block patterns with one click. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
+Aino is a Full Site Editong block theme for the WordPress block editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
 
 You can find more information and helpful resources about Aino on https://wpaino.com.
 
@@ -41,6 +41,16 @@ Aino WordPress Theme bundles the following third-party resources:
 Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.1 =
+New: WooCommerce block templates.
+New: Single Portrait Featured Image template.
+Enhance: Single post templates.
+Enhance: Wrap post info in "entry-header" div on index.html.
+Enhance: Query block styles.
+Enhance: Update theme.json to version 2.
+Enhance: Block style names.
+Enhance: Header and Header Dark Template Parts.
 
 = 2.6.0 =
 New: Single post Template without comments.

@@ -9,36 +9,48 @@
 	}
 
 	.post-meta {
-		@include flexbox;
+		display: flex;
 		justify-content: flex-start;
+		align-items: center;
 
 		.wp-block-post-author__name {
-			font-weight: normal;
+			font-weight: inherit;
+		}
+
+		.wp-block-post-comments-link {
+			display: none;
+
+			@include breakpoint(sm) {
+				display: flex;
+			}
 		}
 
 		.wp-block-post-comments-link,
-		.wp-block-post-author__name {
-			margin-left: 4px;
+		.wp-block-post-date {
+			margin-left: var(--space-01);
 		}
 
-
-		.wp-block-post-author__name,
-		.wp-block-post-date {
+		.wp-block-post-author__name {
 			&:after {
 				content: ",";
+			}
+		}
+
+		@include breakpoint(sm) {
+			.wp-block-post-date {
+				&:after {
+					content: ",";
+				}
 			}
 		}
 	}
 
 	.post-meta > *:last-child {
 
-		.wp-block-post-author__name,
-		.wp-block-post-date {
-			&:after {
-				display: none;
-			}
+		&:after {
+			display: none;
 		}
-	}
+}
 
 	.post-footer {
 

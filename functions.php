@@ -26,18 +26,10 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		remove_theme_support( 'core-block-patterns' );
 
 		// Add support for the WooCommerce.
-		add_theme_support( 'woocommerce', array(
-			'thumbnail_image_width' => 600,
-			'single_image_width'	=> 1200,
-		) );
+		add_theme_support( 'woocommerce' );
 
 		// Disable WooCommerce default styling.
 		add_filter( 'woocommerce_enqueue_styles', '__return_false' );
-
-		remove_theme_support( 'wc-product-gallery-zoom' );
-		remove_theme_support( 'wc-product-gallery-lightbox' );
-		remove_theme_support( 'wc-product-gallery-slider' );
-
 	}
 	endif;
 	add_action( 'after_setup_theme', 'aino_setup' );

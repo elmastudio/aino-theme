@@ -8,14 +8,22 @@
 	}
 
 	.header-content {
+		.wp-block-site-logo,
 		.wp-block-site-title,
-		.wp-block-navigation {
+		.wp-block-navigation,
+		.wp-block-social-links {
 			margin-top: var(--space-04);
+			margin-bottom: var(--space-04);
 		}
 	}
 
 	.wp-block-social-links {
+		display: none;
 		margin-left: var(--s-r-7);
+
+		@include breakpoint(sm) {
+			display: flex;
+		}
 	}
 
 	.wp-block-navigation {
@@ -33,7 +41,7 @@
 		justify-content: space-between;
 
 		.wp-block-site-title {
-			line-height: var(--wp--custom--line-height--body);
+			line-height: var(--global--line-height-reset);
 		}
 
 		.wp-block-navigation .has-child :where(.submenu-container,

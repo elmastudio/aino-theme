@@ -1,89 +1,15 @@
 {
-	"version": 1,
-	"customTemplates": [
-		{
-			"name": "header-footer",
-			"title": "Header and Footer",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "blank",
-			"title": "Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "header-logo-blank",
-			"title": "Header Logo Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "woocommmerce-default",
-			"title": "WooCommerce Default Page",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "single-no-featured-image",
-			"title": "Post without Featured Image",
-			"postTypes": [
-				"post"
-			]
-		},
-		{
-			"name": "single-no-comments",
-			"title": "Post without Comments",
-			"postTypes": [
-				"post"
-			]
-		}
-	],
-	"templateParts": [
-		{
-			"name": "header",
-			"area": "header"
-		},
-		{
-			"name": "header-dark",
-			"area": "header"
-		},
-		{
-			"name": "header-logo",
-			"area": "header"
-		},
-		{
-			"name": "footer",
-			"area": "footer"
-		},
-		{
-			"name": "footer-dark",
-			"area": "footer"
-		},
-		{
-			"name": "footer-five-columns-light",
-			"area": "footer"
-		},
-		{
-			"name": "footer-five-columns-dark",
-			"area": "footer"
-		}
-	],
+	"version": 2,
 	"settings": {
 		"border": {
-			"customColor": true,
-			"customRadius": true,
-			"customStyle": true,
-			"customWidth": true
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
 		},
 		"spacing": {
-			"customMargin": false,
-			"customPadding": false,
+			"margin": false,
+			"padding": false,
 			"blockGap": null,
 			"units": ["px", "em", "rem", "vh", "vw"]
 		},
@@ -533,5 +459,86 @@
 				}
 			}
 		}
-	}
+	},
+	"customTemplates": [
+		{
+			"name": "header-footer",
+			"title": "Header and Footer",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "header-logo-blank",
+			"title": "Header Logo Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "woocommmerce-default",
+			"title": "WooCommerce Default Page",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single-featured-image-portrait",
+			"title": "Post with Portrait Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-no-featured-image",
+			"title": "Post without Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-no-comments",
+			"title": "Post without Comments",
+			"postTypes": [
+				"post"
+			]
+		}
+	],
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "header-dark",
+			"area": "header"
+		},
+		{
+			"name": "header-logo",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"area": "footer"
+		},
+		{
+			"name": "footer-dark",
+			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-light",
+			"area": "footer"
+		},
+		{
+			"name": "footer-five-columns-dark",
+			"area": "footer"
+		}
+	]
 }

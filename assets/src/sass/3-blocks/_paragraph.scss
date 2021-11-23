@@ -21,3 +21,10 @@
 		}
 	}
 }
+
+@include breakpoint(lg) {
+	.two-col-d {
+		column-count: 2;
+		column-gap: 1.5rem;
+	}
+}
