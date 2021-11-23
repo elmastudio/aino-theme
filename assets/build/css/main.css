@@ -4886,13 +4886,25 @@ div[class*=wp-block-] figcaption {
 .single-post .post-meta .wp-block-post-author__name {
   font-weight: inherit;
 }
+.single-post .post-meta .wp-block-post-comments-link {
+  display: none;
+}
+@media (min-width: 48em) {
+  .single-post .post-meta .wp-block-post-comments-link {
+    display: flex;
+  }
+}
 .single-post .post-meta .wp-block-post-comments-link,
 .single-post .post-meta .wp-block-post-date {
   margin-left: var(--space-01);
 }
-.single-post .post-meta .wp-block-post-author__name:after,
-.single-post .post-meta .wp-block-post-date:after {
+.single-post .post-meta .wp-block-post-author__name:after {
   content: ",";
+}
+@media (min-width: 48em) {
+  .single-post .post-meta .wp-block-post-date:after {
+    content: ",";
+  }
 }
 .single-post .post-meta > *:last-child:after {
   display: none;

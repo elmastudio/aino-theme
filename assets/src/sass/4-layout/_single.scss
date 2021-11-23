@@ -9,7 +9,7 @@
 	}
 
 	.post-meta {
-		@include flexbox;
+		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 
@@ -17,16 +17,30 @@
 			font-weight: inherit;
 		}
 
+		.wp-block-post-comments-link {
+			display: none;
+
+			@include breakpoint(sm) {
+				display: flex;
+			}
+		}
+
 		.wp-block-post-comments-link,
 		.wp-block-post-date {
 			margin-left: var(--space-01);
 		}
 
-
-		.wp-block-post-author__name,
-		.wp-block-post-date {
+		.wp-block-post-author__name {
 			&:after {
 				content: ",";
+			}
+		}
+
+		@include breakpoint(sm) {
+			.wp-block-post-date {
+				&:after {
+					content: ",";
+				}
 			}
 		}
 	}
