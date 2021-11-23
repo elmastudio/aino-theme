@@ -106,7 +106,8 @@ a.btn-outline,
 	@include btn-xxxxl;
 }
 
-.btn-curved {
+.btn-curved,
+.btn-rounded {
 
 	.btn,
 	input[type="submit"],

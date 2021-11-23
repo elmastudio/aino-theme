@@ -7,50 +7,7 @@
 			@include s-r-10 (padding-bottom);
 		}
 
-		.wp-block-post-author {
-			display: flex;
-			align-items: center;
-
-			&:after {
-				content: "";
-			}
-
-			&__avatar {
-
-				img {
-					border-radius: 50%;
-				}
-			}
-
-			&__byline,
-			&__name {
-				display: inline;
-			}
-		}
-
-		.wp-block-post-terms {
-			display: flex;
-			flex-wrap: wrap;
-
-			a:not(:last-child) {
-				@include s-r-2 (margin-right);
-			}
-
-			&__separator {
-				display: none;
-			}
-		}
-
-		.wp-block-post-author {
-
-			&__byline {
-				font-size: inherit;
-			}
-		}
-
 		//Post Grids
-
-
 		&.columns-4 {
 
 			.wp-block-post-featured-image {
@@ -502,41 +459,7 @@
 							background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 						}
 					}
-
-					.wp-block-post-author {
-
-						&__avatar {
-
-							img {
-								border-color: var(--wp--custom--color--variant-font-primary);
-							}
-						}
-
-						@include breakpoint(sm) {
-							display: flex;
-						}
-					}
 				}
-			}
-		}
-	}
-
-	&.one-col-img-large,
-	&.one-col-img-overlay,
-	&.two-col-img-overlay {
-
-		.wp-block-post-author {
-
-			&__avatar {
-				@include avatar-s;
-				margin-right: var(--space-03);
-			}
-		}
-
-		.wp-block-post-terms {
-
-			a:not(:last-child) {
-				@include s-r-4 (margin-right);
 			}
 		}
 	}
@@ -614,5 +537,55 @@
 .wp-block-query:not(.gap-m):not(.gap-s) {
 	.is-flex-container.columns-3 {
 		@include gap-l;
+	}
+}
+
+.post-meta,
+.wp-block-query {
+
+	.wp-block-post-author {
+		display: flex;
+		align-items: center;
+	
+		&:after {
+			content: "";
+		}
+	
+		&__avatar {
+	
+			img {
+				border-radius: 50%;
+			}
+		}
+	
+		&__byline,
+		&__name {
+			display: inline;
+		}
+
+		&__byline {
+			font-size: inherit;
+		}
+	}
+}
+
+.post-meta,
+.one-col-img-large,
+.one-col-img-overlay,
+.two-col-img-overlay {
+
+	.wp-block-post-author {
+
+		&__avatar {
+			@include avatar-s;
+			margin-right: var(--space-03);
+		}
+	}
+
+	.wp-block-post-terms {
+
+		a:not(:last-child) {
+			@include s-r-4 (margin-right);
+		}
 	}
 }

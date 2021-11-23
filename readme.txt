@@ -44,6 +44,8 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 
 = 2.6.1 =
 New: WooCommerce block templates.
+New: Single Portrait Featured Image template.
+Enhance: Single post block templates.
 Enhance: Wrap post info in "entry-header" div on index.html.
 Enhance: Query block styles.
 Enhance: Update theme.json to version 2.

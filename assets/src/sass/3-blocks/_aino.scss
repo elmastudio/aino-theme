@@ -49,3 +49,44 @@
 		right: 2rem;
 	}
 }
+
+.wp-block-ainoblocks-accordion-faq-block {
+
+	&.is-style-toggle.has-background {
+
+		.accordion {
+			&:before {
+				background: var(--wp--custom--color--font-primary);
+			}
+			h3 {
+				color: var(--wp--custom--color--font-primary);
+
+				&:before,
+				&:after {
+					color: var(--wp--custom--color--variant-font-primary);
+				}
+			}
+		}
+
+		&:hover {
+			transition: all 0.25s;
+		}
+	}
+}
+
+.theme-makoney {
+
+	.wp-block-ainoblocks-accordion-faq-block {
+
+		&.is-style-toggle {
+	
+			.accordion {
+	
+				h3 {
+					text-transform: uppercase;
+					font-size: var(--global--font-size--body-xxs) !important;
+				}
+			}
+		}
+	}
+}

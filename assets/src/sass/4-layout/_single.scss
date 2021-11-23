@@ -11,14 +11,15 @@
 	.post-meta {
 		@include flexbox;
 		justify-content: flex-start;
+		align-items: center;
 
 		.wp-block-post-author__name {
-			font-weight: normal;
+			font-weight: inherit;
 		}
 
 		.wp-block-post-comments-link,
-		.wp-block-post-author__name {
-			margin-left: 4px;
+		.wp-block-post-date {
+			margin-left: var(--space-01);
 		}
 
 
@@ -32,13 +33,10 @@
 
 	.post-meta > *:last-child {
 
-		.wp-block-post-author__name,
-		.wp-block-post-date {
-			&:after {
-				display: none;
-			}
+		&:after {
+			display: none;
 		}
-	}
+}
 
 	.post-footer {
 

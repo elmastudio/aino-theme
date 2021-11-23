@@ -490,6 +490,13 @@
 			]
 		},
 		{
+			"name": "single-featured-image-portrait",
+			"title": "Post with Portrait Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
 			"name": "single-no-featured-image",
 			"title": "Post without Featured Image",
 			"postTypes": [
