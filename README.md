@@ -15,6 +15,16 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 2.6.1   
+New: WooCommerce block templates.  
+New: Single Portrait Featured Image template.  
+Enhance: Single post templates.  
+Enhance: Wrap post info in "entry-header" div on index.html.  
+Enhance: Query block styles.  
+Enhance: Update theme.json to version 2.  
+Enhance: Block style names.  
+Enhance: Header and Header Dark Template Parts.  
+
 ### 2.6.0  
 New: Single post Template without comments.  
 New: Single post Template without Featured Image.  
