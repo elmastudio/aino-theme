@@ -1,6 +1,7 @@
 {
 	"version": 2,
 	"settings": {
+		"appearanceTools": true,
 		"border": {
 			"color": true,
 			"radius": true,
@@ -15,6 +16,8 @@
 		},
 		"color": {
 			"link": true,
+			"corePalette": false,
+			"coreGradients": false,
 			"custom": true,
 			"palette": [
 				{
