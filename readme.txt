@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.8
 Tested up to: WordPress 5.8.2
 Requires PHP: 7.0
-Stable tag: 2.6.1
+Stable tag: 2.6.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -41,6 +41,9 @@ Aino WordPress Theme bundles the following third-party resources:
 Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.2 =
+Enhance: Disable core color and gradient palettes.
 
 = 2.6.1 =
 New: WooCommerce block templates.
