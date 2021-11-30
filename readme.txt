@@ -50,6 +50,7 @@ Bugfix: Single page templates.
 Enhance: Delete custom class names from template parts.
 Enhance: Rename footer template parts.
 Enhance: Use new Pattern block in template parts.
+Enhance: Delete Header/Logo template part.
 
 = 2.6.1 =
 New: WooCommerce block templates.
