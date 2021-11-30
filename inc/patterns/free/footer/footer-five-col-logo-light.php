@@ -1,17 +1,14 @@
 <?php
 /**
- * Five-column footer with site logo (Light version)
+ * Five-column footer with site logo (Light)
 
  */
 
 return array(
 	'title'      => __( 'Five-column footer with site logo (Light)', 'aino' ),
-	'blockTypes' => array( 'core/block-template-part/footer' ),
+	'blockTypes' => array( 'core/template-part/footer' ),
 	'categories' => array( 'aino-footer' ),
-	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-secondary","paddingTop":10,"paddingBottom":15,"className":"content-gap fullwidth"} -->
-	<div
-		class="wp-block-group alignfull content-gap fullwidth has-background-secondary-background-color has-background pt__10 pb__15">
-		<!-- wp:ainoblocks/grid-container -->
+	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-secondary","paddingTop":10,"paddingBottom":15} --><div class="wp-block-group alignfull has-background-secondary-background-color has-background pt__10 pb__15"><!-- wp:ainoblocks/grid-container -->
 		<div class="wp-block-ainoblocks-grid-container alignwide">
 			<div class="wp-block-ainoblocks-grid-container__inner">
 				<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomDesktop":0,"marginBottomTablet":11,"marginBottomMobile":11} -->
@@ -119,11 +116,11 @@ return array(
 				</div>
 				<!-- /wp:ainoblocks/grid-item -->
 	
-				<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"stretch","marginTopDesktop":0} -->
+				<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"stretch","marginTopDesktop":0,"className":"site-info"} -->
 				<div
-					class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__stretch no-stacking mt_d__0">
-					<!-- wp:paragraph {"align":"center","textColor":"font-secondary","fontSize":"xs","paddingTop":18} -->
-					<p class="has-text-align-center has-font-secondary-color has-text-color has-xs-font-size pt__18">© 2021
+					class="wp-block-ainoblocks-grid-item site-info col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__stretch no-stacking mt_d__0">
+					<!-- wp:paragraph {"align":"center","textColor":"font-secondary","fontSize":"xxs","paddingTop":18} -->
+					<p class="has-text-align-center has-font-secondary-color has-text-color has-xxs-font-size pt__18">© 2021
 						<strong>Site Title</strong>. Powered by <a rel="noreferrer noopener" href="https://wordpress.org"
 							data-type="URL" data-id="https://wordpress.org" target="_blank">WordPress</a>. Built with <a
 							rel="noreferrer noopener" href="https://wpaino.com/" data-type="URL"
