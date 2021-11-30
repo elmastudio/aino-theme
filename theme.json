@@ -348,6 +348,8 @@
 			}
 		},
 		"blocks": {
+			"core/paragraph": {
+			},
 			"core/button": {
 				"color": {
 					"palette": [
@@ -451,6 +453,11 @@
 					"fontSize": "var(--wp--preset--font-size--m)"
 				}
 			},
+			"core/paragraph": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--m)"
+				}
+			},
 			"core/preformatted": {
 				"color": {
 					"background": "var(--wp--preset--color--code-background)",
@@ -481,13 +488,6 @@
 		{
 			"name": "header-logo-blank",
 			"title": "Header Logo Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "woocommmerce-default",
-			"title": "WooCommerce Default Page",
 			"postTypes": [
 				"page"
 			]
@@ -524,10 +524,6 @@
 			"area": "header"
 		},
 		{
-			"name": "header-logo",
-			"area": "header"
-		},
-		{
 			"name": "footer",
 			"area": "footer"
 		},
@@ -536,11 +532,11 @@
 			"area": "footer"
 		},
 		{
-			"name": "footer-five-columns-light",
+			"name": "footer-five-col-logo-light",
 			"area": "footer"
 		},
 		{
-			"name": "footer-five-columns-dark",
+			"name": "footer-five-col-logo-dark",
 			"area": "footer"
 		}
 	]
