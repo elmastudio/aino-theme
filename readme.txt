@@ -47,6 +47,8 @@ Enhance: Disable core color and gradient palettes.
 Enhance: Delete woocommerce-default page template (not needed with new WooCommerce template support).
 Enhance: Restructure patterns.
 Bugfix: Single page templates.
+Enhance: Delete custom class names from template parts.
+Enhance: Rename footer template parts.
 
 = 2.6.1 =
 New: WooCommerce block templates.
