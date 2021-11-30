@@ -46,6 +46,7 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 Enhance: Disable core color and gradient palettes.
 Enhance: Delete woocommerce-default page template (not needed with new WooCommerce template support).
 Enhance: Restructure patterns.
+Bugfix: Single page templates.
 
 = 2.6.1 =
 New: WooCommerce block templates.
