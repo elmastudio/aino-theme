@@ -41,7 +41,7 @@ cite a,
 	color: var(--wp--style--color--link);
 }
 
-/* Links that keep the default text color and only show link color on hover */
+/* Link color on hover */
 .site-title a,
 h2.entry-title a,
 .comment-list b.fn a,
@@ -59,7 +59,7 @@ h2.entry-title a,
 	fill: var(--wp--custom--color--font-tertiary);
 }
 
-/* Link Hovers */
+/* Underline on hover */
 .header-cta-wrap,
 .footer-widget-wrap li,
 .site-info,

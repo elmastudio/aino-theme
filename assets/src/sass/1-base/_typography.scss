@@ -9,7 +9,6 @@ textarea {
 }
 
 .page-template-default .entry-content p,
-.single-post .entry-content p,
 .single-product .entry-content p {
 	font-size: var(--global--font-size--body-m) !important;;
 }
@@ -50,7 +49,7 @@ div[class*='wp-block-'] figcaption,
 	}
 }
 
-.wp-block-post-comments .commentlist,
+.wp-block-post-comments,
 .entry-content,
 .site-content {
 

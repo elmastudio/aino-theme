@@ -15,7 +15,6 @@
 }
 
 .alignfull .alignwide,
-.site-footer .footer-content,
 .wp-block-ainoblocks-accordion-faq-block.alignfull {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
@@ -67,7 +66,8 @@
 // Outer content padding
 .content-gap,
 .wp-block-group.has-background.content-gap,
-.site-header {
+.site-header,
+.site-footer {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }

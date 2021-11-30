@@ -555,10 +555,6 @@ body {
   --wp--style--block-gap: 0;
 }
 
-.editor-styles-wrapper .site-header-wrap {
-  max-width: auto;
-}
-
 .wp-block-group.alignfull > .alignfull,
 *[class*=wp-container-] > .alignfull,
 .is-root-container .wp-block[data-align=full] .wp-block-separator.is-style-wide {
@@ -771,57 +767,122 @@ h6.has-xxxs-font-size,
 }
 
 .wp-block-navigation.has-xxxs-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-xxxs-font-size,
 ol.has-xxxs-font-size,
-ul.has-xxxs-font-size {
+ul.has-xxxs-font-size,
+p.has-xxxs-font-size,
+.wp-block-post-excerpt.has-xxxs-font-size {
+  font-size: var(--global--font-size--body-xxxs);
+}
+.wp-block-navigation.has-xxxs-font-size p,
+ol.has-xxxs-font-size p,
+ul.has-xxxs-font-size p,
+p.has-xxxs-font-size p,
+.wp-block-post-excerpt.has-xxxs-font-size p {
   font-size: var(--global--font-size--body-xxxs);
 }
 .wp-block-navigation.has-xxs-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-xxs-font-size,
 ol.has-xxs-font-size,
-ul.has-xxs-font-size {
+ul.has-xxs-font-size,
+p.has-xxs-font-size,
+.wp-block-post-excerpt.has-xxs-font-size {
+  font-size: var(--global--font-size--body-xxs);
+}
+.wp-block-navigation.has-xxs-font-size p,
+ol.has-xxs-font-size p,
+ul.has-xxs-font-size p,
+p.has-xxs-font-size p,
+.wp-block-post-excerpt.has-xxs-font-size p {
   font-size: var(--global--font-size--body-xxs);
 }
 .wp-block-navigation.has-xs-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-xs-font-size,
 ol.has-xs-font-size,
-ul.has-xs-font-size {
+ul.has-xs-font-size,
+p.has-xs-font-size,
+.wp-block-post-excerpt.has-xs-font-size {
+  font-size: var(--global--font-size--body-xs);
+}
+.wp-block-navigation.has-xs-font-size p,
+ol.has-xs-font-size p,
+ul.has-xs-font-size p,
+p.has-xs-font-size p,
+.wp-block-post-excerpt.has-xs-font-size p {
   font-size: var(--global--font-size--body-xs);
 }
 .wp-block-navigation.has-s-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-s-font-size,
 ol.has-s-font-size,
-ul.has-s-font-size {
+ul.has-s-font-size,
+p.has-s-font-size,
+.wp-block-post-excerpt.has-s-font-size {
+  font-size: var(--global--font-size--body-s);
+}
+.wp-block-navigation.has-s-font-size p,
+ol.has-s-font-size p,
+ul.has-s-font-size p,
+p.has-s-font-size p,
+.wp-block-post-excerpt.has-s-font-size p {
   font-size: var(--global--font-size--body-s);
 }
 .wp-block-navigation.has-m-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-m-font-size,
 ol.has-m-font-size,
-ul.has-m-font-size {
+ul.has-m-font-size,
+p.has-m-font-size,
+.wp-block-post-excerpt.has-m-font-size {
+  font-size: var(--global--font-size--body-m);
+}
+.wp-block-navigation.has-m-font-size p,
+ol.has-m-font-size p,
+ul.has-m-font-size p,
+p.has-m-font-size p,
+.wp-block-post-excerpt.has-m-font-size p {
   font-size: var(--global--font-size--body-m);
 }
 .wp-block-navigation.has-l-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-l-font-size,
 ol.has-l-font-size,
-ul.has-l-font-size {
+ul.has-l-font-size,
+p.has-l-font-size,
+.wp-block-post-excerpt.has-l-font-size {
+  font-size: var(--global--font-size--body-l);
+}
+.wp-block-navigation.has-l-font-size p,
+ol.has-l-font-size p,
+ul.has-l-font-size p,
+p.has-l-font-size p,
+.wp-block-post-excerpt.has-l-font-size p {
   font-size: var(--global--font-size--body-l);
 }
 .wp-block-navigation.has-xl-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-xl-font-size,
 ol.has-xl-font-size,
-ul.has-xl-font-size {
+ul.has-xl-font-size,
+p.has-xl-font-size,
+.wp-block-post-excerpt.has-xl-font-size {
+  font-size: var(--global--font-size--body-xl);
+}
+.wp-block-navigation.has-xl-font-size p,
+ol.has-xl-font-size p,
+ul.has-xl-font-size p,
+p.has-xl-font-size p,
+.wp-block-post-excerpt.has-xl-font-size p {
   font-size: var(--global--font-size--body-xl);
 }
 .wp-block-navigation.has-xxl-font-size,
-p:not(.wp-block-post-excerpt__more-text).has-xxl-font-size,
 ol.has-xxl-font-size,
-ul.has-xxl-font-size {
+ul.has-xxl-font-size,
+p.has-xxl-font-size,
+.wp-block-post-excerpt.has-xxl-font-size {
+  font-size: var(--global--font-size--body-xxl);
+}
+.wp-block-navigation.has-xxl-font-size p,
+ol.has-xxl-font-size p,
+ul.has-xxl-font-size p,
+p.has-xxl-font-size p,
+.wp-block-post-excerpt.has-xxl-font-size p {
   font-size: var(--global--font-size--body-xxl);
 }
 .wp-block-navigation.has-drop-cap:not(:focus):first-letter,
-p:not(.wp-block-post-excerpt__more-text).has-drop-cap:not(:focus):first-letter,
 ol.has-drop-cap:not(:focus):first-letter,
-ul.has-drop-cap:not(:focus):first-letter {
+ul.has-drop-cap:not(:focus):first-letter,
+p.has-drop-cap:not(:focus):first-letter,
+.wp-block-post-excerpt.has-drop-cap:not(:focus):first-letter {
   float: left;
   margin: 5px 8px 0 -8px;
   line-height: 0.77;
@@ -831,9 +892,10 @@ ul.has-drop-cap:not(:focus):first-letter {
 }
 @media (min-width: 48em) {
   .wp-block-navigation.has-drop-cap:not(:focus):first-letter,
-p:not(.wp-block-post-excerpt__more-text).has-drop-cap:not(:focus):first-letter,
 ol.has-drop-cap:not(:focus):first-letter,
-ul.has-drop-cap:not(:focus):first-letter {
+ul.has-drop-cap:not(:focus):first-letter,
+p.has-drop-cap:not(:focus):first-letter,
+.wp-block-post-excerpt.has-drop-cap:not(:focus):first-letter {
     font-size: 120px;
     line-height: 0.77;
     margin: 6px 12px 0 -8px;
@@ -841,9 +903,10 @@ ul.has-drop-cap:not(:focus):first-letter {
 }
 @media (min-width: 48em) {
   .wp-block-navigation.intro.has-drop-cap:not(:focus):first-letter,
-p:not(.wp-block-post-excerpt__more-text).intro.has-drop-cap:not(:focus):first-letter,
 ol.intro.has-drop-cap:not(:focus):first-letter,
-ul.intro.has-drop-cap:not(:focus):first-letter {
+ul.intro.has-drop-cap:not(:focus):first-letter,
+p.intro.has-drop-cap:not(:focus):first-letter,
+.wp-block-post-excerpt.intro.has-drop-cap:not(:focus):first-letter {
     font-size: 142px;
   }
 }

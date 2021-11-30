@@ -12,10 +12,6 @@
 	--wp--style--block-gap: 0;
 }
 
-.editor-styles-wrapper .site-header-wrap {
-	max-width: auto;
-}
-
 .wp-block-group.alignfull>.alignfull,
 *[class*="wp-container-"]>.alignfull,
 .is-root-container .wp-block[data-align="full"] .wp-block-separator.is-style-wide {
@@ -229,40 +225,73 @@ h6.has-xxxs-font-size,
 }
 
 .wp-block-navigation,
-p:not(.wp-block-post-excerpt__more-text),
 ol,
-ul {
+ul,
+p,
+.wp-block-post-excerpt {
 
 	&.has-xxxs-font-size {
 		font-size: var(--global--font-size--body-xxxs);
+
+		p {
+			font-size: var(--global--font-size--body-xxxs);
+		}
 	}
 
 	&.has-xxs-font-size {
 		font-size: var(--global--font-size--body-xxs);
+
+		p {
+			font-size: var(--global--font-size--body-xxs);
+		}
 	}
 
 	&.has-xs-font-size {
 		font-size: var(--global--font-size--body-xs);
+
+		p {
+			font-size: var(--global--font-size--body-xs);
+		}
 	}
 
 	&.has-s-font-size {
 		font-size: var(--global--font-size--body-s);
+
+		p {
+			font-size: var(--global--font-size--body-s);
+		}
 	}
 
 	&.has-m-font-size {
 		font-size: var(--global--font-size--body-m);
+
+		p {
+			font-size: var(--global--font-size--body-m);
+		}
 	}
 
 	&.has-l-font-size {
 		font-size: var(--global--font-size--body-l);
+
+		p {
+			font-size: var(--global--font-size--body-l);
+		}
 	}
 
 	&.has-xl-font-size {
 		font-size: var(--global--font-size--body-xl);
+
+		p {
+			font-size: var(--global--font-size--body-xl);
+		}
 	}
 
 	&.has-xxl-font-size {
 		font-size: var(--global--font-size--body-xxl);
+
+		p {
+			font-size: var(--global--font-size--body-xxl);
+		}
 	}
 
 	&.has-drop-cap:not(:focus):first-letter {

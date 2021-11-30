@@ -870,7 +870,6 @@ textarea {
 }
 
 .alignfull .alignwide,
-.site-footer .footer-content,
 .wp-block-ainoblocks-accordion-faq-block.alignfull {
   padding-left: var(--global--content--padding--left);
   padding-right: var(--global--content--padding--right);
@@ -916,7 +915,8 @@ textarea {
 
 .content-gap,
 .wp-block-group.has-background.content-gap,
-.site-header {
+.site-header,
+.site-footer {
   padding-left: var(--global--content--padding--left);
   padding-right: var(--global--content--padding--right);
 }
@@ -1118,7 +1118,6 @@ textarea {
 }
 
 .page-template-default .entry-content p,
-.single-post .entry-content p,
 .single-product .entry-content p {
   font-size: var(--global--font-size--body-m) !important;
 }
@@ -1157,34 +1156,34 @@ div[class*=wp-block-] figcaption,
   font-size: var(--global--font-size--body-s) !important;
 }
 
-.wp-block-post-comments .commentlist form label, .wp-block-post-comments .commentlist mark label .required,
-.wp-block-post-comments .commentlist .comment-notes,
-.wp-block-post-comments .commentlist .logged-in-as,
-.wp-block-post-comments .commentlist p.has-xs-font-size,
-.wp-block-post-comments .commentlist .has-xs-font-size p,
-.wp-block-post-comments .commentlist .onsale,
-.wp-block-post-comments .commentlist .woocommerce-checkout-review-order-table,
-.wp-block-post-comments .commentlist .payment_box p,
-.wp-block-post-comments .commentlist .wc-block-grid__product-onsale,
-.wp-block-post-comments .commentlist .wc-block-components-sale-badge,
-.wp-block-post-comments .commentlist .comment-reply-title #cancel-comment-reply-link,
-.wp-block-post-comments .commentlist .reply,
-.wp-block-post-comments .commentlist .woocommerce-review__published-date,
-.wp-block-post-comments .commentlist .comment-body .comment-author,
-.wp-block-post-comments .commentlist .comment p,
-.wp-block-post-comments .commentlist .woocommerce .woocommerce-form-register p,
-.wp-block-post-comments .commentlist .wp-block-ainoblocks-card .woocommerce-form-register p,
-.wp-block-post-comments .commentlist .woocommerce .woocommerce-ResetPassword p,
-.wp-block-post-comments .commentlist .wp-block-ainoblocks-card .woocommerce-ResetPassword p,
-.wp-block-post-comments .commentlist .woocommerce-form .lost_password,
-.wp-block-post-comments .commentlist .woocommerce-privacy-policy-text p,
-.wp-block-post-comments .commentlist .woocommerce-message,
-.wp-block-post-comments .commentlist .woocommerce-info,
-.wp-block-post-comments .commentlist .woocommerce-notice,
-.wp-block-post-comments .commentlist .woocommerce-MyAccount-content address,
-.wp-block-post-comments .commentlist .woocommerce-order-details .woocommerce-table,
-.wp-block-post-comments .commentlist .woocommerce-orders-table,
-.wp-block-post-comments .commentlist .woocommerce-MyAccount-navigation li,
+.wp-block-post-comments form label, .wp-block-post-comments mark label .required,
+.wp-block-post-comments .comment-notes,
+.wp-block-post-comments .logged-in-as,
+.wp-block-post-comments p.has-xs-font-size,
+.wp-block-post-comments .has-xs-font-size p,
+.wp-block-post-comments .onsale,
+.wp-block-post-comments .woocommerce-checkout-review-order-table,
+.wp-block-post-comments .payment_box p,
+.wp-block-post-comments .wc-block-grid__product-onsale,
+.wp-block-post-comments .wc-block-components-sale-badge,
+.wp-block-post-comments .comment-reply-title #cancel-comment-reply-link,
+.wp-block-post-comments .reply,
+.wp-block-post-comments .woocommerce-review__published-date,
+.wp-block-post-comments .comment-body .comment-author,
+.wp-block-post-comments .comment p,
+.wp-block-post-comments .woocommerce .woocommerce-form-register p,
+.wp-block-post-comments .wp-block-ainoblocks-card .woocommerce-form-register p,
+.wp-block-post-comments .woocommerce .woocommerce-ResetPassword p,
+.wp-block-post-comments .wp-block-ainoblocks-card .woocommerce-ResetPassword p,
+.wp-block-post-comments .woocommerce-form .lost_password,
+.wp-block-post-comments .woocommerce-privacy-policy-text p,
+.wp-block-post-comments .woocommerce-message,
+.wp-block-post-comments .woocommerce-info,
+.wp-block-post-comments .woocommerce-notice,
+.wp-block-post-comments .woocommerce-MyAccount-content address,
+.wp-block-post-comments .woocommerce-order-details .woocommerce-table,
+.wp-block-post-comments .woocommerce-orders-table,
+.wp-block-post-comments .woocommerce-MyAccount-navigation li,
 .entry-content form label,
 .entry-content mark label .required,
 .entry-content .comment-notes,
@@ -2675,7 +2674,7 @@ cite a:hover,
   color: var(--wp--style--color--link);
 }
 
-/* Links that keep the default text color and only show link color on hover */
+/* Link color on hover */
 .site-title a,
 h2.entry-title a,
 .comment-list b.fn a,
@@ -2693,7 +2692,7 @@ h2.entry-title a,
   fill: var(--wp--custom--color--font-tertiary);
 }
 
-/* Link Hovers */
+/* Underline on hover */
 .header-cta-wrap a,
 .footer-widget-wrap li a,
 .site-info a,
@@ -3616,21 +3615,14 @@ tr td:last-of-type {
   margin-left: 0;
 }
 .wp-block-navigation .wp-block-navigation__responsive-container-open, .wp-block-navigation .wp-block-navigation__responsive-container-close {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: var(--space-08);
+  height: var(--space-08);
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.wp-block-navigation .wp-block-navigation__responsive-container-open svg, .wp-block-navigation .wp-block-navigation__responsive-container-close svg {
-  display: none;
-}
-.wp-block-navigation .wp-block-navigation__responsive-container-open {
-  background-image: url(../c4a29d8148579d842b1f.svg) !important;
-}
 .wp-block-navigation .wp-block-navigation__responsive-container-close {
-  background-image: url(../74cfbd6e002e6aa9ddf4.svg) !important;
   background-size: 1rem;
   background-color: var(--wp--custom--color--background-primary);
   top: 1rem;
@@ -3639,6 +3631,10 @@ tr td:last-of-type {
 }
 .wp-block-navigation .wp-block-navigation__responsive-container-close:hover {
   background-color: var(--wp--custom--color--background-primary);
+}
+.wp-block-navigation .wp-block-navigation__responsive-container-close svg {
+  width: var(--space-08);
+  color: var(--wp--custom--color--primary);
 }
 .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
   background-color: var(--wp--custom--color--variant-background-primary);
@@ -3709,6 +3705,13 @@ tr td:last-of-type {
 }
 .items-justified-right .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
   align-items: flex-start !important;
+}
+
+.header-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+  background: var(--wp--custom--color--background-secondary);
+}
+.header-dark .wp-block-navigation:not(.has-background).has-variant-font-secondary-color .wp-block-navigation__submenu-container li a {
+  color: var(--wp--preset--color--font-secondary);
 }
 
 .entry-content p.has-drop-cap:not(:focus):first-letter {
@@ -4717,9 +4720,6 @@ div[class*=wp-block-] figcaption {
   height: var(--space-06);
 }
 
-/**
- * Layout Index
- */
 .site-header {
   position: relative;
   margin-left: auto;
@@ -4769,20 +4769,6 @@ div[class*=wp-block-] figcaption {
 }
 .site-header .wp-block-ainoblocks-multiple-buttons__inner .wp-block-ainoblocks-button:not(:last-child) {
   margin-bottom: 0;
-}
-.site-header .site-header__wrap.header-dark .wp-block-navigation.is-responsive .wp-block-navigation__responsive-container-open,
-.site-header .site-header__wrap.header-dark .wp-block-navigation:not(.has-background) .submenu-container,
-.site-header .site-header__wrap.header-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container,
-.site-header .site-header__wrap.header-dark .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open,
-.site-header .site-header-wrap.header-dark .wp-block-navigation.is-responsive .wp-block-navigation__responsive-container-open,
-.site-header .site-header-wrap.header-dark .wp-block-navigation:not(.has-background) .submenu-container,
-.site-header .site-header-wrap.header-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container,
-.site-header .site-header-wrap.header-dark .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-  background: var(--wp--custom--color--variant-background-secondary);
-}
-.site-header .site-header__wrap.header-dark .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open,
-.site-header .site-header-wrap.header-dark .wp-block-navigation.is-responsive:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-  color: var(--wp--custom--color--variant-font-secondary);
 }
 
 .pagination-wrap .wp-block-query-pagination,
@@ -4881,6 +4867,7 @@ div[class*=wp-block-] figcaption {
   align-items: center;
 }
 .single-post .post-meta .wp-block-post-author__name {
+  font-size: inherit;
   font-weight: inherit;
 }
 .single-post .post-meta .wp-block-post-comments-link {
@@ -4987,24 +4974,6 @@ div[class*=wp-block-] figcaption {
 .search-no-results .entry-header {
   display: block;
   padding-top: 0;
-}
-
-@media (min-width: 48em) {
-  body:not(.footer-centered) .site-footer .footer-wrap .footer-info .social-footer-nav {
-    padding-top: 0;
-  }
-}
-
-.site-footer .footer-content {
-  max-width: 100%;
-}
-.site-footer .wp-block-ainoblocks-grid-item .wp-block-group:not(:last-child) {
-  padding-bottom: 5rem;
-}
-@media (min-width: 80em) {
-  .site-footer .wp-block-ainoblocks-grid-item .wp-block-group:not(:last-child) {
-    padding-bottom: var(--s-r-11);
-  }
 }
 
 /**
