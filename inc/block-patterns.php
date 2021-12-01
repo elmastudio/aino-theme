@@ -18,7 +18,7 @@ function aino_register_block_patterns() {
 			'aino-footer'    => array( 'label' => __( 'Footer', 'aino' ) ),
 		);
 
-		$block_pattern_categories = apply_filters( 'twentytwentytwo_block_pattern_categories', $block_pattern_categories );
+		$block_pattern_categories = apply_filters( 'aino_block_pattern_categories', $block_pattern_categories );
 
 		foreach ( $block_pattern_categories as $name => $properties ) {
 			register_block_pattern_category( $name, $properties );
