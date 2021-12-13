@@ -16,8 +16,8 @@
 		},
 		"color": {
 			"link": true,
-			"corePalette": false,
-			"coreGradients": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
 			"custom": true,
 			"palette": [
 				{

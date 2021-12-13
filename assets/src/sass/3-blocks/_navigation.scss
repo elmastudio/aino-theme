@@ -261,14 +261,7 @@
 	.wp-block-navigation {
 	
 		&:not(.has-background) .wp-block-navigation__submenu-container {
-			background: var(--wp--custom--color--background-secondary);
-		}
-
-		&:not(.has-background).has-variant-font-secondary-color .wp-block-navigation__submenu-container {
-
-			li a {
-				color: var(--wp--preset--color--font-secondary);
-			}
+			background: var(--wp--custom--color--variant-background-secondary);
 		}
 	}
 }
