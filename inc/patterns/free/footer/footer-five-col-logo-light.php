@@ -39,8 +39,6 @@ return array(
 						<!-- /wp:heading -->
 	
 						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"xs"} -->
-						<!-- wp:navigation-link {"label":"Accessibility","type":"page","id":703,"url":"http://ainodev.local/blog/","kind":"post-type"} /-->
-	
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->
