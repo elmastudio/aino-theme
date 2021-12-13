@@ -6,6 +6,7 @@
 */
 /* Includes */
 :root {
+  --wp--style--block-gap: 0;
   /* Spacing Values */
   --space-00: 0.125rem;
   --space-01: 0.25rem;
@@ -549,10 +550,6 @@ body {
 .border-bottom-left-radius-round,
 .border-bottom-left-radius-round img {
   border-bottom-left-radius: var(--global--border-radius-round);
-}
-
-.editor-styles-wrapper {
-  --wp--style--block-gap: 0;
 }
 
 .wp-block-group.alignfull > .alignfull,
@@ -1678,6 +1675,87 @@ pre.wp-block-verse {
 }
 .wp-block-ainoblocks-accordion-faq-block.is-style-toggle .accordion h3:before, .wp-block-ainoblocks-accordion-faq-block.is-style-toggle .accordion h3:after {
   color: var(--wp--custom--color--variant-font-primary);
+}
+
+.pagination-wrap .wp-block-query-pagination,
+.pagination-wrap .wp-block-query-pagination-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+.pagination-wrap .wp-block-query-pagination .page-numbers:not(.dots),
+.pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-previous,
+.pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-next,
+.pagination-wrap .wp-block-query-pagination-numbers .page-numbers:not(.dots),
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-previous,
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-next {
+  margin-right: var(--s-r-1);
+  margin-left: var(--s-r-1);
+  display: inline-block;
+  line-height: var(--global--line-height-reset);
+  font-weight: normal;
+  color: var(--wp--custom--color--font-secondary);
+  fill: var(--wp--custom--color--font-secondary);
+  background-color: transparent;
+  border: 1px solid var(--global--color--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-wrap .wp-block-query-pagination .page-numbers:not(.dots):hover,
+.pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-previous:hover,
+.pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-next:hover,
+.pagination-wrap .wp-block-query-pagination-numbers .page-numbers:not(.dots):hover,
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-previous:hover,
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-next:hover {
+  background-color: var(--global--color--border);
+  border: 1px solid var(--global--color--border);
+}
+.pagination-wrap .wp-block-query-pagination .page-numbers,
+.pagination-wrap .wp-block-query-pagination-numbers .page-numbers {
+  width: var(--space-09);
+  height: var(--space-09);
+  border-radius: 50%;
+}
+.pagination-wrap .wp-block-query-pagination .page-numbers.dots,
+.pagination-wrap .wp-block-query-pagination-numbers .page-numbers.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-previous,
+.pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-next,
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-previous,
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-next {
+  display: none;
+  padding: 0.938rem 1.875rem;
+  font-size: 1.125rem;
+  border-radius: 6rem;
+}
+@media (min-width: 64em) {
+  .pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-previous,
+.pagination-wrap .wp-block-query-pagination .wp-block-query-pagination-next,
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-previous,
+.pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-next {
+    display: flex;
+  }
+}
+.pagination-wrap .wp-block-query-pagination .page-numbers.current,
+.pagination-wrap .wp-block-query-pagination .page-numbers.current:hover,
+.pagination-wrap .wp-block-query-pagination-numbers .page-numbers.current,
+.pagination-wrap .wp-block-query-pagination-numbers .page-numbers.current:hover {
+  background-color: var(--wp--custom--color--primary);
+  border-color: var(--wp--custom--color--primary);
+  color: var(--wp--custom--color--button-color-primary);
+}
+
+.editor-styles-wrapper .wp-block-post-date {
+  margin-top: 0;
+}
+
+.editor-styles-wrapper .wp-block-post-title {
+  margin-top: var(--wp--style--block-gap);
 }
 
 /*# sourceMappingURL=editor.css.map*/
