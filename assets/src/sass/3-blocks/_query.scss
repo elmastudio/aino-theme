@@ -9,6 +9,10 @@
 
 		.wp-block-post-terms {
 
+			a:not(:last-child) {
+				margin-right: var(--s-r-3);
+			}
+
 			&__separator {
 				display: none;
 			}

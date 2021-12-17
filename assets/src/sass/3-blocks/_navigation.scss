@@ -5,7 +5,7 @@
 		.wp-block-navigation {
 
 			&__submenu-icon {
-				margin-left: 4px;
+				margin-left: var(--space-01);
 			}
 
 			&__submenu-container {
@@ -124,6 +124,7 @@
 	}
 
 	.wp-block-navigation {
+
 		&__responsive-container-open,
 		&__responsive-container-close {
 			width: var(--space-08);
@@ -157,6 +158,11 @@
 		.wp-block-navigation__responsive-container.is-menu-open {
 			background-color: var(--wp--custom--color--variant-background-primary);
 			color: var(--wp--custom--color--variant-font-primary);
+
+
+			.wp-block-navigation__responsive-container-content .wp-block-navigation-item {
+				flex-grow: 1;
+			}
 		}
 	}
 
@@ -262,6 +268,40 @@
 	
 		&:not(.has-background) .wp-block-navigation__submenu-container {
 			background: var(--wp--custom--color--variant-background-secondary);
+		}
+	}
+}
+
+.theme-makoney {
+
+	.site-header {
+		.wp-block-navigation {
+
+			.wp-block-navigation {
+				&__responsive-container-open {
+					background-image: url(/assets/images/menu.svg) !important;
+				
+					svg {
+						display: none;
+					}
+				}
+			}
+		}
+	
+		.header-content {
+			.wp-block-navigation-submenu .wp-block-navigation__submenu-icon {
+				width: 0.75rem;
+
+				svg {
+					height: 0.75rem;
+				}
+			}
+		}
+	
+		.wp-block-ainoblocks-grid-container {
+			.wp-block-navigation .wp-block-navigation__submenu-icon {
+				width: 0.4em;
+			}
 		}
 	}
 }

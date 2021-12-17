@@ -15,8 +15,8 @@ input[type="datetime-local"],
 input[type="color"],
 textarea,
 .wp-block-post-comments textarea,
+.wp-block-search__input,
 #rating {
-	width: 100%;
 	box-sizing: border-box;
 	background-color: var(--global--color--form-background);
 	border: 1px solid var(--global--color--form-border);

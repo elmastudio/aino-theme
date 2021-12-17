@@ -8,7 +8,6 @@
 	}
 
 	&.is-style-wide {
-		width: 100%;
 		max-width: 100%;
 	}
 }
@@ -23,4 +22,8 @@
 	content: "\00b7 \00b7 \00b7";
 	letter-spacing: 1em;
 	padding-left: 1em;
+}
+
+.alignfull .wp-block-separator.alignfull {
+	width: calc(100% + var(--global--content--padding--left) ) !important;
 }
