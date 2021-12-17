@@ -421,6 +421,9 @@
 		}
 	},
 	"styles": {
+		"spacing": {
+			"blockGap": null
+		},
 		"color": {
 			"background": "var(--wp--custom--color--main-background)",
 			"text": "var(--wp--custom--color--font-secondary)"
