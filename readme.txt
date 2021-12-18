@@ -14,7 +14,7 @@ Aino is a full site editing block theme for everyone who wants to build creative
 
 Aino is a Full Site Editong block theme for the WordPress block editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
 
-You can find more information and helpful resources about Aino on https://wpaino.com.
+You can find more information and helpful resources about Aino on https://ainoblocks.io.
 
 == Copyright ==
 
@@ -52,6 +52,7 @@ Enhance: Delete custom class names from template parts.
 Enhance: Rename footer template parts.
 Enhance: Use new Pattern block in template parts.
 Enhance: Delete Header/Logo template part.
+Enhance: Change Aino theme URL to ainoblocks.io.
 
 = 2.6.1 =
 New: WooCommerce block templates.

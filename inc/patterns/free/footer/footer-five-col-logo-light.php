@@ -121,8 +121,8 @@ return array(
 					<p class="has-text-align-center has-font-secondary-color has-text-color has-xxs-font-size pt__18">© 2021
 						<strong>Site Title</strong>. Powered by <a rel="noreferrer noopener" href="https://wordpress.org"
 							data-type="URL" data-id="https://wordpress.org" target="_blank">WordPress</a>. Built with <a
-							rel="noreferrer noopener" href="https://wpaino.com/" data-type="URL"
-							data-id="https://wpaino.com/" target="_blank">Aino</a>.</p>
+							rel="noreferrer noopener" href="https://ainoblocks.io/" data-type="URL"
+							data-id="https://ainoblocks.io/" target="_blank">Aino</a>.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:ainoblocks/grid-item -->

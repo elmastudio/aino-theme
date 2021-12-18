@@ -16,7 +16,7 @@ return array(
 	<!-- /wp:heading -->
 	<!-- wp:ainoblocks/multiple-buttons -->
 	<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"size":"size__s","borderRadius":200,"label":"Get started","backgroundColor":"variant-primary","textColor":"variant-button-color-primary"} -->
-	<div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__s 200" href="https://wpaino.com/" style="border-radius:200px">Get started</a></div>
+	<div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__s 200" href="https://ainoblocks.io/" style="border-radius:200px">Get started</a></div>
 	<!-- /wp:ainoblocks/button --></div></div>
 	<!-- /wp:ainoblocks/multiple-buttons --></div>
 	<!-- /wp:ainoblocks/flex-item -->
