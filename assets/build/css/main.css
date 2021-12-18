@@ -2480,6 +2480,7 @@ form p.comment-form-comment {
   padding-top: var(--space-02);
   width: 100%;
 }
+.mc4wp-form .mc4wp-form-fields p input[type=email],
 .mc4wp-form .mc4wp-form-fields p input[type=submit] {
   width: 100%;
 }

@@ -282,6 +282,7 @@ form p.comment-form-comment {
 				padding-top: var(--space-02);
 				width: 100%;
 
+				input[type=email],
 				input[type=submit] {
 					width: 100%;
 				}
