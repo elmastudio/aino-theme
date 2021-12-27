@@ -52,6 +52,7 @@ Bugfix: Single page templates.
 Enhance: Delete custom class names from template parts.
 Enhance: Rename footer template parts.
 Enhance: Use new Pattern block in template parts.
+Enhance: Search results and archive page template.
 Enhance: Delete Header/Logo template part.
 Enhance: Change Aino theme URL to ainoblocks.io.
 

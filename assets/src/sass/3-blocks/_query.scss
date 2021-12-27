@@ -8,6 +8,8 @@
 		}
 
 		.wp-block-post-terms {
+			display: flex;
+			flex-wrap: wrap;
 
 			a:not(:last-child) {
 				margin-right: var(--s-r-3);

@@ -3771,6 +3771,10 @@ tr td:last-of-type {
 .wp-block-query .wp-block-post-template li {
   padding-bottom: var(--s-r-10);
 }
+.wp-block-query .wp-block-post-template .wp-block-post-terms {
+  display: flex;
+  flex-wrap: wrap;
+}
 .wp-block-query .wp-block-post-template .wp-block-post-terms a:not(:last-child) {
   margin-right: var(--s-r-3);
 }
@@ -4860,14 +4864,14 @@ div[class*=wp-block-] figcaption {
   color: var(--wp--custom--color--button-color-primary);
 }
 
-.archive h1.archive-title {
+.archive-header h1.archive-title {
   font-weight: 700;
   line-height: var(--wp--custom--line-height--body);
 }
-.archive .wp-block-term-description {
-  padding-top: var(--s-r-6);
+.archive-header .wp-block-term-description {
+  padding-top: var(--s-r-4);
 }
-.archive .wp-block-query.is-style-3col-list {
+.archive-header .wp-block-query.is-style-3col-list {
   margin-top: var(--s-r-9);
 }
 

@@ -57,7 +57,7 @@
 
 }
 
-.archive {
+.archive-header {
 
 	h1.archive-title {
 		font-weight: 700;
@@ -65,7 +65,7 @@
 	}
 
 	.wp-block-term-description {
-		@include s-r-6 (padding-top);
+		@include s-r-4 (padding-top);
 	}
 
 	.wp-block-query {
