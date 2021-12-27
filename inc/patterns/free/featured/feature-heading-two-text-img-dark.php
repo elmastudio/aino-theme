@@ -5,7 +5,7 @@
 
 return array(
 	'title'      => __( ' Heading, two paragraphs and horizontal image (Dark)', 'aino' ),
-	'categories' => array( 'aino-feature' ),
+	'categories' => array( 'featured' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pt__15 pb__17">
 	

@@ -27,3 +27,14 @@
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
 }
+
+/* Tagcloud and Category List in Button Style */
+.wp-block-categories.is-style-btn {
+
+	.wp-block-categories__list {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

@@ -6,7 +6,7 @@
 
 return array(
 	'title'      => __( 'Three team images list view with team member description text (Light)', 'aino' ),
-	'categories' => array( 'aino-team' ),
+	'categories' => array( 'team' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomDesktop":0,"marginBottomTablet":11,"marginBottomMobile":10} -->

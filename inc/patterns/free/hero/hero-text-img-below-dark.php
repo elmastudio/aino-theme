@@ -6,7 +6,7 @@
 
 return array(
 	'title'      => __( 'Centered heading with CTA button and image below (Dark)', 'aino' ),
-	'categories' => array( 'aino-hero' ),
+	'categories' => array( 'hero' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background"><!-- wp:ainoblocks/grid-container {"paddingTop":15} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide pt__15"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"center","marginBottomTablet":0,"marginBottomMobile":0} -->

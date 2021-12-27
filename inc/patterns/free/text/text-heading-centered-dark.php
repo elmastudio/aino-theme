@@ -6,7 +6,7 @@
 
 return array(
 	'title'      => __( 'Centered heading and paragraph. (Dark)', 'aino' ),
-	'categories' => array( 'aino-text' ),
+	'categories' => array( 'text' ),
 	'content'    => '<!-- wp:group {"backgroundColor":"variant-background-primary","align":"full","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":3,"gridColumnEndTablet":11,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch"} -->

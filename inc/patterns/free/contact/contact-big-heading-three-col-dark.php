@@ -5,7 +5,7 @@
 
 return array(
 	'title'      => __( 'Big heading and three text columns (Dark)', 'aino' ),
-	'categories' => array( 'aino-contact' ),
+	'categories' => array( 'contact' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","paddingBottom":15} -->

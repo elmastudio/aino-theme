@@ -6,7 +6,7 @@
 
 return array(
 	'title'      => __( 'Small heading and two column images (Dark)', 'aino' ),
-	'categories' => array( 'aino-portfolio' ),
+	'categories' => array( 'portfolio' ),
 	'content'    => '<!-- wp:group {"backgroundColor":"variant-background-primary","align":"full","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomTablet":11,"marginBottomMobile":0,"className":"two-col-grid-tablet"} -->

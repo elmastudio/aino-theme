@@ -5,7 +5,7 @@
 
 return array(
 	'title'      => __( 'Wide content width (Dark)', 'aino' ),
-	'categories' => array( 'aino-banner' ),
+	'categories' => array( 'banner' ),
 	'content'    => '<!-- wp:ainoblocks/flexbox {"align":"wide","className":"fullwidth","flexDirectionMobile":"direction__colrev__m","justifyContentTablet":"justify__between__t","justifyContentMobile":"justify__between__m","alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m","alignContentDesktop":"align-cont__between__d","backgroundColor":"font-secondary"} -->
 	<div class="wp-block-ainoblocks-flexbox alignwide fullwidth direction__row__d direction__row__t direction__colrev__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__between__t justify__between__m align-items__center__d align-items__center__t align-items__center__m align-cont__between__d align-cont__stretch__t align-cont__stretch__m shadow-none wide has-font-secondary-background-color has-background"><!-- wp:ainoblocks/flex-item {"alignSelfDesktop":"align__auto__d","className":"desktop__width__50","paddingTop":11,"paddingBottom":11,"paddingLeft":13,"paddingRight":13} -->
 	<div class="wp-block-ainoblocks-flex-item align__auto__d auto desktop__width__50 pt__11 pb__11 pl__13 pr__13"><!-- wp:heading {"level":3,"textColor":"background-primary","fontSize":"l","paddingTop":0,"paddingBottom":8,"paddingLeft":0,"paddingRight":0} -->

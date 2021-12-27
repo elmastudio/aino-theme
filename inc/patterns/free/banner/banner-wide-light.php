@@ -5,7 +5,7 @@
 
 return array(
 	'title'      => __( 'Wide content width (Light)', 'aino' ),
-	'categories' => array( 'aino-banner' ),
+	'categories' => array( 'banner' ),
 	'content'    => '
 
 	<!-- wp:ainoblocks/flexbox {"align":"wide","flexDirectionMobile":"direction__colrev__m","justifyContentTablet":"justify__between__t","justifyContentMobile":"justify__between__m","alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m","alignContentDesktop":"align-cont__between__d","className":"fullwidth style=","style":{"color":{"background":"#c2c7c9"}}} -->

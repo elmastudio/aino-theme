@@ -23,7 +23,6 @@ input[type="submit"] {
 	}
 }
 
-
 a.btn-primary,
 .btn-primary a {
 	@include btn;
@@ -176,4 +175,8 @@ a.btn-outline,
 			}
 		}
 	}
+}
+
+.wp-block-search__button {
+	min-width: auto;
 }

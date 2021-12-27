@@ -88,11 +88,10 @@
 }
 
 /* Default wide page width */
-.site-main {
-	.site-content {
-		max-width: var(--global--wide-content-width);
-		@include push--auto;
-	}
+.site-main .site-content,
+.site-footer .footer-content {
+	max-width: var(--global--wide-content-width);
+	@include push--auto;
 }
 
 /* Default content width */
@@ -248,4 +247,16 @@
 	.wp-block-post-template {
 		@include gap-l;
 	}
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.zindex100 {
+	z-index: 100;
 }

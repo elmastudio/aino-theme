@@ -72,6 +72,13 @@
 			transition: all 0.25s;
 		}
 	}
+
+	&.alignfull {
+		.accordion {
+			max-width: var(--global--wide-content-width);
+			@include push--auto;
+		}
+	}
 }
 
 .theme-makoney {

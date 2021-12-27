@@ -6,7 +6,7 @@
 
 return array(
 	'title'      => __( '3-column post grid with small heading. (Light)', 'aino' ),
-	'categories' => array( 'aino-query' ),
+	'categories' => array( 'query' ),
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":15,"paddingBottom":14,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-background-primary-background-color has-background pt__15 pb__14"><!-- wp:ainoblocks/grid-container {"paddingTop":0} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomMobile":0} -->

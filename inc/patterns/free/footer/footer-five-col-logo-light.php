@@ -7,7 +7,7 @@
 return array(
 	'title'      => __( 'Five-column footer with site logo (Light)', 'aino' ),
 	'blockTypes' => array( 'core/template-part/footer' ),
-	'categories' => array( 'aino-footer' ),
+	'categories' => array( 'footer' ),
 	'content'    => '<!-- wp:group {"className":"site-footer","backgroundColor":"background-secondary","paddingTop":10,"paddingBottom":15} --><div class="wp-block-group site-footer has-background-secondary-background-color has-background pt__10 pb__15"><!-- wp:ainoblocks/grid-container -->
 		<div class="wp-block-ainoblocks-grid-container alignwide">
 			<div class="wp-block-ainoblocks-grid-container__inner">

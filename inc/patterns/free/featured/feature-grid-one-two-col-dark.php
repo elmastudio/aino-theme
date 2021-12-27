@@ -5,7 +5,7 @@
 
 return array(
 	'title'      => __( 'One big column, two smaller columns. (Dark)', 'aino' ),
-	'categories' => array( 'aino-feature' ),
+	'categories' => array( 'featured' ),
 	'content'    => '<!-- wp:group {"align":"full","style":{"color":{"background":"#21004D"}},"paddingTop":10,"paddingBottom":10,"paddingLeft":10,"paddingRight":10} -->
 	<div class="wp-block-group alignfull has-background pt__10 pb__10 pl__10 pr__10" style="background-color:#21004D"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-none"} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide col-gap-none"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":8,"gridColumnStartMobile":1,"gridColumnEndMobile":13} -->
