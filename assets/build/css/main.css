@@ -2626,7 +2626,8 @@ cite a,
 .wp-block-post-excerpt__more-link,
 .wp-block-ainoblocks-grid-item .wp-block-post-excerpt__more-link,
 .comment .comment-body p a,
-.wp-block-ainoblocks-card p a {
+.wp-block-ainoblocks-card p a,
+.wp-block-ainoblocks-grid-item p a {
   color: currentColor;
   text-decoration-line: underline;
   text-decoration-thickness: 0.09em;
@@ -2650,7 +2651,8 @@ cite a:hover,
 .wp-block-post-excerpt__more-link:hover,
 .wp-block-ainoblocks-grid-item .wp-block-post-excerpt__more-link:hover,
 .comment .comment-body p a:hover,
-.wp-block-ainoblocks-card p a:hover {
+.wp-block-ainoblocks-card p a:hover,
+.wp-block-ainoblocks-grid-item p a:hover {
   text-decoration: none;
 }
 
