@@ -25,7 +25,7 @@ return array(
 	
 	<!-- wp:ainoblocks/flex-item {"alignSelfDesktop":"align__ flexend__d","className":"desktop__width__50"} -->
 	<div class="wp-block-ainoblocks-flex-item align__ flexend__d auto desktop__width__50"><!-- wp:image {"align":"center","width":890,"height":511,"sizeSlug":"full","linkDestination":"none"} -->
-	<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/banner-wide-dark.png" alt="" width="890" height="511"/></figure></div>
+	<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/banner-wide-dark.png" alt="" width="890" height="511"/></figure></div>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/flex-item --></div>
 	<!-- /wp:ainoblocks/flexbox -->',

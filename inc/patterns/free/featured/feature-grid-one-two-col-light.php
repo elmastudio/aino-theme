@@ -19,7 +19,7 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":4,"gridColumnEndTablet":10,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopDesktop":13,"marginTopTablet":13,"marginTopMobile":13} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__4 col_end_t__10 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__13 mt_t__13 mt_m__13"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/feature-grid-onecol-light.png" alt=""/></figure>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__4 col_end_t__10 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__13 mt_t__13 mt_m__13"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/feature-grid-onecol-light.png" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>
@@ -51,7 +51,7 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopDesktop":13,"marginTopTablet":13,"marginTopMobile":13} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__13 mt_t__13 mt_m__13"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/feature-grid-twocol-01-light.png" alt=""/></figure>
+	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/feature-grid-twocol-01-light.png" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>
@@ -73,7 +73,7 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":13,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopDesktop":13,"marginTopTablet":13,"marginTopMobile":13} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__13 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__13 mt_t__13 mt_m__13"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/feature-grid-twocol-02-light.png" alt=""/></figure>
+	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/feature-grid-twocol-02-light.png" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

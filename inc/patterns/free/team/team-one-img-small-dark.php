@@ -21,7 +21,7 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/team-one-img-small-dark.jpg" alt=""/></figure>
+	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/team-one-img-small-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

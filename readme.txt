@@ -54,6 +54,7 @@ Enhance: Rename footer template parts.
 Enhance: Use new Pattern block in template parts.
 Enhance: Search results and archive page template.
 Enhance: Delete Header/Logo template part.
+Enhance: Reorganize pattern image folder.
 Enhance: Change Aino theme URL to ainoblocks.io.
 
 = 2.6.1 =

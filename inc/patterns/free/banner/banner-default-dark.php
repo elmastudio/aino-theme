@@ -22,7 +22,7 @@ return array(
 	<!-- /wp:ainoblocks/flex-item -->
 	<!-- wp:ainoblocks/flex-item -->
 	<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:image {"align":"center","width":266,"height":266,"sizeSlug":"full","linkDestination":"none"} -->
-	<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/banner-default-dark.png" alt="" width="266" height="266"/></figure></div>
+	<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/banner-default-dark.png" alt="" width="266" height="266"/></figure></div>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/flex-item --></div>
 	<!-- /wp:ainoblocks/flexbox -->',

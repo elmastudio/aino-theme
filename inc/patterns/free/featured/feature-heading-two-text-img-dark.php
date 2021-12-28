@@ -40,7 +40,7 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopDesktop":0,"marginBottomDesktop":0,"marginBottomMobile":0} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__0 mb_d__0 mb_m__0"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","paddingTop":14} -->
-	<figure class="wp-block-image size-full pt__14"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/feature-01-dark.jpg" alt=""/></figure>
+	<figure class="wp-block-image size-full pt__14"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/feature-01-dark.jpg" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>
