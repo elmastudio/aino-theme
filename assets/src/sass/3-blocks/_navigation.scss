@@ -95,6 +95,12 @@
 			background-color: transparent;
 		}
 	}
+
+	.wp-block-navigation__container {
+		&:only-child {
+			flex-grow: 0;
+		}
+	}
 }
 
 .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
@@ -140,10 +146,10 @@
 			top: var(--space-04);;
 			right: 0;
 			border-radius: var(--global--border-radius-round);
-			background-color: var(--wp--custom--color--background-primary);
+			background-color: var(--wp--custom--color--button-color-primary);
 
 			&:hover {
-				background-color: var(--wp--custom--color--background-primary);
+				background-color: var(--wp--custom--color--button-color-primary);
 			}
 
 			svg {
@@ -272,8 +278,6 @@
 		}
 	}
 }
-
-
 
 .site-header {
 

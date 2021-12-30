@@ -1093,7 +1093,8 @@ div[class*=wp-block-] figcaption,
 .entry-content .wc-block-components-product-metadata__description p,
 .woocommerce-notices-wrapper ul,
 .is-style-btn li a,
-.wp-block-tag-cloud.is-style-btn a {
+.wp-block-tag-cloud.is-style-btn a,
+.commentlist .comment-metadata time {
   font-size: var(--global--font-size--body-xs) !important;
 }
 
@@ -1433,6 +1434,10 @@ h6.has-m-font-size,
 .is-large.wc-block-cart .wc-block-cart__totals-title,
 .wp-block-ainoblocks-accordion-faq-block h3 {
   font-size: var(--global--font-size--heading-03) !important;
+}
+
+.wp-block-ainoblocks-accordion-faq-block.is-style-toggle h3 {
+  font-size: var(--global--font-size--body-xxs) !important;
 }
 
 h4.has-xxs-font-size,
@@ -2794,6 +2799,7 @@ a.btn-outline:hover,
   fill: var(--wp--custom--color--primary);
   border: 1px solid;
   border-color: var(--wp--custom--color--primary);
+  text-decoration: none;
 }
 .wp-block-tag-cloud.is-style-btn a:hover,
 .wp-block-categories.is-style-btn a:hover {
@@ -2937,6 +2943,8 @@ a.btn-outline:hover,
 .btn-curved .wc-block-components-button,
 .btn-curved .form-submit.wp-block-button input,
 .btn-curved .woocommerce-MyAccount-navigation li a,
+.btn-curved .tag-cloud-link,
+.btn-curved li a,
 .btn-rounded .btn,
 .btn-rounded input[type=submit],
 .btn-rounded button[type=submit],
@@ -2948,7 +2956,9 @@ a.btn-outline:hover,
 .btn-rounded .woocommerce-button,
 .btn-rounded .wc-block-components-button,
 .btn-rounded .form-submit.wp-block-button input,
-.btn-rounded .woocommerce-MyAccount-navigation li a {
+.btn-rounded .woocommerce-MyAccount-navigation li a,
+.btn-rounded .tag-cloud-link,
+.btn-rounded li a {
   border-radius: var(--global--border-radius-xxs);
 }
 
@@ -2964,7 +2974,9 @@ a.btn-outline:hover,
 .btn-round .search-header .search-field,
 .btn-round .wc-block-components-button,
 .btn-round .form-submit.wp-block-button input,
-.btn-round .woocommerce-MyAccount-navigation li a {
+.btn-round .woocommerce-MyAccount-navigation li a,
+.btn-round .tag-cloud-link,
+.btn-round li a {
   border-radius: var(--global--border-radius-round);
 }
 
@@ -3594,6 +3606,9 @@ tr td:last-of-type {
 .wp-block-navigation button:hover {
   background-color: transparent;
 }
+.wp-block-navigation .wp-block-navigation__container:only-child {
+  flex-grow: 0;
+}
 
 .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
   padding: 0 1.5rem;
@@ -3620,10 +3635,10 @@ tr td:last-of-type {
   top: var(--space-04);
   right: 0;
   border-radius: var(--global--border-radius-round);
-  background-color: var(--wp--custom--color--background-primary);
+  background-color: var(--wp--custom--color--button-color-primary);
 }
 .wp-block-navigation .wp-block-navigation__responsive-container-close:hover {
-  background-color: var(--wp--custom--color--background-primary);
+  background-color: var(--wp--custom--color--button-color-primary);
 }
 .wp-block-navigation .wp-block-navigation__responsive-container-close svg {
   width: var(--space-08);

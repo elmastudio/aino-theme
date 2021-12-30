@@ -39,6 +39,7 @@ a.btn-outline,
 .wp-block-categories.is-style-btn a {
 	@include btn;
 	@include btn-outline;
+	text-decoration: none;
 }
 
 .wp-block-tag-cloud.is-style-btn.btn-light a,
@@ -119,7 +120,9 @@ a.btn-outline,
 	.woocommerce-button,
 	.wc-block-components-button,
 	.form-submit.wp-block-button input,
-	.woocommerce-MyAccount-navigation li a {
+	.woocommerce-MyAccount-navigation li a,
+	.tag-cloud-link,
+	li a {
 		border-radius: var(--global--border-radius-xxs);
 	}
 }
@@ -138,7 +141,9 @@ a.btn-outline,
 	.search-header .search-field,
 	.wc-block-components-button,
 	.form-submit.wp-block-button input,
-	.woocommerce-MyAccount-navigation li a {
+	.woocommerce-MyAccount-navigation li a,
+	.tag-cloud-link,
+	li a {
 		border-radius: var(--global--border-radius-round);
 	}
 }

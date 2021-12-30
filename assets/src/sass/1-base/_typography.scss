@@ -36,7 +36,8 @@ div[class*='wp-block-'] figcaption,
 .entry-content .wc-block-components-product-metadata__description p,
 .woocommerce-notices-wrapper ul,
 .is-style-btn li a,
-.wp-block-tag-cloud.is-style-btn a {
+.wp-block-tag-cloud.is-style-btn a,
+.commentlist .comment-metadata time {
 	font-size: var(--global--font-size--body-xs) !important;;
 }
 
@@ -310,6 +311,10 @@ h6.has-m-font-size,
 .is-large.wc-block-cart .wc-block-cart__totals-title,
 .wp-block-ainoblocks-accordion-faq-block h3 {
 	font-size: var(--global--font-size--heading-03) !important;
+}
+
+.wp-block-ainoblocks-accordion-faq-block.is-style-toggle h3 {
+	font-size: var(--global--font-size--body-xxs) !important;
 }
 
 h4.has-xxs-font-size,
