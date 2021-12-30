@@ -75,6 +75,7 @@ function aino_register_block_patterns() {
 				'free/footer/footer-dark',
 				'free/footer/footer-five-col-logo-light',
 				'free/footer/footer-five-col-logo-dark',
+				'free/hidden/404',
 			);
 
 		$block_patterns = apply_filters( 'aino_block_patterns', $block_patterns );

@@ -1,7 +1,6 @@
 <?php
 /**
  * Portfolio with small heading and two column images. (Light version)
-
  */
 
 return array(

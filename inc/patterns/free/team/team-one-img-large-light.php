@@ -1,8 +1,6 @@
 <?php
 /**
- * Team One Member large (Light version)
-
- */
+ * Team One Member large (Light version) */
 
 return array(
 	'title'      => __( 'One large team member image, large heading and intro text (Light)', 'aino' ),

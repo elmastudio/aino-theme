@@ -1,7 +1,6 @@
 <?php
 /**
  * Team One Member large (Dark version)
-
  */
 
 return array(

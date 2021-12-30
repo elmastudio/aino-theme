@@ -1,7 +1,6 @@
 <?php
 /**
  * Team 2 Images (Light version)
-
  */
 
 return array(

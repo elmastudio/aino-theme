@@ -1,7 +1,6 @@
 <?php
 /**
  * Team 3 Images List View (Light version)
-
  */
 
 return array(

@@ -48,7 +48,7 @@ Enhance: Disable core color and gradient palettes.
 Enhance: Update pattern categories.
 Enhance: Delete woocommerce-default page template (not needed with new WooCommerce template support).
 Enhance: Restructure patterns.
-Bugfix: Single page templates.
+Enhance: 404 template.
 Enhance: Delete custom class names from template parts.
 Enhance: Rename footer template parts.
 Enhance: Use new Pattern block in template parts.
@@ -56,6 +56,7 @@ Enhance: Search results and archive page template.
 Enhance: Delete Header/Logo template part.
 Enhance: Reorganize pattern image folder.
 Enhance: Change Aino theme URL to ainoblocks.io.
+Bugfix: Single page templates.
 
 = 2.6.1 =
 New: WooCommerce block templates.
