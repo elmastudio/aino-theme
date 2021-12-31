@@ -4,12 +4,6 @@
 }
 
 /* Alignments and block widths */
-[class*="wp-container-"].wp-block-template-part,
-[class*="wp-container-"] .wp-block-post-comments-link,
-[class*="wp-container-"] .wp-block-post-featured-image {
-	margin-top: 0;
-}
-
 .wp-site-blocks>*+* {
 	margin-top: 0;
 }

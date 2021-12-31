@@ -5,8 +5,7 @@
 @import "5-woocommerce/woocommerce-index";
 
 .wp-block-group.alignfull>.alignfull,
-*[class*="wp-container-"]>.alignfull,
-.is-root-container .wp-block[data-align="full"] .wp-block-separator.is-style-wide {
+*[class*="wp-container-"]>.alignfull {
 	width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
 	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
@@ -36,5 +35,15 @@
 		padding-left: 0;
 		display: flex;
 		flex-wrap: wrap;
+	}
+}
+
+.wp-block-search .wp-block-search__button {
+	min-width: auto !important;
+}
+
+.btn-rounded {
+	.wp-block-search .wp-block-search__button {
+		border-radius: var(--global--border-radius-xxs);
 	}
 }
