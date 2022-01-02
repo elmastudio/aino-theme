@@ -12,13 +12,13 @@ Aino is a full site editing block theme for everyone who wants to build creative
 
 == Description ==
 
-Aino is a Full Site Editong block theme for the WordPress block editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
+Aino is a Full Site Editing block theme for the WordPress Gutenberg editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
 
 You can find more information and helpful resources about Aino on https://ainoblocks.io.
 
 == Copyright ==
 
-Aino Theme, (C) 2021 Elmastudio Ltd.
+Aino Theme, (C) 2022 Elmastudio Ltd.
 Aino is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
