@@ -118,6 +118,11 @@
 				padding-left: var(--global--content--padding--left);
 				padding-right: var(--global--content--padding--right);
 				padding-top: 0;
+
+				@include breakpoint(xl) {
+					padding-left: var(--space-09);
+					padding-right: var(--space-09);
+				}
 			}
 		}
 	}

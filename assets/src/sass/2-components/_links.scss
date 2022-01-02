@@ -28,7 +28,8 @@ cite a,
 .wp-block-ainoblocks-grid-item .wp-block-post-excerpt__more-link,
 .comment .comment-body p a,
 .wp-block-ainoblocks-card p a,
-.wp-block-ainoblocks-grid-item p a {
+.wp-block-ainoblocks-grid-item p a,
+.wp-block-ainoblocks-notification-block p a {
 	color: currentColor;
 	@include underline-default;
 

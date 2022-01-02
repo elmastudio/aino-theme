@@ -57,6 +57,7 @@ Enhance: Delete Header/Logo template part.
 Enhance: Reorganize pattern image folder.
 Enhance: Change Aino theme URL to ainoblocks.io.
 Bugfix: Single page templates.
+Bugfix: Archive page templates.
 
 = 2.6.1 =
 New: WooCommerce block templates.

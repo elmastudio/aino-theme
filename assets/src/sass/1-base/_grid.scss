@@ -83,7 +83,8 @@
 
 /* Default wide page width */
 .site-main .site-content,
-.site-footer .footer-content {
+.site-footer .footer-content,
+.archive-header {
 	max-width: var(--global--wide-content-width);
 	@include push--auto;
 }
