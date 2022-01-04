@@ -4,6 +4,11 @@
 @import "4-layout/layout-index";
 @import "5-woocommerce/woocommerce-index";
 
+.edit-post-visual-editor__post-title-wrapper {
+	margin-top: var(--s-r-9);
+	margin-bottom: var(--s-r-9);
+}
+
 .wp-block-group.alignfull>.alignfull,
 *[class*="wp-container-"]>.alignfull {
 	width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
@@ -45,5 +50,20 @@
 .btn-rounded {
 	.wp-block-search .wp-block-search__button {
 		border-radius: var(--global--border-radius-xxs);
+	}
+}
+
+.components-button{
+
+	&:hover {
+		color: currentColor;
+		background-color: transparent;
+	}
+}
+
+.wp-block-social-link {
+
+	button {
+		background-color: transparent;
 	}
 }

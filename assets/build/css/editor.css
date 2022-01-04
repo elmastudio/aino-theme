@@ -1100,7 +1100,8 @@ div[class*=wp-block-] figcaption,
   font-size: var(--global--font-size--body-s) !important;
 }
 
-.archive form label, .archive mark label .required,
+.archive form label,
+.archive mark label .required,
 .archive .comment-notes,
 .archive .logged-in-as,
 .archive p.has-xs-font-size,
@@ -1356,7 +1357,6 @@ h5.has-xxxxl-font-size {
   font-size: var(--global--font-size--heading-09) !important;
 }
 
-h1.wp-block-post-title,
 h1.has-m-font-size,
 h2.has-l-font-size,
 h3.has-xl-font-size,
@@ -1366,6 +1366,7 @@ h6.has-xxxxl-font-size {
   font-size: var(--global--font-size--heading-08) !important;
 }
 
+h1.wp-block-post-title,
 h1.has-s-font-size,
 h2.has-m-font-size,
 h3.has-l-font-size,
@@ -1465,160 +1466,112 @@ h6.has-xxxs-font-size,
   line-height: 1;
 }
 
-/* Default heading and paragraph paddings for single posts and default page template */
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-s-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-m-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h6,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xxs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-s-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-m-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-l-font-size {
+.post-content h3.has-xxs-font-size,
+.post-content h4.has-xs-font-size,
+.post-content h5,
+.post-content h5.has-s-font-size,
+.post-content h6.has-m-font-size,
+.post-content h6,
+.post-content h4.has-xxs-font-size,
+.post-content h5.has-xs-font-size,
+.post-content h5.has-xxs-font-size,
+.post-content h2.has-xxs-font-size,
+.post-content h3.has-xs-font-size,
+.post-content h4,
+.post-content h4.has-s-font-size,
+.post-content h5.has-m-font-size,
+.post-content h6.has-l-font-size,
+.is-root-container > h3.has-xxs-font-size,
+.is-root-container > h4.has-xs-font-size,
+.is-root-container > h5,
+.is-root-container > h5.has-s-font-size,
+.is-root-container > h6.has-m-font-size,
+.is-root-container > h6,
+.is-root-container > h4.has-xxs-font-size,
+.is-root-container > h5.has-xs-font-size,
+.is-root-container > h5.has-xxs-font-size,
+.is-root-container > h2.has-xxs-font-size,
+.is-root-container > h3.has-xs-font-size,
+.is-root-container > h4,
+.is-root-container > h4.has-s-font-size,
+.is-root-container > h5.has-m-font-size,
+.is-root-container > h6.has-l-font-size {
   padding-top: var(--s-r-8);
   padding-bottom: var(--s-r-6);
 }
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h1.has-xxs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-s-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-m-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-l-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h2,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h1.has-xs-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-s-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-m-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-l-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h1.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h1.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h1.has-xxs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h1.has-xs-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-s-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxl-font-size {
+.post-content h3,
+.post-content h1.has-xxs-font-size,
+.post-content h2.has-xs-font-size,
+.post-content h3.has-s-font-size,
+.post-content h4.has-m-font-size,
+.post-content h5.has-l-font-size,
+.post-content h6.has-xl-font-size,
+.post-content h2,
+.post-content h1.has-xs-font-size,
+.post-content h2.has-s-font-size,
+.post-content h3.has-m-font-size,
+.post-content h4.has-l-font-size,
+.post-content h5.has-xl-font-size,
+.post-content h6.has-xxl-font-size,
+.is-root-container > h3,
+.is-root-container > h1.has-xxs-font-size,
+.is-root-container > h2.has-xs-font-size,
+.is-root-container > h3.has-s-font-size,
+.is-root-container > h4.has-m-font-size,
+.is-root-container > h5.has-l-font-size,
+.is-root-container > h6.has-xl-font-size,
+.is-root-container > h2,
+.is-root-container > h1.has-xs-font-size,
+.is-root-container > h2.has-s-font-size,
+.is-root-container > h3.has-m-font-size,
+.is-root-container > h4.has-l-font-size,
+.is-root-container > h5.has-xl-font-size,
+.is-root-container > h6.has-xxl-font-size {
   padding-top: var(--s-r-9);
   padding-bottom: var(--s-r-7);
 }
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-m-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-l-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-m-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxxl-font-size {
+.post-content h2.has-m-font-size,
+.post-content h3.has-l-font-size,
+.post-content h4.has-xl-font-size,
+.post-content h5.has-xxl-font-size,
+.post-content h6.has-xxxl-font-size,
+.is-root-container > h2.has-m-font-size,
+.is-root-container > h3.has-l-font-size,
+.is-root-container > h4.has-xl-font-size,
+.is-root-container > h5.has-xxl-font-size,
+.is-root-container > h6.has-xxxl-font-size {
   padding-top: var(--s-r-10);
   padding-bottom: var(--s-r-7);
 }
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h1,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-l-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxxxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxxl-font-size,
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h1,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h1,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-l-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h2.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h3.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h6.has-xxxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h4.has-xxxl-font-size,
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > h5.has-xxxxl-font-size {
+.post-content h1,
+.post-content h2.has-l-font-size,
+.post-content h2.has-xl-font-size,
+.post-content h3.has-xl-font-size,
+.post-content h3.has-xxl-font-size,
+.post-content h3.has-xxxl-font-size,
+.post-content h4.has-xxl-font-size,
+.post-content h4.has-xxxl-font-size,
+.post-content h5.has-xxxl-font-size,
+.post-content h6.has-xxxxl-font-size,
+.post-content h4.has-xxxl-font-size,
+.post-content h5.has-xxxxl-font-size,
+.is-root-container > h1,
+.is-root-container > h2.has-l-font-size,
+.is-root-container > h2.has-xl-font-size,
+.is-root-container > h3.has-xl-font-size,
+.is-root-container > h3.has-xxl-font-size,
+.is-root-container > h3.has-xxxl-font-size,
+.is-root-container > h4.has-xxl-font-size,
+.is-root-container > h4.has-xxxl-font-size,
+.is-root-container > h5.has-xxxl-font-size,
+.is-root-container > h6.has-xxxxl-font-size,
+.is-root-container > h4.has-xxxl-font-size,
+.is-root-container > h5.has-xxxxl-font-size {
   padding-top: var(--s-r-10);
   padding-bottom: var(--s-r-8);
 }
-.single-post .entry-content:not(.wp-block-ainoblocks-flex-item) > p:not(:last-child),
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > p:not(:last-child),
-.page-template-default .entry-content:not(.wp-block-ainoblocks-flex-item) > p:not(:last-child) {
+.post-content p:not(:last-child),
+.is-root-container > p:not(:last-child) {
   padding-bottom: var(--s-r-6);
 }
 
@@ -3202,8 +3155,14 @@ li > ul, li > ol {
   }
 }
 
+.entry-content ul,
+.comment-content ul,
+.block-editor-block-list__layout ul {
+  padding-left: 1.2rem;
+}
 .entry-content ul ul,
-.comment-content ul ul {
+.comment-content ul ul,
+.block-editor-block-list__layout ul ul {
   list-style: circle;
 }
 
@@ -7060,6 +7019,11 @@ div[class*=wp-block-] figcaption {
   border-bottom: 0px;
 }
 
+.edit-post-visual-editor__post-title-wrapper {
+  margin-top: var(--s-r-9);
+  margin-bottom: var(--s-r-9);
+}
+
 .wp-block-group.alignfull > .alignfull,
 *[class*=wp-container-] > .alignfull {
   width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
@@ -7097,6 +7061,15 @@ div[class*=wp-block-] figcaption {
 
 .btn-rounded .wp-block-search .wp-block-search__button {
   border-radius: var(--global--border-radius-xxs);
+}
+
+.components-button:hover {
+  color: currentColor;
+  background-color: transparent;
+}
+
+.wp-block-social-link button {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=editor.css.map*/

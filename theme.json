@@ -348,8 +348,6 @@
 			}
 		},
 		"blocks": {
-			"core/paragraph": {
-			},
 			"core/button": {
 				"color": {
 					"palette": [
