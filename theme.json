@@ -1,6 +1,7 @@
 {
 	"version": 2,
 	"settings": {
+		"appearanceTools": true,
 		"border": {
 			"color": true,
 			"radius": true,
@@ -15,6 +16,8 @@
 		},
 		"color": {
 			"link": true,
+			"defaultPalette": false,
+			"defaultGradients": false,
 			"custom": true,
 			"palette": [
 				{
@@ -416,6 +419,9 @@
 		}
 	},
 	"styles": {
+		"spacing": {
+			"blockGap": null
+		},
 		"color": {
 			"background": "var(--wp--custom--color--main-background)",
 			"text": "var(--wp--custom--color--font-secondary)"
@@ -444,6 +450,11 @@
 				}
 			},
 			"core/list": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--m)"
+				}
+			},
+			"core/paragraph": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--m)"
 				}
@@ -483,13 +494,6 @@
 			]
 		},
 		{
-			"name": "woocommmerce-default",
-			"title": "WooCommerce Default Page",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
 			"name": "single-featured-image-portrait",
 			"title": "Post with Portrait Featured Image",
 			"postTypes": [
@@ -521,10 +525,6 @@
 			"area": "header"
 		},
 		{
-			"name": "header-logo",
-			"area": "header"
-		},
-		{
 			"name": "footer",
 			"area": "footer"
 		},
@@ -533,11 +533,11 @@
 			"area": "footer"
 		},
 		{
-			"name": "footer-five-columns-light",
+			"name": "footer-five-col-logo-light",
 			"area": "footer"
 		},
 		{
-			"name": "footer-five-columns-dark",
+			"name": "footer-five-col-logo-dark",
 			"area": "footer"
 		}
 	]

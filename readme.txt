@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.8
 Tested up to: WordPress 5.8.2
 Requires PHP: 7.0
-Stable tag: 2.6.1
+Stable tag: 2.6.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -12,13 +12,13 @@ Aino is a full site editing block theme for everyone who wants to build creative
 
 == Description ==
 
-Aino is a Full Site Editong block theme for the WordPress block editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
+Aino is a Full Site Editing block theme for the WordPress Gutenberg editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
 
-You can find more information and helpful resources about Aino on https://wpaino.com.
+You can find more information and helpful resources about Aino on https://ainoblocks.io.
 
 == Copyright ==
 
-Aino Theme, (C) 2021 Elmastudio Ltd.
+Aino Theme, (C) 2022 Elmastudio Ltd.
 Aino is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -41,6 +41,23 @@ Aino WordPress Theme bundles the following third-party resources:
 Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.2 =
+Enhance: Rename folders to templates and parts.
+Enhance: Disable core color and gradient palettes.
+Enhance: Update pattern categories.
+Enhance: Delete woocommerce-default page template (not needed with new WooCommerce template support).
+Enhance: Restructure patterns.
+Enhance: 404 template.
+Enhance: Delete custom class names from template parts.
+Enhance: Rename footer template parts.
+Enhance: Use new Pattern block in template parts.
+Enhance: Search results and archive page template.
+Enhance: Delete Header/Logo template part.
+Enhance: Reorganize pattern image folder.
+Enhance: Change Aino theme URL to ainoblocks.io.
+Bugfix: Single page templates.
+Bugfix: Archive page templates.
 
 = 2.6.1 =
 New: WooCommerce block templates.

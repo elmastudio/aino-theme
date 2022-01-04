@@ -7,6 +7,19 @@
 			@include s-r-10 (padding-bottom);
 		}
 
+		.wp-block-post-terms {
+			display: flex;
+			flex-wrap: wrap;
+
+			a:not(:last-child) {
+				margin-right: var(--s-r-3);
+			}
+
+			&__separator {
+				display: none;
+			}
+		}
+
 		//Post Grids
 		&.columns-4 {
 

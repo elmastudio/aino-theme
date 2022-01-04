@@ -30,11 +30,16 @@ li > ul, li > ol {
 }
 
 .entry-content,
-.comment-content {
+.comment-content,
+.block-editor-block-list__layout {
 
-		ul ul {
-		list-style: circle;
-	}
+		ul {
+			padding-left: 1.2rem;
+
+			ul {
+				list-style: circle;
+			}
+		}
 }
 
 // Social Icon List

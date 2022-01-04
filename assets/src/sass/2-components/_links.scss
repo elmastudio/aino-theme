@@ -27,7 +27,9 @@ cite a,
 .wp-block-post-excerpt__more-link,
 .wp-block-ainoblocks-grid-item .wp-block-post-excerpt__more-link,
 .comment .comment-body p a,
-.wp-block-ainoblocks-card p a {
+.wp-block-ainoblocks-card p a,
+.wp-block-ainoblocks-grid-item p a,
+.wp-block-ainoblocks-notification-block p a {
 	color: currentColor;
 	@include underline-default;
 
@@ -41,7 +43,7 @@ cite a,
 	color: var(--wp--style--color--link);
 }
 
-/* Links that keep the default text color and only show link color on hover */
+/* Link color on hover */
 .site-title a,
 h2.entry-title a,
 .comment-list b.fn a,
@@ -59,7 +61,7 @@ h2.entry-title a,
 	fill: var(--wp--custom--color--font-tertiary);
 }
 
-/* Link Hovers */
+/* Underline on hover */
 .header-cta-wrap,
 .footer-widget-wrap li,
 .site-info,

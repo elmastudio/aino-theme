@@ -1,4 +1,3 @@
-// Pagination
 .pagination-wrap {
 
 	.wp-block-query-pagination,
@@ -7,7 +6,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 0;
-	
+
 		.page-numbers:not(.dots),
 		.wp-block-query-pagination-previous,
 		.wp-block-query-pagination-next {
@@ -40,13 +39,14 @@
 		}
 
 		@include breakpoint(md) {
+
 			.wp-block-query-pagination-previous,
 			.wp-block-query-pagination-next {
 				display: flex;
 			}
 		}
-		
-	
+
+
 		.page-numbers.current,
 		.page-numbers.current:hover {
 			background-color: var(--wp--custom--color--primary);
@@ -54,19 +54,18 @@
 			color: var(--wp--custom--color--button-color-primary);
 		}
 	}
-	
+
 }
 
-// Archive
-.archive {
+.archive-header {
 
 	h1.archive-title {
-			font-weight: 700;
-			line-height: var(--wp--custom--line-height--body);
+		font-weight: 700;
+		line-height: var(--wp--custom--line-height--body);
 	}
 
 	.wp-block-term-description {
-		@include s-r-6 (padding-top);
+		@include s-r-4 (padding-top);
 	}
 
 	.wp-block-query {
