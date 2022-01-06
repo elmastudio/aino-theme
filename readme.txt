@@ -43,215 +43,314 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 == Changelog ==
 
 = 2.6.3 =
-Enhance: Move Related Posts into Template Part.
+
+Release date:
+
+* Enhance: Move Related Posts into Template Part.
 
 = 2.6.2 =
-Enhance: Rename folders to templates and parts.
-Enhance: Disable core color and gradient palettes.
-Enhance: Update pattern categories.
-Enhance: Delete woocommerce-default page template (not needed with new WooCommerce template support).
-Enhance: Restructure patterns.
-Enhance: 404 template.
-Enhance: Delete custom class names from template parts.
-Enhance: Rename footer template parts.
-Enhance: Use new Pattern block in template parts.
-Enhance: Search results and archive page template.
-Enhance: Delete Header/Logo template part.
-Enhance: Reorganize pattern image folder.
-Enhance: Change Aino theme URL to ainoblocks.io.
-Bugfix: Single page templates.
-Bugfix: Archive page templates.
+
+Release date: January , 2022
+
+* Enhance: Rename folders to templates and parts.
+* Enhance: Disable core color and gradient palettes.
+* Enhance: Update pattern categories.
+* Enhance: Delete woocommerce-default page template (not needed with new WooCommerce template support).
+* Enhance: Restructure patterns.
+* Enhance: 404 template.
+* Enhance: Delete custom class names from template parts.
+* Enhance: Rename footer template parts.
+* Enhance: Use new Pattern block in template parts.
+* Enhance: Search results and archive page template.
+* Enhance: Delete Header/Logo template part.
+* Enhance: Reorganize pattern image folder.
+* Enhance: Change Aino theme URL to ainoblocks.io.
+* Fix: Single page templates.
+* Fix: Archive page templates.
 
 = 2.6.1 =
-New: WooCommerce block templates.
-New: Single Portrait Featured Image template.
-Enhance: Single post templates.
-Enhance: Wrap post info in "entry-header" div on index.html.
-Enhance: Query block styles.
-Enhance: Update theme.json to version 2.
-Enhance: Block style names.
-Enhance: Header and Header Dark Template Parts.
+
+Release date: November 23, 2021
+
+* New: WooCommerce block templates.
+* New: Single Portrait Featured Image template.
+* Enhance: Single post templates.
+* Enhance: Wrap post info in "entry-header" div on index.html.
+* Enhance: Query block styles.
+* Enhance: Update theme.json to version 2.
+* Enhance: Block style names.
+* Enhance: Header and Header Dark Template Parts.
 
 = 2.6.0 =
-New: Single post Template without comments.
-New: Single post Template without Featured Image.
-Enhance: Load Google fonts locally.
-Enhance: Wider max wide content width.
-Enhance: Query block support.
-Enhance: Navigation block spacing and alignment.
-Enhance: Grid gaps.
-Enhance: Delete outdated theme files.
-Enhance: Query Loop block grid posts.
-Enhance: Query patterns.
-Bugfix: Blank page template.
-Bugfix: Change required to recommended plugins.
+
+Release date: November 13, 2021
+
+* New: Single post Template without comments.
+* New: Single post Template without Featured Image.
+* Enhance: Load Google fonts locally.
+* Enhance: Wider max wide content width.
+* Enhance: Query block support.
+* Enhance: Navigation block spacing and alignment.
+* Enhance: Grid gaps.
+* Enhance: Delete outdated theme files.
+* Enhance: Query Loop block grid posts.
+* Enhance: Query patterns.
+* Fix: Blank page template.
+* Fix: Change required to recommended plugins.
 
 = 2.5.0 =
-New: Feature patterns.
+
+Release date: September 16, 2021
+
+* New: Feature patterns.
 
 = 2.4.7 =
-Bugfix: Group block with background.
+
+Release date: September 16, 2021
+
+* Fix: Group block with background.
 
 = 2.4.6 =
-Enhance: Outer content gap.
-Enhance: Typography veriables.
+
+Release date: September 10, 2021
+
+* Enhance: Outer content gap.
+* Enhance: Typography veriables.
 
 = 2.4.5 =
-Bugfix: Default page template outer page gap.
+
+Release date: September 10, 2021
+
+* Fix: Default page template outer page gap.
 
 = 2.4.4 =
-Bugfix: Header template part alignment and padding.
+
+Release date: September 9, 2021
+
+* Fix: Header template part alignment and padding.
 
 = 2.4.3 =
-Bugfix: Page template content gap.
+
+Release date: September 9, 2021
+
+* Fix: Page template content gap.
 
 = 2.4.2 =
-Enhance: Update to webpack building tools.
-Enhance: Clean up Sass styles.
-Enhance: Set Contentgap to 'null' in theme.json file.
-Enhance: Footer navigation menu's default setting.
-Enhance: Color variables.
-Enhance: font sizes.
-Bugfix: Padding of blocks on single post.
-Bugfix: Header alignment.
+
+Release date: September 2, 2021
+
+* Enhance: Update to webpack building tools.
+* Enhance: Clean up Sass styles.
+* Enhance: Set Contentgap to 'null' in theme.json file.
+* Enhance: Footer navigation menu's default setting.
+* Enhance: Color variables.
+* Enhance: font sizes.
+* Fix: Padding of blocks on single post.
+* Fix: Header alignment.
 
 = 2.4.1 =
-Bugfix: Group block padding fix that caused extra borders around container blocks.
+
+Release date: September 2, 2021
+
+* Fix: Group block padding fix that caused extra borders around container blocks.
 
 = 2.4.0 =
-New: Banner block patterns.
+
+Release date: August 24, 2021
+
+* New: Banner block patterns.
 
 = 2.3.0 =
-Enhance: Slim default Footers and new 2 column Footers.
-Enhance: New PT Serif Google font option.
-Bugfix: Google fonts loading.
-Bugfix: Patterns update for patterns including the Button block.
+
+Release date: August 23, 2021
+
+* Enhance: Slim default Footers and new 2 column Footers.
+* Enhance: New PT Serif Google font option.
+* Fix: Google fonts loading.
+* Fix: Patterns update for patterns including the Button block.
 
 = 2.2.2 =
-Bugfix: Remove unneeded custom post classes.
+
+Release date: August 12, 2021
+
+* Fix: Remove unneeded custom post classes.
 
 = 2.2.1 =
-Enhance: WooCommerce account styles.
-Enhance: Form styles.
+
+Release date: August 12, 2021
+
+* Enhance: WooCommerce account styles.
+* Enhance: Form styles.
 
 = 2.2.0 =
-New: Blank page template and site logo header template part.
-Enhance: Change Shop block page template to WooCommerce.
-Enhance: WooCommerce account styles.
-Bugfix: Fullwidth aligned container blocks in patterns preview.
-Bugfix: Delete unneeded page templates and CSS styles.
+
+Release date: August 12, 2021
+
+* New: Blank page template and site logo header template part.
+* Enhance: Change Shop block page template to WooCommerce.
+* Enhance: WooCommerce account styles.
+* Fix: Fullwidth aligned container blocks in patterns preview.
+* Fix: Delete unneeded page templates and CSS styles.
 
 = 2.1.0 =
-New: Text patterns.
-New: Portfolio pattern.
-New: Query pattern.
-Enhance: Header max-width and outside content gap.
-Bugfix: Alignment for parent Group block in patterns.
-Bugfix: WooCommerce shop archive page content width.
+
+Release date: August 6, 2021
+
+* New: Text patterns.
+* New: Portfolio pattern.
+* New: Query pattern.
+* Enhance: Header max-width and outside content gap.
+* Fix: Alignment for parent Group block in patterns.
+* Fix: WooCommerce shop archive page content width.
 
 = 2.0.4 =
-Enhance: Pattern library.
-Bugfix: Post comments and textarea.
-Bugfix: Layout aligment for patterns and header-footer.html template.
+
+Release date: August 4, 2021
+
+* Enhance: Pattern library.
+* Fix: Post comments and textarea.
+* Fix: Layout aligment for patterns and header-footer.html template.
 
 = 2.0.3 =
-Bugfix: Aino text domain missing.
-Bugfix: Added footer.php to meet Wp.org requirements.
-Bugfix: Default social icons links to header.html.
+
+Release date: August 4, 2021
+
+* Fix: Aino text domain missing.
+* Fix: Added footer.php to meet Wp.org requirements.
+* Fix: Default social icons links to header.html.
 
 = 2.0.2 =
-Enhance: Comment styles.
-Enhance: Archive and search templates.
-Enhance: Preset color palette.
+
+Release date: August 4, 2021
+
+* Enhance: Comment styles.
+* Enhance: Archive and search templates.
+* Enhance: Preset color palette.
 
 = 2.0.1 =
-New: Blank block page template.
-New: Core Image block light and dark border styles.
-Bugfix: Author name alignment.
-Bugfix: Global font settings.
-Bugfix: body width 100%.
-Bugfix: Font weights and font family in theme.json.
-Bugfix: Default block container alignment.
-Bugfix: Default padding for heading blocks on default page template.
-Enhance: Delete default separator in light patterns.
-Enhance: Deleted default border radius on images in dark patterns.
-Enhance: Page templates.
-Enhance: Optimize color palette.
-Enhance: Renamed 'Header and Footer only' to 'Header and Footer' block page template.
+
+Release date: August 4, 2021
+
+* New: Blank block page template.
+* New: Core Image block light and dark border styles.
+* Fix: Author name alignment.
+* Fix: Global font settings.
+* Fix: body width 100%.
+* Fix: Font weights and font family in theme.json.
+* Fix: Default block container alignment.
+* Fix: Default padding for heading blocks on default page template.
+* Enhance: Delete default separator in light patterns.
+* Enhance: Deleted default border radius on images in dark patterns.
+* Enhance: Page templates.
+* Enhance: Optimize color palette.
+* Enhance: Renamed 'Header and Footer only' to 'Header and Footer' block page template.
 
 = 2.0.0 =
-New: Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.
-New: Added Gutenberg plugin to list of required plugins.
-New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
-New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
-New: Default font Arimo.
-New: Block Patterns.
+
+Release date: August 4, 2021
+
+* New: Block Theme support. Please activate the Gutenberg plugin in order to use the new block theme features.
+* New: Added Gutenberg plugin to list of required plugins.
+* New: Moved all Customizer color settings to the new FSE feature Global Styles (available via the Gutenberg plugin's Site Editor).
+* New: Option to enable/disable the Site Editor via Gutenberg/Experiments.
+* New: Default font Arimo.
+* New: Block Patterns.
 
 = 1.4.1 =
-New: Add theme.json file.
-New: New Global Styles Color Palette and color updates.
-Enhance: Block editor color, gradient palette and theme custom colors.
-Enhance: Add theme support for block styles.
-Enhance: Font styles as CSS variables.
-Bugfix: Deleted Group block max width.
+
+Release date: May 3, 2021
+
+* New: Add theme.json file.
+* New: New Global Styles Color Palette and color updates.
+* Enhance: Block editor color, gradient palette and theme custom colors.
+* Enhance: Add theme support for block styles.
+* Enhance: Font styles as CSS variables.
+* Fix: Deleted Group block max width.
 
 = 1.4.0 =
-New: WooCommerce plugin support.
-New: Building Blocks patterns.
-New: Support Query block.
-Enhance: Color Palette.
-Enhance: Core Code, Preformatted, Verse block styles.
-Enhance: Form styles.
-Bugfix: Load more on archive pages.
+
+Release date: May 3, 2021
+
+* New: WooCommerce plugin support.
+* New: Building Blocks patterns.
+* New: Support Query block.
+* Enhance: Color Palette.
+* Enhance: Core Code, Preformatted, Verse block styles.
+* Enhance: Form styles.
+* Fix: Load more on archive pages.
 
 = 1.3.1 =
-Enhance: Add support for local fonts.
-Enhance: German translation.
-Enhance: Theme screenshot.
-Enhance: Header search form.
-Enhance: Border radius for Featured images.
-Enhance: Default paragraph and list styles.
-Enhance: Max Featured image size.
-Bugfix: Wide aligned blocks responsiveness.
-Bugfix: Dark mode in editor view.
-Bugfix: Styles for posts without featured image.
-Bugfix: 'Hero' page template for pages using the Aino Hero block.
+
+Release date: April 8, 2021
+
+* Enhance: Add support for local fonts.
+* Enhance: German translation.
+* Enhance: Theme screenshot.
+* Enhance: Header search form.
+* Enhance: Border radius for Featured images.
+* Enhance: Default paragraph and list styles.
+* Enhance: Max Featured image size.
+* Fix: Wide aligned blocks responsiveness.
+* Fix: Dark mode in editor view.
+* Fix: Styles for posts without featured image.
+* Fix: 'Hero' page template for pages using the Aino Hero block.
 
 = 1.3.0 =
-New: Dark mode option (see Customizer/Colors).
-Enhance: Convert SASS color variables to CSS variables.
-Enhance: Convert Featured image aspect ratio from 3:2 to 16:9.
-Enhance: German translation.
-Bugfix: Load more button.
-Bugfix: Full width blocks on single post.
+
+Release date: April 8, 2021
+
+* New: Dark mode option (see Customizer/Colors).
+* Enhance: Convert SASS color variables to CSS variables.
+* Enhance: Convert Featured image aspect ratio from 3:2 to 16:9.
+* Enhance: German translation.
+* Fix: Load more button.
+* Fix: Full width blocks on single post.
 
 = 1.2.7 =
-Enhance: Change CSS class no-margins to nogap.
-New: TikTok social icon.
+
+Release date: March 25, 2021
+
+* Enhance: Change CSS class no-margins to nogap.
+* New: TikTok social icon.
 
 = 1.2.6 =
-Enhance: Update required PHP version.
+
+Release date: January 21, 2021
+
+* Enhance: Update required PHP version.
 
 = 1.2.5 =
-* Bugfix: Limited custom logo height in tablet view.
-* Bugfix: Outer margins for Fullscreen page template.
-* Bugfix: Gutter of Image block inside Aino Grid Item block.
+
+Release date: January 21, 2021
+
+* Fix: Limited custom logo height in tablet view.
+* Fix: Outer margins for Fullscreen page template.
+* Fix: Gutter of Image block inside Aino Grid Item block.
 * Enhance: Single post styles.
 * Enhance: New justify CSS class to justify align paragraphs.
 * Enhance: Main menu CTA button.
 
 = 1.2.4 =
+
+Release date: November 10, 2020
+
 * New: Hide author on single posts.
 * Enhance: Single post styles.
 * Enhance: 404 page styles.
 
 = 1.2.3 =
+
+Release date: November 6, 2020
+
 * Enhance: Mailchimp form styles.
 * Enhance: Custom logo support.
-* Bugfix: Default page responsive margins.
-* Bugfix: Admin bar top spacing.
+* Fix: Default page responsive margins.
+* Fix: Admin bar top spacing.
 
 = 1.2.2 =
+
+Release date: November 3, 2020
+
 * New: MC4WP: Mailchimp for WordPress plugin support.
 * Enhance: Screenshot image.
 * Enhance: Mobile menu.
@@ -260,14 +359,16 @@ Enhance: Update required PHP version.
 * Enhance: Footer widgets.
 * Enhance: Search result pages.
 * Enhance: Editor font styles.
-* Bugfix: Cover block responsiveness.
-* Bugfix: Responsive spacing.
-* Bugfix: Multiple alignfull blocks scrollbar issue. Fixes #131
+* Fix: Cover block responsiveness.
+* Fix: Responsive spacing.
+* Fix: Multiple alignfull blocks scrollbar issue. Fixes #131
 
 = 1.2.1 =
+
 * New: Aino Blocks plugin recommendation notice.
 
 = 1.2.0 =
+
 * Enhance: Single post, blog and archive page styles.
 * Enhance: Translations.
 * Update: Default font from Roboto to IBM Plex Sans.
@@ -290,41 +391,41 @@ Enhance: Update required PHP version.
 * Enhance: CSS for grid and media query breakpoints.
 * Enhance: Footer widgets.
 * Enhance: Translations.
-* Bugfix: Add custom color and gradient palette to editor styles.
+* Fix: Add custom color and gradient palette to editor styles.
 
 = 1.1.6 =
-* Bugfix: CSS styling for Aino blocks.
+* Fix: CSS styling for Aino blocks.
 
 = 1.1.5 =
-* Bugfix: Douple text domain issue in searchform.php
+* Fix: Douple text domain issue in searchform.php
 * Enhance: Translations updated.
 
 = 1.1.4 =
 * Enhance: Deleted unneeded files js/svgxuse.js and js/svgxuse.min.js.
-* Bugfix: Default page comments width too wide.
+* Fix: Default page comments width too wide.
 
 = 1.1.3 =
 * Enhance: Update from GPLv2 to GPLv3.
 * Enhance: Added original file for js/svgxuse.js.
-* Bugfix: template-tags.php incorrect use of attribute.
-* Bugfix: Deleted removal of header section in customizer.php.
-* Bugfix: Deleted map files.
-* Bugfix: searchform.php incorrect use of attribute.
-* Bugfix: header.php incorrect use of attribute.
-* Bugfix: modal-menu.php incorrect use of attribute.
+* Fix: template-tags.php incorrect use of attribute.
+* Fix: Deleted removal of header section in customizer.php.
+* Fix: Deleted map files.
+* Fix: searchform.php incorrect use of attribute.
+* Fix: header.php incorrect use of attribute.
+* Fix: modal-menu.php incorrect use of attribute.
 
 = 1.1.2 =
-* Bugfix: Button block outline.
-* Bugfix: Button block right and left alignment on frontend.
-* Bugfix: All core block right and left alignments.
-* Bugfix: Columns block spacing.
-* Bugfix: Styling of block widgets.
-* Bugfix: Styling of code, preformatted and verse block.
-* Bugfix: Fixing custom post type margins. #96
-* Bugfix: A11y fixes.
+* Fix: Button block outline.
+* Fix: Button block right and left alignment on frontend.
+* Fix: All core block right and left alignments.
+* Fix: Columns block spacing.
+* Fix: Styling of block widgets.
+* Fix: Styling of code, preformatted and verse block.
+* Fix: Fixing custom post type margins. #96
+* Fix: A11y fixes.
 
 = 1.1.1 =
-* Bugfix: Block columns styling optimized.
+* Fix: Block columns styling optimized.
 
 = 1.1.0 =
 * New: Heading block font size platte support.
@@ -334,13 +435,13 @@ Enhance: Update required PHP version.
 * Enhance: Grid layout optimised.
 * Enhance: px unit converted to rem.
 * Enhance: A number of CSS classes renamed.
-* Bugfix: Sticky post update.
-* Bugfix: Separator block styling.
+* Fix: Sticky post update.
+* Fix: Separator block styling.
 
 = 1.0.1 =
-* Bugfix: Category styling on blog.
-* Bugfix: Missing default excerpt text on first theme activation.
-* Bugfix: Deleted unneeded div container for sticky posts.
+* Fix: Category styling on blog.
+* Fix: Missing default excerpt text on first theme activation.
+* Fix: Deleted unneeded div container for sticky posts.
 
 = 1.0.0 =
 * New: Include minified style.min.css.
@@ -370,7 +471,7 @@ Enhance: Update required PHP version.
 * Enhance: Button and form styles
 * Enhance: Jetpack sharing button styles
 * Enhance: CSS grid styles
-* Bugfix: 404 page
+* Fix: 404 page
 
 = 0.2.0 =
 * Enhance: Simplified color options
