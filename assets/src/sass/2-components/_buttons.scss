@@ -7,8 +7,8 @@ input[type="submit"],
 	@include btn-m;
 }
 
-button,
-input[type="button"],
+button:not(.wp-block-navigation__responsive-container-open),
+input[type="button"]:not(.wp-block-navigation__responsive-container-open),
 input[type="submit"] {
 	@include btn-primary;
 }
@@ -151,9 +151,9 @@ a.btn-outline,
 .site-header {
 
 	.btn-icon {
-		margin-top: var(--space-04);
+		margin-top: var(--space-04) !important;
 
-		a {
+		.wp-block-ainoblocks-button__link {
 			display: flex;
 			width: var(--space-08);
 			height: var(--space-08);
@@ -167,7 +167,7 @@ a.btn-outline,
 
 	.icon-search {
 
-		a {
+		.wp-block-ainoblocks-button__link {
 			background-image: url(/assets/images/search.svg) !important;
 		}
 	}

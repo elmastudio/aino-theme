@@ -539,6 +539,9 @@
 		{
 			"name": "footer-five-col-logo-dark",
 			"area": "footer"
+		},
+		{
+			"name": "single-related-posts"
 		}
 	]
 }

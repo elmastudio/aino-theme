@@ -2,9 +2,9 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, wide-blocks, block-patterns, full-site-editing
 Requires at least: 5.8
-Tested up to: WordPress 5.8.2
+Tested up to: WordPress 5.8.3
 Requires PHP: 7.0
-Stable tag: 2.6.2
+Stable tag: 2.6.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -41,6 +41,9 @@ Aino WordPress Theme bundles the following third-party resources:
 Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.3 =
+Enhance: Move Related Posts into Template Part.
 
 = 2.6.2 =
 Enhance: Rename folders to templates and parts.
