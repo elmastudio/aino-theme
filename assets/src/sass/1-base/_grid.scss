@@ -28,19 +28,19 @@
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
 }
 
-.alignfull {
+.alignfull .default-content-width {
+	@include push--auto;
+	padding-left: 0;
+	padding-right: 0;
+}
 
-	.default-content-width {
-		@include push--auto;
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.alignwide {
-		max-width: var(--global--wide-content-width);
-		margin-left: auto;
-		margin-right: auto;
-	}
+// Wide width content area
+.alignfull .alignwide,
+.woocommerce-page .entry-header,
+.woocommerce-page .entry-header h1 {
+	max-width: var(--global--wide-content-width);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .entry-content>* {

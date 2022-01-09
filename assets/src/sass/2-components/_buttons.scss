@@ -7,7 +7,6 @@ input[type="submit"],
 	@include btn-m;
 }
 
-button:not(.wp-block-navigation__responsive-container-open),
 input[type="button"]:not(.wp-block-navigation__responsive-container-open),
 input[type="submit"] {
 	@include btn-primary;

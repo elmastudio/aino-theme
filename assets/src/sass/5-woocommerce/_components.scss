@@ -40,7 +40,7 @@
 }
 
 .wc-block-components-sidebar-layout .wc-block-components-main {
-	margin: 0;
+	margin-bottom: var(--s-r-10);
 	padding-right: 0;
 	width: 100%;
 
@@ -74,13 +74,19 @@
 	}
 }
 
+.is-small,
+.is-medium {
+	&.wc-block-components-sidebar-layout .wc-block-components-sidebar {
+		@include s-r-7(padding);
+	}
+}
+
 .wc-block-components-shipping-calculator-address,
 .wc-block-components-form,
 .wc-block-components-form .wc-block-components-select,
 .wc-block-components-select {
 
 	.wc-block-components-text-input {
-		@include s-r-4(margin-top);
 
 		&.is-active {
 			label {
@@ -183,6 +189,8 @@
 .wc-block-components-combobox .wc-block-components-combobox-control input.components-combobox-control__input,
 .wc-block-components-form .wc-block-components-combobox .wc-block-components-combobox-control input.components-combobox-control__input {
 	height: 3.5rem;
+	border-color: var(--global--color--form-border);
+	border-radius: var(--global--border-radius-xxs);
 }
 
 .wc-block-components-combobox .wc-block-components-combobox-control .components-form-token-field__suggestions-list, .wc-block-components-form .wc-block-components-combobox .wc-block-components-combobox-control .components-form-token-field__suggestions-list {
@@ -207,7 +215,10 @@
 		border: 1px solid var(--global--color--form-border);
 		width: 1.5rem;
 		height: 1.5rem;
+		min-width: 1.5rem;
+		min-height: 1.5rem;
 		border-radius: 50%;
+		margin: 0 12px 0 0;
 		outline: 0;
 		left: 0;
 		top: 0;
@@ -236,11 +247,6 @@
 .wc-block-checkout__payment-method .wc-block-components-radio-control__option:first-child,
 .wc-block-checkout__payment-method .wc-block-components-radio-control__option:last-child {
 	padding-bottom: 0;
-}
-
-.wc-block-components-country-input {
-	margin-top: 0;
-	height: 3.75rem;
 }
 
 // Select input
@@ -533,6 +539,7 @@
 	font-weight: normal;
 	font-size: var(--global--font-size--body-m) !important;
 	padding: 18px 20px;
+	border-radius: var(--global--border-radius-round);
 }
 
 // Notification wrappers

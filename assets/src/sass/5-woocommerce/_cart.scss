@@ -117,11 +117,6 @@
 					padding-left: 0;
 				}
 		
-				.wc-block-cart-item__product,
-				.wc-block-cart-item__total {
-					@include s-r-6(padding-left);
-				}
-		
 				td:last-child {
 					padding-right: 0;
 				}
