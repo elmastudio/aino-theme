@@ -68,9 +68,10 @@ function aino_fonts_url() {
  * Restores the Customizer since we still rely on it.
  */
 function aino_restore_customizer() {
-	remove_action( 'admin_menu', 'gutenberg_remove_legacy_pages' );
+	// There's no need to return anything.
+	// The empty callback will do the trick.
 }
-add_action( 'init', 'aino_restore_customizer' );
+add_action( 'customize_register', 'aino_restore_customizer' );
 
 // Theme Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
