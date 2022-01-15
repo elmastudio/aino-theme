@@ -4,7 +4,7 @@
 	"description": "Aino is a Full Site Editing blocks theme for everyone who wants to build websites with creative, individual page layouts.",
 	"scripts": {
 		"prod": "parcel build",
-		"dev": "parcel dev",
+		"dev": "parcel watch",
 		"clean": "rm -rf build/*"
 	},
 	"keywords": [
