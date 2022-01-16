@@ -5,12 +5,7 @@ select,
 table,
 textarea {
 	line-height: var(--wp--custom--line-height--body);
-	color: var(--wp--custom--color--font-secondary);
-}
-
-.page-template-default .entry-content p,
-.single-product .entry-content p {
-	font-size: var(--wp--preset--font-size--text-m) !important;
+	color: var(--wp--preset--color--font-secondary);
 }
 
 .wp-block-image figcaption,
@@ -23,7 +18,7 @@ div[class*='wp-block-'] figcaption,
 .wc-block-components-sort-select__select,
 #cancel-comment-reply-link {
 	font-size: var(--wp--preset--font-size--text-m) !important;
-	color: var(--wp--custom--color--font-secondary);
+	color: var(--wp--preset--color--font-secondary);
 }
 
 .single .navigation a span.nav-subtitle,
@@ -170,7 +165,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--wp--custom--color--font-primary);
+	color: var(--wp--preset--color--font-primary);
 }
 
 h1.site-title,
@@ -440,7 +435,7 @@ big {
 	float: left;
 	padding: 0 10px 0 0;
 	line-height: 0.9;
-	color: var(--wp--custom--color--font-secondary);
+	color: var(--wp--preset--color--font-secondary);
 
 	@include breakpoint(sm) {
 		font-size: 7.75rem;

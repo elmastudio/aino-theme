@@ -64,12 +64,21 @@ function aino_fonts_url() {
 	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
 
+/**
+ * Restores the Customizer since we still rely on it.
+ */
+function aino_restore_customizer() {
+	// There's no need to return anything.
+	// The empty callback will do the trick.
+}
+add_action( 'customize_register', 'aino_restore_customizer' );
+
+
 // Theme Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
 
 // Theme Block Styles.
 require get_template_directory() . '/inc/block-styles.php';
-
 
 /**
  * TGMPA plugin activation.

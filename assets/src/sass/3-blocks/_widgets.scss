@@ -46,7 +46,7 @@
 .entry-content .wp-block-calendar {
 
 	caption {
-		color: var(--wp--custom--color--font-primary);
+		color: var(--wp--preset--color--font-primary);
 		margin-bottom: var(--space-04);
 		text-align: center;
 	}
@@ -62,12 +62,12 @@
 		}
 
 		tbody {
-			color: var(--wp--custom--color--font-secondary);
+			color: var(--wp--preset--color--font-secondary);
 			border-right: 1px solid var(--wp--custom--color--border);
 		}
 
 		td#today {
-			background: var(--wp--custom--color--background-primary);
+			background: var(--wp--preset--color--background-primary);
 		}
 
 		tbody td,

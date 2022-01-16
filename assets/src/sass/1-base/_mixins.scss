@@ -138,19 +138,19 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-primary {
-	color: var(--wp--custom--color--button-color-primary);
-	fill: var(--wp--custom--color--button-color-primary);
-	background-color: var(--wp--custom--color--primary);
+	color: var(--wp--preset--color--button-color-primary);
+	fill: var(--wp--preset--color--button-color-primary);
+	background-color: var(--wp--preset--color--primary);
 
 	&:hover {
-		background-color: var(--wp--custom--color--secondary);
+		background-color: var(--wp--preset--color--secondary);
 		text-decoration: none;
 	}
 }
 
 @mixin btn-tab {
-	color: var(--wp--custom--color--font-secondary);
-	fill: var(--wp--custom--color--font-secondary);
+	color: var(--wp--preset--color--font-secondary);
+	fill: var(--wp--preset--color--font-secondary);
 	background-color: transparent;
 	border: 1px solid var(--global--color--border);
 
@@ -161,31 +161,31 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-outline {
-	color: var(--wp--custom--color--primary);
-	fill: var(--wp--custom--color--primary);
+	color: var(--wp--preset--color--primary);
+	fill: var(--wp--preset--color--primary);
 	border: 1px solid;
-	border-color: var(--wp--custom--color--primary);
+	border-color: var(--wp--preset--color--primary);
 
 	&:hover {
-		background-color: var(--wp--custom--color--primary);
-		border-color: var(--wp--custom--color--primary);
-		color: var(--wp--custom--color--button-color-primary);
-		fill: var(--wp--custom--color--button-color-primary);
+		background-color: var(--wp--preset--color--primary);
+		border-color: var(--wp--preset--color--primary);
+		color: var(--wp--preset--color--button-color-primary);
+		fill: var(--wp--preset--color--button-color-primary);
 		text-decoration: none;
 	}
 }
 
 @mixin btn-outline-light {
-	color: var(--wp--custom--color--variant-primary);
-	fill: var(--wp--custom--color--variant-primary);
+	color: var(--wp--preset--color--variant-primary);
+	fill: var(--wp--preset--color--variant-primary);
 	border: 1px solid;
-	border-color: var(--wp--custom--color--variant-primary);
+	border-color: var(--wp--preset--color--variant-primary);
 
 	&:hover {
-		background-color: var(--wp--custom--color--variant-primary);
-		border-color: var(--wp--custom--color--variant-primary);
-		color: var(--wp--custom--color--variant-button-color-primary);
-		fill: var(--wp--custom--color--variant-button-color-primary);
+		background-color: var(--wp--preset--color--variant-primary);
+		border-color: var(--wp--preset--color--variant-primary);
+		color: var(--wp--preset--color--variant-button-color-primary);
+		fill: var(--wp--preset--color--variant-button-color-primary);
 		text-decoration: none;
 	}
 }
@@ -193,12 +193,12 @@ $var: true !default; // Can be overridden elsewhere
 @mixin btn-naked {
 	display: inline-block;
 	font-weight: normal;
-	color: var(--wp--custom--color--font-primary);
-	fill: var(--wp--custom--color--font-primary);
+	color: var(--wp--preset--color--font-primary);
+	fill: var(--wp--preset--color--font-primary);
 
 	&:hover {
-		color: var(--wp--custom--color--primary);
-		fill: var(--wp--custom--color--primary);
+		color: var(--wp--preset--color--primary);
+		fill: var(--wp--preset--color--primary);
 	}
 }
 

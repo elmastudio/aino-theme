@@ -4,7 +4,7 @@
 	&.is-style-primary {
 		.wp-block-ainoblocks-advanced-button__link {
 			&:not(.has-background) {
-				background-color: var(--wp--custom--color--primary);
+				background-color: var(--wp--preset--color--primary);
 			}
 		}
 	}
@@ -12,15 +12,15 @@
 	&.is-style-outline {
 		.wp-block-ainoblocks-advanced-button__link {
 			&:not(.has-background) {
-				color: var(--wp--custom--color--primary);
-				border-color: var(--wp--custom--color--primary);
+				color: var(--wp--preset--color--primary);
+				border-color: var(--wp--preset--color--primary);
 			}
 		}
 	}
 
 	&.is-style-ghost {
 		.wp-block-ainoblocks-advanced-button__link {
-			color: var(--wp--custom--color--primary);
+			color: var(--wp--preset--color--primary);
 		}
 	}
 }
@@ -56,14 +56,14 @@
 
 		.accordion {
 			&:before {
-				background: var(--wp--custom--color--font-primary);
+				background: var(--wp--preset--color--font-primary);
 			}
 			h3 {
-				color: var(--wp--custom--color--font-primary);
+				color: var(--wp--preset--color--font-primary);
 
 				&:before,
 				&:after {
-					color: var(--wp--custom--color--variant-font-primary);
+					color: var(--wp--preset--color--variant-font-primary);
 				}
 			}
 		}

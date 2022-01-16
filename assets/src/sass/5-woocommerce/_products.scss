@@ -26,7 +26,7 @@
 			font-size: var(--wp--preset--font-size--text-xs) !important;
 			line-height: var(--global--line-height-reset);
 			background: none !important;
-			color: var(--wp--custom--color--font-secondary);
+			color: var(--wp--preset--color--font-secondary);
 			padding: 0;
 			text-align: left;
 			display: inline;
@@ -155,7 +155,7 @@
 		width: auto;
 		border: 0;
 		border-radius: var(--global--border-radius-s);
-		color: var(--wp--custom--color--font-primary);
+		color: var(--wp--preset--color--font-primary);
 		background: var(--global--color--product-badge-background);
 		line-height: var(--global--line-height-reset);
 		text-transform: none;

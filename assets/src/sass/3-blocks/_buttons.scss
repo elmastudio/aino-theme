@@ -13,7 +13,7 @@
 		border-radius: 0;
 
 		&:not(.has-background) {
-			background-color: var(--wp--custom--color--primary);
+			background-color: var(--wp--preset--color--primary);
 		}
 	}
 
@@ -29,9 +29,9 @@
 			}
 
 			&:hover {
-				background-color: var(--wp--custom--color--secondary);
-				color: var(--wp--custom--color--button-color-secondary);
-				fill: var(--wp--custom--color--button-color-secondary);
+				background-color: var(--wp--preset--color--secondary);
+				color: var(--wp--preset--color--button-color-secondary);
+				fill: var(--wp--preset--color--button-color-secondary);
 			}
 		}
 	}

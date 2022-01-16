@@ -86,8 +86,8 @@
 .wc-block-components-button:not(.is-link) {
 
 	&:hover {
-		color: var(--wp--custom--color--button-color-secondary);
-		background-color: var(--wp--custom--color--secondary);
+		color: var(--wp--preset--color--button-color-secondary);
+		background-color: var(--wp--preset--color--secondary);
 	}
 }
 

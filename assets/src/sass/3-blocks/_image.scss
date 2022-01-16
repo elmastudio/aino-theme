@@ -35,7 +35,7 @@
 
 		img {
 			border: 1px solid;
-			border-color: var(--wp--custom--color--font-secondary);
+			border-color: var(--wp--preset--color--font-secondary);
 		}
 	}
 
@@ -43,7 +43,7 @@
 
 		img {
 			border: 1px solid;
-			border-color: var(--wp--custom--color--variant-font-secondary);
+			border-color: var(--wp--preset--color--variant-font-secondary);
 		}
 	}
 
@@ -75,7 +75,7 @@ div[class*='wp-block-'] figcaption {
 	@include s-r-4 (margin-top);
 	margin-bottom: 0;
 	text-align: left;
-	color: var(--wp--custom--color--font-secondary);
+	color: var(--wp--preset--color--font-secondary);
 }
 
 .wp-block-image.alignfull figcaption {

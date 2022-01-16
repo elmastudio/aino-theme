@@ -43,7 +43,7 @@
 				content: "";
 				position: absolute;
 				display: block;
-				background: var(--wp--custom--color--font-primary);
+				background: var(--wp--preset--color--font-primary);
 				z-index: 9;
 			}
 
@@ -219,7 +219,7 @@
 					padding: 0;
 
 					a {
-						color: var(--wp--custom--color--font-secondary);
+						color: var(--wp--preset--color--font-secondary);
 						font-size: var(--wp--preset--font-size--text-m) !important;
 					}
 				}
