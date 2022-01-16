@@ -20,7 +20,7 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_theme_support( 'wp-block-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( array( 'assets/build/css/editor.css', aino_fonts_url() ) );
+		add_editor_style( array( 'assets/build/css/style-editor.css', aino_fonts_url() ) );
 
 		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
@@ -41,7 +41,7 @@ function aino_scripts() {
 	// Enqueue fonts stylesheet.
 	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
 	// Theme stylesheet.
-	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/assets/build/css/main.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/assets/build/css/style.css', array(), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
