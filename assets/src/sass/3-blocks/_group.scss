@@ -1,16 +1,5 @@
 .wp-block-group {
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		.wp-block-group__inner-container & {
-			margin-top: 0;
-		}
-	}
-
 	.wp-block-group__inner-container>*:last-child {
 		margin-bottom: 0;
 	}

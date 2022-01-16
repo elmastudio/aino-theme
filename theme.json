@@ -111,16 +111,8 @@
 					"name": "Variant Button Color Secondary"
 				}
 			],
-			"gradients": [{
-					"slug": "grayish-blue-to-dark-grayish-blue",
-					"gradient": "linear-gradient(0deg,rgb(91, 108, 114) 0%,rgb(60, 68, 72) 100%)",
-					"name": "Grayish blue to dark grayish blue"
-				},
-				{
-					"slug": "soft-orange-to-desaturated-dark-cyan",
-					"gradient": "linear-gradient(270deg,rgb(67, 92, 103) 0%, rgb(114, 164, 163) 46%,rgb(251, 162, 137) 74%, rgb(252, 202, 164) 100%)",
-					"name": "Soft orange to desaturated dark cyan"
-				},
+			"gradients": [
+				
 				{
 					"slug": "light-grayish-magenta-to-very-dark-grayish-pink",
 					"gradient": "linear-gradient(0deg,rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%,rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%)",
@@ -147,16 +139,6 @@
 					"name": "Grayish violet to soft orange"
 				},
 				{
-					"slug": "light-grayish-red-to-dark-grayish-blue",
-					"gradient": "linear-gradient(180deg, rgb(252, 202, 210) 0%, rgb(222, 158, 167) 46%, rgb(118, 119, 135) 100%)",
-					"name": "Light grayish red to dark grayish blue"
-				},
-				{
-					"slug": "light-grayish-red-to-very-soft-blue",
-					"gradient": "linear-gradient(135deg, rgb(237, 204, 211) 0%, rgb(177, 181, 225) 100%)",
-					"name": "Light grayish red to very soft blue"
-				},
-				{
 					"slug": "soft-blue-to-lime-green",
 					"gradient": "linear-gradient(0deg, rgb(104, 134, 254) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 61%, rgb(213, 233, 207) 75%, rgb(8, 179, 82) 100%)",
 					"name": "Soft blue to lime green"
@@ -172,19 +154,9 @@
 					"name": "Soft red to very soft blue"
 				},
 				{
-					"slug": "soft-red-to-very-soft-blue",
-					"gradient": "radial-gradient(circle at bottom, rgb(19, 20, 143) 0%, rgb(13, 11, 24) 100%)",
-					"name": "dark-blue-to-mostly-black-blue"
-				},
-				{
-					"slug": "Very soft blue to dark grayish blue",
+					"slug": "very-soft-blue-to-dark-grayish-blue ",
 					"gradient": "radial-gradient(circle at bottom, rgb(153, 203, 233) 0%, rgb(121, 132, 157) 100%)",
-					"name": "very-soft-blue-to-dark-grayish-blue"
-				},
-				{
-					"slug": "soft-pink-to-mostly-pure-orange",
-					"gradient": "radial-gradient(circle at bottom, rgb(253, 79, 156) 0%, rgb(254, 132, 0) 100%)",
-					"name": "Soft pink to mostly pure orange"
+					"name": "Very soft blue to dark grayish blue"
 				},
 				{
 					"slug": "bright-cyan-to-soft-magenta",
@@ -232,54 +204,79 @@
 			],
 			"fontSizes": [
 				{
-					"name": "XXXS",
+					"name": "3XS",
 					"size": "0.75rem",
-					"slug": "xxxs"
+					"slug": "text-3xs"
 				},
 				{
-					"name": "XXS",
+					"name": "2XS",
 					"size": "0.875rem",
-					"slug": "xxs"
+					"slug": "text-2xs"
 				},
 				{
 					"name": "XS",
 					"size": "1rem",
-					"slug": "xs"
+					"slug": "text-xs"
 				},
 				{
 					"name": "S",
 					"size": "1.125rem",
-					"slug": "s"
+					"slug": "text-s"
 				},
 				{
 					"name": "M",
-					"size": "1.25rem",
-					"slug": "m"
+					"size": "clamp(1.125rem, 1.08333rem + 0.208333vw, 1.25rem)",
+					"slug": "text-m"
 				},
 				{
 					"name": "L",
-					"size": "1.5rem",
-					"slug": "l"
+					"size": "clamp(1.25rem, 1.16667rem + 0.416667vw, 1.5rem)",
+					"slug": "text-l"
 				},
 				{
 					"name": "XL",
-					"size": "1.75rem",
-					"slug": "xl"
+					"size": "clamp(1.5rem, 1.375rem + 0.625vw, 1.875rem)",
+					"slug": "text-xl"
 				},
 				{
 					"name": "XXL",
-					"size": "2.125rem",
-					"slug": "xxl"
+					"size": "clamp(1.875rem, 1.75rem + 0.625vw, 2.25rem)",
+					"slug": "text-2xl"
 				},
 				{
 					"name": "3XL",
-					"size": "2.5rem",
-					"slug": "xxxl"
+					"size": "clamp(2.25rem, 2rem + 1.25vw, 3rem)",
+					"slug": "text-3xl"
 				},
 				{
 					"name": "4XL",
-					"size": "3rem",
-					"slug": "xxxxl"
+					"size": "clamp(2.25rem, 1.75rem + 2.5vw, 3.75rem)",
+					"slug": "text-4xl"
+				},
+				{
+					"name": "5XL",
+					"size": "clamp(3rem, 2.5rem + 2.5vw, 4.5rem)",
+					"slug": "text-5xl"
+				},
+				{
+					"name": "6XL",
+					"size": "clamp(3.75rem, 3rem + 3.75vw, 6rem)",
+					"slug": "text-6xl"
+				},
+				{
+					"name": "7XL",
+					"size": "clamp(4.5rem, 3.333rem + 5.8333vw, 8rem)",
+					"slug": "text-7xl"
+				},
+				{
+					"name": "8XL",
+					"size": "clamp(6rem, 4rem + 10vw, 12rem)",
+					"slug": "text-8xl"
+				},
+				{
+					"name": "9XL",
+					"size": "clamp(6rem, 1.8333rem + 20.8333vw, 18.5rem)",
+					"slug": "text-9xl"
 				}
 			],
 			"textTransforms": [{
@@ -439,7 +436,7 @@
 			},
 			"core/site-title": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--s)",
+					"fontSize": "var(--wp--preset--font-size--l)",
 					"fontWeight": "400"
 				}
 			},
@@ -456,7 +453,7 @@
 			},
 			"core/paragraph": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--m)"
+					"fontSize": "var(--wp--preset--font-size--text-m)"
 				}
 			},
 			"core/preformatted": {

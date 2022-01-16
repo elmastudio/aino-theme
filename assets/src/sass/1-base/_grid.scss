@@ -35,9 +35,7 @@
 }
 
 // Wide width content area
-.alignfull .alignwide,
-.woocommerce-page .entry-header,
-.woocommerce-page .entry-header h1 {
+.alignfull .alignwide {
 	max-width: var(--global--wide-content-width);
 	margin-left: auto;
 	margin-right: auto;

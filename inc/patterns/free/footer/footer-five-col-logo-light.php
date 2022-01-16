@@ -34,11 +34,11 @@ return array(
 					class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__6 col_start_t__1 col_end_t__4 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_d__0 mb_t__0 mb_m__11">
 					<!-- wp:group {"paddingTop":0,"paddingBottom":0} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":4,"style":{"typography":{"lineHeight":"1.4"}},"fontSize":"xxs","paddingBottom":7} -->
-						<h4 class="has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
+						<!-- wp:heading {"level":4,"style":{"typography":{"lineHeight":"1.4"}},"fontSize":"text-s","paddingBottom":7} -->
+						<h4 class="has-text-s-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"xs"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"text-xs"} -->
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -56,11 +56,11 @@ return array(
 					class="wp-block-ainoblocks-grid-item col_start_d__6 col_end_d__8 col_start_t__4 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_d__0 mb_t__0 mb_m__11">
 					<!-- wp:group {"paddingTop":0,"paddingBottom":0} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":4,"style":{"typography":{"lineHeight":"1.4"}},"fontSize":"xxs","paddingBottom":7} -->
-						<h4 class="has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
+						<!-- wp:heading {"level":4,"style":{"typography":{"lineHeight":"1.4"}},"fontSize":"text-s","paddingBottom":7} -->
+						<h4 class="has-text-s-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"xs"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"text-xs"} -->
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -77,11 +77,11 @@ return array(
 					class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__10 col_start_t__7 col_end_t__10 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_d__0 mb_t__0 mb_m__11">
 					<!-- wp:group {"paddingTop":0,"paddingBottom":0} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":4,"style":{"typography":{"lineHeight":"1.4"}},"fontSize":"xxs","paddingBottom":7} -->
-						<h4 class="has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
+						<!-- wp:heading {"level":4,"style":{"typography":{"lineHeight":"1.4"}},"fontSize":"text-s","paddingBottom":7} -->
+						<h4 class="has-text-s-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"xs"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"fontSize":"text-xs"} -->
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -102,7 +102,7 @@ return array(
 						<h4 class="has-xxs-font-size pb__7" style="line-height:1.4"><strong>Footer Title</strong></h4>
 						<!-- /wp:heading -->
 	
-						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"__unstableLocation":"primary","fontSize":"xs"} -->
+						<!-- wp:navigation {"orientation":"vertical","showSubmenuIcon":false,"__unstableLocation":"primary","fontSize":"text-xs"} -->
 						<!-- wp:navigation-link {"label":"Menu Item 01","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 02","url":"#","kind":"custom","isTopLevelLink":true} /-->
 						<!-- wp:navigation-link {"label":"Menu Item 03","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -117,8 +117,8 @@ return array(
 				<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"stretch","marginTopDesktop":0,"className":"site-info"} -->
 				<div
 					class="wp-block-ainoblocks-grid-item site-info col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__stretch no-stacking mt_d__0">
-					<!-- wp:paragraph {"align":"center","textColor":"font-secondary","fontSize":"xxs","paddingTop":18} -->
-					<p class="has-text-align-center has-font-secondary-color has-text-color has-xxs-font-size pt__18">© 2022
+					<!-- wp:paragraph {"align":"center","textColor":"font-secondary","fontSize":"text-2xs","paddingTop":18} -->
+					<p class="has-text-align-center has-font-secondary-color has-text-color has-text-2-xs-font-size pt__18">© 2022
 						<strong>Site Title</strong>. Powered by <a rel="noreferrer noopener" href="https://wordpress.org"
 							data-type="URL" data-id="https://wordpress.org" target="_blank">WordPress</a>. Built with <a
 							rel="noreferrer noopener" href="https://ainoblocks.io/" data-type="URL"

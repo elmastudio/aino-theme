@@ -40,7 +40,7 @@
 }
 
 .wp-block-latest-comments__comment {
-	font-size: var(--global--font-size--body-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xs) !important;
 }
 
 .entry-content .wp-block-calendar {
@@ -79,7 +79,7 @@
 }
 
 .wp-block-latest-comments__comment-excerpt p {
-	font-size: var(--global--font-size--body-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xs) !important;
 	margin: var(--space-02) 0 var(--space-06);
 }
 

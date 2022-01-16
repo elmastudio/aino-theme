@@ -46,7 +46,7 @@
 	& p,
 	&.is-style-solid-color p,
 	&.is-style-solid-color blockquote p {
-		font-size: var(--global--font-size--body-m) !important;
+		font-size: var(--wp--preset--font-size--text-m) !important;
 	}
 
 	&.is-style-solid-color,

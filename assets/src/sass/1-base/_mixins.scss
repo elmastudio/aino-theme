@@ -33,16 +33,6 @@ $var: true !default; // Can be overridden elsewhere
 			@content;
 		}
 	}
-
-	@else if $class==header {
-		@media (min-width: 71.25em) {
-			@content;
-		}
-	}
-
-	@else {
-		@warn "Breakpoint mixin supports: sm, md, lg, xl, header";
-	}
 }
 
 /* Centering */
