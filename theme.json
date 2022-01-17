@@ -323,32 +323,6 @@
 			}
 		},
 		"blocks": {
-			"core/button": {
-				"color": {
-					"palette": [
-						{
-							"slug": "primary",
-							"color": "var(--wp--preset--color--primary)",
-							"name": "Primary"
-						},
-						{
-							"slug": "button-color-primary",
-							"color": "var(--wp--preset--color--button-color-primary)",
-							"name": "Button Color Primary"
-						},
-						{
-							"slug": "variant-primary",
-							"color": "var(--wp--preset--color--variant-primary)",
-							"name": "Variant Primary"
-						},
-						{
-							"slug": "variant-button-color-primary",
-							"color": "var(--wp--preset--color--variant-button-color-primary)",
-							"name": "Variant Button Color Primary"
-						}
-					]
-				}
-			},
 			"core/preformatted": {
 				"color": {
 					"palette": [
