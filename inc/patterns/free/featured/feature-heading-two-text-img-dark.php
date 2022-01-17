@@ -11,7 +11,7 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopDesktop":0,"marginBottomDesktop":0,"marginTopMobile":0,"marginBottomMobile":9} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__9"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5xl"} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__9"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5-xl"} -->
 	<h2 class="has-variant-font-primary-color has-text-color has-text-5-xl-font-size">New Ideas</h2>
 	<!-- /wp:heading -->
 	

@@ -46,7 +46,7 @@ div[class*='wp-block-'] figcaption,
 }
 
 .has-xxxs-font-size {
-	font-size: var(--wp--preset--font-size--text-3-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xxxs) !important;
 }
 
 .archive,
@@ -117,7 +117,7 @@ dl,
 	p.has-xxl-font-size,
 	.wp-block-post-excerpt.has-xxl-font-size p,
 	.wp-block-post-terms.has-xxl-font-size {
-		font-size: var(--wp--preset--font-size--text-2-xl) !important;
+		font-size: var(--wp--preset--font-size--text-xxl) !important;
 	}
 }
 
@@ -128,14 +128,15 @@ dl,
 	.wp-block-post-terms.has-xxl-font-size,
 	.wp-block-quote.is-style-large p,
 	.page-header .description p {
-		font-size: var(--wp--preset--font-size--text-2-xl) !important;
+		font-size: var(--wp--preset--font-size--text-xxl) !important;
 	}
 }
 
+.wp-block-post-title,
 .entry-content p.has-xxxl-font-size,
 .entry-content .wp-block-post-excerpt.has-xxxl-font-size p,
 .entry-content .wp-block-post-terms.has-xxxl-font-size {
-	font-size: var(--wp--preset--font-size--text-3-xl) !important;
+	font-size: var(--wp--preset--font-size--text-xxxl) !important;
 }
 
 .entry-content {
@@ -151,7 +152,7 @@ p.has-xxs-font-size,
 .has-xxs-font-size p,
 .wp-block-post-excerpt.has-xxs-font-size p,
 .wp-block-post-terms.has-xxs-font-size {
-	font-size: var(--wp--preset--font-size--text-2-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xxs) !important;
 }
 
 .wp-block-navigation__submenu-container .has-xxxl-font-size {
@@ -209,7 +210,7 @@ h5.has-xl-font-size,
 h6.has-xxl-font-size,
 .authorbox__details .author-name,
 .related-title {
-	font-size: var(--wp--preset--font-size--text-3-xl) !important;
+	font-size: var(--wp--preset--font-size--text-xxxl) !important;
 }
 
 h1.has-xxs-font-size,
@@ -220,7 +221,7 @@ h5.has-l-font-size,
 h6.has-xl-font-size,
 .archive .archive-title,
 .blog-archive h2.entry-title {
-	font-size: var(--wp--preset--font-size--text-2-xl) !important;
+	font-size: var(--wp--preset--font-size--text-xxl) !important;
 }
 
 h1.has-xxxs-font-size,
@@ -248,7 +249,7 @@ h6.has-m-font-size,
 }
 
 .wp-block-ainoblocks-accordion-faq-block.is-style-toggle h3 {
-	font-size: var(--wp--preset--font-size--text-2-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xxs) !important;
 }
 
 h4.has-xxs-font-size,
@@ -273,7 +274,7 @@ h6.has-xxxs-font-size,
 
 	&.blog-1-column h2.entry-title,
 	&.blog-2-column h2.entry-title {
-		font-size: var(--wp--preset--font-size--text-3-xl) !important;
+		font-size: var(--wp--preset--font-size--text-xxxl) !important;
 	}
 }
 

@@ -13,7 +13,7 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopDesktop":0,"marginBottomDesktop":0,"marginTopMobile":0,"marginBottomMobile":0,"paddingBottom":14} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0 pb__14"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-7xl"} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0 pb__14"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-7-xl"} -->
 	<h2 class="has-variant-font-primary-color has-text-color has-text-7-xl-font-size">All the ways to get in touch with us</h2>
 	<!-- /wp:heading --></div>
 	<!-- /wp:ainoblocks/grid-item -->

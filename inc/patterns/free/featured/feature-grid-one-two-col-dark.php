@@ -9,7 +9,7 @@ return array(
 	'content'    => '<!-- wp:group {"align":"full","style":{"color":{"background":"#21004D"}},"paddingTop":10,"paddingBottom":10,"paddingLeft":10,"paddingRight":10} -->
 	<div class="wp-block-group alignfull has-background pt__10 pb__10 pl__10 pr__10" style="background-color:#21004D"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-none"} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide col-gap-none"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":8,"gridColumnStartMobile":1,"gridColumnEndMobile":13} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__6 col_start_t__1 col_end_t__8 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5xl"} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__6 col_start_t__1 col_end_t__8 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5-xl"} -->
 	<h2 class="has-variant-font-primary-color has-text-color has-text-5-xl-font-size">Design System</h2>
 	<!-- /wp:heading -->
 	
@@ -40,7 +40,7 @@ return array(
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:ainoblocks/card {"paddingTop":10,"paddingBottom":10,"paddingLeft":10,"paddingRight":10,"style":{"color":{"background":"#004D38"}}} -->
 	<div class="wp-block-ainoblocks-card shadow-none pt__10 pb__10 pl__10 pr__10 has-background" style="background-color:#004D38"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-none"} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide col-gap-none"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":10,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__10 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5xl","paddingBottom":0} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__10 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5-xl","paddingBottom":0} -->
 	<h2 class="has-variant-font-primary-color has-text-color has-text-5-xl-font-size">Modular</h2>
 	<!-- /wp:heading -->
 	
@@ -62,7 +62,7 @@ return array(
 	<div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__13 col_start_t__7 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:ainoblocks/card {"paddingTop":10,"paddingBottom":10,"paddingLeft":10,"paddingRight":10,"style":{"color":{"background":"#4D0000"}}} -->
 	<div class="wp-block-ainoblocks-card shadow-none pt__10 pb__10 pl__10 pr__10 has-background" style="background-color:#4D0000"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-none"} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide col-gap-none"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":10,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__10 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5xl","paddingBottom":3} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__10 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5-xl","paddingBottom":3} -->
 	<h2 class="has-variant-font-primary-color has-text-color has-text-5-xl-font-size pb__3">Components</h2>
 	<!-- /wp:heading -->
 	

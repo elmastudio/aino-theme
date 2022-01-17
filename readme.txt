@@ -46,7 +46,7 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 
 Release date: January , 2022
 
-* Enhance: Font size naming enhancement.
+* Enhance: Font size naming.
 * Enhance: Simplify color palette.
 * Enhance: Move Related Posts into Template Part.
 * Enhance: Delete Customizer legacy code in functions.

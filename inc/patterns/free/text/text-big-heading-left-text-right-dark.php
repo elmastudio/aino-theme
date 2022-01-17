@@ -10,7 +10,7 @@ return array(
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch"} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:heading {"textAlign":"left","textColor":"variant-font-primary","fontSize":"text-5xl"} -->
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:heading {"textAlign":"left","textColor":"variant-font-primary","fontSize":"text-5-xl"} -->
 	<h2 class="has-text-align-left has-variant-font-primary-color has-text-color has-text-5-xl-font-size">WordPress is evolving</h2>
 	<!-- /wp:heading --></div>
 	<!-- /wp:ainoblocks/grid-item -->

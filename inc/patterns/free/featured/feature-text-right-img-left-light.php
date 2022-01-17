@@ -14,7 +14,7 @@ return array(
 	<p class="has-font-tertiary-color has-text-color has-text-m-font-size pb__3">Learn and explore</p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"text-5xl"} -->
+	<!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"text-5-xl"} -->
 	<h2 class="has-font-primary-color has-text-color has-text-5-xl-font-size">Creative Design</h2>
 	<!-- /wp:heading -->
 	

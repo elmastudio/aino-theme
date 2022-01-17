@@ -16,8 +16,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":7,"gridColumnEndDesktop":13,"gridColumnStartTablet":5,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":7} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__13 col_start_t__5 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__7"><!-- wp:paragraph {"align":"left","textColor":"variant-font-secondary","fontSize":"text-3xl","paddingTop":0,"paddingBottom":0} -->
-	<p class="has-text-align-left has-variant-font-secondary-color has-text-color has-text-3-xl-font-size">Do you want to create beautiful websites without loosing your cool? Aino is a growing system of modular design templates for the WordPress block editor.</p>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__13 col_start_t__5 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__7"><!-- wp:paragraph {"align":"left","textColor":"variant-font-secondary","fontSize":""text-xxxl"","paddingTop":0,"paddingBottom":0} -->
+	<p class="has-text-align-left has-variant-font-secondary-color has-text-color has-text-xxxl-font-size">Do you want to create beautiful websites without loosing your cool? Aino is a growing system of modular design templates for the WordPress block editor.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

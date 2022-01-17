@@ -94,7 +94,7 @@ dl,
 }
 
 .woocommerce-page h1.entry-title {
-	font-size: var(--wp--preset--font-size--text-2-xl) !important;
+	font-size: var(--wp--preset--font-size--text-xxl) !important;
 }
 
 .woocommerce-account h2,
@@ -277,7 +277,7 @@ dl,
 
 		p {
 			line-height: var(--global--line-height-reset);
-			font-size: var(--wp--preset--font-size--text-2-xs) !important;
+			font-size: var(--wp--preset--font-size--text-xxs) !important;
 			margin: 0;
 			@include s-r-1(padding-top);
 		}
@@ -551,7 +551,7 @@ dl,
 }
 
 .wc-block-components-validation-error {
-	font-size: var(--wp--preset--font-size--text-2-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xxs) !important;
 	color: var(--global--color--error);
 	max-width: 100%;
 	position: absolute;

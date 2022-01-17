@@ -15,9 +15,9 @@
 			"units": ["px", "em", "rem", "vh", "vw"]
 		},
 		"color": {
-			"link": true,
 			"defaultPalette": false,
 			"defaultGradients": false,
+			"link": true,
 			"custom": true,
 			"palette": [
 				{
@@ -112,7 +112,6 @@
 				}
 			],
 			"gradients": [
-				
 				{
 					"slug": "light-grayish-magenta-to-very-dark-grayish-pink",
 					"gradient": "linear-gradient(0deg,rgb(237, 221, 237) 0%, rgb(230, 196, 223) 21%,rgb(196, 165, 191) 50%, rgb(112, 93, 99) 100%)",
@@ -206,12 +205,12 @@
 				{
 					"name": "3XS",
 					"size": "0.75rem",
-					"slug": "text-3xs"
+					"slug": "text-xxxs"
 				},
 				{
 					"name": "2XS",
 					"size": "0.875rem",
-					"slug": "text-2xs"
+					"slug": "text-xxs"
 				},
 				{
 					"name": "XS",
@@ -241,42 +240,42 @@
 				{
 					"name": "XXL",
 					"size": "clamp(1.875rem, 1.75rem + 0.625vw, 2.25rem)",
-					"slug": "text-2xl"
+					"slug": "text-xxl"
 				},
 				{
 					"name": "3XL",
 					"size": "clamp(2.25rem, 2rem + 1.25vw, 3rem)",
-					"slug": "text-3xl"
+					"slug": "text-xxxl"
 				},
 				{
 					"name": "4XL",
 					"size": "clamp(2.25rem, 1.75rem + 2.5vw, 3.75rem)",
-					"slug": "text-4xl"
+					"slug": "text-4-xl"
 				},
 				{
 					"name": "5XL",
 					"size": "clamp(3rem, 2.5rem + 2.5vw, 4.5rem)",
-					"slug": "text-5xl"
+					"slug": "text-5-xl"
 				},
 				{
 					"name": "6XL",
 					"size": "clamp(3.75rem, 3rem + 3.75vw, 6rem)",
-					"slug": "text-6xl"
+					"slug": "text-6-xl"
 				},
 				{
 					"name": "7XL",
 					"size": "clamp(4.5rem, 3.333rem + 5.8333vw, 8rem)",
-					"slug": "text-7xl"
+					"slug": "text-7-xl"
 				},
 				{
 					"name": "8XL",
 					"size": "clamp(6rem, 4rem + 10vw, 12rem)",
-					"slug": "text-8xl"
+					"slug": "text-8-xl"
 				},
 				{
 					"name": "9XL",
 					"size": "clamp(6rem, 1.8333rem + 20.8333vw, 18.5rem)",
-					"slug": "text-9xl"
+					"slug": "text-9-xl"
 				}
 			],
 			"textTransforms": [{
@@ -415,7 +414,7 @@
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--monospace)",
-					"fontSize": "s"
+					"fontSize": "var(--wp--preset--font-size--text-s)"
 				}
 			}
 		}

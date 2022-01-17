@@ -15,8 +15,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":7,"gridColumnEndDesktop":13,"gridColumnStartTablet":5,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__13 col_start_t__5 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-2xl","paddingBottom":14} -->
-	<p class="has-font-secondary-color has-text-color has-text-2-xl-font-size pb__14">We are a small creative team from Portland, Oregon. Our clients value that we create individual software solutions tailored to their needs.</p>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__13 col_start_t__5 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xxl","paddingBottom":14} -->
+	<p class="has-font-secondary-color has-text-color has-text-xxl-font-size pb__14">We are a small creative team from Portland, Oregon. Our clients value that we create individual software solutions tailored to their needs.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->

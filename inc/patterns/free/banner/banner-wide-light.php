@@ -10,8 +10,8 @@ return array(
 
 	<!-- wp:ainoblocks/flexbox {"align":"wide","flexDirectionMobile":"direction__colrev__m","justifyContentTablet":"justify__between__t","justifyContentMobile":"justify__between__m","alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m","alignContentDesktop":"align-cont__between__d","className":"fullwidth style=","style":{"color":{"background":"#c2c7c9"}}} -->
 	<div class="wp-block-ainoblocks-flexbox alignwide direction__row__d direction__row__t direction__colrev__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__between__t justify__between__m align-items__center__d align-items__center__t align-items__center__m align-cont__between__d align-cont__stretch__t align-cont__stretch__m shadow-none wide fullwidth style= has-background" style="background-color:#c2c7c9"><!-- wp:ainoblocks/flex-item {"alignSelfDesktop":"align__auto__d","className":"desktop__width__50","paddingTop":11,"paddingBottom":11,"paddingLeft":13,"paddingRight":13} -->
-	<div class="wp-block-ainoblocks-flex-item align__auto__d auto desktop__width__50 pt__11 pb__11 pl__13 pr__13"><!-- wp:heading {"level":3,"textColor":"button-color-secondary","fontSize":"text-3xl","paddingTop":0,"paddingBottom":8,"paddingLeft":0,"paddingRight":0} -->
-	<h3 class="has-button-color-secondary-color has-text-color has-text-3-xl-font-size pb__8">Build a shiny new website</h3>
+	<div class="wp-block-ainoblocks-flex-item align__auto__d auto desktop__width__50 pt__11 pb__11 pl__13 pr__13"><!-- wp:heading {"level":3,"textColor":"button-color-secondary","fontSize":""text-xxxl"","paddingTop":0,"paddingBottom":8,"paddingLeft":0,"paddingRight":0} -->
+	<h3 class="has-button-color-secondary-color has-text-color has-text-xxxl-font-size pb__8">Build a shiny new website</h3>
 	<!-- /wp:heading -->
 	
 	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingBottom":8} -->

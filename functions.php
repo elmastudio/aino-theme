@@ -73,7 +73,6 @@ function aino_restore_customizer() {
 }
 add_action( 'customize_register', 'aino_restore_customizer' );
 
-
 // Theme Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
 

@@ -21,8 +21,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":12,"gridColumnStartTablet":6,"gridColumnEndTablet":12,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginBottomDesktop":12,"marginBottomTablet":10,"marginBottomMobile":9} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__6 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__9"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-2xl"} -->
-	<h3 class="has-variant-font-primary-color has-text-color has-text-2-xl-font-size">Lisa Jones</h3>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__6 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__9"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-xxl"} -->
+	<h3 class="has-variant-font-primary-color has-text-color has-text-xxl-font-size">Lisa Jones</h3>
 	<!-- /wp:heading -->
 	
 	<!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"text-xs","paddingTop":4} -->
@@ -49,8 +49,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":12,"gridColumnStartTablet":6,"gridColumnEndTablet":12,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginBottomDesktop":12,"marginBottomTablet":10,"marginBottomMobile":9} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__6 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__9"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-2xl"} -->
-	<h3 class="has-variant-font-primary-color has-text-color has-text-2-xl-font-size">Jessa Miller </h3>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__6 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_d__12 mb_t__10 mb_m__9"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-xxl"} -->
+	<h3 class="has-variant-font-primary-color has-text-color has-text-xxl-font-size">Jessa Miller </h3>
 	<!-- /wp:heading -->
 	
 	<!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"text-xs","paddingTop":4} -->
@@ -77,8 +77,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":12,"gridColumnStartTablet":6,"gridColumnEndTablet":12,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginBottomTablet":0,"marginBottomMobile":0} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__6 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_t__0 mb_m__0"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-2xl"} -->
-	<h3 class="has-variant-font-primary-color has-text-color has-text-2-xl-font-size">Jon Smith </h3>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__6 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mb_t__0 mb_m__0"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-xxl"} -->
+	<h3 class="has-variant-font-primary-color has-text-color has-text-xxl-font-size">Jon Smith </h3>
 	<!-- /wp:heading -->
 	
 	<!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"text-xs","paddingTop":4} -->
