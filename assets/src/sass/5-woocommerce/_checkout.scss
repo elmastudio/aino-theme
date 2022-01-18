@@ -198,7 +198,7 @@
 	}
 
 	&.has-border {
-		border-bottom: 1px solid var(--wp--custom--color--border);
+		border-bottom: 1px solid var(--wp--preset--color--border);
 		@include s-r-6(padding-bottom);
 		
 		&:after {
@@ -296,7 +296,7 @@
 .wc-block-checkout__sidebar .wc-block-components-totals-taxes:after,
 .wc-block-components-panel.has-border:after,
 .wc-block-components-order-summary-item:after {
-	border-color: var(--wp--custom--color--border);
+	border-color: var(--wp--preset--color--border);
 	opacity: 1;
 }
 

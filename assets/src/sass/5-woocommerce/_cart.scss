@@ -175,15 +175,15 @@
 				}
 
 				.wc-block-components-shipping-rates-control__package.wc-block-components-panel {
-					border-top: 1px solid var(--wp--custom--color--border);
-					border-bottom: 1px solid var(--wp--custom--color--border);
+					border-top: 1px solid var(--wp--preset--color--border);
+					border-bottom: 1px solid var(--wp--preset--color--border);
 				}
 
 				.wc-block-components-panel.has-border::after,
 				.wc-block-cart__totals-title:after,
 				.wc-block-components-shipping-rates-control__package.wc-block-components-panel:after  {
 					opacity: 1;
-					border-color: var(--wp--custom--color--border);
+					border-color: var(--wp--preset--color--border);
 				}
 
 				.wc-block-components-totals-shipping {

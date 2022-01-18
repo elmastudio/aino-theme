@@ -63,7 +63,7 @@
 
 		tbody {
 			color: var(--wp--preset--color--font-secondary);
-			border-right: 1px solid var(--wp--custom--color--border);
+			border-right: 1px solid var(--wp--preset--color--border);
 		}
 
 		td#today {
@@ -73,7 +73,7 @@
 		tbody td,
 		th {
 			padding: 16px 8px;
-			border: 1px solid var(--wp--custom--color--border);
+			border: 1px solid var(--wp--preset--color--border);
 		}
 	}
 }

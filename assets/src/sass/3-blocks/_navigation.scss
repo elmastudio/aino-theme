@@ -1,6 +1,6 @@
 .wp-block-navigation {
 
-	&:not(.has-background):not(.has-l-font-size) {
+	&:not(.has-background):not(.has-text-l-font-size) {
 
 		.wp-block-navigation {
 
@@ -28,7 +28,7 @@
 						line-height: 1;
 						font-weight: normal;
 						text-transform: none;
-						font-size: var(--wp--preset--font-size--s) !important;
+						font-size: var(--wp--preset--font-size--text-s) !important;
 					}
 
 					&:first-child {
@@ -169,9 +169,8 @@
 	&:not(.has-background) {
 
 		.wp-block-navigation__responsive-container.is-menu-open {
-			background-color: var(--wp--custom--color--variant-background-primary);
+			background-color: var(--wp--preset--color--variant-background-primary);
 			color: var(--wp--preset--color--variant-font-primary);
-
 
 			.wp-block-navigation__responsive-container-content .wp-block-navigation-item {
 				min-width: 12rem;
