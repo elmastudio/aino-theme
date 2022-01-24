@@ -31,8 +31,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-container --></div>
 	<!-- /wp:group -->
 	
-	<!-- wp:group {"align":"full","backgroundColor":"button-color-secondary","paddingBottom":17,"className":"fullwidth} -->
-	<div class="wp-block-group alignfull fullwidth has-button-color-secondary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container -->
+	<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingBottom":17,"className":"fullwidth} -->
+	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":2,"gridColumnEndMobile":12,"marginTopDesktop":-12,"marginTopTablet":-11,"marginTopMobile":-8} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__2 col_end_t__12 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mt_d__-12 mt_t__-11 mt_m__-8"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 	<figure class="wp-block-image size-large"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/hero-01.jpg" alt=""/></figure>

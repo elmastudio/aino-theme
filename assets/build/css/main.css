@@ -1115,15 +1115,6 @@ p.has-xxs-font-size,
 }
 
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--wp--preset--color--font-primary);
-}
-
 h1.site-title,
 .site-title,
 h2.entry-title {
@@ -1235,112 +1226,26 @@ h6.has-xxxs-font-size,
   line-height: 1;
 }
 
-.post-content h3.has-xxs-font-size,
-.post-content h4.has-xs-font-size,
-.post-content h5,
-.post-content h5.has-s-font-size,
-.post-content h6.has-m-font-size,
-.post-content h6,
-.post-content h4.has-xxs-font-size,
-.post-content h5.has-xs-font-size,
-.post-content h5.has-xxs-font-size,
-.post-content h2.has-xxs-font-size,
-.post-content h3.has-xs-font-size,
-.post-content h4,
-.post-content h4.has-s-font-size,
-.post-content h5.has-m-font-size,
-.post-content h6.has-l-font-size,
-.is-root-container > h3.has-xxs-font-size,
-.is-root-container > h4.has-xs-font-size,
-.is-root-container > h5,
-.is-root-container > h5.has-s-font-size,
-.is-root-container > h6.has-m-font-size,
-.is-root-container > h6,
-.is-root-container > h4.has-xxs-font-size,
-.is-root-container > h5.has-xs-font-size,
-.is-root-container > h5.has-xxs-font-size,
-.is-root-container > h2.has-xxs-font-size,
-.is-root-container > h3.has-xs-font-size,
+.wp-block-post-content h4, .wp-block-post-content h5, .wp-block-post-content h6,
 .is-root-container > h4,
-.is-root-container > h4.has-s-font-size,
-.is-root-container > h5.has-m-font-size,
-.is-root-container > h6.has-l-font-size {
+.is-root-container > h5,
+.is-root-container > h6 {
   padding-top: var(--s-r-8);
-  padding-bottom: var(--s-r-6);
+  padding-bottom: var(--s-r-5);
 }
-.post-content h3,
-.post-content h1.has-xxs-font-size,
-.post-content h2.has-xs-font-size,
-.post-content h3.has-s-font-size,
-.post-content h4.has-m-font-size,
-.post-content h5.has-l-font-size,
-.post-content h6.has-xl-font-size,
-.post-content h2,
-.post-content h1.has-xs-font-size,
-.post-content h2.has-s-font-size,
-.post-content h3.has-m-font-size,
-.post-content h4.has-l-font-size,
-.post-content h5.has-xl-font-size,
-.post-content h6.has-xxl-font-size,
-.is-root-container > h3,
-.is-root-container > h1.has-xxs-font-size,
-.is-root-container > h2.has-xs-font-size,
-.is-root-container > h3.has-s-font-size,
-.is-root-container > h4.has-m-font-size,
-.is-root-container > h5.has-l-font-size,
-.is-root-container > h6.has-xl-font-size,
+.wp-block-post-content h2, .wp-block-post-content h3,
 .is-root-container > h2,
-.is-root-container > h1.has-xs-font-size,
-.is-root-container > h2.has-s-font-size,
-.is-root-container > h3.has-m-font-size,
-.is-root-container > h4.has-l-font-size,
-.is-root-container > h5.has-xl-font-size,
-.is-root-container > h6.has-xxl-font-size {
+.is-root-container > h3 {
   padding-top: var(--s-r-9);
   padding-bottom: var(--s-r-7);
 }
-.post-content h2.has-m-font-size,
-.post-content h3.has-l-font-size,
-.post-content h4.has-xl-font-size,
-.post-content h5.has-xxl-font-size,
-.post-content h6.has-xxxl-font-size,
-.is-root-container > h2.has-m-font-size,
-.is-root-container > h3.has-l-font-size,
-.is-root-container > h4.has-xl-font-size,
-.is-root-container > h5.has-xxl-font-size,
-.is-root-container > h6.has-xxxl-font-size {
-  padding-top: var(--s-r-10);
-  padding-bottom: var(--s-r-7);
-}
-.post-content h1,
-.post-content h2.has-l-font-size,
-.post-content h2.has-xl-font-size,
-.post-content h3.has-xl-font-size,
-.post-content h3.has-xxl-font-size,
-.post-content h3.has-xxxl-font-size,
-.post-content h4.has-xxl-font-size,
-.post-content h4.has-xxxl-font-size,
-.post-content h5.has-xxxl-font-size,
-.post-content h6.has-xxxxl-font-size,
-.post-content h4.has-xxxl-font-size,
-.post-content h5.has-xxxxl-font-size,
-.is-root-container > h1,
-.is-root-container > h2.has-l-font-size,
-.is-root-container > h2.has-xl-font-size,
-.is-root-container > h3.has-xl-font-size,
-.is-root-container > h3.has-xxl-font-size,
-.is-root-container > h3.has-xxxl-font-size,
-.is-root-container > h4.has-xxl-font-size,
-.is-root-container > h4.has-xxxl-font-size,
-.is-root-container > h5.has-xxxl-font-size,
-.is-root-container > h6.has-xxxxl-font-size,
-.is-root-container > h4.has-xxxl-font-size,
-.is-root-container > h5.has-xxxxl-font-size {
+.wp-block-post-content h1,
+.is-root-container > h1 {
   padding-top: var(--s-r-10);
   padding-bottom: var(--s-r-8);
 }
-.post-content p:not(:last-child),
-.is-root-container > p:not(:last-child) {
+.wp-block-post-content p:not(:last-of-type),
+.is-root-container > p:not(:last-of-type) {
   padding-bottom: var(--s-r-6);
 }
 
@@ -2825,14 +2730,22 @@ li > ul, li > ol {
   }
 }
 
-.entry-content ul,
+.entry-content ul, .entry-content ol,
 .comment-content ul,
-.block-editor-block-list__layout ul {
+.comment-content ol,
+.block-editor-block-list__layout ul,
+.block-editor-block-list__layout ol {
   padding-left: 1.2rem;
 }
-.entry-content ul ul,
+.entry-content ul ul, .entry-content ul ol, .entry-content ol ul, .entry-content ol ol,
 .comment-content ul ul,
-.block-editor-block-list__layout ul ul {
+.comment-content ul ol,
+.comment-content ol ul,
+.comment-content ol ol,
+.block-editor-block-list__layout ul ul,
+.block-editor-block-list__layout ul ol,
+.block-editor-block-list__layout ol ul,
+.block-editor-block-list__layout ol ol {
   list-style: circle;
 }
 

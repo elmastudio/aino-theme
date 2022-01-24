@@ -165,15 +165,6 @@ p.has-xxs-font-size,
 }
 
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: var(--wp--preset--color--font-primary);
-}
-
 h1.site-title,
 .site-title,
 h2.entry-title {
@@ -292,74 +283,27 @@ h6.has-xxxs-font-size,
 }
 
 // Default Post Heading and Paragraph spacing, will likely be replaces with default block values later.
-.post-content,
+.wp-block-post-content,
 .is-root-container > {
 
-		h3.has-xxs-font-size,
-		h4.has-xs-font-size,
-		h5,
-		h5.has-s-font-size,
-		h6.has-m-font-size,
-		h6,
-		h4.has-xxs-font-size,
-		h5.has-xs-font-size,
-		h5.has-xxs-font-size,
-		h2.has-xxs-font-size,
-		h3.has-xs-font-size,
-		h4,
-		h4.has-s-font-size,
-		h5.has-m-font-size,
-		h6.has-l-font-size {
-			@include s-r-8(padding-top);
-			@include s-r-6(padding-bottom);
-		}
+	h4, h5, h6 {
+		@include s-r-8(padding-top);
+		@include s-r-5(padding-bottom);
+	}
 
-		h3,
-		h1.has-xxs-font-size,
-		h2.has-xs-font-size,
-		h3.has-s-font-size,
-		h4.has-m-font-size,
-		h5.has-l-font-size,
-		h6.has-xl-font-size,
-		h2,
-		h1.has-xs-font-size,
-		h2.has-s-font-size,
-		h3.has-m-font-size,
-		h4.has-l-font-size,
-		h5.has-xl-font-size,
-		h6.has-xxl-font-size {
-			@include s-r-9(padding-top);
-			@include s-r-7(padding-bottom);
-		}
+	h2, h3 {
+		@include s-r-9(padding-top);
+		@include s-r-7(padding-bottom);
+	}
 
-		h2.has-m-font-size,
-		h3.has-l-font-size,
-		h4.has-xl-font-size,
-		h5.has-xxl-font-size,
-		h6.has-xxxl-font-size {
-			@include s-r-10(padding-top);
-			@include s-r-7(padding-bottom);
-		}
+	h1 {
+		@include s-r-10(padding-top);
+		@include s-r-8(padding-bottom);
+	}
 
-		h1,
-		h2.has-l-font-size,
-		h2.has-xl-font-size,
-		h3.has-xl-font-size,
-		h3.has-xxl-font-size,
-		h3.has-xxxl-font-size,
-		h4.has-xxl-font-size,
-		h4.has-xxxl-font-size,
-		h5.has-xxxl-font-size,
-		h6.has-xxxxl-font-size,
-		h4.has-xxxl-font-size,
-		h5.has-xxxxl-font-size {
-			@include s-r-10(padding-top);
-			@include s-r-8(padding-bottom);
-		}
-
-		p:not(:last-child) {
-			@include s-r-6(padding-bottom);
-		}
+	p:not(:last-of-type) {
+		@include s-r-6(padding-bottom);
+	}
 }
 
 dfn,
