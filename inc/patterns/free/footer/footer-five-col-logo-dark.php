@@ -120,10 +120,7 @@ return array(
 					class="wp-block-ainoblocks-grid-item site-info col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__stretch no-stacking mt_d__0">
 					<!-- wp:paragraph {"align":"center","textColor":"variant-font-secondary","fontSize":"text-xxs","paddingTop":18} -->
 					<p class="has-text-align-center has-variant-font-secondary-color has-text-color has-text-xxs-font-size pt__18">© 2022
-						<strong>Site Title</strong>. Powered by <a rel="noreferrer noopener" href="https://wordpress.org"
-							data-type="URL" data-id="https://wordpress.org" target="_blank">WordPress</a>. Built with <a
-							rel="noreferrer noopener" href="https://ainoblocks.io/" data-type="URL"
-							data-id="https://ainoblocks.io/" target="_blank">Aino</a>.</p>
+						<strong>Site Title</strong>. Built with <a rel="nofollow" href="https://ainoblocks.io/">AinoBlocks</a>.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:ainoblocks/grid-item -->
