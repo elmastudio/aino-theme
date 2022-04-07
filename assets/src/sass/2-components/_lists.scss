@@ -44,7 +44,7 @@ li > ul, li > ol {
 
 // Social Icon List
 .social-links-menu {
-	@include flexbox;
+	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }

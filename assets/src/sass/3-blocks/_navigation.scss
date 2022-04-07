@@ -191,12 +191,6 @@
 
 	.wp-block-navigation__responsive-container-content {
 
-		@include breakpoint(sm) {
-			.wp-block-navigation__container {
-				flex-direction: row;
-			}
-		}
-
 		.has-child {
 
 			.wp-block-navigation__submenu-container {

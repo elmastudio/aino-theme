@@ -36,7 +36,3 @@ td {
 	@include s-r-6(padding);
 	border-right: 0;
 }
-
-tr td:last-of-type {
-	border-right: none;
-}

@@ -6,12 +6,28 @@
 	}
 }
 
+.tablet-hide {
+	@include breakpoint(md) {
+		display: none;
+	}
+}
+
+.desktop-hide {
+	@include breakpoint(lg) {
+		display: none;
+	}
+}
+
 .no-hyphens {
 	hyphens: none !important;
 }
 
 .no-letterspacing {
 	letter-spacing: 0 !important;
+}
+
+.no-lineheight {
+	line-height: 0;
 }
 
 .wp-block-group:where(.has-background) {

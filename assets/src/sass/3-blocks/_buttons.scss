@@ -16,23 +16,4 @@
 			background-color: var(--wp--preset--color--primary);
 		}
 	}
-
-	&.is-style-outline {
-
-		.wp-block-button__link {
-			@include btn-outline;
-			box-shadow: none;
-			border: 1px solid;
-
-			&:not(.has-background) {
-				background: transparent;
-			}
-
-			&:hover {
-				background-color: var(--wp--preset--color--secondary);
-				color: var(--wp--preset--color--button-color-secondary);
-				fill: var(--wp--preset--color--button-color-secondary);
-			}
-		}
-	}
 }

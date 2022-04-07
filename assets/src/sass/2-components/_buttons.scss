@@ -13,14 +13,24 @@ input[type="submit"] {
 }
 
 .wp-block-button__link,
-.wp-block-ainoblocks-button:not(.is-style-outline) .wp-block-ainoblocks-button__link,
+.wp-block-ainoblocks-button:not(.is-style-naked) .wp-block-ainoblocks-button__link,
 .wc-block-components-button:not(.is-link) {
 
 	&:hover {
 		color: var(--wp--preset--color--button-color-secondary);
 		background-color: var(--wp--preset--color--secondary);
+		border-color: var(--wp--preset--color--primary);
+		fill: var(--wp--preset--color--button-color-primary);
 	}
 }
+
+.wp-block-ainoblocks-button.is-style-outline {
+
+	&:hover {
+		border-color: var(--wp--preset--color--secondary) !important;
+	}
+}
+
 
 a.btn-primary,
 .btn-primary a {

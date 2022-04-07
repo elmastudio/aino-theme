@@ -43,21 +43,7 @@ $var: true !default; // Can be overridden elsewhere
 	}
 }
 
-/* Flexbox */
-@mixin flexbox {
-	display: flex;
-}
-
-@mixin flex-center {
-	align-items: center;
-	justify-content: center;
-}
-
 /* Responsive Spacing */
-@mixin s-r-0($property) {
-	#{$property}: 0;
-}
-
 @mixin s-r-1($property) {
 	#{$property}: var(--s-r-1);
 }
@@ -144,6 +130,8 @@ $var: true !default; // Can be overridden elsewhere
 
 	&:hover {
 		background-color: var(--wp--preset--color--secondary);
+		color: var(--wp--preset--color--button-color-secondary);
+	fill: var(--wp--preset--color--button-color-secondary);
 		text-decoration: none;
 	}
 }

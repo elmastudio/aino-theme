@@ -1,7 +1,7 @@
 === Aino ===
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
-Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, wide-blocks, block-patterns, full-site-editing
-Requires at least: 5.8
+Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, block-patterns, wide-blocks, full-site-editing, template-editing
+Requires at least: 5.9
 Tested up to: WordPress 5.9
 Requires PHP: 7.0
 Stable tag: 2.6.3
@@ -12,7 +12,7 @@ Aino is a full site editing block theme for everyone who wants to build creative
 
 == Description ==
 
-Aino is a Full Site Editing block theme for the WordPress Gutenberg editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
+Aino is a Full Site Editing block theme for the WordPress block editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
 
 You can find more information and helpful resources about Aino on https://ainoblocks.io.
 
@@ -44,12 +44,15 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 
 = 2.6.3 =
 
-Release date: January , 2022
+Release date: April 7th, 2022
 
 * Enhance: Font size naming.
-* Enhance: Simplify color palette.
+* Enhance: Color palette.
 * Enhance: Move Related Posts into Template Part.
 * Enhance: Delete Customizer legacy code in functions.
+* Enhance: Table and Quote styles.
+* Enhance: Use Site Title block in Footer patterns.
+* Enhance: WooCommerce support.
 
 = 2.6.2 =
 

@@ -1,4 +1,5 @@
 .wp-block-cover {
+	padding: 0;
 
 	&.alignwide {
 		width: calc(100% - 2rem);
@@ -19,7 +20,7 @@
 	.wp-block-cover__inner-container {
 
 		width: 100%;
-		padding: var(--space-09) 0;
+		padding: 0;
 
 		p {
 			margin-bottom: 0;

@@ -1,10 +1,12 @@
 :root {
 
-	/* Base Colors (default and variant color palette) */
+	/* Base theme colors (not customizable via global styles) */
 	--global--color--border: #D8D8D8;
 	--global--color--form-border: #bbbbbb;
 	--global--color--form-background: #ffffff;
 	--global--color--form-select-fill: #ffffff;
+	--global--color--form-border-active: #0075EE;
+	--global--color--form-glow: rgba(0, 119, 247, 0.2);
 	--global--color--notification: #003679;
 	--global--color--notification-border: #5CA5FF;
 	--global--color--notification-background: #B8D7FF;
@@ -17,9 +19,8 @@
 	--global--color--product-badge-color: #282828;
 	--global--color--product-badge-background: #ffffff;
 	--global--color--star-rating: #282828;
-	--global--color--form-border-active: #0075EE;
-	--global--color--form-glow: rgba(0, 119, 247, 0.2);
-	// Variant colors
+
+	/* Variant theme colors (not customizable via global styles) */
 	--global--color--variant-border: #4A4A4A;
 	--global--color--variant-form-border: #666666;
 	--global--color--variant-form-border-active: #2E8CFD;

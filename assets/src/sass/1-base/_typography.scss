@@ -8,8 +8,6 @@ textarea {
 	color: var(--wp--preset--color--font-secondary);
 }
 
-.wp-block-image figcaption,
-div[class*='wp-block-'] figcaption,
 .wp-block-calendar table,
 .hentry .entry-summary,
 .posts-container .hentry .entry-footer,
@@ -27,6 +25,7 @@ div[class*='wp-block-'] figcaption,
 .entry-content p.has-xs-font-size,
 .entry-content .sharedaddy h3.sd-title,
 .blocks-gallery-grid .blocks-gallery-item figcaption,
+div[class*='wp-block-'] figcaption,
 .wc-block-components-checkout-step__heading-content,
 .entry-content p.wc-block-components-checkout-step__description,
 .entry-content .wc-block-components-product-metadata__description p,
@@ -42,13 +41,16 @@ div[class*='wp-block-'] figcaption,
 }
 
 .entry-content,
-.site-content {
+.site-content,
+.wp-block-quote {
 
 	p.has-x-font-size,
-	.has-x-font-size p {
+	.has-x-font-size p,
+	cite {
 		font-size: var(--wp--preset--font-size--text-s) !important;
 	}
 }
+
 
 .has-xxxs-font-size,
 .has-xxxs-font-size p {
@@ -132,7 +134,6 @@ dl,
 	p.has-xxl-font-size,
 	.wp-block-post-excerpt.has-xxl-font-size p,
 	.wp-block-post-terms.has-xxl-font-size,
-	.wp-block-quote.is-style-large p,
 	.page-header .description p {
 		font-size: var(--wp--preset--font-size--text-xxl) !important;
 	}
@@ -282,30 +283,6 @@ h6.has-xxxs-font-size,
 	}
 }
 
-// Default Post Heading and Paragraph spacing, will likely be replaces with default block values later.
-.wp-block-post-content,
-.is-root-container > {
-
-	h4, h5, h6 {
-		@include s-r-8(padding-top);
-		@include s-r-5(padding-bottom);
-	}
-
-	h2, h3 {
-		@include s-r-9(padding-top);
-		@include s-r-7(padding-bottom);
-	}
-
-	h1 {
-		@include s-r-10(padding-top);
-		@include s-r-8(padding-bottom);
-	}
-
-	p:not(:last-of-type) {
-		@include s-r-6(padding-bottom);
-	}
-}
-
 dfn,
 em,
 i {
@@ -322,26 +299,6 @@ dd {
 	@include breakpoint(sm) {
 		margin: 0 var(--space-06) var(--space-06);
 	}
-}
-
-blockquote {
-	margin: 0;
-	padding: 0;
-}
-
-.entry-content blockquote p,
-blockquote p {
-	margin: 0;
-	padding: 0;
-}
-
-blockquote cite,
-.wp-block-pullquote cite {
-	text-align: left;
-	display: block;
-	padding: var(--space-04) 0 0;
-	font-size: var(--wp--preset--font-size--text-xs);
-	font-style: normal;
 }
 
 code,
@@ -416,4 +373,22 @@ big {
 
 .sans-serif {
 	font-family: var(--wp--custom--sans-serif--typography--font-family) !important;
+}
+
+// Default Post-only Heading and Paragraph spacing, will likely be replaces with default block values later.
+.single-post .wp-block-post-content {
+
+	h2, h3, h4, h5, h6 {
+		@include s-r-8(padding-top);
+		@include s-r-5(padding-bottom);
+	}
+
+	h1 {
+		@include s-r-10(padding-top);
+		@include s-r-8(padding-bottom);
+	}
+
+	p {
+		@include s-r-6(padding-bottom);
+	}
 }

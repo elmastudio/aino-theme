@@ -1,0 +1,16 @@
+.theme-makoney {
+
+	.wp-block-ainoblocks-accordion-faq-block {
+
+		&.is-style-toggle {
+	
+			.accordion {
+	
+				h3 {
+					text-transform: uppercase;
+					font-size: var(--wp--preset--font-size--text-xxs) !important;
+				}
+			}
+		}
+	}
+}

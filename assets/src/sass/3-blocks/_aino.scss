@@ -1,30 +1,3 @@
-/* Advanced Button */
-.wp-block-ainoblocks-advanced-button {
-
-	&.is-style-primary {
-		.wp-block-ainoblocks-advanced-button__link {
-			&:not(.has-background) {
-				background-color: var(--wp--preset--color--primary);
-			}
-		}
-	}
-
-	&.is-style-outline {
-		.wp-block-ainoblocks-advanced-button__link {
-			&:not(.has-background) {
-				color: var(--wp--preset--color--primary);
-				border-color: var(--wp--preset--color--primary);
-			}
-		}
-	}
-
-	&.is-style-ghost {
-		.wp-block-ainoblocks-advanced-button__link {
-			color: var(--wp--preset--color--primary);
-		}
-	}
-}
-
 .pos-rel {
 	position: relative;
 }
@@ -81,19 +54,3 @@
 	}
 }
 
-.theme-makoney {
-
-	.wp-block-ainoblocks-accordion-faq-block {
-
-		&.is-style-toggle {
-	
-			.accordion {
-	
-				h3 {
-					text-transform: uppercase;
-					font-size: var(--wp--preset--font-size--text-xxs) !important;
-				}
-			}
-		}
-	}
-}

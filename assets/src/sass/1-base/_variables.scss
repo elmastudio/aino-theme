@@ -1,5 +1,4 @@
 :root {
-	--wp--style--block-gap: 0;
 
 	/* Spacing Values */
 	--space-00: 0.125rem;
@@ -23,24 +22,24 @@
 	--space-18: 18rem;
 
 	/* Responsive Spacing */
-	--s-r-1:var(--space-00);
-	--s-r-2:var(--space-01);
-	--s-r-3:var(--space-02);
-	--s-r-4:var(--space-02);
-	--s-r-5:var(--space-04);
-	--s-r-6:var(--space-04);
-	--s-r-7:var(--space-04);
-	--s-r-8:var(--space-05);
-	--s-r-9:var(--space-06);
-	--s-r-10:var(--space-07);
-	--s-r-11:var(--space-08);
-	--s-r-12:var(--space-09);
-	--s-r-13:var(--space-10);
-	--s-r-14:var(--space-11);
-	--s-r-15:var(--space-12);
-	--s-r-16:var(--space-13);
-	--s-r-17:var(--space-14);
-	--s-r-18:var(--space-15);
+	--s-r-1: clamp(0.125rem, 0.0746rem + 0.2193vw, 0.25rem);
+	--s-r-2: clamp(0.25rem, 0.1491rem + 0.4386vw, 0.5rem);
+	--s-r-3: clamp(0.375rem, 0.2237rem + 0.6579vw, 0.75rem);
+	--s-r-4: clamp(0.5rem, 0.2982rem + 0.8772vw, 1rem);
+	--s-r-5: clamp(1rem, 0.9167rem + 0.4167vw, 1.25rem);
+	--s-r-6: clamp(1rem, 0.7982rem + 0.8772vw, 1.5rem);
+	--s-r-7: clamp(1rem, 0.5965rem + 1.7544vw, 2rem);
+	--s-r-8: clamp(1.25rem, 0.7456rem + 2.193vw, 2.5rem);
+	--s-r-9: clamp(1.5rem, 0.8947rem + 2.6316vw, 3rem);
+	--s-r-10: clamp(2rem, 1.193rem + 3.5088vw, 4rem);
+	--s-r-11: clamp(2.5rem, 1.4912rem + 4.386vw, 5rem);
+	--s-r-12: clamp(3rem, 1.7895rem + 5.2632vw, 6rem);
+	--s-r-13: clamp(4rem, 2.5877rem + 6.1404vw, 7.5rem);
+	--s-r-14: clamp(5rem, 3.386rem + 7.0175vw, 9rem);
+	--s-r-15: clamp(6rem, 3.9825rem + 8.7719vw, 11rem);
+	--s-r-16: clamp(7.5rem, 5.2807rem + 9.6491vw, 13rem);
+	--s-r-17: clamp(9rem, 6.3772rem + 11.4035vw, 15.5rem);
+	--s-r-18: clamp(11rem, 8.1754rem + 12.2807vw, 18rem);
 
 	/* Line Height */
 	--global--line-height-reset: 1;
@@ -52,88 +51,15 @@
 
 	/* Border radius */
 	--global--border-radius-xxs: 0.625rem;
-	--global--border-radius-xs: 0.938rem;
-	--global--border-radius-s: 1.25rem;
-	--global--border-radius-m: 1.563rem;
-	--global--border-radius-l: 1.875rem;
-	--global--border-radius-xl: 2.5rem;
-	--global--border-radius-xxl: 3.125rem;
-	--global--border-radius-xxxl: 3.75rem;
-	--global--border-radius-xxxxl: 4.375rem;
-	--global--border-radius-round: 6.25em;
-
-	/* SM breakpoint */
-	@media only screen and (min-width: 48em) {
-
-		/* Responsive Spacing */
-		--s-r-7:var(--space-05);
-		--s-r-8:var(--space-06);
-		--s-r-9:var(--space-07);
-		--s-r-10:var(--space-08);
-		--s-r-11:var(--space-09);
-		--s-r-12:var(--space-10);
-		--s-r-13:var(--space-11);
-		--s-r-14:var(--space-13);
-		--s-r-15:var(--space-13);
-		--s-r-16:var(--space-14);
-		--s-r-17:var(--space-15);
-		--s-r-18:var(--space-16);
-
-		/* Border radius */
-		--global--border-radius-xxs: 0.625rem;
-		--global--border-radius-xs: 1.25rem;
-		--global--border-radius-s: 1.875rem;
-		--global--border-radius-m: 2.5rem;
-		--global--border-radius-l: 3.125rem;
-		--global--border-radius-xl: 3.75rem;
-		--global--border-radius-xxl: 4.375rem;
-		--global--border-radius-xxxl: 5rem;
-		--global--border-radius-xxxxl: 5.625rem;
-	}
-
-	/* MD breakpoint */
-	@media only screen and (min-width: 64em) {
-
-		/* Responsive Spacing */
-		--s-r-1: var(--space-01);
-		--s-r-2:var(--space-02);
-		--s-r-3:var(--space-03);
-		--s-r-4:var(--space-03);
-		--s-r-6:var(--space-05);
-		--s-r-7:var(--space-06);
-		--s-r-8:var(--space-07);
-		--s-r-9:var(--space-08);
-		--s-r-10:var(--space-09);
-		--s-r-11:var(--space-10);
-		--s-r-12:var(--space-11);
-		--s-r-13:var(--space-12);
-		--s-r-14:var(--space-13);
-		--s-r-15:var(--space-14);
-		--s-r-16:var(--space-15);
-		--s-r-17:var(--space-16);
-		--s-r-18:var(--space-17);
-	}
-
-	/* LG breakpoint */
-	@media only screen and (min-width: 80em) {
-
-		/* Responsive Spacing */
-		--s-r-4:var(--space-04);
-		--s-r-5:var(--space-05);
-		--s-r-6:var(--space-06);
-		--s-r-7:var(--space-07);
-		--s-r-8:var(--space-08);
-		--s-r-9:var(--space-09);
-		--s-r-10:var(--space-10);
-		--s-r-11:var(--space-11);
-		--s-r-12:var(--space-12);
-		--s-r-13:var(--space-13);
-		--s-r-14:var(--space-14);
-		--s-r-15:var(--space-15);
-		--s-r-16:var(--space-16);
-		--s-r-17:var(--space-17);
-		--s-r-18:var(--space-18);
-	}
+	--global--border-radius-xs: clamp(1rem, 0.8214rem + 0.8929vw, 1.25rem);
+	--global--border-radius-s: clamp(1.25rem, 0.8036rem + 2.2321vw, 1.875rem);
+	--global--border-radius-m: clamp(1.5625rem, 0.8929rem + 3.3482vw, 2.5rem);
+	--global--border-radius-l: clamp(1.875rem, 0.9821rem + 4.4643vw, 3.125rem);
+	--global--border-radius-xl: clamp(2.5rem, 1.6071rem + 4.4643vw, 3.75rem);
+	--global--border-radius-xxl: clamp(3.125rem, 2.5568rem + 2.8409vw, 4.375rem);
+	--global--border-radius-xxxl: clamp(3.75rem, 3.1818rem + 2.8409vw, 5rem);
+	--global--border-radius-xxxxl: clamp(4.375rem, 3.8068rem + 2.8409vw, 5.625rem);
+	--global--border-radius-round: 9999px;
 }
 
 /* Theme Global Styles */

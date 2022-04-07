@@ -163,10 +163,6 @@ dl,
 }
 
 .wc-block-components-sidebar {
-	background: var(--wp--preset--color--background-secondary);
-	border-radius: var(--global--border-radius-xs);
-	margin: 0;
-	@include s-r-7(padding);
 	width: 100%;
 	height: fit-content;
 
@@ -183,13 +179,6 @@ dl,
 				padding: 0;
 			}
 		}
-	}
-}
-
-.is-small,
-.is-medium {
-	&.wc-block-components-sidebar-layout .wc-block-components-sidebar {
-		@include s-r-7(padding);
 	}
 }
 
@@ -283,15 +272,6 @@ dl,
 		}
 	}
 
-	&.is-active input[type="tel"],
-	&.is-active input[type="url"],
-	&.is-active input[type="text"],
-	&.is-active input[type="number"],
-	&.is-active input[type="email"] {
-		padding: 1rem 0 0 1.25rem;
-		border: 1px solid var(--global--color--form-border-active);
-	}
-
 	&.is-active label {
 		transform: translateY(10px) scale(0.7);
 		color: var(--wp--preset--color--font-tertiary);
@@ -353,12 +333,6 @@ dl,
 			display: none;
 		}
 	}
-}
-
-.wc-block-checkout__payment-method .wc-block-components-radio-control__option,
-.wc-block-checkout__payment-method .wc-block-components-radio-control__option:first-child,
-.wc-block-checkout__payment-method .wc-block-components-radio-control__option:last-child {
-	padding-bottom: 0;
 }
 
 // Select input
