@@ -11,12 +11,12 @@ return array(
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner">
 
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomTablet":12,"marginBottomMobile":10,"className":"two-col-grid-tablet"} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_t__12 mb_m__10 two-col-grid-tablet"><!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"xxs","paddingBottom":11} -->
-	<h2 class="has-font-primary-color has-text-color has-xxs-font-size pb__11">Our team</h2>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_t__12 mb_m__10 two-col-grid-tablet"><!-- wp:heading {"level":2,"textColor":"font-primary","fontSize":"text-l","paddingBottom":11} -->
+	<h2 class="has-font-primary-color has-text-color has-xtext-lxs-font-size pb__11">Our team</h2>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs"} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size">We are a small design studio in Berlin, Germany. Our clients value that we build them individual, creative solutions tailored to their needs..</p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size">We are a small design studio in Berlin, Germany. Our clients value that we build them individual, creative solutions tailored to their needs..</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -27,12 +27,12 @@ return array(
 	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/team-two-img-01.jpg" alt=""/></figure>
 	<!-- /wp:image -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"xs","paddingTop":5} -->
-	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Lilly Wong</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":5} -->
+	<h3 class="has-font-primary-color has-text-color has-text-l-font-size pt__5">Lilly Wong</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">Creative Director</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"text-xs","paddingTop":3} -->
+	<p class="has-font-tertiary-color has-text-color has-text-xs-font-size pt__3">Creative Director</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -41,12 +41,12 @@ return array(
 	<figure class="wp-block-image size-full"><img src="' . get_stylesheet_directory_uri() . '/assets/images/pattern-lib/free/team-two-img-02.jpg" alt=""/></figure>
 	<!-- /wp:image -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"xs","paddingTop":5} -->
-	<h3 class="has-font-primary-color has-text-color has-xs-font-size pt__5">Sandy Garcia</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":5} -->
+	<h3 class="has-font-primary-color has-text-color has-text-l-font-size pt__5">Sandy Garcia</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"xs","paddingTop":3} -->
-	<p class="has-font-tertiary-color has-text-color has-xs-font-size pt__3">Senior Developer</p>
+	<!-- wp:paragraph {"textColor":"font-tertiary","fontSize":"text-xs","paddingTop":3} -->
+	<p class="has-font-tertiary-color has-text-color has-text-xs-font-size pt__3">Senior Developer</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

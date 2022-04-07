@@ -10,7 +10,6 @@
 
 			.commentmetadata {
 				margin-top: 2px;
-				color: var(--wp--preset--color--font-tertiary);
 			}
 
 			p {
@@ -62,7 +61,7 @@
 		}
 
 		.comment-metadata {
-			color: var(--wp--custom--color--font-tertiary);
+			color: var(--wp--preset--color--font-tertiary);
 
 			time {
 				@include s-r-1 (padding-top);
@@ -75,6 +74,10 @@
 	.comment-author {
 		line-height: 1;
 		margin-left: 0;
+	}
+
+	.comment-form-cookies-consent #wp-comment-cookies-consent {
+		margin-top: 0;
 	}
 }
 

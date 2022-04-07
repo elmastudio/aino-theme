@@ -28,19 +28,17 @@
 	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
 }
 
-.alignfull {
+.alignfull .default-content-width {
+	@include push--auto;
+	padding-left: 0;
+	padding-right: 0;
+}
 
-	.default-content-width {
-		@include push--auto;
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.alignwide {
-		max-width: var(--global--wide-content-width);
-		margin-left: auto;
-		margin-right: auto;
-	}
+// Wide width content area
+.alignfull .alignwide {
+	max-width: var(--global--wide-content-width);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .entry-content>* {
@@ -103,7 +101,7 @@
 
 /* Grid Columns */
 .posts-container {
-	@include flexbox;
+	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: flex-start;
@@ -148,82 +146,6 @@
 		display: block;
 	}
 }
-
-// Flexbox Container (under development)
-.flexbox {
-	display: flex;
-
-	.flex-direction {
-
-		&__row {
-			flex-direction: row;
-		}
-
-		&__row-reverse {
-			flex-direction: row-reverse;
-		}
-
-		&__column {
-			flex-direction: column;
-		}
-
-		&__column-reverse {
-			flex-direction: column-reverse;
-		}
-	}
-
-	.justify-content {
-
-		&__flexstart {
-			justify-content: flex-start;
-		}
-
-
-		&__flexend {
-			justify-content: flex-end;
-		}
-
-		&__center {
-			justify-content: center;
-		}
-
-		&__space-between {
-			justify-content: space-between;
-		}
-
-		&__space-around {
-			justify-content: space-around;
-		}
-
-		&__space-evenly {
-			justify-content: space-evenly;
-		}
-	}
-}
-
-// Width classes for flex items, workaround
-@include breakpoint(lg) {
-	.desktop__width__50 {
-		width: 50%;
-	}
-
-	.desktop__width__55 {
-		width: 55%;
-	}
-
-	.desktop__width__60 {
-		width: 60%;
-	}
-
-	.desktop__width__40 {
-		width: 40%;
-	}
-
-	.desktop__width__45 {
-		width: 45%;
-	}
-}
-
 
 // Small, medium, lager grid gap
 .gap-s {

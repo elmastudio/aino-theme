@@ -33,10 +33,10 @@ li > ul, li > ol {
 .comment-content,
 .block-editor-block-list__layout {
 
-		ul {
+		ul, ol {
 			padding-left: 1.2rem;
 
-			ul {
+			ul, ol {
 				list-style: circle;
 			}
 		}
@@ -44,11 +44,12 @@ li > ul, li > ol {
 
 // Social Icon List
 .social-links-menu {
-	@include flexbox;
+	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
+.wp-block-categories-list,
 .menu-social-container ul,
 .social-nav ul {
 	margin: 0;

@@ -48,6 +48,15 @@ if ( function_exists( 'register_block_style' ) ) {
 				'label' => esc_html__( 'Categories as buttons', 'aino' ),
 			)
 		);
+
+		// Large Raised Social Links
+		register_block_style(
+			'core/social-links',
+			array(
+				'name'  => 'large-raised',
+				'label' => esc_html__( 'Large Raised', 'aino' ),
+			)
+		);
 	}
 	add_action( 'init', 'aino_register_block_styles' );
 }

@@ -23,10 +23,10 @@
 	
 		.add_to_cart_button {
 			opacity: 0;
-			font-size: var(--global--font-size--body-xs) !important;
+			font-size: var(--wp--preset--font-size--text-xs) !important;
 			line-height: var(--global--line-height-reset);
 			background: none !important;
-			color: var(--wp--custom--color--font-secondary);
+			color: var(--wp--preset--color--font-secondary);
 			padding: 0;
 			text-align: left;
 			display: inline;
@@ -80,7 +80,7 @@
 
 		.wc-block-grid__product-title,
 		.wc-block-grid__product-title a {
-			font-size: var(--global--font-size--heading-03) !important;
+			font-size: var(--wp--preset--font-size--text-m) !important;
 			line-height: var(--global--line-height-reset);
 		}
 
@@ -155,7 +155,7 @@
 		width: auto;
 		border: 0;
 		border-radius: var(--global--border-radius-s);
-		color: var(--wp--custom--color--font-primary);
+		color: var(--wp--preset--color--font-primary);
 		background: var(--global--color--product-badge-background);
 		line-height: var(--global--line-height-reset);
 		text-transform: none;

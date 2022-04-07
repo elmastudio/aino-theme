@@ -1,8 +1,13 @@
 @import "1-base/base-index";
-@import "2-components/components-index";
+@import "2-components/forms";
+@import "2-components/icons";
+@import "2-components/links";
+@import "2-components/avatars";
+@import "2-components/lists";
+@import "2-components/tables";
+@import "2-components/widgets";
 @import "3-blocks/blocks-index";
 @import "4-layout/layout-index";
-@import "5-woocommerce/woocommerce-index";
 
 .edit-post-visual-editor__post-title-wrapper {
 	margin-top: var(--s-r-9);
@@ -27,9 +32,16 @@
 .site-header,
 .wp-block[data-align="wide"],
 .wp-block[data-align=full] .alignwide,
-.site-footer .footer-content {
+.alignfull .alignwide,
+.site-footer .footer-content,
+.block-editor-block-list__layout.is-root-container > .alignwide {
 	padding-left: var(--global--content--padding--left);
 	padding-right: var(--global--content--padding--right);
+
+	@include breakpoint(xl) {
+		padding-left: var(--space-09);
+		padding-right: var(--space-09);
+	}
 }
 
 /* Tagcloud and Category List in Button Style */
@@ -53,17 +65,198 @@
 	}
 }
 
-.components-button{
-
-	&:hover {
-		color: currentColor;
-		background-color: transparent;
-	}
-}
-
 .wp-block-social-link {
 
 	button {
 		background-color: transparent;
+	}
+}
+
+.wp-block-paragraph {
+	a {
+		color: currentColor;
+		@include underline-default;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.wp-block-button__link,
+.wp-block-ainoblocks-button:not(.is-style-naked) .wp-block-ainoblocks-button__link,
+.wc-block-components-button:not(.is-link) {
+
+	&:hover {
+		color: var(--wp--preset--color--button-color-secondary);
+		background-color: var(--wp--preset--color--secondary);
+		border-color: var(--wp--preset--color--primary);
+		fill: var(--wp--preset--color--button-color-primary);
+	}
+}
+
+.wp-block-ainoblocks-button.is-style-outline {
+
+	&:hover {
+		border-color: var(--wp--preset--color--secondary) !important;
+	}
+}
+
+a.btn-primary,
+.btn-primary a {
+	@include btn;
+	@include btn-primary;
+}
+
+a.btn-outline,
+.btn-outline a {
+	@include btn;
+	@include btn-outline;
+}
+
+.wp-block-tag-cloud.is-style-btn a,
+.wp-block-categories.is-style-btn a {
+	@include btn;
+	@include btn-outline;
+	text-decoration: none;
+}
+
+.wp-block-tag-cloud.is-style-btn.btn-light a,
+.wp-block-categories.is-style-btn.btn-light a {
+	@include btn-outline-light;
+}
+
+.btn-naked,
+.btn-naked a {
+	@include btn-naked;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.btn-long,
+.cr_button {
+	width: 100%;
+}
+
+.stretch {
+	width: 100% !important;
+
+	.wp-block-ainoblocks-multiple-buttons__inner,
+	.wp-block-ainoblocks-button__link {
+		width: 100% !important;
+	}
+}
+
+.btn-xxs {
+	@include btn-xxs;
+}
+
+.wp-block-tag-cloud.is-style-btn a,
+.wp-block-categories.is-style-btn a,
+.btn-xs {
+	@include btn-xs;
+}
+
+.btn-s {
+	@include btn-s;
+}
+
+.btn-m {
+	@include btn-m;
+}
+
+.btn-l {
+	@include btn-l;
+}
+
+.btn-xl {
+	@include btn-xl;
+}
+
+.btn-xxl {
+	@include btn-xxl;
+}
+
+.btn-xxxl {
+	@include btn-xxxl;
+}
+
+.btn-xxxxl {
+	@include btn-xxxxl;
+}
+
+.btn-curved,
+.btn-rounded {
+
+	.btn,
+	input[type="submit"],
+	button[type="submit"],
+	a.btn-primary,
+	.edit,
+	.btn-primary a,
+	a.btn-outline,
+	.btn-outline a,
+	.woocommerce-button,
+	.wc-block-components-button,
+	.form-submit.wp-block-button input,
+	.woocommerce-MyAccount-navigation li a,
+	.tag-cloud-link,
+	li a {
+		border-radius: var(--global--border-radius-xxs);
+	}
+}
+
+.btn-round {
+
+	.btn,
+	.edit,
+	input[type="submit"],
+	button[type="submit"],
+	a.btn-primary,
+	.btn-primary a,
+	a.btn-outline,
+	.btn-outline a,
+	.woocommerce-button,
+	.search-header .search-field,
+	.wc-block-components-button,
+	.form-submit.wp-block-button input,
+	.woocommerce-MyAccount-navigation li a,
+	.tag-cloud-link,
+	li a {
+		border-radius: var(--global--border-radius-round);
+	}
+}
+
+.site-header {
+
+	.btn-icon {
+		margin-top: var(--space-04) !important;
+
+		.wp-block-ainoblocks-button__link {
+			display: flex;
+			width: var(--space-08);
+			height: var(--space-08);
+			text-indent: -9000px;
+			text-transform: capitalize;
+			padding: 0;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+	}
+
+	.icon-search {
+
+		.wp-block-ainoblocks-button__link {
+			background-image: url(/assets/images/search.svg) !important;
+		}
+	}
+
+	.wp-block-ainoblocks-multiple-buttons {
+
+		.wp-block-ainoblocks-multiple-buttons__inner {
+			.btn-icon:not(:first-child) {
+				margin-left: var(--space-01);
+			}
+		}
 	}
 }

@@ -10,16 +10,16 @@ return array(
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":12,"gridColumnStartTablet":8,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","marginTopDesktop":0,"marginBottomDesktop":0,"marginTopMobile":0,"marginBottomMobile":0} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__8 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0"><!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"m","paddingTop":0,"paddingBottom":3} -->
-	<p class="has-variant-font-tertiary-color has-text-color has-m-font-size pb__3">Learn and explore</p>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__8 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__start no-stacking mt_d__0 mt_m__0 mb_d__0 mb_m__0"><!-- wp:paragraph {"textColor":"variant-font-tertiary","fontSize":"text-m","paddingTop":0,"paddingBottom":3} -->
+	<p class="has-variant-font-tertiary-color has-text-color has-text-m-font-size pb__3">Learn and explore</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"textColor":"variant-font-primary","fontSize":"m"} -->
-	<h2 class="has-variant-font-primary-color has-text-color has-m-font-size">Creative Design</h2>
+	<!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-5-xl"} -->
+	<h2 class="has-variant-font-primary-color has-text-color has-text-5-xl-font-size">Creative Design</h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"xs","paddingTop":11} -->
-	<p class="has-variant-font-secondary-color has-text-color has-xs-font-size pt__11">With our Aino base theme, a growing block pattern library and a creative block collection we can bring innovative, fun and individual website designs to you. Let’s create websites that don’t look like every other template.</p>
+	<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":11} -->
+	<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__11">With our Aino base theme, a growing block pattern library and a creative block collection we can bring innovative, fun and individual website designs to you. Let’s create websites that don’t look like every other template.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:ainoblocks/multiple-buttons {"paddingTop":9} -->

@@ -9,12 +9,12 @@ return array(
 	'content'    => '<!-- wp:group {"backgroundColor":"background-primary","align":"full","paddingTop":15,"paddingBottom":17,"className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-background-primary-background-color has-background pt__15 pb__17"><!-- wp:ainoblocks/grid-container -->
 	<div class="wp-block-ainoblocks-grid-container alignwide"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomTablet":11,"marginBottomMobile":0,"className":"two-col-grid-tablet"} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_t__11 mb_m__0 two-col-grid-tablet"><!-- wp:heading {"textColor":"button-color-secondary","fontSize":"xxs","paddingBottom":7} -->
-	<h2 class="has-button-color-secondary-color has-text-color has-xxs-font-size pb__7">Packaging Design</h2>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_t__11 mb_m__0 two-col-grid-tablet"><!-- wp:heading {"textColor":"font-primary","fontSize":"text-l","paddingBottom":7} -->
+	<h2 class="has-font-primary-color has-text-color has-text-l-font-size pb__7">Packaging Design</h2>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":0} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size">We had the pleasure to design the new packaging of Wallis cookies, a famous New Zealand vegan dog cookies brand.</p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":0} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size">We had the pleasure to design the new packaging of Wallis cookies, a famous New Zealand vegan dog cookies brand.</p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

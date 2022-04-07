@@ -19,8 +19,8 @@ return array(
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":4,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginBottomTablet":0,"marginBottomMobile":7} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__4 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mb_t__0 mb_m__7"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"xs"} -->
-	<h3 class="has-variant-font-primary-color has-text-color has-xs-font-size">Our values</h3>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__4 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mb_t__0 mb_m__7"><!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-xs"} -->
+	<h3 class="has-variant-font-primary-color has-text-color has-text-xs-font-size">Our values</h3>
 	<!-- /wp:heading --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

@@ -500,10 +500,10 @@
 				position: absolute;
 				@include s-r-11 (padding-left);
 				@include s-r-11 (padding-right);
-				color: var(--wp--custom--color--variant-font-primary);
+				color: var(--wp--preset--color--variant-font-primary);
 
 				h2 {
-					color: var(--wp--custom--color--variant-font-primary);
+					color: var(--wp--preset--color--variant-font-primary);
 				}
 			}
 		}

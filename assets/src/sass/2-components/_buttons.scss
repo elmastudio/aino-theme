@@ -7,21 +7,30 @@ input[type="submit"],
 	@include btn-m;
 }
 
-button,
-input[type="button"],
+input[type="button"]:not(.wp-block-navigation__responsive-container-open),
 input[type="submit"] {
 	@include btn-primary;
 }
 
 .wp-block-button__link,
-.wp-block-ainoblocks-button:not(.is-style-outline) .wp-block-ainoblocks-button__link,
+.wp-block-ainoblocks-button:not(.is-style-naked) .wp-block-ainoblocks-button__link,
 .wc-block-components-button:not(.is-link) {
 
 	&:hover {
-		color: var(--wp--custom--color--button-color-secondary);
-		background-color: var(--wp--custom--color--secondary);
+		color: var(--wp--preset--color--button-color-secondary);
+		background-color: var(--wp--preset--color--secondary);
+		border-color: var(--wp--preset--color--primary);
+		fill: var(--wp--preset--color--button-color-primary);
 	}
 }
+
+.wp-block-ainoblocks-button.is-style-outline {
+
+	&:hover {
+		border-color: var(--wp--preset--color--secondary) !important;
+	}
+}
+
 
 a.btn-primary,
 .btn-primary a {
@@ -151,9 +160,9 @@ a.btn-outline,
 .site-header {
 
 	.btn-icon {
-		margin-top: var(--space-04);
+		margin-top: var(--space-04) !important;
 
-		a {
+		.wp-block-ainoblocks-button__link {
 			display: flex;
 			width: var(--space-08);
 			height: var(--space-08);
@@ -167,7 +176,7 @@ a.btn-outline,
 
 	.icon-search {
 
-		a {
+		.wp-block-ainoblocks-button__link {
 			background-image: url(/assets/images/search.svg) !important;
 		}
 	}

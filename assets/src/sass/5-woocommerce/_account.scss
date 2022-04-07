@@ -50,8 +50,8 @@
 
 				&.is-active {
 					a {
-						background-color: var(--wp--custom--color--font-secondary);
-						color: var(--wp--custom--color--variant-font-primary);
+						background-color: var(--wp--preset--color--font-secondary);
+						color: var(--wp--preset--color--variant-font-primary);
 						border-color: transparent;
 					}
 				}
@@ -79,7 +79,7 @@
 		}
 
 		p {
-			font-size: var(--global--font-size--body-xs) !important;
+			font-size: var(--wp--preset--font-size--text-xs) !important;
 		}
 	}
 
@@ -161,7 +161,7 @@
 			border-bottom: none;
 
 			&:nth-child(odd) {
-				background: var(--wp--custom--color--background-secondary);
+				background: var(--wp--preset--color--background-secondary);
 				border-radius: var(--global--border-radius-xs);
 			}
 		}

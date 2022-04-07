@@ -17,13 +17,6 @@ a {
 figcaption a,
 cite a,
 .comment-reply-title #cancel-comment-reply-link,
-.wc-block-components-checkout-return-to-cart-button,
-.wc-block-components-checkout-step__heading-content a,
-.reset_variations,
-.woocommerce-notices-wrapper a,
-.woocommerce-message a,
-.woocommerce-info a,
-.custom-product-page-link,
 .wp-block-post-excerpt__more-link,
 .wp-block-ainoblocks-grid-item .wp-block-post-excerpt__more-link,
 .comment .comment-body p a,
@@ -48,8 +41,8 @@ cite a,
 h2.entry-title a,
 .comment-list b.fn a,
 .main-navigation a {
-	color: var(--wp--custom--color--font-primary);
-	fill: var(--wp--custom--color--font-primary);
+	color: var(--wp--preset--color--font-primary);
+	fill: var(--wp--preset--color--font-primary);
 }
 
 .posts-container .hentry .entry-meta a,
@@ -57,18 +50,16 @@ h2.entry-title a,
 .posted-on a,
 .comment-reply-title #cancel-comment-reply-link,
 .comment-body .reply a {
-	color: var(--wp--custom--color--font-tertiary);
-	fill: var(--wp--custom--color--font-tertiary);
+	color: var(--wp--preset--color--font-tertiary);
+	fill: var(--wp--preset--color--font-tertiary);
 }
 
 /* Underline on hover */
 .header-cta-wrap,
 .footer-widget-wrap li,
 .site-info,
-.woocommerce-breadcrumb,
 .mc4wp-form p,
 .footer-content p,
-.woocommerce-review-link,
 .posted_in,
 .post-meta,
 .wp-block-post-terms,

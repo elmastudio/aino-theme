@@ -25,12 +25,12 @@ textarea,
 	padding: 0.969rem 1.125rem;
 
 	@include input-placeholder {
-		color: var(--wp--custom--color--font-tertiary);
+		color: var(--wp--preset--color--font-tertiary);
 	}
 
 	&:active,
 	&:focus {
-		color: var(--wp--custom--color--font-secondary);
+		color: var(--wp--preset--color--font-secondary);
 		border-color: var(--global--color--form-border-active);
 		box-shadow: 0 0 0 4px var(--global--color--form-glow);
 	}
@@ -55,7 +55,7 @@ textarea,
 form label {
 	position: relative;
 	line-height: 1;
-	color: var(--wp--custom--color--font-tertiary);
+	color: var(--wp--preset--color--font-secondary);
 	@include s-r-2 (margin-bottom);
 	border-radius: var(--global--border-radius-xxs);
 
@@ -87,11 +87,11 @@ select,
 }
 
 .select2-results__options {
-	background: var(--wp--custom--color--font-secondary);
+	background: var(--wp--preset--color--font-secondary);
 }
 
 .select2-selection__arrow svg {
-	color: var(--wp--custom--color--font-secondary);
+	color: var(--wp--preset--color--font-secondary);
 }
 
 .select2-search--dropdown {
@@ -102,7 +102,7 @@ select,
 .checkbox,
 form .comment-form-cookies-consent,
 .woocommerce-form__label-for-checkbox {
-	color: var(--wp--custom--color--font-secondary);
+	color: var(--wp--preset--color--font-secondary);
 	display: flex;
 	align-items: center;
 	margin-bottom: 0;
@@ -190,7 +190,7 @@ input[type='radio'] {
 .comment-form-cookies-consent {
 	label {
 		margin-bottom: 0;
-		color: var(--wp--custom--color--font-secondary);
+		color: var(--wp--preset--color--font-secondary);
 	}
 }
 
@@ -237,13 +237,13 @@ form p.comment-form-comment {
 		&__button {
 			margin-top: var(--space-02);
 			margin-left: 0;
-			background: var(--wp--custom--color--primary);
-			color: var(--wp--custom--color--button-color-primary);
+			background: var(--wp--preset--color--primary);
+			color: var(--wp--preset--color--button-color-primary);
 			border: none;
 			width: 100%;
 
 			&:hover {
-				background-color: var(--wp--custom--color--secondary);
+				background-color: var(--wp--preset--color--secondary);
 				text-decoration: none;
 			}
 		}

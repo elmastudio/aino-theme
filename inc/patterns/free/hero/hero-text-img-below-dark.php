@@ -10,8 +10,8 @@ return array(
 	'content'    => '<!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","className":"fullwidth"} -->
 	<div class="wp-block-group alignfull fullwidth has-variant-background-primary-background-color has-background"><!-- wp:ainoblocks/grid-container {"paddingTop":15} -->
 	<div class="wp-block-ainoblocks-grid-container alignwide pt__15"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"center","marginBottomTablet":0,"marginBottomMobile":0} -->
-	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__center no-stacking mb_t__0 mb_m__0"><!-- wp:heading {"level":2,"textAlign":"center","textColor":"variant-font-primary","fontSize":"xl"} -->
-	<h2 class="has-text-align-center has-variant-font-primary-color has-text-color has-xl-font-size">Design Ideas<br>for WordPress</h2>
+	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__center no-stacking mb_t__0 mb_m__0"><!-- wp:heading {"level":2,"textAlign":"center","textColor":"variant-font-primary","fontSize":"text-7-xl"} -->
+	<h2 class="has-text-align-center has-variant-font-primary-color has-text-color has-text-7-xl-font-size">Design Ideas<br>for WordPress</h2>
 	<!-- /wp:heading --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	

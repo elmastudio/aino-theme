@@ -40,13 +40,13 @@
 }
 
 .wp-block-latest-comments__comment {
-	font-size: var(--global--font-size--body-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xs) !important;
 }
 
 .entry-content .wp-block-calendar {
 
 	caption {
-		color: var(--wp--custom--color--font-primary);
+		color: var(--wp--preset--color--font-primary);
 		margin-bottom: var(--space-04);
 		text-align: center;
 	}
@@ -62,24 +62,24 @@
 		}
 
 		tbody {
-			color: var(--wp--custom--color--font-secondary);
-			border-right: 1px solid var(--wp--custom--color--border);
+			color: var(--wp--preset--color--font-secondary);
+			border-right: 1px solid var(--wp--preset--color--border);
 		}
 
 		td#today {
-			background: var(--wp--custom--color--background-primary);
+			background: var(--wp--preset--color--background-primary);
 		}
 
 		tbody td,
 		th {
 			padding: 16px 8px;
-			border: 1px solid var(--wp--custom--color--border);
+			border: 1px solid var(--wp--preset--color--border);
 		}
 	}
 }
 
 .wp-block-latest-comments__comment-excerpt p {
-	font-size: var(--global--font-size--body-xs) !important;
+	font-size: var(--wp--preset--font-size--text-xs) !important;
 	margin: var(--space-02) 0 var(--space-06);
 }
 

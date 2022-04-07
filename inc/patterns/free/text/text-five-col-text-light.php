@@ -26,16 +26,16 @@ return array(
 	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
 	<!-- /wp:separator -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":5,"paddingBottom":7} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__5 pb__7"><strong>Consulting</strong></p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":5,"paddingBottom":7} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__5 pb__7"><strong>Consulting</strong></p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"xs"} -->
-	<h3 class="has-font-secondary-color has-text-color has-xs-font-size">We share our knowledge</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"text-xs"} -->
+	<h3 class="has-font-secondary-color has-text-color has-text-xs-font-size">We share our knowledge</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":8} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":8} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -44,16 +44,16 @@ return array(
 	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
 	<!-- /wp:separator -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":5,"paddingBottom":7} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__5 pb__7"><strong>Branding</strong></p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":5,"paddingBottom":7} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__5 pb__7"><strong>Branding</strong></p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"xs"} -->
-	<h3 class="has-font-secondary-color has-text-color has-xs-font-size">Your brand is your highest essence</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"text-xs"} -->
+	<h3 class="has-font-secondary-color has-text-color has-text-xs-font-size">Your brand is your highest essence</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":8} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":8} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -62,16 +62,16 @@ return array(
 	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
 	<!-- /wp:separator -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":5,"paddingBottom":7} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__5 pb__7"><strong>Design</strong></p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":5,"paddingBottom":7} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__5 pb__7"><strong>Design</strong></p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"xs"} -->
-	<h3 class="has-font-secondary-color has-text-color has-xs-font-size">Fresh design for your business</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"text-xs"} -->
+	<h3 class="has-font-secondary-color has-text-color has-text-xs-font-size">Fresh design for your business</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":8} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":8} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -80,16 +80,16 @@ return array(
 	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
 	<!-- /wp:separator -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":5,"paddingBottom":7} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__5 pb__7"><strong>Development</strong></p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":5,"paddingBottom":7} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__5 pb__7"><strong>Development</strong></p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"xs"} -->
-	<h3 class="has-font-secondary-color has-text-color has-xs-font-size">Customized from start to finish</h3>
+	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"text-xs"} -->
+	<h3 class="has-font-secondary-color has-text-color has-text-xs-font-size">Customized from start to finish</h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":8} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":8} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
@@ -98,16 +98,16 @@ return array(
 	<hr class="wp-block-separator has-text-color has-background has-border-background-color has-border-color is-style-wide"/>
 	<!-- /wp:separator -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":5,"paddingBottom":7} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__5 pb__7"><strong>Strategy</strong></p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":5,"paddingBottom":7} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__5 pb__7"><strong>Strategy</strong></p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"xs"} -->
-	<h3 class="has-font-secondary-color has-text-color has-xs-font-size">Long time growth as a goal </h3>
+	<!-- wp:heading {"level":3,"textColor":"font-secondary","fontSize":"text-xs"} -->
+	<h3 class="has-font-secondary-color has-text-color has-text-xs-font-size">Long time growth as a goal </h3>
 	<!-- /wp:heading -->
 	
-	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"xs","paddingTop":8} -->
-	<p class="has-font-secondary-color has-text-color has-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
+	<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":8} -->
+	<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__8"><meta charset="utf-8">We take care of you and evaluate your business and future goals together with you. Our module design and block system will give you all the freedom to create the website of your dreams. </p>
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>
