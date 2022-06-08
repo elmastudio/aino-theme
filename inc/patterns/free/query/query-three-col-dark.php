@@ -1,6 +1,6 @@
 <?php
 /**
- * 3-column post grid with small heading (Dark version)
+ * 3-column post grid with small heading (Dark)
  */
 
 return array(

@@ -8,12 +8,6 @@
 	margin-top: 0;
 }
 
-.alignfull .alignwide,
-.wp-block-ainoblocks-accordion-faq-block.alignfull {
-	padding-left: var(--global--content--padding--left);
-	padding-right: var(--global--content--padding--right);
-}
-
 .wp-block-group.alignfull .alignwide .alignwide,
 .wp-block-ainoblocks-accordion-faq-block.alignfull .alignwide {
 	padding-left: 0;
@@ -23,9 +17,9 @@
 .wp-block-group.alignfull>.alignfull,
 *[class*="wp-container-"]>.alignfull,
 .wp-block-ainoblocks-accordion-faq-block.alignfull .wp-block-separator.alignfull {
-	width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
-	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
-	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
+	width: calc(100% + var(--widewidth-outer-gap) + var(--widewidth-outer-gap)) !important;
+	margin-left: calc(-1 * var(--widewidth-outer-gap)) !important;
+	margin-right: calc(-1 * var(--widewidth-outer-gap)) !important;
 }
 
 .alignfull .default-content-width {
@@ -55,28 +49,26 @@
 	max-width: var(--global--default-content-width);
 }
 
-// Outer content padding
+// Outer padding wide width and header
 .content-gap,
 .wp-block-group.has-background.content-gap,
-.site-header,
-.site-footer {
-	padding-left: var(--global--content--padding--left);
-	padding-right: var(--global--content--padding--right);
+.site-footer,
+.alignfull .alignwide,
+.wp-block-ainoblocks-accordion-faq-block.alignfull {
+	padding-left: var(--widewidth-outer-gap);
+	padding-right: var(--widewidth-outer-gap);
+}
+
+.outer-gap,
+.site-header {
+	padding-left: var(--outer--gap);
+	padding-right: var(--outer--gap);
 }
 
 /* Centered elements */
 .push-center,
 .center {
 	@include push--auto;
-}
-
-/* Padding top and padding bottom for blocks */
-.has-padding-top {
-	@include s-r-14 (padding-top);
-}
-
-.has-padding-bottom {
-	@include s-r-14 (padding-bottom);
 }
 
 /* Default wide page width */
@@ -166,6 +158,7 @@
 	}
 }
 
+// Helper classes
 .relative {
 	position: relative;
 }
@@ -174,6 +167,22 @@
 	position: absolute;
 }
 
+.top-fullwidth {
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.bottom-fullwidth {
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
 .zindex100 {
 	z-index: 100;
+}
+
+.zindex1000 {
+	z-index: 1000;
 }

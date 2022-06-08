@@ -14,3 +14,10 @@
 		}
 	}
 }
+
+.site-header,
+.site-footer {
+	.wp-block-social-links {
+		gap: var(--space-01);
+	}
+}

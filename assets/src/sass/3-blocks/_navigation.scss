@@ -17,7 +17,6 @@
 				padding-bottom: var(--space-06);
 
 				li {
-
 					.wp-block-navigation-item__content {
 						font-family: var(--wp--custom--body--typography--font-family);
 						align-items: stretch;
@@ -109,7 +108,7 @@
 	padding: 0 1.5rem;
 }
 
-//mobile menu
+//Mobile menu
 .wp-block-navigation {
 
 	&.is-responsive {
@@ -117,14 +116,14 @@
 		.wp-block-navigation__responsive-container {
 
 			&.is-menu-open {
-				padding-left: var(--global--content--padding--left);
-				padding-right: var(--global--content--padding--right);
+				padding-left: var(--outer--gap);
+				padding-right: var(--outer--gap);
 				padding-top: 0;
 
-				@include breakpoint(xl) {
-					padding-left: var(--space-09);
-					padding-right: var(--space-09);
+				.wp-block-navigation__responsive-container-content {
+					padding-top: calc(2rem + 40px);
 				}
+
 			}
 		}
 	}
@@ -150,30 +149,18 @@
 
 		&__responsive-container-close {
 			background-size: var(--space-04);
-			top: var(--space-04);;
+			top: var(--space-07);
 			right: 0;
 			border-radius: var(--global--border-radius-round);
-			background-color: var(--wp--preset--color--button-color-primary);
+			background-color: var(--wp--preset--color--primary);
 
 			&:hover {
-				background-color: var(--wp--preset--color--button-color-primary);
+				background-color: var(--wp--preset--color--primary);
 			}
 
 			svg {
 				width: var(--space-08);
-				color: var(--wp--preset--color--primary);
-			}
-		}
-	}
-
-	&:not(.has-background) {
-
-		.wp-block-navigation__responsive-container.is-menu-open {
-			background-color: var(--wp--preset--color--variant-background-primary);
-			color: var(--wp--preset--color--variant-font-primary);
-
-			.wp-block-navigation__responsive-container-content .wp-block-navigation-item {
-				min-width: 12rem;
+				color: var(--wp--preset--color--button-color-primary);
 			}
 		}
 	}

@@ -2,20 +2,6 @@
 if ( ! function_exists( 'aino_setup' ) ) :
 	function aino_setup() {
 
-		// Adding support for featured images.
-		add_theme_support( 'post-thumbnails' );
-		set_post_thumbnail_size( 1800, 99999 );
-
-		// Adds custom image sizes.
-		add_image_size( 'aino-thumb', 1800, 1012, true ); // Image Ratio 16:9.
-
-		// Register Navigation menus.
-		register_nav_menus(
-			array(
-				'primary' => esc_html__( 'Primary Menu', 'aino' ),
-			)
-		);
-
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
 
