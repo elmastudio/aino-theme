@@ -159,14 +159,13 @@ $var: true !default; // Can be overridden elsewhere
 }
 
 @mixin btn-tab {
-	color: var(--wp--custom--color--font-secondary);
-	fill: var(--wp--custom--color--font-secondary);
+	color: var(--wp--preset--color--font-primary);
 	background-color: transparent;
 	border: 1px solid var(--global--color--border);
 
-	&:hover {
-		background-color: var(--global--color--border);
-		border: 1px solid var(--global--color--border);
+	&:hover {color: var(--wp--preset--color--button-color-secondary);
+		background-color: var(--wp--preset--color--secondary);
+		border: 1px solid var(--wp--preset--color--button-color-secondary);
 	}
 }
 
