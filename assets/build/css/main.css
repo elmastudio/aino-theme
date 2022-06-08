@@ -3727,8 +3727,7 @@ div[class*=wp-block-] figcaption {
   display: inline-block;
   line-height: var(--global--line-height-reset);
   font-weight: normal;
-  color: var(--wp--preset--color--button-color-primary);
-  fill: var(--wp--preset--color--button-color-primary);
+  color: var(--wp--preset--color--font-primary);
   background-color: transparent;
   border: 1px solid var(--wp--preset--color--border-primary);
   display: flex;
@@ -3742,7 +3741,6 @@ div[class*=wp-block-] figcaption {
 .pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-previous:hover,
 .pagination-wrap .wp-block-query-pagination-numbers .wp-block-query-pagination-next:hover {
   color: var(--wp--preset--color--button-color-secondary);
-  fill: var(--wp--preset--color--button-color-secondary);
   background-color: var(--wp--preset--color--secondary);
   border: 1px solid var(--wp--preset--color--button-color-secondary);
 }
@@ -5964,8 +5962,7 @@ dl,
   display: inline-block;
   line-height: var(--global--line-height-reset);
   font-weight: normal;
-  color: var(--wp--preset--color--button-color-primary);
-  fill: var(--wp--preset--color--button-color-primary);
+  color: var(--wp--preset--color--font-primary);
   background-color: transparent;
   border: 1px solid var(--wp--preset--color--border-primary);
   padding: 0.938rem 1.875rem;
@@ -5973,7 +5970,6 @@ dl,
 }
 .woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover {
   color: var(--wp--preset--color--button-color-secondary);
-  fill: var(--wp--preset--color--button-color-secondary);
   background-color: var(--wp--preset--color--secondary);
   border: 1px solid var(--wp--preset--color--button-color-secondary);
 }
