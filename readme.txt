@@ -2,7 +2,7 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, block-patterns, wide-blocks, full-site-editing, template-editing
 Requires at least: 5.9
-Tested up to: WordPress 5.9
+Tested up to: WordPress 6.0
 Requires PHP: 7.0
 Stable tag: 2.6.4
 License: GPLv3 or later
@@ -48,6 +48,7 @@ Release date: June 8th, 2022
 
 * Enhance: Outer content gap.
 * Enhance: Block pattern integration.
+* Update: Pattern selection.
 
 = 2.6.3 =
 

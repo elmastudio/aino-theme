@@ -52,8 +52,6 @@ function aino_register_block_patterns() {
 	$block_patterns = array(
 		'free/hero/hero-text-img-below-light',
 		'free/hero/hero-text-img-below-dark',
-		'free/featured/feature-grid-one-two-col-light',
-		'free/featured/feature-grid-one-two-col-dark',
 		'free/featured/feature-heading-two-text-img-dark',
 		'free/featured/feature-heading-two-text-img-light',
 		'free/featured/feature-text-right-img-left-dark',
