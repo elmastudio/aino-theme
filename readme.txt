@@ -48,6 +48,7 @@ Release date: June 8th, 2022
 
 * Enhance: Outer content gap.
 * Enhance: Block pattern integration.
+* Bugfix: Header patterns.
 * Update: Pattern selection.
 
 = 2.6.3 =
