@@ -11,18 +11,15 @@ a {
 .single .wp-block-post-content p a,
 .single .wp-block-post-content li a,
 .authorbox__content p a,
-.comment-content li a,
 .comment-content p a,
-.wp-caption-text a,
 figcaption a,
-cite a,
 .comment-reply-title #cancel-comment-reply-link,
 .wp-block-post-excerpt__more-link,
-.wp-block-ainoblocks-grid-item .wp-block-post-excerpt__more-link,
 .comment .comment-body p a,
 .wp-block-ainoblocks-card p a,
 .wp-block-ainoblocks-grid-item p a,
-.wp-block-ainoblocks-notification-block p a {
+.wp-block-ainoblocks-notification-block p a,
+.wp-block-post-author p a {
 	color: currentColor;
 	@include underline-default;
 
@@ -55,18 +52,14 @@ h2.entry-title a,
 }
 
 /* Underline on hover */
-.header-cta-wrap,
-.footer-widget-wrap li,
-.site-info,
 .mc4wp-form p,
 .footer-content p,
 .posted_in,
 .post-meta,
 .wp-block-post-terms,
 .comment-meta,
-.comment-body .reply,
 .entry-meta,
-.related-post .entry-cats,
+.entry-cats,
 .wp-block-navigation-link,
 .wp-block-navigation:not([style*=text-decoration]) {
 
