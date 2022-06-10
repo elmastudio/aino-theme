@@ -44,11 +44,12 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 
 = 2.6.4 =
 
-Release date: June 8th, 2022
+Release date: June 9th, 2022
 
 * Enhance: Outer content gap.
 * Enhance: Block pattern integration.
 * Bugfix: Header patterns. Note: You might need to add a Spacing Padding Top value of 5 to the Group block grouping your Site Title, Navigation and Social Icons block.
+* Bugfix: Tab menus.
 * Update: Theme patterns.
 * Update: Footer patterns Footer, Footer Dark, Footer Five Columns Logo Light, Footer Five Columns with Logo Dark. Note: You might need to update the Copyright and Credit text information in your exisitng Footer Template Parts.
 
