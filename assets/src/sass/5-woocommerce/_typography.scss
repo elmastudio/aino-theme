@@ -1,0 +1,22 @@
+.wc-block-grid__product-price,
+.wc-block-components-product-sale-badge,
+.wc-block-components-sort-select__select {
+	font-size: var(--wp--preset--font-size--text-m) !important;
+	color: var(--wp--preset--color--font-secondary);
+}
+
+.wc-block-components-checkout-step__heading-content,
+.entry-content p.wc-block-components-checkout-step__description,
+.entry-content .wc-block-components-product-metadata__description p {
+	font-size: var(--wp--preset--font-size--text-xs) !important;
+}
+
+.wc-block-cart__empty-cart__title {
+	font-size: var(--wp--preset--font-size--text-xs) !important;
+}
+
+.entry-content p.has-l-font-size,
+.entry-content .wp-block-post-excerpt.has-l-font-size p,
+.entry-content .wp-block-post-terms.has-l-font-size {
+	font-size: var(--wp--preset--font-size--text-l) !important;
+}

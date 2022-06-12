@@ -31,19 +31,6 @@ input[type="submit"] {
 	}
 }
 
-
-a.btn-primary,
-.btn-primary a {
-	@include btn;
-	@include btn-primary;
-}
-
-a.btn-outline,
-.btn-outline a {
-	@include btn;
-	@include btn-outline;
-}
-
 .wp-block-tag-cloud.is-style-btn a,
 .wp-block-categories.is-style-btn a {
 	@include btn;
@@ -56,18 +43,6 @@ a.btn-outline,
 	@include btn-outline-light;
 }
 
-.btn-naked,
-.btn-naked a {
-	@include btn-naked;
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
-.btn-long,
-.cr_button {
-	width: 100%;
-}
-
 .stretch {
 	width: 100% !important;
 
@@ -77,42 +52,9 @@ a.btn-outline,
 	}
 }
 
-.btn-xxs {
-	@include btn-xxs;
-}
-
 .wp-block-tag-cloud.is-style-btn a,
-.wp-block-categories.is-style-btn a,
-.btn-xs {
+.wp-block-categories.is-style-btn a {
 	@include btn-xs;
-}
-
-.btn-s {
-	@include btn-s;
-}
-
-.btn-m {
-	@include btn-m;
-}
-
-.btn-l {
-	@include btn-l;
-}
-
-.btn-xl {
-	@include btn-xl;
-}
-
-.btn-xxl {
-	@include btn-xxl;
-}
-
-.btn-xxxl {
-	@include btn-xxxl;
-}
-
-.btn-xxxxl {
-	@include btn-xxxxl;
 }
 
 .btn-curved,
@@ -121,11 +63,7 @@ a.btn-outline,
 	.btn,
 	input[type="submit"],
 	button[type="submit"],
-	a.btn-primary,
 	.edit,
-	.btn-primary a,
-	a.btn-outline,
-	.btn-outline a,
 	.woocommerce-button,
 	.wc-block-components-button,
 	.form-submit.wp-block-button input,
@@ -142,10 +80,6 @@ a.btn-outline,
 	.edit,
 	input[type="submit"],
 	button[type="submit"],
-	a.btn-primary,
-	.btn-primary a,
-	a.btn-outline,
-	.btn-outline a,
 	.woocommerce-button,
 	.search-header .search-field,
 	.wc-block-components-button,
