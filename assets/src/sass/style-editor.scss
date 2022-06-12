@@ -59,7 +59,10 @@
 	}
 }
 
-.wp-block-paragraph {
+.wp-block-paragraph,
+.wp-block-list {
+	font-size: var(--wp--preset--font-size--medium);
+
 	a {
 		color: currentColor;
 		@include underline-default;

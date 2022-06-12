@@ -51,7 +51,6 @@ div[class*='wp-block-'] figcaption,
 	}
 }
 
-
 .has-xxxs-font-size,
 .has-xxxs-font-size p {
 	font-size: var(--wp--preset--font-size--text-xxxs) !important;
@@ -123,7 +122,7 @@ dl,
 
 .entry-content {
 	p.has-xxl-font-size,
-	.wp-block-post-excerpt.has-xxl-font-size p,
+	.has-xxl-font-size p,
 	.wp-block-post-terms.has-xxl-font-size {
 		font-size: var(--wp--preset--font-size--text-xxl) !important;
 	}
@@ -138,11 +137,13 @@ dl,
 		font-size: var(--wp--preset--font-size--text-xxl) !important;
 	}
 }
-
-.entry-content p.has-xxxl-font-size,
-.entry-content .wp-block-post-excerpt.has-xxxl-font-size p,
-.entry-content .wp-block-post-terms.has-xxxl-font-size {
-	font-size: var(--wp--preset--font-size--text-xxxl) !important;
+.entry-content {
+	p.has-xxxl-font-size,
+	.has-xxxl-font-size p,
+	.has-text-xxxl-font-size p,
+	.wp-block-post-terms.has-xxxl-font-size {
+		font-size: var(--wp--preset--font-size--text-xxxl) !important;
+	}
 }
 
 .entry-content {

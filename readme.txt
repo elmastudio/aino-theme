@@ -50,8 +50,9 @@ Release date: June 11th, 2022
 * Enhance: Block pattern integration.
 * Bugfix: Header patterns. Note: You might need to add a Spacing Padding Top value of 5 to the Group block grouping your Site Title, Navigation and Social Icons block.
 * Bugfix: Tab menus.
-* Update: Theme patterns.
-* Update: Footer patterns Footer, Footer Dark, Footer Five Columns Logo Light, Footer Five Columns with Logo Dark. Note: You might need to update the Copyright and Credit text information in your exisitng Footer Template Parts.
+* Bugfix: Theme patterns.
+* Bugfix: Footer patterns Footer, Footer Dark, Footer Five Columns Logo Light, Footer Five Columns with Logo Dark. Note: You might need to update the Copyright and Credit text information in your exisitng Footer Template Parts.
+* Bugfix: Single templates Category font sizes.
 
 = 2.6.3 =
 

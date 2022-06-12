@@ -1,5 +1,42 @@
 {
 	"version": 2,
+	"customTemplates": [
+		{
+			"name": "header-footer",
+			"title": "Header and Footer",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "header-logo-blank",
+			"title": "Header Logo Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single-no-featured-image",
+			"title": "Post without Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-no-comments",
+			"title": "Post without Comments",
+			"postTypes": [
+				"post"
+			]
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"border": {
@@ -375,7 +412,8 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--custom--body--typography--font-family)",
-			"lineHeight": "var(--wp--custom--line-height--body)"
+			"lineHeight": "var(--wp--custom--line-height--body)",
+			"fontSize": "var(--wp--preset--font-size--text-m)"
 		},
 		"blocks": {
 			"core/heading": {
@@ -396,16 +434,6 @@
 					"text": "var(--wp--preset--color--button-color-primary)"
 				}
 			},
-			"core/list": {
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--text-m)"
-				}
-			},
-			"core/paragraph": {
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--text-m)"
-				}
-			},
 			"core/preformatted": {
 				"color": {
 					"background": "var(--wp--preset--color--code-background)",
@@ -418,43 +446,6 @@
 			}
 		}
 	},
-	"customTemplates": [
-		{
-			"name": "header-footer",
-			"title": "Header and Footer",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "blank",
-			"title": "Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "header-logo-blank",
-			"title": "Header Logo Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "single-no-featured-image",
-			"title": "Post without Featured Image",
-			"postTypes": [
-				"post"
-			]
-		},
-		{
-			"name": "single-no-comments",
-			"title": "Post without Comments",
-			"postTypes": [
-				"post"
-			]
-		}
-	],
 	"templateParts": [
 		{
 			"name": "header",
