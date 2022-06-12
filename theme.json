@@ -73,6 +73,11 @@
 					"name": "Background 3"
 				},
 				{
+					"slug": "background-quaternary",
+					"color": "#ffffff",
+					"name": "Background 4"
+				},
+				{
 					"slug": "font-primary",
 					"color": "#121212",
 					"name": "Text 1"
@@ -88,29 +93,29 @@
 					"name": "Text 3"
 				},
 				{
-					"slug": "button-color-primary",
-					"color": "#ffffff",
-					"name": "Top 1"
-				},
-				{
-					"slug": "button-color-secondary",
-					"color": "#ffffff",
-					"name": "Top 2"
-				},
-				{
 					"slug": "primary",
 					"color": "#121212",
-					"name": "Accent 1"
+					"name": "Button Background"
 				},
 				{
 					"slug": "secondary",
 					"color": "#0573E6",
-					"name": "Accent 2"
+					"name": "Button Background Hover"
+				},
+				{
+					"slug": "button-color-primary",
+					"color": "#ffffff",
+					"name": "Button Text"
+				},
+				{
+					"slug": "button-color-secondary",
+					"color": "#ffffff",
+					"name": "Button Text Hover"
 				},
 				{
 					"slug": "border-primary",
 					"color": "#d7d7d7",
-					"name": "Border 1"
+					"name": "Neutral"
 				},
 				{
 					"slug": "variant-background-primary",
@@ -126,6 +131,11 @@
 					"slug": "variant-background-tertiary",
 					"color": "#404040",
 					"name": "Variant Background 3"
+				},
+				{
+					"slug": "variant-background-quaternary",
+					"color": "#000000",
+					"name": "Variant Background 4"
 				},
 				{
 					"slug": "variant-font-primary",
@@ -145,27 +155,27 @@
 				{
 					"slug": "variant-primary",
 					"color": "#ffffff",
-					"name": "Variant Accent 1"
+					"name": "Variant Button Background"
 				},
 				{
 					"slug": "variant-secondary",
 					"color": "#2E8CFD",
-					"name": "Variant Accent 2"
+					"name": "Variant Button Background"
 				},
 				{
 					"slug": "variant-button-color-primary",
 					"color": "#121212",
-					"name": "Variant Top 1"
+					"name": "Variant Button Text"
 				},
 				{
 					"slug": "variant-button-color-secondary",
 					"color": "#121212",
-					"name": "Variant Top 2"
+					"name": "Variant Button Text Hover"
 				},
 				{
 					"slug": "variant-border",
 					"color": "#4A4D4E",
-					"name": "Variant Border 1"
+					"name": "Variant Neutral"
 				}
 			],
 			"gradients": [
