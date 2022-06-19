@@ -44,7 +44,7 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 
 = 2.6.4 =
 
-Release date: June 12th, 2022
+Release date: June 19th, 2022
 
 * Enhance: Outer content gap.
 * Enhance: Block pattern integration.
