@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.9
 Tested up to: WordPress 6.0
 Requires PHP: 7.0
-Stable tag: 2.6.4
+Stable tag: 2.6.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -41,6 +41,12 @@ Aino WordPress Theme bundles the following third-party resources:
 Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.5 =
+
+Release date: June 19th, 2022
+
+* Bugfix: Patter Header Default and Header Dark update. Please clear your Header Template Part customization if you experience Header layout issues.
 
 = 2.6.4 =
 
