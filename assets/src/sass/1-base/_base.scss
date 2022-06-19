@@ -139,24 +139,23 @@
 	}
 }
 
-// Small, medium, lager grid gap
-.gap-s {
-	.wp-block-post-template {
-		@include gap-s;
-	}
+// Small, medium, lager grid gaps
+.gap-s .wp-block-post-template {
+	@include gap-s;
 }
 
-.gap-m {
-	.wp-block-post-template {
-		@include gap-m;
-	}
+.gap-m .wp-block-post-template {
+	@include gap-m;
 }
 
-.gap-l {
-	.wp-block-post-template {
-		@include gap-l;
-	}
+.gap-l .wp-block-post-template {
+	@include gap-l;
 }
+
+.gap-xl .wp-block-post-template {
+	@include gap-xl;
+}
+
 
 // Helper classes
 .relative {

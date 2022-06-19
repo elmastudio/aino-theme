@@ -1,20 +1,38 @@
 .mobile-hide {
-	display: none;
+	display: none !important;
+}
 
-	@include breakpoint(sm) {
-		display: block;
+@include breakpoint(md) {
+
+	.tablet-hide {
+		display: none !important;
+	}
+
+	.tablet-show {
+		display: block !important;
+	}
+
+	.tablet-flex {
+		display: flex;
+	}
+
+	.justify-between {
+		justify-content: space-between;
 	}
 }
 
-.tablet-hide {
-	@include breakpoint(md) {
-		display: none;
-	}
-}
+@include breakpoint(lg) {
 
-.desktop-hide {
-	@include breakpoint(lg) {
-		display: none;
+	.desktop-hide {
+		display: none !important;
+	}
+
+	.desktop-show {
+		display: block !important;
+	}
+
+	.desktop-flex {
+		display: flex;
 	}
 }
 

@@ -21,6 +21,12 @@
 	margin-right: calc(-1 * var(--widewidth-outer-gap)) !important;
 }
 
+.wp-block-paragraph,
+.wp-block-list,
+.block-editor-default-block-appender p {
+	font-size: var(--wp--preset--font-size--medium);
+}
+
 /* Container and Alignment */
 .wp-block-group.has-background.content-gap,
 .site-header,
@@ -61,8 +67,6 @@
 
 .wp-block-paragraph,
 .wp-block-list {
-	font-size: var(--wp--preset--font-size--medium);
-
 	a {
 		color: currentColor;
 		@include underline-default;
