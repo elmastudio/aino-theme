@@ -15,6 +15,10 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+### 2.6.5   
+Bugfix: Patter Header Default and Header Dark update. Please clear your Header Template Part customization if you experience Header layout issues.  
+
+
 ### 2.6.4   
 Enhance: Outer content gap.  
 Enhance: Block pattern integration.  
