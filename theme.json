@@ -1,42 +1,5 @@
 {
 	"version": 2,
-	"customTemplates": [
-		{
-			"name": "header-footer",
-			"title": "Header and Footer",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "blank",
-			"title": "Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "header-logo-blank",
-			"title": "Header Logo Blank",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "single-no-featured-image",
-			"title": "Post without Featured Image",
-			"postTypes": [
-				"post"
-			]
-		},
-		{
-			"name": "single-no-comments",
-			"title": "Post without Comments",
-			"postTypes": [
-				"post"
-			]
-		}
-	],
 	"settings": {
 		"appearanceTools": true,
 		"border": {
@@ -54,6 +17,7 @@
 		"color": {
 			"defaultPalette": false,
 			"defaultGradients": false,
+			"duotone": [],
 			"link": true,
 			"custom": true,
 			"palette": [
@@ -456,6 +420,50 @@
 			}
 		}
 	},
+	"customTemplates": [
+		{
+			"name": "header-footer",
+			"title": "Header and Footer",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "header-logo-blank",
+			"title": "Header Logo Blank",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single-no-featured-image",
+			"title": "Post without Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-featured-image-portrait",
+			"title": "Post with Portrait Featured Image",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-no-comments",
+			"title": "Post without Comments",
+			"postTypes": [
+				"post"
+			]
+		}
+	],
 	"templateParts": [
 		{
 			"name": "header",
