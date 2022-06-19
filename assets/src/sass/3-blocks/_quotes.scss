@@ -1,4 +1,7 @@
 .wp-block-quote {
+	border-left: 1px solid;
+    margin: 0 0 1.75em;
+    padding-left: 1em;
 
 	&.is-style-solid-color .has-text-color a {
 		text-decoration: underline;
@@ -8,15 +11,7 @@
 	cite {
 		@include s-r-6(padding-top);
 		text-align: left;
-	}
-
-	&.is-style-large {
-		padding: 0;
-
-		p {
-			margin: 0;
-			line-height: var(--wp--custom--line-height--body);
-		}
+		color: currentColor;
 	}
 
 	&.is-style-plain {

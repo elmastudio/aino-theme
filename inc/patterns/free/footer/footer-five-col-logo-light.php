@@ -96,13 +96,9 @@ return array(
 	<!-- wp:navigation-link {"label":"Menu Item 05","url":"#","kind":"custom","isTopLevelLink":true} /-->
 	<!-- /wp:navigation --></div>
 	<!-- /wp:group --></div>
-	<!-- /wp:ainoblocks/grid-item -->
-	
-	<!-- wp:ainoblocks/grid-item {"className":"col_start_d__2 col_end_d__12 col_end_t__13 col_end_m__13 align-self__center justify-self__stretch pt__15 mt_d__0 site-info"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__7 align-self__start justify-self__start no-stacking col_start_d__2 col_end_d__12 col_end_t__13 col_end_m__13 align-self__center justify-self__stretch pt__15 mt_d__0 site-info"><!-- wp:paragraph {"align":"center","textColor":"font-secondary","fontSize":"text-xxs"} -->
-<p class="has-text-align-center has-font-secondary-color has-text-color has-text-xxs-font-size">© 2022 </p>
-<!-- /wp:paragraph --><!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"font-secondary","fontSize":"text-xxs"} /--><!-- wp:paragraph {"align":"center","textColor":"font-secondary","fontSize":"text-xxs","paddingLeft":2} -->
-<p class="has-text-align-center has-font-secondary-color has-text-color has-text-xxs-font-size pl__2">Built with <a rel="nofollow" href="https://ainoblocks.io/">AinoBlocks</a>.</p>
+	<!-- /wp:ainoblocks/grid-item --><!-- wp:ainoblocks/grid-item {"className":"col_start_d__2 col_end_d__12 col_end_t__13 col_end_m__13 align-self__center justify-self__stretch pt__15 mt_d__0 site-info"} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__7 align-self__start justify-self__start no-stacking col_start_d__2 col_end_d__12 col_end_t__13 col_end_m__13 align-self__center justify-self__stretch pt__15 mt_d__0 site-info"><!-- wp:paragraph {"align":"left","textColor":"font-secondary","fontSize":"text-xs"} -->
+<p class="has-text-align-left has-font-secondary-color has-text-color has-text-xs-font-size">© 2022 Add your name here. Built with <a href="https://ainoblocks.io/">AinoBlocks</a>. Theme: <a href="https://wordpress.org/themes/aino/">Aino</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

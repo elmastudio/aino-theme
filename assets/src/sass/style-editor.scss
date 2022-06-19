@@ -16,18 +16,18 @@
 
 .wp-block-group.alignfull>.alignfull,
 *[class*="wp-container-"]>.alignfull {
-	width: calc(100% + var(--global--content--padding--left) + var(--global--content--padding--right)) !important;
-	margin-left: calc(-1 * var(--global--content--padding--left)) !important;
-	margin-right: calc(-1 * var(--global--content--padding--right)) !important;
+	width: calc(100% + var(--widewidth-outer-gap) + var(--widewidth-outer-gap)) !important;
+	margin-left: calc(-1 * var(--widewidth-outer-gap)) !important;
+	margin-right: calc(-1 * var(--widewidth-outer-gap)) !important;
+}
+
+.wp-block-paragraph,
+.wp-block-list,
+.block-editor-default-block-appender p {
+	font-size: var(--wp--preset--font-size--medium);
 }
 
 /* Container and Alignment */
-.wp-block[data-align=full] .wp-block-group .wp-block {
-	max-width: var(--global--wide-content-width);
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .wp-block-group.has-background.content-gap,
 .site-header,
 .wp-block[data-align="wide"],
@@ -35,8 +35,8 @@
 .alignfull .alignwide,
 .site-footer .footer-content,
 .block-editor-block-list__layout.is-root-container > .alignwide {
-	padding-left: var(--global--content--padding--left);
-	padding-right: var(--global--content--padding--right);
+	padding-left: var(--widewidth-outer-gap);
+	padding-right: var(--widewidth-outer-gap);
 
 	@include breakpoint(xl) {
 		padding-left: var(--space-09);
@@ -65,14 +65,8 @@
 	}
 }
 
-.wp-block-social-link {
-
-	button {
-		background-color: transparent;
-	}
-}
-
-.wp-block-paragraph {
+.wp-block-paragraph,
+.wp-block-list {
 	a {
 		color: currentColor;
 		@include underline-default;
@@ -102,18 +96,6 @@
 	}
 }
 
-a.btn-primary,
-.btn-primary a {
-	@include btn;
-	@include btn-primary;
-}
-
-a.btn-outline,
-.btn-outline a {
-	@include btn;
-	@include btn-outline;
-}
-
 .wp-block-tag-cloud.is-style-btn a,
 .wp-block-categories.is-style-btn a {
 	@include btn;
@@ -124,18 +106,6 @@ a.btn-outline,
 .wp-block-tag-cloud.is-style-btn.btn-light a,
 .wp-block-categories.is-style-btn.btn-light a {
 	@include btn-outline-light;
-}
-
-.btn-naked,
-.btn-naked a {
-	@include btn-naked;
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
-.btn-long,
-.cr_button {
-	width: 100%;
 }
 
 .stretch {
@@ -157,34 +127,6 @@ a.btn-outline,
 	@include btn-xs;
 }
 
-.btn-s {
-	@include btn-s;
-}
-
-.btn-m {
-	@include btn-m;
-}
-
-.btn-l {
-	@include btn-l;
-}
-
-.btn-xl {
-	@include btn-xl;
-}
-
-.btn-xxl {
-	@include btn-xxl;
-}
-
-.btn-xxxl {
-	@include btn-xxxl;
-}
-
-.btn-xxxxl {
-	@include btn-xxxxl;
-}
-
 .btn-curved,
 .btn-rounded {
 
@@ -193,9 +135,6 @@ a.btn-outline,
 	button[type="submit"],
 	a.btn-primary,
 	.edit,
-	.btn-primary a,
-	a.btn-outline,
-	.btn-outline a,
 	.woocommerce-button,
 	.wc-block-components-button,
 	.form-submit.wp-block-button input,
@@ -212,10 +151,6 @@ a.btn-outline,
 	.edit,
 	input[type="submit"],
 	button[type="submit"],
-	a.btn-primary,
-	.btn-primary a,
-	a.btn-outline,
-	.btn-outline a,
 	.woocommerce-button,
 	.search-header .search-field,
 	.wc-block-components-button,

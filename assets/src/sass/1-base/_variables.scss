@@ -64,37 +64,29 @@
 
 /* Theme Global Styles */
 body {
-	/* Spacing */
 	--wp--style--block-gap: 0;
-	--global--content--padding--left: 1.25rem;
-	--global--content--padding--right: 1.25rem;
+	--widewidth-outer-gap: 1.25rem;
+	--outer--gap: 1.25rem;
 
 	// SM breakpoint
 	@media only screen and (min-width: 48em) {
-
-		/* Spacing */
-		--global--content--padding--left: 2rem;
-		--global--content--padding--right: 2rem;
+		--widewidth-outer-gap: 2rem;
+		--outer--gap: 2rem;
 	}
 
 	// MD breakpoint
 	@media only screen and (min-width: 64em) {
-
-		/* Spacing */
-		--global--content--padding--left: 2.5rem;
-		--global--content--padding--right: 2.5rem;
+		--widewidth-outer-gap: 2.5rem;
+		--outer--gap: 2.5rem;
 	}
 
 	// LG breakpoint
 	@media only screen and (min-width: 80em) {
-
-		/* Spacing */
-		--global--content--padding--left: 3rem;
-		--global--content--padding--right: 3rem;
+		--widewidth-outer-gap: 3rem;
+		--outer--gap: 3rem;
 	}
 
 	@media only screen and (min-width: 118.5em) {
-		--global--content--padding--left: 0;
-		--global--content--padding--right: 0;
+		--widewidth-outer-gap: 0;
 	}
 }

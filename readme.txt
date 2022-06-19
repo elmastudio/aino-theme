@@ -2,9 +2,9 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, block-patterns, wide-blocks, full-site-editing, template-editing
 Requires at least: 5.9
-Tested up to: WordPress 5.9
+Tested up to: WordPress 6.0
 Requires PHP: 7.0
-Stable tag: 2.6.3
+Stable tag: 2.6.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -41,6 +41,19 @@ Aino WordPress Theme bundles the following third-party resources:
 Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.4 =
+
+Release date: June 19th, 2022
+
+* Enhance: Outer content gap.
+* Enhance: Block pattern integration.
+* Enhance: Color names.
+* Bugfix: Header patterns. Note: You might need to add a Spacing Padding Top value of 5 to the Group block grouping your Site Title, Navigation and Social Icons block.
+* Bugfix: Tab menus.
+* Bugfix: Theme patterns.
+* Bugfix: Footer patterns Footer, Footer Dark, Footer Five Columns Logo Light, Footer Five Columns with Logo Dark. Note: You might need to update the Copyright and Credit text information in your exisitng Footer Template Parts.
+* Bugfix: Single templates Category font sizes.
 
 = 2.6.3 =
 
