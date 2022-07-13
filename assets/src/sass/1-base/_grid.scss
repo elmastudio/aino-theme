@@ -155,33 +155,3 @@
 .gap-xl .wp-block-post-template {
 	@include gap-xl;
 }
-
-
-// Helper classes
-.relative {
-	position: relative;
-}
-
-.absolute {
-	position: absolute;
-}
-
-.top-fullwidth {
-	top: 0;
-	left: 0;
-	right: 0;
-}
-
-.bottom-fullwidth {
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.zindex100 {
-	z-index: 100;
-}
-
-.zindex1000 {
-	z-index: 1000;
-}

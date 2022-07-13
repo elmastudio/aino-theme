@@ -1,18 +1,15 @@
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input,
 textarea,
 .wp-block-post-comments textarea,
 .wp-block-search__input,
-#rating {
+.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),
+.wp-block-post-comments textarea {
 	box-sizing: border-box;
 	background-color: var(--global--color--form-background);
 	border: 1px solid var(--global--color--form-border);
 	outline: none;
 	line-height: var(--global--line-height-reset);
-	padding: 0.969rem 1.125rem;
+	padding: calc(0.938rem - 2px);
 
 	@include input-placeholder {
 		color: var(--wp--preset--color--font-tertiary);
@@ -44,7 +41,6 @@ textarea,
 // Form labels
 form label {
 	position: relative;
-	line-height: 1;
 	color: var(--wp--preset--color--font-secondary);
 	@include s-r-2 (margin-bottom);
 	border-radius: var(--global--border-radius-xxs);
@@ -208,11 +204,6 @@ label.color-notice span {
 form p {
 	@include s-r-4 (padding-top);
 	padding-bottom: 0;
-}
-
-form p.comment-form-comment {
-	margin: 0;
-	line-height: 1;
 }
 
 /* Search Form */

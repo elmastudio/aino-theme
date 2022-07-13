@@ -22,27 +22,13 @@ div[class*='wp-block-'] figcaption,
 .is-style-btn li a,
 .wp-block-tag-cloud.is-style-btn a,
 .commentlist .comment-metadata time,
-.comment-edit-link {
+.comment-edit-link,
+.has-small-font-size {
 	font-size: var(--wp--preset--font-size--text-xs) !important;
 }
 
 .has-text-xxs-font-size p {
 	font-size: var(--wp--preset--font-size--text-xxs) !important;
-}
-
-.archive,
-.wp-block-post-comments,
-.entry-content,
-.site-content {
-
-	form label,
-	mark label .required,
-	.comment-notes,
-	.logged-in-as,
-	.comment-reply-title #cancel-comment-reply-link,
-	.reply {
-		font-size: var(--wp--preset--font-size--text-xs) !important;
-	}
 }
 
 .hentry {
@@ -118,7 +104,8 @@ i {
 	font-style: italic;
 }
 
-dt {
+dt,
+.wp-block-post-author__name {
 	font-weight: bold;
 }
 

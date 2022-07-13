@@ -13,10 +13,11 @@
 	margin-top: var(--s-r-9);
 	margin-bottom: var(--s-r-9);
 }
-
+.wp-block.is-reusable,
 .wp-block-group.alignfull>.alignfull,
 *[class*="wp-container-"]>.alignfull {
 	width: calc(100% + var(--widewidth-outer-gap) + var(--widewidth-outer-gap)) !important;
+	max-width: calc(100% + var(--widewidth-outer-gap) + var(--widewidth-outer-gap)) !important;
 	margin-left: calc(-1 * var(--widewidth-outer-gap)) !important;
 	margin-right: calc(-1 * var(--widewidth-outer-gap)) !important;
 }
@@ -30,11 +31,7 @@
 /* Container and Alignment */
 .wp-block-group.has-background.content-gap,
 .site-header,
-.wp-block[data-align="wide"],
-.wp-block[data-align=full] .alignwide,
-.alignfull .alignwide,
-.site-footer .footer-content,
-.block-editor-block-list__layout.is-root-container > .alignwide {
+.site-footer .footer-content {
 	padding-left: var(--widewidth-outer-gap);
 	padding-right: var(--widewidth-outer-gap);
 

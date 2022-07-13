@@ -4,7 +4,7 @@ input[type="reset"],
 input[type="submit"],
 .wp-block-search__button {
 	@include btn;
-	@include btn-m;
+	@include btn-s;
 }
 
 input[type="button"]:not(.wp-block-navigation__responsive-container-open),
@@ -57,7 +57,6 @@ input[type="submit"] {
 	@include btn-xs;
 }
 
-.btn-curved,
 .btn-rounded {
 
 	.btn,
