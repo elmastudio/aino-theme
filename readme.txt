@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.9
 Tested up to: WordPress 6.0
 Requires PHP: 7.0
-Stable tag: 2.6.5
+Stable tag: 2.6.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -35,12 +35,18 @@ GNU General Public License for more details.
 
 Aino WordPress Theme bundles the following third-party resources:
 
-* normalize.css, Copyright (c) Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
 * Screenshot image #1, (c) Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 * TGM-Plugin-Activation, (c) Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
 
 == Changelog ==
+
+= 2.6.6 =
+
+Release date: June 19th, 2022
+
+* Enhance: Default forms styling.
+* Bugfix: Update deprecated Post Comments block with Comments Query Loop block in Templates Single Post and Post without Featured Image.
 
 = 2.6.5 =
 
