@@ -1,5 +1,22 @@
 <?php
+/**
+ * Aino functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Aino
+ * @since Aino 1.0.0
+ */
+
 if ( ! function_exists( 'aino_setup' ) ) :
+
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * @since Aino 1.0.0
+	 *
+	 * @return void
+	 */
 	function aino_setup() {
 
 		// Add support for Block Styles.

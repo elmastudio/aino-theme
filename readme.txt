@@ -43,10 +43,11 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 
 = 2.6.6 =
 
-Release date: June 19th, 2022
+Release date: July , 2022
 
 * Enhance: Default forms styling.
 * Bugfix: Update deprecated Post Comments block with Comments Query Loop block in Templates Single Post and Post without Featured Image.
+* Bugfix: Delete outdated Footer Template Parts.
 
 = 2.6.5 =
 
