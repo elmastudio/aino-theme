@@ -201,44 +201,44 @@ $var: true !default; // Can be overridden elsewhere
 
 /* Avatars */
 @mixin avatar-l {
-	width: var(--space-11);
-	height: var(--space-11);
-	min-width: var(--space-11);
-	min-height: var(--space-11);
+	width: 5rem;
+	height: 5rem;
+	min-width: 5rem;
+	min-height: 5rem;
 
 	@include breakpoint(sm) {
-		width: var(--space-12);
-		height: var(--space-12);
+		width: 6rem;
+		height: 6rem;
 	}
 
 	@include breakpoint(md) {
-		width: var(--space-13);
-		height: var(--space-13);
+		width: 7.5rem;
+		height: 7.5rem;
 	}
 
 	@include breakpoint(lg) {
-		width: var(--space-14);
-		height: var(--space-14);
+		width: 9rem;
+		height: 9rem;
 	}
 }
 
 @mixin avatar-m {
-	width: var(--space-09);
-	height: var(--space-09);
-	min-width: var(--space-09);
-	min-height: var(--space-09);
+	width: 3rem;
+	height: 3rem;
+	min-width: 3rem;
+	min-height: 3rem;
 
 	@include breakpoint(md) {
-		width: var(--space-10);
-		height: var(--space-10);
+		width: 4rem;
+		height: 4rem;
 	}
 }
 
 @mixin avatar-s {
-	width: var(--space-07);
-	height: var(--space-07);
-	min-width: var(--space-07);
-	min-height: var(--space-07);
+	width: 2rem;
+	height: 2rem;
+	min-width: 2rem;
+	min-height: 2rem;
 }
 
 /* Placeholders */

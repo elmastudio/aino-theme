@@ -22,11 +22,11 @@
 
 	.blog-3-column & {
 
-		margin-right: var(--space-04);
+		margin-right: 1rem;
 
 		img {
-			max-width: var(--space-08);
-			max-height: var(--space-08);
+			max-width: 2.5rem;
+			max-height: 2.5rem;
 		}
 	}
 }
@@ -53,7 +53,7 @@
 	position: relative;
 	line-height: 0;
 	display: block;
-	margin-bottom: var(--space-04);
+	margin-bottom: 1rem;
 
 	@include breakpoint(md) {
 		position: absolute;

@@ -47,13 +47,13 @@
 
 	caption {
 		color: var(--wp--preset--color--font-primary);
-		margin-bottom: var(--space-04);
+		margin-bottom: 1rem;
 		text-align: center;
 	}
 
 	table {
 
-		margin-bottom: var(--space-04);
+		margin-bottom: 1rem;
 
 		th {
 			background: transparent;
@@ -80,7 +80,7 @@
 
 .wp-block-latest-comments__comment-excerpt p {
 	font-size: var(--wp--preset--font-size--text-xs) !important;
-	margin: var(--space-02) 0 var(--space-06);
+	margin: .5rem 0 1.5rem;
 }
 
 // Lists with Button Styles

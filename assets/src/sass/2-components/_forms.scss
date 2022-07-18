@@ -1,4 +1,4 @@
-input,
+input:not([type=submit]):not([type=checkbox]),
 textarea,
 .wp-block-post-comments textarea,
 .wp-block-search__input,
@@ -23,13 +23,17 @@ textarea,
 	}
 }
 
+.form-fullwidth input:not([type=submit]):not([type=checkbox]) {
+	width: 100%;
+}
+
 // Testarea
 textarea {
 	width: 100%;
 	background-color: transparent;
 	background: var(--global--color--form-background);
 	border: 1px solid var(--global--color--form-border);
-	padding: var(--space-04) var(--space-06);
+	padding: 1rem 1.5rem;
 	outline: none;
 }
 
@@ -97,9 +101,9 @@ form .comment-form-cookies-consent,
 input[type="checkbox"],
 input[type="radio"] {
 	-webkit-appearance: none;
-	min-width: var(--space-06);
-	width: var(--space-06);
-	height: var(--space-06);
+	min-width: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	border: 1px solid var(--global--color--form-border);
 	background-color: var(--global--color--form-background);
 	border-radius:50%;
@@ -202,7 +206,7 @@ label.color-notice span {
 }
 
 form p {
-	@include s-r-4 (padding-top);
+	@include s-r-7 (padding-top);
 	padding-bottom: 0;
 }
 
@@ -216,7 +220,7 @@ form p {
 		}
 
 		&__button {
-			margin-top: var(--space-02);
+			margin-top: .5rem;
 			margin-left: 0;
 			background: var(--wp--preset--color--primary);
 			color: var(--wp--preset--color--button-color-primary);
@@ -248,7 +252,7 @@ form p {
 			&__button {
 				width: auto;
 				margin-top: 0;
-				margin-left: var(--space-02);
+				margin-left: .5rem;
 			}
 		}
 	}
@@ -261,7 +265,7 @@ form p {
 		display: block;
 		width: 100%;
 			p {
-				padding-top: var(--space-02);
+				padding-top: .5rem;
 				width: 100%;
 
 				input[type=email],
@@ -303,7 +307,7 @@ form p {
 
 				input[type=submit] {
 					width: auto;
-					margin-left: var(--space-02);
+					margin-left: .5rem;
 				}
 			}
 		}

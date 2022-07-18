@@ -3,13 +3,13 @@ input,
 select,
 table,
 textarea {
+	font-family: var(--wp--custom--body--typography--font-family);
 	line-height: var(--wp--custom--line-height--body);
 }
 
 .wp-block-calendar table,
 .hentry .entry-summary,
-.posts-container .hentry .entry-footer,
-#cancel-comment-reply-link {
+.posts-container .hentry .entry-footer {
 	font-size: var(--wp--preset--font-size--text-m) !important;
 	color: var(--wp--preset--color--font-secondary);
 }
@@ -21,9 +21,8 @@ textarea {
 div[class*='wp-block-'] figcaption,
 .is-style-btn li a,
 .wp-block-tag-cloud.is-style-btn a,
-.commentlist .comment-metadata time,
-.comment-edit-link,
-.has-small-font-size {
+.logged-in-as,
+#cancel-comment-reply-link {
 	font-size: var(--wp--preset--font-size--text-xs) !important;
 }
 
@@ -52,7 +51,6 @@ select,
 table,
 textarea,
 address,
-.entry-content form p,
 .hentry ol,
 .hentry ul,
 dl,
@@ -64,7 +62,8 @@ dl,
 .wp-block-separator.is-style-dots:before,
 .wp-block-post-author__byline,
 .wp-block-post-author__name,
-.wp-block-post-comments p.nocomments {
+.wp-block-post-comments p.nocomments,
+.comment-reply-title {
 	font-size: var(--wp--preset--font-size--text-l) !important;
 }
 
@@ -85,14 +84,6 @@ h2.entry-title {
 	font-size: var(--wp--preset--font-size--text-m) !important;
 }
 
-.authorbox__wrap .section-title,
-.comments-area .comments-title,
-.wc-block-components-title,
-.comment-reply-title,
-#comments {
-	font-size: var(--wp--preset--font-size--text-l) !important;
-}
-
 .authorbox__details .author-name,
 .related-title {
 	font-size: var(--wp--preset--font-size--text-xxxl) !important;
@@ -105,15 +96,16 @@ i {
 }
 
 dt,
-.wp-block-post-author__name {
+.wp-block-post-author__name,
+.wp-block-comment-author-name {
 	font-weight: bold;
 }
 
 dd {
-	margin: 0 var(--space-06) var(--space-06);
+	margin: 0 1.5rem 1.5rem;
 
 	@include breakpoint(sm) {
-		margin: 0 var(--space-06) var(--space-06);
+		margin: 0 1.5rem 1.5rem;
 	}
 }
 
@@ -189,20 +181,7 @@ big {
 	font-family: var(--wp--custom--sans-serif--typography--font-family) !important;
 }
 
-// Default Post-only Heading and Paragraph spacing, will likely be replaces with default block values later.
-.single-post .wp-block-post-content {
-
-	h2, h3, h4, h5, h6 {
-		@include s-r-8(padding-top);
-		@include s-r-5(padding-bottom);
-	}
-
-	h1 {
-		@include s-r-10(padding-top);
-		@include s-r-8(padding-bottom);
-	}
-
-	p {
-		@include s-r-6(padding-bottom);
-	}
+//Default paragraph and heading spacing if no individual spacing is set
+.wp-block-post-content p:not([class*=" pt__"]) {
+	@include s-r-7 (padding-top);
 }

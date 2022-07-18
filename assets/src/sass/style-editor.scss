@@ -9,10 +9,11 @@
 @import "3-blocks/blocks-index";
 @import "4-layout/layout-index";
 
-.edit-post-visual-editor__post-title-wrapper {
-	margin-top: var(--s-r-9);
-	margin-bottom: var(--s-r-9);
+//Default paragraph and heading spacing if no individual spacing is set
+.wp-block-paragraph:not([class*=" pt__"]) {
+	@include s-r-7 (padding-top)
 }
+
 .wp-block.is-reusable,
 .wp-block-group.alignfull>.alignfull,
 *[class*="wp-container-"]>.alignfull {
@@ -34,11 +35,6 @@
 .site-footer .footer-content {
 	padding-left: var(--widewidth-outer-gap);
 	padding-right: var(--widewidth-outer-gap);
-
-	@include breakpoint(xl) {
-		padding-left: var(--space-09);
-		padding-right: var(--space-09);
-	}
 }
 
 /* Tagcloud and Category List in Button Style */
@@ -162,12 +158,12 @@
 .site-header {
 
 	.btn-icon {
-		margin-top: var(--space-04) !important;
+		margin-top: 1rem !important;
 
 		.wp-block-ainoblocks-button__link {
 			display: flex;
-			width: var(--space-08);
-			height: var(--space-08);
+			width: 2.5rem;
+			height: 2.5rem;
 			text-indent: -9000px;
 			text-transform: capitalize;
 			padding: 0;

@@ -93,12 +93,12 @@ input[type="submit"] {
 .site-header {
 
 	.btn-icon {
-		margin-top: var(--space-04) !important;
+		margin-top: 1rem !important;
 
 		.wp-block-ainoblocks-button__link {
 			display: flex;
-			width: var(--space-08);
-			height: var(--space-08);
+			width: 2.5rem;
+			height: 2.5rem;
 			text-indent: -9000px;
 			text-transform: capitalize;
 			padding: 0;
@@ -111,15 +111,6 @@ input[type="submit"] {
 
 		.wp-block-ainoblocks-button__link {
 			background-image: url(/assets/images/search.svg) !important;
-		}
-	}
-
-	.wp-block-ainoblocks-multiple-buttons {
-
-		.wp-block-ainoblocks-multiple-buttons__inner {
-			.btn-icon:not(:first-child) {
-				margin-left: var(--space-01);
-			}
 		}
 	}
 }
