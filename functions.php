@@ -8,7 +8,7 @@
  * @since Aino 1.0.0
  */
 
-if ( ! function_exists( 'aino_setup' ) ) :
+if ( ! function_exists( 'aino_support' ) ) :
 
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -17,13 +17,13 @@ if ( ! function_exists( 'aino_setup' ) ) :
 	 *
 	 * @return void
 	 */
-	function aino_setup() {
+	function aino_support() {
 
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( array( 'assets/build/css/editor.css', aino_fonts_url() ) );
+		add_editor_style( 'assets/build/css/editor.css' );
 
 		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
@@ -35,37 +35,38 @@ if ( ! function_exists( 'aino_setup' ) ) :
 		add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 	}
 	endif;
-	add_action( 'after_setup_theme', 'aino_setup' );
+add_action( 'after_setup_theme', 'aino_support' );
 
-/**
- * Enqueue scripts and styles.
- */
-function aino_scripts() {
-	// Enqueue fonts stylesheet.
-	wp_enqueue_style( 'aino-fonts', aino_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
-	// Theme stylesheet.
-	wp_enqueue_style( 'aino-style', get_template_directory_uri() . '/assets/build/css/main.css', array(), wp_get_theme()->get( 'Version' ) );
-}
-add_action( 'wp_enqueue_scripts', 'aino_scripts' );
 
-/**
- * Get Google fonts and save locally with WPTT Webfont Loader.
- */
-function aino_fonts_url() {
-	$font_families = array(
-		'Arimo:ital,wght@0,400;0,700;1,400;1,700',
-		'PT+Serif:ital,wght@0,400;0,700;1,400;1,700'
-	);
+if ( ! function_exists( 'aino_styles' ) ) :
 
-	$fonts_url = add_query_arg( array(
-		'family' => implode( '&family=', $font_families ),
-		'display' => 'swap',
-	), 'https://fonts.googleapis.com/css2' );
+	/**
+	 * Enqueue styles.
+	 *
+	 * @since Aino 1.0.0
+	 *
+	 * @return void
+	 */
+	function aino_styles() {
+		// Register theme stylesheet.
+		$theme_version = wp_get_theme()->get( 'Version' );
 
-	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
+		$version_string = is_string( $theme_version ) ? $theme_version : false;
+		wp_register_style(
+			'aino-style',
+			get_template_directory_uri() . '/assets/build/css/main.css',
+			array(),
+			$version_string
+		);
 
-	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
-}
+		// Enqueue theme stylesheet.
+		wp_enqueue_style( 'aino-style' );
+
+	}
+
+endif;
+
+add_action( 'wp_enqueue_scripts', 'aino_styles' );
 
 /**
  * Restores the Customizer since we still rely on it.
@@ -76,10 +77,16 @@ function aino_restore_customizer() {
 }
 add_action( 'customize_register', 'aino_restore_customizer' );
 
-// Theme Block Patterns.
+/**
+ * Register theme block patterns.
+ * 
+ */
 require get_template_directory() . '/inc/block-patterns.php';
 
-// Theme Block Styles.
+/**
+ * Register theme block styles.
+ * 
+ */
 require get_template_directory() . '/inc/block-styles.php';
 
 /**

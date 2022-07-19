@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json",
 	"version": 2,
 	"settings": {
 		"appearanceTools": true,
@@ -178,28 +179,31 @@
 			"wideSize": "112.5rem"
 		},
 		"typography": {
-			"fontFamilies": [
-				{
-					"fontFamily": "Arimo, sans-serif",
-					"slug": "arimo",
-					"name": "Arimo"
-				},
-				{
-					"fontFamily": "\"PT Serif\", serif",
-					"slug": "pt-serif",
-					"name": "PT Serif"
-				},
-				{
-					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-					"slug": "system",
-					"name": "System"
-				},
-				{
-					"fontFamily": "\"Fira Code VF\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
-					"slug": "monospace",
-					"name": "Monospace"
-				}
-			],
+			"fontFamilies": [{
+				"fontFamily": "\"Arimo\", sans-serif",
+				"slug": "arimo",
+				"name": "Arimo",
+				"fontFace": [{
+					"fontFamily": "Arimo",
+					"fontWeight": "400 700",
+					"fontStyle": "normal",
+					"fontStretch": "normal",
+					"src": [
+						"file:./assets/fonts/arimo.woff2"
+					]
+				}]
+			},
+			{
+				"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+				"slug": "system",
+				"name": "System"
+			},
+			{
+				"fontFamily": "\"Fira Code VF\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+				"slug": "monospace",
+				"name": "Monospace"
+			}
+		],
 			"fontSizes": [
 				{
 					"name": "3XS",
