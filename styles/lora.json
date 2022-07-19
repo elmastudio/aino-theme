@@ -1,0 +1,98 @@
+{
+	"version": 2,
+	"title": "Lora",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Lora\", serif",
+					"slug": "lora",
+					"name": "Lora",
+					"fontFace": [
+                        {
+                            "fontFamily": "Lora",
+                            "fontWeight": "400 700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+								"file:./assets/fonts/lora.woff2"
+                            ]
+                        }
+                    ]
+				}
+			]
+		},
+		"custom": {
+			"line-height": {
+				"body": 1.5,
+				"heading": 1.2
+			},
+			"body": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			}
+		}
+	},
+	"styles": {
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lora)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--lora)"
+		},
+		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontWeight": "500",
+					"lineHeight": "var(--wp--custom--line-height--heading)"
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"lineHeight": "var(--wp--custom--line-height--heading)",
+					"fontWeight": "500"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			}
+		}
+	}
+}
