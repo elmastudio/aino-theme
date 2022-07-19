@@ -2,7 +2,7 @@
 Contributors: elmastudio, manuelesposito, marc_j, kau-boy
 Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, block-patterns, wide-blocks, full-site-editing, template-editing
 Requires at least: 5.9
-Tested up to: WordPress 6.0
+Tested up to: WordPress 6.0.1
 Requires PHP: 7.0
 Stable tag: 2.6.6
 License: GPLv3 or later
@@ -35,9 +35,19 @@ GNU General Public License for more details.
 
 Aino WordPress Theme bundles the following third-party resources:
 
-* Screenshot image #1, (c) Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
+Arimo Font
+Copyright 2020 The Epilogue Project Authors
+License: Apache License Version 2.0, http://www.apache.org/licenses/
+Source: https://github.com/googlefonts/Arimo
+
+Lora Font
+Copyright 2011 The Lora Project Authors
+License: SIL Open Font License, Version 1.1, http://scripts.sil.org/OFL
+Source: https://github.com/cyrealtype/Lora-Cyrillic
+
 * TGM-Plugin-Activation, (c) Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
-Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loader, License: MIT - https://opensource.org/licenses/MIT
+
+* Screenshot image #1, (c) Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
 
@@ -45,6 +55,10 @@ Webfonts Loader - (c) WordPress Themes Team, https://github.com/WPTT/webfont-loa
 
 Release date: July , 2022
 
+* New: Change serif font option from PT Serif font to Lora variable font.
+* New: Serif font Style via Editor → Styles → Browse Styles → Lora.
+* Enhance: Load fonts via theme.json.
+* Enhance: Update Pattern category names.
 * Enhance: Default forms styling.
 * Bugfix: Update deprecated Post Comments block with Comments Query Loop block in Templates Single Post and Post without Featured Image.
 * Bugfix: Delete outdated Footer Template Parts.
