@@ -182,6 +182,6 @@ big {
 }
 
 //Default paragraph and heading spacing if no individual spacing is set
-.wp-block-post-content p:not([class*=" pt__"]) {
+.wp-block-post-content p:not([class*="pt__"]) {
 	@include s-r-7 (padding-top);
 }

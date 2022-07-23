@@ -9,11 +9,18 @@
 @import "3-blocks/blocks-index";
 @import "4-layout/layout-index";
 
-//Default paragraph and heading spacing if no individual spacing is set
+/* Default paragraph and heading spacing if no individual spacing is set  */
 .wp-block-paragraph:not([class*=" pt__"]) {
 	@include s-r-7 (padding-top)
 }
 
+/* Padding for page titles, temporary solution  */
+.wp-block-post-title {
+	@include s-r-9 (padding-top);
+	@include s-r-9 (padding-bottom);
+}
+
+/* Outer grid margins, temporary solution, will be replaced with editor setting later on */
 .wp-block.is-reusable,
 .wp-block-group.alignfull>.alignfull,
 *[class*="wp-container-"]>.alignfull {
@@ -22,19 +29,18 @@
 	margin-left: calc(-1 * var(--widewidth-outer-gap)) !important;
 	margin-right: calc(-1 * var(--widewidth-outer-gap)) !important;
 }
-
-.wp-block-paragraph,
-.wp-block-list,
-.block-editor-default-block-appender p {
-	font-size: var(--wp--preset--font-size--medium);
-}
-
-/* Container and Alignment */
 .wp-block-group.has-background.content-gap,
 .site-header,
 .site-footer .footer-content {
 	padding-left: var(--widewidth-outer-gap);
 	padding-right: var(--widewidth-outer-gap);
+}
+
+/* Default font size */
+.wp-block-paragraph,
+.wp-block-list,
+.block-editor-default-block-appender p {
+	font-size: var(--wp--preset--font-size--medium);
 }
 
 /* Tagcloud and Category List in Button Style */
@@ -48,16 +54,7 @@
 	}
 }
 
-.wp-block-search .wp-block-search__button {
-	min-width: auto !important;
-}
-
-.btn-rounded {
-	.wp-block-search .wp-block-search__button {
-		border-radius: var(--global--border-radius-xxs);
-	}
-}
-
+/* Link underlines */
 .wp-block-paragraph,
 .wp-block-list {
 	a {
@@ -67,6 +64,17 @@
 		&:hover {
 			text-decoration: none;
 		}
+	}
+}
+
+/* Default Button styles */
+.wp-block-search .wp-block-search__button {
+	min-width: auto !important;
+}
+
+.btn-rounded {
+	.wp-block-search .wp-block-search__button {
+		border-radius: var(--global--border-radius-xxs);
 	}
 }
 
@@ -120,7 +128,6 @@
 	@include btn-xs;
 }
 
-.btn-curved,
 .btn-rounded {
 
 	.btn,

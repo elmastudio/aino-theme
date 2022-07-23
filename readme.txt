@@ -57,6 +57,7 @@ Release date: July , 2022
 
 * New: Change serif font option from PT Serif font to Lora variable font.
 * New: Serif font Style via Editor → Styles → Browse Styles → Lora.
+* Enhance: Expand Color palette.
 * Enhance: Load fonts via theme.json.
 * Enhance: Update Pattern category names.
 * Enhance: Default forms styling.
