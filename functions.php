@@ -106,7 +106,7 @@ function aino_register_required_plugins() {
 	$plugins = array(
 
 		array(
-			'name'      => 'Aino Blocks - Creative Block Collection',
+			'name'      => 'Aino Blocks - Gutenberg Page Builder Blocks',
 			'slug'      => 'aino-blocks',
 			'required'  => false,
 		),
