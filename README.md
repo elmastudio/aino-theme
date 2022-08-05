@@ -15,6 +15,18 @@ __License URI:__ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Changelog  
 
+
+### 2.6.6  
+New: Change serif font option from PT Serif font to Lora variable font.  
+New: Serif font Style via Editor → Styles → Browse Styles → Lora.  
+Enhance: Expand Color palette.  
+Enhance: Load fonts via theme.json.  
+Enhance: Update Pattern category names.  
+Enhance: Default forms styling.  
+Bugfix: Update deprecated Post Comments block with Comments Query Loop block in Templates Single Post and Post without Featured Image.  
+Bugfix: Delete outdated Footer Template Parts.  
+Bugfix: Patterns updated.  
+
 ### 2.6.5   
 Bugfix: Patter Header Default and Header Dark update. Please clear your Header Template Part customization if you experience Header layout issues.  
 
