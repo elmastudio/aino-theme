@@ -4,7 +4,7 @@ Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, thre
 Requires at least: 5.9
 Tested up to: WordPress 6.0.1
 Requires PHP: 7.0
-Stable tag: 2.6.6
+Stable tag: 2.6.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -50,6 +50,10 @@ Source: https://github.com/cyrealtype/Lora-Cyrillic
 * Screenshot image #1, (c) Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 
 == Changelog ==
+
+= 2.6.7 =
+
+Release date: August 6, 2022
 
 = 2.6.6 =
 
