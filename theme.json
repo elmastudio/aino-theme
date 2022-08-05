@@ -82,23 +82,23 @@
 				},
 				{
 					"slug": "primary",
-					"color": "#121212",
-					"name": "Button Background"
+					"color": "#71717A",
+					"name": "Button 1"
 				},
 				{
 					"slug": "secondary",
-					"color": "#0573E6",
-					"name": "Button Background Hover"
+					"color": "#A1A1AA",
+					"name": "Button 2"
 				},
 				{
 					"slug": "button-color-primary",
-					"color": "#ffffff",
-					"name": "Button Text"
+					"color": "#FAFAFA",
+					"name": "Button 3"
 				},
 				{
 					"slug": "button-color-secondary",
-					"color": "#ffffff",
-					"name": "Button Text Hover"
+					"color": "rgba(113, 113, 122, 0.2)",
+					"name": "Button 4"
 				},
 				{
 					"slug": "variant-background-primary",
@@ -162,23 +162,23 @@
 				},
 				{
 					"slug": "variant-primary",
-					"color": "#ffffff",
-					"name": "Variant Button Background"
+					"color": "#E4E4E7",
+					"name": "Variant Button 1"
 				},
 				{
 					"slug": "variant-secondary",
-					"color": "#2E8CFD",
-					"name": "Variant Button Background"
+					"color": "#D4D4D8",
+					"name": "Variant Button 2"
 				},
 				{
 					"slug": "variant-button-color-primary",
-					"color": "#121212",
-					"name": "Variant Button Text"
+					"color": "#52525B",
+					"name": "Variant Button 3"
 				},
 				{
 					"slug": "variant-button-color-secondary",
-					"color": "#121212",
-					"name": "Variant Button Text Hover"
+					"color": "rgba(228, 228, 231, 0.2)",
+					"name": "Variant Button 4"
 				}
 			],
 			"gradients": [
