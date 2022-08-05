@@ -25,10 +25,10 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:ainoblocks/multiple-buttons {"paddingTop":9} -->
-	<div class="wp-block-ainoblocks-multiple-buttons pt__9"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":200,"backgroundColor":"#777b7d","textColor":"#ffffff","label":"Learn more"} -->
-	<div class="wp-block-ainoblocks-button" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200 has-custom-background has-custom-text-color" style="background-color:#777b7d;color:#ffffff;border-radius:200px">Learn more</a></div>
-	<!-- /wp:ainoblocks/button --></div></div>
-	<!-- /wp:ainoblocks/multiple-buttons --></div>
+<div class="wp-block-ainoblocks-multiple-buttons pt__9"><!-- wp:ainoblocks/button {"borderRadius":200,"label":"Learn more","backgroundColor":"#777b7d","textColor":"#ffffff","className":"is-style-primary"} -->
+<div class="wp-block-ainoblocks-button is-style-primary has-ffffff-color has-777-b-7-d-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200" style="border-radius:200px">Learn more</a></div>
+<!-- /wp:ainoblocks/button --></div>
+<!-- /wp:ainoblocks/multiple-buttons --></div>
 	<!-- /wp:ainoblocks/grid-item -->
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":7,"gridColumnEndDesktop":12,"gridColumnStartTablet":7,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","marginTopDesktop":0,"marginBottomDesktop":0,"marginTopTablet":0,"marginTopMobile":10,"marginBottomMobile":0} -->

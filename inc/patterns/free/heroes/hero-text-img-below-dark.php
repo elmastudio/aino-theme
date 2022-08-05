@@ -23,9 +23,9 @@ return array(
 	
 	<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"center","marginBottomDesktop":12,"marginBottomTablet":11,"marginBottomMobile":8} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__center no-stacking mb_d__12 mb_t__11 mb_m__8"><!-- wp:ainoblocks/multiple-buttons {"align":"center","paddingTop":7,"paddingBottom":11} -->
-	<div class="wp-block-ainoblocks-multiple-buttons aligncenter pt__7 pb__11"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":200,"label":"Get started","backgroundColor":"variant-primary","textColor":"variant-button-color-primary"} -->
-	<div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200" style="border-radius:200px">Get started</a></div>
-	<!-- /wp:ainoblocks/button --></div></div>
+	<div class="wp-block-ainoblocks-multiple-buttons aligncenter pt__7 pb__11"><!-- wp:ainoblocks/button {"size":"size__l","borderRadius":200,"label":"Get started","backgroundColor":"variant-primary","textColor":"variant-button-color-primary","className":"is-style-primary"} -->
+	<div class="wp-block-ainoblocks-button is-style-primary has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__l 200" style="border-radius:200px">Get started</a></div>
+	<!-- /wp:ainoblocks/button --></div>
 	<!-- /wp:ainoblocks/multiple-buttons --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>

@@ -17,10 +17,10 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:ainoblocks/multiple-buttons -->
-	<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":200,"label":"Get started","backgroundColor":"variant-font-tertiary","className":"has-button-color-primary-color has-text-color"} -->
-	<div class="wp-block-ainoblocks-button has-button-color-primary-color has-text-color has-variant-font-tertiary-background-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200" href="https://ainoblocks.io/" style="border-radius:200px">Get started</a></div>
-	<!-- /wp:ainoblocks/button --></div></div>
-	<!-- /wp:ainoblocks/multiple-buttons --></div>
+<div class="wp-block-ainoblocks-multiple-buttons"><!-- wp:ainoblocks/button {"borderRadius":200,"label":"Get started","backgroundColor":"variant-font-tertiary","className":"has-button-color-primary-color has-text-color is-style-primary"} -->
+<div class="wp-block-ainoblocks-button has-button-color-primary-color has-text-color is-style-primary has-variant-font-tertiary-background-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200" href="https://ainoblocks.io/" style="border-radius:200px">Get started</a></div>
+<!-- /wp:ainoblocks/button --></div>
+<!-- /wp:ainoblocks/multiple-buttons --></div>
 	<!-- /wp:ainoblocks/flex-item -->
 	
 	<!-- wp:ainoblocks/flex-item {"alignSelfDesktop":"align__ flexend__d","className":"desktop__width__50"} -->

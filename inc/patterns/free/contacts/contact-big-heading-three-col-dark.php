@@ -52,10 +52,10 @@ return array(
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:ainoblocks/multiple-buttons {"paddingTop":5} -->
-	<div class="wp-block-ainoblocks-multiple-buttons pt__5"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":200,"label":"Email us"} -->
-	<div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200" style="border-radius:200px">Email us</a></div>
-	<!-- /wp:ainoblocks/button --></div></div>
-	<!-- /wp:ainoblocks/multiple-buttons --></div>
+<div class="wp-block-ainoblocks-multiple-buttons pt__5"><!-- wp:ainoblocks/button {"borderRadius":200,"label":"Email us","className":"has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background"} -->
+<div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__m 200" style="border-radius:200px">Email us</a></div>
+<!-- /wp:ainoblocks/button --></div>
+<!-- /wp:ainoblocks/multiple-buttons --></div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container --></div>
 	<!-- /wp:group -->',

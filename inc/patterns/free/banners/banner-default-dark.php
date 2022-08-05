@@ -15,10 +15,10 @@ return array(
 	<h3 class="has-variant-font-primary-color has-text-color has-text-xl-font-size pb__5">Build a shiny new website</h3>
 	<!-- /wp:heading -->
 	<!-- wp:ainoblocks/multiple-buttons -->
-	<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"size":"size__s","borderRadius":200,"label":"Get started","backgroundColor":"variant-primary","textColor":"variant-button-color-primary"} -->
-	<div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__s 200" href="https://ainoblocks.io/" style="border-radius:200px">Get started</a></div>
-	<!-- /wp:ainoblocks/button --></div></div>
-	<!-- /wp:ainoblocks/multiple-buttons --></div>
+<div class="wp-block-ainoblocks-multiple-buttons"><!-- wp:ainoblocks/button {"size":"size__s","borderRadius":200,"label":"Get started","backgroundColor":"variant-primary","textColor":"variant-button-color-primary","className":"is-style-primary"} -->
+<div class="wp-block-ainoblocks-button is-style-primary has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:200px"><a class="wp-block-ainoblocks-button__link size__s 200" href="https://ainoblocks.io/" style="border-radius:200px">Get started</a></div>
+<!-- /wp:ainoblocks/button --></div>
+<!-- /wp:ainoblocks/multiple-buttons --></div>
 	<!-- /wp:ainoblocks/flex-item -->
 	<!-- wp:ainoblocks/flex-item -->
 	<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:image {"align":"center","width":266,"height":266,"sizeSlug":"full","linkDestination":"none"} -->

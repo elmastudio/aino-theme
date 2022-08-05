@@ -174,29 +174,3 @@
 		min-width: 15.5rem; // 248px
 	}
 }
-
-.site-header {
-
-	&.pro-light-s,
-	&.pro-light-l {
-		.wp-block-navigation {
-
-			.wp-block-navigation {
-				&__responsive-container-open {
-					background-image: url(/assets/images/menu.svg) !important;
-	
-					svg {
-						display: none;
-					}
-				}
-			}
-		}
-
-		.header-content {
-			.wp-block-navigation-submenu .wp-block-navigation__submenu-icon {
-				width: 0.75rem;
-				height: auto;
-			}
-		}
-	}
-}
