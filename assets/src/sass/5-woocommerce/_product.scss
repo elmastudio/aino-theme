@@ -28,15 +28,15 @@
 
 		&__trigger {
 			position: absolute;
-			top: var(--space-04);
-			right: var(--space-04);
+			top: 1rem;
+			right: 1rem;
 			z-index: 10;
 			font-size: 0;
 			background: #ffffff;
 			border-radius: var(--global--border-radius-l);
 			display: block;
-			width: var(--space-09);
-			height: var(--space-09);
+			width: 3rem;
+			height: 3rem;
 
 			&::before,
 			&::after {
@@ -91,8 +91,8 @@
 	}
 
 	.onsale {
-		top: var(--space-04);
-		left: var(--space-04);
+		top: 1rem;
+		left: 1rem;
 	}
 
 	// Product details with Add to Cart button

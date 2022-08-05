@@ -6,6 +6,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 0;
+		margin: 0;
 
 		.page-numbers:not(.dots),
 		.wp-block-query-pagination-previous,
@@ -20,8 +21,8 @@
 		}
 
 		.page-numbers {
-			width: var(--space-09);
-			height: var(--space-09);
+			width: 3rem;
+			height: 3rem;
 			border-radius: 50%;
 		}
 

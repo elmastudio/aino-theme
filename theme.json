@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json",
 	"version": 2,
 	"settings": {
 		"appearanceTools": true,
@@ -9,10 +10,8 @@
 			"width": true
 		},
 		"spacing": {
-			"margin": true,
-			"padding": true,
-			"units": ["px", "em", "rem", "vh", "vw"],
-			"blockGap": 0
+			"blockGap": true,
+			"units": ["px", "em", "rem", "%", "vh", "vw"]
 		},
 		"color": {
 			"defaultPalette": false,
@@ -57,29 +56,49 @@
 					"name": "Text 3"
 				},
 				{
+					"slug": "border-primary",
+					"color": "#d7d7d7",
+					"name": "Neutral 1"
+				},
+				{
+					"slug": "border-secondary",
+					"color": "#dddddd",
+					"name": "Neutral 2"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#044FE7",
+					"name": "Accent 1"
+				},
+				{
+					"slug": "quarternary",
+					"color": "#00a8d1",
+					"name": "Accent 2"
+				},
+				{
+					"slug": "quinary",
+					"color": "#7761FF",
+					"name": "Accent 3"
+				},
+				{
 					"slug": "primary",
-					"color": "#121212",
-					"name": "Button Background"
+					"color": "#71717A",
+					"name": "Button 1"
 				},
 				{
 					"slug": "secondary",
-					"color": "#0573E6",
-					"name": "Button Background Hover"
+					"color": "#A1A1AA",
+					"name": "Button 2"
 				},
 				{
 					"slug": "button-color-primary",
-					"color": "#ffffff",
-					"name": "Button Text"
+					"color": "#FAFAFA",
+					"name": "Button 3"
 				},
 				{
 					"slug": "button-color-secondary",
-					"color": "#ffffff",
-					"name": "Button Text Hover"
-				},
-				{
-					"slug": "border-primary",
-					"color": "#d7d7d7",
-					"name": "Neutral"
+					"color": "rgba(113, 113, 122, 0.2)",
+					"name": "Button 4"
 				},
 				{
 					"slug": "variant-background-primary",
@@ -117,29 +136,49 @@
 					"name": "Variant Text 3"
 				},
 				{
+					"slug": "variant-border-primary",
+					"color": "#4A4D4E",
+					"name": "Variant Neutral 1"
+				},
+				{
+					"slug": "variant-border-secondary",
+					"color": "#4A4D4E",
+					"name": "Variant Neutral 2"
+				},
+				{
+					"slug": "variant-tertiary",
+					"color": "#6298FF",
+					"name": "Variant Accent 1"
+				},
+				{
+					"slug": "variant-quarternary",
+					"color": "#A2FFFB",
+					"name": "Variant Accent 2"
+				},
+				{
+					"slug": "variant-quinary",
+					"color": "#BBAFFF",
+					"name": "Variant Accent 3"
+				},
+				{
 					"slug": "variant-primary",
-					"color": "#ffffff",
-					"name": "Variant Button Background"
+					"color": "#E4E4E7",
+					"name": "Variant Button 1"
 				},
 				{
 					"slug": "variant-secondary",
-					"color": "#2E8CFD",
-					"name": "Variant Button Background"
+					"color": "#D4D4D8",
+					"name": "Variant Button 2"
 				},
 				{
 					"slug": "variant-button-color-primary",
-					"color": "#121212",
-					"name": "Variant Button Text"
+					"color": "#52525B",
+					"name": "Variant Button 3"
 				},
 				{
 					"slug": "variant-button-color-secondary",
-					"color": "#121212",
-					"name": "Variant Button Text Hover"
-				},
-				{
-					"slug": "variant-border",
-					"color": "#4A4D4E",
-					"name": "Variant Neutral"
+					"color": "rgba(228, 228, 231, 0.2)",
+					"name": "Variant Button 4"
 				}
 			],
 			"gradients": [
@@ -180,28 +219,31 @@
 			"wideSize": "112.5rem"
 		},
 		"typography": {
-			"fontFamilies": [
-				{
-					"fontFamily": "Arimo, sans-serif",
-					"slug": "arimo",
-					"name": "Arimo"
-				},
-				{
-					"fontFamily": "\"PT Serif\", serif",
-					"slug": "pt-serif",
-					"name": "PT Serif"
-				},
-				{
-					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-					"slug": "system",
-					"name": "System"
-				},
-				{
-					"fontFamily": "\"Fira Code VF\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
-					"slug": "monospace",
-					"name": "Monospace"
-				}
-			],
+			"fontFamilies": [{
+				"fontFamily": "\"Arimo\", sans-serif",
+				"slug": "arimo",
+				"name": "Arimo",
+				"fontFace": [{
+					"fontFamily": "Arimo",
+					"fontWeight": "400 700",
+					"fontStyle": "normal",
+					"fontStretch": "normal",
+					"src": [
+						"file:./assets/fonts/arimo.woff2"
+					]
+				}]
+			},
+			{
+				"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+				"slug": "system",
+				"name": "System"
+			},
+			{
+				"fontFamily": "\"Fira Code VF\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+				"slug": "monospace",
+				"name": "Monospace"
+			}
+		],
 			"fontSizes": [
 				{
 					"name": "3XS",
@@ -296,8 +338,15 @@
 					"fontFamily": "var(--wp--preset--font-family--arimo)"
 				}
 			},
-			"spacing": {
-				"small": "1.5rem"
+			"serif": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--pt-serif)"
+				}
+			},
+			"sans-serif": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--arimo)"
+				}
 			}
 		},
 		"blocks": {
@@ -330,6 +379,9 @@
 		}
 	},
 	"styles": {
+		"spacing": {
+			"blockGap": "0.0rem"
+		},
 		"color": {
 			"background": "var(--wp--preset--color--main-background)",
 			"text": "var(--wp--preset--color--font-secondary)"
@@ -385,7 +437,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--custom--body--typography--font-family)",
+			"fontFamily": "var(--wp--preset--font-family--arimo)",
 			"lineHeight": "var(--wp--custom--line-height--body)",
 			"fontSize": "var(--wp--preset--font-size--text-m)"
 		},
@@ -425,7 +477,8 @@
 			"name": "header-footer",
 			"title": "Header and Footer",
 			"postTypes": [
-				"page"
+				"page",
+				"post"
 			]
 		},
 		{

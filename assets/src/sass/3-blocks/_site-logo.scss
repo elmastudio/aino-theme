@@ -1,0 +1,9 @@
+.wp-block-site-logo {
+
+	&.variant {
+
+		.custom-logo {
+			fill: var(--wp--preset--color--variant-font-primary);
+		}
+	}
+}

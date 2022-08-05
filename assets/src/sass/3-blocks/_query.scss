@@ -444,7 +444,7 @@
 		}
 
 		.wp-block-post-excerpt {
-			padding-top: var(--space-06);
+			padding-top: 1.5rem;
 		}
 	}
 
@@ -590,7 +590,7 @@
 
 		&__avatar {
 			@include avatar-s;
-			margin-right: var(--space-03);
+			margin-right: 0.75rem;
 		}
 	}
 

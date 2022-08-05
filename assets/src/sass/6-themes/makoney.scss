@@ -15,9 +15,59 @@
 	}
 }
 
-.site-header,
-.site-footer {
-	.wp-block-social-links {
-		gap: var(--space-01);
+.site-header {
+
+	.btn-icon {
+
+		.wp-block-ainoblocks-button__link {
+			display: flex;
+			width: 2.5rem;
+			height: 2.5rem;
+			text-indent: -9000px;
+			text-transform: capitalize;
+			padding: 0;
+			background-repeat: no-repeat;
+			background-position: center center;
+			transition: none !important;
+		}
+	}
+
+	.icon-search {
+
+		.wp-block-ainoblocks-button__link {
+			background-image: url(/assets/images/search.svg) !important;
+		}
+	}
+
+	.wp-block-ainoblocks-multiple-buttons {
+
+		.wp-block-ainoblocks-multiple-buttons__inner {
+			.btn-icon:not(:first-child) {
+				margin-left: var(--space-01);
+			}
+		}
+	}
+
+	&.pro-light-s,
+	&.pro-light-l {
+		.wp-block-navigation {
+
+			.wp-block-navigation {
+				&__responsive-container-open {
+					background-image: url(/assets/images/menu.svg) !important;
+	
+					svg {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.header-content {
+			.wp-block-navigation-submenu .wp-block-navigation__submenu-icon {
+				width: 0.75rem;
+				height: auto;
+			}
+		}
 	}
 }

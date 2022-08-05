@@ -1,15 +1,20 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"className":"post-header alignwide content-gap","layout":{"inherit":false,"wideSize":"1800px"},"paddingTop":13} -->
-<div class="wp-block-group post-header alignwide content-gap pt__13"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
+<!-- wp:group {"className":"post-header alignwide content-gap","layout":{"inherit":false,"wideSize":"1800px"},"paddingTop":13,"paddingBottom":6} -->
+<div class="wp-block-group post-header alignwide content-gap pt__13 pb__6"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 	<div class="wp-block-ainoblocks-grid-container col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"className":"justify-self__stretch"} -->
 	<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__10 col_start_t__1 col_end_t__10 col_start_m__1 col_end_m__7 align-self__start justify-self__start no-stacking col_end_d__10 col_end_t__11 col_end_m__13 justify-self__stretch">
 	<!-- wp:post-title {"level":1,"align":"wide","fontSize":"text-5-xl"} /-->
-	<!-- wp:group {"textColor":"font-tertiary","className":"post-meta has-text-xs-font-size","paddingTop":5,"paddingBottom":10} -->
-	<div class="wp-block-group post-meta has-text-xs-font-size has-font-tertiary-color has-text-color pt__5 pb__10">
-	<!-- wp:post-author {"showBio":false,"byline":"by ","fontSize":"text-xs"} /-->
-	<!-- wp:post-date {"fontSize":"text-xs"} /--></div>
-	<!-- /wp:group --></div>
+	<!-- wp:ainoblocks/flexbox {"flexDirectionMobile":"direction__col__m","alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__flexstart__m","alignContentDesktop":"align-cont__flexstart__d","alignContentTablet":"align-cont__flexstart__t","alignContentMobile":"align-cont__flexstart__m","className":"post-meta","paddingTop":4,"paddingBottom":10} -->
+<div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__col__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__center__t align-items__flexstart__m align-cont__flexstart__d align-cont__flexstart__t align-cont__flexstart__m shadow-none post-meta pt__4 pb__10"><!-- wp:ainoblocks/flex-item {"paddingTop":4,"paddingRight":5} -->
+	<div class="wp-block-ainoblocks-flex-item auto pt__4 pr__5"><!-- wp:post-author {"showBio":false,"byline":"by ","textColor":"font-secondary","fontSize":"text-xs"} /--></div>
+	<!-- /wp:ainoblocks/flex-item -->
+	
+	<!-- wp:ainoblocks/flex-item {"alignSelfDesktop":"align__auto__d","paddingTop":4,"paddingLeft":0} -->
+	<div class="wp-block-ainoblocks-flex-item align__auto__d auto pt__4"><!-- wp:post-date {"textColor":"font-secondary","fontSize":"text-xs"} /--></div>
+	<!-- /wp:ainoblocks/flex-item --></div>
+	<!-- /wp:ainoblocks/flexbox -->
+</div>
 	<!-- /wp:ainoblocks/grid-item --></div></div>
 	<!-- /wp:ainoblocks/grid-container -->
 	

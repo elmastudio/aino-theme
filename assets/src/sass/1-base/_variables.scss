@@ -1,26 +1,5 @@
 :root {
 
-	/* Spacing Values */
-	--space-00: 0.125rem;
-	--space-01: 0.25rem;
-	--space-02: 0.5rem;
-	--space-03: 0.75rem;
-	--space-04: 1rem;
-	--space-05: 1.25rem;
-	--space-06: 1.5rem;
-	--space-07: 2rem;
-	--space-08: 2.5rem;
-	--space-09: 3rem;
-	--space-10: 4rem;
-	--space-11: 5rem;
-	--space-12: 6rem;
-	--space-13: 7.5rem;
-	--space-14: 9rem;
-	--space-15: 11rem;
-	--space-16: 13rem;
-	--space-17: 15.5rem;
-	--space-18: 18rem;
-
 	/* Responsive Spacing */
 	--s-r-1: clamp(0.125rem, 0.0746rem + 0.2193vw, 0.25rem);
 	--s-r-2: clamp(0.25rem, 0.1491rem + 0.4386vw, 0.5rem);
@@ -64,7 +43,6 @@
 
 /* Theme Global Styles */
 body {
-	--wp--style--block-gap: 0;
 	--widewidth-outer-gap: 1.25rem;
 	--outer--gap: 1.25rem;
 
@@ -84,9 +62,5 @@ body {
 	@media only screen and (min-width: 80em) {
 		--widewidth-outer-gap: 3rem;
 		--outer--gap: 3rem;
-	}
-
-	@media only screen and (min-width: 118.5em) {
-		--widewidth-outer-gap: 0;
 	}
 }

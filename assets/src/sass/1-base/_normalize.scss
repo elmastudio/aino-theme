@@ -119,22 +119,12 @@ pre {
 	overflow: auto;
 }
 
-code,
-kbd,
-pre,
-samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
-
 button,
 input,
 optgroup,
 select,
 textarea {
 	color: inherit;
-	font: inherit;
-	margin: 0;
 }
 
 button {
@@ -157,16 +147,6 @@ input[type="submit"] {
 button[disabled],
 html input[disabled] {
 	cursor: default;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-input {
-	line-height: normal;
 }
 
 input[type="checkbox"],
