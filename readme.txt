@@ -53,7 +53,7 @@ Source: https://github.com/cyrealtype/Lora-Cyrillic
 
 = 2.6.6 =
 
-Release date: July , 2022
+Release date: August 5, 2022
 
 * New: Change serif font option from PT Serif font to Lora variable font.
 * New: Serif font Style via Editor → Styles → Browse Styles → Lora.
@@ -63,6 +63,7 @@ Release date: July , 2022
 * Enhance: Default forms styling.
 * Bugfix: Update deprecated Post Comments block with Comments Query Loop block in Templates Single Post and Post without Featured Image.
 * Bugfix: Delete outdated Footer Template Parts.
+* Bugfix: Patterns updated.
 
 = 2.6.5 =
 
