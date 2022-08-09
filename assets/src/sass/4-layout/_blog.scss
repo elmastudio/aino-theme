@@ -14,10 +14,14 @@
 			@include s-r-1 (margin-right);
 			@include s-r-1 (margin-left);
 			@include btn;
-			@include btn-tab;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+
+		.page-numbers:not(.current),
+		a[class^='wp-block-query-pagination-'] {
+			@include btn-tab;
 		}
 
 		.page-numbers {

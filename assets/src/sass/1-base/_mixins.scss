@@ -121,18 +121,70 @@ $var: true !default; // Can be overridden elsewhere
 	display: inline-block;
 	line-height: var(--global--line-height-reset);
 	font-weight: normal;
+	transition: all 0.2s ease-out;
 }
 
-@mixin btn-primary {
+@mixin btn-filled {
+	background-color: var(--wp--preset--color--primary);
 	color: var(--wp--preset--color--button-color-primary);
 	fill: var(--wp--preset--color--button-color-primary);
-	background-color: var(--wp--preset--color--primary);
 
 	&:hover {
-		background-color: var(--wp--preset--color--secondary);
-		color: var(--wp--preset--color--button-color-secondary);
-		fill: var(--wp--preset--color--button-color-secondary);
+		background-color: var(--wp--preset--color--secondary) !important;
+		color: var(--wp--preset--color--button-color-primary) !important;
+		fill: var(--wp--preset--color--button-color-primary) !important;
+	}
+
+	&[class*=" has-variant-"] {
+
+		&:hover {
+			background-color: var(--wp--preset--color--variant-secondary) !important;
+			color: var(--wp--preset--color--variant-button-color-primary) !important;
+			fill: var(--wp--preset--color--variant-button-color-primary) !important;
+		}
+	}
+}
+
+@mixin btn-outlined {
+	border: 1px solid;
+	border-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--primary);
+	fill: var(--wp--preset--color--primary);
+
+	&:hover {
+		background-color: var(--wp--preset--color--button-color-secondary) !important;
+		border-color: transparent !important;
+	}
+
+	&[class*=" has-variant-"] {
+	
+		&:hover {
+			background-color: var(--wp--preset--color--variant-button-color-secondary) !important;
+			border-color: transparent !important;
+		}
+	}
+}
+
+@mixin btn-ghost {
+	color: var(--wp--preset--color--primary);
+	fill: var(--wp--preset--color--primary);
+	text-decoration: none;
+
+	&:hover {
+		color: var(--wp--preset--color--primary) !important;
+		background-color: var(--wp--preset--color--button-color-secondary) !important;
+	}
+
+	.wp-block-ainoblocks-button__link {
 		text-decoration: none;
+	}
+
+	&[class*=" has-variant-"] {
+	
+		&:hover {
+			color: var(--wp--preset--color--variant-primary) !important;
+			background-color: var(--wp--preset--color--variant-button-color-secondary) !important;
+		}
 	}
 }
 
@@ -142,39 +194,7 @@ $var: true !default; // Can be overridden elsewhere
 	border: 1px solid var(--wp--preset--color--border-primary);
 
 	&:hover {
-		color: var(--wp--preset--color--button-color-secondary);
-		background-color: var(--wp--preset--color--secondary);
-		border: 1px solid var(--wp--preset--color--button-color-secondary);
-	}
-}
-
-@mixin btn-outline {
-	color: var(--wp--preset--color--primary);
-	fill: var(--wp--preset--color--primary);
-	border: 1px solid;
-	border-color: var(--wp--preset--color--primary);
-
-	&:hover {
-		background-color: var(--wp--preset--color--primary);
-		border-color: var(--wp--preset--color--primary);
-		color: var(--wp--preset--color--button-color-primary);
-		fill: var(--wp--preset--color--button-color-primary);
-		text-decoration: none;
-	}
-}
-
-@mixin btn-outline-light {
-	color: var(--wp--preset--color--variant-primary);
-	fill: var(--wp--preset--color--variant-primary);
-	border: 1px solid;
-	border-color: var(--wp--preset--color--variant-primary);
-
-	&:hover {
-		background-color: var(--wp--preset--color--variant-primary);
-		border-color: var(--wp--preset--color--variant-primary);
-		color: var(--wp--preset--color--variant-button-color-primary);
-		fill: var(--wp--preset--color--variant-button-color-primary);
-		text-decoration: none;
+		background-color: var(--wp--preset--color--variant-button-color-secondary) !important;
 	}
 }
 

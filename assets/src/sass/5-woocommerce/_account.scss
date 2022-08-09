@@ -93,14 +93,6 @@
 
 }
 
-.edit {
-	@include btn;
-	@include btn-primary;
-	@include btn-xxs;
-	@include s-r-2(margin-bottom);
-}
-
-
 // WooCommerce Shortcode forms
 .wc-form-card {
 
@@ -133,9 +125,6 @@
 	margin-bottom: 0;
 
 	.woocommerce-button {
-		@include btn;
-		@include btn-primary;
-		@include btn-xxs;
 		@include s-r-2(margin-right);
 	}
 

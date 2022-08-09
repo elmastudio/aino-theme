@@ -53,7 +53,7 @@ Source: https://github.com/cyrealtype/Lora-Cyrillic
 
 = 2.6.7 =
 
-Release date: August 6, 2022
+Release date: August , 2022
 
 = 2.6.6 =
 
