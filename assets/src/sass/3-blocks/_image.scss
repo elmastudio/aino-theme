@@ -1,0 +1,80 @@
+div[class*='wp-block-'] figcaption {
+	display: block;
+	@include s-r-4 (margin-top);
+	margin-bottom: 0;
+	text-align: left;
+	color: var(--wp--preset--color--font-secondary);
+}
+
+.wp-block-image {
+	margin-bottom: 0;
+
+	.alignright {
+		display: block;
+		float: right;
+		margin: 0;
+	}
+
+	.alignleft {
+		float: left;
+		margin: 0;
+	}
+
+	&.aligncenter {
+		clear: both;
+		display: block;
+		text-align: center;
+	}
+
+	&.alignfull img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+
+		figcaption {
+			text-align: center;
+		}
+	}
+
+	&.ellipse-horizontal {
+		clip-path: ellipse(50% 45% at 50% 50%);
+	}
+	&.ellipse-vertical {
+		clip-path: ellipse(50% 50% at 50% 50%);
+	}
+
+	&.is-style-border-dark {
+
+		img {
+			border: 1px solid;
+			border-color: var(--wp--preset--color--font-secondary);
+		}
+	}
+
+	&.is-style-border-light {
+
+		img {
+			border: 1px solid;
+			border-color: var(--wp--preset--color--variant-font-secondary);
+		}
+	}
+}
+
+.img-raised {
+	box-shadow: -9px 9px 0px 0 var(--wp--preset--color--button-color-primary);
+	transition: all 300ms ease;
+
+	.ext-link-icon {
+		opacity: 0;
+		transition: all 300ms ease;
+	}
+
+	&:hover {
+		box-shadow: none;
+		transform: translate(-9px, 9px);
+
+		.ext-link-icon {
+			opacity: 100;
+		}
+	}
+}
