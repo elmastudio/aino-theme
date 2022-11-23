@@ -35,6 +35,6 @@
 		"webpack-cli": "^4.8.0"
 	},
 	"dependencies": {
-		"browser-sync": "^2.27.7"
+		"browser-sync": "^2.27.10"
 	}
 }
